@@ -1,0 +1,966 @@
+[
+  {
+    "name": "火计",
+    "data": {
+      "desc": "对平地、森林的敌人有效，纵火焚烧敌兵。\\n\\n[color=yellow]伤害公式=知×(9~13)/10+等级×10+20[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_Fire",
+      "message": "依计行事，放火将敌兵烧死",
+      "nature": "火"
+    },
+    "learn": {
+      "minInt": 0,
+      "maxInt": 255,
+      "minLevel": 0,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 6
+    },
+    "impact": {
+      "soldier": "(a.知*random(9,13)/10+(a.等级-1)*10+30)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、树林",
+      "weakenedTerrian": "城墙",
+      "rangeType": "矩形",
+      "rangeIncluded": 1
+    }
+  },
+  {
+    "name": "火计*",
+    "data": {
+      "desc": "",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_Fire",
+      "message": "依计行事，放火将敌兵烧死",
+      "nature": "火"
+    },
+    "learn": {
+      "minInt": 100,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 6
+    },
+    "impact": {
+      "soldier": "(a.知*random(9,13)/10+(a.等级-1)*10+30)*min(1,max(0.1,a.兵力/1000.0))/2"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、树林",
+      "weakenedTerrian": "城墙",
+      "rangeType": "矩形",
+      "rangeIncluded": 1
+    }
+  },
+  {
+    "name": "陷阱",
+    "data": {
+      "desc": "对森林、山地中的敌人有效，用陷阱减少目标武将的体力。\\n\\n[color=yellow]伤害公式=(5~7)×[等级-1+(武+知)/10]/10.[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_Trap",
+      "message": "挖掘陷阱暗算敌将"
+    },
+    "learn": {
+      "minInt": 0,
+      "maxInt": 255,
+      "minLevel": 0,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 5
+    },
+    "impact": {
+      "hp": "random(5,7)*(a.等级-1+(a.武+a.知)/10)/10*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "山地、树林"
+    }
+  },
+  {
+    "name": "虚兵",
+    "data": {
+      "desc": "对森林和山地的敌人有效，制造烟雾，阻止敌方部队移动。\\n\\n[color=yellow]定止：1~3回合。[/color]",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_FakeSodiers",
+      "message": "放烟将敌兵迷住\\n使之无法移动"
+    },
+    "learn": {
+      "minInt": 40,
+      "maxInt": 255,
+      "minLevel": 0,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 4
+    },
+    "impact": {
+      "buff": {
+        "name": "定止",
+        "formula": "random(1,3)"
+      }
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "山地、树林"
+    }
+  },
+  {
+    "name": "要击",
+    "data": {
+      "desc": "对森林和山地的敌人有效，奇袭敌兵。\\n\\n[color=yellow]伤害公式=武×(14~20)/10.[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_Forest",
+      "message": "以伏兵奇袭"
+    },
+    "learn": {
+      "minInt": 40,
+      "maxInt": 255,
+      "minLevel": 0,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 6
+    },
+    "impact": {
+      "soldier": "(a.武*random(14,20)/10)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "山地、树林",
+      "weakenedTerrian": "城墙",
+      "rangeType": "矩形",
+      "rangeIncluded": 1
+    }
+  },
+  {
+    "name": "乱水",
+    "data": {
+      "desc": "对水上的敌人有效。让船只沉没，减少敌兵。\\n\\n[color=yellow]伤害公式=知×(20~26)/10+等级+6.[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_Water",
+      "message": "以乱水之计淹杀敌兵",
+      "nature": "水"
+    },
+    "learn": {
+      "minInt": 60,
+      "maxInt": 255,
+      "minLevel": 0,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 7
+    },
+    "impact": {
+      "soldier": "(a.知*random(20,26)/10+(a.等级-1)+7)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "河流",
+      "rangeType": "矩形",
+      "rangeIncluded": 1,
+      "excludedBuffLabels": ["铁索"]
+    }
+  },
+  {
+    "name": "乱水*",
+    "data": {
+      "desc": "对水上的敌人有效。让目标以及接连的敌方船只沉没，减少敌兵。\\n\\n[color=yellow]伤害公式=知*(20~26)/10+等级+6.[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "min(95,5+max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_Water",
+      "message": "泄洪以淹死敌军",
+      "nature": "水"
+    },
+    "learn": {
+      "minInt": 100,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 6
+    },
+    "impact": {
+      "soldier": "(a.知*random(20,26)/10+(a.等级-1)+7)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "河流",
+      "neighbourIncluded": 1,
+      "neighbourTerrian": "河流",
+      "neighbourExtend": 1,
+      "excludedBuffLabels": ["铁索"]
+    }
+  },
+  {
+    "name": "火箭",
+    "data": {
+      "desc": "对敌方主将使用，与地形无关，偷袭敌方粮草。\\n\\n[color=yellow]减米公式=对方米×(5~7)/100+知/5.[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_Fire",
+      "message": "以火烧敌方兵粮",
+      "nature": "火"
+    },
+    "learn": {
+      "minInt": 60,
+      "maxInt": 255,
+      "minLevel": 0,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 8
+    },
+    "impact": {
+      "rice": "(b.米*random(5,7)/100+a.知/5)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 6,
+      "leaderOnly": 1
+    }
+  },
+  {
+    "name": "伪击转杀",
+    "data": {
+      "desc": "对相邻城楼上的敌方部队才能使用，向城楼上发动奇袭，减少敌兵。\\n\\n[color=yellow]伤害公式=知×(9~13)/10+等级×10+20[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_AttackCity",
+      "message": "对城内部队施用计策"
+    },
+    "learn": {
+      "minInt": 75,
+      "maxInt": 255,
+      "minLevel": 0,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 8
+    },
+    "impact": {
+      "soldier": "(a.知*random(9,13)/10+(a.等级-1)*10+30)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 1,
+      "cursorType": "十字",
+      "targetTerrian": "城墙、城门"
+    }
+  },
+  {
+    "name": "共杀",
+    "data": {
+      "desc": "对在森林、山地的敌方部队以及与之相邻的部队有效，使敌人自我相残，减少士兵。\\n\\n[color=yellow]伤害公式=知×(9~13)/10+等级×10+20[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_Forest",
+      "message": "内讧敌方军队"
+    },
+    "learn": {
+      "minInt": 75,
+      "maxInt": 255,
+      "minLevel": 0,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 8
+    },
+    "impact": {
+      "soldier": "(a.知*random(9,13)/10+(a.等级-1)*10+30)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "山地、树林",
+      "weakenedTerrian": "城墙",
+      "rangeType": "十字",
+      "rangeRadius": 1,
+      "neighbourRequired": 1,
+      "neighbourIncluded": 1
+    }
+  },
+  {
+    "name": "共杀*",
+    "data": {
+      "desc": "对在森林、山地的敌方部队以及与之距离≤2的部队有效，使敌人自我相残，减少士兵。\\n\\n[color=yellow]伤害公式=知×(9~13)/10+等级×10+20[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_Forest",
+      "message": "内讧敌方军队"
+    },
+    "learn": {
+      "minInt": 100,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 8
+    },
+    "impact": {
+      "soldier": "(a.知*random(9,13)/10+(a.等级-1)*10+30)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "山地、树林",
+      "weakenedTerrian": "城墙",
+      "rangeType": "十字",
+      "rangeRadius": 2,
+      "neighbourRequired": 1,
+      "neighbourIncluded": 1,
+      "neighbourRange": 2
+    }
+  },
+  {
+    "name": "笼络",
+    "data": {
+      "desc": "尝试说服低忠敌将，若成功则会将目标纳入麾下。施计者的德、政属性越高，成功率越大。",
+      "formula": "(max(a.等级-b.等级,0)*2+(a.德+a.政)/10+min(50,(max(0,70-b.忠)/10+1)*10))*min(max(0,70-b.忠),1)",
+      "anim": "Strategy_Talking",
+      "message": "将敌方将领说服至我方"
+    },
+    "learn": {
+      "minInt": 85,
+      "maxInt": 255,
+      "minLevel": 0,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 10
+    },
+    "impact": {
+      "specialEffect": "笼络"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽"
+    }
+  },
+  {
+    "name": "落石",
+    "data": {
+      "desc": "自己在城中或山上，对相距≤2的敌部队可使用，用落石减少士兵数量，且可以减少敌将的体力。\\n\\n[color=yellow]伤兵量=武×(14~20)/10.\\n伤体量=(5~7)×[等级-1+(武+知)/10]/10.[/color]\\n（自己兵力<1000时，每少100兵，各项伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_DropStone",
+      "message": "以落石之计砸杀敌军"
+    },
+    "learn": {
+      "minInt": 85,
+      "maxInt": 255,
+      "minLevel": 0,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 9
+    },
+    "impact": {
+      "soldier": "(a.武*random(14,20)/10)*min(1,max(0.1,a.兵力/1000.0))",
+      "hp": "(random(5,7)*(a.等级-1+(a.武+a.知)/10)/10)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 2,
+      "selfTerrian": "山地、太守府、城墙、城门",
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽",
+      "cursorType": "十字"
+    }
+  },
+  {
+    "name": "霹雳车",
+    "data": {
+      "desc": "以霹雳车投石砸杀敌军。\\n\\n[color=yellow]伤兵量=武×(14~20)/10.\\n伤体量=(5~7)×[等级-1+(武+知)/10]/10.[/color]\\n（自己兵力<1000时，每少100兵，各项伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_DropStone",
+      "message": "以霹雳车投石砸杀敌军"
+    },
+    "learn": {
+      "minInt": 100,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 9
+    },
+    "impact": {
+      "soldier": "(a.武*random(14,20)/10)*min(1,max(0.1,a.兵力/1000.0))",
+      "hp": "(random(5,7)*(a.等级-1+(a.武+a.知)/10)/10)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": -1,
+      "rangeFormula": "2+int(a.等级/2)",
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽",
+      "cursorType": "仅十字"
+    }
+  },
+  {
+    "name": "连环",
+    "data": {
+      "desc": "对水面上的所有接连的敌人有效。利用间谍连接敌部队军船，阻止其水上行动。\\n\\n[color=yellow]定止：5回合。[/color]",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_ConnectBoat",
+      "message": "以链锁将敌方船只锁定\\n使之无法移动"
+    },
+    "learn": {
+      "minInt": 90,
+      "maxInt": 255,
+      "minLevel": 4,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 9
+    },
+    "impact": {
+      "buff": {
+        "name": "定止",
+        "round": 5
+      }
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "河流",
+      "neighbourRequired": 1,
+      "neighbourIncluded": 1,
+      "neighbourTerrian": "河流",
+      "neighbourExtend": 1
+    }
+  },
+  {
+    "name": "十面埋伏",
+    "data": {
+      "desc": "提前在树林中埋伏士兵。对侵入埋伏位置距离2以内的敌人部队触发减兵效果。\\n埋伏持续:5回合。触发1次后消失。\\n\\n[color=yellow]十面埋伏伤害公式=(30~40)×智/10。[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "100",
+      "anim": "Strategy_Forest",
+      "message": "于森林之中埋伏陷阱"
+    },
+    "learn": {
+      "minInt": 90,
+      "maxInt": 255,
+      "minLevel": 4,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 10
+    },
+    "impact": {
+      "area": {
+        "tag": "十面埋伏",
+        "round": 6
+      }
+    },
+    "targeting": {
+      "type": "area",
+      "range": 0,
+      "targetTerrian": "树林"
+    }
+  },
+  {
+    "name": "水攻",
+    "data": {
+      "desc": "对在水上接邻的全体敌部队有效，放开水闸，淹死敌军。\\n\\n[color=yellow]伤害公式=知×(20~26)/10+等级+6.[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_Water",
+      "message": "泄洪以淹死敌军",
+      "nature": "水"
+    },
+    "learn": {
+      "minInt": 95,
+      "maxInt": 255,
+      "minLevel": 5,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 10
+    },
+    "impact": {
+      "soldier": "(a.知*random(20,26)/10+(a.等级-1)+7)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "河流",
+      "neighbourRequired": 1,
+      "neighbourIncluded": 1,
+      "neighbourTerrian": "河流",
+      "neighbourExtend": 1,
+      "excludedBuffLabels": ["铁索"]
+    }
+  },
+  {
+    "name": "连弩",
+    "data": {
+      "desc": "自己在城地形，对非城地形且相距≤2的敌人有效。从城里向城外射箭，减少敌兵。\\n\\n[color=yellow]伤害公式=(150~349)+(武+知)/2.[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_CityArrows",
+      "message": "乱箭射杀敌军"
+    },
+    "learn": {
+      "minInt": 95,
+      "maxInt": 255,
+      "minLevel": 5,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 8
+    },
+    "impact": {
+      "soldier": "(random(150,349)+(a.武+a.知)/2)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "cursorType": "十字",
+      "range": 2,
+      "selfTerrian": "太守府、城墙、城门",
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽"
+    }
+  },
+  {
+    "name": "劫火",
+    "data": {
+      "desc": "对在城地形以外的任何存在接邻的敌方部队有效，从四面放火，包围他们，减少大量兵力。\\n\\n[color=yellow]伤害公式=智×(30~35)/10.[/color]\\n（自己兵力<1000时，每少100兵，各项伤害降低10%）",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_HellFire",
+      "message": "从四面火烧敌军部队",
+      "nature": "火"
+    },
+    "learn": {
+      "minInt": 98,
+      "maxInt": 255,
+      "minLevel": 6,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 12
+    },
+    "impact": {
+      "soldier": "(a.知*random(30,35)/10)*min(1,max(0.1,a.兵力/1000.0))"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽",
+      "weakenedTerrian": "城墙",
+      "neighbourRequired": 1,
+      "neighbourIncluded": 1,
+      "neighbourTerrian": "平原、沙漠、树林、山地、河流、沼泽",
+      "neighbourExtend": 1
+    }
+  },
+  {
+    "name": "劫火*",
+    "data": {
+      "desc": "",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_HellFire",
+      "message": "从四面火烧敌军部队",
+      "nature": "火"
+    },
+    "learn": {
+      "minInt": 100,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 12
+    },
+    "impact": {
+      "soldier": "(a.知*random(30,35)/10)*min(1,max(0.1,a.兵力/1000.0))/2"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽",
+      "weakenedTerrian": "城墙",
+      "neighbourRequired": 1,
+      "neighbourIncluded": 1,
+      "neighbourTerrian": "平原、沙漠、树林、山地、河流、沼泽",
+      "neighbourExtend": 1
+    }
+  },
+  {
+    "name": "奇门遁甲",
+    "data": {
+      "requireSkill": -1,
+      "desc": "在城和水之外的地方有效。对敌人附加“石阵”状态8~10回合。\\n\\n[color=yellow]石阵：特殊状态。无法进行移动，每回合自动减少80~100兵。此状态无法通过用计和白刃战减少持续回合。[/color]",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_EightStone",
+      "message": "布下乱石阵消耗敌军"
+    },
+    "learn": {
+      "minInt": 0,
+      "maxInt": 255,
+      "minLevel": 7,
+      "maxLevel": 16,
+      "actorIds": [364]
+    },
+    "cost": {
+      "ap": 10
+    },
+    "impact": {
+      "buff": {
+        "name": "八阵",
+        "formula": "random(8,10)"
+      }
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、沙漠、树林、山地、沼泽",
+      "neighbourIncluded": 1,
+      "neighbourTerrian": "平原、沙漠、树林、山地、沼泽",
+      "neighbourExtend": 1
+    }
+  },
+  {
+    "name": "奇门遁甲*",
+    "data": {
+      "requireSkill": -1,
+      "desc": "",
+      "formula": "min(95,max(5,(距离-3)*(-5)+max(0,a.知-b.知)+max(0,a.等级-b.等级)*2+10))",
+      "anim": "Strategy_EightStone",
+      "message": "布下乱石阵消耗敌军"
+    },
+    "learn": {
+      "minInt": 101,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 10
+    },
+    "impact": {
+      "buff": {
+        "name": "八阵*",
+        "formula": "random(4,5)"
+      }
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、沙漠、树林、山地、沼泽"
+    }
+  },
+  {
+    "name": "落雷",
+    "data": {
+      "type": "技能",
+      "requireSkill": -1,
+      "desc": "释放落雷术消耗敌军兵力，并概率附加定止。\\n\\n[color=yellow]伤兵量=max(5,施计方知-受击方知)×(30~35)/10.\\n概率附加定止状态1回合.[/color]",
+      "formula": "100",
+      "anim": "Strategy_TrapLight",
+      "message": "雷动九天，无妄无极！",
+      "nature": "雷"
+    },
+    "learn": {
+      "minInt": 0,
+      "maxInt": 255,
+      "minLevel": 7,
+      "maxLevel": 16,
+      "actorIds": [255]
+    },
+    "cost": {
+      "ap": 12
+    },
+    "impact": {
+      "soldier": "max(5,a.知-b.知)*random(30,35)/10",
+      "buff": {
+        "name": "定止",
+        "formula": "min(1,max(0,random(-2,2)))"
+      }
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽",
+      "rangeType": "矩形",
+      "rangeRadius": 2,
+      "rangeIncluded": 1
+    }
+  },
+  {
+    "name": "空城计",
+    "data": {
+      "cd": {
+        "round": 100,
+        "type": "己方"
+      },
+      "requireSkill": 1,
+      "desc": "守方专属计策，自身站在城地形对高知的敌人使用。概率使之撤退。每个月只能使用1次。",
+      "formula": "min(45,max(0,(距离-3)*(-3)+(b.知-90)*3+max(0,a.等级-b.等级)*2))",
+      "anim": "Strategy_KongChengJi",
+      "message": "依计行事，诱使敌将撤退"
+    },
+    "learn": {
+      "minInt": 99,
+      "maxInt": 255,
+      "minLevel": 7,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 10
+    },
+    "impact": {
+      "buff": {
+        "name": "定止",
+        "round": 0
+      },
+      "specialEffect": "撤退"
+    },
+    "targeting": {
+      "range": 6,
+      "selfTerrian": "太守府、城门、城墙"
+    }
+  },
+  {
+    "name": "离火",
+    "data": {
+      "type": "技能",
+      "requireSkill": -1,
+      "desc": "",
+      "formula": "100",
+      "anim": "Strategy_Fire",
+      "message": "离火之舞，岂止燎原！",
+      "nature": "火"
+    },
+    "learn": {
+      "minInt": 0,
+      "maxInt": 255,
+      "minLevel": 7,
+      "maxLevel": 16,
+      "actorIds": [96]
+    },
+    "cost": {
+      "ap": 8
+    },
+    "impact": {
+      "soldier": "max(5,a.德-b.德)*random(30,35)/10",
+      "specialEffect": "机动力回复"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽",
+      "rangeType": "矩形",
+      "rangeRadius": 2,
+      "rangeIncluded": 1
+    }
+  },
+  {
+    "name": "飞砂",
+    "data": {
+      "type": "技能",
+      "requireSkill": -1,
+      "desc": "释放飞砂术消耗敌军兵力，并概率附加迟滞。\\n\\n[color=yellow]伤兵量=10*命中人数+等级*6.\\n概率附加迟滞状态1回合.[/color]",
+      "formula": "100",
+      "anim": "Strategy_Trap",
+      "message": "飞砂蔽日，风卷残云！",
+      "nature": ""
+    },
+    "learn": {
+      "minInt": 100,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 8
+    },
+    "impact": {
+      "soldier": "命中人数*10+a.等级*6",
+      "buff": {
+        "name": "迟滞",
+        "formula": "min(1,max(0,random(-2,2)))"
+      }
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽",
+      "rangeType": "矩形",
+      "rangeRadius": 2,
+      "rangeIncluded": 1
+    }
+  },
+  {
+    "name": "走石",
+    "data": {
+      "type": "技能",
+      "requireSkill": -1,
+      "desc": "释放走石术消耗敌军兵力，并概率附加疲兵。\\n\\n[color=yellow]伤兵量=max(5,施计方武-受击方武)×(30~35)/10.\\n概率附加疲兵状态1回合.[/color]",
+      "formula": "100",
+      "anim": "Strategy_Trap",
+      "message": "山崩地裂，走石如龙！",
+      "nature": ""
+    },
+    "learn": {
+      "minInt": 100,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 8
+    },
+    "impact": {
+      "soldier": "max(5,a.武-b.武)*random(30,35)/10",
+      "buff": {
+        "name": "疲兵",
+        "formula": "min(1,max(0,random(-2,2)))"
+      }
+    },
+    "targeting": {
+      "rangeWidth": 1,
+      "rangeHeight": 7,
+      "rangeDirection": 1,
+      "range": 1,
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽",
+      "rangeType": "矩形",
+      "rangeIncluded": 1
+    }
+  },
+  {
+    "name": "呼风",
+    "data": {
+      "type": "技能",
+      "requireSkill": -1,
+      "desc": "释放呼风道术，随机打乱阵型。\\n\\n[color=yellow]范围内双方武将移动到随机位置.[/color]",
+      "formula": "100",
+      "anim": "Strategy_EightStone",
+      "message": "风云色变，移形换影！",
+      "nature": ""
+    },
+    "learn": {
+      "minInt": 100,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 8
+    },
+    "impact": {
+      "specialEffect": "随机位移"
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽",
+      "rangeType": "矩形",
+      "rangeRadius": 2,
+      "rangeIncluded": 1,
+      "side": "任意"
+    }
+  },
+  {
+    "name": "唤雨",
+    "data": {
+      "type": "技能",
+      "requireSkill": -1,
+      "desc": "释放唤雨术，迟滞敌军，愈疗我军。\\n\\n[color=yellow]范围内己方武将体力+10.\\n敌军概率附加迟滞状态1回合.[/color]",
+      "formula": "100",
+      "anim": "Strategy_Water",
+      "message": "雨润万物生，雨疾万事迟！",
+      "nature": ""
+    },
+    "learn": {
+      "minInt": 100,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 8
+    },
+    "impact": {
+      "heal": "10",
+      "buff": {
+        "name": "迟滞",
+        "formula": "min(1,max(0,random(-1,3)))"
+      }
+    },
+    "targeting": {
+      "range": 6,
+      "targetTerrian": "平原、沙漠、树林、山地、河流、沼泽、太守府、城门、城墙",
+      "rangeType": "矩形",
+      "rangeRadius": 2,
+      "rangeIncluded": 1,
+      "side": "任意"
+    }
+  },
+  {
+    "name": "水伏",
+    "data": {
+      "desc": "提前在水域中埋伏水性极好的士兵。对侵入埋伏位置距离2以内的敌人部队触发减兵效果。\\n埋伏持续:5回合。触发1次后消失。\\n\\n[color=yellow]水伏伤害公式=(30~40)×智/10。[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "100",
+      "anim": "Strategy_Water",
+      "message": "于水域之中埋伏陷阱"
+    },
+    "learn": {
+      "minInt": 100,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 10
+    },
+    "impact": {
+      "area": {
+        "tag": "十面埋伏",
+        "round": 6
+      }
+    },
+    "targeting": {
+      "type": "area",
+      "range": 0,
+      "targetTerrian": "河流"
+    }
+  },
+  {
+    "name": "要伏",
+    "data": {
+      "desc": "提前在树林、山地中埋伏士兵。侵入险要的敌人部队触发减兵效果。\\n埋伏持续:5回合。触发1次后消失。\\n\\n[color=yellow]伤害公式=(30~40)×智/10。[/color]\\n（自己兵力<1000时，每少100兵，伤害降低10%）",
+      "formula": "100",
+      "anim": "Strategy_Forest",
+      "message": "于险要之处埋伏陷阱"
+    },
+    "learn": {
+      "minInt": 100,
+      "maxInt": 255,
+      "minLevel": 9,
+      "maxLevel": 16,
+      "actorIds": []
+    },
+    "cost": {
+      "ap": 8
+    },
+    "impact": {
+      "area": {
+        "tag": "十面埋伏",
+        "round": 6
+      }
+    },
+    "targeting": {
+      "type": "area",
+      "range": 6,
+      "targetTerrian": "树林、山地"
+    }
+  }
+]

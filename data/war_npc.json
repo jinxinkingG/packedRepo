@@ -1,0 +1,9 @@
+[
+  {
+    "NpcNo":0,
+    "Name":"村民",
+    "FaceList":[],
+    "troops_type":"山",
+    "TalkToPlayer":true
+  }
+]

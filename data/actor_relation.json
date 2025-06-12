@@ -1,0 +1,956 @@
+{
+    "relations": [
+        {
+            "from": 0,
+            "to": 15,
+            "relation": "痛恨"
+        },
+        {
+            "from": 0,
+            "to": 2,
+            "relation": "密友"
+        },
+        {
+            "from": 0,
+            "to": 128,
+            "relation": "部将"
+        },
+        {
+            "from": 47,
+            "to": 1,
+            "relation": "妻弟"
+        },
+        {
+            "from": 1,
+            "to": 105,
+            "relation": "密友"
+        },
+        {
+            "from": 1,
+            "to": 267,
+            "relation": "仇视"
+        },
+        {
+            "from": 1,
+            "to": 350,
+            "relation": "拥立"
+        },
+        {
+            "from": 1,
+            "to": 46,
+            "relation": "仇视"
+        },
+        {
+            "from": 2,
+            "to": 1,
+            "relation": "纳降"
+        },
+        {
+            "from": 2,
+            "to": 3,
+            "relation": "堂兄"
+        },
+        {
+            "from": 2,
+            "to": 4,
+            "relation": "族兄"
+        },
+        {
+            "from": 4,
+            "to": 109,
+            "relation": "兄弟"
+        },
+        {
+            "from": 7,
+            "to": 5,
+            "relation": "父子"
+        },
+        {
+            "from": 67,
+            "to": 5,
+            "relation": "部将"
+        },
+        {
+            "from": 46,
+            "to": 5,
+            "relation": "部将"
+        },
+        {
+            "from": 2,
+            "to": 5,
+            "relation": "部将"
+        },
+        {
+            "from": 2,
+            "to": 6,
+            "relation": "叛臣"
+        },
+        {
+            "from": 53,
+            "to": 6,
+            "relation": "谋士"
+        },
+        {
+            "from": 87,
+            "to": 8,
+            "relation": "部将"
+        },
+        {
+            "from": 55,
+            "to": 9,
+            "relation": "部将"
+        },
+        {
+            "from": 65,
+            "to": 10,
+            "relation": "虎臣"
+        },
+        {
+            "from": 64,
+            "to": 10,
+            "relation": "虎臣"
+        },
+        {
+            "from": 293,
+            "to": 10,
+            "relation": "虎臣"
+        },
+        {
+            "from": 55,
+            "to": 11,
+            "relation": "部将"
+        },
+        {
+            "from": 12,
+            "to": 395,
+            "relation": "父子"
+        },
+        {
+            "from": 261,
+            "to": 12,
+            "relation": "重臣"
+        },
+        {
+            "from": 46,
+            "to": 12,
+            "relation": "重臣"
+        },
+        {
+            "from": 364,
+            "to": 12,
+            "relation": "友人"
+        },
+        {
+            "from": 15,
+            "to": 13,
+            "relation": "叔侄"
+        },
+        {
+            "from": 15,
+            "to": 14,
+            "relation": "兄弟"
+        },
+        {
+            "from": 15,
+            "to": 266,
+            "relation": "纳妾"
+        },
+        {
+            "from": 15,
+            "to": 57,
+            "relation": "翁婿"
+        },
+        {
+            "from": 15,
+            "to": 53,
+            "relation": "义父"
+        },
+        {
+            "from": 15,
+            "to": 16,
+            "relation": "部将"
+        },
+        {
+            "from": 51,
+            "to": 17,
+            "relation": "部将"
+        },
+        {
+            "from": 86,
+            "to": 18,
+            "relation": "谋士"
+        },
+        {
+            "from": 86,
+            "to": 19,
+            "relation": "舅甥"
+        },
+        {
+            "from": 86,
+            "to": 20,
+            "relation": "部将"
+        },
+        {
+            "from": 21,
+            "to": 264,
+            "relation": "父子"
+        },
+        {
+            "from": 21,
+            "to": 270,
+            "relation": "父子"
+        },
+        {
+            "from": 24,
+            "to": 22,
+            "relation": "从兄弟"
+        },
+        {
+            "from": 24,
+            "to": 23,
+            "relation": "从兄弟"
+        },
+        {
+            "from": 24,
+            "to": 46,
+            "relation": "密友"
+        },
+        {
+            "from": 46,
+            "to": 25,
+            "relation": "结义"
+        },
+        {
+            "from": 25,
+            "to": 94,
+            "relation": "结义"
+        },
+        {
+            "from": 25,
+            "to": 309,
+            "relation": "父子"
+        },
+        {
+            "from": 25,
+            "to": 401,
+            "relation": "父子"
+        },
+        {
+            "from": 25,
+            "to": 406,
+            "relation": "父子"
+        },
+        {
+            "from": 15,
+            "to": 26,
+            "relation": "部将"
+        },
+        {
+            "from": 82,
+            "to": 27,
+            "relation": "谋士"
+        },
+        {
+            "from": 65,
+            "to": 28,
+            "relation": "虎臣"
+        },
+        {
+            "from": 64,
+            "to": 28,
+            "relation": "虎臣"
+        },
+        {
+            "from": 293,
+            "to": 28,
+            "relation": "虎臣"
+        },
+        {
+            "from": 29,
+            "to": 86,
+            "relation": "怨种"
+        },
+        {
+            "from": 30,
+            "to": 55,
+            "relation": "结义"
+        },
+        {
+            "from": 30,
+            "to": 309,
+            "relation": "父子"
+        },
+        {
+            "from": 15,
+            "to": 31,
+            "relation": "部将"
+        },
+        {
+            "from": 15,
+            "to": 32,
+            "relation": "部将"
+        },
+        {
+            "from": 33,
+            "to": 52,
+            "relation": "三杰"
+        },
+        {
+            "from": 33,
+            "to": 106,
+            "relation": "三杰"
+        },
+        {
+            "from": 65,
+            "to": 34,
+            "relation": "虎臣"
+        },
+        {
+            "from": 64,
+            "to": 34,
+            "relation": "虎臣"
+        },
+        {
+            "from": 293,
+            "to": 34,
+            "relation": "虎臣"
+        },
+        {
+            "from": 34,
+            "to": 208,
+            "relation": "友人"
+        },
+        {
+            "from": 34,
+            "to": 330,
+            "relation": "友人"
+        },
+        {
+            "from": 35,
+            "to": 555,
+            "relation": "父子"
+        },
+        {
+            "from": 46,
+            "to": 35,
+            "relation": "部将"
+        },
+        {
+            "from": 261,
+            "to": 35,
+            "relation": "部将"
+        },
+        {
+            "from": 47,
+            "to": 36,
+            "relation": "部将"
+        },
+        {
+            "from": 87,
+            "to": 37,
+            "relation": "部将"
+        },
+        {
+            "from": 15,
+            "to": 38,
+            "relation": "谋士"
+        },
+        {
+            "from": 245,
+            "to": 38,
+            "relation": "谋士"
+        },
+        {
+            "from": 2,
+            "to": 38,
+            "relation": "谋士"
+        },
+        {
+            "from": 86,
+            "to": 39,
+            "relation": "谋士"
+        },
+        {
+            "from": 40,
+            "to": 535,
+            "relation": "密友"
+        },
+        {
+            "from": 41,
+            "to": 15,
+            "relation": "痛恨"
+        },
+        {
+            "from": 87,
+            "to": 42,
+            "relation": "部将"
+        },
+        {
+            "from": 15,
+            "to": 43,
+            "relation": "部将"
+        },
+        {
+            "from": 15,
+            "to": 44,
+            "relation": "谋士"
+        },
+        {
+            "from": 15,
+            "to": 45,
+            "relation": "部将"
+        },
+        {
+            "from": 46,
+            "to": 528,
+            "relation": "夫妻"
+        },
+        {
+            "from": 46,
+            "to": 450,
+            "relation": "父子"
+        },
+        {
+            "from": 46,
+            "to": 94,
+            "relation": "结义"
+        },
+        {
+            "from": 46,
+            "to": 227,
+            "relation": "五虎将"
+        },
+        {
+            "from": 46,
+            "to": 218,
+            "relation": "五虎将"
+        },
+        {
+            "from": 46,
+            "to": 273,
+            "relation": "五虎将"
+        },
+        {
+            "from": 46,
+            "to": 364,
+            "relation": "军师"
+        },
+        {
+            "from": 46,
+            "to": 361,
+            "relation": "军师"
+        },
+        {
+            "from": 46,
+            "to": 172,
+            "relation": "军师"
+        },
+        {
+            "from": 47,
+            "to": 267,
+            "relation": "父子"
+        },
+        {
+            "from": 47,
+            "to": 350,
+            "relation": "父子"
+        },
+        {
+            "from": 48,
+            "to": 0,
+            "relation": "部将"
+        },
+        {
+            "from": 48,
+            "to": 51,
+            "relation": "兄弟"
+        },
+        {
+            "from": 552,
+            "to": 49,
+            "relation": "兄弟"
+        },
+        {
+            "from": 15,
+            "to": 49,
+            "relation": "拥立"
+        },
+        {
+            "from": 49,
+            "to": 15,
+            "relation": "痛恨"
+        },
+        {
+            "from": 49,
+            "to": 2,
+            "relation": "痛恨"
+        },
+        {
+            "from": 50,
+            "to": 261,
+            "relation": "父子"
+        },
+        {
+            "from": 52,
+            "to": 24,
+            "relation": "师徒"
+        },
+        {
+            "from": 52,
+            "to": 46,
+            "relation": "师徒"
+        },
+        {
+            "from": 52,
+            "to": 106,
+            "relation": "三杰"
+        },
+        {
+            "from": 258,
+            "to": 53,
+            "relation": "义父"
+        },
+        {
+            "from": 53,
+            "to": 266,
+            "relation": "纳妾"
+        },
+        {
+            "from": 47,
+            "to": 54,
+            "relation": "部将"
+        },
+        {
+            "from": 64,
+            "to": 54,
+            "relation": "父仇"
+        },
+        {
+            "from": 55,
+            "to": 273,
+            "relation": "父子"
+        },
+        {
+            "from": 55,
+            "to": 275,
+            "relation": "父子"
+        },
+        {
+            "from": 55,
+            "to": 277,
+            "relation": "父子"
+        },
+        {
+            "from": 55,
+            "to": 316,
+            "relation": "族子"
+        },
+        {
+            "from": 46,
+            "to": 56,
+            "relation": "部将"
+        },
+        {
+            "from": 56,
+            "to": 199,
+            "relation": "兄弟"
+        },
+        {
+            "from": 86,
+            "to": 59,
+            "relation": "谋士"
+        },
+        {
+            "from": 61,
+            "to": 60,
+            "relation": "兄弟"
+        },
+        {
+            "from": 61,
+            "to": 62,
+            "relation": "兄弟"
+        },
+        {
+            "from": 61,
+            "to": 265,
+            "relation": "父子"
+        },
+        {
+            "from": 61,
+            "to": 262,
+            "relation": "父子"
+        },
+        {
+            "from": 61,
+            "to": 268,
+            "relation": "父子"
+        },
+        {
+            "from": 61,
+            "to": 271,
+            "relation": "父子"
+        },
+        {
+            "from": 62,
+            "to": 263,
+            "relation": "父子"
+        },
+        {
+            "from": 63,
+            "to": 112,
+            "relation": "密友"
+        },
+        {
+            "from": 47,
+            "to": 63,
+            "relation": "部将"
+        },
+        {
+            "from": 65,
+            "to": 64,
+            "relation": "父子"
+        },
+        {
+            "from": 544,
+            "to": 64,
+            "relation": "堂兄"
+        },
+        {
+            "from": 64,
+            "to": 545,
+            "relation": "堂兄"
+        },
+        {
+            "from": 64,
+            "to": 543,
+            "relation": "堂兄"
+        },
+        {
+            "from": 64,
+            "to": 542,
+            "relation": "族侄"
+        },
+        {
+            "from": 64,
+            "to": 356,
+            "relation": "族侄"
+        },
+        {
+            "from": 64,
+            "to": 293,
+            "relation": "兄弟"
+        },
+        {
+            "from": 64,
+            "to": 308,
+            "relation": "兄弟"
+        },
+        {
+            "from": 64,
+            "to": 527,
+            "relation": "纳妾"
+        },
+        {
+            "from": 64,
+            "to": 528,
+            "relation": "兄妹"
+        },
+        {
+            "from": 64,
+            "to": 337,
+            "relation": "女婿"
+        },
+        {
+            "from": 64,
+            "to": 208,
+            "relation": "密友"
+        },
+        {
+            "from": 64,
+            "to": 208,
+            "relation": "臣属"
+        },
+        {
+            "from": 65,
+            "to": 66,
+            "relation": "兄弟"
+        },
+        {
+            "from": 65,
+            "to": 293,
+            "relation": "父子"
+        },
+        {
+            "from": 65,
+            "to": 308,
+            "relation": "父子"
+        },
+        {
+            "from": 65,
+            "to": 528,
+            "relation": "父女"
+        },
+        {
+            "from": 65,
+            "to": 15,
+            "relation": "痛恨"
+        },
+        {
+            "from": 66,
+            "to": 545,
+            "relation": "父子"
+        },
+        {
+            "from": 66,
+            "to": 543,
+            "relation": "父子"
+        },
+        {
+            "from": 67,
+            "to": 46,
+            "relation": "友人"
+        },
+        {
+            "from": 86,
+            "to": 68,
+            "relation": "谋士"
+        },
+        {
+            "from": 69,
+            "to": 535,
+            "relation": "密友"
+        },
+        {
+            "from": 69,
+            "to": 15,
+            "relation": "痛恨"
+        },
+        {
+            "from": 70,
+            "to": 385,
+            "relation": "父子"
+        },
+        {
+            "from": 2,
+            "to": 70,
+            "relation": "臣属"
+        },
+        {
+            "from": 71,
+            "to": 266,
+            "relation": "义父"
+        },
+        {
+            "from": 71,
+            "to": 238,
+            "relation": "叔侄"
+        },
+        {
+            "from": 86,
+            "to": 72,
+            "relation": "部将"
+        },
+        {
+            "from": 261,
+            "to": 73,
+            "relation": "部将"
+        },
+        {
+            "from": 46,
+            "to": 73,
+            "relation": "部将"
+        },
+        {
+            "from": 73,
+            "to": 314,
+            "relation": "族兄"
+        },
+        {
+            "from": 74,
+            "to": 75,
+            "relation": "族兄"
+        },
+        {
+            "from": 74,
+            "to": 416,
+            "relation": "父子"
+        },
+        {
+            "from": 2,
+            "to": 74,
+            "relation": "重臣"
+        },
+        {
+            "from": 2,
+            "to": 75,
+            "relation": "重臣"
+        },
+        {
+            "from": 75,
+            "to": 409,
+            "relation": "父子"
+        },
+        {
+            "from": 75,
+            "to": 417,
+            "relation": "父子"
+        },
+        {
+            "from": 75,
+            "to": 421,
+            "relation": "父子"
+        },
+        {
+            "from": 75,
+            "to": 428,
+            "relation": "父子"
+        },
+        {
+            "from": 75,
+            "to": 313,
+            "relation": "叔侄"
+        },
+        {
+            "from": 75,
+            "to": 94,
+            "relation": "侄婿"
+        },
+        {
+            "from": 15,
+            "to": 76,
+            "relation": "部将"
+        },
+        {
+            "from": 51,
+            "to": 77,
+            "relation": "部将"
+        },
+        {
+            "from": 146,
+            "to": 78,
+            "relation": "兄弟"
+        },
+        {
+            "from": 86,
+            "to": 78,
+            "relation": "谋士"
+        },
+        {
+            "from": 50,
+            "to": 79,
+            "relation": "部将"
+        },
+        {
+            "from": 261,
+            "to": 79,
+            "relation": "部将"
+        },
+        {
+            "from": 46,
+            "to": 79,
+            "relation": "部将"
+        },
+        {
+            "from": 79,
+            "to": 218,
+            "relation": "友人"
+        },
+        {
+            "from": 96,
+            "to": 80,
+            "relation": "谋士"
+        },
+        {
+            "from": 86,
+            "to": 81,
+            "relation": "部将"
+        },
+        {
+            "from": 87,
+            "to": 82,
+            "relation": "部将"
+        },
+        {
+            "from": 51,
+            "to": 83,
+            "relation": "部将"
+        },
+        {
+            "from": 87,
+            "to": 84,
+            "relation": "部将"
+        },
+        {
+            "from": 86,
+            "to": 85,
+            "relation": "父子"
+        },
+        {
+            "from": 88,
+            "to": 85,
+            "relation": "兄弟"
+        },
+        {
+            "from": 89,
+            "to": 85,
+            "relation": "兄弟"
+        },
+        {
+            "from": 86,
+            "to": 87,
+            "relation": "兄弟"
+        },
+        {
+            "from": 86,
+            "to": 88,
+            "relation": "父子"
+        },
+        {
+            "from": 86,
+            "to": 89,
+            "relation": "父子"
+        },
+        {
+            "from": 90,
+            "to": 86,
+            "relation": "堂兄"
+        },
+        {
+            "from": 86,
+            "to": 91,
+            "relation": "堂兄"
+        },
+        {
+            "from": 450,
+            "to": 547,
+            "relation": "父子"
+        },
+        {
+            "from": 2,
+            "to": 146,
+            "relation": "王佐"
+        },
+        {
+            "from": 2,
+            "to": 170,
+            "relation": "谋士"
+        },
+        {
+            "from": 2,
+            "to": 191,
+            "relation": "谋士"
+        },
+        {
+            "from": 2,
+            "to": 204,
+            "relation": "谋主"
+        }
+    ],
+    "categories": {
+        "蜀": [46],
+        "魏": [2],
+        "吴": [65, 64, 293],
+        "董": [15],
+        "其他": []
+    }
+}

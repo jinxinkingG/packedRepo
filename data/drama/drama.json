@@ -1,0 +1,84 @@
+[
+    {
+        "ID": 0,
+        "name": "董卓弄权",
+        "enabled": true,
+        "path": "",
+        "description": "火德衰微，汉室倾颓。\n西凉武人占据京畿，挟制天子，搅动天下。\n心怀不满的群雄纷纷扬旗反抗，乱世已不可避免。",
+        "fromYear": 189,
+        "fromMonth": 1
+    },
+    {
+        "ID": 1,
+        "name": "官渡之战",
+        "enabled": true,
+        "path": "guandu",
+        "description": "昔日少年任侠为伴，今已各为一方重石。\n四世三公的望族，不拘一格的枭雄。\n隔河相望，大战一触即发，谁主沉浮？",
+        "fromYear": 199,
+        "fromMonth": 10,
+        "alliances": {
+            "1-10": 12,
+            "1-4": 12,
+            "2-7": 12
+        }
+    },
+    {
+        "ID": 2,
+        "name": "卧龙出山",
+        "enabled": true,
+        "path": "wolong",
+        "description": "织席贩履的刘汉皇叔，心怀大义，勇士追随。\n然智囊未至，飘零多年，客居新野。\n在此藏龙卧虎之地，命运之笔将如何转锋？",
+        "fromYear": 206,
+        "fromMonth": 12,
+        "alliances": {
+            "8-9": 12,
+            "8-13": 12,
+            "8-14": 12,
+            "8-15": 12,
+            "9-13": 12,
+            "9-14": 12,
+            "9-15": 12,
+            "13-14": 12,
+            "13-15": 12,
+            "14-15": 12,
+            "4-8": 12
+        },
+        "events": [
+            "chengyu_sheji",
+            "xushu_wuyan",
+            "xushu_bencao",
+            "zilong_jiuxu",
+            "wolong_chushan",
+            "wolong_heren",
+            "zilong_jiuxu_2",
+            "qianlong_chuyuan"
+        ]
+    },
+    {
+        "ID": 3,
+        "name": "赤壁之战",
+        "enabled": false,
+        "testing": false,
+        "path": "chibi",
+        "description": "故垒西边，惊涛拍岸，强虏何以铩羽？\n雄姿英发，羽扇纶巾，豪杰几多风流！\n江山如梦，惟月惟影，可堪对酒，一樽。",
+        "fromYear": 208,
+        "fromMonth": 11
+    },
+    {
+        "ID": 4,
+        "name": "三国鼎立",
+        "enabled": false,
+        "testing": false,
+        "path": "dingli",
+        "description": ""
+    },
+    {
+        "ID": 5,
+        "name": "星耀九州",
+        "enabled": true,
+        "path": "stars",
+        "description": "天行有常，而世多无常。\n将星散落九州，枭雄旗布天下。\n棋盘重摆，香茶再续。这次的故事，怎么讲？",
+        "fromYear": 273,
+        "fromMonth": 1
+    }
+]

@@ -1,0 +1,442 @@
+{
+	"Town_Search": {
+		"gif": "01.png",
+		"data": "01.json",
+		"se": "Town_Search.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": false
+	},
+	"Town_Move": {
+		"gif": "00.png",
+		"data": "00.json",
+		"se": "Town_Move.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Farm_00": {
+		"gif": "02.png",
+		"data": "02.json",
+		"se": "Town_Develop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Farm_01": {
+		"gif": "03.png",
+		"data": "03.json",
+		"se": "Town_Develop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Farm_02": {
+		"gif": "04.png",
+		"data": "04.json",
+		"se": "Town_Develop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Farm_03": {
+		"gif": "05.png",
+		"data": "05.json",
+		"se": "Town_Develop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Farm_04": {
+		"gif": "06.png",
+		"data": "06.json",
+		"se": "Town_Develop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Bus_00": {
+		"gif": "07.png",
+		"data": "07.json",
+		"se": "Town_Develop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Bus_01": {
+		"gif": "08.png",
+		"data": "08.json",
+		"se": "Town_Develop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Bus_02": {
+		"gif": "06.png",
+		"data": "06.json",
+		"se": "Town_Develop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Bus_03": {
+		"gif": "09.png",
+		"data": "09.json",
+		"se": "Town_Develop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Bus_04": {
+		"gif": "10.png",
+		"data": "10.json",
+		"se": "Town_Develop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Bus_05": {
+		"gif": "11.png",
+		"data": "11.json",
+		"se": "Town_Develop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Pop_00": {
+		"gif": "11.png",
+		"data": "11.json",
+		"se": "Town_Population.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Pop_01": {
+		"gif": "10.png",
+		"data": "10.json",
+		"se": "Town_Population.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Pop_02": {
+		"gif": "12.png",
+		"data": "12.json",
+		"se": "Town_Population.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Develop_Pop_03": {
+		"gif": "07.png",
+		"data": "07.json",
+		"se": "Town_Population.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Ally": {
+		"gif": "13.png",
+		"data": "13.json",
+		"se": "Town_Ally.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Alienate": {
+		"gif": "14.png",
+		"data": "14.json",
+		"se": "Town_Alienate.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Canvass": {
+		"gif": "15.png",
+		"data": "15.json",
+		"se": "Town_Alienate.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Town_Save": {
+		"gif": "16.png",
+		"data": "16.json",
+		"se": "Town_Save.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Barrack_Conscription": {
+		"gif": "17.png",
+		"data": "17.json",
+		"se": "Barrack_Conscription.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Barrack_Attack": {
+		"gif": "18.png",
+		"data": "18.json",
+		"se": "Barrack_Attack.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Warehouse_Transgoods": {
+		"gif": "19.png",
+		"data": "19.json",
+		"se": "Warehouse_Transgoods.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Warehouse_AwardActor": {
+		"gif": "20.png",
+		"data": "20.json",
+		"se": "Warehouse_Award.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Warehouse_AwardPop": {
+		"gif": "21.png",
+		"data": "21.json",
+		"se": "Warehouse_Award.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Fair_EquipShop": {
+		"gif": "22.png",
+		"data": "22.json",
+		"se": "Fair_Shop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": false
+	},
+	"Fair_Hospital": {
+		"gif": "23.png",
+		"data": "23.json",
+		"se": "Fair_Hospital.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Fair_School": {
+		"gif": "24.png",
+		"data": "24.json",
+		"se": "Fair_Readbook.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Fair_HockShop": {
+		"gif": "25.png",
+		"data": "25.json",
+		"se": "Fair_Shop.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Strategy_Fire": {
+		"gif": "26.png",
+		"data": "26.json",
+		"se": "Strategy01.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_HellFire": {
+		"gif": "26_2.png",
+		"data": "26.json",
+		"se": "Strategy01.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_Trap": {
+		"gif": "27.png",
+		"data": "27.json",
+		"se": "Strategy03.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_TrapLight": {
+		"gif": "27-1.png",
+		"data": "27-1.json",
+		"se": "lighting.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_FakeSodiers": {
+		"gif": "28.png",
+		"data": "28.json",
+		"se": "Strategy04.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_Forest": {
+		"gif": "29.png",
+		"data": "29.json",
+		"se": "Strategy04.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_Water": {
+		"gif": "30.png",
+		"data": "30.json",
+		"se": "Strategy01.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_AttackCity": {
+		"gif": "31.png",
+		"data": "31.json",
+		"se": "Strategy01.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_DropStone": {
+		"gif": "32.png",
+		"data": "32.json",
+		"se": "Strategy03.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_Talking": {
+		"gif": "33.png",
+		"data": "33.json",
+		"se": "Strategy02.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_ConnectBoat": {
+		"gif": "34.png",
+		"data": "34.json",
+		"se": "Strategy03.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_CityArrows": {
+		"gif": "35.png",
+		"data": "35.json",
+		"se": "Strategy01.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"Strategy_EightStone": {
+		"gif": "36.png",
+		"data": "36.json",
+		"se": "Strategy03.ogg",
+		"width": 348,
+		"height": 265,
+		"loops": true
+	},
+	"AI_Attack": {
+		"gif": "37.png",
+		"data": "37.json",
+		"se": "Barrack_Attack.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"AI_War": {
+		"gif": "38.png",
+		"data": "38.json",
+		"se": "AI_War.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": false
+	},
+	"CollectMoney": {
+		"gif": "39.png",
+		"data": "39.json",
+		"se": "Collect.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"CollectRice": {
+		"gif": "40.png",
+		"data": "40.json",
+		"se": "Collect.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Disaster_Waterlog": {
+		"gif": "41.png",
+		"data": "41.json",
+		"se": "Disaster.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Disaster_Dry": {
+		"gif": "42.png",
+		"data": "42.json",
+		"se": "Disaster.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Disaster_Riot": {
+		"gif": "43.png",
+		"data": "43.json",
+		"se": "Disaster.ogg",
+		"width": 348,
+		"height": 348,
+		"loops": true
+	},
+	"Unify_1": {
+		"gif": "44.png",
+		"data": "44.json",
+		"se": "",
+		"width": 640,
+		"height": 448,
+		"loops": false
+	},
+	"Unify_2": {
+		"gif": "45.png",
+		"data": "45.json",
+		"se": "",
+		"width": 640,
+		"height": 448,
+		"loops": false
+	},
+	"Unify_3": {
+		"gif": "46.png",
+		"data": "46.json",
+		"se": "",
+		"width": 640,
+		"height": 448,
+		"loops": true
+	},
+	"Strategy_KongChengJi": {
+		"gif": "47.png",
+		"data": "47.json",
+		"se": "Strategy01.ogg",
+		"width": 282,
+		"height": 648,
+		"loops": true
+	},
+    "Player_Defeat": {
+		"gif": "player_defeat.png",
+		"data": "player_defeat.json",
+		"se": "War_End.ogg",
+		"width": 282,
+		"height": 648,
+		"loops": false
+    }
+}

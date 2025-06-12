@@ -1,0 +1,365 @@
+[
+  {
+    "name": "混乱",
+    "data": {
+      "scene": "小战场",
+      "type": "负面",
+      "label": "混乱"
+    }
+  },
+  {
+	"name":"魅惑",
+	    "data":{
+		    "scene":"小战场",
+		    "type":"负面",
+		    "label":"魅惑"
+	    }
+  },
+  {
+    "name": "全军死战",
+    "data": {
+      "scene": "小战场",
+      "type": "负面",
+      "label": "全军死战"
+    }
+  },
+  {
+    "name": "武将死战",
+    "data": {
+      "scene": "小战场",
+      "type": "负面",
+      "label": "武将死战"
+    }
+  },
+  {
+    "name": "小战场经验加成",
+    "data": {
+      "scene": "小战场",
+      "type": "正面",
+      "label": "经验加成"
+    }
+  },
+  {
+    "name": "大战场经验加成",
+    "data": {
+      "scene": "大战场",
+      "type": "正面",
+      "label": "经验加成",
+      "settlement": "己方"
+    }
+  },
+  {
+    "name": "士气向上",
+    "data": {
+      "scene": "小战场",
+      "type": "正面",
+      "label": "士气向上"
+    }
+  },
+  {
+    "name": "威赫",
+    "data": {
+      "scene": "小战场",
+      "type": "负面",
+      "label": "战术禁用"
+    }
+  },
+  {
+    "name": "强弩",
+    "data": {
+      "scene": "小战场",
+      "type": "正面",
+      "label": "射程|2"
+    }
+  },
+  {
+    "name": "火矢",
+    "data": {
+      "scene": "小战场",
+      "type": "正面",
+      "label": "火矢"
+    }
+  },
+  {
+    "name": "咒缚",
+    "data": {
+      "scene": "小战场",
+      "type": "正面",
+      "label": "定止"
+    }
+  },
+  {
+    "name": "战术禁用",
+    "data": {
+      "scene": "小战场",
+      "type": "负面",
+      "label": "战术禁用"
+    }
+  },
+  {
+    "name": "疲兵",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "疲兵",
+      "settlement": "己方",
+      "desc": "负面状态。小战场士气减半，战术值减半。"
+    }
+  },
+  {
+    "name": "伤神",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "伤神",
+      "settlement": "己方",
+      "desc": "负面状态。使用计策命中率减半，计策伤害-50%。"
+    }
+  },
+  {
+    "name": "铁索连环",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "铁索",
+      "settlement": "任意",
+      "desc": "①无法成为[乱水]或[水攻]的目标，且不会被水伤害传导；\n②受到火、雷属性计策伤害时，会产生伤害传导；\n③每个受到传导伤害的目标，会概率挣脱铁索状态，基础概率 = 知 / 100 * 知 / 100 * 统 / 125，并且会随命中次数逐渐提高。"
+    }
+  },
+  {
+    "name": "禁止攻击移动",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "禁止移动、禁止攻击",
+      "settlement": "己方",
+      "desc": "负面状态。禁止攻击和移动。"
+    }
+  },
+  {
+    "name": "禁止攻击用计",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "禁用计策、禁止攻击",
+      "settlement": "己方",
+      "desc": "负面状态。禁止攻击和用计。"
+    }
+  },
+  {
+    "name": "禁兵",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "禁止攻击",
+      "settlement": "己方",
+      "desc": "负面状态。禁止攻击。"
+    }
+  },
+  {
+    "name": "禁策",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "禁用计策",
+      "settlement": "己方",
+      "desc": "负面状态。禁止用计。"
+    }
+  },
+  {
+    "name": "中毒",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "中毒",
+      "settlement": "己方",
+      "desc": "负面状态。武、胆、知、统临时降低10%"
+    }
+  },
+  {
+    "name": "传教",
+    "data": {
+      "scene": "小战场",
+      "type": "正面",
+      "label": "传教",
+      "settlement": "己方"
+    }
+  },
+  {
+    "name": "连弩",
+    "data": {
+      "scene": "小战场",
+      "type": "正面",
+      "label": "连弩",
+      "settlement": "己方"
+    }
+  },
+  {
+    "name": "骁果",
+    "data": {
+      "scene": "小战场",
+      "type": "正面",
+      "label": "骁果",
+      "settlement": "己方"
+    }
+  },
+  {
+    "name": "愈合",
+    "data": {
+      "scene": "大战场",
+      "type": "正面",
+      "label": "愈合",
+      "settlement": "己方",
+      "desc": "良性状态。每日你的体+5，直到恢复至体力上限。"
+    }
+  },
+  {
+    "name": "沉默",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "沉默",
+      "settlement": "敌方"
+    }
+  },
+  {
+    "name": "迟滞",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "迟滞",
+      "settlement": "己方",
+      "desc": "负面状态。你移动时所需消耗的机动力+2。"
+    }
+  },
+  {
+    "name": "恫吓",
+    "data": {
+      "scene": "单挑",
+      "type": "负面"
+    }
+  },
+  {
+    "name": "八阵",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "禁止移动、禁止攻击、乱石阵",
+      "settlement": "己方",
+      "desc": "负面状态。你被禁止主动攻击和移动，每天会损失一定数量的士兵。"
+    },
+    "impact": {
+      "soldier": "random(80,150)"
+    }
+  },
+  {
+    "name": "八阵*",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "禁止移动、禁止攻击、乱石阵",
+      "settlement": "己方",
+      "desc": "负面状态。你被禁止主动攻击和移动，每天会损失一定数量的士兵。"
+    },
+    "impact": {
+      "soldier": "random(40,80)"
+    }
+  },
+  {
+    "name": "定止",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "禁止移动",
+      "settlement": "己方",
+      "desc": "负面状态。你无法移动。"
+    }
+  },
+  {
+    "name": "围困",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "围困",
+      "settlement": "敌方",
+      "desc": "负面状态，你无法从大战场撤退，且无法主动回营地。"
+    }
+  },
+  {
+    "name": "十面埋伏",
+    "type": "area",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "伏兵",
+      "settlement": "己方"
+    },
+    "area": {
+      "radius": 2,
+      "type": "任意",
+      "target": "敌方",
+      "terrian": "树林、河流"
+    }
+  },
+  {
+    "name": "计防",
+    "data": {
+      "scene": "大战场",
+      "type": "正面",
+      "label": "计防",
+      "settlement": "敌方"
+    }
+  },
+  {
+    "name": "诱敌",
+    "data": {
+      "scene": "大战场",
+      "type": "正面",
+      "label": "诱敌",
+      "settlement": "敌方",
+      "desc": "良性状态。回合结束后，附近一定范围内的敌军将向你靠拢。"
+    },
+    "impact": {
+      "callback": "cb_induce_enemy"
+    }
+  },
+  {
+    "name": "枪阵",
+    "data": {
+      "scene": "小战场",
+      "type": "正面",
+      "label": "长兵",
+      "settlement": "己方"
+    }
+  },
+  {
+    "name": "神佑",
+    "data": {
+      "scene": "大战场",
+      "type": "正面",
+      "label": "神佑",
+      "settlement": "敌方",
+      "desc": "良性状态。本状态存在时，无法附加负面状态。"
+    }
+  },
+  {
+    "name": "罢兵",
+    "data": {
+      "scene": "大战场",
+      "type": "中性",
+      "label": "禁止攻击、禁用计策",
+      "settlement": "己方",
+      "desc": "中性状态。无法主动攻击、使用计策，绝大多数主动技也被禁用。"
+    }
+  },
+  {
+    "name": "潜行",
+    "data": {
+      "scene": "大战场",
+      "type": "中性",
+      "label": "禁止攻击、禁用计策、潜行",
+      "settlement": "敌方",
+      "desc": "中性状态。你无法使用计策，无法发起攻击宣言，你在山、林地形时无法成为计策和攻击宣言的目标。"
+    }
+  }
+]
