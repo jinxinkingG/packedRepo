@@ -463,10 +463,13 @@ func _action_move(unit:Battle_Unit,state_like = "")->Dictionary:
 
 	# 可否无视障碍
 	var blockingIgnored = false
-	var ignoreBlockingSetting = StaticManager.get_battle_ignore_block_setting()
-	if wa.get_troops_type() in ignoreBlockingSetting:
-		var ignoreBlockingTerrians = ignoreBlockingSetting[wa.get_troops_type()]
-		blockingIgnored = bf.get_terrian() in ignoreBlockingTerrians
+	if unit.get_combat_val_max("仙兵") > 0:
+		blockingIgnored = true
+	else:
+		var ignoreBlockingSetting = StaticManager.get_battle_ignore_block_setting()
+		if wa.get_troops_type() in ignoreBlockingSetting:
+			var ignoreBlockingTerrians = ignoreBlockingSetting[wa.get_troops_type()]
+			blockingIgnored = bf.get_terrian() in ignoreBlockingTerrians
 
 	# 三线规则
 	var directions = []

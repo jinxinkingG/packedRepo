@@ -5,31 +5,27 @@ extends "effect_20000.gd"
 
 func on_trigger_20007()->bool:
 	# 计算移动机动力消耗时
-	var leader = check_zone()
-	if leader == null:
-		return false
 	var targetInfo = DataManager.get_env_dict("行军目标")
 	if not "x" in targetInfo or not "y" in targetInfo:
 		return false
 	var targetPosition = Vector2(int(targetInfo["x"]), int(targetInfo["y"]))
-	var disv = targetPosition - leader.position
-	if max(abs(disv.x), abs(disv.y)) > 1:
+	var leader = check_zone(targetPosition)
+	if leader == null:
+		return false
+	if Global.get_range_distance(targetPosition, leader.position) > 1:
 		return false
 	set_max_move_ap_cost([], 0)
 	return false
 
 func on_trigger_20014()->bool:
 	# 计算攻击机动力时
-	var leader = check_zone()
-	if leader == null:
-		return false
 	var costInfo = DataManager.get_env_dict("战争.攻击消耗")
 	var targetId = Global.intval(costInfo["攻击目标"])
 	var targetWA = DataManager.get_war_actor(targetId)
 	if targetWA == null or targetWA.disabled:
 		return false
-	var disv = targetWA.position - leader.position
-	if max(abs(disv.x), abs(disv.y)) > 1:
+	var leader = check_zone(targetWA.position)
+	if leader == null:
 		return false
 	costInfo["固定"] = 0
 	DataManager.set_env("战争.攻击消耗", costInfo)
@@ -47,7 +43,7 @@ func on_trigger_20024()->bool:
 	DataManager.set_env(key, msg)
 	return false
 
-func check_zone()->War_Actor:
+func check_zone(pos:Vector2)->War_Actor:
 	if me.get_main_actor_id() == me.actorId:
 		# 主将不生效
 		return null
@@ -56,7 +52,6 @@ func check_zone()->War_Actor:
 		return null
 	if not me.has_position() or not leader.has_position():
 		return null
-	var disv = me.position - leader.position
-	if max(abs(disv.x), abs(disv.y)) > 1:
+	if Global.get_range_distance(pos, leader.position) > 1:
 		return null
 	return leader

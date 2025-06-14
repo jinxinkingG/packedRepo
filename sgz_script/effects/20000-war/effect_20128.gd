@@ -8,12 +8,3 @@ func on_trigger_20005()->bool:
 	cost = max(3, int(cost * 2 / 3))
 	set_scheme_ap_cost("ALL", cost)
 	return false
-
-func on_trigger_20004()->bool:
-	var schemes = get_env_array("战争.计策列表")
-	var msg = get_env_str("战争.计策提示")
-	for scheme in schemes:
-		var cost = int(scheme[1])
-		scheme[1] = max(3, int(cost * 2 / 3))
-	change_stratagem_list(me.actorId, schemes, msg)
-	return false

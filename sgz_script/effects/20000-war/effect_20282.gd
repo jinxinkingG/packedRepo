@@ -39,7 +39,7 @@ func effect_20282_2():
 	var msg = "机动力上限-{0}\n对{1}发动【{2}】，使其中毒，可否？".format([
 		COST_MAX_AP, targetActor.get_name(), ske.skill_name,
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20282_3():
@@ -48,7 +48,7 @@ func effect_20282_3():
 	var targetActor = ActorHelper.actor(targetId)
 
 	ske.cost_war_cd(99999)
-	ske.change_actor_ap_limit(ske.skill_actorId, -COST_MAX_AP)
+	ske.set_actor_extra_ap_limit(actorId, -COST_MAX_AP)
 	ske.set_war_buff(targetId, "中毒", BUFF_TURNS)
 
 	var msg = "{0}休得张狂，看箭！".format([

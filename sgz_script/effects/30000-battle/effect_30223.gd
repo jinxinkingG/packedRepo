@@ -33,9 +33,8 @@ func on_trigger_30098()->bool:
 	if recovered > 0:
 		# 加入一个不可见的新战场单位，否则是白加
 		# 因为之后还会根据战场剩余士兵数重新计算兵力
-		var bu = Battle_Unit.new()
+		var bu = Battle_Unit.new(actorId)
 		bu.unitId = DataManager.battle_units.size()
-		bu.leaderId = actorId
 		bu.direction = 1
 		bu.Type = "步（收降）"
 		bu._private_hp = recovered

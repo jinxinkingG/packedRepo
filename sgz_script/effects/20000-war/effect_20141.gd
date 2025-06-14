@@ -25,6 +25,8 @@ func on_trigger_20012()->bool:
 	var targetWA = DataManager.get_war_actor(se.targetId)
 	if targetWA == null or targetWA.disabled:
 		return false
+	if not me.is_enemy(targetWA):
+		return false
 	var selected = ske.get_war_skill_val_int(ACTIVE_EFFECT_ID, -1, -1)
 	if selected >= 0:
 		var wa = DataManager.get_war_actor(selected)

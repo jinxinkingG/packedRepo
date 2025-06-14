@@ -456,13 +456,8 @@ func player_start():
 	# 关闭技能列表缓存
 	SkillHelper.reset_skills_list_cache(false)
 	DataManager.show_orderbook = true
-	# 检查闲时对话
-	if _check_wait_dialog():
-		set_view_model(-1)
-		FlowManager.add_flow("player_free_dialog")
-		return
 	if DataManager.orderbook <= 0:
-		set_view_model(-1);
+		set_view_model(-1)
 		FlowManager.add_flow("player_end");
 		return;
 	var vstateId = DataManager.vstates_sort[DataManager.vstate_no];
@@ -484,14 +479,9 @@ func player_start():
 #玩家回合等待操作阶段
 func player_ready():
 	Global.clear_waits()
-	# 检查闲时对话
-	if _check_wait_dialog():
-		set_view_model(-1)
-		FlowManager.add_flow("player_free_dialog")
-		return
 	LoadControl.end_script()
 	if DataManager.orderbook <= 0:
-		set_view_model(-1);
+		set_view_model(-1)
 		FlowManager.add_flow("player_end")
 		return
 	SoundManager.play_bgm("", true, true)
@@ -527,11 +517,6 @@ func player_end():
 	return
 
 func player_end_clear():
-	# 检查闲时对话
-	if _check_wait_dialog():
-		set_view_model(-1)
-		FlowManager.add_flow("player_free_dialog")
-		return
 	set_view_model(-1)
 	DataManager.show_orderbook = false
 	SceneManager.clear_bottom()
@@ -568,11 +553,6 @@ func city_actorinfolist():
 #A键进入城市菜单
 func city_enter_menu():
 	Global.clear_waits()
-	# 检查闲时对话
-	if _check_wait_dialog():
-		set_view_model(-1)
-		FlowManager.add_flow("player_free_dialog")
-		return
 	LoadControl.end_script()
 	if DataManager.orderbook <= 0:
 		set_view_model(-1)
@@ -1024,30 +1004,6 @@ func _auto_supply_to(city:clCity.CityInfo, setting:Array, targetCity:clCity.City
 			targetCity.get_name(), int(targetCity.get_property(attrs[i])),
 		]), true)
 	return true
-
-func _check_wait_dialog()->bool:
-	for city in clCity.all_cities():
-		var d = city.next_free_dialog()
-		if d != null:
-			DataManager.set_env("内政.玩家.等待对白", d.output())
-			return true
-	return false
-
-func player_free_dialog()->void:
-	var data = DataManager.get_env_dict("内政.玩家.等待对白")
-	if data.empty():
-		FlowManager.add_flow("city_enter_menu")
-		return
-	var d = clCity.CityInfo.DialogInfo.new()
-	d.input(data)
-	DataManager.unset_env("内政.玩家.等待对白")
-	DataManager.twinkle_citys = [d.cityId]
-	DataManager.show_orderbook = false
-	SceneManager.show_confirm_dialog(d.msg, d.actorId, d.mood)
-	DataManager.cityInfo_type = 1
-	SceneManager.show_cityInfo(true, d.cityId)
-	set_view_model(999)
-	return
 
 # 观海模式，玩家加入游戏
 func player_join():

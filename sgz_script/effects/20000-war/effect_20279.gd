@@ -27,6 +27,7 @@ func on_trigger_20010()->bool:
 	recorded[KEY_ACTION_STATUS] = 1
 	ske.set_war_skill_val(recorded, 1)
 	se.set_must_success(actorId, ske.skill_name)
+	se.skill = ske.skill_name
 	return false
 
 func on_trigger_20011()->bool:

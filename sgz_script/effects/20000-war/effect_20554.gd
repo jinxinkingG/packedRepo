@@ -11,11 +11,11 @@ func on_trigger_20009() -> bool:
 		return false
 
 	var added = ske.change_actor_exp(actorId, EXP_GAIN)
-	var msg = "勤能补拙"
+	var memo = "勤能补拙，"
 	if se.succeeded > 0:
-		msg = "熟能生巧"
-	msg += "，经验+{0}".format([added])
+		memo = "熟能生巧，"
 	if me.get_controlNo() < 0:
-		msg = me.get_name() + msg
+		memo = "{0}【{1}】".format([me.get_name(), ske.skill_name])
+	var msg = memo + "经验+{0}".format([added])
 	se.append_result(ske.skill_name, msg, added, actorId)
 	return false

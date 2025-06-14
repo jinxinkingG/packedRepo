@@ -346,5 +346,5 @@ func city_data_deal()->void:
 					c_actor.set_loyalty(90)
 		#DataManager.game_trace("--循环监狱结束--");
 
-	DataManager.common_variable["大限检查"]=[];
+	DataManager.set_env("大限检查", [])
 	return

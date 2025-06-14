@@ -24,13 +24,13 @@ func best_use_strategy(fromId:int, excludedActorIds:PoolIntArray=[], schemeHisto
 			# 以避免 20006 回调，实现加速
 			if silenced == -1:
 				silenced = 0
-				if SkillHelper.actor_has_skills(fromId, ["无言"]):
+				if SkillHelper.actor_has_skills(fromId, ["无言"], false):
 					silenced = 1
 			if silenced == 1:
 				continue
-		#DataManager.game_trace("")
+		DataManager.grouped_trace("")
 		var targets = scheme.get_available_targets(fromId, excludedActorIds)[0]
-		#DataManager.game_trace("FIND_SCHEME_TARGETS<{0},{1}>".format([from_actorId, scheme.name]))
+		DataManager.grouped_trace("TARGET")
 		if targets.empty():
 			# 当前没有可释放的目标，跳过
 			continue
@@ -45,7 +45,6 @@ func best_use_strategy(fromId:int, excludedActorIds:PoolIntArray=[], schemeHisto
 				ret["计策名"] = scheme.name
 				ret["命中率"] = rate
 				ret["评分"] = score
-			#DataManager.game_trace(scheme.name + ".SCORE:" + str(score))
 	return ret
 
 #获取武将对目标用指定计策的评分
@@ -64,6 +63,8 @@ func _get_score_of_strategy_to(scheme:StratagemInfo, fromId:int, targetId:int, s
 				if se.succeeded <= 0:
 					continue
 				if scheme.may_damage_soldier() and se.get_soldier_damage_for(se.targetId) == 0:
+					if se.skill == "攻心":
+						continue
 					# 计策成功但未造成伤害的情况
 					_notice_for_exceptional(scheme, fromId, targetId)
 					return [0.0, 0]

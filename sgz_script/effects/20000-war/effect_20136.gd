@@ -1,13 +1,14 @@
 extends "effect_20000.gd"
 
 #呼风主动技 #道术
-#【呼风】大战场，主动技。①你可以选择距离8以内某个对方武将，以该敌将为中心5×5范围内，发动道术，使范围内所有单位随机排列。每个回合限1次。②你为诸葛亮，则可以指定风向。（八个风向）
+#【呼风】大战场，主动技。你可以选择距离8以内某个对方武将，以该敌将为中心5×5范围内，发动道术，使范围内所有单位随机排列。每个回合限1次。若已 <观星>，你可以指定一次风向。
 
 const EFFECT_ID = 20136
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
 const COST_AP = 0
 const STRATAGEM = "呼风"
+const GUANXING_EFFECT_ID = 20170
 
 func on_view_model_2000():
 	wait_for_choose_actor(FLOW_BASE + "_2")
@@ -120,33 +121,25 @@ func _perform_skill(isAI:bool, nextViewModel:int=-1)->void:
 	var se = DataManager.get_current_stratagem_execution()
 	var targetWA = DataManager.get_war_actor(se.targetId)
 
-	if actorId == StaticManager.ACTOR_ID_ZHUGELIANG:
+	if ske.get_war_skill_val_int(GUANXING_EFFECT_ID) == 1:
 		if se.get_env_int("风向X", 99) == 99:
 			# 未设定风向
-			if me.get_controlNo() < 0:
-				# AI 总是往远处吹
-				var disv = targetWA.position - me.position
-				disv.x = 0 if disv.x == 0 else -1 if disv.x < 0 else 1
-				disv.y = 0 if disv.y == 0 else -1 if disv.y < 0 else 1
-				se.set_env("风向X", int(disv.x))
-				se.set_env("风向Y", int(disv.y))
-			else:
-				# 玩家选择
-				var directions = []
-				var values = []
-				for i in StaticManager.ALL_DIRECTIONS.size():
-					var dir = StaticManager.ALL_DIRECTIONS[i]
-					if dir == Vector2.ZERO:
-						directions.append("")
-						values.append(-1)
-						continue
-					directions.append(StaticManager.ALL_DIRECTION_NAMES[i])
-					values.append(i)
-				SceneManager.show_unconfirm_dialog("天地之机，亦在吾算中\n风往哪里吹？", actorId)
-				SceneManager.bind_top_menu(directions, values, 3, Vector2(40, 20), Vector2(160, 60))
-				LoadControl.set_view_model(2500)
-				return
-	
+			# 玩家选择
+			var directions = []
+			var values = []
+			for i in StaticManager.ALL_DIRECTIONS.size():
+				var dir = StaticManager.ALL_DIRECTIONS[i]
+				if dir == Vector2.ZERO:
+					directions.append("")
+					values.append(-1)
+					continue
+				directions.append(StaticManager.ALL_DIRECTION_NAMES[i])
+				values.append(i)
+			SceneManager.show_unconfirm_dialog("天地之机，亦在吾算中\n风往哪里吹？", actorId)
+			SceneManager.bind_top_menu(directions, values, 3, Vector2(40, 20), Vector2(160, 60))
+			LoadControl.set_view_model(2500)
+			return
+
 	ske.cost_war_cd(1)
 	ske.cost_ap(COST_AP, true)
 	ske.war_report()
@@ -173,5 +166,6 @@ func effect_20136_direction() -> void:
 		var dir = StaticManager.ALL_DIRECTIONS[option]
 		se.set_env("风向X", dir.x)
 		se.set_env("风向Y", dir.y)
+		ske.set_war_skill_val(2, 99999, GUANXING_EFFECT_ID)
 	goto_step("3")
 	return

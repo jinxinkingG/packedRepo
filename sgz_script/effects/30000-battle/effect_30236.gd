@@ -69,9 +69,8 @@ func effect_30236_2():
 		var setting = settings.pop_front()
 		ske.cost_skill_flags(flagSceneId, FLAG_ID, FLAG_NAME, UNIT_HP)
 		added += 1
-		var bu = Battle_Unit.new()
+		var bu = Battle_Unit.new(actorId)
 		bu.unitId = DataManager.battle_units.size()
-		bu.leaderId = actorId
 		bu.direction = unit.direction
 		bu._private_hp = UNIT_HP
 		bu.disabled = false

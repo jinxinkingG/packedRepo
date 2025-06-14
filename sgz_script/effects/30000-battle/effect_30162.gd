@@ -30,7 +30,7 @@ func on_view_model_2000()->void:
 	return
 
 func effect_30162_2()->void:
-	DataManager.disable_actor_equip_type(30000, enemy.actorId, "武器")
+	DataManager.disable_actor_equip(30000, enemy.actorId, enemy.actor().get_weapon())
 	ske.battle_cd(99999)
 
 	var msg = "{0}的武器被禁用".format([enemy.get_name()])

@@ -1,6 +1,7 @@
 extends Resource
 
-const dead_rate_array =  [2.5, 5, 10, 18.5, 40, 80, 100];#大限死亡率
+#大限死亡率
+const DEATH_RATES = [2.5, 5, 10, 18.5, 40, 80, 100]
 
 #武将大限/战后死亡&君主继位
 func _init() -> void:
@@ -16,6 +17,7 @@ func _init() -> void:
 	FlowManager.bind_import_flow("dead_player_end", self)
 
 	FlowManager.bind_import_flow("dead_AI_2", self)
+	FlowManager.bind_import_flow("AI_perished", self)
 	return
 	
 #按键操控
@@ -111,80 +113,84 @@ func _input_key(delta: float):
 			if(Global.is_action_pressed_AX()):
 				if(!SceneManager.dialog_msg_complete(true)):
 					return;
-				FlowManager.add_flow("check_actor_dead_start");
+				FlowManager.add_flow("check_actor_dead_start")
+		1001:
+			Global.wait_for_confirmation("dead_AI_2", "", delta)
 		1002:
-			if(Global.is_action_pressed_AX()):
-				if(!SceneManager.dialog_msg_complete(true)):
-					return;
-				FlowManager.add_flow("check_actor_dead_start");
+			Global.wait_for_confirmation("check_actor_dead_start", "", delta)
+	return
 
 func check_actor_dead_start():
-	DataManager.show_orderbook = false
 	LoadControl.set_view_model(-1)
-	var scene_affiars:Control = SceneManager.current_scene()
-	scene_affiars.show_city_line(false)
-	scene_affiars.cursor.hide()
-	
-	if(DataManager.common_variable.has("大限检查")):
-		var check_list = DataManager.common_variable["大限检查"];
-		var vstateId = DataManager.vstates_sort[DataManager.vstate_no]
-		DataManager.common_variable["值"]=vstateId;
-		for city in clCity.all_cities([vstateId]):
+	SceneManager.cleanup_animations()
+
+	DataManager.show_orderbook = false
+	SceneManager.current_scene().show_city_line(false)
+	SceneManager.current_scene().cursor.hide()
+
+	var checked = DataManager.get_env_int_array("大限检查")
+	var vstateId = DataManager.vstates_sort[DataManager.vstate_no]
+	DataManager.set_env("值", vstateId)
+	for city in clCity.all_cities([vstateId]):
+		if city.get_actors_count() == 0:
+			city.set_vstate_id(-1)
+			continue
+		for actorId in city.get_actor_ids():
+			#本月已经检查过的武将不再检查
+			if actorId in checked:
+				continue
+			checked.append(actorId)
+			DataManager.set_env("大限检查", checked)
+			var actor = ActorHelper.actor(actorId)
+			var lifeLeft = DataManager.year - actor.get_life_limit()
+			if lifeLeft < 0:
+				continue
+			var deathRate:int = DEATH_RATES[min(lifeLeft, DEATH_RATES.size()-1)]
+			# 如果是出仕状态，概率死亡
+			# 否则直接死亡
+			if not Global.get_rate_result(deathRate) and actor.is_status_officed():
+				continue
+			var lordId = city.get_lord_id()
+			actor.set_status_dead()
+			clCity.move_out(actorId)
 			if city.get_actors_count() == 0:
 				city.set_vstate_id(-1)
-				continue;
-			for actorId in city.get_actor_ids():
-				if(actorId in check_list):
-					continue;#本月已经检查过的武将不再检查
-				var actor = ActorHelper.actor(actorId)
-				var live_years_left = DataManager.year - actor.get_life_limit()
-				if(live_years_left<0):
-					continue;
-				var dead_rate:int = dead_rate_array[min(live_years_left,dead_rate_array.size()-1)];
-				if not Global.get_rate_result(dead_rate) and actor.is_status_officed():
-					continue;
-				var lordId = city.get_lord_id()
-				check_list.append(actorId);
-				actor.set_status_dead()
-				clCity.move_out(actorId);
-				if city.get_actors_count() == 0:
-					city.set_vstate_id(-1)
-				if actor.actorId == city.get_lord_id():
-					continue;
-				DataManager.common_variable["武将"] = actor.actorId
-				var actor_controlNo = DataManager.get_actor_controlNo(actor.actorId);
-				if actor_controlNo < 0:
-					if lordId >= 0:
-						actor_controlNo = DataManager.get_actor_controlNo(lordId)
-				if(actor_controlNo>=0):
-					FlowManager.set_current_control_playerNo(actor_controlNo);
-					FlowManager.add_flow("dead_player_1");
-					return;
+			
+			DataManager.set_env("武将", actor.actorId)
+			var actorControlNo = DataManager.get_actor_controlNo(actor.actorId)
+			if actorControlNo < 0:
+				if lordId >= 0:
+					actorControlNo = DataManager.get_actor_controlNo(lordId)
+			# 玩家武将死亡
+			if actorControlNo >= 0:
+				FlowManager.set_current_control_playerNo(actorControlNo)
+				FlowManager.add_flow("dead_player_1")
+				return
 
 	for vs in clVState.all_vstates():
 		if vs.is_perished():
-			continue;
+			continue
 		var lord = ActorHelper.actor(vs.get_lord_id())
 		if lord.is_status_officed() and lord.get_loyalty() == 100:
-			continue;#非出仕就走继位判断
-		DataManager.common_variable["值"] = vs.id
-		DataManager.common_variable["武将"] = lord.actorId
-		FlowManager.add_flow("check_actor_dead_next");
-		return;
+			#非出仕就走继位判断
+			continue
+		DataManager.set_env("值", vs.id)
+		DataManager.set_env("武将", lord.actorId)
+		FlowManager.add_flow("check_actor_dead_next")
+		return
 	DataManager.game_trace("CHECK_ACTOR_DEAD")
-	FlowManager.add_flow("check_actor_dead_end");
+	FlowManager.add_flow("check_actor_dead_end")
 	return
 
 func check_actor_dead_next():
-	LoadControl.set_view_model(-1);
-	var lordId = int(DataManager.common_variable["武将"])
-	var lord_controlNo = DataManager.get_actor_controlNo(lordId);
-	if(lord_controlNo<0):
-		_dead_AI_1();
+	var lordId = DataManager.get_env_int("武将")
+	var lordControlNo = DataManager.get_actor_controlNo(lordId)
+	if lordControlNo < 0:
+		_dead_AI_1()
 	else:
-		SceneManager.hide_all_tool();
-		FlowManager.set_current_control_playerNo(lord_controlNo);
-		FlowManager.add_flow("dead_player_1");
+		SceneManager.hide_all_tool()
+		FlowManager.set_current_control_playerNo(lordControlNo)
+		FlowManager.add_flow("dead_player_1")
 	return
 
 func _dead_AI_1():
@@ -198,19 +204,21 @@ func _dead_AI_1():
 		msg = "{0}军兵败如山倒"
 	msg = msg.format([actor.get_name()])
 
-	var nextFlow = "check_actor_dead_start"
-	if actor.actorId == vs.get_lord_id():
-		nextFlow = "dead_AI_2"
-		
-	SceneManager.play_affiars_animation("Player_Defeat", nextFlow, false, msg)
+	SceneManager.play_affiars_animation("Player_Defeat", "", false, msg)
+	DataManager.twinkle_citys = clCity.all_city_ids([vs.id])
+	LoadControl.set_view_model(1001)
 	return
 	
 func dead_AI_2():
-	LoadControl.set_view_model(-1)
-	# 首先处理前任君主忠诚度
+	SceneManager.cleanup_animations()
 	var vstateId = DataManager.get_env_int("值")
 	var lordId = DataManager.get_env_int("武将")
 	var vs = clVState.vstate(vstateId)
+	if vs.is_perished():
+		FlowManager.add_flow("check_actor_dead_start")
+		return
+
+	# 首先处理前任君主忠诚度
 	var prevKing = ActorHelper.actor(vs.get_lord_id())
 	prevKing.set_loyalty(min(99, prevKing.get_loyalty()))
 	var lord = ActorHelper.actor(lordId)
@@ -239,20 +247,41 @@ func dead_AI_2():
 				cityId = city.ID
 
 	var msg = ""
-	if newLordId == -1:
+	if newLordId < 0:
 		if DataManager.vstates_sort[DataManager.vstate_no] == vs.id:
 			DataManager.orderbook = 0
 		vs.set_perished()
-		msg = "{0}势力灭亡".format([lord.get_name()])
-	else:
-		var newVstateId = DataManager.lord_change(vs.id, newLordId)
-		
-		var newLord = ActorHelper.actor(newLordId)
-		newLord.set_loyalty(100)
-		clCity.move_to(newLordId, cityId)
-		
-		msg = "{0}继承君主之位".format([newLord.get_name()])
-	SceneManager.play_affiars_animation("Player_Defeat", "check_actor_dead_start", false, msg)
+		FlowManager.add_flow("AI_perished")
+		return
+
+	# 更换君主，可能触发势力 id 变化
+	var newVstateId = DataManager.lord_change(vs.id, newLordId)
+	var newLord = ActorHelper.actor(newLordId)
+	newLord.set_loyalty(100)
+	clCity.move_to(newLordId, cityId)
+	SceneManager.cityId = cityId
+	msg = "{0}继承君主之位".format([newLord.get_name()])
+
+	# TODO, 替换动画
+	SceneManager.play_affiars_animation("Player_Defeat", "", false, msg)
+	DataManager.twinkle_citys = clCity.all_city_ids([vs.id])
+	LoadControl.set_view_model(1002)
+	return
+
+func AI_perished() -> void:
+	var vstateId = DataManager.get_env_int("值")
+	var vs = clVState.vstate(vstateId)
+	var lordId = DataManager.get_env_int("武将")
+	var lord = ActorHelper.actor(lordId)
+	var msg = "{0}势力灭亡".format([lord.get_name()])
+
+	DataManager.set_env("内政.灭亡势力", vs.id)
+	for v in clVState.all_vstates(true):
+		SkillHelper.auto_trigger_skill(v.get_lord_id(), 10023)
+
+	SceneManager.play_affiars_animation("Player_Defeat", "", false, msg)
+	DataManager.twinkle_citys = []
+	LoadControl.set_view_model(1002)
 	return
 
 func check_actor_dead_end():
@@ -325,11 +354,11 @@ func dead_player_5():
 
 #无城可选
 func dead_player_end():
-	LoadControl.set_view_model(1002);
-	var vstateId = int(DataManager.common_variable["值"])
+	var vstateId = DataManager.get_env_int("值")
 	var vs = clVState.vstate(vstateId)
 	vs.set_perished()
 	var player:Player = DataManager.players[FlowManager.controlNo];
 	player.actorId = -2;
 	SceneManager.show_confirm_dialog("{0}势力灭亡".format([vs.get_dynasty_title_or_lord_name()]))
+	LoadControl.set_view_model(1002)
 	return

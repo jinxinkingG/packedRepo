@@ -10,26 +10,6 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 const COST_AP = 5
 const RECOVER_HP = 10
 
-func on_view_model_2000():
-	wait_for_free_position(FLOW_BASE + "_2")
-	return
-
-func on_view_model_2001():
-	wait_for_yesno(FLOW_BASE + "_3")
-	return
-
-func on_view_model_2002():
-	wait_for_skill_result_confirmation()
-	return
-
-func on_view_model_3000():
-	wait_for_skill_result_confirmation(FLOW_BASE + "_AI_2")
-	return
-
-func on_view_model_3001():
-	wait_for_skill_result_confirmation("AI_before_ready")
-	return
-
 func check_AI_perform_20000()->bool:
 	# 防守方主将不跳
 	if me.side() == "防守方" and me.get_main_actor_id() == actorId:
@@ -95,7 +75,7 @@ func check_AI_perform_20000()->bool:
 			continue
 		if map.get_blockCN_by_position(pos) == "城墙":
 			continue
-		var path = map.aStar.get_clear_path(me.position, pos, 6)
+		var path = map.aStar.get_skill_path(me.position, pos, 6)
 		if path.size() <= 1:
 			continue
 		set_env("AI.龙胆.目标", [pos.x, pos.y, target[1]])
@@ -105,7 +85,7 @@ func check_AI_perform_20000()->bool:
 func effect_20003_AI_start():
 	var target = get_env_int_array("AI.龙胆.目标")
 	var pos = Vector2(target[0], target[1])
-	var path = map.aStar.get_clear_path(me.position, pos, 6)
+	var path = map.aStar.get_skill_path(me.position, pos, 6)
 	map.camer_to_actorId(me.actorId, "draw_actors")
 	map.show_color_block_by_position(path, Color(0.0, 0.0, 0.8, 0.3))
 	var reporter = -1
@@ -116,6 +96,10 @@ func effect_20003_AI_start():
 			reporter = enemyWV.main_actorId
 	var msg = "{0}发动【{1}】".format([me.get_name(), ske.skill_name])
 	play_dialog(reporter, msg, 0, 3000)
+	return
+
+func on_view_model_3000():
+	wait_for_skill_result_confirmation(FLOW_BASE + "_AI_2")
 	return
 
 func effect_20003_AI_2():
@@ -133,6 +117,10 @@ func effect_20003_AI_2():
 	play_dialog(me.actorId, msg, 0, 3001)
 	return
 
+func on_view_model_3001():
+	wait_for_skill_result_confirmation("AI_before_ready")
+	return
+
 func effect_20003_start():
 	if not assert_action_point(me.actorId, COST_AP):
 		return
@@ -143,6 +131,10 @@ func effect_20003_start():
 	# 这一步目前是必要的，确保正确的技能范围定位
 	get_skill_centers(me)
 	play_dialog(me.actorId, msg, 2, 2000)
+	return
+
+func on_view_model_2000():
+	wait_for_free_position(FLOW_BASE + "_2")
 	return
 
 func effect_20003_2():
@@ -164,7 +156,7 @@ func effect_20003_2():
 		LoadControl.set_view_model(2000)
 		return
 	map.aStar.update_map_for_actor(me)
-	var path = map.aStar.get_clear_path(me.position, target, 6)
+	var path = map.aStar.get_skill_path(me.position, target, 6)
 	if path.size() <= 1:
 		map.show_color_block_by_position([])
 		SceneManager.show_unconfirm_dialog("存在阻碍，不能位移到此处!", me.actorId)
@@ -176,6 +168,10 @@ func effect_20003_2():
 	play_dialog(me.actorId, msg, 2, 2001, true)
 	return
 
+func on_view_model_2001():
+	wait_for_yesno(FLOW_BASE + "_3")
+	return
+
 func effect_20003_3():
 	ske.cost_ap(COST_AP, true)
 	var target = get_env_dict("龙胆目标")
@@ -183,7 +179,7 @@ func effect_20003_3():
 	ske.change_war_actor_position(me.actorId, pos)
 	var msg = _try_recover_and_get_message()
 	ske.war_report()
-	play_dialog(me.actorId, msg, 0, 2002)
+	play_dialog(actorId, msg, 0, 2999)
 	return
 
 func desperate_skill()->bool:

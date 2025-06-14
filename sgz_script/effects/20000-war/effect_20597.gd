@@ -5,6 +5,7 @@ extends "effect_20000.gd"
 
 func on_trigger_20013() -> bool:
 	if me.get_main_actor_id() == actorId:
+		ske.set_actor_extra_ap_limit(actorId, 10)
 		for skill in SkillHelper.get_actor_skills(actorId):
 			if skill.name == ske.skill_name:
 				continue

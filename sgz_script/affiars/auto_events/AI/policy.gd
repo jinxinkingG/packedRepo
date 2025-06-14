@@ -64,20 +64,7 @@ func _input_key(delta: float):
 			LoadControl.set_view_model(-1)
 			FlowManager.add_flow("canvass_1")
 		141:
-			if DataManager.is_autoplay_mode():
-				var accumulated = DataManager.get_env_float("delta")
-				DataManager.set_env("delta", accumulated + delta)
-				if accumulated >= 2.0 * Engine.time_scale:
-					SceneManager.dialog_msg_complete(true)
-					LoadControl.set_view_model(-1)
-					FlowManager.add_flow("incite_1")
-					return
-			if not Global.is_action_pressed_AX():
-				return
-			if not SceneManager.dialog_msg_complete(true):
-				return
-			LoadControl.set_view_model(-1)
-			FlowManager.add_flow("incite_1")
+			Global.wait_for_confirmation("incite_1", "", delta)
 	return
 
 func AI_Policy():
@@ -464,6 +451,5 @@ func incite_1():
 
 	DataManager.twinkle_citys = [d.cityId]
 	SceneManager.show_confirm_dialog(d.msg, d.actorId, d.mood)
-	DataManager.set_env("delta", 0)
 	LoadControl.set_view_model(141)
 	return

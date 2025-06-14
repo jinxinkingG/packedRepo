@@ -978,16 +978,16 @@ func player_end():
 #B键查看武将
 func actor_info():
 	var actorId = DataManager.get_env_int("武将")
-	var me = DataManager.get_war_actor(actorId)
-	if me == null:
-		set_view_model(6)
+	var wa = DataManager.get_war_actor(actorId)
+	if wa == null:
+		set_view_model(3)
 		return
 	var map = SceneManager.current_scene().war_map
 	map.cursor.hide();
 	map.next_shrink_actors = [actorId]
 	var actorIds = []
-	for wa in me.war_vstate().get_war_actors(false, true):
-		actorIds.append(wa.actorId)
+	for teammate in wa.war_vstate().get_war_actors(false, true):
+		actorIds.append(teammate.actorId)
 	var idx = actorIds.find(actorId)
 	if idx < 0:
 		actorIds.insert(0, actorId)
@@ -1373,6 +1373,10 @@ func player_yijing() -> void:
 		FlowManager.add_flow("check_embattle_trigger")
 		return
 	wa.set_ext_variable("阴阳归道", 1)
+	for info in SkillHelper.get_actor_scene_skills(wa.actorId, 20000):
+		if Global.dic_val(info, "source", "") == "易经":
+			pass
+			#SkillHelper.remove_scene_actor_skill(20000, wa.actorId, info["skill_name"])
 	var skills = get_yijing_skills(actorId)
 	if skills.empty():
 		FlowManager.add_flow("check_embattle_trigger")

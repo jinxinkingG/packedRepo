@@ -16,9 +16,8 @@ func on_trigger_30005() -> bool:
 	var bf = DataManager.get_current_battle_fight()
 
 	var unit = me.battle_actor_unit()
-	var bu = Battle_Unit.new()
+	var bu = Battle_Unit.new(actorId)
 	bu.unitId = DataManager.battle_units.size()
-	bu.leaderId = actorId
 	bu.direction = unit.direction
 	bu._private_hp = bro.actor().get_hp()
 	bu.disabled = false

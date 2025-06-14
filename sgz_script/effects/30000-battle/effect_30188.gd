@@ -55,12 +55,11 @@ func effect_30188_2():
 	return
 
 func effect_30188_3():
-	var unit = get_leader_unit(me.actorId)
+	var unit = get_leader_unit(actorId)
 	var pos = get_available_positions(unit)[0]
 
-	var bu = Battle_Unit.new()
+	var bu = Battle_Unit.new(actorId)
 	bu.unitId = DataManager.battle_units.size()
-	bu.leaderId = self.actorId
 	bu.direction = unit.direction
 	bu._private_hp = XIAOJIANG_HP
 	bu.disabled = false

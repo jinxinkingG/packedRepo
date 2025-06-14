@@ -1103,7 +1103,7 @@
       "平": [],
       "山": ["hill"],
       "水": ["river"],
-      "仙": ["hill", "river", "swamp", "forest", "wallcity"],
+      "仙": [],
       "特殊": []
     }
   },

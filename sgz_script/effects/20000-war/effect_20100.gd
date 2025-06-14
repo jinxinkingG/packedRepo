@@ -6,9 +6,9 @@ extends "effect_20000.gd"
 const EFFECT_ID = 20100
 
 func on_trigger_20005()->bool:
-	if get_env_int("计策.消耗.仅对比") > 0:
+	if DataManager.get_env_int("计策.消耗.仅对比") > 0:
 		return false
-	var cost = get_env_int("计策.消耗.所需")
+	var cost = DataManager.get_env_int("计策.消耗.所需")
 	# 最多减到 1/3，期望比智神差
 	var reduce = int(ceil(cost/3.0)) + 1
 	reduce = DataManager.pseduo_random_war() % reduce
@@ -20,7 +20,7 @@ func on_trigger_20005()->bool:
 	])
 	# 此时已经是实际扣减了，所以 se 已经创建
 	var se = DataManager.get_current_stratagem_execution()
-	se.append_result(ske.skill_name, msg, reduce, me.actorId)
+	se.append_result(ske.skill_name, msg, reduce, actorId)
 	# 不需要单独做技能汇报
 	return false
 
@@ -34,5 +34,5 @@ func on_trigger_20013()->bool:
 	return false
 
 func on_trigger_20017()->bool:
-	change_scheme_chance(me.actorId, ske.skill_name, 10)
+	change_scheme_chance(actorId, ske.skill_name, 10)
 	return false

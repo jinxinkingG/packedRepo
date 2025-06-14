@@ -418,12 +418,12 @@ func _try_scheme(wa:War_Actor)->bool:
 	# 在判断计策目标时，可能会产生大量重复的技能获取
 	# 因此，临时允许的技能列表获取 cache，以加速判断
 	SkillHelper.reset_skills_list_cache(true)
-	DataManager.game_trace("")
+	DataManager.grouped_trace_reset()
 	var rateLimit = 30
 	if _try_scheme_however(wa):
 		rateLimit = 10
 	var schemeCheckRes = was.best_use_strategy(wa.actorId, excludedActorIds, scheme_history, rateLimit)
-	DataManager.game_trace("SCHEME_DECIDE<{0}>".format([wa.actorId]))
+	DataManager.grouped_trace_output()
 	SkillHelper.reset_skills_list_cache(false)
 	var targetId = int(schemeCheckRes["目标"])
 	if targetId < 0:

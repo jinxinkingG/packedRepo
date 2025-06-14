@@ -11,14 +11,7 @@ func on_view_model_2000():
 	return
 
 func on_view_model_3000_delta(delta:float):
-	var accumulated = DataManager.get_env_float("delta")
-	DataManager.set_env("delta", accumulated + delta)
-	if accumulated >= 2.0 * Engine.time_scale:
-		LoadControl.set_view_model(-1)
-		SceneManager.dialog_msg_complete(true)
-		goto_step("AI_end")
-		return
-	wait_for_skill_result_confirmation(FLOW_BASE + "_AI_end")
+	Global.wait_for_confirmation(FLOW_BASE + "_AI_end", "", delta)
 	return
 
 func check_AI_perform():
@@ -37,7 +30,6 @@ func effect_10015_AI_start():
 		actor.get_name(), actor.get_moral()
 	])
 	SceneManager.show_confirm_dialog(msg, actorId, 1)
-	DataManager.set_env("delta", 0)
 	LoadControl.set_view_model(3000)
 	return
 

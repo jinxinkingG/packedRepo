@@ -146,6 +146,8 @@ func stratagem_choose_actor():
 		DataManager.unset_env("战争.上次目标")
 	#特殊计策的优先目标判断逻辑
 	if se.name == "虚兵":
+		targets.erase(targetId)
+		targets.insert(0, targetId)
 		for id in targets:
 			var wa = DataManager.get_war_actor(id)
 			if wa.get_buff_label_turn(["禁止移动"]) == 0:

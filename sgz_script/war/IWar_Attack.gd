@@ -70,22 +70,10 @@ func get_can_attack_actors(fromId:int, igonreAP:bool=false, evenForbidden:bool=f
 			# 需要绕路，说明中间有城墙
 			if route.size() > distance + 1:
 				continue
-		#根据坐标从左往右排序
-		var index = 0;
-		for i in targets.size():
-			var o_actorId = targets[i];
-			var o_war_actor = DataManager.get_war_actor(o_actorId);
-			if(o_war_actor.position.x > wa.position.x):
-				index = i;
-				break;
-			if(o_war_actor.position.x == wa.position.x):
-				if(o_war_actor.position.y > wa.position.y):
-					index = i;
-					break;
 		if wa.get_buff_label_turn(["潜行"]) > 0:
 			if blockCN in ["山地", "树林"]:
 				excludedTargets[wa.actorId] = "潜行"
-		targets.insert(index, wa.actorId)
+		targets.append(wa.actorId)
 
 	if targets.size() == 1 and targets[0] in excludedTargets:
 		# 只有一个目标且被排除，提示原因

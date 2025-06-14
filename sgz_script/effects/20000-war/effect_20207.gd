@@ -14,6 +14,13 @@ const STRATAGEM_DIC = {
 	"共杀": "劫火*"
 }
 
+func on_trigger_20005()->bool:
+	var cost = get_env_int("计策.消耗.所需")
+	set_scheme_ap_cost("火计", cost - 1)
+	set_scheme_ap_cost("火箭", cost - 2)
+	set_scheme_ap_cost("劫火", cost - 3)
+	return false
+
 func on_trigger_20012()->bool:
 	var se = DataManager.get_current_stratagem_execution()
 	if se.get_action_id(actorId) != ske.actorId:

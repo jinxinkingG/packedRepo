@@ -3,7 +3,7 @@ extends "effect_20000.gd"
 #苦肉效果
 #【苦肉】大战场,锁定技。你方队友可以对你使用伤兵计策且必中。当你受到计策伤害时，与你相邻的对方武将（非城地形），受到与该计策相同的伤害。若拥有<都督>的队友对你用计，可为你避免伤害。
 
-const RELATED_SKILL = "业炎"
+const RELATED_SKILL = "都督"
 
 func on_trigger_20026()->bool:
 	# AI 不发动

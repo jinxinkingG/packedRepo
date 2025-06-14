@@ -7,14 +7,7 @@ const EFFECT_ID = 10027
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
 func on_view_model_2000_delta(delta:float):
-	var accumulated = DataManager.get_env_float("delta")
-	DataManager.set_env("delta", accumulated + delta)
-	if accumulated >= 2.0 * Engine.time_scale:
-		LoadControl.set_view_model(-1)
-		SceneManager.dialog_msg_complete(true)
-		goto_step("end")
-		return
-	wait_for_skill_result_confirmation(FLOW_BASE + "_end")
+	Global.wait_for_confirmation(FLOW_BASE + "_end", "", delta)
 	return
 
 func effect_10027_AI_start():
@@ -27,7 +20,6 @@ func effect_10027_start():
 		actor.get_name()
 	])
 	SceneManager.show_confirm_dialog(msg, actorId, 3)
-	DataManager.set_env("delta", 0)
 	LoadControl.set_view_model(2000)
 	return
 

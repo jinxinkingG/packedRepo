@@ -36,6 +36,9 @@ func _init() -> void:
 	FlowManager.bind_import_flow("stars_report_vstates", self)
 	FlowManager.bind_import_flow("stars_report_done", self)
 
+	FlowManager.bind_import_flow("play_free_dialog", self)
+	FlowManager.bind_import_flow("free_dialog_done", self)
+
 	return
 
 func get_view_model()->int:
@@ -46,9 +49,15 @@ func set_view_model(vm:int)->void:
 	return
 
 func _process(delta: float) -> void:
-	SoundManager.play_bgm();
+	SoundManager.play_bgm()
+
 	if FlowManager.has_task():
 		return
+
+	# 检查闲时对话
+	if LoadControl.all_controllers_done() and check_free_dialog():
+		return
+
 	match get_view_model():
 		100:
 			Global.wait_for_confirmation("stars_report", VIEW_MODEL_NAME)
@@ -56,6 +65,10 @@ func _process(delta: float) -> void:
 		101:
 			Global.wait_for_confirmation("stars_report_done", VIEW_MODEL_NAME)
 			return
+		102:
+			Global.wait_for_confirmation("free_dialog_done", VIEW_MODEL_NAME)
+			return
+
 	player_control._process(delta)
 	AI_control._process(delta)
 	month_events._process(delta)
@@ -497,3 +510,34 @@ func stars_report_done()->void:
 	FlowManager.add_flow("month_init_vstates")
 	return
 
+func check_free_dialog()->bool:
+	for city in clCity.all_cities():
+		var d = city.next_free_dialog()
+		if d != null:
+			DataManager.set_env("内政.玩家.等待对白", d.output())
+			FlowManager.add_flow("play_free_dialog")
+			return true
+	return false
+
+func play_free_dialog()->void:
+	var data = DataManager.get_env_dict("内政.玩家.等待对白")
+	if data.empty():
+		set_view_model(-1)
+		return
+	var d = clCity.CityInfo.DialogInfo.new()
+	d.input(data)
+	DataManager.unset_env("内政.玩家.等待对白")
+	DataManager.twinkle_citys = [d.cityId]
+	DataManager.show_orderbook = false
+	SceneManager.show_confirm_dialog(d.msg, d.actorId, d.mood)
+	if DataManager.get_current_control_sort() >= 0:
+		DataManager.show_orderbook = false
+		DataManager.cityInfo_type = 1
+		SceneManager.show_cityInfo(true, d.cityId)
+	set_view_model(102)
+	return
+
+func free_dialog_done() -> void:
+	if DataManager.get_current_control_sort() >= 0:
+		FlowManager.add_flow("city_enter_menu")
+	return

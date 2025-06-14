@@ -14,17 +14,14 @@ func on_trigger_20020()->bool:
 	var bf = DataManager.get_current_battle_fight()
 	if me == null or me.disabled:
 		return false
-	var loser = bf.get_loser()
-	if loser == null:
-		return false
-	var winner = loser.get_battle_enemy_war_actor()
-	if winner == null or not me.is_teammate(winner):
-		# 不是胜利方
+	var winner = bf.get_winner()
+	if winner == null or winner.actorId != ske.actorId:
+		# 不是胜利方触发
 		return false
 	if winner.actorId != bf.get_attacker_id():
 		# 不是攻方
 		return false
-	if winner.actorId == me.actorId:
+	if winner.actorId == actorId:
 		# 胜利者是我自己
 		return false
 

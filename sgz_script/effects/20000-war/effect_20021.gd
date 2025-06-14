@@ -23,7 +23,7 @@ func on_view_model_121():
 	if not SceneManager.dialog_msg_complete(false):
 		return
 	LoadControl.set_view_model(-1)
-	goto_step("2")
+	goto_step("confirmed")
 	return
 
 func check_AI_perform_20000()->bool:
@@ -94,15 +94,15 @@ func effect_20021_start():
 	if not assert_action_point(me.actorId, 1):
 		return
 	var msg = "消耗全部机动力\n发动任意计策\n可否？"
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000():
-	wait_for_yesno(FLOW_BASE + "_2")
+	wait_for_yesno(FLOW_BASE + "_confirmed")
 	return
 
 #展示计策列表
-func effect_20021_2():
+func effect_20021_confirmed() -> void:
 	var ap = me.action_point
 	var items = []
 	var values = []
@@ -116,19 +116,19 @@ func effect_20021_2():
 	var msg = "使用何种计策？\n(当前机动力:{0})\n【{1}】解锁全部计策".format([
 		ap, ske.skill_name
 	])
-	set_env("对话", msg)
+	DataManager.set_env("对话", msg)
 	SceneManager.show_unconfirm_dialog(msg, me.actorId)
-	bind_menu_items(items, values, 2)
+	SceneManager.bind_top_menu(items, values, 2)
 	LoadControl.set_view_model(2001)
 	return
 
-func on_view_model_2001():
+func on_view_model_2001() -> void:
 	#计策列表
-	wait_for_choose_item(FLOW_BASE + "_3")
+	wait_for_choose_item(FLOW_BASE + "_selected")
 	return
 
-func effect_20021_3():
-	var stratagem = get_env_str("目标项")
+func effect_20021_selected() -> void:
+	var stratagem = DataManager.get_env_str("目标项")
 	start_scheme(stratagem)
 	return
 

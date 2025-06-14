@@ -582,6 +582,8 @@ func get_enemy_targets(me:War_Actor, allowWalls:bool=false, distance:int=-1, ign
 	for wa in wf.get_war_actors(false, true):
 		if not me.is_enemy(wa):
 			continue
+		if wa.get_buff_label_turn(["潜行"]) > 0:
+			continue
 		if not allowWalls:
 			var blockCN = map.get_blockCN_by_position(wa.position)
 			if blockCN in StaticManager.CITY_BLOCKS_CN:
@@ -868,7 +870,7 @@ func report_skill_result_message(ske:SkillEffectInfo, nextViewModel:int, startin
 	var map = SceneManager.current_scene().war_map
 	map.next_shrink_actors = []
 	map.show_color_block_by_position([])
-	FlowManager.add_flow("draw_actors")
+	map.draw_actors()
 	play_dialog(-1, "\n".join(msgs), 2, nextViewModel)
 	return
 

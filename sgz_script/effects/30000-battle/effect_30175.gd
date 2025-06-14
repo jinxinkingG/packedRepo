@@ -16,7 +16,7 @@ func on_trigger_30003()->bool:
 	ske.append_message("全弓列阵")
 	ske.battle_report()
 	ske.recorded = 0
-	ske.remove_war_skill(actorId, ske.skill_name)
+	ske.ban_war_skill(actorId, ske.skill_name, 1)
 	# 汇报到大战场
 	ske.war_report()
 	return false

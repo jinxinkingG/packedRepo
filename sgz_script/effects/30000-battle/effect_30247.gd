@@ -14,9 +14,8 @@ func on_trigger_30005()->bool:
 	if unit == null:
 		return false
 
-	var bu = Battle_Unit.new()
+	var bu = Battle_Unit.new(actorId)
 	bu.unitId = DataManager.battle_units.size()
-	bu.leaderId = actorId
 	bu.direction = unit.direction
 	bu._private_hp = YUANZHAO_HP
 	bu.disabled = false

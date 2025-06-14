@@ -1,12 +1,12 @@
 extends "effect_20000.gd"
 
 # 惊涛主动技
-#【惊涛】大战场，主将主动技。消耗10点机动力，视为对全地图水地形中的敌军，分别使用一次乱水。每回合限1次。
+#【惊涛】大战场，主将主动技。消耗8点机动力，视为对全地图水地形中的敌军，分别使用一次乱水。每回合限1次。
 
 const EFFECT_ID = 20599
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
-const COST_AP = 10
+const COST_AP = 8
 const STRATAGEM = "乱水"
 
 func check_AI_perform_20000() -> bool:

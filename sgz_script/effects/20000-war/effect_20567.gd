@@ -45,9 +45,9 @@ func effect_20567_2() -> void:
 	var respondId = -1
 	var maxPolitics = -1
 
-	ske.change_actor_ap_limit(actorId, 1)
+	ske.set_actor_extra_ap_limit(actorId, 1)
 	for wa in me.get_teammates(false):
-		ske.change_actor_ap_limit(wa.actorId, 1)
+		ske.set_actor_extra_ap_limit(wa.actorId, 1)
 		var pol = wa.actor().get_politics()
 		if pol > maxPolitics:
 			maxPolitics = pol

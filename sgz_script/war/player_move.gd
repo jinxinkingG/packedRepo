@@ -273,45 +273,67 @@ func actor_move_start():
 	return
 
 #移动过程
-func _push_move(change_v:Vector2):
+func _push_move(dir:Vector2):
 	#DataManager.game_trace("")
-	var war_map = SceneManager.current_scene().war_map
+	var map = SceneManager.current_scene().war_map
 	var wa = DataManager.get_war_actor(DataManager.player_choose_actor)
 	var prev:Vector2 = wa.position
-	var target = prev + change_v
-	var move_history = DataManager.get_env_array("历史移动记录")
-	if move_history.size() >= 100:
+	var target = prev + dir
+	var moveHistory = DataManager.get_env_array("历史移动记录")
+	if moveHistory.size() >= 100:
 		#单次移动不可超过100步
-		SceneManager.show_unconfirm_dialog("不可连续移动100步\n恳请休息……", wa.actorId, 3);
-		return;
-	
-	if not war_map.is_valid_position(target):
+		SceneManager.show_unconfirm_dialog("不可连续移动100步\n恳请休息……", wa.actorId, 3)
+		return
+
+	if not map.is_valid_position(target):
 		return
 	#原地踏步时返回
 	if target == prev:
 		return
-	var cost = DataManager.get_move_cost(wa.actorId, target);
+	var cost = DataManager.get_move_cost(wa.actorId, target)
 	if wa.action_point < cost["机"] or wa.poker_point < cost["点"]:
-		return;
+		return
 	if not wa.move(target, true):
-		return;
-	move_history.append({
+		return
+	# 特殊判断，如果是仙兵种穿墙，有概率失败
+	var troopsType = wa.actor().get_troops_type()
+	if troopsType == "仙":
+		var terrian = map.get_blockCN_by_position(target)
+		if terrian == "城墙":
+			var rate = wa.actor().get_moral()
+			if not Global.get_rate_result(rate):
+				# 回弹
+				wa.position = prev
+				# 仍然扣点
+				wa.poker_point = max(0, wa.poker_point - cost["点"])
+				var msg = "？！\n（穿墙失败\n（剩余点数：{0}".format([wa.poker_point])
+				wa.attach_free_dialog(msg, 2)
+				FlowManager.add_flow("actor_move_stop")
+				return
+	#wa.position = prev
+	moveHistory.append({
 		"x": prev.x,
 		"y": prev.y,
 		"AP": wa.action_point,
 		"P": wa.poker_point,
-	});
+	})
 	wa.action_point = max(0, wa.action_point - cost["机"])
 	wa.poker_point = max(0, wa.poker_point - cost["点"])
-	DataManager.set_env("历史移动记录", move_history)
-	war_map.update_ap();#立刻更新机动力显示
+	DataManager.set_env("历史移动记录", moveHistory)
+	# 立刻更新机动力显示
+	map.update_ap()
 	#对白
 	var msg = get_movement_message(wa)
 	DataManager.set_env("对白", msg)
 	DataManager.set_env("移动", 1)
 	DataManager.set_env("移动消耗", cost)
+	DataManager.set_env("移动中止", 0)
 	#插入移动技能判定
 	SkillHelper.auto_trigger_skill(wa.actorId, 20003, "")
+	if DataManager.get_env_int("移动中止") > 0:
+		LoadControl.set_view_model(-1)
+		FlowManager.add_flow("actor_move_stop")
+		return
 	msg = DataManager.get_env_str("对白")
 	wa.after_move()
 	SceneManager.show_unconfirm_dialog(msg, wa.actorId)

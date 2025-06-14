@@ -1044,6 +1044,15 @@ func check_feijian_damage(wa:War_Actor)->void:
 
 func check_yijing(wa:War_Actor)->bool:
 	var actor = wa.actor()
+	if actor.get_side() == "道":
+		# 已经激活了易经效果，判断装备
+		if actor.get_equip_feature_max("阴阳归道") <= 0:
+			# 卸下了易经？
+			wa.set_war_side("")
+			for info in SkillHelper.get_actor_scene_skills(wa.actorId, 20000):
+				if Global.dic_val(info, "source", "") == "易经":
+					SkillHelper.remove_scene_actor_skill(20000, wa.actorId, info["skill_name"])
+		return false
 	if actor.get_equip_feature_max("阴阳归道") <= 0:
 		return false
 	if wa.get_controlNo() < 0:

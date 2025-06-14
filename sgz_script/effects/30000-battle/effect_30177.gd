@@ -45,9 +45,8 @@ func effect_30177_start():
 func effect_30177_2():
 	var unit = get_leader_unit(me.actorId)
 	for pos in get_available_positions(unit):
-		var bu = Battle_Unit.new()
+		var bu = Battle_Unit.new(actorId)
 		bu.unitId = DataManager.battle_units.size()
-		bu.leaderId = self.actorId
 		bu.direction = unit.direction
 		bu._private_hp = MAID_HP
 		bu.disabled = false

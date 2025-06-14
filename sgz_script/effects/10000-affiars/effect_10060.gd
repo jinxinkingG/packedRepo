@@ -44,25 +44,11 @@ func on_view_model_2002():
 	return
 
 func on_view_model_3000_delta(delta:float):
-	var accumulated = DataManager.get_env_float("delta")
-	DataManager.set_env("delta", accumulated + delta)
-	if accumulated >= 2.0 * Engine.time_scale:
-		LoadControl.set_view_model(-1)
-		SceneManager.dialog_msg_complete(true)
-		goto_step("AI_2")
-		return
-	wait_for_skill_result_confirmation(FLOW_BASE + "_AI_2")
+	Global.wait_for_confirmation(FLOW_BASE + "_AI_2", "", delta)
 	return
 
 func on_view_model_3001_delta(delta:float):
-	var accumulated = DataManager.get_env_float("delta")
-	DataManager.set_env("delta", accumulated + delta)
-	if accumulated >= 2.0 * Engine.time_scale:
-		LoadControl.set_view_model(-1)
-		SceneManager.dialog_msg_complete(true)
-		goto_step("AI_3")
-		return
-	wait_for_skill_result_confirmation(FLOW_BASE + "_AI_3")
+	Global.wait_for_confirmation(FLOW_BASE + "_AI_3", "", delta)
 	return
 
 func check_AI_perform()->bool:
@@ -83,7 +69,6 @@ func effect_10060_AI_start():
 	set_env("AI.集盟.PROGRESS", 0)
 	SoundManager.play_anim_bgm("res://resource/sounds/se/AI_War.ogg")
 	SceneManager.show_confirm_dialog(msg, actorId, 0)
-	DataManager.set_env("delta", 0)
 	LoadControl.set_view_model(3000)
 	return
 
@@ -113,7 +98,6 @@ func effect_10060_AI_2():
 		])
 		SceneManager.show_confirm_dialog(msg, -1)
 		SceneManager.play_affiars_animation("Town_Save", "", true)
-		DataManager.set_env("delta", 0)
 		LoadControl.set_view_model(3001)
 		return
 	var msg = DIALOGS[progress].format([
@@ -123,7 +107,6 @@ func effect_10060_AI_2():
 	])
 	set_env("AI.集盟.PROGRESS", progress + 1)
 	SceneManager.show_confirm_dialog(msg, attendlordIds[0], 0)
-	DataManager.set_env("delta", 0)
 	LoadControl.set_view_model(3000)
 	return
 

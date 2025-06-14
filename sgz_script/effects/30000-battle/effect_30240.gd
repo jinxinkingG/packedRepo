@@ -62,9 +62,8 @@ func effect_30240_2():
 	ske.battle_cd(99999)
 	ske.cost_war_cd(1)
 	for pos in positions:
-		var bu = Battle_Unit.new()
+		var bu = Battle_Unit.new(actorId)
 		bu.unitId = DataManager.battle_units.size()
-		bu.leaderId = actorId
 		bu.direction = unit.direction
 		bu._private_hp = UNIT_HP
 		bu.disabled = false
