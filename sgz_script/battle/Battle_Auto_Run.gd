@@ -216,8 +216,7 @@ func _process(delta: float) -> void:
 					and wa.actorId == bf.get_defender_id():
 					# 究极守方，攻方后退，尝试战术
 					considerTactic = true
-				elif bf.turns() % 2 == 1 && bf.turns() > 1:
-					# 每2轮用1次战术
+				elif bf.turns() > 1:
 					considerTactic = true
 				if considerTactic and ai_control.think_about_tactic(wa.actorId):
 					DataManager.common_variable["当前武将"] = wa.actorId
@@ -386,22 +385,34 @@ func unit_actioned():
 		var _unit = DataManager.battle_units[int(DataManager.common_variable["白兵.攻击来源"])];
 		if(_unit.wait_action_name != ""):
 			return;
-	if(SkillHelper.auto_trigger_skill(unit.leaderId,30007,"unit_actioned")):
-		return;
+	SkillHelper.auto_trigger_skill(unit.leaderId, 30007)
+
 	var wa = DataManager.get_war_actor(unit.leaderId)
 	if wa != null:
-		var ea = wa.get_battle_enemy_war_actor()
-		if ea != null:
-			SkillHelper.auto_trigger_skill(ea.actorId,30017,"")
+		var enemy = wa.get_battle_enemy_war_actor()
+		if enemy != null:
+			SkillHelper.auto_trigger_skill(enemy.actorId, 30017)
+
+	# 疾驰和坐骑骅骝的效果
+	# 第一动为移动时，行动次数 +1
+	# 每回合一次
+	if unit.get_unit_type() == "将" \
+		and unit.wait_action_times == unit.get_action_times() - 1 \
+		and unit.last_action_name == "移动" \
+		and Global.intval(unit.get_tmp_variable("疾驰", 0)) != 1:
+		if SkillRangeBuff.max_val_for_actor("疾驰", unit.leaderId) > 0 \
+			or unit.actor().get_equip_feature_max("疾驰") > 0:
+			unit.add_status_effect("疾驰")
+			unit.set_tmp_variable("疾驰", 1)
+			unit.wait_action_times += 1
 
 	var scene_battle = SceneManager.current_scene();
 	scene_battle.main_bottom.update_data();
 	scene_battle.unit_updated = false;#刷新显示
 	unit.complete_action_task();
 
-	# 行动完毕技能回调，支持 flow
-	if SkillHelper.auto_trigger_skill(unit.leaderId, 30002, "check_battle_need_over"):
-		return
+	# 行动完毕技能触发，不支持 flow
+	SkillHelper.auto_trigger_skill(unit.leaderId, 30002)
 
 	# @since 1.98 镔铁双戟
 	unit.check_for_kill_instant()
@@ -464,8 +475,8 @@ func battle_over():
 	var defender = bf.get_defender()
 
 	# 战斗结束技能触发，不支持回调
-	SkillHelper.auto_trigger_skill(attacker.actorId, 30099, "")
-	SkillHelper.auto_trigger_skill(defender.actorId, 30099, "")
+	SkillHelper.auto_trigger_skill(attacker.actorId, 30099)
+	SkillHelper.auto_trigger_skill(defender.actorId, 30099)
 
 	DataManager.battle_run = false;
 	#失败方若武将未死，则扣粮，并且后退一步	
@@ -484,19 +495,26 @@ func battle_over():
 			else:
 				var pos = loser.position + disv
 				DataManager.common_variable["后退位置"] = {"x":pos.x, "y":pos.y}
+
 	#双方剩余兵力（包括禁用状态兵种）总量写入武将兵力属性
 	bf.attackerRemaining = int(ceil(bf.get_battle_sodiers(attacker.actorId, true, false)))
 	bf.defenderRemaining = int(ceil(bf.get_battle_sodiers(defender.actorId, true, false)))
+	var recover = bf.get_env_dict("战后兵力")
+	if str(bf.get_attacker_id()) in recover:
+		bf.attackerRemaining = Global.intval(recover[str(bf.get_attacker_id())])
+	if str(bf.get_defender_id()) in recover:
+		bf.defenderRemaining = Global.intval(recover[str(bf.get_defender_id())])
 	attacker.actor().set_soldiers(bf.attackerRemaining)
 	defender.actor().set_soldiers(bf.defenderRemaining)
+
 	SkillHelper.auto_trigger_skill(attacker.actorId, 30004, "")
 	SkillHelper.auto_trigger_skill(defender.actorId, 30004, "")
-	
+
 	#城门血量总计
 	var doorHP = bf.get_door_hp()
 	var positon = bf.get_position()
 	if positon.x >= 0 and bf.get_terrian() == "walldoor":
-		wf.target_city().set_door_hp(positon.y, positon.x, doorHP/3.0)
+		wf.target_city().set_door_hp(positon, doorHP/3.0)
 
 	#清空白兵数据
 	DataManager.battle_units.clear();

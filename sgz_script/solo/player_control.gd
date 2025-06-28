@@ -236,16 +236,24 @@ func solo_say_hurt():
 	var result = DataManager.get_env_int("单挑.是否命中")
 	var damage = DataManager.get_env_int("单挑.伤害数值")
 	var selfDamage = DataManager.get_env_int("单挑.反伤")
+	var recover = DataManager.get_env_int("单挑.攻击回体")
+	DataManager.unset_env("单挑.攻击回体")
 	var msgs = []
+	if recover > 0:
+		recover = wa.actor().recover_hp(recover)
+	if recover > 0:
+		msgs.append("{0}体力回复 {1}".format([
+			wa.get_name(), recover
+		]))
+	if selfDamage > 0:
+		var msg = "{0}顺势反击\n{1}受到{2}点伤害".format([
+			enemy.get_name(), wa.get_name(), selfDamage,
+		])
+		msgs.append(msg)
 	if result == 0:
-		msgs.append("但攻击被闪开")
-		if selfDamage > 0:
-			var msg = "{0}顺势反击\n{1}受到{2}点伤害".format([
-				enemy.get_name(), wa.get_name(), selfDamage,
-			])
-			msgs.append(msg)
+		msgs.insert(0, "但攻击被闪开")
 	elif damage <= 0:
-		msgs.append("但并未造成伤害")
+		msgs.insert(0, "但并未造成伤害")
 	else:
 		# 重置对白，40003 和 40004 都可以调整对白补充信息
 		var memo = ""
@@ -263,7 +271,7 @@ func solo_say_hurt():
 			DataManager.set_env("单挑.伤害数值", parry)
 			DataManager.set_env("单挑.额外伤害", 0)
 			damage = parry
-			msgs.append(msg)
+			msgs.insert(0, msg)
 		# 免死检查
 		if enemyActor.get_hp() <= damage:
 			var suit = enemyActor.get_suit()
@@ -284,7 +292,7 @@ func solo_say_hurt():
 				DataManager.set_env("单挑.伤害数值", 0)
 				DataManager.set_env("单挑.额外伤害", 0)
 				damage = 0
-				msgs.append(msg)
+				msgs.insert(0, msg)
 
 		DataManager.set_env("单挑.补充信息", "")
 		if damage > 0:

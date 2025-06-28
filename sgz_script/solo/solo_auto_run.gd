@@ -63,17 +63,20 @@ func solo_run_start():
 	return
 
 func _process(delta: float) -> void:
-	var scene_solo = SceneManager.current_scene();
-	if scene_solo.bgm:
-		SoundManager.play_bgm();
+	if DataManager.get_current_scene_id() != 40000:
+		return
+	var scene = SceneManager.current_scene()
+	if scene.bgm:
+		SoundManager.play_bgm()
 	
-	if(!DataManager.solo_run):
+	if not DataManager.solo_run:
 		return;
-	if(FlowManager.has_task()):
-		return;
+	if FlowManager.has_task():
+		return
+
 	#只需要服务器去处理顺序数据
-	if(AutoLoad.get_local_id()!=1):
-		return;
+	if AutoLoad.get_local_id() != 1:
+		return
 	
 	if(get_next_step()==get_current_step()):
 		if(is_instance_valid(player_control)):

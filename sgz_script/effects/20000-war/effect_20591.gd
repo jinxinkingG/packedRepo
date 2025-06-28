@@ -7,6 +7,7 @@ const EFFECT_ID = 20591
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
 const TARGET_SKILL = "援护"
+const BUFFED = 10
 
 func effect_20591_start() -> void:
 	if not wait_choose_actors(get_teammate_targets(me)):
@@ -20,6 +21,14 @@ func on_view_model_2000() -> void:
 
 func effect_20591_selected() -> void:
 	var targetId = DataManager.get_env_int("目标")
+	var buffed = ske.get_war_skill_val_dic()
+	if str(targetId) in buffed and Global.intval(buffed[str(targetId)]) == 2:
+		var msg = "{0}当速出击！\n（不可重复提升属性".format([
+			DataManager.get_actor_honored_title(targetId, actorId)
+		])
+		play_dialog(actorId, msg, 2, 2999)
+		return
+
 	var msg = "发动【{0}】\n令{1}临时获得【{2}】"
 	if SkillHelper.actor_has_skills(targetId, [TARGET_SKILL]):
 		msg = "{1}已习得【{2}】\n临时令其统率 +10"
@@ -36,10 +45,14 @@ func on_view_model_2001() -> void:
 func effect_20591_confirmed() -> void:
 	var targetId = DataManager.get_env_int("目标")
 	ske.cost_war_cd(99999)
+	var buffed = ske.get_war_skill_val_dic()
 	if SkillHelper.actor_has_skills(targetId, [TARGET_SKILL]):
-		ske.change_war_leadership(targetId, 10)
+		ske.change_war_leadership(targetId, BUFFED)
+		buffed[str(targetId)] = 2
 	else:
 		ske.add_war_skill(targetId, TARGET_SKILL, 99999)
+		buffed[str(targetId)] = 1
+	ske.set_war_skill_val(buffed)
 	var msg = "{0}治军甚善\n吾以全军相托".format([
 		DataManager.get_actor_honored_title(targetId, ske.skill_actorId),
 	])
@@ -50,8 +63,8 @@ func on_view_model_2002() -> void:
 	wait_for_skill_result_confirmation(FLOW_BASE + "_response")
 	return
 
-func effect_20591_response():
-	var targetId = get_env_int("目标")
+func effect_20591_response() -> void:
+	var targetId = DataManager.get_env_int("目标")
 	var msg = "谨受命，必呼应周全！"
 	report_skill_result_message(ske, 2003, msg, 0, targetId)
 	return

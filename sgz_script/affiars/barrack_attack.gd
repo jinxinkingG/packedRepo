@@ -315,6 +315,8 @@ func check_reinforcements():
 	wv.settled = 0
 	# 扣减粮草
 	reinforcementCity.add_rice(-riceCost)
+	# 记住当前的武将id顺序
+	wv.fromCityActorIds = reinforcementCity.get_actor_ids()
 	# 武将出列
 	for r in reinforcements:
 		clCity.move_out(r.actorId)
@@ -357,8 +359,11 @@ func _ready_to_war():
 
 	fromCity.add_gold(-goods[0])
 	fromCity.add_rice(-goods[1])
-	
-	var mainActorId:int = -1;
+
+	# 记住当前的武将id顺序
+	var fromCityActorIds = fromCity.get_actor_ids()
+
+	var mainActorId:int = -1
 	#攻方城内去除出征的武将
 	for actorId in wf.sendActors:
 		clCity.move_out(actorId)
@@ -394,6 +399,8 @@ func _ready_to_war():
 	attackerWV.main_actorId = attackerWV.init_actors[0]
 	attackerWV.money = goods[0]
 	attackerWV.rice = goods[1]
+	# 记住当前的武将id顺序
+	attackerWV.fromCityActorIds = fromCityActorIds
 	wf.attackerWV = attackerWV
 
 	wf.defenderWV.vstate().hate(wf.attackerWV.vstate().id)

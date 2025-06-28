@@ -23,4 +23,5 @@ func on_trigger_30024()->bool:
 		return false
 	if bu.Type == "步":
 		bu.reset_combat_info("步(标枪)")
+		bu.set_combat_val("投掷类型", 2, ske.skill_name)
 	return false

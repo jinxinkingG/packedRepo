@@ -39,12 +39,10 @@ func effect_20264_3():
 	ske.cost_war_cd(99999)
 	ske.set_war_skill_val(actorId, 99999, -1, targetId)
 	ske.set_war_skill_val(targetId)
-	if not me.dic_other_variable.has("额外机上限"):
-		me.dic_other_variable["额外机上限"] = 0
-	me.dic_other_variable["额外机上限"] = int(me.dic_other_variable["额外机上限"]) - AP_LIMIT
+	ske.set_actor_extra_ap_limit(actorId, -AP_LIMIT)
 	ske.war_report()
 
-	var msg = "敌利在急战，我利在缓搏。\n吾为后劲，助{0}徐图之。（{1}获得 [助] 标记".format([
+	var msg = "敌利在急战，我利在缓搏。\n吾为后劲，助{0}徐图之。\n（{1}获得 [助] 标记".format([
 		DataManager.get_actor_honored_title(targetId, me.actorId),
 		ActorHelper.actor(targetId).get_name()
 	])

@@ -9,39 +9,8 @@ const COST_AP = 5
 const EXP_GAIN = 500
 const TIMES_LIMIT = 3
 
-func _init() -> void:
-	FlowManager.bind_import_flow(FLOW_BASE + "_start", self)
-	FlowManager.bind_import_flow(FLOW_BASE + "_2", self)
-	FlowManager.bind_import_flow(FLOW_BASE + "_3", self)
-	FlowManager.bind_import_flow(FLOW_BASE + "_4", self)
-	FlowManager.bind_import_flow(FLOW_BASE + "_AI_start", self)
-	return
-
-func _input_key(delta:float):
-	var view_model = LoadControl.get_view_model()
-	match view_model:
-		2000:
-			wait_for_choose_actor(FLOW_BASE + "_2", false)
-		2001:
-			wait_for_yesno(FLOW_BASE + "_3", false)
-		2002:
-			wait_for_skill_result_confirmation(FLOW_BASE + "_4")
-		3000:
-			wait_for_skill_result_confirmation(FLOW_BASE + "_4")
-	return
-
-func check_trigger_correct()->bool:
-	var ske = SkillHelper.read_skill_effectinfo()
-	var bf = DataManager.get_current_battle_fight()
-	match ske.trigger_Id:
-		20015: # 被攻击，诱发技判断
-			return _attacked(ske, bf)
-		20020: # 白兵结算
-			_battle_over(ske, bf)
-	return false
-
-func _attacked(ske:SkillEffectInfo, bf:BattleFight)->bool:
-	if bf.get_defender_id() != ske.skill_actorId:
+func on_trigger_20015() -> bool:
+	if bf.get_defender_id() != actorId:
 		# 不是防守方
 		return false
 	var me = ske.get_war_actor()
@@ -56,7 +25,7 @@ func _attacked(ske:SkillEffectInfo, bf:BattleFight)->bool:
 		return false
 	return true
 
-func _battle_over(ske:SkillEffectInfo, bf:BattleFight)->bool:
+func on_trigger_20020() -> bool:
 	# 检查引伏标记
 	var marked = ske.get_war_skill_val_dic()
 	if not marked.has("times") or not marked.has("ing"):
@@ -85,10 +54,8 @@ func _battle_over(ske:SkillEffectInfo, bf:BattleFight)->bool:
 	me.add_dialog_info(d)
 	return false
 
-func effect_20149_AI_start():
-	var ske = SkillHelper.read_skill_effectinfo()
-	var bf = DataManager.get_current_battle_fight()
-	var replacedId = get_env_int("目标")
+func effect_20149_AI_start() -> void:
+	var replacedId = DataManager.get_env_int("目标")
 	var me = ske.get_war_actor()
 	if me.action_point < COST_AP:
 		LoadControl.end_script()
@@ -118,7 +85,7 @@ func effect_20149_AI_start():
 		# 你也没强到哪去。。。
 		LoadControl.end_script()
 		return
-	set_env("目标", powerfulId)
+	DataManager.set_env("目标", powerfulId)
 	var msg = "{0}小儿\n{1}在此专候多时了！\n（{2}发动【引伏】".format([
 		bf.get_attacker().get_name(),
 		ActorHelper.actor(powerfulId).get_name(),
@@ -127,30 +94,40 @@ func effect_20149_AI_start():
 	play_dialog(powerfulId, msg, 0, 3000)
 	return
 
-#开始
-func effect_20149_start():
-	var ske = SkillHelper.read_skill_effectinfo()
-	if not assert_action_point(ske.skill_actorId, COST_AP):
+func on_view_model_3000() -> void:
+	wait_for_skill_result_confirmation(FLOW_BASE + "_fight")
+	return
+
+func effect_20149_start() -> void:
+	if not assert_action_point(actorId, COST_AP):
 		return
-	var me = ske.get_war_actor()
+	var targetIds = get_teammate_targets(me)
+	if targetIds.empty():
+		var msg = "附近没有队友可以发动【{0}】".format([ske.skill_name])
+		play_dialog(actorId, msg, 3, 2990)
+		return
 	var msg = "选择队友发动【{0}】".format([ske.skill_name])
-	if not wait_choose_actors(get_teammate_targets(me), msg, true):
+	if not wait_choose_actors(targetIds, msg, true):
 		return
 	LoadControl.set_view_model(2000)
 	return
 
-func effect_20149_2():
-	var ske = SkillHelper.read_skill_effectinfo()
-	var war_map = SceneManager.current_scene().war_map;
-	war_map.cursor.hide()
-	var msg = "发动【引伏】\n需{0}点机动力\n可否？".format([COST_AP])
-	play_dialog(ske.skill_actorId, msg, 2, 2001, true)
+func on_view_model_2000() -> void:
+	wait_for_choose_actor(FLOW_BASE + "_selected", false)
 	return
 
-func effect_20149_3():
-	var ske = SkillHelper.read_skill_effectinfo()
-	var bf = DataManager.get_current_battle_fight()
-	var replacedId = get_env_int("目标")
+func effect_20149_selected() -> void:
+	map.cursor.hide()
+	var msg = "发动【引伏】\n需{0}点机动力\n可否？".format([COST_AP])
+	play_dialog(actorId, msg, 2, 2001, true)
+	return
+
+func on_view_model_2001() -> void:
+	wait_for_yesno(FLOW_BASE + "_confirmed", false)
+	return
+
+func effect_20149_confirmed() -> void:
+	var replacedId = DataManager.get_env_int("目标")
 	var msg = "{0}小儿\n{1}在此专候多时了！".format([
 		bf.get_attacker().get_name(),
 		ActorHelper.actor(replacedId).get_name(),
@@ -158,10 +135,12 @@ func effect_20149_3():
 	play_dialog(replacedId, msg, 0, 2002)
 	return
 
-func effect_20149_4():
-	var ske = SkillHelper.read_skill_effectinfo()
-	var bf = DataManager.get_current_battle_fight()
-	var replacedId = get_env_int("目标")
+func on_view_model_2002() -> void:
+	wait_for_skill_result_confirmation(FLOW_BASE + "_fight")
+	return
+
+func effect_20149_fight() -> void:
+	var replacedId = DataManager.get_env_int("目标")
 
 	ske.cost_ap(COST_AP)
 	# 记录次数并设置引伏标记

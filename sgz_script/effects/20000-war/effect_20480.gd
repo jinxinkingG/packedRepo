@@ -48,7 +48,7 @@ func effect_20480_start()->void:
 	return
 
 func on_view_model_2000()->void:
-	wait_for_free_position(FLOW_BASE + "_2")
+	wait_for_free_position(FLOW_BASE + "_2", false, "player_ready")
 	return
 
 func effect_20480_2()->void:

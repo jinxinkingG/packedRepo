@@ -55,4 +55,5 @@ func endmonth_4():
 
 func endmonth_5():
 	LoadControl.set_view_model(175);
+	DataManager.orderbook = 0
 	SceneManager.show_confirm_dialog("已结束本月");

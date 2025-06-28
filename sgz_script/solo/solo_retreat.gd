@@ -86,7 +86,7 @@ func solo_retreat_4_chase():
 	var node = scene_solo.get_actor_node(actorId);
 	var enemy_node = node.get_enemy_actor_node();
 	var self_damage = Global.get_random(0,9)+5;
-	DataManager.common_variable["单挑.伤害数值"]=self_damage;
+	DataManager.set_env("单挑.伤害数值", self_damage)
 	var msg = "{0}于被追击之时\n受到{1}点伤害".format([actor.get_name(), self_damage])
 	SceneManager.show_confirm_dialog(msg);
 

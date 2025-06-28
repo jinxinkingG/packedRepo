@@ -287,30 +287,35 @@ func _get_collect_rice(city)->int:
 
 
 func city_data_deal()->void:
-	var month = DataManager.month;
+	var month = DataManager.month
+
 	for city in clCity.all_cities():
-		#每过1个月，战乱度-2
+		# 每过1个月，战乱度-2
 		var chaos = city.add_chaos_score(-2)
-		if(month == 1):
+		if month == 1:
 			chaos = city.add_chaos_score(-max(10, chaos*0.2))
+
+		# 人口自然增长
 		var point = int(100/max(1, chaos))*0.001 / 12 *(city.get_loyalty()/100.0)
-		city.add_city_property("人口", int(city.get_pop()*point))
-		#DataManager.game_trace("--循环武将开始--");
-		#处理出仕武将
-		var actorIds = city.get_actor_ids()
-		var leaderId = -1
-		if actorIds.size() > 0:
-			leaderId = actorIds[0]
-			#遍历所有已记录的城门
-			for door_position in city.get_all_door_position():
-				var actor = ActorHelper.actor(leaderId);
-				var door_hp = city.get_door_hp(door_position.x,door_position.y);
-				door_hp += actor.get_politics()
-				city.set_door_hp(door_position.y, door_position.x, door_hp);
-			# 触发太守技
-			SkillHelper.auto_trigger_skill(leaderId, 10006, "")
-			
-		for actorId in actorIds:
+		city.add_city_property("人口", int(city.get_pop() * point))
+
+		# 城门恢复
+		var leader = city.get_leader()
+		if leader != null and leader.actorId >= 0:
+			for doorPosition in city.get_all_door_position():
+				var doorHP = city.get_door_hp(doorPosition)
+				doorHP += leader.get_politics()
+				city.set_door_hp(doorPosition, doorHP)
+
+		# 武将状态、忠诚度、体力的恢复和校正
+		var buffLoyaltyUp = 0
+		for srb in SkillRangeBuff.find_for_city("每月加忠", city.ID):
+			if int(srb.effectTagVal) != 0:
+				buffLoyaltyUp += int(srb.effectTagVal)
+		for srb in SkillRangeBuff.find_for_vstate("每月加忠", city.get_vstate_id()):
+			if int(srb.effectTagVal) != 0:
+				buffLoyaltyUp += int(srb.effectTagVal)
+		for actorId in city.get_actor_ids():
 			var actor = ActorHelper.actor(actorId)
 			if actorId == city.get_lord_id():
 				var vs = clVState.vstate(city.get_vstate_id())
@@ -322,6 +327,9 @@ func city_data_deal()->void:
 				if actor.get_loyalty() >=30 and actor.get_loyalty() < 70:
 					actor.add_loyalty(3)
 			actor._remove_attr("内政.离间")
+			# 85 目前为 BUFF 固定上限
+			if buffLoyaltyUp != 0 and actor.get_loyalty() < 85:
+				actor.add_loyalty(buffLoyaltyUp)
 			actor.set_status_officed(city.get_vstate_id())
 			actor.set_dislike_vstate_id(-2)
 			actor.set_exile_city(city.ID)

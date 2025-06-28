@@ -25,7 +25,6 @@ func effect_20200_start():
 			skillNames.append(skill.name)
 		for dic in SkillHelper.get_actor_scene_skills(actorId):
 			skillNames.erase(dic["skill_name"])
-	skillNames.erase("逢亮")
 	var extraSkillNames = []
 	for targetId in get_teammate_targets(me, 999):
 		var targetSkillNames = []
@@ -36,8 +35,6 @@ func effect_20200_start():
 		if not "伺动" in targetSkillNames:
 			continue
 		for skillName in targetSkillNames:
-			if skillName in ["逢亮", "伺动"]:
-				continue
 			extraSkillNames.append([targetId, skillName])
 	var items = []
 	var values = []

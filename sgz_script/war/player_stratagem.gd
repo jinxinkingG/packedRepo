@@ -286,7 +286,7 @@ func stratagem_execute():
 		se.perform_to_area(areaPosition)
 	else:
 		se.perform_to_targets(targets)
-	SkillHelper.auto_trigger_skill(se.get_action_id(se.hiddenActionId), 20009, "")
+	SkillHelper.auto_trigger_skill(se.get_action_id(se.hiddenActionId), 20009)
 	FlowManager.add_flow("draw_actors")
 
 	DataManager.set_env("对话PENDING", se.get_report_message())

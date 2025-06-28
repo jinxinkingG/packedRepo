@@ -1,11 +1,12 @@
 extends "effect_20000.gd"
 
 #逢亮效果1实现，被俘虏
-#【逢亮】大战场,锁定技。你转移阵营或被俘虏时，若转移后的阵营不是你的战争初始势力，并有忠>90的诸葛亮在场，你永久转为<阳>面，且忠变为99。
+#【逢亮】大战场，转换技·规则技。满足以下条件之一时，你永久转为<阳>面，且忠变为与诸葛亮相同：①战争中你转移阵营，当前阵营不是你的战争初始势力，且队内有忠>90的诸葛亮；②你与诸葛亮同阵营出战，超过3次。
 
 const CALLBACK_SCRIPT = "effects/20000-war/effect_20192.gd"
 const CALLBACK_METHOD = "progress"
 
+const ZHIJI_SKILL_NAME = "志继"
 const ZHIJI_EFFECT_ID = 20213
 
 const DIALOGS = [
@@ -113,14 +114,14 @@ func done():
 	map.set_cursor_location(me.position, true)
 	SceneManager.show_actor_info(me.actorId)
 	
-	if not SkillHelper.actor_has_skills(actorId, ["志继"]):
+	if not SkillHelper.actor_has_skills(actorId, [ZHIJI_SKILL_NAME]):
 		return
 
 	var dic = {
 		"current_actor": me.actorId,
 		"effect_id": ZHIJI_EFFECT_ID,
 		"triggerId": -1,
-		"skill_name": "志继",
+		"skill_name": ZHIJI_SKILL_NAME,
 		"skill_actor": me.actorId,
 	}
 	var st = SkillTriggerInfo.new()

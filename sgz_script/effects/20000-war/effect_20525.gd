@@ -6,6 +6,9 @@ extends "effect_20000.gd"
 const EFFECT_ID = 20525
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
+const TURNS = 3
+const COST_CD = 5
+
 func effect_20525_start() -> void:
 	var targets = []
 	for targetId in get_teammate_targets(me):
@@ -49,12 +52,20 @@ func effect_20525_3() -> void:
 	var targetId = DataManager.get_env_int("目标")
 	var skillName = DataManager.get_env_str("目标项")
 
-	ske.cost_war_cd(5)
-	ske.add_war_skill(actorId, skillName, 3)
+	ske.cost_war_cd(COST_CD)
+	# 去除旧的，if any
+	var old = ske.get_war_skill_val_str()
+	if old != "":
+		ske.remove_war_skill(actorId, old)
+	ske.add_war_skill(actorId, skillName, TURNS)
+	# 记住借的
+	ske.set_war_skill_val(skillName, TURNS)
 	ske.ban_war_skill(targetId, skillName, 99999)
 	ske.war_report()
 
 	var msg = "【{0}】之用\n非吾不能尽！".format([skillName])
+	if old != "":
+		msg += "\n（失去【{0}】".format([old])
 	play_dialog(actorId, msg, 0, 2002)
 	return
 

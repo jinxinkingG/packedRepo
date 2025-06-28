@@ -228,6 +228,9 @@ func _action_throw(unit:Battle_Unit,taunt:Array=[])->Dictionary:
 	#获取攻击和投掷距离
 	var meleeDistance = unit.get_attack_distance()
 	var throwDistance = unit.get_throw_distance()
+	var throwType = unit.get_throw_type()
+	var throwTargetTypes = unit.get_throw_target_types()
+
 	if throwDistance <= 0 or throwDistance < meleeDistance:
 		return {}
 
@@ -241,69 +244,68 @@ func _action_throw(unit:Battle_Unit,taunt:Array=[])->Dictionary:
 		return {}
 
 	#寻找投掷目标unit
-	var dic_direct_enemys = {
+	var targetsInDirections = {
 		"left":[],
 		"right":[],
 		"up":[],
 		"down":[]
 	};
-	var dic_direct_position = {
-		"left":Vector2(-1,0),
-		"right":Vector2(1,0),
-		"up":Vector2(0,-1),
-		"down":Vector2(0,1)
+	var directions = {
+		"left": Vector2.LEFT,
+		"right": Vector2.RIGHT,
+		"up": Vector2.UP,
+		"down": Vector2.DOWN
 	};
 	var blockIgnoreSetting = StaticManager.get_battle_ignore_block_setting()
 	var blockIgnored = false
 	var leader = unit.leader()
 	if blockIgnoreSetting.has(leader.get_troops_type()):
 		blockIgnored = bf.get_terrian() in blockIgnoreSetting[leader.get_troops_type()]
-	#从身边一个个往外找目标
-	for dir in dic_direct_position:
+	# 从身边一格一格检查
+	for dir in directions:
 		for i in throwDistance:
-			var real_distance = i+1;
-			var add:Vector2 = dic_direct_position[dir]*real_distance;
+			var disv:Vector2 = directions[dir] * (i + 1)
 			#目标坐标
-			var tar_position:Vector2 = unit.unit_position + add;
+			var targetPos:Vector2 = unit.unit_position + disv
 			#先检查目标有没有人，有就写入目标数组
-			var other_unit = DataManager.get_battle_unit_by_position(tar_position);
-			if(other_unit!=null):
-				#跳过己方单位
-				if(other_unit.leaderId == unit.leaderId):
-					continue;
-				# 跳过中立单位
-				if other_unit.leaderId == -1:
+			var target = DataManager.get_battle_unit_by_position(targetPos)
+			if target == null:
+				# 没有单位，再检测是否是射击障碍
+				if not blockIgnored:#仅检测非优势地形的军种
+					if scene_battle.get_position_is_arrowblock(targetPos):
+						break
+				continue
+			# 跳过己方单位和中立单位
+			if target.leaderId in [-1, unit.leaderId]:
+				continue
+			# 跳过纵向的城门单位
+			if int(directions[dir].x) == 0 and target.Type == "城门":
+				continue
+			if i < meleeDistance:
+				# 目标在近身攻击范围内
+				# 注意这里的检查不能提前，因为要判断障碍物
+				continue
+			if state in ["包围"] and target.get_unit_type() in ["将"]:
+				#状态为包围，且目标是主将时，不做考虑，并且当做障碍
+				break
+			if not throwTargetTypes.empty() and not target.get_unit_type() in throwTargetTypes:
+				# 判断类型是否允许
+				continue
+			if unit.get_unit_type() == "将" and target.get_unit_type() == "将":
+				if target.get_hp() < 50:
+					# 武将不能对 hp 50 以下的武将投掷
 					continue
-				#跳过dir的x坐标为0的城门单位
-				if int(dic_direct_position[dir].x) == 0 && other_unit.Type == "城门":
-					continue;
-				if real_distance <= meleeDistance:
-					# 目标在近身攻击范围内
-					continue
-				if state in ["包围"] and other_unit.get_unit_type() in ["将"]:
-					#状态为包围，且目标是主将时，不做考虑，并且当做障碍
-					break
-				if unit.get_unit_type() in ["将"]:
-					if not other_unit.get_unit_type() in ["将"]:
-						# 武将不能对士兵投掷
-						continue
-					if other_unit.get_hp() < 50:
-						# 武将不能对 hp 50 以下的武将投掷
-						continue
-				dic_direct_enemys[dir].append(other_unit)
-				break;#只要有目标，不论近远程都算是阻碍
-			#没有单位时，再检测是否是射击障碍
-			if not blockIgnored:#仅检测非优势地形的军种
-				if scene_battle.get_position_is_arrowblock(tar_position):
-					break
+			# 找到目标，跳出
+			targetsInDirections[dir].append(target)
+			break
 
-	var dir_has_enemy = [];
-	for dir in dic_direct_enemys:
-		if(dic_direct_enemys[dir].size()>0):
-			dir_has_enemy.append(dir);
+	var possibleDirections = []
+	for dir in targetsInDirections:
+		if targetsInDirections[dir].size() > 0:
+			possibleDirections.append(dir)
 
-	#不存在可投掷的目标时，直接退出
-	if(dir_has_enemy.size()==0):
+	# 不存在可投掷的目标时，直接退出
+	if possibleDirections.empty():
 		return {};
 
 	var dic_direct_value = {
@@ -314,39 +316,35 @@ func _action_throw(unit:Battle_Unit,taunt:Array=[])->Dictionary:
 	};
 	
 	#判断是否存在被嘲讽优先攻击的对象
-	var new_dic_direct_enemys={};
-	var new_dir_has_enemy = [];
+	var prioredTargets = {}
+	var prioredDirections = []
 	if not taunt.empty():
-		for dir in dir_has_enemy:
-			var tu = dic_direct_enemys[dir][0];
-			if tu.Type in taunt:
-				new_dic_direct_enemys[dir] = [tu];
-				new_dir_has_enemy.append(dir);
-	
-	if not new_dic_direct_enemys.empty():
-		dic_direct_enemys = new_dic_direct_enemys;
-		dir_has_enemy = new_dir_has_enemy;
-	
-	dir_has_enemy.shuffle();
-	var throw_dir:String = dir_has_enemy[0];
+		for dir in possibleDirections:
+			var target = targetsInDirections[dir][0]
+			if target.Type in taunt:
+				prioredTargets[dir] = [target]
+				prioredDirections.append(dir)
 
-	#获取投掷目标
-	var target_unit = dic_direct_enemys[throw_dir][0];
-	var throw_to_position:Vector2 = target_unit.unit_position;
+	if not prioredTargets.empty():
+		targetsInDirections = prioredTargets
+		possibleDirections = prioredDirections
+
+	# 随机选择方向
+	possibleDirections.shuffle()
+	var finalDirection:String = possibleDirections[0]
+
+	# 决定投掷目标
+	var target = targetsInDirections[finalDirection][0]
 
 	# 类似攻击，增加投掷的波及范围，支持分散多掷
-	var targets = [target_unit.unitId]
+	var targets = [target.unitId]
 
-	var throwType = 0
-	if unit.get_unit_type() == "步":
-		# 标枪投掷
-		throwType = 2
 	var dic = {
-		"单位ID":unit.unitId,
-		"行为方式":"投掷",
-		"目标坐标":"{0},{1}".format([throw_to_position.x,throw_to_position.y]),
-		"攻击目标":targets,
-		"附加信息":throwType,
+		"单位ID": unit.unitId,
+		"行为方式": "投掷",
+		"目标坐标": "{0},{1}".format([target.unit_position.x, target.unit_position.y]),
+		"攻击目标": targets,
+		"附加信息": throwType,
 	}
 
 	return dic

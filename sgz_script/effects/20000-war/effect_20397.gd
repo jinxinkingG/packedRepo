@@ -97,7 +97,7 @@ func effect_20397_4():
 	var se = DataManager.get_current_stratagem_execution()
 	var targetId = get_env_int("战争.双顾.目标")
 	se.perform_to_targets([se.targetId, targetId])
-	SkillHelper.auto_trigger_skill(se.get_action_id(se.hiddenActionId), 20009, "")
+	SkillHelper.auto_trigger_skill(se.get_action_id(se.hiddenActionId), 20009)
 	FlowManager.add_flow("draw_actors")
 	DataManager.set_env("对话PENDING", se.get_report_message())
 	var st = SkillHelper.get_current_skill_trigger()
@@ -127,7 +127,7 @@ func DISABLED_effect_20397_AI_start():
 	])
 	se.append_message(msg)
 	se.perform_to_targets([se.targetId, targetId])
-	SkillHelper.auto_trigger_skill(se.get_action_id(se.hiddenActionId), 20009, "")
+	SkillHelper.auto_trigger_skill(se.get_action_id(se.hiddenActionId), 20009)
 	var speakerWA = DataManager.get_war_actor(se.targetId)
 	# 对队友用计、被笼络、被杀，均为敌方发言
 	if speakerWA == null or speakerWA.disabled or not me.is_enemy(speakerWA):

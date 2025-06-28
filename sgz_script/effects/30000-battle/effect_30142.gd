@@ -27,8 +27,8 @@ func on_trigger_30010()->bool:
 		if enemy.get_buff(buff)["回合数"] > 0:
 			ske.remove_war_buff(enemy.actorId, buff)
 	# 禁用对方战术和技能
-	ske.set_war_buff(enemy.actorId, "沉默", 1)
-	ske.set_war_buff(enemy.actorId, "战术禁用", maxTurn)
+	ske.set_battle_buff(enemy.actorId, "战斗沉默", maxTurn)
+	ske.set_battle_buff(enemy.actorId, "战术禁用", maxTurn)
 	# 临时获得附加技能
 	if TARGET_SKILL != "":
 		ske.battle_add_skill(me.actorId, TARGET_SKILL, maxTurn)
@@ -52,16 +52,9 @@ func on_trigger_30010()->bool:
 	me.attach_free_dialog(msg, 0, 30000)
 	return false
 
-func on_trigger_30099()->bool:
-	var enemy = me.get_battle_enemy_war_actor()
-	if enemy == null: # disabled 也触发
-		return false
-	_disable_effect(me, enemy)
-	return false
-
 func _disable_effect(me:War_Actor, enemy:War_Actor):
 	# 取消敌方的沉默和战术禁用
-	for buff in ["沉默", "战术禁用"]:
+	for buff in ["战斗沉默", "战术禁用"]:
 		var buffStatus = enemy.get_buff(buff)
 		if buffStatus["回合数"] > 0 and buffStatus["来源武将"] == me.actorId:
 			ske.remove_war_buff(enemy.actorId, buff)

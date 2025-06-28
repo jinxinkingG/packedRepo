@@ -12,40 +12,27 @@ func on_trigger_10005()->bool:
 		return false
 	if cmd.result != 10 or cmd.foundActorId < 0:
 		return false
-	if cmd.found_actor().get_moral() > 75:
-		# 尝试追加说服
-		var rate:int = int(13.0 * 100 / 15.0)
-		if Global.get_rate_result(rate):
-			return true
-	return false
+	if cmd.found_actor().get_moral() <= 75:
+		return false
+	# 尝试追加说服
+	var rate:int = int(13.0 * 100 / 15.0)
+	if not Global.get_rate_result(rate):
+		return false
 
-func effect_10020_start()->void:
-	var cmd = DataManager.get_current_search_command()
-	var msg = "在下久居山野\n请恕实在不能从命…"
-	play_dialog(cmd.foundActorId, msg, 2, 2000)
-	return
+	# 追加说服成功，开始表演
+	var msgs = [
+		["汉室衰微如此\n先生岂可避世不出？", actorId, 3],
+		["此臣之过…\n当随陛下驱驰", cmd.foundActorId, 2],
+	]
+	for setting in msgs:
+		cmd.add_dialog(setting[0], setting[1], setting[2])
 
-func on_view_model_2000()->void:
-	wait_for_skill_result_confirmation(FLOW_BASE + "_2")
-	return
-
-func effect_10020_2()->void:
-	var msg = "汉室衰微如此\n先生岂可避世不出？"
-	play_dialog(actorId, msg, 3, 2001)
-	return
-
-func on_view_model_2001()->void:
-	wait_for_skill_result_confirmation(FLOW_BASE + "_3")
-	return
-
-func effect_10020_3()->void:
-	var cmd = DataManager.get_current_search_command()
+	# 修改结果，强制加入
 	cmd.result = 5
 	cmd.actorJoin = 1
 	cmd.actorCost = 0
 	cmd.accept_actor()
-	var msg = "此臣之过…\n当随陛下驱驰"
-	cmd.city().attach_free_dialog(msg, cmd.foundActorId, 2)
-	skill_end_clear(true)
-	FlowManager.add_flow("player_ready")
-	return
+	# 移除最后一条对话
+	cmd.dialogs.pop_back()
+
+	return false

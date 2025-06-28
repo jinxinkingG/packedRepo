@@ -7,7 +7,7 @@ extends "effect_10000.gd"
 const EFFECT_ID = 10011
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
-func on_trigger_10005()->bool:
+func on_trigger_10005() -> bool:
 	var cmd = DataManager.get_current_search_command()
 	if cmd == null:
 		return false
@@ -20,35 +20,19 @@ func on_trigger_10005()->bool:
 		return false
 
 	# 追加说服成功，开始表演
-	return true
+	var msgs = [
+		["先生既有大才，岂无大志？\n望以苍生为念，济世安邦", actorId],
+		["既如此…\n当随主公驱驰", cmd.foundActorId],
+	]
+	for setting in msgs:
+		cmd.add_dialog(setting[0], setting[1], 2)
 
-func effect_10011_start()->void:
-	var cmd = DataManager.get_current_search_command()
-	var msg = "在下久居山野\n请恕实在不能从命…"
-	play_dialog(cmd.foundActorId, msg, 2, 2000)
-	return
-
-func on_view_model_2000()->void:
-	wait_for_skill_result_confirmation(FLOW_BASE + "_2")
-	return
-
-func effect_10011_2()->void:
-	var msg = "先生既有大才，岂无大志？\n望以苍生为念，济世安邦"
-	play_dialog(actorId, msg, 2, 2001)
-	return
-
-func on_view_model_2001()->void:
-	wait_for_skill_result_confirmation(FLOW_BASE + "_3")
-	return
-
-func effect_10011_3()->void:
-	var cmd = DataManager.get_current_search_command()
+	# 修改结果，强制加入
 	cmd.result = 5
 	cmd.actorJoin = 1
 	cmd.actorCost = 0
 	cmd.accept_actor()
-	var msg = "既如此…\n当随主公驱驰"
-	cmd.city().attach_free_dialog(msg, cmd.foundActorId, 2)
-	skill_end_clear(true)
-	FlowManager.add_flow("player_ready")
-	return
+	# 移除最后一条对话
+	cmd.dialogs.pop_back()
+
+	return false

@@ -5,14 +5,7 @@ extends "effect_20000.gd"
 
 const EXTRA_AP_LIMIT = 5
 
-func check_trigger_correct():
-	var wa = DataManager.get_war_actor(ske.actorId)
-	if wa == null or wa.disabled:
-		return false
-	if wa.dic_other_variable.has("烈驹"):
-		return false
-	wa.dic_other_variable["烈驹"] = 1
-	if not wa.dic_other_variable.has("额外机上限"):
-		wa.dic_other_variable["额外机上限"] = 0
-	wa.dic_other_variable["额外机上限"] += EXTRA_AP_LIMIT
+func on_trigger_20013() -> bool:
+	ske.set_actor_extra_ap_limit(ske.actorId, EXTRA_AP_LIMIT)
+	ske.war_report()
 	return false

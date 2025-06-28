@@ -733,6 +733,7 @@ func AI_VS_PLAYER_reinforce_go()->void:
 	# 扣减粮草
 	city.add_gold(-goods[0])
 	city.add_rice(-goods[1])
+	wv.fromCityActorIds = city.get_actor_ids()
 	# 武将出列
 	for actorId in actorIds:
 		clCity.move_out(actorId)

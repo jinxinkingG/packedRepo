@@ -3,7 +3,6 @@ extends "effect_20000.gd"
 #缓进被动效果部分 #胜利触发 #失败触发 #机动力上限 #回复兵力
 #【缓进】大战场,限定技。你可以减5点机动力上限，指定一个你方武将，其获得一个[助]标记。拥有[助]的武将，若其白刃战胜利，兵力恢复本次白刃战损失兵力的50%；若其白刃战失败，该武将移动到与你最近的那格，且失去[助]标记，你机动力上限+5。
 
-const AP_LIMIT = 5
 const HUANJIN_EFFECT_ID = 20264
 
 # 被动效果部分
@@ -39,9 +38,7 @@ func on_trigger_20020()->bool:
 		# 有位置，拉回来
 		ske.change_war_actor_position(loser.actorId, newPos)
 		# 恢复机动力上限
-		if not me.dic_other_variable.has("额外机上限"):
-			me.dic_other_variable["额外机上限"] = 0
-		me.dic_other_variable["额外机上限"] = int(me.dic_other_variable["额外机上限"]) + AP_LIMIT
+		ske.set_actor_extra_ap_limit(actorId, 0)
 		# 清除标记
 		ske.set_war_skill_val(0, 0, HUANJIN_EFFECT_ID, ske.actorId)
 		ske.set_war_skill_val(-1, 0, HUANJIN_EFFECT_ID, actorId)
@@ -49,13 +46,11 @@ func on_trigger_20020()->bool:
 		var map = SceneManager.current_scene().war_map
 		map.camer_to_actorId(me.actorId, "draw_actors")
 		map.next_shrink_actors = [me.actorId, ske.actorId]
-		var d = War_Character.DialogInfo.new()
-		d.text = "小挫而已，{0}且回\n可徐徐图之\n（{1}失去 [助] 标记".format([
+		var msg = "小挫而已，{0}且回\n可徐徐图之\n（{1}失去 [助] 标记".format([
 			DataManager.get_actor_honored_title(ske.actorId, me.actorId),
 			loser.get_name()
 		])
-		d.actorId = me.actorId
-		me.add_dialog_info(d)
+		me.attach_free_dialog(msg)
 
 	if winner.actorId == ske.actorId:
 		# 友军胜利
@@ -71,13 +66,11 @@ func on_trigger_20020()->bool:
 		var map = SceneManager.current_scene().war_map
 		map.camer_to_actorId(ske.actorId, "draw_actors")
 		map.next_shrink_actors = [me.actorId, ske.actorId]
-		var d = War_Character.DialogInfo.new()
-		d.text = "得{0}之助\n兵力恢复 {1}".format([
+		var msg = "得{0}之助\n兵力恢复 {1}".format([
 			DataManager.get_actor_honored_title(me.actorId, ske.actorId),
 			recover
 		])
-		d.actorId = ske.actorId
-		me.add_dialog_info(d)
+		me.attach_free_dialog(msg)
 
 	ske.war_report()
 	return false

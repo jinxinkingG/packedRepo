@@ -14,7 +14,7 @@ func on_trigger_20013() -> bool:
 		ske.change_war_power(targetId, -BUFF)
 		ske.change_war_wisdom(targetId, -BUFF)
 		ske.change_war_leadership(targetId, -BUFF)
-	ske.set_war_skill_val(0, 0, ACTIVE_EFFECT_ID)
+	ske.set_war_skill_val([], 0, ACTIVE_EFFECT_ID)
 	ske.war_report()
 	return false
 

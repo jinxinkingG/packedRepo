@@ -70,7 +70,7 @@ func on_view_model_2001() -> void:
 # 模拟计策事件回调
 func effect_20332_end() -> void:
 	# 20009 不支持 flow，仅触发，嵌套是安全的
-	SkillHelper.auto_trigger_skill(me.actorId, 20009, "")
+	SkillHelper.auto_trigger_skill(me.actorId, 20009)
 	var se = DataManager.get_current_stratagem_execution()
 	se.report()
 	skill_end_clear()

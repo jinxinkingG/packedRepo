@@ -197,6 +197,7 @@ func AI_BuyEquip():
 			for type in equipTypes:
 				var equip = actor.get_equip(type)
 				if equip.level() == "S":
+					# AI 不买 S 装
 					continue
 				#获得当前城可购买的装备
 				var best = city.better_equip(equip, actorId)

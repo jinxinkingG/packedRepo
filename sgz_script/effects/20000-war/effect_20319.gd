@@ -7,7 +7,7 @@ const AP_LIMIT_TIMES = 5
 const AP_LIMIT_GAIN = 5
 
 func on_trigger_20027()->bool:
-	if get_env_str("战争.DISABLE.TYPE") != "撤退":
+	if DataManager.get_env_str("战争.DISABLE.TYPE") != "撤退":
 		return false
 
 	var wa = DataManager.get_war_actor(ske.actorId)
@@ -17,18 +17,16 @@ func on_trigger_20027()->bool:
 		# 撤退的是主将，就不发动了
 		return false
 
-	if not ske.cost_war_limited_times(AP_LIMIT_TIMES, 99999):
+	var times = ske.get_war_skill_val_int()
+	times += 1
+	ske.set_war_skill_val(times)
+	if times > AP_LIMIT_TIMES:
 		return false
-	if not me.dic_other_variable.has("额外机上限"):
-		me.dic_other_variable["额外机上限"] = 0
-	me.dic_other_variable["额外机上限"] += AP_LIMIT_GAIN
+	ske.set_actor_extra_ap_limit(actorId, AP_LIMIT_GAIN * times)
 
-	var d = War_Character.DialogInfo.new()
-	d.actorId = me.actorId
-	d.text = "{0}丧胆败逃\n吾等当奋勇，扫灭穷寇！\n（{1}机动力上限增加{2}".format([
-		DataManager.get_actor_naughty_title(ske.actorId, me.actorId),
+	var msg = "{0}丧胆败逃\n吾等当奋勇，扫灭穷寇！\n（{1}机动力上限增加{2}".format([
+		DataManager.get_actor_naughty_title(ske.actorId, actorId),
 		me.get_name(), AP_LIMIT_GAIN,
 	])
-	d.mood = 0
-	me.add_dialog_info(d)
+	me.attach_free_dialog(msg, 0)
 	return false

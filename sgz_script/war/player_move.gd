@@ -296,20 +296,15 @@ func _push_move(dir:Vector2):
 	if not wa.move(target, true):
 		return
 	# 特殊判断，如果是仙兵种穿墙，有概率失败
-	var troopsType = wa.actor().get_troops_type()
-	if troopsType == "仙":
-		var terrian = map.get_blockCN_by_position(target)
-		if terrian == "城墙":
-			var rate = wa.actor().get_moral()
-			if not Global.get_rate_result(rate):
-				# 回弹
-				wa.position = prev
-				# 仍然扣点
-				wa.poker_point = max(0, wa.poker_point - cost["点"])
-				var msg = "？！\n（穿墙失败\n（剩余点数：{0}".format([wa.poker_point])
-				wa.attach_free_dialog(msg, 2)
-				FlowManager.add_flow("actor_move_stop")
-				return
+	if wa.may_move_failed(prev, target):
+		# 回弹
+		wa.position = prev
+		# 仍然扣点
+		wa.poker_point = max(0, wa.poker_point - cost["点"])
+		var msg = "？！\n（穿墙失败\n（剩余点数：{0}".format([wa.poker_point])
+		wa.attach_free_dialog(msg, 2)
+		FlowManager.add_flow("actor_move_stop")
+		return
 	#wa.position = prev
 	moveHistory.append({
 		"x": prev.x,
@@ -630,9 +625,7 @@ func actor_in_equip_2():
 	var values = []
 	var all = []
 	for equip in selling:
-		var color = ""
-		if equip.level() == "S":
-			color = StaticManager.COLOR_CODE_SPECIAL_EQUIP
+		var color = equip.get_name_color_code()
 		var flag = ""
 		if equip.remaining() == 0:
 			flag = "@DEL"

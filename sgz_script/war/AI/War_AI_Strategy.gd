@@ -75,17 +75,23 @@ func _get_score_of_strategy_to(scheme:StratagemInfo, fromId:int, targetId:int, s
 						_notice_for_exceptional(scheme, fromId, targetId)
 						return [0.0, 0]
 
-
 	var actor = ActorHelper.actor(fromId)
+	var fromWA = DataManager.get_war_actor(fromId);
+	var fromWV = fromWA.war_vstate()
+	var targetWA = DataManager.get_war_actor(targetId)
+	var targetWV = targetWA.war_vstate()
+	
+	var enemyCount = targetWV.get_actors_count()
+	if enemyCount <= 2 and scheme.name in ["虚兵", "连环"]:
+		# 敌军人数较少，不考虑定止，尽可能直接伤敌
+		return [0.0, 0]
+
 	var rate = scheme.get_rate(fromId, targetId)
 	if rate <= rateLimit:
 		#命中率低于最低门槛0，直接0分
 		return [0.0, rate]
 	var cost = scheme.get_cost_ap(fromId)
-	var fromWA = DataManager.get_war_actor(fromId);
-	var fromWV = fromWA.war_vstate()
-	var targetWA = DataManager.get_war_actor(targetId);
-	var targetWV = targetWA.war_vstate()
+
 	var distance = Global.get_range_distance(fromWA.position, targetWA.position)
 	var related = scheme.get_all_related_targets(fromWA, targetWA)
 	#装备附加智力值

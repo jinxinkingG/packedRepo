@@ -130,10 +130,10 @@ func ally()->bool:
 #提示玩家
 func ally_1():
 	LoadControl.set_view_model(111);
-	var currentVstateId = DataManager.vstates_sort[DataManager.vstate_no];
+	var currentVstateId = DataManager.vstates_sort[DataManager.vstate_no]
 	var currentVstate = clVState.vstate(currentVstateId)
 	var chooseActor = ActorHelper.actor(DataManager.player_choose_actor)
-	var selectVstateId = int(DataManager.common_variable["值"]);
+	var selectVstateId = DataManager.get_env_int("值")
 	var selectVstate = clVState.vstate(selectVstateId)
 	var msg = "{0}大人\n{1}军之{2}以同盟使者身份前来觐见".format([
 		selectVstate.get_lord_name(), currentVstate.get_dynasty_title_or_lord_name(), chooseActor.get_name()
@@ -143,10 +143,10 @@ func ally_1():
 #玩家选择
 func ally_2():
 	LoadControl.set_view_model(112);
-	var currentVstateId = DataManager.vstates_sort[DataManager.vstate_no];
+	var currentVstateId = DataManager.vstates_sort[DataManager.vstate_no]
 	var currentVstate = clVState.vstate(currentVstateId)
 	var chooseActor = ActorHelper.actor(DataManager.player_choose_actor)
-	var selectVstateId = int(DataManager.common_variable["值"]);
+	var selectVstateId = DataManager.get_env_int("值")
 	var selectVstate = clVState.vstate(selectVstateId)
 	
 	var msg = "{0}大人\n为了两国友好\n结成同盟可否?".format([selectVstate.get_lord_name()])
@@ -156,12 +156,12 @@ func ally_2():
 #结盟成功
 func ally_3():
 	LoadControl.set_view_model(113);
-	var currentVstateId = DataManager.vstates_sort[DataManager.vstate_no];
+	var currentVstateId = DataManager.vstates_sort[DataManager.vstate_no]
 	var currentVstate = clVState.vstate(currentVstateId)
 	var chooseActor = ActorHelper.actor(DataManager.player_choose_actor)
-	var selectVstateId = int(DataManager.common_variable["值"]);
+	var selectVstateId = DataManager.get_env_int("值")
 	var selectVstate = clVState.vstate(selectVstateId)
-	clVState.set_alliance(currentVstateId, selectVstateId, 6);
+	clVState.set_alliance(currentVstateId, selectVstateId, 6)
 	SceneManager.show_confirm_dialog("与{0}军结为同盟".format([
 		currentVstate.get_dynasty_title_or_lord_name()
 	]))

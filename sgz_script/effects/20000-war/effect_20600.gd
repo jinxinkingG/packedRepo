@@ -9,14 +9,21 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 const BUFF = 8
 
 func check_AI_perform_20000() -> bool:
-	# 检查主将附近是不是有敌军
-	return get_enemy_targets(me).size() >= 2
+	# 防守方，检查主将附近是不是有敌军
+	if me.side() == "防守方":
+		return get_enemy_targets(me, true, 4).size() >= 3
+	return get_enemy_targets(me.get_enemy_leader(), true, 4).size() >= 3
 
 func effect_20600_AI_start() -> void:
 	goto_step("confirmed")
 	return
 
 func effect_20600_start() -> void:
+	var buffed = ske.get_war_skill_val_int_array()
+	if not buffed.empty():
+		var msg = "江表群英，群集于此\n何不速进！\n（不可重复提升属性"
+		play_dialog(actorId, msg, 0, 2999)
+		return
 	var msg = "发动限定技【{0}】\n令我方全体获得属性加强\n可否？".format([
 		ske.skill_name,
 	])

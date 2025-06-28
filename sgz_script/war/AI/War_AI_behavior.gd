@@ -228,14 +228,23 @@ func _retreat(wa:War_Actor)->bool:
 				return true
 
 	var targetCityId = wa.get_retreat_city_id()
-	if targetCityId < 0:
-		# 无路可退
-		return false
-	DataManager.set_env("撤退城", targetCityId)
-	var map = SceneManager.current_scene().war_map
-	map.camer_to_actorId(wa.actorId, "AI_retreat_0")
-	set_view_model(-1)
-	return true
+	if targetCityId >= 0:
+		DataManager.set_env("撤退城", targetCityId)
+		var map = SceneManager.current_scene().war_map
+		map.camer_to_actorId(wa.actorId, "AI_retreat_0")
+		set_view_model(-1)
+		return true
+
+	# 非主将、无路可退，如果营帐有其他武将可以出战，回营替换
+	if wa.get_main_actor_id() != wa.actorId:
+		var wv = wa.war_vstate()
+		if wv == null or wv.camp_actors.empty():
+			return false
+		_end_action(wa)
+		wa.camp_in()
+		return true
+
+	return false
 
 #-----------------计策步骤--------------------------
 # 发起计策提示信息
@@ -306,7 +315,7 @@ func AI_strategem_execute():
 	var targetWA = DataManager.get_war_actor(se.targetId)
 	var targets = se.get_affected_actors(targetWA.position)
 	se.perform_to_targets(targets)
-	SkillHelper.auto_trigger_skill(se.get_action_id(se.hiddenActionId), 20009, "")
+	SkillHelper.auto_trigger_skill(se.get_action_id(se.hiddenActionId), 20009)
 	var war_map = SceneManager.current_scene().war_map
 	war_map.update_ap()
 	var speakerWA = targetWA

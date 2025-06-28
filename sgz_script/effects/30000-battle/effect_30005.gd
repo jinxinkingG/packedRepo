@@ -8,18 +8,10 @@ const ACTIVE_EFFECT_ID = 20015
 const BATTLE_TURNS_LIMIT = 20
 
 func on_trigger_30004()->bool:
-	# 先恢复默认值
-	me.dic_other_variable.erase("撤退损兵率")
 	#获取劫营标记
 	if ske.get_war_skill_val_int(ACTIVE_EFFECT_ID) <= 0:
 		return false
 	ske.set_war_skill_val(0, 0, ACTIVE_EFFECT_ID)
-	#获得劫营前的兵力
-	var soldiers = ske.get_battle_skill_val_int()
-	actor.set_soldiers(soldiers)
-	# 暂不判断，默认劫营为进攻
-	bf.attackerSoldiers = soldiers
-	bf.attackerRemaining = soldiers
 	# 加入魄袭效果判断
 	if bf.loserId == enemy.actorId\
 		and SkillHelper.actor_has_skills(actorId, ["魄袭"]):
@@ -61,7 +53,7 @@ func on_trigger_30003()->bool:
 	if get_env_int(formationKey) > 2:
 		return false
 
-	ske.set_battle_skill_val(actor.get_soldiers())
+	var prevSoldiers = actor.get_soldiers()
 	actor.set_soldiers(500)
 
 	var setting = get_env_dict("兵种数量")
@@ -72,7 +64,10 @@ func on_trigger_30003()->bool:
 
 	# 修正白兵战数据
 	bf.attackerSoldiers = 500
-	me.dic_other_variable["撤退损兵率"] = 0.0
+
+	var recover = bf.get_env_dict("战后兵力")
+	recover[str(actorId)] = prevSoldiers
+	bf.set_env("战后兵力", recover)
 
 	return false
 

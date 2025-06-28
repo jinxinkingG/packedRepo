@@ -275,6 +275,15 @@ func think_about_tactic(actorId:int)->bool:
 		if tactics.has("火矢"):
 			tactics = ["火矢"]
 
+	# 我方足够强且敌方兵力少，无须普通战术
+	if DataManager.diffculities > 3 \
+		and actor.get_power() >= enemy_actor.get_power() + 20 \
+		and enemy_actor.get_soldiers() <= 200:
+		tactics.erase("士气向上")
+		tactics.erase("火矢")
+		tactics.erase("强弩")
+		tactics.append("咒缚")
+
 	if tactics.empty():
 		return false
 	tactics.shuffle()

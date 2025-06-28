@@ -632,9 +632,10 @@ func hope_star_4():
 	var actor = candidates[0]
 	var cmd = SearchCommand.new(city.ID, city.get_lord_id())
 	cmd.force_actor_join(actor.actorId)
-	DataManager.set_env("武将", actor.actorId)
-	DataManager.set_env("对话", cmd.actorResponse)
-	DataManager.set_env("表情", cmd.actorResponseMood)
+	var d = cmd.next_dialog()
+	DataManager.set_env("武将", d.actorId)
+	DataManager.set_env("对话", d.msg)
+	DataManager.set_env("表情", d.mood)
 	actor.set_hp(actor.get_max_hp())
 	# 武将大限延长
 	actor.set_life_limit(max(DataManager.year + 12, actor.get_life_limit()))

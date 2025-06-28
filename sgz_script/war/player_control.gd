@@ -839,7 +839,8 @@ func player_before_ready():
 func player_skill_end_trigger():
 	var ske = SkillHelper.read_skill_effectinfo()
 	DataManager.set_env("战争.完成技能", ske.output_data())
-	SkillHelper.auto_trigger_skill(ske.skill_actorId, 20040, "")
+	if SkillHelper.auto_trigger_skill(ske.skill_actorId, 20040, "player_ready"):
+		return
 	DataManager.unset_env("战争.完成技能")
 	FlowManager.add_flow("player_ready")
 	return
@@ -1265,43 +1266,29 @@ func war_jump_effect():
 	if actorId < 0:
 		LoadControl._error("")
 		return
-	var actor = ActorHelper.actor(actorId)
-	var horse_name = actor.get_steed().name()
-	var array = []
-	var vect_array = []
 	var wa = DataManager.get_war_actor(actorId)
-	if wa.get_controlNo() < 0:
+	if wa == null or wa.get_controlNo() < 0:
 		player_ready()
 		DataManager.unset_env("战争.跃马武将")
 		DataManager.unset_env("战争.跃马可选位置")
 		return
-	set_view_model(12)
 	#马走日
-	var vs = [
-		Vector2(0,0),#原点（可以不跳）
-		Vector2(1,2),Vector2(2,1),#第一象限
-		Vector2(-1,2),Vector2(-2,1),#第二象限
-		Vector2(-1,-2),Vector2(-2,-1),#第三象限
-		Vector2(1,-2),Vector2(2,-1),#第四象限
-	];
-	for v in vs:
-		var target:Vector2 = wa.position + v;
-		if v != Vector2(0,0):
-			var exists = DataManager.get_war_actor_by_position(target)
-			#被武将占了
-			if exists != null and not exists.disabled:
-				continue
-			if map.get_blockCN_by_position(target) == "城墙":
-				continue
-		array.append({"x":target.x,"y":target.y});
-		vect_array.append(target)
+	var positions = Array(map.get_horse_jump_positions(wa))
+	# 加入当前位置，可以不跳
+	positions.append(wa.position)
+	var posInfos = []
+	for pos in positions:
+		posInfos.append({"x":pos.x,"y":pos.y})
 	
-	DataManager.set_env("战争.跃马可选位置", array)
-	var msg = "触发[{0}]跃马效果\n(请指定跃马位置)";
-	SceneManager.show_unconfirm_dialog(msg.format([horse_name]))
+	DataManager.set_env("战争.跃马可选位置", posInfos)
+	var msg = "触发[{0}]跃马效果\n(请指定跃马位置)".format([
+		wa.actor().get_steed().name()
+	])
+	SceneManager.show_unconfirm_dialog(msg)
 	map.set_cursor_location(wa.position, true)
-	map.show_color_block_by_position(vect_array)
+	map.show_color_block_by_position(positions)
 	map.cursor.show()
+	set_view_model(12)
 	return
 
 #检查空闲对白

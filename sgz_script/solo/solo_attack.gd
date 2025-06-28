@@ -51,6 +51,10 @@ func solo_attack():
 	# 在 get_solo_base_damage 时计算
 	var criticalChance = DataManager.get_env_int("单挑.暴击率")
 	DataManager.set_env("单挑.反伤", 0)
+	var recover = 0
+	if result == 0:
+		recover = wa.actor().get_equip_feature_total("单挑MISS回体")
+	DataManager.set_env("单挑.攻击回体", recover)
 
 	SceneManager.show_unconfirm_dialog("{0}之攻击\n命中率：{1}%\n暴击率：{2}%".format([
 		wa.get_name(), rateShow, criticalChance

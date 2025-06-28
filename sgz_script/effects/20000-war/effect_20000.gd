@@ -124,7 +124,7 @@ func check_can_choose(wa:War_Actor, from:Vector2, target:Vector2)->bool:
 		return true
 	var distance = get_choose_distance()
 	var map = SceneManager.current_scene().war_map
-	map.aStar.update_map_for_actor(me)
+	map.aStar.update_map_for_actor(wa)
 	var path = map.aStar.get_skill_path(from, target, distance)
 	return path.size() >= 2
 
@@ -240,8 +240,9 @@ func wait_for_multiple_number_input(nextFlow:String) -> void:
 
 # 选择目标部队，支持主动技和诱发计
 func wait_for_choose_actor(nextFlow:String, isActiveSkill:bool=true, canBack:bool=true, backFlow:String=""):
+	var distance = get_choose_distance()
 	if me != null:
-		map.draw_outline_by_range(me.position, get_choose_distance())
+		map.draw_outline_by_range(me.position, distance)
 	var targets = get_env_int_array("可选目标")
 	if targets.empty():
 		return false
@@ -251,8 +252,17 @@ func wait_for_choose_actor(nextFlow:String, isActiveSkill:bool=true, canBack:boo
 		index = 0
 		current = targets[0]
 		set_env("武将", current)
+
 	var msg = update_choose_actor_message(current)
 	SceneManager.show_actor_info(current, false, msg)
+
+	# 测试 debug 显示
+	if DataManager.is_test_player():
+		var target = DataManager.get_war_actor(current)
+		if target != null:
+			var path = map.aStar.get_skill_path(me.position, target.position, distance)
+			if path.size() > 0:
+				map.show_color_block_by_position(path)#, map.SELECTOR_COLOR)
 
 	if Global.is_action_pressed_BY():
 		if not canBack:
@@ -569,7 +579,7 @@ func get_teammate_targets(me:War_Actor, distance:int=-1, allowWalls:bool=true, i
 	return ret
 
 # 将对手作为技能准备发动的目标
-func get_enemy_targets(me:War_Actor, allowWalls:bool=false, distance:int=-1, ignoreExtra:bool=false)->PoolIntArray:
+func get_enemy_targets(from:War_Actor, allowWalls:bool=false, distance:int=-1, ignoreExtra:bool=false)->PoolIntArray:
 	if distance < 0:
 		distance = get_choose_distance()
 	# 特殊距离，不用考虑扩展额外选区
@@ -577,10 +587,10 @@ func get_enemy_targets(me:War_Actor, allowWalls:bool=false, distance:int=-1, ign
 		ignoreExtra = true
 	var map = SceneManager.current_scene().war_map
 	var ret = []
-	var centers = get_skill_centers(me, ignoreExtra)
+	var centers = get_skill_centers(from, ignoreExtra)
 	var wf = DataManager.get_current_war_fight()
 	for wa in wf.get_war_actors(false, true):
-		if not me.is_enemy(wa):
+		if not from.is_enemy(wa):
 			continue
 		if wa.get_buff_label_turn(["潜行"]) > 0:
 			continue
@@ -591,7 +601,7 @@ func get_enemy_targets(me:War_Actor, allowWalls:bool=false, distance:int=-1, ign
 		for center in centers:
 			if Global.get_range_distance(wa.position, center) > distance:
 				continue
-			if not allowWalls and me.side() == "攻击方" and not check_can_choose(me, center, wa.position):
+			if not allowWalls and from.side() == "攻击方" and not check_can_choose(from, center, wa.position):
 				continue
 			if not wa.actorId in ret:
 				ret.append(wa.actorId)

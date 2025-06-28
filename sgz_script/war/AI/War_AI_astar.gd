@@ -98,8 +98,18 @@ func get_skill_path(from:Vector2, to:Vector2, limitedDistance:int=-1)->PoolVecto
 		set_point_disabled(id, true)
 	# 队友临时解禁
 	enable_brothers()
+
 	# 获取路径
 	var ret = get_path(from, to)
+	if ret.empty():
+		var targetRectId = _get_rect_id(to)
+		if str(targetRectId) in blockById and blockById[str(targetRectId)] == "wall":
+			# 特殊情况，终点如果是城墙，只需要能摸到即可
+			for dir in StaticManager.NEARBY_DIRECTIONS:
+				ret = get_path(from, to + dir)
+				if not ret.empty():
+					break
+
 	# 范围外解禁
 	for id in disabledByDistance:
 		set_point_disabled(id, false)

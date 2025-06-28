@@ -3,19 +3,25 @@ extends "affairs_base.gd"
 #情报搜集
 func _init() -> void:
 	LoadControl.view_model_name = "内政-玩家-步骤"
-	FlowManager.bind_signal_method("search_start", self)
-	FlowManager.bind_signal_method("search_2", self)
-	FlowManager.bind_signal_method("search_3", self)
-	FlowManager.bind_signal_method("search_4", self)
-	FlowManager.bind_signal_method("search_5", self)
-	FlowManager.bind_signal_method("search_6", self)
-	FlowManager.bind_signal_method("search_6_trigger", self)
-	FlowManager.bind_signal_method("search_7", self)
-	FlowManager.bind_signal_method("search_7_actor_1", self)
-	FlowManager.bind_signal_method("search_7_actor_2", self)
-	FlowManager.bind_signal_method("search_done", self)
-	
-	FlowManager.clear_pre_history.append("search_7")
+
+	FlowManager.bind_import_flow("search_start", self)
+	FlowManager.bind_import_flow("search_actor_selected", self)
+	FlowManager.bind_import_flow("search_confirmed", self)
+	FlowManager.bind_import_flow("search_animation", self)
+	FlowManager.bind_import_flow("search_go", self)
+	FlowManager.bind_import_flow("search_execute", self)
+	FlowManager.bind_import_flow("search_report", self)
+	FlowManager.bind_import_flow("search_accept", self)
+	FlowManager.bind_import_flow("search_done", self)
+
+	# 所有旧流程的兼容
+	for key in [
+		"search_2", "search_3", "search_4",
+		"search_5", "search_6", "search_6_trigger",
+		"search_7", "search_7_actor_1", "search_7_actor_2",
+		]:
+		FlowManager.bind_signal_method(key, self, "search_fallback")
+
 	return
 
 #按键操控
@@ -31,20 +37,20 @@ func _input_key(delta: float):
 			DataManager.player_choose_actor = actorId
 			if SkillHelper.auto_trigger_skill(actorId, 10008, ""):
 				return
-			FlowManager.add_flow("search_2")
+			FlowManager.add_flow("search_actor_selected")
 		132: #命令书
-			wait_for_yesno("search_3", "enter_town_menu")
-		135:
-			wait_for_confirmation("search_6")
+			wait_for_yesno("search_confirmed", "enter_town_menu")
+		134:
+			wait_for_confirmation("search_go")
 		137:
-			wait_for_confirmation("search_7_actor_1")
+			wait_for_confirmation("search_report")
 		138:
-			wait_for_yesno("search_7_actor_2", "search_done")
+			wait_for_yesno("search_accept", "search_done")
 		139:
 			wait_for_confirmation("search_done")
 	return
 
-#情报搜集：选人(131)
+#情报搜集：选人
 func search_start():
 	SceneManager.current_scene().cursor.hide()
 	var cityId = DataManager.player_choose_city
@@ -60,7 +66,7 @@ func search_start():
 	return
 
 #情报搜集：消耗命令书
-func search_2():
+func search_actor_selected():
 	#命令书确认
 	SceneManager.show_yn_dialog("消耗1枚命令书可否")
 	SceneManager.show_cityInfo(true)
@@ -68,13 +74,12 @@ func search_2():
 	return
 
 #情报搜集：命令书消耗动画
-func search_3():
-	SceneManager.dialog_use_orderbook_animation("search_4")
-	LoadControl.set_view_model(-1)
+func search_confirmed():
+	SceneManager.dialog_use_orderbook_animation("search_animation")
 	return
 
 #情报搜集：动画
-func search_4():
+func search_animation():
 	var cityId = DataManager.player_choose_city
 	var actorId = DataManager.player_choose_actor
 	var cmd = DataManager.new_search_command(cityId, actorId)
@@ -83,30 +88,14 @@ func search_4():
 	DataManager.set_env("内政.上次搜索武将", cmd.fromId)
 	DataManager.twinkle_citys = [cityId]
 	var msg = "遵命，马上就去"
-	DataManager.set_env("对话", msg)
-	SceneManager.show_unconfirm_dialog(msg)
-	SceneManager.play_affiars_animation("Town_Search", "search_5")
-	LoadControl.set_view_model(-1)
+	if cmd.fromId == cmd.city().get_lord_id():
+		msg = "既如此，马上就去"
+	SceneManager.play_affiars_animation("Town_Search", "", false, msg, cmd.fromId)
+	LoadControl.set_view_model(134)
 	return
 
-#结果出现前确认
-func search_5():
-	var cmd = DataManager.get_current_search_command()
-	if cmd == null or cmd.cityId != DataManager.player_choose_city:
-		LoadControl.set_view_model(-1)
-		FlowManager.add_flow("search_start")
-		return
-	var msg = DataManager.get_env_str("对话")
-	DataManager.twinkle_citys = [cmd.cityId]
-	SceneManager.show_confirm_dialog(msg)
-	SceneManager.dialog_msg_complete(true)
-	#更新城池信息
-	SceneManager.show_cityInfo(true)
-	LoadControl.set_view_model(135)
-	return
-
-#开始计算结果
-func search_6():
+#计算搜索结果
+func search_go():
 	var cmd = DataManager.get_current_search_command()
 	if cmd == null or cmd.cityId != DataManager.player_choose_city:
 		LoadControl.set_view_model(-1)
@@ -117,14 +106,13 @@ func search_6():
 		return
 	SoundManager.play_bgm("", true, true)
 	cmd.decide_result()
-	LoadControl.set_view_model(136)
 	# 支持 flow
-	if SkillHelper.auto_trigger_skill(cmd.fromId, 10017, "search_6_trigger"):
+	if SkillHelper.auto_trigger_skill(cmd.fromId, 10017, "search_execute"):
 		return
-	FlowManager.add_flow("search_6_trigger")
+	FlowManager.add_flow("search_execute")
 	return
 
-func search_6_trigger():
+func search_execute():
 	var cmd = DataManager.get_current_search_command()
 	if cmd == null or cmd.cityId != DataManager.player_choose_city:
 		LoadControl.set_view_model(-1)
@@ -135,25 +123,32 @@ func search_6_trigger():
 	cmd.execute()
 	# 测试找人时 uncomment 下面这行
 	#cmd.foundActorId = 364
-	FlowManager.add_flow("search_7")
+	FlowManager.add_flow("search_report")
 	return
-	
-#情报搜集:结果提示(1)
-func search_7():
+
+func search_report():
 	var cmd = DataManager.get_current_search_command()
 	if cmd == null or cmd.cityId != DataManager.player_choose_city:
 		LoadControl.set_view_model(-1)
 		FlowManager.add_flow("search_start")
 		return
-	SceneManager.show_confirm_dialog(cmd.get_message(), cmd.fromId, cmd.mood)
-	DataManager.twinkle_citys = [cmd.cityId]
+	var d = cmd.next_dialog()
+	if d == null:
+		FlowManager.add_flow("search_done")
+		return
+	if d.yn > 0:
+		SceneManager.show_yn_dialog(d.msg, d.actorId, d.mood)
+		LoadControl.set_view_model(138)
+	else:
+		SceneManager.show_confirm_dialog(d.msg, d.actorId, d.mood)
+		LoadControl.set_view_model(137)
+	DataManager.twinkle_citys = [d.twinkleCityIds]
 	#更新城池信息
 	SceneManager.show_cityInfo(true)
-	LoadControl.set_view_model(137)
 	return
 	
-#情报搜集：结果提示仅武将(1)
-func search_7_actor_1():
+#情报搜集：确认结果提示
+func search_accept():
 	var cmd = DataManager.get_current_search_command()
 	if cmd == null or cmd.cityId != DataManager.player_choose_city:
 		FlowManager.add_flow("city_enter_menu")
@@ -162,56 +157,8 @@ func search_7_actor_1():
 		FlowManager.add_flow("search_done")
 		return
 
-	cmd.decide_actor_result()
-	if cmd.result == 9:
-		# 加入技能判断，如【解仇】等
-		for city in clCity.all_cities([cmd.vstateId]):
-			for actorId in city.get_actor_ids():
-				if SkillHelper.auto_trigger_skill(actorId, 10015, ""):
-					return
-		SceneManager.show_confirm_dialog(cmd.actorMessage, cmd.actorReporter, cmd.actorMood)
-		LoadControl.set_view_model(139)
-		return
-	if cmd.result == 10:
-		# 加入技能判断，如【荐才】【天子】等
-		for city in clCity.all_cities([cmd.vstateId]):
-			for actorId in city.get_actor_ids():
-				if SkillHelper.auto_trigger_skill(actorId, 10005, ""):
-					return
-		SceneManager.show_confirm_dialog(cmd.actorMessage, cmd.actorReporter, cmd.actorMood)
-		LoadControl.set_view_model(139)
-		return
-
-	if cmd.actorAsking:
-		SceneManager.show_yn_dialog(cmd.actorMessage, cmd.actorReporter, cmd.actorMood)
-	else:
-		SceneManager.show_confirm_dialog(cmd.actorMessage, cmd.actorReporter, cmd.actorResponseMood)
-	DataManager.twinkle_citys = [cmd.cityId]
-	#更新城池信息
-	SceneManager.show_cityInfo(true)
-	LoadControl.set_view_model(138)
-	return
-
-#情报搜集：结果提示仅武将(2)
-func search_7_actor_2():
-	var cmd = DataManager.get_current_search_command()
-	if cmd == null or cmd.cityId != DataManager.player_choose_city:
-		FlowManager.add_flow("search_done")
-		return
-	if not cmd.result in [5,6,7] or cmd.foundActorId < 0:
-		FlowManager.add_flow("search_done")
-		return
-	# 被拒绝了，直接结束
-	if cmd.actorJoin == 0:
-		FlowManager.add_flow("search_done")
-		return
-
 	cmd.accept_actor()
-	SceneManager.show_confirm_dialog(cmd.actorResponse, cmd.actorResponser, cmd.actorResponseMood)
-	DataManager.twinkle_citys = [cmd.cityId]
-	#更新城池信息
-	SceneManager.show_cityInfo(true)
-	LoadControl.set_view_model(139)
+	FlowManager.add_flow("search_report")
 	return
 
 func search_done() -> void:
@@ -219,5 +166,9 @@ func search_done() -> void:
 	DataManager.set_env("内政.命令", "搜索")
 	if SkillHelper.auto_trigger_skill(cmd.fromId, 10012, "city_enter_menu"):
 		return
+	FlowManager.add_flow("city_enter_menu")
+	return
+
+func search_fallback() -> void:
 	FlowManager.add_flow("city_enter_menu")
 	return

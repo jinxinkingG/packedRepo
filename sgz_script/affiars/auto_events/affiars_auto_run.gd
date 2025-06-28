@@ -32,8 +32,6 @@ func _init() -> void:
 	FlowManager.bind_import_flow("month_end", self)
 
 	# 星耀剧本逻辑
-	FlowManager.bind_import_flow("stars_report", self)
-	FlowManager.bind_import_flow("stars_report_vstates", self)
 	FlowManager.bind_import_flow("stars_report_done", self)
 
 	FlowManager.bind_import_flow("play_free_dialog", self)
@@ -59,12 +57,6 @@ func _process(delta: float) -> void:
 		return
 
 	match get_view_model():
-		100:
-			Global.wait_for_confirmation("stars_report", VIEW_MODEL_NAME)
-			return
-		101:
-			Global.wait_for_confirmation("stars_report_done", VIEW_MODEL_NAME)
-			return
 		102:
 			Global.wait_for_confirmation("free_dialog_done", VIEW_MODEL_NAME)
 			return
@@ -381,7 +373,7 @@ func check_stars_month_init()->void:
 	# 每月最多出现三个新势力
 	var createLimit = 3
 	var createdVstateIds = DataManager.get_env_int_array("内政.MONTHLY.星耀势力")
-	var joinedActors = DataManager.get_env_dict("内政.MONTHLY.星耀武将")
+	var joinedActors = {}
 	for city in cities:
 		var vstateId = city.get_vstate_id()
 		# 空城检查数量限制
@@ -389,7 +381,8 @@ func check_stars_month_init()->void:
 			continue
 		if vstateId >= 0:
 			# 不是空城，要求是首都
-			if clCity.get_capital_city(vstateId).ID != city.ID:
+			var capital = clCity.get_capital_city(vstateId)
+			if capital == null or capital.ID != city.ID:
 				continue
 		var created = false
 		var actor = candidates.pop_front()
@@ -405,11 +398,10 @@ func check_stars_month_init()->void:
 			city.set_vstate_id(vstateId)
 			city.set_property("金", 500)
 			city.set_property("米", 800)
-			city.add_actor(actor.actorId)
+			city.insert_actor(0, actor.actorId)
 			actor.set_soldiers(1000)
 			actor.set_loyalty(100)
 			createdVstateIds.append(vstateId)
-			DataManager.set_env("内政.MONTHLY.星耀势力", createdVstateIds)
 		else:
 			var lordId = city.get_lord_id()
 			# 玩家可以关闭星耀出仕
@@ -423,86 +415,55 @@ func check_stars_month_init()->void:
 			actor.set_soldiers(500)
 			# 忠诚度固定为 70
 			actor.set_loyalty(70)
-			var key = str(city.ID)
-			if not key in joinedActors:
-				joinedActors[key] = []
-			joinedActors[key].append(actor.actorId)
-			DataManager.set_env("内政.MONTHLY.星耀武将", joinedActors)
-	FlowManager.add_flow("stars_report")
-	return
-
-# 星耀武将汇报
-func stars_report()->void:
-	if not DataManager.is_stars_drama():
-		FlowManager.add_flow("stars_report_done")
-		return
-	var reported = DataManager.get_env_int_array("内政.MONTHLY.星耀汇报")
-	var attended = DataManager.get_env_dict("内政.MONTHLY.星耀武将")
+			if not city.ID in joinedActors:
+				joinedActors[city.ID] = []
+			joinedActors[city.ID].append(actor.actorId)
+	# 汇报武将加入及势力创建
+	var createdVstatesReported = false
 	for p in DataManager.players:
-		if p.actorId < 0 or p.actorId in reported:
+		if p.actorId < 0:
 			continue
 		var cityId = DataManager.get_office_city_by_actor(p.actorId)
 		if cityId < 0:
 			continue
-		if not str(cityId) in attended:
-			continue
 		var city = clCity.city(cityId)
-		var vstateId = city.get_vstate_id()
+		if cityId in joinedActors:
+			# 有武将加入，汇报武将信息
+			var vstateId = city.get_vstate_id()
+			var names = []
+			for actorId in joinedActors[cityId]:
+				var actor = ActorHelper.actor(actorId)
+				names.append(actor.get_name())
+			if names.empty():
+				continue
+			if names.size() > 3:
+				names[2] += "等{0}人".format([names.size()])
+				names = names.slice(0, 2)
+			var msg = "可喜可贺！\n{0}加入我军".format(["、".join(names)])
+			city.attach_free_dialog(msg, p.actorId, 1)
+		if createdVstatesReported:
+			continue
+		# 第一个玩家势力汇报新势力信息
+		createdVstatesReported = true
 		var names = []
-		for actorId in attended[str(cityId)]:
-			var actor = ActorHelper.actor(actorId)
-			names.append(actor.get_name())
+		var cityIds = []
+		for created in createdVstateIds:
+			var vs = clVState.vstate(created)
+			if not vs.is_alive():
+				continue
+			var capital = clCity.get_capital_city(vs.id)
+			if capital == null:
+				continue
+			names.append(capital.get_full_name() + vs.get_lord_name())
+			cityIds.append(capital.ID)
 		if names.empty():
 			continue
 		if names.size() > 3:
 			names[2] += "等{0}人".format([names.size()])
 			names = names.slice(0, 2)
-		var msg = "可喜可贺！\n{0}加入我军".format(["、".join(names)])
-		DataManager.twinkle_citys = [city.ID]
-		SceneManager.show_confirm_dialog(msg, p.actorId, 1)
-		reported.append(p.actorId)
-		DataManager.set_env("内政.MONTHLY.星耀汇报", reported)
-		set_view_model(100)
-		return
-	FlowManager.add_flow("stars_report_vstates")
-	return
-
-# 星耀势力汇报
-func stars_report_vstates()->void:
-	if not DataManager.is_stars_drama():
-		FlowManager.add_flow("stars_report_done")
-		return
-	# 势力汇报只有一个玩家汇报就 OK 了
-	var reporter = -1
-	for p in DataManager.players:
-		if p.actorId < 0:
-			continue
-		reporter = p.actorId
-		break
-	if reporter < 0:
-		FlowManager.add_flow("stars_report_done")
-		return
-	var names = []
-	var cityIds = []
-	for created in DataManager.get_env_int_array("内政.MONTHLY.星耀势力"):
-		var vs = clVState.vstate(created)
-		if not vs.is_alive():
-			continue
-		var capital = clCity.get_capital_city(vs.id)
-		if capital == null:
-			continue
-		names.append(capital.get_full_name() + vs.get_lord_name())
-		cityIds.append(capital.ID)
-	if names.empty():
-		FlowManager.add_flow("stars_report_done")
-		return
-	if names.size() > 3:
-		names[2] += "等{0}人".format([names.size()])
-		names = names.slice(0, 2)
-	var msg = "据报：\n{0}扬旗称王\n正在招兵买马".format(["、".join(names)])
-	SceneManager.show_confirm_dialog(msg, reporter, 2)
-	DataManager.twinkle_citys = cityIds
-	set_view_model(101)
+		var msg = "据报：\n{0}扬旗称王\n正在招兵买马".format(["、".join(names)])
+		city.attach_free_dialog(msg, p.actorId, 2, cityIds)
+	FlowManager.add_flow("stars_report_done")
 	return
 
 func stars_report_done()->void:
@@ -511,6 +472,9 @@ func stars_report_done()->void:
 	return
 
 func check_free_dialog()->bool:
+	var pendingDialog = DataManager.get_env_dict("内政.玩家.等待对白")
+	if not pendingDialog.empty():
+		return false
 	for city in clCity.all_cities():
 		var d = city.next_free_dialog()
 		if d != null:
@@ -526,8 +490,10 @@ func play_free_dialog()->void:
 		return
 	var d = clCity.CityInfo.DialogInfo.new()
 	d.input(data)
-	DataManager.unset_env("内政.玩家.等待对白")
-	DataManager.twinkle_citys = [d.cityId]
+	if d.twinkleCityIds.empty():
+		DataManager.twinkle_citys = [d.cityId]
+	else:
+		DataManager.twinkle_citys = d.twinkleCityIds
 	DataManager.show_orderbook = false
 	SceneManager.show_confirm_dialog(d.msg, d.actorId, d.mood)
 	if DataManager.get_current_control_sort() >= 0:
@@ -540,4 +506,5 @@ func play_free_dialog()->void:
 func free_dialog_done() -> void:
 	if DataManager.get_current_control_sort() >= 0:
 		FlowManager.add_flow("city_enter_menu")
+	DataManager.unset_env("内政.玩家.等待对白")
 	return

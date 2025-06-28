@@ -208,9 +208,7 @@ func equip_detail_menu():
 	var values = []
 	var all = []
 	for equip in selling:
-		var color = ""
-		if equip.level() == "S":
-			color = StaticManager.COLOR_CODE_SPECIAL_EQUIP
+		var color = equip.get_name_color_code()
 		var flag = ""
 		if equip.remaining() == 0:
 			flag = "@DEL"

@@ -145,7 +145,7 @@ func _input_key(delta: float):
 							break;
 						var actor = ActorHelper.actor(actorId)
 						actor.set_loyalty(max(10,79-actor.get_loyalty()));#投降忠赋值
-						FlowManager.add_flow("check_battle_need_over");
+						FlowManager.add_flow("check_battle_need_over")
 					1:#否
 						set_view_model(-1);
 						FlowManager.add_flow("unit_action");

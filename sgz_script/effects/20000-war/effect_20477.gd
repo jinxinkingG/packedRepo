@@ -11,41 +11,7 @@ const COST_AP = 5
 func effect_20477_start()->void:
 	if not assert_action_point(actorId, COST_AP):
 		return
-	var candidates = []
-	for x in [-1, 1]:
-		for y in [-2, 2]:
-			candidates.append(me.position + Vector2(x, y))
-			candidates.append(me.position + Vector2(y, x))
-	var positions = []
-	for pos in candidates:
-		if not map.is_valid_position(pos):
-			continue
-		var wa = DataManager.get_war_actor_by_position(pos)
-		if wa != null and not wa.is_enemy(me):
-			continue
-		var terrian = map.get_blockCN_by_position(pos)
-		if terrian in StaticManager.CITY_BLOCKS_CN:
-			continue
-		var checkings = []
-		if abs(me.position.x - pos.x) == 1:
-			# 纵跳
-			var midY = int((pos.y + me.position.y) / 2)
-			checkings.append(Vector2(pos.x, midY))
-			checkings.append(Vector2(me.position.x, midY))
-		else:
-			# 横跳
-			var midX = int((pos.x + me.position.x) / 2)
-			checkings.append(Vector2(midX, pos.y))
-			checkings.append(Vector2(midX, me.position.y))
-		var valid = false
-		for p in checkings:
-			var midTerrian = map.get_blockCN_by_position(p)
-			if me.can_move_to_position(p) and not midTerrian == "城墙":
-				valid = true
-				break
-		if not valid:
-			continue
-		positions.append(pos)
+	var positions = map.get_horse_jump_positions(me, true)
 	if positions.empty():
 		play_dialog(actorId, "没有可以跃马的位置", 3, 2999)
 		return

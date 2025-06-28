@@ -51,7 +51,9 @@ func effect_20605_start() -> void:
 		if me.is_enemy(target):
 			targetIds.append(target.actorId)
 	var msg = "选择【{0}】攻击目标，可取消"
-	wait_choose_actors(targetIds, msg)
+	if not wait_choose_actors(targetIds, msg, true):
+		goto_step("cancel")
+		return
 	LoadControl.set_view_model(2000)
 	return
 
@@ -68,7 +70,11 @@ func effect_20605_cancel() -> void:
 func effect_20605_targeted() -> void:
 	var targetId = DataManager.get_env_int("目标")
 
-	var msg = "舰楼猛冲！\n{0}为齑粉矣".format([
+	var msg = "舰楼猛冲！\n居高临下，{0}为齑粉矣"
+	var terrian = map.get_blockCN_by_position(me.position)
+	if not terrian in ["河流"]:
+		msg = "乘流登岸！\n天险不存，{0}何以当之！"
+	msg = msg.format([
 		DataManager.get_actor_naughty_title(targetId, actorId),
 	])
 	play_dialog(actorId, msg, 0, 2001)

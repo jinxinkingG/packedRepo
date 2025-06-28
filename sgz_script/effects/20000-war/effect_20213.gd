@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #志继效果实现
-#【志继】大战场,锁定技。你转为阳面时发动。你需从阴面技能中，选择1个除<逢亮>之外的技能，永久获得之。
+#【志继】大战场,锁定技。你转为阳面时发动。你需从阴面技能中，选择1个可学习的技能，永久获得之。
 
 const EFFECT_ID = 20213
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -28,7 +28,7 @@ func effect_20213_AI_start():
 	return
 	
 func effect_20213_start():
-	var msg = "{0}【{1}】发动".format([
+	var msg = "{0}转为 <阳>\n【{1}】发动".format([
 		actor.get_name(), ske.skill_name
 	])
 	play_dialog(-1, msg, 2, 2000)

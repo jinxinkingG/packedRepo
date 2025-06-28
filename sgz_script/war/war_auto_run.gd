@@ -391,7 +391,10 @@ func war_over_end():
 func turn_control_end():
 	set_current_step(8)
 	set_next_step(8)
-	var currentCtrl = DataManager.war_control_sort[DataManager.war_control_sort_no]
+	var currentCtrl = -1
+	if DataManager.war_control_sort_no >= 0 \
+		and DataManager.war_control_sort_no < DataManager.war_control_sort.size():
+		currentCtrl = DataManager.war_control_sort[DataManager.war_control_sort_no]
 	if currentCtrl >= 0:
 		# 玩家回合结束，清空战场日志
 		# TODO, 确认为什么回合结束事件的日志会被清除？
@@ -566,17 +569,16 @@ func back_to_war():
 					DataManager.set_env("战争.跃马武将", loser.actorId)
 		DataManager.unset_env("后退位置")
 
-	# 吴子兵法
-	if winner.action_point == 0 and winner.battle_tactic_point > 0:
-		if winner.actor().get_equip_feature_max("吴子兵法") > 0:
-			# CD
-			if winner.get_tmp_variable("吴子兵法", 0) == 0:
-				winner.set_tmp_variable("吴子兵法", 1)
-				winner.action_point = winner.battle_tactic_point
-				var msg = "敌之虚实，吾已悉知\n（<吴子兵法>效果\n（机动力回复{0}".format([
-					winner.action_point,
-				])
-				winner.attach_free_dialog(msg, 2)
+	var winnerAP = winner.actor().get_equip_feature_total("战斗获得机动力")
+	if winnerAP > 0:
+		winner.action_point += winnerAP
+		# TODO，这里暂时写死吴子兵法
+		# 未来有 “战斗获得机动力” 效果扩展时
+		# 应准确判断来源
+		var msg = "因形用权，应变无穷\n（<吴子兵法>效果\n（机动力 +{0}".format([
+			winnerAP,
+		])
+		winner.attach_free_dialog(msg, 2)
 
 	wf.update_war_process()
 	# 解除黑幕
