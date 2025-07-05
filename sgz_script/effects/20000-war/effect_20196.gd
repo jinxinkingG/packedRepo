@@ -9,14 +9,6 @@ const AP_LIMIT = 15
 
 const LOST_SKILL = "马术"
 
-func on_view_model_2000():
-	wait_for_yesno(FLOW_BASE + "_2")
-	return
-
-func on_view_model_2001():
-	wait_for_skill_result_confirmation()
-	return
-
 func effect_20196_start():
 	if me.action_point <= 0:
 		var msg = "当前无可用机动力\n发动【{0}】毫无意义".format([ske.skill_name])
@@ -26,7 +18,11 @@ func effect_20196_start():
 	var msg = "发动【{0}】失去【{1}】\n全军机动力增加{2}\n可否？".format([
 		ske.skill_name, LOST_SKILL, min(AP_LIMIT, me.action_point)
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
+	return
+
+func on_view_model_2000():
+	wait_for_yesno(FLOW_BASE + "_2")
 	return
 
 func effect_20196_2():
@@ -38,9 +34,11 @@ func effect_20196_2():
 	var targets = get_teammate_targets(me, 999)
 	targets.append(me.actorId)
 	for targetId in targets:
-		ske.change_actor_ap(targetId, ap)
+		ske.change_actor_ap(targetId, ap, false)
 	var msg = "奔雷逐北，胜败在此一举！\n（众将机动力回复{0}".format([ap])
 	# 信息太多了，不汇报，只记录
 	ske.war_report()
-	play_dialog(me.actorId, msg, 0, 2001)
+	# 统一更新一次光环，避免重复更新耗时
+	SkillHelper.update_all_skill_buff(ske.skill_name)
+	play_dialog(actorId, msg, 0, 2999)
 	return

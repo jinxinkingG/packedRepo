@@ -118,11 +118,12 @@ func search_execute():
 		LoadControl.set_view_model(-1)
 		FlowManager.add_flow("search_start")
 		return
-	# 测试找人时 uncomment 下面这行
+
+	# 测试找人时 uncomment 下面两行
 	#cmd.result = 5
+	#cmd.specifiedFoundActorId = 364
+
 	cmd.execute()
-	# 测试找人时 uncomment 下面这行
-	#cmd.foundActorId = 364
 	FlowManager.add_flow("search_report")
 	return
 

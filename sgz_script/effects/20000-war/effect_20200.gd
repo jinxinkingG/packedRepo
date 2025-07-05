@@ -100,7 +100,7 @@ func effect_20200_3():
 	var recover = me.action_point
 	# 回写当前机动力
 	me.action_point = currentAP
-	ske.change_actor_ap(ske.skill_actorId, recover)
+	ske.change_actor_ap(actorId, recover)
 
 	var msg = "困顿之势，当奋起而破！"
 	report_skill_result_message(ske, 2002, msg, 0)

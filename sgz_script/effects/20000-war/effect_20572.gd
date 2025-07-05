@@ -25,9 +25,11 @@ func effect_20572_start() -> void:
 		SoundManager.play_se2("res://resource/sounds/se/drums.ogg")
 		ske.change_actor_ap(actorId, AP_BONUS)
 		for teammate in me.get_teammates(false, true):
-			ske.change_actor_ap(teammate.actorId, AP_BONUS)
+			ske.change_actor_ap(teammate.actorId, AP_BONUS, false)
 		ske.cost_war_cd(3)
 		SkillHelper.set_skill_cd(20000, PASSIVE_EFFECT_ID, actorId, 3, ske.skill_name)
+		# 统一更新一次光环，避免重复更新耗时
+		SkillHelper.update_all_skill_buff(ske.skill_name)
 		var msg = "终鼓振甲兵，与子偕行！\n（全军机动力 +{1}\n（【{0}】冷却三回合".format([
 			ske.skill_name, AP_BONUS,
 		])

@@ -8,8 +8,8 @@ func on_trigger_30005():
 	power = max(power, actor.get_power())
 	var lead = int((actor.get_leadership() + actor.get_wisdom())/2)
 	lead = max(lead, actor.get_leadership())
-	var baseMorale = me.calculate_battle_morale(me.get_battle_power(), me.battle_lead, 0)
-	var enhancedMorale = max(baseMorale + 5, me.calculate_battle_morale(power, lead, 0))
+	var baseMorale = me.calculate_battle_morale(me.get_battle_power(), me.battle_lead)
+	var enhancedMorale = max(baseMorale + 5, me.calculate_battle_morale(power, lead))
 	var x = enhancedMorale - baseMorale
 	x = ske.battle_change_morale(x)
 	ske.battle_report()

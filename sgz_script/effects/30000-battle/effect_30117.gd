@@ -8,10 +8,6 @@ func on_trigger_30005():
 	if me == null or me.disabled:
 		return false
 	var currentPower = me.get_battle_power()
-	var basicMorale = me.calculate_battle_morale(me.get_battle_power(), me.battle_lead, 0)
 	ske.battle_change_power(5, me)
-	var changedMorale = me.calculate_battle_morale(me.get_battle_power(), me.battle_lead, 0)
-	if changedMorale > basicMorale:
-		ske.battle_change_morale(changedMorale - basicMorale, me)
 	ske.battle_report()
 	return false

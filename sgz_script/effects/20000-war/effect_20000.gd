@@ -566,6 +566,8 @@ func get_teammate_targets(me:War_Actor, distance:int=-1, allowWalls:bool=true, i
 	for wa in me.war_vstate().get_war_actors(false, true):
 		if wa.actorId == me.actorId:
 			continue
+		if wa.is_puppet():
+			continue
 		if not allowWalls:
 			var block = map.get_blockCN_by_position(wa.position)
 			if block in StaticManager.CITY_BLOCKS_CN:
@@ -591,6 +593,8 @@ func get_enemy_targets(from:War_Actor, allowWalls:bool=false, distance:int=-1, i
 	var wf = DataManager.get_current_war_fight()
 	for wa in wf.get_war_actors(false, true):
 		if not from.is_enemy(wa):
+			continue
+		if wa.is_puppet():
 			continue
 		if wa.get_buff_label_turn(["潜行"]) > 0:
 			continue

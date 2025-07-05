@@ -42,18 +42,17 @@ func check_trigger_correct()->bool:
 	var wa = DataManager.get_war_actor(ske.actorId)
 	if wa == null or wa.disabled:
 		return false
-	if wa.get_main_actor_id() != me.actorId:
-		return false
 	var targetActor = ActorHelper.actor(ske.actorId)
-	# 这里用 global 大战场增加经验方法
-	# 为了及时反映升级
-	DataManager.actor_add_Exp(ske.actorId, EXP_GAIN, false)
+
+	ske.change_actor_exp(ske.actorId, EXP_GAIN)
+	ske.war_report()
+
 	var msg = "{0}\n{1}当再接再厉\n（{2}经验增加{3}".format([
 		get_poem(me.actorId), DataManager.get_actor_honored_title(ske.actorId, me.actorId),
 		targetActor.get_name(), EXP_GAIN,
 	])
 	# 为了对话有序，需要加到升级武将身上
-	append_free_dialog(me, msg, 1, wa)
+	wa.attach_free_dialog(msg, 1, 20000, actorId)
 	return false
 
 func get_poem(fromId:int)->String:

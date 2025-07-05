@@ -46,7 +46,7 @@ func check_AI_perform_20000()->bool:
 			# 找到主将
 			targets.append([targetWA.position, targetWA.actorId])
 		var targetActor = ActorHelper.actor(targetId)
-		var morale = me.calculate_battle_morale(targetActor.get_power(), targetActor.get_leadership(), 0)
+		var morale = me.calculate_battle_morale(targetActor.get_power(), targetActor.get_leadership())
 		var power = morale * targetActor.get_soldiers()
 		if power < leastPower:
 			weakPoint = targetWA

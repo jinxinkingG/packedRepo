@@ -5,29 +5,9 @@ extends "effect_20000.gd"
 
 const EFFECT_ID = 20356
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
-const COST_AP = 5
-
-func on_view_model_2000():
-	wait_for_choose_actor(FLOW_BASE + "_2", true)
-	return
-
-func on_view_model_2001():
-	wait_for_yesno(FLOW_BASE + "_3")
-	return
-
-func on_view_model_2002():
-	wait_for_pending_message(FLOW_BASE + "_4")
-	return
-
-func on_view_model_2009():
-	wait_for_skill_result_confirmation()
-	return
 
 # 发动主动技
-func effect_20356_start():
-	if not assert_action_point(me.actorId, COST_AP):
-		return
-
+func effect_20356_start() -> void:
 	var targets = []
 	for targetId in get_teammate_targets(me):
 		var wa = DataManager.get_war_actor(targetId)
@@ -40,32 +20,46 @@ func effect_20356_start():
 	LoadControl.set_view_model(2000)
 	return
 
-# 已选定队友
-func effect_20356_2():
-	var targetId = get_env_int("目标")
-	var targetActor = ActorHelper.actor(targetId)
-	var msg = "消耗 {1} 机动力\n随机转移{0}的负面状态\n可否？".format([
-		targetActor.get_name(), COST_AP,
-	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+func on_view_model_2000() -> void:
+	wait_for_choose_actor(FLOW_BASE + "_selected")
 	return
 
-# 执行
-func effect_20356_3():
-	var targetId = get_env_int("目标")
+func effect_20356_selected() -> void:
+	var targetId = DataManager.get_env_int("目标")
 	var targetWA = DataManager.get_war_actor(targetId)
 
 	var buffNames = Array(targetWA.get_war_debuffs())
 	if buffNames.empty():
-		play_dialog(me.actorId, "没有需要处理的负面状态", 2, 2009)
+		play_dialog(actorId, "没有需要处理的负面状态", 1, 2999)
 		return
 
+	var msg = "对{0}发动【{1}】"
+	
+	if buffNames.size() == 1:
+		msg += "\n身代其 [{2}]\n可否？"
+	else:
+		msg += "\n随机身代其负面状态之一\n可否？"
+	msg = msg.format([
+		targetWA.get_name(), ske.skill_name, buffNames[0],
+	])
+	play_dialog(actorId, msg, 2, 2001, true)
+	return
+
+func on_view_model_2001() -> void:
+	wait_for_yesno(FLOW_BASE + "_confirmed")
+	return
+
+func effect_20356_confirmed() -> void:
+	var targetId = DataManager.get_env_int("目标")
+	var targetWA = DataManager.get_war_actor(targetId)
+
 	ske.cost_war_cd(1)
+	var buffNames = Array(targetWA.get_war_debuffs())
 	buffNames.shuffle()
 	var buffName = buffNames.pop_front()
 	var turns = targetWA.get_buff(buffName)["回合数"]
 	ske.remove_war_buff(targetId, buffName)
-	ske.set_war_buff(me.actorId, buffName, turns)
+	ske.set_war_buff(actorId, buffName, turns)
 
 	var msg = "既以袍泽相托，岂可轻弃？\n{0}之难，吾可代之".format([
 		DataManager.get_actor_honored_title(targetId, me.actorId)
@@ -73,6 +67,10 @@ func effect_20356_3():
 	report_skill_result_message(ske, 2002, msg, 2)
 	return
 
-func effect_20356_4():
+func on_view_model_2002() -> void:
+	wait_for_pending_message(FLOW_BASE + "_report")
+	return
+
+func effect_20356_report() -> void:
 	report_skill_result_message(ske, 2002)
 	return

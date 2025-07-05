@@ -45,12 +45,12 @@ func on_view_model_2001():
 func effect_20001_3():
 	var targetId = get_env_int("目标")
 	var ap = get_env_int("数值")
-	
+
 	set_env(LATEST_KEY, targetId)
 	ap = ske.cost_ap(ap, true)
 	ap = ske.change_actor_ap(targetId, ap)
 	set_env("数值", ap)
-	
+
 	map.cursor.hide()
 	SceneManager.hide_all_tool()
 	var msg = "惟贤惟德，能服于人\n{0}善用之".format([

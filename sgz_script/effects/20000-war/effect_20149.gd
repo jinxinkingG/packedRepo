@@ -69,7 +69,7 @@ func effect_20149_AI_start() -> void:
 			continue
 		var actor = ActorHelper.actor(targetId)
 		var wa = DataManager.get_war_actor(targetId)
-		var morale = wa.calculate_battle_morale(actor.get_power(), actor.get_leadership(), 0)
+		var morale = wa.calculate_battle_morale(actor.get_power(), actor.get_leadership())
 		var power = morale * actor.get_soldiers()
 		if power > maxPower:
 			powerfulId = targetId
@@ -79,17 +79,17 @@ func effect_20149_AI_start() -> void:
 		LoadControl.end_script()
 		return
 	var actor = ActorHelper.actor(ske.skill_actorId)
-	var morale = me.calculate_battle_morale(actor.get_power(), actor.get_leadership(), 0)
+	var morale = me.calculate_battle_morale(actor.get_power(), actor.get_leadership())
 	var myPower = morale * actor.get_soldiers()
 	if maxPower < myPower * 1.3:
 		# 你也没强到哪去。。。
 		LoadControl.end_script()
 		return
 	DataManager.set_env("目标", powerfulId)
-	var msg = "{0}小儿\n{1}在此专候多时了！\n（{2}发动【引伏】".format([
+	var msg = "{0}小儿\n{1}在此专候多时了！\n（{2}发动【{3}】".format([
 		bf.get_attacker().get_name(),
 		ActorHelper.actor(powerfulId).get_name(),
-		me.get_name(),
+		me.get_name(), ske.skill_name,
 	])
 	play_dialog(powerfulId, msg, 0, 3000)
 	return
@@ -118,7 +118,9 @@ func on_view_model_2000() -> void:
 
 func effect_20149_selected() -> void:
 	map.cursor.hide()
-	var msg = "发动【引伏】\n需{0}点机动力\n可否？".format([COST_AP])
+	var msg = "发动【{0}】\n需{1}点机动力\n可否？".format([
+		ske.skill_name, COST_AP
+	])
 	play_dialog(actorId, msg, 2, 2001, true)
 	return
 

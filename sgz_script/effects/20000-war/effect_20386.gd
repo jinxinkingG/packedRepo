@@ -35,7 +35,7 @@ func effect_20386_2():
 	if items.empty():
 		play_dialog(actorId, "没有任何可用计策", 3, 2999)
 		return
-	var msg = "【{0}】可使用全计策\n(当前机动力:{1})".format([
+	var msg = "【{0}】可使用全计策\n（当前机动力:{1}".format([
 		ske.skill_name, me.action_point
 	])
 	DataManager.set_env("对话", msg)

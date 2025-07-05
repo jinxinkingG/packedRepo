@@ -367,7 +367,7 @@
       "scene": "大战场",
       "type": "正面",
       "label": "主将授权",
-      "settlement": "敌方",
+      "settlement": "己方",
       "desc": "正面状态。非主将时，主将技能也生效。"
     }
   },

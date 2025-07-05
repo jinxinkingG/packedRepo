@@ -73,7 +73,7 @@ func effect_20206_2():
 		var ap = int(scheme.get_cost_ap(me.actorId) / 2)
 		items.append("{0}({1})".format([scheme.name, ap]))
 		values.append(scheme.name)
-	var msg = "[正奇]伤兵计消耗减半\n(当前机动力:{0})".format([me.action_point])
+	var msg = "[正奇]伤兵计消耗减半\n（当前机动力:{0}".format([me.action_point])
 	DataManager.set_env("对话", msg)
 	SceneManager.show_unconfirm_dialog(msg, me.actorId)
 	bind_menu_items(items, values)

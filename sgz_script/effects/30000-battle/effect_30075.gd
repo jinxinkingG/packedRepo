@@ -5,8 +5,6 @@ extends "effect_30000.gd"
 
 func on_trigger_30005():
 	var wa = DataManager.get_war_actor(ske.actorId)
-	if wa.get_main_actor_id() != me.actorId:
-		return false
 	var x = int((actor.get_moral() - 50) / 6)
 	if x <= 0:
 		return false

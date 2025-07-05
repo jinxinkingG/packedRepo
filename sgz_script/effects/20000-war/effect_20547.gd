@@ -8,10 +8,16 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
 func effect_20547_start() -> void:
 	var targets = []
-	for targetId in get_teammate_targets(me):
+	for targetId in get_teammate_targets(me, 1):
 		var wa = DataManager.get_war_actor(targetId)
+		if Global.get_distance(wa.position, me.position) != 1:
+			continue
 		for dir in StaticManager.NEARBY_DIRECTIONS:
 			var pos = wa.position + dir
+			if pos == me.position:
+				continue
+			if pos in targets:
+				continue
 			if me.can_move_to_position(pos):
 				targets.append(pos)
 	if targets.empty():

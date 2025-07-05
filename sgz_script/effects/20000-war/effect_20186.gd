@@ -20,9 +20,6 @@ func wisdom_buff()->bool:
 	var wa = DataManager.get_war_actor(ske.actorId)
 	if wa == null or wa.disabled:
 		return false
-	if wa.get_main_actor_id() != me.actorId:
-		# 非主将
-		return false
 	var fromActor = ActorHelper.actor(ske.actorId)
 	var diff = WISDOM - fromActor.get_wisdom()
 	if diff <= 0:

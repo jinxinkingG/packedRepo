@@ -8,8 +8,6 @@ func on_trigger_30005():
 	if ske.actorId != bf.get_attacker_id():
 		return false
 	var wa = DataManager.get_war_actor(ske.actorId)
-	if wa.get_main_actor_id() != me.actorId:
-		return false
 	var x = int((51 - actor.get_moral()) / 5)
 	if x <= 0:
 		return false

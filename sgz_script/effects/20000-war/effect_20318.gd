@@ -16,7 +16,7 @@ func effect_20318_start() -> void:
 	return
 
 func on_view_model_2000():
-	wait_for_choose_actor(FLOW_BASE + "_2")
+	wait_for_choose_actor(FLOW_BASE + "_selected")
 	return
 
 func effect_20318_selected() -> void:

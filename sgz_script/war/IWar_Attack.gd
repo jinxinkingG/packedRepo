@@ -71,8 +71,7 @@ func get_can_attack_actors(fromId:int, igonreAP:bool=false, evenForbidden:bool=f
 			if route.size() > distance + 1:
 				continue
 		if wa.get_buff_label_turn(["潜行"]) > 0:
-			if blockCN in ["山地", "树林"]:
-				excludedTargets[wa.actorId] = "潜行"
+			excludedTargets[wa.actorId] = "潜行"
 		targets.append(wa.actorId)
 
 	if targets.size() == 1 and targets[0] in excludedTargets:

@@ -14,15 +14,15 @@ func effect_10058_start():
 	if cityId < 0 or unoffices.empty():
 		LoadControl.end_script()
 		LoadControl.load_script("affiars/town_search.gd")
-		SceneManager.dialog_use_orderbook_animation("search_4")
+		SceneManager.dialog_use_orderbook_animation("search_animation")
 		return
 
 	var cmd = DataManager.new_search_command(cityId, actorId)
-	cmd.messages.clear()
-	cmd.messages.append("发现一位前途无量之武将")
+	cmd.add_dialog("遇见一位前途无量之武将", actorId, 1)
 	cmd.result = 5
 	cmd.mood = 1
 	cmd.foundActorId = unoffices[0]
+	cmd.decide_actor_result()
 	DataManager.twinkle_citys = [cityId]
 	var msg = "世有千里马，岂能无伯乐？"
 	SceneManager.play_affiars_animation(
@@ -39,5 +39,5 @@ func on_view_model_2000()->void:
 func effect_10058_2():
 	LoadControl.end_script()
 	LoadControl.load_script("affiars/town_search.gd")
-	SceneManager.dialog_use_orderbook_animation("search_7")
+	SceneManager.dialog_use_orderbook_animation("search_report")
 	return

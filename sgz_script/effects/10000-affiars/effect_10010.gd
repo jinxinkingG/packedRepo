@@ -30,6 +30,13 @@ func on_trigger_10001()->bool:
 			cmd.actorCost = 0
 			return true
 
+	# 若要测试荐才效果，可 uncomment 下面五行
+	#var cmd = DataManager.new_search_command(cityId, actorId)
+	#cmd.result = 5
+	#cmd.foundActorId = StaticManager.ACTOR_ID_ZHUGELIANG
+	#cmd.actorCost = 0
+	#return true
+
 	return false
 
 func effect_10010_AI_start():
@@ -91,20 +98,15 @@ func on_view_model_2000():
 
 func effect_10010_2():
 	var cmd = DataManager.get_current_search_command()
-	cmd.decide_actor_result()
-	if cmd.result == 10:
-		# 是其他势力的易招揽武将
-		# 再给一次高概率的机会
-		var rate:int = int(2.0 * 100 / 15.0) + 10 + 5 * actor.get_level()
-		if not Global.get_rate_result(rate):
-			DataManager.twinkle_citys = [cmd.cityId]
-			SceneManager.show_confirm_dialog("在下久居山野\n请恕实在不能从命…", cmd.foundActorId)
-			LoadControl.set_view_model(2001)
-			return
-
-	# 否则，无条件加入
-	cmd.force_actor_join(cmd.foundActorId)
 	var found = cmd.found_actor()
+
+	# 取荐才者与君主之间相性相近者计算忠诚度
+	cmd.distance = actor.personality_distance(found)
+	cmd.distance = min(cmd.distance, cmd.lord().personality_distance(found))
+	# 无条件加入
+	cmd.actorJoin = 1
+	cmd.actorCost = 0
+	cmd.accept_actor()
 	var greeting = "{0}不才\n愿为主公执鞭坠镫"
 	if found.get_power() >= 80:
 		greeting = "{0}不才\n愿为主公扫荡天下"
@@ -113,14 +115,5 @@ func effect_10010_2():
 	greeting = greeting.format([found.get_name()])
 	DataManager.twinkle_citys = [cmd.cityId]
 	SceneManager.show_confirm_dialog(greeting, found.actorId)
-	LoadControl.set_view_model(2001)
-	return
-
-func on_view_model_2001():
-	wait_for_skill_result_confirmation(FLOW_BASE + "_end")
-	return
-
-func effect_10010_end():
-	DataManager.twinkle_citys = []
-	LoadControl.end_script()
+	LoadControl.set_view_model(2999)
 	return

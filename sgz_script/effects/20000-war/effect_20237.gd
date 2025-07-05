@@ -25,8 +25,10 @@ func on_trigger_20022()->bool:
 
 	var ap = min(20, turns * 2)
 	for wa in me.get_teammates(false):
-		ske.change_actor_ap(wa.actorId, ap)
+		ske.change_actor_ap(wa.actorId, ap, false)
 	ske.war_report()
+	# 统一更新一次光环，避免重复更新耗时
+	SkillHelper.update_all_skill_buff(ske.skill_name)
 
 	var msg = "我入困局，诸公当弘毅！\n（所有队友机动力 +{0}".format([ap])
 	me.attach_free_dialog(msg, 2)

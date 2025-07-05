@@ -47,7 +47,7 @@ func effect_20309_3():
 
 	ske.cost_war_cd(1)
 	ap = -ske.change_actor_ap(targetId, -ap)
-	ske.change_actor_ap(me.actorId, ap)
+	ske.change_actor_ap(actorId, ap)
 	ske.war_report()
 
 	map.update_ap()

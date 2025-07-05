@@ -189,7 +189,7 @@ func on_view_model_3(delta: float):
 	if current != null and not current.disabled:
 		currentActorId = current.actorId
 	if Input.is_action_just_pressed("EMU_START"):
-		map.show_actors_ap(false)
+		map.switch_view_mode(0)
 		var actorIds = []
 		var next = null
 		var warActors = wv.get_war_actors(false, true)
@@ -224,9 +224,9 @@ func on_view_model_3(delta: float):
 	if Global.is_action_pressed_BY():
 		var wa = DataManager.get_war_actor_by_position(map.cursor_position);
 		if wa == null or wa.disabled:
-			map.show_actors_ap(not map.actors_ap)
+			map.switch_view_mode()
 			return
-		map.show_actors_ap(false)
+		map.switch_view_mode(0)
 		DataManager.set_env("武将", wa.actorId)
 		FlowManager.add_flow("actor_info")
 		return
@@ -234,7 +234,7 @@ func on_view_model_3(delta: float):
 		return
 	if current == null or current.disabled:
 		return
-	map.show_actors_ap(false)
+	map.switch_view_mode(0)
 	var actor_controlNo = DataManager.get_actor_controlNo(currentActorId)
 	if not actor_controlNo in [-1,FlowManager.controlNo]:
 		return
@@ -1041,7 +1041,7 @@ func actor_control_menu():
 	#	menu.append("物品")
 
 	# 兼容人偶逻辑
-	if actorId >= StaticManager.ACTOR_ID_RENOU:
+	if wa.is_puppet():
 		menu.erase("撤退")
 		menu.erase("回营")
 

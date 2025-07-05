@@ -48,12 +48,15 @@ func on_trigger_20027()->bool:
 		leastPower = mostPowerful[i][1]
 	var names = []
 	for wa in affected:
-		ske.change_actor_ap(wa.actorId, AP_GAIN)
+		ske.change_actor_ap(wa.actorId, AP_GAIN, false)
 		names.append(wa.get_name())
 	if names.size() > 3:
 		names[2] += "等{0}人".format([names.size()])
 		names = names.slice(0, 2)
 	ske.war_report()
+	# 统一更新一次光环，避免重复更新耗时
+	SkillHelper.update_all_skill_buff(ske.skill_name)
+
 	var msg = "势如破竹，克期灭敌！\n（{0}机动力+6".format(["、".join(names)])
 	me.attach_free_dialog(msg, 0)
 	return false

@@ -98,7 +98,7 @@ func stratagem_menu(evenDisabled:bool=false):
 	var schemes = []
 	for scheme in wa.get_stratagems():
 		schemes.append([scheme.name, scheme.get_cost_ap(wa.actorId), ""])
-	msg = "使用何种计策？\n(当前机动力:{0})".format([wa.action_point])
+	msg = "使用何种计策？\n（当前机动力:{0}".format([wa.action_point])
 
 	# 计策菜单事件触发和数据处理
 	set_env("战争.计策列表", schemes)

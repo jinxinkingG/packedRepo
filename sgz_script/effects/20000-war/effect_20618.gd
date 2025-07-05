@@ -119,10 +119,13 @@ func effect_20618_confirmed() -> void:
 	ske.change_war_wisdom(actorId, BUFFED * selected.size(), true)
 	ske.change_war_leadership(actorId, BUFFED * selected.size(), true)
 	for targetId in selected:
-		ske.change_actor_ap(targetId, -COST_AP)
+		ske.change_actor_ap(targetId, -COST_AP, false)
 		names.append(DataManager.get_actor_honored_title(targetId, actorId))
 	ske.cost_war_cd(1)
 	ske.war_report()
+	# 统一更新一次光环，避免重复更新耗时
+	SkillHelper.update_all_skill_buff(ske.skill_name)
+
 	var msg = "{0}\n相助一臂，我部先发！".format([
 		"、".join(names),
 	])

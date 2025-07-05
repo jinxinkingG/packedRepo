@@ -16,7 +16,7 @@ func check_AI_perform_20000()->bool:
 	for targetId in get_enemy_targets(me):
 		var targetActor = ActorHelper.actor(targetId)
 		# 模拟计算士气
-		var morale = me.calculate_battle_morale(targetActor.get_power(), targetActor.get_leadership(), 0)
+		var morale = me.calculate_battle_morale(targetActor.get_power(), targetActor.get_leadership())
 		var power = morale * targetActor.get_soldiers()
 		if power < leastPower:
 			leastPower = power

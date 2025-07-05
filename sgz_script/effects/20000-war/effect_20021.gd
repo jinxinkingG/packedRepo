@@ -113,7 +113,7 @@ func effect_20021_confirmed() -> void:
 		values.append(scheme.name)
 
 	SceneManager.hide_all_tool()
-	var msg = "使用何种计策？\n(当前机动力:{0})\n【{1}】解锁全部计策".format([
+	var msg = "使用何种计策？\n（当前机动力:{0}\n（【{1}】解锁全部计策".format([
 		ap, ske.skill_name
 	])
 	DataManager.set_env("对话", msg)

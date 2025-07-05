@@ -34,7 +34,7 @@ func effect_20450_start():
 	return
 
 func on_view_model_2000():
-	wait_for_skill_result_confirmation(FLOW_BASE + "_2")
+	wait_for_yesno(FLOW_BASE + "_2")
 	return
 
 func effect_20450_2():

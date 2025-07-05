@@ -24,12 +24,23 @@ func _init() -> void:
 
 #按键操控
 func _input_key(delta: float):
+	var scene = SceneManager.current_scene()
 	match LoadControl.get_view_model():
 		211:#选择城市
 			var fromCity = clCity.city(DataManager.player_choose_city)
+			scene.show_specified_city_lines(fromCity.ID, true)
 			var connectedEnemyCities = fromCity.get_connected_city_ids([], [fromCity.get_vstate_id()])
 			var cityId = wait_for_choose_city(delta, "enter_barrack_menu", connectedEnemyCities)
 			if cityId < 0:
+				var currentPointedCityId = SceneManager.current_scene().get_curosr_point_city()
+				if currentPointedCityId >= 0 and currentPointedCityId != fromCity.ID:
+					var currentPointedCity = clCity.city(currentPointedCityId)
+					var msg = "此为{0}".format([currentPointedCity.get_full_name()])
+					#var leaderName = currentPointedCity.get_leader_name()
+					#if leaderName != "":
+					#	msg += "\n太守为{0}".format([leaderName])
+					SceneManager.show_unconfirm_dialog(msg)
+					SceneManager.dialog_msg_complete(true)
 				return
 			# 判断相连和归属
 			if not cityId in connectedEnemyCities:
@@ -41,6 +52,7 @@ func _input_key(delta: float):
 				SceneManager.show_unconfirm_dialog("此为盟友城池")
 				return
 			var wf = DataManager.new_war_fight(fromCity.ID, targetCity.ID)
+			scene.reset_view()
 			FlowManager.add_flow("attack_choose_actors")
 		212:#选择出征的武将
 			if not wait_for_choose_actor("enter_barrack_menu"):
@@ -111,14 +123,16 @@ func _input_key(delta: float):
 
 #选择出征城市
 func attack_choose_target_city():
-	SceneManager.clear_bottom();
-	DataManager.twinkle_citys.clear();
-	var scene_affiars:Control = SceneManager.current_scene();
-	var vstate_controlNo = DataManager.get_current_control_sort()
-	var player:Player = DataManager.players[vstate_controlNo];
-	scene_affiars.cursor.show();
-	scene_affiars.set_city_cursor_position(DataManager.player_choose_city);
-	SceneManager.show_unconfirm_dialog("进攻哪座城池？\n请指定");
+	SceneManager.clear_bottom()
+	DataManager.twinkle_citys.clear()
+	var scene:Control = SceneManager.current_scene()
+	scene.cursor.show()
+	var city = clCity.city(DataManager.player_choose_city)
+	scene.set_city_cursor_position(city.ID)
+	var msg = "兵出{0}\n进攻哪座城池？\n请指定".format([
+		city.get_full_name(),
+	])
+	SceneManager.show_unconfirm_dialog(msg)
 	LoadControl.set_view_model(211)
 	return
 

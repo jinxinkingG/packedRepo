@@ -25,7 +25,8 @@ func on_view_model_2000() -> void:
 	return
 
 func effect_20546_2() -> void:
-	if not wait_choose_actors(get_targets()):
+	var msg = "兵力转给何人？"
+	if not wait_choose_actors(get_targets(), msg, true):
 		return
 	LoadControl.set_view_model(2001)
 	return

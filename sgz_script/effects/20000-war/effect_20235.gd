@@ -42,8 +42,8 @@ func effect_20235_confirmed():
 
 	ske.cost_war_cd(99999)
 	var ap = ske.clear_actor_ap(targetId)
-	ske.change_actor_ap(ske.skill_actorId, -ap)
-	ske.set_war_buff(ske.skill_actorId, "定止", 1)
+	ske.change_actor_ap(actorId, -ap)
+	ske.set_war_buff(actorId, "定止", 1)
 	if me.get_main_actor_id() == actorId:
 		for wa in me.get_teammates(false, true):
 			if wa.actorId == targetId:

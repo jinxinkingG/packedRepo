@@ -54,12 +54,11 @@ func _process(delta: float) -> void:
 	return
 
 func _input_key(delta: float):
-	var scene_affiars:Control = SceneManager.current_scene();
-	var bottom = SceneManager.get_bottom();
-	var view_model = get_view_model();
-	match view_model:
+	var scene:Control = SceneManager.current_scene()
+	var bottom = SceneManager.get_bottom()
+	match get_view_model():
 		0:#玩家回合开始：提示本月有命令书的数量
-			scene_affiars.set_city_cursor_position(DataManager.player_choose_city);
+			scene.set_city_cursor_position(DataManager.player_choose_city);
 			if SceneManager.cityInfo.visible and bottom != null:
 				if(Input.is_action_just_pressed("ANALOG_UP")):
 					bottom.show_cityInfo((bottom.current_info + 1) % 4);
@@ -77,29 +76,29 @@ func _input_key(delta: float):
 			var vstateId = DataManager.vstates_sort[DataManager.vstate_no];
 			#print("{0}:{1}".format([str(DataManager.vstates_sort),DataManager.vstate_no]))
 			if(Input.is_action_pressed("ANALOG_UP")):
-				scene_affiars.cursor_move_up(delta);
+				scene.cursor_move_up(delta);
 				SceneManager.show_cityInfo(false)
 			if(Input.is_action_pressed("ANALOG_DOWN")):
-				scene_affiars.cursor_move_down(delta);
+				scene.cursor_move_down(delta);
 				SceneManager.show_cityInfo(false)
 			if(Input.is_action_pressed("ANALOG_LEFT")):
-				scene_affiars.cursor_move_left(delta);
+				scene.cursor_move_left(delta);
 				SceneManager.show_cityInfo(false)
 			if(Input.is_action_pressed("ANALOG_RIGHT")):
-				scene_affiars.cursor_move_right(delta);
+				scene.cursor_move_right(delta);
 				SceneManager.show_cityInfo(false)
 			if(Input.is_action_just_pressed("EMU_START")):
 				var vstate_controlNo = DataManager.get_current_control_sort()
 				var player:Player = DataManager.players[vstate_controlNo];
 				var controlled = player.get_control_citys();
-				var cityId = scene_affiars.get_curosr_point_city();
+				var cityId = scene.get_curosr_point_city();
 				if cityId >= 0:
 					var current = controlled.find(cityId)
 					current = (current + 1) % controlled.size()
 					cityId = controlled[current]
 				else:
 					cityId = controlled[0]
-				scene_affiars.set_city_cursor_position(cityId)
+				scene.set_city_cursor_position(cityId)
 				##scalarize
 				DataManager.player_choose_city = cityId
 				SceneManager.show_affairs_menu(false)
@@ -110,7 +109,7 @@ func _input_key(delta: float):
 			if(Global.is_action_pressed_AX()):
 				if(!SceneManager.dialog_msg_complete(true)):
 					return;
-				var cityId = scene_affiars.get_curosr_point_city();
+				var cityId = scene.get_curosr_point_city();
 				if(cityId<0):
 					SceneManager.show_unconfirm_dialog("此处并没有城");
 					return;
@@ -137,7 +136,7 @@ func _input_key(delta: float):
 			if(Global.is_action_pressed_BY()):
 				if(!SceneManager.dialog_msg_complete(false)):
 					return;
-				var cityId = scene_affiars.get_curosr_point_city();
+				var cityId = scene.get_curosr_point_city();
 				if(cityId<0):
 					return;
 				var city = clCity.city(cityId)
@@ -190,12 +189,10 @@ func _input_key(delta: float):
 			wait_for_options(optionFlows, "player_ready", false, bottom)
 		4:#城池连线图
 			if Global.is_action_pressed_AX():
-				var scene = SceneManager.current_scene()
 				var mode = scene.city_line_mode
 				scene.show_city_line(true, mode + 1)
 				return
 			if Global.is_action_pressed_BY():
-				var scene = SceneManager.current_scene()
 				var mode = scene.city_line_mode
 				scene.show_city_line(true, mode - 1)
 				return
@@ -206,7 +203,7 @@ func _input_key(delta: float):
 				FlowManager.add_flow("show_affair_log")
 				return
 		5: #查看大地图日志
-			var affair_log = SceneManager.current_scene().get_node_or_null("affair_log")
+			var affair_log = scene.affair_log
 			if affair_log != null:
 				if Global.is_action_pressed_Left():
 					affair_log.scroll_page_up()
@@ -529,12 +526,11 @@ func player_end_clear():
 
 #显示城池连线
 func player_show_cityline():
-	set_view_model(4);
-	var scene_affiars:Control = SceneManager.current_scene()
-	scene_affiars.show_city_line(true, 0)
-	scene_affiars.cursor.hide()
 	DataManager.show_orderbook = false
-	SceneManager.show_unconfirm_dialog("「A/B」键切换信息\n「开始」查看大地图日志\n「选择」键返回")
+	var scene_affiars:Control = SceneManager.current_scene()
+	scene_affiars.reset_view()
+	scene_affiars.show_city_line(true, 0)
+	set_view_model(4)
 	return
 
 #--------------0级：选择城市------------------
@@ -598,10 +594,10 @@ func enter_town_menu():
 
 #-------（200）军营-------
 func enter_barrack_menu():
-	LoadControl.end_script();
+	LoadControl.end_script()
 	var city = clCity.city(DataManager.player_choose_city)
 	var scene_affiars:Control = SceneManager.current_scene();
-	scene_affiars.cursor.hide();
+	scene_affiars.reset_view()
 	DataManager.twinkle_citys = [city.ID]
 	SceneManager.hide_all_tool();
 	var value_array = ["出征","征兵","侦察","任命"];
@@ -765,23 +761,18 @@ func _fix_lord_actor_position():
 	return
 
 func show_affair_log():
-	var affair_log = SceneManager.current_scene().get_node_or_null("affair_log")
-	if affair_log == null:
+	var scene = SceneManager.current_scene()
+	if not scene.has_method("show_affair_log"):
 		return
-
-	var msg = "[B] / [选择]，回到大地图\n上下左右移动查看日志"
-	SceneManager.show_unconfirm_dialog(msg)
-	SceneManager.dialog_msg_complete(true)
-	affair_log.update_data()
-	affair_log.show()
-	set_view_model(5	)
+	scene.show_affair_log()
+	set_view_model(5)
 	return
 
 func close_affair_log():
-	var affair_log = SceneManager.current_scene().get_node_or_null("affair_log")
-	if affair_log == null:
+	var scene = SceneManager.current_scene()
+	if not scene.has_method("close_affair_log"):
 		return
-	affair_log.hide()
+	scene.close_affair_log()
 	FlowManager.add_flow("player_show_cityline")
 	return
 
