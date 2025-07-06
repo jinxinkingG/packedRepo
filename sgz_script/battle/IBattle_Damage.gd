@@ -73,7 +73,8 @@ func count_classic_damage(from:Battle_Unit, to:Battle_Unit)->float:
 		var rate = from.get_throwing_damage_rate(to)
 		attack = baseAttack * rate
 	else:
-		var rate = from.get_melee_damage_rate()
+#Kennkami清水增加特殊近身伤害处理20250706
+		var rate = from.get_melee_damage_rate(to)
 		if DataManager.diffculities>=3 && bf.get_terrian() in ["wallcity","walldoor"]:
 			if from.get_side() == Vector2.RIGHT:
 				rate = max(rate, 1.0)
