@@ -37,7 +37,7 @@ func effect_20177_start():
 	var targets = []
 	for targetId in get_enemy_targets(me, true):
 		var actor = ActorHelper.actor(targetId)
-		if actor.get_gender() != "男":
+		if not actor.is_male():
 			continue
 		targets.append(targetId)
 	if not wait_choose_actors(targets, "选择对手发动【{0}】"):

@@ -41,6 +41,7 @@ func _init() -> void:
 	FlowManager.bind_import_flow("AI_retreat_0", self)
 	FlowManager.bind_import_flow("AI_retreat_1", self)
 	FlowManager.bind_import_flow("AI_move_0", self)
+	FlowManager.bind_import_flow("AI_move_done", self)
 	FlowManager.bind_import_flow("AI_move_1", self)
 	FlowManager.bind_import_flow("AI_move_2", self)
 
@@ -96,17 +97,24 @@ func AI_move_0():
 		wa.action_point = max(0, wa.action_point - cost["机"])
 	if cost["点"] > 0:
 		wa.poker_point = max(0, wa.poker_point - cost["点"])
-	
-	var war_map = SceneManager.current_scene().war_map
-	if wa.play_move(toPosition, false):
-		yield(war_map, "actor_move_complete")
-		war_map.draw_actors()
+	wa.set_tmp_variable("MOVE_COST", cost)
 
-	war_map.cursor_position = toPosition
-	war_map.update_ap()
-	war_map.fix_cursor_camer()
+	var map = SceneManager.current_scene().war_map
+	map.play_move(wa, toPosition, false)
+	return
+
+func AI_move_done() -> void:
+	var fromId = _get_current_actor_id()
+	var wa = DataManager.get_war_actor(fromId)
+	var map = SceneManager.current_scene().war_map
+
+	map.cursor_position = wa.position
+	map.draw_actors()
+	map.update_ap()
+	map.fix_cursor_camer()
+
 	DataManager.set_env("移动", 1)
-	DataManager.set_env("移动消耗", cost)
+	DataManager.set_env("移动消耗", wa.get_tmp_variable("MOVE_COST"))
 	DataManager.unset_env("结束移动")
 	#插入移动技能判定
 	SkillHelper.auto_trigger_skill(fromId, 20003, "")
@@ -115,18 +123,18 @@ func AI_move_0():
 		#十面埋伏扣兵
 		var trapActor = ActorHelper.actor(int(trapInfo["from_actorId"]))
 		var damage = int(Global.get_random(30,40) * trapActor.get_wisdom() / 10)
-		damage = int(min(damage, actor.get_soldiers()) * min(1,max(0.1,trapActor.get_soldiers()/1000.0)))
+		damage = int(min(damage, wa.get_soldiers()) * min(1,max(0.1,trapActor.get_soldiers()/1000.0)))
 		var msg = "{0}遭遇伏兵".format([wa.get_name()])
 		# 暂时植入【破伏】的实现
 		if SkillHelper.actor_has_skills(wa.actorId, ["破伏"]):
 			damage = 0
 			msg += "\n{0}【破伏】免伤".format([wa.get_name()])
 		if damage > 0:
-			DataManager.damage_sodiers(trapActor.actorId, actor.actorId, damage)
+			DataManager.damage_sodiers(trapActor.actorId, wa.actorId, damage)
 			msg += "\n兵力下降{0}".format([damage])
 		DataManager.set_env("对话", msg)
 		if trapInfo.has("pos"):
-			war_map.mark_area_trapped(false, trapInfo["pos"], 2)
+			map.mark_area_trapped(false, trapInfo["pos"], 2)
 		FlowManager.add_flow("AI_move_1")
 		FlowManager.add_flow("draw_actors")
 		return
@@ -509,3 +517,7 @@ func _try_scheme_however(wa:War_Actor)->bool:
 	if wa.actor().get_wisdom() < 80:
 		return false
 	return true
+
+# 回合开始
+func turn_start() -> void:
+	return

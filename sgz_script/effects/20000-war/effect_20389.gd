@@ -78,7 +78,7 @@ func effect_20389_2():
 	ske.replace_battle_defender(ske.actorId)
 	ske.war_report()
 
-	var msg = "{0}张狂，某当死战！\n({1}代替被攻击)".format([
+	var msg = "{0}张狂，某当死战！\n（{1}代替被攻击".format([
 		DataManager.get_actor_naughty_title(bf.get_attacker_id(), me.actorId),
 		me.get_name(),
 	])

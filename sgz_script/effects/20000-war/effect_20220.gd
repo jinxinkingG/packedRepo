@@ -26,7 +26,8 @@ func on_trigger_20015()->bool:
 	if target.get_main_actor_id() == target.actorId:
 		# 主将不可
 		return false
-	if ActorHelper.actor(target.actorId).get_gender() != "男":
+	if not ActorHelper.actor(target.actorId).is_male():
+		# 仅限男性
 		return false
 	return true
 

@@ -109,7 +109,7 @@ func effect_20041_perform():
 	ske.set_war_skill_val(selected, 1)
 	var dialogs = DIALOGS.duplicate()
 	dialogs.shuffle()
-	var msg = dialogs[0]+"\n(结束后进入额外回合)"
+	var msg = dialogs[0]+"\n（结束后进入额外回合"
 	ske.cost_war_cd(99999)
 	ske.war_report()
 	unset_env(EFFECT_CHOOSE_NAME)

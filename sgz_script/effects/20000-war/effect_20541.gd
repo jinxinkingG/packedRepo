@@ -5,12 +5,13 @@ extends "effect_20000.gd"
 
 func on_trigger_20016() -> bool:
 	# 只针对敌方主将触发一次
-	if ske.actorId != me.get_enemy_leader().actorId:
+	var leader = DataManager.get_war_actor(ske.actorId)
+	if leader.actorId != leader.get_main_actor_id():
 		return false
 	var wf = DataManager.get_current_war_fight()
 
 	var runaway = 0
-	for wa in me.get_enemy_war_actors(true):
+	for wa in leader.get_teammates(false):
 		var x = wa.get_day_attacked_actors(wf.date).size()
 		if x > 0:
 			runaway += ske.change_actor_soldiers(wa.actorId, -x * 20)
@@ -21,7 +22,6 @@ func on_trigger_20016() -> bool:
 
 	var msg = "汝众皆食汉禄\n何以从贼作乱？"
 	me.attach_free_dialog(msg, 0)
-	var enemyLeader = me.get_enemy_leader()
 	msg = "军心浮动\n士兵逃散 {0} 人".format([abs(runaway)])
-	me.attach_free_dialog(msg, 3, 20000, enemyLeader.actorId)
+	me.attach_free_dialog(msg, 3, 20000, leader.actorId)
 	return false

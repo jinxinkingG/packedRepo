@@ -295,6 +295,9 @@ func _push_move(dir:Vector2):
 		return
 	if not wa.move(target, true):
 		return
+	#if not wa.try_move(target, true):
+	#	return
+	#map.play_war_actor_move(wa, target)
 	# 特殊判断，如果是仙兵种穿墙，有概率失败
 	if wa.may_move_failed(prev, target):
 		# 回弹
@@ -338,7 +341,7 @@ func _push_move(dir:Vector2):
 
 #移动撤销
 func _pop_move():
-	var war_map = SceneManager.current_scene().war_map
+	var map = SceneManager.current_scene().war_map
 	var moveHistory = DataManager.get_env_array("历史移动记录")
 	if moveHistory.empty():
 		return
@@ -352,12 +355,13 @@ func _pop_move():
 	var ap = int(Global.dic_val(posInfo, "AP"))
 	var pp = int(Global.dic_val(posInfo, "P"))
 	wa.move(pos, true, true)
+	#map.play_war_actor_move(wa, pos)
 	var cost = {}
 	cost["机"] = wa.action_point - ap
 	cost["点"] = wa.poker_point - pp
 	wa.action_point = ap
 	wa.poker_point = pp
-	war_map.update_ap()
+	map.update_ap()
 	#对白
 	var msg = get_movement_message(wa)
 	DataManager.set_env("对白", msg)

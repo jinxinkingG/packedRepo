@@ -7,19 +7,7 @@ const EFFECT_ID = 10066
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 const EVENT_KEY = "邀虎.触发"
 
-func _init():
-	FlowManager.bind_import_flow(FLOW_BASE + "_start", self)
-	return
-
-func _input_key(delta:float):
-	match LoadControl.get_view_model():
-		2000:
-			wait_for_skill_result_confirmation()
-	return
-
-func effect_10066_start():
-	var ske = SkillHelper.read_skill_effectinfo()
-	self.actorId = ske.skill_actorId
+func effect_10066_start() -> void:
 	var row = Array(get_env(EVENT_KEY))
 	unset_env(EVENT_KEY)
 	var fromVstateId = int(row[5])
@@ -30,21 +18,17 @@ func effect_10066_start():
 	])
 	SceneManager.show_confirm_dialog(msg, self.actorId, 1)
 	DataManager.orderbook += 1
-	LoadControl.set_view_model(2000)
+	LoadControl.set_view_model(2999)
 	return
 
-func check_trigger_correct()->bool:
-	unset_env(EVENT_KEY)
-	if DataManager.get_scene_actor_control(self.actorId) < 0:
+func on_trigger_10001()->bool:
+	if DataManager.get_scene_actor_control(actorId) < 0:
 		# AI 不触发
 		return false
 	var cityId = get_working_city_id()
 	if cityId < 0:
 		return false
 	var city = clCity.city(cityId)
-	if city.get_lord_id() != self.actorId:
-		# 非君主
-		return false
 	var myVstateId = city.get_vstate_id()
 	# 检查过去两个月的战争历史
 	var cur = DataManager.year * 12 + DataManager.month
@@ -76,7 +60,7 @@ func check_trigger_correct()->bool:
 			continue
 		# 比较触发标记，检查是不是新的战争记录
 		var prev = _get_prev_trigger()
-		if prev["tm"] >= timing and prev["idx"] >= vstateIndex:
+		if prev.size() == 2 and prev[0] >= timing and prev[1] >= vstateIndex:
 			continue
 		# 触发技能
 		set_env(EVENT_KEY, row)
@@ -85,25 +69,11 @@ func check_trigger_correct()->bool:
 	_update_prev_trigger()
 	return check_env([EVENT_KEY])
 
-func _get_prev_trigger()->Dictionary:
-	var ret = {
-		"tm": -1,
-		"idx": -1
-	}
-	var skv = SkillHelper.get_skill_variable(10000, EFFECT_ID, self.actorId)
-	if skv["turn"] <= 0 or skv["value"] == null:
-		return ret
-	if typeof(skv["value"]) != TYPE_DICTIONARY:
-		return ret
-	for k in ret:
-		if k in skv["value"]:
-			ret[k] = int(skv["value"][k])
-	return ret
+func _get_prev_trigger() -> Array:
+	return ske.affair_get_skill_val_int_array()
 
-func _update_prev_trigger():
-	var dic = {
-		"tm": DataManager.year * 12 + DataManager.month,
-		"idx": DataManager.vstate_no
-	}
-	SkillHelper.set_skill_variable(10000, EFFECT_ID, self.actorId, dic, 99999)
+func _update_prev_trigger() -> void:
+	var tm = DataManager.year * 12 + DataManager.month
+	var idx = DataManager.vstate_no
+	ske.affair_set_skill_val([tm, idx])
 	return

@@ -108,6 +108,11 @@ func count_classic_damage(from:Battle_Unit, to:Battle_Unit)->float:
 
 	# 免伤比例 = 兵种类型免伤 + 装备免伤加成
 	var avoidRate = to.get_damage_avoid_rate()
+	# 威矢效果
+	if avoidRate > 0 and isShooting and \
+		from.get_unit_type() == "将" and \
+		SkillRangeBuff.max_val_for_actor("威矢", from.leaderId) > 0:
+		avoidRate = 0.0
 	#计算受击方免伤=基本伤害*免伤比例+装备防御力
 	var avoidDamage = min(damage * avoidRate + E, damage)
 	

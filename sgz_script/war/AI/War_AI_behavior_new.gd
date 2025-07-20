@@ -157,39 +157,39 @@ func behavior(wvId:int):
 
 
 #AI移动
-func _move(wa:War_Actor, new_position:Vector2, withStrategy:bool=true)->bool:
+func _move(wa:War_Actor, pos:Vector2, withStrategy:bool=true)->bool:
 	if not wa.can_move():
 		return false
-	if(wa.position == new_position):
+	if wa.position == pos:
 		return false
-	if not wa.can_move_to_position(new_position):
+	if not wa.can_move_to_position(pos):
 		return false
 	# 计算移动消耗
-	var cost = DataManager.get_move_cost(wa.actorId, new_position)
+	var cost = DataManager.get_move_cost(wa.actorId, pos)
 	if cost["机"] > wa.action_point or cost["点"] > wa.poker_point:
 		self.trace("   #{0}{1} 不能移动到 <{2},{3}>，机动力/点数({4}/{5}:{6}/{7})不足".format([
-			wa.actorId, ActorHelper.actor(wa.actorId).get_name(), new_position.x, new_position.y,
+			wa.actorId, ActorHelper.actor(wa.actorId).get_name(), pos.x, pos.y,
 			wa.action_point, wa.poker_point, cost["机"], cost["点"]
 		]))
 		return false
 
-	if withStrategy and self._bad_movement(wa, new_position):
+	if withStrategy and self._bad_movement(wa, pos):
 		return false
 
 	self.trace("   #{0}{1} 准备移动到 <{2},{3}>".format([
-		wa.actorId, ActorHelper.actor(wa.actorId).get_name(), new_position.x, new_position.y
+		wa.actorId, ActorHelper.actor(wa.actorId).get_name(), pos.x, pos.y
 	]))
 	DataManager.set_env("当前坐标", {
 		"x": wa.position.x,
 		"y": wa.position.y
 	})
 	DataManager.set_env("目标坐标", {
-		"x": new_position.x,
-		"y": new_position.y
+		"x": pos.x,
+		"y": pos.y
 	})
-	var war_map = SceneManager.current_scene().war_map
-	if war_map.require_camer_move(wa):
-		war_map.camer_to_actorId(wa.actorId,"AI_move_0");
+	var map = SceneManager.current_scene().war_map
+	if map.require_camer_move(wa):
+		map.camer_to_actorId(wa.actorId, "AI_move_0")
 	else:
 		FlowManager.add_flow("AI_move_0")
 	return true

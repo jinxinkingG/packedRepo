@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #国色主动技 #施加状态
-#【国色】大战场,主动技。若你的五行为火，你可以指定1名敌将，并消耗4机动力发动。有3/4的概率成功：为目标添加1回合“疲兵”状态。（疲兵：负面状态。小战场士气减半，战术值减半。）
+#【国色】大战场,主动技。若你的五行为火，你可以指定1名男性敌将，并消耗4机动力发动。有3/4的概率成功：为目标添加1回合“疲兵”状态。（疲兵：负面状态。小战场士气减半，战术值减半。）
 
 const EFFECT_ID = 20234
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -110,6 +110,8 @@ func _get_available_targets(me:War_Actor)->Array:
 	for targetId in get_enemy_targets(me):
 		var wa = DataManager.get_war_actor(targetId)
 		if wa.get_buff_label_turn([BUFF_LABEL_NAME]) > 0:
+			continue
+		if not wa.actor().is_male():
 			continue
 		ret.append(targetId)
 	return ret

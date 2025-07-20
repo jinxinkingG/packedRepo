@@ -19,16 +19,37 @@ func _init() -> void:
 #按键操控
 func _input_key(delta: float):
 	var scene_affiars:Control = SceneManager.current_scene();
-	var bottom = SceneManager.lsc_menu;
-	var view_model = LoadControl.get_view_model();
-	match view_model:
+	var bottom = SceneManager.lsc_menu
+	var city = clCity.city(DataManager.player_choose_city)
+	match LoadControl.get_view_model():
 		221: #确认对话
 			wait_for_confirmation("conscription_2", "enter_barrack_menu")
 		222: #输入数字
+			var conNumberInput = SceneManager.input_numbers.get_current_input_node()
+			var mode = DataManager.get_env_int("内政.征兵.状态")
+			if Input.is_action_just_pressed("EMU_START"):
+				if mode != 1:
+					conNumberInput.set_number(conNumberInput.max_number)
+					var msg = "最多可征兵：{0}".format([conNumberInput.max_number])
+					SceneManager.input_numbers.speak2(msg)
+					DataManager.set_env("内政.征兵.状态", 1)
+				else:
+					var required = 0
+					for actorId in city.get_actor_ids():
+						var limit = DataManager.get_actor_max_soldiers(actorId)
+						var current = ActorHelper.actor(actorId).get_soldiers()
+						required += limit - current
+					required -= city.get_backup_soldiers()
+					required = max(0, required)
+					required = int(required / 100) * 100 + 100 if required % 100 > 0 else 0
+					conNumberInput.set_number(min(required, conNumberInput.max_number))
+					var msg = "为众将补满兵员需：{0}".format([required])
+					SceneManager.input_numbers.speak2(msg)
+					DataManager.set_env("内政.征兵.状态", 0)
+				Input.action_release("EMU_START")
 			if not wait_for_number_input("enter_barrack_menu", true):
 				return
 			#确认数量
-			var conNumberInput = SceneManager.input_numbers.get_current_input_node();
 			var number:int = conNumberInput.get_number();
 			DataManager.set_env("数量", number)
 			if number > 0:
@@ -101,6 +122,7 @@ func conscription_2():
 	
 	SceneManager.show_input_numbers("请输入征兵数目", ["士兵"], [max_sodiers], [2])
 	SceneManager.show_cityInfo(true)
+	DataManager.set_env("内政.征兵.状态", 0)
 	LoadControl.set_view_model(222)
 	return
 

@@ -434,16 +434,15 @@ func hope_summon_1():
 	if candidates.empty():
 		LoadControl._affiars_error("当前不存在可召唤的异士");
 		return;
-	SceneManager.show_confirm_dialog("进行一次异士召唤\n需5000两金", -5)
+	var msg = "进行一次异士召唤\n需{0}两金".format([StaticManager.YISHI_COST])
+	SceneManager.show_confirm_dialog(msg, -5)
 	SceneManager.show_cityInfo(true)
-	DataManager.set_env("价格", 5000)
 	LoadControl.set_view_model(231)
 	return
 
 func hope_summon_2():
-	var cost = DataManager.get_env_int("价格")
 	var city = clCity.city(DataManager.player_choose_city)
-	if city.get_gold() < cost:
+	if city.get_gold() < StaticManager.YISHI_COST:
 		LoadControl._affiars_error("汝心不诚\n如何可行？", -5)
 		return
 
@@ -467,7 +466,7 @@ func hope_summon_4():
 	DataManager.set_env("武将", actorId)
 	var actor = ActorHelper.actor(actorId)
 	
-	var cost = DataManager.get_env_int("价格")
+	var cost = StaticManager.YISHI_COST
 	var city = clCity.city(DataManager.player_choose_city)
 	city.add_gold(-cost)
 	

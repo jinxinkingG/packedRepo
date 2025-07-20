@@ -19,15 +19,14 @@ func on_trigger_20012()->bool:
 	if se.succeeded <= 0:
 		#未成功跳过
 		return false
-	var actorIds = se.get_all_damaged_targets()
-	if not SkillHelper.actor_has_skills(actorId, ["鹰视"]):
-		if se.targetId in actorIds:
-			actorIds = [se.targetId]
-		else:
-			actorIds = []
+	var targetIds = [se.targetId]
+	if SkillHelper.actor_has_skills(actorId, ["鹰视"]):
+		for damagedId in se.get_all_damaged_targets():
+			if not damagedId in targetIds:
+				targetIds.append(damagedId)
 	var allStopped = true
-	for tid in actorIds:
-		var wa = DataManager.get_war_actor(tid)
+	for targetId in targetIds:
+		var wa = DataManager.get_war_actor(targetId)
 		if wa == null or wa.disabled:
 			continue
 		if wa.get_buff_label_turn(["禁止移动"]) <= 0:
@@ -36,6 +35,7 @@ func on_trigger_20012()->bool:
 	#都已经被定止，跳过
 	if allStopped:
 		return false
+	se.skip_redo = 1
 	return true
 
 func effect_20030_AI_start():
@@ -44,14 +44,13 @@ func effect_20030_AI_start():
 
 func effect_20030_start():
 	var se = DataManager.get_current_stratagem_execution()
-	var actorIds = se.get_all_damaged_targets()
-	if not SkillHelper.actor_has_skills(actorId, ["鹰视"]):
-		if se.targetId in actorIds:
-			actorIds = [se.targetId]
-		else:
-			actorIds = []
+	var targetIds = [se.targetId]
+	if SkillHelper.actor_has_skills(actorId, ["鹰视"]):
+		for damagedId in se.get_all_damaged_targets():
+			if not damagedId in targetIds:
+				targetIds.append(damagedId)
 	var stopped = []
-	for targetId in actorIds:
+	for targetId in targetIds:
 		if ske.set_war_buff(targetId, "定止", 1) > 0:
 			stopped.append(targetId)
 	var names = []

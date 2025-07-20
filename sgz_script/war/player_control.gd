@@ -993,7 +993,7 @@ func actor_info():
 	if idx < 0:
 		actorIds.insert(0, actorId)
 	else:
-		actorIds = actorIds.slice(idx, actorIds.size()) + actorIds.slice(0, idx)
+		actorIds = actorIds.slice(idx, actorIds.size()) + actorIds.slice(0, idx - 1)
 	SceneManager.show_actor_info_list(actorIds, true, "", false)
 	map.update_ap(actorId)
 	set_view_model(6)

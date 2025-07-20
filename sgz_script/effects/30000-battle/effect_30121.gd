@@ -10,7 +10,7 @@ const POWER_DEBUFF = 5
 
 func effect_30121_start() -> void:
 	ske.battle_cd(99999)
-	if true or me.battle_power <= enemy.battle_power:
+	if me.battle_power <= enemy.battle_power:
 		if not Global.get_rate_result(50):
 			var msg = "【{0}】失败".format([ske.skill_name])
 			SceneManager.show_confirm_dialog(msg, actorId, 3)

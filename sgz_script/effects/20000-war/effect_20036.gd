@@ -73,7 +73,7 @@ func effect_20036_2():
 	ske.replace_battle_defender(ske.actorId)
 	ske.war_report()
 
-	var msg = "{0}不必惊慌！\n{1}在此！\n({2}代替被攻击)".format([
+	var msg = "{0}不必惊慌！\n{1}在此！\n（{2}代替被攻击".format([
 		DataManager.get_actor_honored_title(ske.actorId, me.actorId),
 		DataManager.get_actor_self_title(me.actorId),
 		me.get_name(),

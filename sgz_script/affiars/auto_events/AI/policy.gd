@@ -313,6 +313,12 @@ func canvass():
 					targetActorId = actorId
 					targetCityId = city.ID
 					targetVstateId = city.get_vstate_id()
+
+	### 测试 AI 招揽，可使用以下几行
+	### targetVstateId = 4
+	### targetCityId = 7
+	### targetActorId = 25
+
 	if targetActorId < 0:
 		return false
 
@@ -413,6 +419,7 @@ func incite():
 				targetActorId = actorId
 				targetCityId = city.ID
 				targetVstateId = city.get_vstate_id()
+
 	if targetActorId < 0:
 		return false
 

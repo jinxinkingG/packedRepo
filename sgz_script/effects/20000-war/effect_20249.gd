@@ -23,7 +23,8 @@ func on_view_model_2002():
 func effect_20249_start():
 	var targets = []
 	for targetId in get_enemy_targets(me):
-		if ActorHelper.actor(targetId).get_gender() != "男":
+		if not ActorHelper.actor(targetId).is_male():
+			# 仅限男性
 			continue
 		if SkillHelper.get_actor_skill_names(targetId).empty():
 			continue

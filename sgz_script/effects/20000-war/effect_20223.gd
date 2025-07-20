@@ -22,7 +22,7 @@ func on_trigger_20020() -> bool:
 	return true
 
 func effect_20223_AI_start():
-	goto_step("2")
+	goto_step("perform")
 	return
 
 func effect_20223_start() -> void:

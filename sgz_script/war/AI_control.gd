@@ -4,9 +4,8 @@ const view_model_name = "战争-AI-步骤"
 const VAR_END_ACTOR = "AI-停止武将"
 const VAR_CUR_ACTOR = "AI-当前武将"
 
-var wab;
-
-var iembattle;
+var wab
+var iembattle
 
 var temp_time:int = 0;
 
@@ -24,11 +23,15 @@ func _init() -> void:
 		3:
 			wab = Global.load_script(DataManager.mod_path+"sgz_script/war/AI/War_AI_behavior_hard.gd")
 		4:
-			wab = Global.load_script(DataManager.mod_path+"sgz_script/war/AI/War_AI_behavior_ng.gd")
+			if DataManager.is_developer():
+				wab = Global.load_script(DataManager.mod_path+"sgz_script/war/AI/War_AI_behavior_lab.gd")
+			else:
+				wab = Global.load_script(DataManager.mod_path+"sgz_script/war/AI/War_AI_behavior_ng.gd")
 		_:
 			wab = Global.load_script(DataManager.mod_path+"sgz_script/war/AI/War_AI_behavior_new.gd")
 	iembattle = Global.load_script(DataManager.mod_path+"sgz_script/war/IEmbattle.gd")
 	FlowManager.bind_import_flow("AI_auto_embattle" ,self)
+	FlowManager.bind_import_flow("AI_turn_start", self)
 	FlowManager.bind_import_flow("AI_before_ready", self)
 	FlowManager.bind_import_flow("AI_ready", self)
 	FlowManager.bind_import_flow("AI_end", self)
@@ -61,7 +64,14 @@ func AI_auto_embattle():
 	set_view_model(0)
 	return
 
-#AI回合开始
+# AI回合开始
+# 应只调用一次
+func AI_turn_start() -> void:
+	wab.turn_start()
+	FlowManager.add_flow("AI_before_ready")
+	return
+
+# AI 行动前检查
 func AI_before_ready():
 	#检查是否升级
 	_check_actors_levelup()

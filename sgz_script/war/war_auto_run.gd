@@ -35,7 +35,6 @@ func _init() -> void:
 	FlowManager.bind_import_flow("prepare_turn_skill_trigger", self)
 	FlowManager.bind_import_flow("before_turn_skill_trigger", self)
 	FlowManager.bind_import_flow("turn_ready_skill_trigger", self)
-	FlowManager.bind_import_flow("finish_tmp_round_trigger", self)
 
 	war_map = SceneManager.current_scene().war_map
 	FlowManager.bind_signal_method("draw_actors", war_map)
@@ -94,7 +93,7 @@ func _process(delta: float) -> void:
 		return
 	if FlowManager.has_task():
 		return
-	if war_map.is_camer_moving:
+	if war_map.is_animating():
 		return
 	if is_instance_valid(player_control):
 		player_control._process(delta)
@@ -168,7 +167,7 @@ func _process(delta: float) -> void:
 				FlowManager.add_flow("player_before_ready")
 			else:
 				FlowManager.set_current_control_playerNo(0)
-				FlowManager.add_flow("AI_before_ready")
+				FlowManager.add_flow("AI_turn_start")
 		8:#控制者-结束阶段
 			turn_control_end()
 		9:#整个势力结束(势力下所有控制器都结束了)
@@ -426,8 +425,7 @@ func turn_control_end_trigger():
 func turn_control_end_clear():
 	set_current_step(82)
 	if DataManager.is_extra_war_round():
-		DataManager.set_env("战争.临时回合结束.TRIGGER", DataManager.get_extra_round_actors())
-		return finish_tmp_round_trigger()
+		return finish_tmp_round()
 	SceneManager.hide_all_tool()
 	FlowManager.force_change_controlNo(0)
 	DataManager.war_control_sort_no += 1
@@ -764,24 +762,6 @@ func prepare_tmp_round():
 	set_next_step(5)
 	return
 
-	for actorId in DataManager.get_extra_round_actors():
-		if SkillHelper.auto_trigger_skill(actorId, 20016, "finish_tmp_round"):
-			return
-
-func finish_tmp_round_trigger():
-	set_current_step(-1)
-	set_next_step(-1)
-	var actorIds = get_env_int_array("战争.临时回合结束.TRIGGER")
-	if actorIds.empty():
-		finish_tmp_round()
-		return
-	var actorId = actorIds.pop_front()
-	set_env("战争.临时回合结束.TRIGGER", actorIds)
-	if SkillHelper.auto_trigger_skill(actorId, 20016, "finish_tmp_round_trigger"):
-		return
-	FlowManager.add_flow("finish_tmp_round_trigger")
-	return
-
 func finish_tmp_round():
 	var wf = DataManager.get_current_war_fight()
 	var wv = wf.current_war_vstate()
@@ -791,7 +771,7 @@ func finish_tmp_round():
 	wv.turn_end_event(actorIds)
 	SkillHelper.update_all_skill_buff("EXTRA_ROUND_FINISH")
 	SceneManager.hide_all_tool()
-	FlowManager.force_change_controlNo(0);
+	FlowManager.force_change_controlNo(0)
 	switch_side()
 	return
 
@@ -984,16 +964,16 @@ func check_daoshu_appended(wa:War_Actor)->void:
 		if skillName in learnedNames:
 			continue
 		if skillName in defaults.values():
-			SkillHelper.add_actor_scene_skill(20000, wa.actorId, skillName, 1, -1, source)
-			wa.attach_free_dialog("研读{0}\n对道术【{1}】有所领悟".format([source, skillName]), 1)
+			if SkillHelper.add_ctor_scene_skill(20000, wa.actorId, skillName, 1, -1, source):
+				wa.attach_free_dialog("研读{0}\n对道术【{1}】有所领悟".format([source, skillName]), 1)
 			return
 		otherDaoshuSkills.append(skillName)
 	if otherDaoshuSkills.empty():
 		return
 	otherDaoshuSkills.shuffle()
 	var skillName = otherDaoshuSkills[0]
-	SkillHelper.add_actor_scene_skill(20000, wa.actorId, skillName, 1, -1, source)
-	wa.attach_free_dialog("研读{0}\n对道术【{1}】有所领悟".format([source, skillName]), 1)
+	if SkillHelper.add_actor_scene_skill(20000, wa.actorId, skillName, 1, -1, source):
+		wa.attach_free_dialog("研读{0}\n对道术【{1}】有所领悟".format([source, skillName]), 1)
 	return
 
 func check_shence_appended(wa:War_Actor)->void:
@@ -1004,8 +984,8 @@ func check_shence_appended(wa:War_Actor)->void:
 	var skills = StaticManager.SHENCE_SKILLS.duplicate()
 	skills.shuffle()
 	var skillName = skills[0]
-	SkillHelper.add_actor_scene_skill(20000, wa.actorId, skillName, 1, -1, source, true)
-	wa.attach_free_dialog("研读{0}\n领会上古神策【{1}】".format([source, skillName]), 1)
+	if SkillHelper.add_actor_scene_skill(20000, wa.actorId, skillName, 1, -1, source, true):
+		wa.attach_free_dialog("研读{0}\n领会上古神策【{1}】".format([source, skillName]), 1)
 	return
 
 func check_feijian_damage(wa:War_Actor)->void:

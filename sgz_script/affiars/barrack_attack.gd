@@ -28,12 +28,14 @@ func _input_key(delta: float):
 	match LoadControl.get_view_model():
 		211:#选择城市
 			var fromCity = clCity.city(DataManager.player_choose_city)
-			scene.show_specified_city_lines(fromCity.ID, true)
-			var connectedEnemyCities = fromCity.get_connected_city_ids([], [fromCity.get_vstate_id()])
+			scene.show_attackable_city_lines(fromCity.ID)
+			var connectedEnemyCities = clCity.get_attackable_city_ids(fromCity).keys()
 			var cityId = wait_for_choose_city(delta, "enter_barrack_menu", connectedEnemyCities)
 			if cityId < 0:
 				var currentPointedCityId = SceneManager.current_scene().get_curosr_point_city()
-				if currentPointedCityId >= 0 and currentPointedCityId != fromCity.ID:
+				if currentPointedCityId >= 0 \
+					and currentPointedCityId != fromCity.ID \
+					and currentPointedCityId != DataManager.get_env_int("内政.战争.上次选定"):
 					var currentPointedCity = clCity.city(currentPointedCityId)
 					var msg = "此为{0}".format([currentPointedCity.get_full_name()])
 					#var leaderName = currentPointedCity.get_leader_name()
@@ -42,14 +44,17 @@ func _input_key(delta: float):
 					SceneManager.show_unconfirm_dialog(msg)
 					SceneManager.dialog_msg_complete(true)
 				return
-			# 判断相连和归属
-			if not cityId in connectedEnemyCities:
-				SceneManager.show_unconfirm_dialog("无法进攻该城")
-				return
+			DataManager.set_env("内政.战争.上次选定", cityId)
 			var targetCity = clCity.city(cityId)
 			# 判断同盟
 			if DataManager.is_alliance(targetCity.get_vstate_id(), fromCity.get_vstate_id()):
-				SceneManager.show_unconfirm_dialog("此为盟友城池")
+				var msg = "此为{0}\n不可攻击盟友".format([targetCity.get_full_name()])
+				SceneManager.show_unconfirm_dialog(msg)
+				return
+			# 判断相连和归属
+			if not cityId in connectedEnemyCities:
+				var msg = "此为{0}\n无法进攻该城".format([targetCity.get_full_name()])
+				SceneManager.show_unconfirm_dialog(msg)
 				return
 			var wf = DataManager.new_war_fight(fromCity.ID, targetCity.ID)
 			scene.reset_view()

@@ -34,7 +34,7 @@ func effect_20334_go() -> void:
 		if targetId in selected:
 			continue
 		var wa = DataManager.get_war_actor(targetId)
-		if wa.actor().get_gender() != "男":
+		if not wa.actor().is_male():
 			#仅限男性
 			continue
 		var blockCN = map.get_blockCN_by_position(wa.position)

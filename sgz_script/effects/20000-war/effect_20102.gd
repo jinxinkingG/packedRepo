@@ -15,7 +15,7 @@ func effect_20102_start() -> void:
 	for targetId in get_teammate_targets(me):
 		var wa = DataManager.get_war_actor(targetId)
 		var actor = ActorHelper.actor(wa.actorId)
-		if actor.get_gender() != "男":
+		if not actor.is_male():
 			#仅限男性
 			continue
 		var blockCN = map.get_blockCN_by_position(wa.position)
@@ -42,7 +42,7 @@ func effect_20102_teammate_selected() -> void:
 	for targetId in get_enemy_targets(me, true):
 		var wa = DataManager.get_war_actor(targetId)
 		var actor = ActorHelper.actor(wa.actorId)
-		if actor.get_gender() != "男":
+		if not actor.is_male():
 			#仅限男性
 			continue
 		var blockCN = map.get_blockCN_by_position(wa.position)

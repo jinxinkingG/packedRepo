@@ -50,7 +50,8 @@ func on_trigger_30023() -> bool:
 
 	# 飞戟吸血效果
 	var damage = DataManager.get_env_int("白兵伤害.伤害")
-	if "戟" in actor.get_weapon().name():
+	var weapon = actor.get_weapon()
+	if not weapon.disabled and "戟" in weapon.name():
 		var recover = int(damage / 10)
 		if recover > 0:
 			bu.add_status_effect("飞戟 +{0}".format([recover]))

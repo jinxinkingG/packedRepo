@@ -62,18 +62,21 @@ func battle_run_start() -> void:
 	DataManager.game_trace("battle_run_start 初始化完成");
 
 	# 准备触发技能
-	DataManager.common_variable["白兵.INIT.触发武将"] = DataManager.battle_actors
 	FlowManager.add_flow("battle_init_trigger")
 	return
 
 func battle_init_trigger():
-	var actorIds = Array(DataManager.common_variable["白兵.INIT.触发武将"])
-	while not actorIds.empty():
-		var actorId = actorIds.pop_front()
-		DataManager.common_variable["白兵.INIT.触发武将"] = actorIds
+	var bf = DataManager.get_current_battle_fight()
+	var key = "INIT.触发武将"
+	var triggered = bf.get_env_int_array(key)
+	for actorId in [bf.get_attacker_id(), bf.get_defender_id()]:
+		if actorId in triggered:
+			continue
+		triggered.append(actorId)
+		bf.set_env(key, triggered)
 		if SkillHelper.auto_trigger_skill(actorId, 30050, "battle_init_trigger"):
 			return
-	DataManager.common_variable.erase("白兵.INIT.触发武将")
+	bf.unset_env(key)
 	FlowManager.add_flow("battle_init_units")
 	return
 
@@ -88,6 +91,24 @@ func battle_init_units():
 
 	# 攻防双方初始兵种设置
 	bf.init_units()
+
+	# 战斗初始护甲
+	for wa in [attacker, defender]:
+		for found in wa.actor().get_equip_feature_all("白刃战初始护甲"):
+			var equip = found[0]
+			# 暂时用临时变量来控制次数
+			var key = "{0}.{1}.护甲效果".format([equip.type, equip.id])
+			var times = Global.intval(wa.get_tmp_variable(key, 0))
+			if times >= 2:
+				continue
+			var bu = wa.battle_actor_unit()
+			if bu == null:
+				continue
+			wa.set_tmp_variable(key, times + 1)
+			var ske = SkillHelper.new_ske_from_equip_simulation(wa.actorId, found[0])
+			ske.battle_change_unit_armor(bu, found[1])
+			ske.battle_report()
+
 	set_next_step(0)
 	return
 

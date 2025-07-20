@@ -51,7 +51,7 @@ func effect_20426_2():
 	ske.replace_battle_defender(ske.actorId)
 	ske.war_report()
 
-	var msg = "{0}速行！\n来将我自当之\n({1}代替被攻击)".format([
+	var msg = "{0}速行！\n来将我自当之\n（{1}代替被攻击".format([
 		DataManager.get_actor_honored_title(ske.actorId, actorId),
 		me.get_name(),
 	])

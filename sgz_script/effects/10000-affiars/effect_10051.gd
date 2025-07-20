@@ -37,7 +37,23 @@ func on_view_model_2000():
 		return
 	if dialogInfo[0] == -1:
 		SoundManager.play_bgm("res://resource/sounds/bgm/solo_dead.ogg", false, true, true)
-	SceneManager.show_confirm_dialog(dialogInfo[1], dialogInfo[0], dialogInfo[2])
+	var prevKingId = ske.affair_get_skill_val_int()
+	var prevKing = ActorHelper.actor(prevKingId)
+	var reporter = dialogInfo[0]
+	match dialogInfo[0]:
+		0:
+			reporter = actorId
+		1:
+			reporter = prevKing.actorId
+	var msg = dialogInfo[1]
+	msg = msg.replace("<YEARS>", str(max(1, DataManager.year - 189)))
+	msg = msg.replace("<YEAR>", str(DataManager.year))
+	msg = msg.replace("<MONTH>", str(DataManager.month))
+	msg = msg.replace("<KING>", actor.get_name())
+	msg = msg.replace("<NAME>", prevKing.get_name())
+	msg = msg.replace("<MORAL>", prevKing.get_moral())
+	var mood = dialogInfo[2]
+	SceneManager.show_confirm_dialog(msg, reporter, mood)
 	LoadControl.set_view_model(2001)
 	return
 
@@ -141,10 +157,6 @@ func effect_10051_start():
 	var cityId = get_working_city_id()
 	var city = clCity.city(cityId)
 	var currentKingActor = ActorHelper.actor(city.get_lord_id())
-	
-	if actorId == currentKingActor.actorId:
-		LoadControl._error("不可")
-		return
 
 	# 直接生效，不等对话结束
 	# 禁用此技能
@@ -153,20 +165,9 @@ func effect_10051_start():
 	clCity.move_out(actorId)
 	actor.set_status_disabled()
 	currentKingActor.set_moral(1)
+	ske.affair_set_skill_val(currentKingActor.actorId)
 
-	for dialogInfo in DIALOGS:
-		match dialogInfo[0]:
-			0:
-				dialogInfo[0] = self.actorId
-			1:
-				dialogInfo[0] = currentKingActor.actorId
-		dialogInfo[1] = dialogInfo[1].replace("<YEARS>", str(max(1, DataManager.year - 189)))
-		dialogInfo[1] = dialogInfo[1].replace("<YEAR>", str(DataManager.year))
-		dialogInfo[1] = dialogInfo[1].replace("<MONTH>", str(DataManager.month))
-		dialogInfo[1] = dialogInfo[1].replace("<KING>", actor.get_name())
-		dialogInfo[1] = dialogInfo[1].replace("<NAME>", currentKingActor.get_name())
-		dialogInfo[1] = dialogInfo[1].replace("<MORAL>", currentKingActor.get_moral())
-	self.dialogProcess = 0
+	dialogProcess = 0
 	SceneManager.hide_all_tool()
 	LoadControl.set_view_model(2000)
 	SoundManager.play_bgm("res://resource/sounds/bgm/GameDead_End.ogg", true, true, true)
@@ -184,10 +185,11 @@ func effect_10051_2():
 	return
 
 # 被动效果，检查是否转换技能
-func check_trigger_correct()->bool:
+# TODO 变为技能升级
+func on_trigger_10001()->bool:
 	for vs in clVState.all_vstates():
-		if vs.get_lord_id() == self.actorId:
-			SkillHelper.ban_actor_skill(10000, self.actorId, "毒逝", 99999)
-			SkillHelper.add_actor_scene_skill(10000, self.actorId, "天威", 99999)
+		if vs.get_lord_id() == actorId:
+			SkillHelper.ban_actor_skill(10000, actorId, "毒逝", 99999)
+			SkillHelper.add_actor_scene_skill(10000, actorId, "天威", 99999)
 			break
 	return false
