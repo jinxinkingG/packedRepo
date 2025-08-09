@@ -46,7 +46,7 @@ func effect_20606_me() -> void:
 		goto_step("end")
 		return
 	var msg = "选择队友"
-	wait_choose_actors(targetIds, msg)
+	wait_choose_actors(targetIds, msg, true)
 	LoadControl.set_view_model(2002)
 	return
 

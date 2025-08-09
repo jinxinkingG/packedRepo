@@ -9,10 +9,6 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 const PASSIVE_EFFECT_ID = 20483
 
 func effect_20482_start()->void:
-	if me.side() != "防守方":
-		var msg = "【{0}】仅限守方发动".format([ske.skill_name])
-		play_dialog(actorId, msg, 2, 2999)
-		return
 	var terrian = map.get_blockCN_by_position(me.position)
 	if terrian != "平原":
 		var msg = "【{0}】只能在平地发动".format([ske.skill_name])

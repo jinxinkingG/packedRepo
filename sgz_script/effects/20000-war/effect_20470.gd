@@ -66,7 +66,7 @@ func effect_20470_4():
 	ske.cost_war_cd(1)
 	ske.cost_ap(COST_AP, true)
 	var turns = 1
-	if me.side() == "防守方":
+	if me.is_defender():
 		turns = 2
 	ske.set_war_skill_val(schemeName, turns, PASSIVE_EFFECT_ID, targetId)
 

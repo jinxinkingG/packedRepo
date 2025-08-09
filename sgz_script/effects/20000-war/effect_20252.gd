@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #秘计效果实现
-#【秘计】大战场,锁定技。对方回合结束阶段，若敌方武将数＞你方武将数，对方需选择超出数量的武将回营。
+#【秘计】大战场，锁定技。你是战争守方的场合：对方回合结束阶段，若敌方武将数＞你方武将数，对方需选择超出数量的武将回营。
 
 const EFFECT_ID = 20252
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -10,8 +10,6 @@ func on_trigger_20016()->bool:
 	# 必须先设 CD，避免 turn_control_end 重入
 	ske.cost_war_cd(1)
 	if me == null or me.disabled:
-		return false
-	if me.side() != "防守方":
 		return false
 	var wv = me.war_vstate()
 	if wv == null:

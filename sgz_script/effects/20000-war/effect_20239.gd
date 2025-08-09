@@ -113,7 +113,7 @@ func effect_20239_end():
 	skill_end_clear()
 	var endFlow = "player_skill_end_trigger"
 	if me.get_controlNo() < 0:
-		endFlow = "AI_before_ready"
+		endFlow = "AI_skill_end_trigger"
 	FlowManager.add_flow(endFlow)
 	return
 

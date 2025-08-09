@@ -491,7 +491,7 @@ func player_ready():
 	var vstate_controlNo = DataManager.get_current_control_sort()
 	var player:Player = DataManager.players[vstate_controlNo];
 	var actor = ActorHelper.actor(player.actorId)
-	scene_affiars.show_city_line(false);
+	scene_affiars.show_city_line(false)
 	scene_affiars.cursor.show();
 	scene_affiars.set_city_cursor_position(DataManager.player_choose_city);
 	SceneManager.show_unconfirm_dialog(actor.get_name()+"大人\n向哪座城市下达命令？");

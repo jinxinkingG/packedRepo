@@ -133,7 +133,7 @@ func check_actor_dead_start():
 	DataManager.set_env("值", vstateId)
 	for city in clCity.all_cities([vstateId]):
 		if city.get_actors_count() == 0:
-			city.set_vstate_id(-1)
+			city.change_vstate(-1)
 			continue
 		for actorId in city.get_actor_ids():
 			#本月已经检查过的武将不再检查
@@ -154,7 +154,7 @@ func check_actor_dead_start():
 			actor.set_status_dead()
 			clCity.move_out(actorId)
 			if city.get_actors_count() == 0:
-				city.set_vstate_id(-1)
+				city.change_vstate(-1)
 			
 			DataManager.set_env("武将", actor.actorId)
 			var actorControlNo = DataManager.get_actor_controlNo(actor.actorId)

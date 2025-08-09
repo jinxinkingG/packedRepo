@@ -32,6 +32,8 @@ func _input_key(delta: float):
 	var scene_battle:Control = SceneManager.current_scene()
 	if scene_battle.SCENE_ID != 30000:
 		return
+	if scene_battle.battle_log.visible:
+		return
 	var bottom = SceneManager.lsc_menu;
 	var view_model = LoadControl.get_view_model();
 	var actorId = int(DataManager.common_variable["当前武将"]);

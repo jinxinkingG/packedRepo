@@ -1,6 +1,6 @@
 extends "effect_20000.gd"
 
-# 断归限定技
+# 断归主动技部分
 #【断归】大战场，限定技。你非主将，可选择一名身侧敌方武将，隐藏埋伏下来。下个回合，如果该武将移动，立刻占据该武将移动前的位置。若该武将未移动，你在其回合结束时显形。
 
 const EFFECT_ID = 20595
@@ -58,7 +58,7 @@ func effect_20595_confirmed() -> void:
 	return
 
 func on_view_model_2002() -> void:
-	wait_for_yesno(FLOW_BASE + "_hide")
+	wait_for_skill_result_confirmation(FLOW_BASE + "_hide")
 	return
 
 func effect_20595_hide() -> void:

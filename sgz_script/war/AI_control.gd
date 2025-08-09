@@ -24,7 +24,8 @@ func _init() -> void:
 			wab = Global.load_script(DataManager.mod_path+"sgz_script/war/AI/War_AI_behavior_hard.gd")
 		4:
 			if DataManager.is_developer():
-				wab = Global.load_script(DataManager.mod_path+"sgz_script/war/AI/War_AI_behavior_lab.gd")
+				wab = Global.load_script(DataManager.mod_path+"sgz_script/war/AI/War_AI_behavior_ng.gd")
+				#wab = Global.load_script(DataManager.mod_path+"sgz_script/war/AI/War_AI_behavior_lab.gd")
 			else:
 				wab = Global.load_script(DataManager.mod_path+"sgz_script/war/AI/War_AI_behavior_ng.gd")
 		_:
@@ -32,6 +33,7 @@ func _init() -> void:
 	iembattle = Global.load_script(DataManager.mod_path+"sgz_script/war/IEmbattle.gd")
 	FlowManager.bind_import_flow("AI_auto_embattle" ,self)
 	FlowManager.bind_import_flow("AI_turn_start", self)
+	FlowManager.bind_import_flow("AI_skill_end_trigger", self)
 	FlowManager.bind_import_flow("AI_before_ready", self)
 	FlowManager.bind_import_flow("AI_ready", self)
 	FlowManager.bind_import_flow("AI_end", self)
@@ -68,6 +70,16 @@ func AI_auto_embattle():
 # 应只调用一次
 func AI_turn_start() -> void:
 	wab.turn_start()
+	FlowManager.add_flow("AI_before_ready")
+	return
+
+# AI 发动技能后
+func AI_skill_end_trigger():
+	var ske = SkillHelper.read_skill_effectinfo()
+	DataManager.set_env("战争.完成技能", ske.output_data())
+	if SkillHelper.auto_trigger_skill(ske.skill_actorId, 20040, "AI_before_ready"):
+		return
+	DataManager.unset_env("战争.完成技能")
 	FlowManager.add_flow("AI_before_ready")
 	return
 

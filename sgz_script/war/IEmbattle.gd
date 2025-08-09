@@ -36,7 +36,7 @@ func get_embattle_setting(wv:War_Vstate)->Dictionary:
 	var wf = DataManager.get_current_war_fight()
 	if wv == null:
 		return {}
-	if wv.side == "防守方" and not wv.is_reinforcement():
+	if wv.is_defender() and not wv.is_reinforcement():
 		return get_defender_embattle_setting()
 
 	var type = "攻"
@@ -64,7 +64,7 @@ func get_embattle_setting(wv:War_Vstate)->Dictionary:
 # 所有可布阵范围
 func get_embattle_all_area(wv:War_Vstate)->Array:
 	var setting = get_embattle_setting(wv)
-	if wv.side != "攻击方":
+	if not wv.is_attacker():
 		return [setting["布阵范围"]]
 	if SkillRangeBuff.max_val_for_war_vstate("全方向布阵", wv.id) <= 0:
 		return [setting["布阵范围"]]
@@ -163,7 +163,7 @@ func get_attacking_direction(wv:War_Vstate=null)->int:
 	else:
 		ret = int(deg)
 	# 仅针对主攻方设定当前方向
-	if wv.side == "攻击方" and not wv.is_reinforcement():
+	if wv.is_attacker() and not wv.is_reinforcement():
 		wf.warDirection = ret
 	return ret
 
@@ -184,7 +184,7 @@ func set_default_actor_embattle(wa:War_Actor)->void:
 	# 也避免兵力无用
 	var safePositions = []
 	# 挑战难度下，防守方尽量利用城墙保护弱者
-	if DataManager.diffculities >= 4 and wa.side() == "防守方" and not wa.is_reinforcement():
+	if DataManager.diffculities >= 4 and wa.is_defender() and not wa.is_reinforcement():
 		# 优先寻找靠近太守府的位置
 		safePositions = _get_safe_positions(wa)
 		_set_protective_actor_embattle(wa, safePositions)
@@ -257,11 +257,11 @@ func reset_actor_location(actorId:int, dir:Vector2)->void:
 		return
 
 	# 防守方
-	if wa.side() == "防守方":
+	if wa.is_defender():
 		reset_defender_location(wa, dir)
 
 	# 进攻方
-	if wa.side() == "攻击方":
+	if wa.is_attacker():
 		reset_attacker_location(wa, dir)
 
 	return

@@ -5,8 +5,6 @@ extends "effect_20000.gd"
 
 func on_trigger_20019() -> bool:
 	ske.cost_war_cd(99999)
-	if me.side() != "防守方":
-		return false
 	var city = wf.target_city()
 	if city.get_region() != "荆州":
 		return false

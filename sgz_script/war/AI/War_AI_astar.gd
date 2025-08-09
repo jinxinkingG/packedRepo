@@ -229,7 +229,7 @@ func update_map_for_actor(me:War_Actor)->void:
 					disconnect_points(int(_id), id, false)
 					if currentTroopsType == "仙":
 						connect_points(int(_id), id, false)
-					elif me.side() == "防守方":
+					elif me.is_defender():
 						if SkillRangeBuff.max_val_for_actor("逾墙", me.actorId) > 0:
 							connect_points(int(_id), id, false)
 

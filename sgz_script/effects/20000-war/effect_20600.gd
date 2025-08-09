@@ -10,7 +10,7 @@ const BUFF = 8
 
 func check_AI_perform_20000() -> bool:
 	# 防守方，检查主将附近是不是有敌军
-	if me.side() == "防守方":
+	if me.is_defender():
 		return get_enemy_targets(me, true, 4).size() >= 3
 	return get_enemy_targets(me.get_enemy_leader(), true, 4).size() >= 3
 

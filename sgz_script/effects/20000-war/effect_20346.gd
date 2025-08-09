@@ -36,7 +36,7 @@ func effect_20346_AI_report() -> void:
 	return
 
 func on_view_model_3009() -> void:
-	wait_for_pending_message(FLOW_BASE + "_AI_report", "AI_before_ready")
+	wait_for_pending_message(FLOW_BASE + "_AI_report", "AI_skill_end_trigger")
 	return
 
 func effect_20346_start() -> void:

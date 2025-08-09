@@ -512,7 +512,7 @@ func _can_buy_rice_numbers(wvId:int)->int:
 
 # 在计策命中率低下时，是否仍考虑用计
 func _try_scheme_however(wa:War_Actor)->bool:
-	if wa.side() != "防守方":
+	if not wa.is_defender():
 		return false
 	if wa.actor().get_wisdom() < 80:
 		return false

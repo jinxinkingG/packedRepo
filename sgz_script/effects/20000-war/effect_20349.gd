@@ -41,7 +41,7 @@ func on_view_model_3000():
 	return
 
 func on_view_model_3001():
-	wait_for_pending_message(FLOW_BASE + "_AI_3", "AI_before_ready")
+	wait_for_pending_message(FLOW_BASE + "_AI_3", "AI_skill_end_trigger")
 	return
 
 func effect_20349_AI_start():

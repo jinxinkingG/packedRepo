@@ -7,15 +7,16 @@ const DEFAULT_STOP_RATE = 50
 func get_actor_tactic(actorId:int, includeSkills:bool=true) -> PoolStringArray:
 	var ret = []
 	var wa = DataManager.get_war_actor(actorId)
-	for name in StaticManager.TACTICS.keys():
-		var cost = get_tactic_cost(wa, name)
-		if cost > wa.battle_tactic_point:
-			continue
-		ret.append(name)
+	if not wa.continuous_tactic_on():
+		for name in StaticManager.TACTICS.keys():
+			var cost = get_tactic_cost(wa, name)
+			if cost > wa.battle_tactic_point:
+				continue
+			ret.append(name)
 
-	#没有一个战术能用，玩家列表也显示个【束缚】,AI没有
-	if ret.empty() and not wa.is_AI_use():
-		ret.append(StaticManager.TACTICS.keys()[0])
+		#没有一个战术能用，玩家列表也显示个【束缚】,AI没有
+		if ret.empty() and not wa.is_AI_use():
+			ret.append(StaticManager.TACTICS.keys()[0])
 
 	if includeSkills:
 		# 加入白刃战主动技

@@ -142,7 +142,7 @@ func on_view_model_2(delta: float):
 			if not iembattle.check_actor_location_is_in_area(current, newPosition):
 				iembattle.reset_actor_location(current, dir)
 			else:
-				wa.move(newPosition, true, wa.side()=="防守方", true)
+				wa.move(newPosition, true, wa.is_defender(), true)
 
 	if not Global.is_action_pressed_AX():
 		return
@@ -543,7 +543,7 @@ func on_view_model_31(delta: float):
 			if not iembattle.check_actor_location_is_in_area(wa.actorId, newPosition):
 				iembattle.reset_actor_location(wa.actorId, dir)
 			else:
-				wa.move(newPosition, true, wa.side()=="防守方", true)
+				wa.move(newPosition, true, wa.is_defender(), true)
 
 	if not Global.is_action_pressed_AX():
 		return
@@ -739,7 +739,7 @@ func player_auto_embattle():
 		candidates.append(wa)
 	# 尝试使用历史自动布阵数据
 	
-	if wv.side == "防守方":
+	if wv.is_defender():
 		var direction = wf.warDirection
 		var positions = Array(wf.target_city().get_auto_embattle_positions(direction))
 		var unsettled = []
@@ -786,7 +786,7 @@ func player_auto_embattle_done()->void:
 	# 若为防守方，记忆当前布阵位置
 	var wvId = DataManager.get_env_int("布阵方")
 	var wv = wf.get_war_vstate(wvId)
-	if wv.side == "防守方":
+	if wv.is_defender():
 		var direction = wf.warDirection
 		var positions = []
 		for wa in wv.get_war_actors(false, true):

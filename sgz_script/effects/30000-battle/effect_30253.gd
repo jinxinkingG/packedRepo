@@ -45,9 +45,5 @@ func on_view_model_2000():
 	return
 
 func effect_30253_end():
-	if me.get_controlNo() < 0:
-		LoadControl.end_script()
-		FlowManager.add_flow("unit_action")
-	else:
-		FlowManager.add_flow("tactic_end")
+	tactic_end()
 	return

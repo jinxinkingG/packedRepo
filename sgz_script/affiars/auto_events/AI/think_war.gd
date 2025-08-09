@@ -301,7 +301,7 @@ func AI_War_1()->void:
 					temp_actors.append(send_actorId);
 					total_score+=max_score;
 					if nearCity.get_actors_count() == 0:
-						nearCity.set_vstate_id(-1)
+						nearCity.change_vstate(-1)
 				if temp_actors.size()+1 >= targetCity.get_actors_count():
 					break;
 		if(send_actorId<0):
@@ -381,7 +381,7 @@ func AI_War_1()->void:
 	DataManager.orderbook -= send_actors.size() * 3
 	
 	if targetCity.get_vstate_id() == -1:
-		targetCity.set_vstate_id(vstateId)
+		targetCity.change_vstate(vstateId)
 		# 占领空城，只派一个人去
 		var send_actorId = send_actors.pop_back()
 		clCity.move_to(send_actorId, targetCity.ID)
@@ -394,7 +394,7 @@ func AI_War_1()->void:
 	for actorId in wf.sendActors:
 		clCity.move_out(actorId)
 	var targetVstate = clVState.vstate(wf.targetVstateId)
-	targetVstate.hate(vstateId)
+	targetVstate.relation_index_change(vstateId, -80)
 	war_need_money = max(war_need_money, 0) + 300
 	war_need_rice = max(war_need_rice, 0) + 300
 	DataManager.set_env("携带金米", [war_need_money, war_need_rice])
@@ -541,7 +541,7 @@ func AI_War_4_AI():
 		# 记录城池易主
 		var conqueredCityIds = DataManager.get_env_int_array("内政.MONTHLY.城池易主")
 		conqueredCityIds.append(warCity.ID)
-		warCity.set_vstate_id(wf.fromVstateId)
+		warCity.change_vstate(wf.fromVstateId)
 		#攻方占领战争城
 		warCity.clear_actors()
 		#守方撤退逻辑
@@ -566,7 +566,7 @@ func AI_War_4_AI():
 		_decrease("产业", loss)
 		_decrease("统治度", loss)
 	if fromCity.get_actors_count() == 0:
-		fromCity.set_vstate_id(-1)
+		fromCity.change_vstate(-1)
 	var action = "攻占"
 	if wonVstateId == wf.targetVstateId:
 		action = "保卫"
@@ -595,8 +595,7 @@ func AI_War_3_player():
 	DataManager.player_choose_city = fromCity.ID
 
 	#写入守方情况
-	var defenderWV = War_Vstate.new(targetCity.get_vstate_id())
-	defenderWV.side = "防守方"
+	var defenderWV = War_Vstate.new(targetCity.get_vstate_id(), false, false)
 	defenderWV.from_cityId = targetCity.ID
 	defenderWV.init_actors = targetCity.get_actor_ids()
 	defenderWV.main_actorId = defenderWV.init_actors[0]
@@ -609,8 +608,7 @@ func AI_War_3_player():
 	targetCity.clear_actors()
 
 	#写入进攻方情况
-	var attackerWV = War_Vstate.new(fromVS.id)
-	attackerWV.side = "攻击方"
+	var attackerWV = War_Vstate.new(fromVS.id, false, true)
 	attackerWV.from_cityId = fromCity.ID
 	attackerWV.init_actors = wf.sendActors.duplicate()
 	attackerWV.main_actorId = attackerWV.init_actors[0]
@@ -618,7 +616,7 @@ func AI_War_3_player():
 	attackerWV.rice = goods[1]
 	wf.attackerWV = attackerWV
 
-	wf.target_vstate().hate(fromVS.id)
+	wf.target_vstate().relation_index_change(fromVS.id, -80)
 
 	var msg ="{0}急报！\n{1}军自{2}来犯！".format([
 		targetCity.get_full_name(), fromVS.get_dynasty_title_or_lord_name(),
@@ -722,8 +720,7 @@ func AI_VS_PLAYER_reinforce_go()->void:
 	var goods = DataManager.get_env_int_array("携带数量")
 	var city = clCity.city(cityId)
 	var actorIds = DataManager.get_env_int_array("援军武将")
-	var wv = War_Vstate.new(city.get_vstate_id(), true)
-	wv.side = "防守方"
+	var wv = War_Vstate.new(city.get_vstate_id(), true, false)
 	wv.from_cityId = city.ID
 	wv.init_actors = []
 	wv.main_actorId = -1
@@ -1009,7 +1006,7 @@ func _rand_actors_out(actors:PoolIntArray, vstateId:int, defenderEXP:float):
 		else:
 			#找到可撤退的城
 			var retreatCity = clCity.city(targetCityId)
-			retreatCity.set_vstate_id(vstateId)
+			retreatCity.change_vstate(vstateId)
 			clCity.move_to(actorId, retreatCity.ID)
 			retreatCity.add_gold(warCity.get_gold())
 			retreatCity.add_rice(warCity.get_rice())

@@ -21,7 +21,7 @@ func on_trigger_20009()->bool:
 		name = DataManager.get_actor_naughty_title(mainId, me.actorId)
 	var wf = DataManager.get_current_war_fight()
 	var action = "克"
-	if me.side() == "防守方":
+	if me.is_defender():
 		action = "保"
 	var msg = "哈哈哈哈……{0}！\n无我{1}，焉能{2}此{3}！".format([
 		name, actor.get_name(), action, wf.target_city().get_full_name(),

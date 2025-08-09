@@ -55,6 +55,9 @@ func _get_city_score(cityId:int, vstateId:int):
 	var vs = clVState.vstate(vstateId)
 	if vid in vs.get_hated():
 		score = score * 2
+	# 考虑外交关系
+	var idx = vs.get_relation_index(vid)
+	score = int(score * (100.0 - idx) / 100.0)
 	return score
 
 #计算城池兵力评分

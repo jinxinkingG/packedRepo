@@ -21,15 +21,17 @@ func effect_20420_start():
 	if current in targets:
 		targets.erase(current)
 		targets.insert(0, current)
-	if current >= 0:
+	var currentWA = DataManager.get_war_actor(current)
+	if currentWA == null:
+		current = -1
+	if currentWA != null:
 		msg += "（当前：{0}）".format([
-			ActorHelper.actor(current).get_name()
+			currentWA.get_name()
 		])
 	if not wait_choose_actors(targets, msg):
 		return
-	if current >= 0:
-		var targetWA = DataManager.get_war_actor(current)
-		map.show_color_block_by_position([targetWA.position])
+	if currentWA != null:
+		map.show_color_block_by_position([currentWA.position])
 	LoadControl.set_view_model(2000)
 	return
 

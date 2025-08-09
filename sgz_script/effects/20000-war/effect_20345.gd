@@ -18,7 +18,7 @@ func on_view_model_2009():
 	return
 
 func on_view_model_3009():
-	wait_for_pending_message(FLOW_BASE + "_AI_2", "AI_before_ready")
+	wait_for_pending_message(FLOW_BASE + "_AI_2", "AI_skill_end_trigger")
 	return
 
 func check_AI_perform_20000()->bool:

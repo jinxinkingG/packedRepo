@@ -9,10 +9,6 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 const COST_AP = 5
 
 func effect_20450_start():
-	if me.side() != "防守方":
-		var msg = "仅守方可发动"
-		play_dialog(actorId, msg, 2, 2999)
-		return
 	var targets = []
 	var pos = map.get_position_by_buildCN("太守府")
 	for dir in StaticManager.NEARBY_DIRECTIONS:

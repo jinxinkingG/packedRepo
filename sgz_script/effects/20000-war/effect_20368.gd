@@ -40,6 +40,4 @@ func effect_20368_2():
 	return
 
 func on_trigger_20016()->bool:
-	if me.side() != "防守方":
-		return false
 	return get_enemy_targets(me, true, 999).size() > 0

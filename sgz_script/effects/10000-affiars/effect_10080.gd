@@ -133,7 +133,7 @@ func effect_10080_4():
 		var targetActor = ActorHelper.actor(targetId)
 		if targetActor.get_loyalty() == 100:
 			targetActor.set_loyalty(90)
-	targetCity.set_vstate_id(city.get_vstate_id())
+	targetCity.change_vstate(city.get_vstate_id())
 	SceneManager.show_confirm_dialog(msg, leaderId, 3)
 	LoadControl.set_view_model(2999)
 	return

@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #伏瓮锁定技
-#【伏瓮】小战场，锁定技。战斗初始，你可消耗3机动力发动：将你的前两个士兵单位强制为步兵，并放置在敌将竖直方向的场地上下边界处。每个大战场回合限1次。
+#【伏瓮】小战场，锁定技。非攻城战，战斗初始，你可消耗3机动力发动：将你的前两个士兵单位强制为步兵，并放置在敌将竖直方向的场地上下边界处。每个大战场回合限1次。
 
 
 const EFFECT_ID = 30264
@@ -48,6 +48,7 @@ func effect_30264_2() -> void:
 			continue
 		var pos = targetPositions.pop_front()
 		bu.reset_combat_info("步")
+		bu.dic_combat["兵种锁定"] = 1
 		bu.unit_position = pos
 
 	SceneManager.show_confirm_dialog("伏下奇兵，或有奇效", actorId, 2)
@@ -56,4 +57,8 @@ func effect_30264_2() -> void:
 
 func on_view_model_2001():
 	wait_for_skill_result_confirmation("")
+	return
+
+func effect_30264_end():
+	LoadControl.end_script()
 	return

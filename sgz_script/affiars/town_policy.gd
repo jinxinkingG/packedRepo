@@ -1,7 +1,7 @@
 extends "affairs_base.gd"
 
 #每页多少个势力
-const pageSize = 12
+const PAGE_SIZE = 6
 
 #策略
 func _init() -> void:
@@ -9,20 +9,29 @@ func _init() -> void:
 
 	FlowManager.bind_import_flow("enter_town_policy_menu",self,"enter_town_policy_menu");
 
-	FlowManager.bind_signal_method("alliance_menu",self,"alliance_menu");
-	FlowManager.bind_signal_method("alliance_2",self,"alliance_2");
-	FlowManager.bind_signal_method("alliance_join_3",self,"alliance_join_3");
-	FlowManager.bind_signal_method("alliance_join_4",self,"alliance_join_4");
-	FlowManager.bind_signal_method("alliance_join_5",self,"alliance_join_5");
-	FlowManager.bind_signal_method("alliance_join_6",self,"alliance_join_6");
-	FlowManager.bind_signal_method("alliance_join_7",self,"alliance_join_7");
-	FlowManager.bind_signal_method("alliance_join_success_1",self,"alliance_join_success_1");
-	FlowManager.bind_signal_method("alliance_join_success_2",self,"alliance_join_success_2");
+	FlowManager.bind_signal_method("alliance_list", self)
+	FlowManager.bind_signal_method("alliance_menu", self)
+	FlowManager.bind_signal_method("alliance_2", self)
 
-	FlowManager.bind_signal_method("alliance_break_3",self,"alliance_break_3");
-	FlowManager.bind_signal_method("alliance_break_4",self,"alliance_break_4");
-	FlowManager.bind_signal_method("alliance_break_5",self,"alliance_break_5");
-	FlowManager.bind_signal_method("alliance_break_6",self,"alliance_break_6");
+	FlowManager.bind_signal_method("alliance_join_3", self)
+	FlowManager.bind_signal_method("alliance_join_4", self)
+	FlowManager.bind_signal_method("alliance_join_5", self)
+	FlowManager.bind_signal_method("alliance_join_6", self)
+	FlowManager.bind_signal_method("alliance_join_7", self)
+	FlowManager.bind_signal_method("alliance_join_success_1", self)
+	FlowManager.bind_signal_method("alliance_join_success_2", self)
+
+	FlowManager.bind_signal_method("alliance_break_3", self)
+	FlowManager.bind_signal_method("alliance_break_4", self)
+	FlowManager.bind_signal_method("alliance_break_5", self)
+	FlowManager.bind_signal_method("alliance_break_6", self)
+
+	FlowManager.bind_signal_method("alliance_opt_3", self)
+	FlowManager.bind_signal_method("alliance_opt_4", self)
+	FlowManager.bind_signal_method("alliance_opt_5", self)
+	FlowManager.bind_signal_method("alliance_opt_6", self)
+	FlowManager.bind_signal_method("alliance_opt_7", self)
+	FlowManager.bind_signal_method("alliance_opt_8", self)
 
 	FlowManager.bind_signal_method("wedge_start", self)
 	FlowManager.bind_signal_method("wedge_2", self)
@@ -75,25 +84,30 @@ func _input_key(delta: float):
 			], "enter_town_menu"):
 				return
 		111: #同盟列表
-			if(Input.is_action_just_pressed("ANALOG_UP")):
-				top.lsc.move_up();
-			if(Input.is_action_just_pressed("ANALOG_DOWN")):
-				top.lsc.move_down();
-			if(Input.is_action_just_pressed("ANALOG_LEFT")):
+			if Input.is_action_just_pressed("EMU_SELECT"):
+				LoadControl.set_view_model(-1)
+				DataManager.unset_env("内政.外交模式")
+				FlowManager.add_flow("alliance_menu")
+				return
+			if Input.is_action_just_pressed("ANALOG_UP"):
+				top.lsc.move_up()
+			if Input.is_action_just_pressed("ANALOG_DOWN"):
+				top.lsc.move_down()
+			if Input.is_action_just_pressed("ANALOG_LEFT"):
 				top.lsc.move_left();
-			if(Input.is_action_just_pressed("ANALOG_RIGHT")):
+			if Input.is_action_just_pressed("ANALOG_RIGHT"):
 				top.lsc.move_right();
-			if(Global.is_action_pressed_BY()):
-				if(!SceneManager.dialog_msg_complete(false)):
-					return;
-				FlowManager.add_flow("enter_town_policy_menu");
-			if(Global.is_action_pressed_AX()):
-				if(!SceneManager.dialog_msg_complete(true)):
-					return;
+			if Global.is_action_pressed_BY():
+				if not SceneManager.dialog_msg_complete(false):
+					return
+				FlowManager.add_flow("enter_town_policy_menu")
+			if Global.is_action_pressed_AX():
+				if not SceneManager.dialog_msg_complete(true):
+					return
 				var index = top.lsc.cursor_index;
-				var item_value_array = DataManager.common_variable["列表值"];
-				var choose_vstateId = int(item_value_array[index]);
-				if int(choose_vstateId)==-1:
+				var item_value_array = DataManager.get_env_array("列表值")
+				var choose_vstateId = int(item_value_array[index])
+				if choose_vstateId == -1:
 					var page = DataManager.get_env_int("列表页码")
 					var text = str(top.lsc.items[index])
 					match text:
@@ -102,17 +116,21 @@ func _input_key(delta: float):
 						"下一页":
 							page += 1
 					DataManager.set_env("列表页码", page)
-					FlowManager.add_flow("alliance_menu")
-					return;
-				DataManager.common_variable["目标势力"] = choose_vstateId;
-				FlowManager.add_flow("alliance_2");
+					FlowManager.add_flow("alliance_list")
+					return
+				DataManager.set_env("目标势力", choose_vstateId)
+				FlowManager.add_flow("alliance_2")
+		112: # 已有盟约，选择动作
+			wait_for_yesno("alliance_opt_3", "alliance_break_3", false, "alliance_menu")
+		1121: # 尚无盟约，选择动作
+			wait_for_yesno("alliance_opt_3", "alliance_join_3", false, "alliance_menu")
 		113: #武将列表
 			if not wait_for_choose_actor("enter_town_policy_menu"):
 				return
 			DataManager.player_choose_actor = SceneManager.actorlist.get_select_actor();
 			if SkillHelper.auto_trigger_skill(DataManager.player_choose_actor, 10008, ""):
-				return;
-			FlowManager.add_flow("alliance_join_4");
+				return
+			FlowManager.add_flow("alliance_join_4")
 		114: #命令书
 			wait_for_yesno("alliance_join_5", "enter_town_menu")
 		116: #提示成功率
@@ -122,6 +140,11 @@ func _input_key(delta: float):
 		119:
 			wait_for_confirmation()
 		121: #地图选势力
+			if Input.is_action_just_pressed("EMU_SELECT"):
+				LoadControl.set_view_model(-1)
+				DataManager.unset_env("内政.外交模式")
+				FlowManager.add_flow("alliance_list")
+				return
 			var currentVstateId = int(DataManager.vstates_sort[DataManager.vstate_no])
 			var targetCityIds = DataManager.get_env_int_array("同盟对象")
 			var msg = "请选择同盟对象"
@@ -138,6 +161,7 @@ func _input_key(delta: float):
 				var targetVstateId = currentCity.get_vstate_id()
 				if targetVstateId in [-1, currentVstateId]:
 					return
+				var targetVS = clVState.vstate(targetVstateId)
 				var months = DataManager.get_alliance_months(currentVstateId, targetVstateId)
 				var twinkleCityIds = []
 				for city in clCity.all_cities([targetVstateId]):
@@ -146,8 +170,11 @@ func _input_key(delta: float):
 				msg = "当前与{0}势力\n有{1}个月盟约"
 				if months <= 0:
 					msg = "当前与{0}势力\n尚无盟约"
+				var memo = targetVS.get_relation_index_memo(currentVstateId)
+				msg += "，关系：{2}"
+				msg += "\n「选择」键进入列表模式"
 				msg = msg.format([
-					clVState.vstate(targetVstateId).get_lord_name(), months,
+					targetVS.get_lord_name(), months, memo,
 				])
 				DataManager.show_orderbook = false
 				SceneManager.show_unconfirm_dialog(msg)
@@ -165,6 +192,36 @@ func _input_key(delta: float):
 		134: #命令书
 			wait_for_yesno("alliance_break_5", "enter_town_menu")
 		136:
+			wait_for_confirmation()
+		143: #武将列表
+			if not wait_for_choose_actor("enter_town_policy_menu"):
+				return
+			DataManager.player_choose_actor = SceneManager.actorlist.get_select_actor();
+			if SkillHelper.auto_trigger_skill(DataManager.player_choose_actor, 10008, ""):
+				return
+			FlowManager.add_flow("alliance_opt_4")
+		144: # 输入金米
+			if not wait_for_number_input("alliance_menu", true):
+				return
+			#确认数量
+			var conNumberInput = SceneManager.input_numbers.get_current_input_node()
+			var number:int = conNumberInput.get_number()
+			var goods = DataManager.get_env_int_array("内政.亲善资源")
+			goods[SceneManager.input_numbers.input_index] = number
+			DataManager.set_env("内政.亲善资源", goods)
+			if SceneManager.input_numbers.next_input_index():
+				var input = SceneManager.input_numbers.get_current_input_node()
+				input.set_number(0, true)
+				return
+			if goods[0] == 0 and goods[1] == 0:
+				return
+			LoadControl.set_view_model(-1)
+			FlowManager.add_flow("alliance_opt_5")
+		145: #命令书
+			wait_for_yesno("alliance_opt_6", "enter_town_menu")
+		146:
+			wait_for_confirmation("alliance_opt_8")
+		147:
 			wait_for_confirmation()
 		151: #离间:选城
 			var cityId = wait_for_choose_city(delta, "enter_town_policy_menu", clCity.all_city_ids())
@@ -293,6 +350,10 @@ func enter_town_policy_menu():
 
 #----------------------同盟------------------------
 func alliance_menu():
+	if DataManager.get_env_str("内政.外交模式") == "alliance_list":
+		FlowManager.add_flow("alliance_list")
+		return
+	DataManager.set_env("内政.外交模式", "alliance_menu")
 	var currentVstateId = int(DataManager.vstates_sort[DataManager.vstate_no])
 	var currentVstate = clVState.vstate(currentVstateId)
 	var targetCityIds = []
@@ -314,7 +375,11 @@ func alliance_menu():
 	return
 
 #同盟：展示同盟界面(111)
-func alliance_menu_old():
+func alliance_list():
+	if DataManager.get_env_str("内政.外交模式") == "alliance_menu":
+		FlowManager.add_flow("alliance_menu")
+		return
+	DataManager.set_env("内政.外交模式", "alliance_list")
 	var currentVstateId = int(DataManager.vstates_sort[DataManager.vstate_no])
 	var currentVstate = clVState.vstate(currentVstateId)
 	SceneManager.current_scene().cursor.hide();
@@ -329,48 +394,48 @@ func alliance_menu_old():
 			continue
 		vstates.append(vs)
 
-	var maxPage = int((vstates.size() - 1) / pageSize)
+	var maxPage = int((vstates.size() - 1) / PAGE_SIZE)
 	var page = DataManager.get_env_int("列表页码")
 	if page < 0:
 		page = maxPage
 	if page > maxPage:
 		page = 0
 	DataManager.set_env("列表页码", page)
-	var from = page * pageSize
-	var to = min(vstates.size(), from + pageSize) - 1
+	var from = page * PAGE_SIZE
+	var to = min(vstates.size(), from + PAGE_SIZE) - 1
 	vstates = vstates.slice(from, to)
 
 	var items = []
 	var values = []
 	for vs in vstates:
-		var item = ActorHelper.actor(vs.get_lord_id()).get_name()
+		var name = ActorHelper.actor(vs.get_lord_id()).get_name()
+		name = DataManager._pad(name, 6, true, true)
 		var month = clVState.get_alliance_month(vs.id, currentVstateId)
-		if(month==0):
-			item+="  -----";
-		else:
-			item+="  "+str(month)+"月";
+		var monthMemo = "------"
+		if month > 0:
+			monthMemo = str(month) + " 月"
+		var memo = vs.get_relation_index_memo(currentVstateId)
+		var color = "black"
+		if memo in ["亲密", "友好"]:
+			color = "blue"
+		if memo in ["敌视", "死敌"]:
+			color = "red"
+		var item = "{0}　{1}　[color={2}]{3}[/color]".format([
+			name, monthMemo, color, memo
+		])
 		items.append(item)
 		values.append(vs.id)
-	for i in range(items.size(), 14):
+	for i in range(items.size(), PAGE_SIZE):
 		items.append("")
 		values.append("")
 	if maxPage > 0:
 		items.append("下一页")
 		values.append(-1)
-		items.append("上一页")
-		values.append(-1)
-	
-	DataManager.set_env("列表值", values)
-	SceneManager.show_unconfirm_dialog("向谁发起同盟？", currentVstate.get_lord_id());
-	SceneManager.lsc_menu_top.lsc.items = items
-	SceneManager.lsc_menu_top.lsc.columns = 2
-	SceneManager.lsc_menu_top.set_lsc()
-	SceneManager.lsc_menu_top.lsc._set_data()
+
+	SceneManager.show_unconfirm_dialog("处理与哪家势力的关系？\n「选择」键进入地图模式", currentVstate.get_lord_id());
+	SceneManager.bind_top_menu(items, values, 1, Vector2.ZERO, Vector2(260, 42), true)
 	if maxPage > 0:
 		SceneManager.lsc_menu_top.lsc.set_pager(page, maxPage)
-	DataManager.cityInfo_type = 1
-	SceneManager.show_cityInfo(false)
-	SceneManager.lsc_menu_top.show()
 	LoadControl.set_view_model(111)
 	return
 
@@ -378,13 +443,33 @@ func alliance_menu_old():
 func alliance_2():
 	DataManager.show_orderbook = true
 	var currentVstateId = int(DataManager.vstates_sort[DataManager.vstate_no])
-	var targetVstateId = int(DataManager.common_variable["目标势力"])
+	var targetVstateId = DataManager.get_env_int("目标势力")
+	var targetVS = clVState.vstate(targetVstateId)
+	var idx = targetVS.get_relation_index(currentVstateId)
+	var memo = targetVS.get_relation_index_memo(currentVstateId)
 	var month = clVState.get_alliance_month(targetVstateId, currentVstateId)
 	if month <= 0:
-		FlowManager.add_flow("alliance_join_3")
+		if idx < 50:
+			FlowManager.add_flow("alliance_opt_3")
+		else:
+			var msg = "与{0}军尚无盟约\n当前关系：{1}\n主公意下如何？".format([
+				targetVS.get_lord_name(), memo, month,
+			])
+			var options = ["亲善", "同盟"]
+			SceneManager.show_yn_dialog(msg, -1, 2, options)
+			DataManager.twinkle_citys = clCity.all_city_ids([targetVstateId])
+			DataManager.twinkle_citys.append(DataManager.player_choose_city)
+			LoadControl.set_view_model(1121)
+			return
 	else:
-		FlowManager.add_flow("alliance_break_3")
-	LoadControl.set_view_model(112)
+		var msg = "与{0}军的盟约尚有{2}个月\n当前关系：{1}\n主公意下如何？".format([
+			targetVS.get_lord_name(), memo, month,
+		])
+		var options = ["亲善", "解盟"]
+		SceneManager.show_yn_dialog(msg, -1, 2, options)
+		DataManager.twinkle_citys = clCity.all_city_ids([targetVstateId])
+		DataManager.twinkle_citys.append(DataManager.player_choose_city)
+		LoadControl.set_view_model(112)
 	return
 
 #同盟
@@ -541,16 +626,106 @@ func alliance_break_6():
 		clVState.set_alliance(currentVstateId, targetVstateId, 0)
 	return
 
+# 亲善
+func alliance_opt_3():
+	var city = clCity.city(DataManager.player_choose_city)
+	var targetVstateId = DataManager.get_env_int("目标势力")
+	var msg = "遣使亲善{0}，何人前往？".format([
+		clVState.vstate(targetVstateId).get_lord_name()
+	])
+	SceneManager.show_actorlist_develop(city.get_actor_ids(), false, msg)
+	LoadControl.set_view_model(143)
+	return
+
+# 亲善：备礼
+func alliance_opt_4():
+	var cmd = DataManager.new_policy_command("亲善", DataManager.player_choose_actor)
+	var targetVstateId = DataManager.get_env_int("目标势力")
+	var capital = clCity.get_capital_city(targetVstateId)
+	cmd.set_target(capital.get_lord_id(), capital.ID)
+	cmd.prepare()
+
+	var msg = "为表诚意，礼不可免"
+	DataManager.set_env("内政.亲善资源", [0, 0])
+	var limits = [1000, 1000]
+	var city = clCity.city(DataManager.player_choose_city)
+	limits[0] = min(limits[0], int(city.get_gold() / 100) * 100)
+	limits[1] = min(limits[1], int(city.get_rice() / 100) * 100)
+	SceneManager.show_input_numbers(msg, ["金", "米"], limits, [2, 2], [4, 4])
+	LoadControl.set_view_model(144)
+	return
+
+# 亲善：命令书
+func alliance_opt_5():
+	var cmd = DataManager.get_current_policy_command()
+	if cmd == null or cmd.type != "亲善":
+		FlowManager.add_flow("city_enter_menu")
+		return
+
+	var goods = DataManager.get_env_int_array("内政.亲善资源")
+	cmd.costGold = goods[0]
+	cmd.costRice = goods[1]
+	var msg = "令{0}前往与{1}交涉\n消耗1枚命令书可否".format([
+		cmd.actioner().get_name(),
+		cmd.target_vstate().get_lord_name(),
+	])
+	SceneManager.show_yn_dialog(msg)
+	SceneManager.show_cityInfo(true)
+	LoadControl.set_view_model(145)
+	return
+
+# 亲善：命令书消耗动画
+func alliance_opt_6():
+	var city = clCity.city(DataManager.player_choose_city)
+	OrderHistory.record_order(city.get_vstate_id(), "亲善", DataManager.player_choose_actor)
+	SceneManager.dialog_use_orderbook_animation("alliance_opt_7")
+	return
+
+# 亲善：动画
+func alliance_opt_7():
+	var cmd = DataManager.get_current_policy_command()
+	if cmd == null or cmd.type != "亲善":
+		FlowManager.add_flow("city_enter_menu")
+		return
+
+	var msg = "必不辱使命"
+	SceneManager.play_affiars_animation(
+		"Town_Ally", "", false, msg,
+		cmd.actionId)
+	LoadControl.set_view_model(146)
+	return
+
+# 亲善结果
+func alliance_opt_8():
+	var cmd = DataManager.get_current_policy_command()
+	if cmd == null or cmd.type != "亲善":
+		FlowManager.add_flow("city_enter_menu")
+		return
+
+	cmd.execute()
+
+	var d = cmd.pop_result_dialog()
+	if d == null:
+		DataManager.twinkle_citys = []
+		LoadControl.set_view_model(-1)
+		FlowManager.add_flow("city_enter_menu")
+		return
+	DataManager.twinkle_citys = [d.cityId]
+	SceneManager.show_confirm_dialog(d.msg, d.actorId, d.mood)
+	SceneManager.show_cityInfo(true)
+	LoadControl.set_view_model(147)
+	return
+
 #----------------------离间------------------------
 #离间:选城(151)
 func wedge_start():
 	SceneManager.clear_bottom()
 	DataManager.twinkle_citys.clear()
 	SceneManager.current_scene().cursor.show()
-	var cityId = DataManager.player_choose_city
-	var cmd = DataManager.get_current_policy_command()
-	if cmd != null && cmd.type in ["离间", "招揽"]:
-		cityId = cmd.targetCityId
+	# 同月间连续策略，指向同一目标城市
+	var cityId = DataManager.get_env_int("内政.MONTHLY.离间目标")
+	if cityId < 0:
+		cityId = DataManager.player_choose_city
 	SceneManager.current_scene().set_city_cursor_position(cityId)
 	SceneManager.show_unconfirm_dialog("离间哪座城池的武将？")
 	LoadControl.set_view_model(151)
@@ -634,6 +809,8 @@ func wedge_7():
 		LoadControl.set_view_model(-1)
 		FlowManager.add_flow("city_enter_menu")
 		return
+	# 记录离间目标城市
+	DataManager.set_env("内政.MONTHLY.离间目标", cmd.targetCityId)
 	DataManager.twinkle_citys = [d.cityId]
 	SceneManager.show_confirm_dialog(d.msg, d.actorId, d.mood)
 	SceneManager.show_cityInfo(true)
@@ -646,10 +823,10 @@ func canvass_start():
 	SceneManager.clear_bottom()
 	DataManager.twinkle_citys.clear()
 	SceneManager.current_scene().cursor.show()
-	var cityId = DataManager.player_choose_city
-	var cmd = DataManager.get_current_policy_command()
-	if cmd != null && cmd.type in ["离间", "招揽"]:
-		cityId = cmd.targetCityId
+	# 同月间连续策略，指向同一目标城市
+	var cityId = DataManager.get_env_int("内政.MONTHLY.离间目标")
+	if cityId < 0:
+		cityId = DataManager.player_choose_city
 	SceneManager.current_scene().set_city_cursor_position(cityId)
 	SceneManager.show_unconfirm_dialog("招揽哪座城池的武将？")
 	LoadControl.set_view_model(161)
@@ -733,6 +910,12 @@ func canvass_7():
 		LoadControl.set_view_model(-1)
 		FlowManager.add_flow("city_enter_menu")
 		return
+	if cmd.result == 0:
+		# 招揽未成功，记录为离间目标城市
+		DataManager.set_env("内政.MONTHLY.离间目标", cmd.targetCityId)
+	else:
+		# 招揽成功，更新目标
+		DataManager.unset_env("内政.MONTHLY.离间目标")
 	DataManager.twinkle_citys = [d.cityId]
 	SceneManager.show_confirm_dialog(d.msg, d.actorId, d.mood)
 	SceneManager.show_cityInfo(true)

@@ -15,7 +15,7 @@ func check_AI_perform_20000()->bool:
 	if actorId == me.get_main_actor_id():
 		return false
 	# 只有进攻方发动
-	if me.side() != "攻击方":
+	if not me.is_attacker():
 		return false
 	# 兵力不足就别丢人了
 	if me.get_soldiers() < 500:

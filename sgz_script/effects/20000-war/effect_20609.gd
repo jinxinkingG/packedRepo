@@ -1,10 +1,10 @@
 extends "effect_20000.gd"
 
 # 识度效果
-#【识度】大战场，锁定技。若你方没有其他拥有<看破>的武将，你视为拥有<看破>，否则你视为拥有<就计>。
+#【识度】大战场，锁定技。若你方没有其他拥有<看破>的武将，你视为拥有<看破>，否则你视为拥有<将计>。
 
 const KANPO_SKILL = "看破"
-const JIUJI_SKILL = "就计"
+const JIUJI_SKILL = "将计"
 
 func appended_skill_list()->PoolStringArray:
 	var ret = []

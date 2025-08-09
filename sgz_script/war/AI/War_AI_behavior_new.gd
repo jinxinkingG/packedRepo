@@ -131,7 +131,7 @@ func behavior(wvId:int):
 				]))
 			else:
 				var target = null
-				if wa.side() == "防守方":
+				if wa.is_defender():
 					target = enemyLeader
 				if _chase_target_or_position(wa, target, mainCityPosition):
 					return
@@ -247,7 +247,7 @@ func _check_for_go_riceshop(wa:War_Actor)->bool:
 		# 已经有别人去买了
 		return false
 
-	if wa.side() == "攻击方":
+	if wa.is_attacker():
 		# 攻击方非主将可以去，只有一人时也可以去
 		if wv.main_actorId != wa.actorId or wv.get_actors_count() == 1:
 			wa.AI = War_Character.AI_Enum.GotoRiceshop
@@ -350,7 +350,7 @@ func _check_for_main_city(wa:War_Actor):
 # 检查是否对伪击转杀发动反击
 # @return true 表示行动完成，false 表示需要继续判断
 func _counter_attack(wa:War_Actor):
-	if wa.side() != "防守方":
+	if not wa.is_defender():
 		return false
 	if not wa.dic_other_variable.has("被用计策"):
 		return false
@@ -483,7 +483,7 @@ func _attack_weak_point(wa:War_Actor)->bool:
 func _standing_still(wa:War_Actor)->bool:
 	var wf = DataManager.get_current_war_fight()
 	var wv = wa.war_vstate()
-	if wa.side() == "攻击方":
+	if wa.is_attacker():
 		# 前 4 天，主将谨慎，粮草足够，有队友，不出击
 		if wf.date <= 5 \
 			and wa.actorId == wv.main_actorId \
@@ -549,12 +549,12 @@ func _adjust_AI_and_attack_range(wa:War_Actor, riceEnough:bool):
 			wa.AI = War_Character.AI_Enum.AttackMain
 			return 100
 	# 攻方疯狗模式
-	if wa.side() == "攻击方" and wf.date > 20:
+	if wa.is_attacker() and wf.date > 20:
 		wa.AI = War_Character.AI_Enum.AttackMain
 		return 100
 	# 在城门的守将，行为改为守卫主将
 	var war_map = SceneManager.current_scene().war_map
-	if wa.side() == "防守方" and wa.position in war_map.door_position:
+	if wa.is_defender() and wa.position in war_map.door_position:
 		wa.AI = War_Character.AI_Enum.DefenceMain
 		return 2
 	# 守卫者保守攻击

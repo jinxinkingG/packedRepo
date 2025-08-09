@@ -38,11 +38,18 @@ func _input_key(delta: float):
 
 #展示大战场技能列表
 func skill_menu_start():
-	var actorId = int(DataManager.player_choose_actor)
+	var actorId = DataManager.player_choose_actor
+	var wa = DataManager.get_war_actor(actorId)
+	if wa == null:
+		FlowManager.add_flow("player_ready")
+		return
+	if wa.get_buff_label_turn(["禁用主动技"]) > 0:
+		LoadControl._error("已被禁用主动技", actorId, 3)
+		return
 	var key = "战争.主动技.允许.{0}".format([actorId])
 	DataManager.set_env(key, "1")
 	# 触发判断，是否可发动主动技，不支持 flow，可以在 key 中返回错误信息
-	SkillHelper.auto_trigger_skill(actorId, 20023, "")
+	SkillHelper.auto_trigger_skill(actorId, 20023)
 	var flag = DataManager.get_env_str(key)
 	if flag != "1":
 		if flag == "0" or flag == "":

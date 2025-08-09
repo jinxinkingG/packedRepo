@@ -244,8 +244,8 @@ func war_vstate_settlement():
 	for wv in wf.war_vstates():
 		if not wv.requires_lost_settlement():
 			continue
-		if wv.settle_after_war(wv.is_reinforcement()):
-			return
+		# 这里不支持流程，只做数据处理
+		wv.settle_after_war(wv.is_reinforcement(), true)
 		DataManager.set_env("战争.结算方", wv.id)
 		FlowManager.add_flow("war_vstate_settlement_report")
 		return
@@ -339,7 +339,7 @@ func war_over_next():
 	# 处理胜利方
 	DataManager.set_env("战争.结算方", winner.id)
 	# 城池归属
-	warCity.set_vstate_id(winner.vstateId)
+	warCity.change_vstate(winner.vstateId)
 	#武将入城
 	winner.send_all_actors_to_city(warCity)
 	# 资源归属
@@ -416,7 +416,7 @@ func turn_control_end_trigger():
 	while not actorIds.empty():
 		var actorId = actorIds.pop_front()
 		DataManager.set_env("战争.回合结束触发", actorIds)
-		# 有流程, 但要求不可重入，需要设置 CD
+		# 支持流程
 		if SkillHelper.auto_trigger_skill(actorId, 20016, "turn_control_end_trigger"):
 			return
 	set_next_step(82)
@@ -680,6 +680,7 @@ func before_turn_skill_trigger():
 		check_daoshu_appended(wa)
 		check_shence_appended(wa)
 		check_feijian_damage(wa)
+		check_special_equipments(wa)
 		DataManager.set_env("战争.准备阶段触发", prepared)
 		if SkillHelper.auto_trigger_skill(wa.actorId,20013,"before_turn_skill_trigger"):
 			return
@@ -821,9 +822,9 @@ func report_before_war():
 		war_map.cursor.hide()
 		var reporter = wf.defenderWV.main_actorId
 		var warType = "来犯"
-		if wv.side == "防守方":
+		if wv.is_defender():
 			warType = "据守"
-			if wv.id != wf.defenderWV.id:
+			if wv.is_reinforcement():
 				warType = "增援"
 			reporter = wf.attackerWV.main_actorId
 		DataManager.set_env("战争.探报方", wv.id)
@@ -1048,6 +1049,32 @@ func check_yijing(wa:War_Actor)->bool:
 	DataManager.player_choose_actor = wa.actorId
 	FlowManager.add_flow("player_yijing")
 	return true
+
+# 战争准备阶段，检查特殊装备的解锁
+# 目前只有掩心镜，暂时不好做条件形式化配置
+# 放在这里写死
+func check_special_equipments(wa:War_Actor) -> void:
+	if wa.actorId == StaticManager.ACTOR_ID_LIUSHAN:
+		var yxj = clEquip.equip(StaticManager.SUIT_ID_YANXINJING, "防具")
+		var current = wa.actor().get_suit()
+		if yxj.remaining() > 0 and current.id != yxj.id:
+			var teammates = wa.get_teammates(false, true)
+			if teammates.size() == 1 and teammates[0].actorId == StaticManager.ACTOR_ID_ZHAOYUN:
+				var zy = teammates[0]
+				var msg = "{0}，此战凶险\n此物予你，倍加小心\n看吾杀敌！".format([
+					DataManager.get_actor_honored_title(wa.actorId, zy.actorId),
+				])
+				wa.attach_free_dialog(msg, 2, 20000, zy.actorId)
+				msg = "{0}关爱，{1}铭记于心\n（{2}获得「{3}」".format([
+					DataManager.get_actor_honored_title(zy.actorId, wa.actorId),
+					DataManager.get_actor_self_title(wa.actorId),
+					wa.get_name(), yxj.name(),
+				])
+				wa.attach_free_dialog(msg, 2)
+				yxj.dec_count(1)
+				wa.actor().set_equip(yxj)
+				wa.vstate().add_stored_equipment(current)
+	return
 
 func prepare_turn_skill_trigger()->void:
 	set_current_step(1)

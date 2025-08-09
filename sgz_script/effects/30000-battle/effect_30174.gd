@@ -17,7 +17,7 @@ func on_trigger_30005():
 	return false
 
 func on_trigger_30050():
-	if me.side() != "防守方":
+	if not me.is_defender():
 		# 非守方
 		return false
 	var enemyLeaderId = enemy.get_main_actor_id()

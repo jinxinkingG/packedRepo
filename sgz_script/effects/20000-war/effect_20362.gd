@@ -42,7 +42,7 @@ func effect_20362_AI_start():
 		return
 	ske.cost_war_cd(1)
 	LoadControl.end_script()
-	FlowManager.add_flow("AI_before_ready")
+	FlowManager.add_flow("AI_skill_end_trigger")
 	return
 
 func effect_20362_start():

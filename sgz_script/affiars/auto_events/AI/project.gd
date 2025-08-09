@@ -179,7 +179,7 @@ func AI_Project():
 					var actorId = waitActorIds.pop_front()
 					clCity.move_to(actorId, nearCity.ID)
 					if city.get_actors_count() == 0:
-						city.set_vstate_id(-1)
+						city.change_vstate(-1)
 					var actor = ActorHelper.actor(actorId)
 					var actor_score = (actor.get_power()+actor.get_wisdom()+actor.get_leadership())/3 * max(1,actor.get_soldiers())/10;
 					total_score+=actor_score;

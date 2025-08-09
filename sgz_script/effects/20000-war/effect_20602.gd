@@ -46,7 +46,7 @@ func on_trigger_20003() -> bool:
 
 		var ignoreCity = false
 		var noticedBy = null
-		if wa.side() == "防守方":
+		if wa.is_defender():
 			ignoreCity = true
 		for pos in positions:
 			if not ignoreCity:

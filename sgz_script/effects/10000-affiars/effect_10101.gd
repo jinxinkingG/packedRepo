@@ -3,14 +3,22 @@ extends "effect_10000.gd"
 #颂词锁定技
 #【颂词】内政，锁定技。你参与的战争胜利时，若当前为你方内政回合，且命令书为0的场合：使你方命令书+1，之后本月禁用「出征」指令。每月只触发1次。
 
-const EFFECT_ID = 10101
-
-func on_trigger_10013()->bool:
+func on_trigger_10013() -> bool:
 	var wf = DataManager.get_current_war_fight()
-	# 目前触发到这里，一定是我是胜方了，直接触发就好
-	# 稍微做个判断
-	var city = wf.target_city()
-	if not actorId in city.get_actor_ids():
+	var wvId = DataManager.get_env_int("内政.战后.wvId")
+	var wv = wf.get_war_vstate(wvId)
+	if wv == null:
+		return false
+	if not wv.is_attacker():
+		# 非主动攻击
+		return false
+	var cityId = get_working_city_id()
+	if cityId != wf.target_city().ID:
+		# 所在城不是战争目标城
+		return false
+	var city = clCity.city(cityId)
+	if city.get_vstate_id() != wv.vstateId:
+		# 所在城不属于我方
 		return false
 	if DataManager.orderbook > 0:
 		return false

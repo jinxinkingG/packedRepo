@@ -12,9 +12,6 @@ func on_trigger_20019()->bool:
 	if wf.date != 1:
 		return false
 
-	if me.side() != "防守方":
-		return false
-
 	# 计算双方兵力
 	var wv = me.war_vstate()
 	if wv == null:

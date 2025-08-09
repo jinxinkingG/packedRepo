@@ -30,24 +30,21 @@ const DIALOGS = [
 ]
 var dialogProcess = -1
 
-func effect_10026_start():
-	LoadControl.set_view_model(-1)
-	var ske = SkillHelper.read_skill_effectinfo()
-	self.actorId = ske.skill_actorId
-	var actor = ActorHelper.actor(self.actorId)
+func effect_10026_start() -> void:
 	var cityId = get_working_city_id()
 	var city = clCity.city(cityId)
 	var vstateId = city.get_vstate_id()
 	var currentKingId = clVState.vstate(vstateId).get_lord_id()
 	var currentKingActor = ActorHelper.actor(currentKingId)
 	
-	if self.actorId == currentKingId:
-		LoadControl._error("不可")
-		return false
+	if actorId == currentKingId:
+		var msg = "陛下何故谋反？"
+		play_dialog(actorId, msg, 3, 2999)
+		return
 
 	# 寻找群众演员
 	var otherActorIds = {}
-	var excepted = [self.actorId]
+	var excepted = [actorId]
 	for prop in ["德", "知", "武"]:
 		var found = DataManager.get_max_property_actorId(prop, vstateId, excepted)
 		if found < 0:
@@ -69,17 +66,17 @@ func effect_10026_start():
 	for _actorId in otherActorIds.values():
 		ActorHelper.actor(_actorId).set_loyalty(99)
 	# 改变势力君主
-	vstateId = DataManager.lord_change(vstateId,self.actorId)
+	vstateId = DataManager.lord_change(vstateId, actorId)
 	# 改变玩家控制
-	DataManager.players[FlowManager.controlNo].set_actor(self.actorId)
+	DataManager.players[FlowManager.controlNo].set_actor(actorId)
 	# 改变太守
-	city.remove_actor(self.actorId)
-	city.insert_actor(0, self.actorId)
+	city.remove_actor(actorId)
+	city.insert_actor(0, actorId)
 
 	for dialogInfo in DIALOGS:
 		match dialogInfo[0]:
 			0:
-				dialogInfo[0] = self.actorId
+				dialogInfo[0] = actorId
 			1:
 				dialogInfo[0] = currentKingId
 			2:
@@ -93,10 +90,10 @@ func effect_10026_start():
 		dialogInfo[1] = dialogInfo[1].replace("<MONTH>", str(DataManager.month))
 		dialogInfo[1] = dialogInfo[1].replace("<KING>", actor.get_name())
 		dialogInfo[1] = dialogInfo[1].replace("<NAME>", currentKingActor.get_name())
-		var nick = DataManager.get_actor_honored_title(currentKingId, self.actorId)
+		var nick = DataManager.get_actor_honored_title(currentKingId, actorId)
 		dialogInfo[1] = dialogInfo[1].replace("<NICK>", nick)
 
-	self.dialogProcess = 0
+	dialogProcess = 0
 	SceneManager.hide_all_tool()
 	LoadControl.set_view_model(2000)
 	SoundManager.play_bgm("res://resource/sounds/bgm/GameHappy_End.ogg", true, true, true)
@@ -106,7 +103,7 @@ func on_view_model_2000()->void:
 	if dialogProcess < 0:
 		return
 	if dialogProcess >= DIALOGS.size():
-		LoadControl.set_view_model(2002)
+		LoadControl.set_view_model(2999)
 		return
 	var dialogInfo = DIALOGS[dialogProcess]
 	if str(dialogInfo[0]) == "flow":
@@ -117,7 +114,7 @@ func on_view_model_2000()->void:
 	LoadControl.set_view_model(2001)
 	return
 
-func on_view_model_2001()->void:
+func on_view_model_2001() -> void:
 	if not Global.is_action_pressed_AX():
 		return
 	if not SceneManager.dialog_msg_complete(true):
@@ -126,11 +123,7 @@ func on_view_model_2001()->void:
 	LoadControl.set_view_model(2000)
 	return
 
-func on_view_model_2002()->void:
-	wait_for_skill_result_confirmation()
-	return
-
-func effect_10026_now()->void:
+func effect_10026_now() -> void:
 	dialogProcess += 1
 	actor.set_side("阳")
 	LoadControl.set_view_model(2000)

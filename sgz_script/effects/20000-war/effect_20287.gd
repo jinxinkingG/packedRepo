@@ -21,9 +21,11 @@ func on_trigger_20027()->bool:
 	var fromId = DataManager.get_env_int("战争.DISABLE.FROM")
 	if fromId < 0:
 		return false
-	var from = DataManager.get_war_actor(fromId)
-	if not me.is_teammate(from):
-		return false
+	var from = me
+	if fromId != actorId:
+		from = DataManager.get_war_actor(fromId)
+		if me.is_teammate(from):
+			return false
 
 	# 简单插入排序
 	var mostPowerful = []

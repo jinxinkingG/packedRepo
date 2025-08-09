@@ -100,7 +100,7 @@ func _mark_scheme(me:War_Actor, targetId:int, schemeName:String):
 	var marked = _get_marked_schemes(targetId)
 	marked[schemeName] = me.actorId
 	var turns = 1
-	if me.side() == "防守方":
+	if me.is_defender():
 		turns = 2
 	ske.set_war_skill_val(marked, turns, PASSIVE_EFFECT_ID, targetId)
 	ske.set_war_buff(targetId, "计防", 1)

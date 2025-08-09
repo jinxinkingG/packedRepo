@@ -10,7 +10,7 @@ func appended_skill_list()->PoolStringArray:
 	var me = DataManager.get_war_actor(self.actorId)
 	if me == null or me.disabled:
 		return ret
-	if me.side() != "防守方":
+	if not me.is_defender():
 		return ret
 	if me.get_main_actor_id() == actorId or me.get_buff_label_turn(["主将授权"]) > 0:
 		ret.append("坚守")

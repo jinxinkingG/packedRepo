@@ -24,7 +24,6 @@ func _init() -> void:
 	FlowManager.bind_import_flow("vstate_event", self)
 	FlowManager.bind_import_flow("vstate_control_init", self)
 	FlowManager.bind_import_flow("back_from_war", self)
-	FlowManager.bind_import_flow("back_from_war_trigger", self)
 	FlowManager.bind_import_flow("check_actor_dead", self)
 	FlowManager.bind_import_flow("turn_control_start", self)
 	FlowManager.bind_import_flow("turn_control_end", self)
@@ -222,26 +221,10 @@ func back_from_war()->void:
 	SoundManager.play_bgm()
 	LoadControl.end_script()
 
-	var vstateId = DataManager.vstates_sort[DataManager.vstate_no]
 	# 暂行方案，允许胜利方发动战后技能
 	var wf = DataManager.get_current_war_fight()
-	if wf.result == 2:
-		# 攻方胜利，占城武将发动技能
-		DataManager.set_env("内政.战后触发", wf.target_city().get_actor_ids())
-		FlowManager.add_flow("back_from_war_trigger");
-		return
-	FlowManager.add_flow("check_actor_dead")
-	return
-
-#战后技能触发
-#需要正确设定变量 "内政.战后触发" 数组
-func back_from_war_trigger()->void:
-	var actorIds = DataManager.get_env_int_array("内政.战后触发")
-	while not actorIds.empty():
-		var actorId = actorIds.pop_front()
-		DataManager.set_env("内政.战后触发", actorIds)
-		if SkillHelper.auto_trigger_skill(actorId, 10013, "back_from_war_trigger"):
-			return
+	for wv in wf.war_vstates():
+		wv.back_from_war()
 	FlowManager.add_flow("check_actor_dead")
 	return
 
@@ -395,7 +378,7 @@ func check_stars_month_init()->void:
 		if vstateId == -1:
 			vstateId = clVState.create_new_vstate(actor.actorId)
 			created = true
-			city.set_vstate_id(vstateId)
+			city.change_vstate(vstateId)
 			city.set_property("金", 500)
 			city.set_property("米", 800)
 			city.insert_actor(0, actor.actorId)

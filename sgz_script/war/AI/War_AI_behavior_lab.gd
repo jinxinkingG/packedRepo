@@ -75,7 +75,7 @@ func turn_start() -> void:
 # 判断全局情况并做出战略决定
 func decide_general_strategy(wv:War_Vstate) -> int:
 	# 防守方暂时没有
-	if wv.side == "防守方":
+	if wv.is_defender():
 		return Strategy.DEFAULT
 	# 援军暂时没有
 	if wv.is_reinforcement():
@@ -163,7 +163,7 @@ func clear_tactic_target(wa:War_Actor) -> void:
 # 选择下一个行动单位
 func next_behavior_actor(wv:War_Vstate)->int:
 	lastBehaviorActorId = currentBehaviorActorId
-	if wv.side == "攻击方":
+	if wv.is_attacker():
 		return next_behavior_actor_attacker(wv)
 	return next_behavior_actor_defender(wv)
 
@@ -389,7 +389,7 @@ func try_move_to_position(wa:War_Actor, pos:Vector2) -> bool:
 
 	# 通向目标无路
 	# 守方，待机
-	if wa.side() == "防守方":
+	if wa.is_defender():
 		return false
 	# 攻方，反复找接近且安全的路
 	var retries = 0
@@ -447,7 +447,7 @@ func _standing_still(wa:War_Actor)->bool:
 	var wf = DataManager.get_current_war_fight()
 	var war_map = SceneManager.current_scene().war_map
 	var wv = wa.war_vstate()
-	if wa.side() == "攻击方":
+	if wa.is_attacker():
 		if wa.actorId == wv.main_actorId:
 			# 攻方主将，且有队友
 			if wv.get_actors_count() > 1:
@@ -467,7 +467,7 @@ func _standing_still(wa:War_Actor)->bool:
 
 # 是否糟糕的移动选择
 func _bad_movement(wa:War_Actor, targetPos:Vector2)->bool:
-	if wa.side() != "攻击方":
+	if not wa.is_attacker():
 		return false
 
 	var cost = DataManager.get_move_cost(wa.actorId, targetPos)
@@ -613,7 +613,7 @@ func _try_scheduled_move(wa:War_Actor)->bool:
 
 # 挑战难度下，平衡计策和肌肉
 func _consider_scheme(wa:War_Actor)->bool:
-	if wa.side() == "攻击方":
+	if wa.is_attacker():
 		# 攻击方
 		if wa.action_point < 8 or wa.actor().get_wisdom() < 65:
 			return false
@@ -647,7 +647,7 @@ func _check_for_go_riceshop(wa:War_Actor)->bool:
 
 		var minDistance = Global.get_distance(pos, wa.position)
 		var actioner = wa
-		if wa.side() == "攻击方":
+		if wa.is_attacker():
 			# 攻击方，非主将可以去，只有一人时也可以去
 			for w in wa.get_teammates(false, true):
 				if wv.main_actorId == wa.actorId and wv.get_actors_count() > 1:
@@ -794,7 +794,7 @@ func _chase_target_or_position(wa:War_Actor, target:War_Actor, position:Vector2)
 		return _schedule_move(wa, positions)
 	# 通向目标无路
 	# 守方，待机
-	if wa.side() == "防守方":
+	if wa.is_defender():
 		return false
 	# 攻方，反复找接近且安全的路
 	var retries = 0
@@ -855,7 +855,7 @@ func stop_action(actorId:int)->void:
 
 # 获取主要目标对象
 func _get_main_target(wa:War_Actor)->War_Actor:
-	if wa.side() == "防守方":
+	if wa.is_defender():
 		return wa.get_war_enemy_leader()
 	# 进攻方只看位置，不看人
 	return null
@@ -965,12 +965,12 @@ func _adjust_AI_and_attack_range(wa:War_Actor, riceEnough:bool):
 			wa.AI = War_Character.AI_Enum.AttackMain
 			return 100
 	# 攻方疯狗模式
-	if wa.side() == "攻击方" and wf.date > 20:
+	if wa.is_attacker() and wf.date > 20:
 		wa.AI = War_Character.AI_Enum.AttackMain
 		return 100
 	# 在城门的守将，行为改为守主城或守卫主将
 	var war_map = SceneManager.current_scene().war_map
-	if wa.side() == "防守方" and wa.position in war_map.door_position:
+	if wa.is_defender() and wa.position in war_map.door_position:
 		if wa.AI == War_Character.AI_Enum.MainCity:
 			return 2
 		wa.AI = War_Character.AI_Enum.DefenceMain
@@ -1030,7 +1030,7 @@ func _move(wa:War_Actor, new_position:Vector2, withStrategy:bool=true)->bool:
 # 身边发现弱点，直接攻击
 func _attack_weak_point(wa:War_Actor)->bool:
 	if wa.war_vstate().delegated > 0:
-		if wa.side() == "防守方":
+		if wa.is_defender():
 			# 托管模式，守方不主动攻击弱点
 			return false
 	# 不具体计算所需机动力了，估算一下
@@ -1047,7 +1047,7 @@ func _attack_weak_point(wa:War_Actor)->bool:
 		var distance = abs(disv.x) + abs(disv.y)
 		if distance > 2:
 			continue
-		if wa.side() == "防守方" and distance > 1:
+		if wa.is_defender() and distance > 1:
 			if terrian in ["城门", "太守府"]:
 				continue
 		# 不具体计算所需机动力了，估算一下

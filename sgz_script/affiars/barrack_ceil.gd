@@ -354,7 +354,7 @@ func _ceil_release(vstateId:int, cityId:int, targetActorIds:PoolIntArray):
 					actor.set_status_officed()
 					clCity.move_to(targetId, capital.ID)
 					released.append([actor.get_name(), capital.get_full_name()])
-					prevVstate.hate(vstateId, true)
+					prevVstate.relation_index_change(vstateId, 10)
 					continue
 		targetCityIds.shuffle()
 		var targetCityId = targetCityIds[0]

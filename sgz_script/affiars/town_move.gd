@@ -122,9 +122,9 @@ func move_6():
 		clCity.move_to(actorId, targetCity.ID)
 		# 不支持流程
 		SkillHelper.auto_trigger_skill(actorId, 10012, "")
-	targetCity.set_vstate_id(fromCity.get_vstate_id())
+	targetCity.change_vstate(fromCity.get_vstate_id())
 	if fromCity.get_actor_ids().empty():
-		fromCity.set_vstate_id(-1)
+		fromCity.change_vstate(-1)
 	DataManager.twinkle_citys = [fromCity.ID, targetCity.ID]
 	var msg = "遵命，马上就去"
 	DataManager.set_env("对话", msg)

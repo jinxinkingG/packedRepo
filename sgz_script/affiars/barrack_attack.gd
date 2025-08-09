@@ -28,9 +28,10 @@ func _input_key(delta: float):
 	match LoadControl.get_view_model():
 		211:#选择城市
 			var fromCity = clCity.city(DataManager.player_choose_city)
-			scene.show_attackable_city_lines(fromCity.ID)
-			var connectedEnemyCities = clCity.get_attackable_city_ids(fromCity).keys()
-			var cityId = wait_for_choose_city(delta, "enter_barrack_menu", connectedEnemyCities)
+			var attackables = DataManager.get_env_dict("内政.可攻击城市")
+			if attackables.empty():
+				attackables = clCity.get_attackable_city_ids(fromCity)
+			var cityId = wait_for_choose_city(delta, "enter_barrack_menu", attackables.keys())
 			if cityId < 0:
 				var currentPointedCityId = SceneManager.current_scene().get_curosr_point_city()
 				if currentPointedCityId >= 0 \
@@ -38,6 +39,10 @@ func _input_key(delta: float):
 					and currentPointedCityId != DataManager.get_env_int("内政.战争.上次选定"):
 					var currentPointedCity = clCity.city(currentPointedCityId)
 					var msg = "此为{0}".format([currentPointedCity.get_full_name()])
+					if currentPointedCityId in attackables and attackables[currentPointedCityId].size() > 2:
+						# 存在借道的情况
+						var viaCity = clCity.city(attackables[currentPointedCityId][1])
+						msg += "\n可借道{0}攻击".format([viaCity.get_lord_name()])
 					#var leaderName = currentPointedCity.get_leader_name()
 					#if leaderName != "":
 					#	msg += "\n太守为{0}".format([leaderName])
@@ -52,7 +57,7 @@ func _input_key(delta: float):
 				SceneManager.show_unconfirm_dialog(msg)
 				return
 			# 判断相连和归属
-			if not cityId in connectedEnemyCities:
+			if not cityId in attackables.keys():
 				var msg = "此为{0}\n无法进攻该城".format([targetCity.get_full_name()])
 				SceneManager.show_unconfirm_dialog(msg)
 				return
@@ -137,6 +142,9 @@ func attack_choose_target_city():
 	var msg = "兵出{0}\n进攻哪座城池？\n请指定".format([
 		city.get_full_name(),
 	])
+	var attackables = clCity.get_attackable_city_ids(city)
+	scene.show_attackable_city_lines(city.ID)
+	DataManager.set_env("内政.可攻击城市", attackables)
 	SceneManager.show_unconfirm_dialog(msg)
 	LoadControl.set_view_model(211)
 	return
@@ -242,7 +250,7 @@ func attack_animation():
 		return
 
 	#更改归属
-	targetCity.set_vstate_id(wf.fromVstateId)
+	targetCity.change_vstate(wf.fromVstateId)
 	
 	var goods = DataManager.get_env_int_array("携带数量")
 	#攻方城内去除出征的武将
@@ -251,7 +259,7 @@ func attack_animation():
 	
 	#城内剩余武将更新
 	if fromCity.get_actors_count() == 0:
-		fromCity.set_vstate_id(-1)
+		fromCity.change_vstate(-1)
 	#物资运输
 	fromCity.add_gold(-goods[0])
 	fromCity.add_rice(-goods[1])
@@ -324,8 +332,7 @@ func check_reinforcements():
 	if reinforcementCity == null or reinforcements.empty():
 		FlowManager.add_flow("attack_into_war")
 		return
-	var wv = War_Vstate.new(reinforcementCity.get_vstate_id(), true)
-	wv.side = "防守方"
+	var wv = War_Vstate.new(reinforcementCity.get_vstate_id(), true, false)
 	wv.from_cityId = reinforcementCity.ID
 	wv.init_actors = []
 	wv.main_actorId = -1
@@ -394,11 +401,10 @@ func _ready_to_war():
 		wf.sendActors.insert(0, mainActorId)
 
 	if fromCity.get_actors_count() == 0:
-		fromCity.set_vstate_id(-1)
+		fromCity.change_vstate(-1)
 	
 	#写入守方情况
-	var defenderWV = War_Vstate.new(wf.targetVstateId)
-	defenderWV.side = "防守方"
+	var defenderWV = War_Vstate.new(wf.targetVstateId, false, false)
 	defenderWV.from_cityId = targetCity.ID
 	defenderWV.init_actors = targetCity.get_actor_ids()
 	defenderWV.main_actorId = defenderWV.init_actors[0]
@@ -411,8 +417,7 @@ func _ready_to_war():
 	targetCity.clear_actors()
 	
 	#写入进攻方情况
-	var attackerWV = War_Vstate.new(wf.fromVstateId)
-	attackerWV.side = "攻击方"
+	var attackerWV = War_Vstate.new(wf.fromVstateId, false, true)
 	attackerWV.from_cityId = fromCity.ID
 	attackerWV.init_actors = wf.sendActors.duplicate()
 	attackerWV.main_actorId = attackerWV.init_actors[0]
@@ -422,7 +427,7 @@ func _ready_to_war():
 	attackerWV.fromCityActorIds = fromCityActorIds
 	wf.attackerWV = attackerWV
 
-	wf.defenderWV.vstate().hate(wf.attackerWV.vstate().id)
+	wf.defenderWV.vstate().relation_index_change(wf.attackerWV.vstate().id, -80)
 	
 	fromCity.add_chaos_score(5)
 	targetCity.add_chaos_score(5)

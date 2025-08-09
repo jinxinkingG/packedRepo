@@ -9,8 +9,6 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 const STRATAGEM = "落石"
 
 func on_trigger_20020()->bool:
-	if me.side() != "防守方":
-		return false
 	if ske.get_war_skill_val_int() > 0:
 		return false
 	var bf = DataManager.get_current_battle_fight()

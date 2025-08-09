@@ -6,7 +6,7 @@ extends "effect_20000.gd"
 func on_trigger_20013()->bool:
 	var wf = DataManager.get_current_war_fight()
 	var date = wf.date - 1
-	if me.side() == "防守方":
+	if me.is_defender():
 		# 攻方先动，所以防守方受攻击在本日
 		date = wf.date
 	var defended = me.get_day_defended_actors(date).size()

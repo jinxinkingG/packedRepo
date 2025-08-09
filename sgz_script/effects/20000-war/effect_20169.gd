@@ -59,7 +59,7 @@ func effect_20169_AI_2():
 
 func effect_20169_AI_3():
 	LoadControl.end_script()
-	FlowManager.add_flow("AI_before_ready")
+	FlowManager.add_flow("AI_skill_end_trigger")
 	return
 
 # 发动主动技

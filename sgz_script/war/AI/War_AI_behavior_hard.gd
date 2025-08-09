@@ -9,7 +9,7 @@ func _standing_still(wa:War_Actor)->bool:
 	var wf = DataManager.get_current_war_fight()
 	var war_map = SceneManager.current_scene().war_map
 	var wv = wa.war_vstate()
-	if wa.side() == "攻击方":
+	if wa.is_attacker():
 		if wa.actorId == wv.main_actorId:
 			# 攻方主将，且有队友
 			if wv.get_actors_count() > 1:
@@ -49,7 +49,7 @@ func next_behavior_actor(wv:War_Vstate)->int:
 
 # 是否糟糕的移动选择
 func _bad_movement(wa:War_Actor, targetPos:Vector2)->bool:
-	if wa.side() != "攻击方":
+	if not wa.is_attacker():
 		return false
 
 	var cost = DataManager.get_move_cost(wa.actorId, targetPos)
@@ -130,7 +130,7 @@ func _consider_scheme(wa:War_Actor)->bool:
 	if wa.action_point < 8 or wa.actor().get_wisdom() < 70:
 		return false
 	if wa.actor().get_power() >= wa.actor().get_wisdom() + 10:
-		if wa.side() == "攻击方":
+		if wa.is_attacker():
 			return false
 	return true
 

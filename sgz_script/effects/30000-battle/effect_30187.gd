@@ -25,7 +25,7 @@ func on_trigger_30005()->bool:
 
 	var msg = "胆敢犯我境界！"
 	var wv = me.war_vstate()
-	if wv.side == "攻击方":
+	if wv.is_attacker():
 		msg = "安能抗我大军！"
 	msg = "兵机足备\n{0}{1}\n（{2}发动【{3}】\n（{4}战术值 +10".format([
 		bf.get_defender().get_name(),

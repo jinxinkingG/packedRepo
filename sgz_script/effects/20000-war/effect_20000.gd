@@ -34,6 +34,17 @@ func check_trigger_correct() -> bool:
 func check_AI_perform() -> bool:
 	if me == null:
 		return false
+	if me.get_buff_label_turn(["禁用主动技"]) > 0:
+		return false
+	# 保留现场
+	var prevSke = ske
+	var key = "战争.主动技.允许.{0}".format([actorId])
+	DataManager.set_env(key, "1")
+	SkillHelper.auto_trigger_skill(actorId, 20023)
+	# 恢复现场
+	SkillHelper.save_skill_effectinfo(prevSke)
+	if DataManager.get_env_str(key) != "1":
+		return false
 	return check_AI_perform_20000()
 
 # 分离这个方法主要是为了包装基本检查
@@ -42,10 +53,20 @@ func check_AI_perform() -> bool:
 func check_AI_perform_20000() -> bool:
 	return false
 
+#显示并等待选择目标位置
+func wait_choose_positions(positions:PoolVector2Array, msg:String="移动到何处？", nextViewModel:int=2000) -> void:
+	map.clear_can_choose_actors()
+	map.show_color_block_by_position(positions)
+	DataManager.set_env("可选目标", positions)
+	DataManager.set_target_position(positions[0])
+	SceneManager.show_unconfirm_dialog(msg, actorId)
+	LoadControl.set_view_model(nextViewModel)
+	return
+
 #选择目标时都用此方法
 func wait_choose_actors(targets:PoolIntArray, msg:String="对何人发动{0}?",through_wall:bool = false)->bool:
 	var centers = get_skill_centers(me)
-	if me.side() == "防守方":
+	if me.is_defender():
 		through_wall = true;#守方允许穿墙
 	if not through_wall:
 		var newTargets = []
@@ -301,11 +322,11 @@ func wait_for_choose_actor(nextFlow:String, isActiveSkill:bool=true, canBack:boo
 		current = targets[index]
 		set_env("武将", current)
 		wa = DataManager.get_war_actor(current)
-	if map.cursor_position != wa.position:
+	if wa != null and map.cursor_position != wa.position:
 		map.set_cursor_location(wa.position, true)
 		msg = update_choose_actor_message(wa.actorId)
 		SceneManager.show_actor_info(wa.actorId, false, msg)
-	map.next_shrink_actors = [wa.actorId]
+		map.next_shrink_actors = [wa.actorId]
 
 	if not Global.is_action_pressed_AX():
 		return
@@ -605,7 +626,7 @@ func get_enemy_targets(from:War_Actor, allowWalls:bool=false, distance:int=-1, i
 		for center in centers:
 			if Global.get_range_distance(wa.position, center) > distance:
 				continue
-			if not allowWalls and from.side() == "攻击方" and not check_can_choose(from, center, wa.position):
+			if not allowWalls and from.is_attacker() and not check_can_choose(from, center, wa.position):
 				continue
 			if not wa.actorId in ret:
 				ret.append(wa.actorId)
@@ -1108,4 +1129,12 @@ func on_view_model_2990()->void:
 # 默认的 2999 view model，确认对话并结束主动技
 func on_view_model_2999()->void:
 	wait_for_skill_result_confirmation()
+	return
+
+func cancel_attack() -> void:
+	var st = SkillHelper.get_current_skill_trigger()
+	if st != null:
+		st.next_flow = "attack_cancelled"
+	map.draw_actors()
+	bf.skip_execution(actorId, ske.skill_name)
 	return

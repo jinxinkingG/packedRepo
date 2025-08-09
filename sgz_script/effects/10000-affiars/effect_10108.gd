@@ -98,7 +98,7 @@ func effect_10108_5() -> void:
 
 	ske.affair_cd(1)
 	var created = clVState.create_new_vstate(leader.actorId)
-	targetCity.set_vstate_id(created)
+	targetCity.change_vstate(created)
 	clVState.set_alliance(city.get_vstate_id(), targetCity.get_vstate_id(), 12)
 	var msg = "{0}年{1}月\n{2}表{3}为{4}牧\n两家缔结盟约12个月".format([
 		DataManager.year, DataManager.month,

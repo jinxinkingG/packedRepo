@@ -12,7 +12,7 @@ const RECOVER_HP = 10
 
 func check_AI_perform_20000()->bool:
 	# 防守方主将不跳
-	if me.side() == "防守方" and me.get_main_actor_id() == actorId:
+	if me.is_defender() and me.get_main_actor_id() == actorId:
 		return false
 	unset_env("AI.龙胆.目标")
 	if me.action_point < COST_AP:
@@ -118,7 +118,7 @@ func effect_20003_AI_2():
 	return
 
 func on_view_model_3001():
-	wait_for_skill_result_confirmation("AI_before_ready")
+	wait_for_skill_result_confirmation("AI_skill_end_trigger")
 	return
 
 func effect_20003_start():

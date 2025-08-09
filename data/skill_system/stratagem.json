@@ -959,7 +959,7 @@
     },
     "targeting": {
       "type": "area",
-      "range": 6,
+      "range": 99,
       "targetTerrian": "树林、山地"
     }
   }

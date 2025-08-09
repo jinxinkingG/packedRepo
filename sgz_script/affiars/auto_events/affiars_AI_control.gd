@@ -102,7 +102,7 @@ func AI_next():
 	var cities = []
 	for city in clCity.all_cities():
 		if city.get_vstate_id() != -1 and city.get_actors_count() == 0:
-			city.set_vstate_id(-1)
+			city.change_vstate(-1)
 			continue
 		if city.get_vstate_id() == vstateId:
 			cities.append(city.ID)

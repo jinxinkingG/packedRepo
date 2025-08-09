@@ -87,7 +87,7 @@ func month_auto_events_begin():
 	DataManager.game_trace("月事件步骤：" + str(current_step))
 	
 	match current_step:
-		0:#@since 1.810，经济改革判断
+		0: # @since 1.810，经济改革判断
 			city_data_deal()
 
 			var triggered = DataManager.get_env_int_array("每月赋税势力")
@@ -118,7 +118,7 @@ func month_auto_events_begin():
 				SceneManager.play_affiars_animation("CollectMoney", "extra_harvest_gold", false, msg)
 				return
 			set_next_step(current_step+1)
-		1:#收金收米判断
+		1: # 收金收米判断
 			var resurrectMonth = -1
 			var resurrectSetting = DataManager.get_game_setting("自动复活")
 			match resurrectSetting:
@@ -179,9 +179,9 @@ func month_auto_events_begin():
 				SceneManager.play_affiars_animation(anim, "harvest_finish", false, msg)
 				return
 			set_next_step(current_step + 1)
-		2:#灾害&&暴动
+		2: # 灾害&&暴动
 			disater_events.start()
-		3:#统一
+		3: # 统一
 			for vs in clVState.all_vstates():
 				if vs.is_perished():
 					continue;
@@ -194,16 +194,72 @@ func month_auto_events_begin():
 				SceneManager.over_animation.play_unify(vs.id);
 				return;
 			set_next_step(current_step+1);
-		4:#流放武将检查是否跑路
+		4: # 流放武将检查是否跑路
 			for actor in ActorHelper.all_exiled_actors():
 				var cityId = actor.get_exiled_city_id()
 				if cityId < 0:
 					continue
 				if actor.get_dislike_vstate_id() == clCity.city(cityId).get_vstate_id():
 					clCity.find_new_home(actor.actorId)
-			set_next_step(current_step+1);
-		5:#结束
-			end();
+			set_next_step(current_step+1)
+		5: # @since 2.19 势力关系变化
+			# 玩家汇报
+			var reporter = -1
+			for p in DataManager.players:
+				if p.actorId < 0:
+					continue
+				reporter = p.actorId
+				break
+			var changed = []
+			if DataManager.month in [1, 4, 7, 10]:
+				var vstates = clVState.all_vstates(true)
+				for vs in vstates:
+					var lord = ActorHelper.actor(vs.get_lord_id())
+					# 目标势力
+					var excludedVstateIds = [-1]
+					# 所有城市
+					for city in clCity.all_cities([vs.id]):
+						# 判断邻接势力
+						for targetId in city.get_connected_city_ids([], excludedVstateIds):
+							var targetCity = clCity.city(targetId)
+							var targetVstateId = targetCity.get_vstate_id()
+							if targetVstateId == vs.id:
+								continue
+							var change = -5
+							var targetLord = ActorHelper.actor(targetCity.get_lord_id())
+							var distance = lord.personality_distance(targetLord)
+							if targetVstateId in vs.get_loved():
+								change = 0
+							elif targetVstateId in vs.get_hated():
+								change = -10
+							if distance <= 10:
+								change = max(0, change)
+							elif distance > 30:
+								change -= 5
+							elif distance > 50:
+								change -= 10
+							var memo = vs.get_relation_index_memo(targetVstateId)
+							vs.relation_index_change(targetVstateId, change)
+							if targetLord.actorId == reporter and vs.get_relation_index_memo(targetVstateId) != memo:
+								changed.append(vs)
+							excludedVstateIds.append(targetVstateId)
+			if reporter >= 0 and changed.size() > 0:
+				var cityId = DataManager.get_office_city_by_actor(reporter)
+				var names = []
+				var cities = []
+				for vs in changed:
+					var name = vs.get_lord_name()
+					if name in names:
+						continue
+					names.append(name)
+					cities.append_array(clCity.all_city_ids([vs.id]))
+				if names.size() > 3:
+					names = names.slice(0, 2)
+				var msg = "与{0}等势力的关系\n似乎有所恶化……".format(["、".join(names)])
+				clCity.city(cityId).attach_free_dialog(msg, reporter, 2, cities)
+			set_next_step(current_step+1)
+		6: # 结束
+			end()
 	return
 
 func harvest_finish():

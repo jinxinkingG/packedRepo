@@ -65,12 +65,9 @@ func effect_20220_3() -> void:
 	var target = me.get_battle_enemy_war_actor()
 	ske.war_camp_in(actorId)
 	ske.war_camp_in(target.actorId)
+	cancel_attack()
 	ske.war_report()
 
-	var st = SkillHelper.get_current_skill_trigger()
-	if st != null:
-		st.next_flow = "attack_cancelled"
-	map.draw_actors()
 	report_skill_result_message(ske, 2002)
 	return
 
