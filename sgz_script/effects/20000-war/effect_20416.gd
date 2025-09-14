@@ -20,8 +20,8 @@ func on_trigger_20027()->bool:
 	var soldiers = int(leader.get_soldiers() / 2)
 	var limit = DataManager.get_actor_max_soldiers(actorId)
 	if soldiers > 0:
-		ske.change_actor_soldiers(leader.actorId, -soldiers)
-		ske.change_actor_soldiers(me.actorId, soldiers, limit)
+		soldiers = ske.add_actor_soldiers(me.actorId, soldiers, limit)
+		ske.sub_actor_soldiers(leader.actorId, soldiers)
 		ske.war_report()
 	# 主将即将完蛋，在此之前，让自己成为主将
 	me.war_vstate().main_actorId = me.actorId

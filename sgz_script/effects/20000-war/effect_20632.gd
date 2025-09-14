@@ -24,6 +24,9 @@ func on_view_model_121():
 	return
 
 func effect_20632_start() -> void:
+	ske.cost_war_cd(1)
+	# 技能发动后自动结束回合
+	ske.mark_auto_finish_turn()
 	var msg = "【{0}】触发\n可选择计策无条件发动".format([
 		ske.skill_name,
 	])
@@ -53,7 +56,7 @@ func effect_20632_menu() -> void:
 	return
 
 func on_view_model_2001() -> void:
-	wait_for_choose_item(FLOW_BASE + "_selected")
+	wait_for_choose_item(FLOW_BASE + "_selected", false, true, FLOW_BASE + "_cancel")
 	return
 
 func effect_20632_selected() -> void:
@@ -62,7 +65,19 @@ func effect_20632_selected() -> void:
 	if scheme == null:
 		goto_step("menu")
 		return
-	ske.cost_war_cd(1)
 	start_scheme(schemeName)
 	return
 
+func effect_20632_cancel() -> void:
+	var msg = "放弃【{0}】发动\n可否？".format([ske.skill_name])
+	play_dialog(actorId, msg, 2, 2002, true)
+	return
+
+func on_view_model_2002() -> void:
+	wait_for_yesno(FLOW_BASE + "_end", false, FLOW_BASE + "_menu")
+	return
+
+func effect_20632_end() -> void:
+	skill_end_clear()
+	FlowManager.add_flow("player_end")
+	return

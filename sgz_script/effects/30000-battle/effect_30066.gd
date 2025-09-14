@@ -32,7 +32,7 @@ func effect_30066_start():
 	var bf = DataManager.get_current_battle_fight()
 	var unit = me.battle_actor_unit()
 	var hp = unit.get_hp()
-	if unit == null or hp <= COST_HP or hp >= HP_LIMIT - COST_HP:
+	if unit == null or hp <= COST_HP:
 		var msg = "体力不足，需 > {0}".format([COST_HP])
 		SceneManager.show_confirm_dialog(msg, me.actorId, 3)
 		LoadControl.set_view_model(2000)

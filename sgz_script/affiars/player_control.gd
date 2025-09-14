@@ -2,12 +2,12 @@ extends "affairs_base.gd"
 
 const view_model_name = "内政-玩家-步骤";
 
-const MARKET_TYPES = {
-	"武": "fair_wu.png",
-	"知": "fair_sch.png",
-	"医": "fair_hos.png",
-	"商": "fair_bus.png"
-}
+const MARKET_TYPES = [
+	["武", "fair_wu"],
+	["知", "fair_sch"],
+	["医", "fair_hos"],
+	["商", "fair_bus"],
+]
 
 func get_view_model():
 	if(!DataManager.common_variable.has(view_model_name)):
@@ -416,7 +416,7 @@ func player_monthly_trigger():
 	# 遍历所属城市的出仕武将
 	for city in clCity.all_cities([vstateId]):
 		actorIds.append_array(city.get_actor_ids())
-	DataManager.common_variable[key] = actorIds
+	DataManager.set_env(key, actorIds)
 	FlowManager.add_flow("player_deal_10001")
 	return
 
@@ -429,7 +429,7 @@ func player_deal_10001():
 		DataManager.common_variable[key] = actorIds
 		if SkillHelper.auto_trigger_skill(actorId, 10001, "player_deal_10001"):
 			return
-	DataManager.common_variable.erase(key)
+	DataManager.unset_env(key)
 
 	var cityId = -1
 	for city in clCity.all_cities([vstateId]):
@@ -564,7 +564,9 @@ func city_enter_menu():
 	var idx = DataManager.get_env_int("lsc.city_enter_menu")
 	DataManager.clear_common_variable(["lsc"])
 	DataManager.set_env("lsc.city_enter_menu", idx)
-	SceneManager.current_scene().cursor.hide();
+	var scene_affiars:Control = SceneManager.current_scene()
+	scene_affiars.cursor.hide()
+	scene_affiars.inspecting = false
 	DataManager.twinkle_citys = [city.ID]
 	SceneManager.show_affairs_menu()
 	set_view_model(3)
@@ -666,14 +668,13 @@ func enter_fair_menu():
 	
 	#开发到一定程度，自动解锁四个功能
 	if city.well_developed():
-		market_type = "武知医商";
+		market_type = "武知医商"
 	else:
 		var flag = int(SkillRangeBuff.max_val_for_city("城市集市", city.ID))
 		if flag > 0 and market_type != "武知医商":
-			var market_types = ["武", "知", "医", "商"]
 			var result = []
-			for i in market_types.size():
-				var t = market_types[i]
+			for i in MARKET_TYPES.size():
+				var t = MARKET_TYPES[i][0]
 				if t in market_type:
 					result.append(t)
 					continue
@@ -681,21 +682,27 @@ func enter_fair_menu():
 					result.append(t)
 					continue
 			market_type = "".join(result)
-	for key in MARKET_TYPES:
-		if key in market_type:
-			var icon = MARKET_TYPES[key]
-			items_array.append("res://resource/images/picture/" + icon)
-			market_type_list.append(key)
+	for i in MARKET_TYPES.size():
+		var t = MARKET_TYPES[i][0]
+		if not t in market_type:
+			continue
+		var icon = MARKET_TYPES[i][1]
+		if t == "知":
+			var expRate = city.get_ranged_buff_min_val("学习经验折扣")
+			if expRate >= 0 and expRate < 100:
+				icon += "_hl"
+		items_array.append("res://resource/images/picture/" + icon + ".png")
+		market_type_list.append(t)
 	
 	SceneManager.image_menu.items = items_array;
 	DataManager.common_variable["列表值"] = market_type_list;
 	SceneManager.image_menu.set_lsc(separation+(4-items_array.size())*30);#间隔
-	SceneManager.image_menu._set_data(1.5);
-	SceneManager.image_menu.show_msg("此处是市集，请下达命令");
-	SceneManager.image_menu.show_orderbook(true);
-	DataManager.cityInfo_type = 3;
-	SceneManager.show_cityInfo(true);
-	SceneManager.image_menu.show();
+	SceneManager.image_menu._set_data(1.5)
+	SceneManager.image_menu.show_msg("此处是市集，请下达命令")
+	SceneManager.image_menu.show_orderbook(true)
+	DataManager.cityInfo_type = 3
+	SceneManager.show_cityInfo(true)
+	SceneManager.image_menu.show()
 	return
 
 #-------武将自动跟随-------
@@ -776,7 +783,13 @@ func close_affair_log():
 	FlowManager.add_flow("player_show_cityline")
 	return
 
+# 修改难度
 func change_level_start()->void:
+	if DataManager.is_challange_game():
+		var msg = "挑战赛模式\n禁用难度修改"
+		SceneManager.show_confirm_dialog(msg, -5)
+		set_view_model(999)
+		return
 	SceneManager.current_scene().cursor.hide()
 	DataManager.twinkle_citys = [DataManager.player_choose_city]
 	SceneManager.hide_all_tool()
@@ -1037,6 +1050,11 @@ func player_join():
 
 # 归隐山林，开始观海
 func player_leave():
+	if DataManager.is_challange_game():
+		var msg = "挑战赛模式\n禁用归隐"
+		SceneManager.show_confirm_dialog(msg, -5)
+		set_view_model(999)
+		return
 	var vstateControlNo = DataManager.get_current_control_sort()
 	var player:Player = DataManager.players[vstateControlNo]
 	var msg = "{0}大人厌倦了乱世吗？\n刀枪入库，马放南山\n观看 AI 演绎，可否？\n".format([

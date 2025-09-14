@@ -228,9 +228,9 @@ func month_auto_events_begin():
 							var change = -5
 							var targetLord = ActorHelper.actor(targetCity.get_lord_id())
 							var distance = lord.personality_distance(targetLord)
-							if targetVstateId in vs.get_loved():
+							if vs.love(targetVstateId):
 								change = 0
-							elif targetVstateId in vs.get_hated():
+							elif vs.hate(targetVstateId):
 								change = -10
 							if distance <= 10:
 								change = max(0, change)

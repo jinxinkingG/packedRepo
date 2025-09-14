@@ -43,13 +43,13 @@ func on_trigger_10019()->bool:
 	var msg = "政荒于怠而精于勤\n（{0}跟进开发{1}".format([
 		actor.get_name(), cmd.type,
 	])
-	city.attach_free_dialog(msg, actorId)
+	city.attach_free_dialog(msg, cmd.actionId)
 	var msgs = cmd.get_result_messages()
 	while msgs.size() > 3:
 		msg = "\n".join(msgs.slice(0, 2))
-		city.attach_free_dialog(msg, actorId, 1)
+		city.attach_free_dialog(msg, cmd.actionId, 1)
 		msgs = msgs.slice(3, msgs.size() - 1)
 	if not msgs.empty():
 		msg = "\n".join(msgs)
-		city.attach_free_dialog(msg, actorId, 1)
+		city.attach_free_dialog(msg, cmd.actionId, 1)
 	return false

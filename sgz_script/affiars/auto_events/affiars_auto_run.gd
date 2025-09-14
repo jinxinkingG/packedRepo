@@ -86,6 +86,12 @@ func month_init():
 
 	# 星耀剧本的特殊逻辑
 	check_stars_month_init()
+
+	# 谍网更新暂时放这里
+	var dw = DieWangInfo.new()
+	dw.load_env()
+	dw.update_monthly()
+
 	return
 
 func month_init_vstates()->void:

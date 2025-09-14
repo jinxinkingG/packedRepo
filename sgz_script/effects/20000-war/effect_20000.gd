@@ -478,9 +478,13 @@ func wait_for_choose_skill(nextFlow:String, isActiveSkill:bool=true, allowBack:b
 	return
 
 # 从列表中选择目标
-func wait_for_choose_item(nextFlow:String, isActiveSkill:bool=true, allowBack:bool=true)->void:
+func wait_for_choose_item(nextFlow:String, isActiveSkill:bool=true, allowBack:bool=true, backFlow:String="")->void:
 	if allowBack and Global.is_action_pressed_BY():
 		if not SceneManager.dialog_msg_complete():
+			return
+		if backFlow != "":
+			LoadControl.set_view_model(-1)
+			FlowManager.add_flow(backFlow)
 			return
 		if isActiveSkill:
 			back_to_skill_menu()
@@ -803,7 +807,7 @@ func start_battle_and_finish(fromId:int, targetId:int, source:String="", sourceA
 	DataManager.battle_actors = []
 	DataManager.set_env("战斗.强制地形", forcedTerrian)
 	var player_attack = Global.load_script(DataManager.mod_path+"sgz_script/war/player_attack.gd")
-	player_attack._go_to_battle(false, source)
+	player_attack._go_to_battle(false, source, ske.will_auto_finish_turn())
 	LoadControl.end_script()
 	return
 
@@ -859,7 +863,7 @@ func change_scheme_damage_value(actorId:int, skill:String, val:int)->bool:
 	var type = "减伤"
 	if changed > 0:
 		type = "增伤"
-	var msg = "【{1}】令{0}{2}{3}".format([
+	var msg = "【{1}】对{0}{2}{3}".format([
 		ActorHelper.actor(targetId).get_name(),
 		skill, type, abs(changed),
 	])
@@ -915,6 +919,7 @@ func report_stratagem_result_message(se:StratagemExecution, nextViewModel:int, s
 	map.draw_actors()
 	var wa = DataManager.get_war_actor(se.fromId)
 	if wa == null:
+		FlowManager.add_flow("player_skill_end_trigger")
 		return
 	# 默认由计策发起者汇报
 	var speaker = wa
@@ -922,6 +927,7 @@ func report_stratagem_result_message(se:StratagemExecution, nextViewModel:int, s
 	if speaker.get_controlNo() < 0:
 		speaker = DataManager.get_war_actor(se.targetId)
 	if speaker == null:
+		FlowManager.add_flow("player_skill_end_trigger")
 		return
 	if startingMessage != "":
 		DataManager.set_env("对话PENDING", se.get_report_message(speaker, wa))
@@ -1083,6 +1089,8 @@ func start_scheme(schemeName:String)->void:
 	var se = DataManager.new_stratagem_execution(actorId, schemeName, ske.skill_name)
 	se.skip_redo = 1
 	se.goback_disabled = 1
+	if ske.will_auto_finish_turn():
+		se.mark_auto_finish_turn()
 	SkillHelper.remove_all_skill_trigger()
 	LoadControl.load_script("res://resource/sgz_script/war/player_stratagem.gd")
 	map.show_scheme_selector()

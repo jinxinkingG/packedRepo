@@ -18,5 +18,15 @@ func on_trigger_20027() -> bool:
 	if targetId != ske.actorId:
 		return false
 	ske.clear_actor_skill_cd(actorId, [20000], [ACTIVE_EFFECT_ID], -1, 99999)
+	ske.set_war_skill_val(-1, 0, ACTIVE_EFFECT_ID)
+	ske.war_report()
+	return false
+
+func on_trigger_20051() -> bool:
+	var targetId = ske.get_war_skill_val_int(ACTIVE_EFFECT_ID, -1, -1)
+	if targetId != ske.actorId:
+		return false
+	ske.clear_actor_skill_cd(actorId, [20000], [ACTIVE_EFFECT_ID], -1, 99999)
+	ske.set_war_skill_val(-1, 0, ACTIVE_EFFECT_ID)
 	ske.war_report()
 	return false

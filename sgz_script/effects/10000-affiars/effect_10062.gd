@@ -38,7 +38,7 @@ func effect_10062_2():
 	var msg = "凿险攻击{0}\n出阵部队兵力将损失 10%\n可否？".format([
 		clCity.city(targetCityId).get_name()
 	])
-	play_dialog(actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001, true)
 	return
 
 func on_view_model_2001()->void:

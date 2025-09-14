@@ -48,6 +48,9 @@ func _init() -> void:
 	FlowManager.bind_import_flow("player_yijing_select", self)
 	FlowManager.bind_import_flow("player_yijing_selected", self)
 
+	FlowManager.bind_import_flow("player_map_nav_start", self)
+	FlowManager.bind_import_flow("player_map_nav_finish", self)
+
 	iembattle = Global.load_script(DataManager.mod_path+"sgz_script/war/IEmbattle.gd")
 	return
 	
@@ -624,6 +627,23 @@ func on_view_model_51(delta: float):
 
 func on_view_model_52(delta: float):
 	Global.wait_for_confirmation("check_embattle_trigger", view_model_name)
+	return
+
+# 观察地图
+func on_view_model_100(delta: float):
+	var map = SceneManager.current_scene().war_map
+	map.cursor.show()
+	if Input.is_action_pressed("ANALOG_UP"):
+		map.cursor_move_up()
+	if Input.is_action_pressed("ANALOG_DOWN"):
+		map.cursor_move_down()
+	if Input.is_action_pressed("ANALOG_LEFT"):
+		map.cursor_move_left()
+	if Input.is_action_pressed("ANALOG_RIGHT"):
+		map.cursor_move_right()
+	if Input.is_action_just_pressed("EMU_START"):
+		set_view_model(-1)
+		FlowManager.add_flow("player_map_nav_finish")
 	return
 
 func on_view_model_886(delta: float):
@@ -1307,6 +1327,11 @@ func _check_wait_dialog():
 
 # 托管战争询问
 func player_delegate()->void:
+	if DataManager.is_challange_game():
+		var msg = "挑战赛模式\n禁用托管"
+		SceneManager.show_confirm_dialog(msg, -5)
+		set_view_model(0)
+		return
 	var msg = "确定要由 AI 指挥战争吗？\n战争完毕将自动结束托管\n托管中按住「开始」键可取消"
 	SceneManager.show_yn_dialog(msg, DataManager.player_choose_actor)
 	SceneManager.actor_dialog.lsc.cursor_index = 1
@@ -1432,4 +1457,21 @@ func get_yijing_selected_skills(actorId:int) -> PoolStringArray:
 
 func set_yijing_selected_skills(actorId:int, skills:PoolStringArray) -> void:
 	SkillHelper.set_skill_variable(10000, 20395, actorId, skills, 99999)
+	return
+
+# 地图浏览
+func player_map_nav_start() -> void:
+	var wf = DataManager.get_current_war_fight()
+	DataManager.player_choose_actor = wf.from_city().get_lord_id()
+	var msg = "此为{0}战场地形\n方向键可移动观察\n「开始」键结束侦察".format([
+		wf.target_city().get_full_name(),
+	])
+	SceneManager.show_unconfirm_dialog(msg, DataManager.player_choose_actor)
+	set_view_model(100)
+	return
+
+# 地图浏览结束
+func player_map_nav_finish() -> void:
+	FlowManager.add_flow("war_map_nav_finish")
+	set_view_model(-1)
 	return

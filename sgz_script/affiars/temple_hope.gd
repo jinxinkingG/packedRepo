@@ -147,6 +147,10 @@ func _input_key(delta: float):
 func hope_start():
 	#发展到一定程度，解锁【祈祷】
 	var city = clCity.city(DataManager.player_choose_city)
+	if DataManager.is_challange_game():
+		var msg = "挑战赛模式\n禁用祈祷"
+		LoadControl._affiars_error(msg, -5)
+		return
 	var unlocked = false
 	if not unlocked and DataManager.is_test_player():
 		unlocked = true
@@ -336,7 +340,7 @@ func hope_revive_1():
 	for actor in dead:
 		var lifeLimit = actor.get_life_limit()
 		var cost = max(0, DataManager.year - lifeLimit) * 100 + 1000
-		var bargain = SkillRangeBuff.min_for_city("复活折扣", DataManager.player_choose_city, -1)
+		var bargain = SkillRangeBuff.min_val_for_city("复活折扣", DataManager.player_choose_city, -1)
 		if bargain > 0:
 			cost = int(cost * bargain)
 		items.append("{0} /{1}金".format([actor.get_name(), cost]))

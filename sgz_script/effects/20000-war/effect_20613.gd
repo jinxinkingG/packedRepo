@@ -36,6 +36,7 @@ func on_trigger_20013() -> bool:
 	var sleepingDragon = me.war_vstate().get_war_actor(StaticManager.ACTOR_ID_ZHUGELIANG)
 	if sleepingDragon == null or sleepingDragon.disabled or not sleepingDragon.has_position():
 		return false
+	ske.cost_war_cd(99999)
 	var times = ske.affair_get_skill_val_int()
 	ske.affair_set_skill_val(times + 1)
 

@@ -364,6 +364,9 @@ func stratagem_trigger_2():
 func ask_for_continue_strategem():
 	var se = DataManager.get_current_stratagem_execution()
 	se.report()
+	if se.will_auto_finish_turn():
+		FlowManager.add_flow("player_end")
+		return
 	if se.skip_redo:
 		se.skip_redo = 0
 		FlowManager.add_flow("player_ready")

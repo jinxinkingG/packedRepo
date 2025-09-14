@@ -30,6 +30,8 @@ func effect_20027_AI_start()->void:
 func effect_20027_start()->void:
 	ske.cost_war_cd(1)
 	var se = DataManager.get_current_stratagem_execution()
+	if se.will_auto_finish_turn():
+		ske.mark_auto_finish_turn()
 	var fromId = se.get_action_id(actorId)
 	var msg = "{0}果然贪酒！\n全军出击！".format([actor.get_name()])
 	play_dialog(fromId, msg, 0, 2000)

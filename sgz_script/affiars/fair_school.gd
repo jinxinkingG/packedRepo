@@ -125,12 +125,13 @@ func school_2():
 	if sceneId == 20000:
 		var wf = DataManager.get_current_war_fight()
 		cityId = wf.target_city().ID
+	var city = clCity.city(cityId)
 	DataManager.set_env("内政.学习武将", actorId)
 	SceneManager.hide_all_tool()
 	SceneManager.show_unconfirm_dialog("提升哪种属性？\n← →控制属性增减\n按住「选择」键查看成长信息", actorId)
-	var expRate = SkillRangeBuff.min_for_city("学习经验折扣", cityId)
+	var expRate = city.get_ranged_buff_min_val("学习经验折扣")
 	if expRate <= 0:
-		expRate = 1.0
+		expRate = 100
 	# 暂时固定在这里，并用 relation 实现
 	var SPECIFIED = {
 		"同槽": "父亲",
@@ -142,7 +143,7 @@ func school_2():
 			continue
 		var relation = SPECIFIED[srb.skillName]
 		if DataManager.get_actor_honored_title(srb.actorId, actorId) == relation:
-			expRate = srb.effectTagVal
+			expRate = int(srb.effectTagVal)
 	SceneManager.actor_addpoint.set_actor(actorId, expRate)
 	SceneManager.actor_addpoint.show()
 	LoadControl.set_view_model(422)

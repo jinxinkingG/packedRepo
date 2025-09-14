@@ -108,8 +108,10 @@ func attack_start(evenForbidden:bool=false):
 	return
 
 # 发起白刃战
-# @paran callAttack: 攻击宣言参数，false表示没有攻击宣言直接白兵战，默认true。
-func _go_to_battle(callAttack:bool=true, source:String="")->void:
+# @param callAttack: 攻击宣言参数，false表示没有攻击宣言直接白兵战，默认true。
+# @param source: 攻击来源，通常是技能，默认空
+# @param autoFinishTurn：战斗结束后是否自动结束回合，通常配合技能
+func _go_to_battle(callAttack:bool=true, source:String="", autoFinishTurn:bool=false)->void:
 	LoadControl.set_view_model(-1)
 	LoadControl.end_script()
 
@@ -119,6 +121,8 @@ func _go_to_battle(callAttack:bool=true, source:String="")->void:
 	# 如果还没汇报，补充汇报
 	bf.war_report()
 	bf = DataManager.new_battle_fight(fromId)
+	if autoFinishTurn:
+		bf.mark_auto_finish_turn()
 	var forcedTerrian = DataManager.get_env_str("战斗.强制地形")
 	if forcedTerrian != "":
 		bf.terrian = forcedTerrian

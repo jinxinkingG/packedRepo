@@ -24,7 +24,7 @@ func on_trigger_20027()->bool:
 	var from = me
 	if fromId != actorId:
 		from = DataManager.get_war_actor(fromId)
-		if me.is_teammate(from):
+		if not me.is_teammate(from):
 			return false
 
 	# 简单插入排序

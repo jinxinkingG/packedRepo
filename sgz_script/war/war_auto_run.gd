@@ -15,7 +15,10 @@ func _init() -> void:
 	FlowManager.clear_pre_history.clear()
 	LoadControl.end_script()
 	FlowManager.clear_bind_method()
-	
+
+	FlowManager.bind_import_flow("war_map_nav_start", self)
+	FlowManager.bind_import_flow("war_map_nav_finish", self)
+
 	FlowManager.bind_import_flow("war_run_start", self)
 	FlowManager.bind_import_flow("war_vstate_settlement", self)
 	FlowManager.bind_import_flow("war_vstate_settlement_report", self)
@@ -41,6 +44,22 @@ func _init() -> void:
 
 	player_control = Global.load_script(DataManager.mod_path+"sgz_script/war/player_control.gd")
 	AI_control = Global.load_script(DataManager.mod_path+"sgz_script/war/AI_control.gd")
+	return
+
+func war_map_nav_start() -> void:
+	SoundManager.stop()
+	SoundManager.play_bgm()
+	DataManager.player_choose_actor = -1
+	SceneManager.hide_all_tool()
+	set_current_step(-1)
+	set_next_step(999)
+	return
+
+func war_map_nav_finish() -> void:
+	LoadControl.end_script()
+	FlowManager.add_flow("go_to_scene|res://scene/scene_affiars/scene_affiars.tscn")
+	FlowManager.add_flow("load_script|affiars/barrack_inspect.gd")
+	FlowManager.add_flow("inspect_more")
 	return
 
 func war_run_start():
@@ -109,6 +128,9 @@ func _process(delta: float) -> void:
 	var current_step = get_current_step()
 	#DataManager.game_trace("== WAR STEP " + str(current_step) + "。")
 	match current_step:
+		999: # 地图浏览
+			FlowManager.add_flow("player_map_nav_start")
+			return
 		0:#每日初始化
 			wf.next_date()
 			set_next_step(1)
@@ -244,8 +266,11 @@ func war_vstate_settlement():
 	for wv in wf.war_vstates():
 		if not wv.requires_lost_settlement():
 			continue
-		# 这里不支持流程，只做数据处理
-		wv.settle_after_war(wv.is_reinforcement(), true)
+		# 只自动处理援军并报告
+		# 主军势放结算时处理
+		if not wv.is_reinforcement():
+			continue
+		wv.settle_after_war(true, true)
 		DataManager.set_env("战争.结算方", wv.id)
 		FlowManager.add_flow("war_vstate_settlement_report")
 		return
@@ -323,7 +348,10 @@ func war_over_next():
 	if winner.settled > 0:
 		# 胜方已经结算完成，轮流处理其他军势
 		for wv in wf.war_vstates():
-			if wv.settle_after_war(wv.is_reinforcement()):
+			var ret = wv.settle_after_war(wv.is_reinforcement())
+			# 再次调用胜方的资源归属，以实现金米抢夺
+			winner.settle_resources_after_war()
+			if ret:
 				return
 		# 均处理完成
 		FlowManager.set_current_control_playerNo(winner.get_main_controlNo())
@@ -520,7 +548,7 @@ func back_to_war():
 		FlowManager.add_flow("enable_add")
 		FlowManager.add_flow("go_to_scene|res://scene/scene_demo/scene_demo_battle.tscn")
 		return
-	LoadControl.view_model_name = "战争-玩家-步骤";
+	LoadControl.view_model_name = "战争-玩家-步骤"
 	set_current_step(-1)
 	set_next_step(-1)
 
@@ -653,8 +681,11 @@ func back_to_war_clear_trigger() -> void:
 	if st != null and st.wait:
 		return
 	DataManager.unset_env(key)
-	FlowManager.add_flow("player_ready")
 	FlowManager.add_flow("draw_actors")
+	if bf.will_auto_finish_turn():
+		FlowManager.add_flow("player_end")
+		return
+	FlowManager.add_flow("player_ready")
 	return
 
 func _decrease(proname:String, lossRate:int):
@@ -952,29 +983,30 @@ func war_report_done():
 	return
 
 func check_daoshu_appended(wa:War_Actor)->void:
-	if wa.actor().get_equip_feature_max("道术附加") <= 0:
-		return
-	# 简单实现，目前都以道具为准
-	var source = wa.actor().get_jewelry().name()
-	var otherDaoshuSkills = []
-	var learnedNames = []
-	for skill in SkillHelper.get_actor_skill_names(wa.actorId):
-		learnedNames.append(skill)
-	var defaults = SkillHelper.get_actor_default_skill_names(wa.actorId)
-	for skillName in StaticManager.DAOSHU_SKILLS:
-		if skillName in learnedNames:
+	for found in wa.actor().get_equip_feature_all("道术附加"):
+		if found[1] <= 0:
 			continue
-		if skillName in defaults.values():
-			if SkillHelper.add_ctor_scene_skill(20000, wa.actorId, skillName, 1, -1, source):
-				wa.attach_free_dialog("研读{0}\n对道术【{1}】有所领悟".format([source, skillName]), 1)
+		var source = found[0].name()
+		var otherDaoshuSkills = []
+		var learnedNames = []
+		for skill in SkillHelper.get_actor_skill_names(wa.actorId):
+			learnedNames.append(skill)
+		var defaults = SkillHelper.get_actor_default_skill_names(wa.actorId)
+		for skillName in StaticManager.DAOSHU_SKILLS:
+			if skillName in learnedNames:
+				continue
+			if skillName in defaults.values():
+				if SkillHelper.add_actor_scene_skill(20000, wa.actorId, skillName, 1, -1, source):
+					wa.attach_free_dialog("研读{0}\n对道术【{1}】有所领悟".format([source, skillName]), 1)
+				return
+			otherDaoshuSkills.append(skillName)
+		if otherDaoshuSkills.empty():
 			return
-		otherDaoshuSkills.append(skillName)
-	if otherDaoshuSkills.empty():
+		otherDaoshuSkills.shuffle()
+		var skillName = otherDaoshuSkills[0]
+		if SkillHelper.add_actor_scene_skill(20000, wa.actorId, skillName, 1, -1, source):
+			wa.attach_free_dialog("研读{0}\n对道术【{1}】有所领悟".format([source, skillName]), 1)
 		return
-	otherDaoshuSkills.shuffle()
-	var skillName = otherDaoshuSkills[0]
-	if SkillHelper.add_actor_scene_skill(20000, wa.actorId, skillName, 1, -1, source):
-		wa.attach_free_dialog("研读{0}\n对道术【{1}】有所领悟".format([source, skillName]), 1)
 	return
 
 func check_shence_appended(wa:War_Actor)->void:

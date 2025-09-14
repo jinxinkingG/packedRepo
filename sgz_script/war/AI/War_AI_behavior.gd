@@ -100,7 +100,8 @@ func AI_move_0():
 	wa.set_tmp_variable("MOVE_COST", cost)
 
 	var map = SceneManager.current_scene().war_map
-	map.play_move(wa, toPosition, false)
+	if not map.play_move(wa, toPosition, false):
+		FlowManager.add_flow("AI_before_ready")
 	return
 
 func AI_move_done() -> void:

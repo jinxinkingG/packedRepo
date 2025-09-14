@@ -2,14 +2,17 @@ extends "affairs_base.gd"
 
 #建言
 func _init() -> void:
-	LoadControl.view_model_name = "内政-玩家-步骤";
+	LoadControl.view_model_name = "内政-玩家-步骤"
 
-	FlowManager.bind_import_flow("suggestion_start",self)
-	FlowManager.bind_import_flow("suggestion_2",self)
-	FlowManager.bind_import_flow("suggestion_3",self)
-	FlowManager.bind_import_flow("suggestion_4",self)
-	FlowManager.bind_import_flow("suggestion_done",self)
+	FlowManager.bind_import_flow("suggestion_start", self)
+	FlowManager.bind_import_flow("suggestion_2", self)
+	FlowManager.bind_import_flow("suggestion_3", self)
+	FlowManager.bind_import_flow("suggestion_4", self)
+	FlowManager.bind_import_flow("suggestion_done", self)
 
+	# 加入谍报相关
+	FlowManager.bind_import_flow("inspection_start", self)
+	FlowManager.bind_import_flow("inspection_finish", self)
 	return
 
 #按键操控
@@ -21,11 +24,19 @@ func _input_key(delta: float):
 			wait_for_yesno("suggestion_4", "suggestion_start")
 		263:
 			wait_for_confirmation("suggestion_start")
+		265:
+			wait_for_confirmation("inspection_finish")
+		266:
+			wait_for_confirmation("suggestion_start")
 	return
 
 #---------------建言-------------------
 func suggestion_start():
 	SceneManager.current_scene().cursor.hide()
+	if DataManager.get_env_int("内政.MONTHLY.谍报") <= 0:
+		FlowManager.add_flow("inspection_start")
+		return
+
 	if DataManager.get_env_int("内政.建言开关", 1) <= 0:
 		FlowManager.add_flow("suggestion_done")
 		return
@@ -230,4 +241,56 @@ func suggestion_done():
 	DataManager.player_choose_city = cityId;
 	SceneManager.current_scene().set_city_cursor_position(cityId);
 	FlowManager.add_flow("player_start")
+	return
+
+# 谍报
+func inspection_start() -> void:
+	DataManager.set_env("内政.MONTHLY.谍报", 1)
+	var vstateId = DataManager.vstates_sort[DataManager.vstate_no]
+	var vs = clVState.vstate(vstateId)
+	var lordId = vs.get_lord_id()
+	# 先找谍报武将
+	var inspector = -1
+	var forVstateId = vstateId
+	for srb in SkillRangeBuff.find_for_vstate("谍网", vstateId):
+		inspector = srb.actorId
+		# 有【谍网】技能的情况下，忽略侦察标记，全汇报
+		forVstateId = -1
+		break
+	if inspector < 0:
+		inspector = lordId
+	var reportCityId = DataManager.get_office_city_by_actor(inspector)
+	if reportCityId < 0:
+		FlowManager.add_flow("suggestion_start")
+		return
+	#var reportCity = clCity.city(reportCityId)
+	var dw = DieWangInfo.new()
+	dw.load_env()
+	var info = dw.get_most_valuable(forVstateId, true)
+	if info.empty():
+		FlowManager.add_flow("suggestion_start")
+		return
+	var msg = info[0]
+	var targetCityId = info[2]
+	SceneManager.show_confirm_dialog(msg, inspector, 2)
+	if lordId == inspector:
+		LoadControl.set_view_model(266)
+	else:
+		DataManager.set_env("内政.MONTHLY.谍报武将", inspector)
+		LoadControl.set_view_model(265)
+	DataManager.twinkle_citys = [reportCityId, targetCityId]
+	return
+
+func inspection_finish()->void:
+	var vstateId = DataManager.vstates_sort[DataManager.vstate_no]
+	var vs = clVState.vstate(vstateId)
+	var lordId = vs.get_lord_id()
+	var inspector = DataManager.get_env_int("内政.MONTHLY.谍报武将")
+	var cityId = DataManager.get_office_city_by_actor(lordId)
+	var msg = "{0}劳苦\n知之矣，当定对策".format([
+		DataManager.get_actor_honored_title(inspector, lordId)
+	])
+	SceneManager.show_confirm_dialog(msg, lordId, 1)
+	LoadControl.set_view_model(266)
+	DataManager.twinkle_citys = [cityId]
 	return

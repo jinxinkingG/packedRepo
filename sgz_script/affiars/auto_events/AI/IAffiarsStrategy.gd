@@ -53,7 +53,7 @@ func _get_city_score(cityId:int, vstateId:int):
 				score += 2000
 	# 仇恨势力翻倍
 	var vs = clVState.vstate(vstateId)
-	if vid in vs.get_hated():
+	if vs.hate(vid):
 		score = score * 2
 	# 考虑外交关系
 	var idx = vs.get_relation_index(vid)
@@ -85,9 +85,9 @@ func _get_city_cost(cityId:int, vstateId:int):
 	#盟友城池，尽量避开
 	if 0 < clVState.get_alliance_month(vstateId, targetVstateId):
 		cost *= 10000
-	if targetVstateId in vs.get_hated():
+	if vs.hate(targetVstateId):
 		cost = cost / 2
-	if targetVstateId in vs.get_loved():
+	if vs.love(targetVstateId):
 		cost += 100
 	return cost
 

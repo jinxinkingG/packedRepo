@@ -205,6 +205,10 @@ func appoint_defence_2():
 
 #委任开发
 func appoint_delegate():
+	if DataManager.is_challange_game():
+		var msg = "挑战赛模式\n禁用委任"
+		LoadControl._affiars_error(msg, -5)
+		return
 	var city = clCity.city(DataManager.player_choose_city)
 	var leaderId = city.get_leader_id()
 	if city.is_delegated():

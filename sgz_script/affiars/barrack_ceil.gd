@@ -8,8 +8,7 @@ func _init() -> void:
 	FlowManager.bind_signal_method("ceil_choose_actors", self)
 	FlowManager.bind_signal_method("ceil_self_actors", self)
 	FlowManager.bind_signal_method("ceil_confirmed", self)
-	FlowManager.bind_signal_method("ceil_animation", self)
-	FlowManager.bind_signal_method("ceil_result", self)
+	FlowManager.bind_signal_method("ceil_persuade_result", self)
 	FlowManager.bind_signal_method("ceil_trans_to_other_city", self)
 	return
 
@@ -47,9 +46,7 @@ func _input_key(delta: float):
 				FlowManager.add_flow("ceil_menu")
 				return
 		255:
-			wait_for_confirmation("ceil_result")
-		256:#最后确认
-			wait_for_confirmation()
+			wait_for_confirmation("ceil_persuade_result")
 		257:#转移城池
 			#移动流程：选择城市
 			var fromCity = clCity.city(DataManager.player_choose_city)
@@ -140,20 +137,17 @@ func ceil_self_actors():
 
 #执行命令
 func ceil_confirmed():
-	var vstateId = int(DataManager.vstates_sort[DataManager.vstate_no])
+	var vstateId = DataManager.vstates_sort[DataManager.vstate_no]
 	var cityId = DataManager.player_choose_city
 	var actorId = DataManager.get_env_int("武将")
 	var targetActorIds = DataManager.get_env_int_array("内政.监狱武将")
 	var action = DataManager.get_env_str("值")
 
-	DataManager.set_env("结果", [])
-	DataManager.set_env("对话", "")
-	DataManager.set_env("提示", "")
-	DataManager.set_env("动画", "")
-
 	match action:
 		"招降":
-			_ceil_persuade(vstateId, cityId, actorId, targetActorIds)
+			# 目前只支持单个招揽
+			if _ceil_persuade(vstateId, cityId, actorId, targetActorIds[0]):
+				return
 		"流放":
 			_ceil_exile(vstateId, cityId, targetActorIds)
 		"斩首":
@@ -163,104 +157,89 @@ func ceil_confirmed():
 			_ceil_transfer(vstateId, cityId, targetCityId, targetActorIds)
 		"释放":
 			_ceil_release(vstateId, cityId, targetActorIds)
-	FlowManager.add_flow("ceil_animation")
-	return
-
-func ceil_animation():
-	var actorId = DataManager.get_env_int("武将")
-	var animation = DataManager.get_env_str("动画")
-	var notice = DataManager.get_env_str("提示")
-	if animation == "":
-		FlowManager.add_flow("ceil_result")
-		return
-	SceneManager.hide_all_tool()
-	SceneManager.play_affiars_animation(
-		animation, "", false,
-		notice, actorId)
-	LoadControl.set_view_model(255)
-	return
-
-func ceil_result():
-	SceneManager.cleanup_animations()
-	var result = DataManager.get_env_int_array("结果")
-	var actorId = DataManager.get_env_int("武将")
-	var mood = 2
-	#招降/流放/斩首
-	var action = DataManager.get_env_str("值")
-	match action:
-		"招降":
-			if 1 in result:
-				mood = 1
-			else:
-				mood = 3
-	var msg = DataManager.get_env_str("对话")
-	SceneManager.show_confirm_dialog(msg, actorId, mood)
-	SceneManager.show_cityInfo(true)
-	LoadControl.set_view_model(256)
+	FlowManager.add_flow("city_enter_menu")
 	return
 
 #转移
 func ceil_trans_to_other_city():
-	LoadControl.set_view_model(257);
-	SceneManager.clear_bottom();
-	DataManager.twinkle_citys.clear();
-	var scene_affiars:Control = SceneManager.current_scene();
+	SceneManager.clear_bottom()
+	DataManager.twinkle_citys.clear()
+	var scene_affiars:Control = SceneManager.current_scene()
 	var vstate_controlNo = DataManager.get_current_control_sort()
-	var player:Player = DataManager.players[vstate_controlNo];
-	scene_affiars.cursor.show();
-	scene_affiars.set_city_cursor_position(DataManager.player_choose_city);
-	SceneManager.show_unconfirm_dialog("向哪座城池转移？\n请指定");
+	var player:Player = DataManager.players[vstate_controlNo]
+	scene_affiars.cursor.show()
+	scene_affiars.set_city_cursor_position(DataManager.player_choose_city)
+	SceneManager.show_unconfirm_dialog("向哪座城池转移？\n请指定")
+	LoadControl.set_view_model(257)
+	return
 
-func _ceil_persuade(vstateId:int, cityId:int, actorId:int, targetActorIds:PoolIntArray):
+func _ceil_persuade(vstateId:int, cityId:int, actorId:int, targetActorId:int) -> bool:
 	var actor = ActorHelper.actor(actorId)
-	var failed = []
-	var persuaded = []
-	var results = []
-	for targetId in targetActorIds:
-		# 默认进入招揽成功率计算
-		var targetActor = ActorHelper.actor(targetId)
-		var rate = PolicyCommand.get_canvass_rate(
-			actor.actorId,
-			targetActor.actorId,
-			actor.get_politics(),
-			actor.get_moral(),
-			actor.get_level()
-		)
+	var targetActor = ActorHelper.actor(targetActorId)
+	if DataManager.is_challange_game():
+		# 挑战赛不允许 > 20 忠招降
+		if targetActor.get_loyalty() > 20:
+			var city = clCity.city(cityId)
+			var msg = "挑战赛不允许\n招降忠 > 20 的俘虏"
+			city.attach_free_dialog(msg, actorId, 3)
+			return false
+	# 默认进入招揽成功率计算
+	var rate = PolicyCommand.get_canvass_rate(
+		actor.actorId,
+		targetActor.actorId,
+		actor.get_politics(),
+		actor.get_moral(),
+		actor.get_level()
+	)
+	# 优惠
+	rate = min(90, rate + 10)
+	if targetActor.get_prev_vstate_id() == vstateId:
+		# 原势力，直接同意
+		rate = 100
+
+	DataManager.set_env("内政.俘虏说服.城市", cityId)
+	DataManager.set_env("内政.俘虏说服.武将", actorId)
+	DataManager.set_env("内政.俘虏说服.目标", targetActor.actorId)
+	DataManager.set_env("内政.俘虏说服.成功率", rate)
+
+	var msg = "尝试说服{0}\n成功率{1}%".format([
+		targetActor.get_name(), rate,
+	])
+	SceneManager.play_affiars_animation(
+		"Strategy_Talking", "", false,
+		msg, actorId)
+	LoadControl.set_view_model(255)
+	return true
+
+func ceil_persuade_result() -> void:
+	var cityId = DataManager.get_env_int("内政.俘虏说服.城市")
+	var actorId = DataManager.get_env_int("内政.俘虏说服.武将")
+	var targetActorId = DataManager.get_env_int("内政.俘虏说服.目标")
+	var rate = DataManager.get_env_int("内政.俘虏说服.成功率")
+
+	var city = clCity.city(cityId)
+	var targetActor = ActorHelper.actor(targetActorId)
+
+	var msg = "很遗憾!\n未能说服{0}"
+	var mood = 3
+	if Global.get_rate_result(rate):
+		clCity.move_to(targetActor.actorId, city.ID)
 		var expectedLoyalty = max(0, 79 - targetActor.get_loyalty())
-		var result = 0
-		if targetActor.get_prev_vstate_id() == vstateId:
-			# 原势力，直接同意
-			rate = 100
+		if targetActor.get_prev_vstate_id() == city.get_vstate_id():
 			expectedLoyalty = min(90, targetActor.get_loyalty())
-		DataManager.set_env("提示", "尝试说服{0}\n成功率{1}%".format([
-			targetActor.get_name(), rate,
-		]))
-		if Global.get_rate_result(rate):
-			result = 1
-			persuaded.append(targetActor.get_name())
-			clCity.move_to(targetId, cityId)
-			targetActor.set_status_officed()
-			targetActor.set_loyalty(expectedLoyalty)
-			# TODO
-			# 这里立刻调用 10001 会产生问题，比如荐才中断流程，未来再考虑
-			# SkillHelper.auto_trigger_skill(search_actorId, 10001, "")
-		else:
-			failed.append(targetActor.get_name())
-		results.append(result)
-	DataManager.set_env("结果", results)
-	DataManager.set_env("动画", "Strategy_Talking")
-	var msg = ""
-	if not persuaded.empty():
-		var cnt = persuaded.size()
-		var suffix = ""
-		if cnt > 1:
-			suffix = "等{0}人".format([cnt])
-		msg = "可喜可贺!\n{0}{1}已加入我方".format([persuaded[0], suffix])
-	else:
-		msg = "很遗憾!\n未能说服{0}".format([
-			failed[0]
-		])
-	DataManager.common_variable["对话"] = msg
+		targetActor.set_status_officed()
+		targetActor.set_loyalty(expectedLoyalty)
+		# 这里立刻调用 10001 会产生问题，比如荐才中断流程，未来再考虑
+		# SkillHelper.auto_trigger_skill(search_actorId, 10001, "")
+		msg = "可喜可贺!\n{0}已加入我方"
+		mood = 1
+		if DataManager.is_challange_game():
+			DataManager.add_challange_game_score(-50)
+			msg += "\n触发挑战赛限制，-50 分"
+			mood = 3
+	msg = msg.format([targetActor.get_name()])
+	city.attach_free_dialog(msg, actorId, mood)
+	FlowManager.add_flow("city_enter_menu")
 	return
 
 # 流放
@@ -291,7 +270,7 @@ func _ceil_exile(vstateId:int, cityId:int, targetActorIds:PoolIntArray):
 	if cnt > 1:
 		suffix = "等{0}人".format([cnt])
 	var msg = "{0}{1}已被流放".format(["、".join(exiled.slice(0,7)), suffix])
-	DataManager.common_variable["对话"] = msg
+	city.attach_free_dialog(msg, city.get_leader_id())
 	return
 
 # 斩首
@@ -312,11 +291,12 @@ func _ceil_execute(vstateId:int, cityId:int, targetActorIds:PoolIntArray):
 	if cnt > 1:
 		suffix = "等{0}人".format([cnt])
 	var msg = "{0}{1}已被斩首".format(["、".join(executed.slice(0,7)), suffix])
-	DataManager.common_variable["对话"] = msg
+	city.attach_free_dialog(msg, city.get_leader_id(), 0)
 	return
 
 # 转移
 func _ceil_transfer(vstateId:int, cityId:int, toCityId:int, targetActorIds:PoolIntArray):
+	var city = clCity.city(cityId)
 	var transfered = []
 	for targetId in targetActorIds:
 		clCity.move_out(targetId)
@@ -327,16 +307,16 @@ func _ceil_transfer(vstateId:int, cityId:int, toCityId:int, targetActorIds:PoolI
 	var cnt = transfered.size();
 	if cnt > 1:
 		suffix = "等{0}人".format([cnt])
-	var msg = "{0}{1}已被转移至{2}".format([
+	var msg = "{0}{1}已被转移至{2}收监".format([
 		"、".join(transfered.slice(0,7)), suffix,
 		clCity.city(toCityId).get_name()
 	])
-	DataManager.set_env("对话", msg)
+	city.attach_free_dialog(msg, city.get_leader_id(), 2, [cityId, toCityId])
 	return
 
 # 释放
 func _ceil_release(vstateId:int, cityId:int, targetActorIds:PoolIntArray):
-	var released = []
+	var released = {}
 	var exiled = []
 	var city = clCity.city(cityId)
 	var targetCityIds = city.get_connected_city_ids()
@@ -353,25 +333,40 @@ func _ceil_release(vstateId:int, cityId:int, targetActorIds:PoolIntArray):
 				if capital != null:
 					actor.set_status_officed()
 					clCity.move_to(targetId, capital.ID)
-					released.append([actor.get_name(), capital.get_full_name()])
 					prevVstate.relation_index_change(vstateId, 10)
+					if not prevVstateId in released:
+						released[prevVstateId] = []
+					released[prevVstateId].append([actor, capital])
 					continue
 		targetCityIds.shuffle()
 		var targetCityId = targetCityIds[0]
 		actor.set_status_exiled(-1, targetCityId)
 		exiled.append(actor.get_name())
 		actor.set_loyalty(50)
-	var msg = ""
-	if not released.empty():
-		msg += released[0][0]
-		if released.size() == 1:
-			msg += "已放归" + released[0][1]
-		else:
-			msg += "等{0}人已放归".format([released.size()])
+	for prevVstateId in released:
+		var total = released[prevVstateId].size()
+		if total == 0:
+			continue
+		var prevVstate = clVState.vstate(prevVstateId)
+		var memo = prevVstate.get_relation_index_memo(vstateId)
+		var msg = "{0}已放归{2}"
+		var names = []
+		for releasedItem in released[prevVstateId]:
+			names.append(releasedItem[0].get_name())
+		if names.size() > 3:
+			names = names.slice(0, 2)
+			names[2] += "等{1}人"
+		msg = msg.format([
+			"、".join(names), total, released[prevVstateId][0][1].get_full_name(),
+		])
+		msg += "\n{0}军与我军的关系略为改善\n目前为：{1}".format([
+			prevVstate.get_lord_name(), memo,
+		])
+		city.attach_free_dialog(msg, city.get_leader_id())
 	if not exiled.empty():
-		msg += "\n" + exiled[0]
+		var msg = exiled[0]
 		if exiled.size() > 1:
 			msg += "等{0}人".format([exiled.size()])
 		msg += "已流放"
-	DataManager.set_env("对话", msg)
+		city.attach_free_dialog(msg, city.get_leader_id())
 	return

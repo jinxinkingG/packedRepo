@@ -421,8 +421,13 @@ func _check_for_go_riceshop(wa:War_Actor)->bool:
 				if wv.main_actorId == wa.actorId and wv.get_actors_count() > 1:
 					continue
 		else:
-			# 防守方，处于攻击状态的武将可以去
+			# 防守方，主将不能去
+			if actioner.actorId == wv.main_actorId:
+				actioner = null
+			# 处于攻击状态的武将可以去
 			for w in wa.get_teammates(false, true):
+				if wv.main_actorId == w.actorId:
+					continue
 				if w.AI in [War_Character.AI_Enum.AttackMain, War_Character.AI_Enum.AttackNear]:
 					continue
 				var distance = Global.get_distance(pos, w.position)
@@ -430,6 +435,8 @@ func _check_for_go_riceshop(wa:War_Actor)->bool:
 					minDistance = distance
 					actioner = w
 
+		if actioner == null:
+			return false
 		actioner.AI = War_Character.AI_Enum.GotoRiceshop
 		DataManager.game_trace("AI 米不足，决定由{0}去买米".format([actioner.get_name()]))
 
