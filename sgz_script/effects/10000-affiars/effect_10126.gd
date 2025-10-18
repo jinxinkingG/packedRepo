@@ -102,6 +102,8 @@ func get_target_city_ids(city:clCity.CityInfo)->Dictionary:
 	var attackables = clCity.get_attackable_city_ids(city)
 	for targetCityId in attackables:
 		var targetCity = clCity.city(targetCityId)
+		if targetCity.get_vstate_id() < 0:
+			continue
 		var leader = targetCity.get_leader()
 		if leader.get_first_name() == fn:
 			ret[targetCityId] = attackables[targetCityId]

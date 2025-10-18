@@ -41,7 +41,7 @@ func _input_key(delta: float):
 						required += limit - current
 					required -= city.get_backup_soldiers()
 					required = max(0, required)
-					required = int(required / 100) * 100 + 100 if required % 100 > 0 else 0
+					required = int(required / 100) * 100 + 100 if required % 100 > 0 else required
 					conNumberInput.set_number(min(required, conNumberInput.max_number))
 					var msg = "为众将补满兵员需：{0}".format([required])
 					SceneManager.input_numbers.speak2(msg)

@@ -41,7 +41,7 @@ func on_trigger_10019()->bool:
 		return false
 	# 正常播报
 	var msg = "政荒于怠而精于勤\n（{0}跟进开发{1}".format([
-		actor.get_name(), cmd.type,
+		cmd.actioner().get_name(), cmd.type,
 	])
 	city.attach_free_dialog(msg, cmd.actionId)
 	var msgs = cmd.get_result_messages()

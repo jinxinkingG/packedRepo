@@ -340,6 +340,7 @@ func hope_revive_1():
 	for actor in dead:
 		var lifeLimit = actor.get_life_limit()
 		var cost = max(0, DataManager.year - lifeLimit) * 100 + 1000
+		cost = min(9000, cost)
 		var bargain = SkillRangeBuff.min_val_for_city("复活折扣", DataManager.player_choose_city, -1)
 		if bargain > 0:
 			cost = int(cost * bargain)

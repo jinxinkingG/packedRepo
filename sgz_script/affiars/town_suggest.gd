@@ -252,10 +252,11 @@ func inspection_start() -> void:
 	# 先找谍报武将
 	var inspector = -1
 	var forVstateId = vstateId
+	var ignoreInspection = false
 	for srb in SkillRangeBuff.find_for_vstate("谍网", vstateId):
 		inspector = srb.actorId
 		# 有【谍网】技能的情况下，忽略侦察标记，全汇报
-		forVstateId = -1
+		ignoreInspection = true
 		break
 	if inspector < 0:
 		inspector = lordId
@@ -266,7 +267,7 @@ func inspection_start() -> void:
 	#var reportCity = clCity.city(reportCityId)
 	var dw = DieWangInfo.new()
 	dw.load_env()
-	var info = dw.get_most_valuable(forVstateId, true)
+	var info = dw.get_most_valuable(forVstateId, ignoreInspection, true)
 	if info.empty():
 		FlowManager.add_flow("suggestion_start")
 		return
