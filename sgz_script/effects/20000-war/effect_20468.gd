@@ -11,12 +11,16 @@ func effect_20468_start():
 	if not assert_action_point(me.actorId, COST_AP):
 		return
 	var targets = []
-	for targetId in get_enemy_targets(me):
+	var candidates = get_enemy_targets(me)
+	candidates.append_array(get_teammate_targets(me))
+	for targetId in candidates:
 		var wa = DataManager.get_war_actor(targetId)
 		if wa.actor().get_wisdom() <= me.actor().get_wisdom():
 			targets.append(targetId)
+			continue
 		if wa.actor().get_level() <= me.actor().get_level():
 			targets.append(targetId)
+			continue
 	if not wait_choose_actors(targets):
 		return
 	LoadControl.set_view_model(2000)

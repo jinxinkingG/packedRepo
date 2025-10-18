@@ -29,5 +29,5 @@ func on_trigger_20009() -> bool:
 	var x = ske.get_war_skill_val_int()
 	var maxX = actor.get_level() * 2 - 1
 	x = min(x + 1, maxX)
-	ske.set_war_skill_val(x, 1)
+	ske.set_war_skill_val(x)
 	return false

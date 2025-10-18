@@ -53,5 +53,5 @@ func on_view_model_2001()->void:
 
 func effect_20466_3()->void:
 	skill_end_clear(true)
-	FlowManager.add_flow("player_ready")
+	FlowManager.add_flow("AI_before_ready")
 	return

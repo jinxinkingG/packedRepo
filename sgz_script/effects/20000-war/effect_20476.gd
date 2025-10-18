@@ -27,4 +27,5 @@ func on_trigger_20003()->bool:
 	])
 	me.attach_free_dialog(msg, 0)
 	ske.war_report()
+	map.draw_actors()
 	return false

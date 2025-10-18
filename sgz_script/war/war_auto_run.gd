@@ -266,9 +266,9 @@ func war_vstate_settlement():
 	for wv in wf.war_vstates():
 		if not wv.requires_lost_settlement():
 			continue
-		# 只自动处理援军并报告
+		# 只自动非主军势并报告
 		# 主军势放结算时处理
-		if not wv.is_reinforcement():
+		if wv == wf.defenderWV or wv == wf.attackerWV:
 			continue
 		wv.settle_after_war(true, true)
 		DataManager.set_env("战争.结算方", wv.id)
@@ -1137,17 +1137,27 @@ func try_release_loser(bf:BattleFight, loser:War_Actor) -> bool:
 	# 主将不豁免
 	if loser.actorId == loser.get_main_actor_id():
 		return false
-	if leader.actor().get_equip_feature_max("豁免敌将") <= 0:
+	var releaser = null
+	if leader.actor().get_equip_feature_max("豁免敌将") > 0:
+		releaser = leader
+	else:
+		for wa in leader.get_teammates(false, true):
+			if wa.actor().get_equip_feature_max("豁免敌将") <= 0:
+				continue
+			if wa.actor().get_equip_feature_max("二爷春秋") > 0:
+				releaser = wa
+				break
+	if releaser == null:
 		return false
-	if leader.get_controlNo() < 0:
+	if releaser.get_controlNo() < 0:
 		# AI 看心情
 		if not Global.get_rate_result(30):
 			return false
 		var wf = DataManager.get_current_war_fight()
-		wf.mercy_release(leader, loser)
+		wf.mercy_release(releaser, loser)
 		return false
 	# 玩家需要询问
-	DataManager.set_env("战争.放归.主将", leader.actorId)
+	DataManager.set_env("战争.放归.主将", releaser.actorId)
 	DataManager.set_env("战争.放归.目标", loser.actorId)
 	FlowManager.add_flow("player_mercy")
 	return true

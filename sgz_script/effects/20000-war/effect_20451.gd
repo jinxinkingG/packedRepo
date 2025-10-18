@@ -23,3 +23,17 @@ func on_trigger_20013()->bool:
 			continue
 		wa.set_buff("沉默", 1, actorId)
 	return false
+
+func on_trigger_20016() -> bool:
+	if not DataManager.is_extra_war_round():
+		return false
+	# 判断排异发动标记
+	var flags = ske.get_war_skill_val_int_array(ACTIIVE_EFFECT_ID)
+	if flags.size() < 3 or flags[2] != 2:
+		return false
+	# 所有人解除沉默（因沉默结算与额外回合配合有问题）
+	for wa in wf.get_war_actors(false):
+		var buffStatus = wa.get_buff("沉默")
+		if buffStatus["回合数"] == 1 and buffStatus["来源武将"] == actorId:
+			wa.set_buff("沉默", 0, actorId, ske.skill_name, true)
+	return false

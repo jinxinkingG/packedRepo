@@ -17,7 +17,10 @@ func on_trigger_20015()->bool:
 		var pos = enemy.position + dir
 		if enemy.can_move_to_position(pos):
 			targets.append(pos)
-	return targets.size() > 1
+	if targets.size() <= 1:
+		return false
+	ske.disable_skill_buff_type("己方", "诱发")
+	return false
 
 func effect_20273_AI_start():
 	var bf = DataManager.get_current_battle_fight()

@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 # 冒进主动技 #施加状态
-#【冒进】大战场，主动技。你可以不消耗机动力，移动3步，并获得1回合 {围困} 状态，每2回合限1次。
+#【冒进】大战场，主动技。你可以不消耗机动力，移动3步，并获得1回合 {围困} 状态，每回合限1次。
 
 const EFFECT_ID = 20643
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -27,7 +27,7 @@ func on_view_model_2001() -> void:
 
 func effect_20643_go():
 
-	ske.cost_war_cd(2)
+	ske.cost_war_cd(1)
 	ske.set_war_buff(actorId, "围困", 1)
 	# 仅记录日志
 	ske.war_report()
