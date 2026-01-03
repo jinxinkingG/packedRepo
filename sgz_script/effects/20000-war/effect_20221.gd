@@ -20,7 +20,10 @@ func on_trigger_20050() -> bool:
 		return false
 	if ske.actorId != loser.actorId:
 		return false
-	if Global.get_range_distance(me.position, loser.position) > 6:
+	if check_combat_targets([ske.actorId]).empty():
+		# 如果不可攻击，也不需要进入战斗
+		return false
+	if Global.get_range_distance(me.position, loser.position) > get_choose_distance():
 		return false
 	if me.action_point < COST_AP:
 		return false

@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #纳贿诱发效果
-#【纳贿】大战场，诱发技。你受到计策伤害的场合，发动：对方需选择，是否将100～500金交给你，若对方给金，则你的永久标记[金]+该金数，且该回合，你周围6格内的你方武将被用计时，施计方命中率+X（X=交给你的金/25）；否则，你恢复本次计策伤害一半的士兵数。每个回合限1次
+#【纳贿】大战场，诱发技。你方其他武将受到计策伤害的场合，发动：对方需选择，是否将100～500金交给你，若对方给金，则你的永久标记[金]+该金数，且该回合，你周围6格内的你方武将被用计时，施计方命中率+X（X=交给你的金/25）；否则，你恢复该队友本次计策伤害一半的士兵数。每个回合限1次。
 
 const EFFECT_ID = 20500
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -19,11 +19,18 @@ func on_trigger_20012()->bool:
 	if se.get_action_id(actorId) < 0:
 		return false
 
-	var damage = se.get_soldier_damage_for(actorId)
-	if damage <= 0:
+	var damaged = se.get_all_damaged_targets()
+	if damaged.empty():
 		return false
+	if actorId in damaged and damaged.size() == 1:
+		return false
+	for targetId in damaged:
+		var wa = DataManager.get_war_actor(targetId)
+		if me.is_teammate(wa):
+			se.skip_redo = 1
+			return true
 
-	return true
+	return false
 
 func effect_20500_AI_start():
 	goto_step("start")
@@ -60,7 +67,8 @@ func effect_20500_yes()->void:
 	var wa = DataManager.get_war_actor(fromId)
 	var wv = wa.war_vstate()
 	if wv.money < gold:
-		goto_step("no")
+		var msg = "金不足 ……"
+		play_dialog(fromId, msg, 3, 2001)
 		return
 
 	ske.change_wv_gold(-gold, wv)
@@ -72,24 +80,24 @@ func effect_20500_yes()->void:
 		DataManager.get_actor_honored_title(fromId, actorId),
 		FLAG_NAME, gold, wv.get_leader().get_name(), wv.money,
 	])
-	play_dialog(actorId, msg, 1, 2999)
+	play_dialog(actorId, msg, 1, 2990)
 	return
 
-func on_view_model_2999()->void:
-	wait_for_skill_result_confirmation("")
+func on_view_model_2001() -> void:
+	wait_for_skill_result_confirmation(FLOW_BASE + "_no")
 	return
 
 func effect_20500_no()->void:
 	var se = DataManager.get_current_stratagem_execution()
 	var fromId = se.get_action_id(actorId)
-	var damage = se.get_soldier_damage_for(actorId)
+	var damage = se.get_total_damage()
 	ske.set_war_skill_val(0, 0)
-	var recover = int(damage / 2)
-	recover = ske.change_actor_soldiers(actorId, recover)
+	var recover = damage
+	recover = ske.add_actor_soldiers(actorId, recover)
 	ske.cost_war_cd(1)
 	ske.war_report()
 
-	var msg = "哼！{0}如此铿吝\n真当我看不破汝计？\n（{1}士兵回复{2}".format([
+	var msg = "哼！{0}如此铿吝\n真当我看不破汝计？\n（{1}士兵 +{2}".format([
 		DataManager.get_actor_naughty_title(fromId, actorId),
 		actor.get_name(), recover
 	])

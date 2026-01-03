@@ -120,12 +120,20 @@ func school_2():
 		SceneManager.show_confirm_dialog("已设定禁读书", actorId)
 		LoadControl.set_view_model(429)
 		return
-	var cityId = DataManager.player_choose_city
+	var city = clCity.city(DataManager.player_choose_city)
 	var sceneId = DataManager.get_current_scene_id()
 	if sceneId == 20000:
-		var wf = DataManager.get_current_war_fight()
-		cityId = wf.target_city().ID
-	var city = clCity.city(cityId)
+		if DataManager.endless_model:
+			# hack 一下
+			# TODO 以后应该把无尽模式武将放到 #0 城作为常规操作
+			city = clCity.city(0)
+			city.clear_actors()
+			for _actorId in EndlessGame.player_actors:
+				city.add_actor(_actorId)
+		else:
+			var wf = DataManager.get_current_war_fight()
+			city = wf.target_city()
+	SkillHelper.update_all_skill_buff("SCHOOL")
 	DataManager.set_env("内政.学习武将", actorId)
 	SceneManager.hide_all_tool()
 	SceneManager.show_unconfirm_dialog("提升哪种属性？\n← →控制属性增减\n按住「选择」键查看成长信息", actorId)
@@ -136,7 +144,7 @@ func school_2():
 	var SPECIFIED = {
 		"同槽": "父亲",
 	}
-	for srb in SkillRangeBuff.find_for_city("定向学习经验折扣", cityId):
+	for srb in SkillRangeBuff.find_for_city("定向学习经验折扣", city.ID):
 		if srb.effectTagVal <= 0 or srb.effectTagVal > expRate:
 			continue
 		if not srb.skillName in SPECIFIED:

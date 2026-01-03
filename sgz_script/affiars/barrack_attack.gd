@@ -81,9 +81,9 @@ func _input_key(delta: float):
 			else:
 				SceneManager.actorlist.set_actor_picked(aindex, get_max_attack_actors());
 			actors = SceneManager.actorlist.get_picked_actors()
-			SceneManager.actorlist.rtlMessage.text = "请选将 ({0}/{1})".format([
+			SceneManager.actorlist.update_message("请选将 ({0}/{1})".format([
 				actors.size(), get_max_attack_actors(),
-			])
+			]))
 		213:#是否放弃此城
 			wait_for_yesno("attack_with_goods", "enter_barrack_menu")
 		214:#携带金、米、宝物数量
@@ -182,9 +182,13 @@ func attack_with_goods():
 
 #金米确认
 func attack_with_goods_confirm():
+	var wf = DataManager.get_current_war_fight()
 	var goods = DataManager.get_env_int_array("携带数量")
-	var msg = "携带金{0} 米{1}\n可否出征？".format([goods[0],goods[1]])
+	var msg = "携带 金{0} 米{1}\n出征{2}\n可否？".format([
+		goods[0], goods[1], wf.target_city().get_full_name()
+	])
 	SceneManager.show_yn_dialog(msg)
+	DataManager.twinkle_citys = [wf.from_city().ID, wf.target_city().ID]
 	SceneManager.show_cityInfo(true)
 	LoadControl.set_view_model(215)
 	return
@@ -267,9 +271,18 @@ func attack_animation():
 	targetCity.add_rice(goods[1])
 	#空城，直接占领
 	DataManager.set_env("对话", "")
+	# 对主将和君主单独触发
+	# 不支持流程
+	var leaders = [wf.sendActors[0]]
+	var lordId = fromCity.get_lord_id()
+	if not lordId in leaders:
+		leaders.append(lordId)
+	for leaderId in leaders:
+		SkillHelper.auto_trigger_skill(leaderId, 10024)
 	var msg = "已顺利拿下{0}".format([
 		targetCity.get_name(),
 	])
+	DataManager.player_choose_city = targetCity.ID
 	var speaker = wf.sendActors[0]
 	var mood = 2
 	SceneManager.play_affiars_animation("Barrack_Attack", "", false, msg, speaker, mood)

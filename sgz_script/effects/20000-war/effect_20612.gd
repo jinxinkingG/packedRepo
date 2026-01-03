@@ -16,7 +16,8 @@ func on_trigger_20015() -> bool:
 	var wv = me.war_vstate()
 	if wv == null:
 		return false
-	if wv.camp_actors.empty():
+	var candidates = check_combat_targets(wv.camp_actors)
+	if candidates.empty():
 		return false
 	return true
 
@@ -91,7 +92,8 @@ func get_camp_teammates() -> Array:
 	var wv = me.war_vstate()
 	if wv == null:
 		return ret
-	for targetId in wv.camp_actors:
+	var candidates = check_combat_targets(wv.camp_actors)
+	for targetId in candidates:
 		var teammate = ActorHelper.actor(targetId)
 		var soldiers = teammate.get_soldiers()
 		var inserted = false

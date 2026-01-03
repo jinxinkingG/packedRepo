@@ -18,6 +18,8 @@ func _init() -> void:
 
 	FlowManager.bind_import_flow("battle_run_start", self)
 	FlowManager.bind_import_flow("battle_init_trigger", self)
+	FlowManager.bind_import_flow("battle_init", self)
+	FlowManager.bind_import_flow("battle_decide_formation", self)
 	FlowManager.bind_import_flow("battle_init_units", self)
 	FlowManager.bind_import_flow("check_formation_ready", self)
 	FlowManager.bind_import_flow("before_turn_start_trigger", self)
@@ -29,6 +31,7 @@ func _init() -> void:
 	FlowManager.bind_import_flow("battle_over", self)
 	FlowManager.bind_import_flow("go_to_solo", self)
 	FlowManager.bind_import_flow("back_from_solo", self)
+	FlowManager.bind_import_flow("back_from_solo_clear", self)
 	FlowManager.bind_import_flow("after_formation_set_trigger", self)
 	return
 
@@ -77,11 +80,11 @@ func battle_init_trigger():
 		if SkillHelper.auto_trigger_skill(actorId, 30050, "battle_init_trigger"):
 			return
 	bf.unset_env(key)
-	FlowManager.add_flow("battle_init_units")
+	FlowManager.add_flow("battle_init")
 	return
 
-#初始化双方单位
-func battle_init_units():
+# 战斗初始化
+func battle_init():
 	var bf = DataManager.get_current_battle_fight()
 	var attacker = bf.get_attacker()
 	var defender = bf.get_defender()
@@ -90,10 +93,33 @@ func battle_init_units():
 	defender.battle_init()
 
 	# 攻防双方初始兵种设置
+	FlowManager.add_flow("battle_decide_formation")
+	return
+
+# 决定阵型，可能包括选择
+func battle_decide_formation() -> void:
+	var bf = DataManager.get_current_battle_fight()
+	if not bf.decide_attacker_formation():
+		# 需要玩家选择
+		FlowManager.force_change_controlNo(bf.get_attacker().get_controlNo())
+		FlowManager.add_flow("player_formation_decide")
+		return
+	if not bf.decide_defender_formation():
+		# 需要玩家选择
+		FlowManager.force_change_controlNo(bf.get_defender().get_controlNo())
+		FlowManager.add_flow("player_formation_decide")
+		return
+	FlowManager.add_flow("battle_init_units")
+	return
+
+# 初始化双方单位
+func battle_init_units() -> void:
+	var bf = DataManager.get_current_battle_fight()
+
 	bf.init_units()
 
 	# 战斗初始护甲
-	for wa in [attacker, defender]:
+	for wa in [bf.get_attacker(), bf.get_defender()]:
 		for found in wa.actor().get_equip_feature_all("白刃战初始护甲"):
 			var equip = found[0]
 			# 暂时用临时变量来控制次数
@@ -360,17 +386,17 @@ func after_unit_action():
 
 #等待双方布阵结束
 func check_formation_ready():
-	set_current_step(0);
-	set_next_step(0);
+	set_current_step(0)
+	set_next_step(0)
 	var bf = DataManager.get_current_battle_fight()
-	var scene_battle = SceneManager.current_scene();
-	SceneManager.hide_all_tool();
+	var scene_battle = SceneManager.current_scene()
+	SceneManager.hide_all_tool()
 	if bf.init_formation():
 		return
 
-	scene_battle.unit_updated = false;
-	FlowManager.force_change_controlNo(0);
-	DataManager.common_variable["白兵.技能触发武将"] = [bf.get_attacker_id(), bf.get_defender_id()]
+	scene_battle.unit_updated = false
+	FlowManager.force_change_controlNo(0)
+	DataManager.set_env("白兵.技能触发武将", [bf.get_attacker_id(), bf.get_defender_id()])
 	FlowManager.add_flow("after_formation_set_trigger")
 	return
 
@@ -492,60 +518,13 @@ func battle_over():
 	if bf.loserId < 0:
 		FlowManager.add_flow("check_battle_need_over")
 		return
-	var attacker = bf.get_attacker()
-	var defender = bf.get_defender()
-
-	# 战斗结束技能触发，不支持回调
-	SkillHelper.auto_trigger_skill(attacker.actorId, 30099)
-	SkillHelper.auto_trigger_skill(defender.actorId, 30099)
-
-	DataManager.battle_run = false;
-	#失败方若武将未死，则扣粮，并且后退一步	
-	var loser = bf.get_loser()
-	var winner = loser.get_battle_enemy_war_actor()
-	DataManager.unset_env("后退位置")
-	#撤退的情况
-	if not loser.actor().is_status_dead() and loser.wvId != winner.wvId:
-		var disv = loser.position - winner.position;
-		# 远程袭击均不触发后退
-		if abs(disv.x) + abs(disv.y) == 1:
-			#被定止，定止回合数-1，抵消后退
-			var stopped = loser.get_buff("定止")
-			if stopped["回合数"] > 0:
-				loser.set_buff("定止", stopped["回合数"] - 1, stopped["来源武将"], "", true)
-			else:
-				var pos = loser.position + disv
-				DataManager.common_variable["后退位置"] = {"x":pos.x, "y":pos.y}
-
-	#双方剩余兵力（包括禁用状态兵种）总量写入武将兵力属性
-	bf.attackerRemaining = int(ceil(bf.get_battle_sodiers(attacker.actorId, true, false)))
-	bf.defenderRemaining = int(ceil(bf.get_battle_sodiers(defender.actorId, true, false)))
-	var recover = bf.get_env_dict("战后兵力")
-	if str(bf.get_attacker_id()) in recover:
-		bf.attackerRemaining = Global.intval(recover[str(bf.get_attacker_id())])
-	if str(bf.get_defender_id()) in recover:
-		bf.defenderRemaining = Global.intval(recover[str(bf.get_defender_id())])
-	attacker.actor().set_soldiers(bf.attackerRemaining)
-	defender.actor().set_soldiers(bf.defenderRemaining)
-
-	SkillHelper.auto_trigger_skill(attacker.actorId, 30004, "")
-	SkillHelper.auto_trigger_skill(defender.actorId, 30004, "")
-
-	#城门血量总计
-	var doorHP = bf.get_door_hp()
-	var positon = bf.get_position()
-	if positon.x >= 0 and bf.get_terrian() == "walldoor":
-		wf.target_city().set_door_hp(positon, doorHP/3.0)
-
-	#清空白兵数据
-	DataManager.battle_units.clear();
-	DataManager.battle_first_sort=[];
-	DataManager.battle_type_sort=[];
-	SceneManager.hide_all_tool();
-	LoadControl.end_script();
+	bf.battle_over()
 	wf.battle_over()
+	SceneManager.hide_all_tool()
+	LoadControl.end_script()
+
 	SceneManager.current_scene().main_bottom.hide()
-	SceneManager.black.show();
+	SceneManager.black.show()
 	
 	FlowManager.add_flow("go_to_scene|res://scene/scene_war/scene_war.tscn");
 	FlowManager.add_flow("back_to_war")
@@ -614,13 +593,18 @@ func back_from_solo():
 			bf.change_battle_courage(wa.actorId, -10, "撤出单挑")
 			break;
 		DataManager.common_variable["白兵.行动单位"] = current_action_no;
+	FlowManager.add_flow("back_from_solo_clear")
+	return
 
+func back_from_solo_clear() -> void:
 	#刷新显示
 	SceneManager.current_scene().clear_units()
 	#防止连锁技能未执行完毕
-	var st_info = SkillHelper.get_current_skill_trigger();
-	if (st_info != null):
-		return;
+	var st = SkillHelper.get_current_skill_trigger();
+	if st != null:
+		if st.next_flow == "":
+			st.next_flow = "back_from_solo_clear"
+		return
 	FlowManager.add_flow("unit_actioned");
 	return
 

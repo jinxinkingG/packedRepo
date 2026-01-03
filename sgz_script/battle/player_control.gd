@@ -15,6 +15,8 @@ func set_view_model(view_model:int):
 
 func _init() -> void:
 	FlowManager.bind_import_flow("battle_set_formation", self)
+	FlowManager.bind_import_flow("player_formation_decide", self)
+	FlowManager.bind_import_flow("player_formation_decided", self)
 	FlowManager.bind_import_flow("battle_before_state", self)
 	FlowManager.bind_import_flow("battle_init_set_state", self)
 	FlowManager.bind_import_flow("battle_set_state", self)
@@ -79,10 +81,11 @@ func _input_key(delta: float):
 			bf.set_unit_state(actorId, battle_state.get_dict())
 			FlowManager.add_flow("check_formation_ready");
 		4:#暂停选择兵种状态
+			scene_battle.show_units_hp(true, false)
 			var battle_state = scene_battle.battle_state
 			battle_state.keyin()
 			if Global.is_action_pressed_BY():
-				scene_battle.toggle_units_hp()
+				set_view_model(41)
 				return
 			if not Global.is_action_pressed_AX():
 				return
@@ -95,7 +98,7 @@ func _input_key(delta: float):
 			if states["将"] == "战术":
 				states.erase("将")
 				bf.set_unit_state(actorId, states)
-				if not wa.can_use_tactic():
+				if not wa.can_use_tactic() and iTactic.get_actor_tactic(actorId).empty():
 					var msg = DataManager.get_env_str("战斗.战术禁用原因")
 					if msg != "":
 						SceneManager.show_confirm_dialog(msg, actorId, 3)
@@ -122,6 +125,20 @@ func _input_key(delta: float):
 			FlowManager.add_flow("check_battle_need_over")
 			bf.set_unit_state(actorId, states)
 			battle_state.hide()
+		41:
+			scene_battle.show_units_hp(true, false)
+			var currentUnitId = bf.get_env_int("当前状态单位")
+			if currentUnitId < 0:
+				currentUnitId = DataManager.get_env_int("白兵.行动单位")
+			if currentUnitId < 0:
+				currentUnitId = 0
+			scene_battle.highlight_unit(currentUnitId)
+			scene_battle.battle_unit_status.keyin()
+			if Global.is_action_pressed_BY() \
+				or Global.is_action_pressed_AX():
+				scene_battle.highlight_unit(-1)
+				set_view_model(4)
+				return
 		5:#主动投降
 			if Input.is_action_just_pressed("ANALOG_LEFT"):
 				SceneManager.actor_dialog.move_left()
@@ -228,6 +245,9 @@ func _input_key(delta: float):
 				return
 			SceneManager.actor_dialog.hide()
 			FlowManager.add_flow("wait_for_AI_tactic")
+		30:
+			if not Global.wait_for_choose_option("player_formation_decided", view_model_name):
+				return
 		_: #随时等待玩家按A暂停和B切换血量
 			if Global.is_action_pressed_AX():
 				scene_battle.player_call_pause(AutoLoad.playerNo)
@@ -273,8 +293,49 @@ func battle_set_formation():
 	set_view_model(0)
 	return
 
+func player_formation_decide() -> void:
+	var bf = DataManager.get_current_battle_fight()
+	var actorId = bf.get_env_int("阵型选择玩家")
+	var actor = ActorHelper.actor(actorId)
+	var settings = bf.get_env_array("玩家阵型选择")
+
+	var options = []
+	var prefered = actor._get_attr_str("阵型选择")
+	var preferedIndex = -1
+	for setting in settings:
+		if prefered == setting["source"]:
+			preferedIndex = options.size()
+		options.append(setting["source"])
+	SceneManager.hide_all_tool()
+	var msg = "请选择列阵技能："
+	
+	SceneManager.bind_bottom_menu(msg, options, 2)
+	SceneManager.show_cityInfo(false)
+	SceneManager.lsc_menu.show_orderbook(false)
+	SceneManager.lsc_menu.nprFace.set_actor(actorId)
+	SceneManager.lsc_menu.conActor.show()
+	if preferedIndex >= 0:
+		SceneManager.lsc_menu.lsc.cursor_index = preferedIndex
+	set_view_model(30)
+	return
+
+func player_formation_decided() -> void:
+	var bf = DataManager.get_current_battle_fight()
+	var actorId = bf.get_env_int("阵型选择玩家")
+	var actor = ActorHelper.actor(actorId)
+	var settings = bf.get_env_array("玩家阵型选择")
+	var decided = DataManager.get_env_str("目标项")
+	for setting in settings:
+		if setting["source"] == decided:
+			actor._set_attr_str("阵型选择", decided)
+			bf.apply_extra_formation_setting(actorId, setting)
+			FlowManager.add_flow("battle_decide_formation")
+			return
+	set_view_model(30)
+	return
+
 func battle_before_state():
-	set_view_model(1);
+	set_view_model(1)
 	var p:Player = DataManager.players[int(FlowManager.controlNo)];
 	var p_actor = ActorHelper.actor(p.actorId)
 	SceneManager.show_confirm_dialog("{0}大人\n请向各兵种下达命令".format([p_actor.get_name()]))
@@ -303,12 +364,12 @@ func wait_for_player_call():
 
 #战斗过程中A键暂停弹出状态
 func battle_set_state():
-	set_view_model(4);
-	Input.action_release("EMU_A");
+	set_view_model(4)
+	Input.action_release("EMU_A")
 	var bf = DataManager.get_current_battle_fight()
-	var scene_battle = SceneManager.current_scene();
-	var battle_state = scene_battle.battle_state;
-	var actorId = int(DataManager.common_variable["当前武将"]);
+	var scene_battle = SceneManager.current_scene()
+	var battle_state = scene_battle.battle_state
+	var actorId = DataManager.get_env_int("当前武将")
 	battle_state.init_data(actorId)
 	battle_state.show();
 	scene_battle.battle_tactic.hide()
@@ -453,7 +514,7 @@ func battle_free_talk():
 		sc.actorId = d.actorId
 		if sc.call(d.callback_method):
 			return
-	SceneManager.show_confirm_dialog(d.text, d.actorId, d.mood)
+	SceneManager.show_confirm_dialog(d.text, d.actorId, d.mood, d.actorId < 0)
 	set_view_model(10)
 	return
 

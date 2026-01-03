@@ -664,7 +664,8 @@
       "formula": "100",
       "anim": "Strategy_TrapLight",
       "message": "雷动九天，无妄无极！",
-      "nature": "雷"
+      "nature": "雷",
+      "feature": "道术"
     },
     "learn": {
       "minInt": 0,
@@ -735,7 +736,8 @@
       "formula": "100",
       "anim": "Strategy_Fire",
       "message": "离火之舞，岂止燎原！",
-      "nature": "火"
+      "nature": "火",
+      "feature": "道术"
     },
     "learn": {
       "minInt": 0,
@@ -768,7 +770,8 @@
       "formula": "100",
       "anim": "Strategy_Trap",
       "message": "飞砂蔽日，风卷残云！",
-      "nature": ""
+      "nature": "",
+      "feature": "道术"
     },
     "learn": {
       "minInt": 100,
@@ -804,7 +807,8 @@
       "formula": "100",
       "anim": "Strategy_Trap",
       "message": "山崩地裂，走石如龙！",
-      "nature": ""
+      "nature": "",
+      "feature": "道术"
     },
     "learn": {
       "minInt": 100,
@@ -842,7 +846,8 @@
       "formula": "100",
       "anim": "Strategy_EightStone",
       "message": "风云色变，移形换影！",
-      "nature": ""
+      "nature": "",
+      "feature": "道术"
     },
     "learn": {
       "minInt": 100,
@@ -875,7 +880,8 @@
       "formula": "100",
       "anim": "Strategy_Water",
       "message": "雨润万物生，雨疾万事迟！",
-      "nature": ""
+      "nature": "",
+      "feature": "道术"
     },
     "learn": {
       "minInt": 100,

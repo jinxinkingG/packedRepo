@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #攻心锁定技
-#【攻心】大战场，锁定技。你用伤兵计时，不计算命中率，直接结算伤害。回合结束或战争结束时，被你计策所伤的兵重新回到对方兵力中。每回合限3次
+#【攻心】大战场，锁定技。你用伤兵计时，不计算命中率，直接造成士兵流失，不视为伤害。回合结束或战争结束时，流失的兵力重新回到对方部队。每回合限3次
 
 # 用特殊 key 记录生效次数
 const KEY_TIMES = "TIMES"
@@ -24,10 +24,12 @@ func on_trigger_20010()->bool:
 		return false
 	if KEY_TIMES in recorded and recorded[KEY_TIMES] >= TIMES_LIMIT:
 		return false
+	if se.skill != ske.skill_name:
+		return false
+
 	recorded[KEY_ACTION_STATUS] = 1
 	ske.set_war_skill_val(recorded, 1)
 	se.set_must_success(actorId, ske.skill_name)
-	se.skill = ske.skill_name
 	return false
 
 func on_trigger_20011()->bool:
@@ -69,6 +71,16 @@ func on_trigger_20011()->bool:
 func on_trigger_20016()->bool:
 	# 大战场我方回合结束
 	_recover_damage()
+	return false
+
+func on_trigger_20021() -> bool:
+	var se = DataManager.get_current_stratagem_execution()
+	if not se.damage_soldier():
+		return false
+	if se.get_action_id(actorId) != actorId:
+		return false
+	se.skill = ske.skill_name
+	se.set_env("兵力流失", 1)
 	return false
 
 func on_trigger_20027()->bool:

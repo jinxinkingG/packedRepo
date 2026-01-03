@@ -33,14 +33,21 @@ func on_trigger_20003() -> bool:
 	return false
 
 func on_trigger_20005() -> bool:
-	if ske.get_war_skill_val_int() == 1:
-		set_scheme_ap_cost("ALL", 0)
-		if DataManager.get_env_int("计策.消耗.仅对比") == 0:
-			# 已扣减，标记已经用完
-			ske.set_war_skill_val(2)
-			# 取消连策
-			var se = DataManager.get_current_stratagem_execution()
-			se.skip_redo = 1
+	if ske.get_war_skill_val_int() != 1:
+		return false
+	set_scheme_ap_cost("ALL", 0)
+	return false
+
+func on_trigger_20006() -> bool:
+	if ske.get_war_skill_val_int() != 1:
+		return false
+	# 已扣减，标记已经用完
+	ske.set_war_skill_val(2)
+	# 取消连策
+	var se = DataManager.get_current_stratagem_execution()
+	se.skip_redo = 1
+	var msg = "<r【{0}】>不消耗机动力".format([ske.skill_name])
+	se.append_message(msg)
 	return false
 
 func effect_20605_start() -> void:
@@ -50,6 +57,7 @@ func effect_20605_start() -> void:
 		var target = DataManager.get_war_actor_by_position(pos)
 		if me.is_enemy(target):
 			targetIds.append(target.actorId)
+	targetIds = check_combat_targets(targetIds)
 	var msg = "选择【{0}】攻击目标，可取消"
 	if not wait_choose_actors(targetIds, msg, true):
 		goto_step("cancel")

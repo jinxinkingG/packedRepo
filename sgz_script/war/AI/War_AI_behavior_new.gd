@@ -400,7 +400,7 @@ func _try_scheme(wa:War_Actor)->bool:
 		return false
 	DataManager.clear_common_variable(["计策.ONCE"])
 	var excludedActorIds = []
-	SkillHelper.auto_trigger_skill(wa.actorId, 20026, "")
+	SkillHelper.auto_trigger_skill(wa.actorId, 20026)
 	# 先排除定止对象，加速判断
 	for w in wa.get_enemy_war_actors(true):
 		# 已经被定止的单位，如果定止回合是 1，排除
@@ -515,7 +515,10 @@ func _chase_target_or_position(wa:War_Actor, target:War_Actor, position:Vector2)
 				return true
 		# 敌人不在身边，以其位置为目标
 		position = target.position
+	# 如果自己在主城，不出击
 	var war_map = SceneManager.current_scene().war_map
+	if war_map.get_blockCN_by_position(wa.position) == "太守府":
+		return false
 	var route = war_map.aStar.get_path(wa.position, position)
 	if route.size() > 1 and _move(wa, route[1]):
 		return true

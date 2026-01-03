@@ -96,17 +96,17 @@ func stratagem_menu(evenDisabled:bool=false):
 	map.clear_can_choose_actors()
 	map.next_shrink_actors = []
 	var schemes = []
-	for scheme in wa.get_stratagems():
-		schemes.append([scheme.name, scheme.get_cost_ap(wa.actorId), ""])
+	for scheme in wa.get_stratagems(-1, -1, true):
+		schemes.append([scheme.name, 0, ""])
 	msg = "使用何种计策？\n（当前机动力:{0}".format([wa.action_point])
 
 	# 计策菜单事件触发和数据处理
-	set_env("战争.计策列表", schemes)
-	set_env("战争.计策替换", {})
-	set_env("战争.计策提示", msg)
-	SkillHelper.auto_trigger_skill(actorId, 20004, "")
-	schemes = get_env_array("战争.计策列表")
-	msg = get_env_str("战争.计策提示")
+	DataManager.set_env("战争.计策列表", schemes)
+	DataManager.set_env("战争.计策替换", {})
+	DataManager.set_env("战争.计策提示", msg)
+	SkillHelper.auto_trigger_skill(actorId, 20004)
+	schemes = DataManager.get_env_array("战争.计策列表")
+	msg = DataManager.get_env_str("战争.计策提示")
 	
 	var items = []
 	var values = []
@@ -115,16 +115,21 @@ func stratagem_menu(evenDisabled:bool=false):
 		var schemeInfo = StaticManager.get_stratagem(name)
 		if schemeInfo == null:
 			continue
-		var cost = int(scheme[1])
-		cost = schemeInfo.perform_cost(actorId, true)
+		var costInfo = schemeInfo.get_cost_info(actorId)
+		var cost = costInfo[0]
+		var current = costInfo[1]
 		var ext = ""
 		if scheme.size() > 2:
 			ext = str(scheme[2])
 		var fmt = "{0}({1})"
 		if ext != "":
 			fmt = "{0}({1}-{2})"
-		if cost <= 0:
-			fmt = "{0}"
+		if current < 0:
+			fmt = "{0}(禁用)#666666"
+		elif cost == 99999: # 特殊的不允许，比如漫卷标记不足
+			fmt = "{0}(-)#666666"
+		elif current < cost:
+			fmt += "#666666"
 		items.append(fmt.format([name, cost, ext]))
 		values.append(name)
 

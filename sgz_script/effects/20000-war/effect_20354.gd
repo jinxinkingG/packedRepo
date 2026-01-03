@@ -1,13 +1,15 @@
 extends "effect_20000.gd"
 
-#苦谏主动技和睿敛、庸非效果
+#苦谏主动技和睿敛、庸非、勉援效果
 #【苦谏】大战场，主动技。你需消耗X点机动力(X为你本回合发动本技能的次数)，并指定1名队友为目标发动。令目标选择一项效果：A. 增加1点机动力；B. 大战场攻击距离+5。若目标选择效果B，此技能本回合不能再次发动。
 #【睿敛】大战场，锁定技。你每次发动<苦谏>，机动力+1。
 #【庸非】大战场，锁定技。你发动<苦谏>时，若目标选择增加机动力，则使其额外恢复1点体力。
-
+#【勉援】大战场，锁定技。你发动<苦谏>时，若目标一意孤行，则将你兵力转移150至该目标。
 
 const EFFECT_ID = 20354
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
+
+const REINFORCE_SOLDIERS = 150
 
 const DIALOGS = [
 	"情势不明，{0}万不可冒进",
@@ -98,12 +100,25 @@ func effect_20354_5():
 	return
 
 func effect_20354_6():
-	var targetId = get_env_int("目标")
+	var targetId = DataManager.get_env_int("目标")
 	ske.cost_war_cd(1)
 	ske.change_actor_attack_range(targetId, 5)
+	var reinforced = 0
+	if SkillHelper.actor_has_skills(actorId, ["勉援"]):
+		reinforced = int(min(REINFORCE_SOLDIERS, actor.get_soldiers()))
+		if reinforced > 0:
+			reinforced = ske.sub_actor_soldiers(actorId, reinforced)
+			reinforced = ske.add_actor_soldiers(targetId, reinforced)
 	var msg = "{0}何苦一意孤行".format([
 		DataManager.get_actor_honored_title(targetId, me.actorId),
 	])
+	if reinforced > 0:
+		msg = "{0}既然意决\n{1}岂能坐视\n（支援{2} {3}士兵".format([
+			DataManager.get_actor_honored_title(targetId, actorId),
+			DataManager.get_actor_self_title(actorId),
+			ActorHelper.actor(targetId).get_name(),
+			reinforced,
+		])
 	report_skill_result_message(ske, 2004, msg, 3, -1, false)
 	return
 

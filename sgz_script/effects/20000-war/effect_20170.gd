@@ -6,17 +6,23 @@ extends "effect_20000.gd"
 const EFFECT_ID = 20170
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
-func on_trigger_20026():
+func on_trigger_20026() -> bool:
+	var distanceVal = 6
 	var setting = DataManager.get_env_dict("计策.ONCE.距离")
 	for scheme in StaticManager.stratagems:
 		if scheme.name == "火箭":
 			continue
 		if scheme.get_targeting_range(null) != 6:
 			continue
-		setting[scheme.name] = {
-			"无限": 1,
-			"最大距离": 6,
-		}
+		var dic = {}
+		if scheme.name in setting:
+			dic = setting[scheme.name]
+		dic["无限"] = 1
+		if "最大距离" in dic:
+			var distanceFix = Global.intval(dic["最大距离"])
+			distanceVal = min(distanceVal, distanceFix)
+		dic["最大距离"] = distanceVal
+		setting[scheme.name] = dic
 	DataManager.set_env("计策.ONCE.距离", setting)
 	return false
 

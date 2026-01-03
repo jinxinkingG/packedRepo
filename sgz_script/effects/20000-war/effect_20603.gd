@@ -68,6 +68,7 @@ func effect_20603_check() -> void:
 		var target = DataManager.get_war_actor_by_position(pos)
 		if me.is_enemy(target):
 			targetIds.append(target.actorId)
+	targetIds = check_combat_targets(targetIds)
 	if targetIds.empty():
 		skill_end_clear()
 		FlowManager.add_flow("player_skill_end_trigger")

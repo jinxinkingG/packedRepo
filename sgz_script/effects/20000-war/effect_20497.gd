@@ -6,7 +6,7 @@ extends "effect_20000.gd"
 const FLAG_EFFECT_ID = 20495
 const FLAG_NAME = "威"
 
-func on_trigger_20014()->bool:
+func on_trigger_20014() -> bool:
 	var dic = DataManager.get_env_dict("战争.攻击消耗")
 	var x = ske.get_skill_flags(20000, FLAG_EFFECT_ID, FLAG_NAME)
 	if x <= 0:

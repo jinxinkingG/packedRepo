@@ -5,7 +5,7 @@ extends "effect_30000.gd"
 
 func on_trigger_30021()->bool:
 	var extraDamage = int(actor.get_equip_attr_total("攻击力"))
-	var bu = ske.battle_extra_damage(extraDamage, ["将"], ["攻击"])
+	var bu = ske.battle_extra_damage(extraDamage, ["将"], ["攻击"], UNIT_TYPE_SOLDIERS)
 	if bu == null:
 		return false
 	var msg = "{0} +{1}#FF0000".format([ske.skill_name, extraDamage])

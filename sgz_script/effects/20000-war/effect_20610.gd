@@ -15,8 +15,11 @@ func effect_20610_start() -> void:
 		if not map.is_valid_position(pos):
 			continue
 		var wa = DataManager.get_war_actor_by_position(pos)
-		if wa != null and not me.is_enemy(wa):
-			continue
+		if wa != null:
+			if not me.is_enemy(wa):
+				continue
+			if check_combat_targets([wa.actorId]).empty():
+				continue
 		positions.append(pos)
 	if positions.empty():
 		var msg = "没有可以【{0}】的位置".format([ske.skill_name])

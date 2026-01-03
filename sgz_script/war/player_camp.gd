@@ -1,6 +1,6 @@
 extends "war_base.gd"
 
-const cost_ap = 10;
+const COST_AP = 10
 
 #营帐
 func _init() -> void:
@@ -76,12 +76,13 @@ func _input_key(delta: float):
 						return
 				msg = wv.check_camp_out(targetId);
 				if msg != "":
-					SceneManager.actorlist.rtlMessage.text = msg+"（已出战{0}/10）".format([camped + selected.size()])
-					return;
+					msg = msg+"（已出战{0}/10）".format([camped + selected.size()])
+					SceneManager.actorlist.update_message(msg)
+					return
 				SceneManager.actorlist.set_actor_picked(targetId)
 				selected = SceneManager.actorlist.get_picked_actors()
 				msg = "请选择出营武将（已出战{0}/10）".format([camped + selected.size()])
-				SceneManager.actorlist.rtlMessage.text = msg
+				SceneManager.actorlist.update_message(msg)
 				return
 			elif targetId != -1:
 				return
@@ -105,14 +106,12 @@ func _input_key(delta: float):
 					return;
 				match SceneManager.actor_dialog.lsc.cursor_index:
 					0:
-						var war_actor = DataManager.get_war_actor(DataManager.player_choose_actor);
-						var actor = ActorHelper.actor(war_actor.actorId)
-						war_actor.camp_in();
-						
+						var wa = DataManager.get_war_actor(DataManager.player_choose_actor);
+						wa.camp_in()
 						FlowManager.add_flow("draw_actors");
-						LoadControl._error("{0}已撤回营帐".format([actor.get_name()]));
+						LoadControl._error("{0}已撤回营帐".format([wa.get_name()]))
 					1:
-						FlowManager.add_flow("player_ready");
+						FlowManager.add_flow("player_ready")
 			if(Global.is_action_pressed_BY()):
 				if(!SceneManager.dialog_msg_complete(false)):
 					return;
@@ -170,8 +169,7 @@ func player_camp_2():
 	
 
 func player_camp_in_start():
-	LoadControl.set_view_model(171);
-	var scene_war = SceneManager.current_scene();
+	var scene_war = SceneManager.current_scene()
 	var wa = DataManager.get_war_actor(DataManager.player_choose_actor);
 	var wv = wa.war_vstate()
 	if wa.actorId == wv.main_actorId:
@@ -185,8 +183,16 @@ func player_camp_in_start():
 	if distance > 4:
 		LoadControl._error("相距主将太远\n无法撤回营帐",wa.actorId,3);
 		return
-	if wa.action_point<cost_ap:
-		LoadControl._error("至少{0}点机动力\n才能回营".format([cost_ap]),wa.actorId,3);
+	var cost = COST_AP
+	var msg = "确定消耗{0}点机动力\n回到营帐吗？"
+	var srb = SkillRangeBuff.max_for_actor("回营机动力消耗比例", wa.actorId)
+	if srb != null and srb.effectTagVal > 0:
+		cost = int(cost * (100 - srb.effectTagVal) / 100)
+		msg += "\n（【{0}】减少所需机动力".format([srb.skillName])
+	msg = msg.format([cost])
+	if wa.action_point < cost:
+		LoadControl._error("至少{0}点机动力\n才能回营".format([cost]),wa.actorId,3);
 		return
-	SceneManager.show_yn_dialog("确定消耗{0}点机动力\n回到营帐吗？".format([cost_ap]),wa.actorId);
+	SceneManager.show_yn_dialog(msg, wa.actorId)
+	LoadControl.set_view_model(171)
 	return

@@ -57,7 +57,7 @@ func _process(delta: float) -> void:
 
 	match get_view_model():
 		102:
-			Global.wait_for_confirmation("free_dialog_done", VIEW_MODEL_NAME)
+			Global.wait_for_confirmation("free_dialog_done", VIEW_MODEL_NAME, delta)
 			return
 
 	player_control._process(delta)
@@ -211,6 +211,11 @@ func vstate_control_init():
 	if extraOrderbook > 0:
 		DataManager.orderbook += extraOrderbook
 		DataManager.unset_env("额外命令书")
+	var leftOrderBooks = DataManager.get_env_dict("命令书结转")
+	if str(vstateId) in leftOrderBooks:
+		DataManager.orderbook += Global.intval(leftOrderBooks[str(vstateId)], 0)
+		leftOrderBooks.erase(str(vstateId))
+		DataManager.set_env("命令书结转", leftOrderBooks)
 	var skipping = DataManager.get_env_dict("内政.跳过内政")
 	if str(vstateId) in skipping:
 		var timing = skipping[str(vstateId)]
@@ -231,6 +236,9 @@ func back_from_war()->void:
 	var wf = DataManager.get_current_war_fight()
 	for wv in wf.war_vstates():
 		wv.back_from_war()
+	var vstateId = DataManager.vstates_sort[DataManager.vstate_no]
+	if wf.target_city().get_vstate_id() == vstateId:
+		DataManager.player_choose_city = wf.target_city().ID
 	FlowManager.add_flow("check_actor_dead")
 	return
 
@@ -485,10 +493,12 @@ func play_free_dialog()->void:
 		DataManager.twinkle_citys = d.twinkleCityIds
 	DataManager.show_orderbook = false
 	SceneManager.show_confirm_dialog(d.msg, d.actorId, d.mood)
-	if DataManager.get_current_control_sort() >= 0:
+	if d.hideCityInfo == 0 and DataManager.get_current_control_sort() >= 0:
 		DataManager.show_orderbook = false
 		DataManager.cityInfo_type = 1
 		SceneManager.show_cityInfo(true, d.cityId)
+	if d.bgm != "":
+		SoundManager.play_anim_bgm(d.bgm)
 	set_view_model(102)
 	return
 

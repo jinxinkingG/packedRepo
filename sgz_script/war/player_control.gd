@@ -1053,8 +1053,8 @@ func actor_control_menu():
 	else:
 		menu.append("回营")
 
-	if DataManager.game_mode2 == 1 || DataManager.endless_model:
-		#剧情模式或无尽模式，禁止撤退
+	if DataManager.game_mode2 == 1 or DataManager.endless_model:
+		#剧情模式或无尽模式，禁止玩家撤退
 		menu.erase("撤退")
 
 	#if DataManager.is_test_player():
@@ -1385,10 +1385,6 @@ func player_yijing() -> void:
 		FlowManager.add_flow("check_embattle_trigger")
 		return
 	wa.set_ext_variable("阴阳归道", 1)
-	for info in SkillHelper.get_actor_scene_skills(wa.actorId, 20000):
-		if Global.dic_val(info, "source", "") == "易经":
-			pass
-			#SkillHelper.remove_scene_actor_skill(20000, wa.actorId, info["skill_name"])
 	var skills = get_yijing_skills(actorId)
 	if skills.empty():
 		FlowManager.add_flow("check_embattle_trigger")

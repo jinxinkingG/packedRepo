@@ -20,8 +20,11 @@ func on_trigger_20012()->bool:
 	if leaderId == me.actorId:
 		# 自身被用计，不可发动
 		return false
-	var fromId = se.get_action_id(me.actorId)
+	var fromId = se.get_action_id(actorId)
 	if fromId < 0:
+		return false
+	if check_combat_targets([fromId]).empty():
+		# 不可以被技能发起白刃战
 		return false
 	var fromWarActor = DataManager.get_war_actor(fromId)
 	if fromWarActor == null or fromWarActor.disabled:

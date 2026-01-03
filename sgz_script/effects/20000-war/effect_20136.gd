@@ -70,7 +70,7 @@ func effect_20136_start():
 		return
 	var targets = _get_available_targets(me)
 	var msg = "选择【{0}】发动点".format([ske.skill_name])
-	if not wait_choose_actors(targets, msg):
+	if not wait_choose_actors(targets, msg, true):
 		return
 	var targetId = get_env_int("武将")
 	var targetWA = DataManager.get_war_actor(targetId)
@@ -115,7 +115,16 @@ func effect_20136_4():
 	return
 
 func _get_available_targets(me:War_Actor)->PoolIntArray:
-	return get_enemy_targets(me, false)
+	if me.actor().get_equip_feature_max("天遁") <= 0:
+		return get_enemy_targets(me, false)
+	var ret = []
+	for targetId in get_enemy_targets(me, true):
+		var wa = DataManager.get_war_actor(targetId)
+		var terrian = map.get_blockCN_by_position(wa.position)
+		if terrian in ["城门", "太守府"]:
+			continue
+		ret.append(targetId)
+	return ret
 
 func _perform_skill(isAI:bool, nextViewModel:int=-1)->void:
 	var se = DataManager.get_current_stratagem_execution()

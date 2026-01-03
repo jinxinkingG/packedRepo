@@ -12,7 +12,7 @@ func on_trigger_20018()->bool:
 	targetWA.refresh_poker_random()
 
 	var op = ">="
-	if me.poker_point < targetWA.poker_point:
+	if me.get_poker_point_diff(targetWA) < 0:
 		op = "<"
 	var msg = "吉凶成败，皆由天意\n【{1}】点数{2} {3} {5}".format([
 		me.get_name(), ske.skill_name, me.poker_point,
@@ -26,8 +26,8 @@ func on_trigger_20017()->bool:
 	var targetWA = DataManager.get_war_actor(se.targetId)
 	if targetWA == null or targetWA.disabled:
 		return false
-	var x = -3
-	if me.poker_point >= targetWA.poker_point:
-		x = 12
+	var x = 12
+	if me.get_poker_point_diff(targetWA) < 0:
+		x = -3
 	change_scheme_chance(me.actorId, ske.skill_name, x)
 	return false

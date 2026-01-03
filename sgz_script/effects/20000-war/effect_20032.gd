@@ -11,7 +11,7 @@ func effect_20032_start() -> void:
 	var wf = DataManager.get_current_war_fight()
 	if not me.get_day_attacked_actors(wf.date).empty():
 		var msg = "已进行过攻击\n不能发动"
-		play_dialog(me.actorId, msg, 3, 2999)
+		play_dialog(actorId, msg, 3, 2999)
 		return
 	if not wait_choose_actors(get_enemy_targets(me, true)):
 		return
@@ -43,8 +43,7 @@ func effect_20032_confirmed() -> void:
 	
 	ske.cost_war_cd(1)
 
-	var point = Global.get_random(0, 9)
-	ske.change_actor_five_phases(targetId, targetWA.five_phases, point)
+	ske.change_actor_five_phases(targetId, targetWA.five_phases, -1)
 
 	var msg = "吾向来恩怨分明!\n（敌将点数刷新为{0}".format([targetWA.poker_point])
 	ske.play_war_animation("Strategy_Talking", 2002, targetId, msg, 2)
@@ -55,19 +54,17 @@ func on_view_model_2002():
 	return
 
 func effect_20032_perform() -> void:
+	if actor.get_equip_feature_max("二爷春秋") > 0:
+		goto_step("choose")
+		return
+
 	var targetId = DataManager.get_env_int("目标")
 	var targetWA = DataManager.get_war_actor(targetId)
 
-	var msg = "将军之恩，某早已报过！"
-	if targetWA.poker_point >= me.poker_point:
-		ske.set_war_buff(me.actorId, "禁止攻击移动", 1)
-		ske.change_actor_hp(me.actorId, HP_RECOVER)
-		msg = "义字不可违，君恩不敢忘！"
+	if me.get_poker_point_diff(targetWA) > 0:
+		goto_step("easy")
 	else:
-		ske.set_war_buff(targetId, "沉默", 1)
-	ske.war_report()
-
-	report_skill_result_message(ske, 2003, msg, 3)
+		goto_step("hard")
 	return
 
 func on_view_model_2003():
@@ -77,3 +74,41 @@ func on_view_model_2003():
 func effect_20032_report() -> void:
 	report_skill_result_message(ske, 2003)
 	return
+
+func effect_20032_choose() -> void:
+	var msg = "（今当如何 ……"
+	var options = ["恩怨已清", "旧情难忘"]
+	play_dialog(actorId, msg, 2, 2004, true, options)
+	return
+
+	report_skill_result_message(ske, 2003, msg, 3)
+
+func on_view_model_2004():
+	var option = wait_for_skill_option()
+	match option:
+		0:
+			goto_step("easy")
+		1:
+			goto_step("hard")
+	return
+
+func effect_20032_easy() -> void:
+	var targetId = DataManager.get_env_int("目标")
+
+	ske.set_war_buff(targetId, "沉默", 1)
+	ske.war_report()
+
+	var msg = "将军之恩，某早已报过！"
+	report_skill_result_message(ske, 2003, msg, 3)
+	return
+
+func effect_20032_hard() -> void:
+	ske.set_war_buff(me.actorId, "禁止攻击移动", 1)
+	ske.change_actor_hp(me.actorId, HP_RECOVER)
+	ske.war_report()
+
+	var msg = "义字不可违，君恩不敢忘！"
+	report_skill_result_message(ske, 2003, msg, 3)
+	return
+
+

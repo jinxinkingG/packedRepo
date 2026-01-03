@@ -177,6 +177,16 @@
     }
   },
   {
+    "name": "禁诱",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "禁用诱发技",
+      "settlement": "己方",
+      "desc": "负面状态。禁用诱发技。"
+    }
+  },
+  {
     "name": "中毒",
     "data": {
       "scene": "大战场",
@@ -409,6 +419,42 @@
       "label": "骑兵斜角攻击",
       "settlement": "己方",
       "desc": "小战场战术状态。\n骑兵可以斜向攻击。"
+    }
+  },
+  {
+    "name": "探明",
+    "data": {
+      "scene": "大战场",
+      "type": "正面",
+      "label": "免疫定止、免疫陷阱",
+      "settlement": "敌方",
+      "desc": "正面状态。你免疫定止和陷阱伤害。"
+    }
+  },
+  {
+    "name": "激励",
+    "data": {
+      "scene": "大战场",
+      "type": "正面",
+      "label": "激励",
+      "settlement": "敌方",
+      "desc": "正面状态。白刃战士气额外 +5。"
+    }
+  },
+  {
+    "name": "斩道",
+    "type": "area",
+    "data": {
+      "scene": "大战场",
+      "type": "负面",
+      "label": "触发",
+      "settlement": "己方"
+    },
+    "area": {
+      "radius": 0,
+      "type": "任意",
+      "target": "敌方",
+      "terrian": "树林、河流、山地、平原、沼泽"
     }
   }
 ]

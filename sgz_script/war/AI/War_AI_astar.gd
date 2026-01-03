@@ -71,6 +71,49 @@ func get_clear_path(from:Vector2, to:Vector2, limitedDistance = -1)->PoolVector2
 		set_point_disabled(id, false)
 	return ret
 
+# 寻找水流可触及的位置
+# 规则：城墙阻断、城门太守府不阻断、部队不阻断、指定范围
+func get_flood_range(from:Vector2, leftTop:Vector2, rightDown:Vector2)->PoolVector2Array:
+	var ret = []
+	var disabled = []
+	# 范围外的节点禁用
+	# 不过，范围需要加上 from 所在的行列
+	for id in blockById:
+		var p = _get_id_vector(int(id))
+		if p.x == from.x and p.y >= leftTop.y and p.y <= rightDown.y:
+			continue
+		if p.y == from.y and p.x >= leftTop.x and p.x <= rightDown.x:
+			continue
+		if p.x < leftTop.x or p.y < leftTop.y \
+			or p.x > rightDown.x or p.y > rightDown.y:
+			disabled.append(int(id))
+			continue
+	for id in disabled:
+		set_point_disabled(id, true)
+	# 城门、太守府临时解禁
+	for b in idsByBlockCN["城门"]:
+		set_point_disabled(int(b), false)
+	for b in idsByBlockCN["太守府"]:
+		set_point_disabled(int(b), false)
+	# 队友临时解禁
+	enable_brothers()
+	# 敌军临时解禁
+	enable_enemies()
+	for x in range(leftTop.x, rightDown.x + 1):
+		for y in range(leftTop.y, rightDown.y + 1):
+			var p = Vector2(x, y)
+			if get_path(from, p).empty():
+				continue
+			ret.append(p)
+	# 解除临时禁用
+	for id in disabled:
+		set_point_disabled(id, false)
+	# 队友恢复禁用
+	disable_brothers()
+	# 敌军恢复禁用
+	disable_enemies()
+	return ret
+
 # 寻找技能可触及的路径
 # 规则：城墙阻断、途中敌军阻断、队友不阻断
 # 但不可通过强制禁用的位置

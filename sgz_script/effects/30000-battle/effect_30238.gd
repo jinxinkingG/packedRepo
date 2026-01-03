@@ -9,21 +9,17 @@ func on_trigger_30003()->bool:
 	if ske.get_war_skill_val_int(ACTIVE_EFFECT_ID) <= 0:
 		return false
 	ske.set_war_skill_val(0, 0, ACTIVE_EFFECT_ID)
-	ske.set_battle_skill_val(1)
-	var formationKey = "白兵.阵型优先.{0}".format([actorId])
-	if DataManager.get_env_int(formationKey) > 5:
-		return false
-
-	var setting = DataManager.get_env_dict("兵种数量")
-	var sorting = DataManager.get_env_array("分配顺序")
-	DataManager.set_env("兵种数量", {"步":10,"弓":0,"骑":0})
-	DataManager.set_env("分配顺序", ["步"])
-	DataManager.set_env(formationKey, 5)
-
+	bf.update_extra_formation_setting(
+		actorId, ske.skill_name, "场合", {
+			"兵种数量": {"步":10,"弓":0,"骑":0},
+			"分配顺序": ["步"],
+			"小战场标记ID": [30238],
+			"禁用兵种转换": 1,
+		}
+	)
 	var recover = bf.get_env_dict("战后兵力")
 	recover[str(actorId)] = actor.get_soldiers()
 	bf.set_env("战后兵力", recover)
-
 	return false
 
 func on_trigger_30024()->bool:

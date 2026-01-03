@@ -14,11 +14,13 @@ const STRATAGEM_DIC = {
 	"共杀": "劫火*"
 }
 
-func on_trigger_20005()->bool:
-	var cost = get_env_int("计策.消耗.所需")
-	set_scheme_ap_cost("火计", cost - 1)
-	set_scheme_ap_cost("火箭", cost - 2)
-	set_scheme_ap_cost("劫火", cost - 3)
+func on_trigger_20005() -> bool:
+	var settings = DataManager.get_env_dict("计策.消耗")
+	var name = settings["计策"]
+	var cost = int(settings["所需"])
+	reduce_scheme_ap_cost("火计", cost - 1)
+	reduce_scheme_ap_cost("火箭", cost - 2)
+	reduce_scheme_ap_cost("劫火", cost - 3)
 	return false
 
 func on_trigger_20012()->bool:

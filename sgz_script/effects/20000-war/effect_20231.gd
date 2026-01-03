@@ -122,7 +122,8 @@ func effect_20231_4():
 
 func _get_available_targets(me:War_Actor)->PoolIntArray:
 	var map = SceneManager.current_scene().war_map
-	var targets = get_enemy_targets(me)
+	var allowWalls = me.actor().get_equip_feature_max("天遁") > 0
+	var targets = get_enemy_targets(me, allowWalls)
 	# 扩大两格检查有没有受伤的队友
 	var teammates = get_teammate_targets(me, get_choose_distance() + 2)
 	teammates.append(me.actorId)

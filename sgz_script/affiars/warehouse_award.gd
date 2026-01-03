@@ -27,7 +27,7 @@ func _init() -> void:
 	FlowManager.bind_signal_method("award_people_5", self)
 	
 	FlowManager.clear_pre_history.append("award_menu");
-	FlowManager.clear_pre_history.append("award_actor_menu");
+	FlowManager.clear_pre_history.append("award_actor_menu")
 	return
 
 #按键操控
@@ -188,7 +188,8 @@ func award_people_4():
 			timesBuff.skillName, int(timesBuff.effectTagVal),
 		])
 	DataManager.set_env("对话", msg)
-	SceneManager.show_unconfirm_dialog("");
+	SceneManager.show_unconfirm_dialog("")
+	SkillHelper.auto_trigger_skill(satrap.actorId, 10025)
 	OrderHistory.record_order(city.get_vstate_id(), "赏赐民众", satrap.actorId)
 	SceneManager.play_affiars_animation("Warehouse_AwardPop","award_people_5");
 	return
@@ -274,32 +275,12 @@ func award_actor_money_5():
 	LoadControl.set_view_model(-1)
 	var gold = DataManager.get_env_int("花费")
 	var actor = ActorHelper.actor(DataManager.player_choose_actor)
-	var current = actor.get_loyalty()
 	var city = clCity.city(DataManager.player_choose_city)
 	var vstateId = city.get_vstate_id()
 	var lord = ActorHelper.actor(city.get_lord_id())
-	var val = add_actor_loyalty(lord, actor, gold)
-	city.add_gold(-gold)
-	var msg = "谢{0}厚情\n（忠诚度上升{1}，现为{2}"
-	var extra = SkillRangeBuff.max_val_for_city("赏赐武将效果", city.ID)
-	if extra > 0:
-		extra = actor.add_loyalty(extra)
-		if extra > 0:
-			msg = "谢{0}厚情\n忠诚度上升{1} (+{3})\n现为{2}"
-	else:
-		extra = 0
-	if actor.get_moral() < 50 and current < 70:
-		var extra2 = SkillRangeBuff.max_val_for_city("赏金低德武将效果", city.ID)
-		if extra2 > 0:
-			extra2 = actor.add_loyalty(extra2)
-			if extra2 > 0:
-				extra += extra2
-				msg = "却之不恭，多多益善\n忠诚度上升{1} (+{3})\n现为{2}"
-	msg = msg.format([
-		DataManager.get_actor_honored_title(lord.actorId, actor.actorId),
-		val, actor.get_loyalty(), extra
-	])
-	DataManager.set_env("对话", msg)
+	var ret = add_actor_loyalty(city, lord, actor, gold)
+	DataManager.set_env("对话", ret[0])
+	DataManager.set_env("表情", ret[1])
 	SceneManager.show_unconfirm_dialog("")
 	DataManager.set_env("赏赐物", "金|{0}".format([gold]))
 	OrderHistory.record_order(city.get_vstate_id(), "赏赐武将", actor.actorId)
@@ -313,7 +294,8 @@ func award_actor_money_5():
 #确认对话
 func award_actor_money_6():
 	var msg = DataManager.get_env_str("对话")
-	SceneManager.play_affiars_animation("Warehouse_AwardActor", "", false, msg, DataManager.player_choose_actor, 1)
+	var mood = DataManager.get_env_int("表情")
+	SceneManager.play_affiars_animation("Warehouse_AwardActor", "", false, msg, DataManager.player_choose_actor, mood)
 	LoadControl.set_view_model(336)
 	return
 
@@ -353,32 +335,12 @@ func award_actor_treasure_3():
 func award_actor_treasure_4():
 	LoadControl.set_view_model(-1)
 	var actor = ActorHelper.actor(DataManager.player_choose_actor)
-	var current = actor.get_loyalty()
 	var city = clCity.city(DataManager.player_choose_city)
 	var vstateId = city.get_vstate_id()
 	var lord = ActorHelper.actor(city.get_lord_id())
-	var val = add_actor_loyalty(lord, actor, 0, 1)
-	city.add_city_property("宝", -1)
-	var msg = "谢{0}殊遇\n（忠诚度上升{1}点，现为{2}"
-	var extra = SkillRangeBuff.max_val_for_city("赏赐武将效果", city.ID)
-	if extra > 0:
-		extra = actor.add_loyalty(extra)
-		if extra > 0:
-			msg = "谢{0}殊遇\n忠诚度上升{1} (+{3})\n现为{2}"
-	else:
-		extra = 0
-	if actor.get_moral() < 50 and current < 70:
-		var extra2 = SkillRangeBuff.max_val_for_city("赏宝低德武将效果", city.ID)
-		if extra2 > 0:
-			extra2 = actor.add_loyalty(extra2)
-			if extra2 > 0:
-				extra += extra2
-				msg = "却之不恭，多多益善\n忠诚度上升{1} (+{3})\n现为{2}"
-	msg = msg.format([
-		DataManager.get_actor_honored_title(lord.actorId, actor.actorId),
-		val, actor.get_loyalty(), extra
-	])
-	DataManager.set_env("对话", msg)
+	var ret = add_actor_loyalty(city, lord, actor, 0, 1)
+	DataManager.set_env("对话", ret[0])
+	DataManager.set_env("表情", ret[1])
 	SceneManager.show_unconfirm_dialog("")
 	DataManager.set_env("赏赐物", "宝|1")
 	OrderHistory.record_order(city.get_vstate_id(), "赏赐武将", actor.actorId)
@@ -392,6 +354,7 @@ func award_actor_treasure_4():
 #确认对话
 func award_actor_treasure_5():
 	var msg = DataManager.get_env_str("对话")
-	SceneManager.play_affiars_animation("Warehouse_AwardActor", "", false, msg, DataManager.player_choose_actor, 1)
+	var mood = DataManager.get_env_int("表情")
+	SceneManager.play_affiars_animation("Warehouse_AwardActor", "", false, msg, DataManager.player_choose_actor, mood)
 	LoadControl.set_view_model(345)
 	return

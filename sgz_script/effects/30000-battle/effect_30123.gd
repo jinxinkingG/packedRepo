@@ -8,11 +8,11 @@ const ENHANCEMENT = {
 }
 
 func on_trigger_30003()->bool:
-	var formationKey = "白兵.阵型优先.{0}".format([actorId])
-	if DataManager.get_env_int(formationKey) > 1:
-		return false
-	DataManager.set_env(formationKey, 1)
-	DataManager.set_env("兵种数量", {"步":6,"弓":0,"骑":4})
+	bf.update_extra_formation_setting(
+		actorId, ske.skill_name, "常规", {
+			"兵种数量": {"步":6, "弓":0, "骑":4},
+		}
+	)
 	return false
 
 func on_trigger_30009()->bool:

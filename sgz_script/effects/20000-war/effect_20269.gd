@@ -1,6 +1,6 @@
 extends "effect_20000.gd"
 
-#奔袭主动技实现
+# 奔袭主动技实现
 #【奔袭】大战场，主动技。你可以指定一个对方武将，消耗（2+2x）点机动力，你与该武将进入白刃战。x＝你和该武将的横纵距离的较大值。
 
 const EFFECT_ID = 20269
@@ -10,7 +10,7 @@ const EXTRA_AP = 2
 
 func effect_20269_start() -> void:
 	var targets = []
-	for targetId in get_enemy_targets(me):
+	for targetId in get_combat_targets(me):
 		var targetWA = DataManager.get_war_actor(targetId)
 		var distance = Global.get_range_distance(me.position, targetWA.position)
 		if distance <= 1:

@@ -19,4 +19,19 @@ func on_trigger_20040()->bool:
 	ske.change_actor_ap(prevSke.actorId, 1)
 	ske.war_report()
 
+	var from = DataManager.get_war_actor(prevSke.actorId)
+	var msg = "{0}之意，{1}领会得".format([
+		DataManager.get_actor_honored_title(from.actorId, actorId),
+		DataManager.get_actor_self_title(actorId),
+	])
+	var mood = 2
+	if me.is_enemy(from):
+		msg = "承{0}青眼，必有回报".format([
+			DataManager.get_actor_naughty_title(from.actorId, actorId),
+		])
+		mood = 0
+	msg += "\n（【{0}】机动力 -1\n（{1}机动力 +1".format([
+		ske.skill_name, from.get_name(),
+	])
+	me.attach_free_dialog(msg, mood)
 	return false

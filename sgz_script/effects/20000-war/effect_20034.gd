@@ -18,14 +18,14 @@ func on_trigger_20015()->bool:
 	# 机动力不足，无法发动
 	if me.action_point < COST_AP:
 		return false
+	# AI 判断
+	if me.get_controlNo() < 0 and \
+		me.get_soldiers() <= bf.get_defender().get_soldiers() \
+		and me.get_soldiers() < 1500:
+		return false
 	return true
 
 func effect_20034_AI_start():
-	var bf = DataManager.get_current_battle_fight()
-	if me.get_soldiers() <= bf.get_defender().get_soldiers() \
-		and me.get_soldiers() < 1500:
-		LoadControl.end_script()
-		return
 	goto_step("2")
 	return
 

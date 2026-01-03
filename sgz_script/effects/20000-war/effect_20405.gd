@@ -58,7 +58,7 @@ func effect_20405_3():
 		actor.get_name(), actor.get_side(),
 	])
 	SceneManager.show_actor_info(actor.actorId, true, msg)
-	SkillHelper.auto_trigger_skill(actor.actorId, 20013, "")
+	SkillHelper.auto_trigger_skill(actor.actorId, 20013)
 	LoadControl.set_view_model(2999)
 	return
 

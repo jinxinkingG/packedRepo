@@ -9,11 +9,11 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 const LOSS_AP = 3
 
 func check_AI_perform_20000()->bool:
-	if false and actor.get_hp() < 50:
+	if actor.get_hp() < 50:
 		return false
 	var selectedId = -1
 	var leastPower = 250 * 1000
-	for targetId in get_enemy_targets(me):
+	for targetId in get_combat_targets(me):
 		var targetActor = ActorHelper.actor(targetId)
 		# 模拟计算士气
 		var morale = me.calculate_battle_morale(targetActor.get_power(), targetActor.get_leadership())
@@ -31,7 +31,7 @@ func effect_20537_AI_start():
 	return
 
 func effect_20537_start():
-	var targets = get_enemy_targets(me)
+	var targets = get_combat_targets(me)
 	if not wait_choose_actors(targets, "选择敌军发动【{0}】"):
 		return
 	LoadControl.set_view_model(2000)
@@ -63,8 +63,7 @@ func effect_20537_3() -> void:
 	if targetWA.action_point < LOSS_AP:
 		goto_step("fight")
 		return
-	var ctrlNo = targetWA.get_controlNo()
-	if ctrlNo < 0:
+	if targetWA.get_controlNo() < 0:
 		# 有机动力的情况下，AI 总是避战
 		goto_step("scared")
 		return

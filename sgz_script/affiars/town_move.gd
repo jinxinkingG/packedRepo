@@ -43,8 +43,9 @@ func _input_key(delta: float):
 				SceneManager.show_unconfirm_dialog("无法移动至该城")
 				return
 			
-			DataManager.common_variable["目标城"] = cityId;
-			FlowManager.add_flow("move_2");
+			DataManager.set_env("目标城", cityId)
+			scene_affiars.reset_view()
+			FlowManager.add_flow("move_2")
 		122: #移动流程：选择武将
 			if not wait_for_choose_actor("enter_town_menu"):
 				return
@@ -66,15 +67,18 @@ func _input_key(delta: float):
 
 #武将移动：选城(121)
 func move_start():
-	LoadControl.set_view_model(121);
-	SceneManager.clear_bottom();
-	DataManager.twinkle_citys.clear();
 	var scene_affiars:Control = SceneManager.current_scene();
 	var vstate_controlNo = DataManager.get_current_control_sort()
 	var player:Player = DataManager.players[vstate_controlNo];
-	scene_affiars.cursor.show();
-	scene_affiars.set_city_cursor_position(DataManager.player_choose_city);
-	SceneManager.show_unconfirm_dialog("向哪座城池移动？\n请指定");
+	scene_affiars.cursor.show()
+	var cityId = DataManager.player_choose_city
+	scene_affiars.set_city_cursor_position(cityId)
+	SceneManager.clear_bottom()
+	DataManager.twinkle_citys.clear()
+	SceneManager.show_unconfirm_dialog("向哪座城池移动？\n请指定")
+	scene_affiars.show_movable_city_lines(cityId)
+	LoadControl.set_view_model(121)
+	return
 
 #武将移动：选人
 func move_2():

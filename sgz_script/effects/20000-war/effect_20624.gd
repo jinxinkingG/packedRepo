@@ -7,7 +7,7 @@ extends "effect_20000.gd"
 const EFFECT_ID = 20624
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
-func on_trigger_20020()->bool:
+func on_trigger_20020() -> bool:
 	var bf = DataManager.get_current_battle_fight()
 	var loser = bf.get_loser()
 	if loser == null:
@@ -59,17 +59,18 @@ func effect_20624_selected() -> void:
 	ske.cost_war_cd(1)
 
 	map.draw_actors()
-	var targets = []
+	var targetIds = []
 	for dir in StaticManager.NEARBY_DIRECTIONS:
 		pos = me.position + dir
 		var wa = DataManager.get_war_actor_by_position(pos)
 		if me.is_enemy(wa):
-			targets.append(wa.actorId)
-	if targets.empty():
+			targetIds.append(wa.actorId)
+	targetIds = check_combat_targets(targetIds)
+	if targetIds.empty():
 		LoadControl.end_script()
 		return
 
-	wait_choose_actors(targets, "选择攻击目标")
+	wait_choose_actors(targetIds, "选择攻击目标")
 	LoadControl.set_view_model(2001)
 	return
 

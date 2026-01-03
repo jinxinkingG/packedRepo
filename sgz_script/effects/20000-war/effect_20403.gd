@@ -10,12 +10,12 @@ const COST_DOWNS = [
 ]
 
 func on_trigger_20005()->bool:
-	var name = DataManager.get_env_str("计策.消耗.计策名")
-	var cost = DataManager.get_env_int("计策.消耗.所需")
+	var dic = ske.get_war_skill_val_dic()
+	var settings = DataManager.get_env_dict("计策.消耗")
+	var name = settings["计策"]
+	var cost = int(settings["所需"])
 	cost = get_scheme_cost(name, cost)
-	if cost <= 0:
-		return false
-	set_scheme_ap_cost(name, cost)
+	reduce_scheme_ap_cost(name, cost)
 	return false
 
 func on_trigger_20004()->bool:

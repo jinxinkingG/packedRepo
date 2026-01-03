@@ -9,13 +9,14 @@ const ENHANCEMENT = {
 }
 
 func on_trigger_30003() -> bool:
-	var formationKey = "白兵.阵型优先.{0}".format([me.actorId])
-	if get_env_int(formationKey) > 1:
-		return false
-	set_env(formationKey, 1)
-	set_env("兵种数量", {"步":4,"弓":6,"骑":0})
-	set_env("分配顺序", ["弓","步"])
-	ske.set_battle_skill_val(1)
+	bf.update_extra_formation_setting(
+		actorId, ske.skill_name, "常规", {
+			"兵种数量": {"步":4,"弓":6,"骑":0},
+			"分配顺序": ["弓","步"],
+			"信息": "无当飞军列阵",
+			"小战场标记ID": [30063],
+		}
+	)
 	return false
 
 func on_trigger_30024() -> bool:

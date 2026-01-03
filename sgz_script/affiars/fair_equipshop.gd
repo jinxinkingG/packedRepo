@@ -99,20 +99,10 @@ func _input_key(delta: float):
 				menu.show_all_msg()
 				return
 			LoadControl.set_view_model(-1)
-			var actorId = DataManager.player_choose_actor
-			var remaining = equip.remaining()
-			if remaining == 0:
-				_error("此装备已被卖完")
-				return
-			if not equip.actor_can_use(actorId):
-				_error("无论如何\n亦无法掌握这等宝物", actorId, 3)
-				return
-			var price = get_equip_price(equip)
-			var gold = get_available_gold()
-			if price > gold:
-				_error("军资不足以支付装备购买", actorId, 3)
-				return
 			DataManager.set_env("购买装备", equip.id)
+			var actorId = DataManager.player_choose_actor
+			if SkillHelper.auto_trigger_skill(actorId, 10007, "equip_2"):
+				return
 			FlowManager.add_flow("equip_2")
 		411:#选人
 			if not wait_for_choose_actor("enter_fair_menu"):
@@ -262,12 +252,23 @@ func equip_start():
 
 #命令书
 func equip_2():
+	var cityId = DataManager.player_choose_city
 	var actorId = DataManager.player_choose_actor
 	var equipType = DataManager.get_env_str("大类型")
 	var equipId = DataManager.get_env_int("购买装备")
 	var equip = clEquip.equip(equipId, equipType)
-	var price = get_equip_price(equip)
+	var remaining = equip.remaining()
+	if remaining == 0:
+		_error("此装备已被卖完")
+		return
+	if not equip.actor_can_use(actorId):
+		_error("无论如何\n亦无法掌握这等宝物", actorId, 3)
+		return
+	var price = equip.price_for(cityId)
 	var gold = get_available_gold()
+	if price > gold:
+		_error("军资不足以支付装备购买", actorId, 3)
+		return
 	var limit = int(gold / price)
 	limit = min(9, limit)
 	if equip.remaining() > 0:
@@ -283,36 +284,37 @@ func equip_2():
 	return
 
 func equip_confirm():
+	var cityId = DataManager.player_choose_city
 	var actorId = DataManager.player_choose_actor
 	var equipType = DataManager.get_env_str("大类型")
 	var equipId = DataManager.get_env_int("购买装备")
 	var equip = clEquip.equip(equipId, equipType)
-	var price = get_equip_price(equip)
+	var price = equip.price_for(cityId)
 	var gold = get_available_gold()
 	var cnt = DataManager.get_env_int("装备数量")
+	var cost = min(gold, cnt * price)
 	match DataManager.get_current_scene_id():
 		10000:
 			#命令书确认
 			var msg = "消耗1枚命令书\n花费{0}金\n购入{1}件{2}，可否？".format([
-				cnt * price, cnt, equip.name(),
+				cost, cnt, equip.name(),
 			])
 			SceneManager.show_yn_dialog(msg, actorId)
 			SceneManager.show_cityInfo(true)
 		20000:
 			var msg = "花费{0}金\n购入{1}件{2}，可否？".format([
-				cnt * price, cnt, equip.name(),
+				cost, cnt, equip.name(),
 			])
 			SceneManager.show_yn_dialog(msg, actorId)
 	LoadControl.set_view_model(412)
 	return
 
-
 #命令消耗动画
 func equip_3():
+	LoadControl.set_view_model(-1)
 	match DataManager.get_current_scene_id():
 		10000:
 			SceneManager.dialog_use_orderbook_animation("equip_4")
-			LoadControl.set_view_model(413)
 		20000:
 			FlowManager.add_flow("equip_done")
 	return
@@ -322,18 +324,20 @@ func equip_4():
 	if DataManager.get_current_scene_id() == 20000:
 		FlowManager.add_flow("equip_done")
 		return
+	var cityId = DataManager.player_choose_city
 	var vstateId = DataManager.vstates_sort[DataManager.vstate_no]
 	var vs = clVState.vstate(vstateId)
 	var actor = ActorHelper.actor(DataManager.player_choose_actor)
-	var city = clCity.city(DataManager.player_choose_city)
+	var city = clCity.city(cityId)
 	var cnt = DataManager.get_env_int("装备数量")
 	var equipId = DataManager.get_env_int("购买装备")
 	var equipType = DataManager.get_env_str("大类型")
 	var equip = clEquip.equip(equipId, equipType)
-	var price = get_equip_price(equip)
+	var price = equip.price_for(cityId)
 	if equip.remaining() > 0:
 		cnt = min(equip.remaining(), cnt)
-	var cost = price * cnt
+	var gold = get_available_gold()
+	var cost = min(gold, price * cnt)
 	city.add_gold(-cost)
 	if equip.remaining() >= 0:
 		equip.dec_count(cnt)
@@ -371,15 +375,6 @@ func equip_finish():
 	LoadControl.view_model_name = prev_view_model_name
 	LoadControl.set_view_model(2009)
 	return
-
-func get_equip_price(equip:clEquip.EquipInfo)->int:
-	var price = equip.price()
-	if equip.type == "道具" and equip.subtype() == "书":
-		# 旧版治典有这个折扣，目前暂无技能实装此 buff
-		var priceOff = SkillRangeBuff.max_val_for_city("书籍折扣", DataManager.player_choose_city)
-		if priceOff > 0 and priceOff < 1:
-			price = int(price * priceOff)
-	return price
 
 # 提示错误信息，兼容战场进入和内政进入的情况
 func _error(msg:String, actorId:int=-1, mood:int=2)->void:

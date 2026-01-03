@@ -326,6 +326,7 @@ func _push_move(dir:Vector2):
 	DataManager.set_env("移动", 1)
 	DataManager.set_env("移动消耗", cost)
 	DataManager.set_env("移动中止", 0)
+
 	#插入移动技能判定
 	SkillHelper.auto_trigger_skill(wa.actorId, 20003, "")
 	if DataManager.get_env_int("移动中止") > 0:
@@ -333,7 +334,8 @@ func _push_move(dir:Vector2):
 		FlowManager.add_flow("actor_move_stop")
 		return
 	msg = DataManager.get_env_str("对白")
-	wa.after_move()
+	if wa.after_move():
+		return
 	SceneManager.show_unconfirm_dialog(msg, wa.actorId)
 	SceneManager.dialog_msg_complete(true)
 	#DataManager.game_trace("MOVE")
@@ -370,7 +372,8 @@ func _pop_move():
 	#插入移动技能判定
 	SkillHelper.auto_trigger_skill(wa.actorId, 20003, "")
 	msg = DataManager.get_env_str("对白")
-	wa.after_move(false)
+	if wa.after_move(false):
+		return
 
 	SceneManager.show_unconfirm_dialog(msg, wa.actorId)
 	SceneManager.dialog_msg_complete(true)
@@ -400,37 +403,25 @@ func actor_move_stopped():
 		return
 	DataManager.set_env("历史移动记录", [])
 	#按A时，移动停止
-	var dic_areas = wa.check_has_areas_by_labels(["伏兵"])
-	if not dic_areas.empty():
-		var fromActor = ActorHelper.actor(dic_areas["from_actorId"])
-		var damage = int(Global.get_random(30,40)*fromActor.get_wisdom()/10)
-		damage = min(damage, wa.actor().get_soldiers())
-		# 暂时植入【破伏】的实现
-		var msg = "{0}在此设下陷阱\n兵力下降{1}".format([fromActor.get_name(), damage])
-		var mood = 3
-		if SkillHelper.actor_has_skills(wa.actorId, ["破伏"]):
-			damage = 0
-			mood = 1
-			msg = "{0}在此设下陷阱\n【破伏】免伤".format([fromActor.get_name()])
-		if damage > 0:
-			DataManager.damage_sodiers(fromActor.actorId, wa.actorId, damage)
-		LoadControl._error(msg, wa.actorId, mood)
-		return
 
-	var war_map = SceneManager.current_scene().war_map
-	var build_name = war_map.get_buildCN_by_position(wa.position)
-	DataManager.set_env("村庄类型", build_name)
-	
-	if build_name in ["米屋", "装备店", "医馆"]:
-		FlowManager.add_flow("actor_in_vallage")
-		return
-	FlowManager.add_flow("player_ready")
+	FlowManager.add_flow("actor_in_vallage")
 	return
 
 #进入村庄
 func actor_in_vallage():
 	var actorId = DataManager.player_choose_actor
-	SceneManager.show_confirm_dialog("是否进入村庄?", actorId)
+	var wa = DataManager.get_war_actor(actorId)
+	var map = SceneManager.current_scene().war_map
+	var facilityName = map.check_facilities(wa)
+	if facilityName == "":
+		FlowManager.add_flow("player_ready")
+		return
+
+	DataManager.set_env("村庄类型", facilityName)
+	var msg = "此地为{0}\n是否进入？".format([
+		facilityName
+	])
+	SceneManager.show_confirm_dialog(msg, actorId)
 	LoadControl.set_view_model(103)
 	return
 

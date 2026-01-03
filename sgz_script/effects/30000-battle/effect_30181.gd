@@ -31,6 +31,8 @@ func effect_30181_start():
 			continue
 		bu.init_combat_info("骑(化身)")
 		bu.dic_combat["原兵种"] = originalType
+		if actor.get_equip_feature_max("人遁") > 0:
+			bu.set_combat_val("仙兵", 1, "默认")
 	ske.set_battle_buff(me.actorId, "战术禁用", 99999)
 	ske.battle_cd(99999)
 	ske.battle_report()

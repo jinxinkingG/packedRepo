@@ -137,12 +137,12 @@ func _on_view_model_251(delta: float):
 		if not SceneManager.actorlist.is_actor_picked(actorId):
 			SceneManager.actorlist.set_actor_picked(actorId, limit)
 		else:
-			SceneManager.actorlist.rtlMessage.text = "太守必须作为主将出战"
+			SceneManager.actorlist.update_message("太守必须作为主将出战")
 		return
 	# 选择了结束
 	if actorId == -1:
 		if SceneManager.actorlist.get_picked_actors().size() < limit:
-			SceneManager.actorlist.rtlMessage.text = "须选择{0}人防御出阵".format([limit])
+			SceneManager.actorlist.update_message("须选择{0}人防御出阵".format([limit]))
 			return
 		SceneManager.actorlist.set_highlight(-1)
 		LoadControl.set_view_model(-1)
@@ -174,15 +174,15 @@ func _on_view_model_251(delta: float):
 		if actorId >= 0:
 			# 选择了某个武将
 			SceneManager.actorlist.set_actor_picked(actorId, limit)
-			SceneManager.actorlist.rtlMessage.text = "选择十人防御出阵（{0}/{1}）".format([
+			SceneManager.actorlist.update_message("选择十人防御出阵（{0}/{1}）".format([
 				SceneManager.actorlist.get_picked_actors().size(), limit,
-			])
+			]))
 			return
 		# 选择了结束
 		if SceneManager.actorlist.get_picked_actors().size() < limit:
-			SceneManager.actorlist.rtlMessage.text = "选择十人防御出阵（{0}/{1}）".format([
+			SceneManager.actorlist.update_message("选择十人防御出阵（{0}/{1}）".format([
 				SceneManager.actorlist.get_picked_actors().size(), limit,
-			])
+			]))
 		return
 	return
 

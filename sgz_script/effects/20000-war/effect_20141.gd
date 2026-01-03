@@ -27,6 +27,9 @@ func on_trigger_20012()->bool:
 		return false
 	if not me.is_enemy(targetWA):
 		return false
+	if check_combat_targets([targetWA.actorId]).empty():
+		# 不可以被技能发起白刃战
+		return false
 	var selected = ske.get_war_skill_val_int(ACTIVE_EFFECT_ID, -1, -1)
 	if selected >= 0:
 		var wa = DataManager.get_war_actor(selected)

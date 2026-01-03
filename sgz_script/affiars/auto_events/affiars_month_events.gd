@@ -25,7 +25,6 @@ func set_next_step(step:int) -> void:
 	return
 
 func _init() -> void:
-	FlowManager.bind_import_flow("month_banished_actors_trigger", self)
 	FlowManager.bind_import_flow("month_auto_events_begin", self)
 	FlowManager.bind_import_flow("month_auto_events_end", self)
 	FlowManager.bind_import_flow("harvest_finish", self)
@@ -38,15 +37,8 @@ func start() -> void:
 	DataManager.game_trace("--月事件开始--");
 	DataManager.unset_env("每月赋税势力")
 	SceneManager.hide_all_tool()
-	set_next_step(-1)
 	set_current_step(-1)
-	if DataManager.check_env(["内政.MONTHLY.流放武将触发"]):
-		return
-	var exiled = []
-	for actor in ActorHelper.all_exiled_actors():
-		exiled.append(actor.actorId)
-	DataManager.set_env("内政.MONTHLY.流放武将触发", exiled)
-	FlowManager.add_flow("month_banished_actors_trigger")
+	set_next_step(0)
 	return
 
 func end() -> void:
@@ -66,18 +58,6 @@ func _process(delta: float) -> void:
 		return
 	set_current_step(nextStep)
 	month_auto_events_begin()
-	return
-
-# 流放武将的技能触发
-func month_banished_actors_trigger():
-	var exiled = DataManager.get_env_int_array("内政.MONTHLY.流放武将触发")
-	while not exiled.empty():
-		var actorId = exiled.pop_front()
-		DataManager.set_env("内政.MONTHLY.流放武将触发", exiled)
-		if SkillHelper.auto_trigger_skill(actorId, 10009, "month_banished_actors_trigger"):
-			return
-	set_current_step(-1)
-	set_next_step(0)
 	return
 
 #月事件（收金、收米、灾害、暴动、统一）
@@ -364,13 +344,24 @@ func city_data_deal()->void:
 				city.set_door_hp(doorPosition, doorHP)
 
 		# 武将状态、忠诚度、体力的恢复和校正
-		var buffLoyaltyUp = 0
+		# 每月加忠光环的配置值比较特殊，十位个位为上限，百位以上为修正值
+		var buffLoyaltyUps = []
 		for srb in SkillRangeBuff.find_for_city("每月加忠", city.ID):
-			if int(srb.effectTagVal) != 0:
-				buffLoyaltyUp += int(srb.effectTagVal)
+			var val = int(srb.effectTagVal)
+			if val == 0:
+				continue
+			var limit = val % 100
+			limit = (100 + limit) % 100
+			val = int(val / 100)
+			buffLoyaltyUps.append([val, limit])
 		for srb in SkillRangeBuff.find_for_vstate("每月加忠", city.get_vstate_id()):
-			if int(srb.effectTagVal) != 0:
-				buffLoyaltyUp += int(srb.effectTagVal)
+			var val = int(srb.effectTagVal)
+			if val == 0:
+				continue
+			var limit = val % 100
+			limit = (100 + limit) % 100
+			val = int(val / 100)
+			buffLoyaltyUps.append([val, limit])
 		for actorId in city.get_actor_ids():
 			var actor = ActorHelper.actor(actorId)
 			if actorId == city.get_lord_id():
@@ -383,9 +374,12 @@ func city_data_deal()->void:
 				if actor.get_loyalty() >=30 and actor.get_loyalty() < 70:
 					actor.add_loyalty(3)
 			actor._remove_attr("内政.离间")
-			# 85 目前为 BUFF 固定上限
-			if buffLoyaltyUp != 0 and actor.get_loyalty() < 85:
-				actor.add_loyalty(buffLoyaltyUp)
+			var change = 0
+			for row in buffLoyaltyUps:
+				if actor.get_loyalty() < row[1]:
+					change += row[0]
+			if change > 0:
+				actor.add_loyalty(change)
 			actor.set_status_officed(city.get_vstate_id())
 			actor.set_dislike_vstate_id(-2)
 			actor.set_exile_city(city.ID)

@@ -6,6 +6,19 @@ extends "effect_20000.gd"
 func on_trigger_20017()->bool:
 	var x = actor.get_equip_feature_total("计策附加智力")
 	if x <= 0:
+		for wa in me.get_teammates(false, true):
+			x = max(x, wa.actor().get_equip_feature_total("计策附加智力"))
+	if x <= 0:
+		return false
+	change_scheme_chance(actorId, ske.skill_name, x)
+	return false
+
+func on_trigger_20029()->bool:
+	var x = actor.get_equip_feature_total("计策附加智力")
+	if x <= 0:
+		for wa in me.get_teammates(false, true):
+			x = max(x, wa.actor().get_equip_feature_total("计策附加智力"))
+	if x <= 0:
 		return false
 	change_scheme_chance(actorId, ske.skill_name, x)
 	return false

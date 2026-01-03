@@ -14,10 +14,10 @@ func check_AI_perform_20000()->bool:
 		return false
 	var iwa = Global.load_script(DataManager.mod_path+"sgz_script/war/IWar_Attack.gd")
 	var res = iwa.get_can_attack_actors(actorId)
-	if res[0].empty():
+	var candidates = check_combat_targets(res[0])
+	if candidates.empty():
 		return false
-	var targets = []
-	targets.append_array(res[0])
+	var targets = Array(candidates)
 	targets.shuffle()
 	DataManager.set_env("目标", targets[0])
 	# 避免重复判断
@@ -33,7 +33,7 @@ func effect_20460_start():
 		return
 	var iwa = Global.load_script(DataManager.mod_path+"sgz_script/war/IWar_Attack.gd")
 	var res = iwa.get_can_attack_actors(actorId)
-	var targets = res[0]
+	var targets = check_combat_targets(res[0])
 	if not wait_choose_actors(targets, "选择攻击目标发动【{0}】"):
 		return
 	LoadControl.set_view_model(2000)

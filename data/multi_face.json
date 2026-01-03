@@ -1,94 +1,117 @@
 {
-    "15":[
+  "2": [
+    {
+      "if": [{ "name": "面", "value": "阴" }],
+      "then": { "picture": 8, "sort": 19 }
+    },
+    {
+      "if": [{ "name": "面", "value": "阳" }],
+      "then": { "picture": 8, "sort": 20 }
+    }
+  ],
+  "15": [
+    {
+      "if": [{ "name": "面", "value": "阳" }],
+      "then": { "picture": 8, "sort": 1 }
+    }
+  ],
+  "25": [
+    {
+      "if": [{ "name": "yearmonth", "value": "{VAL}>=20800", "expr": 1 }],
+      "then": { "picture": 8, "sort": 7, "optional": 1 }
+    }
+  ],
+  "46": [
+    {
+      "if": [{ "name": "yearmonth", "value": "{VAL}>=20800", "expr": 1 }],
+      "then": { "picture": 8, "sort": 14, "optional": 1 }
+    }
+  ],
+  "49": [
+    {
+      "if": [
         {
-            "if":[{"name":"面", "value":"阳"}],
-            "then":{"picture":8,"sort":1}
+          "ID": 552,
+          "name": "状态",
+          "value": "\"{VAL}\" in [\"出仕\",\"在野\",\"流放\"]",
+          "expr": 1
         }
-    ],
-    "25":[
-        {
-            "if":[{"name":"yearmonth","value":"{VAL}>=20800","expr":1}],
-            "then":{"picture":8,"sort":7,"optional":1}
-        }
-    ],
-    "46":[
-        {
-            "if":[{"name":"yearmonth","value":"{VAL}>=20800","expr":1}],
-            "then":{"picture":8,"sort":14,"optional":1}
-        }
-    ],
-    "49":[
-        {
-            "if":[{"ID":552,"name":"状态","value":"\"{VAL}\" in [\"出仕\",\"在野\",\"流放\"]","expr":1}],
-            "then":{"picture":8,"sort":5}
-        },
-        {
-            "if":[{"name":"面","value":"阳"}],
-            "then":{"picture":8,"sort":2}
-        }
-    ],
-    "70":[
-        {
-            "if":[{"name":"统","value":"{VAL}>=80","expr":1}],
-            "then":{"picture":8,"sort":16,"optional":1}
-        }
-    ],
-    "74":[
-        {
-            "if":[{"name":"啖睛","value":"1"}],
-            "then":{"picture":8,"sort":13,"optional":1}
-        }
-    ],
-    "94":[
-        {
-            "if":[{"name":"yearmonth","value":"{VAL}>=20800","expr":1}],
-            "then":{"picture":8,"sort":15,"optional":1}
-        }
-    ],
-    "108":[
-        {
-            "if":[{"name":"防具","value":"{VAL}==12","expr":1}],
-            "then":{"picture":8,"sort":18}
-        }
-    ],
-    "227":[
-        {
-            "if":[{"name":"yearmonth","value":"{VAL}>=22800","expr":1}],
-            "then":{"picture":8,"sort":9,"optional":2}
-        },
-        {
-            "if":[{"name":"yearmonth","value":"{VAL}>=20800","expr":1}],
-            "then":{"picture":8,"sort":8,"optional":1}
-        }
-    ],
-    "346":[
-        {
-            "if":[{"name":"面","value":"阴"}],
-            "then":{"picture":8,"sort":3}
-        }
-    ],
-    "361":[
-        {
-            "if":[{"name":"面","value":"醉"}],
-            "then":{"picture":8,"sort":17}
-        }
-    ],
-    "435":[
-        {
-            "if":[{"name":"面","value":"阳"}],
-            "then":{"picture":8,"sort":4}
-        }
-    ],
-    "528":[
-        {
-            "if":[{"name":"面","value":"阴"}],
-            "then":{"picture":8,"sort":6}
-        }
-    ],
-    "534":[
-        {
-            "if":[{"name":"面","value":"阴"}],
-            "then":{"picture":8,"sort":0}
-        }
-    ]
+      ],
+      "then": { "picture": 8, "sort": 5 }
+    },
+    {
+      "if": [{ "name": "面", "value": "阳" }],
+      "then": { "picture": 8, "sort": 2 }
+    }
+  ],
+  "70": [
+    {
+      "if": [{ "name": "统", "value": "{VAL}>=80", "expr": 1 }],
+      "then": { "picture": 8, "sort": 16, "optional": 1 }
+    }
+  ],
+  "74": [
+    {
+      "if": [{ "name": "啖睛", "value": "1" }],
+      "then": { "picture": 8, "sort": 13, "optional": 1 }
+    }
+  ],
+  "94": [
+    {
+      "if": [{ "name": "yearmonth", "value": "{VAL}>=20800", "expr": 1 }],
+      "then": { "picture": 8, "sort": 15, "optional": 1 }
+    }
+  ],
+  "108": [
+    {
+      "if": [{ "name": "防具", "value": "{VAL}==12", "expr": 1 }],
+      "then": { "picture": 8, "sort": 18 }
+    }
+  ],
+  "147": [
+    {
+      "if": [{ "name": "面", "value": "魂" }],
+      "then": { "picture": 8, "sort": 21 }
+    }
+  ],
+  "227": [
+    {
+      "if": [{ "name": "yearmonth", "value": "{VAL}>=22800", "expr": 1 }],
+      "then": { "picture": 8, "sort": 9, "optional": 2 }
+    },
+    {
+      "if": [{ "name": "yearmonth", "value": "{VAL}>=20800", "expr": 1 }],
+      "then": { "picture": 8, "sort": 8, "optional": 1 }
+    }
+  ],
+  "346": [
+    {
+      "if": [{ "name": "面", "value": "阴" }],
+      "then": { "picture": 8, "sort": 3 }
+    }
+  ],
+  "361": [
+    {
+      "if": [{ "name": "面", "value": "醉" }],
+      "then": { "picture": 8, "sort": 17 }
+    }
+  ],
+  "435": [
+    {
+      "if": [{ "name": "面", "value": "阳" }],
+      "then": { "picture": 8, "sort": 4 }
+    }
+  ],
+  "528": [
+    {
+      "if": [{ "name": "面", "value": "阴" }],
+      "then": { "picture": 8, "sort": 6 }
+    }
+  ],
+  "534": [
+    {
+      "if": [{ "name": "面", "value": "阴" }],
+      "then": { "picture": 8, "sort": 0 }
+    }
+  ]
 }

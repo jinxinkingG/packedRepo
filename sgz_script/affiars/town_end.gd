@@ -49,11 +49,30 @@ func endmonth_3():
 
 #命令书消耗动画
 func endmonth_4():
-	LoadControl.set_view_model(174);
-	SceneManager.dialog_use_orderbook_animation("endmonth_5",255);
-
+	LoadControl.set_view_model(174)
+	DataManager.set_env("命令书可结转", DataManager.orderbook)
+	SceneManager.dialog_use_orderbook_animation("endmonth_5", 99999)
+	return
 
 func endmonth_5():
-	LoadControl.set_view_model(175);
+	var vstateId = int(DataManager.vstates_sort[DataManager.vstate_no])
 	DataManager.orderbook = 0
-	SceneManager.show_confirm_dialog("已结束本月");
+	var left = DataManager.get_env_int("命令书可结转")
+	DataManager.unset_env("命令书可结转")
+	
+	var msg = "已结束本月"
+	if left > 0:
+		var srb = SkillRangeBuff.max_for_vstate("命令书结转", vstateId)
+		if srb != null and srb.effectTagVal > 0:
+			left = min(left, srb.effectTagVal)
+			var leftOrderBooks = DataManager.get_env_dict("命令书结转")
+			leftOrderBooks[str(vstateId)] = left
+			DataManager.set_env("命令书结转", leftOrderBooks)
+			msg += "\n因{0}【{1}】效果\n{2} 命令书结转到下月".format([
+				ActorHelper.actor(srb.actorId).get_name(),
+				srb.skillName, left,
+			])
+
+	SceneManager.show_confirm_dialog(msg)
+	LoadControl.set_view_model(175)
+	return

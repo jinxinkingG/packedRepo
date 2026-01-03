@@ -22,9 +22,15 @@ func on_trigger_20016() -> bool:
 		minHP = hp
 	if target == null:
 		return false
-	# 如果点数小于等于 5，不会引起战斗
-	# 不需要走完整流程，直接插入对话结束即可
+	var battle = true
 	if x <= 5:
+		# 如果点数小于等于 5，不会引起战斗
+		# 不需要走完整流程，直接插入对话结束即可
+		battle = false
+	elif check_combat_targets([actorId]).empty():
+		# 如果不可攻击，也不需要进入战斗
+		battle = false
+	if not battle:
 		var reduced = ske.change_actor_hp(target.actorId, -x)
 		ske.cost_war_cd(1)
 		ske.war_report()

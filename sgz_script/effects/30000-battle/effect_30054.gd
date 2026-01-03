@@ -20,7 +20,9 @@ func on_trigger_30021() -> bool:
 	var beatPos = targetUnit.unit_position - offset
 	if targetUnit.can_move_to_position(beatPos):
 		targetUnit.wait_action_name = "击退|{0},{1}".format([beatPos.x, beatPos.y])
+		targetUnit.add_status_effect("击退")
 	else:
 		var damage = DataManager.get_env_float("白兵伤害.伤害")
 		DataManager.set_env("白兵伤害.伤害", damage * 1.5)
+		targetUnit.add_status_effect("巨力|x1.5")
 	return false

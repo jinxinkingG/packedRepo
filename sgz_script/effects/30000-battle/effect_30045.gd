@@ -1,44 +1,27 @@
 extends "effect_30000.gd"
 
 #强袭效果实现
-#【强袭】小战场,锁定技。你被敌方士兵攻击时，你将立即无视距离对其进行1次反击（攻击倍率等同于近身战斗）。
+#【强袭】小战场,锁定技。你被敌方士兵近身攻击时，立即对其进行1次反击，反击效果等同于近身攻击。
 
-func check_trigger_correct():
-	self.trace = true
-	if not check_env(["白兵伤害.单位", "白兵伤害.伤害", "白兵伤害.来源"]):
+func on_trigger_30011() -> bool:
+	var bu = ske.battle_is_unit_hit_by(UNIT_TYPE_SOLDIERS, ["将"], ["ALL"], true)
+	if bu == null:
 		return false
 
-	var def_id = get_env_int("白兵伤害.单位")
-	var def_unit = DataManager.battle_units[def_id]
-	if def_unit.get_unit_type() != "将":
-		return false
-	if def_unit.leaderId != self.actorId:
+	var hurtId = DataManager.get_env_int("白兵伤害.单位")
+	var hurt = bf.battle_unit(hurtId)
+	if hurt == null:
 		return false
 
-	var att_id = get_env_int("白兵伤害.来源")
-	var att_unit = DataManager.battle_units[att_id]
-	if att_unit.leaderId == self.actorId:
+	if Global.get_distance(hurt.unit_position, bu.unit_position) != 1:
 		return false
-
-	var disv = att_unit.unit_position - def_unit.unit_position
-	if abs(disv.x) + abs(disv.y) != 1:
-		# 非近身，不允许反击
-		return false
-
-	self.trace("== 强袭 {0}：#{1} 受到 #{2} 的 {3}".format([
-		self.actorId, def_id, att_id, att_unit.last_action_name
-	]))
 
 	var bia: Battle_Instant_Action = Battle_Instant_Action.new()
-	bia.unitId = def_id
-	bia.action = "反击"
-	bia.targetUnitId = att_id
-	bia.targetPos = att_unit.unit_position
+	bia.unitId = hurt.unitId
+	bia.action = "攻击@强袭#FF0000"
+	bia.targetUnitId = bu.unitId
+	bia.targetPos = bu.unit_position
 	bia.insert_to_env()
-	self.trace("   强袭 {0}：#{1} 准备{2} 位于<{3},{4}> 的 #{5}".format([
-		self.actorId, bia.unitId, bia.action,
-		bia.targetPos.x, bia.targetPos.y, bia.targetUnitId,
-	]))
 
 	return false
 

@@ -17,7 +17,7 @@ func on_trigger_20020()->bool:
 		return false
 
 	var targetIds = []
-	for targetId in get_enemy_targets(me):
+	for targetId in get_combat_targets(me):
 		if targetId == loser.actorId:
 			continue
 		targetIds.append(targetId)
@@ -27,7 +27,7 @@ func effect_20111_start():
 	var bf = DataManager.get_current_battle_fight()
 
 	var targetIds = []
-	for targetId in get_enemy_targets(me):
+	for targetId in get_combat_targets(me):
 		if targetId == bf.loserId:
 			continue
 		targetIds.append(targetId)
@@ -48,7 +48,7 @@ func effect_20111_2():
 	var msg = "丈夫三尺剑\n当立不世功\n{0}受死！".format([
 		DataManager.get_actor_naughty_title(targetId, me.actorId)
 	])
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	map.next_shrink_actors = [me.actorId, targetId]
 	return
 
@@ -62,5 +62,5 @@ func effect_20111_3():
 	ske.cost_war_cd(1)
 
 	map.next_shrink_actors = []
-	start_battle_and_finish(me.actorId, targetId)
+	start_battle_and_finish(actorId, targetId)
 	return

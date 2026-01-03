@@ -13,18 +13,9 @@ func effect_20278_start():
 	if not assert_action_point(actorId, COST_AP):
 		return
 	var targets = []
-	var teammates = get_teammate_targets(me)
-	for key in DataManager.skill_cd.keys():
-		# 忽略限定技或永久禁用的技能
-		if DataManager.skill_cd[key] >= 90000:
-			continue
-		var pieces = str(key).split("/")
-		var sceneId = int(pieces[0])
-		#var effectId = int(pieces[1])
-		var targetId = int(pieces[2])
-		if not targetId in teammates:
-			continue
-		if sceneId < 20000:
+	for targetId in get_teammate_targets(me):
+		var wa = DataManager.get_war_actor(targetId)
+		if wa.get_buff_label_turn(["激励"]) > 0:
 			continue
 		targets.append(targetId)
 	if not wait_choose_actors(targets, "选择队友发动【{0}】"):
@@ -39,7 +30,7 @@ func on_view_model_2000()->void:
 func effect_20278_2():
 	var targetId = DataManager.get_env_int("目标")
 	var targetActor = ActorHelper.actor(targetId)
-	var msg = "消耗{0}机动力\n对{1}发动【{2}】，减少其战场技能冷却，可否？".format([
+	var msg = "消耗{0}机动力\n对{1}发动【{2}】\n可否？".format([
 		COST_AP, targetActor.get_name(), ske.skill_name
 	])
 	play_dialog(actorId, msg, 2, 2001, true)
@@ -55,6 +46,7 @@ func effect_20278_3():
 
 	ske.cost_war_cd(COST_CD)
 	ske.cost_ap(COST_AP, true)
+	ske.set_war_buff(targetId, "激励", 1)
 	var ret = ske.reduce_actor_skill_cd(targetId, CD_REDUCE, [20000, 30000, 40000])
 	ske.war_report()
 	

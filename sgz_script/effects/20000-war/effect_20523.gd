@@ -22,8 +22,7 @@ func effect_20523_2() -> void:
 	var enemyLeader = me.get_enemy_leader()
 
 	ske.cost_war_cd(99999)
-	var point = Global.get_random(0, 9)
-	ske.change_actor_five_phases(enemyLeader.actorId, enemyLeader.five_phases, point)
+	ske.change_actor_five_phases(enemyLeader.actorId, enemyLeader.five_phases, -1)
 
 	var msg = "新恨既生，旧恩难续！\n（{0}发动【{1}】\n（{2}的点数刷新为 {3}".format([
 		me.get_name(), ske.skill_name,
@@ -39,7 +38,7 @@ func on_view_model_2001() -> void:
 func effect_20523_3() -> void:
 	var enemyLeader = me.get_enemy_leader()
 
-	if me.poker_point <= enemyLeader.poker_point:
+	if me.get_poker_point_diff(enemyLeader) <= 0:
 		var current = me.action_point
 		me.recharge_action_point()
 		var recharged = me.action_point

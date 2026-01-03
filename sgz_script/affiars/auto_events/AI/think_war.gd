@@ -101,9 +101,9 @@ func _input_key(delta: float):
 			else:
 				SceneManager.actorlist.set_actor_picked(aindex, limit)
 			actors = SceneManager.actorlist.get_picked_actors()
-			SceneManager.actorlist.rtlMessage.text = "请选将 ({0}/{1})".format([
+			SceneManager.actorlist.update_message("请选将 ({0}/{1})".format([
 				actors.size(), limit
-			])
+			]))
 		119:
 			SceneManager.skip_tips = true
 			if not wait_for_choose_actor(""):

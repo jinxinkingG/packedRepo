@@ -15,10 +15,13 @@ func on_trigger_20038()->bool:
 		return false
 	if not se.damage_soldier():
 		return false
-	#太守府不会被引诱出击
+	# 太守府不会被引诱出击
 	var wa = DataManager.get_war_actor(fromId)
 	var terrian = map.get_blockCN_by_position(wa.position)
 	if terrian in ["太守府"]:
+		return false
+	# 不可触发战斗的，也要排除
+	if check_combat_targets([fromId]).empty():
 		return false
 	return true
 

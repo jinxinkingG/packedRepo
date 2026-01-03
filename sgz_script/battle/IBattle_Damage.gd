@@ -8,7 +8,7 @@ func _init() -> void:
 func count_classic_damage(from:Battle_Unit, to:Battle_Unit)->float:
 	var bf = DataManager.get_current_battle_fight()
 	#基础攻击力
-	var baseAttack = 0
+	var baseAttack = from.get_basic_attack_val()
 	#最终攻击力
 	var attack = 0
 
@@ -21,20 +21,6 @@ func count_classic_damage(from:Battle_Unit, to:Battle_Unit)->float:
 	var defenderLeadership = 0
 	if defender != null:
 		defenderLeadership = defender.battle_lead
-
-	# 计算基础攻击力
-	match from.get_unit_type():
-		"将":#武将.基础攻击力=武*胆%*0.7+装备攻击力
-			baseAttack = attacker.get_battle_power() * attacker.battle_courage / 100.0 * 0.7
-			baseAttack += from.actor().get_equip_attr_total("攻击力")
-			baseAttack += from.actor().get_equip_feature_total("白兵攻击力")
-			baseAttack += from.get_extra_attack_power()
-		_:#士兵.基础攻击力=士气
-			baseAttack = attacker.battle_morale
-
-	# 士气向上，提升基础攻击力
-	if attacker.get_buff("士气向上")["回合数"] > 0:
-		baseAttack += Global.get_random(5, 9)
 
 	# 预先计算C值，注意这个要在计算倍率之前
 	# 目前【破围】利用了计算 C 值时的回调，修改攻击倍率
@@ -64,20 +50,20 @@ func count_classic_damage(from:Battle_Unit, to:Battle_Unit)->float:
 		if from.get_unit_type() == "将":
 			var distanceRate = from.actor().get_equip_feature_total("距离增加倍率")
 			if distanceRate > 0:
-				rate += float(distance * distanceRate / 100.0)
+				rate += distance * distanceRate
 		if distance > 4 && DataManager.diffculities >= 3 && bf.get_terrian() in ["wallcity"]:
 			if from.get_side() == Vector2.RIGHT:
 				rate /= 2
-		attack = baseAttack * rate
+		attack = baseAttack * rate / 100.0
 	elif isThrowing:
 		var rate = from.get_throwing_damage_rate(to)
-		attack = baseAttack * rate
+		attack = baseAttack * rate / 100.0
 	else:
 		var rate = from.get_melee_damage_rate()
 		if DataManager.diffculities>=3 && bf.get_terrian() in ["wallcity","walldoor"]:
 			if from.get_side() == Vector2.RIGHT:
-				rate = max(rate, 1.0)
-		attack = baseAttack * rate
+				rate = max(rate, 100)
+		attack = baseAttack * rate / 100.0
 
 	# 基本伤害 = 实际攻击力*C/100.0
 	var damage:float = attack * C / 100.0
@@ -88,23 +74,7 @@ func count_classic_damage(from:Battle_Unit, to:Battle_Unit)->float:
 	damage = damage * from.get_critical_damage_rate()
 
 	# 防御力
-	var E:float = 0.0
-	if to.get_unit_type() == "将":
-		E = to.actor().get_equip_attr_total("防御力")
-		E += defender.battle_courage / 8.0
-		E = E / 2.0
-	else:
-		E = defenderLeadership / 12.0
-	if to.dic_combat.has("防御倍率"):
-		E = E * float(to.dic_combat["防御倍率"])
-	if defender.get_buff("士气向上")["回合数"] > 0:
-		#士气向上，防御力提升20%
-		E = E * 1.2;
-		
-	if isShooting and to.get_unit_type() != "将":
-		#火矢，无视目标1/3防御力
-		if fireShooting:
-			E -= E / 3.0
+	var defence = to.get_defence_val(isShooting, fireShooting)
 
 	# 免伤比例 = 兵种类型免伤 + 装备免伤加成
 	var avoidRate = to.get_damage_avoid_rate()
@@ -112,9 +82,9 @@ func count_classic_damage(from:Battle_Unit, to:Battle_Unit)->float:
 	if avoidRate > 0 and isShooting and \
 		from.get_unit_type() == "将" and \
 		SkillRangeBuff.max_val_for_actor("威矢", from.leaderId) > 0:
-		avoidRate = 0.0
+		avoidRate = 0
 	#计算受击方免伤=基本伤害*免伤比例+装备防御力
-	var avoidDamage = min(damage * avoidRate + E, damage)
+	var avoidDamage = min(damage * avoidRate / 100.0 + defence, damage)
 	
 	#实际伤害=基本伤害-免伤
 	var finalDamage:float = damage - avoidDamage

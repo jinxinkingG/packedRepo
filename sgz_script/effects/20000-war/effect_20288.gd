@@ -16,12 +16,13 @@ func effect_20288_start():
 		var msg = "附近存在队友\n不可发动{0}".format([ske.skill_name])
 		play_dialog(actorId, msg, 2, 2999)
 		return
-	var targets = get_enemy_targets(me)
-	if targets.size() < 2:
+	var targetIds = get_enemy_targets(me)
+	if targetIds.size() < 2:
 		var msg = "附近敌军数量 < 2\n不可发动{0}".format([ske.skill_name])
 		play_dialog(actorId, msg, 2, 2999)
 		return
-	if not wait_choose_actors(targets, "选择敌军发动【{0}】"):
+	targetIds = check_combat_targets(targetIds)
+	if not wait_choose_actors(targetIds, "选择敌军发动【{0}】"):
 		return
 	LoadControl.set_view_model(2000)
 	return

@@ -354,13 +354,13 @@ func _action_attack(unit:Battle_Unit, taunt:Array, directTargets:Dictionary)->Di
 	var scene_battle = SceneManager.current_scene();
 
 	#当前兵种的状态
-	var state = unit.get_state();
+	var state = unit.get_state()
 
 	#后退状态，无法近身攻击
-	if (state in ["后退"]):
+	if state in ["后退"]:
 		return {};
 
-	var dir_has_enemy = [];
+	var dir_has_enemy = []
 	for dir in directTargets:
 		if directTargets[dir].size() > 0:
 			dir_has_enemy.append(dir)

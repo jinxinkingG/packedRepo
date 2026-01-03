@@ -6,7 +6,7 @@ extends "effect_30000.gd"
 func on_trigger_30021()->bool:
 	var teammate = ActorHelper.actor(ske.actorId)
 	var x = int((actor.get_level() + teammate.get_level()) / 2)
-	var bu = ske.battle_extra_damage(x * 2, ["将"], ["ALL"])
+	var bu = ske.battle_extra_damage(x * 2, ["将"], ["ALL"], UNIT_TYPE_SOLDIERS)
 	if bu == null:
 		return false
 	var msg = "{0} +{1}#FF0000".format([ske.skill_name, x * 2])

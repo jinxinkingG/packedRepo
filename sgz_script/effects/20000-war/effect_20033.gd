@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #夺锐主动技 #学习技能 #禁用技能 #拼点
-#【夺锐】大战场，主动技。1回合1次，若你未进行过攻击，选择1名敌将发动，立即刷新对方五行。若你点数比目标大，直到回合结束前你获得对方的1个技能；否则，你本回合内不可进行攻击和移动。
+#【夺锐】大战场，主动技。1回合1次，若你未进行过攻击，选择1名敌将发动，立即刷新对方五行。若你点数比目标大，直到回合结束前你获得对方的1个技能；否则，你本回合内不可进行攻击和移动。可对城地形目标发动。
 
 const EFFECT_ID = 20033
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -65,7 +65,7 @@ func on_view_model_2002():
 func effect_20033_4():
 	var targetId = get_env_int("目标")
 	var targetWA = DataManager.get_war_actor(targetId)
-	if targetWA.poker_point >= me.poker_point:
+	if me.get_poker_point_diff(targetWA) <= 0:
 		ske.set_war_buff(ske.skill_actorId, "禁止攻击移动", 1)
 		var msg = "夺锐未能成功！\n（{0}本日无法移动或攻击".format([actor.get_name()])
 		ske.war_report()

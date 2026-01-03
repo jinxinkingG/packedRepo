@@ -43,18 +43,19 @@ func effect_20328_3():
 	targetWA.refresh_poker_random()
 	var mood = 2
 	var msg = "扶危定倾，从来不易\n（{2}：{0}点={3}：{1}点\n无特殊效果"
-	if me.poker_point < targetWA.poker_point:
+	var diff = me.get_poker_point_diff(targetWA)
+	if diff < 0:
 		msg = "扶危定倾，从来不易\n（{2}：{0}点<{3}：{1}点\n{3}获得50%计策增伤"
 		mood = 3
 		ske.set_war_skill_val(targetId, 2, PASSIVE_EFFECT_ID)
-	elif me.poker_point > targetWA.poker_point:
+	elif diff > 0:
 		msg = "扶危定倾，岂可无我\n（{2}：{0}点>{3}：{1}点\n{2}获得50%计策增伤"
 		mood = 1
 		ske.set_war_skill_val(me.actorId, 1, PASSIVE_EFFECT_ID)
 	msg = msg.format([
-		me.get_poker_point_str(),
-		targetWA.get_poker_point_str(),
+		me.poker_point,
+		targetWA.poker_point,
 		me.get_name(), targetWA.get_name(),
 	])
-	play_dialog(me.actorId, msg, mood, 2009)
+	play_dialog(actorId, msg, mood, 2009)
 	return

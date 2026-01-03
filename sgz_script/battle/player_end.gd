@@ -56,6 +56,9 @@ func battle_player_end_retreat():
 	bf.retreat_cost_soldiers()
 	if bf.retreatLostSoldier > 0:
 		msg += "\n士兵逃亡{0}人！".format([bf.retreatLostSoldier])
+	var extra = bf.get_env_str("撤退损兵说明.{0}".format([loser.actorId]))
+	if extra != "":
+		msg += "\n" + extra
 	if bf.lostRice > 0:
 		var winner = loser.get_battle_enemy_war_actor()
 		msg += "\n{0}趁势掩杀，焚粮{1}".format([

@@ -778,6 +778,9 @@ func _chase_target_or_position(wa:War_Actor, target:War_Actor, position:Vector2)
 			return _attack(wa, who.actorId)
 		# 无计可施？
 		return false
+	# 如果自己在主城，不出击
+	if map.get_blockCN_by_position(wa.position) == "太守府":
+		return false
 	# 直通目标
 	var route = map.aStar.get_path_with_weight(wa.position, position)
 	if route.size() > 1:

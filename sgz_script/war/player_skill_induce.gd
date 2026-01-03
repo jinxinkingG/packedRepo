@@ -118,7 +118,6 @@ func _input_key(delta: float):
 			var targetId = Global.intval(selected["skill_actorId"])
 			if skill == "" or targetId < 0:
 				return
-			SceneManager.get_node("Virtukey/VirtualKey/btnShowSkill").hide()
 			DataManager.set_env("战争.玩家选定诱发技", skill)
 			DataManager.set_env("诱发武将", targetId)
 			FlowManager.add_flow("induce_player_effect")
@@ -232,6 +231,7 @@ func induce_AI_choose():
 	set_env("诱发武将", array[0])
 	FlowManager.add_flow("induce_player_effect");
 
+# 诱发技发动
 func induce_player_effect():
 	LoadControl.set_view_model(604);
 	var st_info = SkillHelper.get_current_skill_trigger();
@@ -262,7 +262,7 @@ func induce_player_effect():
 	ske.actorId = int(dic["current_actor"]);
 	ske.effect_Id = int(dic["effect_id"]);
 	ske.trigger_Id = int(dic["triggerId"]);
-	ske.effect_type = "诱发技";
+	ske.effect_type = "诱发"
 	ske.skill_name = dic["skill_name"];
 	ske.skill_actorId = int(dic["skill_actor"])
 
@@ -283,6 +283,14 @@ func induce_player_effect():
 	if gd.has_method(effect_method):
 		DataManager.player_choose_skill = ske.skill_name
 		SceneManager.hide_all_tool()
+		# 此处检查一次性技能并移除之
+		SkillHelper.check_and_remove_once_skill(ske)
+		# 触发诱发技的回调，不支持 flow，推荐行为是仅记录
+		DataManager.set_env("战争.诱发技能", ske.output_data())
+		SkillHelper.auto_trigger_skill(ske.skill_actorId, 20041)
+		DataManager.unset_env("战争.诱发技能")
+		# 恢复 ske 现场
+		SkillHelper.save_skill_effectinfo(ske)
 		LoadControl.load_script(path)
 		FlowManager.add_flow(effect_method)
 	else:
@@ -339,7 +347,6 @@ func induce_player_choose():
 		var p_actor = ActorHelper.actor(p.actorId)
 		var msg = "{0}大人，发动何人之诱发技?".format([p_actor.get_name()])
 		SceneManager.show_simply_actor_info(value_array[0]["skill_actorId"], msg, true)
-		SceneManager.get_node("Virtukey/VirtualKey/btnShowSkill").hide()
 	SceneManager.lsc_menu_top.show();
 	DataManager.set_env("列表值", value_array)
 	LoadControl.set_view_model(607)

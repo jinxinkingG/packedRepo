@@ -7,7 +7,7 @@ const DEFAULT_STOP_RATE = 50
 func get_actor_tactic(actorId:int, includeSkills:bool=true) -> PoolStringArray:
 	var ret = []
 	var wa = DataManager.get_war_actor(actorId)
-	if not wa.continuous_tactic_on():
+	if wa.can_use_tactic() and not wa.continuous_tactic_on():
 		for name in StaticManager.TACTICS.keys():
 			var cost = get_tactic_cost(wa, name)
 			if cost > wa.battle_tactic_point:
@@ -31,14 +31,17 @@ func get_actor_tactic(actorId:int, includeSkills:bool=true) -> PoolStringArray:
 	return ret
 
 #获取战术值消耗
-func get_tactic_cost(wa:War_Actor, tactic_name:String)->int:
+func get_tactic_cost(wa:War_Actor, tactic:String)->int:
 	var val:int = 0
-	if StaticManager.TACTICS.has(tactic_name):
-		var tac_tic_dic = StaticManager.TACTICS[tactic_name]
-		val = int(tac_tic_dic["消耗"])
-	var key = "{0}额外消耗".format([tactic_name])
+	if StaticManager.TACTICS.has(tactic):
+		var tacticInfo = StaticManager.TACTICS[tactic]
+		val = int(tacticInfo["消耗"])
+	var key = "{0}额外消耗".format([tactic])
 	if wa.dic_other_variable.has(key):
 		val += int(wa.dic_other_variable[key])
+	key = "{0}固定消耗".format([tactic])
+	if wa.dic_other_variable.has(key):
+		val = int(wa.dic_other_variable[key])
 	return val
 
 #获取描述

@@ -121,7 +121,7 @@ func stratagem_choose_actor():
 
 	# 距离的判断比较特殊，暂时单独 clear 一下
 	DataManager.unset_env("计策.ONCE.距离")
-	SkillHelper.auto_trigger_skill(se.fromId, 20026, "")
+	SkillHelper.auto_trigger_skill(se.fromId, 20026)
 	var res = se.get_available_targets()
 	var targets = Array(res[0])
 	var disabled = Dictionary(res[1])
@@ -158,7 +158,7 @@ func stratagem_choose_actor():
 	DataManager.set_env("武将", targetId)
 	var targetWA = DataManager.get_war_actor(targetId)
 	war_map.set_cursor_location(targetWA.position, true)
-	SkillHelper.auto_trigger_skill(se.fromId, 20021, "")
+	SkillHelper.auto_trigger_skill(se.fromId, 20021)
 	war_map.next_shrink_actors = [targetId]
 	war_map.show_scheme_selector(se, fromWA, targetWA.position)
 	war_map.show_can_choose_actors(targets, se.fromId, disabledTargets)

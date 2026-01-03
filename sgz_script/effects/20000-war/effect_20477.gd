@@ -11,7 +11,15 @@ const COST_AP = 5
 func effect_20477_start()->void:
 	if not assert_action_point(actorId, COST_AP):
 		return
-	var positions = map.get_horse_jump_positions(me, true)
+	var positions = []
+	for pos in map.get_horse_jump_positions(me, true):
+		var wa = DataManager.get_war_actor_by_position(pos)
+		if wa != null:
+			if not me.is_enemy(wa):
+				continue
+			if check_combat_targets([wa.actorId]).empty():
+				continue
+		positions.append(pos)
 	if positions.empty():
 		play_dialog(actorId, "没有可以跃马的位置", 3, 2999)
 		return

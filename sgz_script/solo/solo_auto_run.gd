@@ -30,6 +30,8 @@ func _init() -> void:
 	player_control = Global.load_script(DataManager.mod_path+"sgz_script/solo/player_control.gd")
 	ai_control = Global.load_script(DataManager.mod_path+"sgz_script/solo/AI_control.gd")
 	FlowManager.bind_import_flow("solo_run_start", self)
+	FlowManager.bind_import_flow("solo_run_play_trigger", self)
+	FlowManager.bind_import_flow("solo_run_play", self)
 	FlowManager.bind_import_flow("solo_run_end", self)
 	FlowManager.bind_import_flow("solo_init_say", self)
 	FlowManager.bind_import_flow("solo_turn_end", self)
@@ -56,7 +58,9 @@ func solo_run_start():
 		DataManager.solo_sort = ["左","右"]
 	else:
 		DataManager.solo_sort = ["右","左"]
-	
+
+	SkillHelper.auto_trigger_skill(DataManager.solo_actors[0], 40010)
+	SkillHelper.auto_trigger_skill(DataManager.solo_actors[1], 40010)
 	var scene_solo = SceneManager.current_scene()
 	scene_solo.init_data()
 	set_next_step(0)
@@ -70,7 +74,7 @@ func _process(delta: float) -> void:
 		SoundManager.play_bgm()
 	
 	if not DataManager.solo_run:
-		return;
+		return
 	if FlowManager.has_task():
 		return
 
@@ -78,41 +82,33 @@ func _process(delta: float) -> void:
 	if AutoLoad.get_local_id() != 1:
 		return
 	
-	if(get_next_step()==get_current_step()):
-		if(is_instance_valid(player_control)):
-			player_control._process(delta);
-		if(is_instance_valid(ai_control)):
-			ai_control._process(delta);
-		return;
-	set_current_step(get_next_step());
+	if get_next_step() == get_current_step():
+		if is_instance_valid(player_control):
+			player_control._process(delta)
+		if is_instance_valid(ai_control):
+			ai_control._process(delta)
+		return
+	set_current_step(get_next_step())
 	
 	var current_step = get_current_step();
 	match current_step:
 		0:#初始叫嚣
-			FlowManager.add_flow("solo_init_say");
+			FlowManager.add_flow("solo_init_say")
 		1:#单方行动回合
-			var index = DataManager.solo_sort[DataManager.solo_sort_no];
-			var side = DataManager.solo_sort[DataManager.solo_sort_no];
-			var actorId = DataManager.solo_actor_by_side(side);
-			var war_actor = DataManager.get_war_actor(actorId);
-			var controlNo = war_actor.get_controlNo();
-			if(controlNo>=0):
-				FlowManager.set_current_control_playerNo(controlNo);
-				FlowManager.add_flow("solo_player_ready");
-			else:
-				FlowManager.add_flow("solo_AI_start");
+			FlowManager.add_flow("solo_run_play_trigger")
 		2:#单方行动结束
-			FlowManager.add_flow("solo_turn_end");
+			FlowManager.add_flow("solo_turn_end")
+	return
 
 #结束单挑
 func solo_run_end():
-	SceneManager.black.show();
-	FlowManager.clear_pre_history.clear();
-	LoadControl.end_script();
-	FlowManager.clear_bind_method();
-	DataManager.solo_actors = [];
-	DataManager.solo_sort = [];
-	DataManager.solo_sort_no = 0;
+	SceneManager.black.show()
+	FlowManager.clear_pre_history.clear()
+	LoadControl.end_script()
+	FlowManager.clear_bind_method()
+	DataManager.solo_actors = []
+	DataManager.solo_sort = []
+	DataManager.solo_sort_no = 0
 	#清空单挑BUFF
 	for actorId in DataManager.battle_actors:
 		var wa = DataManager.get_war_actor(actorId)
@@ -127,28 +123,51 @@ func solo_run_end():
 
 #初始叫嚣
 func solo_init_say():
-	set_current_step(0);
-	set_next_step(0);
-	var complete_array = Array(DataManager.common_variable["单挑.叫嚣完成"]);
+	set_current_step(0)
+	set_next_step(0)
+	var completed = DataManager.get_env_array("单挑.叫嚣完成")
 	for index in DataManager.solo_sort.size():
-		var side = DataManager.solo_sort[index];
-		if(complete_array.has(side)):
-			continue;
-		DataManager.solo_sort_no = index;
+		var side = DataManager.solo_sort[index]
+		if completed.has(side):
+			continue
+		DataManager.solo_sort_no = index
 		
-		var actorId = DataManager.solo_actor_by_side(side);
-		var war_actor = DataManager.get_war_actor(actorId);
-		var controlNo = war_actor.get_controlNo();
-		if(controlNo<0):
-			var war_enemy_actor = war_actor.get_battle_enemy_war_actor();
-			controlNo = war_enemy_actor.get_controlNo();
-			if(controlNo<0):
-				continue;
-		FlowManager.set_current_control_playerNo(controlNo);
-		FlowManager.add_flow("solo_player_start");
-		return;
-	DataManager.solo_sort_no = 0;
-	set_next_step(1);
+		var actorId = DataManager.solo_actor_by_side(side)
+		var wa = DataManager.get_war_actor(actorId)
+		var controlNo = wa.get_controlNo()
+		if controlNo < 0:
+			var enemy = wa.get_battle_enemy_war_actor()
+			controlNo = enemy.get_controlNo()
+			if controlNo < 0:
+				continue
+		FlowManager.set_current_control_playerNo(controlNo)
+		FlowManager.add_flow("solo_player_start")
+		return
+	DataManager.solo_sort_no = 0
+	set_next_step(1)
+	return
+
+func solo_run_play_trigger() -> void:
+	set_current_step(1)
+	set_next_step(1)
+	for actorId in DataManager.solo_actors:
+		if SkillHelper.auto_trigger_skill(actorId, 40011, "solo_run_play"):
+			return
+	FlowManager.add_flow("solo_run_play")
+	return
+
+func solo_run_play() -> void:
+	var index = DataManager.solo_sort[DataManager.solo_sort_no]
+	var side = DataManager.solo_sort[DataManager.solo_sort_no]
+	var actorId = DataManager.solo_actor_by_side(side)
+	var wa = DataManager.get_war_actor(actorId)
+	var controlNo = wa.get_controlNo()
+	if controlNo >= 0:
+		FlowManager.set_current_control_playerNo(controlNo)
+		FlowManager.add_flow("solo_player_ready")
+	else:
+		FlowManager.add_flow("solo_AI_start")
+	return
 
 #行动完毕
 func solo_turn_end():

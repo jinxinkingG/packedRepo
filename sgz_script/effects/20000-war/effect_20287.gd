@@ -27,27 +27,22 @@ func on_trigger_20027()->bool:
 		if not me.is_teammate(from):
 			return false
 
-	# 简单插入排序
-	var mostPowerful = []
-	for wa in me.war_vstate().get_war_actors(false, true):
-		var power = wa.actor().get_power()
-		var i = 0
-		while i < mostPowerful.size():
-			if power >= mostPowerful[i][1]:
-				break
-			i += 1
-		if i < mostPowerful.size():
-			mostPowerful.insert(i, [wa, power])
-		else:
-			mostPowerful.append([wa, power])
-
+	# 排序并去重
 	var affected = []
-	var leastPower = -1
-	for i in mostPowerful.size():
-		if affected.size() > 5 and mostPowerful[i][1] < leastPower:
+	var powers = []
+	var all = me.war_vstate().get_war_actors(false, true)
+	all.sort_custom(Global.actorComp, "by_actor_power")
+	for wa in all:
+		var power = wa.get_power()
+		if powers.size() < 5:
+			powers.append(power)
+			affected.append(wa)
+		elif power in powers:
+			# 并列是可以的
+			affected.append(wa)
+		else:
 			break
-		affected.append(mostPowerful[i][0])
-		leastPower = mostPowerful[i][1]
+
 	var names = []
 	for wa in affected:
 		ske.change_actor_ap(wa.actorId, AP_GAIN, false)

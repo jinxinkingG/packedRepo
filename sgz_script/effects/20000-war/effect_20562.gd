@@ -57,10 +57,9 @@ func effect_20562_end() -> void:
 	return
 
 func effect_20562_confirmed() -> void:
+	# 使用技能升级机制
 	ske.affair_set_skill_val(1)
 	ske.change_actor_exp(actorId, -COST_EXP)
-	ske.ban_affair_skill(actorId, ske.skill_name, 99999)
-	ske.affair_add_skill(actorId, "八阵", 99999)
 	ske.war_report()
 	report_skill_result_message(ske, 2001)
 	return

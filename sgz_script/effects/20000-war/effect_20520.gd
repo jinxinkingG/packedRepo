@@ -40,8 +40,8 @@ func on_trigger_20003() -> bool:
 					if DataManager.get_env_array("历史移动记录").empty():
 						ske.set_war_skill_val([], 1)
 						return false
-				var targets = get_nearby_enemies()
-				if targets.empty():
+				var targetIds = get_nearby_enemies()
+				if targetIds.empty():
 					ske.set_war_skill_val([], 1)
 					return false
 				return true
@@ -68,18 +68,16 @@ func on_trigger_20020() -> bool:
 	return false
 
 func effect_20520_AI_start() -> void:
-	var targets = get_nearby_enemies()
-	targets.shuffle()
-	DataManager.set_env("目标", targets[0].actorId)
+	var targetIds = Array(get_nearby_enemies())
+	targetIds.shuffle()
+	DataManager.set_env("目标", targetIds[0])
 	goto_step("2")
 	return
 
 func effect_20520_start() -> void:
-	var targets = []
-	for target in get_nearby_enemies():
-		targets.append(target.actorId)
+	var targetIds = get_nearby_enemies()
 	var msg = "【{0}】攻击何人？".format([ske.skill_name])
-	if not wait_choose_actors(targets, msg):
+	if not wait_choose_actors(targetIds, msg):
 		msg = "没有可攻击的目标"
 		play_dialog(actorId, msg, 3, 2990)
 		return
@@ -112,12 +110,12 @@ func effect_20520_3():
 	start_battle_and_finish(actorId, targetId)
 	return
 
-func get_nearby_enemies()->Array:
-	var targets = []
+func get_nearby_enemies() -> PoolIntArray:
+	var targetIds = []
 	for dir in StaticManager.NEARBY_DIRECTIONS:
 		var pos = me.position + dir
 		var target = DataManager.get_war_actor_by_position(pos)
 		if not me.is_enemy(target):
 			continue
-		targets.append(target)
-	return targets
+		targetIds.append(target.actorId)
+	return check_combat_targets(targetIds)

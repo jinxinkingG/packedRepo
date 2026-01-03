@@ -42,7 +42,6 @@ func _init() -> void:
 	FlowManager.bind_import_flow("AI_retreat_1", self)
 	FlowManager.bind_import_flow("AI_move_0", self)
 	FlowManager.bind_import_flow("AI_move_done", self)
-	FlowManager.bind_import_flow("AI_move_1", self)
 	FlowManager.bind_import_flow("AI_move_2", self)
 
 	# 计策相关 flow
@@ -119,32 +118,8 @@ func AI_move_done() -> void:
 	DataManager.unset_env("结束移动")
 	#插入移动技能判定
 	SkillHelper.auto_trigger_skill(fromId, 20003, "")
-	var trapInfo = wa.check_has_areas_by_labels(["伏兵"])
-	if not trapInfo.empty():
-		#十面埋伏扣兵
-		var trapActor = ActorHelper.actor(int(trapInfo["from_actorId"]))
-		var damage = int(Global.get_random(30,40) * trapActor.get_wisdom() / 10)
-		damage = int(min(damage, wa.get_soldiers()) * min(1,max(0.1,trapActor.get_soldiers()/1000.0)))
-		var msg = "{0}遭遇伏兵".format([wa.get_name()])
-		# 暂时植入【破伏】的实现
-		if SkillHelper.actor_has_skills(wa.actorId, ["破伏"]):
-			damage = 0
-			msg += "\n{0}【破伏】免伤".format([wa.get_name()])
-		if damage > 0:
-			DataManager.damage_sodiers(trapActor.actorId, wa.actorId, damage)
-			msg += "\n兵力下降{0}".format([damage])
-		DataManager.set_env("对话", msg)
-		if trapInfo.has("pos"):
-			map.mark_area_trapped(false, trapInfo["pos"], 2)
-		FlowManager.add_flow("AI_move_1")
-		FlowManager.add_flow("draw_actors")
-		return
-	FlowManager.add_flow("AI_move_2")
-	return
 
-func AI_move_1():
-	SceneManager.show_confirm_dialog(DataManager.common_variable["对话"])
-	set_view_model(41)
+	FlowManager.add_flow("AI_move_2")
 	return
 
 # 停止移动后
@@ -154,8 +129,9 @@ func AI_move_2():
 	if wa != null:
 		DataManager.set_env("移动", 0)
 		DataManager.set_env("结束移动", 1)
-		wa.after_move()
 		if SkillHelper.auto_trigger_skill(fromId, 20003, "AI_before_ready"):
+			return
+		if wa.after_move():
 			return
 	FlowManager.add_flow("AI_before_ready")
 	return
@@ -210,9 +186,6 @@ func _retreat(wa:War_Actor)->bool:
 	if DataManager.game_mode2 == 1:
 		#剧情模式不撤退
 		return false
-	if DataManager.endless_model:
-		# 无尽模式不撤退
-		return false
 	if wa.get_buff_label_turn(["围困"]) > 0:
 		# 围困状态下不允许撤退
 		return false
@@ -263,7 +236,7 @@ func AI_strategem_0():
 	var se = DataManager.new_stratagem_execution(fromId, stratagemName)
 	var me = DataManager.get_war_actor(se.fromId)
 	se.set_target(DataManager.get_env_int("目标"))
-	SkillHelper.auto_trigger_skill(se.fromId, 20021, "")
+	SkillHelper.auto_trigger_skill(se.fromId, 20021)
 	FlowManager.add_flow("AI_stratagem_talk")
 	return
 

@@ -11,7 +11,7 @@ const ENHANCEMENT = {
 }
 
 func on_trigger_30021()->bool:
-	var bu = ske.battle_extra_damage(EXTRA_DAMAGE, ["骑"], ["ALL"])
+	var bu = ske.battle_extra_damage(EXTRA_DAMAGE, ["骑"], ["ALL"], UNIT_TYPE_SOLDIERS)
 	if bu == null:
 		return false
 	bu.add_status_effect("虎骑 +{0}#FF0000".format([EXTRA_DAMAGE]))

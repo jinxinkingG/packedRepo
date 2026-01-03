@@ -9,6 +9,8 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 #写入计策伤兵量前（用计者触发）
 func on_trigger_20011()->bool:
 	var se = DataManager.get_current_stratagem_execution()
+	if se.skill != ske.skill_name:
+		return false
 	var rate = ske.get_war_skill_val_int()
 	if rate <= 0:
 		return false
@@ -40,11 +42,11 @@ func on_trigger_20012()->bool:
 	ske.set_war_skill_val(se.rate, 1)
 	return true
 
-func effect_20031_AI_start():
+func effect_20031_AI_start() -> void:
 	goto_step("start")
 	return
 
-func effect_20031_start():
+func effect_20031_start() -> void:
 	var se = DataManager.get_current_stratagem_execution()
 	var targetId = se.targetId
 	var skillInfo = "- <y{0}>计策失败，触发<r【{1}】>".format([
@@ -56,18 +58,18 @@ func effect_20031_start():
 	se.rate = ske.get_war_skill_val_int()
 	se.perform_to_targets([se.targetId], true)
 	var msg = "愚者千虑，必有一得!"
-	play_dialog(me.actorId, msg, 2, 2000)
+	play_dialog(actorId, msg, 2, 2000)
 	return
 
-func on_view_model_2000():
-	wait_for_skill_result_confirmation(FLOW_BASE + "_1")
+func on_view_model_2000() -> void:
+	wait_for_skill_result_confirmation(FLOW_BASE + "_report")
 	return
 
-func effect_20031_1():
+func effect_20031_report() -> void:
 	var se = DataManager.get_current_stratagem_execution()
 	report_stratagem_result_message(se, 2001)
 	return
 
 func on_view_model_2001():
-	wait_for_pending_message(FLOW_BASE + "_1", "")
+	wait_for_pending_message(FLOW_BASE + "_report", "")
 	return

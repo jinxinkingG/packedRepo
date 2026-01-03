@@ -13,10 +13,12 @@ func on_trigger_20003() -> bool:
 		return false
 	if DataManager.get_env_int("结束移动") != 1:
 		return false
+	if check_combat_targets([ske.actorId]).empty():
+		return false
 	var wa = DataManager.get_war_actor(ske.actorId)
 	if wa.get_controlNo() >= 0:
 		# 玩家要求历史移动记录，不允许原地触发
-		if get_env_array("历史移动记录").empty():
+		if DataManager.get_env_array("历史移动记录").empty():
 			return false
 
 	if Global.get_distance(wa.position, me.position) != 1:

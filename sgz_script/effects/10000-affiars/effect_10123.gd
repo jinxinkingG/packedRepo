@@ -17,11 +17,13 @@ func on_trigger_10012() -> bool:
 				return false
 		_:
 			return false
-	ske.change_actor_exp(actorId, EXP_GAIN)
+	var added = ske.change_actor_exp(actorId, EXP_GAIN)
+	if added <= 0:
+		return false
 	var cityId = get_working_city_id()
 	var city = clCity.city(cityId)
-	var msg = "也算是一番历练 … …\n（【{0}】经验 +200".format([
-		ske.skill_name,
+	var msg = "也算是一番历练 … …\n（【{0}】经验 +{1}".format([
+		ske.skill_name, added,
 	])
 	city.attach_free_dialog(msg, actorId)
 	return false

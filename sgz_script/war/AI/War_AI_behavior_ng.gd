@@ -369,10 +369,13 @@ func _try_scheduled_move(wa:War_Actor)->bool:
 	trace("{0}准备按设定路线，行动到 <{1}, {2}>，机动力 {3}".format([
 		wa.get_name(), pos.x, pos.y, wa.action_point,
 	]))
-	var disv = pos - wa.position
-	if abs(disv.x) + abs(disv.y) != 1:
+	if Global.get_distance(pos, wa.position) != 1:
 		# 路径错误，取消计划
 		return _schedule_move(wa, [])
+	var existed = DataManager.get_war_actor_by_position(pos)
+	if wa.is_enemy(existed):
+		# 敌军断路，直接攻击
+		return _attack(wa, existed.actorId)
 	if not _move(wa, pos):
 		# 无法移动到指定位置，取消计划
 		return _schedule_move(wa, [])
@@ -555,6 +558,9 @@ func _chase_target_or_position(wa:War_Actor, target:War_Actor, position:Vector2)
 		# 无计可施？
 		return false
 	var map = SceneManager.current_scene().war_map
+	# 如果自己在主城，不出击
+	if map.get_blockCN_by_position(wa.position) == "太守府":
+		return false
 	# 直通目标
 	var route = map.aStar.get_path_with_weight(wa.position, position)
 	if route.size() > 1:

@@ -6,7 +6,7 @@ extends "effect_20000.gd"
 const EFFECT_ID = 20442
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
-func on_trigger_20028()->bool:
+func on_trigger_20028() -> bool:
 	var wf = DataManager.get_current_war_fight()
 	# 仅第一天允许发动
 	if wf == null or wf.date != 1:
@@ -87,8 +87,8 @@ func effect_20442_4():
 	start_battle_and_finish(actorId, targetId, ske.skill_name, actorId, "land")
 	return
 
-func get_proper_targets()->PoolIntArray:
-	var targets = get_enemy_targets(me, true, 999)
+func get_proper_targets() -> PoolIntArray:
+	var targets = get_combat_targets(me, true, 999)
 	var enemyLeader = me.get_war_enemy_leader()
 	if enemyLeader != null:
 		targets.erase(enemyLeader.actorId)

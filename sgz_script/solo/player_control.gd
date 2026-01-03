@@ -176,41 +176,39 @@ func _input_key(delta: float):
 
 #初始叫嚣
 func solo_player_start():
-	set_view_model(0);
+	set_view_model(0)
 	var dialogs1 = [
-		"吾乃{0}\n来堂堂正正地一决胜负","{0}在此！\n逆贼快快下马受死",
+		"吾乃{0}\n来堂堂正正地一决胜负",
+		"{0}在此！\n逆贼快快下马受死",
 	];
 	var dialogs2 =[
 		"来！无怨无悔地决斗","你竟敢口出狂言",
 	];
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side);
+	var side:String = DataManager.solo_sort[DataManager.solo_sort_no]
+	var actorId = DataManager.solo_actor_by_side(side)
 	var actor = ActorHelper.actor(actorId)
-	var dialog_index = 0;
-	var msg = "";
-	if(DataManager.solo_sort_no==0):
-		dialog_index = Global.get_random(0,1);
-		DataManager.common_variable["值"]=dialog_index;
-		msg = str(dialogs1[dialog_index]).format([actor.get_name()]);
+	var dialog_index = 0
+	var msg = ""
+	if DataManager.solo_sort_no == 0:
+		dialog_index = Global.get_random(0, 1)
+		DataManager.set_env("值", dialog_index)
+		msg = str(dialogs1[dialog_index]).format([actor.get_name()])
 	else:
-		dialog_index = int(DataManager.common_variable["值"]);
-		msg = dialogs2[dialog_index];
-	SceneManager.show_solo_dialog(msg,actorId,0);
+		dialog_index = DataManager.get_env_int("值")
+		msg = dialogs2[dialog_index]
+	SceneManager.show_solo_dialog(msg, actorId, 0)
+	return
 
 #单挑菜单
 func solo_player_ready():
-	set_view_model(1);
-	LoadControl.end_script();
-	var scene_solo = SceneManager.current_scene();
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side);
-	var wa = DataManager.get_war_actor(actorId);
-	var enemy_wa:War_Actor = wa.get_battle_enemy_war_actor();
-	var actor = ActorHelper.actor(actorId);
-	var enemy_actor = ActorHelper.actor(enemy_wa.actorId);
-	scene_solo.solo_menu.init_data(actorId);
-	scene_solo.solo_menu.show();
-	scene_solo.solo_tactic_menu.hide();
+	set_view_model(1)
+	LoadControl.end_script()
+	var scene_solo = SceneManager.current_scene()
+	var side:String = DataManager.solo_sort[DataManager.solo_sort_no]
+	var actorId = DataManager.solo_actor_by_side(side)
+	scene_solo.solo_menu.init_data(actorId)
+	scene_solo.solo_menu.show()
+	scene_solo.solo_tactic_menu.hide()
 	return
 
 func solo_before_say_hurt():

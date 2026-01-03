@@ -53,6 +53,10 @@ func check_AI_perform() -> bool:
 func check_AI_perform_20000() -> bool:
 	return false
 
+# 是否有发动目标且要求发动目标为男性
+func require_target_male() -> bool:
+	return false
+
 #显示并等待选择目标位置
 func wait_choose_positions(positions:PoolVector2Array, msg:String="移动到何处？", nextViewModel:int=2000) -> void:
 	map.clear_can_choose_actors()
@@ -63,12 +67,21 @@ func wait_choose_positions(positions:PoolVector2Array, msg:String="移动到何�
 	LoadControl.set_view_model(nextViewModel)
 	return
 
+# 筛选可进入白刃战的目标
+func check_combat_targets(targetIds:PoolIntArray) -> PoolIntArray:
+	var ret = []
+	for targetId in targetIds:
+		if SkillRangeBuff.max_val_for_actor("技能不可攻击", targetId) > 0:
+			continue
+		ret.append(targetId)
+	return ret
+
 #选择目标时都用此方法
-func wait_choose_actors(targets:PoolIntArray, msg:String="对何人发动{0}?",through_wall:bool = false)->bool:
+func wait_choose_actors(targets:PoolIntArray, msg:String="对何人发动{0}?",through_wall:bool = false, checkPosition:bool=true)->bool:
 	var centers = get_skill_centers(me)
 	if me.is_defender():
 		through_wall = true;#守方允许穿墙
-	if not through_wall:
+	if checkPosition and not through_wall:
 		var newTargets = []
 		for targetId in targets:
 			if targetId in newTargets:
@@ -89,25 +102,34 @@ func wait_choose_actors(targets:PoolIntArray, msg:String="对何人发动{0}?",t
 	map.cursor.show()
 	set_env("可选目标", targets)
 	var firstTargetId = targets[0]
-	var lastTargetId = get_target_id()
+	var lastTargetId = get_target_id(targets)
 	if lastTargetId in targets:
 		firstTargetId = lastTargetId
+
 	var wa = DataManager.get_war_actor(firstTargetId)
 	map.set_cursor_location(wa.position, true)
 	set_env("武将", firstTargetId)
-	map.show_can_choose_actors(targets, me.actorId);#大地图显示可选目标
-	msg = msg.format([skill_name()]);
+	map.show_can_choose_actors(targets, actorId)
+	msg = msg.format([skill_name()])
 	SceneManager.show_actor_info(firstTargetId, true, msg)
 	map.next_shrink_actors = [firstTargetId]
 	return true
 
 #对目标执行什么效果
-func choose_actor_then(targetId:int,next_flow:String):
+func choose_actor_then(targetId:int, nextFlow:String):
 	var targetActor = ActorHelper.actor(targetId)
 	# 谦逊比较特别，直接判断了
 	if actor.get_wisdom() < 90:
 		if SkillHelper.actor_has_skills(targetId, ["谦逊"], false):
 			var msg = "君子之道，思危，思退\n（{0}【谦逊】\n（规避{1}的【{2}】".format([
+				targetActor.get_name(), actor.get_name(), ske.skill_name,
+			])
+			LoadControl._error(msg, targetId)
+			return false
+	# 秀慧也直接判断了
+	if actor.get_moral() < targetActor.get_moral():
+		if ske.effect_type == "主动" and SkillHelper.actor_has_skills(targetId, ["秀慧"], false):
+			var msg = "卿何人，勿预也\n（{0}【秀慧】\n（规避{1}的【{2}】".format([
 				targetActor.get_name(), actor.get_name(), ske.skill_name,
 			])
 			LoadControl._error(msg, targetId)
@@ -128,9 +150,13 @@ func choose_actor_then(targetId:int,next_flow:String):
 			])
 			LoadControl._error(msg, actorId)
 			return false
+	if require_target_male() and not targetActor.is_male():
+		var msg = "红粉骷髅，何惑于我"
+		LoadControl._error(msg, targetId)
+		return false
 
 	ske.targetId = targetId
-	FlowManager.add_flow(next_flow)
+	FlowManager.add_flow(nextFlow)
 	return
 
 #默认可选距离6
@@ -181,7 +207,7 @@ func wait_for_skill_result_confirmation(nextFlow:String="player_skill_end_trigge
 	return
 
 # 发动主动技时，等待数值输入
-func wait_for_number_input(nextFlow:String):
+func wait_for_number_input(nextFlow:String, allowZero:bool=false):
 	var conNumberInput = SceneManager.input_numbers.get_current_input_node()
 	var number:int = conNumberInput.get_number()
 
@@ -207,55 +233,11 @@ func wait_for_number_input(nextFlow:String):
 		if not SceneManager.input_numbers.is_msg_complete():
 			SceneManager.input_numbers.show_all_msg()
 			return
-		if number == 0:
+		if number == 0 and not allowZero:
 			#不能给0
 			return
 		LoadControl.set_view_model(-1)
 		DataManager.set_env("数值", number)
-		FlowManager.add_flow(nextFlow)
-	return
-
-func wait_for_multiple_number_input(nextFlow:String) -> void:
-	var con = SceneManager.input_numbers
-	var current = con.get_current_input_node()
-	if Input.is_action_just_pressed("ANALOG_UP"):
-		current.cursor_number_up()
-	if Input.is_action_just_pressed("ANALOG_DOWN"):
-		current.cursor_number_down()
-	if Input.is_action_just_pressed("ANALOG_LEFT"):
-		current.cursor_move_left()
-	if Input.is_action_just_pressed("ANALOG_RIGHT"):
-		current.cursor_move_right()
-	if Input.is_action_just_pressed("EMU_SELECT"):
-		current.set_number(current.min_number)
-	if Input.is_action_just_pressed("EMU_START"):
-		current.set_number(current.max_number)
-	if Global.is_action_pressed_BY():
-		if not con.is_msg_complete():
-			return
-		if con.pre_input_index():
-			current = SceneManager.input_numbers.get_current_input_node()
-			current.set_number(0, true)
-			return
-		back_to_skill_menu()
-		return
-	if not Global.is_action_pressed_AX():
-		return
-	if not con.is_msg_complete():
-		con.show_all_msg()
-		return
-
-	var numbers = con.get_numbers()
-	DataManager.set_env("多项数值", numbers)
-	var total = 0
-	for n in numbers:
-		total += n
-	var number = current.get_number()
-	if not con.is_last_input():
-		con.next_input_index()
-		return
-	elif total > 0:
-		LoadControl.set_view_model(-1)
 		FlowManager.add_flow(nextFlow)
 	return
 
@@ -278,12 +260,12 @@ func wait_for_choose_actor(nextFlow:String, isActiveSkill:bool=true, canBack:boo
 	SceneManager.show_actor_info(current, false, msg)
 
 	# 测试 debug 显示
-	if DataManager.is_test_player():
-		var target = DataManager.get_war_actor(current)
-		if target != null:
-			var path = map.aStar.get_skill_path(me.position, target.position, distance)
-			if path.size() > 0:
-				map.show_color_block_by_position(path)#, map.SELECTOR_COLOR)
+	#if DataManager.is_test_player():
+	#	var target = DataManager.get_war_actor(current)
+	#	if target != null:
+	#		var path = map.aStar.get_skill_path(me.position, target.position, distance)
+	#		if path.size() > 0:
+	#			map.show_color_block_by_position(path)#, map.SELECTOR_COLOR)
 
 	if Global.is_action_pressed_BY():
 		if not canBack:
@@ -319,6 +301,16 @@ func wait_for_choose_actor(nextFlow:String, isActiveSkill:bool=true, canBack:boo
 			return
 	var wa = DataManager.get_war_actor(current)
 	if targets[index] != current:
+		# 参见【护军】效果
+		if me.is_enemy(wa):
+			for srb in SkillRangeBuff.find_for_actor("技能强制选中", current):
+				if srb.effectTagVal <= 0:
+					continue
+				msg = "因{0}【{1}】，无法选择其他目标".format([
+					wa.get_name(), srb.skillName
+				])
+				SceneManager.show_actor_info(wa.actorId, false, msg)
+				return
 		current = targets[index]
 		set_env("武将", current)
 		wa = DataManager.get_war_actor(current)
@@ -577,7 +569,26 @@ func assert_min_hp(actorId:int, minHP:int)->bool:
 		return false
 	return true
 
+# 确保有足够的金
+func assert_wv_gold(gold:int)->bool:
+	if me.war_vstate().money < gold:
+		play_dialog(actorId, "金不足，需 >= {0}".format([gold]), 3, 2999)
+		return false
+	return true
+
+# 确保有足够的兵力
+func assert_min_soldiers(soldiers:int)->bool:
+	if actor.get_soldiers() < soldiers:
+		play_dialog(actorId, "兵力不足，需 >= {0}".format([soldiers]), 3, 2999)
+		return false
+	return true
+
 # 将队友作为技能准备发动的目标
+# @param me 技能发动者
+# @param distance 范围距离，-1 表示默认距离
+# @param allowWalls 是否允许穿越墙体
+# @param ignoreExtra 是否忽略扩展额外选区
+# @return 队友列表
 func get_teammate_targets(me:War_Actor, distance:int=-1, allowWalls:bool=true, ignoreExtra:bool=false)->PoolIntArray:
 	if distance < 0:
 		distance = get_choose_distance()
@@ -604,6 +615,11 @@ func get_teammate_targets(me:War_Actor, distance:int=-1, allowWalls:bool=true, i
 					ret.append(wa.actorId)
 				break
 	return ret
+
+# 将对手作为发起白刃战类技能的目标
+func get_combat_targets(from:War_Actor, allowWalls:bool=false, distance:int=-1, ignoreExtra:bool=false)->PoolIntArray:
+	var targetIds = get_enemy_targets(from, allowWalls, distance, ignoreExtra)
+	return check_combat_targets(targetIds)
 
 # 将对手作为技能准备发动的目标
 func get_enemy_targets(from:War_Actor, allowWalls:bool=false, distance:int=-1, ignoreExtra:bool=false)->PoolIntArray:
@@ -699,7 +715,7 @@ func wait_for_pending_message(replayFlow:String, nextFlow:String="player_skill_e
 		return
 	DataManager.unset_env("对话PENDING")
 	if nextFlow == "":
-		LoadControl.end_script()
+		skill_end_clear()
 		return
 	FlowManager.add_flow(nextFlow)
 	return
@@ -763,21 +779,44 @@ func set_max_move_ap_cost(targetBlocks:PoolStringArray, maxAP:int, exceptedBlock
 # 移动：1，回退：-1，不动：0，未知：-2
 # 环境异常也返回 -2
 func get_move_type()->int:
-	if not check_env([KEY_MOVE_TYPE]):
-		return -2
-	return int(get_env(KEY_MOVE_TYPE))
+	return DataManager.get_env_int(KEY_MOVE_TYPE, -2)
 
-# 设置环境变量改变计策消耗
-func set_scheme_ap_cost(stratagem:String, cost:int)->bool:
-	if stratagem != "ALL" and stratagem != get_env_str("计策.消耗.计策名"):
+# 设置环境变量，固定计策消耗
+func set_scheme_ap_cost(stratagem:String, cost:int) -> bool:
+	var settings = DataManager.get_env_dict("计策.消耗")
+	if stratagem != "ALL" and stratagem != settings["计策"]:
 		return false
-	var prev = DataManager.get_env_int("计策.消耗.所需")
-	if prev == 9999:
-		# 表示不可用
+	settings["固定"] = cost
+	DataManager.set_env("计策.消耗", settings)
+	return true
+
+# 设置环境变量，减少计策消耗
+func reduce_scheme_ap_cost(stratagem:String, cost:int) -> bool:
+	if cost < 1:
 		return false
-	if prev <= cost and cost < 9999:
+	var settings = DataManager.get_env_dict("计策.消耗")
+	if stratagem != "ALL" and stratagem != settings["计策"]:
 		return false
-	DataManager.set_env("计策.消耗.所需", cost)
+	var most = cost
+	if "至多" in settings:
+		most = min(cost, int(settings["至多"]))
+	settings["至多"] = most
+	DataManager.set_env("计策.消耗", settings)
+	return true
+
+# 设置环境变量，增加计策消耗
+# @param cost，至少消耗多少
+func raise_scheme_ap_cost(stratagem:String, cost:int) -> bool:
+	if cost < 1:
+		return false
+	var settings = DataManager.get_env_dict("计策.消耗")
+	if stratagem != "ALL" and stratagem != settings["计策"]:
+		return false
+	var least = cost
+	if "至少" in settings:
+		least = max(cost, int(settings["至少"]))
+	settings["至少"] = least
+	DataManager.set_env("计策.消耗", settings)
 	return true
 
 # 回调函数，更新选择目标时显示的信息
@@ -789,8 +828,9 @@ func start_battle_and_finish(fromId:int, targetId:int, source:String="", sourceA
 	if source == "":
 		source = ske.skill_name
 	SkillHelper.remove_all_skill_trigger()
+
 	DataManager.player_choose_actor = fromId
-	set_env("武将", targetId)
+	DataManager.set_env("武将", targetId)
 	var logInfo = "- <y{0}>发动【<r{1}>】攻击<y{2}>".format([
 		ActorHelper.actor(fromId).get_name(), source,
 		ActorHelper.actor(targetId).get_name(),
@@ -806,6 +846,7 @@ func start_battle_and_finish(fromId:int, targetId:int, source:String="", sourceA
 	DataManager.battle_units = []
 	DataManager.battle_actors = []
 	DataManager.set_env("战斗.强制地形", forcedTerrian)
+
 	var player_attack = Global.load_script(DataManager.mod_path+"sgz_script/war/player_attack.gd")
 	player_attack._go_to_battle(false, source, ske.will_auto_finish_turn())
 	LoadControl.end_script()
@@ -891,7 +932,7 @@ func report_skill_result_message(ske:SkillEffectInfo, nextViewModel:int, startin
 			DataManager.set_env("对话PENDING", msgs)
 		# 同时汇报到日志
 		ske.war_report()
-		if startingReporter < 0:
+		if startingReporter == -1:
 			startingReporter = wa.actorId
 		play_dialog(startingReporter, startingMessage, startingMood, nextViewModel)
 		return

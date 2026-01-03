@@ -15,8 +15,8 @@ func effect_20456_start()->void:
 		play_dialog(actorId, msg, 2, 2999)
 		return
 	var wa = DataManager.get_war_actor(targetId)
-	if wa != null and not wa.disabled and wa.poker_point > me.poker_point:
-		var msg = "{0}的点数更大\n无法发动【{1}】".format([
+	if wa != null and not wa.disabled and me.get_poker_point_diff(wa) <= 0:
+		var msg = "点数未大过{0}\n无法发动【{1}】".format([
 			wa.get_name(), ske.skill_name,
 		])
 		play_dialog(actorId, msg, 2, 2999)

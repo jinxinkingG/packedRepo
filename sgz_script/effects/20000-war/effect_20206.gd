@@ -83,12 +83,15 @@ func effect_20206_2():
 # 锁定技，如果有技能标记，机动力减半
 func on_trigger_20005() -> bool:
 	var se = DataManager.get_current_stratagem_execution()
-	if se.get_action_id(me.actorId) != me.actorId:
+	if se.get_action_id(actorId) != actorId:
 		return false
 	if se.skill != ske.skill_name:
 		return false
-	var cost = int(DataManager.get_env_int("计策.消耗.所需") / 2)
-	set_scheme_ap_cost("ALL", cost)
+	var settings = DataManager.get_env_dict("计策.消耗")
+	var name = settings["计策"]
+	var cost = int(settings["所需"])
+	cost = int(cost / 2)
+	reduce_scheme_ap_cost("ALL", cost)
 	return false
 
 func on_trigger_20010() -> bool:

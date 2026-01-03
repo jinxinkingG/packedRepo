@@ -31,8 +31,19 @@ func effect_20508_go()->void:
 	var target = DataManager.get_war_actor(targetId)
 	var wv = me.war_vstate()
 
+	var msg = "太玄在上，如律令敕！"
+
 	ske.cost_ap(COST_AP, true)
 	ske.cost_war_cd(99999)
+
+	for item in target.actor().get_equip_feature_all("仙术无效"):
+		if item[1] > 0:
+			var response = "旁门左道，于我皆为虚妄！\n（「{0}」仙术无效".format([
+				item[0].name(),
+			])
+			target.attach_free_dialog(response, 0)
+			play_dialog(actorId, msg, 0, 2999)
+			return
 
 	wf.set_env("人偶", targetId)
 	var wa = War_Actor.new(wv.vstate().id, wv.id)
@@ -49,10 +60,9 @@ func effect_20508_go()->void:
 	wa.five_phases = target.five_phases
 	wv.add_war_actor(wa, true)
 
-	var msg = "太玄在上，如律令敕！"
-
 	map.draw_actors()
 	ske.war_report()
+
 	play_dialog(actorId, msg, 0, 2999)
 	return
 

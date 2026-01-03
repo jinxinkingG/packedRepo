@@ -33,12 +33,8 @@ func effect_30229_AI_2():
 	var msg = "{0}部心胆俱裂\n{1}单位变为步兵".format([
 		enemy.get_name(), changed,
 	])
-	SceneManager.show_confirm_dialog(msg, me.actorId, 1)
+	SceneManager.show_confirm_dialog(msg, actorId, 1)
 	LoadControl.set_view_model(2001)
-	return
-
-func on_view_model_3001()->void:
-	wait_for_skill_result_confirmation(FLOW_BASE + "_AI_3", false)
 	return
 
 func effect_30229_start():
@@ -121,7 +117,7 @@ func _chance_to_trans_enemy_unit()->int:
 			continue
 		if unit.leaderId != enemy.actorId:
 			continue
-		if unit.get_unit_type() in ["将", "城门"]:
+		if not unit.is_soldier():
 			continue
 		#每个敌方士兵有X%的概率变成步兵
 		if Global.get_rate_result(level * 8):

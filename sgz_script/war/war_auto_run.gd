@@ -553,7 +553,7 @@ func back_to_war():
 	set_next_step(-1)
 
 	for id in [bf.get_attacker_id(), bf.get_defender_id()]:
-		SkillHelper.auto_trigger_skill(id, 20008, "")
+		SkillHelper.auto_trigger_skill(id, 20008)
 	
 	var loser = bf.get_loser()
 	var loserActor = loser.actor()
@@ -595,16 +595,45 @@ func back_to_war():
 					DataManager.set_env("战争.跃马武将", loser.actorId)
 		DataManager.unset_env("后退位置")
 
-	var winnerAP = winner.actor().get_equip_feature_total("战斗获得机动力")
-	if winnerAP > 0:
-		winner.action_point += winnerAP
-		# TODO，这里暂时写死吴子兵法
-		# 未来有 “战斗获得机动力” 效果扩展时
-		# 应准确判断来源
-		var msg = "因形用权，应变无穷\n（<吴子兵法>效果\n（机动力 +{0}".format([
-			winnerAP,
-		])
-		winner.attach_free_dialog(msg, 2)
+	for wa in [loser, winner]:
+		if wa == null or wa.disabled:
+			continue
+		# 先检查装备
+		var equipTriggered = false
+		for item in wa.actor().get_equip_feature_all("战斗获得机动力"):
+			var ap = int(item[1])
+			if ap <= 0:
+				continue
+			wa.action_point += ap
+			var msg = "因形用权，应变无穷\n（<{0}>效果\n（机动力 +{1}".format([
+				item[0].name(), ap,
+			])
+			wa.attach_free_dialog(msg, 2)
+			equipTriggered = true
+			break
+		if equipTriggered:
+			continue
+		# 再检查技能
+		for srb in SkillRangeBuff.find_for_actor("战斗获得机动力", wa.actorId):
+			if srb.effectTagVal <= 0:
+				continue
+			var ap = wa.battle_tactic_point
+			if ap <= 0 or wa.action_point > 0:
+				continue
+			# 目前每日一次，光环不能用 CD，暂时用环境变量
+			var key = "光环CD.{0}.{1}.{2}".format([
+				srb.skillName, wa.actorId, wf.date
+			])
+			if wf.get_env_int(key) > 0:
+				continue
+			# 标记光环 CD
+			wf.set_env(key, 1)
+			wa.action_point += ap
+			var msg = "因形用权，应变无穷\n（【{0}】效果\n（机动力 +{1}".format([
+				srb.skillName, ap,
+			])
+			wa.attach_free_dialog(msg, 2)
+			break
 
 	wf.update_war_process()
 	# 解除黑幕
@@ -639,8 +668,10 @@ func back_to_war_clear():
 	DataManager.battle_actors = []
 	set_next_step(7)
 	#防止连锁技能未执行完毕
-	var st_info = SkillHelper.get_current_skill_trigger();
-	if st_info != null:
+	var st = SkillHelper.get_current_skill_trigger();
+	if st != null:
+		if st.next_flow == "":
+			st.next_flow = "back_to_war_clear"
 		set_current_step(7)
 		return
 
@@ -713,7 +744,7 @@ func before_turn_skill_trigger():
 		check_feijian_damage(wa)
 		check_special_equipments(wa)
 		DataManager.set_env("战争.准备阶段触发", prepared)
-		if SkillHelper.auto_trigger_skill(wa.actorId,20013,"before_turn_skill_trigger"):
+		if SkillHelper.auto_trigger_skill(wa.actorId, 20013, "before_turn_skill_trigger"):
 			return
 	DataManager.unset_env("战争.准备阶段触发")
 	set_next_step(6)
@@ -1082,9 +1113,8 @@ func check_yijing(wa:War_Actor)->bool:
 	FlowManager.add_flow("player_yijing")
 	return true
 
-# 战争准备阶段，检查特殊装备的解锁
-# 目前只有掩心镜，暂时不好做条件形式化配置
-# 放在这里写死
+# 战争准备阶段，检查特殊装备的解锁，及特殊装备效果的触发
+# 目前有掩心镜、游子弓
 func check_special_equipments(wa:War_Actor) -> void:
 	if wa.actorId == StaticManager.ACTOR_ID_LIUSHAN:
 		var yxj = clEquip.equip(StaticManager.SUIT_ID_YANXINJING, "防具")
@@ -1106,6 +1136,23 @@ func check_special_equipments(wa:War_Actor) -> void:
 				yxj.dec_count(1)
 				wa.actor().set_equip(yxj)
 				wa.vstate().add_stored_equipment(current)
+	var wf = DataManager.get_current_war_fight()
+	var key = "恢复禁用技能.{0}".format([wa.actorId])
+	if wf.get_env_int(key) <= 0:
+		for found in wa.actor().get_equip_feature_all("恢复禁用技能"):
+			if int(found[1]) <= 0:
+				continue
+			var banned = SkillHelper.get_actor_banned_skill_names(20000, wa.actorId)
+			if banned.empty():
+				break
+			var recovered = banned[randi() % banned.size()]
+			if SkillHelper.recover_banned_actor_skill(wa.actorId, recovered):
+				var msg = "浮云落日，归期何期 ……\n（「{0}」效果\n（恢复被禁用的技能【{1}】".format([
+					found[0].name(), recovered
+				])
+				wa.attach_free_dialog(msg, 2)
+			wf.set_env(key, 1)
+			break
 	return
 
 func prepare_turn_skill_trigger()->void:

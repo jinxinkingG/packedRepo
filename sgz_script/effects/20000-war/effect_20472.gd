@@ -17,7 +17,7 @@ func effect_20472_start()->void:
 	return
 
 func on_view_model_2000()->void:
-	match wait_for_skill_option():
+	match wait_for_skill_option("skill_menu", true):
 		0:
 			goto_step("for_flag")
 		1:

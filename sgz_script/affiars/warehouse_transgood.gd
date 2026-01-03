@@ -32,6 +32,7 @@ func _input_key(delta: float):
 				SceneManager.show_unconfirm_dialog("无法运送至该城")
 				return
 			DataManager.set_env("目标城", cityId)
+			scene_affiars.reset_view()
 			FlowManager.add_flow("transgoods_2")
 		312: #输入数字
 			if not wait_for_number_input("enter_warehouse_menu", true):
@@ -61,15 +62,18 @@ func _input_key(delta: float):
 
 #物资运输开始（311）：选择目标城池
 func transgoods_start():
-	SceneManager.clear_bottom();
-	DataManager.twinkle_citys.clear();
+	var cityId = DataManager.player_choose_city
 	var scene_affiars:Control = SceneManager.current_scene();
 	var vstate_controlNo = DataManager.get_current_control_sort()
 	var player:Player = DataManager.players[vstate_controlNo];
 	scene_affiars.cursor.show();
-	scene_affiars.set_city_cursor_position(DataManager.player_choose_city);
+	SceneManager.clear_bottom()
+	DataManager.twinkle_citys.clear()
+	scene_affiars.set_city_cursor_position(cityId)
+	scene_affiars.show_movable_city_lines(cityId)
 	SceneManager.show_unconfirm_dialog("向哪座城池运送物资？\n请指定");
 	LoadControl.set_view_model(311)
+	return
 
 #输入运送数量
 func transgoods_2():

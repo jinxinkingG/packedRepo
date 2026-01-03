@@ -46,21 +46,19 @@ func on_trigger_30009()->bool:
 	me.add_dialog_info(d)
 	return false
 
-func on_trigger_30003()->bool:
+func on_trigger_30003() -> bool:
 	if ske.get_war_skill_val_int(ACTIVE_EFFECT_ID) <= 0:
 		return false
-	var formationKey = "白兵.阵型优先.{0}".format([me.actorId])
-	if get_env_int(formationKey) > 2:
-		return false
+	bf.update_extra_formation_setting(
+		actorId, ske.skill_name, "场合", {
+			"兵种数量": {"骑": 5},
+			"分配顺序": ["骑"],
+			"禁用兵种转换": 1,
+		}
+	)
 
 	var prevSoldiers = actor.get_soldiers()
 	actor.set_soldiers(500)
-
-	var setting = get_env_dict("兵种数量")
-	var sorting = get_env_array("分配顺序")
-	set_env("兵种数量", {"步":0,"弓":0,"骑":10})
-	set_env("分配顺序", ["骑"])
-	set_env(formationKey, 2)
 
 	# 修正白兵战数据
 	bf.attackerSoldiers = 500

@@ -4,14 +4,12 @@ extends "effect_30000.gd"
 #【藤甲】大战场&小战场,锁定技。你乘坐大象，默认8步2弓，且步兵站骑兵位，布阵后可以选择是否武将前置。非水战，你的步兵和弓兵只承受50%的伤害；大战场，处于非水地形时，火属性计策会对你造成125%的伤害
 
 func on_trigger_30003()->bool:
-	var formationKey = "白兵.阵型优先.{0}".format([me.actorId])
-	if get_env_int(formationKey) >= 1:
-		return false
-	var num_set_dic = {"弓":2,"步":8}
-	var set_sort = ["弓","步"]
-	set_env("兵种数量", num_set_dic)
-	set_env("分配顺序", set_sort)
-	set_env(formationKey, 1)
+	bf.update_extra_formation_setting(
+		actorId, ske.skill_name, "常规", {
+			"兵种数量": {"弓":2,"步":8},
+			"分配顺序": ["弓", "步"],
+		}
+	)
 	return false
 
 func on_trigger_30005()->bool:

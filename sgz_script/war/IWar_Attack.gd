@@ -21,7 +21,7 @@ func get_can_attack_actors(fromId:int, igonreAP:bool=false, evenForbidden:bool=f
 	DataManager.set_env("战争.目标地形排除", [])
 	DataManager.set_env("战争.攻击目标排除", {})
 	DataManager.set_env("战争.额外攻击目标", [])
-	SkillHelper.auto_trigger_skill(fromId, 20030, "")
+	SkillHelper.auto_trigger_skill(fromId, 20030)
 	var max_distance = DataManager.get_env_int("战争.攻击距离")
 	var except_blocks = DataManager.get_env_array("战争.目标地形排除")
 	var excludedTargets = DataManager.get_env_dict("战争.攻击目标排除")
@@ -100,8 +100,10 @@ func get_attack_ap(fromId:int,toId:int):
 		"固定":-1,
 	})
 
-	SkillHelper.auto_trigger_skill(fromId, 20014, "")
-	
+	SkillHelper.auto_trigger_skill(fromId, 20014)
+	return calculate_attack_ap()
+
+func calculate_attack_ap() -> int:
 	var dic = DataManager.get_env_dict("战争.攻击消耗")
 	var ap = int(dic["初始"])#初始攻击力消耗
 	ap -= int(dic["减少"])

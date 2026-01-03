@@ -36,16 +36,15 @@ func on_view_model_2001():
 func effect_20467_3():
 	var targetId = DataManager.get_env_int("目标")
 	var targetWA = DataManager.get_war_actor(targetId)
-	var point = Global.get_random(0, 9)
 	ske.cost_war_cd(1)
 	ske.cost_ap(COST_AP, true)
-	ske.change_actor_five_phases(targetId, targetWA.five_phases, point)
+	ske.change_actor_five_phases(targetId, targetWA.five_phases, -1)
 	var msg = "{0}其人，当善察所行\n（{1}点数变为{2}".format([
 		DataManager.get_actor_honored_title(targetId, actorId),
 		targetWA.get_name(), targetWA.poker_point,
 	])
-	if targetWA.poker_point < me.poker_point:
-		var diff = me.poker_point - targetWA.poker_point
+	var diff = me.get_poker_point_diff(targetWA)
+	if diff > 0:
 		var leader = me.get_leader()
 		if leader != null:
 			ske.change_actor_ap(leader.actorId, diff)

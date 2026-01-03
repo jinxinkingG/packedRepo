@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #邀斗主将主动技
-#【邀斗】大战场，主将主动技。选择敌我双方各1名武系或者统系且不在太守府的武将，消耗8机动力发动：视为敌方目标与我方目标进入白刃战。每个回合限1次。（“武，统，知，政”四属性，按顺序判断，武最高者属武系，统最高者为统系）
+#【邀斗】大战场，主将主动技。选择敌我双方各1名武系或者统系且不在太守府的武将，消耗8机动力发动：视为敌方目标与我方目标进入白刃战。每两日限1次。
 
 const EFFECT_ID = 20102
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -11,23 +11,17 @@ func effect_20102_start() -> void:
 	if not assert_action_point(actorId, COST_AP):
 		return
 
-	var targets = []
-	for targetId in get_teammate_targets(me):
-		var wa = DataManager.get_war_actor(targetId)
-		var actor = ActorHelper.actor(wa.actorId)
-		if not actor.is_male():
-			#仅限男性
-			continue
-		var blockCN = map.get_blockCN_by_position(wa.position)
-		if blockCN == "太守府":
-			#不允许勾引敌军攻打太守府
-			continue
-		# 要求统武
-		var maxAttr = max(actor.get_power(), actor.get_leadership())
-		if max(actor.get_wisdom(), actor.get_politics()) > maxAttr:
-			continue
-		targets.append(wa.actorId)
-	if not wait_choose_actors(targets, "选择队友发动【{0}】"):
+	var fromIds = _get_teammate_targets()
+	var targetIds = _get_enemy_targets()
+	if fromIds.empty():
+		var msg = "没有合适的【{0}】队友".format([ske.skill_name])
+		play_dialog(actorId, msg, 3, 2999)
+		return
+	if targetIds.empty():
+		var msg = "没有合适的【{0}】对手".format([ske.skill_name])
+		play_dialog(actorId, msg, 3, 2999)
+		return
+	if not wait_choose_actors(fromIds, "选择队友发动【{0}】"):
 		return
 	LoadControl.set_view_model(2000)
 	return
@@ -38,23 +32,8 @@ func on_view_model_2000() -> void:
 
 func effect_20102_teammate_selected() -> void:
 	DataManager.set_env("邀斗.队友", DataManager.get_env_int("目标"))
-	var targets = []
-	for targetId in get_enemy_targets(me, true):
-		var wa = DataManager.get_war_actor(targetId)
-		var actor = ActorHelper.actor(wa.actorId)
-		if not actor.is_male():
-			#仅限男性
-			continue
-		var blockCN = map.get_blockCN_by_position(wa.position)
-		if blockCN == "太守府":
-			#不允许勾引太守府敌军
-			continue
-		# 要求统武
-		var maxAttr = max(actor.get_power(), actor.get_leadership())
-		if max(actor.get_wisdom(), actor.get_politics()) > maxAttr:
-			continue
-		targets.append(wa.actorId)
-	if not wait_choose_actors(targets, "选择对手发动【{0}】"):
+	var targetIds = _get_enemy_targets()
+	if not wait_choose_actors(targetIds, "选择对手发动【{0}】"):
 		return
 	LoadControl.set_view_model(2001)
 	return
@@ -84,7 +63,7 @@ func effect_20102_confirmed() -> void:
 	var teammateId = DataManager.get_env_int("邀斗.队友")
 	var enemyId = DataManager.get_env_int("邀斗.对手")
 
-	ske.cost_war_cd(1)
+	ske.cost_war_cd(2)
 	ske.cost_ap(COST_AP, true)
 	ske.war_report()
 
@@ -121,3 +100,34 @@ func effect_20102_fight() -> void:
 	DataManager.clear_common_variable(["邀斗"])
 	start_battle_and_finish(enemyId, teammateId)
 	return
+
+func _get_teammate_targets() -> PoolIntArray:
+	var targetIds = []
+	for targetId in get_teammate_targets(me):
+		var wa = DataManager.get_war_actor(targetId)
+		var blockCN = map.get_blockCN_by_position(wa.position)
+		if blockCN == "太守府":
+			#不允许勾引敌军攻打太守府
+			continue
+		# 要求统武
+		var maxAttr = max(wa.actor().get_power(), wa.actor().get_leadership())
+		if max(wa.actor().get_wisdom(), wa.actor().get_politics()) > maxAttr:
+			continue
+		targetIds.append(wa.actorId)
+	targetIds = check_combat_targets(targetIds)
+	return targetIds
+
+func _get_enemy_targets() -> PoolIntArray:
+	var targetIds = []
+	for targetId in get_combat_targets(me, true):
+		var wa = DataManager.get_war_actor(targetId)
+		var blockCN = map.get_blockCN_by_position(wa.position)
+		if blockCN == "太守府":
+			#不允许勾引太守府敌军
+			continue
+		# 要求统武
+		var maxAttr = max(wa.actor().get_power(), wa.actor().get_leadership())
+		if max(wa.actor().get_wisdom(), wa.actor().get_politics()) > maxAttr:
+			continue
+		targetIds.append(wa.actorId)
+	return targetIds

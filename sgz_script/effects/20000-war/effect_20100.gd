@@ -5,20 +5,26 @@ extends "effect_20000.gd"
 
 const EFFECT_ID = 20100
 
-func on_trigger_20005()->bool:
-	if DataManager.get_env_int("计策.消耗.仅对比") > 0:
+func on_trigger_20006() -> bool:
+	var settings = DataManager.get_env_int_array("计策.扣减")
+	var cost = settings[0]
+	var prev = settings[1]
+	var current = settings[2]
+	if cost <= 0:
 		return false
-	var cost = DataManager.get_env_int("计策.消耗.所需")
 	# 最多减到 1/3，期望比智神差
 	var reduce = int(ceil(cost/3.0)) + 1
 	reduce = DataManager.pseduo_random_war() % reduce
 	if reduce <= 0:
 		return false
-	set_scheme_ap_cost("ALL", cost - reduce)
+	# 已经扣减了，默默返还，不需要技能日志留痕
+	cost = cost - reduce
+	current += reduce
+	DataManager.set_env("计策.扣减", [cost, prev, current])
+
 	var msg = "【{0}】减少计策消耗{1}".format([
 		ske.skill_name, reduce,
 	])
-	# 此时已经是实际扣减了，所以 se 已经创建
 	var se = DataManager.get_current_stratagem_execution()
 	se.append_result(ske.skill_name, msg, reduce, actorId)
 	# 不需要单独做技能汇报

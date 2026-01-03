@@ -121,8 +121,6 @@ func get_target_city_ids(cityId:int)->PoolIntArray:
 		if c.ID == cityId:
 			continue
 		var leader = c.get_leader()
-		if leader == null:
-			continue
 		if leader.get_first_name() == "刘":
 			targetCityIds.append(c.ID)
 	return targetCityIds

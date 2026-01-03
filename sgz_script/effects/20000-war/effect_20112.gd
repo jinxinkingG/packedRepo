@@ -21,7 +21,10 @@ func on_trigger_20020()->bool:
 	if winner == null or winner.actorId != actorId:
 		# 不是胜利方
 		return false
-	return me.actor().get_hp() > 30
+	if check_combat_targets([loser.actorId]).empty():
+		# 不可以被技能发起白刃战
+		return false
+	return actor.get_hp() > 30
 
 func effect_20112_AI_start():
 	goto_step("2")
@@ -33,6 +36,7 @@ func effect_20112_start():
 		COST_HP, bf.get_loser().get_name(), ske.skill_name,
 	])
 	play_dialog(actorId, msg, 2, 2000, true)
+	map.next_shrink_actors = [actorId, bf.get_loser().actorId]
 	return
 
 func on_view_model_2000()->void:
@@ -47,7 +51,7 @@ func effect_20112_2():
 		DataManager.get_actor_naughty_title(loser.actorId, me.actorId)
 	])
 	play_dialog(actorId, msg, 0, 2001)
-	map.next_shrink_actors = [me.actorId, loser.actorId]
+	map.next_shrink_actors = [actorId, loser.actorId]
 	return
 
 func on_view_model_2001()->void:

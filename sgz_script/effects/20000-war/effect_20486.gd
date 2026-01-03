@@ -7,9 +7,7 @@ extends "effect_20000.gd"
 const EFFECT_ID = 20486
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
-func on_trigger_20020()->bool:
-	if me == null or me.disabled:
-		return false
+func on_trigger_20020() -> bool:
 	if ske.actorId == actorId:
 		# 自己不发动
 		return false
@@ -74,6 +72,11 @@ func on_view_model_2001()->void:
 
 func effect_20486_move():
 	var fromId = DataManager.get_env_int("战争.转袭武将")
+	if fromId != actorId and check_combat_targets([fromId]).empty():
+		ske.war_report()
+		goto_step("end")
+		return
+
 	var wa = DataManager.get_war_actor(fromId)
 	var targetPosition = DataManager.get_target_position()
 
@@ -81,19 +84,20 @@ func effect_20486_move():
 	map.show_color_block_by_position([])
 	map.draw_actors()
 
-	var targets = []
+	var targetIds = []
 	for dir in StaticManager.NEARBY_DIRECTIONS:
 		var pos = targetPosition + dir
 		var target = DataManager.get_war_actor_by_position(pos)
 		if wa.is_enemy(target):
-			targets.append(target.actorId)
-	if targets.empty():
+			targetIds.append(target.actorId)
+	targetIds = check_combat_targets(targetIds)
+	if targetIds.empty():
 		ske.war_report()
 		goto_step("end")
 		return
 
 	var msg = "须选择身邻接军发起攻击"
-	if not wait_choose_actors(targets, msg):
+	if not wait_choose_actors(targetIds, msg):
 		return
 	LoadControl.set_view_model(2002)
 	return

@@ -1,20 +1,23 @@
 extends "effect_20000.gd"
 
-#神速主动技实现
-#【神速】大战场,主动技。你可以指定一个，以你为中心，十字6格内的对方武将，对该武将发起攻击宣言，每日限1次。
+# 神速主动技实现
+#【神速】大战场,主动技。你可以指定一个，以你为中心，十字6格内可无障碍触及的对方武将，对该武将发起攻击宣言，每日限1次。
 
 const EFFECT_ID = 20243
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
 func effect_20243_start():
-	var targets = []
-	for targetId in get_enemy_targets(me):
-		var wa = DataManager.get_war_actor(targetId)
-		var disv = wa.position - me.position
-		if disv.x * disv.y != 0:
-			continue
-		targets.append(targetId)
-	if not wait_choose_actors(targets, "选择敌军发动【{0}】"):
+	var probed = _get_available_perform_targets(me)
+	var targetIds = probed[0]
+	if targetIds.empty():
+		var msg = "没有可以发动【{0}】的目标"
+		if not probed[1].empty():
+			msg += "\n（部分目标被地形阻隔"
+		msg = msg.format([ske.skill_name])
+		play_dialog(actorId, msg, 3, 2999)
+		map.show_color_block_by_position(probed[1])
+		return
+	if not wait_choose_actors(targetIds, "选择敌军发动【{0}】"):
 		return
 	LoadControl.set_view_model(2000)
 	return
@@ -56,3 +59,28 @@ func effect_20243_4():
 	ske.cost_war_cd(1)
 	start_battle_and_finish(actorId, targetId)
 	return
+
+# 检查发动目标，返回可发动的目标和阻挡位置（用于提示）
+# @return [[targetIds], [blockingPositions]]
+func _get_available_perform_targets(me:War_Actor) -> Array:
+	var targetIds = []
+	var blockingPositions = []
+	var distance = get_choose_distance()
+	for dir in StaticManager.NEARBY_DIRECTIONS:
+		for x in range(1, distance + 1):
+			var pos = me.position + dir * x
+			if not map.is_valid_position(pos):
+				break
+			var wa = DataManager.get_war_actor_by_position(pos)
+			if wa != null:
+				if me.is_enemy(wa) and x > 1:
+					targetIds.append(wa.actorId)
+				# 发现部队，无论是否目标，都形成隔断
+				break
+			# 城地形隔断
+			var terrian = map.get_blockCN_by_position(pos)
+			if terrian in StaticManager.CITY_BLOCKS_CN:
+				blockingPositions.append(pos)
+				break
+	targetIds = check_combat_targets(targetIds)
+	return [targetIds, blockingPositions]

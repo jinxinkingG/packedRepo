@@ -577,6 +577,7 @@ func city_enter_menu():
 func enter_town_menu():
 	LoadControl.end_script();
 	var scene_affiars:Control = SceneManager.current_scene();
+	scene_affiars.reset_view()
 	scene_affiars.cursor.hide();
 	DataManager.twinkle_citys = [DataManager.player_choose_city];
 	SceneManager.hide_all_tool();
@@ -630,7 +631,8 @@ func enter_warehouse_menu():
 	set_view_model(300);
 	LoadControl.end_script();
 	var scene_affiars:Control = SceneManager.current_scene();
-	scene_affiars.cursor.hide();
+	scene_affiars.reset_view()
+	scene_affiars.cursor.hide()
 	DataManager.twinkle_citys = [DataManager.player_choose_city];
 	SceneManager.hide_all_tool();
 	var menu_array = ["物资运送","装备库","赏赐"];
@@ -1011,6 +1013,7 @@ func _auto_supply_to(city:clCity.CityInfo, setting:Array, targetCity:clCity.City
 
 # 观海模式，玩家加入游戏
 func player_join():
+	SceneManager.show_system_notice("")
 	FlowManager.force_change_controlNo(0)
 
 	var candidates = []

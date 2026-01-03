@@ -12,23 +12,11 @@ const FLAG_NAME = "卷"
 const COST_FLAGS = 3
 const FLAG_NAME_LIMIT = "异"
 
-func check_trigger_correct()->bool:
-	match triggerId:
-		20003: # 移动时
-			_on_movement()
-		20004: # 计策列表
-			_on_scheme_menu()
-		20005: # 计策执行
-			_on_scheme_cost()
-	return false
-
-func _on_movement():
-	if not check_env(["移动", "对白"]):
-		return
+func on_trigger_20003() -> bool:
 	var flags = SkillHelper.get_skill_flags_number(20000, EFFECT_ID, self.actorId, FLAG_NAME)
 	var limit = get_max_flag_number()
 	var initial = get_initial_flag_number()
-	match get_env_int("移动"):
+	match DataManager.get_env_int("移动"):
 		0: #开始或结束移动
 			if get_env_int("结束移动") != 1:
 				# 开始移动，记录当前标记数
@@ -39,44 +27,46 @@ func _on_movement():
 			flags = max(initial, flags - 1)
 	update_flags(flags)
 	var msg = "（[{0}]:{1}/{2}".format([FLAG_NAME, flags, limit])
-	var msgs = str(get_env("对白")).split("\n")
+	var msgs = DataManager.get_env_str("对白").split("\n")
 	if msgs.size() <= 2:
 		msgs.append(msg)
 	elif msgs.size() == 3:
 		msgs[2] = msgs[2] + "，" + msg.right(1)
 	set_env("对白", "\n".join(msgs))
-	return
+	return false
 
-func _on_scheme_menu():
-	if not check_env(["战争.计策列表", "战争.计策提示"]):
-		return false
-	var schemes = Array(get_env("战争.计策列表"))
-	var msg = str(get_env("战争.计策提示"))
+func on_trigger_20004() -> bool:
+	var schemes = DataManager.get_env_array("战争.计策列表")
+	var msg = DataManager.get_env_str("战争.计策提示")
 
-	var flags = SkillHelper.get_skill_flags_number(20000, EFFECT_ID, self.actorId, FLAG_NAME)
+	var flags = SkillHelper.get_skill_flags_number(20000, EFFECT_ID, actorId, FLAG_NAME)
 	var limit = get_max_flag_number()
 	for scheme in schemes:
 		scheme[1] = 0
 	var msgs = Array(msg.split("\n"))
 	msgs[0] = "任何计策均消耗{0}卷".format([COST_FLAGS])
-	msgs[1] = "(当前{0}:{1}/{2})".format([FLAG_NAME, flags, limit])
+	msgs[1] = "（当前{0}:{1}/{2}".format([FLAG_NAME, flags, limit])
 	msg = "\n".join(msgs.slice(0, 2))
-	change_stratagem_list(self.actorId, schemes, msg)
-	return
+	change_stratagem_list(actorId, schemes, msg)
+	return false
 
-func _on_scheme_cost():
-	var flags = SkillHelper.get_skill_flags_number(20000, EFFECT_ID, self.actorId, FLAG_NAME)
+func on_trigger_20005() -> bool:
+	var flags = SkillHelper.get_skill_flags_number(20000, EFFECT_ID, actorId, FLAG_NAME)
 	if flags >= COST_FLAGS:
 		# 无须消耗机动力用计
 		set_scheme_ap_cost("ALL", 0)
 	else:
 		# 不能用计
-		set_scheme_ap_cost("ALL", 9999)
-	if get_env_int("计策.消耗.仅对比") == 0:
-		# 非对比，实际消耗
+		set_scheme_ap_cost("ALL", 99999)
+	return false
+
+func on_trigger_20006() -> bool:
+	var flags = SkillHelper.get_skill_flags_number(20000, EFFECT_ID, actorId, FLAG_NAME)
+	var se = DataManager.get_current_stratagem_execution()
+	if se.skill == "":
 		flags = max(0, flags - COST_FLAGS)
 		update_flags(flags)
-	return
+	return false
 
 func update_flags(flags:int):
 	SkillHelper.set_skill_flags(20000, EFFECT_ID, self.actorId, FLAG_NAME, flags)

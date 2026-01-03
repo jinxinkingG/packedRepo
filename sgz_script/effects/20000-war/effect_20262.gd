@@ -53,7 +53,7 @@ func effect_20262_AI_2():
 	var targetId = get_env_int("AI进策目标")
 	unset_env("AI进策目标")
 	ske.cost_war_cd(2)
-	ske.set_war_skill_val(FREE_STEPS, 1, PASSIVE_EFFECT_ID, targetId)
+	ske.set_war_skill_val([FREE_STEPS, ske.skill_name, actorId], 1, PASSIVE_EFFECT_ID, targetId)
 	DataManager.set_env("AI-当前武将", targetId)
 	LoadControl.end_script()
 	FlowManager.add_flow("AI_ready")
@@ -80,7 +80,7 @@ func effect_20262_2():
 func effect_20262_3():
 	var targetId = get_env_int("目标")
 	ske.cost_war_cd(2)
-	ske.set_war_skill_val(FREE_STEPS, 1, PASSIVE_EFFECT_ID, targetId)
+	ske.set_war_skill_val([FREE_STEPS, ske.skill_name, actorId], 1, PASSIVE_EFFECT_ID, targetId)
 	ske.cost_ap(COST_AP, true)
 	map.show_color_block_by_position([])
 	DataManager.player_choose_actor = targetId

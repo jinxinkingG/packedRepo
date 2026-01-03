@@ -30,7 +30,7 @@ func effect_20461_2():
 	ske.war_report()
 	# 统一更新一次光环，避免重复更新耗时
 	SkillHelper.update_all_skill_buff(ske.skill_name)
-	var msg = "事急矣，两害相权，不得不为！\n（发动【{0}，全体机动力 +{1}\n（敌军技能本回合禁用\n（我军全体获得「围困」".format([
+	var msg = "事急从权，不得不为！\n（发动【{0}，全体机动力 +{1}\n（敌军技能本回合禁用\n（我军全体获得「围困」".format([
 		ske.skill_name, BUFF_AP,
 	])
 	play_dialog(me.actorId, msg, 0, 2001)

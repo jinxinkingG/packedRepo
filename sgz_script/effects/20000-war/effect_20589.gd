@@ -14,9 +14,16 @@ func on_trigger_20026() -> bool:
 	for scheme in StaticManager.stratagems:
 		if scheme.get_targeting_range(null) != 6:
 			continue
-		setting[scheme.name] = {
-			"范围修正": rangeVal,
-			"最大距离": distanceVal,
-		}
+		var dic = {}
+		if scheme.name in setting:
+			dic = setting[scheme.name]
+		if "范围修正" in dic:
+			rangeVal += Global.intval(dic["范围修正"], 0)
+		dic["范围修正"] = rangeVal
+		if "最大距离" in dic:
+			var distanceFix = Global.intval(dic["最大距离"])
+			distanceVal = min(distanceVal, distanceFix)
+		dic["最大距离"] = distanceVal
+		setting[scheme.name] = dic
 	DataManager.set_env("计策.ONCE.距离", setting)
 	return false

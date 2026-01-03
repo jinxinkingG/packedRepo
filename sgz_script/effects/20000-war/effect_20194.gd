@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #挑衅主动技 #施加状态
-#【挑衅】大战场,主动技。你可选择能攻击到己方武将的1名敌将发动。令对方选择：是否对己方人员发起攻击。若对方同意，白兵战的前3个回合内，双方不能撤出战场；若对方拒绝，对之附加定止状态1回合。每回合限1次。可对城地形目标发动。
+#【挑衅】大战场,主动技。你可选择能攻击到己方武将的1名敌将发动。令对方选择：是否对己方人员发起攻击。若对方同意，白刃战的前3个回合内，双方不能撤出战场；若对方拒绝，对之附加定止状态1回合。每个回合限1次。可对城地形目标发动。
 
 const EFFECT_ID = 20194
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -33,14 +33,20 @@ func on_view_model_2005():
 # 发动主动技
 func effect_20194_start():
 	var targets = []
-	for targetId in get_enemy_targets(me, true):
+	for targetId in get_combat_targets(me, true):
 		var wa = DataManager.get_war_actor(targetId)
 		for dir in StaticManager.NEARBY_DIRECTIONS:
 			var nearby = DataManager.get_war_actor_by_position(wa.position + dir)
-			if nearby == null or nearby.disabled or me.is_enemy(nearby):
+			if nearby == null or nearby.disabled:
 				continue
-			targets.append(targetId)
-			break
+			if nearby.actorId == actorId:
+				targets.append(targetId)
+				break
+			elif me.is_teammate(nearby):
+				if not check_combat_targets([nearby.actorId]).empty():
+					# 可以被技能发起白刃战
+					targets.append(targetId)
+					break
 	if not wait_choose_actors(targets, "选择敌军发动【{0}】"):
 		return
 	LoadControl.set_view_model(2000)

@@ -299,6 +299,18 @@ func think_about_active_skill(actorId:int)->bool:
 			gd.actorId = actorId
 			if not gd.check_AI_perform():
 				continue
+			# 小战场的仙术无效，在发动前阻止
+			if skill.has_feature("仙") \
+				and skill.has_feature("对敌"):
+				var wa = DataManager.get_war_actor(actorId)
+				var enemy = null if wa == null else wa.get_battle_enemy_war_actor()
+				if enemy != null and enemy.actor().get_equip_feature_max("仙术无效") > 0:
+					var msg = "旁门左道，于我皆为虚妄！\n（{0}发动【{1}】失败".format([
+						wa.get_name(), skill.name,
+					])
+					enemy.attach_free_dialog(msg, 0, 30000)
+					SkillHelper.set_skill_cd(30000, effect.id, actorId, 99999, skill.name)
+					return false
 			var ske = effect.create_ske_for(actorId)
 			SkillHelper.save_skill_effectinfo(ske)
 			LoadControl.load_script(effect.path)

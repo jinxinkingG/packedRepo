@@ -11,6 +11,9 @@ const BUFF_NAME = "疲兵"
 const BUFF_LABEL_NAME = "疲兵"
 const FIVE_PHASES_ALLOWED = [War_Character.FivePhases_Enum.Fire]
 
+func require_target_male() -> bool:
+	return true
+
 func check_AI_perform_20000()->bool:
 	# AI 发动条件：机动力充足、范围内有合理目标、花色满足条件
 	if me.action_point < COST_AP:
@@ -80,7 +83,7 @@ func effect_20234_2() -> void:
 	var msg = "消耗{2}机动力\n对{0}发动{1}\n可否？".format([
 		ActorHelper.actor(targetId).get_name(), ske.skill_name, COST_AP
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001() -> void:
@@ -105,13 +108,13 @@ func effect_20234_4() -> void:
 	report_skill_result_message(ske, 2002)
 	return
 
-func _get_available_targets(me:War_Actor)->Array:
+func _get_available_targets(me:War_Actor) -> Array:
 	var ret = []
 	for targetId in get_enemy_targets(me):
 		var wa = DataManager.get_war_actor(targetId)
 		if wa.get_buff_label_turn([BUFF_LABEL_NAME]) > 0:
 			continue
-		if not wa.actor().is_male():
+		if wa.actor().get_gender() != "男":
 			continue
 		ret.append(targetId)
 	return ret

@@ -12,7 +12,7 @@ func effect_20358_start():
 	if not assert_action_point(actorId, COST_AP):
 		return
 	var targets = []
-	for targetId in get_enemy_targets(me, true):
+	for targetId in get_combat_targets(me, true):
 		if targetId in me.get_war_attacked_actors():
 			continue
 		if targetId in me.get_war_defended_actors():
@@ -36,13 +36,14 @@ func on_view_model_2000():
 
 # 已选定队友
 func effect_20358_2():
-	var targetId = get_env_int("目标")
-	var targetActor = ActorHelper.actor(targetId)
+	var targetId = DataManager.get_env_int("目标")
+	var targetWA = DataManager.get_war_actor(targetId)
+
 	var msg = "消耗{0}机动力，发动【{1}】\n强制攻击{2}\n可否？".format([
-		COST_AP, ske.skill_name, targetActor.get_name(),
+		COST_AP, ske.skill_name, targetWA.get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
-	map.next_shrink_actors = [me.actorId, targetId]
+	play_dialog(actorId, msg, 2, 2001, true)
+	map.next_shrink_actors = [actorId, targetId]
 	return
 
 func on_view_model_2001():
@@ -53,13 +54,12 @@ func on_view_model_2001():
 func effect_20358_3():
 	ske.cost_ap(COST_AP, true)
 	ske.cost_war_cd(1)
-	var targetId = get_env_int("目标")
-	var targetWA = DataManager.get_war_actor(targetId)
+	var targetId = DataManager.get_env_int("目标")
 	var msg = "{0}播乱天下\n汝何能独存？".format([
-		DataManager.get_actor_self_title(me.actorId),
+		DataManager.get_actor_self_title(actorId),
 	])
-	play_dialog(me.actorId, msg, 0, 2002)
-	map.next_shrink_actors = [me.actorId, targetId]
+	play_dialog(actorId, msg, 0, 2002)
+	map.next_shrink_actors = [actorId, targetId]
 	return
 
 func on_view_model_2002():
@@ -67,7 +67,7 @@ func on_view_model_2002():
 	return
 
 func effect_20358_4():
-	var targetId = get_env_int("目标")
+	var targetId = DataManager.get_env_int("目标")
 	map.next_shrink_actors = []
-	start_battle_and_finish(me.actorId, targetId)
+	start_battle_and_finish(actorId, targetId)
 	return

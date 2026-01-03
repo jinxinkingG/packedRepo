@@ -89,19 +89,20 @@ func on_view_model_2002()->void:
 
 func effect_20013_4():
 	var iwa = Global.load_script(DataManager.mod_path+"sgz_script/war/IWar_Attack.gd")
-	var targets:PoolIntArray = iwa.get_can_attack_actors(actorId, true)[0]
+	var res = iwa.get_can_attack_actors(actorId, true)
+	var targetIds = check_combat_targets(res[0])
 	
-	if targets.empty():
+	if targetIds.empty():
 		goto_step("6")
 		return
 
 	map.cursor.show()
-	var current = targets[0]
+	var current = targetIds[0]
 	var wa = DataManager.get_war_actor(current)
 	map.set_cursor_location(wa.position, true)
 	DataManager.set_env("武将", current)
-	DataManager.set_env("可选目标", targets)
-	map.show_can_choose_actors(targets)
+	DataManager.set_env("可选目标", targetIds)
+	map.show_can_choose_actors(targetIds)
 	var msg = "必须选择1名目标攻击!"
 	SceneManager.show_actor_info(wa.actorId, true, msg)
 	map.next_shrink_actors = [current]
