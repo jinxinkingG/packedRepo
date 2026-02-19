@@ -68,10 +68,10 @@ func effect_30240_2():
 		bu._private_hp = UNIT_HP
 		bu.disabled = false
 		bu.unit_position = pos
-		bu.init_combat_info("骑")
+		DataManager.battle_units.append(bu)
+		bu.formation_init("骑")
 		bu.wait_action_times = bu.get_action_times()
 		bu.dic_other_variable["临时"] = 1
-		DataManager.battle_units.append(bu)
 		SceneManager.current_scene().create_or_update_unit(bu)
 
 	ske.battle_report()

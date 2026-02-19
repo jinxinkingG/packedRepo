@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #怯守技能实现
-#【怯守】小战场,锁定技。对方武＞你时，你的胆临时-x，统临时+x/2，x＝对方武-你的武
+#【怯守】小战场，锁定技。对方武＞你时，你的胆临时-X，统临时+X/2，X＝对方武-你的武，且最大为20。
 
 func on_trigger_30006():
 	var enemy = me.get_battle_enemy_war_actor()

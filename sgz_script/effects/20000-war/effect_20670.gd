@@ -59,7 +59,7 @@ func effect_20670_settle() -> void:
 	var warActors = me.get_teammates(false, true)
 	warActors.append(me)
 	for wa in warActors:
-		for schemeName in wa.dic_skill_cd:
+		for schemeName in wa.dic_skill_cd.keys():
 			var cd = int(wa.dic_skill_cd[schemeName])
 			if cd >= 90000:
 				ske.recover_disabled_scheme(wa.actorId, schemeName)

@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 # 催阵效果实现
-#【催阵】小战场，锁定技。仅在白刃战场景下，视为禁用对方的武器栏。
+#【催阵】小战场，锁定技。白刃战开始时，若你的士兵数 > 0，仅在白刃战场景下，视为禁用对方的武器栏。
 
 const EFFECT_ID = 30303
 const FLOW_BASE = "effect_" + str(EFFECT_ID)

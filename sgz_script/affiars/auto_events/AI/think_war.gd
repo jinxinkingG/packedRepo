@@ -437,7 +437,7 @@ func AI_War_2():
 			fromVstate.get_lord_name(), fromCity.get_full_name(),
 			targetVstate.get_lord_name(), targetCity.get_full_name(),
 		])
-		SceneManager.show_yn_dialog(msg, -5, 2)
+		SceneManager.show_yn_dialog(msg, StaticManager.ACTOR_ID_SLIME_GOD, 2)
 		LoadControl.set_view_model(107)
 		return
 	FlowManager.add_flow("AI_War_3_AI")
@@ -1014,7 +1014,7 @@ func _rand_actors_out(actors:PoolIntArray, vstateId:int, defenderEXP:float):
 			warCity.set_property("米", 0)
 	return
 
-func _capture_actor(actorId:int, capture_to_city_id:int)->void:
+func _capture_actor(actorId:int, captureToCityId:int)->void:
 	var actor = ActorHelper.actor(actorId)
 	var capture = true
 	#["无","非君主","全武将","仅君主"],
@@ -1033,14 +1033,17 @@ func _capture_actor(actorId:int, capture_to_city_id:int)->void:
 	if capture:
 		actor.set_hp(1)
 		actor.set_status_captured()
-		clCity.move_to_ceil(actor.actorId, capture_to_city_id)
-	else:
-		actor.set_hp(5)
-		actor.set_loyalty(max(10, 79-actor.get_loyalty()))
-		var exileTargetCityIds = clCity.city(capture_to_city_id).get_connected_city_ids()
-		exileTargetCityIds.append(capture_to_city_id)
-		exileTargetCityIds.shuffle()
-		actor.set_status_exiled(-1, exileTargetCityIds[0])
+		clCity.move_to_ceil(actor.actorId, captureToCityId)
+		return
+
+	# 未俘虏，附近随机下野
+	var captureCity = clCity.city(captureToCityId)
+	actor.set_hp(5)
+	actor.set_loyalty(actor.surrend_loyalty(-1))
+	var exileTargetCityIds = captureCity.get_connected_city_ids()
+	exileTargetCityIds.append(captureCity.ID)
+	exileTargetCityIds.shuffle()
+	actor.set_status_exiled(-1, exileTargetCityIds[0])
 	return
 
 func think_about_target_city_id(vstateId:int)->int:

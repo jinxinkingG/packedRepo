@@ -170,6 +170,8 @@ func check_actor_dead_start():
 	for vs in clVState.all_vstates():
 		if vs.is_perished():
 			continue
+		if vs.id == 14:
+			pass
 		var lord = ActorHelper.actor(vs.get_lord_id())
 		if lord.is_status_officed() and lord.get_loyalty() == 100:
 			#非出仕就走继位判断

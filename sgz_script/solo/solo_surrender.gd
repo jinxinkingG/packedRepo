@@ -48,14 +48,12 @@ func _input_key(delta: float):
 				var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
 				var actorId = DataManager.solo_actor_by_side(side);
 				
-				var war_actor = DataManager.get_war_actor(actorId);
-				var b_war_actor = war_actor.get_battle_enemy_war_actor();
+				var wa = DataManager.get_war_actor(actorId)
+				var enemy = wa.get_battle_enemy_war_actor()
 				#下跪投降，算到主动投诚里，大战场保留方块
-				if war_actor.actor_surrend_to(b_war_actor.wvId):
-					var unit_actor = war_actor.battle_actor_unit();
-					unit_actor.is_surrend = true;
-					var actor = ActorHelper.actor(actorId)
-					actor.set_loyalty(max(10,79-actor.get_loyalty()));#投降忠赋值
+				if wa.actor_surrend_to(enemy.wvId):
+					var bu = wa.battle_actor_unit()
+					bu.is_surrend = true
 				FlowManager.add_flow("solo_run_end")
 	return
 

@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 # 儿趣锁定技
-#【儿趣】大战场，锁定技。又想起儿时的那个暑假……（据说阿会喃会变身）
+#【儿趣】大战场，锁定技。又想起儿时的那个暑假……据说阿会喃，走来走去就会触发bug效果。
 
 const EFFECT_ID = 20706
 const FLOW_BASE = "effect_" + str(EFFECT_ID)

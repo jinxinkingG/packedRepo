@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #重击技能实现
-#【重击】小战场,锁定技。你的主将每第二次伤害1.5倍。
+#【重击】小战场，锁定技。每回合你的第二次攻击造成150%的伤害。
 
 func check_trigger_correct():
 	if not DataManager.common_variable.has("白兵伤害.单位") \

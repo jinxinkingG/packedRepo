@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #唤援主动技
-#【唤援】小战场，主动技。使用后，在我方阵后召唤一个兵力为200，基础伤害倍率+0.25的骑兵（不计入自身兵力，且固定前进状态。）。每个回合限1次。
+#【唤援】小战场，主动技。使用后，在你身旁召唤一个兵力为200，基础伤害倍率+0.25的骑兵（不计入自身兵力，且固定前进状态）。每个大战场回合限1次。
 
 const EFFECT_ID = 30188
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -63,15 +63,14 @@ func effect_30188_3():
 	bu.direction = unit.direction
 	bu._private_hp = XIAOJIANG_HP
 	bu.disabled = false
-	bu.init_combat_info()
 	bu.unit_position = pos
-	bu.init_combat_info("骑")
+	DataManager.battle_units.append(bu)
+	bu.formation_init("骑")
 	bu.wait_action_times = bu.get_action_times()
 	bu.dic_other_variable["临时"] = 1
 	bu.append_combat_val("额外伤害", 0.25)
 	bu.dic_combat["暴走"] = 1
 	bu.mark_buffed()
-	DataManager.battle_units.append(bu)
 	SceneManager.current_scene().create_or_update_unit(bu)
 	
 	var msg = "——\n{0}真猛将也，吾可助之！".format([

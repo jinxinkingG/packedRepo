@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #增援主动技 #后备兵 #士兵分配
-#【增援】大战场,主动技。指定两个己方武将，将城中的后备兵抽调给他们，使每个武将兵力至多+500。每4回合限1次
+#【增援】大战场，主动技。至多指定两个己方武将，将城中的后备兵抽调给他们，使每个武将兵力至多+500。每4回合限1次。
 #（防守时，从防守城池调取后备兵。进攻时，从出征城调取后备兵。后备兵不够1000时，平分完。后备兵为0时，提示没有后备兵，无法发动。）
 
 const EFFECT_ID = 20410
@@ -37,6 +37,7 @@ func effect_20410_go():
 	var msg = "选择至多两名武将，补充兵力（{0}/2）".format([selected.size()])
 	if not wait_choose_actors(targets, msg):
 		return
+	_update_select_color(targets)
 	LoadControl.set_view_model(2000)
 	return
 
@@ -53,8 +54,6 @@ func effect_20410_2():
 		selected.append(targetId)
 	DataManager.set_env(EFFECT_CHOOSE_ACTOR, targetId)
 	DataManager.set_env(EFFECT_CHOOSE_NAME, selected)
-	_update_select_color()
-	FlowManager.add_flow("draw_actors")
 	goto_step("go")
 	return
 
@@ -110,14 +109,7 @@ func effect_20410_5():
 	report_skill_result_message(ske, 2002)
 	return
 
-func on_view_model_2999():
-	wait_for_skill_result_confirmation()
-	return
-
-func _update_select_color():
-	var positions = []
-	for targetId in get_env_int_array(EFFECT_CHOOSE_NAME):
-		var wa = DataManager.get_war_actor(targetId)
-		positions.append(wa.position)
-	map.show_color_block_by_position(positions)
+func _update_select_color(targetIds:PoolIntArray) -> void:
+	var selected = DataManager.get_env_int_array(EFFECT_CHOOSE_NAME)
+	map.show_can_choose_actors(targetIds, -1, selected)
 	return

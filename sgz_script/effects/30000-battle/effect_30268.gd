@@ -21,12 +21,12 @@ func on_trigger_30005() -> bool:
 	bu.direction = unit.direction
 	bu._private_hp = bro.actor().get_hp()
 	bu.disabled = false
-	bu.init_combat_info("骑(化身)")
+	DataManager.battle_units.append(bu)
+	bu.formation_init("骑(化身)")
 	bu.unit_position = unit.unit_position + Vector2.UP
 	bu.dic_other_variable["临时"] = 1
 	bu.wait_action_times = bu.get_action_times()
 	bu.requires_update = true
-	DataManager.battle_units.append(bu)
 	SceneManager.current_scene().create_or_update_unit(bu)
 
 	var msg = "吾兄弟共讨{0}！"

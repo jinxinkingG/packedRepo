@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 # 百戏主动技
-#【百戏】主动技。消耗5点机动力发动。随机附加一个大战场或小战场技能。每5回合限1次。
+#【百戏】大战场，主动技。使用后，直到你再次使用本技能之前，你随机附加一个大战场或小战场技能。每2回合限1次。
 
 const EFFECT_ID = 20705
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -16,9 +16,15 @@ func on_view_model_2000() -> void:
 	return
 
 func effect_20705_confirmed() -> void:
-	ske.cost_war_cd(5)
+	var isLeader = me.get_main_actor_id() == actorId
+	var isLord = me.get_lord_id() == actorId
+	ske.cost_war_cd(2)
 	var skills = []
 	for skill in StaticManager.get_all_possible_skills(actorId).values():
+		if not isLeader and skill.has_feature("主将"):
+			continue
+		if not isLord and skill.has_feature("君主"):
+			continue
 		var forWar = true
 		for effect in skill.effects:
 			if effect.id < 20000 or effect.id >= 40000:

@@ -92,7 +92,8 @@ func AI_before_ready():
 		FlowManager.add_flow("AI_turn_dialog")
 		return
 	# 确认是否有势力战败
-	if check_war_vstates_status():
+	var wf = DataManager.get_current_war_fight()
+	if wf.check_war_vstates_status():
 		FlowManager.add_flow("war_vstate_settlement")
 		return
 	LoadControl.end_script()
@@ -105,7 +106,6 @@ func AI_before_ready():
 	var endActors = DataManager.get_env_int_array(VAR_END_ACTOR)
 	
 	SceneManager.hide_all_tool()
-	var wf = DataManager.get_current_war_fight()
 	var wv = wf.current_war_vstate()
 	if wv.get_main_controlNo() >= 0:
 		FlowManager.add_flow("player_before_ready")
@@ -185,9 +185,8 @@ func AI_ready():
 		FlowManager.add_flow("AI_turn_dialog")
 		return
 	var wf = DataManager.get_current_war_fight()
-	var wv = wf.current_war_vstate()
 	# 确认是否有势力战败
-	if check_war_vstates_status():
+	if wf.check_war_vstates_status():
 		FlowManager.add_flow("war_vstate_settlement")
 		return
 	# 如果有技能未完成，等待技能结束
@@ -196,6 +195,7 @@ func AI_ready():
 		return
 	#DataManager.game_trace("")
 	#AI行动逻辑入口
+	var wv = wf.current_war_vstate()
 	wab.behavior(wv.id)
 	#DataManager.game_trace("== AI BEHAVIOR #{0}".format([
 	#	DataManager.get_env_int(VAR_CUR_ACTOR)
@@ -224,7 +224,7 @@ func AI_turn_dialog():
 				return
 	var map = SceneManager.current_scene().war_map
 	map.camer_to_actorId(d.actorId, "")
-	SceneManager.show_confirm_dialog(d.text, d.actorId, d.mood)
+	SceneManager.show_confirm_dialog(d.text, d.actorId, d.mood, d.actorId < 0)
 	map.next_shrink_actors = [d.actorId]
 	set_view_model(3)
 	return
@@ -264,17 +264,3 @@ func _check_wait_dialog():
 			DataManager.set_env("战争.AI.等待对白来源", wa.actorId)
 			return true
 	return false
-
-func check_war_vstates_status()->bool:
-	var wf = DataManager.get_current_war_fight()
-	var somethingHappened = false
-	for wv in wf.war_vstates():
-		#调用自动检查失败条件程序
-		wv.check_lose()
-		# 需要结算
-		if wv.requires_lost_settlement():
-			somethingHappened = true
-	# 主要势力失败?
-	if wf.defenderWV.lost() or wf.attackerWV.lost():
-		somethingHappened = true
-	return somethingHappened

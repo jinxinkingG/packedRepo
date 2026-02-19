@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #骁雄小战场效果
-#【骁雄】大战场，主将锁定技。你方武将使用持续性战术时，回合数+1。
+#【骁雄】大战场，主将锁定技。你方武将在白刃战中，使用持续性战术时：回合数+1。
 
 func on_trigger_30010()->bool:
 	var buffKey = "BUFF.{0}".format([ske.actorId])

@@ -62,10 +62,10 @@ func _init() -> void:
 	FlowManager.bind_import_flow("rescue_selected", self)
 	FlowManager.bind_import_flow("rescue_prepare", self)
 	FlowManager.bind_import_flow("rescue_gold", self)
-	FlowManager.bind_import_flow("rescue_people", self)
 	FlowManager.bind_import_flow("rescue_confirmed", self)
 	FlowManager.bind_import_flow("rescue_execute", self)
 	FlowManager.bind_import_flow("rescue_result", self)
+	FlowManager.bind_import_flow("rescue_people_confirm", self)
 
 	FlowManager.clear_pre_history.append("wedge_2")
 	FlowManager.clear_pre_history.append("wedge_3")
@@ -372,22 +372,12 @@ func _input_key(delta: float):
 			LoadControl.set_view_model(-1)
 			DataManager.set_env("内政.交涉金", gold)
 			FlowManager.add_flow("rescue_gold")
-		173: #换俘武将选择
-			var option = wait_for_choose_item("enter_town_policy_menu")
-			if option < 0:
-				return
-			LoadControl.set_view_model(-1)
-			var item = SceneManager.lsc_menu_top.lsc.items[option]
-			if item == "下一页":
-				var page = DataManager.get_env_int("列表页码")
-				DataManager.set_env("列表页码", page + 1)
-				FlowManager.add_flow("rescue_prepare")
-				return
-			var selected = DataManager.get_env_array("列表值")[option]
-			DataManager.set_env("目标项", selected)
-			FlowManager.add_flow("rescue_people")
 		174: # 命令书确认
 			wait_for_yesno("rescue_confirmed", "enter_town_menu")
+		175: # 换俘提示
+			wait_for_confirmation("rescue_people_confirm")
+		176: # 换俘确认
+			wait_for_yesno("rescue_result", "enter_town_menu")
 		179: # 提示交涉成功率和结果
 			wait_for_confirmation("rescue_result")
 		199:
@@ -675,16 +665,16 @@ func alliance_break_5():
 	SceneManager.dialog_use_orderbook_animation("alliance_break_6");
 
 func alliance_break_6():
-	LoadControl.set_view_model(136);
-	var currentVstateId = int(DataManager.vstates_sort[DataManager.vstate_no]);
+	var currentVstateId = int(DataManager.vstates_sort[DataManager.vstate_no])
 	var reporter = DataManager.get_max_property_actorId("政", currentVstateId)
 	var targetVstateId = DataManager.get_env_int("目标势力")
 	var targetVstate = clVState.vstate(targetVstateId)
 	var msg = "已解除与{0}的盟约".format([targetVstate.get_lord_name()])
 	SceneManager.show_confirm_dialog(msg, reporter)
-	SceneManager.show_cityInfo(true);
-	if(FlowManager.controlNo == AutoLoad.playerNo):
+	SceneManager.show_cityInfo(true)
+	if FlowManager.controlNo == AutoLoad.playerNo:
 		clVState.set_alliance(currentVstateId, targetVstateId, 0)
+	LoadControl.set_view_model(136)
 	return
 
 # 亲善
@@ -1168,20 +1158,14 @@ func rescue_prepare() -> void:
 	cmd.set_target(targetActorId, targetCityId)
 
 	# 检查我方是不是有对方需要的俘虏
-	var capturedItems = []
-	var capturedValues = []
+	var captured = []
 	for city in clCity.all_cities([cmd.vstate().id]):
 		for capturedId in city.get_ceil_actor_ids():
-			var captured = ActorHelper.actor(capturedId)
-			if captured.get_prev_vstate_id() == cmd.target_vstate().id:
-				var item = "{0} （关押于[color=blue]{1}[/color]）".format([
-					captured.get_name(), city.get_full_name(),
-				])
-				capturedItems.append(item)
-				capturedValues.append([captured.actorId, city.ID])
-				break
+			var capturedActor = ActorHelper.actor(capturedId)
+			if capturedActor.get_prev_vstate_id() == cmd.target_vstate().id:
+				captured.append(capturedActor)
 
-	if capturedItems.empty():
+	if captured.empty():
 		# 没有俘虏，花钱赎人
 		var msg = "携带多少金？"
 		var gold = min(1000, int(cmd.city().get_gold() / 100) * 100)
@@ -1189,9 +1173,19 @@ func rescue_prepare() -> void:
 		LoadControl.set_view_model(172)
 		return
 
-	SceneManager.show_unconfirm_dialog("以何人换俘？")
-	SceneManager.bind_top_menu_paging(capturedItems, capturedValues, 1, true)
-	LoadControl.set_view_model(173)
+	# 这里 trick 一下，复用金米，米 == 99999 表示是人换人
+	cmd.costGold = 0
+	cmd.costRice = 99999
+
+	var what = "我军俘虏"
+	if captured.size() == 1:
+		what = "所俘" + captured[0].get_name()
+		cmd.costRice = captured[0].actorId
+	var msg = "尝试与{0}军交涉\n以{1}换回{2}\n消耗一枚命令书，可否？".format([
+		cmd.target_vstate().get_lord_name(), what, cmd.target_actor().get_name(),
+	])
+	SceneManager.show_yn_dialog(msg, cmd.actioner().actorId)
+	LoadControl.set_view_model(174)
 	return
 
 # 花钱赎人
@@ -1215,33 +1209,6 @@ func rescue_gold() -> void:
 	LoadControl.set_view_model(174)
 	return
 
-# 换俘
-func rescue_people() -> void:
-	var cmd = DataManager.get_current_policy_command()
-	if cmd == null or cmd.type != "交涉":
-		FlowManager.add_flow("enter_town_policy_menu")
-		return
-
-	var selected = DataManager.get_env_int_array("目标项")
-	if selected.size() != 2:
-		FlowManager.add_flow("enter_town_policy_menu")
-		return
-
-	# 这里 trick 一下，复用金米，米 >= 0 表示是人换人
-	cmd.costGold = selected[0]
-	cmd.costRice = selected[1]
-
-	var msg = "出使与{0}交涉\n以{1}换回{2}的{3}\n消耗一枚命令书，可否？".format([
-		cmd.target_vstate().get_lord_name(),
-		ActorHelper.actor(cmd.costGold).get_name(),
-		cmd.target_city().get_full_name(),
-		cmd.target_actor().get_name(),
-	])
-	SceneManager.show_yn_dialog(msg, cmd.actioner().actorId)
-	SceneManager.show_cityInfo(true)
-	LoadControl.set_view_model(174)
-	return
-
 # 交涉：命令书消耗动画
 func rescue_confirmed() -> void:
 	var city = clCity.city(DataManager.player_choose_city)
@@ -1258,16 +1225,49 @@ func rescue_execute():
 
 	cmd.prepare()
 
-	var msg = "交涉成功率：{0}%".format([cmd.rate])
-	if cmd.rate != cmd.basicRate:
-		var signChar = "+"
-		if cmd.rate < cmd.basicRate:
-			signChar = "-"
-		msg = "交涉成功率：{0}({1}{2})%".format([cmd.basicRate, signChar, cmd.rate - cmd.basicRate])
+	var msg = "换俘交涉中 ……"
+	var nextViewModel = 175
+	if cmd.costRice < 0:
+		nextViewModel = 179
+		msg = "交涉成功率：{0}%".format([cmd.rate])
+		if cmd.rate != cmd.basicRate:
+			var signChar = "+"
+			if cmd.rate < cmd.basicRate:
+				signChar = "-"
+			msg = "交涉成功率：{0}({1}{2})%".format([cmd.basicRate, signChar, cmd.rate - cmd.basicRate])
 	SceneManager.play_affiars_animation(
 		"Town_Ally", "", false, msg,
 		cmd.actionId)
-	LoadControl.set_view_model(179)
+	LoadControl.set_view_model(nextViewModel)
+	return
+
+func rescue_people_confirm() -> void:
+	var cmd = DataManager.get_current_policy_command()
+	if cmd == null or cmd.type != "交涉":
+		FlowManager.add_flow("enter_town_policy_menu")
+		return
+
+	if cmd.costGold < 0 or cmd.costRice < 0:
+		FlowManager.add_flow("enter_town_policy_menu")
+		return
+
+	if cmd.costRice != 99999:
+		# 只有一名俘虏的情况，指定换俘
+		FlowManager.add_flow("rescue_result")
+		return
+
+	# 对方要求人换人，需要再次确认
+	var capturedId = cmd.costGold
+	var capturedCityId = cmd.costRice
+	var city = clCity.city(capturedCityId)
+	var capturedActor = ActorHelper.actor(capturedId)
+	var msg = "{0}同意释放{1}\n但要求我军释放{2}\n可否？".format([
+		cmd.target_vstate().get_lord_name(),
+		cmd.target_actor().get_name(),
+		capturedActor.get_name(),
+	])
+	SceneManager.show_yn_dialog(msg, cmd.actionId)
+	LoadControl.set_view_model(176)
 	return
 
 # 交涉结果

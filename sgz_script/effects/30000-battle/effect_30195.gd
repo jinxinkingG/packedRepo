@@ -30,7 +30,7 @@ func on_trigger_30023()->bool:
 	if not bu.dic_combat.has(ske.skill_name):
 		return false
 	var limit = int(bu.dic_combat[ske.skill_name])
-	var triggered = ske.get_battle_skill_val_int()
+	var triggered = ske.get_battle_skill_val_int(-1, 0)
 	if triggered >= limit:
 		return false
 

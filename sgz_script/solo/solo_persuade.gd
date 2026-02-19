@@ -114,31 +114,28 @@ func _input_key(delta: float):
 		102:
 			if not Global.wait_for_confirmation(""):
 				return
-			var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-			var actorId = DataManager.solo_actor_by_side(side);
-			var war_actor = DataManager.get_war_actor(actorId);
-			var war_enrmy = war_actor.get_battle_enemy_war_actor();
-			var enemyActor = ActorHelper.actor(war_enrmy.actorId)
-			var result = int(DataManager.common_variable["结果"]);
+			var side:String = DataManager.solo_sort[DataManager.solo_sort_no]
+			var actorId = DataManager.solo_actor_by_side(side)
+			var wa = DataManager.get_war_actor(actorId)
+			var enemy = wa.get_battle_enemy_war_actor()
+			var result = DataManager.get_env_int("结果")
 			match result:
 				1:#休想
 					FlowManager.add_flow("solo_turn_end");
 				2:#回到白兵
-					bf.set_unit_state(war_enrmy.actorId, {"将": "后退"})
-					FlowManager.add_flow("solo_run_end");
+					bf.set_unit_state(enemy.actorId, {"将": "后退"})
+					FlowManager.add_flow("solo_run_end")
 				3:#回到大战场
-					bf.loserId = war_enrmy.actorId
-					bf.lostType = BattleFight.ResultEnum.ActorRetreat
-					FlowManager.add_flow("solo_run_end");
+					bf.set_loser(enemy.actorId, BattleFight.ResultEnum.ActorRetreat)
+					FlowManager.add_flow("solo_run_end")
 				4:#加入我方
-					var enemy_unit_actor = war_enrmy.battle_actor_unit();
-					if war_enrmy.actor_surrend_to(war_actor.wvId):
-						enemyActor.set_loyalty(max(10,79-enemyActor.get_loyalty()));#投降忠赋值
+					if enemy.actor_surrend_to(wa.wvId):
 						#下跪投降，算到主动投诚里，大战场保留方块
-						enemy_unit_actor.is_surrend = true;
-						FlowManager.add_flow("solo_persuade_3_join_us");
+						var enemyBu = enemy.battle_actor_unit()
+						enemyBu.is_surrend = true
+						FlowManager.add_flow("solo_persuade_3_join_us")
 					else:
-						FlowManager.add_flow("solo_turn_end");
+						FlowManager.add_flow("solo_turn_end")
 		103:#确认对方投降了
 			Global.wait_for_confirmation("solo_run_end")
 	return

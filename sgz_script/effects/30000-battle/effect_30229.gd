@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #巨喝主动技
-#【巨喝】小战场，主动技。非城战，你可以发动：发动后视为你使用[挑衅]。且对方全体士兵有X％的概率变为步兵（X=你的等级*8）。每次白刃战限1次。
+#【巨喝】小战场，主动技。非城地形才发动，发动后视为你使用[挑衅]，对方全体士兵有X％的概率变为步兵（X=你的等级*8）；每次白刃战限1次。
 
 const EFFECT_ID = 30229
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -76,7 +76,7 @@ func effect_30229_3():
 		if not Global.get_rate_result(rate):
 			DataManager.set_env(KEY_RESULTS, 0)
 		ske.battle_set_skill_val({}, 99999, YANYU_EFFECT_ID, actorId)
-		LoadControl.end_script()
+		skill_end_clear(true)
 		DataManager.set_env("当前武将", me.actorId)
 		FlowManager.add_flow("load_script|battle/player_tactic.gd")
 		FlowManager.add_flow("tactic_impact_1")

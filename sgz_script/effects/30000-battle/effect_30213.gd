@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #懈志锁定技
-#【懈志】大战场，锁定技。若你方的总兵力比敌方总兵力的一半还要少，你进入白刃战时，立刻投降（若为君主，则死亡/入狱）。
+#【懈志】小战场，锁定技。若你方的总兵力比敌方总兵力的一半还要少，你进入白刃战时，立刻投降（若为君主，则死亡/入狱）。
 
 const EFFECT_ID = 30213
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -30,5 +30,6 @@ func surrender()->void:
 		me.actor_capture_to(enemyWV.id, "投降")
 		actor.set_status_captured()
 	else:
-		me.actor_surrend_to(enemyWV.id)
+		# 忠诚度不变
+		me.actor_surrend_to(enemyWV.id, actor.get_loyalty())
 	return

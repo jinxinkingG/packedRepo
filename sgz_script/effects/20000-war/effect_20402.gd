@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #铁索主动技 #消耗标记 #连续发动 #施加状态
-#【铁索】大战场，主动技。选择场上2名武将为目标，消耗X点机动力发动：对这些目标分别附加/解除1回合{铁索}状态。(X=同一回合内，该技能的发动次数)。
+#【铁索】大战场，主动技。选择场上2名武将为目标，消耗X点机动力发动：对这些目标分别附加/解除1回合{铁索连环}状态。(X=同一回合内，该技能的发动次数)。
 
 const EFFECT_ID = 20402
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -46,7 +46,7 @@ func effect_20402_start():
 	# 先清空列表
 	DataManager.set_env(EFFECT_CHOOSE_NAME, [])
 	DataManager.set_env(EFFECT_CHOOSE_ACTOR, -1)
-	_update_select_color()
+	_update_select_color([])
 	goto_step("go")
 	return
 
@@ -86,6 +86,7 @@ func effect_20402_go():
 			SceneManager.show_actor_info(id, true, msg)
 			map.next_shrink_actors = [id]
 			break
+	_update_select_color(targets)
 	LoadControl.set_view_model(2000)
 	return
 
@@ -99,26 +100,24 @@ func on_view_model_2000():
 #确认连接/解除情况
 func effect_20402_2():
 	var targetId = DataManager.get_env_int("目标")
-	var selected = get_env_int_array(EFFECT_CHOOSE_NAME)
+	var selected = DataManager.get_env_int_array(EFFECT_CHOOSE_NAME)
 	if targetId in selected:
 		selected.erase(targetId)
 	elif selected.size() < 2:
 		selected.append(targetId)
 	DataManager.set_env(EFFECT_CHOOSE_ACTOR, targetId)
 	DataManager.set_env(EFFECT_CHOOSE_NAME, selected)
-	_update_select_color()
-	FlowManager.add_flow("draw_actors")
 	goto_step("go")
 	return
 
 func effect_20402_cancel():
 	DataManager.set_env(EFFECT_CHOOSE_NAME, [])
-	_update_select_color()
+	_update_select_color([])
 	goto_step("go")
 	return
 
 func effect_20402_3():
-	var selected = get_env_int_array(EFFECT_CHOOSE_NAME)
+	var selected = DataManager.get_env_int_array(EFFECT_CHOOSE_NAME)
 	if selected.empty():
 		back_to_skill_menu()
 		return
@@ -208,15 +207,7 @@ func effect_20402_6():
 	goto_step("go")
 	return
 
-func _update_select_color():
-	var positions = []
-	for targetId in get_env_int_array(EFFECT_CHOOSE_NAME):
-		var wa = DataManager.get_war_actor(targetId)
-		positions.append(wa.position)
-	map.show_color_block_by_position(positions)
+func _update_select_color(targetIds:PoolIntArray) -> void:
+	var selected = DataManager.get_env_int_array(EFFECT_CHOOSE_NAME)
+	map.show_can_choose_actors(targetIds, -1, selected)
 	return
-
-func on_view_model_2999():
-	wait_for_skill_result_confirmation()
-	return
-

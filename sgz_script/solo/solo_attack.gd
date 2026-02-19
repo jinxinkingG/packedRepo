@@ -34,11 +34,16 @@ func solo_attack():
 		if enemy.get_controlNo() < 0:
 			rate = max(70, rate)
 	if DataManager.common_variable.has('单挑攻击附加命中率'):
+
 		print('==========单挑攻击==========')
+
 		print(DataManager.common_variable['单挑攻击附加命中率'])
+
 		rate += DataManager.common_variable['单挑攻击附加命中率']
+
 		#生效后删除
-		DataManager.common_variable.erase('单挑攻击附加命中率')	
+
+		DataManager.common_variable.erase('单挑攻击附加命中率')
 	var result = 1
 	if not Global.get_rate_result(rate):
 		result = 0

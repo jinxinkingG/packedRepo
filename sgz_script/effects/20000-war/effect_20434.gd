@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #才瑕效果实现
-#【才瑕】大战场，锁定技。你用计结束时，交替执行AB效果，每回合默认从A开始，执行后切换。 A.你的机动力增加用计消耗的50%； B.你的机动力减少用计消耗的50%。
+#【才瑕】大战场，锁定技。每回合，你用计结束时，交替产生以下效果：A. 机动力回复X；B. 机动力额外扣减X。X = 计策消耗的50%。
 
 func on_trigger_20009()->bool:
 	var se = DataManager.get_current_stratagem_execution()

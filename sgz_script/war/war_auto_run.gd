@@ -23,7 +23,6 @@ func _init() -> void:
 	FlowManager.bind_import_flow("war_vstate_settlement", self)
 	FlowManager.bind_import_flow("war_vstate_settlement_report", self)
 	FlowManager.bind_import_flow("war_over_start", self)
-	FlowManager.bind_import_flow("war_over_next", self)
 	FlowManager.bind_import_flow("war_over_end", self)
 	FlowManager.bind_import_flow("turn_control_end_trigger", self)
 	FlowManager.bind_import_flow("turn_control_end", self)
@@ -73,7 +72,7 @@ func war_run_start():
 	wf.init_war()
 
 	# 无尽模式，触发模拟内政技能
-	if DataManager.endless_model:
+	if DataManager.endless_mode:
 		# 清空内政技能CD，无尽模式各关均可触发月度内政技能
 		SkillHelper.decrease_skill_cd(10000);
 		SkillHelper.decrease_skill_variable(10000);
@@ -197,21 +196,9 @@ func _process(delta: float) -> void:
 		10:#当日结束
 			#1.如果天数超过30，攻方失败
 			if wf.date >= 30:
-				#攻方提示
-				wf.attackerWV.lose_reason = War_Vstate.Lose_ReasonEnum.OverDay
-				var contronNo = wf.attackerWV.get_main_controlNo()
-				if contronNo >= 0:
-					FlowManager.set_current_control_playerNo(contronNo)
-					FlowManager.add_flow("player_war_end_confirm")
-					return
-				#守方提示
-				contronNo = wf.defenderWV.get_main_controlNo()
-				if contronNo >= 0:
-					FlowManager.set_current_control_playerNo(contronNo)
-					FlowManager.add_flow("player_war_end_confirm")
-					return
-				#不提示直接去结算界面
-				FlowManager.add_flow("war_over_start")
+				wf.attackerWV.set_lost_reason(War_Vstate.Lose_ReasonEnum.OverDay)
+				# 不直接控制流程，交给检查阶段处理
+				FlowManager.add_flow("war_vstate_settlement")
 				return
 			# 进行当天结束的正常结算
 			wf.date_finished()
@@ -221,17 +208,11 @@ func _process(delta: float) -> void:
 				#判断任意一方的粮草不足，则失败
 				if wv.rice > 0:
 					continue
-				wv.lose_reason = War_Vstate.Lose_ReasonEnum.FoodExhaustion
+				wv.set_lost_reason(War_Vstate.Lose_ReasonEnum.FoodExhaustion)
 				if wv.is_reinforcement():
 					continue
-				var controlNo = wv.get_main_controlNo()
-				if controlNo < 0:
-					controlNo = wv.get_enemy_vstate().get_main_controlNo()
-				if controlNo >= 0:
-					FlowManager.set_current_control_playerNo(controlNo)
-					FlowManager.add_flow("player_war_end_confirm")
-				else:
-					FlowManager.add_flow("war_vstate_settlement")
+				# 不直接控制流程，交给检查阶段处理
+				FlowManager.add_flow("war_vstate_settlement")
 				return
 			# 一切正常，可以继续
 			set_next_step(0)
@@ -259,51 +240,65 @@ func _process(delta: float) -> void:
 			turn_control_end_clear()
 	return
 
-#检查势力败退结算
-func war_vstate_settlement():
+# 检查势力败退结算
+# 这里需要考虑各种情况，并且可重入
+func war_vstate_settlement() -> void:
 	var wf = DataManager.get_current_war_fight()
 	# 各势力结算
 	for wv in wf.war_vstates():
-		if not wv.requires_lost_settlement():
+		if not wv.lost():
+			# 未战败，忽略
 			continue
-		# 只自动非主军势并报告
-		# 主军势放结算时处理
-		if wv == wf.defenderWV or wv == wf.attackerWV:
-			continue
-		wv.settle_after_war(true, true)
-		DataManager.set_env("战争.结算方", wv.id)
-		FlowManager.add_flow("war_vstate_settlement_report")
-		return
-	# 主攻方或主守方失败？
+		if wv.requires_lost_settlement():
+			# 已战败但未撤人
+			if not wv.settle_generals_after_war():
+				# 需要玩家主动撤人
+				FlowManager.set_current_control_playerNo(wv.get_main_controlNo())
+				wf.set_env("败退结算", wv.id)
+				FlowManager.add_flow("player_retreat_plan")
+				return
+			# 自动撤离了，直接汇报结果
+			wf.set_env("败退结算", wv.id)
+			FlowManager.add_flow("war_vstate_settlement_report")
+			return
+	# 所有军势都已经处理完了，检查是否主攻方或主守方失败
 	for wv in [wf.defenderWV, wf.attackerWV]:
 		if wv.lost():
 			FlowManager.add_flow("draw_actors")
-			FlowManager.add_flow("player_war_end_confirm")
+			FlowManager.add_flow("war_over_start")
 			return
 	# 战争继续
 	FlowManager.add_flow("draw_actors")
 	FlowManager.add_flow("player_ready")
 	return
 
-func war_vstate_settlement_report():
+func war_vstate_settlement_report() -> void:
 	var wf = DataManager.get_current_war_fight()
-	var vstateId = DataManager.get_env_int("战争.结算方")
-	var wv = wf.get_war_vstate(vstateId)
-	var msg = "成功击退{0}军"
+	var wvId = wf.get_env_int("败退结算")
+	var wv = wf.get_war_vstate(wvId)
+	if wv == null:
+		FlowManager.add_flow("draw_actors")
+		FlowManager.add_flow("player_ready")
+		return
+
+	var msg = "{0}军"
 	if wv.is_reinforcement():
-		msg = "成功击退{0}的援军"
-		if wv.lose_reason == War_Vstate.Lose_ReasonEnum.FoodExhaustion:
-			msg = "{0}的援军粮草不足\n已撤离战场"
+		msg = "{0}的援军"
 	msg = msg.format([wv.get_lord_name()])
+	msg += wv.get_lost_message()
+	msg += "\n已撤离战场"
+
+	# 结算资源
+	wv.settle_resources_after_war()
 	var money = 0
 	var rice = 0
-	var info = DataManager.get_env_dict("战争.击退结算信息")
-	var key = str(vstateId)
-	if key in info:
-		if "money" in info[key]:
-			money = int(info[key]["money"])
-		if "rice" in info[key]:
-			rice = int(info[key]["rice"])
+	var settleInfo = wf.get_env_dict("资源结算")
+	var wvKey = "wv." + str(wv.id)
+	if wvKey in settleInfo:
+		if "money" in settleInfo[wvKey]:
+			money = Global.intval(settleInfo[wvKey]["money"])
+		if "rice" in settleInfo[wvKey]:
+			rice = Global.intval(settleInfo[wvKey]["rice"])
 	if money + rice > 0:
 		msg += "\n截获敌军辎重\n获得"
 		if money >= 0:
@@ -319,68 +314,60 @@ func war_vstate_settlement_report():
 
 #战争结束,进入结算界面（开始）
 func war_over_start():
-	#只需要服务器去处理顺序数据
-	if AutoLoad.get_local_id() != 1:
-		return
-	DataManager.set_env("战争.结算进行", 1)
-	DataManager.set_env("战争.资源结算", {})
-	LoadControl.end_script()
-	
-	FlowManager.add_flow("load_script|war/player_over_settle.gd")
-	FlowManager.add_flow("war_over_next")
-	return
+	var wf = DataManager.get_current_war_fight()
+	# 全解除托管
+	for wv in wf.war_vstates():
+		wv.delegate(false)
+	wf.set_env("战争结算", 1)
 
-#战争结束（下一步）
-func war_over_next():
-	if DataManager.endless_model:
+	LoadControl.end_script()
+
+	if DataManager.endless_mode:
 		# 无尽模式不进行
 		DataManager.set_env("战争.结算方", EndlessGame.player_vstateId)
+		FlowManager.add_flow("load_script|war/player_over_settle.gd")
 		FlowManager.add_flow("settle_start")
 		return
+
 	# 从主军势中找到胜方
 	var winner = null
-	var wf = DataManager.get_current_war_fight()
 	for wv in [wf.attackerWV, wf.defenderWV]:
 		if wv.lost():
 			continue
 		winner = wv
 		break
-	if winner.settled > 0:
-		# 胜方已经结算完成，轮流处理其他军势
-		for wv in wf.war_vstates():
-			var ret = wv.settle_after_war(wv.is_reinforcement())
-			# 再次调用胜方的资源归属，以实现金米抢夺
-			winner.settle_resources_after_war()
-			if ret:
-				return
-		# 均处理完成
-		FlowManager.set_current_control_playerNo(winner.get_main_controlNo())
-		DataManager.set_env("战争.结算方", winner.id)
-		FlowManager.add_flow("settle_start")
-		return
 
-	if winner == null:
-		# 目前不会，将来有全败的情况再处理
-		# FIXME later
-		pass
 	var warCity = wf.target_city()
-	# 处理胜利方
-	DataManager.set_env("战争.结算方", winner.id)
 	# 城池归属
 	warCity.change_vstate(winner.vstateId)
-	#武将入城
+	# 胜方所有武将直接入城
 	winner.send_all_actors_to_city(warCity)
-	# 资源归属
+
+	# 所有非胜方军势自动撤人
+	for wv in wf.war_vstates():
+		if winner != null and wv.id == winner.id:
+			continue
+		# 这里不需要判断是否需要玩家处理
+		# 因为玩家军势若战败，是走不到这一步的
+		# 之前在战场上就已经处理了
+		# 若玩家军势未战败，但属于援军，也会自动处理的
+		wv.settle_generals_after_war()
+		# 结算资源
+		wv.settle_resources_after_war()
+
+	# 最终胜方结算资源，确保资源落城
 	winner.settle_resources_after_war()
-	winner.settled = 1
-	# 继续处理败方
-	FlowManager.add_flow("war_over_next")
+
+	FlowManager.set_current_control_playerNo(winner.get_main_controlNo())
+	DataManager.set_env("战争.结算方", winner.id)
+	FlowManager.add_flow("load_script|war/player_over_settle.gd")
+	FlowManager.add_flow("settle_start")
 	return
 
 func war_over_end():
 	var wf = DataManager.get_current_war_fight()
 	wf.done()
-	if DataManager.endless_model:#无尽模式
+	if DataManager.endless_mode:#无尽模式
 		#玩家方，注意这里要遵循固定顺序约定，FIXME later
 		var wv = wf.get_war_vstate(EndlessGame.player_vstateId)
 		if wv.lose_reason != War_Vstate.Lose_ReasonEnum.NotLose:
@@ -406,13 +393,13 @@ func war_over_end():
 		_decrease("统治度", loss)
 	DataManager.unset_env("战争.结算进行")
 	wf.cleanup()
-	DataManager.war_control_sort=[];
-	DataManager.common_variable.erase("大限检查");
-	LoadControl.end_script();
-	DataManager.clear_common_variable(["战争","大战场","白兵","单挑","诱发"]);
-	FlowManager.add_flow("go_to_scene|res://scene/scene_affiars/scene_affiars.tscn");
-	
-	FlowManager.add_flow("back_from_war");
+	DataManager.war_control_sort = []
+	DataManager.common_variable.erase("大限检查")
+	LoadControl.end_script()
+	DataManager.clear_common_variable(["战争","大战场","白兵","单挑","诱发"])
+
+	FlowManager.add_flow("go_to_scene|res://scene/scene_affiars/scene_affiars.tscn")
+	FlowManager.add_flow("back_from_war")
 	return
 
 func turn_control_end():
@@ -556,84 +543,85 @@ func back_to_war():
 		SkillHelper.auto_trigger_skill(id, 20008)
 	
 	var loser = bf.get_loser()
-	var loserActor = loser.actor()
-	var winner = loser.get_battle_enemy_war_actor()
-	var winnerActor = winner.actor()
-	var goldLine = winnerActor.get_equip_feature_max("低德搜刮")
-	var gold = goldLine - winnerActor.get_moral()
-	if gold > 0:
-		var history = wf.get_env_array("低德搜刮")
-		var key = "{0}|{1}".format([winner.actorId, loser.actorId])
-		if not key in history:
-			history.append(key)
-			wf.set_env("低德搜刮", history)
-			winner.war_vstate().change_gold(gold)
-			var msg = "{0}趁势搜刮\n获得 {1} 两金".format([winner.get_name(), gold])
-			winner.attach_free_dialog(msg, 2, 20000, -2)
+	if loser != null:
+		var loserActor = loser.actor()
+		var winner = loser.get_battle_enemy_war_actor()
+		var winnerActor = winner.actor()
+		var goldLine = winnerActor.get_equip_feature_max("低德搜刮")
+		var gold = goldLine - winnerActor.get_moral()
+		if gold > 0:
+			var history = wf.get_env_array("低德搜刮")
+			var key = "{0}|{1}".format([winner.actorId, loser.actorId])
+			if not key in history:
+				history.append(key)
+				wf.set_env("低德搜刮", history)
+				winner.war_vstate().change_gold(gold)
+				var msg = "{0}趁势搜刮\n获得 {1} 两金".format([winner.get_name(), gold])
+				winner.attach_free_dialog(msg, 2, 20000, -2)
 
-	#防止0体结束白兵
-	if not loserActor.is_status_dead():
-		loserActor.set_hp(max(1, loserActor.get_hp()))
-	
-	set_env("战争.战败位置", {"x":loser.position.x,"y":loser.position.y})
-	var posDic = DataManager.get_env_dict("后退位置")
-	if not posDic.empty():
-		#本身不在城门、太守府中才会后退(修改：城墙可以被击退)
-		var blockCN = war_map.get_blockCN_by_position(loser.position);
-		if not blockCN in ["太守府","城门"]:
-			var position = Vector2(posDic["x"], posDic["y"])
-			loser.move(position, false)
-			#的卢效果处理
-			if loserActor.get_equip_feature_max("战场跃马") > 0:
-				#(德/2)%的概率触发跃马效果
-				var rate = int(loserActor.get_moral() / 2)
-				if loser.actorId == StaticManager.ACTOR_ID_LIUBEI:
-					rate = max(80, rate)
-				elif loser.actorId == StaticManager.ACTOR_ID_PANGTONG:
-					rate = min(20, rate)
-				if Global.get_rate_result(rate):
-					DataManager.set_env("战争.跃马武将", loser.actorId)
-		DataManager.unset_env("后退位置")
+		#防止0体结束白兵
+		if not loserActor.is_status_dead():
+			loserActor.set_hp(max(1, loserActor.get_hp()))
 
-	for wa in [loser, winner]:
-		if wa == null or wa.disabled:
-			continue
-		# 先检查装备
-		var equipTriggered = false
-		for item in wa.actor().get_equip_feature_all("战斗获得机动力"):
-			var ap = int(item[1])
-			if ap <= 0:
+		set_env("战争.战败位置", {"x":loser.position.x,"y":loser.position.y})
+		var posDic = DataManager.get_env_dict("后退位置")
+		if not posDic.empty():
+			#本身不在城门、太守府中才会后退(修改：城墙可以被击退)
+			var blockCN = war_map.get_blockCN_by_position(loser.position);
+			if not blockCN in ["太守府","城门"]:
+				var position = Vector2(posDic["x"], posDic["y"])
+				loser.move(position, false)
+				#的卢效果处理
+				if loserActor.get_equip_feature_max("战场跃马") > 0:
+					#(德/2)%的概率触发跃马效果
+					var rate = int(loserActor.get_moral() / 2)
+					if loser.actorId == StaticManager.ACTOR_ID_LIUBEI:
+						rate = max(80, rate)
+					elif loser.actorId == StaticManager.ACTOR_ID_PANGTONG:
+						rate = min(20, rate)
+					if Global.get_rate_result(rate):
+						DataManager.set_env("战争.跃马武将", loser.actorId)
+			DataManager.unset_env("后退位置")
+
+		for wa in [loser, winner]:
+			if wa == null or wa.disabled:
 				continue
-			wa.action_point += ap
-			var msg = "因形用权，应变无穷\n（<{0}>效果\n（机动力 +{1}".format([
-				item[0].name(), ap,
-			])
-			wa.attach_free_dialog(msg, 2)
-			equipTriggered = true
-			break
-		if equipTriggered:
-			continue
-		# 再检查技能
-		for srb in SkillRangeBuff.find_for_actor("战斗获得机动力", wa.actorId):
-			if srb.effectTagVal <= 0:
+			# 先检查装备
+			var equipTriggered = false
+			for item in wa.actor().get_equip_feature_all("战斗获得机动力"):
+				var ap = int(item[1])
+				if ap <= 0:
+					continue
+				wa.action_point += ap
+				var msg = "因形用权，应变无穷\n（<{0}>效果\n（机动力 +{1}".format([
+					item[0].name(), ap,
+				])
+				wa.attach_free_dialog(msg, 2)
+				equipTriggered = true
+				break
+			if equipTriggered:
 				continue
-			var ap = wa.battle_tactic_point
-			if ap <= 0 or wa.action_point > 0:
-				continue
-			# 目前每日一次，光环不能用 CD，暂时用环境变量
-			var key = "光环CD.{0}.{1}.{2}".format([
-				srb.skillName, wa.actorId, wf.date
-			])
-			if wf.get_env_int(key) > 0:
-				continue
-			# 标记光环 CD
-			wf.set_env(key, 1)
-			wa.action_point += ap
-			var msg = "因形用权，应变无穷\n（【{0}】效果\n（机动力 +{1}".format([
-				srb.skillName, ap,
-			])
-			wa.attach_free_dialog(msg, 2)
-			break
+			# 再检查技能
+			for srb in SkillRangeBuff.find_for_actor("战斗获得机动力", wa.actorId):
+				if srb.effectTagVal <= 0:
+					continue
+				var ap = wa.battle_tactic_point
+				if ap <= 0 or wa.action_point > 0:
+					continue
+				# 目前每日一次，光环不能用 CD，暂时用环境变量
+				var key = "光环CD.{0}.{1}.{2}".format([
+					srb.skillName, wa.actorId, wf.date
+				])
+				if wf.get_env_int(key) > 0:
+					continue
+				# 标记光环 CD
+				wf.set_env(key, 1)
+				wa.action_point += ap
+				var msg = "因形用权，应变无穷\n（【{0}】效果\n（机动力 +{1}".format([
+					srb.skillName, ap,
+				])
+				wa.attach_free_dialog(msg, 2)
+				break
 
 	wf.update_war_process()
 	# 解除黑幕
@@ -927,7 +915,7 @@ func wait_war_report_confirmation():
 
 func check_war_ext_report():
 	set_current_step(33)
-	if not DataManager.endless_model:
+	if not DataManager.endless_mode:
 		set_next_step(35)
 		return
 	if DataManager.get_env_int("战争.探报.野外装备") <= 0:

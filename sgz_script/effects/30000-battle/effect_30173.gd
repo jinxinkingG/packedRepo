@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #奋射主动技
-#【奋射】小战场，主动技。你的士气+10，并获得2回合“强弩”战术。每个大战场回合限1次。
+#【奋射】小战场，主动技。你的士气+8，并获得2回合“强弩”战术。每个大战场回合限1次。
 
 const EFFECT_ID = 30173
 const FLOW_BASE = "effect_" + str(EFFECT_ID)

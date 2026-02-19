@@ -76,9 +76,17 @@ func get_can_attack_actors(fromId:int, igonreAP:bool=false, evenForbidden:bool=f
 
 	if targets.size() == 1 and targets[0] in excludedTargets:
 		# 只有一个目标且被排除，提示原因
-		reason = "因【{0}】效果\n无法攻击{1}".format([
-			excludedTargets[targets[0]], ActorHelper.actor(targets[0]).get_name(),
-		])
+		var cause = excludedTargets[targets[0]]
+		if typeof(cause) == TYPE_ARRAY and cause.size() == 2:
+			reason = "因{0}【{1}】效果\n无法攻击{2}".format([
+				ActorHelper.actor(cause[0]).get_name(), cause[1],
+				ActorHelper.actor(targets[0]).get_name(),
+			])
+		else:
+			cause = Global.strval(cause)
+			reason = "因【{0}】效果\n无法攻击{1}".format([
+				cause, ActorHelper.actor(targets[0]).get_name(),
+			])
 	for targetId in excludedTargets.keys():
 		targets.erase(targetId)
 

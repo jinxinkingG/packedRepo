@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #励精技能实现
-#【励精】小战场，锁定技。你方单位击杀对方主将时，你获得对方25%经验，但最大不超过5000。
+#【励精】小战场，锁定技。你方士兵击杀对方将领时，你夺取对方25%经验，但最大不超过5000。
 
 func on_trigger_30023()->bool:
 	var bu = ske.battle_is_unit_hit_by(UNIT_TYPE_SOLDIERS, ["将"], ["ALL"])

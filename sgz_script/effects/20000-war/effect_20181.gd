@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #冷静效果实现
-#【冷静】大战场,锁定技。你使用计策时，命中率+x%；你被用计时，对方命中率-x%，x＝你的等级。
+#【冷静】大战场，锁定技。你使用计策时，命中率+X%；你被用计时，对方命中率-X%，X＝你的等级。
 
 func check_trigger_correct()->bool:
 	var ske = SkillHelper.read_skill_effectinfo()

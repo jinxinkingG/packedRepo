@@ -100,11 +100,12 @@ func effect_20392_6():
 	var fromId = DataManager.get_env_int(key)
 	var wv = me.war_vstate()
 	var enemyWV = wv.get_enemy_vstate()
-	me.actor_surrend_to(enemyWV.id)
+	# 忠诚度不变
+	me.actor_surrend_to(enemyWV.id, actor.get_loyalty())
 	var msg = "匹夫欺人太甚！\n此地留不得了！\n（{0}转投{1}军".format([
 		me.get_name(), enemyWV.get_lord_name(),
 	])
-	play_dialog(me.actorId, msg, 0, 2999)
+	play_dialog(actorId, msg, 0, 2999)
 	return
 
 func on_view_model_2999():

@@ -149,7 +149,7 @@ func hope_start():
 	var city = clCity.city(DataManager.player_choose_city)
 	if DataManager.is_challange_game():
 		var msg = "挑战赛模式\n禁用祈祷"
-		LoadControl._affiars_error(msg, -5)
+		LoadControl._affiars_error(msg, StaticManager.ACTOR_ID_SLIME_GOD)
 		return
 	var unlocked = false
 	if not unlocked and DataManager.is_test_player():
@@ -269,33 +269,37 @@ func hope_unoffice_2():
 	var actorId = int(value.split("_")[1]);
 	var actor = ActorHelper.actor(actorId)
 	var cost = max(0,year-DataManager.year)*100;#花费金额
-	SceneManager.show_confirm_dialog("欲使{0}提前出仕\n需{1}两金".format([actor.get_name(),cost]),-5);
-	SceneManager.show_cityInfo(true);
-	DataManager.common_variable["价格"] = cost;
-	
+	var msg = "欲使{0}提前出仕\n需{1}两金".format([actor.get_name(),cost])
+	SceneManager.show_confirm_dialog(msg, StaticManager.ACTOR_ID_SLIME_GOD)
+	SceneManager.show_cityInfo(true)
+	DataManager.set_env("价格", cost)
+	return
+
 #命令书
 func hope_unoffice_3():
-	var cost = int(DataManager.common_variable["价格"]);#花费金额
+	var cost = DataManager.get_env_int("价格");#花费金额
 	var city = clCity.city(DataManager.player_choose_city)
 	if city.get_gold() < cost:
-		LoadControl._affiars_error("汝心不诚\n如何可行？",-5);
-		return;
-	
-	LoadControl.set_view_model(183);
+		LoadControl._affiars_error("汝心不诚\n如何可行？", StaticManager.ACTOR_ID_SLIME_GOD)
+		return
+
 	#命令书确认
-	SceneManager.show_yn_dialog("消耗1枚命令书可否");
+	SceneManager.show_yn_dialog("消耗1枚命令书可否")
 	SceneManager.show_cityInfo(true);
-	
+	LoadControl.set_view_model(183);
+	return
+
 #命令书消耗动画
 func hope_unoffice_4():
-	LoadControl.set_view_model(184);
-	SceneManager.dialog_use_orderbook_animation("hope_unoffice_5");
+	SceneManager.dialog_use_orderbook_animation("hope_unoffice_5")
+	LoadControl.set_view_model(184)
+	return
 
 func hope_unoffice_5():
 	LoadControl.set_view_model(185);
-	var value:String = str(DataManager.common_variable["值"]);
-	var year = int(value.split("_")[0]);
-	var actorId = int(value.split("_")[1]);
+	var value:String = DataManager.get_env_str("值")
+	var year = int(value.split("_")[0])
+	var actorId = int(value.split("_")[1])
 	
 	
 	var actor = ActorHelper.actor(actorId)
@@ -308,15 +312,17 @@ func hope_unoffice_5():
 	if("跟随" in value.split("_")[2]):
 		var fid = int(str(value.split("_")[2]).replace("跟随",""));
 		var father = ActorHelper.actor(fid)
-		SceneManager.show_confirm_dialog("{0}已经可以跟随{1}出仕了".format([
+		var msg = "{0}已经可以跟随{1}出仕了".format([
 			actor.get_name(), father.get_name()
-		]),-5);
+		])
+		SceneManager.show_confirm_dialog(msg, StaticManager.ACTOR_ID_SLIME_GOD)
 	else:
 		var inCityId = int(value.split("_")[2]);
 		var inCity = clCity.city(inCityId)
-		SceneManager.show_confirm_dialog("{0}在{1}已经可以搜索了".format([
+		var msg = "{0}在{1}已经可以搜索了".format([
 			actor.get_name(), inCity.get_name()
-		]),-5);
+		])
+		SceneManager.show_confirm_dialog(msg, StaticManager.ACTOR_ID_SLIME_GOD)
 	SceneManager.show_cityInfo(true)
 	return
 
@@ -324,7 +330,7 @@ func hope_unoffice_5():
 func hope_revive_1():
 	var dead = ActorHelper.all_dead_actors()
 	if dead.empty():
-		LoadControl._affiars_error("无人阵亡", -5, 1)
+		LoadControl._affiars_error("无人阵亡", StaticManager.ACTOR_ID_SLIME_GOD, 1)
 		return
 	dead.sort_custom(ActorHelper, "_sort_actor_by_name")
 	var page = DataManager.get_env_int("内政.复活.翻页")
@@ -379,30 +385,34 @@ func hope_revive_2():
 	var auto_dead_year = int(value.split("_")[1]);#大限年份
 	var actor = ActorHelper.actor(actorId)
 	var cost = int(value.split("_")[2]);#花费金额
-	SceneManager.show_confirm_dialog("欲使{0}复活\n需{1}两金".format([actor.get_name(),cost]),-5);
-	SceneManager.show_cityInfo(true);
-	DataManager.common_variable["价格"] = cost;
+	var msg = "欲使{0}复活\n需{1}两金".format([actor.get_name(),cost])
+	SceneManager.show_confirm_dialog(msg, StaticManager.ACTOR_ID_SLIME_GOD)
+	SceneManager.show_cityInfo(true)
+	DataManager.set_env("价格", cost)
+	return
 
 #命令书
 func hope_revive_3():
-	var cost = int(DataManager.common_variable["价格"]);#花费金额
+	var cost = DataManager.get_env_int("价格");#花费金额
 	var city = clCity.city(DataManager.player_choose_city)
 	if city.get_gold() < cost:
-		LoadControl._affiars_error("汝心不诚\n如何可行？",-5);
-		return;
+		LoadControl._affiars_error("汝心不诚\n如何可行？", StaticManager.ACTOR_ID_SLIME_GOD)
+		return
 
-	LoadControl.set_view_model(193);
 	#命令书确认
-	SceneManager.show_yn_dialog("消耗1枚命令书可否");
+	SceneManager.show_yn_dialog("消耗1枚命令书可否")
 	SceneManager.show_cityInfo(true);
-	
+	LoadControl.set_view_model(193)
+	return
+
 #命令书消耗动画
 func hope_revive_4():
-	LoadControl.set_view_model(194);
-	SceneManager.dialog_use_orderbook_animation("hope_revive_5");
+	SceneManager.dialog_use_orderbook_animation("hope_revive_5")
+	LoadControl.set_view_model(194)
+	return
 
 func hope_revive_5():
-	var value:String = str(DataManager.common_variable["值"]);
+	var value:String = DataManager.get_env_str("值")
 	var actorId = int(value.split("_")[0]);
 	
 	var actor = ActorHelper.actor(actorId)
@@ -422,7 +432,7 @@ func hope_revive_5():
 	msg = msg.format([
 		actor.get_name(), city.get_name(), least_year
 	])
-	SceneManager.play_affiars_animation("Town_Save", "", false, msg, -5)
+	SceneManager.play_affiars_animation("Town_Save", "", false, msg, StaticManager.ACTOR_ID_SLIME_GOD)
 	LoadControl.set_view_model(195)
 	return
 
@@ -440,7 +450,7 @@ func hope_summon_1():
 		LoadControl._affiars_error("当前不存在可召唤的异士");
 		return;
 	var msg = "进行一次异士召唤\n需{0}两金".format([StaticManager.YISHI_COST])
-	SceneManager.show_confirm_dialog(msg, -5)
+	SceneManager.show_confirm_dialog(msg, StaticManager.ACTOR_ID_SLIME_GOD)
 	SceneManager.show_cityInfo(true)
 	LoadControl.set_view_model(231)
 	return
@@ -448,7 +458,7 @@ func hope_summon_1():
 func hope_summon_2():
 	var city = clCity.city(DataManager.player_choose_city)
 	if city.get_gold() < StaticManager.YISHI_COST:
-		LoadControl._affiars_error("汝心不诚\n如何可行？", -5)
+		LoadControl._affiars_error("汝心不诚\n如何可行？", StaticManager.ACTOR_ID_SLIME_GOD)
 		return
 
 	#命令书确认
@@ -482,7 +492,7 @@ func hope_summon_4():
 	actor.set_life_limit(max(355, actor.get_life_limit()))
 
 	SoundManager.play_anim_bgm("res://resource/sounds/se/Strategy02.ogg")
-	SceneManager.show_confirm_dialog("{0}响应了你的召唤！".format([actor.get_name()]), -5, 1)
+	SceneManager.show_confirm_dialog("{0}响应了你的召唤！".format([actor.get_name()]), StaticManager.ACTOR_ID_SLIME_GOD, 1)
 	SceneManager.show_cityInfo(true)
 	LoadControl.set_view_model(234)
 	return
@@ -595,7 +605,7 @@ func hope_star_1():
 	if candidates.empty():
 		LoadControl._affiars_error("漫天将星闪耀，并无陨落")
 		return;
-	SceneManager.show_confirm_dialog("进行一次禳星\n需 1000 两金", -5)
+	SceneManager.show_confirm_dialog("进行一次禳星\n需 1000 两金", StaticManager.ACTOR_ID_SLIME_GOD)
 	SceneManager.show_cityInfo(true)
 	DataManager.set_env("价格", 1000)
 	LoadControl.set_view_model(281)
@@ -608,7 +618,7 @@ func hope_star_2():
 	var cost = DataManager.get_env_int("价格")
 	var city = clCity.city(DataManager.player_choose_city)
 	if city.get_gold() < cost:
-		LoadControl._affiars_error("汝心不诚\n如何可行？", -5)
+		LoadControl._affiars_error("汝心不诚\n如何可行？", StaticManager.ACTOR_ID_SLIME_GOD)
 		return
 
 	#命令书确认
@@ -645,7 +655,7 @@ func hope_star_4():
 	actor.set_life_limit(max(DataManager.year + 12, actor.get_life_limit()))
 
 	SoundManager.play_anim_bgm("res://resource/sounds/se/Strategy02.ogg")
-	SceneManager.show_confirm_dialog("{0}响应了你的召唤！".format([actor.get_name()]), -5, 1)
+	SceneManager.show_confirm_dialog("{0}响应了你的召唤！".format([actor.get_name()]), StaticManager.ACTOR_ID_SLIME_GOD, 1)
 	SceneManager.show_cityInfo(true)
 	LoadControl.set_view_model(284)
 	return

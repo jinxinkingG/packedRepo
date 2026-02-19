@@ -207,7 +207,7 @@ func appoint_defence_2():
 func appoint_delegate():
 	if DataManager.is_challange_game():
 		var msg = "挑战赛模式\n禁用委任"
-		LoadControl._affiars_error(msg, -5)
+		LoadControl._affiars_error(msg, StaticManager.ACTOR_ID_SLIME_GOD)
 		return
 	var city = clCity.city(DataManager.player_choose_city)
 	var leaderId = city.get_leader_id()

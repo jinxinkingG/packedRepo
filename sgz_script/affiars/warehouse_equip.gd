@@ -181,7 +181,7 @@ func wh_equip_start():
 			DataManager.player_choose_city = wf.target_city().ID
 			SceneManager.lsc_menu.show_orderbook(false)
 			SceneManager.show_cityInfo(false)
-			if DataManager.endless_model:
+			if DataManager.endless_mode:
 				actors.append_array(EndlessGame.player_actors)
 	for actorId in actors:
 		if ActorHelper.actor(actorId).get_equip(equip.type).equals(equip):
@@ -281,7 +281,7 @@ func wh_equip_animation():
 		return
 	DataManager.set_env("对话", msg)
 	SceneManager.show_unconfirm_dialog(msg)
-	if sceneId == 20000 and DataManager.endless_model:
+	if sceneId == 20000 and DataManager.endless_mode:
 		_bind_menu(vstateId)
 	SceneManager.play_affiars_animation("Warehouse_AwardActor", "")
 	LoadControl.set_view_model(335)
@@ -340,7 +340,7 @@ func get_current_vstate_id()->int:
 		10000:
 			return DataManager.vstates_sort[DataManager.vstate_no]
 		20000:
-			if DataManager.endless_model:
+			if DataManager.endless_mode:
 				return EndlessGame.player_vstateId
 			return DataManager.vstates_sort[DataManager.vstate_no]
 	return -1

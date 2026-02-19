@@ -2,7 +2,10 @@ extends "res://script/effects_base.gd"
 
 # 获取当前武将所在城市
 func get_working_city_id()->int:
-	return DataManager.get_office_city_by_actor(actorId)
+	var city = DataManager.get_office_city_by_actor(actorId)
+	if city == null:
+		return -1
+	return city.ID
 
 #回到主动技菜单
 func back_to_skill_menu():

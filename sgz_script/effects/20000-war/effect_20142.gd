@@ -1,12 +1,12 @@
 extends "effect_20000.gd"
 
 #汉志效果 #解锁技能
-#【汉志】大战场，锁定技。若当前战争中，你方没有可撤退的城池，你令主将获得技能<昭烈>。
+#【汉志】大战场，锁定技。若你所在城无可撤退的城池，你令主将本场战争永久获得技能<昭烈>。
 
 const TARGET_SKILL = "昭烈"
 
 func on_trigger_20013():
-	if not DataManager.endless_model:
+	if not DataManager.endless_mode:
 		if me.get_retreat_city_id() >= 0:
 			return false
 

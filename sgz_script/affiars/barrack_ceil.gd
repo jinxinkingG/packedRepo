@@ -224,7 +224,7 @@ func ceil_persuade_result() -> void:
 	var mood = 3
 	if Global.get_rate_result(rate):
 		clCity.move_to(targetActor.actorId, city.ID)
-		var expectedLoyalty = max(0, 79 - targetActor.get_loyalty())
+		var expectedLoyalty = targetActor.surrend_loyalty(city.get_vstate_id())
 		if targetActor.get_prev_vstate_id() == city.get_vstate_id():
 			expectedLoyalty = min(90, targetActor.get_loyalty())
 		targetActor.set_status_officed()

@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 # 巧袭效果
-# 【巧袭】大战场，锁定技。你使用计策要击时，以“武+5”代替“知”计算命中率，以“知+5”代替“武”计算计策伤害。
+#【巧袭】大战场，锁定技。你使用计策“要击”时，以“武+5”代替“知”计算命中率，以“知+5”代替“武”计算计策伤害。
 
 func on_trigger_20017() -> bool:
 	var se = DataManager.get_current_stratagem_execution()

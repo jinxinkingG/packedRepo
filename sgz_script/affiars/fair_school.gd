@@ -96,7 +96,7 @@ func _input_key(delta: float):
 func school_start():
 	var actorIds = []
 	var sceneId = DataManager.get_current_scene_id()
-	if sceneId == 20000 and DataManager.endless_model:
+	if sceneId == 20000 and DataManager.endless_mode:
 		actorIds.append_array(EndlessGame.player_actors)
 	else:
 		SceneManager.current_scene().cursor.hide()
@@ -123,7 +123,7 @@ func school_2():
 	var city = clCity.city(DataManager.player_choose_city)
 	var sceneId = DataManager.get_current_scene_id()
 	if sceneId == 20000:
-		if DataManager.endless_model:
+		if DataManager.endless_mode:
 			# hack 一下
 			# TODO 以后应该把无尽模式武将放到 #0 城作为常规操作
 			city = clCity.city(0)
@@ -168,7 +168,7 @@ func school_3():
 func school_done():
 	LoadControl.view_model_name = prev_view_model_name
 	var sceneId = DataManager.get_current_scene_id()
-	if sceneId == 20000 and DataManager.endless_model:
+	if sceneId == 20000 and DataManager.endless_mode:
 		LoadControl.end_script()
 		LoadControl.load_script("war/player_over_settle.gd")
 		FlowManager.add_flow("war_school_done")
@@ -180,7 +180,7 @@ func school_cancel():
 	DataManager.unset_env("内政.学习武将")
 	LoadControl.view_model_name = prev_view_model_name
 	var sceneId = DataManager.get_current_scene_id()
-	if sceneId == 20000 and DataManager.endless_model:
+	if sceneId == 20000 and DataManager.endless_mode:
 		LoadControl.end_script()
 		LoadControl.load_script("war/player_over_settle.gd")
 		FlowManager.add_flow("war_school_done")

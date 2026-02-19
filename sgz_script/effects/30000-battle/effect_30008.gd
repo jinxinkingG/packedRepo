@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #统御发动，小战场buff
-#【统御】小战场,锁定技。你的统临时+x，战术值+x/2，x＝你的等级。
+#【统御】小战场，锁定技。你的统临时+X，战术值+X/2，X＝你的等级。
 
 func on_trigger_30006() -> bool:
 	var sbp = ske.get_battle_skill_property()

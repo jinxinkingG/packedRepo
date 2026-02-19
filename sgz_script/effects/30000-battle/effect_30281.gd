@@ -6,7 +6,7 @@ extends "effect_30000.gd"
 func on_trigger_30005() -> bool:
 	for bu in bf.battle_units(actorId):
 		if bu.get_unit_type() == "步":
-			bu.reset_combat_info("弓")
+			bu.reset_type("弓")
 	return false
 
 func on_trigger_30009() -> bool:

@@ -5,7 +5,7 @@ func _init() -> void:
 	return
 
 #经典算法
-func count_classic_damage(from:Battle_Unit, to:Battle_Unit)->float:
+func calc_classic_damage(from:Battle_Unit, to:Battle_Unit)->float:
 	var bf = DataManager.get_current_battle_fight()
 	#基础攻击力
 	var baseAttack = from.get_basic_attack_val()
@@ -51,8 +51,15 @@ func count_classic_damage(from:Battle_Unit, to:Battle_Unit)->float:
 			var distanceRate = from.actor().get_equip_feature_total("距离增加倍率")
 			if distanceRate > 0:
 				rate += distance * distanceRate
-		if distance > 4 && DataManager.diffculities >= 3 && bf.get_terrian() in ["wallcity"]:
-			if from.get_side() == Vector2.RIGHT:
+		if distance > 4 \
+			and DataManager.diffculities >= 3 \
+			and bf.get_terrian() in ["wallcity"] \
+			and from.get_side() == Vector2.RIGHT:
+			# 太守府守方
+			if attacker != null and attacker.get_buff("强弩")["回合数"] > 0:
+				# 强弩状态下不衰减伤害
+				pass
+			else:
 				rate /= 2
 		attack = baseAttack * rate / 100.0
 	elif isThrowing:

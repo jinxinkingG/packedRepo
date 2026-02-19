@@ -761,12 +761,11 @@ func _fix_lord_actor_position():
 		if not vs.is_alive():
 			continue
 		var lordId = vs.get_lord_id()
-		var cityId = DataManager.get_office_city_by_actor(lordId)
-		if cityId < 0:
+		var city = DataManager.get_office_city_by_actor(lordId)
+		if city == null:
 			continue
-		var city = clCity.city(cityId)
 		if city.get_actor_ids().find(lordId) > 0:
-			clCity.move_to(lordId, cityId)
+			clCity.move_to(lordId, city.ID)
 	return
 
 func show_affair_log():
@@ -789,7 +788,7 @@ func close_affair_log():
 func change_level_start()->void:
 	if DataManager.is_challange_game():
 		var msg = "挑战赛模式\n禁用难度修改"
-		SceneManager.show_confirm_dialog(msg, -5)
+		SceneManager.show_confirm_dialog(msg, StaticManager.ACTOR_ID_SLIME_GOD)
 		set_view_model(999)
 		return
 	SceneManager.current_scene().cursor.hide()
@@ -1046,7 +1045,7 @@ func player_join():
 		values.append(-2)
 
 	var msg = "请选择中途加入的势力\n「B」键继续观海"
-	SceneManager.show_unconfirm_dialog(msg, -5)
+	SceneManager.show_unconfirm_dialog(msg, StaticManager.ACTOR_ID_SLIME_GOD)
 	bind_top_menu(items, values)
 	set_view_model(800)
 	return
@@ -1055,7 +1054,7 @@ func player_join():
 func player_leave():
 	if DataManager.is_challange_game():
 		var msg = "挑战赛模式\n禁用归隐"
-		SceneManager.show_confirm_dialog(msg, -5)
+		SceneManager.show_confirm_dialog(msg, StaticManager.ACTOR_ID_SLIME_GOD)
 		set_view_model(999)
 		return
 	var vstateControlNo = DataManager.get_current_control_sort()
@@ -1063,7 +1062,7 @@ func player_leave():
 	var msg = "{0}大人厌倦了乱世吗？\n刀枪入库，马放南山\n观看 AI 演绎，可否？\n".format([
 		ActorHelper.actor(player.actorId).get_name(),
 	])
-	SceneManager.show_yn_dialog(msg, -5)
+	SceneManager.show_yn_dialog(msg, StaticManager.ACTOR_ID_SLIME_GOD)
 	SceneManager.actor_dialog.lsc.cursor_index = 1
 	set_view_model(703)
 	return

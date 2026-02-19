@@ -5,7 +5,8 @@ extends "effect_20000.gd"
 
 func on_trigger_20027()->bool:
 	# 战争结束，不生效
-	if DataManager.get_env_int("战争.结算进行") > 0:
+	var wf = DataManager.get_current_war_fight()
+	if wf.get_env_int("战争结算") > 0:
 		return false
 	if me.actorId == ske.actorId:
 		# 自己不发动

@@ -1,7 +1,7 @@
 extends "effect_10000.gd"
 
 # 恣睢主动技
-#【恣睢】内政，君主主动技。你方势力城池数不大于3座时，你可指定1个不相邻的势力发动：你获得目标势力君主的1个技能，直到本月结束。
+#【恣睢】内政，君主主动技。你方势力城池数不大于3座时，你可指定1个不相邻的势力发动：你获得目标势力君主的1个技能，直到本月结束。每月限1次。
 
 const EFFECT_ID = 10137
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -103,6 +103,7 @@ func effect_10137_confirmed() -> void:
 	var vsId = selected[0]
 	var lordId = selected[1]
 	var skillName = selected[2]
+	ske.affair_cd(1)
 	SkillHelper.add_actor_scene_skill(10000, actorId, skillName, 1, actorId, ske.skill_name)
 	var msg = "国虽小，自有腾挪之术\n{0}鞭长莫及，能奈我何？\n（本月获得【{1}】".format([
 		ActorHelper.actor(lordId).get_name(), skillName

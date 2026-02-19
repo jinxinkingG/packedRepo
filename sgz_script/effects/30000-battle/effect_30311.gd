@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
-#德化锁定技
-#【德化】大战场，锁定技。你方为战争攻方时，对方武将白刃战每轮结束时，其兵力不高于40的士兵单位，倒戈为我方。
+# 德化锁定技
+#【德化】大战场，主将锁定技。你方为战争攻方时，对方武将白刃战每轮结束时，其兵力不高于40的士兵单位，倒戈为我方。
 
 const HP_LIMIT = 40
 
@@ -15,7 +15,7 @@ func on_trigger_30059() -> bool:
 		return false
 
 	var teammate = DataManager.get_war_actor(teammateId)
-	if not me.is_teammate(teammate):
+	if teammate.actorId != actorId and not me.is_teammate(teammate):
 		return false
 
 	var cnt = 0

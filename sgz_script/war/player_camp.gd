@@ -39,9 +39,9 @@ func _input_key(delta: float):
 				var choose_actorId = int(value_array[top.lsc.cursor_index]);
 				var new_actor_nums = top.lsc.get_selected_list().size();
 				if(choose_actorId >= 0):
-					msg = wv.check_camp_out(choose_actorId);
+					msg = wv.check_camp_out(choose_actorId)
 					if msg != "":
-						return;
+						return
 					top.lsc.set_selected_change(max(0,10-actor_num-new_actor_nums));
 					new_actor_nums = top.lsc.get_selected_list().size();
 					SceneManager.show_unconfirm_dialog("请选择出战武将\n（已出战{0}/10）".format([new_actor_nums+actor_num]), DataManager.player_choose_actor);
@@ -74,7 +74,7 @@ func _input_key(delta: float):
 				if not SceneManager.actorlist.is_actor_picked(targetId):
 					if camped + selected.size() >= 10:
 						return
-				msg = wv.check_camp_out(targetId);
+				msg = wv.check_camp_out(targetId)
 				if msg != "":
 					msg = msg+"（已出战{0}/10）".format([camped + selected.size()])
 					SceneManager.actorlist.update_message(msg)

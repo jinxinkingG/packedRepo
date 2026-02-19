@@ -74,11 +74,11 @@ func effect_30236_2():
 		bu.direction = unit.direction
 		bu._private_hp = UNIT_HP
 		bu.disabled = false
+		DataManager.battle_units.append(bu)
 		bu.unit_position = unit.unit_position + setting[0]
-		bu.init_combat_info(setting[1])
+		bu.formation_init(setting[1])
 		bu.wait_action_times = bu.get_action_times()
 		bu.dic_other_variable["临时"] = 1
-		DataManager.battle_units.append(bu)
 		SceneManager.current_scene().create_or_update_unit(bu)
 
 	var morale = added * 2

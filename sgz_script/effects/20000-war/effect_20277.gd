@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #胜志效果
-#【胜志】大战场，锁定技。你作为攻方白刃战胜利时，你的体力+10，至多回复至上限。每日限一次
+#【胜志】大战场，锁定技。你作为攻方白刃战胜利时，你的体力+10，至多回复至上限。每个回合限1次。
 
 func on_trigger_20020()->bool:
 	var bf = DataManager.get_current_battle_fight()

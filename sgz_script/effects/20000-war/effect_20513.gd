@@ -26,7 +26,8 @@ func on_trigger_20003() -> bool:
 		ske.skill_name, TARGET_SKILL,
 	])
 	me.attach_free_dialog(msg, 2)
-	me.actor_surrend_to(wa.wvId)
+	# 忠诚度不变
+	me.actor_surrend_to(wa.wvId, actor.get_loyalty())
 	map.draw_actors()
 	SkillHelper.ban_actor_skill(10000, actorId, ske.skill_name, 99999, actorId, ske.skill_name)
 	SkillHelper.add_actor_scene_skill(10000, actorId, TARGET_SKILL, 99999, actorId, ske.skill_name)

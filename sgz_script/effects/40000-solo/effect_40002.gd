@@ -1,7 +1,7 @@
 extends "effect_40000.gd"
 
 #龙魂单挑效果
-#【龙魂】单挑，锁定技。你未装备“青龙偃月刀”时，暴击率+20%；否则，你的五行为金、水时，也同时附加<神武>。
+#【龙魂】大战场，锁定技。若你未装备“青龙偃月刀”，单挑暴击率+20%；否则，你的五行为金、水时，附加技能<神武>。
 
 func on_trigger_40005()->bool:
 	if actor.get_weapon().id == StaticManager.WEAPON_ID_YANYUE:

@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 # 明刀效果
-#【明刀】小战场，锁定技。小战场，锁定技。战斗开始时，若你的武器非S级，临时装备<日月双刀>，无法被抢夺。
+#【明刀】小战场，锁定技。战斗开始时，若你的武器非S级，临时装备<日月双刀>，无法被抢夺。
 
 const EQUIP_ID = StaticManager.WEAPON_ID_RIYUESHUANGDAO
 

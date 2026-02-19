@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #德望技能实现
-#【德望】小战场,锁定技。对方的“德”＜你时，对方士气-x，战术值-x/2，x＝你的等级。
+#【德望】小战场，锁定技。对方的“德”＜你时，对方士气-X，战术值-X/2，X＝你的等级。
 
 func on_trigger_30005():
 	if actor.get_moral() <= enemyActor.get_moral():

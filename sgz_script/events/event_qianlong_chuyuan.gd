@@ -45,8 +45,7 @@ func _init():
 
 func event_settle()->void:
 	# 曹操所在城市
-	var cityId = DataManager.get_office_city_by_actor(CAOCAO)
-	var city = clCity.city(cityId)
+	var city = DataManager.get_office_city_by_actor(CAOCAO)
 	var xushu = ActorHelper.actor(XUSHU)
 	clCity.move_out(xushu.actorId)
 	clCity.move_to(xushu.actorId, city.ID)

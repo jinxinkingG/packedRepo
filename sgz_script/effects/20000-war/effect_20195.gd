@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #制衡主动技
-#【制衡】大战场,主动技。你可选择己方你以外的两名武将，交换其机动力。每回合限1次。
+#【制衡】大战场，主将主动技。你可选择己方你以外的两名武将，交换其机动力。每个回合限1次。
 
 const EFFECT_ID = 20195
 const FLOW_BASE = "effect_" + str(EFFECT_ID)

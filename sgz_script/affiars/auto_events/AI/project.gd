@@ -99,8 +99,8 @@ func AI_Project():
 			var rate = 100
 			var loyalty = min(90, ceilActor.get_loyalty())
 			if ceilActor.get_prev_vstate_id() != vstateId:
+				loyalty = ceilActor.surrend_loyalty(vstateId)
 				#非原势力，进入招揽成功率计算
-				loyalty = max(0, 79 - ceilActor.get_loyalty())
 				rate = PolicyCommand.get_canvass_rate(
 					satrap.actorId,
 					ceilActor.actorId,

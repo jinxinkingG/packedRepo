@@ -71,23 +71,13 @@ func _input_key(delta: float):
 					return;
 				FlowManager.add_flow("player_ready");
 		144:#撤退完成
-			if(Global.is_action_pressed_AX()):
-				if(!SceneManager.dialog_msg_complete(true)):
-					return;
+			if Global.wait_for_confirmation(""):
 				var wv = wf.current_war_vstate()
 				if DataManager.player_choose_actor == wv.main_actorId:
-					if wv.is_reinforcement():
-						# 如果是援军主将，视为失败结算
-						wv.lose_reason = War_Vstate.Lose_ReasonEnum.NoMind;#不提示
-						wv.settle_after_war(true)
-						# 并结束回合
-						FlowManager.add_flow("player_end")
-					else:
-						# 主军势，如果撤退了主将，则直接失败
-						wv.lose_reason = War_Vstate.Lose_ReasonEnum.NoMind;#不提示
-						FlowManager.add_flow("war_over_start")
+					wv.set_lost_reason(War_Vstate.Lose_ReasonEnum.MainActorLose)
+					FlowManager.add_flow("war_vstate_settlement")
 					return
-				FlowManager.add_flow("player_ready");
+				FlowManager.add_flow("player_ready")
 		151:#确认流放
 			if Input.is_action_just_pressed("ANALOG_LEFT"):
 				SceneManager.actor_dialog.move_left()

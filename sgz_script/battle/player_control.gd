@@ -151,21 +151,17 @@ func _input_key(delta: float):
 			if(Global.is_action_pressed_AX()):
 				if(!SceneManager.dialog_msg_complete(true)):
 					return;
-				
-				match SceneManager.actor_dialog.lsc.cursor_index:
-					0:#是
-						var actorId = int(DataManager.common_variable["当前武将"]);
-						for unit in DataManager.battle_units:
-							if(unit.get_unit_type()!="将" || unit.leaderId!=actorId):
-								continue;
-							unit.is_surrend = true;
-							break;
-						var actor = ActorHelper.actor(actorId)
-						actor.set_loyalty(max(10,79-actor.get_loyalty()));#投降忠赋值
-						FlowManager.add_flow("check_battle_need_over")
-					1:#否
-						set_view_model(-1);
-						FlowManager.add_flow("unit_action");
+				set_view_model(-1)
+				if SceneManager.actor_dialog.lsc.cursor_index == 0:
+					var actorId = DataManager.get_env_int("当前武将")
+					var wa = DataManager.get_war_actor(actorId)
+					if wa != null:
+						var bu = wa.battle_actor_unit()
+						if bu != null:
+							bu.is_surrend = true
+							FlowManager.add_flow("check_battle_need_over")
+							return
+				FlowManager.add_flow("unit_action");
 			if(Global.is_action_pressed_BY()):
 				if(!SceneManager.dialog_msg_complete(false)):
 					return;

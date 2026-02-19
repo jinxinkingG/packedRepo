@@ -100,9 +100,9 @@ func rescue()->bool:
 		if p.actorId < 0:
 			continue
 		playerId = p.actorId
-		var cityId = DataManager.get_office_city_by_actor(playerId)
-		if cityId >= 0:
-			playerVstateId = clCity.city(cityId).get_vstate_id()
+		var city = DataManager.get_office_city_by_actor(playerId)
+		if city != null:
+			playerVstateId = city.get_vstate_id()
 			break
 	if playerVstateId < 0:
 		return false
@@ -600,15 +600,18 @@ func wedge()->bool:
 		if not dicTargetActors[vsKey].empty():
 			#判断已经离间过的目标是否合法
 			targetActorId = int(dicTargetActors[vsKey]["目标武将"])
-			targetCityId = DataManager.get_office_city_by_actor(targetActorId)
 			targetVstateId = int(dicTargetActors[vsKey]["目标势力"])
-			if targetCityId < 0:
+			var targetCity = DataManager.get_office_city_by_actor(targetActorId)
+			if targetCity == null:
 				dicTargetActors.erase(vsKey)
 			else:
-				var targetCity = clCity.city(targetCityId)
 				var actor = ActorHelper.actor(targetActorId)
-				if actor.get_loyalty() >= 80 or targetCity.get_vstate_id() != targetVstateId or not actor.is_status_officed():
+				if actor.get_loyalty() >= 80 \
+					or targetCity.get_vstate_id() != targetVstateId \
+					or not actor.is_status_officed():
 					dicTargetActors.erase(vsKey)
+				else:
+					targetCityId = targetCity.ID
 		else:
 			dicTargetActors.erase(vsKey)
 	if not dicTargetActors.has(vsKey):
@@ -639,7 +642,10 @@ func wedge()->bool:
 	var fromActorId = DataManager.get_max_property_actorId("政", currentVstateId)
 	if fromActorId == -1:
 		fromActorId = clVState.vstate(currentVstateId).get_lord_id()
-	DataManager.player_choose_city = DataManager.get_office_city_by_actor(fromActorId)
+	var fromCity = DataManager.get_office_city_by_actor(fromActorId)
+	if fromCity == null:
+		return false
+	DataManager.player_choose_city = fromCity.ID
 	DataManager.player_choose_actor = targetActorId
 	var cmd = DataManager.new_policy_command("离间", fromActorId)
 	cmd.set_target(targetActorId, targetCityId)
@@ -697,15 +703,16 @@ func canvass():
 		if not dicTargetActors[vsKey].empty():
 			#判断已经招揽过的目标是否合法
 			targetActorId = int(dicTargetActors[vsKey]["目标武将"])
-			targetCityId = DataManager.get_office_city_by_actor(targetActorId)
 			targetVstateId = int(dicTargetActors[vsKey]["目标势力"])
-			if targetCityId < 0:
+			var targetCity = DataManager.get_office_city_by_actor(targetActorId)
+			if targetCity == null:
 				dicTargetActors.erase(vsKey)
 			else:
-				var targetCity = clCity.city(targetCityId)
 				var actor = ActorHelper.actor(targetActorId)
 				if actor.get_loyalty() >= 40 or targetCity.get_vstate_id() != targetVstateId or not actor.is_status_officed():
 					dicTargetActors.erase(vsKey)
+				else:
+					targetCityId = targetCity.ID
 		else:
 			dicTargetActors.erase(vsKey)
 	if not dicTargetActors.has(vsKey):
@@ -740,7 +747,10 @@ func canvass():
 		return false
 
 	var fromActorId = DataManager.get_max_property_actorId("政", currentVstateId)
-	DataManager.player_choose_city = DataManager.get_office_city_by_actor(fromActorId)
+	var fromCity = DataManager.get_office_city_by_actor(fromActorId)
+	if fromCity == null:
+		return false
+	DataManager.player_choose_city = fromCity.ID
 	DataManager.player_choose_actor = targetActorId
 	var cmd = DataManager.new_policy_command("招揽", fromActorId)
 	cmd.set_target(targetActorId, targetCityId)
@@ -798,18 +808,19 @@ func incite():
 		if not dicTargetActors[vsKey].empty():
 			#判断已经策反过的目标是否合法
 			targetActorId = int(dicTargetActors[vsKey]["目标武将"])
-			targetCityId = DataManager.get_office_city_by_actor(targetActorId)
 			targetVstateId = int(dicTargetActors[vsKey]["目标势力"])
-			if targetCityId < 0:
+			var targetCity = DataManager.get_office_city_by_actor(targetActorId)
+			if targetCity == null:
 				dicTargetActors.erase(vsKey)
 			else:
-				var targetCity = clCity.city(targetCityId)
 				var actor = ActorHelper.actor(targetActorId)
 				if actor.get_loyalty() >= 40 \
 					or targetCity.get_vstate_id() != targetVstateId \
 					or targetCity.get_actor_ids().find(targetActorId) != 0 \
 					or not actor.is_status_officed():
 					dicTargetActors.erase(vsKey)
+				else:
+					targetCityId = targetCity.ID
 		else:
 			dicTargetActors.erase(vsKey)
 	if not dicTargetActors.has(vsKey):
@@ -841,7 +852,10 @@ func incite():
 		return false
 
 	var fromActorId = DataManager.get_max_property_actorId("政", currentVstateId)
-	DataManager.player_choose_city = DataManager.get_office_city_by_actor(fromActorId)
+	var fromCity = DataManager.get_office_city_by_actor(fromActorId)
+	if fromCity == null:
+		return false
+	DataManager.player_choose_city = fromCity.ID
 	DataManager.player_choose_actor = targetActorId
 	var cmd = DataManager.new_policy_command("策反", fromActorId)
 	cmd.set_target(targetActorId, targetCityId)

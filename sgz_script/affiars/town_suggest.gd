@@ -260,8 +260,8 @@ func inspection_start() -> void:
 		break
 	if inspector < 0:
 		inspector = lordId
-	var reportCityId = DataManager.get_office_city_by_actor(inspector)
-	if reportCityId < 0:
+	var reportCity = DataManager.get_office_city_by_actor(inspector)
+	if reportCity == null:
 		FlowManager.add_flow("suggestion_start")
 		return
 	#var reportCity = clCity.city(reportCityId)
@@ -279,7 +279,7 @@ func inspection_start() -> void:
 	else:
 		DataManager.set_env("内政.MONTHLY.谍报武将", inspector)
 		LoadControl.set_view_model(265)
-	DataManager.twinkle_citys = [reportCityId, targetCityId]
+	DataManager.twinkle_citys = [reportCity.ID, targetCityId]
 	return
 
 func inspection_finish()->void:
@@ -287,11 +287,11 @@ func inspection_finish()->void:
 	var vs = clVState.vstate(vstateId)
 	var lordId = vs.get_lord_id()
 	var inspector = DataManager.get_env_int("内政.MONTHLY.谍报武将")
-	var cityId = DataManager.get_office_city_by_actor(lordId)
+	var city = DataManager.get_office_city_by_actor(lordId)
 	var msg = "{0}劳苦\n知之矣，当定对策".format([
 		DataManager.get_actor_honored_title(inspector, lordId)
 	])
 	SceneManager.show_confirm_dialog(msg, lordId, 1)
 	LoadControl.set_view_model(266)
-	DataManager.twinkle_citys = [cityId]
+	DataManager.twinkle_citys = [city.ID]
 	return

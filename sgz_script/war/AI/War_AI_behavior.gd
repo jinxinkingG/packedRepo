@@ -174,7 +174,7 @@ func _attack(wa:War_Actor, targetId:int)->bool:
 	# 但与之前的 best targets 有重复判断，未来应优化掉 TODO
 	if not targetId in iwa.get_can_attack_actors(wa.actorId)[0]:
 		return false
-	if not DataManager.endless_model:
+	if not DataManager.endless_mode:
 		if wa.get_soldiers() <= 0 and wa.actor().get_hp() < 40:
 			return false
 	DataManager.set_env("目标", targetId)

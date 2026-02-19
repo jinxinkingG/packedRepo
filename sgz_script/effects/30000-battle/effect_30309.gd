@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 # 密甲效果
-#【密甲】白刃战，锁定技。战争开始时，若你点数＞0，你的护甲值+你的点数。
+#【密甲】小战场，锁定技。白刃战初始，若你点数＞0，你的护甲值+你的点数。
 
 func on_trigger_30005() -> bool:
 	var bu = me.battle_actor_unit()

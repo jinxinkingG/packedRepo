@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #水淹
-#【水淹】大战场,锁定技。你使用水类计策时，伤害+10%，并用“武”替代“知”计算命中率及伤害。
+#【水淹】大战场，锁定技。你使用水类计策时，伤害+10%，并用“武”替代“知”计算命中率及伤害。你为关羽时，附加<决堤>。
 
 func on_trigger_20011() -> bool:
 	var se = DataManager.get_current_stratagem_execution()

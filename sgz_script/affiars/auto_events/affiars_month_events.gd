@@ -224,7 +224,7 @@ func month_auto_events_begin():
 								changed.append(vs)
 							excludedVstateIds.append(targetVstateId)
 			if reporter >= 0 and changed.size() > 0:
-				var cityId = DataManager.get_office_city_by_actor(reporter)
+				var city = DataManager.get_office_city_by_actor(reporter)
 				var names = []
 				var cities = []
 				for vs in changed:
@@ -236,7 +236,7 @@ func month_auto_events_begin():
 				if names.size() > 3:
 					names = names.slice(0, 2)
 				var msg = "与{0}等势力的关系\n似乎有所恶化……".format(["、".join(names)])
-				clCity.city(cityId).attach_free_dialog(msg, reporter, 2, cities)
+				city.attach_free_dialog(msg, reporter, 2, cities)
 			set_next_step(current_step+1)
 		6: # 结束
 			end()
@@ -383,7 +383,7 @@ func city_data_deal()->void:
 			actor.set_status_officed(city.get_vstate_id())
 			actor.set_dislike_vstate_id(-2)
 			actor.set_exile_city(city.ID)
-			actor.recover_hp(20)
+			actor.recover_hp(20, true)
 		#DataManager.game_trace("--循环武将结束--");
 		#DataManager.game_trace("--循环监狱开始--");
 		#处理监狱武将

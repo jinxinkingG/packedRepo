@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #勇决效果实现
-#【勇决】小战场,锁定技。你的武将攻击倍率+武器重量%。
+#【勇决】小战场，锁定技。你的武将基础攻击倍率+武器重量*0.01。
 
 func on_trigger_30024():
 	var weight = actor.weapon_weight()

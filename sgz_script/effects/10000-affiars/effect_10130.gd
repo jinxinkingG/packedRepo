@@ -38,7 +38,7 @@ func on_trigger_10024() -> bool:
 	var history = ske.affair_get_skill_val_int_array()
 	if history.size() != 2:
 		history = [0, 0]
-	if wv.lose_reason == wv.Lose_ReasonEnum.NotLose:
+	if not wv.lost():
 		# 胜利了
 		if history[0] == 1:
 			history[1] += 1

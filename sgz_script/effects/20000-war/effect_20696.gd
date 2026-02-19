@@ -123,6 +123,7 @@ func effect_20696_scheme() -> void:
 	se.skip_redo = 1
 	se.goback_disabled = 1
 	se.set_target(targetId)
+	se.perform_to_targets([targetId])
 	ske.play_se_animation(se, 2001)
 	return
 

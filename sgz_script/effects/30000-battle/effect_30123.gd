@@ -34,9 +34,9 @@ func on_trigger_30009()->bool:
 				continue
 			enemiesAround += 1
 		if enemiesAround > 0 and bu.get_unit_type() == "弓":
-			bu.init_combat_info("步")
+			bu.reset_type("步")
 		elif enemiesAround == 0 and bu.get_unit_type() == "步":
-			bu.init_combat_info("弓")
+			bu.reset_type("弓")
 	return false
 
 func on_trigger_30024()->bool:

@@ -56,8 +56,7 @@ func event_settle_bad_end()->void:
 	# 徐庶
 	var xs = ActorHelper.actor(XUSHU)
 	# 曹操所在城市
-	var cityId = DataManager.get_office_city_by_actor(CAOCAO)
-	var city = clCity.city(cityId)
+	var city = DataManager.get_office_city_by_actor(CAOCAO)
 	clCity.move_out(xs.actorId)
 	clCity.move_to(xs.actorId, city.ID)
 	xs.set_loyalty(40)

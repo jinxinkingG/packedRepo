@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #寻嫉锁定技
-#【寻嫉】大战场，锁定技。若敌方武将移动至与你相邻的位置时，必须与你进入白刃战。
+#【寻嫉】大战场，锁定技。若敌方武将移动后，与你相邻的位置，立即与你进入白刃战。
 
 const EFFECT_ID = 20550
 const FLOW_BASE = "effect_" + str(EFFECT_ID)

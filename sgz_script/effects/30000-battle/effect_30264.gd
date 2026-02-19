@@ -47,7 +47,7 @@ func effect_30264_2() -> void:
 		if bu.get_unit_type() in ["将", "城门"]:
 			continue
 		var pos = targetPositions.pop_front()
-		bu.reset_combat_info("步")
+		bu.formation_init("步")
 		bu.dic_combat["兵种锁定"] = 1
 		bu.unit_position = pos
 

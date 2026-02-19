@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #伏骑效果
-#【伏骑】小战场，锁定技。非城战，你的兵种默认5盾5弓，并且阵型固定，你方盾兵受到的弓箭伤害时，受击免伤倍率临时增至0.9；你方弓兵射程+1，对骑兵射击时，远程倍率临时增至1.5。
+#【伏骑】小战场，锁定技。非城战时，你固定为特殊阵型，你的兵种默认5盾5弓。你方 {盾兵} 受到的弓箭伤害时，受击免伤倍率临时增至0.9；你方弓兵射程+1，对骑兵射击时，远程倍率临时增至1.5。
 
 func on_trigger_30003()->bool:
 	bf.update_extra_formation_setting(
@@ -25,8 +25,8 @@ func on_trigger_30024() -> bool:
 	if bu == null:
 		return false
 	if bu.Type == "步":
-		bu.reset_combat_info("步(刀盾)")
+		bu.formation_init("步(刀盾)")
 	elif bu.Type == "弓":
-		bu.reset_combat_info("弓(伏骑)")
+		bu.formation_init("弓(伏骑)")
 		bu.mark_buffed()
 	return false

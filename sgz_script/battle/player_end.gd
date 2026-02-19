@@ -9,6 +9,7 @@ func _init() -> void:
 	FlowManager.bind_import_flow("battle_player_end_retreat_2", self)
 	FlowManager.bind_import_flow("battle_player_end_capture", self)
 	FlowManager.bind_import_flow("battle_player_end_surrent", self)
+	FlowManager.bind_import_flow("battle_player_end_unknown", self)
 	return
 
 func _input_key(delta: float):
@@ -23,9 +24,7 @@ func _input_key(delta: float):
 				FlowManager.add_flow("battle_player_end_capture")
 			else:
 				FlowManager.add_flow("battle_over")
-		13:#确认被俘虏
-			Global.wait_for_confirmation("battle_over")
-		14:#确认投降
+		13: # 对话确认后战斗结束
 			Global.wait_for_confirmation("battle_over")
 	return
 
@@ -43,7 +42,7 @@ func battle_player_end():
 		BattleFight.ResultEnum.ActorSurrend:
 			FlowManager.add_flow("battle_player_end_surrent")
 		BattleFight.ResultEnum.NoMind:
-			FlowManager.add_flow("battle_over")
+			FlowManager.add_flow("battle_player_end_unknown")
 	LoadControl.set_view_model(10)
 	return
 
@@ -120,5 +119,14 @@ func battle_player_end_surrent():
 	SceneManager.current_scene().bgm = false
 	SoundManager.play_anim_bgm("res://resource/sounds/bgm/solo_surrend.ogg")
 	SceneManager.show_confirm_dialog(msg)
-	LoadControl.set_view_model(14)
+	LoadControl.set_view_model(13)
+	return
+
+# 双方莫名结束（比如双方武将都不在场）
+func battle_player_end_unknown():
+	var bf = DataManager.get_current_battle_fight()
+	var msg = "将军跑路了！\n还打什么，撤啊"
+	SceneManager.current_scene().bgm = false
+	SceneManager.show_confirm_dialog(msg, -1, 0, true)
+	LoadControl.set_view_model(13)
 	return

@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 # 冒进被动效果部分
-#【冒进】大战场，主动技。你可以不消耗机动力，移动3步，并获得1回合 {围困} 状态，每2回合限1次。
+#【冒进】大战场，主动技。你可以不消耗机动力，移动3步，并获得1回合 {围困} 状态，每回合限一次。
 
 func on_trigger_20003() -> bool:
 	var setting = ske.get_war_skill_val_int_array()

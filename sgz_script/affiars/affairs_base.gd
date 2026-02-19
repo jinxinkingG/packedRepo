@@ -56,7 +56,10 @@ func add_actor_loyalty(
 		extra = 0
 	var extra2 = 0
 	if actor.get_moral() < 50 and current < 70:
-		extra2 = SkillRangeBuff.max_val_for_city("赏金低德武将效果", city.ID)
+		if gold > 0 and treasure == 0:
+			extra2 = SkillRangeBuff.max_val_for_city("赏金低德武将效果", city.ID)
+		if treasure > 0:
+			extra2 = SkillRangeBuff.max_val_for_city("赏宝低德武将效果", city.ID)
 		if extra2 > 0:
 			extra2 = actor.add_loyalty(extra2)
 			if extra2 > 0:

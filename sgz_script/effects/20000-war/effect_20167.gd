@@ -6,6 +6,8 @@ extends "effect_20000.gd"
 const EFFECT_ID = 20167
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
+const CD_TURN = 3
+
 func effect_20167_start():
 	var targets = []
 	for targetId in get_enemy_targets(me, true):
@@ -47,7 +49,7 @@ func effect_20167_3():
 	var skill = get_env_str("目标项")
 
 	ske.cost_war_cd(99999)
-	if not ske.ban_war_skill(targetId, skill, 6):
+	if not ske.ban_war_skill(targetId, skill, CD_TURN):
 		play_dialog(me.actorId, "【{0}】不可禁用".format([skill]), 2, 2002)
 		return
 

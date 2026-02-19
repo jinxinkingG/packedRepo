@@ -1,43 +1,49 @@
 extends "war_base.gd"
 
+export var actorId:int = -1
+
 #武将移动
 func _init() -> void:
 	LoadControl.view_model_name = "战争-玩家-步骤";
 	
-	FlowManager.bind_import_flow("actor_move_start",self,"actor_move_start");
-	FlowManager.bind_import_flow("actor_move_ban",self,"actor_move_ban");
-	FlowManager.bind_import_flow("actor_move_stop",self,"actor_move_stop");
-	FlowManager.bind_import_flow("actor_move_stopped",self,"actor_move_stopped");
-	FlowManager.bind_import_flow("actor_in_vallage",self,"actor_in_vallage");
-	FlowManager.bind_import_flow("actor_in_rice",self,"actor_in_rice");
-	FlowManager.bind_import_flow("actor_in_rice_buy_1",self,"actor_in_rice_buy_1");
+	FlowManager.bind_import_flow("actor_move_start", self)
+	FlowManager.bind_import_flow("actor_move_ban", self)
+	FlowManager.bind_import_flow("actor_move_stop", self)
+	FlowManager.bind_import_flow("actor_move_stopped", self)
+	FlowManager.bind_import_flow("actor_in_vallage", self)
+	FlowManager.bind_import_flow("actor_in_rice", self)
+	FlowManager.bind_import_flow("actor_in_rice_buy_1", self)
 	FlowManager.bind_import_flow("actor_in_rice_buy_2",self,"actor_in_rice_buy_2");
-	FlowManager.bind_import_flow("actor_in_rice_buy_3",self,"actor_in_rice_buy_3");
+	FlowManager.bind_import_flow("actor_in_rice_buy_3", self)
 	FlowManager.bind_import_flow("actor_in_rice_sell_1",self,"actor_in_rice_sell_1");
 	FlowManager.bind_import_flow("actor_in_rice_sell_2",self,"actor_in_rice_sell_2");
-	FlowManager.bind_import_flow("actor_in_rice_sell_3",self,"actor_in_rice_sell_3");
-	FlowManager.bind_import_flow("actor_in_equip",self,"actor_in_equip");
-	FlowManager.bind_import_flow("actor_in_weapon_menu",self,"actor_in_weapon_menu");
-	FlowManager.bind_import_flow("actor_in_equip_menu",self,"actor_in_equip_menu");
-	FlowManager.bind_import_flow("actor_in_equip_2",self,"actor_in_equip_2");
-	FlowManager.bind_import_flow("actor_in_equip_3",self,"actor_in_equip_3");
-	FlowManager.bind_import_flow("actor_in_equip_4",self,"actor_in_equip_4");
-	FlowManager.bind_import_flow("actor_in_hospital",self,"actor_in_hospital");
-	FlowManager.bind_import_flow("actor_in_hospital_2",self,"actor_in_hospital_2");
-	FlowManager.bind_import_flow("actor_in_hospital_3",self,"actor_in_hospital_3");
+	FlowManager.bind_import_flow("actor_in_rice_sell_3", self)
+	FlowManager.bind_import_flow("actor_in_equip", self)
+	FlowManager.bind_import_flow("actor_in_weapon_menu", self)
+	FlowManager.bind_import_flow("actor_in_equip_menu", self)
+	FlowManager.bind_import_flow("actor_in_equip_2", self)
+	FlowManager.bind_import_flow("actor_in_equip_3", self)
+	FlowManager.bind_import_flow("actor_in_equip_4", self)
+	FlowManager.bind_import_flow("actor_in_hospital", self)
+	FlowManager.bind_import_flow("actor_in_hospital_2", self)
+	FlowManager.bind_import_flow("actor_in_hospital_3", self)
+	
+	FlowManager.bind_import_flow("player_enter_village", self)
+	FlowManager.bind_import_flow("player_village_buff", self)
+	FlowManager.bind_import_flow("player_leave_village", self)
 
+	actorId = DataManager.player_choose_actor
 	return
 
 #按键操控
 func _input_key(delta: float):
 	var wf = DataManager.get_current_war_fight()
 	var city = wf.target_city()
-	var scene_war:Control = SceneManager.current_scene();
+	var scene_war:Control = SceneManager.current_scene()
 	var bottom = SceneManager.lsc_menu;
 	var view_model = LoadControl.get_view_model()
 	match view_model:
 		101:#移动
-			var actorId = DataManager.player_choose_actor
 			var wa = DataManager.get_war_actor(actorId)
 			if Input.is_action_just_pressed("ANALOG_UP"):
 				_push_move(Vector2.UP)
@@ -216,7 +222,6 @@ func _input_key(delta: float):
 				menu.show_all_msg()
 				return
 			LoadControl.set_view_model(-1)
-			var actorId = DataManager.player_choose_actor
 			var remaining = equip.remaining()
 			if remaining == 0:
 				LoadControl._error("此装备已被卖完")
@@ -249,7 +254,6 @@ func _input_key(delta: float):
 
 #武将移动
 func actor_move_start():
-	var actorId = DataManager.player_choose_actor
 	var map = SceneManager.current_scene().war_map
 	var wa = DataManager.get_war_actor(actorId)
 	if wa == null or not wa.can_move():
@@ -276,7 +280,7 @@ func actor_move_start():
 func _push_move(dir:Vector2):
 	#DataManager.game_trace("")
 	var map = SceneManager.current_scene().war_map
-	var wa = DataManager.get_war_actor(DataManager.player_choose_actor)
+	var wa = DataManager.get_war_actor(actorId)
 	var prev:Vector2 = wa.position
 	var target = prev + dir
 	var moveHistory = DataManager.get_env_array("历史移动记录")
@@ -349,7 +353,7 @@ func _pop_move():
 		return
 	var posInfo:Dictionary = moveHistory.pop_back()
 	DataManager.set_env("历史移动记录", moveHistory)
-	var wa = DataManager.get_war_actor(DataManager.player_choose_actor)
+	var wa = DataManager.get_war_actor(actorId)
 	var pos = Vector2(
 		int(Global.dic_val(posInfo, "x")),
 		int(Global.dic_val(posInfo, "y"))
@@ -381,7 +385,7 @@ func _pop_move():
 
 #无法移动
 func actor_move_ban():
-	SceneManager.show_unconfirm_dialog("当前已被禁止移动", DataManager.player_choose_actor, 3)
+	SceneManager.show_unconfirm_dialog("当前已被禁止移动", actorId, 3)
 	LoadControl.set_view_model(102)
 	return
 
@@ -389,7 +393,7 @@ func actor_move_ban():
 func actor_move_stop():
 	DataManager.set_env("移动", 0)
 	DataManager.set_env("结束移动", 1)
-	if SkillHelper.auto_trigger_skill(DataManager.player_choose_actor, 20003, "actor_move_stopped"):
+	if SkillHelper.auto_trigger_skill(actorId, 20003, "actor_move_stopped"):
 		DataManager.unset_env("结束移动")
 		return
 	DataManager.unset_env("结束移动")
@@ -397,7 +401,7 @@ func actor_move_stop():
 	return
 
 func actor_move_stopped():
-	var wa = DataManager.get_war_actor(DataManager.player_choose_actor)
+	var wa = DataManager.get_war_actor(actorId)
 	if wa == null:
 		FlowManager.add_flow("player_ready")
 		return
@@ -409,7 +413,6 @@ func actor_move_stopped():
 
 #进入村庄
 func actor_in_vallage():
-	var actorId = DataManager.player_choose_actor
 	var wa = DataManager.get_war_actor(actorId)
 	var map = SceneManager.current_scene().war_map
 	var facilityName = map.check_facilities(wa)
@@ -427,7 +430,6 @@ func actor_in_vallage():
 
 #进入米屋
 func actor_in_rice():
-	var actorId = DataManager.player_choose_actor
 	var menu = ["买米", "卖米"]
 	DataManager.set_env("列表值", menu)
 	SceneManager.hide_all_tool()
@@ -446,7 +448,6 @@ func actor_in_rice():
 #--------买米---------
 #输入买米量
 func actor_in_rice_buy_1():
-	var actorId = DataManager.player_choose_actor
 	var wa = DataManager.get_war_actor(actorId)
 	var wv = wa.war_vstate()
 	var wf = DataManager.get_current_war_fight()
@@ -461,7 +462,6 @@ func actor_in_rice_buy_1():
 	return
 
 func actor_in_rice_buy_2():
-	var actorId = DataManager.player_choose_actor
 	var number = DataManager.get_env_int("数量")
 	var wf = DataManager.get_current_war_fight()
 	var city = wf.target_city()
@@ -472,7 +472,6 @@ func actor_in_rice_buy_2():
 	return
 
 func actor_in_rice_buy_3():
-	var actorId = DataManager.player_choose_actor
 	var wa = DataManager.get_war_actor(actorId)
 	var wv = wa.war_vstate()
 	#买米数量
@@ -490,7 +489,6 @@ func actor_in_rice_buy_3():
 #--------卖米---------
 #输入卖米量
 func actor_in_rice_sell_1():
-	var actorId = DataManager.player_choose_actor
 	var wa = DataManager.get_war_actor(actorId)
 	var wv = wa.war_vstate()
 	var wf = DataManager.get_current_war_fight()
@@ -506,7 +504,6 @@ func actor_in_rice_sell_1():
 
 #确认卖米金额
 func actor_in_rice_sell_2():
-	var actorId = DataManager.player_choose_actor
 	var number = DataManager.get_env_int("数量")
 	var wf = DataManager.get_current_war_fight()
 	var city = wf.target_city()
@@ -517,7 +514,6 @@ func actor_in_rice_sell_2():
 	return
 
 func actor_in_rice_sell_3():
-	var actorId = DataManager.player_choose_actor
 	var wa = DataManager.get_war_actor(actorId)
 	var wv = wa.war_vstate()
 	#卖米数量
@@ -535,13 +531,12 @@ func actor_in_rice_sell_3():
 #--------装备店---------
 #装备店
 func actor_in_equip():
-	SceneManager.show_confirm_dialog("此处是装备店", DataManager.player_choose_actor)
+	SceneManager.show_confirm_dialog("此处是装备店", actorId)
 	LoadControl.set_view_model(114)
 	return
 
 #装备店菜单
 func actor_in_equip_menu():
-	var actorId = DataManager.player_choose_actor
 	SceneManager.hide_all_tool()
 	var menu = StaticManager.EQUIPMENT_TYPES.duplicate()
 	DataManager.set_env("列表值", menu)
@@ -558,7 +553,6 @@ func actor_in_equip_menu():
 	return
 
 func actor_in_weapon_menu():
-	var actorId = DataManager.player_choose_actor
 	SceneManager.hide_all_tool()
 	var wf = DataManager.get_current_war_fight()
 	var city = wf.target_city()
@@ -588,7 +582,6 @@ func actor_in_weapon_menu():
 func actor_in_equip_2():
 	var wf = DataManager.get_current_war_fight()
 	var city = wf.target_city()
-	var actorId = DataManager.player_choose_actor
 	var wa = DataManager.get_war_actor(actorId)
 	var big_equip_type = get_env_str("大类型")
 	var detail_equip_type = get_env_str("子类型")
@@ -655,7 +648,6 @@ func actor_in_equip_2():
 
 #确认装备数量
 func actor_in_equip_3():
-	var actorId = DataManager.player_choose_actor
 	var equipType = DataManager.get_env_str("大类型")
 	var equipId = DataManager.get_env_int("购买装备")
 	var equip = clEquip.equip(equipId, equipType)
@@ -686,7 +678,7 @@ func actor_in_equip_4():
 	if equip.remaining() > 0:
 		cnt = min(equip.remaining(), cnt)
 	var cost = cnt * equip.price()
-	var wa = DataManager.get_war_actor(DataManager.player_choose_actor)
+	var wa = DataManager.get_war_actor(actorId)
 	var wv = wa.war_vstate()
 	var vs = wa.vstate()
 	var actor = ActorHelper.actor(wa.actorId)
@@ -724,12 +716,12 @@ func actor_in_equip_4():
 
 #--------医馆---------
 func actor_in_hospital():
-	LoadControl.set_view_model(124);
-	SceneManager.hide_all_tool();
-	SceneManager.show_confirm_dialog("此处是医馆", DataManager.player_choose_actor);
-	
+	SceneManager.hide_all_tool()
+	SceneManager.show_confirm_dialog("此处是医馆", actorId)
+	LoadControl.set_view_model(124)
+	return
+
 func actor_in_hospital_2():
-	var actorId = DataManager.player_choose_actor
 	var actor = ActorHelper.actor(actorId)
 	if not actor.is_injured():
 		SceneManager.show_confirm_dialog("并未受伤，正当奋战", actorId, 1)
@@ -742,7 +734,6 @@ func actor_in_hospital_2():
 	return
 
 func actor_in_hospital_3():
-	var actorId = DataManager.player_choose_actor
 	var actor = ActorHelper.actor(actorId)
 	var cost = DataManager.get_env_int("花费")
 	var wa = DataManager.get_war_actor(actorId)
@@ -764,3 +755,60 @@ func get_movement_message(wa:War_Actor)->String:
 	if "仙" == wa.get_troops_type():
 		msg += "\n点数：{0}".format([wa.poker_point])
 	return msg
+
+func player_enter_village() -> void:
+	var wa = DataManager.get_war_actor(actorId)
+	var map = SceneManager.current_scene().war_map
+	map.set_temp_block(wa.position, "village_4")
+	var d
+	for msg in [
+		"来了啊",
+		"既然被你找到了\n就给你小小的赐福吧",
+	]:
+		d = wa.attach_free_dialog(msg, 1, 20000, StaticManager.ACTOR_ID_SLIME_GOD, true)
+	d.callback_script = "war/player_move.gd"
+	d.callback_method = "player_village_buff"
+	FlowManager.add_flow("player_ready")
+	return
+
+# 随机获得一个小小的祝福
+func player_village_buff() -> void:
+	var results = 1
+	var result = randi() % results
+	for i in results:
+		var method = "village_buff_{0}".format([result])
+		if has_method(method) and call(method):
+			player_leave_village()
+			return
+		result = randi() % results
+	var wa = DataManager.get_war_actor(actorId)
+	var msg = "啊 …… 十分抱歉\n好像失败了呢\n那就再见啦"
+	wa.attach_free_dialog(msg, 1, 20000, StaticManager.ACTOR_ID_SLIME_GOD, true)
+	player_leave_village()
+	return
+
+func village_buff_0() -> bool:
+	var wa = DataManager.get_war_actor(actorId)
+	if wa.get_buff("神佑")["回合数"] > 0:
+		return false
+	# 借用一下作弊效果
+	var ske = SkillHelper.new_ske_from_cheater()
+	ske.effect_type = "赐福"
+	ske.skill_name = "天神赐福"
+	var clearedNegatives = false
+	for buffName in wa.get_buff_names("大战场", -1):
+		if ske.remove_war_buff(wa.actorId, buffName):
+			clearedNegatives = true
+	ske.set_war_buff(wa.actorId, "神佑", 3)
+	ske.war_report()
+	var msg = "获得 [神佑] 3回合"
+	if clearedNegatives:
+		msg += "\n负面效果被清除"
+	wa.attach_free_dialog(msg, 1)
+	return true
+
+func player_leave_village() -> void:
+	var wa = DataManager.get_war_actor(actorId)
+	var map = SceneManager.current_scene().war_map
+	map.set_temp_block(wa.position, "")
+	return

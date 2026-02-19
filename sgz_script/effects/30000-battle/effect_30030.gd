@@ -4,10 +4,10 @@ extends "effect_30000.gd"
 #【鼓战】小战场,锁定技。你使用[挑衅]失败时，你体力+5，并获得3回合[士气向上]。
 
 func on_trigger_30012():
-	var bu = get_leader_unit(me.actorId)
+	var bu = get_leader_unit(actorId)
 	if bu == null:
 		return false
-	var turns = ske.set_battle_buff(me.actorId, "士气向上", 3)
+	var turns = ske.set_battle_buff(actorId, "士气向上", 3)
 	ske.battle_change_unit_hp(bu, 5)
 	ske.battle_report()
 

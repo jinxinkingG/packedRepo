@@ -1,7 +1,7 @@
 extends "effect_10000.gd"
 
 #寻骥主动技
-#【寻骥】内政，主动技。消耗1枚命令书，若本城有在野武将，必定遇到武将，每月限一次。
+#【寻骥】内政，主动技。消耗1枚命令书，若本城有在野武将，必定遇到武将，每月限1次。
 
 const EFFECT_ID = 10058
 const FLOW_BASE = "effect_" + str(EFFECT_ID)

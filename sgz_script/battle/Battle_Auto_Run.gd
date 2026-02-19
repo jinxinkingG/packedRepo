@@ -301,8 +301,8 @@ func unit_action():
 		states = bf.get_attacker_state()
 	var currentType = DataManager.battle_type_sort[DataManager.battle_type_no]
 	var wa = DataManager.get_war_actor(currentActorId)
-
 	# 玩家按下暂停键触发
+
 	SkillHelper.auto_trigger_skill(currentActorId, 31000, "unit_action")
 
 	# 增加对「死战」状态的支持
@@ -486,19 +486,28 @@ func check_battle_need_over():
 		set_next_step(nextStep)
 		return
 
+	# 胜负已分
 	var loser = bf.get_loser()
 	if loser == null:
-		#不结束，继续
-		set_next_step(nextStep)
+		# 但没有失败者，双方和平结束
+		FlowManager.set_current_control_playerNo(0)
+		LoadControl.end_script()
+		FlowManager.add_flow("load_script|battle/player_end.gd")
+		FlowManager.add_flow("battle_player_end")
 		return
 
 	var winner = loser.get_battle_enemy_war_actor()
 	if winner == null:
-		#不结束，继续
-		set_next_step(nextStep)
+		# 不结束，继续
+		# 为什么会发生这种情况？
+		DataManager.game_trace("异常：白刃战无胜利者")
+		FlowManager.set_current_control_playerNo(0)
+		LoadControl.end_script()
+		FlowManager.add_flow("load_script|battle/player_end.gd")
+		FlowManager.add_flow("battle_player_end")
 		return
 
-	# 胜负已分，结束整场白兵战
+	# 结束整场白兵战
 	if loser.get_controlNo() >= 0:
 		FlowManager.set_current_control_playerNo(loser.get_controlNo())
 	elif winner.get_controlNo() >= 0:
@@ -515,7 +524,7 @@ func check_battle_need_over():
 func battle_over():
 	var wf = DataManager.get_current_war_fight()
 	var bf = DataManager.get_current_battle_fight()
-	if bf.loserId < 0:
+	if bf.lostType == BattleFight.ResultEnum.NotLose:
 		FlowManager.add_flow("check_battle_need_over")
 		return
 	bf.battle_over()
@@ -547,21 +556,22 @@ func back_from_solo():
 	var bf = DataManager.get_current_battle_fight()
 	if bf.check_battle_should_over():
 		var loser = bf.get_loser()
-		var winner = loser.get_battle_enemy_war_actor()
-		# 胜负已分，结束整场白兵战
-		if loser.get_controlNo() >= 0:
-			FlowManager.set_current_control_playerNo(loser.get_controlNo())
-		elif winner.get_controlNo() >= 0:
-			FlowManager.set_current_control_playerNo(winner.get_controlNo())
-		else:
-			# 没有任何玩家可控制时，由1P控制（防错机制）
-			FlowManager.set_current_control_playerNo(0)
-		LoadControl.end_script()
-		FlowManager.add_flow("battle_over")
-		return
+		if loser != null:
+			var winner = loser.get_battle_enemy_war_actor()
+			# 胜负已分，结束整场白兵战
+			if loser.get_controlNo() >= 0:
+				FlowManager.set_current_control_playerNo(loser.get_controlNo())
+			elif winner.get_controlNo() >= 0:
+				FlowManager.set_current_control_playerNo(winner.get_controlNo())
+			else:
+				# 没有任何玩家可控制时，由1P控制（防错机制）
+				FlowManager.set_current_control_playerNo(0)
+			LoadControl.end_script()
+			FlowManager.add_flow("battle_over")
+			return
 
-	DataManager.battle_run = true;
-	SceneManager.black.hide();
+	DataManager.battle_run = true
+	SceneManager.black.hide()
 
 	var defenderState = bf.get_units_state(bf.get_defender_id(), "将")
 	var attackerState = bf.get_units_state(bf.get_attacker_id(), "将")

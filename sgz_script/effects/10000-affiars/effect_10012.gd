@@ -1,7 +1,7 @@
 extends "effect_10000.gd"
 
 #躬亲主动技
-#【躬亲】内政，主动技。使用后，消耗 20 体，+1 命令书，每月限一次
+#【躬亲】内政，主动技。使用后，消耗 20 体，+1 命令书，每月限1次。
 
 const EFFECT_ID = 10012
 const FLOW_BASE = "effect_" + str(EFFECT_ID)

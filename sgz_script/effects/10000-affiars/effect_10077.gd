@@ -11,10 +11,10 @@ func on_trigger_10001():
 		var yourMajesty = ActorHelper.actor(targetId)
 		if not yourMajesty.is_status_officed():
 			continue
-		var cityId = DataManager.get_office_city_by_actor(targetId)
-		if cityId < 0:
+		var city = DataManager.get_office_city_by_actor(targetId)
+		if city == null:
 			continue
-		if clCity.city(cityId).get_lord_id() == actorId:
+		if city.get_lord_id() == actorId:
 			continue
 		emporerOutside = true
 		break

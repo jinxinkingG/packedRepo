@@ -1,7 +1,7 @@
 extends "effect_10000.gd"
 
 #典吏主动技
-#【典吏】内政，主动技。你可以消耗一本非S级的书类道具，令本城太守经验+150，每月限一次。
+#【典吏】内政，主动技。你可以消耗一本非S级的书类道具，令本城太守经验+150，每月限1次。
 
 const EFFECT_ID = 10092
 const FLOW_BASE = "effect_" + str(EFFECT_ID)

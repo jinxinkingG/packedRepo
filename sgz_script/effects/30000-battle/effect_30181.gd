@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #化身主动技
-#【化身】小战场，主动技。发动后场上所有单位变为“你”，不可触发单挑，所有单位被击杀后败退。战斗结束后，兵力为剩余单位体力总和。
+#【化身】小战场，主动技。发动后：你退出战场，你的士兵单位都变为“你”。
 
 const EFFECT_ID = 30181
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -24,13 +24,12 @@ func effect_30181_start():
 			continue
 		var originalType = bu.Type
 		if bu.get_unit_type() == "将":
-			bu.init_combat_info("骑(化身)")
+			bu.reset_type("骑(化身)")
 			bu.set_hp(0, true)
 			bu.disabled = true
-			bu.dic_combat["原兵种"] = originalType
 			continue
-		bu.init_combat_info("骑(化身)")
-		bu.dic_combat["原兵种"] = originalType
+		if not bu.reset_type("骑(化身)"):
+			continue
 		if actor.get_equip_feature_max("人遁") > 0:
 			bu.set_combat_val("仙兵", 1, "默认")
 	ske.set_battle_buff(me.actorId, "战术禁用", 99999)

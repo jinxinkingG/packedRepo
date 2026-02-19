@@ -26,7 +26,7 @@ func effect_20041_start():
 	#先清空选择列表
 	set_env(EFFECT_CHOOSE_NAME, [])
 	set_env(EFFECT_CHOOSE_ACTOR, -1)
-	_update_select_color()
+	_update_select_color([])
 	goto_step("go")
 	return
 
@@ -53,6 +53,7 @@ func effect_20041_go():
 	if not wait_choose_actors(targets, msg):
 		goto_step("confirm")
 		return
+	_update_select_color(targets)
 	LoadControl.set_view_model(2000)
 	return
 
@@ -65,7 +66,7 @@ func on_view_model_2000():
 
 func effect_20041_cancel():
 	DataManager.set_env(EFFECT_CHOOSE_NAME, [])
-	_update_select_color()
+	_update_select_color([])
 	goto_step("go")
 	return
 
@@ -79,8 +80,6 @@ func effect_20041_selected():
 		selected.append(targetId)
 	set_env(EFFECT_CHOOSE_ACTOR, targetId)
 	set_env(EFFECT_CHOOSE_NAME, selected)
-	_update_select_color()
-	FlowManager.add_flow("draw_actors")
 	goto_step("go")
 	return
 
@@ -117,14 +116,7 @@ func effect_20041_perform():
 	play_dialog(me.actorId, msg, 0, 2999)
 	return
 
-func on_view_model_2999():
-	wait_for_skill_result_confirmation()
-	return
-
-func _update_select_color():
-	var positions = []
-	for targetId in get_env_int_array(EFFECT_CHOOSE_NAME):
-		var wa = DataManager.get_war_actor(targetId)
-		positions.append(wa.position)
-	map.show_color_block_by_position(positions)
+func _update_select_color(targetIds:PoolIntArray) -> void:
+	var selected = DataManager.get_env_int_array(EFFECT_CHOOSE_NAME)
+	map.show_can_choose_actors(targetIds, -1, selected)
 	return

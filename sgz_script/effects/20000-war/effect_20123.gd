@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #悲歌
-#【悲歌】大战场,锁定技。敌方花色为金、水的武将，主动技能禁用。
+#【悲歌】大战场，锁定技。敌方五行为金、水的武将，主动技能禁用。
 
 func on_trigger_20023()->bool:
 	var wa = DataManager.get_war_actor(ske.actorId)

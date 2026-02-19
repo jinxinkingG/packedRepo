@@ -52,6 +52,6 @@ func effect_20189_3():
 	ske.war_report()
 	SkillHelper.set_skill_variable(20000, EFFECT_ID, self.actorId, 1, 99999)
 	LoadControl.end_script()
-	FlowManager.add_flow("load_script|war/player_move.gd");
+	FlowManager.add_flow("load_script|war/player_move.gd")
 	FlowManager.add_flow("actor_move_start");
 	return

@@ -157,7 +157,6 @@ func develop_4():
 #城镇开发：命令书消耗动画
 func develop_5():
 	var cmd = DataManager.get_current_develop_command()
-	cmd.execute()
 	SceneManager.dialog_use_orderbook_animation("develop_6")
 	LoadControl.set_view_model(115)
 	return
@@ -167,6 +166,7 @@ func develop_6():
 	var cmd = DataManager.get_current_develop_command()
 	var anim = DataManager.get_env_str("动画")
 	SceneManager.play_affiars_animation(anim, "develop_7", false, cmd.get_notice(), cmd.actionId, 1)
+	cmd.execute()
 	LoadControl.set_view_model(116)
 	return
 

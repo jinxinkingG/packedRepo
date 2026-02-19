@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 # 斧手大战场效果，包括回调
-#【斧手】白刃战，锁定技。战争开始时，你有 500 {斧手}。白刃战主将被攻击，进入单挑时，若你的 {斧手} 数量大于 0，你率 {斧手} 掩护主将撤出战斗，并与敌将开始白刃战。每日限1次。
+#【斧手】小战场，锁定技。战争开始时，你有 500 {斧手}。白刃战主将被攻击，进入单挑时，若你的 {斧手} 数量大于 0，你率 {斧手} 掩护主将撤出战斗，并与敌将开始白刃战。每日限1次。\n现有斧手：<var:1:0>。
 
 func on_trigger_20013() -> bool:
 	var setting = ske.get_war_skill_val_int_array()
@@ -17,6 +17,10 @@ func on_trigger_20020() -> bool:
 	if prevSkeData.empty() or targetId < 0:
 		return false
 	return true
+
+func effect_20688_AI_start() -> void:
+	goto_step("start")
+	return
 
 func effect_20688_start() -> void:
 	var msg = "刀斧手伺候！\n（【{0}】发起攻击".format([ske.skill_name])

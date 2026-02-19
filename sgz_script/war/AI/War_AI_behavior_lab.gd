@@ -441,7 +441,7 @@ func try_move_to_position(wa:War_Actor, pos:Vector2) -> bool:
 # @return true 表示行动完成，false 表示需要继续判断
 func _standing_still(wa:War_Actor)->bool:
 	# 无尽模式 0 兵别瞎打了
-	if DataManager.endless_model and wa.get_soldiers() == 0:
+	if DataManager.endless_mode and wa.get_soldiers() == 0:
 		_end_action(wa)
 		return true
 	var wf = DataManager.get_current_war_fight()

@@ -9,7 +9,7 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 const SOLDIERS_LIMIT = 1000
 
 func effect_20251_start():
-	var targets = get_enemy_targets(me, true)
+	var targets = get_enemy_targets(me, true, 999)
 	if targets.empty():
 		var msg = "没有可以发动{0}的目标".format([ske.skill_name])
 		play_dialog(me.actorId, msg, 2, 2999)
@@ -85,10 +85,10 @@ func effect_20251_5():
 	var msg = "…… ……\n既如此，{0}愿降\n（{0}加入我军".format([
 		target.get_name(),
 	])
-	targetActor.set_loyalty(min(70, targetActor.get_moral()))
 	targetActor.set_prev_vstate_id(target.vstate().id)
 	targetActor.set_soldiers(0)
-	target.actor_surrend_to(me.wvId)
+	var specifiedLoyalty = min(70, targetActor.get_moral())
+	target.actor_surrend_to(me.wvId, specifiedLoyalty)
 	play_dialog(targetId, msg, 3, 2999)
 	return
 

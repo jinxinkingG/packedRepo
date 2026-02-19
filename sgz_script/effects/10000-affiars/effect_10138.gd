@@ -1,5 +1,8 @@
 extends "effect_10000.gd"
 
+#强买锁定技
+#【强买】内政，锁定技。你购买单件装备时，只要城中金＞0，即使金不足也可购买。每月限1次。
+
 const EFFECT_ID = 10138
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 

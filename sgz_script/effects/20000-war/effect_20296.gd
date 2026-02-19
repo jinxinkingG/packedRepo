@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #耐马效果
-#【耐马】大战场，锁定技。你的马力+x，x＝你的等级×8
+#【耐马】大战场，锁定技。你的马力+X，X＝你的等级×8。
 
 const HORSE_POWER_BASE = 8
 

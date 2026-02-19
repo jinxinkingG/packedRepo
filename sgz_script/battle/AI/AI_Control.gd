@@ -57,11 +57,8 @@ func think_about_surrend(actorId:int)->bool:
 	if(!Global.get_rate_result(surrend_rate)):
 		return false;
 
-	actor_unit.is_surrend = true;
-	#投降忠赋值
-	actor.set_loyalty(max(10, 79-actor.get_loyalty()))
-	
-	return true;
+	actor_unit.is_surrend = true
+	return true
 
 #--------后退与前进判断-------------
 func think_about_order(actorId:int)->Dictionary:

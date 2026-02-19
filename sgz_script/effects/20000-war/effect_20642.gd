@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 # 睥睨锁定技
-#【睥睨】大战场，锁定技。你的回合结束时，以对方场上体力最大且大于40的武将为目标。使目标的体力减少你的点数值；若该点数>5，对方可以选择对你发起攻击。
+#【睥睨】大战场，锁定技。你为战争守方，回合结束时，以对方场上体力最大且大于40的武将为目标。使目标的体力减少你的点数值；若该点数>5，对方可以选择对你发起攻击。
 
 const EFFECT_ID = 20642
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -39,7 +39,7 @@ func on_trigger_20016() -> bool:
 			ske.skill_name,
 		])
 		me.attach_free_dialog(msg, 0)
-		msg = "小儿无礼太甚！（{0}体力 {1}".format([
+		msg = "小儿无礼太甚！\n（{0}体力 {1}".format([
 			target.get_name(), reduced,
 		])
 		me.attach_free_dialog(msg, 0, 20000, target.actorId)
@@ -72,7 +72,7 @@ func effect_20642_perform() -> void:
 	var reduced = ske.change_actor_hp(target.actorId, -me.poker_point)
 	ske.war_report()
 
-	var msg = "小儿无礼太甚！（{0}体力 {1}\n（{0}发起攻击".format([
+	var msg = "小儿无礼太甚！\n（{0}体力 {1}\n（{0}发起攻击".format([
 		target.get_name(), reduced,
 	])
 	play_dialog(targetId, msg, 0, 2001)

@@ -50,12 +50,12 @@ func effect_30177_2():
 		bu.direction = unit.direction
 		bu._private_hp = MAID_HP
 		bu.disabled = false
-		bu.init_combat_info("步(侍婢)")
+		DataManager.battle_units.append(bu)
+		bu.formation_init("步(侍婢)")
 		bu.unit_position = pos
 		bu.dic_other_variable["临时"] = 1
 		bu.wait_action_times = bu.get_action_times()
 		bu.requires_update = true
-		DataManager.battle_units.append(bu)
 		SceneManager.current_scene().create_or_update_unit(bu)
 
 	if me.get_controlNo() < 0:

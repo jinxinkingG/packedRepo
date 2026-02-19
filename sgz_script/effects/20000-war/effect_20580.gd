@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 # 荡寇效果
-#【荡寇】大战场，锁定技。你对武力不大于你的敌将发起攻击宣言时，对方其他武将不能响应此攻击将技能发动。
+#【荡寇】大战场，锁定技。你对武力不大于你的敌将发起攻击宣言时，对方其他武将不能响应此攻击的技能发动。
 
 func on_trigger_20015() -> bool:
 	var bf = DataManager.get_current_battle_fight()

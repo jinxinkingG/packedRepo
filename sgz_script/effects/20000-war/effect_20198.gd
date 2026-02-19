@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #旋风锁定技
-#【旋风】大战场,锁定技。你花点为红色时，发起战斗宣言只需消耗1点机动力；你花点黑色时，可以对距离2以内的对方武将发起战斗宣言。
+#【旋风】大战场，锁定技。你的五行为木、火时，发起战斗宣言只需消耗1点机动力；你的五行为金、水时，可以对距离2以内的对方武将发起战斗宣言。
 
 func check_trigger_correct() -> bool:
 	var me = DataManager.get_war_actor(self.actorId)

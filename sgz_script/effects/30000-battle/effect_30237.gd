@@ -1,23 +1,19 @@
 extends "effect_30000.gd"
 
 #断发主动技
-#【断发】小战场，主动技。消耗3点战术值发动。令双方所有士兵的兵种变回白刃战准备阶段时的兵种。每有一个敌方单位的兵种以此法发生了改变，对方士气-2。白刃战限一次。
+#【断发】小战场，主动技。消耗3点战术值发动。令双方所有士兵的兵种变回白刃战准备阶段时的兵种。每有一个敌方单位的兵种以此法发生了改变，对方士气-2。白刃战限1次。
 
 const EFFECT_ID = 30237
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
-func check_AI_perform()->bool:
+func check_AI_perform() -> bool:
 	me = DataManager.get_war_actor(actorId)
 	enemy = me.get_battle_enemy_war_actor()
 	if enemy == null:
 		return false
 	# 检查对方是否有变身兵种
-	for bu in DataManager.battle_units:
-		if bu == null or bu.disabled or bu.leaderId != enemy.actorId:
-			continue
-		if not bu.dic_combat.has("原兵种"):
-			continue
-		if bu.dic_combat["原兵种"] != bu.Type:
+	for bu in bf.battle_units(enemy.actorId):
+		if bu.initial_type_changed():
 			return true
 	return false
 
@@ -28,33 +24,19 @@ func effect_30237_AI_start():
 func effect_30237_start():
 	# 检查对方是否有变身兵种
 	SceneManager.current_scene().battle_tactic.hide_description()
-	var toChange = {}
-	for bu in DataManager.battle_units:
-		if bu == null or bu.disabled or bu.leaderId != enemy.actorId:
-			continue
-		if not bu.dic_combat.has("原兵种"):
-			continue
-		var originalType = str(bu.dic_combat["原兵种"])
-		if originalType == bu.Type:
-			continue
-		if not originalType in toChange:
-			toChange[originalType] = []
-		if not bu.unitId in toChange[originalType]:
-			toChange[originalType].append(bu)
+	var changed = 0
+	for bu in bf.battle_units(enemy.actorId):
+		if bu.reset_initial_type():
+			changed += 1
 
 	ske.battle_cd(99999)
-	if toChange.empty():
+	if changed <= 0:
 		# 对，白发动也 CD
 		var msg = "空断发，未知机\n敌方兵种没有变化"
 		SceneManager.show_confirm_dialog(msg, actorId, 3)
 		LoadControl.set_view_model(2000)
 		return
-	var changed = 0
-	for type in toChange:
-		changed += toChange[type].size()
-		ske.battle_change_units_type(enemy.actorId, toChange[type], type)
 	var moraleDown = ske.battle_change_morale(changed * -2, enemy)
-
 	ske.battle_report()
 
 	var msg = "断发为信，{0}中计矣\n（{1}军变为初始兵种"
@@ -73,9 +55,5 @@ func on_view_model_2000():
 	return
 
 func effect_30237_end():
-	if me.get_controlNo() < 0:
-		LoadControl.end_script()
-		FlowManager.add_flow("unit_action")
-	else:
-		FlowManager.add_flow("tactic_end")
+	tactic_end()
 	return

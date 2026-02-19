@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #金创主动技及被动效果
-#【金创】小战场，主动技。使用后，你的体+8，战术值+4。每日限一次
+#【金创】小战场，主动技。使用后，你的体+8，战术值+4。每个大战场回合限1次。
 
 const EFFECT_ID = 30165
 const FLOW_BASE = "effect_" + str(EFFECT_ID)

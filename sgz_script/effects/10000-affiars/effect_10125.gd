@@ -1,7 +1,7 @@
 extends "effect_10000.gd"
 
 # 佯退锁定技
-#【佯退】内政，锁定技。你方在战争中撤退致战争失败的场合，同个月内，下次出征不消耗命令书。每月限1次。
+#【佯退】内政，锁定技。你方在战争中撤退致战争失败后，同月内，你下次随军出征，不消耗命令书。每月限1次。
 
 func on_trigger_10013() -> bool:
 	var wf = DataManager.get_current_war_fight()

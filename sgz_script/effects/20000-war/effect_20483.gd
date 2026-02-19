@@ -46,10 +46,10 @@ func on_trigger_20020()->bool:
 		return false
 	if pos == me.position:
 		map.set_temp_block(pos, "wall_3")
-		FlowManager.add_flow("draw_actors")
+		map.draw_actors()
 	else:
 		map.set_temp_block(pos, "")
-		FlowManager.add_flow("draw_actors")
+		map.draw_actors()
 	return false
 
 func on_trigger_20040()->bool:
@@ -58,10 +58,10 @@ func on_trigger_20040()->bool:
 		return false
 	if pos == me.position:
 		map.set_temp_block(pos, "wall_3")
-		FlowManager.add_flow("draw_actors")
+		map.draw_actors()
 	else:
 		map.set_temp_block(pos, "")
-		FlowManager.add_flow("draw_actors")
+		map.draw_actors()
 	return false
 
 func on_trigger_20027()->bool:

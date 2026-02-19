@@ -51,6 +51,9 @@ func _process(delta: float) -> void:
 	if FlowManager.has_task():
 		return
 
+	if SceneManager.is_animation_playing():
+		return
+
 	# 检查闲时对话
 	if LoadControl.all_controllers_done() and check_free_dialog():
 		return
@@ -232,13 +235,14 @@ func back_from_war()->void:
 	SoundManager.play_bgm()
 	LoadControl.end_script()
 
-	# 暂行方案，允许胜利方发动战后技能
 	var wf = DataManager.get_current_war_fight()
-	for wv in wf.war_vstates():
-		wv.back_from_war()
 	var vstateId = DataManager.vstates_sort[DataManager.vstate_no]
 	if wf.target_city().get_vstate_id() == vstateId:
 		DataManager.player_choose_city = wf.target_city().ID
+	SkillHelper.update_all_skill_buff("BACK_FROM_WAR")
+	for wv in wf.war_vstates():
+		# 暂行方案，允许发动战后技能
+		wv.back_from_war()
 	FlowManager.add_flow("check_actor_dead")
 	return
 
@@ -420,15 +424,14 @@ func check_stars_month_init()->void:
 	for p in DataManager.players:
 		if p.actorId < 0:
 			continue
-		var cityId = DataManager.get_office_city_by_actor(p.actorId)
-		if cityId < 0:
+		var city = DataManager.get_office_city_by_actor(p.actorId)
+		if city == null:
 			continue
-		var city = clCity.city(cityId)
-		if cityId in joinedActors:
+		if city.ID in joinedActors:
 			# 有武将加入，汇报武将信息
 			var vstateId = city.get_vstate_id()
 			var names = []
-			for actorId in joinedActors[cityId]:
+			for actorId in joinedActors[city.ID]:
 				var actor = ActorHelper.actor(actorId)
 				names.append(actor.get_name())
 			if names.empty():

@@ -26,7 +26,6 @@ func _init() -> void:
 	FlowManager.bind_import_flow("player_end", self)
 	FlowManager.bind_import_flow("actor_info", self)
 	FlowManager.bind_import_flow("actor_control_menu", self)
-	FlowManager.bind_import_flow("player_war_end_confirm", self)
 	FlowManager.bind_import_flow("story_dialogs", self)
 	FlowManager.bind_signal_method("war_status", self)
 	FlowManager.bind_signal_method("war_status_close", self)
@@ -51,6 +50,12 @@ func _init() -> void:
 	FlowManager.bind_import_flow("player_map_nav_start", self)
 	FlowManager.bind_import_flow("player_map_nav_finish", self)
 
+	FlowManager.bind_import_flow("player_retreat_plan", self)
+	FlowManager.bind_import_flow("player_retreat_target", self)
+	FlowManager.bind_import_flow("player_retreat_select", self)
+	FlowManager.bind_import_flow("player_retreat_execute", self)
+	FlowManager.bind_import_flow("player_retreat_done", self)
+
 	iembattle = Global.load_script(DataManager.mod_path+"sgz_script/war/IEmbattle.gd")
 	return
 	
@@ -71,7 +76,7 @@ func _input_key(delta: float):
 		if DataManager.is_autoplay_mode() and Input.is_action_pressed("EMU_START"):
 			var prev = SceneManager.actor_dialog.rtlMessage.text
 			DataManager.set_env("观战对话", prev)
-			SceneManager.show_yn_dialog("是否结束观战？", -5)
+			SceneManager.show_yn_dialog("是否结束观战？", StaticManager.ACTOR_ID_SLIME_GOD)
 			set_view_model(999)
 	return
 
@@ -314,17 +319,6 @@ func on_view_model_6(delta: float):
 	DataManager.player_choose_actor = next.actorId
 	DataManager.set_env("武将", next.actorId)
 	FlowManager.add_flow("actor_info")
-	return
-
-func on_view_model_7(delta: float):
-	#确认后进入结算界面
-	if not Global.is_action_pressed_AX():
-		return
-	if not SceneManager.dialog_msg_complete(true):
-		return
-	set_view_model(-1)
-	SceneManager.hide_all_tool()
-	FlowManager.add_flow("war_over_start")
 	return
 
 func on_view_model_9(delta: float):
@@ -646,6 +640,50 @@ func on_view_model_100(delta: float):
 		FlowManager.add_flow("player_map_nav_finish")
 	return
 
+func on_view_model_201(delta: float) -> void:
+	Global.wait_for_confirmation("player_retreat_done", view_model_name)
+	return
+
+func on_view_model_202(delta: float) -> void:
+	Global.wait_for_choose_item("player_retreat_select", "", view_model_name)
+	return
+
+func on_view_model_203(delta: float) -> void:
+	var actorIds = DataManager.get_env_int_array("列表值")
+	if Input.is_action_just_pressed("EMU_START"):
+		var idxes = []
+		for i in actorIds.size():
+			if actorIds[i] < 0:
+				continue
+			idxes.append(i)
+		SceneManager.lsc_menu_top.lsc.set_selected_by_array(idxes)
+		return
+	if not Global.wait_for_choose_item("", "", view_model_name):
+		return
+
+	var selected = DataManager.get_env_int("目标项")
+	if selected < 0:
+		# 选择结束
+		set_view_model(-1)
+		FlowManager.add_flow("player_retreat_execute")
+		return
+
+	# 切换武将选中状态
+	var actor = ActorHelper.actor(selected)
+	if actor.get_loyalty() == 100:
+		var wf = DataManager.get_current_war_fight()
+		var retreatCityId = wf.get_env_int("撤退城市")
+		if retreatCityId < 0:
+			# 君主不可主动选择下野
+			return
+	SceneManager.lsc_menu_top.lsc.set_selected_change()
+	set_view_model(203)
+	return
+
+func on_view_model_204(delta: float) -> void:
+	Global.wait_for_confirmation("player_retreat_target", view_model_name)
+	return
+
 func on_view_model_886(delta: float):
 	Global.wait_for_yesno("player_delegate_confirmed", "player_ready", view_model_name)
 	return
@@ -915,10 +953,10 @@ func _player_ready()->bool:
 		return false
 	# 闲时对话检查结束
 	# 确认是否有势力战败
-	if check_war_vstates_status():
+	var wf = DataManager.get_current_war_fight()
+	if wf.check_war_vstates_status():
 		FlowManager.add_flow("war_vstate_settlement")
 		return false
-	var wf = DataManager.get_current_war_fight()
 	var wv = wf.current_war_vstate()
 	if wv.get_main_controlNo() < 0:
 		FlowManager.add_flow("AI_before_ready")
@@ -976,7 +1014,7 @@ func player_turn_dialog(nextFlow:String="player_ready"):
 			sc.call(d.callback_method)
 	var map = SceneManager.current_scene().war_map
 	map.camer_to_actorId(d.actorId, "")
-	SceneManager.show_confirm_dialog(d.text, d.actorId, d.mood)
+	SceneManager.show_confirm_dialog(d.text, d.actorId, d.mood, d.actorId < 0)
 	map.next_shrink_actors = [d.actorId]
 	DataManager.set_env("战争.玩家.等待对话流程", nextFlow)
 	set_view_model(10)
@@ -1053,7 +1091,7 @@ func actor_control_menu():
 	else:
 		menu.append("回营")
 
-	if DataManager.game_mode2 == 1 or DataManager.endless_model:
+	if DataManager.game_mode2 == 1 or DataManager.endless_mode:
 		#剧情模式或无尽模式，禁止玩家撤退
 		menu.erase("撤退")
 
@@ -1092,91 +1130,6 @@ func _defaut_war_actor(controlNo:int)->War_Actor:
 	var wf = DataManager.get_current_war_fight()
 	var wv = wf.current_war_vstate()
 	return wv.get_leader()
-
-#战争结束时，对玩家提示
-func player_war_end_confirm():
-	LoadControl.end_script()
-	var player:Player = DataManager.players[FlowManager.controlNo]
-	var playerActor = ActorHelper.actor(player.actorId)
-	var wf = DataManager.get_current_war_fight()
-	# 解除托管状态
-	for wv in wf.war_vstates():
-		wv.delegate(false)
-	var playerWV = wf.defenderWV
-	if playerWV.get_main_controlNo() < 0:
-		# 多玩家 wv 时可能不 work
-		playerWV = wf.attackerWV
-	if playerWV == null:
-		set_view_model(-1)
-		SceneManager.hide_all_tool()
-		FlowManager.add_flow("war_over_start")
-		return
-
-	var playerLost = playerWV.check_lose()
-	var dialogCondition = "失败" if playerLost else "胜利"
-	if not istory.get_story_dialog(dialogCondition, false).empty():
-		SoundManager.play_bgm("res://resource/sounds/bgm/War_End.ogg")
-		DataManager.set_env("剧情.对白类型", dialogCondition)
-		FlowManager.add_flow("story_dialogs")
-		return
-
-	var reason = playerWV.lose_reason
-	var speaker = playerWV.main_actorId
-	var mood = 3
-	if not playerLost:
-		reason = playerWV.get_enemy_vstate().lose_reason
-		mood = 1
-	
-	var msg = ""
-	match reason:
-		War_Vstate.Lose_ReasonEnum.OverDay:
-			if playerLost:
-				msg = "{0}大人\n战争持续太久\n不得不暂时退却"
-			else:
-				msg = "{0}大人\n敌军已开始退却"
-				SceneManager.show_confirm_dialog(msg, playerWV.main_actorId, 1)
-		War_Vstate.Lose_ReasonEnum.FoodExhaustion:
-			if playerLost:
-				msg = "{0}大人\n我军粮草不足\n不得不暂时退却"
-			else:
-				msg = "{0}大人\n敌军粮尽退却"
-		War_Vstate.Lose_ReasonEnum.LoseCity:
-			if playerLost:
-				msg = "大事不好!\n敌军已占领主城！"
-			else:
-				msg = "可喜可贺!\n我军已占领主城！"
-		War_Vstate.Lose_ReasonEnum.MainActorLose:
-			if playerLost:
-				speaker = -1
-				for wa in playerWV.get_war_actors(false):
-					speaker = wa.actorId
-					break
-				msg = "{0}大人\n我军失去主将\n不得不暂时退却"
-			else:
-				msg = "{0}大人\n敌军失去主将\n已开始退却"
-		_:
-			set_view_model(-1)
-			SceneManager.hide_all_tool()
-			FlowManager.add_flow("war_over_start")
-			return
-	msg = msg.format([playerActor.get_name()])
-	SceneManager.show_confirm_dialog(msg, speaker, mood)
-	set_view_model(7)
-	return
-
-func check_war_vstates_status()->bool:
-	var wf = DataManager.get_current_war_fight()
-	var somethingHappened = false
-	for wv in wf.war_vstates():
-		#调用自动检查失败条件程序
-		wv.check_lose()
-		# 需要结算
-		if wv.requires_lost_settlement():
-			somethingHappened = true
-	# 主要势力失败?
-	if wf.defenderWV.lost() or wf.attackerWV.lost():
-		somethingHappened = true
-	return somethingHappened
 
 #检查武将升级，并插入闲时对话
 func _check_actors_levelup():
@@ -1329,7 +1282,7 @@ func _check_wait_dialog():
 func player_delegate()->void:
 	if DataManager.is_challange_game():
 		var msg = "挑战赛模式\n禁用托管"
-		SceneManager.show_confirm_dialog(msg, -5)
+		SceneManager.show_confirm_dialog(msg, StaticManager.ACTOR_ID_SLIME_GOD)
 		set_view_model(0)
 		return
 	var msg = "确定要由 AI 指挥战争吗？\n战争完毕将自动结束托管\n托管中按住「开始」键可取消"
@@ -1470,4 +1423,179 @@ func player_map_nav_start() -> void:
 func player_map_nav_finish() -> void:
 	FlowManager.add_flow("war_map_nav_finish")
 	set_view_model(-1)
+	return
+
+# 玩家选择撤退
+func player_retreat_plan() -> void:
+	set_view_model(-1)
+	var wf = DataManager.get_current_war_fight()
+	var wvId = wf.get_env_int("败退结算")
+	var wv = wf.get_war_vstate(wvId)
+	if wv.get_actors_count() == 0:
+		# 已经没有需要处理的武将了
+		FlowManager.add_flow("player_retreat_done")
+		return
+
+	var targetCityIds = wv.get_all_retreat_city_ids()
+	if targetCityIds.empty():
+		# 无城可撤时，全员下野
+		var bannished = []
+		var lordWA = null
+		for wa in wv.get_war_actors(false):
+			if wa.actorId != wa.get_lord_id():
+				wa.banish_to(wf.target_city().ID)
+				bannished.append(wa)
+			else:
+				lordWA = wa
+		if lordWA != null:
+			lordWA.actor_capture_to(wv.get_enemy_vstate().id, "结算")
+		var msg = "无路可退 ……"
+		if not bannished.empty():
+			msg += "\n" + bannished[0].get_name()
+			if bannished.size() > 1:
+				msg += "等{0}人".format([bannished.size()])
+			msg += "已下野"
+		if lordWA != null:
+			msg += "\n{0}被擒".format([lordWA.get_name()])
+		SceneManager.show_confirm_dialog(msg)
+		set_view_model(201)
+		return
+
+	FlowManager.add_flow("player_retreat_target")
+	return
+
+func player_retreat_target() -> void:
+	var wf = DataManager.get_current_war_fight()
+	var wvId = wf.get_env_int("败退结算")
+	var wv = wf.get_war_vstate(wvId)
+	if wv.get_actors_count() == 0:
+		# 已经没有需要处理的武将了
+		FlowManager.add_flow("player_retreat_done")
+		return
+
+	var items = []
+	var values = []
+	for targetId in wv.get_all_retreat_city_ids():
+		var targetCity = clCity.city(targetId)
+		var fmt = "{0} {1}"
+		if targetId == wf.from_city().ID:
+			fmt = "{0} {1}#C32,32,212"
+		items.append(fmt.format([targetCity.get_name(), targetCity.get_actors_count()]))
+		values.append(targetId)
+
+	#增加下野选项
+	items.append("下野")
+	values.append(-1)
+
+	SceneManager.show_unconfirm_dialog("我军🚶未能取胜\n其余武将撤往何处？")
+	SceneManager.bind_top_menu(items, values, 2)
+	set_view_model(202)
+	return
+
+func player_retreat_select() -> void:
+	var retreatCityId = DataManager.get_env_int("目标项")
+	var wf = DataManager.get_current_war_fight()
+	wf.set_env("撤退城市", retreatCityId)
+	var wvId = wf.get_env_int("败退结算")
+	var wv = wf.get_war_vstate(wvId)
+
+	# 不翻页，只从 TOP N 开始
+	var pageSize = 23
+	var actorsCount = wv.get_actors_count()
+	
+	var items = []
+	var values = []
+	for wa in wv.get_war_actors(false):
+		if items.size() >= pageSize:
+			break
+		items.append(wa.get_name())
+		values.append(wa.actorId)
+	items.append("结束")
+	values.append(-1)
+
+	var msg = "请选择下野的武将"
+	if retreatCityId >= 0:
+		msg = "请选择撤往{0}的武将".format([
+			clCity.city(retreatCityId).get_name()
+		])
+	SceneManager.show_unconfirm_dialog(msg)
+	SceneManager.bind_top_menu(items, values, 3, Vector2(0, 0), Vector2(160, 40))
+	set_view_model(203)
+	return
+
+func player_retreat_execute() -> void:
+	var wf = DataManager.get_current_war_fight()
+	var wvId = wf.get_env_int("败退结算")
+	var wv = wf.get_war_vstate(wvId)
+	var selected = SceneManager.lsc_menu_top.lsc.get_selected_list()
+	var retreatCityId = wf.get_env_int("撤退城市")
+	var actorIds = DataManager.get_env_int_array("列表值")
+
+	var retreated = []
+	var banished = []
+	if retreatCityId >= 0:
+		# 执行撤退
+		for s in selected:
+			var actorId = actorIds[s]
+			var wa = DataManager.get_war_actor(actorId)
+			wa.retreat_to(retreatCityId)
+			retreated.append(wa.actorId)
+		# 军营武将去第一个选择的城市
+		for campActorId in wv.camp_actors:
+			clCity.move_to(campActorId, retreatCityId)
+			retreated.append(campActorId)
+		wv.camp_actors.clear()
+		# 跟随武将去第一个选择的城市
+		for followingActorId in wv.following_actors:
+			clCity.move_to(followingActorId, retreatCityId)
+			retreated.append(followingActorId)
+		wv.following_actors.clear()
+		# 俘虏武将去第一个选择的城市
+		for captureActorId in wv.capture_actors:
+			clCity.move_to_ceil(captureActorId, retreatCityId)
+			retreated.append(captureActorId)
+		wv.capture_actors.clear()
+	else:
+		# 执行下野
+		var avaiableCityIds = wf.target_city().get_connected_city_ids()
+		avaiableCityIds.append(wf.target_city().ID)
+		for s in selected:
+			var actorId = actorIds[s]
+			var wa = DataManager.get_war_actor(actorId)
+			wa.actor().set_dislike_vstate_id(wv.vstateId)
+			avaiableCityIds.shuffle()
+			wa.banish_to(avaiableCityIds[0])
+			banished.append(wa.actorId)
+	var msgs = []
+	if retreated.size() > 0:
+		var msg = ActorHelper.actor(retreated[0]).get_name()
+		if retreated.size() > 1:
+			msg += "等{0}人".format([retreated.size()])
+		msg += "已撤往{0}".format([clCity.city(retreatCityId).get_name()])
+		msgs.append(msg)
+	if banished.size() > 0:
+		var msg = ActorHelper.actor(banished[0]).get_name()
+		if banished.size() > 1:
+			msg += "等{0}人".format([banished.size()])
+		msg += "已下野"
+		msgs.append(msg)
+
+	if not msgs.empty():
+		SceneManager.hide_all_tool()
+		var map = SceneManager.current_scene().war_map
+		map.draw_actors()
+		SceneManager.show_confirm_dialog("\n".join(msgs))
+		set_view_model(204)
+		return
+	FlowManager.add_flow("player_retreat_target")
+	return
+
+func player_retreat_done() -> void:
+	var wf = DataManager.get_current_war_fight()
+	var wvId = wf.get_env_int("败退结算")
+	var wv = wf.get_war_vstate(wvId)
+	if wv != null:
+		# 手动撤退完成，标记
+		wv.settled = 1
+	FlowManager.add_flow("war_vstate_settlement_report")
 	return

@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #龙战技能实现
-#【龙战】小战场,锁定技。你对攻击对方小兵的伤害结果，额外附加你的装备攻击力。
+#【龙战】小战场，锁定技。你攻击对方小兵的伤害结果，额外附加你的装备攻击力。
 
 func on_trigger_30021()->bool:
 	var extraDamage = int(actor.get_equip_attr_total("攻击力"))

@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #藤甲小战场效果实现 #布阵 #减伤
-#【藤甲】大战场&小战场,锁定技。你乘坐大象，默认8步2弓，且步兵站骑兵位，布阵后可以选择是否武将前置。非水战，你的步兵和弓兵只承受50%的伤害；大战场，处于非水地形时，火属性计策会对你造成125%的伤害
+#【藤甲】大战场&小战场，锁定技。你乘坐 {大象}，默认8藤甲兵2弓，且藤甲兵站骑兵位，布阵后，你可以选择是否武将前置。非水战，你的藤甲兵和弓兵只承受50%的伤害；大战场，处于非水地形时，火属性计策会对你造成125%的伤害。☆制作组提醒：藤甲兵为特殊的步兵，步兵类技能和效果对其有效。
 
 func on_trigger_30003()->bool:
 	bf.update_extra_formation_setting(
@@ -16,7 +16,7 @@ func on_trigger_30005()->bool:
 	var bu = get_leader_unit(me.actorId)
 	if bu == null or bu.disabled:
 		return false
-	bu.reset_combat_info("将(象)")
+	bu.formation_init("将(象)")
 	bu.dic_combat["武器特性"] = []
 	bu.requires_update = true
 	return not bu.dic_combat.has("布阵前突")
@@ -26,7 +26,7 @@ func on_trigger_30024()->bool:
 	var bu = get_battle_unit(unitId)
 	if bu == null or bu.Type != "步":
 		return false
-	bu.reset_combat_info("步(藤甲)")
+	bu.formation_init("步(藤甲)")
 	return false
 
 func on_trigger_30011()->bool:

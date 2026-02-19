@@ -8,6 +8,7 @@ const KEY_TIMES = "TIMES"
 const TIMES_LIMIT = 3
 # 用特殊 key 记录标记计策生效并排除一次计策多次累加
 const KEY_ACTION_STATUS = "ACTION"
+const KEY_INITIAL = "INITIAL"
 
 func on_trigger_20010()->bool:
 	# 计策计算命中率前
@@ -43,13 +44,20 @@ func on_trigger_20011()->bool:
 	if damage <= 0 or targetId < 0:
 		return false
 
+	var soldiers = ActorHelper.actor(targetId).get_soldiers()
 	# 需要看实际士兵调整伤害值
-	damage = min(ActorHelper.actor(targetId).get_soldiers(), damage)
+	damage = min(soldiers, damage)
 
 	var key = str(targetId)
 	if not key in recorded:
 		recorded[key] = 0
 	recorded[key] += damage
+	# 检查原始兵力
+	if not KEY_INITIAL in recorded:
+		recorded[KEY_INITIAL] = {}
+	# 初次触发记录当前兵力
+	if not key in recorded[KEY_INITIAL]:
+		recorded[KEY_INITIAL][key] = soldiers
 
 	# 确保计数器在一次计策中只加一次
 	if recorded[KEY_ACTION_STATUS] == 1:
@@ -91,12 +99,16 @@ func on_trigger_20027()->bool:
 func _recover_damage()->bool:
 	var recorded = ske.get_war_skill_val_dic()
 	for key in recorded:
-		var targetId = int(key)
-		var damage = int(recorded[key])
+		var targetId = Global.intval(key)
+		var damage = Global.intval(recorded[key])
+		if targetId < 0 or damage <= 0:
+			continue
 		var wa = DataManager.get_war_actor(targetId)
 		if wa == null:
 			continue
 		var limit = DataManager.get_actor_max_soldiers(targetId)
+		if KEY_INITIAL in recorded and key in recorded[KEY_INITIAL]:
+			limit = max(limit, Global.intval(recorded[KEY_INITIAL][key]))
 		ske.change_actor_soldiers(targetId, damage, limit)
 	ske.war_report()
 	return false

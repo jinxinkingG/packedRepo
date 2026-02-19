@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 # 决讨主动技部分
-#【决讨】大战场，限定技。体力<40才能发动。你直到回合结束前获得<奋威><勇进>。
+#【决讨】大战场，限定技。体力＜40才能发动。你直到回合结束前获得<奋威>、<勇进>。
 
 const EFFECT_ID = 20573
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
