@@ -10,8 +10,8 @@ func check_trigger_correct()->bool:
 	var city = clCity.city(cityId)
 	var actor = ActorHelper.actor(self.actorId)
 	if city.get_vstate_id() == StaticManager.VSTATEID_LIUBEI:
-		actor.set_face(false)
+		actor.set_side("阴")
 	else:
-		actor.set_face(true)
+		actor.set_side("阳")
 	actor.add_exp(100)
 	return false

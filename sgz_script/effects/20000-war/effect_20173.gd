@@ -34,7 +34,7 @@ func on_trigger_20015()->bool:
 	return false
 
 func effect_20173_start():
-	if DataManager.is_extra_war_round():
+	if wf.is_extra_round():
 		var msg = "当前已是额外回合\n【{0}】可另择良机".format([ske.skill_name])
 		play_dialog(me.actorId, msg, 2, 2999)
 		return
@@ -76,7 +76,7 @@ func effect_20173_3():
 	var title = "孤"
 	if actor.get_loyalty() == 100:
 		title = "朕"
-	DataManager.add_actor_to_extra_round(targetId)
+	wf.add_actor_to_extra_round(targetId)
 	var msg = "{1}先去遛鸟啊，战事如何…\n{0}自决吧\n（{2}经验增加{3}".format([
 		DataManager.get_actor_honored_title(targetId, me.actorId), title,
 		actor.get_name(), EXP_GAIN

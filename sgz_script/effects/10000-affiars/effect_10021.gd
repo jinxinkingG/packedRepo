@@ -20,11 +20,11 @@ func on_trigger_10001()->bool:
 
 	var originalVstateId = actor.get_initial_vstate_id()
 	if originalVstateId == vstateId:
-		actor.set_face(true)
+		actor.set_side("阳")
 	elif clVState.vstate(originalVstateId).is_perished():
-		actor.set_face(true)
+		actor.set_side("阳")
 	else:
-		actor.set_face(false)
+		actor.set_side("阴")
 	var current = actor.get_side(true)
 	if current != prev:
 		# 发生了翻转，知武互换

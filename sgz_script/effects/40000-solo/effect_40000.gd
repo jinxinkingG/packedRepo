@@ -37,3 +37,8 @@ func wait_for_skill_result_confirmation(nextFlow:String="player_ready"):
 		else:
 			FlowManager.add_flow(nextFlow)
 	return
+
+# 默认的 2990 view model，确认对话并结束被动技
+func on_view_model_2990()->void:
+	wait_for_skill_result_confirmation("")
+	return

@@ -83,9 +83,13 @@ func attack_start(evenForbidden:bool=false):
 	var res = iwa.get_can_attack_actors(me.actorId, false, evenForbidden)
 	var targets = res[0]
 	var reason = res[1]
+	var reporter = res[2]
+	var mood = res[3]
+	if reporter < 0:
+		reporter = me.actorId
 	if targets.empty():
 		map.cursor.hide();
-		LoadControl._error(reason, me.actorId)
+		LoadControl._error(reason, reporter, mood)
 		return
 	# 显示攻击范围的逻辑暂不成熟
 	# 比如旋风等技能机制未包括进来

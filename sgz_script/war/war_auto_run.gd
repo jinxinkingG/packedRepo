@@ -3,10 +3,11 @@ extends "war_base.gd"
 var player_control = null;
 var AI_control = null;
 
-const current_step_name = "战争-当前步骤";
-const next_step_name = "战争-下个步骤";
+const CURRENT_STEP_NAME = "战争-当前步骤"
+const NEXT_STEP_NAME = "战争-下个步骤"
 
 var war_map
+var istory
 
 func _init() -> void:
 	var wf = DataManager.get_current_war_fight()
@@ -20,6 +21,7 @@ func _init() -> void:
 	FlowManager.bind_import_flow("war_map_nav_finish", self)
 
 	FlowManager.bind_import_flow("war_run_start", self)
+	FlowManager.bind_import_flow("war_step_0", self)
 	FlowManager.bind_import_flow("war_vstate_settlement", self)
 	FlowManager.bind_import_flow("war_vstate_settlement_report", self)
 	FlowManager.bind_import_flow("war_over_start", self)
@@ -39,6 +41,7 @@ func _init() -> void:
 	FlowManager.bind_import_flow("turn_ready_skill_trigger", self)
 
 	war_map = SceneManager.current_scene().war_map
+	istory = Global.load_script(DataManager.mod_path+"sgz_script/story/IStory.gd")
 	FlowManager.bind_signal_method("draw_actors", war_map)
 
 	player_control = Global.load_script(DataManager.mod_path+"sgz_script/war/player_control.gd")
@@ -50,8 +53,7 @@ func war_map_nav_start() -> void:
 	SoundManager.play_bgm()
 	DataManager.player_choose_actor = -1
 	SceneManager.hide_all_tool()
-	set_current_step(-1)
-	set_next_step(999)
+	war_step_999()
 	return
 
 func war_map_nav_finish() -> void:
@@ -74,34 +76,46 @@ func war_run_start():
 	# 无尽模式，触发模拟内政技能
 	if DataManager.endless_mode:
 		# 清空内政技能CD，无尽模式各关均可触发月度内政技能
-		SkillHelper.decrease_skill_cd(10000);
-		SkillHelper.decrease_skill_variable(10000);
+		SkillHelper.decrease_skill_cd(10000)
+		SkillHelper.decrease_skill_variable(10000)
 		for wv in wf.war_vstates():
 			for actorId in wv.init_actors:
 				# 不支持 flow
-				SkillHelper.auto_trigger_skill(actorId, 20034, "")
+				SkillHelper.auto_trigger_skill(actorId, 20034)
 
 	DataManager.player_choose_actor = -1
 	SceneManager.hide_all_tool()
-	set_next_step(0)
+
+	# 显示战争介绍画面
+	if is_instance_valid(SceneManager.war_intro):
+		SceneManager.war_intro.show_war_intro(wf, "war_step_0")
+	else:
+		war_step_0()
 	return
 
 #读取当前步骤
-func get_current_step()->int:
-	return DataManager.get_env_int(current_step_name)
+func get_current_step() -> int:
+	return DataManager.get_env_int(CURRENT_STEP_NAME)
 
 #设置当前步骤
-func set_current_step(step:int)->void:
-	DataManager.set_env(current_step_name, step)
+func set_current_step(step:int) -> void:
+	DataManager.set_env(CURRENT_STEP_NAME, step)
 	return
 
 #读取下个步骤
-func get_next_step()->int:
-	return DataManager.get_env_int(next_step_name)
+func get_next_step() -> int:
+	return DataManager.get_env_int(NEXT_STEP_NAME)
 
 #设置下个步骤
-func set_next_step(step:int)->void:
-	DataManager.set_env(next_step_name, step)
+func set_next_step(step:int, memo:String="") -> void:
+	var current = get_next_step()
+	if current == step:
+		return
+	var msg = "[WAR] NEXT STEP: {0}, {1}".format([
+		step, memo
+	])
+	DataManager.game_trace(msg)
+	DataManager.set_env(NEXT_STEP_NAME, step)
 	return
 
 func _process(delta: float) -> void:
@@ -124,120 +138,390 @@ func _process(delta: float) -> void:
 		return
 	set_current_step(get_next_step())
 
-	var current_step = get_current_step()
+	var currentStep = get_current_step()
 	#DataManager.game_trace("== WAR STEP " + str(current_step) + "。")
-	match current_step:
-		999: # 地图浏览
-			FlowManager.add_flow("player_map_nav_start")
-			return
-		0:#每日初始化
-			wf.next_date()
-			set_next_step(1)
-		1:#日事件
-			var wv = wf.current_war_vstate()
-			var actorIds = []
-			for wa in wv.get_war_actors(false):
-				actorIds.append(wa.actorId)
-			DataManager.set_env("战争.回合准备武将", actorIds)
-			prepare_turn_skill_trigger()
-		2:#势力初始化
-			#本势力内控制器
-			var wv = wf.current_war_vstate()
-			if not wv.ready():
-				# 援军未到达战场的情况
-				switch_side()
-				return
-			# 玩家援军到达日的初始化
-			if wv.is_reinforcement() and wv.warActors.empty():
-				wv.prepare_war_actors(true)
-			if wv.lost():
-				set_next_step(21)
-				return
-			# 初始化控制器
-			wv.prepare_controller()
-			wv.turn_begin_event()
-			#所有武将的单独机动力在这里恢复
-			for wa in wv.get_war_actors(false):
-				wa.refresh_poker_random(true);#恢复机动力前先刷新点花
-				wa.recharge_action_point();
-			#重置额外回合列表
-			DataManager.unset_env("战争.临时回合武将")
-			set_next_step(3)
-		3:#势力回合初始事件（开始阶段+布阵）
-			check_embattle()
-		4:#控制者-回合初始化
-			var wv = wf.current_war_vstate()
-			var type = "玩家"
-			if wv.get_main_controlNo() < 0:
-				type = "AI"
-			var msg = "==== {0}<y{1}>行动开始 (Day#{2}) ====".format([
-				type, wv.get_lord_name(), wf.date,
+	var stepMethod = "war_step_{0}".format([currentStep])
+	if has_method(stepMethod):
+		call(stepMethod)
+	return
+
+# 地图浏览
+func war_step_999() -> void:
+	set_current_step(999)
+	set_next_step(999)
+	FlowManager.add_flow("player_map_nav_start")
+	return
+
+# 每日初始化
+func war_step_0() -> void:
+	set_current_step(0)
+	var wf = DataManager.get_current_war_fight()
+	var msg = "战争下一日: #{0}".format([wf.date])
+	set_next_step(0, msg)
+	wf.next_date()
+	war_step_1()
+	return
+
+# 每日技能触发
+func war_step_1() -> void:
+	set_current_step(1)
+	var wf = DataManager.get_current_war_fight()
+	var msg = "战争{0}日初始化".format([wf.date])
+	set_next_step(1, msg)
+	var wv = wf.current_war_vstate()
+	var actorIds = []
+	for wa in wv.get_war_actors(false):
+		actorIds.append(wa.actorId)
+	wf.set_env("回合开始触发", actorIds)
+	prepare_turn_skill_trigger()
+	return
+
+# 势力初始化
+func war_step_2() -> void:
+	set_current_step(2)
+	var wf = DataManager.get_current_war_fight()
+	var wv = wf.current_war_vstate()
+	var msg = wv.get_leader_name() + " 军势初始化"
+	set_next_step(2, msg)
+	# 重置额外回合信息
+	wf.clear_extra_round()
+	if not wv.ready():
+		# 援军未到达战场的情况
+		switch_side()
+		return
+	# 玩家援军到达日的初始化
+	if wv.is_reinforcement() and wv.warActors.empty():
+		wv.prepare_war_actors(true)
+	if wv.lost():
+		war_step_21()
+		return
+	# 初始化本军势控制器
+	wv.prepare_controller()
+	wv.turn_begin_event()
+	# 所有武将的单独机动力在这里恢复
+	for wa in wv.get_war_actors(false):
+		# 恢复机动力前先刷新点花
+		wa.refresh_poker_random(true)
+		wa.recharge_action_point()
+	war_step_3()
+	return
+
+# 势力回合初始事件（开始阶段+布阵）
+func war_step_3() -> void:
+	set_current_step(3)
+	set_next_step(3, "军势布阵")
+	check_embattle()
+	return
+
+# 控制者-回合初始化
+func war_step_4() -> void:
+	set_current_step(4)
+	set_next_step(4, "回合初始化")
+	var wf = DataManager.get_current_war_fight()
+	var wv = wf.current_war_vstate()
+	var type = "玩家"
+	if wv.get_main_controlNo() < 0:
+		type = "AI"
+	var msg = "==== {0}<y{1}>行动开始 (Day#{2}) ====".format([
+		type, wv.get_lord_name(), wf.date,
+	])
+	DataManager.record_war_log(msg)
+	FlowManager.add_flow("draw_actors")
+	war_step_5()
+	return
+
+# 控制者-准备阶段(技能事件)
+func war_step_5() -> void:
+	set_current_step(5)
+	set_next_step(5, "回合前置阶段")
+	before_turn_skill_trigger()
+	return
+
+# 控制者-主要阶段前（判断是否结束战争）
+func war_step_6() -> void:
+	set_current_step(6)
+	set_next_step(6, "回合准备阶段")
+	turn_ready_skill_trigger()
+	return
+
+# 控制者-主要阶段
+func war_step_7() -> void:
+	set_current_step(7)
+	set_next_step(7, "回合主控阶段")
+	SkillHelper.update_all_skill_buff("WAR_READY")
+	var controlNo = DataManager.war_control_sort[DataManager.war_control_sort_no]
+	if controlNo >= 0:
+		FlowManager.set_current_control_playerNo(controlNo)
+		FlowManager.add_flow("player_before_ready")
+	else:
+		FlowManager.set_current_control_playerNo(0)
+		FlowManager.add_flow("AI_turn_start")
+	return
+
+# 控制者 - 结束阶段
+func war_step_8() -> void:
+	set_current_step(8)
+	set_next_step(8, "军势行动结束")
+	turn_control_end()
+	return
+
+# 整个势力结束(势力下所有控制器都结束了)
+func war_step_9() -> void:
+	set_current_step(9)
+	set_next_step(9, "军势回合结束")
+	vstate_end()
+	return
+
+# 当日结束
+func war_step_10() -> void:
+	set_current_step(10)
+	var wf = DataManager.get_current_war_fight()
+	var msg = "战争第{0}日结束".format([wf.date])
+	set_next_step(10, msg)
+	# 如果天数超过30，攻方失败
+	if wf.date >= 30:
+		wf.attackerWV.set_lost_reason(War_Vstate.Lose_ReasonEnum.OverDay)
+		# 不直接控制流程，交给检查阶段处理
+		FlowManager.add_flow("war_vstate_settlement")
+		return
+	# 进行当天结束的正常结算
+	wf.date_finished()
+	for wv in wf.war_vstates():
+		if wv.lost():
+			continue
+		# 判断任意一方的粮草不足，则失败
+		if wv.rice > 0:
+			continue
+		wv.set_lost_reason(War_Vstate.Lose_ReasonEnum.FoodExhaustion)
+		if wv.is_reinforcement():
+			continue
+		# 不直接控制流程，交给检查阶段处理
+		FlowManager.add_flow("war_vstate_settlement")
+		return
+	# 一切正常，可以继续
+	war_step_0()
+	return
+
+# 检查是否有额外回合
+func war_step_21() -> void:
+	set_current_step(21)
+	set_next_step(21, "检查额外回合")
+
+	# 初始化额外回合
+	var wf = DataManager.get_current_war_fight()
+	if not wf.start_extra_round():
+		switch_side()
+		return
+	FlowManager.add_flow("draw_actors")
+	war_step_5()
+	return
+
+# AI 布阵
+func war_step_30(wv:War_Vstate) -> void:
+	if wv == null or wv.embattled > 0 or wv.get_main_controlNo() >= 0:
+		war_step_3()
+		return
+	if not wv.ready():
+		wv.embattled = 1
+		war_step_3()
+		return
+
+	set_current_step(30)
+	var msg = wv.get_leader_name() + " AI 布阵"
+	set_next_step(30, msg)
+	DataManager.set_env("布阵方", wv.id)
+	FlowManager.add_flow("AI_auto_embattle")
+	return
+
+# 战争探报，在布阵完毕后执行
+func war_step_31() -> void:
+	set_current_step(31)
+	set_next_step(31)
+	var AIWVs = []
+	var wf = DataManager.get_current_war_fight()
+	if wf.auto_play_mode():
+		for wv in wf.war_vstates():
+			wv.embattleReported = 1
+		war_step_3()
+		return
+
+	for wv in wf.war_vstates():
+		if wv.get_main_controlNo() < 0:
+			if wv.embattleReported > 0:
+				# 已报过，跳过
+				continue
+			if wv.get_war_actors(false, true).empty():
+				# 无人出阵，跳过
+				continue
+			AIWVs.append(wv)
+
+	# 逐个探报
+	for wv in AIWVs:
+		FlowManager.add_flow("draw_actors")
+		var leader = wv.get_leader()
+		war_map.set_cursor_location(leader.position, true)
+		war_map.cursor.hide()
+		var reporter = wf.defenderWV.main_actorId
+		var warType = "来犯"
+		if wv.is_defender():
+			warType = "据守"
+			if wv.is_reinforcement():
+				warType = "增援"
+			reporter = wf.attackerWV.main_actorId
+		DataManager.set_env("战争.探报方", wv.id)
+		var msg = "探报：{0}军{1}人{2}\n共{3}兵\n主将为{4}".format([
+			wv.get_lord_name(), wv.get_actors_count(true), warType,
+			wv.get_all_soldiers(true), leader.get_name()
+		])
+		SceneManager.show_confirm_dialog(msg, reporter)
+		war_step_32()
+		return
+
+	war_step_33()
+	return
+
+# 等待情报确认
+func war_step_32() -> void:
+	# 这里设置 step -1 是为了反复调用等待
+	set_current_step(-1)
+	set_next_step(32)
+	war_map.cursor.show()
+	if Global.is_action_pressed_Up():
+		war_map.cursor_move_up()
+	if Global.is_action_pressed_Down():
+		war_map.cursor_move_down()
+	if Global.is_action_pressed_Left():
+		war_map.cursor_move_left()
+	if Global.is_action_pressed_Right():
+		war_map.cursor_move_right()
+	if not Global.is_action_pressed_AX():
+		return
+	if not SceneManager.dialog_msg_complete(true):
+		return
+	var wvId = DataManager.get_env_int("战争.探报方")
+	var wf = DataManager.get_current_war_fight()
+	var wv = wf.get_war_vstate(wvId)
+	if wv != null:
+		wv.embattleReported = 1
+	war_step_31()
+	return
+
+# 检查是否有附加情报
+func war_step_33() -> void:
+	set_current_step(33)
+	set_next_step(33)
+	if not DataManager.endless_mode:
+		war_step_3()
+		return
+	if DataManager.get_env_int("战争.探报.野外装备") <= 0:
+		var buyings = []
+		var wf = DataManager.get_current_war_fight()
+		for equip in wf.target_city().get_special_equips()["外"]:
+			if equip.remaining() > 0:
+				buyings.append(equip)
+		DataManager.set_env("战争.探报.野外装备", 1)
+		if not buyings.empty():
+			var names = []
+			for equip in buyings:
+				names.append(equip.name())
+			if names.size() > 1:
+				names[names.size() - 1] += "等稀有装备"
+			var msg = "据传：\n{0}野外，有{1}的线索".format([
+				wf.target_city().get_full_name(), "、".join(names)
 			])
-			DataManager.record_war_log(msg)
-			FlowManager.add_flow("draw_actors")
-			set_next_step(5)
-		5:#控制者-准备阶段(技能事件)
-			before_turn_skill_trigger()
-		6:#控制者-主要阶段前（判断是否结束战争）
-			turn_ready_skill_trigger()
-		7:#控制者-主要阶段
-			SkillHelper.update_all_skill_buff("WAR_READY")
-			var controlNo = DataManager.war_control_sort[DataManager.war_control_sort_no];
-			if controlNo >= 0:
-				FlowManager.set_current_control_playerNo(controlNo)
-				FlowManager.add_flow("player_before_ready")
-			else:
-				FlowManager.set_current_control_playerNo(0)
-				FlowManager.add_flow("AI_turn_start")
-		8:#控制者-结束阶段
-			turn_control_end()
-		9:#整个势力结束(势力下所有控制器都结束了)
-			vstate_end()
-		10:#当日结束
-			#1.如果天数超过30，攻方失败
-			if wf.date >= 30:
-				wf.attackerWV.set_lost_reason(War_Vstate.Lose_ReasonEnum.OverDay)
-				# 不直接控制流程，交给检查阶段处理
-				FlowManager.add_flow("war_vstate_settlement")
-				return
-			# 进行当天结束的正常结算
-			wf.date_finished()
-			for wv in wf.war_vstates():
-				if wv.lost():
-					continue
-				#判断任意一方的粮草不足，则失败
-				if wv.rice > 0:
-					continue
-				wv.set_lost_reason(War_Vstate.Lose_ReasonEnum.FoodExhaustion)
-				if wv.is_reinforcement():
-					continue
-				# 不直接控制流程，交给检查阶段处理
-				FlowManager.add_flow("war_vstate_settlement")
-				return
-			# 一切正常，可以继续
-			set_next_step(0)
-		20:#回合准备阶段
-			pass
-		21:#检查额外回合
-			check_tmp_round()
-		22:#额外回合准备
-			prepare_tmp_round()
-		30:#AI优先布阵
-			check_AI_embattle()
-		31:#探报阶段，在布阵完毕后执行
-			report_before_war()
-		32:#等待情报确认
-			wait_war_report_confirmation()
-		33:#检查是否有附加情报
-			check_war_ext_report()
-		34:#等待附加情报确认，目前仅限无尽模式
-			wait_war_ext_report_confirmation()
-		35:#探报结束
-			war_report_done()
-		81:#触发回合结束事件
-			turn_control_end_trigger()
-		82:#实际执行回合结束
-			turn_control_end_clear()
+			SceneManager.show_confirm_dialog(msg, EndlessGame.player_actors[0])
+			# 这里 trick 一下，如果有野外装备，先报，并退回上一步
+			war_step_32()
+			return
+	var valuables = []
+	var dangerous = []
+	for actorId in EndlessGame.AI_actors:
+		var actor = ActorHelper.actor(actorId)
+		var highAttr = 0
+		for attr in ["武", "统", "知"]:
+			if actor._get_attr_int(attr) >= 80:
+				highAttr += 1
+		if highAttr >= 2:
+			dangerous.append(actor.get_name())
+		for type in StaticManager.EQUIPMENT_TYPES:
+			var equip = actor.get_equip(type)
+			if equip.level() == "S":
+				valuables.append(actor.get_name())
+				break
+	if valuables.size() > 0:
+		if valuables.size() > 3:
+			valuables[2] += "等{0}人".format([valuables.size()])
+			valuables = valuables.slice(0, 2)
+		var msg = "据传：\n敌军阵中{0}持有稀有装备，不可轻易错过".format([
+			"、".join(valuables)
+		])
+		SceneManager.show_confirm_dialog(msg, EndlessGame.player_actors[0])
+		war_step_34()
+		return
+	if dangerous.size() > 0:
+		if dangerous.size() > 3:
+			dangerous[2] += "等{0}人".format([dangerous.size()])
+			dangerous = dangerous.slice(0, 2)
+		var msg = "据悉：\n敌军阵中{0}战力不俗，须得小心对付".format([
+			"、".join(dangerous)
+		])
+		SceneManager.show_confirm_dialog(msg, EndlessGame.player_actors[0])
+		war_step_34()
+		return
+	war_step_3()
+	return
+
+# 等待附加情报确认，目前仅限无尽模式
+func war_step_34() -> void:
+	set_current_step(-1)
+	set_next_step(34)
+	war_map.cursor.show()
+	if Global.is_action_pressed_Up():
+		war_map.cursor_move_up()
+	if Global.is_action_pressed_Down():
+		war_map.cursor_move_down()
+	if Global.is_action_pressed_Left():
+		war_map.cursor_move_left()
+	if Global.is_action_pressed_Right():
+		war_map.cursor_move_right()
+	if not Global.is_action_pressed_AX():
+		return
+	if not SceneManager.dialog_msg_complete(true):
+		return
+	war_step_3()
+	return
+
+# 触发回合结束事件
+func war_step_81() -> void:
+	set_current_step(81)
+	set_next_step(81, "军势行动结束触发")
+	turn_control_end_trigger()
+	return
+
+# 实际执行回合结束
+func war_step_82() -> void:
+	set_current_step(82)
+	set_next_step(82, "军势行动结束完成")
+	var wf = DataManager.get_current_war_fight()
+	if wf.is_extra_round():
+		DataManager.game_trace("== 额外回合结束")
+		var actorIds = wf.get_extra_round_actors()
+		var wv = wf.current_war_vstate()
+		wv.turn_end_event(actorIds)
+		SkillHelper.update_all_skill_buff("EXTRA_ROUND_FINISH")
+		SceneManager.hide_all_tool()
+		FlowManager.force_change_controlNo(0)
+		wf.clear_extra_round()
+		switch_side()
+		return
+
+	SceneManager.hide_all_tool()
+	FlowManager.force_change_controlNo(0)
+	DataManager.war_control_sort_no += 1
+	if DataManager.war_control_sort_no >= DataManager.war_control_sort.size():
+		FlowManager.add_flow("vstate_end")
+		return
+	war_step_4()
 	return
 
 # 检查势力败退结算
@@ -264,6 +548,14 @@ func war_vstate_settlement() -> void:
 	# 所有军势都已经处理完了，检查是否主攻方或主守方失败
 	for wv in [wf.defenderWV, wf.attackerWV]:
 		if wv.lost():
+			# 判断是否剧情模式
+			if DataManager.game_mode2 > 0:
+				var dialogCondition = "失败" if wv.get_main_controlNo() >= 0 else "胜利"
+				if not istory.get_story_dialog(dialogCondition, false).empty():
+					SoundManager.play_bgm("res://resource/sounds/bgm/War_End.ogg")
+					DataManager.set_env("剧情.对白类型", dialogCondition)
+					FlowManager.add_flow("story_dialogs")
+					return
 			FlowManager.add_flow("draw_actors")
 			FlowManager.add_flow("war_over_start")
 			return
@@ -308,6 +600,7 @@ func war_vstate_settlement_report() -> void:
 	var enemyWV = wv.get_enemy_vstate()
 	if enemyWV != null:
 		enemyWV.get_leader().attach_free_dialog(msg, 1)
+
 	FlowManager.add_flow("draw_actors")
 	FlowManager.add_flow("player_ready")
 	return
@@ -324,7 +617,7 @@ func war_over_start():
 
 	if DataManager.endless_mode:
 		# 无尽模式不进行
-		DataManager.set_env("战争.结算方", EndlessGame.player_vstateId)
+		DataManager.set_env("战争.结算方", EndlessGame.PLAYER_VSTATEID)
 		FlowManager.add_flow("load_script|war/player_over_settle.gd")
 		FlowManager.add_flow("settle_start")
 		return
@@ -369,14 +662,17 @@ func war_over_end():
 	wf.done()
 	if DataManager.endless_mode:#无尽模式
 		#玩家方，注意这里要遵循固定顺序约定，FIXME later
-		var wv = wf.get_war_vstate(EndlessGame.player_vstateId)
-		if wv.lose_reason != War_Vstate.Lose_ReasonEnum.NotLose:
+		var wv = wf.get_war_vstate(EndlessGame.PLAYER_VSTATEID)
+		if wv.lost():
 			#玩家方失败，直接返回标题
-			SceneManager.restart();
-			return;
-		DataManager.clear_common_variable(["战争","大战场","白兵","单挑","诱发"]);
-		EndlessGame.go_to_pass(EndlessGame.pass_no + 1);
-		return;
+			SceneManager.restart()
+			return
+		# 挑战赛过关基础分 +100
+		if DataManager.is_challange_game():
+			DataManager.add_challange_game_score(100)
+		DataManager.clear_common_variable(["战争","大战场","白兵","单挑","诱发"])
+		EndlessGame.go_to_pass(EndlessGame.pass_no + 1)
+		return
 
 	#如果攻方胜利，城内数值扣减
 	if wf.result == 2:
@@ -404,7 +700,11 @@ func war_over_end():
 
 func turn_control_end():
 	set_current_step(8)
-	set_next_step(8)
+	# 初始化回合结束事件的触发者
+	var wf = DataManager.get_current_war_fight()
+	var wv = wf.current_war_vstate()
+	var msg = wv.get_leader_name() + " 军势行动结束"
+	set_next_step(8, msg)
 	var currentCtrl = -1
 	if DataManager.war_control_sort_no >= 0 \
 		and DataManager.war_control_sort_no < DataManager.war_control_sort.size():
@@ -414,61 +714,51 @@ func turn_control_end():
 		# TODO, 确认为什么回合结束事件的日志会被清除？
 		# turn_control_end 为什么被调用两次？
 		DataManager.reset_war_log()
-	# 初始化回合结束事件的触发者
-	var wf = DataManager.get_current_war_fight()
-	var wv = wf.current_war_vstate()
 	var actorIds = []
 	for wa in wv.get_war_actors(false):
 		actorIds.append(wa.actorId)
-	DataManager.set_env("战争.回合结束触发", actorIds)
-	set_next_step(81)
+	wf.set_env("回合结束触发", actorIds)
+	war_step_81()
 	return
 
 func turn_control_end_trigger():
 	set_current_step(81)
+	set_next_step(81)
 	# 触发回合结束技能
-	var actorIds = DataManager.get_env_int_array("战争.回合结束触发")
+	var wf = DataManager.get_current_war_fight()
+	var actorIds = wf.get_env_int_array("回合结束触发")
 	while not actorIds.empty():
 		var actorId = actorIds.pop_front()
-		DataManager.set_env("战争.回合结束触发", actorIds)
+		wf.set_env("回合结束触发", actorIds)
 		# 支持流程
 		if SkillHelper.auto_trigger_skill(actorId, 20016, "turn_control_end_trigger"):
 			return
-	set_next_step(82)
-	return
-
-func turn_control_end_clear():
-	set_current_step(82)
-	if DataManager.is_extra_war_round():
-		return finish_tmp_round()
-	SceneManager.hide_all_tool()
-	FlowManager.force_change_controlNo(0)
-	DataManager.war_control_sort_no += 1
-	if DataManager.war_control_sort_no >= DataManager.war_control_sort.size():
-		FlowManager.add_flow("vstate_end")
-		return;
-	set_next_step(4)
+	wf.unset_env("回合结束触发")
+	war_step_82()
 	return
 
 func vstate_end():
 	set_current_step(9)
-	SkillHelper.update_all_skill_buff("VSTATE_END")
 	var wf = DataManager.get_current_war_fight()
 	var wv = wf.current_war_vstate()
+	var msg = wv.get_leader_name() + " 军势行动结束"
+	set_next_step(9, msg)
+	SkillHelper.update_all_skill_buff("VSTATE_END")
 	#势力回合结束事件
 	wv.turn_end_event()
-	set_next_step(21)
+	war_step_21()
 	return
 
 func check_embattle():
 	set_current_step(3)
+	set_next_step(3, "军势布阵")
 	# 总是优先 AI 布阵
 	var wf = DataManager.get_current_war_fight()
 	for wv in wf.war_vstates():
 		if wv.embattled > 0:
 			continue
 		if wv.get_main_controlNo() < 0:
-			check_AI_embattle()
+			war_step_30(wv)
 			return
 	# 检查是否发出探报
 	if DataManager.game_mode2 == 0:
@@ -478,7 +768,7 @@ func check_embattle():
 			if wv.get_war_actors(false, true).empty():
 				continue
 			if wv.embattleReported == 0:
-				set_next_step(31)
+				war_step_31()
 				return
 
 	# 接下来是玩家布阵
@@ -509,7 +799,7 @@ func check_embattle_trigger():
 			return
 	SkillHelper.update_all_skill_buff("EMBATTLED")
 	# 仅第一次触发各方主将
-	var leaderEmbattleTriggered = DataManager.get_env_int_array("战争.布阵.触发ID")
+	var leaderEmbattleTriggered = wf.get_env_int_array("布阵触发")
 	for wv in wf.war_vstates():
 		var leader = wv.get_leader()
 		if leader == null or leader.disabled:
@@ -517,10 +807,11 @@ func check_embattle_trigger():
 		if leader.actorId in leaderEmbattleTriggered:
 			continue
 		leaderEmbattleTriggered.append(leader.actorId)
-		DataManager.set_env("战争.布阵.触发ID", leaderEmbattleTriggered)
+		wf.set_env("布阵触发", leaderEmbattleTriggered)
 		if SkillHelper.auto_trigger_skill(leader.actorId, 20019, "check_embattle_trigger"):
 			return
-	set_next_step(4)
+	wf.unset_env("布阵触发")
+	war_step_4()
 	return
 
 func back_to_war():
@@ -543,9 +834,10 @@ func back_to_war():
 		SkillHelper.auto_trigger_skill(id, 20008)
 	
 	var loser = bf.get_loser()
+	var winner = null
 	if loser != null:
 		var loserActor = loser.actor()
-		var winner = loser.get_battle_enemy_war_actor()
+		winner = loser.get_battle_enemy_war_actor()
 		var winnerActor = winner.actor()
 		var goldLine = winnerActor.get_equip_feature_max("低德搜刮")
 		var gold = goldLine - winnerActor.get_moral()
@@ -623,6 +915,21 @@ func back_to_war():
 				wa.attach_free_dialog(msg, 2)
 				break
 
+	if DataManager.endless_mode \
+		and DataManager.is_challange_game() \
+		and loser != null \
+		and loser.initWvId == EndlessGame.PLAYER_VSTATEID:
+		# 挑战赛判分
+		# 判断是否阵亡
+		if loser.wvId == EndlessGame.PLAYER_VSTATEID \
+			and loser.actor().is_status_dead():
+			DataManager.add_challange_game_score(-11)
+		# 判断是否投降
+		if loser.wvId != EndlessGame.PLAYER_VSTATEID \
+			and winner != null \
+			and winner.wvId != EndlessGame.PLAYER_VSTATEID:
+			DataManager.add_challange_game_score(-50)
+
 	wf.update_war_process()
 	# 解除黑幕
 	FlowManager.add_flow("enable_add")
@@ -630,21 +937,22 @@ func back_to_war():
 	return
 
 func back_to_war_induce_skill():
+	var wf = DataManager.get_current_war_fight()
+	var key = "技能触发武将.20020"
 	var bf = DataManager.get_current_battle_fight()
-	var key = "战争.技能触发武将.20020"
-	var triggered = DataManager.get_env_int_array(key)
+	var triggered = wf.get_env_int_array(key)
 	for actorId in [bf.get_attacker_id(), bf.get_defender_id()]:
 		if actorId in triggered:
 			continue
 		triggered.append(actorId)
-		DataManager.set_env(key, triggered)
+		wf.set_env(key, triggered)
 		if SkillHelper.auto_trigger_skill(actorId, 20020, "back_to_war_induce_skill"):
 			return
 	# 等待诱发技结束
 	var st = SkillHelper.get_current_skill_trigger()
 	if st != null and st.wait:
 		return
-	DataManager.unset_env(key)
+	wf.unset_env(key)
 	FlowManager.add_flow("back_to_war_clear")
 	FlowManager.add_flow("draw_actors")
 	return
@@ -685,21 +993,22 @@ func back_to_war_clear_trigger() -> void:
 		var controlNo = DataManager.war_control_sort[DataManager.war_control_sort_no]
 		if controlNo >= 0:
 			FlowManager.set_current_control_playerNo(controlNo)
+	var wf = DataManager.get_current_war_fight()
+	var key = "技能触发武将.20050"
+	var triggered = wf.get_env_int_array(key)
 	var bf = DataManager.get_current_battle_fight()
-	var key = "战争.技能触发武将.20050"
-	var triggered = DataManager.get_env_int_array(key)
 	for actorId in [bf.get_attacker_id(), bf.get_defender_id()]:
 		if actorId in triggered:
 			continue
 		triggered.append(actorId)
-		DataManager.set_env(key, triggered)
+		wf.set_env(key, triggered)
 		if SkillHelper.auto_trigger_skill(actorId, 20050, "back_to_war_clear_trigger"):
 			return
 	# 等待诱发技结束
 	var st = SkillHelper.get_current_skill_trigger()
 	if st != null and st.wait:
 		return
-	DataManager.unset_env(key)
+	wf.unset_env(key)
 	FlowManager.add_flow("draw_actors")
 	if bf.will_auto_finish_turn():
 		FlowManager.add_flow("player_end")
@@ -720,22 +1029,23 @@ func before_turn_skill_trigger():
 	set_current_step(5)
 	set_next_step(5)
 	var wf = DataManager.get_current_war_fight()
+	var key = "技能触发武将.20013"
+	var triggered = wf.get_env_int_array(key)
 	var wv = wf.current_war_vstate()
 	for wa in wv.get_war_actors(false):
-		var prepared = DataManager.get_env_int_array("战争.准备阶段触发")
-		if wa.actorId in prepared:
+		if wa.actorId in triggered:
 			continue
-		prepared.append(wa.actorId)
+		triggered.append(wa.actorId)
+		wf.set_env(key, triggered)
 		# 道术、神策附加暂时放在这里处理，摆脱技能依赖
 		check_daoshu_appended(wa)
 		check_shence_appended(wa)
 		check_feijian_damage(wa)
 		check_special_equipments(wa)
-		DataManager.set_env("战争.准备阶段触发", prepared)
 		if SkillHelper.auto_trigger_skill(wa.actorId, 20013, "before_turn_skill_trigger"):
 			return
-	DataManager.unset_env("战争.准备阶段触发")
-	set_next_step(6)
+	wf.unset_env(key)
+	war_step_6()
 	return
 
 # 等待准备阶段结束后的技能
@@ -749,256 +1059,27 @@ func turn_ready_skill_trigger():
 	set_current_step(6)
 	set_next_step(6)
 	var wf = DataManager.get_current_war_fight()
+	var key = "技能触发武将.20028"
+	var triggered = wf.get_env_int_array(key)
 	var wv = wf.current_war_vstate()
 	for wa in wv.get_war_actors():
-		var prepared = DataManager.get_env_int_array("战争.准备结束触发")
-		if wa.actorId in prepared:
+		if wa.actorId in triggered:
 			continue
-		prepared.append(wa.actorId)
-		DataManager.set_env("战争.准备结束触发", prepared)
+		triggered.append(wa.actorId)
+		wf.set_env(key, triggered)
 		if SkillHelper.auto_trigger_skill(wa.actorId, 20028, "turn_ready_skill_trigger"):
 			return
-	DataManager.unset_env("战争.准备结束触发")
-	set_next_step(7)
+	wf.unset_env(key)
+	war_step_7()
 	return
 
 # 切换行动方
 func switch_side():
 	var wf = DataManager.get_current_war_fight()
 	if wf.switch_war_vstate():
-		set_next_step(10)
+		war_step_10()
 		return
-	set_next_step(1)
-	return
-
-# 检查是否有额外回合
-func check_tmp_round():
-	DataManager.game_trace("== 额外回合检查")
-	var extraRoundActorIds = DataManager.get_extra_round_actors()
-	if extraRoundActorIds.empty():
-		switch_side()
-		return
-	# 再次检查状态
-	var rechecked = []
-	for actorId in extraRoundActorIds:
-		var wa = DataManager.get_war_actor(actorId)
-		if wa == null or wa.disabled:
-			continue
-		rechecked.append(actorId)
-	if rechecked.empty():
-		switch_side()
-		return
-	set_next_step(22)
-	return
-
-# 初始化额外回合
-func prepare_tmp_round():
-	DataManager.game_trace("== 额外回合准备")
-	FlowManager.add_flow("draw_actors")
-	# 此处不再检查，在 check_tmp_round 中保证已经检查过
-	var tmpRoundActorIds = DataManager.get_extra_round_actors()
-	DataManager.war_control_sort.clear();
-	DataManager.war_control_sort_no = 0;
-	var wf = DataManager.get_current_war_fight()
-	var wv = wf.current_war_vstate()
-	DataManager.war_control_sort.append(wv.get_main_controlNo())
-	DataManager.player_choose_actor = tmpRoundActorIds[0];
-	for actorId in tmpRoundActorIds:
-		SkillHelper.decrease_actor_skill_cd(20000, actorId)
-		SkillHelper.decrease_actor_skill_variable(20000, actorId)
-		var wa = DataManager.get_war_actor(actorId)
-		wa.refresh_poker_random(true)
-		wa.recharge_action_point()
-	DataManager.set_env("战争.临时回合", 1)
-	set_next_step(5)
-	return
-
-func finish_tmp_round():
-	var wf = DataManager.get_current_war_fight()
-	var wv = wf.current_war_vstate()
-	DataManager.game_trace("== 额外回合结束")
-	DataManager.common_variable.erase("战争.临时回合")
-	var actorIds = DataManager.get_extra_round_actors()
-	wv.turn_end_event(actorIds)
-	SkillHelper.update_all_skill_buff("EXTRA_ROUND_FINISH")
-	SceneManager.hide_all_tool()
-	FlowManager.force_change_controlNo(0)
-	switch_side()
-	return
-
-# 确认 AI 布阵结束
-func check_AI_embattle():
-	set_current_step(30)
-	set_next_step(30)
-	var wf = DataManager.get_current_war_fight()
-	for wv in wf.war_vstates():
-		if wv.embattled > 0:
-			continue
-		if not wv.ready():
-			wv.embattled = 1
-			continue
-		if wv.get_main_controlNo() >= 0:
-			continue
-		DataManager.set_env("布阵方", wv.id)
-		FlowManager.add_flow("AI_auto_embattle")
-		return
-	set_next_step(3)
-	return
-
-# 战前情报汇报
-func report_before_war():
-	set_current_step(31)
-	var AIWVs = []
-	var wf = DataManager.get_current_war_fight()
-	if wf.auto_play_mode():
-		for wv in wf.war_vstates():
-			wv.embattleReported = 1
-		set_next_step(3)
-		return
-	for wv in wf.war_vstates():
-		if wv.get_main_controlNo() < 0:
-			# 已报过，跳过
-			if wv.embattleReported > 0:
-				continue
-			# 无人出阵，跳过
-			if wv.get_war_actors(false, true).empty():
-				continue
-			AIWVs.append(wv)
-	# 逐个探报
-	for wv in AIWVs:
-		FlowManager.add_flow("draw_actors")
-		var leader = wv.get_leader()
-		war_map.set_cursor_location(leader.position, true)
-		war_map.cursor.hide()
-		var reporter = wf.defenderWV.main_actorId
-		var warType = "来犯"
-		if wv.is_defender():
-			warType = "据守"
-			if wv.is_reinforcement():
-				warType = "增援"
-			reporter = wf.attackerWV.main_actorId
-		DataManager.set_env("战争.探报方", wv.id)
-		var msg = "探报：{0}军{1}人{2}\n共{3}兵\n主将为{4}".format([
-			wv.get_lord_name(), wv.get_actors_count(true), warType,
-			wv.get_all_soldiers(true), leader.get_name()
-		])
-		SceneManager.show_confirm_dialog(msg, reporter)
-		set_next_step(32)
-		return
-	set_next_step(33)
-	return
-
-func wait_war_report_confirmation():
-	set_current_step(-1)
-	set_next_step(32)
-	var war_map = SceneManager.current_scene().war_map
-	war_map.cursor.show()
-	if Global.is_action_pressed_Up():
-		war_map.cursor_move_up()
-	if Global.is_action_pressed_Down():
-		war_map.cursor_move_down()
-	if Global.is_action_pressed_Left():
-		war_map.cursor_move_left()
-	if Global.is_action_pressed_Right():
-		war_map.cursor_move_right()
-	if not Global.is_action_pressed_AX():
-		return
-	if not SceneManager.dialog_msg_complete(true):
-		return
-	var wvId = DataManager.get_env_int("战争.探报方")
-	var wf = DataManager.get_current_war_fight()
-	var wv = wf.get_war_vstate(wvId)
-	if wv != null:
-		wv.embattleReported = 1
-	set_next_step(31)
-	return
-
-func check_war_ext_report():
-	set_current_step(33)
-	if not DataManager.endless_mode:
-		set_next_step(35)
-		return
-	if DataManager.get_env_int("战争.探报.野外装备") <= 0:
-		var buyings = []
-		var wf = DataManager.get_current_war_fight()
-		for equip in wf.target_city().get_special_equips()["外"]:
-			if equip.remaining() > 0:
-				buyings.append(equip)
-		DataManager.set_env("战争.探报.野外装备", 1)
-		if not buyings.empty():
-			var names = []
-			for equip in buyings:
-				names.append(equip.name())
-			if names.size() > 1:
-				names[names.size() - 1] += "等稀有装备"
-			var msg = "据传：\n{0}野外，有{1}的线索".format([
-				wf.target_city().get_full_name(), "、".join(names)
-			])
-			SceneManager.show_confirm_dialog(msg, EndlessGame.player_actors[0])
-			# 这里 trick 一下，如果有野外装备，先报，并退回上一步
-			set_next_step(32)
-			return
-	var valuables = []
-	var dangerous = []
-	for actorId in EndlessGame.AI_actors:
-		var actor = ActorHelper.actor(actorId)
-		var highAttr = 0
-		for attr in ["武", "统", "知"]:
-			if actor._get_attr_int(attr) >= 80:
-				highAttr += 1
-		if highAttr >= 2:
-			dangerous.append(actor.get_name())
-		for type in StaticManager.EQUIPMENT_TYPES:
-			var equip = actor.get_equip(type)
-			if equip.level() == "S":
-				valuables.append(actor.get_name())
-				break
-	if valuables.size() > 0:
-		if valuables.size() > 3:
-			valuables[2] += "等{0}人".format([valuables.size()])
-			valuables = valuables.slice(0, 2)
-		var msg = "据传：\n敌军阵中{0}持有稀有装备，不可轻易错过".format([
-			"、".join(valuables)
-		])
-		SceneManager.show_confirm_dialog(msg, EndlessGame.player_actors[0])
-		set_next_step(34)
-		return
-	if dangerous.size() > 0:
-		if dangerous.size() > 3:
-			dangerous[2] += "等{0}人".format([dangerous.size()])
-			dangerous = dangerous.slice(0, 2)
-		var msg = "据悉：\n敌军阵中{0}战力不俗，须得小心对付".format([
-			"、".join(dangerous)
-		])
-		SceneManager.show_confirm_dialog(msg, EndlessGame.player_actors[0])
-		set_next_step(34)
-		return
-	set_next_step(35)
-	return
-
-func wait_war_ext_report_confirmation():
-	set_current_step(-1)
-	set_next_step(34)
-	var war_map = SceneManager.current_scene().war_map
-	war_map.cursor.show()
-	if Global.is_action_pressed_Up():
-		war_map.cursor_move_up()
-	if Global.is_action_pressed_Down():
-		war_map.cursor_move_down()
-	if Global.is_action_pressed_Left():
-		war_map.cursor_move_left()
-	if Global.is_action_pressed_Right():
-		war_map.cursor_move_right()
-	if not Global.is_action_pressed_AX():
-		return
-	if not SceneManager.dialog_msg_complete(true):
-		return
-	set_next_step(35)
-	return
-
-func war_report_done():
-	set_current_step(35)
-	set_next_step(3)
+	war_step_1()
 	return
 
 func check_daoshu_appended(wa:War_Actor)->void:
@@ -1148,18 +1229,18 @@ func prepare_turn_skill_trigger()->void:
 	set_next_step(1)
 	var wf = DataManager.get_current_war_fight()
 	var wv = wf.current_war_vstate()
-	var actorIds = DataManager.get_env_int_array("战争.回合准备武将")
+	var actorIds = wf.get_env_int_array("回合开始触发")
 	wv.turn_begin_event(actorIds)
 	while not actorIds.empty():
 		var actorId = actorIds.pop_front()
-		DataManager.set_env("战争.回合准备武将", actorIds)
+		wf.set_env("回合开始触发", actorIds)
 		var wa = wv.get_war_actor(actorId)
 		if wa == null:
 			continue
 		if SkillHelper.auto_trigger_skill(wa.actorId, 20001, "prepare_turn_skill_trigger"):
 			return
-	DataManager.unset_env("战争.回合准备武将")
-	set_next_step(2)
+	wf.unset_env("回合开始触发")
+	war_step_2()
 	return
 
 func try_release_loser(bf:BattleFight, loser:War_Actor) -> bool:

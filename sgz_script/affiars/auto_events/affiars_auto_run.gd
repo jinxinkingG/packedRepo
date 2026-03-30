@@ -51,6 +51,8 @@ func _process(delta: float) -> void:
 	if FlowManager.has_task():
 		return
 
+	month_events._process(delta)
+
 	if SceneManager.is_animation_playing():
 		return
 
@@ -65,7 +67,6 @@ func _process(delta: float) -> void:
 
 	player_control._process(delta)
 	AI_control._process(delta)
-	month_events._process(delta)
 	vstate_events._process(delta)
 	return
 
@@ -122,14 +123,19 @@ func month_init_vstates()->void:
 		DataManager.vstates_sort.insert(0, prioritizedVstateId)
 		DataManager.set_env("额外命令书", extraOrderbooks)
 	DataManager.unset_env("优先行动势力")
-	#先改步骤再切换玩家
-	FlowManager.add_flow("month_event")
+	# 历史注释是先改步骤再切换玩家
+	# 但可能引起内政收获等动画卡死问题
+	# 单人模式下，改为先 control 0
+	# 否则动画的回调会无法正常执行
+	# FIXME later
 	FlowManager.set_current_control_playerNo(0)
+	FlowManager.add_flow("month_event")
 	return
 
 #月事件
 func month_event():
-	month_events.start();
+	month_events.start()
+	return
 
 #势力初始化
 func vstate_init():

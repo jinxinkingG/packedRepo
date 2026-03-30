@@ -17,7 +17,7 @@ const DIALOGS = [
 
 #开始-选择6格内的任意任意
 func effect_20039_start():
-	if DataManager.is_extra_war_round():
+	if wf.is_extra_round():
 		var msg = "当前已是额外回合\n【{0}】可另择良机".format([ske.skill_name])
 		play_dialog(me.actorId, msg, 2, 2999)
 		return
@@ -93,17 +93,17 @@ func on_view_model_2002():
 	return
 
 func effect_20039_6():
-	DataManager.add_actor_to_extra_round(me.actorId)
+	wf.add_actor_to_extra_round(actorId)
 	var selected = get_env_int_array(EFFECT_CHOOSE_NAME)
 	for selectedId in selected:
-		DataManager.add_actor_to_extra_round(selectedId)
+		wf.add_actor_to_extra_round(selectedId)
 	var dialogs = DIALOGS.duplicate()
 	dialogs.shuffle()
-	var msg = dialogs[0]+"\n(结束后进入额外回合)"
+	var msg = dialogs[0]+"\n（结束后进入额外回合"
 	ske.cost_war_cd(99999)
 	unset_env(EFFECT_CHOOSE_NAME)
 	unset_env(EFFECT_CHOOSE_ACTOR)
-	play_dialog(me.actorId, msg, 0, 2999)
+	play_dialog(actorId, msg, 0, 2999)
 	return
 
 func on_view_model_2999():

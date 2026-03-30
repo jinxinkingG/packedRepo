@@ -540,10 +540,11 @@ func battle_over():
 	return
 	
 func go_to_solo():
-	var current_action_no = int(DataManager.common_variable["白兵.行动单位"]);
-	var unit:Battle_Unit = DataManager.battle_units[current_action_no];
-	if(unit.has_action_task()=="单挑"):
-		unit.complete_action_task();
+	var bf = DataManager.get_current_battle_fight()
+	var unitId = DataManager.get_env_int("白兵.行动单位")
+	var bu = bf.battle_unit(unitId)
+	if bu != null and bu.has_action_task() == "单挑":
+		bu.complete_action_task()
 	
 	DataManager.battle_run = false
 	DataManager.solo_run = true

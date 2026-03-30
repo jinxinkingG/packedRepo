@@ -83,7 +83,7 @@ func check_AI_perform()->bool:
 	if city.get_lord_id() != StaticManager.ACTOR_ID_DONGZHUO:
 		return false
 	var taishi = ActorHelper.actor(StaticManager.ACTOR_ID_DONGZHUO)
-	if taishi.is_face_positive() or taishi.get_moral() > 1:
+	if taishi.is_side_positive() or taishi.get_moral() > 1:
 		return false
 	return true
 

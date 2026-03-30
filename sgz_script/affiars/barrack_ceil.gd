@@ -233,10 +233,6 @@ func ceil_persuade_result() -> void:
 		# SkillHelper.auto_trigger_skill(search_actorId, 10001, "")
 		msg = "可喜可贺!\n{0}已加入我方"
 		mood = 1
-		if DataManager.is_challange_game():
-			DataManager.add_challange_game_score(-50)
-			msg += "\n触发挑战赛限制，-50 分"
-			mood = 3
 	msg = msg.format([targetActor.get_name()])
 	city.attach_free_dialog(msg, actorId, mood)
 	FlowManager.add_flow("city_enter_menu")

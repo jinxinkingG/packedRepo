@@ -1,7 +1,7 @@
 extends "effect_10000.gd"
 
 #流光主动技
-#【流光】内政，主动技。创造一把「流光」剑武器，装备自身，替换当前的武器，当前武器进入装备库。
+#【流光】内政，君主主动技。你可铸一剑，名为「流光剑」，并装备给自身。游戏中限1次。
 
 const EFFECT_ID = 10145
 const FLOW_BASE = "effect_" + str(EFFECT_ID)

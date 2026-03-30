@@ -40,9 +40,6 @@ func _perform_skill():
 	ske.war_report()
 
 	me.position = Vector2(dic["x"], dic["y"])
-	skill_end_clear(true)
-	FlowManager.add_flow("draw_actors")
-	FlowManager.add_flow("player_skill_end_trigger")
 	me.attach_free_dialog(msg, 0)
 	return
 

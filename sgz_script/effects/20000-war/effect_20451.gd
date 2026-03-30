@@ -6,7 +6,7 @@ extends "effect_20000.gd"
 const ACTIIVE_EFFECT_ID = 20452
 
 func on_trigger_20013()->bool:
-	if not DataManager.is_extra_war_round():
+	if not wf.is_extra_round():
 		return false
 	# 判断排异发动标记
 	var flags = ske.get_war_skill_val_int_array(ACTIIVE_EFFECT_ID)
@@ -25,7 +25,7 @@ func on_trigger_20013()->bool:
 	return false
 
 func on_trigger_20016() -> bool:
-	if not DataManager.is_extra_war_round():
+	if not wf.is_extra_round():
 		return false
 	# 判断排异发动标记
 	var flags = ske.get_war_skill_val_int_array(ACTIIVE_EFFECT_ID)

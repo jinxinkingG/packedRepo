@@ -15,23 +15,23 @@ func _check_status() -> void:
 	if not actor.has_side():
 		return
 
-	if actor.is_status_officed() and not actor.is_face_positive():
+	if actor.is_status_officed() and not actor.is_side_positive():
 		# 检查是否有机会转阳
 		var cityId = get_working_city_id()
 		if cityId < 0:
 			return
 		var city = clCity.city(cityId)
 		if city.get_vstate_id() == StaticManager.VSTATEID_CAOCAO:
-			actor.set_face(true)
+			actor.set_side("阳")
 		return
 
-	if actor.is_face_positive() and not actor.is_status_officed():
-		actor.set_face(false)
+	if actor.is_side_positive() and not actor.is_status_officed():
+		actor.set_side("阴")
 		var cityId = actor.get_exiled_city_id()
 		var city = clCity.city(cityId)
 		if cityId < 0:
 			city = clCity.city(cityId)
-		actor.set_face(false)
+		actor.set_side("阴")
 		var msg = "胡笳十八拍\n也难掩蒲草的悲歌……\n（身世流离，转为 <阴> 面".format([
 			actor.get_name()
 		])

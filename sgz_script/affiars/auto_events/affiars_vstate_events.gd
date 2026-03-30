@@ -3,37 +3,36 @@ extends Resource
 const current_step_name = "内政-势力事件-当前步骤";
 const next_step_name = "内政-势力事件-下个步骤";
 
-
-#读取当前步骤
+# 读取当前步骤
 func get_current_step():
 	if(!current_step_name in DataManager.common_variable):
 		return -1;
 	return int(DataManager.common_variable[current_step_name]);
 
-#设置当前步骤
+# 设置当前步骤
 func set_current_step(step:int):
 	DataManager.common_variable[current_step_name]=int(step);
 	
-#读取下个步骤
+# 读取下个步骤
 func get_next_step():
 	if(!next_step_name in DataManager.common_variable):
 		return -1;
 	return int(DataManager.common_variable[next_step_name]);
 
-#设置下个步骤
+# 设置下个步骤
 func set_next_step(step:int):
 	DataManager.common_variable[next_step_name]=int(step);
 
 
 func _init() -> void:
 	FlowManager.bind_signal_method("next_vstate_events",self,"next_vstate_events");
-	pass
+	return
 
 func start():
-	_show_vstateinfo();
-	set_next_step(0);
-	set_current_step(-1);
-	pass
+	_show_vstateinfo()
+	set_next_step(0)
+	set_current_step(-1)
+	return
 
 func end():
 	_show_vstateinfo();

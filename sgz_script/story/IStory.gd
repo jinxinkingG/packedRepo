@@ -113,16 +113,16 @@ func _init_war_actors_with_side(actor_data_list, wv:War_Vstate):
 	return true
 
 func get_story_dialog(condition:String, pop_it:bool = true)->Dictionary:
-	if (DataManager.game_mode2 == 0):
-		DataManager.common_variable.erase("剧情.对白");
-		return {};
-	if ( not DataManager.common_variable.has("剧情.对白")):
-		return {};
-	var read_array = Array(DataManager.common_variable["剧情.对白"]);
-	for dic_dialog in read_array:
-		if (dic_dialog["触发条件"] == condition):
-			var result = Dictionary(dic_dialog).duplicate();
-			if (pop_it):
-				read_array.erase(dic_dialog);
-			return result;
-	return {};
+	var key = "剧情.对白"
+	if DataManager.game_mode2 == 0:
+		DataManager.unset_env(key)
+		return {}
+	var dialogs = DataManager.get_env_array(key)
+	for dialog in dialogs:
+		if dialog["触发条件"] == condition:
+			var result = dialog.duplicate()
+			if pop_it:
+				dialogs.erase(dialog)
+				DataManager.set_env(key, dialogs)
+			return result
+	return {}

@@ -57,8 +57,8 @@ func effect_10026_start() -> void:
 	# 禁用此技能
 	ske.affair_cd(99999)
 	# 如果是阴面，转为阳面，这个逻辑主要是为了刘协
-	if actor.is_face_positive():
-		actor.set_face(true)
+	if not actor.is_side_positive():
+		actor.set_side("阳")
 	# 改变忠诚度
 	actor.set_loyalty(100)
 	currentKingActor.set_loyalty(99)

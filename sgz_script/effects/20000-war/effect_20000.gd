@@ -639,6 +639,14 @@ func get_enemy_targets(from:War_Actor, allowWalls:bool=false, distance:int=-1, i
 			continue
 		if wa.get_buff_label_turn(["潜行"]) > 0:
 			continue
+		# 借露：施加方的将领不能将目标作为主动技能的目标
+		var _ganlu = wa.get_buff("借露")
+		if _ganlu["回合数"] > 0:
+			var _ganlu_from = int(_ganlu["来源武将"])
+			if _ganlu_from >= 0:
+				var _ganlu_wa = DataManager.get_war_actor(_ganlu_from)
+				if _ganlu_wa != null and (from == _ganlu_wa or from.is_teammate(_ganlu_wa)):
+					continue
 		if not allowWalls:
 			var blockCN = map.get_blockCN_by_position(wa.position)
 			if blockCN in StaticManager.CITY_BLOCKS_CN:
@@ -828,7 +836,29 @@ func start_battle_and_finish(fromId:int, targetId:int, source:String="", sourceA
 	if source == "":
 		source = ske.skill_name
 	SkillHelper.remove_all_skill_trigger()
+	FlowManager.bind_import_flow("start_battle_after_skill", self)
+	DataManager.set_env("战争.技能完成回调", "start_battle_after_skill")
+	var info = {
+		"fromId": fromId,
+		"targetId": targetId,
+		"source": source,
+		"sourceActorId": sourceActorId,
+		"forcedTerrian": forcedTerrian,
+		"willAutoFinishTurn": 1 if ske.will_auto_finish_turn() else 0
+	}
+	DataManager.set_env("战争.技能触发战斗", info)
+	FlowManager.add_flow("player_skill_end_trigger")
+	return
 
+func start_battle_after_skill() -> void:
+	var info = DataManager.get_env_dict("战争.技能触发战斗")
+	var fromId = Global.intval(info["fromId"])
+	var targetId = Global.intval(info["targetId"])
+	var source = Global.strval(info["source"])
+	var sourceActorId = Global.intval(info["sourceActorId"])
+	var forcedTerrian = Global.strval(info["forcedTerrian"])
+	var willAutoFinishTurn = Global.intval(info["willAutoFinishTurn"])
+	DataManager.unset_env("战争.技能触发战斗")
 	DataManager.player_choose_actor = fromId
 	DataManager.set_env("武将", targetId)
 	var logInfo = "- <y{0}>发动【<r{1}>】攻击<y{2}>".format([
@@ -848,7 +878,7 @@ func start_battle_and_finish(fromId:int, targetId:int, source:String="", sourceA
 	DataManager.set_env("战斗.强制地形", forcedTerrian)
 
 	var player_attack = Global.load_script(DataManager.mod_path+"sgz_script/war/player_attack.gd")
-	player_attack._go_to_battle(false, source, ske.will_auto_finish_turn())
+	player_attack._go_to_battle(false, source, willAutoFinishTurn > 0)
 	LoadControl.end_script()
 	return
 

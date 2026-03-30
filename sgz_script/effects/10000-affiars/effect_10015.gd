@@ -17,7 +17,7 @@ func on_view_model_3000_delta(delta:float):
 func check_AI_perform():
 	actor = ActorHelper.actor(actorId)
 	# 阴面、德 > 1 时，概率发动
-	if not actor.is_face_positive() and actor.get_moral() > 1:
+	if not actor.is_side_positive() and actor.get_moral() > 1:
 		return Global.get_rate_result(60 - actor.get_moral())
 	return false
 

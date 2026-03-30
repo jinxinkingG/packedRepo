@@ -100,6 +100,9 @@ func _recover_damage()->bool:
 	var recorded = ske.get_war_skill_val_dic()
 	for key in recorded:
 		var targetId = Global.intval(key)
+		# 再次检查是否 int key
+		if key != str(targetId):
+			continue
 		var damage = Global.intval(recorded[key])
 		if targetId < 0 or damage <= 0:
 			continue

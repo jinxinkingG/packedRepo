@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
 #陷阵效果实现
-#【陷阵】小战场，锁定技。你默认4步4弓（兵力＞800时，兵力平均到这8个单位，阵型1号位和2号位不站人，步兵站骑兵位。括号内描述不写进游戏），你的步兵攻击距离变为1~2，基础减伤倍率+0.3，攻击具备穿刺效果；非守城，你的弓兵基础减伤0.1，攻击到骑兵时，可以额外攻击一次。
+#【陷阵】小战场，锁定技。你默认4步4弓，白刃战有特定阵型。你的步兵：攻击距离变为1~2，攻击具备穿刺效果，基础减伤倍率+0.3。非城战，你的弓兵：基础减伤0.1，攻击到骑兵时，可以额外攻击一次。
 
 const ENHANCEMENT_MELEE = {
 	"穿刺距离": 1,
@@ -16,12 +16,19 @@ const ENHANCEMENT_ARCHER = {
 }
 
 func on_trigger_30003() -> bool:
-	bf.update_extra_formation_setting(
-		actorId, ske.skill_name, "常规", {
-			"兵种数量": {"弓":4,"步":4},
-			"分配顺序": ["弓", "步"],
-		}
-	)
+	var data = {
+		"兵种数量": {"步":4, "弓":4},
+		"分配顺序": ["步", "弓"],
+	}
+	# 固定阵型 12/13
+	var formation = 11312
+	if actorId == bf.get_attacker_id():
+		data["攻方阵型"] = formation
+	else:
+		data["守方阵型"] = formation
+
+	bf.update_extra_formation_setting(actorId, ske.skill_name, "特殊", data)
+
 	return false
 
 func on_trigger_30009() -> bool:

@@ -1,9 +1,10 @@
 extends "effect_40000.gd"
 
 #怒斩效果
-#【怒斩】单挑,锁定技。单挑暴击率+20%。单挑击败敌将后，若你方武将人数少于对方，你的机动力+6。
+#【怒斩】单挑,锁定技。单挑暴击率+20%。单挑击败敌将后，若你方武将人数少于对方，你的机动力+6，体力+15。
 
 const BUFF_AP = 6
+const HP_RECOVER = 15
 
 func on_trigger_40005()->bool:
 	var rate = DataManager.get_env_int("单挑.暴击率")
@@ -21,8 +22,6 @@ func on_trigger_40002()->bool:
 	var enemyCount = me.get_enemy_war_actors(false).size()
 	if teammatesCount >= enemyCount:
 		return false
-	ske.change_actor_ap(actorId, BUFF_AP)
-	ske.war_report()
 	return true
 
 func effect_40001_AI_start():
@@ -30,14 +29,19 @@ func effect_40001_AI_start():
 	return
 
 func effect_40001_start():
-	var enemy = me.get_battle_enemy_war_actor()
-	var msg = "{0}击败{1}，机动力 +{2}".format([
-		me.get_name(), enemy.get_name(), BUFF_AP,
-	])
-	SceneManager.show_confirm_dialog(msg)
-	LoadControl.set_view_model(2000)
-	return
+	ske.change_actor_ap(actorId, BUFF_AP)
+	var recovered = ske.change_actor_hp(actorId, HP_RECOVER)
+	ske.war_report()
 
-func on_view_model_2000()->void:
-	wait_for_skill_result_confirmation("")
+	var enemy = me.get_battle_enemy_war_actor()
+	var msg = "{0}击败{1}，触发【{2}】\n机动力回复 {3}"
+	if recovered > 0:
+		msg += "\n体力回复 {4}"
+	msg = msg.format([
+		me.get_name(), enemy.get_name(),
+		ske.skill_name, BUFF_AP, recovered,
+	])
+	SceneManager.current_scene().update_actor_info()
+	SceneManager.show_confirm_dialog(msg)
+	LoadControl.set_view_model(2990)
 	return

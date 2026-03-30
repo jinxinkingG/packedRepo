@@ -85,6 +85,10 @@ func AI_skill_end_trigger():
 
 # AI 行动前检查
 func AI_before_ready():
+
+	# 临时方案，在此移除一次性技能
+	SkillHelper.check_and_remove_once_skill()
+
 	#检查是否升级
 	_check_actors_levelup()
 	if _check_wait_dialog():

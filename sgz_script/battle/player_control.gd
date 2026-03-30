@@ -263,16 +263,14 @@ func battle_set_formation():
 	var inverted = false
 	if actorId == bf.get_defender_id():
 		inverted = true
-	var formation = DataManager.get_env_int("预设阵型")
 
 	#图片数组
 	var items = []
 	var separation = 90
 	var msg = "请排兵布阵："
-	var formations = [0, 1, 2, 3]
-	if formation >= 0:
+	var formations = bf.get_possible_formations(actorId)
+	if formations.size() == 1:
 		msg = "已锁定阵型："
-		formations = [formation]
 
 	#显示阵型图片选项
 	for f in formations:

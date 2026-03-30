@@ -25,7 +25,7 @@ func on_trigger_20027()->bool:
 		ske.sub_actor_soldiers(leader.actorId, soldiers)
 		ske.war_report()
 	# 主将即将完蛋，在此之前，让自己成为主将
-	me.war_vstate().main_actorId = me.actorId
+	me.war_vstate().main_actorId = actorId
 	var msg = "{0}虽去，吾今尚在！\n云何以一人废战事？\n（{1}【{2}】成为主将".format([
 		DataManager.get_actor_honored_title(ske.actorId, me.actorId),
 		me.get_name(), ske.skill_name,

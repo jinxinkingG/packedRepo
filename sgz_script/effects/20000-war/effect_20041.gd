@@ -14,7 +14,7 @@ const DIALOGS = [
 ]
 
 func effect_20041_start():
-	if DataManager.is_extra_war_round():
+	if wf.is_extra_round():
 		var msg = "当前已是额外回合\n【{0}】可另择良机".format([ske.skill_name])
 		play_dialog(me.actorId, msg, 2, 2999)
 		return
@@ -99,10 +99,10 @@ func on_view_model_2001():
 	return
 
 func effect_20041_perform():
-	DataManager.add_actor_to_extra_round(me.actorId)
+	wf.add_actor_to_extra_round(actorId)
 	var selected = get_env_int_array(EFFECT_CHOOSE_NAME)
 	for selectedId in selected:
-		DataManager.add_actor_to_extra_round(selectedId)
+		wf.add_actor_to_extra_round(selectedId)
 	selected.erase(actorId)
 	selected.append(actorId)
 	ske.set_war_skill_val(selected, 1)

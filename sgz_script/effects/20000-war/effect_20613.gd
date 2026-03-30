@@ -31,7 +31,7 @@ const DIALOGS = [
 
 func on_trigger_20013() -> bool:
 	var actor = me.actor()
-	if actor.is_face_positive():
+	if actor.is_side_positive():
 		return false
 	var sleepingDragon = me.war_vstate().get_war_actor(StaticManager.ACTOR_ID_ZHUGELIANG)
 	if sleepingDragon == null or sleepingDragon.disabled or not sleepingDragon.has_position():
@@ -75,7 +75,7 @@ func done():
 
 	# 转面
 	var actor = me.actor()
-	actor.set_face(true)
+	actor.set_side("阳")
 	actor.set_loyalty(min(99, sleepingDragon.actor().get_loyalty()))
 	
 	if not SkillHelper.actor_has_skills(me.actorId, [ZHIJI_SKILL_NAME]):

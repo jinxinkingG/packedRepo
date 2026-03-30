@@ -22,7 +22,7 @@ func on_trigger_20008()->bool:
 	if me == null:
 		# 不判断 disabled，因为被俘虏了，就应该是 disabled
 		return false
-	if actor.is_face_positive():
+	if actor.is_side_positive():
 		return false
 	if not actor.is_status_captured():
 		return false
@@ -97,9 +97,9 @@ func done():
 		wv.capture_actors.erase(me.actorId)
 	# 转面
 	var actor = me.actor()
-	if actor.is_face_positive():
+	if actor.is_side_positive():
 		return
-	actor.set_face(true)
+	actor.set_side("阳")
 	actor.set_loyalty(min(99, sleepingDragon.actor().get_loyalty()))
 	actor.set_soldiers(500)
 	actor.set_status_officed()

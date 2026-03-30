@@ -290,6 +290,10 @@ func think_about_tactic(actorId:int)->bool:
 
 #---------尝试主动技-----------
 func think_about_active_skill(actorId:int)->bool:
+
+	# 临时方案，在此移除一次性技能
+	SkillHelper.check_and_remove_once_skill()
+
 	for skill in SkillHelper.get_actor_active_skills(actorId):
 		for effect in SkillHelper.get_skill_effects(actorId, skill, ["主动"]):
 			var gd = Global.load_script(effect.path)

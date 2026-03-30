@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #挑衅主动技 #施加状态
-#【挑衅】大战场,主动技。你可选择能攻击到己方武将的1名敌将发动。令对方选择：是否对己方人员发起攻击。若对方同意，白刃战的前3个回合内，双方不能撤出战场；若对方拒绝，对之附加定止状态1回合。每个回合限1次。可对城地形目标发动。
+#【挑衅】大战场,主动技。你可选择能攻击到己方武将的1名敌将发动。令对方选择：是否对己方人员发起攻击。若对方同意，白刃战的前3个回合内，双方不能撤出战场；若对方拒绝，对之附加定止状态1回合，并有30%概率额为附加1回合 {疲兵} 状态。每个回合限1次。可对城地形目标发动。
 
 const EFFECT_ID = 20194
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -124,6 +124,8 @@ func effect_20194_7():
 	var withId = get_env_int("战争.挑衅队友")
 
 	ske.set_war_buff(targetId, "定止", 1)
+	if DataManager.pseduo_random_war() < 30:
+		ske.set_war_buff(targetId, "疲兵", 1)
 	report_skill_result_message(ske, 2005)
 	return
 

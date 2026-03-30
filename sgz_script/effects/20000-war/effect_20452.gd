@@ -10,7 +10,7 @@ const PASSIVE_EFFECT_ID = 20451
 const EXP_LEVELS = [1500, 3000, 6000, -1]
 
 func effect_20452_start()->void:
-	if DataManager.is_extra_war_round():
+	if wf.is_extra_round():
 		var msg = "额外回合中\n不可发动【{0}】".format([
 			ske.skill_name
 		])
@@ -78,12 +78,12 @@ func on_view_model_2001():
 func effect_20452_3():
 	var targetId = DataManager.get_env_int("目标")
 	var msg = "将独自进入额外回合"
-	DataManager.add_actor_to_extra_round(actorId)
+	wf.add_actor_to_extra_round(actorId)
 	if targetId >= 0:
 		msg = "将与{0}一起进入额外回合".format([
 			ActorHelper.actor(targetId).get_name()
 		])
-		DataManager.add_actor_to_extra_round(targetId)
+		wf.add_actor_to_extra_round(targetId)
 	var flags = get_skill_flags()
 	# 标记的格式：<选择的队友，已发动次数，发动状态>
 	# 发动状态：0：无效，1：已发动，2：已在额外回合生效

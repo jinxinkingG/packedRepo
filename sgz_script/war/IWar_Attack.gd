@@ -1,11 +1,13 @@
 extends Resource
 
 # 获取可以被攻击的武将，若没有目标，返回错误类型
-# @return [targets, reason]
+# @return [targets, reason, reporter]
 func get_can_attack_actors(fromId:int, igonreAP:bool=false, evenForbidden:bool=false)->Array:
 
 	var targets = []
 	var reason = ""
+	var reporter = -1
+	var mood = 2
 
 	var fromWA = DataManager.get_war_actor(fromId)
 	if fromWA.get_buff_label_turn(["禁止攻击"]) > 0 and not evenForbidden:
@@ -72,16 +74,37 @@ func get_can_attack_actors(fromId:int, igonreAP:bool=false, evenForbidden:bool=f
 				continue
 		if wa.get_buff_label_turn(["潜行"]) > 0:
 			excludedTargets[wa.actorId] = "潜行"
+		# 借露：施加方的将领不能将目标作为攻击的目标
+		var _ganlu = wa.get_buff("借露")
+		if _ganlu["回合数"] > 0:
+			var _ganlu_from = int(_ganlu["来源武将"])
+			if _ganlu_from >= 0:
+				var _ganlu_wa = DataManager.get_war_actor(_ganlu_from)
+				if _ganlu_wa != null and (fromWA == _ganlu_wa or fromWA.is_teammate(_ganlu_wa)):
+					var msg = "余甘犹在，且容一时"
+					var m = 2
+					if wa.actorId == StaticManager.ACTOR_ID_LIUBEI:
+						msg = "何人欲害玄德！"
+						m = 0
+					msg += "\n（【甘露】效果\n（无法攻击{0}".format([
+						wa.get_name(),
+					])
+					excludedTargets[wa.actorId] = [_ganlu_from, "借露", msg, m]
 		targets.append(wa.actorId)
 
 	if targets.size() == 1 and targets[0] in excludedTargets:
 		# 只有一个目标且被排除，提示原因
 		var cause = excludedTargets[targets[0]]
-		if typeof(cause) == TYPE_ARRAY and cause.size() == 2:
-			reason = "因{0}【{1}】效果\n无法攻击{2}".format([
-				ActorHelper.actor(cause[0]).get_name(), cause[1],
-				ActorHelper.actor(targets[0]).get_name(),
-			])
+		if typeof(cause) == TYPE_ARRAY:
+			if cause.size() == 2:
+				reason = "因{0}【{1}】效果\n无法攻击{2}".format([
+					ActorHelper.actor(cause[0]).get_name(), cause[1],
+					ActorHelper.actor(targets[0]).get_name(),
+				])
+			elif cause.size() == 4:
+				reason = cause[2]
+				reporter = int(cause[0])
+				mood = int(cause[3])
 		else:
 			cause = Global.strval(cause)
 			reason = "因【{0}】效果\n无法攻击{1}".format([
@@ -93,7 +116,7 @@ func get_can_attack_actors(fromId:int, igonreAP:bool=false, evenForbidden:bool=f
 	if targets.empty() and reason == "":
 		reason = "没有可攻击的目标"
 
-	return [PoolIntArray(targets), reason]
+	return [PoolIntArray(targets), reason, reporter, mood]
 
 #获取攻击指定目标所需机动力
 func get_attack_ap(fromId:int,toId:int):

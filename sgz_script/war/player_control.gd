@@ -895,16 +895,39 @@ func player_before_ready():
 	return
 
 func player_skill_end_trigger():
+	# 支持指定回调 flow
+	var nextFlow = DataManager.get_env_str("战争.技能完成回调")
+	DataManager.unset_env("战争.技能完成回调")
+	if nextFlow == "":
+		nextFlow = "player_ready"
 	var ske = SkillHelper.read_skill_effectinfo()
 	DataManager.set_env("战争.完成技能", ske.output_data())
-	if SkillHelper.auto_trigger_skill(ske.skill_actorId, 20040, "player_ready"):
+	if SkillHelper.auto_trigger_skill(ske.skill_actorId, 20040, nextFlow):
 		return
 	DataManager.unset_env("战争.完成技能")
-	FlowManager.add_flow("player_ready")
+	FlowManager.add_flow(nextFlow)
 	return
 
 #回合提示对话
 func player_ready():
+
+	# 临时方案，在此移除一次性技能
+	SkillHelper.check_and_remove_once_skill()
+
+	# 第七届挑战赛特殊逻辑，无尽模式超时判负
+	if DataManager.endless_mode \
+		and DataManager.is_challange_game():
+		var dic = DataManager.get_env_dict("挑战赛")
+		var start = -1
+		var current = int(Time.get_unix_time_from_system())
+		if "passStart" in dic:
+			start = Global.intval(dic["passStart"])
+		if current - start >= EndlessGame.PASS_DURATION_LIMIT:
+			var wf = DataManager.get_current_war_fight()
+			var wv = wf.get_war_vstate(EndlessGame.PLAYER_VSTATEID)
+			if wv != null:
+				wv.set_lost_reason(War_Vstate.Lose_ReasonEnum.OverDay)
+
 	# 兼容历史错误数据
 	DataManager.set_env("战争-AI-步骤", -1)
 	Global.clear_waits()
@@ -966,22 +989,22 @@ func _player_ready()->bool:
 		FlowManager.add_flow("player_end")
 		return false
 
-	var scene_war = SceneManager.current_scene();
-	var war_map = scene_war.war_map;
-	war_map.next_shrink_actors.clear();
+	var scene_war = SceneManager.current_scene()
+	var war_map = scene_war.war_map
+	war_map.next_shrink_actors.clear()
 	
-	war_map.clear_can_choose_actors();
-	war_map.show_color_block_by_position([]);
+	war_map.clear_can_choose_actors()
+	war_map.show_color_block_by_position([])
 	war_map.cursor.show()
 	var msg = "{0}大人".format([wv.get_leader().get_name()])
-	if DataManager.is_extra_war_round():
-		if DataManager.is_extra_war_round_over():
+	if wf.is_extra_round():
+		if wf.is_extra_round_over():
 			SceneManager.show_unconfirm_dialog("结束额外回合\n观看敌军行动")
 			set_view_model(11)
 			return false
 		msg += "\n当前为额外回合"
-		msg += "\n请向{0}下达命令".format([DataManager.get_extra_round_desc()])
-		var extraActorIds = DataManager.get_extra_round_actors()
+		msg += "\n请向{0}下达命令".format([wf.get_extra_round_desc()])
+		var extraActorIds = wf.get_extra_round_actors()
 		war_map.show_war_actors_disabled(true, wv.id, extraActorIds)
 	elif wv.is_reinforcement():
 		msg += "\n目前为援军行动"
@@ -1059,11 +1082,12 @@ func actor_info():
 
 #武将控制菜单
 func actor_control_menu():
+	var wf = DataManager.get_current_war_fight()
 	var actorId = DataManager.player_choose_actor
-	if DataManager.is_extra_war_round():
-		if not actorId in DataManager.get_extra_round_actors():
+	if wf.is_extra_round():
+		if not actorId in wf.get_extra_round_actors():
 			SceneManager.show_confirm_dialog("{0}的额外回合\n{1}不可行动".format([
-				DataManager.get_extra_round_desc(),
+				wf.get_extra_round_desc(),
 				ActorHelper.actor(actorId).get_name()
 			]))
 			set_view_model(10)
@@ -1120,15 +1144,15 @@ func actor_control_menu():
 
 #当前控制者默认控制的武将（必须是可控的）
 func _defaut_war_actor(controlNo:int)->War_Actor:
-	#额外回合，第一个额外行动武将
-	if DataManager.is_extra_war_round():
-		for tmpActorId in DataManager.get_extra_round_actors():
-			var tmpWA = DataManager.get_war_actor(tmpActorId)
-			if tmpWA == null or tmpWA.disabled:
-				continue
-			return tmpWA
 	var wf = DataManager.get_current_war_fight()
 	var wv = wf.current_war_vstate()
+	# 如果是额外回合，寻找第一个可行动的武将
+	if wf.is_extra_round():
+		for extraRoundActorId in wf.get_extra_round_actors():
+			var extraRoundWA = wv.get_war_actor(extraRoundActorId)
+			if extraRoundWA == null or extraRoundWA.disabled:
+				continue
+			return extraRoundWA
 	return wv.get_leader()
 
 #检查武将升级，并插入闲时对话
@@ -1179,13 +1203,15 @@ func story_dialogs():
 	var scene_war = SceneManager.current_scene();
 	var war_map = scene_war.war_map;
 	war_map.show_actors_name(true);
-	var dic_dialog:Dictionary = istory.get_story_dialog(DataManager.common_variable["剧情.对白类型"],true);
+	var type = DataManager.get_env_str("剧情.对白类型")
+	var dic_dialog:Dictionary = istory.get_story_dialog(type, true)
 	if(!dic_dialog.has("武将")):
 		dic_dialog["武将"]=-1;
 	if(!dic_dialog.has("心情")):
 		dic_dialog["心情"]=2;
 	SceneManager.show_confirm_dialog(dic_dialog["文字"],int(dic_dialog["武将"]),int(dic_dialog["心情"]));
 	war_map.next_shrink_actors = [int(dic_dialog["武将"])];
+	return
 
 func war_status():
 	set_view_model(20)

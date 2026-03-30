@@ -283,8 +283,8 @@ func induce_player_effect():
 	if gd.has_method(effect_method):
 		DataManager.player_choose_skill = ske.skill_name
 		SceneManager.hide_all_tool()
-		# 此处检查一次性技能并移除之
-		SkillHelper.check_and_remove_once_skill(ske)
+		# 此处检查一次性技能并标记待移除
+		SkillHelper.mark_actor_once_senario_skill_used(ske)
 		# 触发诱发技的回调，不支持 flow，推荐行为是仅记录
 		DataManager.set_env("战争.诱发技能", ske.output_data())
 		SkillHelper.auto_trigger_skill(ske.skill_actorId, 20041)

@@ -14,7 +14,10 @@ func on_trigger_10011()->bool:
 		return false
 	wf.from_city().add_gold(-COST_GOLD)
 	ske.affair_cd(12)
-	wf.set_env("额外可撤退城市", [wf.from_city().ID])
+	var extraExtractions = wf.get_env_int_array("额外可撤退城市")
+	extraExtractions.erase(wf.from_city().ID)
+	extraExtractions.append(wf.from_city().ID)
+	wf.set_env("额外可撤退城市", extraExtractions)
 	var messages = wf.get_env_array("攻击宣言")
 	var msg = "盟友地利，可为我所用\n假道而击{1}\n{2}何以当之！".format([
 		"", wf.target_city().get_full_name(),

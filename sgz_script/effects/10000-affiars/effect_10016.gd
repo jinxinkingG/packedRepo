@@ -8,9 +8,9 @@ func on_trigger_10001()->bool:
 	if actor.get_loyalty() == 100:
 		for vs in clVState.all_vstates():
 			if vs.get_lord_id() == actorId:
-				actor.set_face(true)
+				actor.set_side("阳")
 				return false
-	actor.set_face(false)
+	actor.set_side("阴")
 	return false
 
 func on_trigger_10022()->bool:

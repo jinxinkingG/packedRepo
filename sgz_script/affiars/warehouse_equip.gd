@@ -341,7 +341,7 @@ func get_current_vstate_id()->int:
 			return DataManager.vstates_sort[DataManager.vstate_no]
 		20000:
 			if DataManager.endless_mode:
-				return EndlessGame.player_vstateId
+				return EndlessGame.PLAYER_VSTATEID
 			return DataManager.vstates_sort[DataManager.vstate_no]
 	return -1
 

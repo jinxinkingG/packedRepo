@@ -56,7 +56,7 @@ func on_trigger_10024() -> bool:
 func effect_10130_start() -> void:
 	var target = "阳"
 	var flagRequired = 1
-	if actor.is_face_positive():
+	if actor.is_side_positive():
 		target = "阴"
 		flagRequired = -1
 	var history = ske.affair_get_skill_val_int_array()
@@ -81,11 +81,11 @@ func on_view_model_2000() -> void:
 
 func effect_10130_confirmed() -> void:
 	var msg = "吾横扫六合，谁堪抵挡？\n然马上可定乱，不可以服人\n当布王道，天下治，方称吾心"
-	if actor.is_face_positive():
+	if actor.is_side_positive():
 		msg = "逆贼横行，豺虎当道\n墨守成规，何以平乱？\n休教天下人负我！"
-		actor.set_face(false)
+		actor.set_side("阴")
 	else:
-		actor.set_face(true)
+		actor.set_side("阳")
 
 	play_dialog(actorId, msg, 2, 2999)
 	return

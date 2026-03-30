@@ -112,6 +112,7 @@ func wait_for_yesno(flowForYes:String, flowForNo:String="")->void:
 		if not SceneManager.dialog_msg_complete(false):
 			return
 		LoadControl.set_view_model(-1)
+		Input.action_release("EMU_B")
 		if flowForNo != "":
 			FlowManager.add_flow(flowForNo)
 			return
@@ -122,6 +123,8 @@ func wait_for_yesno(flowForYes:String, flowForNo:String="")->void:
 	if not SceneManager.dialog_msg_complete(true):
 		return
 	LoadControl.set_view_model(-1)
+	Input.action_release("EMU_A")
+	Input.action_release("EMU_B")
 	match SceneManager.actor_dialog.lsc.cursor_index:
 		0:
 			FlowManager.add_flow(flowForYes)

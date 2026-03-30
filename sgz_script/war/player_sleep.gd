@@ -15,8 +15,9 @@ func _input_key(delta: float):
 
 #待机
 func sleep_start():
+	var wf = DataManager.get_current_war_fight()
 	var msg = "既然如此，全军待机\n观看敌方行动"
-	if DataManager.is_extra_war_round():
+	if wf.is_extra_round():
 		msg = "结束额外回合\n观看敌方行动"
 	SceneManager.show_confirm_dialog(msg, DataManager.player_choose_actor)
 	LoadControl.set_view_model(131)
