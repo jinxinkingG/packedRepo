@@ -10,8 +10,12 @@ const RECOVER_HP = 10
 const BUFF_SKILL = "轻甲"
 
 func effect_20645_start() -> void:
+	var fn = actor.get_first_name()
 	var targets = []
 	for targetId in get_teammate_targets(me):
+		var ta = ActorHelper.actor(targetId)
+		if ta.get_first_name() != fn and not ta.is_injured():
+			continue
 		for skillName in SkillHelper.get_actor_unlocked_skill_names(targetId).values():
 			if "龙" in skillName or "战" in skillName:
 				targets.append(targetId)
@@ -37,8 +41,15 @@ func effect_20645_selected() -> void:
 	ske.change_actor_hp(targetId, RECOVER_HP)
 
 	var honoring = DataManager.get_actor_honored_title(targetId, actorId)
-	var msg = "{0}努力\n勿负吾宗之望".format([honoring])
-	if targetWA.actor().get_first_name() == actor.get_first_name():
+	var name = "龙战"
+	for skillName in SkillHelper.get_actor_unlocked_skill_names(targetId).values():
+		if "龙" in skillName or "战" in skillName:
+			name = skillName
+			break
+	var fn = actor.get_first_name()
+	var msg = "{0}努力\n勿负【{1}】威名".format([honoring, name])
+	if targetWA.actor().get_first_name() == fn:
+		msg = "{0}努力\n勿负吾宗之望".format([honoring])
 		ske.add_war_skill(targetId, BUFF_SKILL, 1)
 		var relation = DataManager.get_actor_honored_title(actorId, targetId)
 		if not "父" in relation:

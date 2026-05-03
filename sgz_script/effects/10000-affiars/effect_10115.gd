@@ -9,17 +9,8 @@ func on_trigger_10001() -> bool:
 	return false
 
 func on_trigger_10021() -> bool:
-	var vstateId = -1
-	var sceneId = DataManager.get_current_scene_id()
-	match sceneId:
-		10000:
-			var city = clCity.city(get_working_city_id())
-			vstateId = city.get_vstate_id()
-		20000:
-			var wf = DataManager.get_current_war_fight()
-			me = wf.get_war_actor(actorId)
-			if me != null:
-				vstateId = me.vstateId
+	var city = clCity.city(get_working_city_id())
+	var vstateId = city.get_vstate_id()
 	if vstateId < 0:
 		return false
 	update_buff(vstateId)

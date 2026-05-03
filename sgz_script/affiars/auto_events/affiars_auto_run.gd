@@ -51,11 +51,6 @@ func _process(delta: float) -> void:
 	if FlowManager.has_task():
 		return
 
-	month_events._process(delta)
-
-	if SceneManager.is_animation_playing():
-		return
-
 	# 检查闲时对话
 	if LoadControl.all_controllers_done() and check_free_dialog():
 		return
@@ -64,6 +59,11 @@ func _process(delta: float) -> void:
 		102:
 			Global.wait_for_confirmation("free_dialog_done", VIEW_MODEL_NAME, delta)
 			return
+
+	month_events._process(delta)
+
+	if SceneManager.is_animation_playing():
+		return
 
 	player_control._process(delta)
 	AI_control._process(delta)
@@ -406,8 +406,10 @@ func check_stars_month_init()->void:
 			city.set_property("金", 500)
 			city.set_property("米", 800)
 			city.insert_actor(0, actor.actorId)
+			actor.set_status_officed(vstateId)
 			actor.set_soldiers(1000)
 			actor.set_loyalty(100)
+			clVState.vstate(vstateId).set_alive()
 			createdVstateIds.append(vstateId)
 		else:
 			var lordId = city.get_lord_id()

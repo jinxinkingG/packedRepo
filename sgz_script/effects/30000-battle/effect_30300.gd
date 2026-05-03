@@ -10,11 +10,12 @@ func on_trigger_30005() -> bool:
 	if weapon.level() == "S":
 		return false
 
-	actor.set_battle_equip(weapon.type, EQUIP_ID)
+	ske.battle_change_actor_equip(actorId, weapon.type, EQUIP_ID)
 	weapon = actor.get_weapon()
 	var msg = "{0}在手\n{1}受死！".format([
 		weapon.name(),
 		DataManager.get_actor_naughty_title(enemy.actorId, actorId)
 	])
+
 	me.attach_free_dialog(msg, 0, 30000)
 	return false

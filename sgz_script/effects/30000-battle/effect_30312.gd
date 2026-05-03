@@ -23,7 +23,7 @@ func on_trigger_30005() -> bool:
 			armor = ARMOR_BONUS * 2
 	elif lord.actorId == StaticManager.ACTOR_ID_SUNJIAN:
 		armor = ARMOR_BONUS / 2
-	if armor <= 0 or bu.extra_armor >= armor:
+	if armor <= 0:
 		return false
 	ske.battle_change_unit_armor(bu, armor)
 	ske.battle_report()

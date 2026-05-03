@@ -12,12 +12,12 @@ func get_can_attack_actors(fromId:int, igonreAP:bool=false, evenForbidden:bool=f
 	var fromWA = DataManager.get_war_actor(fromId)
 	if fromWA.get_buff_label_turn(["禁止攻击"]) > 0 and not evenForbidden:
 		reason = "已被禁止攻击"
-		return [PoolIntArray(targets), reason]
+		return [PoolIntArray(targets), reason, fromWA.actorId, 3]
 
 	var srb = SkillRangeBuff.max_for_actor("攻击所需体力", fromId)
 	if srb != null and fromWA.actor().get_hp() < srb.effectTagVal:
 		reason = "因【{0}】效果\n体力不足，无法攻击".format([srb.skillName])
-		return [PoolIntArray(targets), reason]
+		return [PoolIntArray(targets), reason, fromWA.actorId, 3]
 
 	DataManager.set_env("战争.攻击距离", fromWA.get_attack_distance())
 	DataManager.set_env("战争.目标地形排除", [])

@@ -55,7 +55,7 @@ func effect_20720_start() -> void:
 	var targetData = {}
 	for t in targets:
 		targetIds.append(t[0])
-		targetData[t[0]] = t[1]
+		targetData[str(t[0])] = t[1]
 	DataManager.set_env("甘露.目标数据", targetData)
 	if not wait_choose_actors(PoolIntArray(targetIds), "对何人发动{0}?", true, false):
 		return
@@ -69,7 +69,7 @@ func on_view_model_2000() -> void:
 func effect_20720_target_selected() -> void:
 	var targetId = DataManager.get_env_int("目标")
 	var targetData = DataManager.get_env_dict("甘露.目标数据")
-	var skills = Global.arrval(targetData[targetId])
+	var skills = Global.arrval(targetData[str(targetId)])
 	if skills.size() == 1:
 		# 只有一个技能，直接进入确认
 		set_env("甘露.选中技能", skills[0])

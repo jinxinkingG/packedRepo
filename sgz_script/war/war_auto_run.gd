@@ -857,7 +857,8 @@ func back_to_war():
 
 		set_env("战争.战败位置", {"x":loser.position.x,"y":loser.position.y})
 		var posDic = DataManager.get_env_dict("后退位置")
-		if not posDic.empty():
+		# 增加检查，人得活着，不然还移动个毛线
+		if not posDic.empty() and not loser.disabled:
 			#本身不在城门、太守府中才会后退(修改：城墙可以被击退)
 			var blockCN = war_map.get_blockCN_by_position(loser.position);
 			if not blockCN in ["太守府","城门"]:

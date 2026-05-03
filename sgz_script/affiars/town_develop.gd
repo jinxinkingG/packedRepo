@@ -111,19 +111,6 @@ func develop_2():
 	cmd.lastActionId = DataManager.player_choose_actor
 	cmd.decide_cost()
 
-	var developSetting = StaticManager.get_develop_setting()
-	var develop_gif_groups = developSetting["develop_gif_groups"]
-	var develop_ask_dialog = developSetting["develop_ask_dialog"]
-	var animation_name = developSetting["animation_name"]
-	var dialog_id = develop_gif_groups[cmd.type][cmd.devLevel][cmd.devRnd]
-	while dialog_id == -1:
-		var r = Global.get_random(0, 4)
-		dialog_id = develop_gif_groups[cmd.type][cmd.devLevel][r]
-	#对话
-	var dialog_text = develop_ask_dialog[cmd.type][dialog_id]
-	dialog_text = dialog_text.replace("@cost", str(cmd.get_real_cost()))
-	DataManager.set_env("对话", dialog_text)
-	DataManager.set_env("动画", animation_name[cmd.type][dialog_id])
 	FlowManager.add_flow("develop_3")
 	LoadControl.set_view_model(112)
 	return
@@ -134,8 +121,7 @@ func develop_3():
 	FlowManager.flows_history_list.clear()
 	FlowManager.flows_history_list.append("develop_3")
 	var cmd = DataManager.get_current_develop_command()
-	var dialog = DataManager.get_env_str("对话")
-	SceneManager.show_confirm_dialog(dialog, cmd.actionId)
+	SceneManager.show_confirm_dialog(cmd.dialog, cmd.actionId)
 	SceneManager.show_cityInfo(true)
 	LoadControl.set_view_model(113)
 	return
@@ -164,8 +150,7 @@ func develop_5():
 #动画
 func develop_6():
 	var cmd = DataManager.get_current_develop_command()
-	var anim = DataManager.get_env_str("动画")
-	SceneManager.play_affiars_animation(anim, "develop_7", false, cmd.get_notice(), cmd.actionId, 1)
+	SceneManager.play_affiars_animation(cmd.anim, "develop_7", false, cmd.get_notice(), cmd.actionId, 1)
 	cmd.execute()
 	LoadControl.set_view_model(116)
 	return

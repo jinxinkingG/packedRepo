@@ -62,6 +62,10 @@ func effect_20662_avoided() -> void:
 	if targets.empty():
 		goto_step("end")
 		return
+	if me.get_controlNo() < 0:
+		DataManager.set_env("目标", targets[randi() % targets.size()])
+		goto_step("selected")
+		return
 	var msg = "选择敌军，与{0}交换机动力".format([
 		ActorHelper.actor(fromActorId).get_name(),
 	])
@@ -83,7 +87,7 @@ func effect_20662_selected() -> void:
 
 	ske.change_actor_ap(fromWA.actorId, -apDiff)
 	ske.change_actor_ap(targetWA.actorId, apDiff)
-	var msg = "{0}的机动力现为 {1}\n{2}的机动力现为 {3}".format([
+	var msg = "令{0}与{2}交换机动力\n{0}的机动力现为 {1}\n{2}的机动力现为 {3}".format([
 		fromWA.get_name(), fromWA.action_point,
 		targetWA.get_name(), targetWA.action_point,
 	])

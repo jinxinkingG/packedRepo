@@ -17,6 +17,7 @@ func on_trigger_30024()->bool:
 	if not "剑" in weaponFeatures:
 		weaponFeatures.append("剑")
 		bu.dic_combat["武器特性"] = weaponFeatures
+		bu.set_combat_val("额外攻击力", 0, ske.skill_name)
 	else:
 		bu.set_combat_val("额外攻击力", 10, ske.skill_name)
 	return false

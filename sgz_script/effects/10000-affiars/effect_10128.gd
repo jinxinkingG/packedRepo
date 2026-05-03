@@ -85,18 +85,6 @@ func effect_10128_response() -> void:
 	cmd.costRate = 0
 	cmd.decide_cost()
 
-	var developSetting = StaticManager.get_develop_setting()
-	var develop_gif_groups = developSetting["develop_gif_groups"]
-	var develop_ask_dialog = developSetting["develop_ask_dialog"]
-	var animation_name = developSetting["animation_name"]
-	var anim = "Town_Develop_Farm_00"
-	if cmd.type != "防灾":
-		var dialogId = develop_gif_groups[cmd.type][cmd.devLevel][cmd.devRnd]
-		while dialogId == -1:
-			var r = Global.get_random(0, 4)
-			dialogId = develop_gif_groups[cmd.type][cmd.devLevel][r]
-		anim = animation_name[cmd.type][dialogId]
-
 	var msg = "{0}爱民\n{1}别无所长，愿效一臂之力\n（{2}助力{3}".format([
 		DataManager.get_actor_honored_title(actorId, volunteer.actorId),
 		volunteer.get_short_name(), volunteer.get_name(), action,
@@ -106,7 +94,7 @@ func effect_10128_response() -> void:
 	DataManager.set_env("内政.对话PENDING", msgs)
 
 	SceneManager.play_affiars_animation(
-		anim, "", false,
+		cmd.anim, "", false,
 		msg, cmd.actionId, 1)
 	LoadControl.set_view_model(2001)
 	return

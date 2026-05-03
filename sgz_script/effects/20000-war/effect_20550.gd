@@ -38,6 +38,7 @@ func effect_20550_start() -> void:
 			msg = "寻尔多时，竟自撞来\n却不是求死！"
 		else:
 			msg = "阻我寻仇\n容你不得！"
+	msg += "\n（【{0}】触发战斗".format([ske.skill_name])
 	me.attach_free_dialog(msg, 0)
 	start_battle_and_finish(actorId, ske.actorId)
 	skill_end_clear(true)

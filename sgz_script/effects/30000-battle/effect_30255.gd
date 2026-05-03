@@ -1,7 +1,7 @@
 extends "effect_30000.gd"
 
-#无前锁定技 #武将强化
-#【无前】单挑，锁定技。你免疫暴击，且造成伤害时，回复伤害量X%的血量（X＝你的等级*5）。
+#神勇锁定技
+#【神勇】小战场，锁定技。你触发 {横劈} 或者 {穿刺} 时，护甲+1；你的护甲值＞0时，护甲可承受超出该护甲值的伤害。
 
 const ENHANCEMENT = {
 	"临界护甲": 1,
@@ -25,16 +25,20 @@ func on_trigger_30023()->bool:
 	var hurtId = DataManager.get_env_int("白兵.受伤单位")
 	if defendUnitId != hurtId:
 		return false
-	var speared = DataManager.get_env_int_array("白兵.枪类影响目标")
-	var splashed = DataManager.get_env_int_array("白兵.刀类影响目标")
-	# 刀类特殊，主要目标也在列表中
-	if speared.empty() and splashed.size() <= 1:
-		return false
-	# 只计主单位
-	if hurtId in speared:
-		return false
-	if splashed.size() > 0 and hurtId != splashed[0]:
+
+	# 只针对主要目标判断
+	if bu.last_attack_units.empty() or hurtId != bu.last_attack_units[0]:
 		return false
 
-	ske.battle_change_unit_armor(bu, 1)
+	var armor = 0
+	var speared = DataManager.get_env_int_array("白兵.枪类影响目标")
+	var splashed = DataManager.get_env_int_array("白兵.刀类影响目标")
+	# 刀类，主要目标在列表中
+	if splashed.size() > 1:
+		armor += 1
+	# 枪类，主目标不在列表中
+	if speared.size() > 0:
+		armor += 1
+
+	ske.battle_change_unit_armor(bu, armor)
 	return false

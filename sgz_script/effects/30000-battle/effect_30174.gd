@@ -9,7 +9,7 @@ func on_trigger_30005():
 	ske.battle_change_morale(actor.get_level())
 	ske.battle_report()
 
-	var msg = "{0}必击而破之！\n（{1}发动【破军】\n（{2}主将技被禁用".format([
+	var msg = "{0}必击而破之！\n（{1}发动【破军】\n（{2}技能被禁用".format([
 		actor.get_short_name(),
 		me.get_name(), enemy.get_leader().get_name(),
 	])

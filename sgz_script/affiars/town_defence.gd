@@ -69,8 +69,7 @@ func defence_2():
 #防灾：对话提示金额
 func defence_3():
 	var cmd = DataManager.get_current_develop_command()
-	var msg = "为预防灾害\n需{0}两金".format([cmd.get_real_cost()])
-	SceneManager.show_confirm_dialog(msg, cmd.actionId)
+	SceneManager.show_confirm_dialog(cmd.dialog, cmd.actionId)
 	SceneManager.show_cityInfo(true)
 	LoadControl.set_view_model(143)
 	return

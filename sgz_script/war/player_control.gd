@@ -33,6 +33,7 @@ func _init() -> void:
 	FlowManager.bind_signal_method("war_log_close", self)
 	FlowManager.bind_import_flow("war_jump_effect", self)
 	FlowManager.bind_import_flow("player_skill_end_trigger", self)
+	FlowManager.bind_import_flow("start_battle_after_skill", self)
 	FlowManager.bind_import_flow("player_turn_dialog", self)
 	FlowManager.bind_import_flow("player_leave_confirmed", self)
 	FlowManager.bind_import_flow("player_leave_cancel", self)
@@ -1624,4 +1625,36 @@ func player_retreat_done() -> void:
 		# 手动撤退完成，标记
 		wv.settled = 1
 	FlowManager.add_flow("war_vstate_settlement_report")
+	return
+
+func start_battle_after_skill() -> void:
+	var info = DataManager.get_env_dict("战争.技能触发战斗")
+	var fromId = Global.intval(info["fromId"])
+	var targetId = Global.intval(info["targetId"])
+	var source = Global.strval(info["source"])
+	var sourceActorId = Global.intval(info["sourceActorId"])
+	var forcedTerrian = Global.strval(info["forcedTerrian"])
+	var willAutoFinishTurn = Global.intval(info["willAutoFinishTurn"])
+	DataManager.unset_env("战争.技能触发战斗")
+	DataManager.player_choose_actor = fromId
+	DataManager.set_env("武将", targetId)
+	var logInfo = "- <y{0}>发动【<r{1}>】攻击<y{2}>".format([
+		ActorHelper.actor(fromId).get_name(), source,
+		ActorHelper.actor(targetId).get_name(),
+	])
+	if sourceActorId >= 0 and sourceActorId != fromId:
+		logInfo = "- <y{0}>发动【<r{1}>】令<y{2}>攻击<y{3}>".format([
+			ActorHelper.actor(sourceActorId).get_name(), source,
+			ActorHelper.actor(fromId).get_name(),
+			ActorHelper.actor(targetId).get_name(),
+		])
+	DataManager.record_war_log(logInfo)
+	DataManager.clear_common_variable(["白兵"])
+	DataManager.battle_units = []
+	DataManager.battle_actors = []
+	DataManager.set_env("战斗.强制地形", forcedTerrian)
+
+	var player_attack = Global.load_script(DataManager.mod_path+"sgz_script/war/player_attack.gd")
+	player_attack._go_to_battle(false, source, willAutoFinishTurn > 0)
+	LoadControl.end_script()
 	return

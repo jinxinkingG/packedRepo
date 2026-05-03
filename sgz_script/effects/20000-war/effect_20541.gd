@@ -11,7 +11,9 @@ func on_trigger_20016() -> bool:
 	var wf = DataManager.get_current_war_fight()
 
 	var runaway = 0
-	for wa in leader.get_teammates(false):
+	var affected = leader.get_teammates(false)
+	affected.append(leader)
+	for wa in affected:
 		var x = wa.get_day_attacked_actors(wf.date).size()
 		if x > 0:
 			runaway += ske.change_actor_soldiers(wa.actorId, -x * 20)
