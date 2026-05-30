@@ -73,7 +73,7 @@ func effect_20349_start():
 	var targets = _get_available_target_positions(me)
 	if targets.empty():
 		var msg = "没有合适的【{0}】发动点".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 3, 2009)
+		play_dialog(actorId, msg, 3, 2009)
 		return
 	var msg = "选择【{0}】发动点".format([ske.skill_name])
 
@@ -92,7 +92,7 @@ func effect_20349_2():
 	var targets = se.get_affected_actors(target)
 	if targets.empty():
 		var msg = "当前没有可施放【{0}】的目标".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 3, 2009)
+		play_dialog(actorId, msg, 3, 2009)
 		return
 	se.set_target(targets[0])
 	var targetWA = DataManager.get_war_actor(targets[0])

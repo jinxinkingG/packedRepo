@@ -30,7 +30,7 @@ func on_view_model_2000():
 func effect_20394_2():
 	var targetId = DataManager.get_env_int("目标")
 	var msg = "消耗{0}点机动力\n孤身潜行，放手一搏\n可否？".format([COST_AP])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001():

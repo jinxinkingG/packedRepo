@@ -1,105 +1,330 @@
-[b]杨柏[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]杨柏[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不可考，字号籍贯无史料，身份：[color=#6699FF][url={"research": "张鲁", "cat": "people"}]张鲁[/url][/color]部将（演义人物）
+[color=#000000]基本信息：[/color] 生卒年不可考，字号籍贯无史料，身份：[color=#0066FF][url={"research": "张鲁", "cat": "people"}]张鲁[/url][/color]部将（演义人物）
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-杨柏在正史中[b]无独立记载[/b]，为《三国演义》中的虚构（或半虚构）人物。
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]正史原型：《典略》中的"杨白"[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
-《三国志·蜀书·[color=#6699FF][url={"research": "马超", "cat": "people"}]马超[/url][/color]传》裴松之注引《典略》：
 
-[color=#AAAAAA]　"又鲁将杨白等欲害其能，超遂从武都逃入氐中，转奔往蜀。是岁建安十九年也。"[/color]
+杨柏在正史中[color=#000000]无独立记载[/color]，为《三国演义》中的虚构（或半虚构）人物。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]正史原型：《典略》中的"杨白"[/font][/b]
+
+
+《三国志·蜀书·[color=#0066FF][url={"research": "马超", "cat": "people"}]马超[/url][/color]传》裴松之注引《典略》：
+
+
+[indent][color=#666666]┃ "(张)鲁将杨白等欲害其能，(马)超遂从武都逃入氐中，转奔往蜀。是岁建安十九年也。"[/color][/indent]
+
 
 "杨白"是《典略》中记录的张鲁部将，因嫉妒马超军事才能而谋害之，最终逼走马超。学界普遍认为演义中的"杨柏"当源自"杨白"，可能系音近改名，也可能是传抄或刻印中产生的字形演变。
 
-[b]"杨白等"为复数[/b]：说明并非杨白一人，而是有一批张鲁将领对马超有敌意，演义将此群体人格化为"杨柏"（及其兄[color=#6699FF][url={"research": "杨松", "cat": "people"}]杨松[/url][/color]）。
+[color=#000000]"杨白等"为复数[/color]：说明并非杨白一人，而是有一批张鲁将领对马超有敌意，演义将此群体人格化为"杨柏"（及其兄[color=#0066FF][url={"research": "杨松", "cat": "people"}]杨松[/url][/color]）。
 
 
-[b]正史中马超离开汉中的时间线[/b]
-
-- 建安十六年（211年）：马超在关中举兵反曹，兵败后逃入汉中。
-- 张鲁任马超为"都讲祭酒"，欲以女妻之，因人谏"此人不爱亲，焉能爱人"而作罢（《典略》）。
-- 马超屡向张鲁借兵北伐[color=#6699FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]，均无功而返。
-- [b]建安十九年（214年）[/b]：受鲁将（杨白等）排挤，马超从武都逃入氐中，再转奔蜀汉。
-
-《三国志》本传另有叙述：马超"密书请降"[color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]，刘备遣人迎接，马超领兵到[color=#6699FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]城下，城中震怖，旬日而降。两个来源（《典略》被逼出走 vs 本传主动请降）存在一定出入，不必强行统一。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]正史中马超离开汉中的时间线[/font][/b]
 
 
-[b]性格与形象[/b]
+[indent]•  建安十六年（211年）：马超在关中举兵反曹，兵败后逃入汉中。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  张鲁任马超为"都讲祭酒"，欲以女妻之，因人谏"此人不爱亲，焉能爱人"而作罢（《典略》）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  马超屡向张鲁借兵北伐[color=#0066FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]，均无功而返。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]建安十九年（214年）[/color]：受鲁将（杨白等）排挤，马超从武都逃入氐中，再转奔蜀汉。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+《三国志》本传另有叙述：马超"密书请降"[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]，刘备遣人迎接，马超领兵到[color=#0066FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]城下，城中震怖，旬日而降。两个来源（《典略》被逼出走 vs 本传主动请降）存在一定出入，不必强行统一。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]各版本演变溯源[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]《三国志平话》（元至治本，约1321—1323年）[/font][/b]
+
+
+[color=#000000]完全没有杨柏或杨松这两个人物。[/color]
+
+平话中马超与张鲁的关系也与演义截然不同：平话里张鲁是以"保护者"身份出现，两人联合抗曹，并无"欲以女妻超"情节，更无杨柏阻婚之说。马超最终归降刘备，是通过军师孔明遣[color=#0066FF][url={"research": "伊籍", "cat": "people"}]伊籍[/url][/color]前往游说，而非因张鲁将领排挤而被迫出走。
+
+平话原文（马超入川段）：
+
+[indent][color=#666666]┃ "马超西走，曹军后赶。马超到剑关，路逢三万军，为首一将张鲁……军师令大夫伊籍远见马超，投了军师，张鲁可杀[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]。"[/color][/indent]
+
+
+[color=#000000]结论：杨柏（及杨松）的人物原型在《三国志平话》中完全无迹可寻，是演义系统独创的文学人物。[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]志传系（《三国志传》叶逢春本等）[/font][/b]
+
+
+志传系有[color=#000000]杨松[/color]（出卖[color=#0066FF][url={"research": "庞德", "cat": "people"}]庞德[/url][/color]、接受曹操金甲、帮助曹操图汉中），情节与演义近似。但：
+
+[indent]•  志传系张鲁将领（抵御曹操）用的是"[color=#000000][color=#0066FF][url={"research": "杨昂", "cat": "people"}]杨昂[/url][/color]杨仁[/color]"，不是杨柏[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  叶逢春本是否有独立的杨柏人物，实物（西班牙藏）未经核查（低优先级）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]演义系（嘉靖本 → 毛本）[/font][/b]
+
+
+杨柏首次作为完整的具名人物出现于嘉靖本《三国志通俗演义》第129-130回，毛本第65回保留。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 正史"杨白"完全无史料，无从分析。
 
 演义中杨柏的形象：
 
-- [b]身份[/b]：张鲁部将，杨松之弟。
-- [b]性格[/b]：嫉贤妒能。马超投奔张鲁时，他率先反对张鲁将女儿嫁给马超，从此与马超结怨。
-- [b]武力[/b]：与[color=#6699FF][url={"research": "魏延", "cat": "people"}]魏延[/url][/color]交手不十合即败走，武力值较低。
-- [b]叫阵[/b]（嘉靖本独有）：葭萌关攻打时，马超先使杨柏去叫阵[color=#6699FF][url={"research": "霍峻", "cat": "people"}]霍峻[/url][/color]，遭到拒绝。
-- [b]死亡[/b]：马超听从[color=#6699FF][url={"research": "李恢", "cat": "people"}]李恢[/url][/color]劝说归降刘备前，将杨柏斩杀，以斩首为投降礼物。
+
+[indent]•  [color=#000000]身份[/color]：张鲁部将，杨松之弟。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]性格[/color]：嫉贤妒能。马超投奔张鲁时，他率先反对张鲁将女儿嫁给马超，从此与马超结怨。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]武力[/color]：与[color=#0066FF][url={"research": "魏延", "cat": "people"}]魏延[/url][/color]交手不十合即败走，武力值较低。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]叫阵[/color]（嘉靖本独有）：葭萌关攻打时，马超先使杨柏去叫阵[color=#0066FF][url={"research": "霍峻", "cat": "people"}]霍峻[/url][/color]，遭到拒绝。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]死亡[/color]：马超听从[color=#0066FF][url={"research": "李恢", "cat": "people"}]李恢[/url][/color]劝说归降刘备前，将杨柏斩杀，以斩首为投降礼物。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-- [b]杨松（兄）[/b]：演义中的兄弟关系，正史"杨白"与杨松是否有关联完全不可考。
-- [b]马超（仇）[/b]：两人在演义中是明确对立关系，缘起张鲁欲以女妻马超一事。
-- [b]张鲁（主君）[/b]：杨柏为张鲁部将，被委以监军随马超出征。
-- [b]霍峻[/b]：嘉靖本中杨柏前往叫阵，霍峻正面顶回："我头可断，关不可得！"
-- [b]魏延[/b]：战场上交手，杨柏不十合败走。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[indent]•  [color=#000000]杨松（兄）[/color]：演义中的兄弟关系，正史"杨白"与杨松是否有关联完全不可考。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]马超（仇）[/color]：两人在演义中是明确对立关系，缘起张鲁欲以女妻马超一事。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张鲁（主君）[/color]：杨柏为张鲁部将，被委以监军随马超出征。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]霍峻[/color]：嘉靖本中杨柏前往叫阵，霍峻正面顶回："我头可断，关不可得！"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]魏延[/color]：战场上交手，杨柏不十合败走。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]方面[/b] | [b]史实[/b] | [b]演义[/b]
-人名 | 杨白（《典略》） | 杨柏
-人物实体 | 可能是张鲁军中真实存在的将领之一 | 独立成篇的具名人物
-与马超的关系 | 嫉其能，欲加害 | 反对张鲁嫁女给马超，结下个人仇恨
-兄弟关系 | 史料无载 | 杨松之弟
-担任监军 | 史料无载 | 嘉靖本/毛本均有"张鲁令杨柏监军"
-叫阵霍峻 | 史料无载 | 嘉靖本独有；毛本删去
-结局 | 史料无载 | 被马超斩杀（归降刘备前）
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]嘉靖本 vs 毛本逐字差异（完整考辨）[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]演义[/b][/cell]
+[cell]人名[/cell]
+[cell]杨白（《典略》）[/cell]
+[cell]杨柏[/cell]
+[cell]人物实体[/cell]
+[cell]可能是张鲁军中真实存在的将领之一[/cell]
+[cell]独立成篇的具名人物[/cell]
+[cell]与马超的关系[/cell]
+[cell]嫉其能，欲加害[/cell]
+[cell]反对张鲁嫁女给马超，结下个人仇恨[/cell]
+[cell]兄弟关系[/cell]
+[cell]史料无载[/cell]
+[cell]杨松之弟[/cell]
+[cell]担任监军[/cell]
+[cell]史料无载[/cell]
+[cell]嘉靖本/毛本均有"张鲁令杨柏监军"[/cell]
+[cell]叫阵霍峻[/cell]
+[cell]史料无载[/cell]
+[cell]嘉靖本独有；毛本删去[/cell]
+[cell]结局[/cell]
+[cell]史料无载[/cell]
+[cell]被马超斩杀（归降刘备前）[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]嘉靖本 vs 毛本逐字差异（完整考辨）[/font][/b]
 
 
 杨柏在演义中共出场4次，均集中于嘉靖本第129-130回 / 毛本第65回。
 
 
-[b]出场一：监军任命[/b]
-- 嘉靖：「张鲁令杨柏监军」
-- 毛本：「张鲁令杨柏监军」
-- [b]完全一致[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]出场一：监军任命[/font][/b]
 
 
-[b]出场二：叫阵霍峻（嘉靖本独有）[/b]
+[indent]•  嘉靖：「张鲁令杨柏监军」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：「张鲁令杨柏监军」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]完全一致[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]出场二：叫阵霍峻（嘉靖本独有）[/font][/b]
+
 嘉靖本第129回独有一段：
-[color=#AAAAAA]　"却说马超引兵扣关攻打。先使杨柏来叫道：'霍峻，早早献关，我等重重保举你！'霍峻在关上高声应曰：'我头可断，关不可得！'杨柏大怒，搦霍峻厮杀，不题。"[/color]
 
-毛本无此段落，直接从魏延哨马到来开写。[b]此为毛宗岗删削[/b]。
-
-
-[b]出场三：与魏延交战[/b]
-- 嘉靖：「魏延哨马先到关下，杨柏军退十馀里。魏延出与杨柏战，不十合，杨柏败走。」
-- 毛本：「魏延哨马先到关下，正遇杨柏。魏延与杨柏交战，不十合，杨柏败走。」
-- 差异：嘉靖本有"杨柏军退十馀里"的过渡描写，毛本省去，改为"正遇杨柏"直叙
+[indent][color=#666666]┃ "却说马超引兵扣关攻打。先使杨柏来叫道：'霍峻，早早献关，我等重重保举你！'霍峻在关上高声应曰：'我头可断，关不可得！'杨柏大怒，搦霍峻厮杀，不题。"[/color][/indent]
 
 
-[b]出场四：被马超斩杀[/b]
-- 嘉靖：「马超大喜，唤杨柏入，一剑斩之，将头共恢一同上关来降玄德。」
-- 毛本：「马超大喜，即唤杨柏入，一剑斩之，将首级共恢一同上关来降玄德。」
-- 差异：毛本增"即"字；"将头" vs "将首级"
+毛本无此段落，直接从魏延哨马到来开写。[color=#000000]此为毛宗岗删削[/color]。
 
 
-[b]李恢劝降词（涉及杨柏语境）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]出场三：与魏延交战[/font][/b]
+
+
+[indent]•  嘉靖：「魏延哨马先到关下，杨柏军退十馀里。魏延出与杨柏战，不十合，杨柏败走。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：「魏延哨马先到关下，正遇杨柏。魏延与杨柏交战，不十合，杨柏败走。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  差异：嘉靖本有"杨柏军退十馀里"的过渡描写，毛本省去，改为"正遇杨柏"直叙[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]出场四：被马超斩杀[/font][/b]
+
+
+[indent]•  嘉靖：「马超大喜，唤杨柏入，一剑斩之，将头共恢一同上关来降玄德。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：「马超大喜，即唤杨柏入，一剑斩之，将首级共恢一同上关来降玄德。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  差异：毛本增"即"字；"将头" vs "将首级"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]李恢劝降词（涉及杨柏语境）[/font][/b]
+
 嘉靖本结尾：「公何不背暗投明，以图上报父母之仇，下立金玉之德，可彰万世之高名也。」
 毛本增加照应：「公之尊人，昔年曾与皇叔约共讨贼，公何不背暗投明，以图上报父仇，下立功名乎？」
 → 毛宗岗有意加入"衣带诏"前后照应（第20回→第65回），嘉靖本无此安排。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+正史中「杨白」完全无独立评价，《典略》仅以「杨白等欲害其能」六字带过，无更多文字。
+
+演义中亦无单独评价诗文（杨柏为次要人物，无赞诗）。
+
+[color=#000000]后世注疏学界[/color]：毛宗岗批本对杨柏无单独批语，将其视为杨松兄弟同类之"小人"符号。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志系列[/font][/b]
+
+
+[color=#000000]三国志11[/color]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]44[/cell]
+[cell]45[/cell]
+[cell]19[/cell]
+[cell]26[/cell]
+[cell]21[/cell]
+[/table]
+
+
+与其兄杨松（统2-武5-知28-政34-魅5）形成鲜明对比：杨柏为武将偏向（武力45），杨松为谋士偏向但各项均极低，两兄弟均属游戏中的「废柴武将」知名组合。
+
+[color=#000000]三国志14[/color]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]44[/cell]
+[cell]45[/cell]
+[cell]19[/cell]
+[cell]26[/cell]
+[cell]18[/cell]
+[/table]
+
+
+标注「張魯の武将」。
+
+[color=#000000]三国志8重制版（2024）[/color]
+
+
+[table=6]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]合计[/b][/cell]
+[cell]44[/cell]
+[cell]54[/cell]
+[cell]36[/cell]
+[cell]28[/cell]
+[cell]22[/cell]
+[cell]184[/cell]
+[/table]
+
+
+性格：[color=#000000]臆病（懦弱）[/color]。8R版知力、武力均有提升，但仍属低阶武将。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+[indent]•  [color=#000000]1994年央视版[/color]：杨柏无专属演员署名（出场极短，仅几场戏）；演员表仅收录杨松。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]2010年高希希版《三国》[/color]：删去马超汉中段相关情节，杨柏未出现。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀 / 真三国无双[/font][/b]
+
+
+均[color=#000000]无收录[/color]。杨柏知名度不足以单独成为三国杀武将或无双可操控角色。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]中文维基[/font][/b]
+
+
+[color=#000000]无独立词条[/color]。维基「杨柏」消歧义页仅指明朝政治人物和吉林大学教授，无三国演义人物条目。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]国产游戏[/font][/b]
+
+
+光荣「三国志」系列之外，部分国产三国手游（如群雄时代）收录「松柏二圣」彩蛋，将杨松杨柏作为一对小人搭档呈现。
+
+
+[color=#888888]──────────────────────────────[/color]

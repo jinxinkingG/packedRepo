@@ -10,6 +10,10 @@ func on_trigger_20015()->bool:
 	# 没有可用计策了，不可发动
 	if me.get_stratagems().empty():
 		return false
+	# 攻击者必须是自己
+	var bf = DataManager.get_current_battle_fight()
+	if actorId != bf.get_attacker_id():
+		return false
 	# AI 有这个技能的都是笨蛋，可以无脑发动
 	return true
 

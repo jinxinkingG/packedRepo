@@ -36,7 +36,7 @@ func on_trigger_20015()->bool:
 func effect_20173_start():
 	if wf.is_extra_round():
 		var msg = "当前已是额外回合\n【{0}】可另择良机".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 2, 2999)
+		play_dialog(actorId, msg, 2, 2999)
 		return
 
 	var msg = "选择队友发动【{0}】".format([
@@ -58,7 +58,7 @@ func effect_20173_2():
 	var msg = "清空机动力发动【{0}】\n{1}将在回合结束后\n额外单独行动".format([
 		ske.skill_name, targetActor.get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001():
@@ -81,7 +81,7 @@ func effect_20173_3():
 		DataManager.get_actor_honored_title(targetId, me.actorId), title,
 		actor.get_name(), EXP_GAIN
 	])
-	play_dialog(me.actorId, msg, 1, 2999)
+	play_dialog(actorId, msg, 1, 2999)
 	return
 
 func on_view_model_2999():

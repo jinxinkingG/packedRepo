@@ -34,7 +34,7 @@ func effect_20311_start():
 	var msg = "发动【流离】\n清空{0}的机动力\n可否？".format([
 		target.get_name()
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20311_2():

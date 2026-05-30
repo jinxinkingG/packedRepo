@@ -60,7 +60,7 @@ func effect_20342_3():
 	var msg = "今其时也，夫何疑！\n{0}当速进".format([
 		DataManager.get_actor_honored_title(targetId, ske.skill_actorId)
 	])
-	play_dialog(me.actorId, msg, 0, 2002)
+	play_dialog(actorId, msg, 0, 2002)
 	return
 
 func on_view_model_2002():

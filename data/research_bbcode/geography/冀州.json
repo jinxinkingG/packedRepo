@@ -1,330 +1,640 @@
-[b]冀州（州治邺城）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]冀州（州治邺城）[/font][/b]
 
 
-[b]位置：[/b] 今河北中南部、山西东南部、山东西部、河南北部
-[b]类型：[/b] 州（东汉十三州之一）
-[b]治所：[/b] 高邑（今河北柏乡县北）→ 邺县（东汉桓灵间移治，今河北临漳县西南邺镇）→ 信都（黄初二年后，今河北衡水冀州区）
+[color=#000000]位置：[/color] 今河北中南部、山西东南部、山东西部、河南北部
+[color=#000000]类型：[/color] 州（东汉十三州之一）
+[color=#000000]治所：[/color] 高邑（今河北柏乡县北）→ 邺县（东汉桓灵间移治，今河北临漳县西南邺镇）→ 信都（黄初二年后，今河北衡水冀州区）
 
 
-[b]地理考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]辖境沿革[/b]
-
-东汉冀州辖[b]9郡国[/b]，约100县（据《后汉书·郡国志》永和五年，140年）：
+[b][font=res://resource/font/FandolSong-Bold/28.tres]地理考证[/font][/b]
 
 
-[b]郡国[/b] | [b]治所[/b] | [b]县数[/b] | [b]户数[/b] | [b]口数[/b] | [b]今址[/b]
-魏郡 | 邺县 | 15 | 129,310 | 695,606 | 今河北临漳、邯郸一带
-巨鹿郡 | 廮陶 | 15 | 109,517 | 602,096 | 今河北宁晋、邢台一带
-常山国 | 元氏 | 13 | 97,500 | 631,184 | 今河北石家庄西南
-中山国 | 卢奴 | 13 | 97,412 | 658,195 | 今河北保定一带
-安平国 | 信都 | 13 | 91,440 | 655,118 | 今河北衡水一带
-河间国 | 乐成 | 11 | 93,754 | 634,421 | 今河北沧州西部
-清河国 | 甘陵 | 7 | 123,964 | 760,418 | 今河北清河/山东临清一带
-赵国 | 邯郸 | 5 | 32,719 | 188,381 | 今河北邯郸
-勃海郡 | 南皮 | 8 | 132,389 | 1,106,500 | 今河北沧州东部
-[b]合计[/b] | — | [b]约100[/b] | [b]~908,005[/b] | [b]~5,931,919[/b] | —
+[b][font=res://resource/font/FandolSong-Bold/26.tres]辖境沿革[/font][/b]
 
 
-[color=#AAAAAA]　永和五年（140年）总口约593万，为东汉各州之冠，约占全国人口（约4915万）的12%。[/color]
+东汉冀州辖[color=#000000]9郡国[/color]，约100县（据《后汉书·郡国志》永和五年，140年）：
 
 
-[b]治所演变[/b]
+[table=6]
+[cell][b]郡国[/b][/cell]
+[cell][b]治所[/b][/cell]
+[cell][b]县数[/b][/cell]
+[cell][b]户数[/b][/cell]
+[cell][b]口数[/b][/cell]
+[cell][b]今址[/b][/cell]
+[cell]魏郡[/cell]
+[cell]邺县[/cell]
+[cell]15[/cell]
+[cell]129,310[/cell]
+[cell]695,606[/cell]
+[cell]今河北临漳、邯郸一带[/cell]
+[cell]巨鹿郡[/cell]
+[cell]廮陶[/cell]
+[cell]15[/cell]
+[cell]109,517[/cell]
+[cell]602,096[/cell]
+[cell]今河北宁晋、邢台一带[/cell]
+[cell]常山国[/cell]
+[cell]元氏[/cell]
+[cell]13[/cell]
+[cell]97,500[/cell]
+[cell]631,184[/cell]
+[cell]今河北石家庄西南[/cell]
+[cell]中山国[/cell]
+[cell]卢奴[/cell]
+[cell]13[/cell]
+[cell]97,412[/cell]
+[cell]658,195[/cell]
+[cell]今河北保定一带[/cell]
+[cell]安平国[/cell]
+[cell]信都[/cell]
+[cell]13[/cell]
+[cell]91,440[/cell]
+[cell]655,118[/cell]
+[cell]今河北衡水一带[/cell]
+[cell]河间国[/cell]
+[cell]乐成[/cell]
+[cell]11[/cell]
+[cell]93,754[/cell]
+[cell]634,421[/cell]
+[cell]今河北沧州西部[/cell]
+[cell]清河国[/cell]
+[cell]甘陵[/cell]
+[cell]7[/cell]
+[cell]123,964[/cell]
+[cell]760,418[/cell]
+[cell]今河北清河/山东临清一带[/cell]
+[cell]赵国[/cell]
+[cell]邯郸[/cell]
+[cell]5[/cell]
+[cell]32,719[/cell]
+[cell]188,381[/cell]
+[cell]今河北邯郸[/cell]
+[cell]勃海郡[/cell]
+[cell]南皮[/cell]
+[cell]8[/cell]
+[cell]132,389[/cell]
+[cell]1,106,500[/cell]
+[cell]今河北沧州东部[/cell]
+[cell][color=#000000]合计[/color][/cell]
+[cell]—[/cell]
+[cell][color=#000000]约100[/color][/cell]
+[cell][color=#000000]~908,005[/color][/cell]
+[cell][color=#000000]~5,931,919[/color][/cell]
+[cell]—[/cell]
+[/table]
 
-- [b]东汉初：[/b] 治高邑（今河北柏乡县北固城），光武帝即位于高邑附近
-- [b]桓灵帝间：[/b] 移治邺县（今河北临漳县西南）——《太平寰宇记》："后汉桓、灵之间，冀州刺史尝寄理于此"
-- [b]初平元年（190年）：[/b] 韩馥以邺为正式州治
-- [b]建安九年（204年）后：[/b] [color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]领冀州牧，[color=#6699FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]成为曹魏实际政治中心（详见下文）
-- [b]黄初二年（221年）：[/b] [color=#6699FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]称帝后将冀州刺史治所迁至[b]信都[/b]（今河北衡水冀州区），邺城成为"旧魏都"
+
+[indent][color=#666666]┃ 永和五年（140年）总口约593万，为东汉各州之冠，约占全国人口（约4915万）的12%。[/color][/indent]
 
 
-[b]邺城与冀州州治关系（建安时期）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]治所演变[/font][/b]
+
+
+[indent]•  [color=#000000]元鼎五年（前106年）：[/color] 汉武帝设冀州刺史部（监察区），领六郡四国：魏郡、钜鹿郡、常山国、赵国、勃海郡、平原郡、河间国、安平国、清河国、中山国[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]东汉初：[/color] 治高邑（今河北柏乡县北固城），光武帝即位于高邑附近[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]中平五年（188年）：[/color] 州升为正式行政区，治高邑（今河北柏乡县西南）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]桓灵帝间：[/color] 移治邺县（今河北临漳县西南）——《太平寰宇记》："后汉桓、灵之间，冀州刺史尝寄理于此"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]初平元年（190年）：[/color] [color=#0066FF][url={"research": "韩馥", "cat": "people"}]韩馥[/url][/color]以邺为正式州治[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]建安九年（204年）后：[/color] [color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]领冀州牧，[color=#0066FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]成为曹魏实际政治中心（详见下文）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]黄初元年（220年）：[/color] [color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]称帝，分冀州复置并、幽二州，冀州徙治[color=#000000]邺城[/color]（今临漳西南），领十二郡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]黄初二年（221年）：[/color] 冀州刺史治所再迁至[color=#000000]信都[/color]（今河北衡水冀州区），邺城成为"旧魏都"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]邺城与冀州州治关系（建安时期）[/font][/b]
+
 
 建安九年曹操取邺后，邺城形成"名义上州治"与"实际政治中心"双重属性：
 
 
-[b]机构[/b] | [b]位置[/b] | [b]性质[/b]
-汉廷（六部、皇帝） | [color=#6699FF][url={"research": "许都 ", "cat": " geography"}]许都 [/url][/color] | 名义中央
-曹操幕府/魏国政府（尚书省） | 邺城 | 实际中央
-冀州刺史部（建安时） | 邺城 | 冀州行政
-冀州刺史部（黄初后） | 信都 | 冀州行政
+[table=3]
+[cell][b]机构[/b][/cell]
+[cell][b]位置[/b][/cell]
+[cell][b]性质[/b][/cell]
+[cell]汉廷（六部、皇帝）[/cell]
+[cell][color=#0066FF][url={"research": "许都", "cat": "geography"}]许都[/url][/color][/cell]
+[cell]名义中央[/cell]
+[cell]曹操幕府/魏国政府（尚书省）[/cell]
+[cell]邺城[/cell]
+[cell]实际中央[/cell]
+[cell]冀州刺史部（建安时）[/cell]
+[cell]邺城[/cell]
+[cell]冀州行政[/cell]
+[cell]冀州刺史部（黄初后）[/cell]
+[cell]信都[/cell]
+[cell]冀州行政[/cell]
+[/table]
 
 
-[b]"政在邺，名在许"[/b] — 这一二元结构自204年持续至220年曹操去世。
+[color=#000000]"政在邺，名在许"[/color] — 这一二元结构自204年持续至220年曹操去世。
 
 邺城规模（据《魏都赋》）：东西七里、南北五里；铜雀台于建安十五年（210年）建成。
 
 
-[b]建安十七—十八年：大冀州改制与魏郡扩张[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安十七—十八年：大冀州改制与魏郡扩张[/font][/b]
 
 
 [b]建安十七年（212年）魏郡扩张[/b]
 
+
 曹操以献帝名义，将周边三郡多县划入魏郡：
 
-[b]《三国志·魏志》注文原文：[/b]
-[color=#AAAAAA]　"建安十七年，割河内之荡阴、朝歌、林虑，东郡之卫国、顿丘、东武阳、发干，巨鹿之廮陶、曲周、南和，广平之广平、任，赵国之襄国、邯郸、易阳，以益魏郡。十八年，分置东西都尉。"[/color]
+[color=#000000]《三国志·魏志》注文原文：[/color]
 
-[b]扩张后新增各县今址对照（约14-15县）：[/b]
-
-
-[b]来源郡国[/b] | [b]割入县名[/b] | [b]今址[/b]
-河内郡 | 荡阴 | 今河南安阳市汤阴县
-河内郡 | 朝歌 | 今河南鹤壁市淇县
-河内郡 | 林虑 | 今河南安阳市林州市
-东郡 | 卫国 | 今河南濮阳市清丰县西南
-东郡 | 顿丘 | 今河南濮阳市清丰县西南
-东郡 | 东武阳 | 今山东聊城市莘县东南
-东郡 | 发干 | 今山东聊城市冠县东
-巨鹿郡 | 廮陶 | 今河北邢台市宁晋县东北
-巨鹿郡 | 曲周（一作曲阳） | 今河北邢台市曲周县
-巨鹿郡 | 南和 | 今河北邢台市南和区
-广平郡 | 广平 | 今河北邯郸市鸡泽县
-广平郡 | 任（一作任城） | 今河北邢台市任泽区
-赵国 | 襄国 | 今河北邢台市桥东区（古邢台城）
-赵国 | 邯郸 | 今河北邯郸市邯郸区
-赵国 | 易阳 | 今河北邯郸市永年区东南
+[indent][color=#666666]┃ "建安十七年，割河内之荡阴、朝歌、林虑，东郡之卫国、顿丘、东武阳、发干，巨鹿之廮陶、曲周、南和，广平之广平、任，赵国之襄国、邯郸、易阳，以益魏郡。十八年，分置东西都尉。"[/color][/indent]
 
 
-[b]版本差异说明：[/b] 各史料（《三国志》注、《后汉书·郡国志》）在个别县名上略有出入（曲周/曲阳、广平/任城等），李晓杰《东汉政区地理》第84页有详细校订。
+[color=#000000]扩张后新增各县今址对照（约14-15县）：[/color]
 
-[b]扩张后辖县规模：[/b] 基础15-18县 + 新增14-15县 = 约[b]29-33县[/b]
 
-[b]精确县界地图参考资源：[/b]
-- 谭其骧《中国历史地图集》第四册（三国—南北朝）：目前最权威的郡界参考
-- 复旦大学 CHGIS/TGAZ 数据库（tgaz.fudan.edu.cn）：各县历史政区精确 GIS 坐标，可逐县查询建安212年后的行政归属
-- [b]"水经注GIS"微信公众号[/b]（2025年新发现）：提供三国国界/州郡/水系 SHP 矢量数据，可免费领取；非学术权威，但可用于游戏创作底图参考，建议与谭图第四册对照核验（详见 `ref-shpdata-shuijingzhu-gis-2026.md`）
-- [b]公开完整学术矢量郡界图仍无法下载，谭图第四册+CHGIS 仍为学术权威参考[/b]
+[table=3]
+[cell][b]来源郡国[/b][/cell]
+[cell][b]割入县名[/b][/cell]
+[cell][b]今址[/b][/cell]
+[cell]河内郡[/cell]
+[cell]荡阴[/cell]
+[cell]今河南安阳市汤阴县[/cell]
+[cell]河内郡[/cell]
+[cell]朝歌[/cell]
+[cell]今河南鹤壁市淇县[/cell]
+[cell]河内郡[/cell]
+[cell]林虑[/cell]
+[cell]今河南安阳市林州市[/cell]
+[cell]东郡[/cell]
+[cell]卫国[/cell]
+[cell]今河南濮阳市清丰县西南[/cell]
+[cell]东郡[/cell]
+[cell]顿丘[/cell]
+[cell]今河南濮阳市清丰县西南[/cell]
+[cell]东郡[/cell]
+[cell]东武阳[/cell]
+[cell]今山东聊城市莘县东南[/cell]
+[cell]东郡[/cell]
+[cell]发干[/cell]
+[cell]今山东聊城市冠县东[/cell]
+[cell]巨鹿郡[/cell]
+[cell]廮陶[/cell]
+[cell]今河北邢台市宁晋县东北[/cell]
+[cell]巨鹿郡[/cell]
+[cell]曲周（一作曲阳）[/cell]
+[cell]今河北邢台市曲周县[/cell]
+[cell]巨鹿郡[/cell]
+[cell]南和[/cell]
+[cell]今河北邢台市南和区[/cell]
+[cell]广平郡[/cell]
+[cell]广平[/cell]
+[cell]今河北邯郸市鸡泽县[/cell]
+[cell]广平郡[/cell]
+[cell]任（一作任城）[/cell]
+[cell]今河北邢台市任泽区[/cell]
+[cell]赵国[/cell]
+[cell]襄国[/cell]
+[cell]今河北邢台市桥东区（古邢台城）[/cell]
+[cell]赵国[/cell]
+[cell]邯郸[/cell]
+[cell]今河北邯郸市邯郸区[/cell]
+[cell]赵国[/cell]
+[cell]易阳[/cell]
+[cell]今河北邯郸市永年区东南[/cell]
+[/table]
+
+
+[color=#000000]版本差异说明：[/color] 各史料（《三国志》注、《后汉书·郡国志》）在个别县名上略有出入（曲周/曲阳、广平/任城等），李晓杰《东汉政区地理》第84页有详细校订。
+
+[color=#000000]扩张后辖县规模：[/color] 基础15-18县 + 新增14-15县 = 约[color=#000000]29-33县[/color]
+
+[color=#000000]精确县界地图参考资源：[/color]
+
+[indent]•  谭其骧《中国历史地图集》第四册（三国—南北朝）：目前最权威的郡界参考[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  复旦大学 CHGIS/TGAZ 数据库（tgaz.fudan.edu.cn）：各县历史政区精确 GIS 坐标，可逐县查询建安212年后的行政归属[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]"水经注GIS"微信公众号[/color]（2025年新发现）：提供三国国界/州郡/水系 SHP 矢量数据，可免费领取；非学术权威，但可用于游戏创作底图参考，建议与谭图第四册对照核验（详见 `ref-shpdata-shuijingzhu-gis-2026.md`）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]公开完整学术矢量郡界图仍无法下载，谭图第四册+CHGIS 仍为学术权威参考[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [b]建安十八年（213年）：九州并合[/b]
 
+
 春正月，献帝颁诏（实由曹操主导）：
-[color=#AAAAAA]　"诏书并十四州，复为九州。"[/color]
+
+[indent][color=#666666]┃ "诏书并十四州，复为九州。"[/color][/indent]
+
 
 据胡三省注《资治通鉴》，大冀州辖境包括：
-- [color=#6699FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]（全部11郡国）
-- [color=#6699FF][url={"research": "并州", "cat": "geography"}]并州[/url][/color]（全部9郡）
-- 原司州的河东、河内、冯翊、扶风
 
-同年，献帝封曹操为魏公，封邑即取自大冀州范围的[b]十郡[/b]：
+[indent]•  [color=#0066FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]（全部11郡国）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "并州", "cat": "geography"}]并州[/url][/color]（全部9郡）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  原司州的河东、河内、冯翊、扶风[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+同年，献帝封曹操为魏公，封邑即取自大冀州范围的[color=#000000]十郡[/color]：
 河东、河内、魏郡、赵国、中山、常山、钜鹿、安平、甘陵、平原
 
-→ 此举实质是曹操借"复古九州"之名，将幽并关中诸郡划入自己统辖，为建立魏国铺路。[color=#6699FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]早在建安九年已预见此策图谋，力劝不从（后操寝此议），至此正式施行。
+→ 此举实质是曹操借"复古九州"之名，将幽并关中诸郡划入自己统辖，为建立魏国铺路。[color=#0066FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]早在建安九年已预见此策图谋，力劝不从（后操寝此议），至此正式施行。
+
+[color=#000000]维基补充：[/color] 据《冀州》词条，建安十七年"并幽、并二州入冀州，割司州平原郡属冀州，后分平原郡置乐陵郡，分河间国置章武郡"，至汉末冀州领[color=#000000]三十一郡二国一属国[/color]，为历史上辖境最大的冀州。
 
 
-[b]人口：从繁盛到凋零[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]阶段性人口变化[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]人口：从繁盛到凋零[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]阶段性人口变化[/font][/b]
 
 
 [b]永和五年（140年）：基准数据[/b]
+
 
 据《后汉书·郡国志》，冀州户约90万、口约593万，为东汉各州之首，约占全国4915万口的12%。
 
 
 [b]中平六年（189年）：韩馥据冀，仍属繁荣[/b]
 
-[b]裴注引《英雄记》：[/b] "韩馥为冀州牧，于时冀州民人殷盛，兵粮优足。"
 
-[color=#6699FF][url={"research": "黄巾之乱", "cat": "events"}]黄巾之乱[/url][/color]（184年）虽以冀州为主战场，但冀州根基厚实，恢复较快。初平二年（191年）[color=#6699FF][url={"research": "沮授", "cat": "people"}]沮授[/url][/color]劝韩馥："冀州虽鄙，带甲百万，谷支十年。"（文学夸张，但反映191年仍为北方兵粮之最）
+[color=#000000]裴注引《英雄记》：[/color] "韩馥为冀州牧，于时冀州民人殷盛，兵粮优足。"
 
-[color=#AAAAAA]　[b]估算：[/b] 189—191年冀州人口约[b]300—400万[/b]（黄巾战后减损约30-40%，豪族隐匿人口未入官籍，实际人口可能更高）[/color]
+[color=#0066FF][url={"research": "黄巾之乱", "cat": "events"}]黄巾之乱[/url][/color]（184年）虽以冀州为主战场，但冀州根基厚实，恢复较快。初平二年（191年）[color=#0066FF][url={"research": "沮授", "cat": "people"}]沮授[/url][/color]劝韩馥："冀州虽鄙，带甲百万，谷支十年。"（文学夸张，但反映191年仍为北方兵粮之最）
+
+
+[indent][color=#666666]┃ [color=#000000]估算：[/color] 189—191年冀州人口约[color=#000000]300—400万[/color]（黄巾战后减损约30-40%，豪族隐匿人口未入官籍，实际人口可能更高）[/color][/indent]
 
 
 [b]建安九年（204年）：曹操入主时的户籍[/b]
 
-[b]史料：[/b]《三国志·[color=#6699FF][url={"research": "崔琰", "cat": "people"}]崔琰[/url][/color]传》："太祖破袁氏，领冀州牧……谓琰曰：'昨案户籍，可得三十万众，故为大州也。'"
 
-[b]"三十万众"四种解读（葛剑雄《人口史》及学界讨论）：[/b]
+[color=#000000]史料：[/color]《三国志·[color=#0066FF][url={"research": "崔琰", "cat": "people"}]崔琰[/url][/color]传》："太祖破袁氏，领冀州牧……谓琰曰：'昨案户籍，可得三十万众，故为大州也。'"
 
-
-[b]解读[/b] | [b]含义[/b] | [b]推算人口[/b] | [b]评估[/b]
-30万口 | 在籍总人口30万 | 30万 | 不可信（降至顺帝时1/20，全国平均才1/7）
-[b]30万兵[/b] | [b]可征发兵源[/b] | [b]约300万（×10口/兵）[/b] | [b]最可信（主流推论）[/b]
-30万户 | 在籍户数 | 约150—180万 | 偏低（见下方辛毗传论证）
-30万丁 | 青壮男性 | 约120万 | 偏保守
+[color=#000000]"三十万众"四种解读（葛剑雄《人口史》及学界讨论）：[/color]
 
 
-[b]"30万兵→300万口"的关键佐证——《辛毗传》：[/b]
-[color=#AAAAAA]　"（曹丕）欲徙冀州士家十万户实河南。时连蝗民饥，群司以为不可……帝遂徙其半。"[/color]
+[table=4]
+[cell][b]解读[/b][/cell]
+[cell][b]含义[/b][/cell]
+[cell][b]推算人口[/b][/cell]
+[cell][b]评估[/b][/cell]
+[cell]30万口[/cell]
+[cell]在籍总人口30万[/cell]
+[cell]30万[/cell]
+[cell]不可信（降至顺帝时1/20，全国平均才1/7）[/cell]
+[cell][color=#000000]30万兵[/color][/cell]
+[cell][color=#000000]可征发兵源[/color][/cell]
+[cell][color=#000000]约300万（×10口/兵）[/color][/cell]
+[cell][color=#000000]最可信（主流推论）[/color][/cell]
+[cell]30万户[/cell]
+[cell]在籍户数[/cell]
+[cell]约150—180万[/cell]
+[cell]偏低（见下方辛毗传论证）[/cell]
+[cell]30万丁[/cell]
+[cell]青壮男性[/cell]
+[cell]约120万[/cell]
+[cell]偏保守[/cell]
+[/table]
+
+
+[color=#000000]"30万兵→300万口"的关键佐证——《辛毗传》：[/color]
+
+[indent][color=#666666]┃ "（曹丕）欲徙冀州士家十万户实河南。时连蝗民饥，群司以为不可……帝遂徙其半。"[/color][/indent]
+
 
 曹丕建魏后一次要迁走10万户（最终迁5万户），说明当时冀州总户数远超30万户——若仅30万户，迁走5万户即六分之一，曹丕不至于如此轻描淡写。此数字支持30万兵（约300万口）的解读。
 
-[b]综合推论（本条目采纳）：[/b]
-- 建安九年（204年）冀州官籍人口约[b]300万[/b]（30万兵源）
-- 加豪族隐匿的部曲宗族、士家另册等，[b]实际总人口估350—400万[/b]
-- 与顺帝时593万相比，减至约50—67%（受战乱影响，但相对中原其他地区减损较轻）
+[color=#000000]西晋太康元年（282年）数据（维基）：[/color] 326,000户——可与建安九年官籍对比：建安时期估算约百万户（300万口÷约3-4口/户），至西晋太康已降至32.6万户，说明魏晋约80年间冀州持续衰减。此数据与东晋元帝建武元年（317年）冀州全境陷于后赵相关联。
+
+[color=#000000]综合推论（本条目采纳）：[/color]
+
+[indent]•  建安九年（204年）冀州官籍人口约[color=#000000]300万[/color]（30万兵源）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  加豪族隐匿的部曲宗族、士家另册等，[color=#000000]实际总人口估350—400万[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  与顺帝时593万相比，减至约50—67%（受战乱影响，但相对中原其他地区减损较轻）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [b]190年代的人口消耗轨迹[/b]
 
-界桥战后（192年）[color=#6699FF][url={"research": "公孙瓒", "cat": "people"}]公孙瓒[/url][/color]多次南犯，[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]连年应战（界桥192、龙凑193、易京197—199年）。[color=#6699FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]前（约200年），各方估算：
 
-- 葛剑雄研究：全国人口减至顺帝时约[b]80%[/b]（"十不存一"为文学夸张）
-- 冀州作为主战场，减损高于平均，约为顺帝时[b]50—67%[/b]（与建安九年数字对应）
+界桥战后（192年）[color=#0066FF][url={"research": "公孙瓒", "cat": "people"}]公孙瓒[/url][/color]多次南犯，[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]连年应战（界桥192、龙凑193、易京197—199年）。[color=#0066FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]前（约200年），各方估算：
 
-[color=#AAAAAA]　轨迹：189年约350—400万 → [color=#6699FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]前（200年）约200—250万 → 建安九年（204年）官籍300万（含部分隐户被重新登记）[/color]
 
-[b]注：[/b] 建安九年数字高于官渡前估算，可能原因：
-1. 官渡前估算以"有效统治区"的偏保守口径
-2. 建安九年曹操清查户籍时，部分袁氏政权时期的隐户重新登记
-3. 建安年间曹操"减租赋抑兼并"政策提振了户籍登记意愿
+[indent]•  葛剑雄研究：全国人口减至顺帝时约[color=#000000]80%[/color]（"十不存一"为文学夸张）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  冀州作为主战场，减损高于平均，约为顺帝时[color=#000000]50—67%[/color]（与建安九年数字对应）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[indent][color=#666666]┃ 轨迹：189年约350—400万 → [color=#0066FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]前（200年）约200—250万 → 建安九年（204年）官籍300万（含部分隐户被重新登记）[/color][/indent]
+
+
+[color=#000000]注：[/color] 建安九年数字高于官渡前估算，可能原因：
+
+[indent]1.  官渡前估算以"有效统治区"的偏保守口径[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  建安九年曹操清查户籍时，部分袁氏政权时期的隐户重新登记[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  建安年间曹操"减租赋抑兼并"政策提振了户籍登记意愿[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [b]汉末锐减的四重原因[/b]
 
-1. [b]黄巾之乱（184年）：[/b] 冀州为主战场，[color=#6699FF][url={"research": "张角", "cat": "people"}]张角[/url][/color]、[color=#6699FF][url={"research": "张梁", "cat": "people"}]张梁[/url][/color]、[color=#6699FF][url={"research": "张宝", "cat": "people"}]张宝[/url][/color]均在冀州活动
-2. [b]军阀混战（190—204年）：[/b] 公孙瓒 vs 袁绍连年鏖战，徭役及兵役大量消耗
-3. [b]疫病：[/b] 建安年间多次爆发（张仲景序："建安纪年以来……死亡者，三分有二"）
-4. [b]人口隐匿：[/b] 豪族庇护，大量编户不入官籍（葛剑雄：东汉户籍严重失实，至汉末更甚）
+
+[indent]1.  [color=#000000]黄巾之乱（184年）：[/color] 冀州为主战场，[color=#0066FF][url={"research": "张角", "cat": "people"}]张角[/url][/color]、[color=#0066FF][url={"research": "张梁", "cat": "people"}]张梁[/url][/color]、[color=#0066FF][url={"research": "张宝", "cat": "people"}]张宝[/url][/color]均在冀州活动[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]军阀混战（190—204年）：[/color] 公孙瓒 vs 袁绍连年鏖战，徭役及兵役大量消耗[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]疫病：[/color] 建安年间多次爆发（张仲景序："建安纪年以来……死亡者，三分有二"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]人口隐匿：[/color] 豪族庇护，大量编户不入官籍（葛剑雄：东汉户籍严重失实，至汉末更甚）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]建安九年：入主冀州后的经济政策[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]即时政令：免当年租赋[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]建安九年：入主冀州后的经济政策[/font][/b]
 
-[b]《三国志·武帝纪》建安九年九月：[/b]
-[color=#AAAAAA]　"令曰：'河北罹袁氏之难，其令无出今年租赋！'重豪强兼并之法，百姓喜悦。"[/color]
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]即时政令：免当年租赋[/font][/b]
+
+
+[color=#000000]《三国志·武帝纪》建安九年九月：[/color]
+
+[indent][color=#666666]┃ "令曰：'河北罹袁氏之难，其令无出今年租赋！'重豪强兼并之法，百姓喜悦。"[/color][/indent]
+
 
 免税令是政治信号：通过与袁氏苛政的剧烈对比，迅速赢得冀州民心。
 
 
-[b]《收租赋及抑兼并令》（裴注引《魏书》）[/b]
-
-[b]原文：[/b]
-[color=#AAAAAA]　"袁氏之治也，使豪强擅恣，亲戚兼并；下民贫弱，代出租赋，衒鬻家财，不足应命……其收田租亩四升，户出绢二匹、绵二斤而已。他不得擅兴发。郡国守相明检察之，无令强民有所隐藏，而弱民兼赋也。"[/color]
-
-[b]田租户调制改革内容：[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]《收租赋及抑兼并令》（裴注引《魏书》）[/font][/b]
 
 
-[b]项目[/b] | [b]东汉旧制[/b] | [b]曹魏新制[/b]
-田租 | 分成制（十五税一或三十税一） | 定额亩四升（约为东汉一半）
-算赋/口赋 | 按人口年龄征钱 | 废除（合并入户调）
-户调 | 无统一规定 | 每户绢二匹、绵二斤
-豪强特权 | 可转嫁代出 | 严禁，一律均等
+[color=#000000]原文：[/color]
+
+[indent][color=#666666]┃ "袁氏之治也，使豪强擅恣，亲戚兼并；下民贫弱，代出租赋，衒鬻家财，不足应命……其收田租亩四升，户出绢二匹、绵二斤而已。他不得擅兴发。郡国守相明检察之，无令强民有所隐藏，而弱民兼赋也。"[/color][/indent]
 
 
-[b]制度意义：[/b]
-- [b]定额田租[/b]比分成制更能激励农民精耕细作——增产归己，傅玄（晋泰始四年上疏）证实：魏初白田亩产十余斛、水田数十斛，远高于晋初
-- [b]按户征调[/b]比按口征钱更能抑制人口隐匿——"户难藏而口易逃"
-- 严禁豪强转嫁赋税，是曹操打击冀州袁氏旧有豪强体系的配套措施
-
-[b]颁行年代学术争议：[/b]
-- 主流说：建安九年（204年）入邺后颁行
-- 别说：建安十一年（206年）——据《何夔传》"操始制新科下州郡，又收租税绵绢"与[color=#6699FF][url={"research": "张辽", "cat": "people"}]张辽[/url][/color]平管承（建安十年后）时间对应
-- 高敏考证：户调制非操独创，初平年间（190-193年）各州郡已有按户收调之制，曹操是在入主冀州后将其正式化、法令化并推广
+[color=#000000]田租户调制改革内容：[/color]
 
 
-[b]屯田制在冀州的推广[/b]
+[table=3]
+[cell][b]项目[/b][/cell]
+[cell][b]东汉旧制[/b][/cell]
+[cell][b]曹魏新制[/b][/cell]
+[cell]田租[/cell]
+[cell]分成制（十五税一或三十税一）[/cell]
+[cell]定额亩四升（约为东汉一半）[/cell]
+[cell]算赋/口赋[/cell]
+[cell]按人口年龄征钱[/cell]
+[cell]废除（合并入户调）[/cell]
+[cell]户调[/cell]
+[cell]无统一规定[/cell]
+[cell]每户绢二匹、绵二斤[/cell]
+[cell]豪强特权[/cell]
+[cell]可转嫁代出[/cell]
+[cell]严禁，一律均等[/cell]
+[/table]
 
-[b]起源：[/b] 建安元年（196年），枣祗建议，[color=#6699FF][url={"research": "任峻", "cat": "people"}]任峻[/url][/color]为典农中郎将，许县首开民屯，"得谷百万斛"，于是"州郡倒置田官，所在积谷，仓廪皆满"。
 
-[b]推广至河北：[/b]
-- 曹操平冀州（204年）后，将屯田体系拓展至河北
-- 河北屯田最早实为[b]公孙瓒[/b]所兴（初平四年，今保定一带），曹操平河北后接收并系统化
-- 军事屯田与民屯并行，典农官体系独立于太守郡守系统
+[color=#000000]制度意义：[/color]
 
-[b]屯田双面性（重要）：[/b]
-- [b]有利面：[/b] 定额田租（低于旧制约一半）、免口赋、激励精耕细作
-- [b]压迫面：[/b] 建安九年令民凿冰通船"民惮役而亡"，亡者被捉处死；建安十二年北征乌丸令"堑山堙谷五百余里"——徭役之酷远超制度条文所呈现
+[indent]•  [color=#000000]定额田租[/color]比分成制更能激励农民精耕细作——增产归己，傅玄（晋泰始四年上疏）证实：魏初白田亩产十余斛、水田数十斛，远高于晋初[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]按户征调[/color]比按口征钱更能抑制人口隐匿——"户难藏而口易逃"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  严禁豪强转嫁赋税，是曹操打击冀州袁氏旧有豪强体系的配套措施[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]崔琰劝阻与入主初期的政治张力[/b]
+[color=#000000]颁行年代学术争议：[/color]
+
+[indent]•  主流说：建安九年（204年）入邺后颁行[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  别说：建安十一年（206年）——据《何夔传》"操始制新科下州郡，又收租税绵绢"与[color=#0066FF][url={"research": "张辽", "cat": "people"}]张辽[/url][/color]平管承（建安十年后）时间对应[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  高敏考证：户调制非操独创，初平年间（190-193年）各州郡已有按户收调之制，曹操是在入主冀州后将其正式化、法令化并推广[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]屯田制在冀州的推广[/font][/b]
+
+
+[color=#000000]起源：[/color] 建安元年（196年），枣祗建议，[color=#0066FF][url={"research": "任峻", "cat": "people"}]任峻[/url][/color]为典农中郎将，许县首开民屯，"得谷百万斛"，于是"州郡倒置田官，所在积谷，仓廪皆满"。
+
+[color=#000000]推广至河北：[/color]
+
+[indent]•  曹操平冀州（204年）后，将屯田体系拓展至河北[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  河北屯田最早实为[color=#000000]公孙瓒[/color]所兴（初平四年，今保定一带），曹操平河北后接收并系统化[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  军事屯田与民屯并行，典农官体系独立于太守郡守系统[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]屯田双面性（重要）：[/color]
+
+[indent]•  [color=#000000]有利面：[/color] 定额田租（低于旧制约一半）、免口赋、激励精耕细作[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]压迫面：[/color] 建安九年令民凿冰通船"民惮役而亡"，亡者被捉处死；建安十二年北征乌丸令"堑山堙谷五百余里"——徭役之酷远超制度条文所呈现[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]崔琰劝阻与入主初期的政治张力[/font][/b]
+
 
 曹操见户籍"可得三十万众，故为大州也"，欲扩军，崔琰进谏：兵连祸结，宜先休养生息、撤军讲武、布恩宣惠，曹操"改容谢之"。
 
 此段揭示建安九年内部张力：操欲迅速扩军，冀州士人要求休养。最终政策（免租+抑兼并令+田租户调）是两种逻辑的折中——短期让步民心，中期扩充实力。
 
 
-[b]战略地位[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]战略地位[/font][/b]
 
 
 沮授劝袁绍语（《三国志·袁绍传》）：
-[color=#AAAAAA]　"横大河之北，合四州之地，收英雄之才，拥百万之众，迎大驾于西京，复宗庙于洛邑，号令天下，以讨未复，以此争锋，谁能敌之？"[/color]
+
+[indent][color=#666666]┃ "横大河之北，合四州之地，收英雄之才，拥百万之众，迎大驾于西京，复宗庙于洛邑，号令天下，以讨未复，以此争锋，谁能敌之？"[/color][/indent]
+
 
 冀州战略价值：
-1. [b]物产富庶[/b]：即使经历汉末战乱，建安时仍可得三十万兵源，为诸州之首
-2. [b]地势险固[/b]：北依燕山、西控太行、南临黄河，进可出太行东麓威胁中原，退可凭黄河为屏
-3. [b]政治象征[/b]：控制冀州即控制河北，是统一北方的枢纽
-4. [b]运输通道[/b]：漳水、滹沱河、清漳水等水系构成漕运网络，曹操后来开凿白沟、利漕渠进一步完善
+
+[indent]1.  [color=#000000]物产富庶[/color]：即使经历汉末战乱，建安时仍可得三十万兵源，为诸州之首[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]地势险固[/color]：北依燕山、西控太行、南临黄河，进可出太行东麓威胁中原，退可凭黄河为屏[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]政治象征[/color]：控制冀州即控制河北，是统一北方的枢纽[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]运输通道[/color]：漳水、滹沱河、清漳水等水系构成漕运网络，曹操后来开凿白沟、利漕渠进一步完善[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]重要事件[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]190年—191年：韩馥据冀，袁绍谋夺[/b]
-
-初平元年（190年），韩馥以冀州牧参与讨董联军，为后方物资提供支撑，但性格懦弱，优柔寡断，曾克扣袁绍军粮。
-
-初平二年（191年），袁绍联合麴义反叛韩馥，同时密邀公孙瓒南下施压，使韩馥腹背受敌。韩馥被迫让出印绶（自辩语："吾，袁氏故吏，且才不如本初，度德而让，古人所贵"），后投奔张邈，疑惧中自杀（以书刀自刎于厕中）。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]重要事件[/font][/b]
 
 
-[b]192年：界桥之战 — 确立袁绍河北霸主[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]190年—191年：韩馥据冀，袁绍谋夺[/font][/b]
 
-[b]战场考证（今址）：[/b]
-- [b]方家营镇（主战场）：[/b] 今河北邢台市威县方家营镇东、大葛寨村南，距县城约11.5公里
-- [b]章台镇：[/b] 威县章台镇一带亦有战役遗迹传说（两镇均在威县东部，可能指同一战区不同地点）
-- [b]古河道：[/b] 战场附近现存长约3公里的枯漳水（老沙河）古河道
-- [b]"界桥遗址"标志碑：[/b] 已立，出土汉代箭镞、铠甲残片等文物
 
-[b]文保状态（2026年1月核查确认，四次独立核查一致）：[/b]
-- 界桥遗址为[b]县级文物保护单位[/b]（威县县级）
-- [b]河北省第六批（2018年）、第七批（2026年1月）省级文保名单均无界桥遗址[/b]
-- "省保"说法系网络误传（今日头条AI生成文章错误）；威县政府官网明确列省级文保仅4处（义和拳议事厅旧址、王伯大墓、王浚墓及国家级1处）
-- [b]考古状态：[/b] 迄今无专项军事遗址系统考古发掘，出土文物为地表散落，非系统发掘成果
+[color=#000000]韩馥其人：[/color] 字文节，颍川人，袁逢故吏；中平六年（189年）[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]举荐为冀州牧。
 
-[b]史料位置：[/b] 据《水经·淇水注》、《后汉书·献帝纪》李贤注：界桥在"贝州宗城东，近枯漳水"，即今威县一带清河国（甘陵国）境内。
+初平元年（190年），韩馥参与讨董联军，驻守邺城为后方。初期曾派从事监视袁绍、克扣军粮（《英雄记》："韩馥以豪杰多归心袁绍，忌之；阴贬节其军粮，欲使其众离散"），后接受刘子惠劝告，书信袁绍道卓之恶，听其举兵。
+
+[color=#000000]谋夺冀州三步棋：[/color]
+
+[indent]1.  麴义叛馥→袁绍与麴义结交（内部分裂韩馥军）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  密邀公孙瓒南下施压（外部军事威胁）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#0066FF][url={"research": "逢纪", "cat": "people"}]逢纪[/url][/color]（袁绍外甥）及[color=#0066FF][url={"research": "辛评", "cat": "people"}]辛评[/url][/color]、郭图游说韩馥（政治劝降）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]赵浮劝阻未果：[/color] 韩馥部将赵浮、程涣急行还军，对韩馥说："袁绍军无一斗粮……我请以见兵拒之，旬日之间，必土崩瓦解。明将军但当开阁高枕，何忧何惧！"韩馥不听，辞职出居，遣子送印绶。
+
+[color=#000000]韩馥之死（初平三年冬，约192年末）：[/color] 投奔[color=#0066FF][url={"research": "张邈", "cat": "people"}]张邈[/url][/color]（陈留）后，袁绍使者与张邈屏人私语，韩馥误以为谋己，起身至厕所以[color=#000000]书刀自杀[/color]。此前朱汉曾擅自发兵包围韩馥宅，捉住其长子"槌折两脚"（袁绍虽立刻杀朱汉，但韩馥已心存猜疑）。
+
+韩馥自辩让冀之语："吾，袁氏故吏，且才不如本初，度德而让，古人所贵。"——史料记其动机兼有懦弱与知耻。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]192年：界桥之战 — 确立袁绍河北霸主[/font][/b]
+
+
+[color=#000000]战场考证（今址）：[/color]
+
+[indent]•  [color=#000000]方家营镇（主战场）：[/color] 今河北邢台市威县方家营镇东、大葛寨村南，距县城约11.5公里[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]章台镇：[/color] 威县章台镇一带亦有战役遗迹传说（两镇均在威县东部，可能指同一战区不同地点）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]古河道：[/color] 战场附近现存长约3公里的枯漳水（老沙河）古河道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]"界桥遗址"标志碑：[/color] 已立，出土汉代箭镞、铠甲残片等文物[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]文保状态（2026年4月21日第五次独立核查最终确认）：[/color]
+
+[indent]•  界桥遗址为[color=#000000]县级文物保护单位[/color]（威县县级）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]河北省第六批（2018年）、第七批（2026年1月）省级文保名单均无界桥遗址[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "省保"说法系网络误传（今日头条AI生成文章错误）；威县政府官网明确列省级文保仅4处[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]考古状态：[/color] 迄今无专项军事遗址系统考古发掘，出土文物为地表散落，非系统发掘成果[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]史料位置：[/color] 据《水经·淇水注》、《后汉书·献帝纪》李贤注：界桥在"贝州宗城东，近枯漳水"，即今威县一带清河国（甘陵国）境内。
 
 初平三年（192年）初，公孙瓒进军切断袁绍广川（今枣强东北）屯军与邺城大本营的联系，逼袁绍交战。两军在界桥南20里相遇。
 
-[b]双方兵力：[/b]
-- 公孙瓒：步兵三万余列方阵，两翼各骑兵五千，"白马义从"居中
-- 袁绍：麴义率精兵八百为先锋，强弩千张掩护，袁绍领大军殿后
+[color=#000000]双方兵力：[/color]
 
-[b]战况：[/b]
+[indent]•  公孙瓒：步兵三万余列方阵，两翼各骑兵五千，"白马义从"居中[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  袁绍：麴义率精兵八百为先锋，强弩千张掩护，袁绍领大军殿后[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]战况：[/color]
 麴义以八百敢死队为先登，俯伏盾下待敌骑冲至数十步，跃起砍杀，强弩齐射白马义从，公孙瓒军全线崩溃。麴义斩严纲（公孙瓒所署冀州刺史），斩首千余，追至界桥再破公孙瓒殿后，直杀至其大营砍倒牙门大旗方归。
 
-袁绍险死：随行仅百余人，被公孙瓒散骑二千围攻，[color=#6699FF][url={"research": "田丰", "cat": "people"}]田丰[/url][/color]劝躲矮墙，袁绍掷盔："大丈夫宁可冲上前战死，躲在墙后难道就能活命吗！"最终化险为夷，麴义引兵来迎方解围。
+袁绍险死：随行仅百余人，被公孙瓒散骑二千围攻，[color=#0066FF][url={"research": "田丰", "cat": "people"}]田丰[/url][/color]劝躲矮墙，袁绍掷盔："大丈夫宁可冲上前战死，躲在墙后难道就能活命吗！"最终化险为夷，麴义引兵来迎方解围。
 
-[b]影响：[/b] 公孙瓒"白马义从"精锐被歼，严纲伪冀州刺史政权瓦解；袁绍改变被动局面，界桥之战是其称霸河北的转折点。
+[color=#000000]影响：[/color] 公孙瓒"白马义从"精锐被歼，严纲伪冀州刺史政权瓦解；袁绍改变被动局面，界桥之战是其称霸河北的转折点。
 
 
-[b]192—199年：袁绍扫平河北，建立"四州之众"[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]192—199年：袁绍扫平河北，建立"四州之众"[/font][/b]
+
 
 按沮授战略，袁绍次第平定：
-- 界桥大捷后兼并青、幽、并三州
-- 199年（建安四年）攻破公孙瓒易京，公孙瓒自焚而死
-- 形成"带甲百万，谷支十年"的巅峰状态
+
+[indent]•  界桥大捷后兼并青、幽、并三州[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  199年（建安四年）攻破公孙瓒易京，公孙瓒自焚而死[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  形成"带甲百万，谷支十年"的巅峰状态[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]200年：官渡之战（冀州视角）[/b]
+[color=#000000]袁绍历史评价（代表性：）[/color]
 
-[color=#6699FF][url={"research": "审配", "cat": "people"}]审配[/url][/color]、[color=#6699FF][url={"research": "逢纪", "cat": "people"}]逢纪[/url][/color]镇守邺城后方；沮授以"屯军官渡，持久制胜"策略劝袁绍，未被采纳。
-官渡大败后，袁绍"顿兵一处，谋臣离叛，兄弟构隙"，冀州根基动摇。
-
-
-[b]204年：曹操平冀，领冀州牧[/b]
-
-建安九年（204年）曹操攻克邺城，诏以操[b]领冀州牧[/b]，政权中心随之北移：
-- "政在邺，名在许"的二元结构形成
-- 免当年租赋+颁田租户调令，收买民心、抑豪强兼并
-- 开凿白沟、利漕渠，沟通河北水运
-- 崔琰告知户籍可征三十万兵（建安九年官籍约300万人口，仍为各州之首）
-- 崔琰进谏先休养生息，操"改容谢之"——冀州士人与曹魏集团的初次磨合
+[indent]•  陈寿：外宽内忌，少决，废嫡立庶[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹操（让县自明本志令）："吾知绍之为人，志大而智小，色厉而胆薄，忌克而少威……及至袁绍据河北，兵势强盛，孤自度势，实不敌之。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  范晔（后汉书）："袁绍外宽雅有局度，忧喜不形于色，而性矜愎自高，短于从善，故至于败。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]213年：建安十八年大冀州改制（详见上文）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]200年：官渡之战（冀州视角）[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[color=#0066FF][url={"research": "审配", "cat": "people"}]审配[/url][/color]、逢纪镇守邺城后方；沮授以"屯军官渡，持久制胜"策略劝袁绍，未被采纳。
+建安五年（200年），袁绍率十余万大军攻曹。谋士沮授、田丰献策不被采纳；[color=#0066FF][url={"research": "许攸", "cat": "people"}]许攸[/url][/color]叛投，曹操奇袭乌巢烧粮，大败。建安六年（201年）仓亭再败。袁绍"自军败惭愤，发病呕血"，建安七年（202年6月28日）去世。
 
 
-- [b]韩馥让冀[/b]：史实中袁绍主动设谋（联麴义叛+邀公孙南下），韩馥腹背受敌被迫让出；演义简化为韩馥昏弱自愿相让
-- [b]界桥之战[/b]：演义写为"磐河战公孙"（第七回），改战场为"磐河桥"，增[color=#6699FF][url={"research": "赵云", "cat": "people"}]赵云[/url][/color]救公孙瓒情节；史实战场在界桥（今威县），赵云此时确在公孙瓒麾下但无史料记载此战中的具体行动
-- [b]田丰、沮授之忠[/b]：演义着重刻画两人忠谏不从的悲剧，与史实大体相符，但具体对话系文学加工
-- [b]麴义下场[/b]：史料记麴义骄傲放纵，后被袁绍所杀（《三国志》裴注引《英雄记》），演义无明确描述；民间传言赵云"一枪带走"麴义为虚构
-- [b]曹操免租[/b]：演义对曹操入冀州后的民政改革几乎无描写，史实中"百姓喜悦"的政治运作被演义完全忽略
+[b][font=res://resource/font/FandolSong-Bold/26.tres]204年：曹操平冀，领冀州牧[/font][/b]
+
+
+建安九年（204年）曹操攻克邺城，诏以操[color=#000000]领冀州牧[/color]，政权中心随之北移：
+
+[indent]•  "政在邺，名在许"的二元结构形成[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  免当年租赋+颁田租户调令，收买民心、抑豪强兼并[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  开凿白沟、利漕渠，沟通河北水运[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  崔琰告知户籍可征三十万兵（建安九年官籍约300万人口，仍为各州之首）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  崔琰进谏先休养生息，操"改容谢之"——冀州士人与曹魏集团的初次磨合[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]213年：建安十八年大冀州改制（详见上文）[/font][/b]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[indent]•  [color=#000000]韩馥让冀[/color]：史实中袁绍主动设谋（联麴义叛+邀公孙南下），韩馥腹背受敌被迫让出；演义简化为韩馥昏弱自愿相让[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]韩馥自杀方式[/color]：史实以书刀自刎于厕中（初平三年冬，约192年末）；演义简略，未详述此幕[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]界桥之战[/color]：演义写为"磐河战公孙"（第七回），改战场为"磐河桥"，增[color=#0066FF][url={"research": "赵云", "cat": "people"}]赵云[/url][/color]救公孙瓒情节；史实战场在界桥（今威县），赵云此时确在公孙瓒麾下但无史料记载此战中的具体行动[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]田丰、沮授之忠[/color]：演义着重刻画两人忠谏不从的悲剧，与史实大体相符，但具体对话系文学加工[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]麴义下场[/color]：史料记麴义骄傲放纵，后被袁绍所杀（《三国志》裴注引《英雄记》），演义无明确描述；民间传言赵云"一枪带走"麴义为虚构[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]曹操免租[/color]：演义对曹操入冀州后的民政改革几乎无描写，史实中"百姓喜悦"的政治运作被演义完全忽略[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]袁绍掷盔[/color]：界桥险死时掷盔大呼，演义强化袁绍"色厉胆薄"形象，史实中此举有文学化成分（《英雄记》裴注记录，细节真实性存疑）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]

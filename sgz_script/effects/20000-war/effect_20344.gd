@@ -31,7 +31,7 @@ func effect_20344_start():
 			continue
 		targets.append(targetId)
 	if targets.empty():
-		play_dialog(me.actorId, "没有合适的目标", 2, 2009)
+		play_dialog(actorId, "没有合适的目标", 2, 2009)
 		return
 	if not wait_choose_actors(targets, "选择队友发动【互援】"):
 		return
@@ -47,7 +47,7 @@ func effect_20344_2():
 	var msg = "消耗{0}机动力发动【互援】\n与{1}平分兵力\n可否？".format([
 		COST_AP, targetActor.get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20344_3():
@@ -73,5 +73,5 @@ func effect_20344_3():
 		DataManager.get_actor_honored_title(targetId, self.actorId),
 	])
 	FlowManager.add_flow("draw_actors")
-	play_dialog(me.actorId, msg, 2, 2009)
+	play_dialog(actorId, msg, 2, 2009)
 	return

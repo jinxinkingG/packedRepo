@@ -19,6 +19,8 @@ func _init() -> void:
 
 	FlowManager.bind_import_flow("war_map_nav_start", self)
 	FlowManager.bind_import_flow("war_map_nav_finish", self)
+	FlowManager.bind_import_flow("war_patrol_start", self)
+	FlowManager.bind_import_flow("war_patrol_end", self)
 
 	FlowManager.bind_import_flow("war_run_start", self)
 	FlowManager.bind_import_flow("war_step_0", self)
@@ -61,6 +63,28 @@ func war_map_nav_finish() -> void:
 	FlowManager.add_flow("go_to_scene|res://scene/scene_affiars/scene_affiars.tscn")
 	FlowManager.add_flow("load_script|affiars/barrack_inspect.gd")
 	FlowManager.add_flow("inspect_more")
+	return
+
+# 巡野开始：直接进入战争每日流程（跳过战争介绍画面）
+func war_patrol_start() -> void:
+	SkillHelper.reset_skills_list_cache(false)
+	SoundManager.stop()
+	SoundManager.play_bgm()
+	DataManager.player_choose_actor = -1
+	SceneManager.hide_all_tool()
+	FlowManager.add_flow("war_step_0")
+	return
+
+# 巡野结束：清理并返回内政
+func war_patrol_end() -> void:
+	var wf = DataManager.get_current_war_fight()
+	wf.done()
+	wf.cleanup()
+	DataManager.war_control_sort = []
+	LoadControl.end_script()
+	DataManager.clear_common_variable(["战争","大战场","白兵","单挑","诱发"])
+	FlowManager.add_flow("go_to_scene|res://scene/scene_affiars/scene_affiars.tscn")
+	FlowManager.add_flow("player_ready")
 	return
 
 func war_run_start():
@@ -278,6 +302,17 @@ func war_step_10() -> void:
 	var wf = DataManager.get_current_war_fight()
 	var msg = "战争第{0}日结束".format([wf.date])
 	set_next_step(10, msg)
+	# 巡野天数上限检查
+	var dayLimit = wf.get_env_int("天数上限")
+	if dayLimit > 0 and wf.date >= dayLimit:
+		if wf.source == "巡野":
+			DataManager.set_env("巡野结束语", "巡察期限已到，返回城池")
+			FlowManager.add_flow("war_patrol_end_farewell")
+			return
+		# 非巡野的自定义天数上限，走正常攻方失败流程
+		wf.attackerWV.set_lost_reason(War_Vstate.Lose_ReasonEnum.OverDay)
+		FlowManager.add_flow("war_vstate_settlement")
+		return
 	# 如果天数超过30，攻方失败
 	if wf.date >= 30:
 		wf.attackerWV.set_lost_reason(War_Vstate.Lose_ReasonEnum.OverDay)
@@ -528,6 +563,11 @@ func war_step_82() -> void:
 # 这里需要考虑各种情况，并且可重入
 func war_vstate_settlement() -> void:
 	var wf = DataManager.get_current_war_fight()
+	# 巡野模式下跳过正常结算，直接返回内政
+	if wf.source == "巡野":
+		DataManager.set_env("巡野结束语", "巡察期限已到，返回城池")
+		FlowManager.add_flow("war_patrol_end_farewell")
+		return
 	# 各势力结算
 	for wv in wf.war_vstates():
 		if not wv.lost():

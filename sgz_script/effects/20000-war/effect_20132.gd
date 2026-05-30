@@ -68,7 +68,7 @@ func effect_20132_3():
 	var msg = "使用{0}机动力\n发动【{1}】，可否".format([
 		COST_AP, ske.skill_name
 	])
-	play_dialog(me.actorId, msg, 2, 2002, true)
+	play_dialog(actorId, msg, 2, 2002, true)
 	return
 
 func effect_20132_4():
@@ -83,5 +83,5 @@ func effect_20132_4():
 	map.show_color_block_by_position([])
 	var msg = "{0}已入彀\n计将安出？".format([targetActor.get_name()])
 	FlowManager.add_flow("draw_actors")
-	play_dialog(me.actorId, msg, 1, 2003)
+	play_dialog(actorId, msg, 1, 2003)
 	return

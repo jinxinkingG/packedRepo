@@ -26,3 +26,9 @@ func on_trigger_20013()->bool:
 		ske.set_war_skill_val(0)
 		ske.war_report()
 	return false
+
+func on_trigger_20027() -> bool:
+	# 清空技能变量，否则回营出营无法再次生效
+	ske.set_war_skill_val(null, 0)
+	return false
+

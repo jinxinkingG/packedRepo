@@ -5,6 +5,11 @@
     "file": "people/丁仪.json"
   },
   {
+    "name": "丁原",
+    "category": "people",
+    "file": "people/丁原.json"
+  },
+  {
     "name": "丁固",
     "category": "people",
     "file": "people/丁固.json"
@@ -45,6 +50,21 @@
     "file": "people/丘本.json"
   },
   {
+    "name": "严畯",
+    "category": "people",
+    "file": "people/严畯.json"
+  },
+  {
+    "name": "严纲",
+    "category": "people",
+    "file": "people/严纲.json"
+  },
+  {
+    "name": "严颜",
+    "category": "people",
+    "file": "people/严颜.json"
+  },
+  {
     "name": "乐就",
     "category": "people",
     "file": "people/乐就.json"
@@ -68,6 +88,11 @@
     "name": "习祯",
     "category": "people",
     "file": "people/习祯.json"
+  },
+  {
+    "name": "于吉",
+    "category": "people",
+    "file": "people/于吉.json"
   },
   {
     "name": "于夫罗",
@@ -108,6 +133,11 @@
     "name": "仲长统",
     "category": "people",
     "file": "people/仲长统.json"
+  },
+  {
+    "name": "任双",
+    "category": "people",
+    "file": "people/任双.json"
   },
   {
     "name": "任峻",
@@ -185,6 +215,11 @@
     "file": "people/何进.json"
   },
   {
+    "name": "侯成",
+    "category": "people",
+    "file": "people/侯成.json"
+  },
+  {
     "name": "侯氏",
     "category": "people",
     "file": "people/侯氏.json"
@@ -200,6 +235,11 @@
     "file": "people/俄何焼戈.json"
   },
   {
+    "name": "俞涉",
+    "category": "people",
+    "file": "people/俞涉.json"
+  },
+  {
     "name": "修允",
     "category": "people",
     "file": "people/修允.json"
@@ -213,6 +253,11 @@
     "name": "傅佥",
     "category": "people",
     "file": "people/傅佥.json"
+  },
+  {
+    "name": "傅嘏",
+    "category": "people",
+    "file": "people/傅嘏.json"
   },
   {
     "name": "傅士仁",
@@ -255,6 +300,11 @@
     "file": "people/全尚.json"
   },
   {
+    "name": "全怿",
+    "category": "people",
+    "file": "people/全怿.json"
+  },
+  {
     "name": "全柔",
     "category": "people",
     "file": "people/全柔.json"
@@ -280,14 +330,14 @@
     "file": "people/全纪.json"
   },
   {
-    "name": "兪渉",
-    "category": "people",
-    "file": "people/兪渉.json"
-  },
-  {
     "name": "公孙度",
     "category": "people",
     "file": "people/公孙度.json"
+  },
+  {
+    "name": "公孙康",
+    "category": "people",
+    "file": "people/公孙康.json"
   },
   {
     "name": "公孙恭",
@@ -310,9 +360,49 @@
     "file": "people/公孙瓒.json"
   },
   {
+    "name": "公孙续",
+    "category": "people",
+    "file": "people/公孙续.json"
+  },
+  {
+    "name": "公孙范",
+    "category": "people",
+    "file": "people/公孙范.json"
+  },
+  {
+    "name": "公孙越",
+    "category": "people",
+    "file": "people/公孙越.json"
+  },
+  {
+    "name": "关兴",
+    "category": "people",
+    "file": "people/关兴.json"
+  },
+  {
+    "name": "关平",
+    "category": "people",
+    "file": "people/关平.json"
+  },
+  {
+    "name": "关索",
+    "category": "people",
+    "file": "people/关索.json"
+  },
+  {
     "name": "关羽",
     "category": "people",
     "file": "people/关羽.json"
+  },
+  {
+    "name": "关靖",
+    "category": "people",
+    "file": "people/关靖.json"
+  },
+  {
+    "name": "典満",
+    "category": "people",
+    "file": "people/典満.json"
   },
   {
     "name": "典满",
@@ -380,6 +470,11 @@
     "file": "people/刘勋.json"
   },
   {
+    "name": "刘协",
+    "category": "people",
+    "file": "people/刘协.json"
+  },
+  {
     "name": "刘和",
     "category": "people",
     "file": "people/刘和.json"
@@ -388,6 +483,21 @@
     "name": "刘备",
     "category": "people",
     "file": "people/刘备.json"
+  },
+  {
+    "name": "刘封",
+    "category": "people",
+    "file": "people/刘封.json"
+  },
+  {
+    "name": "刘岱",
+    "category": "people",
+    "file": "people/刘岱.json"
+  },
+  {
+    "name": "刘岱（魏）",
+    "category": "people",
+    "file": "people/刘岱（魏）.json"
   },
   {
     "name": "刘巴",
@@ -480,6 +590,11 @@
     "file": "people/刘胄.json"
   },
   {
+    "name": "刘虞",
+    "category": "people",
+    "file": "people/刘虞.json"
+  },
+  {
     "name": "刘表",
     "category": "people",
     "file": "people/刘表.json"
@@ -500,6 +615,11 @@
     "file": "people/刘辟.json"
   },
   {
+    "name": "刘辩",
+    "category": "people",
+    "file": "people/刘辩.json"
+  },
+  {
     "name": "刘靖",
     "category": "people",
     "file": "people/刘靖.json"
@@ -515,6 +635,11 @@
     "file": "people/千万.json"
   },
   {
+    "name": "华佗",
+    "category": "people",
+    "file": "people/华佗.json"
+  },
+  {
     "name": "华核",
     "category": "people",
     "file": "people/华核.json"
@@ -523,6 +648,11 @@
     "name": "华歆",
     "category": "people",
     "file": "people/华歆.json"
+  },
+  {
+    "name": "华雄",
+    "category": "people",
+    "file": "people/华雄.json"
   },
   {
     "name": "卑衍",
@@ -550,6 +680,11 @@
     "file": "people/卞氏.json"
   },
   {
+    "name": "卢植",
+    "category": "people",
+    "file": "people/卢植.json"
+  },
+  {
     "name": "卢毓",
     "category": "people",
     "file": "people/卢毓.json"
@@ -558,6 +693,16 @@
     "name": "卫兹",
     "category": "people",
     "file": "people/卫兹.json"
+  },
+  {
+    "name": "卫温",
+    "category": "people",
+    "file": "people/卫温.json"
+  },
+  {
+    "name": "卫瓘",
+    "category": "people",
+    "file": "people/卫瓘.json"
   },
   {
     "name": "卫臻",
@@ -575,29 +720,14 @@
     "file": "people/厳氏.json"
   },
   {
-    "name": "厳畯",
-    "category": "people",
-    "file": "people/厳畯.json"
-  },
-  {
     "name": "厳白虎",
     "category": "people",
     "file": "people/厳白虎.json"
   },
   {
-    "name": "厳纲",
-    "category": "people",
-    "file": "people/厳纲.json"
-  },
-  {
     "name": "厳舆",
     "category": "people",
     "file": "people/厳舆.json"
-  },
-  {
-    "name": "厳颜",
-    "category": "people",
-    "file": "people/厳颜.json"
   },
   {
     "name": "句安",
@@ -715,9 +845,9 @@
     "file": "people/吕建.json"
   },
   {
-    "name": "吕拠",
+    "name": "吕据",
     "category": "people",
-    "file": "people/吕拠.json"
+    "file": "people/吕据.json"
   },
   {
     "name": "吕旷",
@@ -820,6 +950,11 @@
     "file": "people/周㬂.json"
   },
   {
+    "name": "周仓",
+    "category": "people",
+    "file": "people/周仓.json"
+  },
+  {
     "name": "周善",
     "category": "people",
     "file": "people/周善.json"
@@ -875,6 +1010,11 @@
     "file": "people/呼厨泉.json"
   },
   {
+    "name": "和洽",
+    "category": "people",
+    "file": "people/和洽.json"
+  },
+  {
     "name": "唐咨",
     "category": "people",
     "file": "people/唐咨.json"
@@ -900,14 +1040,19 @@
     "file": "people/士匡.json"
   },
   {
-    "name": "士壱",
+    "name": "士壹",
     "category": "people",
-    "file": "people/士壱.json"
+    "file": "people/士壹.json"
   },
   {
     "name": "士孙瑞",
     "category": "people",
     "file": "people/士孙瑞.json"
+  },
+  {
+    "name": "士干",
+    "category": "people",
+    "file": "people/士干.json"
   },
   {
     "name": "士廞",
@@ -935,6 +1080,16 @@
     "file": "people/士祗.json"
   },
   {
+    "name": "士颂",
+    "category": "people",
+    "file": "people/士颂.json"
+  },
+  {
+    "name": "士骉",
+    "category": "people",
+    "file": "people/士骉.json"
+  },
+  {
     "name": "夏侯令女",
     "category": "people",
     "file": "people/夏侯令女.json"
@@ -945,6 +1100,11 @@
     "file": "people/夏侯儒.json"
   },
   {
+    "name": "夏侯兰",
+    "category": "people",
+    "file": "people/夏侯兰.json"
+  },
+  {
     "name": "夏侯和",
     "category": "people",
     "file": "people/夏侯和.json"
@@ -953,6 +1113,11 @@
     "name": "夏侯威",
     "category": "people",
     "file": "people/夏侯威.json"
+  },
+  {
+    "name": "夏侯尚",
+    "category": "people",
+    "file": "people/夏侯尚.json"
   },
   {
     "name": "夏侯德",
@@ -975,14 +1140,34 @@
     "file": "people/夏侯惇.json"
   },
   {
+    "name": "夏侯惠",
+    "category": "people",
+    "file": "people/夏侯惠.json"
+  },
+  {
+    "name": "夏侯杰",
+    "category": "people",
+    "file": "people/夏侯杰.json"
+  },
+  {
     "name": "夏侯栄",
     "category": "people",
     "file": "people/夏侯栄.json"
   },
   {
+    "name": "夏侯楙",
+    "category": "people",
+    "file": "people/夏侯楙.json"
+  },
+  {
     "name": "夏侯氏",
     "category": "people",
     "file": "people/夏侯氏.json"
+  },
+  {
+    "name": "夏侯涓",
+    "category": "people",
+    "file": "people/夏侯涓.json"
   },
   {
     "name": "夏侯渊",
@@ -995,9 +1180,14 @@
     "file": "people/夏侯献.json"
   },
   {
-    "name": "夏侯覇",
+    "name": "夏侯玄",
     "category": "people",
-    "file": "people/夏侯覇.json"
+    "file": "people/夏侯玄.json"
+  },
+  {
+    "name": "夏侯霸",
+    "category": "people",
+    "file": "people/夏侯霸.json"
   },
   {
     "name": "大乔",
@@ -1008,6 +1198,11 @@
     "name": "太史享",
     "category": "people",
     "file": "people/太史享.json"
+  },
+  {
+    "name": "太史慈",
+    "category": "people",
+    "file": "people/太史慈.json"
   },
   {
     "name": "奚泥",
@@ -1043,6 +1238,11 @@
     "name": "孔融",
     "category": "people",
     "file": "people/孔融.json"
+  },
+  {
+    "name": "孙乾",
+    "category": "people",
+    "file": "people/孙乾.json"
   },
   {
     "name": "孙亮",
@@ -1105,11 +1305,6 @@
     "file": "people/孙峻.json"
   },
   {
-    "name": "孙干",
-    "category": "people",
-    "file": "people/孙干.json"
-  },
-  {
     "name": "孙异",
     "category": "people",
     "file": "people/孙异.json"
@@ -1155,9 +1350,24 @@
     "file": "people/孙河.json"
   },
   {
+    "name": "孙瑜",
+    "category": "people",
+    "file": "people/孙瑜.json"
+  },
+  {
+    "name": "孙登",
+    "category": "people",
+    "file": "people/孙登.json"
+  },
+  {
     "name": "孙皎",
     "category": "people",
     "file": "people/孙皎.json"
+  },
+  {
+    "name": "孙皓",
+    "category": "people",
+    "file": "people/孙皓.json"
   },
   {
     "name": "孙礼",
@@ -1260,6 +1470,16 @@
     "file": "people/孟建.json"
   },
   {
+    "name": "孟获",
+    "category": "people",
+    "file": "people/孟获.json"
+  },
+  {
+    "name": "孟达",
+    "category": "people",
+    "file": "people/孟达.json"
+  },
+  {
     "name": "季雍",
     "category": "people",
     "file": "people/季雍.json"
@@ -1268,6 +1488,11 @@
     "name": "宁随",
     "category": "people",
     "file": "people/宁随.json"
+  },
+  {
+    "name": "宋宪",
+    "category": "people",
+    "file": "people/宋宪.json"
   },
   {
     "name": "宋忠",
@@ -1303,6 +1528,11 @@
     "name": "射援",
     "category": "people",
     "file": "people/射援.json"
+  },
+  {
+    "name": "小乔",
+    "category": "people",
+    "file": "people/小乔.json"
   },
   {
     "name": "尤突",
@@ -1370,6 +1600,11 @@
     "file": "people/崔琰.json"
   },
   {
+    "name": "崔谅",
+    "category": "people",
+    "file": "people/崔谅.json"
+  },
+  {
     "name": "嵆康",
     "category": "people",
     "file": "people/嵆康.json"
@@ -1383,6 +1618,11 @@
     "name": "左奕",
     "category": "people",
     "file": "people/左奕.json"
+  },
+  {
+    "name": "左慈",
+    "category": "people",
+    "file": "people/左慈.json"
   },
   {
     "name": "左贤王",
@@ -1405,9 +1645,9 @@
     "file": "people/师纂.json"
   },
   {
-    "name": "帯来洞主",
+    "name": "带来洞主",
     "category": "people",
-    "file": "people/帯来洞主.json"
+    "file": "people/带来洞主.json"
   },
   {
     "name": "常林",
@@ -1420,6 +1660,11 @@
     "file": "people/应劭.json"
   },
   {
+    "name": "庞会",
+    "category": "people",
+    "file": "people/庞会.json"
+  },
+  {
     "name": "庞德",
     "category": "people",
     "file": "people/庞德.json"
@@ -1428,6 +1673,11 @@
     "name": "庞林",
     "category": "people",
     "file": "people/庞林.json"
+  },
+  {
+    "name": "庞柔",
+    "category": "people",
+    "file": "people/庞柔.json"
   },
   {
     "name": "庞淯",
@@ -1485,14 +1735,14 @@
     "file": "people/张华.json"
   },
   {
+    "name": "张南#袁",
+    "category": "people",
+    "file": "people/张南#袁.json"
+  },
+  {
     "name": "张南（蜀）",
     "category": "people",
     "file": "people/张南（蜀）.json"
-  },
-  {
-    "name": "张南（袁）",
-    "category": "people",
-    "file": "people/张南（袁）.json"
   },
   {
     "name": "张卫",
@@ -1520,9 +1770,9 @@
     "file": "people/张悌.json"
   },
   {
-    "name": "张承（吴）",
+    "name": "张承",
     "category": "people",
-    "file": "people/张承（吴）.json"
+    "file": "people/张承.json"
   },
   {
     "name": "张承（汉）",
@@ -1540,6 +1790,11 @@
     "file": "people/张既.json"
   },
   {
+    "name": "张星彩",
+    "category": "people",
+    "file": "people/张星彩.json"
+  },
+  {
     "name": "张昭",
     "category": "people",
     "file": "people/张昭.json"
@@ -1553,6 +1808,11 @@
     "name": "张杨",
     "category": "people",
     "file": "people/张杨.json"
+  },
+  {
+    "name": "张松",
+    "category": "people",
+    "file": "people/张松.json"
   },
   {
     "name": "张梁",
@@ -1575,6 +1835,11 @@
     "file": "people/张泉.json"
   },
   {
+    "name": "张济",
+    "category": "people",
+    "file": "people/张济.json"
+  },
+  {
     "name": "张済",
     "category": "people",
     "file": "people/张済.json"
@@ -1583,6 +1848,11 @@
     "name": "张温",
     "category": "people",
     "file": "people/张温.json"
+  },
+  {
+    "name": "张燕",
+    "category": "people",
+    "file": "people/张燕.json"
   },
   {
     "name": "张特",
@@ -1600,19 +1870,24 @@
     "file": "people/张琰.json"
   },
   {
-    "name": "张粛",
-    "category": "people",
-    "file": "people/张粛.json"
-  },
-  {
     "name": "张繍",
     "category": "people",
     "file": "people/张繍.json"
   },
   {
+    "name": "张纮",
+    "category": "people",
+    "file": "people/张纮.json"
+  },
+  {
     "name": "张绍",
     "category": "people",
     "file": "people/张绍.json"
+  },
+  {
+    "name": "张绣",
+    "category": "people",
+    "file": "people/张绣.json"
   },
   {
     "name": "张缉",
@@ -1628,6 +1903,11 @@
     "name": "张翼",
     "category": "people",
     "file": "people/张翼.json"
+  },
+  {
+    "name": "张肃",
+    "category": "people",
+    "file": "people/张肃.json"
   },
   {
     "name": "张苞",
@@ -1675,9 +1955,19 @@
     "file": "people/张辽.json"
   },
   {
+    "name": "张达",
+    "category": "people",
+    "file": "people/张达.json"
+  },
+  {
     "name": "张遵",
     "category": "people",
     "file": "people/张遵.json"
+  },
+  {
+    "name": "张邈",
+    "category": "people",
+    "file": "people/张邈.json"
   },
   {
     "name": "张郃",
@@ -1745,9 +2035,14 @@
     "file": "people/徐栄.json"
   },
   {
-    "name": "徐氏",
+    "name": "徐氏（孙权夫人）",
     "category": "people",
-    "file": "people/徐氏.json"
+    "file": "people/徐氏（孙权夫人）.json"
+  },
+  {
+    "name": "徐氏（孙翊夫人）",
+    "category": "people",
+    "file": "people/徐氏（孙翊夫人）.json"
   },
   {
     "name": "徐琨",
@@ -1763,6 +2058,11 @@
     "name": "徐盛",
     "category": "people",
     "file": "people/徐盛.json"
+  },
+  {
+    "name": "徐荣",
+    "category": "people",
+    "file": "people/徐荣.json"
   },
   {
     "name": "徐详",
@@ -1790,6 +2090,11 @@
     "file": "people/惠衢.json"
   },
   {
+    "name": "戏志才",
+    "category": "people",
+    "file": "people/戏志才.json"
+  },
+  {
     "name": "成公英",
     "category": "people",
     "file": "people/成公英.json"
@@ -1798,6 +2103,11 @@
     "name": "成宜",
     "category": "people",
     "file": "people/成宜.json"
+  },
+  {
+    "name": "成廉",
+    "category": "people",
+    "file": "people/成廉.json"
   },
   {
     "name": "戯志才",
@@ -1815,6 +2125,11 @@
     "file": "people/戴陵.json"
   },
   {
+    "name": "文丑",
+    "category": "people",
+    "file": "people/文丑.json"
+  },
+  {
     "name": "文聘",
     "category": "people",
     "file": "people/文聘.json"
@@ -1823,6 +2138,16 @@
     "name": "文虎",
     "category": "people",
     "file": "people/文虎.json"
+  },
+  {
+    "name": "文钦",
+    "category": "people",
+    "file": "people/文钦.json"
+  },
+  {
+    "name": "文鸯",
+    "category": "people",
+    "file": "people/文鸯.json"
   },
   {
     "name": "方悦",
@@ -1848,6 +2173,11 @@
     "name": "曹仁",
     "category": "people",
     "file": "people/曹仁.json"
+  },
+  {
+    "name": "曹休",
+    "category": "people",
+    "file": "people/曹休.json"
   },
   {
     "name": "曹冲",
@@ -1930,6 +2260,16 @@
     "file": "people/曹爽.json"
   },
   {
+    "name": "曹真",
+    "category": "people",
+    "file": "people/曹真.json"
+  },
+  {
+    "name": "曹纯",
+    "category": "people",
+    "file": "people/曹纯.json"
+  },
+  {
     "name": "曹羲",
     "category": "people",
     "file": "people/曹羲.json"
@@ -1938,6 +2278,11 @@
     "name": "曹节",
     "category": "people",
     "file": "people/曹节.json"
+  },
+  {
+    "name": "曹芳",
+    "category": "people",
+    "file": "people/曹芳.json"
   },
   {
     "name": "曹训",
@@ -1955,14 +2300,19 @@
     "file": "people/曹霖.json"
   },
   {
+    "name": "曹髦",
+    "category": "people",
+    "file": "people/曹髦.json"
+  },
+  {
     "name": "木鹿大王",
     "category": "people",
     "file": "people/木鹿大王.json"
   },
   {
-    "name": "朱俊",
+    "name": "朱儁",
     "category": "people",
-    "file": "people/朱俊.json"
+    "file": "people/朱儁.json"
   },
   {
     "name": "朱光",
@@ -1975,14 +2325,24 @@
     "file": "people/朱异.json"
   },
   {
-    "name": "朱拠",
+    "name": "朱据",
     "category": "people",
-    "file": "people/朱拠.json"
+    "file": "people/朱据.json"
+  },
+  {
+    "name": "朱桓",
+    "category": "people",
+    "file": "people/朱桓.json"
   },
   {
     "name": "朱治",
     "category": "people",
     "file": "people/朱治.json"
+  },
+  {
+    "name": "朱灵",
+    "category": "people",
+    "file": "people/朱灵.json"
   },
   {
     "name": "朱然",
@@ -2020,6 +2380,11 @@
     "file": "people/朱霊.json"
   },
   {
+    "name": "朵思大王",
+    "category": "people",
+    "file": "people/朵思大王.json"
+  },
+  {
     "name": "朶思大王",
     "category": "people",
     "file": "people/朶思大王.json"
@@ -2030,19 +2395,24 @@
     "file": "people/李严.json"
   },
   {
+    "name": "李丰#袁",
+    "category": "people",
+    "file": "people/李丰#袁.json"
+  },
+  {
     "name": "李丰（蜀）",
     "category": "people",
     "file": "people/李丰（蜀）.json"
   },
   {
-    "name": "李丰（袁）",
-    "category": "people",
-    "file": "people/李丰（袁）.json"
-  },
-  {
     "name": "李丰（魏）",
     "category": "people",
     "file": "people/李丰（魏）.json"
+  },
+  {
+    "name": "李傕",
+    "category": "people",
+    "file": "people/李傕.json"
   },
   {
     "name": "李儒",
@@ -2105,14 +2475,24 @@
     "file": "people/李氏.json"
   },
   {
+    "name": "李珪",
+    "category": "people",
+    "file": "people/李珪.json"
+  },
+  {
+    "name": "李球",
+    "category": "people",
+    "file": "people/李球.json"
+  },
+  {
     "name": "李福",
     "category": "people",
     "file": "people/李福.json"
   },
   {
-    "name": "李粛",
+    "name": "李肃",
     "category": "people",
-    "file": "people/李粛.json"
+    "file": "people/李肃.json"
   },
   {
     "name": "李胜",
@@ -2180,6 +2560,11 @@
     "file": "people/杨丑.json"
   },
   {
+    "name": "杨仪",
+    "category": "people",
+    "file": "people/杨仪.json"
+  },
+  {
     "name": "杨任",
     "category": "people",
     "file": "people/杨任.json"
@@ -2188,6 +2573,11 @@
     "name": "杨修",
     "category": "people",
     "file": "people/杨修.json"
+  },
+  {
+    "name": "杨奉",
+    "category": "people",
+    "file": "people/杨奉.json"
   },
   {
     "name": "杨定",
@@ -2203,6 +2593,11 @@
     "name": "杨弘",
     "category": "people",
     "file": "people/杨弘.json"
+  },
+  {
+    "name": "杨怀",
+    "category": "people",
+    "file": "people/杨怀.json"
   },
   {
     "name": "杨懐",
@@ -2260,6 +2655,11 @@
     "file": "people/杨祚.json"
   },
   {
+    "name": "杨秋",
+    "category": "people",
+    "file": "people/杨秋.json"
+  },
+  {
     "name": "杨肇",
     "category": "people",
     "file": "people/杨肇.json"
@@ -2268,6 +2668,11 @@
     "name": "杨锋",
     "category": "people",
     "file": "people/杨锋.json"
+  },
+  {
+    "name": "杨阜",
+    "category": "people",
+    "file": "people/杨阜.json"
   },
   {
     "name": "柳毅",
@@ -2460,9 +2865,19 @@
     "file": "people/法正.json"
   },
   {
+    "name": "泠苞",
+    "category": "people",
+    "file": "people/泠苞.json"
+  },
+  {
     "name": "波才",
     "category": "people",
     "file": "people/波才.json"
+  },
+  {
+    "name": "淳于琼",
+    "category": "people",
+    "file": "people/淳于琼.json"
   },
   {
     "name": "温恢",
@@ -2535,6 +2950,11 @@
     "file": "people/牛辅.json"
   },
   {
+    "name": "牛金",
+    "category": "people",
+    "file": "people/牛金.json"
+  },
+  {
     "name": "牵弘",
     "category": "people",
     "file": "people/牵弘.json"
@@ -2563,6 +2983,11 @@
     "name": "王允",
     "category": "people",
     "file": "people/王允.json"
+  },
+  {
+    "name": "王凌",
+    "category": "people",
+    "file": "people/王凌.json"
   },
   {
     "name": "王匡",
@@ -2598,6 +3023,16 @@
     "name": "王子服",
     "category": "people",
     "file": "people/王子服.json"
+  },
+  {
+    "name": "王平",
+    "category": "people",
+    "file": "people/王平.json"
+  },
+  {
+    "name": "王建",
+    "category": "people",
+    "file": "people/王建.json"
   },
   {
     "name": "王异",
@@ -2675,11 +3110,6 @@
     "file": "people/王祥.json"
   },
   {
-    "name": "王粛",
-    "category": "people",
-    "file": "people/王粛.json"
-  },
-  {
     "name": "王粲",
     "category": "people",
     "file": "people/王粲.json"
@@ -2688,6 +3118,11 @@
     "name": "王累",
     "category": "people",
     "file": "people/王累.json"
+  },
+  {
+    "name": "王肃",
+    "category": "people",
+    "file": "people/王肃.json"
   },
   {
     "name": "王观",
@@ -2718,6 +3153,11 @@
     "name": "环氏",
     "category": "people",
     "file": "people/环氏.json"
+  },
+  {
+    "name": "甄宓",
+    "category": "people",
+    "file": "people/甄宓.json"
   },
   {
     "name": "甘宁",
@@ -2770,9 +3210,9 @@
     "file": "people/留略.json"
   },
   {
-    "name": "留賛",
+    "name": "留赞",
     "category": "people",
-    "file": "people/留賛.json"
+    "file": "people/留赞.json"
   },
   {
     "name": "皇甫嵩",
@@ -2810,9 +3250,19 @@
     "file": "people/石韬.json"
   },
   {
+    "name": "祖茂",
+    "category": "people",
+    "file": "people/祖茂.json"
+  },
+  {
     "name": "祝融",
     "category": "people",
     "file": "people/祝融.json"
+  },
+  {
+    "name": "祢衡",
+    "category": "people",
+    "file": "people/祢衡.json"
   },
   {
     "name": "秦宓",
@@ -2843,6 +3293,11 @@
     "name": "程昱",
     "category": "people",
     "file": "people/程昱.json"
+  },
+  {
+    "name": "程普",
+    "category": "people",
+    "file": "people/程普.json"
   },
   {
     "name": "程武",
@@ -2905,9 +3360,9 @@
     "file": "people/糜竺.json"
   },
   {
-    "name": "纪霊",
+    "name": "纪灵",
     "category": "people",
-    "file": "people/纪霊.json"
+    "file": "people/纪灵.json"
   },
   {
     "name": "罗宪",
@@ -2955,6 +3410,11 @@
     "file": "people/胡奋.json"
   },
   {
+    "name": "胡济",
+    "category": "people",
+    "file": "people/胡济.json"
+  },
+  {
     "name": "胡済",
     "category": "people",
     "file": "people/胡済.json"
@@ -2963,6 +3423,11 @@
     "name": "胡渊",
     "category": "people",
     "file": "people/胡渊.json"
+  },
+  {
+    "name": "胡烈",
+    "category": "people",
+    "file": "people/胡烈.json"
   },
   {
     "name": "胡班",
@@ -2978,6 +3443,11 @@
     "name": "胡质",
     "category": "people",
     "file": "people/胡质.json"
+  },
+  {
+    "name": "胡车儿",
+    "category": "people",
+    "file": "people/胡车儿.json"
   },
   {
     "name": "胡车児",
@@ -3000,9 +3470,9 @@
     "file": "people/臧洪.json"
   },
   {
-    "name": "臧覇",
+    "name": "臧霸",
     "category": "people",
-    "file": "people/臧覇.json"
+    "file": "people/臧霸.json"
   },
   {
     "name": "花鬘",
@@ -3025,14 +3495,19 @@
     "file": "people/苏飞.json"
   },
   {
-    "name": "范彊",
-    "category": "people",
-    "file": "people/范彊.json"
-  },
-  {
     "name": "范方",
     "category": "people",
     "file": "people/范方.json"
+  },
+  {
+    "name": "范疆",
+    "category": "people",
+    "file": "people/范疆.json"
+  },
+  {
+    "name": "荀勖",
+    "category": "people",
+    "file": "people/荀勖.json"
   },
   {
     "name": "荀勗",
@@ -3225,6 +3700,11 @@
     "file": "people/蔡邕.json"
   },
   {
+    "name": "蔡阳",
+    "category": "people",
+    "file": "people/蔡阳.json"
+  },
+  {
     "name": "薛兰",
     "category": "people",
     "file": "people/薛兰.json"
@@ -3260,6 +3740,16 @@
     "file": "people/虞汜.json"
   },
   {
+    "name": "虞翻",
+    "category": "people",
+    "file": "people/虞翻.json"
+  },
+  {
+    "name": "袁尚",
+    "category": "people",
+    "file": "people/袁尚.json"
+  },
+  {
     "name": "袁春卿",
     "category": "people",
     "file": "people/袁春卿.json"
@@ -3280,19 +3770,24 @@
     "file": "people/袁熙.json"
   },
   {
-    "name": "袁燿",
-    "category": "people",
-    "file": "people/袁燿.json"
-  },
-  {
     "name": "袁绍",
     "category": "people",
     "file": "people/袁绍.json"
   },
   {
+    "name": "袁耀",
+    "category": "people",
+    "file": "people/袁耀.json"
+  },
+  {
     "name": "袁胤",
     "category": "people",
     "file": "people/袁胤.json"
+  },
+  {
+    "name": "袁谭",
+    "category": "people",
+    "file": "people/袁谭.json"
   },
   {
     "name": "袁遗",
@@ -3315,6 +3810,11 @@
     "file": "people/裴秀.json"
   },
   {
+    "name": "许仪",
+    "category": "people",
+    "file": "people/许仪.json"
+  },
+  {
     "name": "许定",
     "category": "people",
     "file": "people/许定.json"
@@ -3325,6 +3825,11 @@
     "file": "people/许慈.json"
   },
   {
+    "name": "许攸",
+    "category": "people",
+    "file": "people/许攸.json"
+  },
+  {
     "name": "许汜",
     "category": "people",
     "file": "people/许汜.json"
@@ -3333,6 +3838,11 @@
     "name": "许褚",
     "category": "people",
     "file": "people/许褚.json"
+  },
+  {
+    "name": "许靖",
+    "category": "people",
+    "file": "people/许靖.json"
   },
   {
     "name": "诸葛乔",
@@ -3365,9 +3875,24 @@
     "file": "people/诸葛瑾.json"
   },
   {
+    "name": "诸葛直",
+    "category": "people",
+    "file": "people/诸葛直.json"
+  },
+  {
+    "name": "诸葛瞻",
+    "category": "people",
+    "file": "people/诸葛瞻.json"
+  },
+  {
     "name": "诸葛融",
     "category": "people",
     "file": "people/诸葛融.json"
+  },
+  {
+    "name": "诸葛诞",
+    "category": "people",
+    "file": "people/诸葛诞.json"
   },
   {
     "name": "诸葛靓",
@@ -3400,6 +3925,11 @@
     "file": "people/谷利.json"
   },
   {
+    "name": "貂蝉",
+    "category": "people",
+    "file": "people/貂蝉.json"
+  },
+  {
     "name": "费桟",
     "category": "people",
     "file": "people/费桟.json"
@@ -3430,9 +3960,19 @@
     "file": "people/贺达.json"
   },
   {
+    "name": "贺齐",
+    "category": "people",
+    "file": "people/贺齐.json"
+  },
+  {
     "name": "贾信",
     "category": "people",
     "file": "people/贾信.json"
+  },
+  {
+    "name": "贾充",
+    "category": "people",
+    "file": "people/贾充.json"
   },
   {
     "name": "贾华",
@@ -3455,6 +3995,11 @@
     "file": "people/贾逵.json"
   },
   {
+    "name": "赖恭",
+    "category": "people",
+    "file": "people/赖恭.json"
+  },
+  {
     "name": "赵云",
     "category": "people",
     "file": "people/赵云.json"
@@ -3475,6 +4020,11 @@
     "file": "people/赵娥.json"
   },
   {
+    "name": "赵广",
+    "category": "people",
+    "file": "people/赵广.json"
+  },
+  {
     "name": "赵弘",
     "category": "people",
     "file": "people/赵弘.json"
@@ -3488,6 +4038,11 @@
     "name": "赵昱",
     "category": "people",
     "file": "people/赵昱.json"
+  },
+  {
+    "name": "赵月",
+    "category": "people",
+    "file": "people/赵月.json"
   },
   {
     "name": "赵正",
@@ -3505,6 +4060,16 @@
     "file": "people/赵累.json"
   },
   {
+    "name": "赵统",
+    "category": "people",
+    "file": "people/赵统.json"
+  },
+  {
+    "name": "赵范",
+    "category": "people",
+    "file": "people/赵范.json"
+  },
+  {
     "name": "赵达",
     "category": "people",
     "file": "people/赵达.json"
@@ -3518,6 +4083,11 @@
     "name": "路招",
     "category": "people",
     "file": "people/路招.json"
+  },
+  {
+    "name": "蹋顿",
+    "category": "people",
+    "file": "people/蹋顿.json"
   },
   {
     "name": "车胄",
@@ -3545,9 +4115,9 @@
     "file": "people/辛敞.json"
   },
   {
-    "name": "辛毘",
+    "name": "辛毗",
     "category": "people",
-    "file": "people/辛毘.json"
+    "file": "people/辛毗.json"
   },
   {
     "name": "辛评",
@@ -3560,6 +4130,11 @@
     "file": "people/迷当大王.json"
   },
   {
+    "name": "逄纪",
+    "category": "people",
+    "file": "people/逄纪.json"
+  },
+  {
     "name": "逢纪",
     "category": "people",
     "file": "people/逢纪.json"
@@ -3570,6 +4145,11 @@
     "file": "people/邓义.json"
   },
   {
+    "name": "邓忠",
+    "category": "people",
+    "file": "people/邓忠.json"
+  },
+  {
     "name": "邓方",
     "category": "people",
     "file": "people/邓方.json"
@@ -3578,6 +4158,11 @@
     "name": "邓艾",
     "category": "people",
     "file": "people/邓艾.json"
+  },
+  {
+    "name": "邓芝",
+    "category": "people",
+    "file": "people/邓芝.json"
   },
   {
     "name": "邓茂",
@@ -3595,9 +4180,9 @@
     "file": "people/邓龙.json"
   },
   {
-    "name": "邢道栄",
+    "name": "邢道荣",
     "category": "people",
-    "file": "people/邢道栄.json"
+    "file": "people/邢道荣.json"
   },
   {
     "name": "邯郸淳",
@@ -3665,9 +4250,9 @@
     "file": "people/郭嘉.json"
   },
   {
-    "name": "郭図",
+    "name": "郭图",
     "category": "people",
-    "file": "people/郭図.json"
+    "file": "people/郭图.json"
   },
   {
     "name": "郭女王",
@@ -3683,6 +4268,11 @@
     "name": "郭汜",
     "category": "people",
     "file": "people/郭汜.json"
+  },
+  {
+    "name": "郭淮",
+    "category": "people",
+    "file": "people/郭淮.json"
   },
   {
     "name": "郭石",
@@ -3725,6 +4315,11 @@
     "file": "people/钟会.json"
   },
   {
+    "name": "钟毓",
+    "category": "people",
+    "file": "people/钟毓.json"
+  },
+  {
     "name": "钟离牧",
     "category": "people",
     "file": "people/钟离牧.json"
@@ -3740,24 +4335,9 @@
     "file": "people/钟进.json"
   },
   {
-    "name": "関兴",
-    "category": "people",
-    "file": "people/関兴.json"
-  },
-  {
-    "name": "関平",
-    "category": "people",
-    "file": "people/関平.json"
-  },
-  {
     "name": "関彝",
     "category": "people",
     "file": "people/関彝.json"
-  },
-  {
-    "name": "関索",
-    "category": "people",
-    "file": "people/関索.json"
   },
   {
     "name": "関統",
@@ -3800,6 +4380,11 @@
     "file": "people/阎温.json"
   },
   {
+    "name": "阎芝",
+    "category": "people",
+    "file": "people/阎芝.json"
+  },
+  {
     "name": "阎行",
     "category": "people",
     "file": "people/阎行.json"
@@ -3813,6 +4398,11 @@
     "name": "阚沢",
     "category": "people",
     "file": "people/阚沢.json"
+  },
+  {
+    "name": "阚泽",
+    "category": "people",
+    "file": "people/阚泽.json"
   },
   {
     "name": "阮籍",
@@ -3850,6 +4440,11 @@
     "file": "people/陆瑁.json"
   },
   {
+    "name": "陆绩",
+    "category": "people",
+    "file": "people/陆绩.json"
+  },
+  {
     "name": "陆胤",
     "category": "people",
     "file": "people/陆胤.json"
@@ -3870,6 +4465,11 @@
     "file": "people/陈修.json"
   },
   {
+    "name": "陈兰",
+    "category": "people",
+    "file": "people/陈兰.json"
+  },
+  {
     "name": "陈到",
     "category": "people",
     "file": "people/陈到.json"
@@ -3878,6 +4478,11 @@
     "name": "陈化",
     "category": "people",
     "file": "people/陈化.json"
+  },
+  {
+    "name": "陈宫",
+    "category": "people",
+    "file": "people/陈宫.json"
   },
   {
     "name": "陈就",
@@ -3890,6 +4495,11 @@
     "file": "people/陈应.json"
   },
   {
+    "name": "陈式",
+    "category": "people",
+    "file": "people/陈式.json"
+  },
+  {
     "name": "陈横",
     "category": "people",
     "file": "people/陈横.json"
@@ -3900,9 +4510,34 @@
     "file": "people/陈武.json"
   },
   {
+    "name": "陈泰",
+    "category": "people",
+    "file": "people/陈泰.json"
+  },
+  {
+    "name": "陈珪",
+    "category": "people",
+    "file": "people/陈珪.json"
+  },
+  {
     "name": "陈琳",
     "category": "people",
     "file": "people/陈琳.json"
+  },
+  {
+    "name": "陈登",
+    "category": "people",
+    "file": "people/陈登.json"
+  },
+  {
+    "name": "陈矫",
+    "category": "people",
+    "file": "people/陈矫.json"
+  },
+  {
+    "name": "陈祗",
+    "category": "people",
+    "file": "people/陈祗.json"
   },
   {
     "name": "陈纪",
@@ -3985,6 +4620,11 @@
     "file": "people/霍弋.json"
   },
   {
+    "name": "韦康",
+    "category": "people",
+    "file": "people/韦康.json"
+  },
+  {
     "name": "韦昭",
     "category": "people",
     "file": "people/韦昭.json"
@@ -4025,14 +4665,44 @@
     "file": "people/韩曁.json"
   },
   {
+    "name": "韩浩",
+    "category": "people",
+    "file": "people/韩浩.json"
+  },
+  {
     "name": "韩猛",
     "category": "people",
     "file": "people/韩猛.json"
   },
   {
+    "name": "韩玄",
+    "category": "people",
+    "file": "people/韩玄.json"
+  },
+  {
     "name": "韩珩",
     "category": "people",
     "file": "people/韩珩.json"
+  },
+  {
+    "name": "韩琪",
+    "category": "people",
+    "file": "people/韩琪.json"
+  },
+  {
+    "name": "韩琼",
+    "category": "people",
+    "file": "people/韩琼.json"
+  },
+  {
+    "name": "韩瑛",
+    "category": "people",
+    "file": "people/韩瑛.json"
+  },
+  {
+    "name": "韩瑶",
+    "category": "people",
+    "file": "people/韩瑶.json"
   },
   {
     "name": "韩综",
@@ -4060,6 +4730,11 @@
     "file": "people/韩遂.json"
   },
   {
+    "name": "韩馥",
+    "category": "people",
+    "file": "people/韩馥.json"
+  },
+  {
     "name": "頼恭",
     "category": "people",
     "file": "people/頼恭.json"
@@ -4085,6 +4760,11 @@
     "file": "people/顾雍.json"
   },
   {
+    "name": "颜良",
+    "category": "people",
+    "file": "people/颜良.json"
+  },
+  {
     "name": "马云騄",
     "category": "people",
     "file": "people/马云騄.json"
@@ -4095,19 +4775,24 @@
     "file": "people/马休.json"
   },
   {
+    "name": "马岱",
+    "category": "people",
+    "file": "people/马岱.json"
+  },
+  {
     "name": "马延",
     "category": "people",
     "file": "people/马延.json"
   },
   {
-    "name": "马忠（吴）",
+    "name": "马忠#吴",
     "category": "people",
-    "file": "people/马忠（吴）.json"
+    "file": "people/马忠#吴.json"
   },
   {
-    "name": "马忠（蜀）",
+    "name": "马忠#蜀",
     "category": "people",
-    "file": "people/马忠（蜀）.json"
+    "file": "people/马忠#蜀.json"
   },
   {
     "name": "马日䃅",
@@ -4140,6 +4825,11 @@
     "file": "people/马超.json"
   },
   {
+    "name": "马遵",
+    "category": "people",
+    "file": "people/马遵.json"
+  },
+  {
     "name": "马鉄",
     "category": "people",
     "file": "people/马鉄.json"
@@ -4148,6 +4838,11 @@
     "name": "马钧",
     "category": "people",
     "file": "people/马钧.json"
+  },
+  {
+    "name": "马铁",
+    "category": "people",
+    "file": "people/马铁.json"
   },
   {
     "name": "马隆",
@@ -4175,9 +4870,19 @@
     "file": "people/高定.json"
   },
   {
+    "name": "高干",
+    "category": "people",
+    "file": "people/高干.json"
+  },
+  {
     "name": "高柔",
     "category": "people",
     "file": "people/高柔.json"
+  },
+  {
+    "name": "高沛",
+    "category": "people",
+    "file": "people/高沛.json"
   },
   {
     "name": "高翔",
@@ -4190,6 +4895,11 @@
     "file": "people/高览.json"
   },
   {
+    "name": "高顺",
+    "category": "people",
+    "file": "people/高顺.json"
+  },
+  {
     "name": "魏延",
     "category": "people",
     "file": "people/魏延.json"
@@ -4198,6 +4908,11 @@
     "name": "魏攸",
     "category": "people",
     "file": "people/魏攸.json"
+  },
+  {
+    "name": "魏续",
+    "category": "people",
+    "file": "people/魏续.json"
   },
   {
     "name": "魏邈",
@@ -4213,6 +4928,11 @@
     "name": "鲍三娘",
     "category": "people",
     "file": "people/鲍三娘.json"
+  },
+  {
+    "name": "鲍信",
+    "category": "people",
+    "file": "people/鲍信.json"
   },
   {
     "name": "鲍忠",
@@ -4233,6 +4953,31 @@
     "name": "鲜于辅",
     "category": "people",
     "file": "people/鲜于辅.json"
+  },
+  {
+    "name": "麋竺",
+    "category": "people",
+    "file": "people/麋竺.json"
+  },
+  {
+    "name": "麋芳",
+    "category": "people",
+    "file": "people/麋芳.json"
+  },
+  {
+    "name": "麋贞(麋夫人)",
+    "category": "people",
+    "file": "people/麋贞(麋夫人).json"
+  },
+  {
+    "name": "麋贞",
+    "category": "people",
+    "file": "people/麋贞.json"
+  },
+  {
+    "name": "麹义",
+    "category": "people",
+    "file": "people/麹义.json"
   },
   {
     "name": "麹演",
@@ -4273,6 +5018,16 @@
     "name": "黄琬",
     "category": "people",
     "file": "people/黄琬.json"
+  },
+  {
+    "name": "黄盖",
+    "category": "people",
+    "file": "people/黄盖.json"
+  },
+  {
+    "name": "黄祖",
+    "category": "people",
+    "file": "people/黄祖.json"
   },
   {
     "name": "龚都",

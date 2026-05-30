@@ -22,14 +22,14 @@ func effect_20163_start():
 	var wv = me.war_vstate()
 	if wv.rice <= 0:
 		var msg = "米已尽矣"
-		play_dialog(me.actorId, msg, 3, 2009)
+		play_dialog(actorId, msg, 3, 2009)
 		return
 
 	var maxAmount = int(ceil((2500 - actor.get_soldiers()) / 3.0))
 	maxAmount = min(wv.rice, maxAmount)
 	if maxAmount <= 0:
 		var msg = "今士兵足用\n当堂堂正正而战"
-		play_dialog(me.actorId, msg, 2, 2009)
+		play_dialog(actorId, msg, 2, 2009)
 		return
 	SceneManager.show_input_numbers("每1米可换3兵，消耗多少米？",["米"],[maxAmount],[0],[3])
 	SceneManager.input_numbers.show_actor(actorId)

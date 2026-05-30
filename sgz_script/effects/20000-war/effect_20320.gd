@@ -19,7 +19,7 @@ func effect_20320_start():
 	var msg = "发动【{0}】，获得{1}机动力，下回合机动力回复将取决于战果，可否？".format([
 		ske.skill_name, AP_GAIN,
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20320_2():
@@ -30,5 +30,5 @@ func effect_20320_2():
 	var msg = "建功立业，正在今日！\n（机动力+{0}，现为{1}".format([
 		ap, me.action_point,
 	])
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	return

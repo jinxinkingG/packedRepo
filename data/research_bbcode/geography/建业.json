@@ -1,290 +1,475 @@
-[b]建业（东吴都城）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]建业（东吴都城）[/font][/b]
 
 
-[b]位置：[/b] 故址在今江苏省南京市，以清凉山（石头城）—鼓楼—北极阁—秦淮河为主要地理坐标
-[b]类型：[/b] 都城（帝都）
+[color=#000000]位置：[/color] 故址在今江苏省南京市，以清凉山（石头城）—鼓楼—北极阁—秦淮河为主要地理坐标
+[color=#000000]类型：[/color] 都城（帝都）
 
 
-[b]地理考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]地名沿革[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]地理考证[/font][/b]
 
 
-[b]时间[/b] | [b]名称[/b] | [b]沿革[/b]
-战国周显王三十六年（前333） | [b]金陵邑[/b] | 楚威王灭越后设置，今清凉山西北附近
-秦 | 秣陵县 | 属[color=#6699FF][url={"research": "会稽 ", "cat": " geography"}]会稽 [/url][/color]郡
-汉 | 秣陵县 | 属[color=#6699FF][url={"research": "丹阳 ", "cat": " geography"}]丹阳 [/url][/color]郡
-建安十七年（212） | [b]建业[/b] | [color=#6699FF][url={"research": "孙权 ", "cat": " people"}]孙权 [/url][/color]改秣陵为建业，取"建功立业"之意
-太康元年（280）西晋平吴后 | 建邺 | 西晋改名，避愍帝司马邺讳后再改建康
+[b][font=res://resource/font/FandolSong-Bold/26.tres]地名沿革[/font][/b]
 
 
-[b]位置与自然地理[/b]
+[table=3]
+[cell][b]时间[/b][/cell]
+[cell][b]名称[/b][/cell]
+[cell][b]沿革[/b][/cell]
+[cell]战国周显王三十六年（前333）[/cell]
+[cell][color=#000000]金陵邑[/color][/cell]
+[cell]楚威王灭越后设置，今清凉山西北附近[/cell]
+[cell]秦[/cell]
+[cell]秣陵县[/cell]
+[cell]属[color=#0066FF][url={"research": "会稽", "cat": "geography"}]会稽[/url][/color]郡[/cell]
+[cell]汉[/cell]
+[cell]秣陵县[/cell]
+[cell]属[color=#0066FF][url={"research": "丹阳", "cat": "geography"}]丹阳[/url][/color]郡[/cell]
+[cell]建安十七年（212）[/cell]
+[cell][color=#000000]建业[/color][/cell]
+[cell][color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]改秣陵为建业，取"建功立业"之意[/cell]
+[cell]太康元年（280）西晋平吴后[/cell]
+[cell]建邺[/cell]
+[cell]西晋改名，避愍帝司马邺讳后再改建康[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]位置与自然地理[/font][/b]
+
 
 建业位于长江下游南岸，著名的"钟山龙蟠、石头虎踞"格局：
 
-- [b]西北[/b]：长江天堑，江宽水深
-- [b]东[/b]：钟山（"青龙"，今紫金山）
-- [b]西[/b]：石头山（"白虎"，今清凉山），孙权于此筑石头城，扼秦淮河入江口
-- [b]南[/b]：秦淮河（"朱雀"），城内外居民区、商业区主要集中地
-- [b]北[/b]：覆舟山—鼓楼岗一线（"玄武"），后湖（今玄武湖）为天然屏障
+
+[indent]•  [color=#000000]西北[/color]：长江天堑，江宽水深[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]东[/color]：钟山（"青龙"，今紫金山）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]西[/color]：石头山（"白虎"，今清凉山），孙权于此筑石头城，扼秦淮河入江口[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]南[/color]：秦淮河（"朱雀"），城内外居民区、商业区主要集中地[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]北[/color]：覆舟山—鼓楼岗一线（"玄武"），后湖（今玄武湖）为天然屏障[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]治所迁移脉络（《三国志·吴主传》原文核对）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]治所迁移脉络（《三国志·吴主传》原文核对）[/font][/b]
+
 
 孙权政治中心不断西迁，最终定建业：
 
-[b]吴县时代（200—208）：[/b] [color=#6699FF][url={"research": "孙策", "cat": "people"}]孙策[/url][/color]死后，孙权以吴县（今苏州）为中心。
+[color=#000000]吴县时代（200—208）：[/color] [color=#0066FF][url={"research": "孙策", "cat": "people"}]孙策[/url][/color]死后，孙权以吴县（今苏州）为中心。
 
-[b]建安十三年（208，京口）：[/b] 迁治京口（今镇江），便于对付荆州黄祖方向威胁。[color=#6699FF][url={"research": "赤壁之战", "cat": "events"}]赤壁之战[/url][/color]前孙权在此召集军议。
+[color=#000000]建安十三年（208，京口）：[/color] 迁治京口（今镇江），便于对付荆州[color=#0066FF][url={"research": "黄祖", "cat": "people"}]黄祖[/url][/color]方向威胁。[color=#0066FF][url={"research": "赤壁之战", "cat": "events"}]赤壁之战[/url][/color]前孙权在此召集军议。
 
-[b]建安十六年（211，秣陵/建业）：[/b]
-[color=#AAAAAA]　「十六年，权徙治秣陵。」——《三国志·吴主传》[/color]
+[color=#000000]建安十六年（211，秣陵/建业）：[/color]
 
-谋士张纮建议（裴注引《江表传》，全文见下文"张纮建计"节）。
+[indent][color=#666666]┃ 「十六年，权徙治秣陵。」——《三国志·吴主传》[/color][/indent]
 
-[b]建安十七年（212）：[/b] 「明年，城石头，改秣陵为建业。」——筑石头城，正式得名"建业"。
 
-[b]黄武元年（222，武昌）：[/b] 孙权接受曹魏"吴王"封号，将重心西移至武昌（今湖北鄂州），便于统领荆州方向。此时[color=#6699FF][url={"research": "柴桑", "cat": "geography"}]柴桑[/url][/color]六县（含柴桑）划入武昌郡。
+谋士[color=#0066FF][url={"research": "张纮", "cat": "people"}]张纮[/url][/color]建议（裴注引《江表传》，全文见下文"张纮建计"节）。
 
-[b]黄龙元年（229，还都建业）：[/b]
-[color=#AAAAAA]　「黄龙元年春，公卿百司皆劝权正尊号。夏四月，夏口、武昌并言黄龙、凤凰现。丙申，南郊即皇帝位。是日大赦，改年。……秋九月，权迁都建业，因故府不改馆，征上大将军[color=#6699FF][url={"research": "陆逊", "cat": "people"}]陆逊[/url][/color]辅太子登，掌武昌留事。」[/color]
-[color=#AAAAAA]　——《三国志·吴主传》[/color]
+[color=#000000]建安十七年（212）：[/color] 「明年，城石头，改秣陵为建业。」——筑石头城，正式得名"建业"。
+
+[color=#000000]黄武元年（222，武昌）：[/color] 孙权接受曹魏"吴王"封号，将重心西移至武昌（今湖北鄂州），便于统领荆州方向。此时[color=#0066FF][url={"research": "柴桑", "cat": "geography"}]柴桑[/url][/color]六县（含柴桑）划入武昌郡。
+
+[color=#000000]黄龙元年（229，还都建业）：[/color]
+
+[indent][color=#666666]┃ 「黄龙元年春，公卿百司皆劝权正尊号。夏四月，夏口、武昌并言黄龙、凤凰现。丙申，南郊即皇帝位。是日大赦，改年。……秋九月，权迁都建业，因故府不改馆，征上大将军[color=#0066FF][url={"research": "陆逊", "cat": "people"}]陆逊[/url][/color]辅太子登，掌武昌留事。」[/color][/indent]
+[indent][color=#666666]┃ ——《三国志·吴主传》[/color][/indent]
+
 
 「因故府不改馆」= 就住原将军府，不建新宫。武昌设陆逊—太子留守体制。
 
 
-[b]张纮建计：迁都秣陵的史料核对[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]张纮建计：迁都秣陵的史料核对[/font][/b]
 
-[b]《三国志》正文（卷五十三·张严程阚薛传·张纮传）：[/b]
-[color=#AAAAAA]　纮建计宜出都秣陵，权从之。令还吴迎家，道病卒。[/color]
+
+[color=#000000]《三国志》正文（卷五十三·张严程阚薛传·张纮传）：[/color]
+
+[indent][color=#666666]┃ 纮建计宜出都秣陵，权从之。令还吴迎家，道病卒。[/color][/indent]
+
 
 正文极简，仅十二字；迁都动机与经过在裴注〔七〕中。
 
-[b]裴注引《江表传》（完整原文）：[/b]
-[color=#AAAAAA]　纮谓权曰：「秣陵，楚武王所置，名为金陵。地势：冈阜连石头。访问故老，云：『昔秦始皇东巡会稽，经此县，望气者云金陵地形有王者都邑之气；故掘断连冈，改名秣陵。』今处所具存，地有其气；天之所命，宜为都邑。」权善其议，未能从也。后[color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]之东，宿于秣陵，周观地形，亦劝权都之。权曰：「智者意同。」遂都焉。[/color]
+[color=#000000]裴注引《江表传》（完整原文）：[/color]
 
-[b]叙事逻辑：[/b] 张纮先提 → 孙权「善其议，未能从」→ 刘备东来劝说 → 孙权「智者意同」终于决定
+[indent][color=#666666]┃ 纮谓权曰：「秣陵，楚武王所置，名为金陵。地势：冈阜连石头。访问故老，云：『昔秦始皇东巡会稽，经此县，望气者云金陵地形有王者都邑之气；故掘断连冈，改名秣陵。』今处所具存，地有其气；天之所命，宜为都邑。」权善其议，未能从也。后[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]之东，宿于秣陵，周观地形，亦劝权都之。权曰：「智者意同。」遂都焉。[/color][/indent]
 
-[b]裴注另引《献帝春秋》（异文，裴松之已辨伪）：[/b]
-[color=#AAAAAA]　刘备至京，谓孙权曰：「……将军无意屯京乎？」权曰：「秣陵有小江百余里，可以安大船；吾方理水军，当移据之。」[/color]
+
+[color=#000000]叙事逻辑：[/color] 张纮先提 → 孙权「善其议，未能从」→ 刘备东来劝说 → 孙权「智者意同」终于决定
+
+[color=#000000]裴注另引《献帝春秋》（异文，裴松之已辨伪）：[/color]
+
+[indent][color=#666666]┃ 刘备至京，谓孙权曰：「……将军无意屯京乎？」权曰：「秣陵有小江百余里，可以安大船；吾方理水军，当移据之。」[/color][/indent]
+
 
 裴松之按语：「诸书皆云刘备劝都秣陵，而此独云权自欲都之：又为虚错。」——《献帝春秋》"权自欲都"说不可信。
 
-[b]张纮的命运：[/b] 令还吴迎家，「道病卒」——未及亲见建业建立。
+[color=#000000]张纮的命运：[/color] 令还吴迎家，「道病卒」——未及亲见建业建立。
 
 
-[b]柴桑与建业的关系辨析[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]柴桑与建业的关系辨析[/font][/b]
 
-柴桑（今江西九江市西南）是孙策时代的军事据点，赤壁之战（208）时孙权在此召开军议，决策抗曹——但[b]柴桑从未是东吴政治中心[/b]。政治中心的前身是吴县→京口→秣陵/建业这一线，柴桑是另一条荆州方向的军事线。
+
+柴桑（今江西九江市西南）是孙策时代的军事据点，赤壁之战（208）时孙权在此召开军议，决策抗曹——但[color=#000000]柴桑从未是东吴政治中心[/color]。政治中心的前身是吴县→京口→秣陵/建业这一线，柴桑是另一条荆州方向的军事线。
 
 黄武元年（222）柴桑被划入武昌郡（荆州体系），从此与扬州—建业的行政关系切断。柴桑督此后独立运作，承担长江中游防务。
 
 
-[b]战略地位[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]战略地位[/font][/b]
 
 
 建业对东吴的战略价值体现在三个层次：
 
-[b]水军基地：[/b] 石头城扼秦淮河入江口，可直接下江，是东吴水军的核心停泊地和武器库。内部储军粮军械。历次北伐、防御北方进攻，均以建业为水军出发点。
+[color=#000000]水军基地：[/color] 石头城扼秦淮河入江口，可直接下江，是东吴水军的核心停泊地和武器库。内部储军粮军械。历次北伐、防御北方进攻，均以建业为水军出发点。
 
-[b]江防体系核心：[/b] 石头城—后湖—钟山构成完整防御圈。长江天堑使北方骑兵优势完全失效，东吴水军在此地段具有压倒性优势。
+[color=#000000]江防体系核心：[/color] 石头城—后湖—钟山构成完整防御圈。长江天堑使北方骑兵优势完全失效，东吴水军在此地段具有压倒性优势。
 
-[b]三吴（吴郡/会稽/丹阳）经济腹地的政治枢纽：[/b] 三吴是东吴财税来源地。建业居三吴核心，便于汲取物资、控制江东士族；武昌则距三吴太远，孙皓迁武昌后朝野激烈反对正源于此。
-
-
-[b]重要事件[/b]
+[color=#000000]三吴（吴郡/会稽/丹阳）经济腹地的政治枢纽：[/color] 三吴是东吴财税来源地。建业居三吴核心，便于汲取物资、控制江东士族；武昌则距三吴太远，[color=#0066FF][url={"research": "孙皓", "cat": "people"}]孙皓[/url][/color]迁武昌后朝野激烈反对正源于此。
 
 
-[b]建安十七年（212）：石头城筑成[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]重要事件[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安十七年（212）：石头城筑成[/font][/b]
+
 在金陵邑旧址（今清凉山）修筑石头城，扼长江与秦淮入江口，奠定建业西部防线。
 
 
-[b]黄龙元年（229）：孙权称帝并迁都[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]黄龙元年（229）：孙权称帝并迁都[/font][/b]
+
 四月于武昌南郊称帝，九月迁都建业，就住原将军府（太初宫前身），同年与蜀汉正式分天下（豫青徐幽属吴，兖冀并凉属蜀）。
 
 
-[b]赤乌年间（238—251）：大规模城市建设[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]赤乌年间（238—251）：大规模城市建设[/font][/b]
+
 赤乌四年（241）凿东渠（青溪），赤乌十年（247）动工改建太初宫，赤乌十一年（248）完工。改建后太初宫周围五百丈，正殿神龙殿，南面五门（正中公车门）。
 
 
-[b]甘露元年—宝鼎元年（265—266）：孙皓迁还都武昌[/b]
-孙皓采纳[color=#6699FF][url={"research": "步阐", "cat": "people"}]步阐[/url][/color]建议西迁武昌。举国反对，童谣：「宁饮建业水，不食武昌鱼；宁还建业死，不止武昌居。」宝鼎元年施但民变逼近建业，孙皓被迫还都。次年建昭明宫（方五百丈），奢华程度远超太初宫。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]甘露元年—宝鼎元年（265—266）：孙皓迁还都武昌[/font][/b]
+
+孙皓采纳[color=#0066FF][url={"research": "步阐", "cat": "people"}]步阐[/url][/color]建议西迁武昌。举国反对，童谣：「宁饮建业水，不食武昌鱼；宁还建业死，不止武昌居。」宝鼎元年施但民变逼近建业，孙皓被迫还都。次年建昭明宫（方五百丈），奢华程度远超太初宫。
 
 
-[b]天纪四年（280）：西晋灭吴[/b]
-[color=#6699FF][url={"research": "王濬", "cat": "people"}]王濬[/url][/color]楼船沿江而下，入石头城，孙皓出降，建业都城时代终结。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]天纪四年（280）：西晋灭吴[/font][/b]
+
+[color=#0066FF][url={"research": "王濬", "cat": "people"}]王濬[/url][/color]楼船沿江而下，入石头城，孙皓出降，建业都城时代终结。
 
 
-[b]张昭家族墓与东吴考古（2023年新发现）[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]张昭家族墓（2023发掘，2024十大考古新闻）[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]张昭家族墓与东吴考古（2023年新发现）[/font][/b]
 
-[b]发掘时间：[/b] 2023年11月
-[b]发掘地点：[/b] 南京南部新城油库公园地块（秦淮区，长干里以南）
-[b]主持机构：[/b] 南京市考古研究院
-[b]评级：[/b] 入选2024年度国内十大考古新闻
 
-[b]主要发现：[/b] 两方龟纽金印：
-- 印文 [b]"辅吴将军"[/b]
-- 印文 [b]"娄侯"[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]张昭家族墓（2023发掘，2024十大考古新闻）[/font][/b]
 
-与《三国志·吴书·[color=#6699FF][url={"research": "张昭", "cat": "people"}]张昭[/url][/color]传》"更拜辅吴将军，班亚三司，改封娄侯，食邑万户"完全吻合。
 
-[b]墓主认定：[/b] 东吴著名政治家[b]张昭（字子布）[/b]的家族墓。
+[color=#000000]发掘时间：[/color] 2023年11月
+[color=#000000]发掘地点：[/color] 南京南部新城油库公园地块（秦淮区，长干里以南）
+[color=#000000]主持机构：[/color] 南京市考古研究院
+[color=#000000]评级：[/color] 入选2024年度国内十大考古新闻
 
-[b]意义：[/b]
-- 继[color=#6699FF][url={"research": "丁奉", "cat": "people"}]丁奉[/url][/color]家族墓之后，第二处东吴重臣墓地
-- 实物直接证明《三国志》张昭封爵记载的准确性
-- 为研究东吴贵族在长干里以南区域的聚居格局提供证据
-- 2025年10月，两方金印在六朝博物馆"六朝帝都"展厅首次公开展出
+[color=#000000]主要发现：[/color] 两方龟纽金印：
 
-[b]张昭与建业的地名遗存：[/b]
+[indent]•  印文 [color=#000000]"辅吴将军"[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  印文 [color=#000000]"娄侯"[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+与《三国志·吴书·[color=#0066FF][url={"research": "张昭", "cat": "people"}]张昭[/url][/color]传》"更拜辅吴将军，班亚三司，改封娄侯，食邑万户"完全吻合。
+
+[color=#000000]墓主认定：[/color] 东吴著名政治家[color=#000000]张昭（字子布）[/color]的家族墓。
+
+[color=#000000]意义：[/color]
+
+[indent]•  继[color=#0066FF][url={"research": "丁奉", "cat": "people"}]丁奉[/url][/color]家族墓之后，第二处东吴重臣墓地[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  实物直接证明《三国志》张昭封爵记载的准确性[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  为研究东吴贵族在长干里以南区域的聚居格局提供证据[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  2025年10月，两方金印在六朝博物馆"六朝帝都"展厅首次公开展出[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]张昭与建业的地名遗存：[/color]
 
 《建康实录》：「大长干寺道西有张子布宅，在淮水南，对瓦官寺门，张侯桥所也。桥近宅，因以为名。」
 
-- [b]老虎头[/b]：原为"娄湖头"（娄侯之湖）转音，今南京秦淮区地名（保留至今）
-- [b]张公桥[/b]：因张昭宅邸近桥而得名
+
+[indent]•  [color=#000000]老虎头[/color]：原为"娄湖头"（娄侯之湖）转音，今南京秦淮区地名（保留至今）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张公桥[/color]：因张昭宅邸近桥而得名[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 张昭私宅位于建业都城轴线南端朱雀桥—长干里一带，是东吴最高层权贵在都城南门户区居住的直接证明。
 
 
-[b]石头城考古详情[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]考古时间线[/b]
-
-[b]1998年7月—1999年2月（石头小城发现）[/b]
-- [b]机构：[/b] 南京市文物研究所
-- [b]地点：[/b] 清凉山山脊
-- 发现六朝古城基址，东西北三面墙基保留，墙基宽[b]10米[/b]，残高[b]6米[/b]
-- 初建于孙吴时期，历代加筑，宋明时期弃用
-- 确认为[b]石头小城[/b]（孙吴原建）
-- 发表：贺云翱、邵磊，《东南文化》2012年第2期，pp.37-44
-
-[b]2012年（石头大城范围确认）[/b]
-- 清凉山北麓（北城墙）、东岗（东城墙）、国防园东岗（西城墙）、乌龙潭北岸（南城墙）
-- 周长与"七里一百步"史料[b]完全吻合[/b]，且将石头小城完整包含
-- 确认为[b]石头大城[/b]（东晋扩建版）
-
-[b]2016年6月—2017年2月（联合考古发掘，最终确认六朝石头城位置）[/b]
-- [b]机构：[/b] 南京大学历史学院 + 南京大学文化与自然遗产研究所 + 清凉山公园管理处
-- [b]地点：[/b] 清凉山公园六朝石头城北垣遗迹
-- [b]面积：[/b] 约600平方米
-- [b]发现：[/b]
-  - 孙吴时期：顺城垣[b]砖铺路面[/b]
-  - 东晋至南朝早期：夯土城墙、[b]角楼遗迹[/b]
-  - 南朝晚期：[b]城门遗迹[/b]（首次发现）
-  - 六朝通用：瓦当、铭文砖
-- 报道：南京日报2018-11-19 A11（朱凯）；新华网、南京发布 2018-11-20
-
-[b]2023年12月[/b]
-- 石头城遗址列为[b]江苏省考古遗址公园立项项目[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]石头城考古详情[/font][/b]
 
 
-[b]考古注意事项[/b]
-- 1957年曾以"石头城遗迹"命名鬼脸城（明城墙），1988年核实为明代城墙，系误认
-- 现存清凉山西侧"鬼脸城"为明城墙，与六朝石头城系两处不同遗址
+[b][font=res://resource/font/FandolSong-Bold/26.tres]考古时间线[/font][/b]
 
 
-[b]太初宫与建康城遗址考古[/b]
+[color=#000000]1998年7月—1999年2月（石头小城发现）[/color]
+
+[indent]•  [color=#000000]机构：[/color] 南京市文物研究所[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]地点：[/color] 清凉山山脊[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  发现六朝古城基址，东西北三面墙基保留，墙基宽[color=#000000]10米[/color]，残高[color=#000000]6米[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  初建于孙吴时期，历代加筑，宋明时期弃用[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  确认为[color=#000000]石头小城[/color]（孙吴原建）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  发表：贺云翱、邵磊，《东南文化》2012年第2期，pp.37-44[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]两处宫城的关键区分[/b]
+[color=#000000]2012年（石头大城范围确认）[/color]
+
+[indent]•  清凉山北麓（北城墙）、东岗（东城墙）、国防园东岗（西城墙）、乌龙潭北岸（南城墙）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  周长与"七里一百步"史料[color=#000000]完全吻合[/color]，且将石头小城完整包含[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  确认为[color=#000000]石头大城[/color]（东晋扩建版）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]2016年6月—2017年2月（联合考古发掘，最终确认六朝石头城位置）[/color]
+
+[indent]•  [color=#000000]机构：[/color] 南京大学历史学院 + 南京大学文化与自然遗产研究所 + 清凉山公园管理处[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]地点：[/color] 清凉山公园六朝石头城北垣遗迹[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]面积：[/color] 约600平方米[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]发现：[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  孙吴时期：顺城垣[color=#000000]砖铺路面[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  东晋至南朝早期：夯土城墙、[color=#000000]角楼遗迹[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  南朝晚期：[color=#000000]城门遗迹[/color]（首次发现）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  六朝通用：瓦当、铭文砖[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  报道：南京日报2018-11-19 A11（朱凯）；新华网、南京发布 2018-11-20[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]2023年12月[/color]
+
+[indent]•  石头城遗址列为[color=#000000]江苏省考古遗址公园立项项目[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]石头城形制（史料记载）[/font][/b]
+
+
+据史料记载（东晋时期规模）：
+
+[indent]•  [color=#000000]城周：[/color] 七里一百步[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]南面：[/color] 两门——西门（西南门）、正南门（建有门楼）；西北面因紧邻长江不设门[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]东面：[/color] 一门[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]内部设施：[/color] 城内东北建有储粮仓城；东晋在城内东侧修建"入汉楼"；城西南角建烽火楼，山岗另有烽火台[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]石头斗城：[/color] 史料中另载有"石头斗城"，在石头城附近，具体位置不详（《梁书·王僧辩传》：「督诸军沿流而下，进军于石头之斗城」）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]石头小城 vs 石头大城：[/color] 孙吴原建为石头小城，东晋桓温、刘裕扩建形成石头大城（又称石头大坞），570年陈朝再次扩建[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]考古注意事项[/font][/b]
+
+
+[indent]•  1957年曾以"石头城遗迹"命名鬼脸城（明城墙），1988年核实为明代城墙，系误认[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  现存清凉山西侧"鬼脸城"为明城墙，与六朝石头城系两处不同遗址[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  鬼脸城得名：因清凉山在此裸露山体形似鬼脸（来源：《鼓楼区文物志》1999）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]太初宫与建康城遗址考古[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]两处宫城的关键区分[/font][/b]
+
 
 孙吴建业城有两处重要宫城区，位置不同：
 
 
-[b]宫城[/b] | [b]朝代[/b] | [b]位置[/b] | [b]依据[/b]
-[b]太初宫[/b]（孙吴皇宫） | 东吴（211/229—280） | 今新街口以南，洪武路一带（偏西南） | 王志高考证；《建康实录》"在县东北三里，晋台城西南"
-[b]苑城[/b] | 东吴 | 今大行宫以北区域（偏东北） | 皇家园林兼禁卫驻地，能容3000骑马
-[b]台城/建康宫[/b] | 东晋—南朝（330—589） | 苑城旧址扩建，大行宫北至双井巷 | 王志高2002-2008系列发掘
+[table=4]
+[cell][b]宫城[/b][/cell]
+[cell][b]朝代[/b][/cell]
+[cell][b]位置[/b][/cell]
+[cell][b]依据[/b][/cell]
+[cell][color=#000000]太初宫[/color]（孙吴皇宫）[/cell]
+[cell]东吴（211/229—280）[/cell]
+[cell]今新街口以南，洪武路一带（偏西南）[/cell]
+[cell]王志高考证；《建康实录》"在县东北三里，晋台城西南"[/cell]
+[cell][color=#000000]苑城[/color][/cell]
+[cell]东吴[/cell]
+[cell]今大行宫以北区域（偏东北）[/cell]
+[cell]皇家园林兼禁卫驻地，能容3000骑马[/cell]
+[cell][color=#000000]台城/建康宫[/color][/cell]
+[cell]东晋—南朝（330—589）[/cell]
+[cell]苑城旧址扩建，大行宫北至双井巷[/cell]
+[cell]王志高2002-2008系列发掘[/cell]
+[/table]
 
 
-[b]重要关系：[/b] 东晋台城是在孙吴[b]苑城[/b]旧址上建造，不是太初宫旧址。太初宫位于台城[b]西南方[/b]（《建康实录》明证）。
+[color=#000000]重要关系：[/color] 东晋台城是在孙吴[color=#000000]苑城[/color]旧址上建造，不是太初宫旧址。太初宫位于台城[color=#000000]西南方[/color]（《建康实录》明证）。
 
 
-[b]太初宫位置考证[/b]
-
-[b]王志高考证（南师大教授，田野考古主持人）：[/b]
-[color=#AAAAAA]　基本确定，太初宫的位置就在[b]新街口以南，接近洪武路一带[/b]的位置。[/color]
-
-[b]蒋赞初考证（南京大学教授）：[/b]
-[color=#AAAAAA]　东界约在今珠江路莲花桥到大石桥东口一线，南界在今估衣廊北口一带，西面靠中山路，北面到今唱经楼。[b]正殿神龙殿约在今鱼市街一带[/b]。[/color]
-
-[b]考古现状：[/b] 太初宫本体至今无系统性专项发掘报告（新街口—洪武路一带现代建设密集，考古条件差）。大行宫工地发掘的遗迹属孙吴[b]苑城[/b]范围，不是太初宫本体。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]太初宫位置考证[/font][/b]
 
 
-[b]台城（东晋/南朝宫城）考古[/b]
+[color=#000000]王志高考证（南师大教授，田野考古主持人）：[/color]
 
-[b]台城四至（2025年南京市地方志官方表述）：[/b]
-- [b]南界：[/b] 原大行宫北口
-- [b]北界：[/b] 花红园/双井巷一线
-- [b]东界：[/b] 东箭道附近
-- [b]西界：[/b] 网巾市至邓府巷一线
+[indent][color=#666666]┃ 基本确定，太初宫的位置就在[color=#000000]新街口以南，接近洪武路一带[/color]的位置。[/color][/indent]
+
+
+[color=#000000]蒋赞初考证（南京大学教授）：[/color]
+
+[indent][color=#666666]┃ 东界约在今珠江路莲花桥到大石桥东口一线，南界在今估衣廊北口一带，西面靠中山路，北面到今唱经楼。[color=#000000]正殿神龙殿约在今鱼市街一带[/color]。[/color][/indent]
+
+
+[color=#000000]考古现状：[/color] 太初宫本体至今无系统性专项发掘报告（新街口—洪武路一带现代建设密集，考古条件差）。大行宫工地发掘的遗迹属孙吴[color=#000000]苑城[/color]范围，不是太初宫本体。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]台城（东晋/南朝宫城）考古[/font][/b]
+
+
+[color=#000000]台城四至（2025年南京市地方志官方表述）：[/color]
+
+[indent]•  [color=#000000]南界：[/color] 原大行宫北口[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]北界：[/color] 花红园/双井巷一线[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]东界：[/color] 东箭道附近[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]西界：[/color] 网巾市至邓府巷一线[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 （王志高更详细版本：北界约今如意里、长江后街南侧一线；南界游府西街、文昌巷北侧一线）
 
-[b]主要考古发现：[/b]
-- [b]2002—2008年[/b]（王志高主持，30余个大行宫区域工地）：
-  - 东界（2002）：利济巷西侧长发大厦工地，台城东侧城墙
-  - 南界：游府西街、文昌巷一线（大司马门位于太平南路与文昌巷交界处偏东）
-  - 西界：邓府巷东侧工地，南北走向夯筑城垣
-  - 北界：争议已收敛（2025年确认为双井巷一线）
-- 南京图书馆保护台城中轴线截砖路和拐角砖包城墙
-- 六朝博物馆保护台城原址夯土城墙、包砖墙、护城壕遗址
+[color=#000000]主要考古发现：[/color]
+
+[indent]•  [color=#000000]2002—2008年[/color]（王志高主持，30余个大行宫区域工地）：[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  东界（2002）：利济巷西侧长发大厦工地，台城东侧城墙[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  南界：游府西街、文昌巷一线（大司马门位于太平南路与文昌巷交界处偏东）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  西界：邓府巷东侧工地，南北走向夯筑城垣[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  北界：争议已收敛（2025年确认为双井巷一线）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  南京图书馆保护台城中轴线截砖路和拐角砖包城墙[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  六朝博物馆保护台城原址夯土城墙、包砖墙、护城壕遗址[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]台城内部考古的历史成因（重要补充，2025年研究确认）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]台城内部考古的历史成因（重要补充，2025年研究确认）[/font][/b]
 
-台城内部宫殿区无法系统发掘，[b]不仅是现代建设的问题，更是历史叠压问题[/b]：
 
-- [b]隋平江南（589年）：[/b] 将建康"平荡耕垦"——虽有夸张，但建筑已大量被拆
-- [b]唐代：[/b] 台城内尚有可修葺为府的建筑（《新唐书·张雄传》）
-- [b]五代杨吴（920年代后）：[/b] 先后三次筑金陵府城，台城"遂废"——内部建筑彻底消失
-- [b]元朝：[/b] "尽为军营及居民蔬圃"——完全农用化
-- [b]明清至今：[/b] 1000年的城市叠压
+台城内部宫殿区无法系统发掘，[color=#000000]不仅是现代建设的问题，更是历史叠压问题[/color]：
+
+
+[indent]•  [color=#000000]隋平江南（589年）：[/color] 将建康"平荡耕垦"——虽有夸张，但建筑已大量被拆[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]唐代：[/color] 台城内尚有可修葺为府的建筑（《新唐书·张雄传》）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]五代杨吴（920年代后）：[/color] 先后三次筑金陵府城，台城"遂废"——内部建筑彻底消失[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]元朝：[/color] "尽为军营及居民蔬圃"——完全农用化[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]明清至今：[/color] 1000年的城市叠压[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 （来源：南京地方志玄武区志办，《千年沧桑话台城》，2025年2月）
 
 这意味着台城内部的宫殿区，在1000年前就已基本消失——现代考古面对的是唐宋元明清五层叠压，而非仅仅现代建设障碍。
 
-[b]宫城内部考古现状：[/b] 尚未系统发掘，宫殿区主轴线和殿基无专项考古报告（结构性空白）。
+[color=#000000]宫城内部考古现状：[/color] 尚未系统发掘，宫殿区主轴线和殿基无专项考古报告（结构性空白）。
 
 
-[b]考古空白的社会层面佐证（2026年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]考古空白的社会层面佐证（2026年）[/font][/b]
 
-2026年4月，南京市规划资源局公示《南京历史轴线城市设计》（东南大学编制），将六朝建康城轴线定性为"六朝山水古迹线"，在图纸上以[b]虚线[/b]（地下线）标注，并明确说明：
 
-[color=#AAAAAA]　"由于六朝具体位置淹没在历史中，目前能确定位置的是零星考古点，随着考古发掘，有待确定线型走位。因此，城市设计将其定位为一条怀古路线。"[/color]
+2026年4月，南京市规划资源局公示《南京历史轴线城市设计》（东南大学编制），将六朝建康城轴线定性为"六朝山水古迹线"，在图纸上以[color=#000000]虚线[/color]（地下线）标注，并明确说明：
+
+
+[indent][color=#666666]┃ "由于六朝具体位置淹没在历史中，目前能确定位置的是零星考古点，随着考古发掘，有待确定线型走位。因此，城市设计将其定位为一条怀古路线。"[/color][/indent]
+
 
 这是官方层面对六朝建康城地面遗迹极少、主体淹没于地下这一现状的正式确认。
 
 2025年5月，玄武区召开四普专家会，研讨"六朝建康都城遗址"文物本体边界范围划定，表明考古边界信息仍在持续细化中。
 
 
-[b]建康城"倾斜"特征[/b]
-
-建康城非正南北向，而是[b]北偏东约25度[/b]：
-- 高等级道路、壕沟、排水沟均呈此方向
-- 成因：南京山川形势 + 长江流向综合影响
-- 这种因地制宜的建城方式在中国都城中独树一帜
-- 影响延伸至北朝隋唐都城，进而影响日本京都、奈良及朝鲜百济等都城
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建康城"倾斜"特征[/font][/b]
 
 
-[b]都城格局与中轴线[/b]
+建康城非正南北向，而是[color=#000000]北偏东约25度[/color]：
+
+[indent]•  高等级道路、壕沟、排水沟均呈此方向[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  成因：南京山川形势 + 长江流向综合影响[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  这种因地制宜的建城方式在中国都城中独树一帜[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  影响延伸至北朝隋唐都城，进而影响日本京都、奈良及朝鲜百济等都城[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]城市规模[/b]
-- 都城周围：「二十里一十九步」（约8-9公里）
-- 宫城（太初宫）：周围五百丈（东晋改建后仍沿用孙吴布局）
-- 都城结构：宫城 + 都城两重（无外郭）；南朝梁代始建外郭国门
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]建康城三重门轴线考古定位（2024年最新成果）[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]都城格局与中轴线[/font][/b]
 
-[b]张学锋（南大历史系教授）根据考古发掘综合判断：[/b]
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]城市规模[/font][/b]
+
+
+[indent]•  都城周围：「二十里一十九步」（约8-9公里）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  宫城（太初宫）：周围五百丈（东晋改建后仍沿用孙吴布局）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  都城结构：宫城 + 都城两重（无外郭）；南朝梁代始建外郭国门[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建康城三重门轴线考古定位（2024年最新成果）[/font][/b]
+
+
+[color=#000000]张学锋（南大历史系教授）根据考古发掘综合判断：[/color]
 
 ```
 宫城正南门  大司马门（台城南门）
@@ -305,11 +490,12 @@
 牛首山（"天阙"）
 ```
 
-[b]总长（宫门→朱雀门）：[/b] 约7里（《建康实录》："吴时自宫门南出，至朱雀门七八里"）
-[b]轴线走向：[/b] 北偏东约25度（宫城区）；南延御道段北偏东约35度
+[color=#000000]总长（宫门→朱雀门）：[/color] 约7里（《建康实录》："吴时自宫门南出，至朱雀门七八里"）
+[color=#000000]轴线走向：[/color] 北偏东约25度（宫城区）；南延御道段北偏东约35度
 
 
-[b]宫城中轴线（南北向）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]宫城中轴线（南北向）[/font][/b]
+
 
 ```
 太初宫正殿（神龙殿）约今鱼市街一带
@@ -325,107 +511,208 @@
 ```
 
 
-[b]御道性质辨析（《建康宫苑记》）[/b]
-- [b]驰道：[/b] 天子专用，从端门（阊阖门）出
-- [b]御街：[/b] 自大司马门出，主要官署通道
-- [b]古御街：[/b] 自西掖门出，更古老路段
+[b][font=res://resource/font/FandolSong-Bold/26.tres]御道性质辨析（《建康宫苑记》）[/font][/b]
+
+
+[indent]•  [color=#000000]驰道：[/color] 天子专用，从端门（阊阖门）出[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]御街：[/color] 自大司马门出，主要官署通道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]古御街：[/color] 自西掖门出，更古老路段[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 驰道路中央为天子驰道，两侧御沟，沟外为公众通道，再外侧集中分布中央官署。
 
 
-[b]城市功能分区[/b]
-- [b]宫城区：[/b] 太初宫（都城中部偏西偏南）+ 苑城（偏东北，东晋台城前身）+ 昭明宫（太初宫以东，267年后）
-- [b]苑城/华林园：[/b] 宫城北面，皇家园林兼禁卫营地，东晋成帝改建为台城，潮沟以北划为华林园皇家苑囿
-- [b]官署区：[/b] 御街两侧，宣阳门内
-- [b]冶城区（今朝天宫）：[/b] 莫愁路东侧冶城山，孙权在此设置冶官，铸造铜铁器（军事装备制造基地）。东晋王导患病后将冶铸作坊迁往石头东骷髅山，冶城改建为西园，冶铸功能终结——但孙吴时期冶城是建业重要的军事后勤区。冶城最早[color=#6699FF][url={"research": "史迹", "cat": "people"}]史迹[/url][/color]：吴王夫差冶铸（前5世纪末）；南京见诸记载的最早名称。
-- [b]居民区/商业区：[/b] 秦淮河两岸，南岸长干里为主要居民区，横塘至查浦为繁华商业区
+[b][font=res://resource/font/FandolSong-Bold/26.tres]城市功能分区[/font][/b]
 
 
-[b]朱雀桥（大航）与长干里[/b]
+[indent]•  [color=#000000]宫城区：[/color] 太初宫（都城中部偏西偏南）+ 苑城（偏东北，东晋台城前身）+ 昭明宫（太初宫以东，267年后）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]苑城/华林园：[/color] 宫城北面，皇家园林兼禁卫营地，东晋成帝改建为台城，潮沟以北划为华林园皇家苑囿[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]官署区：[/color] 御街两侧，宣阳门内[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]冶城区（今朝天宫）：[/color] 莫愁路东侧冶城山，孙权在此设置冶官，铸造铜铁器（军事装备制造基地）。东晋王导患病后将冶铸作坊迁往石头东骷髅山，冶城改建为西园，冶铸功能终结——但孙吴时期冶城是建业重要的军事后勤区。冶城最早[color=#0066FF][url={"research": "史迹", "cat": "people"}]史迹[/url][/color]：吴王夫差冶铸（前5世纪末）；南京见诸记载的最早名称。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]居民区/商业区：[/color] 秦淮河两岸，南岸长干里为主要居民区，横塘至查浦为繁华商业区[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]大航（朱雀桥）的名称演变[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]时期[/b] | [b]名称[/b] | [b]形制与规模[/b]
-东吴 | [b]大航[/b]（南津大桥、南淮大桥） | 木构浮桥，长约130米，东吴始建
-东晋 | [b]朱雀桥[/b]（朱雀航、朱雀桁） | 因正对朱雀门得名，连舟为桥，可拆撤
-杨吴 | [b]镇淮桥[/b]（都水使王逊建） | 取"镇住秦淮河"之意
-宋代 | 廊桥 | 16间大屋，"甚为壮丽"，长50米，宽9.8米
-1960年后 | [b]镇淮桥[/b]（今） | 单孔石拱桥，长32米，宽26米，中华门城堡北侧
+[b][font=res://resource/font/FandolSong-Bold/28.tres]朱雀桥（大航）与长干里[/font][/b]
 
 
-[b]注：[/b] 今南京另有一座"朱雀桥"（武定桥附近），属名称错位，真正历史朱雀桥在中华门/镇淮桥。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]大航（朱雀桥）的名称演变[/font][/b]
 
 
-[b]长干里的战略地位[/b]
-- 六朝都城的南门户，大航北接都城御街，南通长干腹地
-- 秦淮河（淮水）是重要商船贸易地，鼎盛时淮上共设[b]二十四航（渡口）[/b]
-- 最著名四航：大航（通大长干）、竹格航（通小长干）、骠骑航、丹阳航
-- 南京颜料坊曾发掘到六朝淮水北岸遗址，出土大量商品货物相关文物
+[table=3]
+[cell][b]时期[/b][/cell]
+[cell][b]名称[/b][/cell]
+[cell][b]形制与规模[/b][/cell]
+[cell]东吴[/cell]
+[cell][color=#000000]大航[/color]（南津大桥、南淮大桥）[/cell]
+[cell]木构浮桥，长约130米，东吴始建[/cell]
+[cell]东晋[/cell]
+[cell][color=#000000]朱雀桥[/color]（朱雀航、朱雀桁）[/cell]
+[cell]因正对朱雀门得名，连舟为桥，可拆撤[/cell]
+[cell]杨吴[/cell]
+[cell][color=#000000]镇淮桥[/color]（都水使王逊建）[/cell]
+[cell]取"镇住秦淮河"之意[/cell]
+[cell]宋代[/cell]
+[cell]廊桥[/cell]
+[cell]16间大屋，"甚为壮丽"，长50米，宽9.8米[/cell]
+[cell]1960年后[/cell]
+[cell][color=#000000]镇淮桥[/color]（今）[/cell]
+[cell]单孔石拱桥，长32米，宽26米，中华门城堡北侧[/cell]
+[/table]
 
 
-[b]2023年西街遗址：朱雀航木桩残迹[/b]
-西街遗址（秦淮河底）发掘出[b]朱雀航的木桩残迹[/b]——直接考古物证，证实东吴大航的存在。这是建业/建康城考古中目前唯一的桥梁构件类直接证据。
+[color=#000000]注：[/color] 今南京另有一座"朱雀桥"（武定桥附近），属名称错位，真正历史朱雀桥在中华门/镇淮桥。
 
 
-[b]西街遗址与梁代国门（2024—2025年持续进展）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]长干里的战略地位[/font][/b]
 
 
-[b]机构：[/b] 南京市考古研究院
-[b]项目负责人：[/b] 陈大海（副研究馆员）
-[b]发掘周期：[/b] 2017年10月至今；2020年后转主动性发掘
-
-[b]梁代国门规格：[/b]
-- 一门三道，宽约33米，进深约17米
-- 门墩两面砖铺散水，门道残存铺砖
-- 两侧城墙砖包夯土，厚11.5米
-- 护城河引南涧水开挖，护城河上"望国门桥"
-- 史料对应：《梁书》天监七年二月"新作国门于越城南"
-
-[b]意义：[/b] 首次发现建康城国门实物遗址；外郭城形制影响东魏[color=#6699FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]、隋唐[color=#6699FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]、日本京都等城市。
+[indent]•  六朝都城的南门户，大航北接都城御街，南通长干腹地[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  秦淮河（淮水）是重要商船贸易地，鼎盛时淮上共设[color=#000000]二十四航（渡口）[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  最著名四航：大航（通大长干）、竹格航（通小长干）、骠骑航、丹阳航[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  南京颜料坊曾发掘到六朝淮水北岸遗址，出土大量商品货物相关文物[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]2025—2026年最新进展[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]2023年西街遗址：朱雀航木桩残迹[/font][/b]
 
-[b]发掘报告出版状态（截至2026年4月）：[/b]
-- [b]《西街——湖熟文化遗址2017—2023年发掘报告》[/b]：初稿完成（2025年10月，王巍工作室主持），但截至2026年4月政府文件中仍称"初稿已完成"，[b]尚未正式刊发[/b]
-- [b]分项简报已在期刊发表：[/b]
-  - 《南京西街遗址商周时期遗存2017—2023年发掘简报》，《东南文化》2025年第3期，pp.34-52（王伯强、陈大海等）
-  - 《南京西街遗址六座孙吴、隋墓发掘简报》，《海岱考古》2025年第2期，pp.83-92（陈大海等）
-- [b]《南京考古资料汇编（2013—2024）》[/b]，凤凰出版社，2025年12月出版（南京市考古研究院编，全3册）
-- [b]《南京六朝长干里出土瓷器精萃》[/b]（王巍工作室阶段性成果，已出版）
-- [b]《长干古城探秘》[/b]（面向少年儿童的科普读物，江苏凤凰少年儿童出版社，2026年3月出版，王巍+马涛联合主编，获"科普江苏"创作出版扶持）
-
-[b]遗址保护建设（更新）：[/b]
-- 长干古城遗迹[b]保护性展示大棚[/b]（一号、二号，总面积2880㎡钢结构）：2025年底前完成设计方案批复，实际竣工投用延至[b]2026年内[/b]
-- 国门遗迹范围内电线杆迁移已纳入2025年政府投资计划（南京安居集团实施）
-
-[b]西街考古遗址公园（2026年4月最新）：[/b]
-- [b]省级考古遗址公园申报已正式启动（2026年4月）[/b]，同步开展国家级申报前期筹备
-- 片区整体规划方案研究编制已全面完成，正推进前期立项与相关手续办理
-- 暂定名"[b]中华门外长干里保护与展示项目[/b]"，将包含：西街考古遗址公园 + 南京市博物馆新馆（西街地块）+ 南京考古博物馆暨南京市考古标本陈列馆
-- 与南京城墙博物馆、大报恩寺遗址博物馆、雨花台烈士纪念馆共同构建"[b]中华门博物馆群落[/b]"
-- 南京市博物馆新馆：已完成选址可行性研究，正推进展陈体系概念设计方案编制
-
-[b]出土标本整理进度：[/b] 截至2025年10月，已完成400余件标本的清洗、分类、拼对、修复、绘图、拍照与建账（遗址时代跨度大、文化堆积复杂，整体工程持续推进中）。
-
-[b]官方定性（2025年南京市文旅局）：[/b]
-[color=#AAAAAA]　西街遗址最为重要的考古发现为[b]商周长干古城和六朝御道及门址[/b]，是涉及南京城市起源和发展的关键遗址，实证了南京历史文化名城的沿革和演变，展现了中华文明各区域内文明交融和发展，在全国范围内都具有典型意义。[/color]
+西街遗址（秦淮河底）发掘出[color=#000000]朱雀航的木桩残迹[/color]——直接考古物证，证实东吴大航的存在。这是建业/建康城考古中目前唯一的桥梁构件类直接证据。
 
 
-[b]史实 vs 演义[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]方面[/b] | [b]史实[/b] | [b]《三国演义》/民间传说[/b]
-[color=#6699FF][url={"research": "诸葛亮 ", "cat": " people"}]诸葛亮 [/url][/color]"钟山龙蟠"赞叹 | 出自裴注引《江表传》，属传说性质，非《三国志》正文 | 演义渲染为出使时经典场景
-孙权迁都动机 | 张纮建议（建安十六年）+ 刘备劝说 + 军事战略综合 | 常简化为"风水王气"说
-张纮建议的实际内容 | 《三国志》正文极简（「纮建计宜出都秣陵」），详情在《江表传》裴注 | 演义渲染地缘分析，但史料本身已很生动
-建业城墙 | 初为竹篱笆，《建康实录》「初有发白虎樽者言：白门三重门，竹篱穿不完」→孙皓才改立都墙 | 读者往往想象宏伟砖城墙
-孙皓还都动机 | 施但民变 + 江东士族全面压力 | 民谣广为流传，政治背景较少被讲述
-建业前身 | 政治前身是吴县→京口→秣陵，而非柴桑 | 常误以为从赤壁基地柴桑迁来
-黄龙元年还都 | 「因故府不改馆」，住原将军府 | 通常想象立刻有宏伟宫殿
-《献帝春秋》"权自欲都"说 | 裴松之已辨伪：「又为虚错」 | 部分通俗著作仍引此说
-朱雀桥今址 | 今中华门/镇淮桥（2023年西街遗址木桩残迹已证实） | 今"朱雀桥"在武定桥附近（名称错位）
-台城位置 | 在今大行宫北至双井巷一线（东晋苑城旧址），不在鸡鸣寺后 | 长期以讹传讹认为鸡鸣寺后明代城墙是"台城"（韦庄诗歌误导）
-太初宫 vs 台城 | 两处不同宫城，太初宫偏西南（今洪武路一带），台城偏东北（大行宫北） | 常混为一谈
+[b][font=res://resource/font/FandolSong-Bold/28.tres]西街遗址与梁代国门（2024—2025年持续进展）[/font][/b]
+
+
+[color=#000000]机构：[/color] 南京市考古研究院
+[color=#000000]项目负责人：[/color] 陈大海（副研究馆员）
+[color=#000000]发掘周期：[/color] 2017年10月至今；2020年后转主动性发掘
+
+[color=#000000]梁代国门规格：[/color]
+
+[indent]•  一门三道，宽约33米，进深约17米[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  门墩两面砖铺散水，门道残存铺砖[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  两侧城墙砖包夯土，厚11.5米[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  护城河引南涧水开挖，护城河上"望国门桥"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  史料对应：《梁书》天监七年二月"新作国门于越城南"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]意义：[/color] 首次发现建康城国门实物遗址；外郭城形制影响东魏[color=#0066FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]、隋唐[color=#0066FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]、日本京都等城市。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]2025—2026年最新进展[/font][/b]
+
+
+[color=#000000]发掘报告出版状态（截至2026年4月）：[/color]
+
+[indent]•  [color=#000000]《西街——湖熟文化遗址2017—2023年发掘报告》[/color]：初稿完成（2025年10月，王巍工作室主持），但截至2026年4月政府文件中仍称"初稿已完成"，[color=#000000]尚未正式刊发[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]分项简报已在期刊发表：[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  《南京西街遗址商周时期遗存2017—2023年发掘简报》，《东南文化》2025年第3期，pp.34-52（王伯强、陈大海等）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  《南京西街遗址六座孙吴、隋墓发掘简报》，《海岱考古》2025年第2期，pp.83-92（陈大海等）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《南京考古资料汇编（2013—2024）》[/color]，凤凰出版社，2025年12月出版（南京市考古研究院编，全3册）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《南京六朝长干里出土瓷器精萃》[/color]（王巍工作室阶段性成果，已出版）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《长干古城探秘》[/color]（面向少年儿童的科普读物，江苏凤凰少年儿童出版社，2026年3月出版，王巍+马涛联合主编，获"科普江苏"创作出版扶持）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]遗址保护建设（更新）：[/color]
+
+[indent]•  长干古城遗迹[color=#000000]保护性展示大棚[/color]（一号、二号，总面积2880㎡钢结构）：2025年底前完成设计方案批复，实际竣工投用延至[color=#000000]2026年内[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  国门遗迹范围内电线杆迁移已纳入2025年政府投资计划（南京安居集团实施）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]西街考古遗址公园（2026年4月最新）：[/color]
+
+[indent]•  [color=#000000]省级考古遗址公园申报已正式启动（2026年4月）[/color]，同步开展国家级申报前期筹备[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  片区整体规划方案研究编制已全面完成，正推进前期立项与相关手续办理[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  暂定名"[color=#000000]中华门外长干里保护与展示项目[/color]"，将包含：西街考古遗址公园 + 南京市博物馆新馆（西街地块）+ 南京考古博物馆暨南京市考古标本陈列馆[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  与南京城墙博物馆、大报恩寺遗址博物馆、雨花台烈士纪念馆共同构建"[color=#000000]中华门博物馆群落[/color]"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  南京市博物馆新馆：已完成选址可行性研究，正推进展陈体系概念设计方案编制[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]出土标本整理进度：[/color] 截至2025年10月，已完成400余件标本的清洗、分类、拼对、修复、绘图、拍照与建账（遗址时代跨度大、文化堆积复杂，整体工程持续推进中）。
+
+[color=#000000]官方定性（2025年南京市文旅局）：[/color]
+
+[indent][color=#666666]┃ 西街遗址最为重要的考古发现为[color=#000000]商周长干古城和六朝御道及门址[/color]，是涉及南京城市起源和发展的关键遗址，实证了南京历史文化名城的沿革和演变，展现了中华文明各区域内文明交融和发展，在全国范围内都具有典型意义。[/color][/indent]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]《三国演义》/民间传说[/b][/cell]
+[cell][color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]"钟山龙蟠"赞叹[/cell]
+[cell]出自裴注引《江表传》，属传说性质，非《三国志》正文[/cell]
+[cell]演义渲染为出使时经典场景[/cell]
+[cell]孙权迁都动机[/cell]
+[cell]张纮建议（建安十六年）+ 刘备劝说 + 军事战略综合[/cell]
+[cell]常简化为"风水王气"说[/cell]
+[cell]张纮建议的实际内容[/cell]
+[cell]《三国志》正文极简（「纮建计宜出都秣陵」），详情在《江表传》裴注[/cell]
+[cell]演义渲染地缘分析，但史料本身已很生动[/cell]
+[cell]建业城墙[/cell]
+[cell]初为竹篱笆，《建康实录》「初有发白虎樽者言：白门三重门，竹篱穿不完」→孙皓才改立都墙[/cell]
+[cell]读者往往想象宏伟砖城墙[/cell]
+[cell]孙皓还都动机[/cell]
+[cell]施但民变 + 江东士族全面压力[/cell]
+[cell]民谣广为流传，政治背景较少被讲述[/cell]
+[cell]建业前身[/cell]
+[cell]政治前身是吴县→京口→秣陵，而非柴桑[/cell]
+[cell]常误以为从赤壁基地柴桑迁来[/cell]
+[cell]黄龙元年还都[/cell]
+[cell]「因故府不改馆」，住原将军府[/cell]
+[cell]通常想象立刻有宏伟宫殿[/cell]
+[cell]《献帝春秋》"权自欲都"说[/cell]
+[cell]裴松之已辨伪：「又为虚错」[/cell]
+[cell]部分通俗著作仍引此说[/cell]
+[cell]朱雀桥今址[/cell]
+[cell]今中华门/镇淮桥（2023年西街遗址木桩残迹已证实）[/cell]
+[cell]今"朱雀桥"在武定桥附近（名称错位）[/cell]
+[cell]台城位置[/cell]
+[cell]在今大行宫北至双井巷一线（东晋苑城旧址），不在鸡鸣寺后[/cell]
+[cell]长期以讹传讹认为鸡鸣寺后明代城墙是"台城"（韦庄诗歌误导）[/cell]
+[cell]太初宫 vs 台城[/cell]
+[cell]两处不同宫城，太初宫偏西南（今洪武路一带），台城偏东北（大行宫北）[/cell]
+[cell]常混为一谈[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]

@@ -32,7 +32,7 @@ func effect_20328_2():
 		actor.get_name(), me.get_five_phases_str() + me.get_poker_point_str(),
 		targetActor.get_name(), ske.skill_name
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20328_3():

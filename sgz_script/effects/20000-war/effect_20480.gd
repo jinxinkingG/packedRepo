@@ -78,7 +78,7 @@ func effect_20480_2()->void:
 	map.show_color_block_by_position(path, Color(0.0, 0.0, 0.8, 0.3))
 	DataManager.set_env("龙乡目标", {"x":target.x, "y":target.y})
 	var msg = "移动到指定位置（<{0},{1}>）\n可否？".format([target.x, target.y])
-	play_dialog(me.actorId, msg, 2, 2001)
+	play_dialog(actorId, msg, 2, 2001)
 	return
 
 func on_view_model_2001()->void:

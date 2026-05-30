@@ -32,7 +32,7 @@ func effect_20360_start():
 	var msg = "消耗{0}机动力发动【{1}】\n与目标的距离视为1\n可否？".format([
 		COST_AP, ske.skill_name
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20360_2():
@@ -48,7 +48,7 @@ func effect_20360_2():
 		var msg = "明察而众和，谋深而虑远\n（{0}发动【{1}】".format([
 			me.get_name(), ske.skill_name,
 		])
-		play_dialog(me.actorId, msg, 2, 2001)
+		play_dialog(actorId, msg, 2, 2001)
 		return
 	# player 有计策发动信息，追加信息
 	se.message = "明察而众和，谋深而虑远\n" + se.get_message()

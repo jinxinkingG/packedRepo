@@ -12,24 +12,24 @@ func effect_20251_start():
 	var targets = get_enemy_targets(me, true, 999)
 	if targets.empty():
 		var msg = "没有可以发动{0}的目标".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 2, 2999)
+		play_dialog(actorId, msg, 2, 2999)
 		return
 	if targets.size() > 1:
 		var msg = "敌军并非孤立无援\n谅未必肯降"
-		play_dialog(me.actorId, msg, 2, 2999)
+		play_dialog(actorId, msg, 2, 2999)
 		return
 	var target = DataManager.get_war_actor(targets[0])
 	if target.actor().get_loyalty() >= 100:
 		var msg = "不可对君主发动{0}".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 2, 2999)
+		play_dialog(actorId, msg, 2, 2999)
 		return
 	if target.get_retreat_city_id() >= 0:
 		var msg = "敌军未陷绝境\n谅未必肯降"
-		play_dialog(me.actorId, msg, 2, 2999)
+		play_dialog(actorId, msg, 2, 2999)
 		return
 	if target.get_soldiers() >= SOLDIERS_LIMIT:
 		var msg = "敌军尚有一战之力\n谅未必肯降"
-		play_dialog(me.actorId, msg, 2, 2999)
+		play_dialog(actorId, msg, 2, 2999)
 		return
 	DataManager.set_env("目标", target.actorId)
 	var msg = "对{0}发动{1}\n劝其归降\n可否？".format([

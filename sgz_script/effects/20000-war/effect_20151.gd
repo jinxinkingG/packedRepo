@@ -21,7 +21,7 @@ func on_view_model_2009():
 # 发动主动技
 func effect_20151_start():
 	if me.action_point <= 0 and actor.get_soldiers() <= 0:
-		play_dialog(me.actorId, "兵力与机动力不足", 2, 2009)
+		play_dialog(actorId, "兵力与机动力不足", 2, 2009)
 		return
 	var targets = get_teammate_targets(me)
 	var msg = "选择队友发动【{0}】".format([ske.skill_name])
@@ -41,7 +41,7 @@ func effect_20151_2():
 	var msg = "援助{0}：\n{1}机动力和{2}兵力\n可否？".format([
 		targetActor.get_name(), ap, soldiers
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20151_3():
@@ -63,5 +63,5 @@ func effect_20151_3():
 
 	var msg = "皆为王事，岂有彼此\n以吾有余，补君不足"
 	FlowManager.add_flow("draw_actors")
-	play_dialog(me.actorId, msg, 2, 2009)
+	play_dialog(actorId, msg, 2, 2009)
 	return

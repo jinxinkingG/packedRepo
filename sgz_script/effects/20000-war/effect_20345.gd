@@ -46,19 +46,19 @@ func effect_20345_start():
 
 	if wv.money < COST_GOLD:
 		var msg = "金不足，发动【临征】需\n金 >= {0}".format([COST_GOLD])
-		play_dialog(me.actorId, msg, 3, 2009)
+		play_dialog(actorId, msg, 3, 2009)
 		return
 
 	var maxSoldiers = DataManager.get_actor_max_soldiers(me.actorId)
 	if actor.get_soldiers() > maxSoldiers - RECOVER_SOLDIERS:
 		var msg = "兵力充足，无须【临征】"
-		play_dialog(me.actorId, msg, 2, 2009)
+		play_dialog(actorId, msg, 2, 2009)
 		return
 
 	var msg = "消耗 {0} 金发动【临征】\n补充 {1} 兵力\n可否？".format([
 		COST_GOLD, RECOVER_SOLDIERS,
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20345_2():

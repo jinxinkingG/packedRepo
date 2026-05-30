@@ -1,10 +1,13 @@
-[b]汉末医学与疫病[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]汉末医学与疫病[/font][/b]
 
 
-[b]类型：[/b] 社会/医学
+[color=#000000]类型：[/color] 社会/医学
 
 
-[b]背景概述[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]背景概述[/font][/b]
 
 
 东汉末年，中国遭遇历史上最严重的疫病危机之一。从汉桓帝时期（约160年代）到建安末年（220年），大规模瘟疫几乎周而复始。据学者王文涛统计，献帝在位期间大规模疾疫爆发七次（含地方性疾疫则达十七次），平均不到两年一次，远超两汉平均七年一次的历史基线。
@@ -14,161 +17,289 @@
 三国时期人口最低值约2200万（葛剑雄《中国人口史》），是东汉鼎盛期约5600万的不到40%。疫病、战争、饥荒三者叠加，共同造成了这场历史性的人口崩溃。
 
 
-[b]在三国时期的表现[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]建安大疫的时间线[/b]
-
-- [b]196年（建安元年）[/b]：疫病大规模爆发起点，此后持续超过二十年
-- [b]208年（[color=#6699FF][url={"research": "赤壁之战", "cat": "events"}]赤壁之战[/url][/color]）[/b]：曹军中疫病流行（《三国志·武帝纪》："公至赤壁，与备战，不利。于是大疫，吏士多死者，乃引军还"），是赤壁曹军大败的重要原因之一。[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]后来致[color=#6699FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]信亦承认："赤壁之役，值有疾病，孤烧船自退，横使[color=#6699FF][url={"research": "周瑜", "cat": "people"}]周瑜[/url][/color]虚获此名。"
-- [b]210年[/b]：周瑜"道遇暴疾"死于盛年36岁；程普同年去世（很可能死于疫病）
-- [b]215年（第二次[color=#6699FF][url={"research": "合肥之战", "cat": "events"}]合肥之战[/url][/color]）[/b]：孙权军疫病大作，主力撤退，仅余千余人险遭[color=#6699FF][url={"research": "张辽", "cat": "people"}]张辽[/url][/color]所歼（《三国志·[color=#6699FF][url={"research": "甘宁", "cat": "people"}]甘宁[/url][/color]传》）
-- [b]217年（建安二十二年）[/b]：《后汉书·献帝纪》记"是岁大疫"，[color=#6699FF][url={"research": "曹植", "cat": "people"}]曹植[/url][/color]《说疫气》记"家家有僵尸之痛，户户有号泣之哀"；曹操建安二十三年诏："去冬天降疫疠，民有凋伤，军兴于外，垦田损少，吾甚忧之。"
-- [b]219年[/b]：孙吴荆州大疫，《三国志·吴主传》："是岁大疫，尽除荆州民租税"——孙权被迫免除荆州租税
-- [b]220年[/b]：[color=#6699FF][url={"research": "吕蒙", "cat": "people"}]吕蒙[/url][/color]（41岁）、[color=#6699FF][url={"research": "蒋钦", "cat": "people"}]蒋钦[/url][/color]相继病逝，可能与持续疫病有关
+[b][font=res://resource/font/FandolSong-Bold/28.tres]在三国时期的表现[/font][/b]
 
 
-[b]三国完整疫情记录（共13次）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安大疫的时间线[/font][/b]
 
 
-[b]年份[/b] | [b]史料出处[/b] | [b]涉及方[/b] | [b]影响[/b]
-208 | 《三国志·武帝纪》《三国志·周瑜传》 | 曹魏 | 赤壁战败
-215 | 《三国志·甘宁传》 | 东吴 | [color=#6699FF][url={"research": "合肥 ", "cat": " geography"}]合肥 [/url][/color]撤军，险遭全歼
-217 | 《后汉书·献帝纪》 | 曹魏 | 建安七子五人同年死亡
-219 | 《三国志·吴主传》 | 东吴 | 孙权免荆州租税
-222 | 《三国志·夏侯尚传》 | 曹魏 | [color=#6699FF][url={"research": "曹丕 ", "cat": " people"}]曹丕 [/url][/color]伐吴被迫撤军
-223 | 《三国志·文帝纪》 | 曹魏 | 大司马[color=#6699FF][url={"research": "曹仁 ", "cat": " people"}]曹仁 [/url][/color]同月死亡
-231 | 《资治通鉴·卷七十二》 | 东吴 | 远征夷洲（台湾），死者十八九
-234 | 《资治通鉴·卷七十二》 | 曹魏 | 洛阳大疫，与[color=#6699FF][url={"research": "诸葛亮 ", "cat": " people"}]诸葛亮 [/url][/color]北伐同年
-235 | 《三国志·明帝纪》 | 曹魏 | 京都大疫
-242 | 《三国志·吴主传》 | 东吴 | 孙权立太子同年
-246 | 《三国志·[color=#6699FF][url={"research": "全琮 ", "cat": " people"}]全琮 [/url][/color]传》 | 东吴 | 远征全军覆没，"权深悔之"
-253 | 《三国志·[color=#6699FF][url={"research": "孙亮 ", "cat": " people"}]孙亮 [/url][/color]传》 | 东吴 | [color=#6699FF][url={"research": "诸葛恪 ", "cat": " people"}]诸葛恪 [/url][/color]合肥战败撤军，随后被杀
-274 | 《三国志·孙皓传》 | 东吴 | 连续大疫约三年，东吴末期
+[indent]•  [color=#000000]196年（建安元年）[/color]：疫病大规模爆发起点，此后持续超过二十年[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]208年（[color=#0066FF][url={"research": "赤壁之战", "cat": "events"}]赤壁之战[/url][/color]）[/color]：曹军中疫病流行（《三国志·武帝纪》："公至赤壁，与备战，不利。于是大疫，吏士多死者，乃引军还"），是赤壁曹军大败的重要原因之一。[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]后来致[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]信亦承认："赤壁之役，值有疾病，孤烧船自退，横使[color=#0066FF][url={"research": "周瑜", "cat": "people"}]周瑜[/url][/color]虚获此名。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]210年[/color]：周瑜"道遇暴疾"死于盛年36岁；[color=#0066FF][url={"research": "程普", "cat": "people"}]程普[/url][/color]同年去世（很可能死于疫病）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]215年（第二次[color=#0066FF][url={"research": "合肥之战", "cat": "events"}]合肥之战[/url][/color]）[/color]：孙权军疫病大作，主力撤退，仅余千余人险遭[color=#0066FF][url={"research": "张辽", "cat": "people"}]张辽[/url][/color]所歼（《三国志·[color=#0066FF][url={"research": "甘宁", "cat": "people"}]甘宁[/url][/color]传》）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]217年（建安二十二年）[/color]：《后汉书·献帝纪》记"是岁大疫"，[color=#0066FF][url={"research": "曹植", "cat": "people"}]曹植[/url][/color]《说疫气》记"家家有僵尸之痛，户户有号泣之哀"；曹操建安二十三年诏："去冬天降疫疠，民有凋伤，军兴于外，垦田损少，吾甚忧之。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]219年[/color]：孙吴荆州大疫，《三国志·吴主传》："是岁大疫，尽除荆州民租税"——孙权被迫免除荆州租税[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]220年[/color]：[color=#0066FF][url={"research": "吕蒙", "cat": "people"}]吕蒙[/url][/color]（41岁）、[color=#0066FF][url={"research": "蒋钦", "cat": "people"}]蒋钦[/url][/color]相继病逝，可能与持续疫病有关[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]蜀汉境内疫病记录：[/b] 史书几乎无直接记载。学界认为巴蜀地理闭塞、人口密度低，受冲击相对较小；另一方面史料记录本身可能不完整。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国完整疫情记录（共13次）[/font][/b]
 
 
-[b]疫病类型的现代考证（岳岭，2012）[/b]
+[table=4]
+[cell][b]年份[/b][/cell]
+[cell][b]史料出处[/b][/cell]
+[cell][b]涉及方[/b][/cell]
+[cell][b]影响[/b][/cell]
+[cell]208[/cell]
+[cell]《三国志·武帝纪》《三国志·周瑜传》[/cell]
+[cell]曹魏[/cell]
+[cell]赤壁战败[/cell]
+[cell]215[/cell]
+[cell]《三国志·甘宁传》[/cell]
+[cell]东吴[/cell]
+[cell][color=#0066FF][url={"research": "合肥", "cat": "geography"}]合肥[/url][/color]撤军，险遭全歼[/cell]
+[cell]217[/cell]
+[cell]《后汉书·献帝纪》[/cell]
+[cell]曹魏[/cell]
+[cell]建安七子五人同年死亡[/cell]
+[cell]219[/cell]
+[cell]《三国志·吴主传》[/cell]
+[cell]东吴[/cell]
+[cell]孙权免荆州租税[/cell]
+[cell]222[/cell]
+[cell]《三国志·[color=#0066FF][url={"research": "夏侯尚", "cat": "people"}]夏侯尚[/url][/color]传》[/cell]
+[cell]曹魏[/cell]
+[cell][color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]伐吴被迫撤军[/cell]
+[cell]223[/cell]
+[cell]《三国志·文帝纪》[/cell]
+[cell]曹魏[/cell]
+[cell]大司马[color=#0066FF][url={"research": "曹仁", "cat": "people"}]曹仁[/url][/color]同月死亡[/cell]
+[cell]231[/cell]
+[cell]《资治通鉴·卷七十二》[/cell]
+[cell]东吴[/cell]
+[cell]远征夷洲（台湾），死者十八九[/cell]
+[cell]234[/cell]
+[cell]《资治通鉴·卷七十二》[/cell]
+[cell]曹魏[/cell]
+[cell]洛阳大疫，与[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]北伐同年[/cell]
+[cell]235[/cell]
+[cell]《三国志·明帝纪》[/cell]
+[cell]曹魏[/cell]
+[cell]京都大疫[/cell]
+[cell]242[/cell]
+[cell]《三国志·吴主传》[/cell]
+[cell]东吴[/cell]
+[cell]孙权立太子同年[/cell]
+[cell]246[/cell]
+[cell]《三国志·[color=#0066FF][url={"research": "全琮", "cat": "people"}]全琮[/url][/color]传》[/cell]
+[cell]东吴[/cell]
+[cell]远征全军覆没，"权深悔之"[/cell]
+[cell]253[/cell]
+[cell]《三国志·[color=#0066FF][url={"research": "孙亮", "cat": "people"}]孙亮[/url][/color]传》[/cell]
+[cell]东吴[/cell]
+[cell][color=#0066FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]合肥战败撤军，随后被杀[/cell]
+[cell]274[/cell]
+[cell]《三国志·[color=#0066FF][url={"research": "孙皓", "cat": "people"}]孙皓[/url][/color]传》[/cell]
+[cell]东吴[/cell]
+[cell]连续大疫约三年，东吴末期[/cell]
+[/table]
 
-[color=#6699FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]师范学院学者岳岭（《信阳师范学院学报》2012年第4期）对两次核心疫病进行了系统论证：
+
+[color=#000000]蜀汉境内疫病记录：[/color] 史书几乎无直接记载。学界认为巴蜀地理闭塞、人口密度低，受冲击相对较小；另一方面史料记录本身可能不完整。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]疫病类型的现代考证（岳岭，2012）[/font][/b]
+
+
+[color=#0066FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]师范学院学者岳岭（《信阳师范学院学报》2012年第4期）对两次核心疫病进行了系统论证：
 
 
 [b]赤壁之战（208年）：斑疹伤寒[/b]
 
-[b]排除血吸虫：[/b] 秦汉史书区分"疫"（传染性）和"瘴"（地方性非传染病）。血吸虫属非传染病，归"瘴"类；陈寿（魏晋人）明确将此记为"疫"，故可排除。
 
-[b]排除鼠疫：[/b] 鼠疫潜伏期约十天、死亡率20%—75%，若是鼠疫则赤壁开战前曹军就应已大量死亡；史料显示疾病是在作战前已存在（周瑜预判"疲病之卒"），而非急性爆发。此外，龚胜生研究表明湖北地区鼠疫多与战争有关，自然条件下爆发可能性小。
+[color=#000000]排除血吸虫：[/color] 秦汉史书区分"疫"（传染性）和"瘴"（地方性非传染病）。血吸虫属非传染病，归"瘴"类；陈寿（魏晋人）明确将此记为"疫"，故可排除。
 
-[b]认定为斑疹伤寒：[/b]
-- 传播机制：通过跳蚤在人群密集处传播，秋冬季高发——契合曹军大规模集结于寒冷季节
-- 死亡率5%—17%；战争条件下约17%
-- 曹操军队总死亡率约50%，是[b]战争+饥饿+疫病[/b]三因叠加的结果，斑疹伤寒约占其中一项
-- 将领无死亡记载（住宿营养条件好，与跳蚤接触少），与斑疹伤寒传播路径吻合
+[color=#000000]排除鼠疫：[/color] 鼠疫潜伏期约十天、死亡率20%—75%，若是鼠疫则赤壁开战前曹军就应已大量死亡；史料显示疾病是在作战前已存在（周瑜预判"疲病之卒"），而非急性爆发。此外，龚胜生研究表明湖北地区鼠疫多与战争有关，自然条件下爆发可能性小。
+
+[color=#000000]认定为斑疹伤寒：[/color]
+
+[indent]•  传播机制：通过跳蚤在人群密集处传播，秋冬季高发——契合曹军大规模集结于寒冷季节[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  死亡率5%—17%；战争条件下约17%[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹操军队总死亡率约50%，是[color=#000000]战争+饥饿+疫病[/color]三因叠加的结果，斑疹伤寒约占其中一项[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  将领无死亡记载（住宿营养条件好，与跳蚤接触少），与斑疹伤寒传播路径吻合[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [b]建安二十二年（217年）：鼠疫[/b]
 
-[b]排除流感和克罗米亚—刚果出血热：[/b] 这两种疾病不在夏季爆发，但217年疫病从春季持续至冬季，为全年性流行。
 
-[b]认定为鼠疫的三条论据：[/b]
+[color=#000000]排除流感和克罗米亚—刚果出血热：[/color] 这两种疾病不在夏季爆发，但217年疫病从春季持续至冬季，为全年性流行。
 
-1. [b]华佗的症状描述：[/b] 《备急千金要方·伤寒方上》记华佗论伤寒特征："其热微微者赤斑出，此候五死一生；剧者黑斑出者，此候十死一生"——皮肤出血性斑疹是鼠疫（败血症型）的典型特征
-
-2. [b]社会分层规律：[/b] 曹植《说疫气》明言穷人死多、富人幸免——符合鼠疫传播规律（宿主为田鼠，穷人接触田鼠机会更多）
-
-3. [b]张仲景家族案例：[/b] 建安元年以来不到十年，宗族200余人死亡三分之二、七成死于"伤寒"——持续高死亡率与鼠疫规律（20%—75%）吻合
-
-张仲景所称"伤寒"是汉代对一切外感热性烈性传染病的总称，现代学者多认为是斑疹伤寒、流感、鼠疫等叠加饥荒导致的[b]复合型瘟疫[/b]，症状包括高热、谵妄、皮疹、出血、剧烈腹泻。
+[color=#000000]认定为鼠疫的三条论据：[/color]
 
 
-[b]疫病与汉末士人心态[/b]
+[indent]1.  [color=#000000][color=#0066FF][url={"research": "华佗", "cat": "people"}]华佗[/url][/color]的症状描述：[/color] 《备急千金要方·伤寒方上》记华佗论伤寒特征："其热微微者赤斑出，此候五死一生；剧者黑斑出者，此候十死一生"——皮肤出血性斑疹是鼠疫（败血症型）的典型特征[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]社会分层规律：[/color] 曹植《说疫气》明言穷人死多、富人幸免——符合鼠疫传播规律（宿主为田鼠，穷人接触田鼠机会更多）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]张仲景家族案例：[/color] 建安元年以来不到十年，宗族200余人死亡三分之二、七成死于"伤寒"——持续高死亡率与鼠疫规律（20%—75%）吻合[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+张仲景所称"伤寒"是汉代对一切外感热性烈性传染病的总称，现代学者多认为是斑疹伤寒、流感、鼠疫等叠加饥荒导致的[color=#000000]复合型瘟疫[/color]，症状包括高热、谵妄、皮疹、出血、剧烈腹泻。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]疫病与汉末士人心态[/font][/b]
+
 
 岳岭论文特别指出，疫病频发直接塑造了汉末魏初士人的生死观与文学风格：
 
-[b]曹丕的回应（《魏书·文帝纪》）：[/b] 疫疠数起，士人雕落，曹丕叹曰"余独何人，能全其寿"，由此产生"立德扬名，可以不朽，其次莫如着篇籍"的创作动力——[color=#6699FF][url={"research": "建安文学", "cat": "context"}]建安文学[/url][/color]的生命意识与疫病阴影直接相关。
+[color=#000000]曹丕的回应（《魏书·文帝纪》）：[/color] 疫疠数起，士人雕落，曹丕叹曰"余独何人，能全其寿"，由此产生"立德扬名，可以不朽，其次莫如着篇籍"的创作动力——[color=#0066FF][url={"research": "建安文学", "cat": "context"}]建安文学[/url][/color]的生命意识与疫病阴影直接相关。
 
-[b]民间宗教应对：[/b]
-- [b]五石散：[/b] 服用钟乳石、石硫黄等矿物配方的"寒食散"来抵御疫病（原为张仲景治伤寒药方）；后经[color=#6699FF][url={"research": "何晏", "cat": "people"}]何晏[/url][/color]推广成为魏晋名士社交药物，但疫病肆虐时期是其"防疫"功能的原始背景
-- [b]符水治病：[/b] 太平道（[color=#6699FF][url={"research": "张角", "cat": "people"}]张角[/url][/color]）和五斗米道（[color=#6699FF][url={"research": "张鲁", "cat": "people"}]张鲁[/url][/color]/张修）都提供符水治病服务，利用民众对瘟疫的恐惧建立宗教信任——《三国志·张鲁传》引《典略》详述其操作（书病人姓名、说服罪之意、三官手书）
+[color=#000000]民间宗教应对：[/color]
 
-
-[b]疫病对三国鼎立格局的深层影响[/b]
-
-[b]孙吴最受打击：[/b] 东吴有明确史料的疫情次数（7次）多于曹魏（5次），且多次疫情与军事失败直接相关（215年合肥、231年夷洲、246年、253年合肥）。东吴四任统帅周瑜、[color=#6699FF][url={"research": "鲁肃", "cat": "people"}]鲁肃[/url][/color]、吕蒙均盛年早逝，多人死因指向疫病。
-
-[b]曹魏文士的217年集体陨落：[/b] 建安七子中[color=#6699FF][url={"research": "王粲", "cat": "people"}]王粲[/url][/color]、徐干、[color=#6699FF][url={"research": "陈琳", "cat": "people"}]陈琳[/url][/color]、应玚、刘桢五人同年死于大疫，曹丕在《与[color=#6699FF][url={"research": "吴质", "cat": "people"}]吴质[/url][/color]书》中悲叹。兖州刺史[color=#6699FF][url={"research": "司马朗", "cat": "people"}]司马朗[/url][/color]（[color=#6699FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]之兄）同年感染疫病而死。
-
-[b]蜀汉相对幸免：[/b] 巴蜀地理闭塞、人口密度低，记载中的大疫案例几乎都集中在曹魏和孙吴控制区域。
+[indent]•  [color=#000000]五石散：[/color] 服用钟乳石、石硫黄等矿物配方的"寒食散"来抵御疫病（原为张仲景治伤寒药方）；后经[color=#0066FF][url={"research": "何晏", "cat": "people"}]何晏[/url][/color]推广成为魏晋名士社交药物，但疫病肆虐时期是其"防疫"功能的原始背景[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]符水治病：[/color] 太平道（[color=#0066FF][url={"research": "张角", "cat": "people"}]张角[/url][/color]）和五斗米道（[color=#0066FF][url={"research": "张鲁", "cat": "people"}]张鲁[/url][/color]/张修）都提供符水治病服务，利用民众对瘟疫的恐惧建立宗教信任——《三国志·张鲁传》引《典略》详述其操作（书病人姓名、说服罪之意、三官手书）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键人物[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]疫病对三国鼎立格局的深层影响[/font][/b]
 
 
-[b]张仲景（约150—219年）[/b]
+[color=#000000]孙吴最受打击：[/color] 东吴有明确史料的疫情次数（7次）多于曹魏（5次），且多次疫情与军事失败直接相关（215年合肥、231年夷洲、246年、253年合肥）。东吴四任统帅周瑜、[color=#0066FF][url={"research": "鲁肃", "cat": "people"}]鲁肃[/url][/color]、吕蒙均盛年早逝，多人死因指向疫病。
 
-[b]生平：[/b] 名机，字仲景，南阳人，东汉末年医学家。《后汉书》《三国志》均未为其立传（唐代刘知几《史通》已指出这一遗漏）。
+[color=#000000]曹魏文士的217年集体陨落：[/color] 建安七子中[color=#0066FF][url={"research": "王粲", "cat": "people"}]王粲[/url][/color]、徐干、[color=#0066FF][url={"research": "陈琳", "cat": "people"}]陈琳[/url][/color]、应玚、刘桢五人同年死于大疫，曹丕在《与[color=#0066FF][url={"research": "吴质", "cat": "people"}]吴质[/url][/color]书》中悲叹。兖州刺史[color=#0066FF][url={"research": "司马朗", "cat": "people"}]司马朗[/url][/color]（[color=#0066FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]之兄）同年感染疫病而死。
 
-[b]"长沙太守"争议（悬案）：[/b]
-- 最早见于唐代甘伯宗《名医录》（已失传）："举孝廉，官至长沙太守"
-- 北宋林亿等校定《伤寒论》（约1065年）引用《名医录》，但本人也注明"张仲景《后汉书》无传"
-- [b]正史长沙太守序列（[color=#6699FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color]、[color=#6699FF][url={"research": "张羡", "cat": "people"}]张羡[/url][/color]、韩玄）中无张仲景[/b]
-- 《后汉书·百官志》：郡太守"皆由尚书选授"，孝廉为入仕资格非实职，若真任太守必有奏报印绶留存
-- 2019年长沙走马楼东吴简牍（372枚，详列建安年间长沙郡吏员名籍）：[b]未见张仲景或张机名字[/b]
-- 清人孙鼎宜、近代章太炎提出"张机"可能是"张羡"的音近讹误
-- [b]结论：[/b] 属悬案，正史无证，唐宋文献链有记，现代历史学界多持怀疑
-
-[b]著作动因：[/b] 建安纪年以来不到十年，张仲景家族200余口死亡三分之二，七成死于"伤寒"——这一家族灾难直接驱动他撰写《伤寒杂病论》。
-
-[color=#AAAAAA]　"余宗族素多，向余二百。建安纪年以来，犹未十稔，其死亡者，三分有二，伤寒十居其七。"（《伤寒杂病论》自序）[/color]
-
-[b]医学成就：[/b] 《伤寒杂病论》（约210年成书）是中医史上第一部理、法、方、药俱备的经典，首次提出辨证论治法；最早的外部引用见于皇甫谧《甲乙经》序（约280年），正史无直接记载。元明以后尊号"医圣"（"医圣"称号始于北宋）。
-
-[b]五石散来源：[/b] 张仲景《伤寒杂病论》中有"寒食散"方（即后来五石散的原型），原为治疗伤寒重症处方，后被何晏增减发展为魏晋名士风尚。
+[color=#000000]蜀汉相对幸免：[/color] 巴蜀地理闭塞、人口密度低，记载中的大疫案例几乎都集中在曹魏和孙吴控制区域。
 
 
-[b]华佗（约145—208年）[/b]
-
-[b]生平：[/b] 字元化，名旉，沛国谯县（今安徽亳州）人，与曹操同乡。[b]《后汉书》《三国志》均有华佗传[/b]，是建安三神医中正史记载最完整者。
-
-[b]医术独特性：[/b]
-- 用药极少，"随手抓出，不用称量"；针灸只针一两处
-- [b]麻沸散（全身麻醉）：[/b] 医史公认最早使用全身麻醉施行外科手术的医者
-- [b]五禽之戏：[/b] 仿虎、鹿、熊、猿、鸟的导引养生术
-- 手术器械用火消毒（早期消毒意识记录）
-
-[b]与曹操的关系（史料：《三国志·华佗传》）：[/b]
-- 曹操头风病严重，召华佗诊治，针刺鬲穴"随手而差"
-- 华佗本为士人，以医为业深感耻辱，以妻病为由多次推延不返
-- 曹操查明妻子诈病，大怒将其收押许昌狱；[color=#6699FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]求情不果，华佗严刑致死
-- 华佗临死将医书交狱卒，狱卒不敢收，华佗付火焚毁
-- 后曹操爱子[color=#6699FF][url={"research": "曹冲", "cat": "people"}]曹冲[/url][/color]病重，曹操悔叹："吾悔杀华佗，令此儿强死也。"
-
-[b]弟子传承：[/b] 吴普、樊阿。但华佗核心技艺（麻沸散配方、外科手法）均已失传。
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]董奉（约168—313年）[/b]
-
-[b]生平：[/b] 字君异，侯官人（今福建闽侯），东汉末至西晋人，[b]建安三神医中正史记载最少者[/b]。
-
-[b]史料状况：[/b]
-- [b]《后汉书》《三国志》正文：均无传[/b]
-- [b]《三国志·[color=#6699FF][url={"research": "士燮", "cat": "people"}]士燮[/url][/color]传》裴松之注[/b]（372—451年）：引葛洪《神仙传》，记载董奉以药丸救活病死三日的士燮——这是[b]董奉进入官方史书体系的唯一渠道[/b]，虽非正传，但裴注为官修史书组成部分
-- [b]葛洪《神仙传·董奉》[/b]：1211字，主要史料来源，带有道教神话色彩，核心杏林故事（不收诊费、种杏济贫）被学者认为"剔除神话，余多切理，可以凭信"（北京中医药大学钱超尘，2010年）
-
-[b]生卒年考证（钱超尘）：[/b] 生于约公元168—220年间；卒于约公元265—313年间，享年近百岁。明《南康府志》称"永嘉（西晋末）中仙去"。
-
-[b]杏林典故：[/b] 《神仙传》记，董奉为人治病不取钱物，重病愈者种杏五株，轻者种一株，数年间积杏十万余株，杏林成。以杏换谷，赈济贫民。"杏林"由此成为中医界代称，宋代《太平广记》（977年）最早引用。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键人物[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]张仲景（约150—219年）[/font][/b]
 
 
-[b]事项[/b] | [b]演义描述[/b] | [b]史实[/b]
-刮骨疗毒 | 华佗为[color=#6699FF][url={"research": "关羽 ", "cat": " people"}]关羽 [/url][/color]刮骨疗毒 | 华佗约208年已死（早于关羽219年被杀）；《三国志》确载关羽刮骨，但执刀者无名，非华佗
-华佗为[color=#6699FF][url={"research": "周泰 ", "cat": " people"}]周泰 [/url][/color]治伤 | 演义详述郡吏推荐华佗救治 | 《三国志》仅载"身被十二创，良久乃苏"，未提华佗
-曹操杀华佗原因 | 疑华佗欲借开颅手术为关羽报仇 | 史实：华佗以士人自矜，厌医为业，以妻病诈称多次拒召；曹操杀因是拒绝服侍、妻病为诈，非"开颅报仇"
-建安七子死因 | 演义无特别描述 | 史实：王粲、徐干、陈琳、应玚、刘桢五人同于217年死于疫病（曹丕书信明载；钱超尘2008年考证王粲死于大疫非麻风）
-张仲景任长沙太守 | 民间传说流传甚广 | 史实：正史无载，唐宋文献有记，现代历史学界多持怀疑，属悬案
-赤壁疫病原因 | 演义暗示东吴水军适应水战 | 史实：斑疹伤寒通过跳蚤传播，在曹军密集集结的冬季寒冷环境中爆发（岳岭2012年论证）
+[color=#000000]生平：[/color] 名机，字仲景，南阳人，东汉末年医学家。《后汉书》《三国志》均未为其立传（唐代刘知几《史通》已指出这一遗漏）。
+
+[color=#000000]"长沙太守"争议（悬案）：[/color]
+
+[indent]•  最早见于唐代甘伯宗《名医录》（已失传）："举孝廉，官至长沙太守"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  北宋林亿等校定《伤寒论》（约1065年）引用《名医录》，但本人也注明"张仲景《后汉书》无传"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]正史长沙太守序列（[color=#0066FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color]、[color=#0066FF][url={"research": "张羡", "cat": "people"}]张羡[/url][/color]、[color=#0066FF][url={"research": "韩玄", "cat": "people"}]韩玄[/url][/color]）中无张仲景[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《后汉书·百官志》：郡太守"皆由尚书选授"，孝廉为入仕资格非实职，若真任太守必有奏报印绶留存[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  2019年长沙走马楼东吴简牍（372枚，详列建安年间长沙郡吏员名籍）：[color=#000000]未见张仲景或张机名字[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  清人孙鼎宜、近代章太炎提出"张机"可能是"张羡"的音近讹误[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]结论：[/color] 属悬案，正史无证，唐宋文献链有记，现代历史学界多持怀疑[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]著作动因：[/color] 建安纪年以来不到十年，张仲景家族200余口死亡三分之二，七成死于"伤寒"——这一家族灾难直接驱动他撰写《伤寒杂病论》。
+
+
+[indent][color=#666666]┃ "余宗族素多，向余二百。建安纪年以来，犹未十稔，其死亡者，三分有二，伤寒十居其七。"（《伤寒杂病论》自序）[/color][/indent]
+
+
+[color=#000000]医学成就：[/color] 《伤寒杂病论》（约210年成书）是中医史上第一部理、法、方、药俱备的经典，首次提出辨证论治法；最早的外部引用见于皇甫谧《甲乙经》序（约280年），正史无直接记载。元明以后尊号"医圣"（"医圣"称号始于北宋）。
+
+[color=#000000]五石散来源：[/color] 张仲景《伤寒杂病论》中有"寒食散"方（即后来五石散的原型），原为治疗伤寒重症处方，后被何晏增减发展为魏晋名士风尚。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]华佗（约145—208年）[/font][/b]
+
+
+[color=#000000]生平：[/color] 字元化，名旉，沛国谯县（今安徽亳州）人，与曹操同乡。[color=#000000]《后汉书》《三国志》均有华佗传[/color]，是建安三神医中正史记载最完整者。
+
+[color=#000000]医术独特性：[/color]
+
+[indent]•  用药极少，"随手抓出，不用称量"；针灸只针一两处[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]麻沸散（全身麻醉）：[/color] 医史公认最早使用全身麻醉施行外科手术的医者[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]五禽之戏：[/color] 仿虎、鹿、熊、猿、鸟的导引养生术[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  手术器械用火消毒（早期消毒意识记录）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]与曹操的关系（史料：《三国志·华佗传》）：[/color]
+
+[indent]•  曹操头风病严重，召华佗诊治，针刺鬲穴"随手而差"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  华佗本为士人，以医为业深感耻辱，以妻病为由多次推延不返[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹操查明妻子诈病，大怒将其收押许昌狱；[color=#0066FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]求情不果，华佗严刑致死[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  华佗临死将医书交狱卒，狱卒不敢收，华佗付火焚毁[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  后曹操爱子[color=#0066FF][url={"research": "曹冲", "cat": "people"}]曹冲[/url][/color]病重，曹操悔叹："吾悔杀华佗，令此儿强死也。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]弟子传承：[/color] 吴普、樊阿。但华佗核心技艺（麻沸散配方、外科手法）均已失传。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]董奉（约168—313年）[/font][/b]
+
+
+[color=#000000]生平：[/color] 字君异，侯官人（今福建闽侯），东汉末至西晋人，[color=#000000]建安三神医中正史记载最少者[/color]。
+
+[color=#000000]史料状况：[/color]
+
+[indent]•  [color=#000000]《后汉书》《三国志》正文：均无传[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《三国志·[color=#0066FF][url={"research": "士燮", "cat": "people"}]士燮[/url][/color]传》裴松之注[/color]（372—451年）：引葛洪《神仙传》，记载董奉以药丸救活病死三日的士燮——这是[color=#000000]董奉进入官方史书体系的唯一渠道[/color]，虽非正传，但裴注为官修史书组成部分[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]葛洪《神仙传·董奉》[/color]：1211字，主要史料来源，带有道教神话色彩，核心杏林故事（不收诊费、种杏济贫）被学者认为"剔除神话，余多切理，可以凭信"（北京中医药大学钱超尘，2010年）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]生卒年考证（钱超尘）：[/color] 生于约公元168—220年间；卒于约公元265—313年间，享年近百岁。明《南康府志》称"永嘉（西晋末）中仙去"。
+
+[color=#000000]杏林典故：[/color] 《神仙传》记，董奉为人治病不取钱物，重病愈者种杏五株，轻者种一株，数年间积杏十万余株，杏林成。以杏换谷，赈济贫民。"杏林"由此成为中医界代称，宋代《太平广记》（977年）最早引用。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]事项[/b][/cell]
+[cell][b]演义描述[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell]刮骨疗毒[/cell]
+[cell]华佗为[color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]刮骨疗毒[/cell]
+[cell]华佗约208年已死（早于关羽219年被杀）；《三国志》确载关羽刮骨，但执刀者无名，非华佗[/cell]
+[cell]华佗为[color=#0066FF][url={"research": "周泰", "cat": "people"}]周泰[/url][/color]治伤[/cell]
+[cell]演义详述郡吏推荐华佗救治[/cell]
+[cell]《三国志》仅载"身被十二创，良久乃苏"，未提华佗[/cell]
+[cell]曹操杀华佗原因[/cell]
+[cell]疑华佗欲借开颅手术为关羽报仇[/cell]
+[cell]史实：华佗以士人自矜，厌医为业，以妻病诈称多次拒召；曹操杀因是拒绝服侍、妻病为诈，非"开颅报仇"[/cell]
+[cell]建安七子死因[/cell]
+[cell]演义无特别描述[/cell]
+[cell]史实：王粲、徐干、陈琳、应玚、刘桢五人同于217年死于疫病（曹丕书信明载；钱超尘2008年考证王粲死于大疫非麻风）[/cell]
+[cell]张仲景任长沙太守[/cell]
+[cell]民间传说流传甚广[/cell]
+[cell]史实：正史无载，唐宋文献有记，现代历史学界多持怀疑，属悬案[/cell]
+[cell]赤壁疫病原因[/cell]
+[cell]演义暗示东吴水军适应水战[/cell]
+[cell]史实：斑疹伤寒通过跳蚤传播，在曹军密集集结的冬季寒冷环境中爆发（岳岭2012年论证）[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]

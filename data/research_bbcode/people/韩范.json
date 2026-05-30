@@ -1,59 +1,95 @@
-[b]韩范[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]韩范[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详；籍贯不详；东汉末年官员，袁尚属下，任易阳令；事后赐爵关内侯
+[color=#000000]基本信息：[/color] 生卒年不详；籍贯不详；东汉末年官员，[color=#0066FF][url={"research": "袁尚", "cat": "people"}]袁尚[/url][/color]属下，任易阳令；事后赐爵关内侯
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
 韩范生卒年与籍贯在正史中均无记载，几乎不可考。其人唯一见于史册的事迹，发生于建安九年（204年）。
 
-[b]官职背景：[/b] 韩范任易阳令，易阳县属魏郡（今河北省永年县东南约四十五里一带），彼时处于[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]—袁尚势力范围之内。建安九年[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]围攻[color=#6699FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]期间，易阳在政治上从属袁尚阵营。
+[color=#000000]官职背景：[/color] 韩范任易阳令，易阳县属魏郡（今河北省永年县东南约四十五里一带），彼时处于[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]—袁尚势力范围之内。建安九年[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]围攻[color=#0066FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]期间，易阳在政治上从属袁尚阵营。
 
-[b]建安九年易阳事件（史料核心）：[/b]
+[color=#000000]建安九年易阳事件（史料核心）：[/color]
 
-《三国志·魏书·[color=#6699FF][url={"research": "徐晃", "cat": "people"}]徐晃[/url][/color]传》：
+《三国志·魏书·[color=#0066FF][url={"research": "徐晃", "cat": "people"}]徐晃[/url][/color]传》：
 
-[color=#AAAAAA]　太祖既围邺，破邯郸，易阳令韩范伪以城降而拒守，太祖遣晃攻之。晃至，飞矢城中，为陈成败。范悔，晃辄降之。既而言于太祖曰："二袁未破，诸城未下者倾耳而听，今日灭易阳，明日皆以死守，恐河北无定时也。愿公降易阳以示诸城，则莫不望风。"太祖善之。[/color]
+
+[indent][color=#666666]┃ 太祖既围邺，破邯郸，易阳令韩范伪以城降而拒守，太祖遣晃攻之。晃至，飞矢城中，为陈成败。范悔，晃辄降之。既而言于太祖曰："二袁未破，诸城未下者倾耳而听，今日灭易阳，明日皆以死守，恐河北无定时也。愿公降易阳以示诸城，则莫不望风。"太祖善之。[/color][/indent]
+
 
 事件时序：
-1. 曹操围邺、破邯郸，开始扫荡周边城池。
-2. 韩范"伪以城降而拒守"——先虚降，再拒守，是一种缓兵之计。
-3. 曹操命徐晃率兵攻打易阳。
-4. 徐晃未强攻，改用"飞矢城中"的方式，将书信绑缚箭矢射入城中，为韩范分析敌我形势、利害得失。
-5. 韩范"悔"——后悔之前的决定，真正投降。
-6. 徐晃随即接受其降，并向曹操进言：以接受韩范投降为示范，劝降其他城池，避免各地死守造成旷日持久的消耗战。
-7. 曹操从之，封韩范关内侯。
+
+[indent]1.  曹操围邺、破邯郸，开始扫荡周边城池。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  韩范"伪以城降而拒守"——先虚降，再拒守，是一种缓兵之计。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  曹操命徐晃率兵攻打易阳。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  徐晃未强攻，改用"飞矢城中"的方式，将书信绑缚箭矢射入城中，为韩范分析敌我形势、利害得失。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  韩范"悔"——后悔之前的决定，真正投降。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]6.  徐晃随即接受其降，并向曹操进言：以接受韩范投降为示范，劝降其他城池，避免各地死守造成旷日持久的消耗战。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]7.  曹操从之，封韩范关内侯。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 《三国志·武帝纪》建安九年条简载：
-[color=#AAAAAA]　易阳令韩范、涉长梁岐举县降，赐爵关内侯。[/color]
+
+[indent][color=#666666]┃ 易阳令韩范、涉长梁岐举县降，赐爵关内侯。[/color][/indent]
+
 
 武帝纪将韩范与"涉长梁岐"并列，两人结局相同，均赐关内侯。"涉长"即涉县县长，梁岐其人亦无其他史料记载。
 
-[b]此后无载：[/b] 韩范在正史中仅此一条，降曹之后的仕历与结局完全不见于史册。
+[color=#000000]此后无载：[/color] 韩范在正史中仅此一条，降曹之后的仕历与结局完全不见于史册。
 
 
-[b]性格与形象[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 基于上述史料，可作如下分析（均属合理推断，非史料直接断言）：
 
-- [b]政治现实主义者：[/b] 韩范的"伪降"并非简单的背叛，而是在大势压迫下的缓兵手段。当徐晃以书信陈明成败利害后，他选择真降，表明他能够理性评估局势，并非顽固死守型官员。
-- [b]缺乏强烈意识形态忠诚：[/b] 与同时期不肯降曹的袁尚部属相比，韩范更接近于地方实用主义官员，对袁氏并无生死相殉的忠诚。
-- [b]徐晃的战略眼光更值得关注：[/b] 史料真正想记录的是徐晃的智谋——以韩范为棋，不战而定多城。韩范本人是这一叙事的配角。
+
+[indent]•  [color=#000000]政治现实主义者：[/color] 韩范的"伪降"并非简单的背叛，而是在大势压迫下的缓兵手段。当徐晃以书信陈明成败利害后，他选择真降，表明他能够理性评估局势，并非顽固死守型官员。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]缺乏强烈意识形态忠诚：[/color] 与同时期不肯降曹的袁尚部属相比，韩范更接近于地方实用主义官员，对袁氏并无生死相殉的忠诚。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]徐晃的战略眼光更值得关注：[/color] 史料真正想记录的是徐晃的智谋——以韩范为棋，不战而定多城。韩范本人是这一叙事的配角。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-- [b]曹操：[/b] 征服者，接受其降，封赏关内侯。
-- [b]徐晃：[/b] 劝降韩范的直接执行者，对韩范有"再造"之恩，亦是令其历史留名的人。
-- [b]袁尚：[/b] 韩范名义上的旧主，韩范叛离其阵营。
-- [b]梁岐：[/b] 同时降曹、同获关内侯的涉长，并列于武帝纪，二人大抵命运相近。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[indent]•  [color=#000000]曹操：[/color] 征服者，接受其降，封赏关内侯。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]徐晃：[/color] 劝降韩范的直接执行者，对韩范有"再造"之恩，亦是令其历史留名的人。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]袁尚：[/color] 韩范名义上的旧主，韩范叛离其阵营。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]梁岐：[/color] 同时降曹、同获关内侯的涉长，并列于武帝纪，二人大抵命运相近。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
 《三国演义》中未见韩范独立出场。他所处的易阳降曹情节在演义中属于大规模平定河北段落，通常被压缩或略去。演义对易阳事件无具体描写，故无史实与演义对比可言。
+
+
+[color=#888888]──────────────────────────────[/color]

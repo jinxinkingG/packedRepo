@@ -1,70 +1,158 @@
-[b]兀突骨[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]兀突骨[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详（虚构）；籍贯：乌戈国（虚构，今云南西部或缅甸北部地区泛指，无史料依据）；身份：乌戈国国主
+[color=#000000]基本信息：[/color] 生卒年不详（虚构）；籍贯：乌戈国（虚构，今云南西部或缅甸北部地区泛指，无史料依据）；身份：乌戈国国主
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]兀突骨完全是《三国演义》的虚构人物，正史中无任何记载，乌戈国亦不见于任何正史文献。[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]演义中的出场[/b]
+[color=#000000]兀突骨完全是《三国演义》的虚构人物，正史中无任何记载，乌戈国亦不见于任何正史文献。[/color]
 
-见于演义第九十回"驱巨兽六破蛮兵 烧藤甲七擒孟获"。
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]演义中的出场[/font][/b]
+
+
+见于演义第九十回"驱巨兽六破蛮兵 烧藤甲七擒[color=#0066FF][url={"research": "孟获", "cat": "people"}]孟获[/url][/color]"。
 
 事件线索：
-- 孟获第六次被擒放后，妻弟带来洞主告知东南七百里外有乌戈国，国主兀突骨愿助战
-- 孟获投奔乌戈国，兀突骨起本洞三万藤甲兵，命兵长[color=#6699FF][url={"research": "土安", "cat": "people"}]土安[/url][/color]、[color=#6699FF][url={"research": "奚泥", "cat": "people"}]奚泥[/url][/color]引军出征
-- 藤甲军在桃花渡连胜[color=#6699FF][url={"research": "魏延", "cat": "people"}]魏延[/url][/color]十五阵，夺蜀七营
-- 魏延诱敌深入盘蛇谷，[color=#6699FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]以地雷火攻，兀突骨与三万藤甲兵全部葬身火中
+
+[indent]•  孟获第六次被擒放后，妻弟带来洞主告知东南七百里外有乌戈国，国主兀突骨愿助战[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  孟获投奔乌戈国，兀突骨起本洞三万藤甲兵，命兵长[color=#0066FF][url={"research": "土安", "cat": "people"}]土安[/url][/color]、[color=#0066FF][url={"research": "奚泥", "cat": "people"}]奚泥[/url][/color]引军出征[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  藤甲军在桃花渡连胜[color=#0066FF][url={"research": "魏延", "cat": "people"}]魏延[/url][/color]十五阵，夺蜀七营[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  魏延诱敌深入盘蛇谷，[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]以地雷火攻，兀突骨与三万藤甲军全部葬身火中[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]嘉靖本与毛本的关键差异[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]嘉靖本（NA11031）与毛本（NA11011）的版本差异[/font][/b]
 
 
-[b]项目[/b] | [b]嘉靖本（三国志通俗演义）[/b] | [b]毛本（毛宗岗评改本）[/b]
-兀突骨身高 | [b]二丈[/b]（约4.6米，近神话） | [b]丈二[/b]（约2.04米，仍高大）
-乌戈国方位 | 东南七百里 | 东南七百里（同）
-兵力 | 三万 | 三万（同）
-兵长称呼 | 俘长（土安、奚泥） | 同
+详细逐字对比见 `ref-yanyi-jiajing-mao-90hui-diff.md`，核心差异如下：
 
 
-[b]注：[/b] 嘉靖本"身长二丈"是更夸张的设定，毛宗岗将其改为"丈二"，使人物稍近人类尺度。"丈二"按商代尺度换算约2.04米，已是巨人。
+[table=3]
+[cell][b]项目[/b][/cell]
+[cell][b]嘉靖本（NA11031）[/b][/cell]
+[cell][b]毛本（NA11011）[/b][/cell]
+[cell]兀突骨身高[/cell]
+[cell][color=#000000]身长二丈[/color]（约4.6米，神话化）[/cell]
+[cell][color=#000000]身长丈二[/color]（约2.04米，更近人类）[/cell]
+[cell]藤甲描述[/cell]
+[cell]简洁版[/cell]
+[cell]增加详细构成："前胸并后背，各用一片，两臂两片，又做成大裙五片，共为一副"（约40字增补）[/cell]
+[cell]孔明叹语[/cell]
+[cell]"吾虽有功于社稷，必损寿矣"[/cell]
+[cell]"吾虽有勇，必损寿矣。这国之人，不曾走了一个。"[/cell]
+[cell]"使乌戈国之人"句[/cell]
+[cell]"不留种类者是，吾之大罪也"[/cell]
+[cell]"不留种类者，是吾身之大罪也"[/cell]
+[cell]孟获观察后语[/cell]
+[cell]简洁[/cell]
+[cell]毛本增补约30字："我兵累胜，彼兵累败。今蜀兵望风而走，已离桃叶渡已三百余里，蜀兵已是胆破"[/cell]
+[cell]桃花水名[/cell]
+[cell]桃花水[/cell]
+[cell]桃花木（前后亦称桃叶渡口）[/cell]
+[/table]
 
 
-[b]性格与形象[/b]
+[color=#000000]关键结论：[/color] 嘉靖本"身长二丈"是更夸张的神话化设定（约4.6米），毛宗岗将其改为"丈二"（约2.04米），使人物稍近人类尺度。毛本另大幅扩写藤甲装备细节，增强战场真实感。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 兀突骨在演义中是一个典型的"异域怪物式"角色，其设定要素包括：
 
-- [b]饮食[/b]：不食五谷，以生蛇恶兽为饭（"野蛮"的最极端表达）
-- [b]体貌[/b]：两肋露出生鳞甲，眼目中微有光芒，头戴日月狼须帽，身披金珠缨络——既有威仪也有怪异
-- [b]武力[/b]：身有鳞甲，刀箭不能侵；其藤甲军同样刀枪不入，渡水不湿
-- [b]居所[/b]：洞内无宇舍，皆居土穴——"穴居"进一步强化"未开化"的他者形象
-- [b]战略判断[/b]：能识别汉人"多行诡计"，主动提醒孟获避开林木茂盛之处；最终败于无草木的盘蛇谷正是利用其防范心理的盲区
+
+[indent]•  [color=#000000]饮食[/color]：不食五谷，以生蛇恶兽为饭（"野蛮"的最极端表达）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]体貌[/color]：两肋露出生鳞甲，眼目中微有光芒，头戴日月狼须帽，身披金珠缨络——既有威仪也有怪异[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]武力[/color]：身有鳞甲，刀箭不能侵；其藤甲军同样刀枪不入，渡水不湿[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]居所[/color]：洞内无宇舍，皆居土穴——"穴居"进一步强化"未开化"的他者形象[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战略判断[/color]：能识别汉人"多行诡计"，主动提醒孟获避开林木茂盛之处；最终败于无草木的盘蛇谷正是利用其防范心理的盲区[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 兀突骨并非愚蠢，但被更高层次的谋略所克。诸葛亮胜利后反而痛哭，称"使乌戈国之人不留种类者，是吾之大罪"——这是全书少见的战胜者对自身暴力行为的道德反省。
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-- [b]孟获[/b]：第六次战败后求援于兀突骨，兀突骨念"报仇"之义，发兵助战
-- [b]土安、奚泥[/b]：麾下两名领兵"俘长"（兵长），统领藤甲军实际作战
-- [b]诸葛亮[/b]：终极对手，以火攻克藤甲，兀突骨全军覆没，诸葛亮为此垂泪
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[indent]•  [color=#000000]孟获[/color]：第六次战败后求援于兀突骨，兀突骨念"报仇"之义，发兵助战[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]土安、奚泥[/color]：麾下两名领兵"俘长"（兵长），统领藤甲军实际作战[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]诸葛亮[/color]：终极对手，以火攻克藤甲，兀突骨全军覆没，诸葛亮为此垂泪[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]项目[/b] | [b]演义[/b] | [b]正史[/b]
-兀突骨存在 | 有（虚构） | 无任何记载
-乌戈国 | 存在（乌戈国） | 无任何记载
-藤甲兵 | 存在，刀枪不入 | 无记载（但南方藤甲作为防具有历史依据）
-诸葛亮南征经过 | 七擒孟获，最后用火攻藤甲军 | 《三国志》仅记"三年春，亮率众南征，其秋悉平"，极简
-孟获 | 南蛮大王，七擒七纵后心服 | 见于《华阳国志》《汉晋春秋》，后归降，御史中丞，但七擒情节无正史依据
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]关键结论：[/b] 整个"七擒孟获"序列中的奇幻设定——[color=#6699FF][url={"research": "木鹿大王", "cat": "people"}]木鹿大王[/url][/color]的神兽阵、[color=#6699FF][url={"research": "祝融", "cat": "people"}]祝融[/url][/color]夫人的飞刀、兀突骨的藤甲军——均为罗贯中对南方民族的文学幻想，与正史南中平定无直接对应。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]项目[/b][/cell]
+[cell][b]演义[/b][/cell]
+[cell][b]正史[/b][/cell]
+[cell]兀突骨存在[/cell]
+[cell]有（虚构）[/cell]
+[cell]无任何记载[/cell]
+[cell]乌戈国[/cell]
+[cell]存在（乌戈国）[/cell]
+[cell]无任何记载[/cell]
+[cell]藤甲兵[/cell]
+[cell]存在，刀枪不入[/cell]
+[cell]无记载（但南方藤甲作为防具有历史依据）[/cell]
+[cell]诸葛亮南征经过[/cell]
+[cell]七擒孟获，最后用火攻藤甲军[/cell]
+[cell]《三国志》仅记"三年春，亮率众南征，其秋悉平"，极简[/cell]
+[cell]孟获[/cell]
+[cell]南蛮大王，七擒七纵后心服[/cell]
+[cell]见于《华阳国志》《汉晋春秋》，后归降，御史中丞，但七擒情节无正史依据[/cell]
+[/table]
+
+
+[color=#000000]关键结论：[/color] 整个"七擒孟获"序列中的奇幻设定——[color=#0066FF][url={"research": "木鹿大王", "cat": "people"}]木鹿大王[/url][/color]的神兽阵、[color=#0066FF][url={"research": "祝融", "cat": "people"}]祝融[/url][/color]夫人的飞刀、兀突骨的藤甲军——均为罗贯中对南方民族的文学幻想，与正史南中平定无直接对应。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]《三国志平话》无兀突骨[/font][/b]
+
+
+经考查，[color=#000000]《三国志平话》中无乌戈国情节，亦无藤甲兵、兀突骨[/color]。平话对南征叙述极简，演义中的三洞元帅体系、七擒细节、奇幻战场设定均为演义独创。详见 `ref-pinhua-and-diming.md`。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]"乌戈国"地名来源[/font][/b]
+
+
+学界暂无专项语言学考证。现有说法：
+
+[indent]•  [color=#000000]缅甸北部说[/color]：今缅甸中北部杰沙一带（地理推测，无语言学支撑）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]云南西部说[/color]：泛化推测[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  无彝语、缅语等民族语言的对应词研究[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]结论：[/color] "乌戈国"地名语言学来源目前无学术定论，属文学虚构地名，可能永不可精确考证。
+
+
+[color=#888888]──────────────────────────────[/color]

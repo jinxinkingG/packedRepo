@@ -56,7 +56,7 @@ func effect_20354_2():
 	var msg = "【{0}】{1}\n需{2}点机动力\n可否？".format([
 		ske.skill_name, ActorHelper.actor(targetId).get_name(), ap
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20354_3():
@@ -76,7 +76,7 @@ func effect_20354_3():
 		DataManager.get_actor_honored_title(targetId, me.actorId),
 		ActorHelper.actor(enemyLeader).get_name(),
 	])
-	play_dialog(me.actorId, msg, 3, 2002)
+	play_dialog(actorId, msg, 3, 2002)
 	return
 
 func effect_20354_4():

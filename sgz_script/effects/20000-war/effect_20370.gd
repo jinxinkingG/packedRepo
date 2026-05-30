@@ -38,12 +38,12 @@ func effect_20370_start():
 	var wv = me.war_vstate()
 	if wv == null or wv.money < COST_GOLD:
 		var msg = "金不足，须 >= {0}".format([COST_GOLD])
-		play_dialog(me.actorId, msg, 3, 2009)
+		play_dialog(actorId, msg, 3, 2009)
 		return
 	var msg = "消耗{0}金发动【{1}】\n回复{2}机动力\n可否？".format([
 		COST_GOLD, ske.skill_name, AP_RECOVER,
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20370_2():
@@ -55,6 +55,6 @@ func effect_20370_2():
 	var msg = "战酣矣，敌安得不疲？\n重赏士卒，强行军！\n（机动力回复{0}".format([
 		AP_RECOVER
 	])
-	play_dialog(me.actorId, msg, 0, 2009)
+	play_dialog(actorId, msg, 0, 2009)
 	return
 

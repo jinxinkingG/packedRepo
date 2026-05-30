@@ -1,502 +1,879 @@
-[b]黄巾之乱[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]黄巾之乱[/font][/b]
 
 
-[b]时间：[/b] 中平元年（184年）二月爆发，同年十一月主力覆灭；余部持续至建安十二年（207年）
-[b]类型：[/b] 宗教起义 / 军事
-[b]基本信息：[/b] 东汉灵帝在位期间，三国乱世的直接起点
+[color=#000000]时间：[/color] 中平元年（184年）二月爆发，同年十一月主力覆灭；余部持续至建安十二年（207年）
+[color=#000000]类型：[/color] 宗教起义 / 军事
+[color=#000000]基本信息：[/color] 东汉灵帝在位期间，三国乱世的直接起点
 
 
-[b]背景与起因考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]社会结构崩溃[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]背景与起因考证[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]社会结构崩溃[/font][/b]
+
 
 据《后汉书》记载，东汉中晚期面临三重危机：
 
-1. [b]土地兼并[/b]：豪族兼并土地极为严重，"河南帝城，多近臣；[color=#6699FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]帝乡，多近亲，田宅踰制，不可为准"（《后汉书·刘隆传》）
-2. [b]流民问题[/b]：失地农民大规模流亡，天灾、瘟疫加剧（灵帝时期多次蝗灾、旱灾）
-3. [b]政治腐败[/b]：灵帝公开卖官鬻爵，宦官把持朝政；外戚、宦官相互倾轧，党锢之祸压制士人
+
+[indent]1.  [color=#000000]土地兼并[/color]：豪族兼并土地极为严重，"河南帝城，多近臣；[color=#0066FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]帝乡，多近亲，田宅踰制，不可为准"（《后汉书·刘隆传》）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]流民问题[/color]：失地农民大规模流亡，天灾、瘟疫加剧（灵帝时期多次蝗灾、旱灾）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]政治腐败[/color]：灵帝公开卖官鬻爵，宦官把持朝政；外戚、宦官相互倾轧，党锢之祸压制士人[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]太平道渊源与张角生平[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]太平道渊源与张角生平[/font][/b]
 
 
 [b]张角籍贯与生卒年[/b]
 
-《后汉书·[color=#6699FF][url={"research": "皇甫嵩", "cat": "people"}]皇甫嵩[/url][/color]传》：[b]巨鹿（今河北平乡西南）[/b]人。生年不详，卒于中平元年（184年）。
 
-[b]籍贯争议：[/b] 史料仅言"巨鹿/钜鹿"，今地有三说：
-- [b]平乡西南说[/b]（主流）：钜鹿郡治所在今河北邢台市平乡县境内，平乡县政府官方认定"[color=#6699FF][url={"research": "张角", "cat": "people"}]张角[/url][/color]故里"，明确为张二町村；史料依据最强
-- [b]宁晋说[/b]：部分文献（百科词条多引"今河北宁晋"），系按东汉钜鹿郡治所迁徙，可能源于钜鹿郡治不同历史阶段的混同（秦治平乡，东汉治宁晋）
-- [b]巨鹿县说[/b]：通俗叙述，无直接史料依据
+《后汉书·[color=#0066FF][url={"research": "皇甫嵩", "cat": "people"}]皇甫嵩[/url][/color]传》：[color=#000000]巨鹿（今河北平乡西南）[/color]人。生年不详，卒于中平元年（184年）。
 
-[b]2025-2026年考古动态（负面确认）：[/b]
-- 平乡县境内留有灵霄山"大贤良师座中岩"石刻（《邢台统战志》记载），但[b]尚无系统考古发掘[/b]
-- 2025年5月，平乡县文化广电体育和旅游局答复政协提案时明确：[b]"我局不具备发掘资质，将根据文物保护法和上级部门有关规定进行办理。"[/b]（ref-pingxiang-archeology-2025.md）
-- 2025年12月河北省考古成果汇报会22项汇报均为史前考古，[b]无任何平乡/邢台地区东汉三国专项目[/b]
-- [b]结论：[/b] 籍贯认定依赖文献，无实物证据最终裁定；平乡说为主流，但无系统田野考古支撑，[b]2026年内无突破预期[/b]
+[color=#000000]籍贯争议：[/color] 史料仅言"巨鹿/钜鹿"，今地有三说：
+
+[indent]•  [color=#000000]平乡西南说[/color]（主流）：钜鹿郡治所在今河北邢台市平乡县境内，平乡县政府官方认定"[color=#0066FF][url={"research": "张角", "cat": "people"}]张角[/url][/color]故里"，明确为张二町村；史料依据最强[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]宁晋说[/color]：部分文献（百科词条多引"今河北宁晋"），系按东汉钜鹿郡治所迁徙，可能源于钜鹿郡治不同历史阶段的混同（秦治平乡，东汉治宁晋）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]巨鹿县说[/color]：通俗叙述，无直接史料依据[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]2025-2026年考古动态（负面确认）：[/color]
+
+[indent]•  平乡县境内留有灵霄山"大贤良师座中岩"石刻（《邢台统战志》记载），但[color=#000000]尚无系统考古发掘[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  2025年5月，平乡县文化广电体育和旅游局答复政协提案时明确：[color=#000000]"我局不具备发掘资质，将根据文物保护法和上级部门有关规定进行办理。"[/color]（ref-pingxiang-archeology-2025.md）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  2025年12月河北省考古成果汇报会22项汇报均为史前考古，[color=#000000]无任何平乡/邢台地区东汉三国专项目[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]结论：[/color] 籍贯认定依赖文献，无实物证据最终裁定；平乡说为主流，但无系统田野考古支撑，[color=#000000]2026年内无突破预期[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 张角生平正史记载极简，仅知他是"书生"出身，早年学道，以符水治病起家。
 
 
 [b]太平道创立时间[/b]
 
+
 史料无精确记载，学界有两说：
-- [b]建宁年间（168-171年）说[/b]：以最早传道时间算起
-- [b]熹平年间（172-178年）说[/b]：以教团正式成型算起
+
+[indent]•  [color=#000000]建宁年间（168-171年）说[/color]：以最早传道时间算起[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]熹平年间（172-178年）说[/color]：以教团正式成型算起[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 传道约十至十五年至起义（184年），史料以"十余年"概括。
 
 
 [b]《太平经》来源与版本关系[/b]
 
-[b]史料来源链：[/b]
+
+[color=#000000]史料来源链：[/color]
 
 《后汉书·襄楷传》注：
-[color=#AAAAAA]　"初，顺帝时，琅邪宫崇诣阙，上其师干吉于曲阳泉水上所得神书百七十卷，皆缥白素朱介青首朱目，号《太平清领书》。其言以阴阳五行为家，而多巫觋杂语。有司奏崇所上妖妄不经，乃收藏之。[b]后张角颇有其书焉[/b]。"[/color]
 
-即：干吉（于吉）传于宫崇，宫崇献于朝廷，朝廷收藏，张角"颇有其书"（部分获得，并非全本）。
+[indent][color=#666666]┃ "初，顺帝时，琅邪宫崇诣阙，上其师干吉于曲阳泉水上所得神书百七十卷，皆缥白素朱介青首朱目，号《太平清领书》。其言以阴阳五行为家，而多巫觋杂语。有司奏崇所上妖妄不经，乃收藏之。[color=#000000]后张角颇有其书焉[/color]。"[/color][/indent]
 
-[b]版本关系学术争议（三说并陈）：[/b]
+
+即：干吉（[color=#0066FF][url={"research": "于吉", "cat": "people"}]于吉[/url][/color]）传于宫崇，宫崇献于朝廷，朝廷收藏，张角"颇有其书"（部分获得，并非全本）。
+
+[color=#000000]版本关系学术争议（三说并陈）：[/color]
 
 《太平经》非某一人一时所写，是原始道教教义的汇编总集：
-- 原有170卷（《道藏》今仅存57卷）
-- [b]甲说（王明《太平经合校》，中华书局1960年）[/b]：今本基本为汉代著作，与张角所传版本有继承关系。王明依据：今本虽有后人改写，但"[b]大体说来，它还保存着东汉中晚期的著作的本来面目[/b]"（前言原话）；并从体量、内容、《太平经钞》互证三方面论证
-- [b]乙说（福井康顺等日本学者）[/b]：东汉的《太平经》[b]唐前已佚失[/b]，今本《太平经》是以6世纪晚期的《太平洞极经》为基础发展而来，与张角所传版本未必有直接传承关系；尾崎正治同意今本为"南北朝末至初唐"流传本子，但承认其中有反映汉代思想的内容
-- [b]丙说（冯友兰《中国哲学史新编》第35章）[/b]：不明确站甲/乙任一方，更关注《太平经》思想内容——认为是多人多时期积累，但思想本质代表了东汉末年民间道教的核心精神，提出[b]"原始社会主义"思想[/b]解读
 
-[b]三说学界共识状态（2026年）：[/b] 王明说在中国大陆学界仍为权威，福井康顺说在日本道教学界有影响力，但未被中文主流采纳；《太平经》是否即张角所用版本——无定论。详见 ref-taipingjing-banben-kaocheng.md。
+[indent]•  原有170卷（《道藏》今仅存57卷）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]甲说（王明《太平经合校》，中华书局1960年）[/color]：今本基本为汉代著作，与张角所传版本有继承关系。王明依据：今本虽有后人改写，但"[color=#000000]大体说来，它还保存着东汉中晚期的著作的本来面目[/color]"（前言原话）；并从体量、内容、《太平经钞》互证三方面论证[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]乙说（福井康顺等日本学者）[/color]：东汉的《太平经》[color=#000000]唐前已佚失[/color]，今本《太平经》是以6世纪晚期的《太平洞极经》为基础发展而来，与张角所传版本未必有直接传承关系；尾崎正治同意今本为"南北朝末至初唐"流传本子，但承认其中有反映汉代思想的内容[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]丙说（冯友兰《中国哲学史新编》第35章）[/color]：不明确站甲/乙任一方，更关注《太平经》思想内容——认为是多人多时期积累，但思想本质代表了东汉末年民间道教的核心精神，提出[color=#000000]"原始社会主义"思想[/color]解读[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]2025年最新研究动向：[/b]
-- [b]王婷婷[/b]《从"主流"到"异端"：〈太平经〉与黄巾起义关系平议》（《史学月刊》2025年第12期第129-131页，读史札记，北大核心 CSSCI）：已获取摘要首段——文章首先梳理"《太平经》是农民阶级革命理论工具"这一传统说法（侯外庐/杨宽/卿希泰等1959-1980年代的代表性研究），然后（正文4994字）提出修正或平议。标题"从主流到异端"暗示从史学史/接受史视角重审《太平经》如何被定性为"异端"；或从思想史视角揭示太平道从"辅汉主流"演变为"代汉异端"的过程。与冯渝杰2024年专著立场互补，是目前已知最新的《太平经》与黄巾关系专论。全文付费墙，正文尚未获取。（ref-wangtingting-taipingjing-2025.md）
+
+[color=#000000]三说学界共识状态（2026年）：[/color] 王明说在中国大陆学界仍为权威，福井康顺说在日本道教学界有影响力，但未被中文主流采纳；《太平经》是否即张角所用版本——无定论。详见 ref-taipingjing-banben-kaocheng.md。
+
+[color=#000000]2025年最新研究动向：[/color]
+
+[indent]•  [color=#000000]王婷婷[/color]《从"主流"到"异端"：〈太平经〉与黄巾起义关系平议》（《史学月刊》2025年第12期第129-131页，读史札记，北大核心 CSSCI）：已获取摘要首段——文章首先梳理"《太平经》是农民阶级革命理论工具"这一传统说法（侯外庐/杨宽/卿希泰等1959-1980年代的代表性研究），然后（正文4994字）提出修正或平议。标题"从主流到异端"暗示从史学史/接受史视角重审《太平经》如何被定性为"异端"；或从思想史视角揭示太平道从"辅汉主流"演变为"代汉异端"的过程。与冯渝杰2024年专著立场互补，是目前已知最新的《太平经》与黄巾关系专论。全文付费墙，正文尚未获取。（ref-wangtingting-taipingjing-2025.md）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [b]传道方式（史料原文）[/b]
 
+
 《典略》（裴注引鱼豢）：
-[color=#AAAAAA]　"师持九节杖，为符祝，教病人叩头思过，因以符水饮之，得病或日浅而愈者，则云此人信道；其或不愈，则为不信道。"[/color]
+
+[indent][color=#666666]┃ "师持九节杖，为符祝，教病人叩头思过，因以符水饮之，得病或日浅而愈者，则云此人信道；其或不愈，则为不信道。"[/color][/indent]
+
 
 这是将心理暗示、宗教权威与医疗效果绑定的传教机制：愈者归功于"信道"，不愈者归咎于"不信道"——信众无法证伪。
 
 
-[b]《太平经》思想与黄巾口号[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]《太平经》思想与黄巾口号[/font][/b]
+
 
 《太平经》的四大核心思想：
 
-[b]1. "致太平"理想：[/b]
+[color=#000000]1. "致太平"理想：[/color]
 
 冯友兰解读《太平经·三合相通诀》：
-[color=#AAAAAA]　"太者，大也，言其积大如天，无有大于天者。平者，言治太平均，凡事悉治，无复不平，比若地居下势平。"[/color]
+
+[indent][color=#666666]┃ "太者，大也，言其积大如天，无有大于天者。平者，言治太平均，凡事悉治，无复不平，比若地居下势平。"[/color][/indent]
+
 
 "太平"含三层：极大和平 + 极大平均 + 极大公平。
 
-[b]2. 君臣民三合：[/b] 君、臣、民"同一忧，合成一家，立致太平"；帝王应法天道、以民为本。
+[color=#000000]2. 君臣民三合：[/color] 君、臣、民"同一忧，合成一家，立致太平"；帝王应法天道、以民为本。
 
-[b]3. 承负说：[/b] 祖先的过错由后代"承负"——为汉朝衰亡提供神学解释（汉之"承负"已至，故衰亡为天命）。
+[color=#000000]3. 承负说：[/color] 祖先的过错由后代"承负"——为汉朝衰亡提供神学解释（汉之"承负"已至，故衰亡为天命）。
 
-[b]4. 反豪强兼并：[/b]
+[color=#000000]4. 反豪强兼并：[/color]
 
 《太平经》原文：
-[color=#AAAAAA]　"此财物乃天地中和所有，以共养人也。此家但遇得其聚处，比若仓中之鼠，常独足食。此大仓之粟，本非独鼠有也……今愚人甚不仁，罪若此，宁当死不耶？"[/color]
 
-冯友兰总结：《太平经》表现出一种[b]"原始社会主义"倾向[/b]——天下财物如公共仓库，聚敛不予者犯"不可赦大罪"。
-
-[b]思想对应口号：[/b]
+[indent][color=#666666]┃ "此财物乃天地中和所有，以共养人也。此家但遇得其聚处，比若仓中之鼠，常独足食。此大仓之粟，本非独鼠有也……今愚人甚不仁，罪若此，宁当死不耶？"[/color][/indent]
 
 
-[b]《太平经》思想[/b] | [b]黄巾表现[/b]
-以土德（黄色）替代火德（汉室） | "苍天已死，黄天当立，岁在甲子，天下大吉"
-承负说：汉朝衰亡是天命 | "汉行已尽，黄家当立，天之大运"（《魏书》）
-均平、反豪强 | 以符水治病吸引失地流民
-天人感应——灾异是天怒 | 大疫大旱蝗灾被解释为"汉德已衰"的预兆
+冯友兰总结：《太平经》表现出一种[color=#000000]"原始社会主义"倾向[/color]——天下财物如公共仓库，聚敛不予者犯"不可赦大罪"。
+
+[color=#000000]思想对应口号：[/color]
 
 
-[b]重要局限：[/b] 黄巾起义[b]无土地分配等明确政治纲领[/b]。史书所载口号仅有末世宗教语气，缺乏具体施政主张。《太平经》提供意识形态来源和天命合法性，但黄巾本质是宗教末世论驱动的武装起事，而非有清晰纲领的社会革命。
+[table=2]
+[cell][b]《太平经》思想[/b][/cell]
+[cell][b]黄巾表现[/b][/cell]
+[cell]以土德（黄色）替代火德（汉室）[/cell]
+[cell]"苍天已死，黄天当立，岁在甲子，天下大吉"[/cell]
+[cell]承负说：汉朝衰亡是天命[/cell]
+[cell]"汉行已尽，黄家当立，天之大运"（《魏书》）[/cell]
+[cell]均平、反豪强[/cell]
+[cell]以符水治病吸引失地流民[/cell]
+[cell]天人感应——灾异是天怒[/cell]
+[cell]大疫大旱蝗灾被解释为"汉德已衰"的预兆[/cell]
+[/table]
 
-[b]五行逻辑：[/b] 汉为火德，火生土，土色黄——"黄天"以土德自居，头绑黄巾为符号，是东汉末年"五德终始"政治神学的民间运用。
+
+[color=#000000]重要局限：[/color] 黄巾起义[color=#000000]无土地分配等明确政治纲领[/color]。史书所载口号仅有末世宗教语气，缺乏具体施政主张。《太平经》提供意识形态来源和天命合法性，但黄巾本质是宗教末世论驱动的武装起事，而非有清晰纲领的社会革命。
+
+[color=#000000]五行逻辑：[/color] 汉为火德，火生土，土色黄——"黄天"以土德自居，头绑黄巾为符号，是东汉末年"五德终始"政治神学的民间运用。
 
 
-[b]黄巾口号新解：五运主时与宗教仪式（刘九生1985 + 刘三解2026）[/b]
+[color=#888888]──────────────────────────────[/color]
 
-[b]刘九生（1985年论文）[/b]：黄巾口号是通知全国信徒起事时间的"谜语"，基于《太平经》和《素问》的"五运主时"学说。此为独立于冯渝杰（2018年）的更早研究。
 
-[b]"五运主时"基本规律（《素问》）：[/b]
-- 木火金水各主春夏秋冬（自四立起各72天），剩余18天归"土"
-- "苍天之气"=春木气；"黄天之气"=黄土气
-- [b]"苍天已死，黄天当立"[/b]=春季木气已尽，土气当主（季春三月时间点）
+[b][font=res://resource/font/FandolSong-Bold/26.tres]黄巾口号新解：五运主时与宗教仪式（刘九生1985 + 刘三解2026）[/font][/b]
 
-[b]时间点精确对应：[/b]
-- "岁在甲子"一语双关：甲子年（中平元年，184年）+ 甲子日（三月十九日）
-- 三月十九日正好是立夏前18天、土气开始主季春剩余时段的时间点
-- 原定"三月五日内外俱起"是甲子月，唐周告密后才改为二月仓皇起事
 
-[b]《太平经》"王者无忧法"的集体仪式目标（刘三解引）：[/b]
+[color=#000000]刘九生（1985年论文）[/color]：黄巾口号是通知全国信徒起事时间的"谜语"，基于《太平经》和《素问》的"五运主时"学说。此为独立于冯渝杰（2018年）的更早研究。
 
-[color=#AAAAAA]　"夫子乐其父，臣乐其君，地乐于天，天乐于道。然可致太平气，天气且一治，太上皇平（上皇太平）且一下。"[/color]
+[color=#000000]"五运主时"基本规律（《素问》）：[/color]
 
-- "深思"是一种集体术法（非思考），如《太平经》"悬像还神法"——画五色童子像，人看着高兴，魂神即回；三十六万人集体"深思"效果倍增
-- 目标：在天地和合的黄道吉日（甲子日），用三十六万人的虔诚，吸引"太平气"降临，引导汉灵帝接受《太平经》治国
-- 张角"自称黄天泰平"="上皇太平"的讹误，意指迎接"上皇太平"降临
+[indent]•  木火金水各主春夏秋冬（自四立起各72天），剩余18天归"土"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "苍天之气"=春木气；"黄天之气"=黄土气[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]"苍天已死，黄天当立"[/color]=春季木气已尽，土气当主（季春三月时间点）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]《太平经》谶语"潜龙勿用坎为纪"：[/b]
-- "潜龙勿用"对应天书不得君王所用的预言（乾卦爻辞）
-- "坎为纪"：坎卦"子"象，甲子日是"天地和合"的转机时间点
-- 这是整个行动的神学依据之一
 
-[b]"大贤良师"称号的来源（刘三解补充）：[/b]
-- 《太平经》"三贤"（道人/德人/仁人）中，"道人"居首，称"大贤"
-- "大贤良师"意为以道为师、充当帝王之师——类比孔子传神书于帝王
-- 既非称帝称王，而是要成为"王者师"
+[color=#000000]时间点精确对应：[/color]
 
-[b]"不将尺兵"的行为特征（刘三解补充）：[/b]
+[indent]•  "岁在甲子"一语双关：甲子年（中平元年，184年）+ 甲子日（三月十九日）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三月十九日正好是立夏前18天、土气开始主季春剩余时段的时间点[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  原定"三月五日内外俱起"是甲子月，唐周告密后才改为二月仓皇起事[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]《太平经》"王者无忧法"的集体仪式目标（刘三解引）：[/color]
+
+
+[indent][color=#666666]┃ "夫子乐其父，臣乐其君，地乐于天，天乐于道。然可致太平气，天气且一治，太上皇平（上皇太平）且一下。"[/color][/indent]
+
+
+[indent]•  "深思"是一种集体术法（非思考），如《太平经》"悬像还神法"——画五色童子像，人看着高兴，魂神即回；三十六万人集体"深思"效果倍增[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  目标：在天地和合的黄道吉日（甲子日），用三十六万人的虔诚，吸引"太平气"降临，引导汉灵帝接受《太平经》治国[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  张角"自称黄天泰平"="上皇太平"的讹误，意指迎接"上皇太平"降临[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]《太平经》谶语"潜龙勿用坎为纪"：[/color]
+
+[indent]•  "潜龙勿用"对应天书不得君王所用的预言（乾卦爻辞）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "坎为纪"：坎卦"子"象，甲子日是"天地和合"的转机时间点[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  这是整个行动的神学依据之一[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]"大贤良师"称号的来源（刘三解补充）：[/color]
+
+[indent]•  《太平经》"三贤"（道人/德人/仁人）中，"道人"居首，称"大贤"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "大贤良师"意为以道为师、充当帝王之师——类比孔子传神书于帝王[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  既非称帝称王，而是要成为"王者师"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]"不将尺兵"的行为特征（刘三解补充）：[/color]
 
 引用杨泉《物理论》原文：
-[color=#AAAAAA]　"黄巾被服纯黄，不将尺兵，肩长衣，翔行舒步，所至郡县无不从，是日天大黄也。"[/color]
 
-- "肩长衣"≈道教"鹤氅"（无领、无袖、以钮扣绾结于颈的长方形被巾）
-- "翔行舒步"=效仿鸟类/羽人/仙人飞翔姿态
-- 道教"羽化成仙"传统——道士别称"羽人""羽客""羽士"
-- 这是一群效仿仙人姿态的和平宗教巡游队伍，而非武装军队
+[indent][color=#666666]┃ "黄巾被服纯黄，不将尺兵，肩长衣，翔行舒步，所至郡县无不从，是日天大黄也。"[/color][/indent]
 
-[b]邺-真定路线的谶言逻辑（刘三解引《搜神记》）：[/b]
+
+[indent]•  "肩长衣"≈道教"鹤氅"（无领、无袖、以钮扣绾结于颈的长方形被巾）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "翔行舒步"=效仿鸟类/羽人/仙人飞翔姿态[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  道教"羽化成仙"传统——道士别称"羽人""羽客""羽士"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  这是一群效仿仙人姿态的和平宗教巡游队伍，而非武装军队[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]邺-真定路线的谶言逻辑（刘三解引《搜神记》）：[/color]
 
 《搜神记》：
-[color=#AAAAAA]　"初起于邺，会于真定……起于邺者，天下始业也，会于真定也。"[/color]
 
-- 邺→谐音"业"，象征"天下始业"（大业之始）
-- 真定→"真正平定/安定"
-- 跨越魏郡、巨鹿郡、常山国的路线，并非军事攻占路线，而是具有宗教仪式意义的"从始到终"巡游
-- [color=#6699FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]并非当时[color=#6699FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]刺史治所（治所在常山国高邑县，直到190年韩馥才徙治邺），黄巾聚集邺城无战略意义
-
-[b]与冯渝杰论点的关系：[/b]
+[indent][color=#666666]┃ "初起于邺，会于真定……起于邺者，天下始业也，会于真定也。"[/color][/indent]
 
 
-[b]论点[/b] | [b]冯渝杰（2018年）[/b] | [b]刘三解（2026年，援引刘九生1985年）[/b]
-"不将尺兵"根据 | 《太平经》"断金兵"，维护汉家火德 | 宗教仪式巡游，效仿仙人姿态
-口号解读 | 非五德终始代汉，召唤太一/太平 | 五运主时时间谜语，召唤土气/上皇太平
-集结目标 | 宗教请愿而非武装起义 | 谶言地名路线，宗教仪式巡游
-史料依据 | 《太平经》"断金兵"、《太平经》神学体系 | 《太平经》"王者无忧法"、《素问》五运主时、《搜神记》谶言
+[indent]•  邺→谐音"业"，象征"天下始业"（大业之始）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  真定→"真正平定/安定"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  跨越魏郡、巨鹿郡、常山国的路线，并非军事攻占路线，而是具有宗教仪式意义的"从始到终"巡游[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]并非当时[color=#0066FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]刺史治所（治所在常山国高邑县，直到190年[color=#0066FF][url={"research": "韩馥", "cat": "people"}]韩馥[/url][/color]才徙治邺），黄巾聚集邺城无战略意义[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]与冯渝杰论点的关系：[/color]
+
+
+[table=3]
+[cell][b]论点[/b][/cell]
+[cell][b]冯渝杰（2018年）[/b][/cell]
+[cell][b]刘三解（2026年，援引刘九生1985年）[/b][/cell]
+[cell]"不将尺兵"根据[/cell]
+[cell]《太平经》"断金兵"，维护汉家火德[/cell]
+[cell]宗教仪式巡游，效仿仙人姿态[/cell]
+[cell]口号解读[/cell]
+[cell]非五德终始代汉，召唤太一/太平[/cell]
+[cell]五运主时时间谜语，召唤土气/上皇太平[/cell]
+[cell]集结目标[/cell]
+[cell]宗教请愿而非武装起义[/cell]
+[cell]谶言地名路线，宗教仪式巡游[/cell]
+[cell]史料依据[/cell]
+[cell]《太平经》"断金兵"、《太平经》神学体系[/cell]
+[cell]《太平经》"王者无忧法"、《素问》五运主时、《搜神记》谶言[/cell]
+[/table]
 
 
 两者从不同维度独立支持"初期黄巾非武装起义"的核心结论，互相补充而不冲突。刘九生（1985年）是最早提出口号时间谜语说的学者，先于冯渝杰（2018年）三十余年。
 
-[b]曹全碑（中平二年，185年）的史料价值：[/b]
+[color=#000000]曹全碑（中平二年，185年）的史料价值：[/color]
 
-[color=#AAAAAA]　"妖贼张角，起兵幽冀……而县民郭家等复造逆乱，燔烧城寺，万民骚扰。"[/color]
+
+[indent][color=#666666]┃ "妖贼张角，起兵幽冀……而县民郭家等复造逆乱，燔烧城寺，万民骚扰。"[/color][/indent]
+
 
 从第一手碑刻文献证实：焚烧城寺的"县民郭家等"与张角黄巾本部是分开叙述的——再次印证黄巾初起时的相对克制，以及后续暴力的"天下响应"性质。
 
 
-[b]黄巾口号的宗教新解（冯渝杰2018年论文，完整论证）：[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[color=#000000]黄巾口号的宗教新解（冯渝杰2018年论文，完整论证）：[/color]
 
 冯渝杰提出与传统五德终始说不同的新解读：
-- "苍""黄"并不构成直接相应于五行的五色生克关系，不完全吻合五行相生相胜说
-- "苍天"为"青帝"，"黄天"为"黄帝"或"黄神"，其意[b]非为五德终始代汉[/b]
-- 四句口号落脚点在于"太平（大吉）"：黄天甲子之日，即是天下太平之时
-- 黄巾所崇最高神为[b]太一（太乙）[/b]（位居天空正中）；黄天甲子时，太一将归于正位，天下迎来"太平"
-- 《三国志》证据：张角"自称黄天泰平"——"黄天"是"泰平（太平）"之自然征象，非代汉旗号
 
-[b]三月五日的神学蕴义：[/b]
-- 《云笈七签》卷6引《太平经》："三五气和，日月常光明，乃为太平"
-- 约起于三月五日，是因这一天在历法及神学（术数）上有"展转"变动、"复反"太平之可能——与"更受命"思想相近，并非革命夺权神学依据
+[indent]•  "苍""黄"并不构成直接相应于五行的五色生克关系，不完全吻合五行相生相胜说[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "苍天"为"青帝"，"黄天"为"黄帝"或"黄神"，其意[color=#000000]非为五德终始代汉[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  四句口号落脚点在于"太平（大吉）"：黄天甲子之日，即是天下太平之时[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  黄巾所崇最高神为[color=#000000]太一（太乙）[/color]（位居天空正中）；黄天甲子时，太一将归于正位，天下迎来"太平"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《三国志》证据：张角"自称黄天泰平"——"黄天"是"泰平（太平）"之自然征象，非代汉旗号[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]黄巾"辅汉"到"代汉"的神学演变（冯渝杰2018/2024年研究；多位书评学者独立验证）[/b]
+[color=#000000]三月五日的神学蕴义：[/color]
+
+[indent]•  《云笈七签》卷6引《太平经》："三五气和，日月常光明，乃为太平"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  约起于三月五日，是因这一天在历法及神学（术数）上有"展转"变动、"复反"太平之可能——与"更受命"思想相近，并非革命夺权神学依据[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]黄巾"辅汉"到"代汉"的神学演变（冯渝杰2018/2024年研究；多位书评学者独立验证）[/font][/b]
+
 
 冯渝杰通过《神器有命》（2024年）及2018年原论文，提供了重要补充视角：
 
-[b]核心论点：早期黄巾军并无直接"反汉"倾向[/b]
+[color=#000000]核心论点：早期黄巾军并无直接"反汉"倾向[/color]
 
-- 《太平经》中本无直接的反政府叙述
-- 早期太平道信仰更接近[b]宗教救赎神学[/b]——以善行教化民众，辅佐汉朝走向"太平"
-- 黄巾"不将尺兵"是基于《太平经》"断金兵"神学的合理行为——绝金气以维护汉家火德
 
-[b]"被迫军事化"机制：[/b]
+[indent]•  《太平经》中本无直接的反政府叙述[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  早期太平道信仰更接近[color=#000000]宗教救赎神学[/color]——以善行教化民众，辅佐汉朝走向"太平"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  黄巾"不将尺兵"是基于《太平经》"断金兵"神学的合理行为——绝金气以维护汉家火德[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-- 黄巾初衷本非相难于汉家的宗教行为
-- 被教团之外的部分朝臣及告密者唐周理解为颠覆政权的武装暴动
-- 朝廷酷烈镇压 → 黄巾被迫走向军事化，完成由"辅汉"而"代汉"之神学转轨
-- 历史书写的"叛乱化"塑造进一步固化了这一形象
 
-[b]"内外俱起"的宗教请愿解读（重要修正）：[/b]
+[color=#000000]"被迫军事化"机制：[/color]
+
+
+[indent]•  黄巾初衷本非相难于汉家的宗教行为[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  被教团之外的部分朝臣及告密者唐周理解为颠覆政权的武装暴动[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  朝廷酷烈镇压 → 黄巾被迫走向军事化，完成由"辅汉"而"代汉"之神学转轨[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  历史书写的"叛乱化"塑造进一步固化了这一形象[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]"内外俱起"的宗教请愿解读（重要修正）：[/color]
 
 "以中常侍封谞、徐奉等为内应，约以三月五日内外俱起"——冯渝杰认为这可理解为：
-- [b]约起宗教请愿[/b]，表达普天希企、感召、迎接"太平"之意
-- 类比汉哀帝时"关东民传行西王母筹，经历郡国，西入关至京师"的宗教运动（张官鑫书评补充：冯渝杰将黄巾运动与西汉末年行西王母诏筹这一宗教活动相联系，认为"宗教理想应是制约初期黄巾行为的更重要的因素"）
-- 即便提前告密、仓皇起事，仍然"不将尺兵"——若真为武装起义，此举完全无法解释
 
-[b]黄巾"割据"目标的新解读（张官鑫书评补充）：[/b]
+[indent]•  [color=#000000]约起宗教请愿[/color]，表达普天希企、感召、迎接"太平"之意[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  类比汉哀帝时"关东民传行西王母筹，经历郡国，西入关至京师"的宗教运动（张官鑫书评补充：冯渝杰将黄巾运动与西汉末年行西王母诏筹这一宗教活动相联系，认为"宗教理想应是制约初期黄巾行为的更重要的因素"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  即便提前告密、仓皇起事，仍然"不将尺兵"——若真为武装起义，此举完全无法解释[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]黄巾"割据"目标的新解读（张官鑫书评补充）：[/color]
 
 张官鑫书评明确了一个此前未见于吕博书评的细节：
-- 黄巾即便"割据"，目标也应是建立类似[b]西部五斗米道的"宗教乌托邦"[/b]，以期避灾致太平
-- 这进一步说明黄巾的目标框架是宗教共同体，而非政治割据政权
 
-[b]官员"代为隐没"现象（张官鑫书评补充）：[/b]
+[indent]•  黄巾即便"割据"，目标也应是建立类似[color=#000000]西部五斗米道的"宗教乌托邦"[/color]，以期避灾致太平[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  这进一步说明黄巾的目标框架是宗教共同体，而非政治割据政权[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[color=#AAAAAA]　"正因黄巾以'太平''救世'为主旨，背后共通的理想国家追求使得朝野上下不少官员与其交通，甚至在黄巾起事后也代为隐没。"[/color]
+
+[color=#000000]官员"代为隐没"现象（张官鑫书评补充）：[/color]
+
+
+[indent][color=#666666]┃ "正因黄巾以'太平''救世'为主旨，背后共通的理想国家追求使得朝野上下不少官员与其交通，甚至在黄巾起事后也代为隐没。"[/color][/indent]
+
 
 这是冯渝杰论点的重要延伸：黄巾的太平思想不仅影响底层信众，连朝野官员也因共享"太平"理想而与黄巾有所交通——儒道精英对太平的追求在社会层面高度弥漫。
 
-[b]邺/真定谶言体系：[/b]
-- "初起于邺"（邺谐"始业"）、"会于真定"（真定谐"真正平定"）
-- 黄巾口号是由[b]时间-空间[/b]构成的谶言体系
+[color=#000000]邺/真定谶言体系：[/color]
 
-[b]黄巾拜郑玄的思想共通性：[/b]
+[indent]•  "初起于邺"（邺谐"始业"）、"会于真定"（真定谐"真正平定"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  黄巾口号是由[color=#000000]时间-空间[/color]构成的谶言体系[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]黄巾拜郑玄的思想共通性：[/color]
 
 冯渝杰2017年论文（《文史哲》）以《后汉书》中"黄巾拜郑玄"事件为案例，指出：
-- 郑玄对"太平国家"的儒学追求与太平道的救赎神学[b]在本质上相通[/b]
-- 过去被视为不同阵营（儒学官僚 vs 道教起义）的群体，实际[b]共享"太平"的行为模式和思想基础[/b]
-- 谶纬神学作为连接两者的共同知识体系
+
+[indent]•  郑玄对"太平国家"的儒学追求与太平道的救赎神学[color=#000000]在本质上相通[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  过去被视为不同阵营（儒学官僚 vs 道教起义）的群体，实际[color=#000000]共享"太平"的行为模式和思想基础[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  谶纬神学作为连接两者的共同知识体系[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 这与王夫之"儒者倡之，二氏和之"的批评在学术层面形成深层呼应。
 
 
-[b]组织规模[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]组织规模[/font][/b]
+
 
 据《后汉书》《资治通鉴》：
-[color=#AAAAAA]　"徒众数十万，自青、徐、幽、冀、荆、扬、兖、豫八州之人，莫不毕应"[/color]
 
-- 三十六方组织：大方万余人，小方六七千，各立渠帅——准军事化架构
-- 预置内应：马元义联络中常侍封谞、徐奉，约三月五日京内外同时并起
-
-[b]兵力估算（维基综合）：[/b] 东汉朝廷约35万（含义勇军）；黄巾军规模最高时约30万（含部众家属，作战军队估计4-5万）。注：维基数字未注明原始史料出处，仅供参考。
+[indent][color=#666666]┃ "徒众数十万，自青、徐、幽、冀、荆、扬、兖、豫八州之人，莫不毕应"[/color][/indent]
 
 
-[b]起义始末（时间线）[/b]
+[indent]•  三十六方组织：大方万余人，小方六七千，各立渠帅——准军事化架构[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  预置内应：马元义联络中常侍封谞、徐奉，约三月五日京内外同时并起[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]前奏：预谋败露（184年1–2月）[/b]
-
-- 弟子[b]唐周[/b]向朝廷告密
-- 大方渠帅[b]马元义[/b]在洛阳被捕，车裂处死
-- 灵帝下令：京师捕杀太平道信众千余人，通缉张角
-- 张角被迫提前起事——原定三月五日（甲子月甲子日）改为二月（阳历184年3月4日）
+[color=#000000]兵力估算（维基综合）：[/color] 东汉朝廷约35万（含义勇军）；黄巾军规模最高时约30万（含部众家属，作战军队估计4-5万）。注：维基数字未注明原始史料出处，仅供参考。
 
 
-[b]爆发（184年2月，阳历3月4日）[/b]
-
-- 张角自称[b]天公将军[/b]，[color=#6699FF][url={"research": "张宝", "cat": "people"}]张宝[/url][/color]称[b]地公将军[/b]，[color=#6699FF][url={"research": "张梁", "cat": "people"}]张梁[/url][/color]称[b]人公将军[/b]
-- 全国三十六方同时起事，头裹黄巾为标志，"旬月之间，天下响应，京师震动"
-- 州郡长吏大多弃城逃走，安平王、甘陵王被起义军俘获作为政治筹码
-
-[b]初期"不将尺兵"阶段（史料疑点）：[/b]
-- 从二月起兵到三月卢植出征前，史书无黄巾攻城略地记录
-- 安平王刘续被国人赎回，甘陵王刘忠被释放——黄巾未加伤害
-- 各地"燔烧郡县"的是后续响应的"群盗"与乘机而起者（张燕、曹全碑所记"县民郭家等"），非黄巾本部（《三国志·[color=#6699FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color]传》明确区分）
-- 参见刘三解（2026-02-15）对这一阶段的分析
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]朝廷反制（184年3月）[/b]
-
-- [color=#6699FF][url={"research": "何进", "cat": "people"}]何进[/url][/color]拜大将军，镇守京师
-- 解除党禁（持续14年），拉拢士人
-- 三路出兵：
-  - [b]北路[/b]：卢植——讨冀州张角本部
-  - [b]中路[/b]：皇甫嵩、朱儁——讨颍川[color=#6699FF][url={"research": "波才", "cat": "people"}]波才[/url][/color]（中路约四万多人，含五校、三河骑士及募兵）
-  - [b]南路[/b]：秦颉（南阳太守）联荆州刺史——讨南阳[color=#6699FF][url={"research": "张曼成", "cat": "people"}]张曼成[/url][/color]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]起义始末（时间线）[/font][/b]
 
 
-[b]颍川战场（184年4–6月）[/b]
-
-- 朱儁与波才初战败于颍川
-- 皇甫嵩退守长社，被波才围困
-- [b]长社之战[/b]：皇甫嵩趁大风以火攻，骑都尉[b][color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color][/b]率兵适时赶到支援，合兵大破，斩首数万——曹操军事生涯首次见诸正史
-- 皇甫嵩、朱儁乘胜扫荡汝南、陈国，三郡悉平
+[b][font=res://resource/font/FandolSong-Bold/26.tres]前奏：预谋败露（184年1–2月）[/font][/b]
 
 
-[b]冀州战场（184年夏–冬）[/b]
-
-- 卢植连战破张角，将张角围于广宗，"筑围凿堑，造作云梯，垂当拔之"
-- 宦官左丰视军索贿不成，回京诬报卢植"坐拥重兵，不思进取"
-- 灵帝大怒，槛车征植，减死一等——[b]卢植冤案[/b]
-- 改派[b][color=#6699FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color][/b]接任，攻张角无功，再抵罪
-- 灵帝另诏皇甫嵩北上接手：
-  - [b]广宗决战[/b]（10月）：张梁主力精锐，嵩先避战观变，待贼意懈后夜袭；
-    《后汉书·皇甫嵩传》原文：
-    > "知贼意稍懈，乃潜夜勒兵，鸡鸣驰赴其阵，战至晡时，大破之，[b]斩梁，获首三万级，赴河死者五万许人，焚烧车重三万余两，悉虏其妇子[/b]，系获甚众。"
-  - 张角"先已病死，乃剖棺戮尸，传首京师"——未能生擒（演义改为皇甫嵩斩杀张角，属虚构）
-  - [b]下曲阳之战[/b]（11月）：斩张宝，"斩获十余万人"；皇甫嵩拜左车骑将军，封槐里侯
+[indent]•  弟子[color=#000000]唐周[/color]向朝廷告密[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  大方渠帅[color=#000000]马元义[/color]在洛阳被捕，车裂处死[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  灵帝下令：京师捕杀太平道信众千余人，通缉张角[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  张角被迫提前起事——原定三月五日（甲子月甲子日）改为二月（阳历184年3月4日）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]南阳战场（184年3–12月）[/b]
-
-- 张曼成攻杀太守褚贡，屯宛下百余日
-- 继任太守秦颉斩张曼成
-- 余众以[color=#6699FF][url={"research": "赵弘", "cat": "people"}]赵弘[/url][/color]为帅，众至十余万，据宛城
-- 朱儁围攻宛城，历月不下；司空[color=#6699FF][url={"research": "张温", "cat": "people"}]张温[/url][/color]力保朱儁继续领兵
-- 斩赵弘后，韩忠继续据守；朱儁围城打援，大破之
-- [b]孙坚[/b]"率众先登"，拔宛城——孙坚军事生涯正史首亮相
-- 孙夏逃走至西鄂精山被追斩，南阳全平
+[b][font=res://resource/font/FandolSong-Bold/26.tres]爆发（184年2月，阳历3月4日）[/font][/b]
 
 
-[b]伤亡数字可信度评估[/b]
+[indent]•  张角自称[color=#000000]天公将军[/color]，[color=#0066FF][url={"research": "张宝", "cat": "people"}]张宝[/url][/color]称[color=#000000]地公将军[/color]，[color=#0066FF][url={"research": "张梁", "cat": "people"}]张梁[/url][/color]称[color=#000000]人公将军[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  全国三十六方同时起事，头裹黄巾为标志，"旬月之间，天下响应，京师震动"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  州郡长吏大多弃城逃走，安平王、甘陵王被起义军俘获作为政治筹码[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]主要史料数字（《后汉书·皇甫嵩传》）[/b]
+[color=#000000]初期"不将尺兵"阶段（史料疑点）：[/color]
+
+[indent]•  从二月起兵到三月[color=#0066FF][url={"research": "卢植", "cat": "people"}]卢植[/url][/color]出征前，史书无黄巾攻城略地记录[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  安平王刘续被国人赎回，甘陵王刘忠被释放——黄巾未加伤害[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  各地"燔烧郡县"的是后续响应的"群盗"与乘机而起者（[color=#0066FF][url={"research": "张燕", "cat": "people"}]张燕[/url][/color]、曹全碑所记"县民郭家等"），非黄巾本部（《三国志·[color=#0066FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color]传》明确区分）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  参见刘三解（2026-02-15）对这一阶段的分析[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]战役[/b] | [b]数字[/b] | [b]原文[/b]
-广宗（张梁，184年10月） | 斩首三万级，赴河死者五万许人，焚车三万余辆 | 《后汉书·皇甫嵩传》正文
-下曲阳（张宝，184年11月） | 斩获十余万人 | 同上
-长社（波才，184年5月） | "斩首数万"（约数） | 史源较混
+[b][font=res://resource/font/FandolSong-Bold/26.tres]朝廷反制（184年3月）[/font][/b]
 
 
-[b]可信度分析[/b]
+[indent]•  [color=#0066FF][url={"research": "何进", "cat": "people"}]何进[/url][/color]拜大将军，镇守京师[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  解除党禁（持续14年），拉拢士人[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三路出兵：[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]北路[/color]：卢植——讨冀州张角本部[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]中路[/color]：皇甫嵩、朱儁——讨颍川[color=#0066FF][url={"research": "波才", "cat": "people"}]波才[/url][/color]（中路约四万多人，含五校、三河骑士及募兵）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]南路[/color]：秦颉（南阳太守）联荆州刺史——讨南阳[color=#0066FF][url={"research": "张曼成", "cat": "people"}]张曼成[/url][/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]"获首三万级，赴河死者五万许人"（广宗）：[/b]
-- "获首"为实际斩首计数，相对可信，但可能包含少量平民
-- "赴河死者五万许"是约数，"许"字本身即表明估算性质，不可能精确计点
-- 这两个数字在《后汉书》《资治通鉴》均稳定出现，史源可靠，[b]量级大体可信[/b]
 
-[b]"斩获十余万人"（下曲阳）：[/b]
-- "斩获"是斩杀+俘获的混合数字，含大量非战斗人员（家属、妇孺）
-- 此数字显著偏大，[b]可信度较低[/b]，更可能是战后宣扬大捷的夸张
-- 东汉末年一郡境内难以有十余万纯战斗军队，加上部众家属可能达到
-
-[b]总体原则：[/b] 古代正史大战伤亡数字，千余级基本可信；万余级可参考量级，可能有夸大；"十余万斩获"在战场规模语境下需打折处理。伤亡数字不宜作精确引用，宜以量级描述。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]颍川战场（184年4–6月）[/font][/b]
 
 
-[b]余波：黄巾残存势力（184–207年）[/b]
+[indent]•  朱儁与波才初战败于颍川[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  皇甫嵩退守长社，被波才围困[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]长社之战[/color]：皇甫嵩趁大风以火攻，骑都尉[color=#000000][color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color][/color]率兵适时赶到支援，合兵大破，斩首数万——曹操军事生涯首次见诸正史[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  皇甫嵩、朱儁乘胜扫荡汝南、陈国，三郡悉平[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]冀州战场（184年夏–冬）[/font][/b]
+
+
+[indent]•  卢植连战破张角，将张角围于广宗，"筑围凿堑，造作云梯，垂当拔之"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  宦官左丰视军索贿不成，回京诬报卢植"坐拥重兵，不思进取"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  灵帝大怒，槛车征植，减死一等——[color=#000000]卢植冤案[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  改派[color=#000000][color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color][/color]接任，攻张角无功，再抵罪[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  灵帝另诏皇甫嵩北上接手：[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]广宗决战[/color]（10月）：张梁主力精锐，嵩先避战观变，待贼意懈后夜袭； 《后汉书·皇甫嵩传》原文： > "知贼意稍懈，乃潜夜勒兵，鸡鸣驰赴其阵，战至晡时，大破之，[color=#000000]斩梁，获首三万级，赴河死者五万许人，焚烧车重三万余两，悉虏其妇子[/color]，系获甚众。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  张角"先已病死，乃剖棺戮尸，传首京师"——未能生擒（演义改为皇甫嵩斩杀张角，属虚构）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]下曲阳之战[/color]（11月）：斩张宝，"斩获十余万人"；皇甫嵩拜左车骑将军，封槐里侯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]南阳战场（184年3–12月）[/font][/b]
+
+
+[indent]•  张曼成攻杀太守褚贡，屯宛下百余日[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  继任太守秦颉斩张曼成[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  余众以[color=#0066FF][url={"research": "赵弘", "cat": "people"}]赵弘[/url][/color]为帅，众至十余万，据宛城[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  朱儁围攻宛城，历月不下；司空[color=#0066FF][url={"research": "张温", "cat": "people"}]张温[/url][/color]力保朱儁继续领兵[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  斩赵弘后，韩忠继续据守；朱儁围城打援，大破之[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]孙坚[/color]"率众先登"，拔宛城——孙坚军事生涯正史首亮相[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  孙夏逃走至西鄂精山被追斩，南阳全平[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]伤亡数字可信度评估[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]主要史料数字（《后汉书·皇甫嵩传》）[/font][/b]
+
+
+[table=3]
+[cell][b]战役[/b][/cell]
+[cell][b]数字[/b][/cell]
+[cell][b]原文[/b][/cell]
+[cell]广宗（张梁，184年10月）[/cell]
+[cell]斩首三万级，赴河死者五万许人，焚车三万余辆[/cell]
+[cell]《后汉书·皇甫嵩传》正文[/cell]
+[cell]下曲阳（张宝，184年11月）[/cell]
+[cell]斩获十余万人[/cell]
+[cell]同上[/cell]
+[cell]长社（波才，184年5月）[/cell]
+[cell]"斩首数万"（约数）[/cell]
+[cell]史源较混[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]可信度分析[/font][/b]
+
+
+[color=#000000]"获首三万级，赴河死者五万许人"（广宗）：[/color]
+
+[indent]•  "获首"为实际斩首计数，相对可信，但可能包含少量平民[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "赴河死者五万许"是约数，"许"字本身即表明估算性质，不可能精确计点[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  这两个数字在《后汉书》《资治通鉴》均稳定出现，史源可靠，[color=#000000]量级大体可信[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]"斩获十余万人"（下曲阳）：[/color]
+
+[indent]•  "斩获"是斩杀+俘获的混合数字，含大量非战斗人员（家属、妇孺）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  此数字显著偏大，[color=#000000]可信度较低[/color]，更可能是战后宣扬大捷的夸张[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  东汉末年一郡境内难以有十余万纯战斗军队，加上部众家属可能达到[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]总体原则：[/color] 古代正史大战伤亡数字，千余级基本可信；万余级可参考量级，可能有夸大；"十余万斩获"在战场规模语境下需打折处理。伤亡数字不宜作精确引用，宜以量级描述。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]余波：黄巾残存势力（184–207年）[/font][/b]
 
 
 黄巾主力覆灭后，余部持续二十余年：
 
 
-[b]时间[/b] | [b]事件[/b]
-中平二年（185） | 青、徐黄巾复起，寇郡县
-中平五年（188） | 西河郭大于白波谷起事，寇太原、河东（"白波贼"）
-初平二年（191） | 青州黄巾三十万寇勃海，欲与黑山合；[color=#6699FF][url={"research": "公孙瓒 ", "cat": " people"}]公孙瓒 [/url][/color]大破于东光南
-初平四年（193） | 百万青州黄巾入兖州，刘岱战死；曹操收降三十余万为"青州兵"
-建安元年（196） | 汝南、颍川黄巾[color=#6699FF][url={"research": "何仪 ", "cat": " people"}]何仪 [/url][/color]等附[color=#6699FF][url={"research": "袁术 ", "cat": " people"}]袁术 [/url][/color]，曹操破之
-建安五年（200） | 汝南黄巾[color=#6699FF][url={"research": "刘辟 ", "cat": " people"}]刘辟 [/url][/color]叛曹操应[color=#6699FF][url={"research": "袁绍 ", "cat": " people"}]袁绍 [/url][/color]，[color=#6699FF][url={"research": "刘备 ", "cat": " people"}]刘备 [/url][/color]奉命助之
-建安十年（205） | 黑山帅张燕率众十余万降曹，封安国亭侯
-建安十二年（207） | 青州黄巾杀济南王——史书记载最后一次黄巾活动
+[table=2]
+[cell][b]时间[/b][/cell]
+[cell][b]事件[/b][/cell]
+[cell]中平二年（185）[/cell]
+[cell]青、徐黄巾复起，寇郡县[/cell]
+[cell]中平五年（188）[/cell]
+[cell]西河郭大于白波谷起事，寇太原、河东（"白波贼"）[/cell]
+[cell]初平二年（191）[/cell]
+[cell]青州黄巾三十万寇勃海，欲与黑山合；[color=#0066FF][url={"research": "公孙瓒", "cat": "people"}]公孙瓒[/url][/color]大破于东光南[/cell]
+[cell]初平四年（193）[/cell]
+[cell]百万青州黄巾入兖州，[color=#0066FF][url={"research": "刘岱", "cat": "people"}]刘岱[/url][/color]战死；曹操收降三十余万为"青州兵"[/cell]
+[cell]建安元年（196）[/cell]
+[cell]汝南、颍川黄巾[color=#0066FF][url={"research": "何仪", "cat": "people"}]何仪[/url][/color]等附[color=#0066FF][url={"research": "袁术", "cat": "people"}]袁术[/url][/color]，曹操破之[/cell]
+[cell]建安五年（200）[/cell]
+[cell]汝南黄巾[color=#0066FF][url={"research": "刘辟", "cat": "people"}]刘辟[/url][/color]叛曹操应[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]，[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]奉命助之[/cell]
+[cell]建安十年（205）[/cell]
+[cell]黑山帅张燕率众十余万降曹，封安国亭侯[/cell]
+[cell]建安十二年（207）[/cell]
+[cell]青州黄巾杀济南王——史书记载最后一次黄巾活动[/cell]
+[/table]
 
 
-[b]关键人物简析[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]人物[/b] | [b]身份[/b] | [b]史实关键点[/b]
-张角 | 天公将军 | 病死于广宗城中（184年），未被生擒；剖棺戮尸
-张宝 | 地公将军 | 下曲阳被皇甫嵩斩杀
-张梁 | 人公将军 | 广宗之战战死
-皇甫嵩 | 左中郎将 | 黄巾平乱第一功将；以智谋著称（长社火攻、广宗夜袭）；不居功
-朱儁 | 右中郎将 | 南阳主帅；平宛城；后入朝为三公
-卢植 | 北中郎将 | 实为广宗主将，因不贿宦官被冤免职；刘备之师
-曹操 | 骑都尉 | 长社战场支援，初登正史
-孙坚 | 别部司马 | 先登宛城，初扬军名
-刘备 | 义勇 | 涿县募兵参与镇压，规模极小，史载简略
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键人物简析[/font][/b]
 
 
-[b]青州兵：编制与曹魏军事体系[/b]
+[table=3]
+[cell][b]人物[/b][/cell]
+[cell][b]身份[/b][/cell]
+[cell][b]史实关键点[/b][/cell]
+[cell]张角[/cell]
+[cell]天公将军[/cell]
+[cell]病死于广宗城中（184年），未被生擒；剖棺戮尸[/cell]
+[cell]张宝[/cell]
+[cell]地公将军[/cell]
+[cell]下曲阳被皇甫嵩斩杀[/cell]
+[cell]张梁[/cell]
+[cell]人公将军[/cell]
+[cell]广宗之战战死[/cell]
+[cell]皇甫嵩[/cell]
+[cell]左中郎将[/cell]
+[cell]黄巾平乱第一功将；以智谋著称（长社火攻、广宗夜袭）；不居功[/cell]
+[cell]朱儁[/cell]
+[cell]右中郎将[/cell]
+[cell]南阳主帅；平宛城；后入朝为三公[/cell]
+[cell]卢植[/cell]
+[cell]北中郎将[/cell]
+[cell]实为广宗主将，因不贿宦官被冤免职；刘备之师[/cell]
+[cell]曹操[/cell]
+[cell]骑都尉[/cell]
+[cell]长社战场支援，初登正史[/cell]
+[cell]孙坚[/cell]
+[cell]别部司马[/cell]
+[cell]先登宛城，初扬军名[/cell]
+[cell]刘备[/cell]
+[cell]义勇[/cell]
+[cell]涿县募兵参与镇压，规模极小，史载简略[/cell]
+[/table]
 
 
-[b]收编始末[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]青州兵：编制与曹魏军事体系[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]收编始末[/font][/b]
+
 
 《三国志·武帝纪》：
-[color=#AAAAAA]　"追黄巾至济北，乞降。冬，受降卒三十余万，男女百余万口，收其精锐者，号为青州兵。"[/color]
+
+[indent][color=#666666]┃ "追黄巾至济北，乞降。冬，受降卒三十余万，男女百余万口，收其精锐者，号为青州兵。"[/color][/indent]
+
 
 时间：初平三年（192年）冬。收编总人口百余万，精锐编为"青州兵"，其余编入屯田。
 
 
-[b]编制特殊性（五大特征）[/b]
-
-1. [b]独立番号，不打散重编[/b]：三十年始终维持"青州兵"番号
-2. [b]仅效忠曹操个人（私兵性质）[/b]：《三国志·[color=#6699FF][url={"research": "于禁", "cat": "people"}]于禁[/url][/color]传》："同属曹公，而还为贼乎"——曹操对其较宽纵，体现私兵性质
-3. [b]世兵化[/b]：父子相继为兵，是东汉末年兵户制的雏形
-4. [b]中军编制，驻守许昌[/b]：属中军，兼任宿卫与随征
-5. [b]近募兵性质[/b]：政治协议式吸纳，而非常规征发
+[b][font=res://resource/font/FandolSong-Bold/26.tres]编制特殊性（五大特征）[/font][/b]
 
 
-[b]建安二十五年（220年）散走[/b]
+[indent]1.  [color=#000000]独立番号，不打散重编[/color]：三十年始终维持"青州兵"番号[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]仅效忠曹操个人（私兵性质）[/color]：《三国志·[color=#0066FF][url={"research": "于禁", "cat": "people"}]于禁[/url][/color]传》："同属曹公，而还为贼乎"——曹操对其较宽纵，体现私兵性质[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]世兵化[/color]：父子相继为兵，是东汉末年兵户制的雏形[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]中军编制，驻守许昌[/color]：属中军，兼任宿卫与随征[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  [color=#000000]近募兵性质[/color]：政治协议式吸纳，而非常规征发[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-《三国志·[color=#6699FF][url={"research": "贾逵", "cat": "people"}]贾逵[/url][/color]传》裴注引《魏略》：
-[color=#AAAAAA]　"太祖崩，臧霸所部及青州兵，以为天下将乱，皆[b]鸣鼓擅去[/b]。"[/color]
 
-贾逵以恩德安抚，通知沿途官府发廪食，允其归乡——[color=#6699FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]批准。青州兵就此退出历史舞台。
-
-[b]意义：[/b] 揭示了曹操将私人效忠与国家军队混用的体制矛盾。青州兵在曹操死的那一刻"鸣鼓擅去"，是私兵制在帝位传承中的必然裂变。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安二十五年（220年）散走[/font][/b]
 
 
-[b]性质与意义考证[/b]
+《三国志·[color=#0066FF][url={"research": "贾逵", "cat": "people"}]贾逵[/url][/color]传》裴注引《魏略》：
+
+[indent][color=#666666]┃ "太祖崩，臧霸所部及青州兵，以为天下将乱，皆[color=#000000]鸣鼓擅去[/color]。"[/color][/indent]
 
 
-[b]宗教性质争议[/b]
+贾逵以恩德安抚，通知沿途官府发廪食，允其归乡——[color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]批准。青州兵就此退出历史舞台。
+
+[color=#000000]意义：[/color] 揭示了曹操将私人效忠与国家军队混用的体制矛盾。青州兵在曹操死的那一刻"鸣鼓擅去"，是私兵制在帝位传承中的必然裂变。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性质与意义考证[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]宗教性质争议[/font][/b]
+
 
 史学界主要观点：
 
-1. [b]农民起义论[/b]（传统，1950-1980年代中国大陆主流）：黄巾是失地农民反抗封建压迫的正义斗争；《太平经》是"农民革命理论工具"。代表：侯外庐（1959）、杨宽（1959）、卿希泰（1980）
 
-2. [b]异议声音[/b]（1960-2000年代）：
-   - 熊德基（1962）：《太平经》与黄巾"思想绝不相似，是两种敌对阶级意识"，两者无关
-   - 唐长孺（遗著2006）：张角所有《太平经》是含五德终始理论的民间另一版本，今本《太平经》未必直接指导起义
-   - 康德谟（国际汉学）：黄巾领袖"并无建立农民政权的欲望，他们想做的仅仅是变革朝代和宇宙的循环"
-
-3. [b]宗教运动论[/b]（近代修正）：张角口号带强烈末世宗教色彩，无明确政治纲领（无土地分配主张），组织形态类似宗教团体
-
-4. [b]"辅汉"→"代汉"演变论[/b]（冯渝杰2018/2024年，最新学术重构；多位学者独立验证）：
-
-   [b]核心论证：[/b]
-   - 突破口：《续汉志》注引杨泉《物理论》"[b]（黄巾）不将尺兵[/b]"
-   - 神学逻辑：《太平经》明令"急绝兵""断金兵"（因汉为火德，金气克火德，绝兵以护汉德）；黄巾"不将尺兵"是遵守太平道神学逻辑、维护汉家火德之运的行为
-   - 结论：早期黄巾初始动机并非"反汉"，而是以宗教形式"致太平"——修复、辅助汉朝走向太平
-   - [b]口号新解[/b]："苍天/黄天"非五德终始代汉，而是召唤太一归位、迎接太平的宗教语言
-   - [b]"内外俱起"新解[/b]：可理解为宗教请愿而非武装起义——黄巾仍"不将尺兵"即是证据
-   - [b]宗教乌托邦目标[/b]（张官鑫书评新补充）：黄巾即便"割据"，目标也是建立类似西部五斗米道的宗教乌托邦，而非军事征服政权
-   - [b]官员"隐没"现象[/b]（张官鑫书评新补充）：朝野上下不少官员因共享太平理想而与黄巾交通，黄巾起事后代为隐没——太平信仰的社会弥漫性
-   - [b]演变机制[/b]：初期黄巾被朝廷镇压→在谶纬神学、五德终始、"终末"论说等思潮的合力影响下（张官鑫明确三要素）→"太平"理想难以伸张的黄巾信徒→逐渐转向"代汉"，辅佐新"出世"的人间圣王
-   - [b]内部分化[/b]（吕博书评补充）：演变是"黄巾军中一部分人"的轨迹，内部存在真实的神学取向分歧
-   - [b]学界地位[/b]：冯渝杰2018年论文核心论点已在《神器有命》（2024年，632页）中系统化；已获吕博（武汉大学，中国社会科学网2024-10）、张官鑫（澎湃新闻）两篇独立专业书评肯定，称黄巾章节为"全书最具创造力、最为厚重的部分"；另有朱永清《中国文化》2025年第1期评介
-
-   [b]批评性意见（张官鑫书评）：[/b]
-   - [b]信仰均质化[/b]：冯渝杰对不同群体的信仰处理可能过于均质，忽视了不同行动者对"太平"的不同理解
-   - [b]价值理性化的另一极[/b]：批评旧史学的工具理性，却可能走向价值理性的另一种理性化
-   - [b]鱼龙混杂问题[/b]：黄巾起义内部有鱼龙混杂、浑水摸鱼的行动者，整体神学叙事难以覆盖这种多元性
-   - [b]总评[/b]：这些批评指向冯渝杰论证的宏观性局限，而非否定其基本论点
-
-5. [b]史学史反思论[/b]（王婷婷2025年，最新论文）：从史学史角度梳理"《太平经》是农民革命工具说"如何从"主流"变成"异端"——修正1950-1980年代马克思主义史学框架（全文付费墙，尚未获取。作者：苏州大学社会学院博士研究生）
-
-6. [b]五运主时/宗教仪式巡游论[/b]（刘九生1985年先行研究 + 刘三解2026年科普）：黄巾口号是通知信徒时间的五运主时谶语，黄巾起事是模拟仙人的集体宗教巡游，邺-真定路线具有谶言意义。为冯渝杰"辅汉初始动机"论提供了具体仪式层面的支撑（详见本文"黄巾口号新解"一节）。
-
-[b]合理结论：[/b] 黄巾兼具农民起义与宗教运动双重属性，且其"反汉"性质是演变而成的，非一开始即已确定。冯渝杰通过"不将尺兵"的史料新解，为黄巾"辅汉"初始动机提供了直接神学证据，并对黄巾口号和"内外俱起"提出了有说服力的宗教请愿解读。刘九生（1985年）/刘三解（2026年）提供了口号时间谜语的具体技术论证（五运主时）和初期行动的宗教仪式解读（仙人姿态巡游）。张官鑫补充了"宗教乌托邦"目标说和官员"隐没"现象，但同时指出冯渝杰论证存在信仰均质化和宏观性局限。《太平经》提供意识形态来源，但缺乏将均平理想落实为制度纲领的政治建构能力。
+[indent]1.  [color=#000000]农民起义论[/color]（传统，1950-1980年代中国大陆主流）：黄巾是失地农民反抗封建压迫的正义斗争；《太平经》是"农民革命理论工具"。代表：侯外庐（1959）、杨宽（1959）、卿希泰（1980）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]异议声音[/color]（1960-2000年代）：[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]历史影响[/b]
-
-[b]直接：[/b]
-- 主力覆灭仅历九个月，但引发连锁效应：各地武装割据兴起
-- 黑山贼、白波贼、青州黄巾等余部持续二十余年
-
-[b]深层：[/b]
-1. [b]州牧制建立[/b]：中平五年（188年），灵帝从[color=#6699FF][url={"research": "刘焉", "cat": "people"}]刘焉[/url][/color]建议改刺史为州牧——"州任之重，自此而始"，地方军政一体，中央权威再无法收回（维基引南梁学者此说）
-2. [b]军阀集团诞生[/b]：曹操（青州兵）、孙坚（黄巾战场起家）、刘备（涿县募兵）均借镇压黄巾获得初始军事资本
-3. [b]东汉政权名存实亡[/b]：皇甫嵩平叛后威震天下，"朝纲日乱，海内虚困"
+[indent]　•  熊德基（1962）：《太平经》与黄巾"思想绝不相似，是两种敌对阶级意识"，两者无关[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  唐长孺（遗著2006）：张角所有《太平经》是含五德终始理论的民间另一版本，今本《太平经》未必直接指导起义[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  康德谟（国际汉学）：黄巾领袖"并无建立农民政权的欲望，他们想做的仅仅是变革朝代和宇宙的循环"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]史实 vs 演义[/b]
+[indent]3.  [color=#000000]宗教运动论[/color]（近代修正）：张角口号带强烈末世宗教色彩，无明确政治纲领（无土地分配主张），组织形态类似宗教团体[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]"辅汉"→"代汉"演变论[/color]（冯渝杰2018/2024年，最新学术重构；多位学者独立验证）：[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]方面[/b] | [b]史实[/b] | [b]《三国演义》[/b]
-刘关张参战 | 刘备涿县募兵，规模甚小；无桃园结义史载 | 桃园结义，三英纵横疆场
-卢植地位 | 实为冀州战场主将，被冤下狱 | 降格为刘备旧师、被推荐对象
-董卓参战 | 讨张角无功，两度抵罪 | 基本略去此段
-张角之死 | 病死，剖棺戮尸，未被斩杀 | 演义改为皇甫嵩斩杀
-曹操首秀 | 长社之战支援皇甫嵩，骑都尉身份 | 演义中存在但篇幅有限
-孙坚首秀 | 先登宛城，朱儁帐下别部司马 | 演义较忠实
-黄巾初期性质 | 初起"不将尺兵"，宗教仪式色彩为主（冯渝杰/刘三解等研究） | 直接塑造为武装暴乱
+   [color=#000000]核心论证：[/color]
+
+[indent]　•  突破口：《续汉志》注引杨泉《物理论》"[color=#000000]（黄巾）不将尺兵[/color]"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  神学逻辑：《太平经》明令"急绝兵""断金兵"（因汉为火德，金气克火德，绝兵以护汉德）；黄巾"不将尺兵"是遵守太平道神学逻辑、维护汉家火德之运的行为[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  结论：早期黄巾初始动机并非"反汉"，而是以宗教形式"致太平"——修复、辅助汉朝走向太平[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]口号新解[/color]："苍天/黄天"非五德终始代汉，而是召唤太一归位、迎接太平的宗教语言[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]"内外俱起"新解[/color]：可理解为宗教请愿而非武装起义——黄巾仍"不将尺兵"即是证据[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]宗教乌托邦目标[/color]（张官鑫书评新补充）：黄巾即便"割据"，目标也是建立类似西部五斗米道的宗教乌托邦，而非军事征服政权[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]官员"隐没"现象[/color]（张官鑫书评新补充）：朝野上下不少官员因共享太平理想而与黄巾交通，黄巾起事后代为隐没——太平信仰的社会弥漫性[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]演变机制[/color]：初期黄巾被朝廷镇压→在谶纬神学、五德终始、"终末"论说等思潮的合力影响下（张官鑫明确三要素）→"太平"理想难以伸张的黄巾信徒→逐渐转向"代汉"，辅佐新"出世"的人间圣王[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]内部分化[/color]（吕博书评补充）：演变是"黄巾军中一部分人"的轨迹，内部存在真实的神学取向分歧[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]学界地位[/color]：冯渝杰2018年论文核心论点已在《神器有命》（2024年，632页）中系统化；已获吕博（武汉大学，中国社会科学网2024-10）、张官鑫（澎湃新闻）两篇独立专业书评肯定，称黄巾章节为"全书最具创造力、最为厚重的部分"；另有朱永清《中国文化》2025年第1期评介[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]历代评价[/b]
+   [color=#000000]批评性意见（张官鑫书评）：[/color]
+
+[indent]　•  [color=#000000]信仰均质化[/color]：冯渝杰对不同群体的信仰处理可能过于均质，忽视了不同行动者对"太平"的不同理解[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]价值理性化的另一极[/color]：批评旧史学的工具理性，却可能走向价值理性的另一种理性化[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]鱼龙混杂问题[/color]：黄巾起义内部有鱼龙混杂、浑水摸鱼的行动者，整体神学叙事难以覆盖这种多元性[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]总评[/color]：这些批评指向冯渝杰论证的宏观性局限，而非否定其基本论点[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]人物[/b] | [b]评价要点[/b] | [b]出处[/b]
-陈寿 | 《三国志》称张角"伪托大道，妖惑百姓" | 《三国志·武帝纪》
-范晔（皇甫嵩论赞） | "功成师克，威声满天下"；惋其"蹈匹夫之小谅，卒狼狈虎口"；赞其"不居不伐"——将汝豫之功归朱儁，将广宗之功归卢植 | 《后汉书·皇甫嵩朱儁列传》论赞
-皇甫嵩（自述，拒阎忠劝进） | "委忠本朝，守其臣节。虽云多谗，不过放废，犹有令名，死且不朽。" | 《后汉书·皇甫嵩传》
-王夫之（论黄巾性质） | "[b]盗贼挟圣人以惑百姓[/b]"；张角"诡托之于道"，其本质是假借黄老道名义的流民政治运动；[b]追责根源："儒者倡之，二氏和之，妖人挟之"[/b]——儒家谶纬之说为黄巾提供了思想工具 | 《读通鉴论》卷八第九
-王夫之（论朱儁不受降） | "以黄巾之徧天下也，不数年而定，汉虽亡，不亡于黄巾之手，[b]则朱儁之所持者定矣[/b]"——歼首魁、赦余众是正确策略 | 《读通鉴论》卷八第十一
-王夫之（批评皇甫嵩党锢言论） | 批评皇甫嵩以"党锢积怨将与黄巾合谋"立论，是对党人的侮辱："以君子始，以贼终"——将党人与黄巾并列，反而坐实了宦官对党人的诬谮 | 《读通鉴论》卷八第十
-吕思勉（论黄巾根源） | "[b]张角能够发动人民，全由于社会的不安。宗教的本身并无多大力量。[/b]"引杨赐流民上疏佐证；将汉末道教三分：张角型（革命动员）/张修型（福利救济）/于吉型（上流社会方士）；指出"苍天→黄天"的五德终始有逻辑漏洞，但政治意图无疑；张陵三代传道系[color=#6699FF][url={"research": "张鲁 ", "cat": " people"}]张鲁 [/url][/color]伪造追溯——结论"与民相安"才是五斗米道实质 | 《三国史话·黄巾》
-冯渝杰（2018年论文/2024年专著） | 从"辅汉"到"代汉"的神学演变——早期黄巾本质是救赎神学驱动的辅汉运动；"不将尺兵"是遵守太平道神学的合理行为；黄巾口号落脚点是召唤太平而非代汉；"被迫军事化"完成辅汉→代汉神学转轨；儒道两家在"太平"理想上的思想共通性（黄巾拜郑玄） | 《"致太平"思潮与黄巾初起动机考》（《学术月刊》2018年第5期）；《神器有命》（社科文献出版社，2024年7月）
-张官鑫（2024年书评） | 称黄巾章节为全书"最具创造力、最为厚重"部分；确认"辅汉—代汉"神学演变轨迹；补充"宗教乌托邦割据"说和"官员隐没"现象；批评冯渝杰信仰均质化和宏观性局限——"鱼龙混杂，浑水摸鱼"问题难以用整体神学叙事覆盖 | 《神器有命》书评，澎湃新闻（2024年）
-刘三解（2026年科普文） | 系统梳理黄巾初期"不将尺兵"史料疑点；引刘九生（1985年）论证黄巾口号为五运主时时间谜语；从仙人姿态（"翔行舒步"）和邺-真定谶言路线论证起事为宗教仪式巡游；补充曹全碑碑文区分黄巾本部与后续响应者暴行 | 网易号，2026-02-15
+[indent]5.  [color=#000000]史学史反思论[/color]（王婷婷2025年，最新论文）：从史学史角度梳理"《太平经》是农民革命工具说"如何从"主流"变成"异端"——修正1950-1980年代马克思主义史学框架（全文付费墙，尚未获取。作者：苏州大学社会学院博士研究生）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]6.  [color=#000000]五运主时/宗教仪式巡游论[/color]（刘九生1985年先行研究 + 刘三解2026年科普）：黄巾口号是通知信徒时间的五运主时谶语，黄巾起事是模拟仙人的集体宗教巡游，邺-真定路线具有谶言意义。为冯渝杰"辅汉初始动机"论提供了具体仪式层面的支撑（详见本文"黄巾口号新解"一节）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]合理结论：[/color] 黄巾兼具农民起义与宗教运动双重属性，且其"反汉"性质是演变而成的，非一开始即已确定。冯渝杰通过"不将尺兵"的史料新解，为黄巾"辅汉"初始动机提供了直接神学证据，并对黄巾口号和"内外俱起"提出了有说服力的宗教请愿解读。刘九生（1985年）/刘三解（2026年）提供了口号时间谜语的具体技术论证（五运主时）和初期行动的宗教仪式解读（仙人姿态巡游）。张官鑫补充了"宗教乌托邦"目标说和官员"隐没"现象，但同时指出冯渝杰论证存在信仰均质化和宏观性局限。《太平经》提供意识形态来源，但缺乏将均平理想落实为制度纲领的政治建构能力。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]历史影响[/font][/b]
+
+
+[color=#000000]直接：[/color]
+
+[indent]•  主力覆灭仅历九个月，但引发连锁效应：各地武装割据兴起[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  黑山贼、白波贼、青州黄巾等余部持续二十余年[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]深层：[/color]
+
+[indent]1.  [color=#000000]州牧制建立[/color]：中平五年（188年），灵帝从[color=#0066FF][url={"research": "刘焉", "cat": "people"}]刘焉[/url][/color]建议改刺史为州牧——"州任之重，自此而始"，地方军政一体，中央权威再无法收回（维基引南梁学者此说）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]军阀集团诞生[/color]：曹操（青州兵）、孙坚（黄巾战场起家）、刘备（涿县募兵）均借镇压黄巾获得初始军事资本[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]东汉政权名存实亡[/color]：皇甫嵩平叛后威震天下，"朝纲日乱，海内虚困"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]《三国演义》[/b][/cell]
+[cell]刘关张参战[/cell]
+[cell]刘备涿县募兵，规模甚小；无桃园结义史载[/cell]
+[cell]桃园结义，三英纵横疆场[/cell]
+[cell]卢植地位[/cell]
+[cell]实为冀州战场主将，被冤下狱[/cell]
+[cell]降格为刘备旧师、被推荐对象[/cell]
+[cell]董卓参战[/cell]
+[cell]讨张角无功，两度抵罪[/cell]
+[cell]基本略去此段[/cell]
+[cell]张角之死[/cell]
+[cell]病死，剖棺戮尸，未被斩杀[/cell]
+[cell]演义改为皇甫嵩斩杀[/cell]
+[cell]曹操首秀[/cell]
+[cell]长社之战支援皇甫嵩，骑都尉身份[/cell]
+[cell]演义中存在但篇幅有限[/cell]
+[cell]孙坚首秀[/cell]
+[cell]先登宛城，朱儁帐下别部司马[/cell]
+[cell]演义较忠实[/cell]
+[cell]黄巾初期性质[/cell]
+[cell]初起"不将尺兵"，宗教仪式色彩为主（冯渝杰/刘三解等研究）[/cell]
+[cell]直接塑造为武装暴乱[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[table=3]
+[cell][b]人物[/b][/cell]
+[cell][b]评价要点[/b][/cell]
+[cell][b]出处[/b][/cell]
+[cell]陈寿[/cell]
+[cell]《三国志》称张角"伪托大道，妖惑百姓"[/cell]
+[cell]《三国志·武帝纪》[/cell]
+[cell]范晔（皇甫嵩论赞）[/cell]
+[cell]"功成师克，威声满天下"；惋其"蹈匹夫之小谅，卒狼狈虎口"；赞其"不居不伐"——将汝豫之功归朱儁，将广宗之功归卢植[/cell]
+[cell]《后汉书·皇甫嵩朱儁列传》论赞[/cell]
+[cell]皇甫嵩（自述，拒阎忠劝进）[/cell]
+[cell]"委忠本朝，守其臣节。虽云多谗，不过放废，犹有令名，死且不朽。"[/cell]
+[cell]《后汉书·皇甫嵩传》[/cell]
+[cell]王夫之（论黄巾性质）[/cell]
+[cell]"[color=#000000]盗贼挟圣人以惑百姓[/color]"；张角"诡托之于道"，其本质是假借黄老道名义的流民政治运动；[color=#000000]追责根源："儒者倡之，二氏和之，妖人挟之"[/color]——儒家谶纬之说为黄巾提供了思想工具[/cell]
+[cell]《读通鉴论》卷八第九[/cell]
+[cell]王夫之（论朱儁不受降）[/cell]
+[cell]"以黄巾之徧天下也，不数年而定，汉虽亡，不亡于黄巾之手，[color=#000000]则朱儁之所持者定矣[/color]"——歼首魁、赦余众是正确策略[/cell]
+[cell]《读通鉴论》卷八第十一[/cell]
+[cell]王夫之（批评皇甫嵩党锢言论）[/cell]
+[cell]批评皇甫嵩以"党锢积怨将与黄巾合谋"立论，是对党人的侮辱："以君子始，以贼终"——将党人与黄巾并列，反而坐实了宦官对党人的诬谮[/cell]
+[cell]《读通鉴论》卷八第十[/cell]
+[cell]吕思勉（论黄巾根源）[/cell]
+[cell]"[color=#000000]张角能够发动人民，全由于社会的不安。宗教的本身并无多大力量。[/color]"引杨赐流民上疏佐证；将汉末道教三分：张角型（革命动员）/张修型（福利救济）/于吉型（上流社会方士）；指出"苍天→黄天"的五德终始有逻辑漏洞，但政治意图无疑；张陵三代传道系[color=#0066FF][url={"research": "张鲁", "cat": "people"}]张鲁[/url][/color]伪造追溯——结论"与民相安"才是五斗米道实质[/cell]
+[cell]《三国史话·黄巾》[/cell]
+[cell]冯渝杰（2018年论文/2024年专著）[/cell]
+[cell]从"辅汉"到"代汉"的神学演变——早期黄巾本质是救赎神学驱动的辅汉运动；"不将尺兵"是遵守太平道神学的合理行为；黄巾口号落脚点是召唤太平而非代汉；"被迫军事化"完成辅汉→代汉神学转轨；儒道两家在"太平"理想上的思想共通性（黄巾拜郑玄）[/cell]
+[cell]《"致太平"思潮与黄巾初起动机考》（《学术月刊》2018年第5期）；《神器有命》（社科文献出版社，2024年7月）[/cell]
+[cell]张官鑫（2024年书评）[/cell]
+[cell]称黄巾章节为全书"最具创造力、最为厚重"部分；确认"辅汉—代汉"神学演变轨迹；补充"宗教乌托邦割据"说和"官员隐没"现象；批评冯渝杰信仰均质化和宏观性局限——"鱼龙混杂，浑水摸鱼"问题难以用整体神学叙事覆盖[/cell]
+[cell]《神器有命》书评，澎湃新闻（2024年）[/cell]
+[cell]刘三解（2026年科普文）[/cell]
+[cell]系统梳理黄巾初期"不将尺兵"史料疑点；引刘九生（1985年）论证黄巾口号为五运主时时间谜语；从仙人姿态（"翔行舒步"）和邺-真定谶言路线论证起事为宗教仪式巡游；补充曹全碑碑文区分黄巾本部与后续响应者暴行[/cell]
+[cell]网易号，2026-02-15[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]

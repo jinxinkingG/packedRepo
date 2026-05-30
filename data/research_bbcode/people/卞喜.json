@@ -1,121 +1,316 @@
-[b]卞喜[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]卞喜[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不可考（正史无载）；籍贯：[color=#6699FF][url={"research": "并州", "cat": "geography"}]并州[/url][/color]（演义记载）；身份：《三国演义》虚构人物，正史《三国志》及同期魏晋史料中完全无载
+[color=#000000]基本信息：[/color] 生卒年不可考（正史无载）；籍贯：[color=#0066FF][url={"research": "并州", "cat": "geography"}]并州[/url][/color]（演义记载）；身份：《三国演义》虚构人物，正史《三国志》及同期魏晋史料中完全无载
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-卞喜是纯粹的文学虚构人物，在正史中没有任何记载。《三国志·[color=#6699FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]传》关于关羽离开[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]一事仅记：「及羽杀颜良，曹公知其必去，重加赏赐。羽尽封其所赐，拜书告辞，而奔先主于袁军。」正史中既无「过五关」之事，也无卞喜其人。所谓「孔秀、韩福、孟坦、卞喜、王植、秦琪」六将，历史上均无记载，是罗贯中等创作时凭空虚构的。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]性格与形象（演义）[/b]
+卞喜是纯粹的文学虚构人物，在正史中没有任何记载。《三国志·[color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]传》关于关羽离开[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]一事仅记：「及羽杀[color=#0066FF][url={"research": "颜良", "cat": "people"}]颜良[/url][/color]，曹公知其必去，重加赏赐。羽尽封其所赐，拜书告辞，而奔先主于袁军。」正史中既无「过五关」之事，也无卞喜其人。所谓「孔秀、韩福、孟坦、卞喜、王植、秦琪」六将，历史上均无记载，是罗贯中等创作时凭空虚构的。
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象（演义）[/font][/b]
 
 
 演义中卞喜的形象要素：
-- [b]籍贯[/b]：并州人
-- [b]出身[/b]：原黄巾余党，后投降曹操，被拨来守关
-- [b]武器[/b]：流星锤（暗器），正文称「飞锤」
-- [b]性格[/b]：外表恭顺（以「将军名震天下，谁不敬仰」为伪装），内实阴险，善设计谋害
 
-毛宗岗批语将卞喜与[color=#6699FF][url={"research": "廖化", "cat": "people"}]廖化[/url][/color]对比，指出：「廖化是强盗余党，卞喜亦是强盗余党。乃既做官之强盗，反不若未做官之强盗能识好人也。」这一批评揭示了两人的道德对比——廖化虽然落草，仍能识别忠义；卞喜已经「上岸」做了官，反而用官权谋害好人。
-
-
-[b]关键关系[/b]
-
-
-- [b]关羽[/b]：被斩对象。卞喜在镇国寺设伏，被同乡僧人普净识破，最终被关羽「一刀劈为两段」
-- [b]普净（普静）[/b]：镇国寺僧人，蒲东人，与关羽同乡，以戒刀示意暗示卞喜阴谋，是卞喜阴谋失败的直接原因。此僧在第77回（玉泉山显圣）再次出现，前后呼应
-- [b]曹操[/b]：卞喜的主上，守关将领。演义中卞喜行事是出于守关职责，非曹操直接授意
+[indent]•  [color=#000000]籍贯[/color]：并州人[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]出身[/color]：原黄巾余党，后投降曹操，被拨来守关[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]武器[/color]：流星锤（暗器），正文称「飞锤」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]性格[/color]：外表恭顺（以「将军名震天下，谁不敬仰」为伪装），内实阴险，善设计谋害[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]史实 vs 演义[/b]
+毛宗岗批语将卞喜与[color=#0066FF][url={"research": "廖化", "cat": "people"}]廖化[/url][/color]对比，指出：「廖化是强盗余党，卞喜亦是强盗余党。乃既做官之强盗，反不若未做官之强盗能识好人也。」这一批评揭示了两人的道德对比——廖化虽然落草，仍能识别忠义；卞喜已经「上岸」做了官，反而用官权谋害好人。
 
 
-[b]项目[/b] | [b]史实[/b] | [b]演义[/b]
-过五关斩六将 | 不存在，关羽仅「奔先主于袁军」（《三国志·关羽传》） | 详细叙述五关六将情节
-卞喜其人 | 正史无载，完全虚构 | 第27回详细出场
-汜/沂水关 | 汉代有汜水关（今河南荥阳），无「沂水关」守将记录 | 各版本关名有「汜水关」/「沂水关」异文
-镇国寺 | 史无明载 | 演义称「汉明帝御前香火院，至[color=#6699FF][url={"research": "董卓 ", "cat": " people"}]董卓 [/url][/color]时废了，曹操又使韩福重修」
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]三国志平话：无五关斩将原型[/b]
+[indent]•  [color=#000000]关羽[/color]：被斩对象。卞喜在镇国寺设伏，被同乡僧人普净识破，最终被关羽「一刀劈为两段」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]普净（普静）[/color]：镇国寺僧人，蒲东人，与关羽同乡，以戒刀示意暗示卞喜阴谋，是卞喜阴谋失败的直接原因。此僧在第77回（玉泉山显圣）再次出现，前后呼应[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]曹操[/color]：卞喜的主上，守关将领。演义中卞喜行事是出于守关职责，非曹操直接授意[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]《三国志平话》（至治新刊全相平话三国志，元刻本）完全无五关斩将情节，已确认。[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
-平话中关羽出走路线：[color=#6699FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]（曹操驻地）→霸陵桥（挑袍辞曹）→[color=#6699FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color][color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]处→古城聚义。全程无守关人物、无刺杀情节。卞喜（及孔秀、韩福、王植、秦琪等全部六将）均为演义体系新创，在平话中无任何原型。
+
+[table=3]
+[cell][b]项目[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]演义[/b][/cell]
+[cell]过五关斩六将[/cell]
+[cell]不存在，关羽仅「奔先主于袁军」（《三国志·关羽传》）[/cell]
+[cell]详细叙述五关六将情节[/cell]
+[cell]卞喜其人[/cell]
+[cell]正史无载，完全虚构[/cell]
+[cell]第27回详细出场[/cell]
+[cell]汜/沂水关[/cell]
+[cell]汉代有汜水关（今河南荥阳），无「沂水关」守将记录[/cell]
+[cell]各版本关名有「汜水关」/「沂水关」异文[/cell]
+[cell]镇国寺[/cell]
+[cell]史无明载[/cell]
+[cell]演义称「汉明帝御前香火院，至[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]时废了，曹操又使韩福重修」[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]三国志平话：无五关斩将原型[/font][/b]
+
+
+[color=#000000]《三国志平话》（至治新刊全相平话三国志，元刻本）完全无五关斩将情节，已确认。[/color]
+
+平话中关羽出走路线：[color=#0066FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]（曹操驻地）→霸陵桥（挑袍辞曹）→[color=#0066FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color][color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]处→古城聚义。全程无守关人物、无刺杀情节。卞喜（及孔秀、韩福、王植、秦琪等全部六将）均为演义体系新创，在平话中无任何原型。
 
 五关斩将叙事是嘉靖本演义创作时完整添加的虚构段落，在元代平话传统中无对应结构。
 
 
-[b]版本学：关隘名称与文字差异考证[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]版本学：关隘名称与文字差异考证[/font][/b]
 
 
-[b]关隘名称[/b]
-
-[b]嘉靖本（识典NA11011）[/b]：卞喜所守之关作「沂水关」
-[b]嘉靖本（国学导航CADAL02111749）[/b]：亦作「沂水关」
-[b]叶逢春本（志传系）[/b]：作「汜水关」
-[b]毛本（第27回）[/b]：正文、注文均作「沂水关」，但注文的地理解释（「汉置成皋县……今开封府沂水县」）实际描述的是汜水关的地理，内部自相矛盾
-[b]第77回（玉泉山显圣）[/b]：所有版本均作「汜水关」，普净再次出现于此
-
-[b]学界定论[/b]：演义各本第27回「沂水关」均为讹误，正确应是「汜水关」（今河南荥阳西）。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]关隘名称[/font][/b]
 
 
-[b]嘉靖本两种数字化文本的差异[/b]
+[color=#000000]嘉靖本（识典NA11011）[/color]：卞喜所守之关作「沂水关」
+[color=#000000]嘉靖本（国学导航CADAL02111749）[/color]：亦作「沂水关」
+[color=#000000]叶逢春本（志传系）[/color]：作「汜水关」
+[color=#000000]毛本（第27回）[/color]：正文、注文均作「沂水关」，但注文的地理解释（「汉置成皋县……今开封府沂水县」）实际描述的是汜水关的地理，内部自相矛盾
+[color=#000000]第77回（玉泉山显圣）[/color]：所有版本均作「汜水关」，普净再次出现于此
+
+[color=#000000]学界定论[/color]：演义各本第27回「沂水关」均为讹误，正确应是「汜水关」（今河南荥阳西）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]嘉靖本两种数字化文本的差异[/font][/b]
+
 
 识典NA11011与国学导航CADAL02111749均声称对应嘉靖壬午本，但两者存在实质差异，说明底本不同或数字化处理有别：
 
-[b]1. 批注标签（NA11011特有）[/b]
+[color=#000000]1. 批注标签（NA11011特有）[/color]
 NA11011有「释义」「补注」「考证」等批注性标签穿插正文：
-- 「釋義把關將并州人氏，姓卞名喜……後投曹操，[b]揆來守關[/b]」
-- 「補注：早有人報去，却説關公殺了韓福」
-- 「考證：卞喜尋思一計，就關前有座寺……」
+
+[indent]•  「釋義把關將并州人氏，姓卞名喜……後投曹操，[color=#000000]揆來守關[/color]」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  「補注：早有人報去，却説關公殺了韓福」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  「考證：卞喜尋思一計，就關前有座寺……」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 国学导航版本无任何此类标注，叙事连续流畅。
 
-[b]2. 守关字差[/b]
-- NA11011：「揆來守關」
-- 国学导航：「拨来守把关口」（后附：「黄巾降者多，话中无用，多不载」——NA11011无此句）
+[color=#000000]2. 守关字差[/color]
 
-[b]3. 段落前的诗（NA11011有，国学导航无）[/b]
+[indent]•  NA11011：「揆來守關」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  国学导航：「拨来守把关口」（后附：「黄巾降者多，话中无用，多不载」——NA11011无此句）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]3. 段落前的诗（NA11011有，国学导航无）[/color]
 NA11011在卞喜出场前有诗：「久歷驅馳心越壯。關雲長五關斬將，連誅六將，大經挫折膽偏雄。」国学导航无此诗。
 
-[b]4. 关公质问卞喜的措辞[/b]
-- NA11011：「是好意也？是歹意也」（用「也」）
-- 国学导航：「是好意耶？是歹意耶」（用「耶」）
-- 毛本：「是好意，还是歹意」（白话化处理）
+[color=#000000]4. 关公质问卞喜的措辞[/color]
 
-[b]5. 关公窥见刀斧手后语序[/b]
-- NA11011：「關公於壁衣中窺望，見一群刀斧手，關公大喝，卞喜曰：吾以汝爲好人，安敢如此！」（语序略混，大喝的主语不清）
-- 国学导航：「关公于壁衣中窥见一群刀斧手，公大喝卞喜曰："吾以汝为好人，安敢如此！"」（更清晰，「大喝卞喜」明确是关公在喝斥）
-
-[b]6. 普净动作描写[/b]
-- NA11011：「以手携挈戒刀，以目顾盻」
-- 国学导航：「以手携拿戒刀，以目顾盼」
-- 毛本：「以手举所佩戒刀，以目视关公」
-
-[b]7. 韩福身份辨析注（国学导航特有）[/b]
-国学导航在卞喜出场前有：「这韩福不是冀州韩馥。韩馥在那张邈处，心疑刎死。这个是纳粮买官的。」NA11011无此注释。
-
-[b]8. 「真天人也」[/b]
-- 国学导航：「班见了，大惊曰："真天人也！"」
-- NA11011：「班見了大驚，語言頗高」（无「真天人也」）
-- 毛本：「班见了，大惊，失手将灯烛落于地下，喝："真天人也！"」（毛本扩写更戏剧）
-
-[b]9. 普净离去时的「后有相见处」[/b]
-- 国学导航：「这僧后来有相见处」（提前预告第77回再见）
-- NA11011：「後會有期，將軍保重」（改为对白，无预告）
-- 毛本：无「相见处」预告，但毛宗岗批注补充说明
+[indent]•  NA11011：「是好意也？是歹意也」（用「也」）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  国学导航：「是好意耶？是歹意耶」（用「耶」）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：「是好意，还是歹意」（白话化处理）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]与毛本的整体对比[/b]
+[color=#000000]5. 关公窥见刀斧手后语序[/color]
+
+[indent]•  NA11011：「關公於壁衣中窺望，見一群刀斧手，關公大喝，卞喜曰：吾以汝爲好人，安敢如此！」（语序略混，大喝的主语不清）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  国学导航：「关公于壁衣中窥见一群刀斧手，公大喝卞喜曰："吾以汝为好人，安敢如此！"」（更清晰，「大喝卞喜」明确是关公在喝斥）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]6. 普净动作描写[/color]
+
+[indent]•  NA11011：「以手携挈戒刀，以目顾盻」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  国学导航：「以手携拿戒刀，以目顾盼」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：「以手举所佩戒刀，以目视关公」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]7. 韩福身份辨析注（国学导航特有）[/color]
+国学导航在卞喜出场前有：「这韩福不是冀州[color=#0066FF][url={"research": "韩馥", "cat": "people"}]韩馥[/url][/color]。韩馥在那[color=#0066FF][url={"research": "张邈", "cat": "people"}]张邈[/url][/color]处，心疑刎死。这个是纳粮买官的。」NA11011无此注释。
+
+[color=#000000]8. 「真天人也」[/color]
+
+[indent]•  国学导航：「班见了，大惊曰："真天人也！"」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  NA11011：「班見了大驚，語言頗高」（无「真天人也」）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：「班见了，大惊，失手将灯烛落于地下，喝："真天人也！"」（毛本扩写更戏剧）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]9. 普净离去时的「后有相见处」[/color]
+
+[indent]•  国学导航：「这僧后来有相见处」（提前预告第77回再见）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  NA11011：「後會有期，將軍保重」（改为对白，无预告）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：无「相见处」预告，但毛宗岗批注补充说明[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]与毛本的整体对比[/font][/b]
+
 
 毛本第27回对嘉靖本卞喜段落进行了白话化处理和戏剧强化，主要改动：
-1. 「耶/也」→白话「是……还是」
-2. 增加[color=#6699FF][url={"research": "胡班", "cat": "people"}]胡班[/url][/color]「失手将灯烛落于地下」的细节（戏剧效果）
-3. 「天人」的感叹语整合进动作描写
-4. 删去批注性文字（「释义/补注/考证」），使叙事更流畅
-5. 韩福身份辨析注仍存（国学导航有，毛本亦有）
+
+[indent]1.  「耶/也」→白话「是……还是」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  增加[color=#0066FF][url={"research": "胡班", "cat": "people"}]胡班[/url][/color]「失手将灯烛落于地下」的细节（戏剧效果）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  「天人」的感叹语整合进动作描写[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  删去批注性文字（「释义/补注/考证」），使叙事更流畅[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  韩福身份辨析注仍存（国学导航有，毛本亦有）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价与艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]历代评价[/font][/b]
+
+
+卞喜为纯粹演义虚构人物，正史无载，亦无历代史家对其专项评价。唯一见诸文字的评论来自：
+
+[color=#000000]毛宗岗批语（第27回）：[/color]
+
+[indent][color=#666666]┃ 廖化是强盗余党，卞喜亦是强盗余党。乃既做官之强盗，反不若未做官之强盗能识好人也。[/color][/indent]
+
+
+此批语揭示了卞喜与廖化的道德对比：廖化落草仍能识别忠义；卞喜已做官却反以官权谋害忠义之人。
+
+另有回末评语（通过普净-卞喜场景暗示）：
+
+[indent][color=#666666]┃ 要在佛地上杀好人是真强盗，能在佛地上杀歹人是真菩萨。[/color][/indent]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏形象[/font][/b]
+
+
+[b]三国杀（上线 2022-09-01）[/b]
+
+
+[indent]•  [color=#000000]编号：[/color] WEI160（魏势力）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]称号：[/color] 伏龛蛇影[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]技能钝袭：[/color] 使用伤害牌时令目标获得「钝」标记；有「钝」标记的角色使用牌后目标被随机更改，若随机与原目标相同则该角色失去1点体力并结束出牌阶段[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]皮肤：[/color] 3款——原画（君桓文化，2022/09/01）、史诗「夺关袭寨」（游歌，2023/07/08）、传说（凡果_那件衬衫，2023/07/22）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]分包：[/color] SP千里单骑（含仿宴鸿门技能）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b]光荣三国志14（2020）[/b]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]56[/cell]
+[cell]70[/cell]
+[cell]62[/cell]
+[cell]37[/cell]
+[cell]24[/cell]
+[/table]
+
+
+[indent]•  个性：功名、惊慌[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  主义：我道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：连弩、谩骂[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  阵形：鱼鳞、雁行[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  政策：强化雁行（3级）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b]光荣三国志8重制版（2024）[/b]
+
+
+[table=7]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]性格[/b][/cell]
+[cell][b]义理[/b][/cell]
+[cell]52[/cell]
+[cell]70[/cell]
+[cell]57[/cell]
+[cell]32[/cell]
+[cell]24[/cell]
+[cell]温和[/cell]
+[cell]2[/cell]
+[/table]
+
+
+[indent]•  奇才：奇兵（伏兵状态下移动无惩罚）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：步将1、膂力1、果敢1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b]光荣ROTK历代出场[/b]
+
+
+ROTK V / VI / VII / IX~X / XI / XIV 均有画像与武将出场。
+
+
+[b]真三国无双（Dynasty Warriors）系列[/b]
+
+
+[indent]•  DW4（2003）：首次独立出场，守汜水关/沂水关，关羽过关斩将第三关守将[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  DW5（2004）：出场于关羽逃脱关卡；[color=#0066FF][url={"research": "黄巾之乱", "cat": "events"}]黄巾之乱[/url][/color]中作为[color=#0066FF][url={"research": "张梁", "cat": "people"}]张梁[/url][/color]副将[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  DW6：出场[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  DW7：吴国故事线「区星之乱」及魏国故事线「[color=#0066FF][url={"research": "汉中之战", "cat": "events"}]汉中之战[/url][/color]」均有出场[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
+
+
+[indent]•  [color=#000000]2011年电影《关云长》：[/color] 余皑磊饰卞喜（第三关沂水关守将）。与演义的寺庙设伏版本不同，电影改为正面直接开战[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]漫画形象[/font][/b]
+
+
+[indent]•  [color=#000000]横山光辉《三国志》：[/color] 有出场，以流星锤与关羽激战，最终被关羽斩断首级[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]

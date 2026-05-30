@@ -10,7 +10,7 @@ func effect_20033_start():
 	var wf = DataManager.get_current_war_fight()
 	if not me.get_day_attacked_actors(wf.date).empty():
 		var msg = "已进行过攻击\n不能发动"
-		play_dialog(me.actorId, msg, 3, 2009)
+		play_dialog(actorId, msg, 3, 2009)
 		return
 	var targets = []
 	for targetId in get_enemy_targets(me, true):
@@ -37,7 +37,7 @@ func effect_20033_2():
 		actor.get_name(), me.get_five_phases_str() + me.get_poker_point_str(),
 		targetActor.get_name(), ske.skill_name
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001():
@@ -69,11 +69,11 @@ func effect_20033_4():
 		ske.set_war_buff(ske.skill_actorId, "禁止攻击移动", 1)
 		var msg = "夺锐未能成功！\n（{0}本日无法移动或攻击".format([actor.get_name()])
 		ske.war_report()
-		play_dialog(me.actorId, msg, 3, 2009)
+		play_dialog(actorId, msg, 3, 2009)
 		return
 	var targetActor = ActorHelper.actor(targetId)
 	var msg = "夺取{0}哪个技能？".format([targetActor.get_name()])
-	play_dialog(me.actorId, msg, 2, 2003)
+	play_dialog(actorId, msg, 2, 2003)
 	var items = []
 	for skillName in SkillHelper.get_actor_skill_names(targetId):
 		items.append(skillName)
@@ -89,7 +89,7 @@ func effect_20033_5():
 	var skill = get_env_str("目标项")
 	#对手失去该技能
 	if not ske.ban_war_skill(targetId, skill, 1):
-		play_dialog(me.actorId, "【{0}】不可夺取！".format([skill]), 2, 2009)
+		play_dialog(actorId, "【{0}】不可夺取！".format([skill]), 2, 2009)
 		return
 	#自己获得选中的技能
 	ske.add_war_skill(ske.skill_actorId, skill, 1)

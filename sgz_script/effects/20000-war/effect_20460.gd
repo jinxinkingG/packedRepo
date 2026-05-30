@@ -62,7 +62,7 @@ func effect_20460_3():
 	var msg = "{0}迫近，刀斧手齐上！".format([
 		ActorHelper.actor(targetId).get_name(),
 	])
-	play_dialog(me.actorId, msg, 0, 2002)
+	play_dialog(actorId, msg, 0, 2002)
 	return
 
 func on_view_model_2002():

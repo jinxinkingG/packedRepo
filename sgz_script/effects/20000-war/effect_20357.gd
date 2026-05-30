@@ -41,7 +41,7 @@ func effect_20357_2():
 	var msg = "以自身迟滞为代价\n令{0}回营\n可否？".format([
 		targetActor.get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 # 执行

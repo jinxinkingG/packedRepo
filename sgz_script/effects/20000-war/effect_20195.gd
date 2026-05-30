@@ -29,7 +29,7 @@ func effect_20195_start():
 		var msg = "没有合适的目标\n无法发动【{0}】".format([
 			ske.skill_name
 		])
-		play_dialog(me.actorId, msg, 2, 2009)
+		play_dialog(actorId, msg, 2, 2009)
 		return
 
 	var msg = "选择一名友军\n发动【{0}】".format([
@@ -64,14 +64,14 @@ func effect_20195_3():
 		var msg = "{1}与{2}机动力相同\n何须【{0}】？".format([
 			ske.skill_name, firstWA.get_name(), secondWA.get_name(),
 		])
-		play_dialog(me.actorId, msg, 2, 2009)
+		play_dialog(actorId, msg, 2, 2009)
 		return
 		
 	var msg = "【{0}】{1}与{2}\n交换机动力（{3}<->{4}）\n可否？".format([
 		ske.skill_name, firstWA.get_name(), secondWA.get_name(),
 		firstWA.action_point, secondWA.action_point,
 	])
-	play_dialog(me.actorId, msg, 2, 2002, true)
+	play_dialog(actorId, msg, 2, 2002, true)
 	return
 
 func effect_20195_4():
@@ -90,5 +90,5 @@ func effect_20195_4():
 	ske.war_report()
 
 	var msg = "人主之道，静退以为宝"
-	play_dialog(me.actorId, msg, 2, 2009)
+	play_dialog(actorId, msg, 2, 2009)
 	return

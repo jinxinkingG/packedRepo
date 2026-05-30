@@ -24,7 +24,7 @@ func effect_20376_2():
 	var msg = "已将支援目标设定为{0}".format([
 		ActorHelper.actor(targetId).get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2999)
+	play_dialog(actorId, msg, 2, 2999)
 	map.next_shrink_actors = [targetId, me.actorId]
 	return
 

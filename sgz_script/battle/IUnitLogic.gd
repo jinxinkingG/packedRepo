@@ -227,6 +227,8 @@ func _action_throw(unit:Battle_Unit,taunt:Array=[])->Dictionary:
 
 	#获取攻击和投掷距离
 	var meleeDistance = unit.get_attack_distance()
+	var throwFrom = unit.get_throw_from()
+	throwFrom = int(max(throwFrom, meleeDistance))
 	var throwDistance = unit.get_throw_distance()
 	var throwType = unit.get_throw_type()
 	var throwTargetTypes = unit.get_throw_target_types()
@@ -236,7 +238,9 @@ func _action_throw(unit:Battle_Unit,taunt:Array=[])->Dictionary:
 
 	#默认70%投掷
 	var throwRate = 70
-	if state in ["待机"]:
+	if meleeDistance < 1:
+		throwRate = 100
+	elif state in ["待机"]:
 		throwRate = 100
 
 	#不投掷，跳出
@@ -281,7 +285,7 @@ func _action_throw(unit:Battle_Unit,taunt:Array=[])->Dictionary:
 			# 跳过纵向的城门单位
 			if int(directions[dir].x) == 0 and target.Type == "城门":
 				continue
-			if i < meleeDistance:
+			if i < throwFrom:
 				# 目标在近身攻击范围内
 				# 注意这里的检查不能提前，因为要判断障碍物
 				continue

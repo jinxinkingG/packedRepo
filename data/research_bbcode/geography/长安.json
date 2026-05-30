@@ -1,295 +1,530 @@
-[b]长安（西京）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]长安（西京）[/font][/b]
 
 
-[b]位置：[/b] 今陕西省西安市西北郊，渭河南岸
-[b]类型：[/b] 都城（西汉首都 / 汉末实际都城 / 曹魏五都之一）
+[color=#000000]位置：[/color] 今陕西省西安市西北郊，渭河南岸
+[color=#000000]类型：[/color] 都城（西汉首都 / 汉末实际都城 / 曹魏五都之一）
 
 
-[b]地理考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]城市形态[/b]
-
-汉长安城建于西汉高帝五年（前202年），惠帝元年（前194年）修筑城墙。城墙以夯土筑成，周长约25700米，面积约36平方千米。城廓近方形（南墙因迁就先建宫殿有曲折），共12座城门（各面墙各3座），每座城门均为一门三道（各宽约6米）。
-
-城内宫殿区占全城面积约2/3以上：
-- [b]未央宫[/b]（西南）：皇宫，前殿、椒房殿为核心，东西2250米，南北2150米
-- [b]长乐宫[/b]（东南）：惠帝以后为太后所居，面积约6平方千米
-- [b]桂宫[/b]（未央宫北）：南北1840余米，东西900米
-- [b]北宫[/b]（未央宫北偏东）：南北1710米
-- [b]武库[/b]（未央宫与长乐宫之间）
-
-城市水系：城内用井水为主，未央宫沧池通过明渠供水；排水经城门涵洞入壕沟，再北注渭河。城外有宽40—45米、深约3米的城壕。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]地理考证[/font][/b]
 
 
-[b]东汉时期[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]城市形态[/font][/b]
+
+
+汉长安城建于西汉高帝五年（前202年），惠帝元年（前194年）修筑城墙。城墙以夯土筑成，高12米，基座宽12—16米，城壕宽8米、深3米。
+
+[color=#000000]城墙尺寸（考古实测）：[/color]
+
+
+[table=2]
+[cell][b]段[/b][/cell]
+[cell][b]长度[/b][/cell]
+[cell]东墙[/cell]
+[cell]6,000米[/cell]
+[cell]西墙[/cell]
+[cell]4,900米[/cell]
+[cell]南墙[/cell]
+[cell]7,600米（最长）[/cell]
+[cell]北墙[/cell]
+[cell]7,200米[/cell]
+[cell]合计[/cell]
+[cell]约25,700米[/cell]
+[/table]
+
+
+城内面积约36平方公里，因以秦兴乐宫为始营建，遵循秦制坐西朝东，平面因周边地理影响呈不规则方形，南墙曲折形如南斗、北墙曲折如北斗，又称"斗城"。
+
+[color=#000000]城门12座（四面各3座）：[/color]
+
+
+[table=2]
+[cell][b]方向[/b][/cell]
+[cell][b]城门（自北至南 / 自东至西）[/b][/cell]
+[cell]东侧[/cell]
+[cell]宣平门、清明门、霸城门（正门，含门阙）[/cell]
+[cell]北侧[/cell]
+[cell]横门、厨城门、杜门（利城门/洛城门）[/cell]
+[cell]南侧[/cell]
+[cell]覆盎门（下杜门）、安门、西安门[/cell]
+[cell]西侧[/cell]
+[cell]直城门、章城门、雍门[/cell]
+[/table]
+
+
+每座城门有三个门道，门道宽约8米（四个车轨间距）。
+
+[color=#000000]主要街道8条：[/color] 华阳街、香室街、章台街（安门大街，5,500米，全城最长）、夕阴街、尚冠街、太常街、藁街、前街。道路宽约45米，以水沟分为三股：中央御道宽20米（皇帝专用），两侧边道各宽12米，路旁种有槐、榆、松、柏等树木。
+
+[color=#000000]城内宫殿区占全城面积约2/3以上：[/color]
+
+[indent]•  [color=#000000]未央宫[/color]（西南，面积约5平方公里）：惠帝起为皇帝朝会居所，四面各开一宫门，东门及北门外各立门阙；主殿：前殿、宣室、承明殿；有复道连接建章宫、长乐宫[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]长乐宫[/color]（东南，周长约1万余米）：最早兴建（秦代兴乐宫改建），汉初皇帝居所，惠帝后为太后居所；主殿：前殿、长秋殿；有复道连接未央宫[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]桂宫[/color]（未央宫北，南北1840余米，东西900米）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]北宫[/color]（未央宫北偏东，南北1710米）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]武库[/color]（长乐宫与未央宫之间，东西880米，南北322米，七仓库，汉高祖四年萧何营建）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+居民区160个"闾里"分布在城北，"长安九市"（东市三市、西市六市）在城西北角。
+
+[color=#000000]城市水系：[/color] 城内用井水为主，未央宫沧池通过明渠供水；排水经城门涵洞入壕沟，再北注渭河。
+
+[color=#000000]人口（西汉末年）：[/color]
+
+[indent]•  元始二年（公元2年）：城内户籍8.8万户、24.6万人[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  京兆尹辖区：约19.57万户、68.25万人[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  含城郊总计约40万人（与同时期罗马城体量相当）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]东汉时期[/font][/b]
+
 
 东汉以洛阳为都，以长安为西京（陪都），设京兆尹管辖关中三辅。东汉皇帝多次来长安谒陵并修缮宫室：
 
 
-[b]年份[/b] | [b]皇帝[/b] | [b]修缮内容[/b]
-建武十八年（42年） | 光武帝 | 新建大驾宫、六王邸、高车厩；修葺西京宫室
-建武十九年（43年） | 光武帝 | 在泾河、渭河上架桥，修缮离宫
-永和二年（137年） | 汉顺帝 | 巡幸长安，对未央宫部分修复
-延熹二年（159年） | 汉桓帝 | 对未央宫进行修葺
+[table=3]
+[cell][b]年份[/b][/cell]
+[cell][b]皇帝[/b][/cell]
+[cell][b]修缮内容[/b][/cell]
+[cell]建武十八年（42年）[/cell]
+[cell]光武帝[/cell]
+[cell]新建大驾宫、六王邸、高车厩；修葺西京宫室[/cell]
+[cell]建武十九年（43年）[/cell]
+[cell]光武帝[/cell]
+[cell]在泾河、渭河上架桥，修缮离宫[/cell]
+[cell]永和二年（137年）[/cell]
+[cell]汉顺帝[/cell]
+[cell]巡幸长安，对未央宫部分修复[/cell]
+[cell]延熹二年（159年）[/cell]
+[cell]汉桓帝[/cell]
+[cell]对未央宫进行修葺[/cell]
+[/table]
 
 
 东汉修缮规模均有限，长安从未恢复全盛状态，城内宫殿区长期处于"部分可用"状态。
 
 
-[b]汉末的宫殿损毁时序[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]汉末的宫殿损毁时序[/font][/b]
+
 
 宫殿损毁与修复有明确的历史层次：
 
-[b]一、赤眉之乱前后（公元23—24年）[/b]
-- 更始军（刘玄军）攻入长安，火烧未央宫
-- 赤眉军再度焚毁，宫室庙寺"焚灭无余"
-- 此后"唯有高庙、京兆府舍"——其余宫殿均已废弃
+[color=#000000]一、赤眉之乱前后（公元23—24年）[/color]
 
-[b]二、东汉修缮（42—159年）[/b]
-- 光武帝至桓帝共三次修缮，但属"局部修缮"性质
-- 至[color=#6699FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]迁都前，未央宫可供皇帝驻跸，但其余宫殿（长乐宫、桂宫等）损毁状况尚不明确
-
-[b]三、董卓迁都时期（190年，初平元年）[/b]
-- 190年春：献帝入长安，[b]初居京兆府舍[/b]（《后汉书·董卓传》："长安遭赤眉之乱，宫室庙寺焚灭无余，是时唯有高庙、京兆府舍，遂便时幸焉。[b]后移末央宫[/b]。"）
-- 190年夏至191年：宫殿修缮完毕，献帝移入未央宫（《后汉书·献帝纪》："三月乙巳，车驾入长安，幸未央宫"——指最终入住）
-- 董卓在长安期间：销毁铜人等秦汉彝器及五铢钱，铸小钱，通货膨胀
-
-[b]四、[color=#6699FF][url={"research": "王允", "cat": "people"}]王允[/url][/color]诛卓后的战乱（初平三年，192年）[/b]
-- 王允联合[color=#6699FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]诛董卓后，李傕、[color=#6699FF][url={"research": "郭汜", "cat": "people"}]郭汜[/url][/color]率兵攻入长安——城内爆发激烈战斗
-- 未央宫[b]再次严重破坏[/b]（《未央宫历史沿革》）
-- 但李傕掌权后立即启动修缮：史书有明确记载，考古物证目前无学术支撑（"193—195年新夯土层"说法仅见自媒体，无正式报告，详见 `ref-lique-repair-details.md`）
-
-[b]五、李郭互斗（兴平二年，195年）[/b]
-- 李傕与郭汜在城内互相火并，长安宫殿、官署、民宅再度焚毁
-- 献帝六月东迁，"城空40余日，二三年间关中无复人迹"（陕西省地方志）
+[indent]•  更始军（刘玄军）攻入长安，火烧未央宫[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  赤眉军再度焚毁，宫室庙寺"焚灭无余"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  此后"唯有高庙、京兆府舍"——其余宫殿均已废弃[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]曹魏时期长安城（220—265年）[/b]
+[color=#000000]二、东汉修缮（42—159年）[/color]
 
-曹魏建国后，长安列为"五都"之一（黄初二年，221年），但[b]实际城市建设投入极小[/b]：
-
-[b]行政建制变化（《西安市地方志》）：[/b]
-- 黄初元年（220年）：改京兆尹为京兆郡
-- 黄初二年（221年）：封曹礼为秦公，改为秦国
-- 黄初三年（222年）：改为京兆国
-- 黄初六年（225年）：复为京兆郡
-- 青龙三年（235年）：封曹洵为秦王，改京兆郡为秦国
-- 正始五年（244年）：改回京兆郡
-
-[b]景初元年（237年）铜人事件：[/b]
-[color=#AAAAAA]　拆除长安被董卓销毁剩余的秦代钟虡、铜驼、铜人和汉建章宫承露盘，运往洛阳。因铜人重不可致，半路留在霸城（今铜人原）。[/color]
-
-此举具有明确象征意义：[color=#6699FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]将长安视为"旧汉遗迹的储藏库"，服务于洛阳的象征性建设，而非将长安作为独立营建对象。[color=#6699FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]曾评论铜人不至一事（《晋书》）。
-
-[b]综合判断：[/b] 曹魏220—265年间，长安[b]无大规模宫室兴建记录[/b]。城市布局依托汉代道路骨架与残存设施，主要功能为军事指挥和行政管理中心（雍州州治）。南部宫殿区（未央宫、长乐宫一带）在195年后长期处于废置状态，考古资料（张建锋2025）确认宫殿区在东汉以后逐渐沦为居民区。
-
-[b]2025年考古进展（明光宫区域）：[/b]
-中国社会科学院考古研究所2025年度汇报（2026年1月发布，王玥助理研究员）：汉长安城"明光宫"区域二号建筑遗址新发现地下房址F1——[b]室内东西7.05米、南北7.1米、深2.1米[/b]，内有小型方形水池（上口2.46×2.16~2.28米、深0.66米），池内底部夹杂西汉瓦当残片；填土8层，含2座屈肢墓葬，水池周围34个坑洞。F1各期使用均在汉代范围内，初始功能为储藏室。建筑整体规格较高（多处上殿通道+卵石散水+地下附属设施），推断为[b]礼仪性宗庙建筑[/b]。重要结论：[b]以发掘结果来看，暂时无法证明此建筑与汉代"明光宫"有关[/b]。此次考古仍在西汉层位，三国/曹魏层位不构成独立研究单元——再次确认已有判断：曹魏长安无建设活动，三国层位难以独立分期。详见 `ref-mingguanggong-2025-detail.md`。
+[indent]•  光武帝至桓帝共三次修缮，但属"局部修缮"性质[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  至[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]迁都前，未央宫可供皇帝驻跸，但其余宫殿（长乐宫、桂宫等）损毁状况尚不明确[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]战略地位[/b]
+[color=#000000]三、董卓迁都时期（190年，初平元年）[/color]
+
+[indent]•  190年春：献帝入长安，[color=#000000]初居京兆府舍[/color]（《后汉书·董卓传》："长安遭赤眉之乱，宫室庙寺焚灭无余，是时唯有高庙、京兆府舍，遂便时幸焉。[color=#000000]后移末央宫[/color]。"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  190年夏至191年：宫殿修缮完毕，献帝移入未央宫[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  董卓在长安期间：销毁铜人等秦汉彝器及五铢钱，铸小钱，通货膨胀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关中枢纽[/b]
+[color=#000000]四、[color=#0066FF][url={"research": "王允", "cat": "people"}]王允[/url][/color]诛卓后的战乱（初平三年，192年）[/color]
 
-长安位于渭河平原中心，扼守关中盆地，四面有[color=#6699FF][url={"research": "函谷关", "cat": "geography"}]函谷关[/url][/color]（东）、[color=#6699FF][url={"research": "潼关", "cat": "geography"}]潼关[/url][/color]（东南）、武关（东南）、散关（西南）、萧关（西北）等天险守护，历来为控制西北的战略要地。
+[indent]•  王允联合[color=#0066FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]诛董卓后，[color=#0066FF][url={"research": "李傕", "cat": "people"}]李傕[/url][/color]、[color=#0066FF][url={"research": "郭汜", "cat": "people"}]郭汜[/url][/color]率兵攻入长安——城内爆发激烈战斗[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  未央宫[color=#000000]再次严重破坏[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  但李傕掌权后立即启动修缮（史书有明确记载，考古物证目前无学术支撑——"193—195年新夯土层"说法仅见自媒体，无正式报告，详见 `ref-lique-repair-details.md`）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]汉末：帝都的象征与重量[/b]
+[color=#000000]五、李郭互斗（兴平二年，195年）[/color]
+
+[indent]•  李傕与郭汜在城内互相火并，长安宫殿、官署、民宅再度焚毁[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  献帝六月东迁，"城空40余日，二三年间关中无复人迹"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹魏时期长安城（220—265年）[/font][/b]
+
+
+曹魏建国后，长安列为"五都"之一（黄初二年，221年），但[color=#000000]实际城市建设投入极小[/color]：
+
+[color=#000000]行政建制变化（《西安市地方志》）：[/color]
+
+[indent]•  黄初元年（220年）：改京兆尹为京兆郡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  黄初二年（221年）：封曹礼为秦公，改为秦国[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  黄初三年（222年）：改为京兆国[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  黄初六年（225年）：复为京兆郡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  青龙三年（235年）：封曹洵为秦王，改京兆郡为秦国[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  正始五年（244年）：改回京兆郡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]曹魏在原长安城东北部建设了新宫（楼阁台一带）：[/color]
+考古工作在宣平门北发现了东西两宫遗迹，每边长约1,000米。"讲武殿"则有可能是宫殿正武殿的遗迹（据维基"汉长安城"条目）。
+
+[color=#000000]景初元年（237年）铜人事件：[/color]
+
+[indent][color=#666666]┃ 拆除长安被董卓销毁剩余的秦代钟虡、铜驼、铜人和汉建章宫承露盘，运往洛阳。因铜人重不可致，半路留在霸城（今铜人原）。[/color][/indent]
+
+
+此举具有明确象征意义：[color=#0066FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]将长安视为"旧汉遗迹的储藏库"，服务于洛阳的象征性建设，而非将长安作为独立营建对象。
+
+[color=#000000]综合判断：[/color] 曹魏220—265年间，长安[color=#000000]无大规模宫室兴建记录[/color]。城市布局依托汉代道路骨架与残存设施，主要功能为军事指挥和行政管理中心（雍州州治）。考古资料（张建锋2025）确认宫殿区在东汉以后逐渐沦为居民区。
+
+[color=#000000]2025年考古进展（明光宫区域）：[/color]
+中国社会科学院考古研究所2025年度汇报（2026年1月发布）：汉长安城"明光宫"区域二号建筑遗址新发现地下房址F1——室内东西7.05米、南北7.1米、深2.1米，内有小型方形水池（上口2.46×2.16~2.28米、深0.66米），初始功能推断为礼仪性宗庙建筑储藏室。[color=#000000]以发掘结果来看，暂无法证明与汉代"明光宫"有关。[/color] 此次考古仍在西汉层位，三国/曹魏层位不构成独立研究单元——再次确认曹魏长安无建设活动，三国层位难以独立分期。详见 `ref-mingguanggong-2025-detail.md`。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]战略地位[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]关中枢纽[/font][/b]
+
+
+长安位于渭河平原中心，扼守关中盆地，四面有[color=#0066FF][url={"research": "函谷关", "cat": "geography"}]函谷关[/url][/color]（东）、[color=#0066FF][url={"research": "潼关", "cat": "geography"}]潼关[/url][/color]（东南）、武关（东南）、散关（西南）、萧关（西北）等天险守护，历来为控制西北的战略要地。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]汉末：帝都的象征与重量[/font][/b]
+
 
 190年迁都时，长安作为西汉旧都，具有比洛阳更古老的政治象征意义。但此时长安宫室已不完整（赤眉之乱后只剩高庙与京兆府舍），须重新修缮。
 
 
-[b]长安献帝朝廷的地方控制力（190—195年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]长安献帝朝廷的地方控制力（190—195年）[/font][/b]
 
-长期被低估的一点是：[b]迁都长安的五年内，献帝朝廷仍具有相当的地方控制力[/b]（章义和、韩旭，华东师范大学/郑州大学，2025年研究）。
 
-[b]两个核心机制：[/b]
+长期被低估的一点是：[color=#000000]迁都长安的五年内，献帝朝廷仍具有相当的地方控制力[/color]（章义和、韩旭，华东师范大学/郑州大学，2025年研究）。
 
-[b]① 信息基础——王允携书[/b]
+[color=#000000]两个核心机制：[/color]
+
+[color=#000000]① 信息基础——王允携书[/color]
 迁都时，王允主动收敛兰台、石室所藏图书秘纬约70余乘（路上弃半），使长安朝廷保留了各地疆域、官吏、赋役等档案信息。这批典籍在王允死后仍存长安，献帝东迁时随乘舆带走，最终于195年弘农遭李傕郭汜劫掠时毁失。
 
-[b]② 联络路径——奉贡封赏[/b]
+[color=#000000]② 联络路径——奉贡封赏[/color]
 尽管道路阻隔，地方官员以"夜行昼伏"等方式维持与中央联络。典型案例：
-- [color=#6699FF][url={"research": "陶谦", "cat": "people"}]陶谦[/url][/color]（徐州）每遣使"间行奉贡西京"→ 封徐州牧、安东将军、溧阳侯
-- [color=#6699FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]（荆州）遣使奉贡 → 封镇南将军、荆州牧、成武侯
-- [color=#6699FF][url={"research": "士燮", "cat": "people"}]士燮[/url][/color]（交州）遣使奉贡 → 封安远将军、龙度亭侯
-- 刘虞（[color=#6699FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]）奉职修贡，连胡汉贡物亦代为转运
 
-[b]结论：[/b] "奉贡—封赏"模式是汉末长安献帝朝廷维系合法性的核心机制——地方实力派以奉贡换取正式任命（法统），朝廷以封赏维持名义统治。对双方均有利可图，使献帝朝廷在极度弱势的情况下仍延续了近五年。
-
-
-[b]三国曹魏：对蜀前线大本营[/b]
-
-黄初以后，长安列为曹魏"五都"之一（东西两翼：[color=#6699FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]为"[color=#6699FF][url={"research": "王业", "cat": "people"}]王业[/url][/color]之本基"，长安为"西京之遗迹"）。军事上，长安是曹魏应对[color=#6699FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]、[color=#6699FF][url={"research": "姜维北伐", "cat": "events"}]姜维北伐[/url][/color]的雍梁二州军事指挥中心，也是关中粮仓与补给线枢纽。
+[indent]•  [color=#0066FF][url={"research": "陶谦", "cat": "people"}]陶谦[/url][/color]（徐州）每遣使"间行奉贡西京"→ 封徐州牧、安东将军、溧阳侯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]（荆州）遣使奉贡 → 封镇南将军、荆州牧、成武侯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "士燮", "cat": "people"}]士燮[/url][/color]（交州）遣使奉贡 → 封安远将军、龙度亭侯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "刘虞", "cat": "people"}]刘虞[/url][/color]（[color=#0066FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]）奉职修贡，连胡汉贡物亦代为转运[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]重要事件[/b]
+[color=#000000]结论：[/color] "奉贡—封赏"模式是汉末长安献帝朝廷维系合法性的核心机制——地方实力派以奉贡换取正式任命（法统），朝廷以封赏维持名义统治。对双方均有利可图，使献帝朝廷在极度弱势的情况下仍延续了近五年。
 
 
-[b]一、迁都长安（初平元年，190年）[/b]
-
-[b]史料（《三国志·魏书·董卓传》）：[/b]
-[color=#AAAAAA]　初平元年二月，乃徙天子都长安，焚烧洛阳宫室，悉发掘陵墓，取宝物。[/color]
-
-[b]《后汉书》：[/b]
-[color=#AAAAAA]　丁亥，迁都长安。董卓驱徙京师百姓悉西入关……己酉，董卓焚洛阳宫庙及人家。[/color]
-
-- 迁都规模：驱赶"百姓数百万口"，途中死伤无数
-- [b]献帝最初居京兆尹府舍，后移至未央宫[/b]（《后汉书·董卓传》：初，长安遭赤眉之乱，宫室庙寺焚灭无余，是时唯有高庙、京兆府舍，遂便时幸焉。后移末央宫。）
-- 董卓销毁铜人等秦汉宫廷彝器及五铢钱，铸小钱，通货膨胀极剧（谷每石价至数万钱）
-- [b]王允紧急携书：[/b] 趁迁都混乱，王允从兰台、石室等府库择要收敛约70余乘图书秘纬，使长安朝廷得以保留地方信息基础（详见 `ref-献帝朝廷地方控制.md`）
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国曹魏：对蜀前线大本营[/font][/b]
 
 
-[b]二、王允诛卓与"山东抚慰"（初平三年，192年）[/b]
-
-- 192年四月：王允、[color=#6699FF][url={"research": "黄琬", "cat": "people"}]黄琬[/url][/color]联合吕布，于[b]未央宫[/b]诛杀董卓
-- [b]王允诛卓后第一件事：遣使者张种抚慰山东[/b]（《后汉书》）——表明王允掌权后将维系关东诸侯的认可视为当务之急
-- 192年六月：董卓旧部李傕、郭汜攻入长安，王允被杀，吕布逃走；李傕以车骑将军掌控朝政
-- 李傕掌权后（192年八月）：以[b]太傅马日磾[/b]为正使、[b]太仆赵岐[/b]为副使，持节出使关东
-  - 马日磾至[color=#6699FF][url={"research": "寿春", "cat": "geography"}]寿春[/url][/color]，被[color=#6699FF][url={"research": "袁术", "cat": "people"}]袁术[/url][/color]侵侮，忧愤呕血而死
-  - 赵岐至[color=#6699FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]，成功调解[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]、[color=#6699FF][url={"research": "公孙瓒", "cat": "people"}]公孙瓒[/url][/color]、[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]三方——袁绍曹操亲出数百里相迎，三方约罢兵
-
-[b]所谓"考古证据"辨析：[/b] 关于"未央宫前殿遗址下有厚约1.2米的新夯土层、碳十四测定为193—195年所筑"的说法，[b]仅见于今日头条自媒体文章，无正式学术来源[/b]（2026-04-26核查）。该文同时声称"夯土配方含3%石灰+5%碎陶粒"，并捏造了多条虚假史料（"郭汜督造玉门关烽燧"汉简、"李傕军令简"等），文章多处内容疑为AI幻觉或作者虚构。中社科院徐龙国2022年学术综述（《两汉魏晋南北朝都城建筑的发展演变》）及陕西省文物局正式报告均未提及此夯土层。[b]李傕建设活动有史书记载（《后汉书》），但具体考古物证目前无学术支撑，上述配方数据应视为杜撰。[/b]
-
-[b]192年战场情况（史料层面）：[/b] 裴松之注《三国志·董卓传》引张璠《汉纪》提供了战场关键地名，可重建动线：
-- [b]叟兵引入[/b]：吕布军中叟兵内叛，打开城门迎[color=#6699FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]军入城（《三国志·吕布传》）；《资治通鉴》记为北门
-- [b]青琐门外[/b]：吕布败退后驻马处，为未央宫宫门之一（"青琐"为汉宫门扉图案名称）
-- [b]南宫掖门[/b]：李傕郭汜入城后[b]屯驻处[/b]——未央宫区域"南宫"之掖门（侧门），位于长安城西南
-- [b]宣平城门[/b]：王允挟献帝[b]最终退守处[/b]——东墙最北门，距未央宫约4—5公里
-- 战场动线：[b]西南（未央宫/青琐门）→ 东北（宣平城门）[/b]，为全城斜向对角线
-- 献帝在宣平城门上与傕汜对话，王允被擒，事件终结
-
-考古意义：战场若要定点，未央宫南掖门区域和宣平城门区域是两个重点地带。但两处均[b]无针对192年战损层的专项考古分层研究[/b]，战损层在193—195年修缮夯土层之下，无法独立分期——[b]这是结构性考古空白，短期无突破可能[/b]。史料层面的战场动线已可基本厘清，详见 `ref-192-battle-shiliao-supplement.md`。
+黄初以后，长安列为曹魏"五都"之一（《魏略》明文："东西两翼：[color=#0066FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]为'[color=#0066FF][url={"research": "王业", "cat": "people"}]王业[/url][/color]之本基'，长安为'西京之遗迹'"）。军事上，长安是曹魏应对[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]、[color=#0066FF][url={"research": "姜维北伐", "cat": "events"}]姜维北伐[/url][/color]的雍梁二州军事指挥中心，也是关中粮仓与补给线枢纽。
 
 
-[b]三、饥荒与"人相食"（兴平元年，194年）[/b]
-
-- 三辅大旱，谷价一斛涨至50万钱
-- 《后汉书》记载长安城内"人相食啖，臭秽满路"
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]四、李郭之乱与典籍毁失（兴平二年，195年）[/b]
-
-- 兴平二年二月：李傕与郭汜互相火并，在城内交战，长安宫殿、官署、民宅再度被焚毁
-- 六月：张济由陕县来调解，献帝得以东归（即[b]献帝东迁[/b]）
-- [b]典籍毁失时间线：[/b] 献帝东迁时将兰台石室典籍随乘舆携带；途经弘农时，李傕郭汜追击，"弃御物、符策、典籍，略无所遗"（《资治通鉴》）。常说的"长安之乱"典籍被毁，实际发生地点在[b]弘农[/b]，而非长安城内
-- [b]献帝东迁后城空40余日，二三年间关中无复人迹[/b]（陕西省地方志）
+[b][font=res://resource/font/FandolSong-Bold/28.tres]重要事件[/font][/b]
 
 
-[b]五、钟繇镇守关中（建安年间，约197—211年）[/b]
-
-[b]史料（《三国志·魏书·[color=#6699FF][url={"research": "钟繇", "cat": "people"}]钟繇[/url][/color]传》）：[/b]
-
-[color=#AAAAAA]　时关中诸将[color=#6699FF][url={"research": "马腾", "cat": "people"}]马腾[/url][/color]、[color=#6699FF][url={"research": "韩遂", "cat": "people"}]韩遂[/url][/color]等，各拥强兵相与争。太祖方有事山东，以关右为忧。乃表繇以侍中守司隶校尉，持节督关中诸军，委之以后事，特使不拘科制。[b]繇至长安[/b]，移书腾、遂等，为陈祸福，腾、遂各遣子入侍。[/color]
-
-[b][color=#6699FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]时送马（建安五年，200年）：[/b]
-[color=#AAAAAA]　太祖在官渡，与袁绍相持，繇送马二千余匹给军。太祖与繇书曰："得所送马，甚应其急。关右平定，朝廷无西顾之忧，足下之勋也。[b]昔萧何镇守关中，足食成军，亦适当尔。[/b]"[/color]
-
-[b]平郭援（约建安九年，204年）：[/b]
-[color=#AAAAAA]　袁尚所置河东太守郭援到河东，众甚盛……[color=#6699FF][url={"research": "张既", "cat": "people"}]张既[/url][/color]说马腾会击援，腾遣子超将精兵逆之。援至，果轻渡汾，众止之，不从。济水未半，击，大破之，斩援，降单于。[/color]
-
-[b]徙民充实洛阳：[/b]
-[color=#AAAAAA]　自天子西迁，洛阳人民单尽；繇徙关中民，又招纳亡叛以充之，数年间民户稍实。太祖征关中，得以为资，表繇为前军师。[/color]
-
-[b]小结：[/b] 钟繇自约建安二年（197年）起，在长安驻守约15年，以"萧何之勋"稳定关中大局，是曹操一统北方不可或缺的后方支撑。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]一、迁都长安（初平元年，190年）[/font][/b]
 
 
-[b]六、曹操征关中（建安十六年，211年）[/b]
+[color=#000000]史料（《三国志·魏书·董卓传》）：[/color]
 
-- 曹操率军进抵长安，击败[color=#6699FF][url={"research": "马超", "cat": "people"}]马超[/url][/color]、韩遂于潼关—渭河一带
-- 占领关中后留[color=#6699FF][url={"research": "夏侯渊", "cat": "people"}]夏侯渊[/url][/color]屯驻长安
-- 钟繇升任前军师，结束关中任期
-- 建安十八年（213年）复设雍州（治所长安），辖京兆尹等郡
+[indent][color=#666666]┃ 初平元年二月，乃徙天子都长安，焚烧洛阳宫室，悉发掘陵墓，取宝物。[/color][/indent]
 
 
-[b]七、曹魏五都与景初拆迁（221—237年）[/b]
+[color=#000000]《后汉书》：[/color]
 
-[b]黄初二年（221年）列为五都（《魏略》，裴松之注《三国志·文帝纪》引）：[/b]
-[color=#AAAAAA]　改长安、谯、许昌、邺、洛阳为五都。[/color]
+[indent][color=#666666]┃ 丁亥，迁都长安。董卓驱徙京师百姓悉西入关……己酉，董卓焚洛阳宫庙及人家。[/color][/indent]
 
-五都中长安的地位：政治象征（彰显曹魏继承汉室法统）+ 军事实用（对抗蜀汉北伐的西部防线核心）。但[b]曹魏在长安无大规模建设记录[/b]，与洛阳（黄初元年即营建宫室）形成对比。
 
-[b]景初元年（237年），曹叡下令拆迁长安遗物：[/b]
-[color=#AAAAAA]　拆除长安被董卓销毁剩余的秦代钟虡、铜驼、铜人和汉建章宫承露盘，运往洛阳。因铜人重不可致，半路留在霸城（今铜人原）。[/color]
+[indent]•  迁都规模：驱赶"百姓数百万口"，途中死伤无数[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]献帝最初居京兆尹府舍，后修缮入住未央宫[/color]（《后汉书·董卓传》：初，长安遭赤眉之乱，宫室庙寺焚灭无余，是时唯有高庙、京兆府舍，遂便时幸焉。后移末央宫。）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  董卓销毁铜人等秦汉宫廷彝器及五铢钱，铸小钱，通货膨胀极剧（谷每石价至数万钱）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]王允紧急携书：[/color] 趁迁都混乱，王允从兰台、石室等府库择要收敛约70余乘图书秘纬，使长安朝廷得以保留地方信息基础（详见 `ref-献帝朝廷地方控制.md`）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]二、王允诛卓与"山东抚慰"（初平三年，192年）[/font][/b]
+
+
+[indent]•  192年四月：王允、[color=#0066FF][url={"research": "黄琬", "cat": "people"}]黄琬[/url][/color]联合吕布，于[color=#000000]未央宫[/color]诛杀董卓[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]王允诛卓后第一件事：遣使者张种抚慰山东[/color]（《后汉书》）——表明王允掌权后将维系关东诸侯的认可视为当务之急[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  192年六月：董卓旧部李傕、郭汜率兵攻入长安，王允被杀，吕布逃走；李傕以车骑将军掌控朝政[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  李傕掌权后（192年八月）：以[color=#000000]太傅马日磾[/color]为正使、[color=#000000]太仆赵岐[/color]为副使，持节出使关东[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  马日磾至[color=#0066FF][url={"research": "寿春", "cat": "geography"}]寿春[/url][/color]，被[color=#0066FF][url={"research": "袁术", "cat": "people"}]袁术[/url][/color]侵侮，忧愤呕血而死[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  赵岐至[color=#0066FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]，成功调解[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]、[color=#0066FF][url={"research": "公孙瓒", "cat": "people"}]公孙瓒[/url][/color]、[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]三方——袁绍曹操亲出数百里相迎，三方约罢兵[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]192年战场考古辨析：[/color] 关于"未央宫前殿遗址下有厚约1.2米的新夯土层、碳十四测定为193—195年所筑"的说法，[color=#000000]仅见于今日头条自媒体文章，无正式学术来源[/color]（2026-04-26核查）。该文同时声称"夯土配方含3%石灰+5%碎陶粒"，并捏造了多条虚假史料，疑为AI幻觉或作者虚构。中社科院学术综述及陕西省文物局正式报告均未提及此夯土层。[color=#000000]李傕建设活动有史书记载（《后汉书》），但具体考古物证目前无学术支撑，上述配方数据应视为杜撰。[/color]
+
+[color=#000000]192年战场动线（史料层面）：[/color] 裴松之注《三国志·董卓传》引张璠《汉纪》：
+
+[indent]•  [color=#000000]叟兵引入[/color]：吕布军中叟兵内叛，打开城门迎[color=#0066FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]军入城（北门）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]青琐门外[/color]：吕布败退后驻马处（未央宫宫门之一）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]南宫掖门[/color]：李傕郭汜入城后屯驻处[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]宣平城门[/color]：王允挟献帝最终退守处（东墙最北门，距未央宫约4—5公里）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战场动线：[color=#000000]西南（未央宫/青琐门）→ 东北（宣平城门）[/color]，跨全城对角线[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  考古层位：[color=#000000]结构性空白，史料层面已趋于完整，判定为永久性技术空白[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三、饥荒与"人相食"（兴平元年，194年）[/font][/b]
+
+
+[indent]•  三辅大旱，谷价一斛涨至50万钱[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《后汉书》记载长安城内"人相食啖，臭秽满路"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]四、李郭之乱与典籍毁失（兴平二年，195年）[/font][/b]
+
+
+[indent]•  兴平二年二月：李傕与郭汜互相火并，在城内交战，长安宫殿、官署、民宅再度被焚毁[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  六月：[color=#0066FF][url={"research": "张济", "cat": "people"}]张济[/url][/color]由陕县来调解，献帝得以东归（即[color=#000000]献帝东迁[/color]）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]典籍毁失时间线：[/color] 献帝东迁时将兰台石室典籍随乘舆携带；途经弘农时，李傕郭汜追击，"弃御物、符策、典籍，略无所遗"（《资治通鉴》）。[color=#000000]常说的"长安之乱"典籍被毁，实际发生地点在弘农，而非长安城内[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]献帝东迁后城空40余日，二三年间关中无复人迹[/color]（陕西省地方志）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]五、钟繇镇守关中（建安年间，约197—211年）[/font][/b]
+
+
+[color=#000000]史料（《三国志·魏书·[color=#0066FF][url={"research": "钟繇", "cat": "people"}]钟繇[/url][/color]传》）：[/color]
+
+[indent][color=#666666]┃ 时关中诸将[color=#0066FF][url={"research": "马腾", "cat": "people"}]马腾[/url][/color]、[color=#0066FF][url={"research": "韩遂", "cat": "people"}]韩遂[/url][/color]等，各拥强兵相与争。太祖方有事山东，以关右为忧。乃表繇以侍中守司隶校尉，持节督关中诸军，委之以后事，特使不拘科制。[color=#000000]繇至长安[/color]，移书腾、遂等，为陈祸福，腾、遂各遣子入侍。[/color][/indent]
+
+
+[color=#000000][color=#0066FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]时送马（建安五年，200年）：[/color]
+
+[indent][color=#666666]┃ 太祖在官渡，与袁绍相持，繇送马二千余匹给军。太祖与繇书曰："得所送马，甚应其急。关右平定，朝廷无西顾之忧，足下之勋也。[color=#000000]昔萧何镇守关中，足食成军，亦适当尔。[/color]"[/color][/indent]
+
+
+[color=#000000]平郭援（约建安九年，204年）：[/color]
+
+[indent][color=#666666]┃ [color=#0066FF][url={"research": "袁尚", "cat": "people"}]袁尚[/url][/color]所置河东太守郭援到河东，众甚盛……[color=#0066FF][url={"research": "张既", "cat": "people"}]张既[/url][/color]说马腾会击援，腾遣子超将精兵逆之。援至，果轻渡汾，众止之，不从。济水未半，击，大破之，斩援，降单于。[/color][/indent]
+
+
+[color=#000000]徙民充实洛阳：[/color]
+
+[indent][color=#666666]┃ 自天子西迁，洛阳人民单尽；繇徙关中民，又招纳亡叛以充之，数年间民户稍实。太祖征关中，得以为资，表繇为前军师。[/color][/indent]
+
+
+[color=#000000]小结：[/color] 钟繇自约建安二年（197年）起，在长安驻守约15年，以"萧何之勋"稳定关中大局，是曹操一统北方不可或缺的后方支撑。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]六、曹操征关中（建安十六年，211年）[/font][/b]
+
+
+[indent]•  曹操率军进抵长安，击败[color=#0066FF][url={"research": "马超", "cat": "people"}]马超[/url][/color]、韩遂于潼关—渭河一带[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  占领关中后留[color=#0066FF][url={"research": "夏侯渊", "cat": "people"}]夏侯渊[/url][/color]屯驻长安[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  钟繇升任前军师，结束关中任期[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  建安十八年（213年）复设雍州（治所长安），辖京兆尹等郡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]七、曹魏五都与景初拆迁（221—237年）[/font][/b]
+
+
+[color=#000000]黄初二年（221年）列为五都（《魏略》，裴松之注《三国志·文帝纪》引）：[/color]
+
+[indent][color=#666666]┃ 改长安、谯、许昌、邺、洛阳为五都。[/color][/indent]
+
+
+五都中长安的地位：政治象征（彰显曹魏继承汉室法统）+ 军事实用（对抗蜀汉北伐的西部防线核心）。但[color=#000000]曹魏在长安无大规模建设记录[/color]，与洛阳（黄初元年即营建宫室）形成对比。
+
+[color=#000000]景初元年（237年），曹叡下令拆迁长安遗物：[/color]
+
+[indent][color=#666666]┃ 拆除长安被董卓销毁剩余的秦代钟虡、铜驼、铜人和汉建章宫承露盘，运往洛阳。因铜人重不可致，半路留在霸城（今铜人原）。[/color][/indent]
+
 
 此举说明：曹魏将长安视为"汉室遗迹的供应地"，而非独立的政治建设对象。
 
+[color=#000000]三国典故——承露仙人（维基补充）：[/color]
 
-[b]八、司马懿驻长安应对北伐（228—234年）[/b]
-
-[b]231年，诸葛亮第四次北伐（《晋书·宣帝纪》）：[/b]
-[color=#AAAAAA]　诸葛亮寇天水，围于[color=#6699FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]。天子乃使帝（司马懿）西屯长安，都督雍、梁二州诸军事，统车骑将军[color=#6699FF][url={"research": "张郃", "cat": "people"}]张郃[/url][/color]、后将军费曜、征蜀护军戴凌、雍州刺史郭淮等讨亮。[/color]
-
-[color=#AAAAAA]　亮闻大军且至，乃自帅众将芟上邽之麦。诸将皆惧，帝曰："吾倍道疲劳，此晓兵者之所贪也。亮不敢据渭水，此易与耳。"进次汉阳，与亮相遇，帝列阵以待之。[/color]
-
-[b]234年，五丈原之战（《晋书·宣帝纪》）：[/b]
-[color=#AAAAAA]　诸将欲住渭北以待之，帝曰："百姓积聚皆在渭南，此必争之地也。"遂引军而济，背水为垒。因谓诸将曰："亮若勇者，当出武功依山而东，若西上五丈原，则诸军无事矣。"[/color]
-
-[color=#AAAAAA]　亮果上原，将北渡渭……临原而战，亮不得进，还于五丈原。[/color]
-
-[b]注释：[/b] 长安在北伐期间是曹魏雍梁二州军事指挥中心，是连接关东（许昌、洛阳）与前线（上邽、陇右）的战略支点。
+[indent][color=#666666]┃ 建章宫承露盘，高二十丈，大七围，以铜为之，上有仙人墩承露，和玉屑饮之。三国遣宫官欲将铜铸仙人像拆走去城，传说仙人落泪。（《汉长安城》维基条目引）[/color][/indent]
 
 
-[b]九、灭蜀坐镇（景元五年，264年）[/b]
-
-正月 曹魏末帝[color=#6699FF][url={"research": "曹奂", "cat": "people"}]曹奂[/url][/color]抵长安。晋王[color=#6699FF][url={"research": "司马昭", "cat": "people"}]司马昭[/url][/color]来长安，指挥[color=#6699FF][url={"research": "钟会", "cat": "people"}]钟会[/url][/color]进军[color=#6699FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]。长安作为西线战略枢纽的地位延续至曹魏终结。
+这一传说——铜人落泪不舍离去——是汉室情感记忆与曹魏政治现实相碰撞的文学结晶，在《三国志》等正史中有基本史实依据。
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]八、司马懿驻长安应对北伐（228—234年）[/font][/b]
 
 
-[b]方面[/b] | [b]史实[/b] | [b]演义处理[/b]
-迁都规模 | 史载驱赶"百姓数百万口"，途中死者无数（《后汉书》明确） | 演义渲染程度相近，无大出入
-献帝初入长安 | 初居京兆府舍（宫室残破），后修缮入住未央宫 | 演义通常不交代宫室残破—修缮过程
-王允携书 | 迁都时王允紧急收敛兰台石室档案约70乘，使朝廷保留地方信息基础；典籍最终毁于195年弘农追击 | 演义完全不提王允携书这一关键行动，也不呈现献帝朝廷的地方运作机制
-王允诛卓后第一件事 | 遣使者张种"抚慰山东"——维系关东诸侯认可 | 演义将王允描绘为因杀[color=#6699FF][url={"research": "蔡邕 ", "cat": " people"}]蔡邕 [/url][/color]等内政失误而亡，忽略其主动经营与关东关系的努力
-奉贡封赏机制 | 陶谦、刘表、士燮、刘虞等均向长安奉贡换取正式任命 | 演义倾向于将献帝朝廷描绘为完全无力的傀儡，忽略这一维持名义统治的实际机制
-李傕修缮宫室 | 有史书记载，考古物证目前无学术支撑（"193—195年夯土层"说法为自媒体杜撰） | 演义将李傕郭汜写成纯破坏者，忽略其"建设"行为
-钟繇功绩 | 镇守长安约15年，以"萧何之勋"稳定关中，是曹操后方最重要支撑之一 | 演义对钟繇在长安的活动着墨极少
-曹魏时期长安建设 | 无大规模宫室兴建，237年反而拆铜人运洛阳 | 演义/影视通常不展现这一"取而不建"的现象
-蔡文姬被掳时间与地点 | 谭其骧考证：初平三年（192年）春，于陈留圉县，被李傕等部下的胡骑所掳（非兴平中被南匈奴掳走）；《后汉书》"兴平中"三字为范晔误加（原始《[color=#6699FF][url={"research": "蔡琰 ", "cat": " people"}]蔡琰 [/url][/color]别传》只说"汉末大乱"） | 演义/戏剧中通常泛化处理，多从《后汉书》"兴平中"说
-司马懿坚守策略 | 《晋书·宣帝纪》明确记载司马懿主动渡渭南扎营，并非一味坚守，有主动出击记录 | 演义偏向呈现"坚守不战"形象
-192年攻城战 vs 195年李郭互斗 | 两件不同的事：192年（初平三年）是李傕郭汜攻入长安（叟兵内叛，巷战逐吕布——战场从未央宫青琐门外延伸至宣平城门，跨全城东北方向）；195年（兴平二年）是李傕与郭汜[b]互相[/b]攻伐（争夺献帝控制权），宫殿官署在195年遭更大破坏 | 演义常将两件事混叙，且夸大192年的宫殿焚毁程度（史书记载192年未央宫在李傕控制后反被高规格修缮）
+[color=#000000]231年，诸葛亮第四次北伐（《晋书·宣帝纪》）：[/color]
+
+[indent][color=#666666]┃ 诸葛亮寇天水，围于[color=#0066FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]。天子乃使帝（[color=#0066FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]）西屯长安，都督雍、梁二州诸军事，统车骑将军[color=#0066FF][url={"research": "张郃", "cat": "people"}]张郃[/url][/color]、后将军费曜、征蜀护军戴凌、雍州刺史[color=#0066FF][url={"research": "郭淮", "cat": "people"}]郭淮[/url][/color]等讨亮。[/color][/indent]
 
 
-[b]蔡文姬与长安[/b]
+[indent][color=#666666]┃ 亮不敢据渭水，此易与耳。进次汉阳，与亮相遇，帝列阵以待之。[/color][/indent]
 
 
-蔡邕（蔡琰之父）于190年被董卓强征，随迁入长安，任左中郎将。
+[color=#000000]234年，五丈原之战（《晋书·宣帝纪》）：[/color]
+
+[indent][color=#666666]┃ 百姓积聚皆在渭南，此必争之地也。遂引军而济，背水为垒。……亮果上原，将北渡渭……还于五丈原。[/color][/indent]
 
 
-[b]随父在长安（190—192年）[/b]
+[color=#000000]注释：[/color] 长安在北伐期间是曹魏雍梁二州军事指挥中心，是连接关东（许昌、洛阳）与前线（上邽、陇右）的战略支点。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]九、灭蜀坐镇（景元五年，264年）[/font][/b]
+
+
+正月 曹魏末帝[color=#0066FF][url={"research": "曹奂", "cat": "people"}]曹奂[/url][/color]抵长安。晋王[color=#0066FF][url={"research": "司马昭", "cat": "people"}]司马昭[/url][/color]来长安，指挥[color=#0066FF][url={"research": "钟会", "cat": "people"}]钟会[/url][/color]进军[color=#0066FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]。长安作为西线战略枢纽的地位延续至曹魏终结。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]演义处理[/b][/cell]
+[cell]迁都规模[/cell]
+[cell]史载驱赶"百姓数百万口"，途中死者无数（《后汉书》明确）[/cell]
+[cell]演义渲染程度相近，无大出入[/cell]
+[cell]献帝初入长安[/cell]
+[cell]初居京兆府舍（宫室残破），后修缮入住未央宫[/cell]
+[cell]演义通常不交代宫室残破—修缮过程[/cell]
+[cell]王允携书[/cell]
+[cell]迁都时王允紧急收敛兰台石室档案约70乘，使朝廷保留地方信息基础；典籍最终毁于195年弘农追击[/cell]
+[cell]演义完全不提王允携书这一关键行动，也不呈现献帝朝廷的地方运作机制[/cell]
+[cell]王允诛卓后第一件事[/cell]
+[cell]遣使者张种"抚慰山东"——维系关东诸侯认可[/cell]
+[cell]演义将王允描绘为因杀[color=#0066FF][url={"research": "蔡邕", "cat": "people"}]蔡邕[/url][/color]等内政失误而亡，忽略其主动经营与关东关系的努力[/cell]
+[cell]奉贡封赏机制[/cell]
+[cell]陶谦、刘表、士燮、刘虞等均向长安奉贡换取正式任命[/cell]
+[cell]演义倾向于将献帝朝廷描绘为完全无力的傀儡，忽略这一维持名义统治的实际机制[/cell]
+[cell]李傕修缮宫室[/cell]
+[cell]有史书记载，考古物证目前无学术支撑（"193—195年夯土层"说法为自媒体杜撰）[/cell]
+[cell]演义将李傕郭汜写成纯破坏者，忽略其"建设"行为[/cell]
+[cell]钟繇功绩[/cell]
+[cell]镇守长安约15年，以"萧何之勋"稳定关中，是曹操后方最重要支撑之一[/cell]
+[cell]演义对钟繇在长安的活动着墨极少[/cell]
+[cell]曹魏时期长安建设[/cell]
+[cell]无大规模宫室兴建，237年反而拆铜人运洛阳；东北角有新宫遗迹（宣平门北）[/cell]
+[cell]演义/影视通常不展现这一"取而不建"的现象[/cell]
+[cell]蔡文姬被掳时间与地点[/cell]
+[cell]谭其骧考证：初平三年（192年）春，于陈留圉县，被李傕等部下的胡骑所掳（非兴平中被南匈奴掳走）；《后汉书》"兴平中"三字为范晔误加[/cell]
+[cell]演义/戏剧中通常泛化处理，多从《后汉书》"兴平中"说[/cell]
+[cell]司马懿坚守策略[/cell]
+[cell]《晋书·宣帝纪》明确记载司马懿主动渡渭南扎营，并非一味坚守，有主动出击记录[/cell]
+[cell]演义偏向呈现"坚守不战"形象[/cell]
+[cell]192年攻城战 vs 195年李郭互斗[/cell]
+[cell]两件不同的事：192年是李傕郭汜攻入长安（叟兵内叛，巷战逐吕布，西南→东北对角线）；195年是李傕与郭汜[color=#000000]互相[/color]攻伐，宫殿官署在195年遭更大破坏[/cell]
+[cell]演义常将两件事混叙，夸大192年宫殿焚毁程度[/cell]
+[cell]承露仙人传说[/cell]
+[cell]史书记载曹魏确曾遣人拆迁铜人，铜人太重未运走留在霸城；"仙人落泪"为文学传说[/cell]
+[cell]演义/文学中常用此意象强化汉室衰亡的悲剧氛围，基本符合史实框架[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]蔡文姬与长安[/font][/b]
+
+
+蔡邕（[color=#0066FF][url={"research": "蔡琰", "cat": "people"}]蔡琰[/url][/color]之父）于190年被董卓强征，随迁入长安，任左中郎将。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]随父在长安（190—192年）[/font][/b]
+
 
 蔡琰此时年约15—17岁，随父在长安居住约2年。190—192年，她目睹了父亲在董卓治下的荣达与危险。
 
-[b]蔡邕下落：[/b] 史料显示蔡邕"在长安，与从弟谷谋东奔兖州，又欲遁逃山东"（《蔡邕传》），表明蔡邕在长安期间颇有离去之意，且[b]未必携带家眷[/b]（清儒何焯已指出此点）。
+[color=#000000]蔡邕下落：[/color] 史料显示蔡邕"在长安，与从弟谷谋东奔兖州，又欲遁逃山东"（《蔡邕传》），表明蔡邕在长安期间颇有离去之意，且[color=#000000]未必携带家眷[/color]（清儒何焯已指出此点）。
 
 192年，王允诛董卓后，以蔡邕为董卓同党，将其下狱杀之。
 
 
-[b]被掳时间与地点：谭其骧考证（1959年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]被掳时间与地点：谭其骧考证（1959年）[/font][/b]
 
-[b]谭其骧[/b]（历史地理学家，著《长水集》）经详细考证，认为《后汉书·董祀妻传》的[b]"兴平中"三字系范晔误加[/b]——原始资料《蔡琰别传》（被《艺文类聚》《太平御览》引用）只说"汉末大乱，文姬为胡骑所获"，并无具体年号。范晔主观指实为"兴平中"，后人以讹传讹。
+
+[color=#000000]谭其骧[/color]经详细考证，认为《后汉书·董祀妻传》的[color=#000000]"兴平中"三字系范晔误加[/color]——原始资料《蔡琰别传》（被《艺文类聚》《太平御览》引用）只说"汉末大乱，文姬为胡骑所获"，并无具体年号。
 
 谭其骧的考证结论：
 
 
-[b]项目[/b] | [b]结论[/b] | [b]依据[/b]
-被掳时间 | [b]初平三年（192年）正月[/b] | 李傕等部东略陈留颍川（《后汉纪》），距蔡邕死（四月）仅三月
-被掳地点 | [b]陈留圉县[/b]（蔡家老家） | 《[color=#6699FF][url={"research": "悲愤诗 ", "cat": " context"}]悲愤诗 [/url][/color]》"长驱西入关"——被虏后才从关东驱入关西
-掳走者 | 李傕等部下的[b]羌胡部队[/b] | 董卓军中本多羌胡，不必是南匈奴
-没入匈奴 | 南匈奴[b]南庭（河套）[/b][color=#6699FF][url={"research": "左贤王 ", "cat": " people"}]左贤王 [/url][/color]部 | 《悲愤诗》描写的胡中风物（霜雪、胡风）符合河套，非河东平阳
+[table=3]
+[cell][b]项目[/b][/cell]
+[cell][b]结论[/b][/cell]
+[cell][b]依据[/b][/cell]
+[cell]被掳时间[/cell]
+[cell][color=#000000]初平三年（192年）正月[/color][/cell]
+[cell]李傕等部东略陈留颍川（《后汉纪》），距蔡邕死（四月）仅三月[/cell]
+[cell]被掳地点[/cell]
+[cell][color=#000000]陈留圉县[/color]（蔡家老家）[/cell]
+[cell]《[color=#0066FF][url={"research": "悲愤诗", "cat": "context"}]悲愤诗[/url][/color]》"长驱西入关"——被虏后才从关东驱入关西[/cell]
+[cell]掳走者[/cell]
+[cell]李傕等部下的[color=#000000]羌胡部队[/color][/cell]
+[cell]董卓军中本多羌胡，不必是南匈奴[/cell]
+[cell]没入匈奴[/cell]
+[cell]南匈奴[color=#000000]南庭（河套）[/color][color=#0066FF][url={"research": "左贤王", "cat": "people"}]左贤王[/url][/color]部[/cell]
+[cell]《悲愤诗》描写的胡中风物（霜雪、胡风）符合河套，非河东平阳[/cell]
+[/table]
 
 
-[b]与通行说法的差异：[/b]
-- 通行说（从《后汉书》）：兴平中（194—195年），被南匈奴掳走
-- 谭其骧说：初平三年（192年），被李傕军中胡骑掳走，后辗转至南匈奴
+[color=#000000]赎回：[/color] 建安十一—十二年（206—207年），曹操遣使以重金赎回蔡文姬，随后嫁董祀。
+
+如谭其骧说成立，则蔡文姬被掳地点在陈留，而非长安。蔡文姬与长安的直接关联是[color=#000000]190—192年父女同在长安的两年[/color]，以及被掳入关后[color=#000000]路过关中[/color]（"西入关"）。她在长安见证了父亲的沉浮与死亡，随后于父亲死后不久，在遥远的陈留被掳北去。
 
 
-[b]被掳与长安的关系[/b]
-
-如谭其骧说成立，则蔡文姬被掳地点在陈留，而非长安。蔡文姬与长安的直接关联是[b]190—192年父女同在长安的两年[/b]，以及被掳入关后[b]路过关中[/b]（"西入关"）。她在长安见证了父亲的沉浮与死亡，随后于父亲死后不久，在遥远的陈留被掳北去。
-
-[b]赎回：[/b] 建安十一—十二年（206—207年），曹操遣使以重金赎回蔡文姬，随后嫁董祀。
+[color=#888888]──────────────────────────────[/color]

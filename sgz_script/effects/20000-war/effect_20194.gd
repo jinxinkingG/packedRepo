@@ -88,7 +88,7 @@ func effect_20194_4():
 		DataManager.get_actor_naughty_title(targetId, me.actorId),
 		DataManager.get_actor_honored_title(withId, me.actorId)
 	])
-	play_dialog(me.actorId, msg, 0, 2002)
+	play_dialog(actorId, msg, 0, 2002)
 	return
 
 func effect_20194_5():

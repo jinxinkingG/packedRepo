@@ -34,7 +34,7 @@ func on_trigger_20019()->bool:
 
 func effect_20106_start()->void:
 	var msg = "此战男子当战，女子当运\n敌势虽众，又何惧哉！"
-	play_dialog(me.actorId, msg, 0, 2000)
+	play_dialog(actorId, msg, 0, 2000)
 	return
 
 func on_view_model_2000()->void:

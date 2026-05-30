@@ -28,7 +28,7 @@ func effect_20393_start():
 				DataManager.get_actor_self_title(me.actorId),
 				ske.skill_name,
 			])
-			play_dialog(me.actorId, msg, 0, 2000)
+			play_dialog(actorId, msg, 0, 2000)
 			return
 	LoadControl.end_script()
 	return

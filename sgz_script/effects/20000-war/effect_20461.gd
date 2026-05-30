@@ -33,7 +33,7 @@ func effect_20461_2():
 	var msg = "事急从权，不得不为！\n（发动【{0}，全体机动力 +{1}\n（敌军技能本回合禁用\n（我军全体获得「围困」".format([
 		ske.skill_name, BUFF_AP,
 	])
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	return
 
 func on_view_model_2001():

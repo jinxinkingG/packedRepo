@@ -1,121 +1,166 @@
-[b]万彧[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]万彧[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详（卒于272年），字不详（"字文彬"说出自家谱，无一手史料依据），籍贯不详；东吴末期重臣，官至右丞相。
+[color=#000000]基本信息：[/color] 生卒年不详（卒于272年），字不详（"字文彬"说出自家谱，无一手史料依据），籍贯不详；东吴末期重臣，官至右丞相。
 
 
-[b]生平考证[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]孙休时期：乌程令与拥立[/b]
-
-万彧早年经历史书无载。[color=#6699FF][url={"research": "孙休", "cat": "people"}]孙休[/url][/color]朝（258—264年），万彧任[b]乌程令[/b]，乌程即今浙江湖州。孙皓此时以乌程侯身份就居于此，万彧与之"相善"——两人私交甚笃，是万彧后来仕途腾飞的根本原因。
-
-孙休病危托孤，指定太子继位，但丞相[color=#6699FF][url={"research": "濮阳兴", "cat": "people"}]濮阳兴[/url][/color]等以"蜀初亡、交阯叛、国内震惧，贪得长君"为由，谋立年长者。此时万彧[b]已升任左典军[/b]，他趁机向濮阳兴、左将军[color=#6699FF][url={"research": "张布", "cat": "people"}]张布[/url][/color]力荐孙皓，称：
-
-[color=#AAAAAA]　"才识明断，是长沙桓王之畴也，又加之好学，奉遵法度。"[/color]
-
-——《三国志·[color=#6699FF][url={"research": "孙晧", "cat": "people"}]孙晧[/url][/color]传》
-
-此评价被两人所信服。濮阳兴、张布进而劝说孙休遗孀朱太后同意，264年，孙皓被迎立，时年二十三岁。[b]万彧是孙皓得立的关键推手。[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]孙休时期：乌程令与拥立[/font][/b]
 
 
-[b]孙皓初期：得宠与谮告旧主[/b]
+万彧早年经历史书无载。[color=#0066FF][url={"research": "孙休", "cat": "people"}]孙休[/url][/color]朝（258—264年），万彧任[color=#000000]乌程令[/color]，乌程即今浙江湖州。[color=#0066FF][url={"research": "孙皓", "cat": "people"}]孙皓[/url][/color]此时以乌程侯身份就居于此，万彧与之"相善"——两人私交甚笃，是万彧后来仕途腾飞的根本原因。
 
-孙皓即位后，万彧受到重用，与王蕃、[color=#6699FF][url={"research": "楼玄", "cat": "people"}]楼玄[/url][/color]、郭逴同拜[b]散骑中常侍[/b]（264年）。
+孙休病危托孤，指定太子继位，但丞相[color=#0066FF][url={"research": "濮阳兴", "cat": "people"}]濮阳兴[/url][/color]等以"蜀初亡、交阯叛、国内震惧，贪得长君"为由，谋立年长者。此时万彧[color=#000000]已升任左典军[/color]（孙吴置左、中、右三典军，掌宿卫禁军，为皇帝身边亲信之臣，属[color=#000000]禁军宿卫系统[/color]，非散骑顾问系统；《三国志·[color=#0066FF][url={"research": "张休", "cat": "people"}]张休[/url][/color]传》"拜羽林都督，平三典军事"即指此官，详见 `ref-zuodiangjun-guanzhi.md`），他趁机向濮阳兴、左将军[color=#0066FF][url={"research": "张布", "cat": "people"}]张布[/url][/color]力荐孙皓，称：
 
-然而孙皓登基不久便"粗暴骄盈，多忌讳，好酒色"，当初共同拥立的濮阳兴、张布私下流露悔意。万彧闻知，[b]秘密向孙皓告发[/b]，导致濮阳兴、张布于264年十一月被杀，夷三族（《濮阳兴传》："俄彧谮兴、布追悔前事。"）。
+
+[indent][color=#666666]┃ "才识明断，是长沙桓王之畴也，又加之好学，奉遵法度。"[/color][/indent]
+
+
+——《三国志·[color=#0066FF][url={"research": "孙晧", "cat": "people"}]孙晧[/url][/color]传》
+
+此评价被两人所信服。濮阳兴、张布进而劝说孙休遗孀朱太后同意，264年，孙皓被迎立，时年二十三岁。[color=#000000]万彧是孙皓得立的关键推手。[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]孙皓初期：得宠与谮告旧主[/font][/b]
+
+
+孙皓即位后，万彧受到重用，与王蕃、[color=#0066FF][url={"research": "楼玄", "cat": "people"}]楼玄[/url][/color]、郭逴同拜[color=#000000]散骑中常侍[/color]（264年）。注意：此举是从典军系统（掌禁兵实权）转置散骑系统（侍从顾问，无直接兵权），官秩相当但性质有别。孙皓或有意转移其兵权，随后再以更高行政职位驾驭。
+
+然而孙皓登基不久便"粗暴骄盈，多忌讳，好酒色"，当初共同拥立的濮阳兴、张布私下流露悔意。万彧闻知，[color=#000000]秘密向孙皓告发[/color]，导致濮阳兴、张布于264年十一月被杀，夷三族（《濮阳兴传》："俄彧谮兴、布追悔前事。"）。
 
 这是万彧政治生涯中最为人诟病之举：他向自己的同僚告密，以此巩固自身对新君的独家地位。
 
 同期，万彧与王蕃关系极差。《王蕃传》载，王蕃认为万彧凭借私交飞升高位，轻视其才，万彧因而深感被"挟侵"（受人轻视压制）。他与中书丞陈声联手，多次向孙皓谗毁王蕃。265年甘露二年，王蕃因宴会上酒醉失态，被孙皓怒斩。万彧是推波助澜的重要因素。
 
 
-[b]右丞相时期（266—272年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]右丞相时期（266—272年）[/font][/b]
 
-宝鼎元年（266年）[b]八月[/b]，孙皓新设左右丞相：以[color=#6699FF][url={"research": "陆凯", "cat": "people"}]陆凯[/url][/color]为左丞相，以万彧为右丞相。万彧作为孙皓私人亲信，与资深重臣陆凯形成对立格局。
 
-宝鼎二年（267年）[b]春[/b]，万彧奉命上镇[b]巴丘[/b]（今湖南岳阳），负责荆州方向的军事。
+宝鼎元年（266年）[color=#000000]八月[/color]，孙皓新设左右丞相：以[color=#0066FF][url={"research": "陆凯", "cat": "people"}]陆凯[/url][/color]为左丞相，以万彧为右丞相。万彧作为孙皓私人亲信，与资深重臣陆凯形成对立格局。
 
-宝鼎三年（268年）[b]冬十月[/b]，吴晋开战。施绩入[color=#6699FF][url={"research": "江夏", "cat": "geography"}]江夏[/url][/color]，万彧寇袭[b][color=#6699FF][url={"research": "襄阳", "cat": "geography"}]襄阳[/url][/color][/b]，被晋[b]荆州刺史胡烈击败[/b]（据《资治通鉴》）。
+宝鼎二年（267年）[color=#000000]春[/color]，万彧奉命上镇[color=#000000]巴丘[/color]（今湖南岳阳），负责荆州方向的军事。
 
-建衡元年（269年）[b]冬十一月[/b]，左丞相陆凯病逝。此时，陆凯临终谏言中明确批评万彧：
+宝鼎三年（268年）[color=#000000]冬十月[/color]，吴晋开战。施绩入[color=#0066FF][url={"research": "江夏", "cat": "geography"}]江夏[/url][/color]，万彧寇袭[color=#000000][color=#0066FF][url={"research": "襄阳", "cat": "geography"}]襄阳[/url][/color][/color]，被晋[color=#000000]荆州刺史[color=#0066FF][url={"research": "胡烈", "cat": "people"}]胡烈[/url][/color]击败[/color]（据《资治通鉴》）。
 
-[color=#AAAAAA]　"万彧琐才凡庸之质，昔从家隶，超步紫闼，于彧已丰，于器已溢。"[/color]
+建衡元年（269年）[color=#000000]冬十一月[/color]，左丞相陆凯病逝。此时，陆凯临终谏言中明确批评万彧：
 
-——《三国志·[color=#6699FF][url={"research": "潘濬", "cat": "people"}]潘濬[/url][/color]陆凯传》
+
+[indent][color=#666666]┃ "万彧琐才凡庸之质，昔从家隶，超步紫闼，于彧已丰，于器已溢。"[/color][/indent]
+
+
+——《三国志·[color=#0066FF][url={"research": "潘濬", "cat": "people"}]潘濬[/url][/color]陆凯传》
 
 陆凯认为万彧出身卑微（"家隶"），能跃居高位已是过分恩宠，孙皓因小恩小惠而擢用此人、置越旧臣，是违背先帝之道。
 
-建衡二年（270年）[b]春[/b]，万彧还朝[color=#6699FF][url={"research": "建业", "cat": "geography"}]建业[/url][/color]。
+建衡二年（270年）[color=#000000]春[/color]，万彧还朝[color=#0066FF][url={"research": "建业", "cat": "geography"}]建业[/url][/color]。
 
 
-[b]末年：密谋与赐毒[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]末年：密谋与赐毒[/font][/b]
+
 
 建衡三年（271年）正月，孙皓不顾众臣反对，率后宫数千人从牛渚西进伐晋，途中遇大雪，士卒怨声载道，孙皓被迫还师。
 
-就在孙皓还师前，万彧与右大司马[b][color=#6699FF][url={"research": "丁奉", "cat": "people"}]丁奉[/url][/color][/b]、左将军[b][color=#6699FF][url={"research": "留平", "cat": "people"}]留平[/url][/color][/b]私下密谋：
+就在孙皓还师前，万彧与右大司马[color=#000000][color=#0066FF][url={"research": "丁奉", "cat": "people"}]丁奉[/url][/color][/color]、左将军[color=#000000][color=#0066FF][url={"research": "留平", "cat": "people"}]留平[/url][/color][/color]私下密谋：
 
-[color=#AAAAAA]　"此行不急，若至华里不归，社稷事重，不得不自还。"[/color]
+
+[indent][color=#666666]┃ "此行不急，若至华里不归，社稷事重，不得不自还。"[/color][/indent]
+
 
 ——《江表传》，裴注引
 
 此语"颇泄"，孙皓得知。但孙皓考虑三人均为重臣，暂时隐忍，"阴衔之"。
 
-凤皇元年（272年），孙皓在宴会上以[b]毒酒[/b]赐饮万彧。传酒之人私自减少毒药，万彧未当场死，但后来仍[b]自杀[/b]身亡。留平同样被赐毒酒，因服他药解毒得以不死，但忧愤，月余后亦死。
+凤皇元年（272年），孙皓在宴会上以[color=#000000]毒酒[/color]赐饮万彧。传酒之人私自减少毒药，万彧未当场死，但后来仍[color=#000000]自杀[/color]身亡。留平同样被赐毒酒，因服他药解毒得以不死，但忧愤，月余后亦死。
 
-万彧死后，[b]子弟被流放庐陵[/b]（今江西吉安）。
+万彧死后，[color=#000000]子弟被流放庐陵[/color]（今江西吉安）。
 
 
-[b]性格与形象[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 从史料看，万彧是典型的幸进之臣：
 
-- [b]善于钻营[/b]：凭借与孙皓的私人友谊，成为拥立主谋，进而跻身高位
-- [b]告密成性[/b]：拥立完成后即谮告同谋濮阳兴、张布，排除政治竞争者
-- [b]睚眦必报[/b]：与王蕃矛盾私人化，联手打压致其被杀
-- [b]晚节尚存[/b]：末年参与"密谋自还"，是对孙皓暴政的一次抵制，体现出旧臣的某种自保与担当
+
+[indent]•  [color=#000000]善于钻营[/color]：凭借与孙皓的私人友谊，成为拥立主谋，进而跻身高位[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]告密成性[/color]：拥立完成后即谮告同谋濮阳兴、张布，排除政治竞争者[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]睚眦必报[/color]：与王蕃矛盾私人化，联手打压致其被杀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]晚节尚存[/color]：末年参与"密谋自还"，是对孙皓暴政的一次抵制，体现出旧臣的某种自保与担当[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 陆凯的"琐才凡庸"评价是正史中最权威的定性，出自当时第一重臣的临终谏言，可信度较高。王蕃在宴席上以"羊质虎皮"嘲讽他，虽是嘲谑场合，但也反映了当时士大夫圈对万彧的普遍看法：才不配位。
 
 
-[b]关键关系[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]人物[/b] | [b]关系[/b]
-[b]孙皓[/b] | 旧主，私交根本；万彧仕途全赖于此，最终也死于此
-[b]濮阳兴、张布[/b] | 共谋拥立，事后被万彧谮告处死
-[b]王蕃[/b] | 同僚，互相敌视；万彧联合陈声谮毁王蕃，导致其被杀
-[b]陆凯[/b] | 左丞相，政治对手；陆凯对其有"琐才凡庸"的历史定评
-[b]楼玄[/b] | 同官（散骑中常侍），关系较好
-[b]留平、丁奉[/b] | 末年密谋同伴
+[table=2]
+[cell][b]人物[/b][/cell]
+[cell][b]关系[/b][/cell]
+[cell][color=#000000]孙皓[/color][/cell]
+[cell]旧主，私交根本；万彧仕途全赖于此，最终也死于此[/cell]
+[cell][color=#000000]濮阳兴、张布[/color][/cell]
+[cell]共谋拥立，事后被万彧谮告处死[/cell]
+[cell][color=#000000]王蕃[/color][/cell]
+[cell]同僚，互相敌视；万彧联合陈声谮毁王蕃，导致其被杀[/cell]
+[cell][color=#000000]陆凯[/color][/cell]
+[cell]左丞相，政治对手；陆凯对其有"琐才凡庸"的历史定评[/cell]
+[cell][color=#000000]楼玄[/color][/cell]
+[cell]同官（散骑中常侍），关系较好[/cell]
+[cell][color=#000000]留平、丁奉[/color][/cell]
+[cell]末年密谋同伴[/cell]
+[/table]
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
 《三国演义》嘉靖本（第242回）与毛本（第120回）均将万彧塑造为忠臣形象：见孙皓无道，"直言苦谏"，被杀。两版在此核心设定上完全一致，与正史相反。
 
-[b]嘉靖本 vs 毛本具体差异（已核查）：[/b]
+[color=#000000]嘉靖本 vs 毛本具体差异（已核查）：[/color]
 
-[b]1. 拥立段：[/b]
-- 嘉靖本："左典军万彧曰：'【雨单】幼不能专政，不若取乌程侯孙皓立之。'[b]左将军孙布[/b]亦曰：'皓才识明断，堪为帝王。'"
-- 毛本："左典军万彧曰：'幼不能专政，不若取乌程侯孙皓立之。'[b]左将军张布[/b]亦曰：'皓才识明断，堪为帝王。'"
-- 差异：嘉靖本误作"[b]孙布[/b]"，毛本改正为"[b]张布[/b]"（正史《三国志·孙晧传》即作"张布"）
+[color=#000000]1. 拥立段：[/color]
 
-[b]2. 苦谏段：[/b]
-- 嘉靖本："丞相万彧、将军留平，姓留，名平。大司农楼玄，见皓无道，三人苦谏，[b]皆被杀之[/b]。"（含注释性插文"姓留，名平"）
-- 毛本："丞相万彧、将军留平、大司农楼玄三人见皓无道，直言苦谏，[b]皆被所杀[/b]。"
-- 差异：措辞微调（"皆被杀之"→"皆被所杀"），毛本删去嘉靖本的注释性插文，文句更流畅
-
-[b]演义形象vs正史对照：[/b]
+[indent]•  嘉靖本："左典军万彧曰：'【雨单】幼不能专政，不若取乌程侯孙皓立之。'[color=#000000]左将军孙布[/color]亦曰：'皓才识明断，堪为帝王。'"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本："左典军万彧曰：'幼不能专政，不若取乌程侯孙皓立之。'[color=#000000]左将军张布[/color]亦曰：'皓才识明断，堪为帝王。'"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  差异：嘉靖本误作"[color=#000000]孙布[/color]"，毛本改正为"[color=#000000]张布[/color]"（正史《三国志·孙晧传》即作"张布"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]维度[/b] | [b]演义（两版一致）[/b] | [b]正史[/b]
-对孙皓态度 | 苦谏忠臣 | 告密者/幸臣
-死亡原因 | 因直言被杀 | 密谋被发觉，赐毒酒后自杀
-道德评价 | 正面 | 负面（陆凯"琐才凡庸"定评）
+[color=#000000]2. 苦谏段：[/color]
+
+[indent]•  嘉靖本："丞相万彧、将军留平，姓留，名平。大司农楼玄，见皓无道，三人苦谏，[color=#000000]皆被杀之[/color]。"（含注释性插文"姓留，名平"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本："丞相万彧、将军留平、大司农楼玄三人见皓无道，直言苦谏，[color=#000000]皆被所杀[/color]。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  差异：措辞微调（"皆被杀之"→"皆被所杀"），毛本删去嘉靖本的注释性插文，文句更流畅[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]演义形象vs正史对照：[/color]
+
+
+[table=3]
+[cell][b]维度[/b][/cell]
+[cell][b]演义（两版一致）[/b][/cell]
+[cell][b]正史[/b][/cell]
+[cell]对孙皓态度[/cell]
+[cell]苦谏忠臣[/cell]
+[cell]告密者/幸臣[/cell]
+[cell]死亡原因[/cell]
+[cell]因直言被杀[/cell]
+[cell]密谋被发觉，赐毒酒后自杀[/cell]
+[cell]道德评价[/cell]
+[cell]正面[/cell]
+[cell]负面（陆凯"琐才凡庸"定评）[/cell]
+[/table]
 
 
 演义改写可能出于两个动机：（1）为吴亡前添加"忠臣谏言"的悲剧色彩；（2）简化人物，将万彧的结局（死于孙皓）转化为更戏剧化的"忠谏被杀"。

@@ -42,7 +42,7 @@ func effect_20219_2():
 		DataManager.get_actor_naughty_title(targetId),
 		me.get_name(), targetWA.get_name(), ap
 	])
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	return
 
 func on_trigger_20012()->bool:

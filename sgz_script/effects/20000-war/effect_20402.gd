@@ -59,7 +59,7 @@ func effect_20402_go():
 	targets.append(me.actorId)
 	if targets.size() < 2:
 		var msg = "没有足够的目标\n无法发动【{0}】".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 3, 2999)
+		play_dialog(actorId, msg, 3, 2999)
 		return
 
 	# 修改默认目标，尽量找敌军中没有被连的第一个
@@ -132,7 +132,7 @@ func effect_20402_3():
 			msg = "解除{0}的[铁索]"
 		msgs.append(msg.format([wa.get_name()]))
 	msgs.append("消耗{0}机动力，可否？".format([get_cost_ap()]))
-	play_dialog(me.actorId, "\n".join(msgs), 2, 2001, true)
+	play_dialog(actorId, "\n".join(msgs), 2, 2001, true)
 	return
 
 func on_view_model_2001():
@@ -182,7 +182,7 @@ func effect_20402_5():
 	ske.cost_ap(ap)
 	ske.set_war_skill_val(ap, 1)
 	ske.war_report()
-	play_dialog(me.actorId, "\n".join(msgs), 2, 2003)
+	play_dialog(actorId, "\n".join(msgs), 2, 2003)
 	return
 
 func on_view_model_2003():

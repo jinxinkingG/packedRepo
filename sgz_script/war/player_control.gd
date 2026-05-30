@@ -41,6 +41,9 @@ func _init() -> void:
 	FlowManager.bind_import_flow("player_delegate", self)
 	FlowManager.bind_import_flow("player_delegate_confirmed", self)
 
+	FlowManager.bind_import_flow("war_patrol_confirm_end", self)
+	FlowManager.bind_import_flow("war_patrol_end_farewell", self)
+
 	FlowManager.bind_import_flow("player_mercy", self)
 	FlowManager.bind_import_flow("player_mercy_confirmed", self)
 
@@ -689,6 +692,19 @@ func on_view_model_886(delta: float):
 	Global.wait_for_yesno("player_delegate_confirmed", "player_ready", view_model_name)
 	return
 
+func on_view_model_887(delta: float):
+	Global.wait_for_yesno("war_patrol_end_farewell", "player_ready", view_model_name)
+	return
+
+func on_view_model_888(delta: float):
+	if not Global.is_action_pressed_AX():
+		return
+	if not SceneManager.dialog_msg_complete(true):
+		return
+	set_view_model(-1)
+	FlowManager.add_flow("war_patrol_end")
+	return
+
 func on_view_model_999(delta: float):
 	wait_for_yesno("player_leave_confirmed", "player_leave_cancel")
 	return
@@ -751,6 +767,8 @@ func _menu_go(choose_value:String):
 			FlowManager.add_flow("player_item_start")
 		"托管":
 			FlowManager.add_flow("player_delegate")
+		"结束":
+			FlowManager.add_flow("war_patrol_confirm_end")
 	return
 
 #战争开始
@@ -1116,6 +1134,11 @@ func actor_control_menu():
 	else:
 		menu.append("回营")
 
+	if wf.source == "巡野":
+		menu.erase("撤退")
+		menu.erase("托管")
+		menu.append("结束")
+
 	if DataManager.game_mode2 == 1 or DataManager.endless_mode:
 		#剧情模式或无尽模式，禁止玩家撤退
 		menu.erase("撤退")
@@ -1326,6 +1349,34 @@ func player_delegate_confirmed()->void:
 	FlowManager.add_flow("player_ready")
 	return
 
+# 巡野主动结束：显示确认对话
+func war_patrol_confirm_end() -> void:
+	var wf = DataManager.get_current_war_fight()
+	var actorId = wf.defenderWV.main_actorId
+	DataManager.set_env("巡野结束语", "巡察完毕，返回城池")
+	SceneManager.show_yn_dialog("结束巡察，返回城池？", actorId)
+	set_view_model(887)
+	return
+
+# 巡野结束告别：金米同步 + 显示台词 + 等待确认
+func war_patrol_end_farewell() -> void:
+	var wf = DataManager.get_current_war_fight()
+	var wv = wf.defenderWV
+	var city = wf.target_city()
+	# 确保玩家控制权
+	FlowManager.set_current_control_playerNo(wv.get_main_controlNo())
+	LoadControl.view_model_name = view_model_name
+	# 金米同步回城池
+	city.add_gold(wv.money)
+	city.add_rice(wv.rice)
+	# 显示告别台词
+	var msg = DataManager.get_env_str("巡野结束语")
+	if msg == "":
+		msg = "巡察完毕，返回城池"
+	SceneManager.show_confirm_dialog(msg, wv.main_actorId)
+	set_view_model(888)
+	return
+
 func player_mercy()->void:
 	var leaderId = DataManager.get_env_int("战争.放归.主将")
 	var loserId = DataManager.get_env_int("战争.放归.目标")
@@ -1369,6 +1420,11 @@ func player_yijing() -> void:
 	if skills.empty():
 		FlowManager.add_flow("check_embattle_trigger")
 		return
+	# 先移除，避免多次触发易经会残留历史技能
+	for skill in skills:
+		skill = skill.replace("（阳）", "")
+		skill = skill.replace("（阴）", "")
+		SkillHelper.remove_scene_actor_skill(20000, actorId, skill)
 	var msg = "造化两仪，阴阳归道\n（{0}已转为「道」面".format([
 		ActorHelper.actor(actorId).get_name(),
 	])

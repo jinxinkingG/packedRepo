@@ -1,30 +1,96 @@
-[b]潘凤[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]潘凤[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不可考（虚构人物，无正史记载）；[color=#6699FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]（今河北南部）；冀州牧韩馥麾下上将
+[color=#000000]基本信息：[/color] 生卒年不可考（虚构人物，无正史记载）；[color=#0066FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]（今河北南部）；冀州牧[color=#0066FF][url={"research": "韩馥", "cat": "people"}]韩馥[/url][/color]麾下上将
 
 
-[b]生平考证[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]正史情况[/b]
-
-《三国志》《后汉书》均[b]无"潘凤"相关记载[/b]。潘凤为罗贯中在《三国演义》中虚构的人物，无一手史料可考。
-
-韩馥本人在正史中有记载（《三国志·[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]传》《后汉书·袁绍传》），但其麾下无名为"潘凤"的将领记录。韩馥帐下史料可考的人物包括[color=#6699FF][url={"research": "耿武", "cat": "people"}]耿武[/url][/color]、闵纯、刘子惠等人，均不涉及"潘凤"。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]正史情况[/font][/b]
 
 
-[b]演义出场[/b]
+《三国志》《后汉书》均[color=#000000]无"潘凤"相关记载[/color]。潘凤为罗贯中在《三国演义》中虚构的人物，无一手史料可考。
 
-《三国演义》第五回，十八路诸侯讨伐[color=#6699FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]，汜水关前与董卓大将华雄交战。
-
-[b]毛本（通行本）原文：[/b]
-[color=#AAAAAA]　忽探子来报："华雄引铁骑下关，用长竿挑着孙太守赤帻，来寨前大骂搦战。"绍曰："谁敢去战？"[color=#6699FF][url={"research": "袁术", "cat": "people"}]袁术[/url][/color]背后转出骁将俞涉曰："小将愿往。"绍喜，便著俞涉出马。即时报来："俞涉与华雄战不三合，被华雄斩了。"众大惊。太守韩馥曰："吾有上将潘凤，可斩华雄。"绍急令出战。潘凤手提大斧上马。去不多时，飞马来报："潘凤又被华雄斩了。"众皆失色。[/color]
-
-叙事结构：俞涉→潘凤→[color=#6699FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]，前两人皆败，层层衬托关羽温酒斩华雄之神勇。
+韩馥本人在正史中有记载（《三国志·[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]传》《后汉书·袁绍传》），但其麾下无名为"潘凤"的将领记录。韩馥帐下史料可考的人物包括[color=#0066FF][url={"research": "耿武", "cat": "people"}]耿武[/url][/color]、闵纯、刘子惠等人，均不涉及"潘凤"。
 
 
-[b]性格与形象[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]演义出场[/font][/b]
+
+
+《三国演义》第五回，十八路诸侯讨伐[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]，汜水关前与董卓大将[color=#0066FF][url={"research": "华雄", "cat": "people"}]华雄[/url][/color]交战。
+
+[color=#000000]嘉靖本原文（识典古籍 NA11011）：[/color]
+
+[indent][color=#666666]┃ 太守韩馥曰：吾有上将潘凤，可斩华雄。绍急令唤至，应声而出，手提大斧，上马去。不多时，飞马来报：潘凤又被华雄斩了，众诸侯皆失色。[/color][/indent]
+
+
+[color=#000000]叶逢春本原文（1548年，据古版考异整理）：[/color]
+
+[indent][color=#666666]┃ 太守韩馥曰："吾上将潘凤可斩华雄。"绍急令唤至，[color=#000000]潘凤[/color]应声而出，手提大斧上马。去不多时，飞马来报：潘凤又被华雄斩了。众诸侯皆失色。[/color][/indent]
+
+
+[color=#000000]毛本（通行本）原文：[/color]
+
+[indent][color=#666666]┃ 太守韩馥曰："吾有上将潘凤，可斩华雄。"绍急令出战。潘凤手提大斧上马。去不多时，飞马来报："潘凤又被华雄斩了。"众皆失色。[/color][/indent]
+
+
+叙事结构：俞涉→潘凤→[color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]，前两人皆败，层层衬托关羽温酒斩华雄之神勇。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三本版本差异[/font][/b]
+
+
+[table=4]
+[cell][b]差异点[/b][/cell]
+[cell][b]嘉靖本[/b][/cell]
+[cell][b]叶逢春本[/b][/cell]
+[cell][b]毛本[/b][/cell]
+[cell]韩馥台词"有"字[/cell]
+[cell]有（"吾[color=#000000]有[/color]上将潘凤"）[/cell]
+[cell]无（"吾上将潘凤"）[/cell]
+[cell]有[/cell]
+[cell]召出方式[/cell]
+[cell]绍急令[color=#000000]唤至[/color][/cell]
+[cell]绍急令[color=#000000]唤至[/color][/cell]
+[cell]绍急令[color=#000000]出战[/color][/cell]
+[cell]潘凤主语显示[/cell]
+[cell]省略[/cell]
+[cell]补"潘凤"[/cell]
+[cell]显示[/cell]
+[cell]出征时间描述[/cell]
+[cell][color=#000000]不多时[/color]（无"去"字）[/cell]
+[cell][color=#000000]去[/color]不多时[/cell]
+[cell][color=#000000]去[/color]不多时[/cell]
+[cell]众人反应[/cell]
+[cell][color=#000000]众诸侯[/color]皆失色[/cell]
+[cell][color=#000000]众诸侯[/color]皆失色[/cell]
+[cell][color=#000000]众[/color]皆失色[/cell]
+[/table]
+
+
+[color=#000000]结论：[/color]
+
+[indent]•  嘉靖本与叶逢春本在主要内容上一致，仅措辞细节有差异[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  叶逢春本（志传系）保留了主语"潘凤"，嘉靖本省略[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本修改"唤至"为"出战"，精简了句式[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三本核心情节完全一致[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]潘凤被斩后袁绍叹语（嘉靖本）[/font][/b]
+
+
+[indent][color=#666666]┃ 袁绍拍股叹曰：可惜吾上将[color=#0066FF][url={"research": "颜良", "cat": "people"}]颜良[/url][/color]、[color=#0066FF][url={"research": "文丑", "cat": "people"}]文丑[/url][/color]，催军未回，得一人在此，岂放华雄施威哉？汝众诸侯许多将士，只无一人可退华雄？[/color][/indent]
+
+
+嘉靖本独有"拍股"动作描写，叶逢春本作"袁绍叹曰"，毛本大幅精简为"绍曰：可惜吾上将颜良、文丑未至！得一人在此，何惧华雄！"
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 演义原著中，潘凤着墨极少，无台词、无对话，以"手提大斧上马"一笔带过，结局以飞马传报"又被华雄斩了"交代，属纯粹的龙套配角。
@@ -32,18 +98,27 @@
 其形象的"膨胀"完全来自后世二次创作，在网络文化中被戏称为"无双上将"，形成"潘凤效应"，成为被低估英雄或悲剧衬托者的象征符号。这一现象本身是网络文化的产物，与原著及正史均无关。
 
 
-[b]关键关系[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-- [b]韩馥[/b]（冀州牧/太守）：演义中的直属上司，由韩馥推荐出战
+[indent]•  [color=#000000]韩馥[/color]（冀州牧/太守）：演义中的直属上司，由韩馥推荐出战[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-[b]维度[/b] | [b]情况[/b]
-正史存在 | 否，完全虚构
-演义身份 | 韩馥上将，使大斧
-演义死因 | 汜水关前被华雄斩杀
-韩馥正史 | 有记载，冀州牧，初平元年供给袁绍军粮，后让冀州于袁绍，忧惧自杀
-华雄正史 | 有记载，[color=#6699FF][url={"research": "孙坚 ", "cat": " people"}]孙坚 [/url][/color]部在梁县之战斩杀华雄，非关羽所斩
+[table=2]
+[cell][b]维度[/b][/cell]
+[cell][b]情况[/b][/cell]
+[cell]正史存在[/cell]
+[cell]否，完全虚构[/cell]
+[cell]演义身份[/cell]
+[cell]韩馥上将，使大斧[/cell]
+[cell]演义死因[/cell]
+[cell]汜水关前被华雄斩杀[/cell]
+[cell]韩馥正史[/cell]
+[cell]有记载，冀州牧，初平元年供给袁绍军粮，后让冀州于袁绍，忧惧自杀[/cell]
+[cell]华雄正史[/cell]
+[cell]有记载，[color=#0066FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color]部在梁县之战斩杀华雄，非关羽所斩[/cell]
+[/table]

@@ -92,7 +92,7 @@ func effect_20006_2():
 	var targets = se.get_affected_actors(targetWA.position)
 	if targets.empty():
 		var msg = "当前没有可施放【{0}】的目标".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 3, 2009)
+		play_dialog(actorId, msg, 3, 2009)
 		return
 	map.show_color_block_by_position(se.get_affected_positions(targetWA.position))
 	map.show_can_choose_actors(targets)

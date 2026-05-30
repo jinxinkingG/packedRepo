@@ -46,7 +46,7 @@ func effect_20254_start():
 	var msg = "消耗{0}机动力发动【{1}】\n若计策成功，加深伤害\n可否？".format([
 		extra, ske.skill_name
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000():
@@ -66,7 +66,7 @@ func effect_20254_2():
 		var msg = "明察而众和，谋深而虑远\n（{0}发动【{1}】".format([
 			me.get_name(), ske.skill_name,
 		])
-		play_dialog(me.actorId, msg, 2, 2001)
+		play_dialog(actorId, msg, 2, 2001)
 		return
 	# player 有计策发动信息，追加信息
 	se.message = "明察而众和，谋深而虑远\n" + se.get_message()

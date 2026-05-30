@@ -21,3 +21,8 @@ func on_trigger_20017() -> bool:
 	disabled.append("计策附加智力")
 	me.set_ext_variable("装备词条禁用", disabled)
 	return false
+
+func on_trigger_20027() -> bool:
+	# 清空技能变量，否则回营出营无法再次生效
+	ske.set_war_skill_val(null, 0)
+	return false

@@ -60,7 +60,7 @@ func effect_20035_2():
 		bf.get_defender().get_name(), msg
 	])
 	ske.war_report()
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	return
 
 func on_view_model_2001()->void:

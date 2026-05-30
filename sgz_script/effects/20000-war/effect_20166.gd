@@ -49,7 +49,7 @@ func effect_20166_2():
 	var msg = "消耗 {1} 机动力\n随机清除{0}的负面状态\n可否？".format([
 		targetActor.get_name(), COST_AP,
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 # 执行
@@ -59,7 +59,7 @@ func effect_20166_3():
 
 	var buffNames = Array(targetWA.get_war_debuffs())
 	if buffNames.empty():
-		play_dialog(me.actorId, "没有需要处理的负面状态", 2, 2009)
+		play_dialog(actorId, "没有需要处理的负面状态", 2, 2009)
 		return
 
 	ske.cost_war_cd(1)

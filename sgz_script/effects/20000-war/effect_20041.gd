@@ -16,11 +16,11 @@ const DIALOGS = [
 func effect_20041_start():
 	if wf.is_extra_round():
 		var msg = "当前已是额外回合\n【{0}】可另择良机".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 2, 2999)
+		play_dialog(actorId, msg, 2, 2999)
 		return
 
 	if actor.get_hp() < int(actor.get_max_hp() / 5):
-		play_dialog(me.actorId, "体力过低，无法发动", 3, 2999)
+		play_dialog(actorId, "体力过低，无法发动", 3, 2999)
 		return
 
 	#先清空选择列表
@@ -91,7 +91,7 @@ func effect_20041_confirm():
 		for targetId in selected:
 			names.append(ActorHelper.actor(targetId).get_name())
 		msg = "与{0}\n一起进入额外回合吗？".format(["、".join(names)])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001():
@@ -113,7 +113,7 @@ func effect_20041_perform():
 	ske.war_report()
 	unset_env(EFFECT_CHOOSE_NAME)
 	unset_env(EFFECT_CHOOSE_ACTOR)
-	play_dialog(me.actorId, msg, 0, 2999)
+	play_dialog(actorId, msg, 0, 2999)
 	return
 
 func _update_select_color(targetIds:PoolIntArray) -> void:

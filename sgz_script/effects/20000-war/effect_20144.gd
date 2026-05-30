@@ -53,7 +53,7 @@ func effect_20144_start():
 		COST_AP, ske.skill_name,
 		ActorHelper.actor(fromId).get_name()
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000():
@@ -70,7 +70,7 @@ func effect_20144_2():
 		ActorHelper.actor(fromId).get_name(), me.get_name(),
 		ske.skill_name,
 	])
-	play_dialog(me.actorId, msg, 2, 2001)
+	play_dialog(actorId, msg, 2, 2001)
 	return
 
 func on_view_model_2001():

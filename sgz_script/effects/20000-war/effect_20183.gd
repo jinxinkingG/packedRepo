@@ -26,13 +26,13 @@ func effect_20183_start():
 		return
 
 	var msg = "体力减半，发动【龙吟】\n定止敌方全军\n可否？"
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20183_2():
 	var ske = SkillHelper.read_skill_effectinfo()
 	var msg = "幼龙之怒，群小静听！"
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	return
 
 func effect_20183_3():

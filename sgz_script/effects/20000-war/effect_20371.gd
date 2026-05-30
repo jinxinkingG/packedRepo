@@ -37,7 +37,7 @@ func effect_20371_start():
 	var msg = "夺取{0}全部机动力\n可否？".format([
 		wa.get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20371_2():
@@ -49,5 +49,5 @@ func effect_20371_2():
 	var msg = "此败{0}罪责难逃\n退下！看我破敌\n（夺取{0}{1}机动力".format([
 		wa.get_name(), ap,
 	])
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	return

@@ -52,14 +52,14 @@ func effect_20177_2():
 	var msg = "消耗{0}机动力发动【离魂】\n与{1}各定止8-10回合\n可否？".format([
 		COST_AP, targetActor.get_name()
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20177_3():
 	var msg = "{0}蒲柳之姿\n恐未合将军之意？".format([
 		DataManager.get_actor_self_title(me.actorId),
 	])
-	play_dialog(me.actorId, msg, 3, 2002)
+	play_dialog(actorId, msg, 3, 2002)
 	return
 
 func effect_20177_4():

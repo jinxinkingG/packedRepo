@@ -30,7 +30,7 @@ func effect_20264_2():
 	var msg = "机动力上限 -{0}\n对{1}发动【缓进】\n可否？".format([
 		AP_LIMIT, targetActor.get_name()
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20264_3():
@@ -46,6 +46,6 @@ func effect_20264_3():
 		DataManager.get_actor_honored_title(targetId, me.actorId),
 		ActorHelper.actor(targetId).get_name()
 	])
-	play_dialog(me.actorId, msg, 2, -1)
+	play_dialog(actorId, msg, 2, -1)
 	return
 

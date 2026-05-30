@@ -46,7 +46,7 @@ func effect_20191_start():
 		targets.append(pos)
 	if targets.empty():
 		var msg = "无可用位置\n不能发动【{0}】".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 3, 2009)
+		play_dialog(actorId, msg, 3, 2009)
 		return
 
 	set_env("战争.技能.智救位置", targets)
@@ -81,7 +81,7 @@ func effect_20191_3():
 	var msg = "消耗{0}机动力\n对{1}发动【智救】\n可否".format([
 		COST_AP, ActorHelper.actor(targetId).get_name()
 	])
-	play_dialog(me.actorId, msg, 2, 2002, true)
+	play_dialog(actorId, msg, 2, 2002, true)
 	return
 
 func effect_20191_4():
@@ -96,5 +96,5 @@ func effect_20191_4():
 	var msg = "强弩之末，势不能穿鲁缟\n{0}不可用强".format([
 		DataManager.get_actor_honored_title(targetId, me.actorId)
 	])
-	play_dialog(me.actorId, msg, 2, 2009)
+	play_dialog(actorId, msg, 2, 2009)
 	return

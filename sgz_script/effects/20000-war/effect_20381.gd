@@ -21,7 +21,7 @@ func effect_20381_start():
 	var msg = "{0}身怀宝物\n截夺宝物，放其生还\n可否？".format([
 		targetActor.get_name(),
 	])
-	play_dialog(me.actorId, msg, 1, 2000, true)
+	play_dialog(actorId, msg, 1, 2000, true)
 	return
 
 func on_view_model_2000():

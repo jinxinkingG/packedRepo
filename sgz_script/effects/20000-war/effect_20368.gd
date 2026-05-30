@@ -27,7 +27,7 @@ func effect_20368_start():
 	var msg = "万——箭——齐发！\n（{0}发动【{1}】".format([
 		me.get_name(), ske.skill_name,
 	])
-	play_dialog(me.actorId, msg, 0, 2000)
+	play_dialog(actorId, msg, 0, 2000)
 	SceneManager.play_war_animation("Strategy_CityArrows", enemyLeaderId, "")
 	return
 
@@ -36,7 +36,7 @@ func effect_20368_2():
 	for targetId in get_enemy_targets(me, true, 999):
 		total += DataManager.damage_sodiers(me.actorId, targetId, DAMAGE)
 	var msg = "敌军兵力下降{0}".format([int(total)])
-	play_dialog(me.actorId, msg, 1, 2001)
+	play_dialog(actorId, msg, 1, 2001)
 	return
 
 func on_trigger_20016()->bool:

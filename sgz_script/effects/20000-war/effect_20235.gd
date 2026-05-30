@@ -30,7 +30,7 @@ func effect_20235_selected() -> void:
 	var msg = "发动限定技【{0}】\n夺取{1} {2} 机动力\n可否？".format([
 		ske.skill_name, targetWA.get_name(), targetWA.action_point
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001() -> void:

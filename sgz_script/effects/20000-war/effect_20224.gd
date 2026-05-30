@@ -41,7 +41,7 @@ func effect_20224_2():
 		ske.skill_name,
 	])
 	map.show_color_block_by_position([])
-	play_dialog(me.actorId, msg, 2, 2001)
+	play_dialog(actorId, msg, 2, 2001)
 	return
 
 func _get_marked_actor_id()->int:

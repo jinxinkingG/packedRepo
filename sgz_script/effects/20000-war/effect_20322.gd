@@ -53,14 +53,14 @@ func effect_20322_3():
 		var msg = "已为{0}预防[{1}]\n无须重复发动".format([
 			ActorHelper.actor(targetId).get_name(), schemeName,
 		])
-		play_dialog(me.actorId, msg, 2, 2009)
+		play_dialog(actorId, msg, 2, 2009)
 		return
 	if not assert_action_point(me.actorId, ap):
 		return
 	var msg = "消耗{0}机动力发动【{1}】\n为{2}预防敌方{3}\n可否？".format([
 		ap, ske.skill_name, ActorHelper.actor(targetId).get_name(), schemeName,
 	])
-	play_dialog(me.actorId, msg, 2, 2002, true)
+	play_dialog(actorId, msg, 2, 2002, true)
 	return
 
 func effect_20322_4():
@@ -77,7 +77,7 @@ func effect_20322_4():
 		DataManager.get_actor_honored_title(targetId, me.actorId),
 	])
 	ske.war_report()
-	play_dialog(me.actorId, msg, 2, 2009)
+	play_dialog(actorId, msg, 2, 2009)
 	return
 
 func _get_marked_schemes(targetId:int)->Dictionary:

@@ -1,412 +1,634 @@
-[b]白狼山之战[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]白狼山之战[/font][/b]
 
 
-[b]时间：[/b] 建安十二年（207年）八月
-[b]类型：[/b] 军事战役（北征乌桓）
+[color=#000000]时间：[/color] 建安十二年（207年）八月
+[color=#000000]类型：[/color] 军事战役（北征乌桓）
 
 
-[b]事件经过[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]事件经过[/font][/b]
 
 
-[b]背景：袁氏残余与乌桓联盟[/b]
-
-[color=#6699FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]（200年）后，[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]败亡，其子[b][color=#6699FF][url={"research": "袁熙", "cat": "people"}]袁熙[/url][/color][/b]（[color=#6699FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]牧）、[b]袁尚[/b]（[color=#6699FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]）于建安十年（205年）兵败后逃奔辽西乌桓单于[b]蹋顿[/b]，与乌桓贵族相互勾结，多次率众南侵幽州边塞，构成曹魏北方的持续威胁。
-
-[b]乌桓三郡：[/b] 辽西（单于蹋顿，众五千余落）、上谷（大人难楼，众九千余落）、辽东属国（峭王苏仆延，众千余落）、右北平（汗鲁王乌延，众八百余落）。袁绍在世时矫制赐蹋顿等为单于，乌桓与袁氏政治关系深厚。
-
-[b]内部分歧：[/b] 建安十二年初，多数将领反对北征，认为"袁尚不过是亡命之虏，[color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]必劝[color=#6699FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]趁虚袭击[color=#6699FF][url={"research": "许都", "cat": "geography"}]许都[/url][/color]"。[color=#6699FF][url={"research": "郭嘉", "cat": "people"}]郭嘉[/url][/color]力主出征：
-[color=#AAAAAA]　"公虽威震天下，胡恃其远，必不设备，因其无备，卒然击之，可破灭也。且袁绍有恩于民夷，而尚兄弟生存。今四州之民，徒以威服，德施未加，舍而南征，尚因乌丸之资，招其死主之臣，胡人一动，民夷俱应，以生蹋顿之心，成凯觎之计，恐青、冀非己之有也。表，坐谈客耳，自知才不足以御备，重任之则恐不能制，轻任之则备不为用，虽虚国远征，公无忧矣。"（《三国志·郭嘉传》）[/color]
-
-[b]后勤准备：[/b] 建安十一年（206年），预先开凿[b]平虏渠[/b]与[b]泉州渠[/b]（今天津市南北），连通呼沱河与鲍丘水，为北征运输军需物资做准备。古永定河（㶟水，流经今北京丰台）是这条水运干道的幽州段——2025年11月至12月，北京市考古研究院在丰台万泉寺村棚户区改造中发掘出3艘[b]东汉末至魏晋时期平底官营漕船[/b]（"官"字烙印），首次以考古实物证实幽州段漕运的存在（详见 `ref-fengtai-hanchin-ships-2026.md`）。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]背景：袁氏残余与乌桓联盟[/font][/b]
 
 
-[b]第一阶段：傍海道受阻，改道卢龙[/b]
+[color=#0066FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]（200年）后，[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]败亡，其子[color=#000000][color=#0066FF][url={"research": "袁熙", "cat": "people"}]袁熙[/url][/color][/color]（[color=#0066FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]牧）、[color=#000000][color=#0066FF][url={"research": "袁尚", "cat": "people"}]袁尚[/url][/color][/color]（[color=#0066FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]）于建安十年（205年）兵败后逃奔辽西乌桓单于[color=#000000][color=#0066FF][url={"research": "蹋顿", "cat": "people"}]蹋顿[/url][/color][/color]，与乌桓贵族相互勾结，多次率众南侵幽州边塞，构成曹魏北方的持续威胁。
 
-建安十二年五月，[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]率军从许都出发，北上至[b]无终[/b]（今天津蓟县）。七月，遭遇洪涝，原定沿渤海北上的"傍海道"被大水淹没（"时方夏水雨，而滨海洿下，泞滞不通"），乌桓军队又扼守要道，曹军陷入困境。
+[color=#000000]乌桓三郡：[/color] 辽西（单于蹋顿，众五千余落）、上谷（大人难楼，众九千余落）、辽东属国（峭王苏仆延，众千余落）、右北平（汗鲁王乌延，众八百余落）。袁绍在世时矫制赐蹋顿等为单于，乌桓与袁氏政治关系深厚。
 
-[b][color=#6699FF][url={"research": "田畴", "cat": "people"}]田畴[/url][/color]献策（关键转折）：[/b] 田畴，右北平无终人，隐居山中数年，因旧仇乌桓昔日贼杀其郡冠盖，主动请为向导。他指出：
+[color=#000000]内部分歧：[/color] 建安十二年初，多数将领反对北征，认为"袁尚不过是亡命之虏，[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]必劝[color=#0066FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]趁虚袭击[color=#0066FF][url={"research": "许都", "cat": "geography"}]许都[/url][/color]"。[color=#0066FF][url={"research": "郭嘉", "cat": "people"}]郭嘉[/url][/color]力主出征：
 
-[color=#AAAAAA]　"旧北平郡治在平冈，道出卢龙，达于柳城，自建武以来，陷坏断绝，垂二百载，而尚有微径可从。今虏将以大军当由无终，不得进而退，懈弛无备。若嘿回，从卢龙口越白檀之险，出空虚之地，路近而便，掩其不备，蹋顿之首，可不战而禽也。"（《三国志·田畴传》）[/color]
+[indent][color=#666666]┃ "公虽威震天下，胡恃其远，必不设备，因其无备，卒然击之，可破灭也。且袁绍有恩于民夷，而尚兄弟生存。今四州之民，徒以威服，德施未加，舍而南征，尚因乌丸之资，招其死主之臣，胡人一动，民夷俱应，以生蹋顿之心，成凯觎之计，恐青、冀非己之有也。表，坐谈客耳，自知才不足以御备，重任之则恐不能制，轻任之则备不为用，虽虚国远征，公无忧矣。"（《三国志·郭嘉传》）[/color][/indent]
+
+
+[color=#000000]后勤准备：[/color] 建安十一年（206年），预先开凿[color=#000000]平虏渠[/color]与[color=#000000]泉州渠[/color]（今天津市南北），连通呼沱河与鲍丘水，为北征运输军需物资做准备。古永定河（㶟水，流经今北京丰台）是这条水运干道的幽州段——2025年11月至12月，北京市考古研究院在丰台万泉寺村棚户区改造中发掘出3艘[color=#000000]东汉末至魏晋时期平底官营漕船[/color]（"官"字烙印），首次以考古实物证实幽州段漕运的存在（详见 `ref-fengtai-hanchin-ships-2026.md`）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]第一阶段：傍海道受阻，改道卢龙[/font][/b]
+
+
+建安十二年五月，[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]率军从许都出发，北上至[color=#000000]无终[/color]（今天津蓟县）。七月，遭遇洪涝，原定沿渤海北上的"傍海道"被大水淹没（"时方夏水雨，而滨海洿下，泞滞不通"），乌桓军队又扼守要道，曹军陷入困境。
+
+[color=#000000][color=#0066FF][url={"research": "田畴", "cat": "people"}]田畴[/url][/color]献策（关键转折）：[/color] 田畴，右北平无终人，隐居山中数年，因旧仇乌桓昔日贼杀其郡冠盖，主动请为向导。他指出：
+
+
+[indent][color=#666666]┃ "旧北平郡治在平冈，道出卢龙，达于柳城，自建武以来，陷坏断绝，垂二百载，而尚有微径可从。今虏将以大军当由无终，不得进而退，懈弛无备。若嘿回，从卢龙口越白檀之险，出空虚之地，路近而便，掩其不备，蹋顿之首，可不战而禽也。"（《三国志·田畴传》）[/color][/indent]
+
 
 曹操从之，故意撤军，并于路旁立牌宣称"方今暑夏，道路不通，且俟秋冬，乃复进军"——乌桓斥候信以为真，大大松懈戒备。
 
 
-[b]第二阶段：奇袭行军，艰苦跋涉[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]第二阶段：奇袭行军，艰苦跋涉[/font][/b]
+
 
 曹军悄然改道，以田畴部曲为向导，走废弃近两百年的卢龙道：
-- 登[b]徐无山[/b]（今河北遵化东）→ 出[b]卢龙塞[/b]（今河北喜峰口/潘家口）→ 经白檀/越白檀水（今宽城一带）→ 历平冈（今宁城甸子镇黑城村）→ 涉鲜卑庭（即单于庭，老哈河上游紫蒙川）→ 东指柳城
-- 全程"堑山堙谷五百余里"（《武帝纪》），沿途凿山填谷，极为艰辛
-- 《曹瞒传》（裴注引）载：[b]"时寒且旱，二百里无复水，军又乏食，杀马数千以为粮，凿地三千余丈乃得水。"[/b]
 
-直至距柳城不足二百里，乌桓方才发觉曹军到来。袁尚、袁熙与蹋顿等[b]仓皇率数万骑兵[/b]出迎，已失先机。
-
-
-[b]第三阶段：白狼山决战[/b]
-
-[b]兵力对比：[/b] 乌桓联军数万骑（以骑兵为主力），曹军轻骑在前、重兵辎重在后，"被甲者少，左右皆惧"。
-
-[b]关键决策：[/b] 曹操登高俯瞰，见乌桓阵型不整，当机立断，将帅旗（麾）授予[color=#6699FF][url={"research": "张辽", "cat": "people"}]张辽[/url][/color]，命其为先锋即时出击。
-
-[color=#AAAAAA]　公登高，望虏阵不整，乃纵兵击之，使张辽为先锋，虏众大奔，斩蹋顿及名王已下，胡汉降者二十余万口。（《三国志·武帝纪》）[/color]
-
-[color=#AAAAAA]　临阵斩蹋顿首，死者被野。（《三国志·乌丸传》）[/color]
-
-- 张辽率先锋直插敌阵，乌桓军崩溃，[b]蹋顿[/b]被临阵斩杀
-- 胡汉降众[b]二十余万口[/b]（含十余万幽冀南奔的吏民汉人）
+[indent]•  登[color=#000000]徐无山[/color]（今河北遵化东）→ 出[color=#000000]卢龙塞[/color]（今河北喜峰口/潘家口）→ 经白檀/越白檀水（今宽城一带）→ 历平冈（今宁城甸子镇黑城村）→ 涉鲜卑庭（即单于庭，老哈河上游紫蒙川）→ 东指柳城[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  全程"堑山堙谷五百余里"（《武帝纪》），沿途凿山填谷，极为艰辛[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《曹瞒传》（裴注引）载：[color=#000000]"时寒且旱，二百里无复水，军又乏食，杀马数千以为粮，凿地三千余丈乃得水。"[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]第四阶段：郭嘉遗计定辽东[/b]
+直至距柳城不足二百里，乌桓方才发觉曹军到来。袁尚、袁熙与蹋顿等[color=#000000]仓皇率数万骑兵[/color]出迎，已失先机。
 
-战后，袁尚、袁熙与辽东单于苏仆延等率数千骑逃奔[b]辽东太守公孙康[/b]。有人建议曹操趁势攻打辽东。
 
-[b]郭嘉遗计[/b]（郭嘉在北归途中病重，临终遗言）：
-[color=#AAAAAA]　"公孙康恃远不服，若急攻之，必并力拒我；若缓之，彼将自相图，可坐而定也。"（《三国志·郭嘉传》）[/color]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]第三阶段：白狼山决战[/font][/b]
+
+
+[color=#000000]兵力对比：[/color] 乌桓联军数万骑（以骑兵为主力），曹军轻骑在前、重兵辎重在后，"被甲者少，左右皆惧"。
+
+[color=#000000]关键决策：[/color] 曹操登高俯瞰，见乌桓阵型不整，当机立断，将帅旗（麾）授予[color=#0066FF][url={"research": "张辽", "cat": "people"}]张辽[/url][/color]，命其为先锋即时出击。
+
+
+[indent][color=#666666]┃ 公登高，望虏阵不整，乃纵兵击之，使张辽为先锋，虏众大奔，斩蹋顿及名王已下，胡汉降者二十余万口。（《三国志·武帝纪》）[/color][/indent]
+
+
+[indent][color=#666666]┃ 临阵斩蹋顿首，死者被野。（《三国志·乌丸传》）[/color][/indent]
+
+
+[indent]•  张辽率先锋直插敌阵，乌桓军崩溃，[color=#000000]蹋顿[/color]被临阵斩杀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  胡汉降众[color=#000000]二十余万口[/color]（含十余万幽冀南奔的吏民汉人）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]第四阶段：郭嘉遗计定辽东[/font][/b]
+
+
+战后，袁尚、袁熙与辽东单于苏仆延等率数千骑逃奔[color=#000000]辽东太守[color=#0066FF][url={"research": "公孙康", "cat": "people"}]公孙康[/url][/color][/color]。有人建议曹操趁势攻打辽东。
+
+[color=#000000]郭嘉遗计[/color]（郭嘉在北归途中病重，临终遗言）：
+
+[indent][color=#666666]┃ "公孙康恃远不服，若急攻之，必并力拒我；若缓之，彼将自相图，可坐而定也。"（《三国志·郭嘉传》）[/color][/indent]
+
 
 曹操采纳，按兵不动。不久，公孙康将袁尚、袁熙及苏仆延斩杀，传首献曹。曹操叹曰："此嘉之遗计也。"
 
 
-[b]关键人物[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键人物[/font][/b]
 
 
-- [b]蹋顿[/b]：辽西乌桓单于，总摄三王部，骁武有略，袁绍旧友，临阵被斩（传说当地葬于白狼山、白鹿山祠系乌桓残部为其所建——民间传说，无考古证实）
-- [b]郭嘉[/b]：力主出征，遗计定辽东，班师途中病逝，年三十八
-- [b]张辽[/b]：受命为先锋，临机冲击，斩蹋顿（或完成最后一击）
-- [b]曹纯[/b]：虎豹骑统领，"纯部骑获单于蹹顿"，战后封高陵亭侯
-- [b]田畴[/b]：献卢龙道奇谋，为向导，战后坚决拒绝封侯（详见下节）
-- [b][color=#6699FF][url={"research": "阎柔", "cat": "people"}]阎柔[/url][/color][/b]：护乌桓校尉，率鲜卑、乌桓随军，功封关内侯，战后主管内迁乌桓事务（详见下节）
+[indent]•  [color=#000000]蹋顿[/color]：辽西乌桓单于，总摄三王部，骁武有略，袁绍旧友，临阵被斩（传说当地葬于白狼山、白鹿山祠系乌桓残部为其所建——民间传说，无考古证实）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]郭嘉[/color]：力主出征，遗计定辽东，班师途中病逝，年三十八[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张辽[/color]：受命为先锋，临机冲击，斩蹋顿（或完成最后一击）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000][color=#0066FF][url={"research": "曹纯", "cat": "people"}]曹纯[/url][/color][/color]：虎豹骑统领，"纯部骑获单于蹹顿"，战后封高陵亭侯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]田畴[/color]：献卢龙道奇谋，为向导，战后坚决拒绝封侯（详见下节）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000][color=#0066FF][url={"research": "阎柔", "cat": "people"}]阎柔[/url][/color][/color]：护乌桓校尉，率鲜卑、乌桓随军，功封关内侯，战后主管内迁乌桓事务（详见下节）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]虎豹骑（曹纯）与蹋顿之死：三传矛盾精确考证[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]虎豹骑（曹纯）与蹋顿之死：三传矛盾精确考证[/font][/b]
 
 
-[b]三传记载[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三传记载[/font][/b]
 
 
-[b]史料[/b] | [b]原文[/b] | [b]侧重[/b]
-《三国志·武帝纪》 | "使张辽为先锋，虏众大奔，[b]斩蹋顿[/b]及名王已下" | 张辽先锋，整体战果
-《三国志·张辽传》 | "遂击，大破之，[b]斩单于蹋顿[/b]" | 张辽个人功绩
-《三国志·曹纯传》（卷9） | "及北征三郡，[b]纯部骑获单于蹹顿[/b]" | 曹纯部虎豹骑截获蹋顿
+[table=3]
+[cell][b]史料[/b][/cell]
+[cell][b]原文[/b][/cell]
+[cell][b]侧重[/b][/cell]
+[cell]《三国志·武帝纪》[/cell]
+[cell]"使张辽为先锋，虏众大奔，[color=#000000]斩蹋顿[/color]及名王已下"[/cell]
+[cell]张辽先锋，整体战果[/cell]
+[cell]《三国志·张辽传》[/cell]
+[cell]"遂击，大破之，[color=#000000]斩单于蹋顿[/color]"[/cell]
+[cell]张辽个人功绩[/cell]
+[cell]《三国志·曹纯传》（卷9）[/cell]
+[cell]"及北征三郡，[color=#000000]纯部骑获单于蹹顿[/color]"[/cell]
+[cell]曹纯部虎豹骑截获蹋顿[/cell]
+[/table]
 
 
-注：[b]"获"字辨析[/b]——《曹纯传》用"获"而非"斩"，古汉语中"获"可指"俘获"或"斩获（杀死并夺取）"，但与其他两传"斩"字形成文义差异，暗示两步骤。
+注：[color=#000000]"获"字辨析[/color]——《曹纯传》用"获"而非"斩"，古汉语中"获"可指"俘获"或"斩获（杀死并夺取）"，但与其他两传"斩"字形成文义差异，暗示两步骤。
 
 
-[b]学界解读：两步骤说（主流）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]学界解读：两步骤说（主流）[/font][/b]
+
 
 维基百科综合三传后的标准表述：
-[color=#AAAAAA]　"曹纯部俘获蹋顿，蹋顿当阵为张辽斩杀。"[/color]
+
+[indent][color=#666666]┃ "曹纯部俘获蹋顿，蹋顿当阵为张辽斩杀。"[/color][/indent]
+
 
 两个动作是同一事件的先后阶段：
-1. [b]曹纯部虎豹骑[/b]作为精锐骑兵，追截蹋顿，完成"获"（截住/围住）
-2. [b]张辽[/b]作为总先锋，完成最终斩杀
+
+[indent]1.  [color=#000000]曹纯部虎豹骑[/color]作为精锐骑兵，追截蹋顿，完成"获"（截住/围住）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]张辽[/color]作为总先锋，完成最终斩杀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 这与《乌丸传》"临阵斩蹋顿首"吻合——非俘后处决，而是临阵当场了结。
 
 
-[b]虎豹骑在白狼山之战中的角色[/b]
-
-[b]虎豹骑基本信息：[/b]
-- 性质：曹操直属精锐骑兵，兼具宿卫功能
-- 编制：从"百人将"（低层军官）中精选，有"皆天下骁锐，或从百人将补之"（《魏书》裴注）
-- 历任统帅：曹纯（首任）→ 曹操亲领（210年曹纯卒后）→ 曹休 → 曹真
-- 规模：史无明确数字，《三国志》仅言"精锐"
-
-[b]白狼山之战中的具体部署（史料可支撑部分）：[/b]
-- 曹纯率虎豹骑随北征三郡，《曹纯传》明确记载
-- 战场上虎豹骑完成了对蹋顿的追截（"获单于蹹顿"）
-- 张辽奉曹操麾旗为总先锋，负责整体冲击
-
-[b]史料极限说明：[/b]《武帝纪》《张辽传》均不单独提及"虎豹骑"名称；虎豹骑在此战中的具体战术部署（出击时机、兵力规模、战场位置）三传均无进一步记载，超出现有史料可考范围。史料已穷尽。
-
-[b]战功体现：[/b] 曹纯因白狼山之战封[b]高陵亭侯，食邑三百户[/b]——这是《曹纯传》记载的明确封赏，印证"获单于蹹顿"被曹操视为重要战功。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]虎豹骑在白狼山之战中的角色[/font][/b]
 
 
-[b]田畴拒绝封侯（完整史料）[/b]
+[color=#000000]虎豹骑基本信息：[/color]
+
+[indent]•  性质：曹操直属精锐骑兵，兼具宿卫功能[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  编制：从"百人将"（低层军官）中精选，有"皆天下骁锐，或从百人将补之"（《魏书》裴注）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  历任统帅：曹纯（首任）→ 曹操亲领（210年曹纯卒后）→ [color=#0066FF][url={"research": "曹休", "cat": "people"}]曹休[/url][/color] → [color=#0066FF][url={"research": "曹真", "cat": "people"}]曹真[/url][/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  规模：史无明确数字，《三国志》仅言"精锐"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-战后曹操论功行封，[b]封畴亭侯，邑五百户[/b]。田畴两度拒绝，最终以死相誓，令曹操不得不接受。
+[color=#000000]白狼山之战中的具体部署（史料可支撑部分）：[/color]
 
-[b]第一次（207年，北征归后）：[/b]
-[color=#AAAAAA]　畴自以始为居难，率众遁逃，志义不立，反以为利，非本意也，[b]固让[/b]。太祖知其至心，许而不夺。[/color]
-
-[b]第二次（荆州征还后）：[/b]
-[color=#AAAAAA]　太祖追念畴功殊美，恨前听畴之让，曰："是成一人之志，而亏王法大制也。"于是乃复以前爵封畴。畴上疏陈诚，[b]以死自誓[/b]。太祖不听，欲引拜之，至于数四，终不受。[/color]
-
-[b][color=#6699FF][url={"research": "夏侯惇", "cat": "people"}]夏侯惇[/url][/color]转圜失败——田畴的核心陈词：[/b]
-[color=#AAAAAA]　"畴，负义逃窜之人耳，蒙恩全活，为幸多矣。[b]岂可卖卢龙之塞，以易赏禄哉[/b]？纵国私畴，畴独不愧于心乎？……若必不得已，请愿效死刎首于前。"[/color]
-[color=#AAAAAA]　[/color]
-[color=#AAAAAA]　言未卒，[b]涕泣横流[/b]。[/color]
-
-曹操喟然知不可屈，乃[b]拜为议郎[/b]（无封爵），年四十六卒。文帝践阼后，追念德义，赐其从孙续爵关内侯以奉其嗣。
-
-[b]田畴拒封动机：[/b]
-1. 隐居山中出于对旧主刘虞的守节义，非功利行为；以此换赏，有违初衷
-2. 为曹军引路是出于对乌桓的私仇（"常忿乌丸昔多贼杀其郡冠盖"），不是为曹操效力——"卖卢龙之塞以易赏禄"，心理无法接受
-3. 自视"负义逃窜之人"，不配荣耀
+[indent]•  曹纯率虎豹骑随北征三郡，《曹纯传》明确记载[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战场上虎豹骑完成了对蹋顿的追截（"获单于蹹顿"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  张辽奉曹操麾旗为总先锋，负责整体冲击[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]阎柔：边缘人与中原桥梁[/b]
+[color=#000000]史料极限说明：[/color]《武帝纪》《张辽传》均不单独提及"虎豹骑"名称；虎豹骑在此战中的具体战术部署（出击时机、兵力规模、战场位置）三传均无进一步记载，超出现有史料可考范围。史料已穷尽。
+
+[color=#000000]战功体现：[/color] 曹纯因白狼山之战封[color=#000000]高陵亭侯，食邑三百户[/color]——这是《曹纯传》记载的明确封赏，印证"获单于蹹顿"被曹操视为重要战功。
 
 
-[b]核心身份[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]田畴拒绝封侯（完整史料）[/font][/b]
 
-阎柔（生卒年不详），广阳人（今北京市附近）。[b]少年时被乌桓、鲜卑俘虏[/b]，却在草原部落中成长为被深度信任的人物——这是他整个政治生涯的根基。
+
+战后曹操论功行封，[color=#000000]封畴亭侯，邑五百户[/color]。田畴两度拒绝，最终以死相誓，令曹操不得不接受。
+
+[color=#000000]第一次（207年，北征归后）：[/color]
+
+[indent][color=#666666]┃ 畴自以始为居难，率众遁逃，志义不立，反以为利，非本意也，[color=#000000]固让[/color]。太祖知其至心，许而不夺。[/color][/indent]
+
+
+[color=#000000]第二次（荆州征还后）：[/color]
+
+[indent][color=#666666]┃ 太祖追念畴功殊美，恨前听畴之让，曰："是成一人之志，而亏王法大制也。"于是乃复以前爵封畴。畴上疏陈诚，[color=#000000]以死自誓[/color]。太祖不听，欲引拜之，至于数四，终不受。[/color][/indent]
+
+
+[color=#000000][color=#0066FF][url={"research": "夏侯惇", "cat": "people"}]夏侯惇[/url][/color]转圜失败——田畴的核心陈词：[/color]
+
+[indent][color=#666666]┃ "畴，负义逃窜之人耳，蒙恩全活，为幸多矣。[color=#000000]岂可卖卢龙之塞，以易赏禄哉[/color]？纵国私畴，畴独不愧于心乎？……若必不得已，请愿效死刎首于前。"[/color][/indent]
+[indent][color=#666666]┃ [/color][/indent]
+[indent][color=#666666]┃ 言未卒，[color=#000000]涕泣横流[/color]。[/color][/indent]
+
+
+曹操喟然知不可屈，乃[color=#000000]拜为议郎[/color]（无封爵），年四十六卒。文帝践阼后，追念德义，赐其从孙续爵关内侯以奉其嗣。
+
+[color=#000000]田畴拒封动机：[/color]
+
+[indent]1.  隐居山中出于对旧主[color=#0066FF][url={"research": "刘虞", "cat": "people"}]刘虞[/url][/color]的守节义，非功利行为；以此换赏，有违初衷[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  为曹军引路是出于对乌桓的私仇（"常忿乌丸昔多贼杀其郡冠盖"），不是为曹操效力——"卖卢龙之塞以易赏禄"，心理无法接受[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  自视"负义逃窜之人"，不配荣耀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]阎柔：边缘人与中原桥梁[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]核心身份[/font][/b]
+
+
+阎柔（生卒年不详），广阳人（今北京市附近）。[color=#000000]少年时被乌桓、鲜卑俘虏[/color]，却在草原部落中成长为被深度信任的人物——这是他整个政治生涯的根基。
 
 史料原文（《三国志·乌丸鲜卑东夷传》）：
-[color=#AAAAAA]　"广阳阎柔，少没乌丸、鲜卑中，为其种所归信。柔乃因鲜卑众，杀乌丸校尉邢举代之。"[/color]
+
+[indent][color=#666666]┃ "广阳阎柔，少没乌丸、鲜卑中，为其种所归信。柔乃因鲜卑众，杀乌丸校尉邢举代之。"[/color][/indent]
 
 
-[b]主要经历[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]主要经历[/font][/b]
 
 
-[b]时间[/b] | [b]事件[/b]
-东汉末 | 少年被乌桓/鲜卑俘虏，获其信任，借鲜卑力量杀护乌桓校尉邢举自代
-兴平二年（195） | 为刘虞旧部推举为乌桓司马，联鲜卑战[color=#6699FF][url={"research": "公孙瓒 ", "cat": " people"}]公孙瓒 [/url][/color]，斩[color=#6699FF][url={"research": "邹丹 ", "cat": " people"}]邹丹 [/url][/color]等四千余人
-建安四年（199） | 袁绍拉拢，以阎柔"宠慰"安抚北边
-建安五年（200） | [color=#6699FF][url={"research": "官渡 ", "cat": " geography"}]官渡 [/url][/color]后遣使曹操，被封护乌丸校尉，随军攻破南皮，献名马
-建安十二年（207） | 率鲜卑、乌桓随北征三郡，受张辽节制，参与白狼山之战，战后封关内侯
-建安后期 | 充当鲜卑（[color=#6699FF][url={"research": "轲比能 ", "cat": " people"}]轲比能 [/url][/color]、素利等）上贡曹操的中介桥梁
-黄初元年（220）后 | [color=#6699FF][url={"research": "曹丕 ", "cat": " people"}]曹丕 [/url][/color]拜为度辽将军，坐镇北方，统帅幽州兵马，鲜卑多送子为质
+[table=2]
+[cell][b]时间[/b][/cell]
+[cell][b]事件[/b][/cell]
+[cell]东汉末[/cell]
+[cell]少年被乌桓/鲜卑俘虏，获其信任，借鲜卑力量杀护乌桓校尉邢举自代[/cell]
+[cell]兴平二年（195）[/cell]
+[cell]为刘虞旧部推举为乌桓司马，联鲜卑战[color=#0066FF][url={"research": "公孙瓒", "cat": "people"}]公孙瓒[/url][/color]，斩[color=#0066FF][url={"research": "邹丹", "cat": "people"}]邹丹[/url][/color]等四千余人[/cell]
+[cell]建安四年（199）[/cell]
+[cell]袁绍拉拢，以阎柔"宠慰"安抚北边[/cell]
+[cell]建安五年（200）[/cell]
+[cell][color=#0066FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]后遣使曹操，被封护乌丸校尉，随军攻破南皮，献名马[/cell]
+[cell]建安十二年（207）[/cell]
+[cell]率鲜卑、乌桓随北征三郡，受张辽节制，参与白狼山之战，战后封关内侯[/cell]
+[cell]建安后期[/cell]
+[cell]充当鲜卑（[color=#0066FF][url={"research": "轲比能", "cat": "people"}]轲比能[/url][/color]、素利等）上贡曹操的中介桥梁[/cell]
+[cell]黄初元年（220）后[/cell]
+[cell][color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]拜为度辽将军，坐镇北方，统帅幽州兵马，鲜卑多送子为质[/cell]
+[/table]
 
 
-[b]内迁乌桓的实际管理者[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]内迁乌桓的实际管理者[/font][/b]
+
 
 白狼山之战后，三郡乌桓内迁约万余落（户）——阎柔作为护乌桓校尉，是这批移民进入中原后的实际管理者。他掌握的既是军事资源（"三郡乌桓为天下名骑"的骑兵），也是中原与草原的外交通道。
 
 
-[b]与田畴的对比[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]与田畴的对比[/font][/b]
 
 
-[b]维度[/b] | [b]阎柔[/b] | [b]田畴[/b]
-少年来源 | 汉人被俘，在草原成长 | 汉人隐居山中，守旧主之节
-与乌桓的关系 | 深度融入，获信任，成为枢纽 | 仇恨驱动，引路后立刻拒绝回报
-对待封赏 | 积极接受，步步晋升（关内侯→都亭侯） | 以死拒绝，只受议郎
-核心张力 | 被俘者成为两个世界的桥梁 | 义士拒绝将道义变现为利禄
-历史结局 | 长期留用，曹丕时拜度辽将军 | 年四十六卒，身后从孙受追赐
+[table=3]
+[cell][b]维度[/b][/cell]
+[cell][b]阎柔[/b][/cell]
+[cell][b]田畴[/b][/cell]
+[cell]少年来源[/cell]
+[cell]汉人被俘，在草原成长[/cell]
+[cell]汉人隐居山中，守旧主之节[/cell]
+[cell]与乌桓的关系[/cell]
+[cell]深度融入，获信任，成为枢纽[/cell]
+[cell]仇恨驱动，引路后立刻拒绝回报[/cell]
+[cell]对待封赏[/cell]
+[cell]积极接受，步步晋升（关内侯→都亭侯）[/cell]
+[cell]以死拒绝，只受议郎[/cell]
+[cell]核心张力[/cell]
+[cell]被俘者成为两个世界的桥梁[/cell]
+[cell]义士拒绝将道义变现为利禄[/cell]
+[cell]历史结局[/cell]
+[cell]长期留用，曹丕时拜度辽将军[/cell]
+[cell]年四十六卒，身后从孙受追赐[/cell]
+[/table]
 
 
-[b]三郡乌桓降众后续：内迁、编制与融入[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]三郡乌桓降众后续：内迁、编制与融入[/font][/b]
 
 
-[b]内迁规模的厘清[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]内迁规模的厘清[/font][/b]
+
 
 白狼山之战"胡汉降者二十余万口"是战场总降众，包括乌桓人及之前南奔的幽冀汉人（"时幽、冀吏民奔乌桓者十余万户"）。
 
 《三国志·乌丸鲜卑东夷传》明确记载实际迁入内地的规模：
-[color=#AAAAAA]　[b]及幽州、[color=#6699FF][url={"research": "并州", "cat": "geography"}]并州[/url][/color]柔所统乌丸万余落，悉徙其族居中国，帅从其侯王大人种众与征伐。由是三郡乌丸为天下名骑。[/b][/color]
 
-即[b]阎柔所统约万余落（户）[/b]被迁入内地，更多的乌桓部众留在三郡塞外。
-
-
-[b]管理制度[/b]
-
-- [b]保留部落组织[/b]：仍以侯王大人（部落首领）率领，未拆散为普通汉民，随军出征时以本族骑兵为单位参战
-- [b]护乌桓校尉制度[/b]：阎柔（首任）→ [color=#6699FF][url={"research": "牵招", "cat": "people"}]牵招[/url][/color] → [color=#6699FF][url={"research": "田豫", "cat": "people"}]田豫[/url][/color]（曹魏初年）→ 后兼并于幽州刺史
-- [b]逐渐编户化[/b]：内迁乌桓需缴田赋户税、服徭役；塞外乌桓则"伐叛柔服"，叛则严镇（田豫斩骨进）
+[indent][color=#666666]┃ [color=#000000]及幽州、[color=#0066FF][url={"research": "并州", "cat": "geography"}]并州[/url][/color]柔所统乌丸万余落，悉徙其族居中国，帅从其侯王大人种众与征伐。由是三郡乌丸为天下名骑。[/color][/color][/indent]
 
 
-[b]"三郡乌桓为天下名骑"的含义[/b]
-
-- 并非独立番号骑兵，而是对内迁乌桓骑兵整体军事声誉的评价
-- 乌桓骑兵以游牧特性见长，轻骑奔射是强项
-- [b]"虎豹骑主要兵源来自乌桓"说[/b]：部分文献有此推断，但《三国志》正文无直接记载，系后人推断，不可采信为史实
+即[color=#000000]阎柔所统约万余落（户）[/color]被迁入内地，更多的乌桓部众留在三郡塞外。
 
 
-[b]218年代郡之乱（白狼山战后的余波）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]管理制度[/font][/b]
 
-建安二十三年（218年），[b]代郡、上谷乌桓首领能臣氐[/b]举兵反叛，曹操命[b][color=#6699FF][url={"research": "曹彰", "cat": "people"}]曹彰[/url][/color][/b]为北中郎将行骁骑将军，率军北征：
-[color=#AAAAAA]　叛变的乌丸族几千骑兵攻到，当时曹彰的兵马尚未集结，只有步兵一千人，战马几百匹。曹彰用田豫的计策，坚守阵地的要冲，击退敌人后追击。（《三国志·任城陈萧王传》）[/color]
+
+[indent]•  [color=#000000]保留部落组织[/color]：仍以侯王大人（部落首领）率领，未拆散为普通汉民，随军出征时以本族骑兵为单位参战[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]护乌桓校尉制度[/color]：阎柔（首任）→ [color=#0066FF][url={"research": "牵招", "cat": "people"}]牵招[/url][/color] → [color=#0066FF][url={"research": "田豫", "cat": "people"}]田豫[/url][/color]（曹魏初年）→ 后兼并于幽州刺史[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]逐渐编户化[/color]：内迁乌桓需缴田赋户税、服徭役；塞外乌桓则"伐叛柔服"，叛则严镇（田豫斩骨进）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]"三郡乌桓为天下名骑"的含义[/font][/b]
+
+
+[indent]•  并非独立番号骑兵，而是对内迁乌桓骑兵整体军事声誉的评价[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  乌桓骑兵以游牧特性见长，轻骑奔射是强项[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]"虎豹骑主要兵源来自乌桓"说[/color]：部分文献有此推断，但《三国志》正文无直接记载，系后人推断，不可采信为史实[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]218年代郡之乱（白狼山战后的余波）[/font][/b]
+
+
+建安二十三年（218年），[color=#000000]代郡、上谷乌桓首领能臣氐[/color]举兵反叛，曹操命[color=#000000][color=#0066FF][url={"research": "曹彰", "cat": "people"}]曹彰[/url][/color][/color]为北中郎将行骁骑将军，率军北征：
+
+[indent][color=#666666]┃ 叛变的乌丸族几千骑兵攻到，当时曹彰的兵马尚未集结，只有步兵一千人，战马几百匹。曹彰用田豫的计策，坚守阵地的要冲，击退敌人后追击。（《三国志·任城陈萧王传》）[/color][/indent]
+
 
 此役标志着留在塞外的乌桓残部被彻底清除，鲜卑大人轲比能亦被降服（阵前观望后归服）。此后塞外乌桓无力再成独立政治势力。
 
 
-[b]乌桓的最终命运[/b]
-
-- 三国以后史书中无单独"乌桓传"，乌桓逐渐融入汉族及其他民族
-- 内迁者：农业化 → 通婚 → 编户齐民 → 消失为独立民族
-- 塞外残部：被鲜卑轲比能兼并/压迫，至十六国时期已无足轻重
-- [b]辽宁大学毕宝魁教授补充视角（2026年1月）[/b]：此战"客观上打破中原与东北的隔阂，推动了以慕容鲜卑为代表的东北少数民族登上历史舞台，开启北方民族大融合进程"
+[b][font=res://resource/font/FandolSong-Bold/26.tres]乌桓的最终命运[/font][/b]
 
 
-[b]白狼山地望考证（2026年最新学术状态）[/b]
+[indent]•  三国以后史书中无单独"乌桓传"，乌桓逐渐融入汉族及其他民族[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  内迁者：农业化 → 通婚 → 编户齐民 → 消失为独立民族[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  塞外残部：被鲜卑轲比能兼并/压迫，至十六国时期已无足轻重[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]辽宁大学毕宝魁教授补充视角（2026年1月）[/color]：此战"客观上打破中原与东北的隔阂，推动了以慕容鲜卑为代表的东北少数民族登上历史舞台，开启北方民族大融合进程"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]主要争议[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]白狼山地望考证（2026年最新学术状态）[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]主要争议[/font][/b]
+
 
 白狼山精确地望长期存在喀左说与建昌说之争，另有凌源说（推测性，非学界共识）。
 
 
-[b]主流说：喀左大阳山（今辽宁喀喇沁左翼蒙古族自治县）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]主流说：喀左大阳山（今辽宁喀喇沁左翼蒙古族自治县）[/font][/b]
 
-[b]支持者：[/b]
-- 辽宁省博物馆老馆长[b]王绵厚[/b]：三度公开确认（2025年末论文、2026年1月辽宁日报文章、2026年4月大凌河古道论文）
-  > "白狼山在喀左没有问题，白狼山就是大阳山，白狼城就是黄道营子古城，这从历史地理和文物上都可以证明的，且不是孤证。"（2026年1月）：白狼山具体位置"实应为朝阳市喀喇沁左翼蒙古族自治县境内大阳山，汉代大阳山称作白狼山，后又曾名为白鹿山。"
 
-- [b]喀左县人民政府官网[/b]（历史文化页，2026-04-19确认）：
-  > "建安十二年(207)，曹操北征乌桓，八月，[b]登白狼山(今白塔子乡大阳山)[/b]，斩乌桓首领蹋顿。"
+[color=#000000]支持者：[/color]
 
-- [b]光明网·文摘报[/b]（2025年3月）：明确以"白狼山（今辽宁喀喇沁左翼蒙古族自治县）"表述，为媒体主流认定。
+[indent]•  辽宁省博物馆老馆长[color=#000000]王绵厚[/color]：三度公开确认（2025年末论文、2026年1月辽宁日报文章、2026年4月大凌河古道论文） > "白狼山在喀左没有问题，白狼山就是大阳山，白狼城就是黄道营子古城，这从历史地理和文物上都可以证明的，且不是孤证。"（2026年1月）：白狼山具体位置"实应为朝阳市喀喇沁左翼蒙古族自治县境内大阳山，汉代大阳山称作白狼山，后又曾名为白鹿山。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]喀左县人民政府官网[/color]（历史文化页，2026-04-19确认）： > "建安十二年(207)，曹操北征乌桓，八月，[color=#000000]登白狼山(今白塔子乡大阳山)[/color]，斩乌桓首领蹋顿。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]光明网·文摘报[/color]（2025年3月）：明确以"白狼山（今辽宁喀喇沁左翼蒙古族自治县）"表述，为媒体主流认定。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]地理文献证据：[/b]
-- [b]《水经注》卷十四[/b]（郦道元，北魏）：
-  > "白狼河（今大凌河）与石城川水（今渗津河）汇合处五里为白狼山。"
+
+[color=#000000]地理文献证据：[/color]
+
+[indent]•  [color=#000000]《水经注》卷十四[/color]（郦道元，北魏）： > "白狼河（今大凌河）与石城川水（今渗津河）汇合处五里为白狼山。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
   喀左平房子镇桃花池村前山（大阳山）距两河汇合处约五华里，精确吻合。
 
-- [b]名称演变[/b]（可溯源）：汉代白狼山 → 北魏白鹿山（《水经注》） → 蒙古语"布祜图山"（有鹿之山） → 清代大羊石山 → 今称大阳山
 
-- [b]白狼县故城址[/b]（喀左黄道营子）：出土汉砖汉瓦及"千秋万岁"瓦当、铁戟、方环首铁刀、五铢钱、"日光"铭铜镜等文物，已确认为汉代白狼县故城址，立省级文物保护单位
-
-[b]行军路线合理性（综合多家考证）：[/b]
-- 出卢龙口（潘家口/喜峰口）→ 白檀/越白檀水（今宽城一带）→ 历平冈道岔口 → 白狼山（喀左大阳山）→ 追奔至柳城（朝阳袁台子村——朝阳最早城址，三燕壁画墓所在地），约五百至七百里
-- 无论持白檀"宽城说"还是"江河说"，路线终点均指向喀左大阳山，路程与《三国志》"堑山堙谷五百余里"基本吻合
+[indent]•  [color=#000000]名称演变[/color]（可溯源）：汉代白狼山 → 北魏白鹿山（《水经注》） → 蒙古语"布祜图山"（有鹿之山） → 清代大羊石山 → 今称大阳山[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]白狼县故城址[/color]（喀左黄道营子）：出土汉砖汉瓦及"千秋万岁"瓦当、铁戟、方环首铁刀、五铢钱、"日光"铭铜镜等文物，已确认为汉代白狼县故城址，立省级文物保护单位[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]白鹿山祠遗址（大阳山东南坡）[/b]
+[color=#000000]行军路线合理性（综合多家考证）：[/color]
+
+[indent]•  出卢龙口（潘家口/喜峰口）→ 白檀/越白檀水（今宽城一带）→ 历平冈道岔口 → 白狼山（喀左大阳山）→ 追奔至柳城（朝阳袁台子村——朝阳最早城址，三燕壁画墓所在地），约五百至七百里[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  无论持白檀"宽城说"还是"江河说"，路线终点均指向喀左大阳山，路程与《三国志》"堑山堙谷五百余里"基本吻合[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]白鹿山祠遗址（大阳山东南坡）[/font][/b]
+
 
 第二次全国文物普查发现的魏晋时期庙宇基址：
-- 位置：大阳山东南坡悬崖下平台处（白塔子镇大西山村尖山子屯）
-- 规模：南北长100米、东西宽35米，对称钟鼓楼基、东西伴殿房基、盘山马道犹存
-- 出土文物：北魏典型暗纹网纹黑陶片、镂孔高圈足铁釜残块（足腹相接部分）、战刀、马蹄钉等
-- 认定：经专家考证确认即《魏书·地形志》所称"白鹿山祠"，1982年列为县级文物保护单位
-- [b]实地探访（2026年1月）：[/b] 辽宁日报记者随当地村民至大阳山山腰，白鹿山祠遗址石碑尚立，房基遗迹可辨；当地人多知曹操与蹋顿征战大阳山之事
-- [b]蹋顿祠推断（理证）：[/b] 白鹿山祠面朝东方，符合乌桓风俗；魏晋时该地人口凋零，史书能留名者仅蹋顿；学界推断为乌桓残部为纪念蹋顿所建——系理证推断，非物证
+
+[indent]•  位置：大阳山东南坡悬崖下平台处（白塔子镇大西山村尖山子屯）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  规模：南北长100米、东西宽35米，对称钟鼓楼基、东西伴殿房基、盘山马道犹存[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  出土文物：北魏典型暗纹网纹黑陶片、镂孔高圈足铁釜残块（足腹相接部分）、战刀、马蹄钉等[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  认定：经专家考证确认即《魏书·地形志》所称"白鹿山祠"，1982年列为县级文物保护单位[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]实地探访（2026年1月）：[/color] 辽宁日报记者随当地村民至大阳山山腰，白鹿山祠遗址石碑尚立，房基遗迹可辨；当地人多知曹操与蹋顿征战大阳山之事[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]蹋顿祠推断（理证）：[/color] 白鹿山祠面朝东方，符合乌桓风俗；魏晋时该地人口凋零，史书能留名者仅蹋顿；学界推断为乌桓残部为纪念蹋顿所建——系理证推断，非物证[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]蹋顿墓传说[/b]
-
-当地民间传说：大西山村尖山屯前形如坟墓的"尖山"为蹋顿墓地所在。[b]尚无考古发现证实，仅属传说。[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]蹋顿墓传说[/font][/b]
 
 
-[b]次说：建昌白狼山[/b]
-
-建昌境内确有白狼山地名，但学界多认为建昌是曹操[b]回师路上[/b]经过之地，而非决战战场。[b]新证：[/b] 回军走东道（傍海道）的路线考证表明，建昌是回师南折至榆关（山海关）的途经地，"二百里无水"即建昌至山海关间，与进军战场（喀左）不矛盾。
+当地民间传说：大西山村尖山屯前形如坟墓的"尖山"为蹋顿墓地所在。[color=#000000]尚无考古发现证实，仅属传说。[/color]
 
 
-[b]考古实物现状（截至2026年4月）[/b]
-
-- 白狼县故城（喀左黄道营子）：汉代砖瓦、铜镜、五铢钱等，确认汉代建制存在，省级文物保护单位
-- 大阳山山祠遗址（白鹿山祠）：北魏时期瓦片、战刀、马蹄钉等，时代吻合，县级文保
-- [b]北京丰台汉晋官营漕船（2026年新发现）：[/b] 东汉末至魏晋时期官营漕船3艘，年代吻合，为曹操北征幽州段水运提供考古实物旁证（非战场直接遗物，属后勤基础设施旁证）
-- [b]战场直接实物[/b]：尚无经正式国家级考古发掘确认的白狼山之战直接军事遗物
-- [b]2025—2026年辽宁朝阳地区考古重点[/b]：集中于红山文化（北票地区约1700平方公里，已发现40余处——2026-04-19确认），无三国战场专项
-- [b]学术定论状态[/b]：主流倾向喀左大阳山，待国家级正式考古发掘最终确认
+[b][font=res://resource/font/FandolSong-Bold/26.tres]次说：建昌白狼山[/font][/b]
 
 
-[b]唐代诗歌与历史文献的跨代印证（2026年新增）[/b]
-
-[b]高适《[color=#6699FF][url={"research": "燕歌行", "cat": "context"}]燕歌行[/url][/color]》"狼山"新证[/b]（民间学者计鹏，2026年，白狼春秋·辽西文史）：
-
-高适《燕歌行》"摐金伐鼓下榆关，旌旆逶迤碣石间。校尉羽书飞瀚海，单于猎火照狼山"中的"狼山"，历代注释多以"狼居胥山"或"河套狼山"解之，但计鹏从三个角度论证此"狼山"实指[b]喀左大阳山（白狼山）[/b]：
-
-1. [b]高适的地理经验[/b]：高适曾北游燕赵、客居蓟门，熟悉辽西地理；唐代赴辽东必走营平故道，此道经过白狼山
-2. [b]唐代东北战局[/b]：开元年间契丹叛乱活动范围在白狼河（大凌河）一带，《旧唐书·霫传》称"奚族南拒白狼河"；"单于猎火照狼山"正是契丹烽火照到辽西腹地的战局写照
-3. [b]诗歌地理序列[/b]：碣石（昌黎）→ 榆关（铁雀关）→ 瀚海（泛称）→ 狼山（喀左），与营平故道地理走向完全吻合；解为数千里外的狼居胥山则破坏内在逻辑
-
-[b]白狼口=大阳山东麓隘口[/b]：
-
-《燕将录》记载："障白狼口（原注山名契丹路）"，《唐代交通图考》（严耕望）亦指出："白狼口盖在白狼水上游，与此道关涉"。计鹏认定白狼口即大阳山东麓隘口，亦称白狼戍，是营平故道（汉唐东北交通干道）的必经节点。这从[b]交通地理[/b]角度进一步印证了大阳山=白狼山的地望：曹操北征所经之地，也是此后数百年中原进入东北的交通要冲。
-
-[b]唐太宗《命将征高丽诏》（645年）[/b]印证：诏曰"经途白狼之右，亲巡玄菟之城"，"白狼"即白狼山，路线从卢龙→燕山→大阳山右侧→朝阳→东北，与曹操进军路线在大凌河谷段高度重合。
-
-[b]评估[/b]：上述均为文献史料与地理逻辑论证，属旁证层面，非考古实物证明。与王绵厚《水经注》文献证据方向一致，互相印证喀左大阳山说的历史地理合理性。
+建昌境内确有白狼山地名，但学界多认为建昌是曹操[color=#000000]回师路上[/color]经过之地，而非决战战场。[color=#000000]新证：[/color] 回军走东道（傍海道）的路线考证表明，建昌是回师南折至榆关（山海关）的途经地，"二百里无水"即建昌至山海关间，与进军战场（喀左）不矛盾。
 
 
-[b]第四次全国文物普查（四普，2026年6月完成）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]考古实物现状（截至2026年4月）[/font][/b]
+
+
+[indent]•  白狼县故城（喀左黄道营子）：汉代砖瓦、铜镜、五铢钱等，确认汉代建制存在，省级文物保护单位[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  大阳山山祠遗址（白鹿山祠）：北魏时期瓦片、战刀、马蹄钉等，时代吻合，县级文保[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]北京丰台汉晋官营漕船（2026年新发现）：[/color] 东汉末至魏晋时期官营漕船3艘，年代吻合，为曹操北征幽州段水运提供考古实物旁证（非战场直接遗物，属后勤基础设施旁证）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战场直接实物[/color]：尚无经正式国家级考古发掘确认的白狼山之战直接军事遗物[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]2025—2026年辽宁朝阳地区考古重点[/color]：集中于红山文化（北票地区约1700平方公里，已发现40余处——2026-04-19确认），无三国战场专项[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]学术定论状态[/color]：主流倾向喀左大阳山，待国家级正式考古发掘最终确认[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]唐代诗歌与历史文献的跨代印证（2026年新增）[/font][/b]
+
+
+[color=#000000]高适《[color=#0066FF][url={"research": "燕歌行", "cat": "context"}]燕歌行[/url][/color]》"狼山"新证[/color]（民间学者计鹏，2026年，白狼春秋·辽西文史）：
+
+高适《燕歌行》"摐金伐鼓下榆关，旌旆逶迤碣石间。校尉羽书飞瀚海，单于猎火照狼山"中的"狼山"，历代注释多以"狼居胥山"或"河套狼山"解之，但计鹏从三个角度论证此"狼山"实指[color=#000000]喀左大阳山（白狼山）[/color]：
+
+
+[indent]1.  [color=#000000]高适的地理经验[/color]：高适曾北游燕赵、客居蓟门，熟悉辽西地理；唐代赴辽东必走营平故道，此道经过白狼山[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]唐代东北战局[/color]：开元年间契丹叛乱活动范围在白狼河（大凌河）一带，《旧唐书·霫传》称"奚族南拒白狼河"；"单于猎火照狼山"正是契丹烽火照到辽西腹地的战局写照[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]诗歌地理序列[/color]：碣石（昌黎）→ 榆关（铁雀关）→ 瀚海（泛称）→ 狼山（喀左），与营平故道地理走向完全吻合；解为数千里外的狼居胥山则破坏内在逻辑[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]白狼口=大阳山东麓隘口[/color]：
+
+《燕将录》记载："障白狼口（原注山名契丹路）"，《唐代交通图考》（严耕望）亦指出："白狼口盖在白狼水上游，与此道关涉"。计鹏认定白狼口即大阳山东麓隘口，亦称白狼戍，是营平故道（汉唐东北交通干道）的必经节点。这从[color=#000000]交通地理[/color]角度进一步印证了大阳山=白狼山的地望：曹操北征所经之地，也是此后数百年中原进入东北的交通要冲。
+
+[color=#000000]唐太宗《命将征高丽诏》（645年）[/color]印证：诏曰"经途白狼之右，亲巡玄菟之城"，"白狼"即白狼山，路线从卢龙→燕山→大阳山右侧→朝阳→东北，与曹操进军路线在大凌河谷段高度重合。
+
+[color=#000000]评估[/color]：上述均为文献史料与地理逻辑论证，属旁证层面，非考古实物证明。与王绵厚《水经注》文献证据方向一致，互相印证喀左大阳山说的历史地理合理性。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]第四次全国文物普查（四普，2026年6月完成）[/font][/b]
+
 
 喀左县四普第三阶段（2025年6月—2026年6月）主要任务是依法认定、登记并公布不可移动文物，成果将于2026年6月前向社会公布。白狼城故址（省级文保）在复查范围内。四普属全面调查性质，不产生系统发掘报告，但可能有新文物认定或保护级别变动。
 
-[b]最新进度（2026年4月）：[/b]
-- [b]2026年4月9日[/b]：喀左县人民政府官网发布要闻：[b]"我县第四次全国文物普查工作顺利通过省级验收"[/b]——喀左县层面的省级验收正式完成
-- [b]2026年3月25日[/b]：朝阳市省级验收工作会议完成，朝阳市（含喀左）文物总量和新发现数量[b]双居辽宁省首位[/b]
-- [b]喀左四普数据[/b]（截至2024年11月实地调查阶段）：复查172处，新发现20处——新发现中已公布有价值的为[b]六间房遗址[/b]（旧石器中晚期，非三国相关）
-- 白狼城故址（已知省级文保）属复查172处之列，是否升为国家级文保或有新伴生发现，[b]待2026年6月成果正式公布[/b]
+[color=#000000]最新进度（2026年4月）：[/color]
+
+[indent]•  [color=#000000]2026年4月9日[/color]：喀左县人民政府官网发布要闻：[color=#000000]"我县第四次全国文物普查工作顺利通过省级验收"[/color]——喀左县层面的省级验收正式完成[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]2026年3月25日[/color]：朝阳市省级验收工作会议完成，朝阳市（含喀左）文物总量和新发现数量[color=#000000]双居辽宁省首位[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]喀左四普数据[/color]（截至2024年11月实地调查阶段）：复查172处，新发现20处——新发现中已公布有价值的为[color=#000000]六间房遗址[/color]（旧石器中晚期，非三国相关）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  白狼城故址（已知省级文保）属复查172处之列，是否升为国家级文保或有新伴生发现，[color=#000000]待2026年6月成果正式公布[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]王绵厚2026年新论（大凌河古道交通地理）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]王绵厚2026年新论（大凌河古道交通地理）[/font][/b]
+
 
 2026年4月9日，《辽宁日报》刊文，引述王绵厚（辽宁省博物馆原馆长）对大凌河古道的最新综合论证：
 
-[color=#AAAAAA]　大凌河上游是"[b]至少从青铜时代开始，一直延续到战国、两汉时期的交通干道[/b]"，喀左黄道营子（白狼县故城）等遗址和城址均坐落于此道上。[/color]
+
+[indent][color=#666666]┃ 大凌河上游是"[color=#000000]至少从青铜时代开始，一直延续到战国、两汉时期的交通干道[/color]"，喀左黄道营子（白狼县故城）等遗址和城址均坐落于此道上。[/color][/indent]
+
 
 本文聚焦商周青铜器研究，非三国战场直接考古，但从交通地理连续性角度进一步旁证了曹操北征路线经过喀左地区的地理合理性。
 
 
-[b]行军路线详考（2026年新增）[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]行军路线详考（2026年新增）[/font][/b]
 
 
-[b]进军路线（西道/卢龙道）[/b]
-
-[b]总里程：[/b] 卢龙口至白狼山约五百里，白狼山至柳城追击约二百里，合计约七百里。
-
-[b]路线节点：[/b]
-1. [b]无终[/b]（今天津蓟县）→ 出发地
-2. [b]徐无山[/b]（今河北遵化东）→ 开始攀山
-3. [b]卢龙塞[/b]（今河北喜峰口/潘家口）→ 出塞
-4. [b]白檀/越白檀之险[/b]（今宽城县一带，学界有宽城说、江河说之争，但路线指向一致）→ 越险渡水
-5. [b]平冈[/b]（今内蒙古宁城县甸子镇黑城村）→ 折向东行
-6. [b]鲜卑庭[/b]（老哈河上游紫蒙川）→ 深入乌桓单于境内（注："鲜卑庭"为"单于庭"之讹或误传，郭嘉传有"直指单于庭"为证）
-7. [b]白狼山[/b]（今辽宁喀左大阳山）→ 决战
-8. [b]柳城[/b]（今辽宁朝阳袁台子村）→ 追击至此（朝阳最早城址，三燕壁画墓所在地）
+[b][font=res://resource/font/FandolSong-Bold/26.tres]进军路线（西道/卢龙道）[/font][/b]
 
 
-[b]回军路线（东道/傍海道）[/b]
+[color=#000000]总里程：[/color] 卢龙口至白狼山约五百里，白狼山至柳城追击约二百里，合计约七百里。
 
-[b]路线：[/b] 柳城→白狼山→建昌（广成县）→ [b]榆关（山海关）入塞[/b] →碣石山（今辽宁绥中县止锚湾）→无终→中原
+[color=#000000]路线节点：[/color]
 
-[b]关键证据：[/b]
-- 《曹瞒传》"二百里无复水"——西道（卢龙道）沿途城邑密集，大河傍行，不可能二百里无水；[b]建昌至山海关约两百里，无大河，荒草遍野[/b]，唯一符合
-- "军还入塞"：入的是[b]榆关（山海关）[/b]，非卢龙塞。入卢龙塞后反折东南去碣石，需多走数百里，不合理
-- [b]碣石地望[/b]：辽宁绥中县万家镇止锚湾——姜女坟/姜女石（耸立海中的三座巨石），附近已发现秦汉宫殿遗址（秦始皇碣石宫，超过15万平方米）及汉武台遗址，经王绵厚、孙丕任等专家考证确认。登碣石后，曹操谱写《观沧海》（《步出夏门行》第一章）
+[indent]1.  [color=#000000]无终[/color]（今天津蓟县）→ 出发地[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]徐无山[/color]（今河北遵化东）→ 开始攀山[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]卢龙塞[/color]（今河北喜峰口/潘家口）→ 出塞[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]白檀/越白檀之险[/color]（今宽城县一带，学界有宽城说、江河说之争，但路线指向一致）→ 越险渡水[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  [color=#000000]平冈[/color]（今内蒙古宁城县甸子镇黑城村）→ 折向东行[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]6.  [color=#000000]鲜卑庭[/color]（老哈河上游紫蒙川）→ 深入乌桓单于境内（注："鲜卑庭"为"单于庭"之讹或误传，郭嘉传有"直指单于庭"为证）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]7.  [color=#000000]白狼山[/color]（今辽宁喀左大阳山）→ 决战[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]8.  [color=#000000]柳城[/color]（今辽宁朝阳袁台子村）→ 追击至此（朝阳最早城址，三燕壁画墓所在地）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]进、回路线切换的原因：[/b]
-- 进军时傍海道大水封路，乌桓扼守要冲，被迫走卢龙道
-- 回军时雨季已过，乌桓已覆灭，傍海道畅通，而卢龙道"堑山堙谷，道绝不通"，不宜疲军重走
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]回军路线（东道/傍海道）[/font][/b]
 
 
-[b]《观沧海》的创作背景[/b]
+[color=#000000]路线：[/color] 柳城→白狼山→建昌（广成县）→ [color=#000000]榆关（山海关）入塞[/color] →碣石山（今辽宁绥中县止锚湾）→无终→中原
+
+[color=#000000]关键证据：[/color]
+
+[indent]•  《曹瞒传》"二百里无复水"——西道（卢龙道）沿途城邑密集，大河傍行，不可能二百里无水；[color=#000000]建昌至山海关约两百里，无大河，荒草遍野[/color]，唯一符合[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "军还入塞"：入的是[color=#000000]榆关（山海关）[/color]，非卢龙塞。入卢龙塞后反折东南去碣石，需多走数百里，不合理[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]碣石地望[/color]：辽宁绥中县万家镇止锚湾——姜女坟/姜女石（耸立海中的三座巨石），附近已发现秦汉宫殿遗址（秦始皇碣石宫，超过15万平方米）及汉武台遗址，经王绵厚、孙丕任等专家考证确认。登碣石后，曹操谱写《观沧海》（《步出夏门行》第一章）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]进、回路线切换的原因：[/color]
+
+[indent]•  进军时傍海道大水封路，乌桓扼守要冲，被迫走卢龙道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  回军时雨季已过，乌桓已覆灭，傍海道畅通，而卢龙道"堑山堙谷，道绝不通"，不宜疲军重走[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]《观沧海》的创作背景[/font][/b]
+
 
 曹操登碣石时，刚结束极度艰险的远征——凿山堙谷五百里、杀马数千为粮、凿地三千余丈取水——胜利、疲惫、郭嘉在路上病重（稍后病逝）多种情绪叠加。《观沧海》的"日月之行，若出其中；星汉灿烂，若出其里"，正是在这样极端背景下写就的，兼有胜利的壮怀与失去郭嘉的惆怅（序曲"艳"有"心意怀游豫，不知当复何从"）。
 
 
-[b]白檀地望三说对照[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]白檀地望三说对照[/font][/b]
 
 
-[b]说法[/b] | [b]白檀位置[/b] | [b]主要依据[/b] | [b]对曹操路线的影响[/b]
-宽城说（陈烈、马骧民） | 宽城县龙须门镇药王庙 | 孟康注"属右北平"、汉武帝诏书 | 路程最符合，出卢龙口→宽城→平泉→宁城→喀左
-江河说（白狼春秋作者） | 白檀水（滦河），越水之险而非山县 | 《汉书·地理志》"洫水出北蛮夷"=滦河 | 路程更短，出卢龙口→越滦河→岔口→喀左（124公里）
-滦平说（《水经注》、辛德勇） | 今河北滦平县 | 《水经注》地望描述 | 绕行数百里，所有学者均认为"南辕北辙，势之必无"，曹操必不走此路
+[table=4]
+[cell][b]说法[/b][/cell]
+[cell][b]白檀位置[/b][/cell]
+[cell][b]主要依据[/b][/cell]
+[cell][b]对曹操路线的影响[/b][/cell]
+[cell]宽城说（陈烈、马骧民）[/cell]
+[cell]宽城县龙须门镇药王庙[/cell]
+[cell]孟康注"属右北平"、汉武帝诏书[/cell]
+[cell]路程最符合，出卢龙口→宽城→平泉→宁城→喀左[/cell]
+[cell]江河说（白狼春秋作者）[/cell]
+[cell]白檀水（滦河），越水之险而非山县[/cell]
+[cell]《汉书·地理志》"洫水出北蛮夷"=滦河[/cell]
+[cell]路程更短，出卢龙口→越滦河→岔口→喀左（124公里）[/cell]
+[cell]滦平说（《水经注》、辛德勇）[/cell]
+[cell]今河北滦平县[/cell]
+[cell]《水经注》地望描述[/cell]
+[cell]绕行数百里，所有学者均认为"南辕北辙，势之必无"，曹操必不走此路[/cell]
+[/table]
 
 
-[b]共识：[/b] 无论哪种白檀地望，曹军均不绕道滦平，白狼山（喀左大阳山）作为战场地望不受影响。
+[color=#000000]共识：[/color] 无论哪种白檀地望，曹军均不绕道滦平，白狼山（喀左大阳山）作为战场地望不受影响。
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-[b]方面[/b] | [b]史实[/b] | [b]《三国演义》[/b]
-郭嘉角色 | 力主出征，遗计定辽东，班师途中病逝 | 基本符合，但戏剧化渲染"遗书"
-张辽作用 | 奉命为先锋，率部冲击，斩蹋顿（完成最后一击） | 符合，渲染个人武勇
-曹纯/虎豹骑 | 参战，部骑截获蹋顿，功封高陵亭侯 | 未详述（《演义》中曹纯仅为配角）
-公孙康处理 | 主动斩袁氏兄弟献首（曹操未进攻） | 基本符合
-曹操赏谏者 | 确有其事（《曹瞒传》裴注有记） | 略去
-行军艰难 | 极为艰苦（杀马数千、凿地三千余丈取水） | 基本略去
-田畴封侯 | 坚决拒绝，以死相誓，最终仅受议郎 | 未详述
-阎柔 | 少年被俘，后成乌桓/鲜卑-中原枢纽 | 基本略去
-回军路线 | 走傍海道，经建昌入榆关（山海关），登碣石（绥中止锚湾） | 略去
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]《三国演义》[/b][/cell]
+[cell]郭嘉角色[/cell]
+[cell]力主出征，遗计定辽东，班师途中病逝[/cell]
+[cell]基本符合，但戏剧化渲染"遗书"[/cell]
+[cell]张辽作用[/cell]
+[cell]奉命为先锋，率部冲击，斩蹋顿（完成最后一击）[/cell]
+[cell]符合，渲染个人武勇[/cell]
+[cell]曹纯/虎豹骑[/cell]
+[cell]参战，部骑截获蹋顿，功封高陵亭侯[/cell]
+[cell]未详述（《演义》中曹纯仅为配角）[/cell]
+[cell]公孙康处理[/cell]
+[cell]主动斩袁氏兄弟献首（曹操未进攻）[/cell]
+[cell]基本符合[/cell]
+[cell]曹操赏谏者[/cell]
+[cell]确有其事（《曹瞒传》裴注有记）[/cell]
+[cell]略去[/cell]
+[cell]行军艰难[/cell]
+[cell]极为艰苦（杀马数千、凿地三千余丈取水）[/cell]
+[cell]基本略去[/cell]
+[cell]田畴封侯[/cell]
+[cell]坚决拒绝，以死相誓，最终仅受议郎[/cell]
+[cell]未详述[/cell]
+[cell]阎柔[/cell]
+[cell]少年被俘，后成乌桓/鲜卑-中原枢纽[/cell]
+[cell]基本略去[/cell]
+[cell]回军路线[/cell]
+[cell]走傍海道，经建昌入榆关（山海关），登碣石（绥中止锚湾）[/cell]
+[cell]略去[/cell]
+[/table]
 
 
-[b]历史意义[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历史意义[/font][/b]
 
 
-1. [b]彻底清除袁氏死灰复燃的可能[/b]：袁尚、袁熙最终被公孙康斩杀，袁氏势力彻底消亡
-2. [b]解除北方边患[/b]：乌桓三郡主力覆灭，此后数十年幽燕无大规模北方威胁
-3. [b]强化骑兵体系[/b]：万余落乌桓迁入内地，成为曹魏"天下名骑"的重要来源
-4. [b]中断乌桓民族统一进程[/b]：客观上决定了乌桓最终消融于汉等民族的历史命运
-5. [b]为南征解除后顾之忧[/b]：郭嘉的战略判断得到验证（[color=#6699FF][url={"research": "赤壁之战", "cat": "events"}]赤壁之战[/url][/color]虽败，但确系另一原因）
-6. [b]开启北方民族大融合进程（毕宝魁视角）[/b]：打破中原与东北的隔阂，推动以慕容鲜卑为代表的东北少数民族登上历史舞台，成为三国至十六国民族大融合的历史起点之一
+[indent]1.  [color=#000000]彻底清除袁氏死灰复燃的可能[/color]：袁尚、袁熙最终被公孙康斩杀，袁氏势力彻底消亡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]解除北方边患[/color]：乌桓三郡主力覆灭，此后数十年幽燕无大规模北方威胁[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]强化骑兵体系[/color]：万余落乌桓迁入内地，成为曹魏"天下名骑"的重要来源[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]中断乌桓民族统一进程[/color]：客观上决定了乌桓最终消融于汉等民族的历史命运[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  [color=#000000]为南征解除后顾之忧[/color]：郭嘉的战略判断得到验证（[color=#0066FF][url={"research": "赤壁之战", "cat": "events"}]赤壁之战[/url][/color]虽败，但确系另一原因）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]6.  [color=#000000]开启北方民族大融合进程（毕宝魁视角）[/color]：打破中原与东北的隔阂，推动以慕容鲜卑为代表的东北少数民族登上历史舞台，成为三国至十六国民族大融合的历史起点之一[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]代价：[/b]
-- 郭嘉在回师途中病逝，享年仅三十八岁
-- 行军途中杀马数千为粮，军队极度疲耗
-- 曹操回师走南路，经历大风、断水，损耗严重
+
+[color=#000000]代价：[/color]
+
+[indent]•  郭嘉在回师途中病逝，享年仅三十八岁[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  行军途中杀马数千为粮，军队极度疲耗[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹操回师走南路，经历大风、断水，损耗严重[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]

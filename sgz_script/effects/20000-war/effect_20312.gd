@@ -61,7 +61,7 @@ func effect_20312_3():
 		skill,
 		DataManager.get_actor_self_title(actorId),
 	])
-	play_dialog(me.actorId, msg, 1, 2002)
+	play_dialog(actorId, msg, 1, 2002)
 	return
 
 func on_view_model_2002():

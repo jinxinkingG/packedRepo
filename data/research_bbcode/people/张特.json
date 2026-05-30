@@ -1,87 +1,150 @@
-[b]张特（子产）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]张特（子产）[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详；籍贯涿郡（今河北涿州一带）；曹魏武将，安丰太守
+[color=#000000]基本信息：[/color] 生卒年不详；籍贯涿郡（今河北涿州一带）；曹魏武将，安丰太守
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]早年：牙门将，被诸葛诞轻视[/b]
-
-张特字子产，涿郡人（与[color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]、[color=#6699FF][url={"research": "张飞", "cat": "people"}]张飞[/url][/color]同乡）。据《魏略》（裴注引），张特早期以[b]牙门将[/b]身份给事镇东将军诸葛诞，然而诸葛诞认为他能力不足，"欲遣还护军"。
-
-"遣还护军"的确切含义有争议——或指遣回中护军系统，或指遣回负责淮水屯田防线的某一层级。总之，张特在诸葛诞手下无法升迁，命运的转折来自一场失败。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]命运转折：东兴之战后入主新城[/b]
-
-嘉平四年（252年），东兴之战，诸葛诞等率七万魏军攻东兴堤，大败于吴军（[color=#6699FF][url={"research": "丁奉", "cat": "people"}]丁奉[/url][/color]等），死伤惨重。战后，诸葛诞调任豫州都督，[color=#6699FF][url={"research": "毌丘俭", "cat": "people"}]毌丘俭[/url][/color]接任扬州都督。[b]毌丘俭令张特屯守[color=#6699FF][url={"research": "合肥", "cat": "geography"}]合肥[/url][/color]新城[/b]——这是曹魏与东吴对峙的前线要地。
-
-合肥新城是青龙元年（233年）[color=#6699FF][url={"research": "满宠", "cat": "people"}]满宠[/url][/color]主导迁建的，位于旧合肥城西南三十里，远水依陆，专为对抗吴军水军而设。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]早年：牙门将，被诸葛诞轻视[/font][/b]
 
 
-[b]嘉平五年（253年）：新城之战，诈降守城[/b]
+张特字子产，涿郡人（与[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]、[color=#0066FF][url={"research": "张飞", "cat": "people"}]张飞[/url][/color]同乡）。据《魏略》（裴注引《三少帝纪》），张特早期以[color=#000000]牙门将[/color]身份给事镇东将军[color=#0066FF][url={"research": "诸葛诞", "cat": "people"}]诸葛诞[/url][/color]，然而诸葛诞认为他能力不足，「欲遣还护军」。
 
-[b]背景：[/b] 东兴胜后自信膨胀的[color=#6699FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]"大发州郡二十万众"北伐，改变原定驱掠淮南人口的计划，直取合肥新城，意图围点打援。同年[color=#6699FF][url={"research": "姜维", "cat": "people"}]姜维[/url][/color]在西线配合北伐陇右，蜀吴形成呼应。
+[color=#000000]「遣还护军」含义考辨（见 `ref-huniu-bianxi.md`）：[/color]
 
-[b]张特的处境：[/b]
-- 守城兵力：张特与将军乐方等合计"三军众"三千人
-- 但"吏兵疾病及战死者过半"——实际战斗力约一千五百人上下
-- 诸葛恪"起土山急攻，城将陷"
-- 曹魏援军（[color=#6699FF][url={"research": "司马孚", "cat": "people"}]司马孚[/url][/color]领二十万）驻[color=#6699FF][url={"research": "寿春", "cat": "geography"}]寿春[/url][/color]不前，张特实为孤守无援
+这里的「护军」并非中央的中护军（掌武官选举），而很可能是扬州都督辖下的某一护军系统。诸葛诞（时任镇东将军兼扬州都督）想将张特从自己的直属牙门将降格，调回护军体系另行安置——这是一种相对婉转的处理，实质上是认定他不适合在自己身边担任核心武职。具体所遣「护军」为何级别，史料无明文，永不可精确确证。
 
-[b]诈降之计：[/b]
+这一细节的叙事意义：命运的转折恰在此处——[color=#0066FF][url={"research": "毌丘俭", "cat": "people"}]毌丘俭[/url][/color]接替诸葛诞出任扬州都督，张特反而因此得到重用。
 
-张特向吴人声称："今我无心复战也。然魏法，被攻过百日而救不至者，虽降，家不坐也。自受敌以来，已九十余日矣……我当还，为相语之，条名别善恶，明日早送名，且持我印绶去以为信。"
 
-——以"距百日仅剩数日，需先行劝说守军"为由，投出印绶，请求吴军暂停攻城。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]命运转折：东兴之战后入主合肥新城[/font][/b]
 
-吴人听信其辞，[b]接受了缓兵的逻辑，但未取其印绶[/b]，停止攻城。
 
-张特趁夜[b]拆诸屋材，连夜修补缺口，加固为双重城墙[/b]。
+嘉平四年（252年），东兴之战，诸葛诞等率七万魏军攻东兴堤，大败于东吴（[color=#0066FF][url={"research": "丁奉", "cat": "people"}]丁奉[/url][/color]等），死伤惨重。战后，诸葛诞调任豫州都督，[color=#000000]毌丘俭接任扬州都督，令张特屯守[color=#0066FF][url={"research": "合肥", "cat": "geography"}]合肥[/url][/color]新城[/color]。
 
-翌日宣告："我但有斗死耳！"
+合肥新城是青龙元年（233年）[color=#0066FF][url={"research": "满宠", "cat": "people"}]满宠[/url][/color]主导迁建的，位于旧合肥城西南三十里，远水依陆，专为对抗吴军水军而设。[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]曾多次兴兵未能攻克，此后成为曹魏与东吴的核心对峙据点。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]嘉平五年（253年）：新城之战，以诈守城[/font][/b]
+
+
+[color=#000000]战役背景：[/color]
+
+东兴胜后自信膨胀的[color=#0066FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]「大发州郡二十万众」北伐，直取合肥新城，意图围点打援。同年[color=#0066FF][url={"research": "姜维", "cat": "people"}]姜维[/url][/color]在西线配合北伐陇右，蜀吴形成呼应。
+
+[color=#000000]张特的处境：[/color]
+
+[indent]•  守城兵力：张特与将军乐方等「三军众」合计三千人[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  「吏兵疾病及战死者过半」——实际战斗力约一千五百人上下[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  诸葛恪「起土山急攻，城将陷」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹魏援军（[color=#0066FF][url={"research": "司马孚", "cat": "people"}]司马孚[/url][/color]领二十万）驻[color=#0066FF][url={"research": "寿春", "cat": "geography"}]寿春[/url][/color]不前，张特实为孤守无援[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]诈降之计（《魏略》原文核心）：[/color]
+
+张特向吴人声称：「今我无心复战也。然魏法，被攻过百日而救不至者，虽降，家不坐也。自受敌以来，已九十余日矣……我当还，为相语之，条名别善恶，明日早送名，且持我印绶去以为信。」
+
+——以「距百日仅剩数日，需先行劝说守军」为由，投出印绶，请求吴军暂停攻城。
+
+吴人听信其辞，停止攻城（《魏略》：吴人「受之」，停攻）。
+
+张特趁夜[color=#000000]拆诸屋材，连夜修补缺口，加固为双重城墙[/color]。
+
+翌日宣告：「我但有斗死耳！」（《魏略》原文）
 
 吴人大怒，猛攻，不能攻克，最终撤退。
 
-[b]吴军撤退的综合因素：[/b]
-- 久攻不下，张特修城后形势逆转
-- 军中大疫，"兵卒死者大半"（《三国志·[color=#6699FF][url={"research": "孙亮", "cat": "people"}]孙亮[/url][/color]传》）
-- 都尉蔡林投降曹魏，军情泄露
-- 曹魏援军从寿春开始移动
+[color=#000000]吴军撤退的综合因素：[/color]
 
-[b]战后封赏：[/b] 朝廷嘉奖张特，加[b]杂号将军[/b]，[b]封列侯[/b]，又迁为[b]安丰太守[/b]。
+[indent]•  久攻不下，张特修城后形势逆转[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  军中大疫，「兵卒死者大半」（《三国志·[color=#0066FF][url={"research": "孙亮", "cat": "people"}]孙亮[/url][/color]传》）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  都尉蔡林投降曹魏，军情泄露[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹魏援军从寿春开始移动[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]性格与形象[/b]
+[color=#000000]战后封赏：[/color] 朝廷嘉奖张特，加[color=#000000]杂号将军[/color]，[color=#000000]封列侯[/color]，又迁为[color=#000000]安丰太守[/color]。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 史料关于张特的记载集中于新城之战一事，人物性格可从以下角度推断：
 
-1. [b]被轻视而不自弃[/b]：诸葛诞认为他无能，欲遣还；换毌丘俭后得到任用，可见张特并非无能之辈，只是在诸葛诞眼中不受重视（可能与风格不合，而非真正平庸）。
-2. [b]临危冷静、能审势[/b]：面对城将陷落、孤立无援的绝境，没有真降，而是想出心理战术——利用对方"希望接受投降"的心理，以己方的"法律依据"换取时间。
-3. [b]善于欺敌[/b]：投出印绶作信物，却在吴人停攻后连夜修城，展示了极强的心理战素养。诈降术以信物（印绶）作诚意担保，使吴方难以轻易识破。
+
+[indent]1.  [color=#000000]被轻视而不自弃[/color]：诸葛诞不看好他，历史却让他完成了孙权多次都没能完成的目标——守住合肥。这种「被边缘化的人在关键时刻站出来」的叙事，天然具有共鸣。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]临危冷静、能审势[/color]：面对城将陷落、孤立无援的绝境，没有真降，而是想出心理战术——利用对方「希望接受投降」的心理，以己方的「法律依据」换取时间。这种「绝境中的理性」比激情更有深度。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]善于欺敌[/color]：投出印绶作信物，却在吴人停攻后连夜修城，展示了极强的心理战素养。印绶是官印（身份信物），将之投出作担保，使吴方难以轻易识破其诈。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-- [b]毌丘俭[/b]：赏识张特，委以守新城重任
-- [b]诸葛诞[/b]：前任上司，轻视张特，欲遣还护军
-- [b]乐方[/b]：同守新城的将军，兵力合计时并入三千
-- [b]诸葛恪[/b]：新城之战的对手；战后诸葛恪因攻城失利声望大跌，被[color=#6699FF][url={"research": "孙峻", "cat": "people"}]孙峻[/url][/color]政变杀死
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[indent]•  [color=#000000]毌丘俭[/color]：赏识张特，委以守新城重任[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]诸葛诞[/color]：前任上司，轻视张特，欲遣还护军；毌丘俭接替后张特反得重用[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]乐方[/color]：同守新城的将军，兵力合计时并入三千[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]诸葛恪[/color]：新城之战的对手；战后因攻城失利声望大跌，被[color=#0066FF][url={"research": "孙峻", "cat": "people"}]孙峻[/url][/color]政变杀死[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-《三国演义》中，张特在[b]毛本第一百一十回[/b]（"文鸯单骑退雄兵，姜维背水破大敌"附近的回目）及相关章节有短暂出场，演义大体保留了守城诈降的情节，但处理较为简略。
+[color=#888888]──────────────────────────────[/color]
 
-[b]嘉靖本 vs 毛本版本差异：[/b] 嘉靖本对应段落逐字差异待核。整体而言演义此段情节与史实高度一致，无大幅虚构。
 
-[b]史实与演义基本吻合之处：[/b]
-- 三千人守城、城即将陷落
-- 以"百日无援可降"为由诈降
-- 夜间修补城墙
-- 翌日宣告死战，吴军最终退兵
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+《三国演义》中，张特在[color=#000000]毛本第108回[/color]（「丁奉雪中奋短兵 孙峻席间施密计」）及嘉靖本卷22对应节段有出场。
+
+[color=#000000]演义情节与史实对比（详见 `ref-yanyi-version-diff.md`）：[/color]
+
+
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]史实（《魏略》裴注）[/b][/cell]
+[cell][b]演义（毛本为主）[/b][/cell]
+[cell]守城将领[/cell]
+[cell]张特与将军乐方等合记[/cell]
+[cell]仅突出张特[/cell]
+[cell]诈降方式[/cell]
+[cell]投出印绶作信物[/cell]
+[cell]令「舌辩之士」持册籍前往[/cell]
+[cell]守城宣言[/cell]
+[cell]「我但有斗死耳」[/cell]
+[cell]「岂肯降吴狗耶！尽战无妨！」[/cell]
+[cell]恪中箭[/cell]
+[cell]无此记载[/cell]
+[cell]恪额上正中一箭（毛本增写）[/cell]
+[cell]整体情节[/cell]
+[cell]高度符合[/cell]
+[cell]高度符合（演义此段虚构成分少）[/cell]
+[/table]
+
+
+[color=#000000]嘉靖本 vs 毛本逐字差异：[/color] 基本情节一致；「恪额上正中一箭」情节是否为毛本增写、「牙门将」/「牙门将军」称谓用字、具体对话措辞差异，均待实物善本核查（低优先级）。
+
+
+[color=#888888]──────────────────────────────[/color]

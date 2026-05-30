@@ -66,7 +66,7 @@ func effect_20389_start():
 		ske.skill_name, ActorHelper.actor(ske.actorId).get_name(),
 		bf.get_attacker().get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20389_2():
@@ -82,5 +82,5 @@ func effect_20389_2():
 		DataManager.get_actor_naughty_title(bf.get_attacker_id(), me.actorId),
 		me.get_name(),
 	])
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	return

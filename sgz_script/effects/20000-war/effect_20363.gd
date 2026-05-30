@@ -26,7 +26,7 @@ func effect_20363_start():
 			continue
 		targets.append(targetId)
 	if targets.empty():
-		play_dialog(me.actorId, "没有可发动的目标", 3, 2009)
+		play_dialog(actorId, "没有可发动的目标", 3, 2009)
 		return
 	if not wait_choose_actors(targets):
 		return
@@ -64,7 +64,7 @@ func effect_20363_3():
 		var msg = "{0}选择了【{1}】".format([
 			target.get_name(), skills[0],
 		])
-		play_dialog(me.actorId, msg, 2, 2003)
+		play_dialog(actorId, msg, 2, 2003)
 		return
 	SceneManager.show_unconfirm_dialog("换取哪个技能？", targetId)
 	bind_menu_items(skills, skills, 2)
@@ -86,10 +86,10 @@ func effect_20363_4():
 
 	ske.cost_war_cd(1)
 	if not ske.ban_war_skill(actorId, mySkill, 1):
-		play_dialog(me.actorId, "【{0}】不可交换！".format([mySkill]), 2, 2005)
+		play_dialog(actorId, "【{0}】不可交换！".format([mySkill]), 2, 2005)
 		return
 	if not ske.ban_war_skill(targetId, targetSkill, 1):
-		play_dialog(me.actorId, "【{0}】不可交换！".format([targetSkill]), 2, 2005)
+		play_dialog(actorId, "【{0}】不可交换！".format([targetSkill]), 2, 2005)
 		return
 	ske.add_war_skill(actorId, targetSkill, 1)
 	ske.add_war_skill(targetId, mySkill, 1)

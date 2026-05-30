@@ -69,12 +69,12 @@ func effect_20168_2():
 	var msg = "消耗{0}[{1}]发动【{3}】\n向{2}传授为将之道\n可否？".format([
 		FLAG_COST, FLAG_NAME, targetActor.get_name(), ske.skill_name,
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20168_3():
 	var msg = TIPS[randi() % TIPS.size()] + "\n……　……\n……"
-	play_dialog(me.actorId, msg, 2, 2002)
+	play_dialog(actorId, msg, 2, 2002)
 	return
 
 func effect_20168_4():

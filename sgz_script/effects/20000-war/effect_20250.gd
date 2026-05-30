@@ -56,7 +56,7 @@ func effect_20250_2():
 	var msg = "消耗{0}[{1}]发动【{3}】\n增强{2}的白兵攻击范围，可否？".format([
 		FLAG_COST, FLAG_NAME, targetActor.get_name(), ske.skill_name,
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20250_3():

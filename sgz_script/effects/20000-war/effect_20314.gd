@@ -58,7 +58,7 @@ func effect_20314_2():
 	var msg = "消耗{0}机动力\n对{1}发动【咒符】\n可否？".format([
 		COST_AP, ActorHelper.actor(targetId).get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001():

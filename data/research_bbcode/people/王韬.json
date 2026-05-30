@@ -1,53 +1,125 @@
-[b]王韬[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]王韬[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详，籍贯不详；身份：[color=#6699FF][url={"research": "司马昭", "cat": "people"}]司马昭[/url][/color]主簿（《三国演义》虚构人物，正史无载）
+[color=#000000]基本信息：[/color] 生卒年不详（虚构人物）；籍贯不详；身份：[color=#0066FF][url={"research": "司马昭", "cat": "people"}]司马昭[/url][/color]主簿（《三国演义》虚构人物，正史无载）
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-王韬在正史中完全无载，是罗贯中在《三国演义》第109回（[b]困司马汉将奇谋 废曹芳魏家果报[/b]）虚构的次要人物。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
-[b]出场背景（演义第109回）：[/b]
 
-蜀汉延熙十六年（约252年），[color=#6699FF][url={"research": "姜维", "cat": "people"}]姜维[/url][/color]率二十万兵伐魏，与司马昭军战于陇西一带。姜维设伏诱杀魏先锋[color=#6699FF][url={"research": "徐质", "cat": "people"}]徐质[/url][/color]，随后夏侯霸令蜀兵乔装魏军诈开魏寨，大乱魏营。司马昭四下无路，率六千余人退守铁笼山据守。
+王韬在正史中完全无载，是罗贯中在《三国演义》第109回（[color=#000000]困司马汉将奇谋 废[color=#0066FF][url={"research": "曹芳", "cat": "people"}]曹芳[/url][/color]魏家果报[/color]）/ 嘉靖本第220回（[color=#000000][color=#0066FF][url={"research": "姜维", "cat": "people"}]姜维[/url][/color]计困司马昭二犯中原[/color]）虚构的次要人物。
 
-铁笼山形势险峻，四下难以攀援，只有一条路，山顶仅有一处泉眼，勉强够百人饮用。六千魏军被姜维断绝山路，人马枯渴，司马昭仰天长叹"吾死于此地矣"。
+[color=#000000]正史无同名同时代人物：[/color] 三国志数据库（CNE3）、百科词条及学术来源均明确，三国正史中无叫"王韬"的同名同时代人物；英文维基"三国人物(W)"列表中亦无对应条目。
 
-[b]王韬的唯一出场：[/b]
+[color=#000000]出场背景（演义第109回）：[/color]
 
-[color=#AAAAAA]　主簿王韬曰："昔日耿恭受困，拜井而得甘泉。将军何不效之？"[/color]
+蜀汉延熙十六年（约252—253年），姜维率兵伐魏，诱斩先锋[color=#0066FF][url={"research": "徐质", "cat": "people"}]徐质[/url][/color]，随后令夏侯霸率蜀兵诈扮魏军混入魏寨乱营。司马昭四下无路，率六千余人退守铁笼山据守。
+
+铁笼山形势险峻，只有一条路，山顶仅有一处泉眼，止够百人饮用。六千魏军被姜维断绝山路，人马枯渴，司马昭仰天长叹"吾死于此地矣"。
+
+[color=#000000]王韬的唯一出场：[/color]
+
+[color=#000000]嘉靖本原文（第220回）：[/color]
+
+[indent][color=#666666]┃ 主簿王韬曰："首昔耿公受困，拜井而得甘泉。将军可效之。"[/color][/indent]
+
+
+[color=#000000]毛本原文（第109回）：[/color]
+
+[indent][color=#666666]┃ 主簿王韬曰："昔日耿恭受困，拜井而得甘泉。将军何不效之？"[/color][/indent]
+
 
 王韬援引东汉名将耿恭守疏勒城时拜井求水（《后汉书·耿弇传附耿恭传》有载）的典故，劝司马昭效仿。司马昭采纳建议，登山顶泉边再拜祷告，泉水涌出，六千人马得活。
 
-随后郭淮、陈泰设计退羌兵、解铁笼山之围，司马昭得以下山，王韬此后不再出现于演义叙述中。
+随后[color=#0066FF][url={"research": "郭淮", "cat": "people"}]郭淮[/url][/color]、[color=#0066FF][url={"research": "陈泰", "cat": "people"}]陈泰[/url][/color]设计退羌兵、解铁笼山之围，司马昭得以下山，王韬此后不再出现于演义叙述中。
 
 
-[b]性格与形象[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]嘉靖本 vs 毛本逐字对比[/font][/b]
+
+
+[table=4]
+[cell][b]位置[/b][/cell]
+[cell][b]嘉靖本[/b][/cell]
+[cell][b]毛本[/b][/cell]
+[cell][b]说明[/b][/cell]
+[cell]开头词[/cell]
+[cell]"[color=#000000]首[/color]昔耿公"[/cell]
+[cell]"昔日耿恭"[/cell]
+[cell]嘉靖本"首"字性质待定（可能为衍字，识典数字化版同作"首昔"，待实物善本核查）[/cell]
+[cell]人名称谓[/cell]
+[cell]"[color=#000000]耿公[/color]"（尊称）[/cell]
+[cell]"[color=#000000]耿恭[/color]"（全名）[/cell]
+[cell]嘉靖本用尊称，毛本改为全名[/cell]
+[cell]末句语气[/cell]
+[cell]"将军[color=#000000]可[/color]效之"[/cell]
+[cell]"将军[color=#000000]何不[/color]效之"[/cell]
+[cell]嘉靖本直陈语气，毛本改为反问句，劝说力度更强[/cell]
+[/table]
+
+
+[color=#000000]祝词比较：[/color]
+嘉靖本司马昭祝词约60字，包含"奉天子明诏"、"误中奸计"、"以候救兵"等说明性内容；毛本约50字，简化为精要祈祷部分。
+
+[color=#000000]赞诗：[/color] 毛本在铁笼山困境描写前插入赞诗（"妙算姜维不等闲……"），嘉靖本此处无此诗。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 史料极简（仅一句台词），无法深入考察，仅能依据情节推断：
 
-- [b]博学型幕僚[/b]：能在绝境中援引东汉典故（耿恭拜井），体现出主簿应有的文化素养
-- [b]临危献策[/b]：在主将绝望时进言，具有一定的心理稳定作用
-- [b]功能性人物[/b]：本质上是罗贯中为司马昭解困而设计的叙事工具，无独立性格塑造
+
+[indent]•  [color=#000000]博学型幕僚[/color]：能在绝境中援引东汉典故（耿恭拜井），体现出主簿应有的文化素养[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]临危献策[/color]：在主将绝望时进言，具有一定的心理稳定作用[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]功能性人物[/color]：本质上是罗贯中为司马昭解困而设计的叙事工具，无独立性格塑造[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-- [b]司马昭[/b]：主君，王韬为其主簿，铁笼山一役献策被采纳
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[indent]•  [color=#000000]司马昭[/color]：主君，王韬为其主簿，铁笼山一役献策被采纳[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]维度[/b] | [b]演义[/b] | [b]正史[/b]
-人物存在 | 司马昭主簿，铁笼山献策 | [b]正史无载，纯虚构[/b]
-铁笼山之战 | 演义第109回 | 《三国志》无"铁笼山"之战，大致对应正始至嘉平年间[color=#6699FF][url={"research": "姜维北伐 ", "cat": " events"}]姜维北伐 [/url][/color]战事，但细节高度演义化
-耿恭典故 | 援引《后汉书》典故 | 耿恭拜井有史载，王韬援引本身是虚构
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]关于"铁笼山"的史实背景：[/b]
-《三国志·姜维传》记载姜维在延熙十六年（253年）[color=#6699FF][url={"research": "费祎", "cat": "people"}]费祎[/url][/color]死后进行大规模北伐，与[color=#6699FF][url={"research": "邓艾", "cat": "people"}]邓艾[/url][/color]、郭淮等多次交战，但正史中无"铁笼山"地名、无司马昭被围的记载。演义将司马昭在前线指挥（正史有据）与虚构的铁笼山困局结合，强化了姜维北伐的戏剧效果。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]维度[/b][/cell]
+[cell][b]演义[/b][/cell]
+[cell][b]正史[/b][/cell]
+[cell]人物存在[/cell]
+[cell]司马昭主簿，铁笼山献策[/cell]
+[cell][color=#000000]正史无载，纯虚构；正史无同名同时代人物[/color][/cell]
+[cell]铁笼山之战[/cell]
+[cell]演义第109回/嘉靖本第220回[/cell]
+[cell]《三国志》无"铁笼山"之战，大致对应延熙十六年（253年）[color=#0066FF][url={"research": "姜维北伐", "cat": "events"}]姜维北伐[/url][/color]战事，但细节高度演义化[/cell]
+[cell]耿恭典故[/cell]
+[cell]援引《后汉书》典故[/cell]
+[cell]耿恭拜井有史载，王韬援引本身是虚构[/cell]
+[/table]
+
+
+[color=#000000]关于"铁笼山"的史实背景：[/color]
+《三国志·姜维传》记载姜维在延熙十六年（253年）[color=#0066FF][url={"research": "费祎", "cat": "people"}]费祎[/url][/color]死后进行大规模北伐，与[color=#0066FF][url={"research": "邓艾", "cat": "people"}]邓艾[/url][/color]、郭淮等多次交战，但正史中无"铁笼山"地名、无司马昭被围的记载。
+
+
+[color=#888888]──────────────────────────────[/color]

@@ -1,169 +1,223 @@
-[b]颍川士族网络[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]颍川士族网络[/font][/b]
 
 
-[b]类型：[/b] 社会结构
+[color=#000000]类型：[/color] 社会结构
 
 
-[b]背景概述[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]背景概述[/font][/b]
 
 
 颍川郡（治所阳翟，今河南禹州，后迁许昌）位于洛阳东南百余里，是南北交通要冲，在秦汉时期就是政治经济文化高度发达的地区。
 
 《汉书·地理志》对颍川的概括简练而精准："颍川，韩都。士有申子、韩非刻害余烈，高仕宦，好文法。"颍川属韩国故地，法家思想深入民间，对仕进与法律的兴趣构成该地区的文化基因，与儒家经学为主导的齐鲁、青徐士人风格明显有别。
 
-这一传统延续至东汉：颍川钟氏"世善刑律"，钟皓→[color=#6699FF][url={"research": "钟繇", "cat": "people"}]钟繇[/url][/color]→钟毓三代廷尉，法律世家绵延至曹魏。郭氏也是法律世家，郭躬之后"数世皆传法律，子孙至公者一人，廷尉七人"。颍川人热衷政治仕进而非纯粹经学，这是其后多产政治谋臣的根本原因。
+这一传统延续至东汉：颍川钟氏"世善刑律"，钟皓→[color=#0066FF][url={"research": "钟繇", "cat": "people"}]钟繇[/url][/color]→[color=#0066FF][url={"research": "钟毓", "cat": "people"}]钟毓[/url][/color]三代廷尉，法律世家绵延至曹魏。郭氏也是法律世家，郭躬之后"数世皆传法律，子孙至公者一人，廷尉七人"。颍川人热衷政治仕进而非纯粹经学，这是其后多产政治谋臣的根本原因。
 
 
-[b]在三国时期的表现[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]在三国时期的表现[/font][/b]
 
 
-[b]颍川集团的形成机制[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]颍川集团的形成机制[/font][/b]
+
 
 东汉末年颍川集团的崛起，可以从三个层面解析：
 
-[b]1. 地理与信息优势[/b]
-颍川距洛阳仅百余里，学者可在帝都与乡郡之间"走读"，视野开阔，消息灵通。[color=#6699FF][url={"research": "黄巾之乱", "cat": "events"}]黄巾之乱[/url][/color]后，颍川作为[color=#6699FF][url={"research": "许都", "cat": "geography"}]许都[/url][/color]（[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]迎天子所在地）的核心地带，政治地位剧升，成为曹魏政权地理上的"主场"。
+[color=#000000]1. 地理与信息优势[/color]
+颍川距洛阳仅百余里，学者可在帝都与乡郡之间"走读"，视野开阔，消息灵通。[color=#0066FF][url={"research": "黄巾之乱", "cat": "events"}]黄巾之乱[/url][/color]后，颍川作为[color=#0066FF][url={"research": "许都", "cat": "geography"}]许都[/url][/color]（[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]迎天子所在地）的核心地带，政治地位剧升，成为曹魏政权地理上的"主场"。
 
-[b]2. 世家教育体系[/b]
+[color=#000000]2. 世家教育体系[/color]
 荀、钟、陈、辛等家族历有家学，重藏书、重礼法，子弟自幼研习法家典籍及策论。颍川士人普遍研习《申》《韩》，使这一群体在曹操"唯才是举"的实用主义政治中有天然优势——他们提供的正是行政、谋略、制度设计类才能。
 
-[b]3. 婚姻与乡党网络[/b]
+[color=#000000]3. 婚姻与乡党网络[/color]
 《汉书》记载西汉时颍川豪门便有"相与为婚姻，吏俗朋党"的传统。东汉延续：
-- 钟皓之嫂为李膺姑母；李膺妹嫁钟皓侄儿
-- [b][color=#6699FF][url={"research": "陈群", "cat": "people"}]陈群[/url][/color]之妻为[color=#6699FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]之女[/b]（陈群是荀彧女婿）
-- 钟繇为荀勖从外祖
-- 荀、陈、钟、李四家互为婚姻，构成颍川第一流高门圈
+
+[indent]•  钟皓之嫂为李膺姑母；李膺妹嫁钟皓侄儿[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000][color=#0066FF][url={"research": "陈群", "cat": "people"}]陈群[/url][/color]之妻为[color=#0066FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]之女[/color]（陈群是荀彧女婿）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  钟繇为[color=#0066FF][url={"research": "荀勖", "cat": "people"}]荀勖[/url][/color]从外祖[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  荀、陈、钟、李四家互为婚姻，构成颍川第一流高门圈[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 这一网络不是汉末临时结成，而是有数百年历史积淀的地域政治共同体。
 
 
-[b]荀彧：颍川集团的枢纽[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]荀彧：颍川集团的枢纽[/font][/b]
+
 
 荀彧是整个颍川集团进入曹魏政权的核心中介。他所扮演的角色，在制度正式化以前，形同后来的九品中正：掌握人才评品与推荐权，构建起庞大的门生故吏网络。
 
-[b]荀彧举荐名单（《三国志·荀彧传》及裴注）：[/b]
-[color=#6699FF][url={"research": "荀攸", "cat": "people"}]荀攸[/url][/color]、钟繇、陈群、[color=#6699FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]、郗虑、[color=#6699FF][url={"research": "华歆", "cat": "people"}]华歆[/url][/color]、[color=#6699FF][url={"research": "王朗", "cat": "people"}]王朗[/url][/color]、荀悦、[color=#6699FF][url={"research": "杜袭", "cat": "people"}]杜袭[/url][/color]、辛毗、[color=#6699FF][url={"research": "赵俨", "cat": "people"}]赵俨[/url][/color]、戏志才、[color=#6699FF][url={"research": "郭嘉", "cat": "people"}]郭嘉[/url][/color]
+[color=#000000]荀彧举荐名单（《三国志·荀彧传》及裴注）：[/color]
+[color=#0066FF][url={"research": "荀攸", "cat": "people"}]荀攸[/url][/color]、钟繇、陈群、[color=#0066FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]、郗虑、[color=#0066FF][url={"research": "华歆", "cat": "people"}]华歆[/url][/color]、[color=#0066FF][url={"research": "王朗", "cat": "people"}]王朗[/url][/color]、荀悦、[color=#0066FF][url={"research": "杜袭", "cat": "people"}]杜袭[/url][/color]、辛毗、[color=#0066FF][url={"research": "赵俨", "cat": "people"}]赵俨[/url][/color]、[color=#0066FF][url={"research": "戏志才", "cat": "people"}]戏志才[/url][/color]、[color=#0066FF][url={"research": "郭嘉", "cat": "people"}]郭嘉[/url][/color]
 
 《彧别传》评价："命世大才，邦邑则荀攸、钟繇、陈群。"
 
-[b]郭嘉的推荐经过（《三国志·郭嘉传》原文）：[/b]
+[color=#000000]郭嘉的推荐经过（《三国志·郭嘉传》原文）：[/color]
 戏志才早卒后，曹操致书荀彧："自志才亡后，莫可与计事者。汝、颍固多奇士，谁可以继之？"荀彧随即荐嘉。这一史料不仅记录了郭嘉的来历，更直白地揭示了曹操对颍川人才库的依赖意识。
 
-[b]荀彧的政治功能（建安年间）：[/b]
-- 建安元年（196）力主"奉天子以令不臣"，为曹操奠定政治合法性基础
-- 曹操在外征战，"军国事皆与彧筹焉"（《三国志》）
-- [color=#6699FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]前以"四胜四败"论坚定曹操信心
-- 赤壁战败后提出"深根固本以制天下"方略
+[color=#000000]荀彧的政治功能（建安年间）：[/color]
+
+[indent]•  建安元年（196）力主"奉天子以令不臣"，为曹操奠定政治合法性基础[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹操在外征战，"军国事皆与彧筹焉"（《三国志》）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]前以"四胜四败"论坚定曹操信心[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  赤壁战败后提出"深根固本以制天下"方略[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]荀彧反对加九锡：史料全考[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]荀彧反对加九锡：史料全考[/font][/b]
 
-[b]政治背景：[/b]
-建安十六年（211）曹操平定关中，天下三分大势已定。建安十七年（212）冬十月，[color=#6699FF][url={"research": "董昭", "cat": "people"}]董昭[/url][/color]向曹操进言（《资治通鉴》引）：
-[color=#AAAAAA]　"自古以来，人臣匡世，未有今日之功；有今日之功，未有久处人臣之势者也。今明公耻有惭德，乐保名节，然处大臣之势，使人以大事疑己，诚不可不重虑也。"[/color]
-[color=#AAAAAA]　遂与列侯诸将议，以丞相宜进爵国公，九锡备物，以彰殊勋。[/color]
 
-[b]九锡的含义：[/b] 古代帝王对大臣的九种赏赐（车马、衣服、乐器、武士、弓矢等），是臣子能获得的最高礼遇，本质是宣告该臣子地位接近帝王、代汉自立的前一步。
+[color=#000000]政治背景：[/color]
+建安十六年（211）曹操平定关中，天下三分大势已定。建安十七年（212）冬十月，[color=#0066FF][url={"research": "董昭", "cat": "people"}]董昭[/url][/color]向曹操进言（《资治通鉴》引）：
 
-[b]荀彧反对的史料原文（两个版本对比）：[/b]
+[indent][color=#666666]┃ "自古以来，人臣匡世，未有今日之功；有今日之功，未有久处人臣之势者也。今明公耻有惭德，乐保名节，然处大臣之势，使人以大事疑己，诚不可不重虑也。"[/color][/indent]
+[indent][color=#666666]┃ 遂与列侯诸将议，以丞相宜进爵国公，九锡备物，以彰殊勋。[/color][/indent]
+
+
+[color=#000000]九锡的含义：[/color] 古代帝王对大臣的九种赏赐（车马、衣服、乐器、武士、弓矢等），是臣子能获得的最高礼遇，本质是宣告该臣子地位接近帝王、代汉自立的前一步。
+
+[color=#000000]荀彧反对的史料原文（两个版本对比）：[/color]
 
 《三国志·荀彧传》（陈寿）：
-[color=#AAAAAA]　[b]彧以为太祖本兴义兵以匡朝宁国，秉忠贞之诚，守退让之实；君子爱人以德，不宜如此。太祖由是心不能平。[/b][/color]
+
+[indent][color=#666666]┃ [color=#000000]彧以为太祖本兴义兵以匡朝宁国，秉忠贞之诚，守退让之实；君子爱人以德，不宜如此。太祖由是心不能平。[/color][/color][/indent]
+
 
 《后汉书·荀彧传》（范晔）：
-[color=#AAAAAA]　彧曰：「曹公本兴义兵，以匡振汉朝，虽勋庸崇著，[b]犹秉忠贞之节[/b]。君子爱人以德，不宜如此。」[b]事遂寝。[/b][/color]
+
+[indent][color=#666666]┃ 彧曰：「曹公本兴义兵，以匡振汉朝，虽勋庸崇著，[color=#000000]犹秉忠贞之节[/color]。君子爱人以德，不宜如此。」[color=#000000]事遂寝。[/color][/color][/indent]
+
 
 两版本差异：
-- 《后汉书》多"[b]事遂寝[/b]"三字，说明提案因荀彧反对而暂时搁置
-- 《后汉书》将"守退让之实"改为"犹秉忠贞之节"，强调虽功勋显赫但仍应保持臣节
-- 《三国志》只写"心不能平"，聚焦曹操的心理反应，更具张力
 
-[b]荀彧反对的核心逻辑：[/b]
+[indent]•  《后汉书》多"[color=#000000]事遂寝[/color]"三字，说明提案因荀彧反对而暂时搁置[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《后汉书》将"守退让之实"改为"犹秉忠贞之节"，强调虽功勋显赫但仍应保持臣节[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《三国志》只写"心不能平"，聚焦曹操的心理反应，更具张力[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]荀彧反对的核心逻辑：[/color]
 荀彧并非单纯"忠于汉室"的迂腐之论——他的论点实际上是：曹操的政治正当性建立在"兴义兵以匡汉"上，进爵国公+九锡意味着越出人臣礼制，正是对这一合法性基础的自我破坏。"君子爱人以德"——意为真正爱护曹操，不应助长此举。
 
-[b]何兹全（北京师范大学，《文史知识》2003年）的分析：[/b]
+[color=#000000]何兹全（北京师范大学，《文史知识》2003年）的分析：[/color]
 荀彧的悲剧源于职务错置——曹操将荀彧安排为汉献帝的侍中、守尚书令，使荀彧名义上成为天子之臣，在君为君，不能不忠于汉帝。当曹操与汉室利益分叉时，荀彧无路可退。
 
-[b]"事遂寝"只是暂时的：[/b]
-建安十七年（212）荀彧反对后→"事遂寝"→荀彧当年死亡→[b]建安十八年（213）曹操即进位魏公[/b]。荀彧的反对只推迟了不到一年，最终障碍是荀彧本人而非其意见。
+[color=#000000]"事遂寝"只是暂时的：[/color]
+建安十七年（212）荀彧反对后→"事遂寝"→荀彧当年死亡→[color=#000000]建安十八年（213）曹操即进位魏公[/color]。荀彧的反对只推迟了不到一年，最终障碍是荀彧本人而非其意见。
 
 
-[b]荀彧之死：四种史料文本[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]荀彧之死：四种史料文本[/font][/b]
 
-[b]第一种：陈寿《三国志》——"以忧薨"说[/b]
-[color=#AAAAAA]　会征[color=#6699FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]，表请彧劳军于谯，因辄留彧，以侍中光禄大夫持节，参丞相军事。太祖军至濡须，[b]彧疾留[color=#6699FF][url={"research": "寿春", "cat": "geography"}]寿春[/url][/color]，以忧薨，时年五十。[/b]谥曰敬侯。明年，太祖遂为魏公矣。[/color]
+
+[color=#000000]第一种：陈寿《三国志》——"以忧薨"说[/color]
+
+[indent][color=#666666]┃ 会征[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]，表请彧劳军于谯，因辄留彧，以侍中光禄大夫持节，参丞相军事。太祖军至濡须，[color=#000000]彧疾留[color=#0066FF][url={"research": "寿春", "cat": "geography"}]寿春[/url][/color]，以忧薨，时年五十。[/color]谥曰敬侯。明年，太祖遂为魏公矣。[/color][/indent]
+
 
 陈寿未提空器，称"以忧薨"，可能是回避。但前后文逻辑（"心不能平"→留彧于军中→疾留寿春→以忧薨→"明年遂为魏公"）已隐含曹操逼死荀彧的因果链。
 
-裴松之注引《彧别传》附加一句：[b]"彧自为尚书令，常以书陈事；临薨，皆焚毁之。"[/b]——荀彧临死前将所有奏书/书信焚毁，体现其政治谨慎与悲剧自知。
+裴松之注引《彧别传》附加一句：[color=#000000]"彧自为尚书令，常以书陈事；临薨，皆焚毁之。"[/color]——荀彧临死前将所有奏书/书信焚毁，体现其政治谨慎与悲剧自知。
 
-[b]第二种：孙盛《魏氏春秋》（裴注引）——"空器/饮药"说[/b]
-[color=#AAAAAA]　太祖馈彧食，发之乃空器也，于是饮药而卒。咸熙二年，赠彧太尉。[/color]
+[color=#000000]第二种：孙盛《魏氏春秋》（裴注引）——"空器/饮药"说[/color]
+
+[indent][color=#666666]┃ 太祖馈彧食，发之乃空器也，于是饮药而卒。咸熙二年，赠彧太尉。[/color][/indent]
+
 
 这是最具戏剧性的版本：曹操送来的食盒打开是空的，荀彧明白意思（无汉禄可食），随即饮药自尽。《后汉书》范晔采用此说，司马光《资治通鉴》采用"饮药而卒"但未录空器细节。
 
-[b]第三种：袁暐《献帝春秋》（裴注引）——伏皇后杀令说[/b]
-[color=#AAAAAA]　彧卒于寿春，寿春亡者告孙权，言太祖使彧杀伏后，彧不从，故自杀。[/color]
+[color=#000000]第三种：袁暐《献帝春秋》（裴注引）——伏皇后杀令说[/color]
 
-裴松之明确批评此说"[b]出自鄙俚，可谓以吾侪之言而厚诬君子者矣[/b]"——认为此说来自民间讹传，托"寿春亡者"口吻，不可信。
+[indent][color=#666666]┃ 彧卒于寿春，寿春亡者告孙权，言太祖使彧杀伏后，彧不从，故自杀。[/color][/indent]
 
-[b]第四种：司马光《资治通鉴》——折衷说[/b]
-[color=#AAAAAA]　曹军向濡须，彧以疾留寿春，[b]饮药而卒[/b]。[/color]
+
+裴松之明确批评此说"[color=#000000]出自鄙俚，可谓以吾侪之言而厚诬君子者矣[/color]"——认为此说来自民间讹传，托"寿春亡者"口吻，不可信。
+
+[color=#000000]第四种：司马光《资治通鉴》——折衷说[/color]
+
+[indent][color=#666666]┃ 曹军向濡须，彧以疾留寿春，[color=#000000]饮药而卒[/color]。[/color][/indent]
+
 
 接受自杀说，但不采空器细节，表明司马光对《魏氏春秋》的戏剧化细节持保留态度。
 
-[b]史学界评估：[/b]
+[color=#000000]史学界评估：[/color]
 陈寿"以忧薨"说最可信但措辞有掩护；《魏氏春秋》空器说已带演义性质，被《三国演义》全盘采用后广泛流传；《献帝春秋》说不可信；《资治通鉴》折衷处理。荀彧之死很可能是曹操施压下的忧愤/自尽，具体方式史料已无法确证。
 
-[b]咸熙二年（265年）追赠荀彧太尉[/b]
-[color=#6699FF][url={"research": "司马炎", "cat": "people"}]司马炎[/url][/color]代魏前夕追赠此衔，时间点耐人寻味——荀彧曾反对曹操加九锡，司马氏追赠正可用来类比：你们曹家当年对荀彧如此，我们司马家现在也可以如此。这是一种政治符号的再利用。
+[color=#000000]咸熙二年（265年）追赠荀彧太尉[/color]
+[color=#0066FF][url={"research": "司马炎", "cat": "people"}]司马炎[/url][/color]代魏前夕追赠此衔，时间点耐人寻味——荀彧曾反对曹操加九锡，司马氏追赠正可用来类比：你们曹家当年对荀彧如此，我们司马家现在也可以如此。这是一种政治符号的再利用。
 
 
-[b]辛氏兄弟（辛评·辛毗）：同族异路的典型[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]辛氏兄弟（辛评·辛毗）：同族异路的典型[/font][/b]
 
-[b]基本史料（《三国志·辛毗传》）：[/b]
 
-"辛毗字佐治，颍川阳翟人也。其先建武中，自陇西东迁。[b]毗随兄评从[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]。[/b]"
+[color=#000000]基本史料（《三国志·辛毗传》）：[/color]
 
-辛毗/[color=#6699FF][url={"research": "辛评", "cat": "people"}]辛评[/url][/color]同为颍川阳翟人，最初均随袁绍，是颍川士族投靠北方最强势力的典型选择。
+"辛毗字佐治，颍川阳翟人也。其先建武中，自陇西东迁。[color=#000000]毗随兄评从[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]。[/color]"
 
-[b]分叉的契机：[/b]
-袁尚攻兄谭于平原，袁谭使辛毗赴曹操阵营求和。辛毗当场以"天亡袁尚"为论据，游说曹操弃荆州优先取河北。曹操采纳（"善"），克邺后表辛毗为议郎，随即进入曹操幕府。
+辛毗/[color=#0066FF][url={"research": "辛评", "cat": "people"}]辛评[/url][/color]同为颍川阳翟人，最初均随袁绍，是颍川士族投靠北方最强势力的典型选择。
 
-[b]辛评的命运：[/b]
+[color=#000000]分叉的契机：[/color]
+[color=#0066FF][url={"research": "袁尚", "cat": "people"}]袁尚[/url][/color]攻兄谭于平原，[color=#0066FF][url={"research": "袁谭", "cat": "people"}]袁谭[/url][/color]使辛毗赴曹操阵营求和。辛毗当场以"天亡袁尚"为论据，游说曹操弃荆州优先取河北。曹操采纳（"善"），克邺后表辛毗为议郎，随即进入曹操幕府。
+
+[color=#000000]辛评的命运：[/color]
 辛毗出使转投曹操后，辛评仍留袁谭。建安九年（204年）袁谭被杀，辛评同年死亡。史料未载辛评是否尝试转投，"同族异路"的直接原因不见于史。结构性推断：辛评已深度绑定袁谭，既得利益在北方；辛毗以使者身份出行才有离开的窗口。
 
-[b]辛毗在曹魏的仕途与人格：[/b]
-- 丞相长史（曹操时）→ 侍中（[color=#6699FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]称帝后）→ 封关内侯
-- 广平亭侯（征[color=#6699FF][url={"research": "江陵", "cat": "geography"}]江陵[/url][/color]战役后）→ 卫尉（明帝时）
-- [b]拉裾谏帝[/b]（曹丕徙[color=#6699FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]士家令）：辛毗拉住曹丕衣裾，"陛下不以臣不肖，置之左右，厕之谋议之官，安得不与臣议邪！"——面谏皇帝最激烈的典型颍川士人风格
-- 拒绝与中书监刘放/令孙资往来，被排出尚书台——人格刚直，不愿妥协权宦
-- [b]青龙二年（234年）[/b]：以大将军军师持节赴渭南，阻止司马懿出战蜀军："六军皆肃，准毗节度，莫敢犯违"
-- 谥肃侯
+[color=#000000]辛毗在曹魏的仕途与人格：[/color]
 
-[b][color=#6699FF][url={"research": "辛宪英", "cat": "people"}]辛宪英[/url][/color]（辛毗之女）：[/b]
-《世说新语·贤媛》载：预言[color=#6699FF][url={"research": "曹爽", "cat": "people"}]曹爽[/url][/color]集团"此举必败"（高平陵前）；[color=#6699FF][url={"research": "钟会", "cat": "people"}]钟会[/url][/color]伐蜀前，辛宪英劝儿子"行矣，戒之！蜀虽小国，备其守御"，预言钟会必死。是魏晋时期最有名的女性政论者之一，颍川辛氏政治智慧的代表性人物。
+[indent]•  丞相长史（曹操时）→ 侍中（[color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]称帝后）→ 封关内侯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  广平亭侯（征[color=#0066FF][url={"research": "江陵", "cat": "geography"}]江陵[/url][/color]战役后）→ 卫尉（明帝时）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]拉裾谏帝[/color]（曹丕徙[color=#0066FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]士家令）：辛毗拉住曹丕衣裾，"陛下不以臣不肖，置之左右，厕之谋议之官，安得不与臣议邪！"——面谏皇帝最激烈的典型颍川士人风格[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  拒绝与中书监刘放/令孙资往来，被排出尚书台——人格刚直，不愿妥协权宦[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]青龙二年（234年）[/color]：以大将军军师持节赴渭南，阻止司马懿出战蜀军："六军皆肃，准毗节度，莫敢犯违"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  谥肃侯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]两大集团的格局[/b]
+[color=#000000][color=#0066FF][url={"research": "辛宪英", "cat": "people"}]辛宪英[/url][/color]（辛毗之女）：[/color]
+《世说新语·贤媛》载：预言[color=#0066FF][url={"research": "曹爽", "cat": "people"}]曹爽[/url][/color]集团"此举必败"（高平陵前）；[color=#0066FF][url={"research": "钟会", "cat": "people"}]钟会[/url][/color]伐蜀前，辛宪英劝儿子"行矣，戒之！蜀虽小国，备其守御"，预言钟会必死。是魏晋时期最有名的女性政论者之一，颍川辛氏政治智慧的代表性人物。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]两大集团的格局[/font][/b]
+
 
 曹操阵营形成"文武双核"结构：
-- [b]汝颍谋士集团[/b]（文官/谋略体系）：荀彧、荀攸、郭嘉、陈群、戏志才、司马懿等
-- [b]谯沛武将集团[/b]（军事/亲族体系）：[color=#6699FF][url={"research": "夏侯惇", "cat": "people"}]夏侯惇[/url][/color]、[color=#6699FF][url={"research": "曹仁", "cat": "people"}]曹仁[/url][/color]、[color=#6699FF][url={"research": "夏侯渊", "cat": "people"}]夏侯渊[/url][/color]、[color=#6699FF][url={"research": "曹洪", "cat": "people"}]曹洪[/url][/color]等曹氏宗亲
+
+[indent]•  [color=#000000]汝颍谋士集团[/color]（文官/谋略体系）：荀彧、荀攸、郭嘉、陈群、戏志才、司马懿等[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]谯沛武将集团[/color]（军事/亲族体系）：[color=#0066FF][url={"research": "夏侯惇", "cat": "people"}]夏侯惇[/url][/color]、[color=#0066FF][url={"research": "曹仁", "cat": "people"}]曹仁[/url][/color]、[color=#0066FF][url={"research": "夏侯渊", "cat": "people"}]夏侯渊[/url][/color]、[color=#0066FF][url={"research": "曹洪", "cat": "people"}]曹洪[/url][/color]等曹氏宗亲[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 这一格局贯穿整个曹魏建立过程，两集团互相依存又潜藏张力——荀彧最终与曹操决裂（反对加九锡），折射出汉室忠臣与新朝缔造者之间的深层矛盾。
 
 
-[b]荀彧之后：陈群与九品中正制的建立[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]荀彧之后：陈群与九品中正制的建立[/font][/b]
 
-建安十七年（212）荀彧死后，[b]陈群[/b]成为汝颍集团的核心人物。曹[color=#6699FF][url={"research": "魏延", "cat": "people"}]魏延[/url][/color]康元年/黄初元年（220年），陈群以吏部尚书身份建立[b]九品中正制[/b]。
 
-[b]建立的直接史料：[/b]
-- 《通典·卷十四》："延康元年，吏部尚书陈群以天朝选用不尽人才，乃立'九品官人之法'，州郡皆置中正，以定其选，择州郡之贤有识鉴者为之，区别人物，第其高下。"
-- 《魏志·陈群传》："制九品官人之法，群所建也。"
-- 官方理由：乱世人才流散，察举制崩溃，需要重建人才评价体系
+建安十七年（212）荀彧死后，[color=#000000]陈群[/color]成为汝颍集团的核心人物。曹[color=#0066FF][url={"research": "魏延", "cat": "people"}]魏延[/url][/color]康元年/黄初元年（220年），陈群以吏部尚书身份建立[color=#000000]九品中正制[/color]。
 
-[b]真实的政治博弈逻辑（非官方）：[/b]
+[color=#000000]建立的直接史料：[/color]
+
+[indent]•  《通典·卷十四》："延康元年，吏部尚书陈群以天朝选用不尽人才，乃立'九品官人之法'，州郡皆置中正，以定其选，择州郡之贤有识鉴者为之，区别人物，第其高下。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《魏志·陈群传》："制九品官人之法，群所建也。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  官方理由：乱世人才流散，察举制崩溃，需要重建人才评价体系[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]真实的政治博弈逻辑（非官方）：[/color]
 
 九品中正制不是中立的制度创新，而是颍川士族将数十年非正式人才品评网络以法律形式固化的政治行动。其逻辑链条：
 
@@ -178,103 +232,207 @@
     ↓ （制度固化完成，门阀政治成型）
 ```
 
-[b]陈群与曹丕的政治交换：[/b]
-[color=#6699FF][url={"research": "曹丕代汉", "cat": "events"}]曹丕代汉[/url][/color]称帝急需名正言顺。陈群领衔劝进，同步推出九品中正制：
-- 曹丕得：士族大家公开背书，政治合法性
-- 士族得：选举制度主导权（中正职位由本土大族担任）
+[color=#000000]陈群与曹丕的政治交换：[/color]
+[color=#0066FF][url={"research": "曹丕代汉", "cat": "events"}]曹丕代汉[/url][/color]称帝急需名正言顺。陈群领衔劝进，同步推出九品中正制：
+
+[indent]•  曹丕得：士族大家公开背书，政治合法性[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  士族得：选举制度主导权（中正职位由本土大族担任）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 陈群同期还主持制定《魏律》，是曹魏建国制度框架的总设计师之一——政治地位等同于萧何之于汉高祖。
 
-[b]九品中正制与"唯才是举"的逆转：[/b]
+[color=#000000]九品中正制与"唯才是举"的逆转：[/color]
 曹操生前三次颁布求才令（210、214、217年），核心是"去德取才"，打破士族垄断。曹丕继位后立九品中正制，方向逆转：由才能评价重新转向家世/德性评价，士族话语权回归。
 
 学术论断（王明前，厦门大学，2011年）："九品中正制本质上是曹操'唯才是举'路线终结的制度化表现，是曹魏政权向豪族妥协的标志。"
 
-[b]制度异化（实施约十年后）：[/b]
+[color=#000000]制度异化（实施约十年后）：[/color]
 家世权重从30%升至70%，"上品无寒门，下品无世族"（刘毅上疏语）。钟繇之子钟毓14岁即获五品，士族子弟通过制度渠道自动获得高品成为惯例。
 
-[b]九品中正制内部博弈细节：史料已穷尽[/b]
+[color=#000000]九品中正制内部博弈细节：史料已穷尽[/color]
 《三国志·陈群传》对建立过程极简，《通典》只录官方陈述，无内部讨论细节可考。
 
 
-[b]曹叡·曹芳时代：颍川集团的分裂[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹叡·曹芳时代：颍川集团的分裂[/font][/b]
 
-[b]陈群的去世与陈泰的接棒[/b]
 
-陈群于约236年（[color=#6699FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]太和年间）去世，曹丕死前（226年）已将陈群列为托孤重臣，与曹真、司马懿共同辅政。陈群在曹叡时代的政治功能延续：阻止曹真从[color=#6699FF][url={"research": "斜谷", "cat": "geography"}]斜谷[/url][/color]伐蜀（《三国志》载陈群"以为不便"，"帝从群议"），其判断仍被曹叡采信——但这背后也有颍川集团限制谯沛武将树立军功的利益考量。
+[color=#000000]陈群的去世与[color=#0066FF][url={"research": "陈泰", "cat": "people"}]陈泰[/url][/color]的接棒[/color]
 
-陈群身后，其子[b]陈泰[/b]以军事才能接续家族影响力：
-- 249年[color=#6699FF][url={"research": "高平陵之变", "cat": "events"}]高平陵之变[/url][/color]发生时，陈泰随曹芳曹爽出行，被司马懿利用，代为劝说曹爽投降（与侍中许允联手，以信誉作保，承诺只免官不杀人）
-- 陈泰和许允均非司马氏心腹，曹爽信任其二人中立的公信力，这才接受条件——陈泰事后意识到被骗
-- [b]高平陵后陈泰立即赴西线，远离司马氏政治中心[/b]，此举可视为主动切割
-- 249-255年：多次挫败[color=#6699FF][url={"research": "姜维北伐", "cat": "events"}]姜维北伐[/url][/color]，名震西北，255年郭淮卒后任[b]征西将军、假节都督雍凉二州[/b]
-- 曹髦之死（260年）：陈泰拒不配合[color=#6699FF][url={"research": "司马昭", "cat": "people"}]司马昭[/url][/color]，当场要求"斩贾充以谢天下"，随即神秘死亡（《魏氏春秋》载呕血，《汉晋春秋》载自尽）
+陈群于约236年（[color=#0066FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]太和年间）去世，曹丕死前（226年）已将陈群列为托孤重臣，与[color=#0066FF][url={"research": "曹真", "cat": "people"}]曹真[/url][/color]、司马懿共同辅政。陈群在曹叡时代的政治功能延续：阻止曹真从[color=#0066FF][url={"research": "斜谷", "cat": "geography"}]斜谷[/url][/color]伐蜀（《三国志》载陈群"以为不便"，"帝从群议"），其判断仍被曹叡采信——但这背后也有颍川集团限制谯沛武将树立军功的利益考量。
 
-[b]颍川三家的最终分叉（魏晋禅代时期）[/b]
+陈群身后，其子[color=#000000]陈泰[/color]以军事才能接续家族影响力：
+
+[indent]•  249年[color=#0066FF][url={"research": "高平陵之变", "cat": "events"}]高平陵之变[/url][/color]发生时，陈泰随[color=#0066FF][url={"research": "曹芳", "cat": "people"}]曹芳[/url][/color]曹爽出行，被司马懿利用，代为劝说曹爽投降（与侍中许允联手，以信誉作保，承诺只免官不杀人）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  陈泰和许允均非司马氏心腹，曹爽信任其二人中立的公信力，这才接受条件——陈泰事后意识到被骗[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]高平陵后陈泰立即赴西线，远离司马氏政治中心[/color]，此举可视为主动切割[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  249-255年：多次挫败[color=#0066FF][url={"research": "姜维北伐", "cat": "events"}]姜维北伐[/url][/color]，名震西北，255年[color=#0066FF][url={"research": "郭淮", "cat": "people"}]郭淮[/url][/color]卒后任[color=#000000]征西将军、假节都督雍凉二州[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "曹髦", "cat": "people"}]曹髦[/url][/color]之死（260年）：陈泰拒不配合[color=#0066FF][url={"research": "司马昭", "cat": "people"}]司马昭[/url][/color]，当场要求"斩[color=#0066FF][url={"research": "贾充", "cat": "people"}]贾充[/url][/color]以谢天下"，随即神秘死亡（《魏氏春秋》载呕血，《汉晋春秋》载自尽）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]颍川三家的最终分叉（魏晋禅代时期）[/color]
 
 高平陵之变后，颍川集团实际瓦解为三条路径，呈现鲜明分化：
 
 
-[b]家族[/b] | [b]代表人物[/b] | [b]选择[/b] | [b]结局[/b]
-荀氏 | [color=#6699FF][url={"research": "荀顗 ", "cat": " people"}]荀顗 [/url][/color]、荀勖 | 全力支持司马氏 | 西晋权贵，荀顗官至太尉，但因荐贾南风埋西晋祸根
-陈氏 | 陈泰 | 在名节与家族利益间迟疑 | 身死族败，陈氏退出历史舞台
-钟氏 | 钟会 | 深度融入司马氏政权 | 灭蜀后于[color=#6699FF][url={"research": "成都 ", "cat": " geography"}]成都 [/url][/color]谋反，264年被杀
+[table=4]
+[cell][b]家族[/b][/cell]
+[cell][b]代表人物[/b][/cell]
+[cell][b]选择[/b][/cell]
+[cell][b]结局[/b][/cell]
+[cell]荀氏[/cell]
+[cell][color=#0066FF][url={"research": "荀顗", "cat": "people"}]荀顗[/url][/color]、荀勖[/cell]
+[cell]全力支持司马氏[/cell]
+[cell]西晋权贵，荀顗官至太尉，但因荐贾南风埋西晋祸根[/cell]
+[cell]陈氏[/cell]
+[cell]陈泰[/cell]
+[cell]在名节与家族利益间迟疑[/cell]
+[cell]身死族败，陈氏退出历史舞台[/cell]
+[cell]钟氏[/cell]
+[cell]钟会[/cell]
+[cell]深度融入司马氏政权[/cell]
+[cell]灭蜀后于[color=#0066FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]谋反，264年被杀[/cell]
+[/table]
 
 
-[b]荀氏的联姻策略（完整版）：[/b]
-- 荀彧长子[color=#6699FF][url={"research": "荀恽", "cat": "people"}]荀恽[/url][/color]娶曹操女儿（安阳公主）
-- 荀恽次子荀霬娶司马懿女儿（[color=#6699FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]公主）——一家人同时绑定两个权力核心
-- 荀勖（荀爽曾孙）之外祖父是钟繇，也通过联姻构建安全网
-- 荀顗推举司马衷为太子，荐贾南风为太子妃，完全进入司马氏政治体系
+[color=#000000]荀氏的联姻策略（完整版）：[/color]
 
-[b]荀顗与陈泰的决裂（260年，曹髦被杀后）：[/b]
+[indent]•  荀彧长子[color=#0066FF][url={"research": "荀恽", "cat": "people"}]荀恽[/url][/color]娶曹操女儿（安阳公主）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  荀恽次子荀霬娶司马懿女儿（[color=#0066FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]公主）——一家人同时绑定两个权力核心[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  荀勖（荀爽曾孙）之外祖父是钟繇，也通过联姻构建安全网[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  荀顗推举司马衷为太子，荐贾南风为太子妃，完全进入司马氏政治体系[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]荀顗与陈泰的决裂（260年，曹髦被杀后）：[/color]
 司马昭召群臣商议，陈泰不至。司马昭专门让荀顗（陈泰的亲舅父）前往相召——这一细节揭示了司马氏的手腕：用家族关系施压，让陈泰无法拒绝。陈泰对荀顗说："世之论者，以泰方舅，今舅不如泰也。"（世人常把我与舅父相提并论，如今来看，舅父不如我。）这是对荀顗附从司马氏的公开鄙视，也是颍川集团内部荀、陈两家最终决裂的标志时刻。
 
-[b]钟会之路：[/b]
-钟繇幼子钟会（母为[color=#6699FF][url={"research": "张氏", "cat": "people"}]张氏[/url][/color]侧室）自幼神童，少年成名，与夏侯玄、王弼清谈争锋。不同于其兄钟毓的平稳仕途，钟会成为[b]司马昭的核心谋臣[/b]，深度介入司马氏政治。263年灭蜀，钟会立下不世之功，263-264年欲据蜀自立，与[color=#6699FF][url={"research": "姜维", "cat": "people"}]姜维[/url][/color]密谋，事泄被部下所杀。颍川钟氏政治生命至此终结。
+[color=#000000]钟会之路：[/color]
+钟繇幼子钟会（母为[color=#0066FF][url={"research": "张氏", "cat": "people"}]张氏[/url][/color]侧室）自幼神童，少年成名，与[color=#0066FF][url={"research": "夏侯玄", "cat": "people"}]夏侯玄[/url][/color]、王弼清谈争锋。不同于其兄钟毓的平稳仕途，钟会成为[color=#000000]司马昭的核心谋臣[/color]，深度介入司马氏政治。263年灭蜀，钟会立下不世之功，263-264年欲据蜀自立，与[color=#0066FF][url={"research": "姜维", "cat": "people"}]姜维[/url][/color]密谋，事泄被部下所杀。颍川钟氏政治生命至此终结。
 
 
-[b]关键人物与事件[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键人物与事件[/font][/b]
 
 
-[b]人物[/b] | [b]籍贯[/b] | [b]核心身份[/b] | [b]与网络的关联[/b]
-荀淑 | 颍阴 | "八龙"之父，东汉名儒 | 颍川荀氏奠基者
-荀爽 | 颍阴 | "慈明无双"，97天升司空 | 荀彧叔父，历党锢而存
-荀彧 | 颍阴 | 守尚书令，曹操核心谋臣 | 集团枢纽，举荐13人
-荀攸 | 颍阴 | 军师，十二奇策 | 荀彧侄儿（从子）
-辛评 | 阳翟 | 袁绍/袁谭谋臣 | 随袁绍，204年死于袁谭覆灭
-辛毗 | 阳翟 | 曹魏侍中/卫尉，谏臣 | 辛评之弟；出使曹操后投降，以"拉裾谏帝"著称
-辛宪英 | 阳翟 | 辛毗之女，魏晋著名女性政论者 | 预言曹爽必败、钟会必死，《世说新语·贤媛》有传
-钟皓 | 长社 | 名儒，"世善刑律" | 荀、陈、李联姻网络
-钟繇 | 长社 | 司隶校尉→太尉，书法名家 | 荀彧推荐，三朝元老，太和四年（230年）卒
-钟毓 | 长社 | 曹魏官员 | 钟繇长子（孙氏所生），政治平稳；14岁获五品（九品中正制实例）
-钟会 | 长社 | 司马昭谋臣，灭蜀主将 | 钟繇幼子（张氏所生），264年蜀中叛乱身死
-陈寔 | 许县 | 名儒，陈氏家族奠基 | 独吊张让，庇护网络
-陈群 | 许县 | 吏部尚书，九品中正制建立者 | 荀彧女婿，约236年卒
-陈泰 | 许县 | 征西将军，曹魏西线名将 | 陈群之子，260年神秘死亡
-荀顗 | 颍阴 | 西晋太尉 | 荀彧之子，支持司马氏，荐贾南风
-荀霬 | 颍阴 | 中领军 | 荀恽之子，母曹操女，妻司马懿女
-郭嘉 | 阳翟 | 军事谋臣，"鬼才" | 荀彧推荐，戏志才卒后接任
+[table=4]
+[cell][b]人物[/b][/cell]
+[cell][b]籍贯[/b][/cell]
+[cell][b]核心身份[/b][/cell]
+[cell][b]与网络的关联[/b][/cell]
+[cell]荀淑[/cell]
+[cell]颍阴[/cell]
+[cell]"八龙"之父，东汉名儒[/cell]
+[cell]颍川荀氏奠基者[/cell]
+[cell]荀爽[/cell]
+[cell]颍阴[/cell]
+[cell]"慈明无双"，97天升司空[/cell]
+[cell]荀彧叔父，历党锢而存[/cell]
+[cell]荀彧[/cell]
+[cell]颍阴[/cell]
+[cell]守尚书令，曹操核心谋臣[/cell]
+[cell]集团枢纽，举荐13人[/cell]
+[cell]荀攸[/cell]
+[cell]颍阴[/cell]
+[cell]军师，十二奇策[/cell]
+[cell]荀彧侄儿（从子）[/cell]
+[cell]辛评[/cell]
+[cell]阳翟[/cell]
+[cell]袁绍/袁谭谋臣[/cell]
+[cell]随袁绍，204年死于袁谭覆灭[/cell]
+[cell]辛毗[/cell]
+[cell]阳翟[/cell]
+[cell]曹魏侍中/卫尉，谏臣[/cell]
+[cell]辛评之弟；出使曹操后投降，以"拉裾谏帝"著称[/cell]
+[cell]辛宪英[/cell]
+[cell]阳翟[/cell]
+[cell]辛毗之女，魏晋著名女性政论者[/cell]
+[cell]预言曹爽必败、钟会必死，《世说新语·贤媛》有传[/cell]
+[cell]钟皓[/cell]
+[cell]长社[/cell]
+[cell]名儒，"世善刑律"[/cell]
+[cell]荀、陈、李联姻网络[/cell]
+[cell]钟繇[/cell]
+[cell]长社[/cell]
+[cell]司隶校尉→太尉，书法名家[/cell]
+[cell]荀彧推荐，三朝元老，太和四年（230年）卒[/cell]
+[cell]钟毓[/cell]
+[cell]长社[/cell]
+[cell]曹魏官员[/cell]
+[cell]钟繇长子（孙氏所生），政治平稳；14岁获五品（九品中正制实例）[/cell]
+[cell]钟会[/cell]
+[cell]长社[/cell]
+[cell]司马昭谋臣，灭蜀主将[/cell]
+[cell]钟繇幼子（张氏所生），264年蜀中叛乱身死[/cell]
+[cell]陈寔[/cell]
+[cell]许县[/cell]
+[cell]名儒，陈氏家族奠基[/cell]
+[cell]独吊张让，庇护网络[/cell]
+[cell]陈群[/cell]
+[cell]许县[/cell]
+[cell]吏部尚书，九品中正制建立者[/cell]
+[cell]荀彧女婿，约236年卒[/cell]
+[cell]陈泰[/cell]
+[cell]许县[/cell]
+[cell]征西将军，曹魏西线名将[/cell]
+[cell]陈群之子，260年神秘死亡[/cell]
+[cell]荀顗[/cell]
+[cell]颍阴[/cell]
+[cell]西晋太尉[/cell]
+[cell]荀彧之子，支持司马氏，荐贾南风[/cell]
+[cell]荀霬[/cell]
+[cell]颍阴[/cell]
+[cell]中领军[/cell]
+[cell]荀恽之子，母曹操女，妻司马懿女[/cell]
+[cell]郭嘉[/cell]
+[cell]阳翟[/cell]
+[cell]军事谋臣，"鬼才"[/cell]
+[cell]荀彧推荐，戏志才卒后接任[/cell]
+[/table]
 
 
-[b]关键事件：[/b]
-- [b]党锢之祸[/b]（166-184）：颍川名士人物凋零，但荀爽、陈寔等以妥协策略保存了集团种子
-- [b]建安元年（196）[/b]：荀彧劝曹操迎天子都许，颍川成为政治中心，集团进入鼎盛期
-- [b][color=#6699FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]之战（200）[/b]：钟繇镇守关中、送马两千，荀攸献奇策，颍川集团在战略转折点发挥决定性作用
-- [b]建安十七年（212）[/b]：荀彧反对曹操加九锡（以"秉忠贞之诚，守退让之实"为核心论据），"事遂寝"；曹操"心不能平"，召荀彧随军，荀彧留寿春，当年死亡（死因：陈寿"以忧薨"；范晔/孙盛：空器赐食，饮药而卒）
-- [b]延康元年/黄初元年（220）[/b]：陈群立九品中正制，颍川士族的人才网络逻辑制度化；陈群同年主持制定《魏律》
-- [b]高平陵之变（249）[/b]：陈泰被利用劝曹爽降，颍川集团内部开始最终分裂
-- [b]曹髦之死（260）[/b]：荀顗配合司马昭，陈泰公开鄙视荀顗——颍川荀、陈两家决裂
-- [b][color=#6699FF][url={"research": "钟会之乱", "cat": "events"}]钟会之乱[/url][/color]（264）[/b]：颍川钟氏政治生命终结
+[color=#000000]关键事件：[/color]
+
+[indent]•  [color=#000000]党锢之祸[/color]（166-184）：颍川名士人物凋零，但荀爽、陈寔等以妥协策略保存了集团种子[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]建安元年（196）[/color]：荀彧劝曹操迎天子都许，颍川成为政治中心，集团进入鼎盛期[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000][color=#0066FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]之战（200）[/color]：钟繇镇守关中、送马两千，荀攸献奇策，颍川集团在战略转折点发挥决定性作用[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]建安十七年（212）[/color]：荀彧反对曹操加九锡（以"秉忠贞之诚，守退让之实"为核心论据），"事遂寝"；曹操"心不能平"，召荀彧随军，荀彧留寿春，当年死亡（死因：陈寿"以忧薨"；范晔/孙盛：空器赐食，饮药而卒）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]延康元年/黄初元年（220）[/color]：陈群立九品中正制，颍川士族的人才网络逻辑制度化；陈群同年主持制定《魏律》[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]高平陵之变（249）[/color]：陈泰被利用劝曹爽降，颍川集团内部开始最终分裂[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]曹髦之死（260）[/color]：荀顗配合司马昭，陈泰公开鄙视荀顗——颍川荀、陈两家决裂[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000][color=#0066FF][url={"research": "钟会之乱", "cat": "events"}]钟会之乱[/url][/color]（264）[/color]：颍川钟氏政治生命终结[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-- [b]演义中郭嘉的神化[/b]：郭嘉在演义及现代解读中被过度拔高，原著有"郭嘉不死，卧龙不出"之说（实属后人附会，非正史）。郭嘉的历史地位固然重要，但荀攸作为"谋主"的实际谋略地位更为关键——荀攸设十二奇策，钟繇死前未及整理，后世不传。
-- [b]荀彧之死被演义化[/b]：演义采《魏氏春秋》"空器赐食/饮药而卒"说，但正史《三国志》陈寿原文只说"以忧薨"，空器说是孙盛《魏氏春秋》的戏剧化叙述，裴松之引用但未背书其可信度。《后汉书》范晔采纳空器说，司马光折衷（饮药而卒但不写空器细节）。真相已无法确证，但荀彧临终前焚毁所有奏书的细节（《彧别传》），透露其对政治危局的清醒自知。
-- [b]荀彧反对加九锡的政治深意被低估[/b]：演义将此事处理为简单的汉臣忠义，实际上荀彧的论据（"君子爱人以德"）是一套完整的政治正当性逻辑。而"事遂寝"说明他的反对确实短暂生效，但荀彧死后不到一年曹操即进位魏公，其阻力本质上是个人而非制度性的。
-- [b]辛毗在演义中偏弱[/b]：辛毗在演义中戏份有限，正史中他是曹丕/曹叡时代的重要谏臣，也是唯一能代表制度力量持节约束司马懿（青龙二年，234年）的人物。
-- [b]钟繇形象[/b]：演义中钟繇戏份有限，正史中他是关右平定的关键人物，且荀攸的十二奇策唯他知晓。
-- [b]陈群被低估[/b]：演义中陈群不甚出彩，但正史中他是后曹操时代颍川集团的真正领袖，九品中正制的建立者，曹魏立国后最重要的制度设计师之一。
-- [b]陈泰几乎缺席[/b]：陈泰在演义中基本不存在，但他是颍川陈氏的最终代言人，且在正史中是一个鲜明的悲剧人物——军事才华出众，却生在朝不保夕的末期曹魏，最终因拒绝向司马昭妥协而死。
+[indent]•  [color=#000000]演义中郭嘉的神化[/color]：郭嘉在演义及现代解读中被过度拔高，原著有"郭嘉不死，卧龙不出"之说（实属后人附会，非正史）。郭嘉的历史地位固然重要，但荀攸作为"谋主"的实际谋略地位更为关键——荀攸设十二奇策，钟繇死前未及整理，后世不传。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]荀彧之死被演义化[/color]：演义采《魏氏春秋》"空器赐食/饮药而卒"说，但正史《三国志》陈寿原文只说"以忧薨"，空器说是孙盛《魏氏春秋》的戏剧化叙述，裴松之引用但未背书其可信度。《后汉书》范晔采纳空器说，司马光折衷（饮药而卒但不写空器细节）。真相已无法确证，但荀彧临终前焚毁所有奏书的细节（《彧别传》），透露其对政治危局的清醒自知。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]荀彧反对加九锡的政治深意被低估[/color]：演义将此事处理为简单的汉臣忠义，实际上荀彧的论据（"君子爱人以德"）是一套完整的政治正当性逻辑。而"事遂寝"说明他的反对确实短暂生效，但荀彧死后不到一年曹操即进位魏公，其阻力本质上是个人而非制度性的。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]辛毗在演义中偏弱[/color]：辛毗在演义中戏份有限，正史中他是曹丕/曹叡时代的重要谏臣，也是唯一能代表制度力量持节约束司马懿（青龙二年，234年）的人物。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]钟繇形象[/color]：演义中钟繇戏份有限，正史中他是关右平定的关键人物，且荀攸的十二奇策唯他知晓。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]陈群被低估[/color]：演义中陈群不甚出彩，但正史中他是后曹操时代颍川集团的真正领袖，九品中正制的建立者，曹魏立国后最重要的制度设计师之一。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]陈泰几乎缺席[/color]：陈泰在演义中基本不存在，但他是颍川陈氏的最终代言人，且在正史中是一个鲜明的悲剧人物——军事才华出众，却生在朝不保夕的末期曹魏，最终因拒绝向司马昭妥协而死。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]

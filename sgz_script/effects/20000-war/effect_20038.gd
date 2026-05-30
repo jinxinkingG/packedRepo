@@ -39,7 +39,7 @@ func effect_20038_start():
 	var msg = "发动【{0}】\n令{1}反守为攻\n可否？".format([
 		ske.skill_name, bf.get_defender().get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	map.next_shrink_actors = [me.actorId, bf.attackerId, bf.defenderId]
 	return
 
@@ -66,6 +66,6 @@ func effect_20038_2():
 		DataManager.get_actor_honored_title(bf.attackerId, me.actorId),
 		msg,
 	])
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	map.next_shrink_actors = [me.actorId, bf.attackerId, bf.defenderId]
 	return

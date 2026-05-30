@@ -40,7 +40,7 @@ func effect_20202_start():
 	var targetIds = ske.get_war_skill_val_int_array()
 	if not wait_choose_actors(targetIds):
 		var msg = "没有可攻击的目标"
-		play_dialog(me.actorId, msg, 3, 2009)
+		play_dialog(actorId, msg, 3, 2009)
 		return
 	LoadControl.set_view_model(2000)
 	return
@@ -51,7 +51,7 @@ func effect_20202_2():
 	var msg = "谁在这里碍眼？\n{0}纳命来！".format([
 		DataManager.get_actor_naughty_title(targetId, me.actorId)
 	])
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	map.next_shrink_actors = [me.actorId, targetId]
 	return
 

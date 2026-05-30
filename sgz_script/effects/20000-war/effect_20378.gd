@@ -29,7 +29,7 @@ func effect_20378_AI_start():
 
 func effect_20378_start():
 	var msg = "发动【{0}】\n三日内「知」临时提升\n可否？".format([ske.skill_name])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20378_2():
@@ -43,5 +43,5 @@ func effect_20378_2():
 	var msg = "蛮神庇佑，众识为知！"
 	if me.get_controlNo() < 0:
 		msg += "\n（{0}发动【{1}】".format([me.get_name(), ske.skill_name])
-	play_dialog(me.actorId, msg, 1, 2001)
+	play_dialog(actorId, msg, 1, 2001)
 	return

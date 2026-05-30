@@ -1,60 +1,135 @@
-[b]韩德（无字）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]韩德（无字）[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详（虚构人物，无史载），籍贯[color=#6699FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]（今甘肃武威），魏国西凉大将（演义设定）
-
-[color=#AAAAAA]　⚠️ [b]史实定性：韩德为《三国演义》虚构人物，不见于任何正史、裴注或汉魏史料。[/b] 《三国志》、《后汉书》、《资治通鉴》均无此人记载。以下内容全部基于演义文本分析。[/color]
+[color=#000000]基本信息：[/color] 生卒年不详（虚构人物，无史载），籍贯[color=#0066FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]（今甘肃武威），魏国西凉大将（演义设定）
 
 
-[b]生平考证[/b]
+[indent][color=#666666]┃ ⚠️ [color=#000000]史实定性：韩德为《三国演义》虚构人物，不见于任何正史、裴注或汉魏史料。[/color] 《三国志》、《后汉书》、《资治通鉴》均无此人记载。以下内容全部基于演义文本分析。[/color][/indent]
 
 
-[b]无史料可考。[/b] 正史中完全不存在"韩德"此人。
-
-三国演义第九十二回（嘉靖壬午本第186回"赵子龙大破魏兵"；毛本标题"赵子龙力斩五将 [color=#6699FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]智取三城"）首次出场并即阵亡。
-
-演义中的时代背景：建兴六年（228年），诸葛亮首次北伐（史称"一出[color=#6699FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]"）。魏帝[color=#6699FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]命驸马夏侯楙为大都督率军迎敌，韩德以西凉大将身份率四子并西羌兵八万为前锋。
-
-[b]凤鸣山之战：[/b]
-- 韩德携四子在凤鸣山列阵，遇[color=#6699FF][url={"research": "赵云", "cat": "people"}]赵云[/url][/color]（时年约七旬）。
-- 一日之内，四子相继被赵云杀死或生擒：
-  - 长子韩瑛：战不三合，被赵云刺死。
-  - 次子韩瑶：被赵云生擒，后处决。
-  - 三子韩琼：以方天戟夹攻，后以弓箭射赵云，三箭皆被拨开，反被赵云一箭射中面门而死。
-  - 四子韩琪：以双口日月刀围攻，中枪落马，被人救去，不治身亡。
-- 韩德见四子皆丧，"肝胆皆裂"，弃甲步行而逃。
-- 次日，韩德随夏侯楙再战，为子报仇，与赵云交手不三合，被刺死于马下。
-
-[b]史实背景（演义对应时段）：[/b]
-- 建兴六年（228年），诸葛亮确实进行了第一次北伐，兵出祁山，斩[color=#6699FF][url={"research": "马谡", "cat": "people"}]马谡[/url][/color]于[color=#6699FF][url={"research": "街亭", "cat": "geography"}]街亭[/url][/color]后退兵——这是正史事实。
-- 正史中夏侯楙虽确有其人（[color=#6699FF][url={"research": "夏侯惇", "cat": "people"}]夏侯惇[/url][/color]之子，娶公主清河），但其在[color=#6699FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]时并未亲临战场，演义此设定为虚构或夸张。
-- 赵云在正史中确参与第一次北伐，与邓芝率偏师出箕谷牵制曹真，后有序撤退，史评"不至大败"（据《三国志·赵云传》裴注《云别传》）。赵云在箕谷的战斗与演义中的凤鸣山大胜相差甚远。
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]性格与形象[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
+
+
+[color=#000000]无史料可考。[/color] 正史中完全不存在"韩德"此人。
+
+三国演义第九十二回（嘉靖壬午本第186回"赵子龙大破魏兵"；毛本标题"赵子龙力斩五将 [color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]智取三城"）首次出场并即阵亡。
+
+演义中的时代背景：建兴六年（228年），诸葛亮首次北伐（史称"一出[color=#0066FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]"）。魏帝[color=#0066FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]命驸马[color=#0066FF][url={"research": "夏侯楙", "cat": "people"}]夏侯楙[/url][/color]为大都督率军迎敌，韩德以西凉大将身份率四子并西羌兵八万为先锋。
+
+[color=#000000]凤鸣山之战：[/color]
+
+[indent]•  韩德携四子在凤鸣山列阵，遇[color=#0066FF][url={"research": "赵云", "cat": "people"}]赵云[/url][/color]（时年约七旬）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  一日之内，四子相继被赵云杀死或生擒：[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  长子[color=#0066FF][url={"research": "韩瑛", "cat": "people"}]韩瑛[/url][/color]：战不三合，被赵云刺死。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  次子[color=#0066FF][url={"research": "韩瑶", "cat": "people"}]韩瑶[/url][/color]：被赵云生擒，后处决。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  三子[color=#0066FF][url={"research": "韩琼", "cat": "people"}]韩琼[/url][/color]：以方天戟夹攻，后以弓箭射赵云，三箭皆被拨开，反被赵云一箭射中面门而死。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  四子[color=#0066FF][url={"research": "韩琪", "cat": "people"}]韩琪[/url][/color]（嘉靖本）/ 韩班（毛本）：以双口日月刀围攻，中枪落马，被人救去，不治身亡。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  韩德见四子皆丧，"肝胆皆裂"，弃甲步行而逃。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  次日，韩德随夏侯楙再战，为子报仇，与赵云交手不三合，被刺死于马下。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]史实背景（演义对应时段）：[/color]
+
+[indent]•  建兴六年（228年），诸葛亮确实进行了第一次北伐，兵出祁山，斩[color=#0066FF][url={"research": "马谡", "cat": "people"}]马谡[/url][/color]于[color=#0066FF][url={"research": "街亭", "cat": "geography"}]街亭[/url][/color]后退兵——这是正史事实。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  正史中夏侯楙虽确有其人（[color=#0066FF][url={"research": "夏侯惇", "cat": "people"}]夏侯惇[/url][/color]之子，娶公主清河），但其在[color=#0066FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]时并未亲临战场，演义此设定为虚构或夸张。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  赵云在正史中确参与第一次北伐，与[color=#0066FF][url={"research": "邓芝", "cat": "people"}]邓芝[/url][/color]率偏师出箕谷牵制[color=#0066FF][url={"research": "曹真", "cat": "people"}]曹真[/url][/color]，后有序撤退，史评"不至大败"（据《三国志·赵云传》裴注《云别传》）。赵云在箕谷的战斗与演义中的凤鸣山大胜相差甚远。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]版本差异（嘉靖本 vs 毛本）[/font][/b]
+
+
+嘉靖本第186回与毛本第92回韩德段落共有19处差异，详见 `ref-yanyi-version-diff.md`。最重要差异：
+
+
+[indent]1.  [color=#000000]四子末子名[/color]：嘉靖本"[color=#000000]韩琪[/color]"，毛本"[color=#000000]韩班[/color]"——两名字相差甚远，系有意改写或底本差异，非字形讹误[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]称呼[/color]：嘉靖本统一"子龙"，毛本统一"赵云"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]西凉兵溃退段[/color]：嘉靖本多"大喝一声，阵开两下，纷纷乱走"约9字[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]"无入之境"vs"无人之境"[/color]：嘉靖本"无入"系底本误字[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  [color=#000000]动词/情绪词[/color]：嘉靖本多情绪描写（"大怒"、"见了奋怒"）和动作细节，毛本更精简[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]6.  [color=#000000]邓芝贺语[/color]：嘉靖"独胜四将"→毛本"力斩四将"；"精神尚在"→"英勇如昨"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]7.  [color=#000000]赵云自述[/color]：嘉靖"不欲取用"→毛本"不肯见用，聊以自表耳"（毛本加谦逊语气）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 演义形象：勇猛、护子心切，但武艺实际不及赵云。
 
-- 武器：开山大斧，"有万夫不当之勇"——演义习用的豪将定式语言。
-- 悲剧色彩：一日之内四子尽失，父子五人全部死于同一人之手，是演义中极罕见的一门全灭情节，有鲜明的悲剧张力。
-- 角色功能：以"父子皆亡"的结构衬托赵云老而弥壮的主题（"年登七旬建奇功"），是典型的衬托型人物。
+
+[indent]•  武器：开山大斧，"有万夫不当之勇"——演义习用的豪将定式语言。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  悲剧色彩：一日之内四子尽失，父子五人全部死于同一人之手，是演义中极罕见的一门全灭情节，有鲜明的悲剧张力。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  角色功能：以"父子皆亡"的结构衬托赵云老而弥壮的主题（"年登七旬建奇功"），是典型的衬托型人物。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-- [b]夏侯楙[/b]：直属上司，韩德为其帐下先锋。
-- [b]赵云[/b]：宿敌，韩德父子五人均死于赵云之手。
-- [b]邓芝[/b]：赵云副将，随军参战。
-- [b]四子：韩瑛、韩瑶、韩琼、韩琪[/b]：均为演义虚构人物，皆亡于凤鸣山之战。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[indent]•  [color=#000000]夏侯楙[/color]：直属上司，韩德为其帐下先锋。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]赵云[/color]：宿敌，韩德父子五人均死于赵云之手。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]邓芝[/color]：赵云副将，随军参战。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]四子：韩瑛、韩瑶、韩琼、韩琪（嘉靖本）/ 韩班（毛本）[/color]：均为演义虚构人物，皆亡于凤鸣山之战。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]维度[/b] | [b]演义[/b] | [b]史实[/b]
-韩德其人 | 西凉大将，率八万羌兵为夏侯楙前锋 | 无此人，完全虚构
-凤鸣山大战 | 赵云以七旬高龄独斩韩德父子五人 | 正史无此战，赵云在箕谷与曹真对峙，有序撤退
-夏侯楙 | 亲率大军出征，在山上指挥 | 确有其人，但史载其懦弱无能，实际未临前线作战
-羌兵助魏 | 韩德率八万西羌兵 | 第一次北伐时羌人政治倾向复杂，但无八万之说
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]维度[/b][/cell]
+[cell][b]演义[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell]韩德其人[/cell]
+[cell]西凉大将，率八万羌兵为夏侯楙前锋[/cell]
+[cell]无此人，完全虚构[/cell]
+[cell]凤鸣山大战[/cell]
+[cell]赵云以七旬高龄独斩韩德父子五人[/cell]
+[cell]正史无此战，赵云在箕谷与曹真对峙，有序撤退[/cell]
+[cell]夏侯楙[/cell]
+[cell]亲率大军出征，在山上指挥[/cell]
+[cell]确有其人，但史载其懦弱无能，实际未临前线作战[/cell]
+[cell]羌兵助魏[/cell]
+[cell]韩德率八万西羌兵[/cell]
+[cell]第一次北伐时羌人政治倾向复杂，但无八万之说[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]

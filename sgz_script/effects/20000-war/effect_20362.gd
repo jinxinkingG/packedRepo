@@ -37,7 +37,7 @@ func effect_20362_AI_start():
 		var soldiers = targetActor.get_soldiers()
 		if soldiers < 100:
 			continue
-		set_env("目标项", targetId)
+		DataManager.set_env("目标项", targetId)
 		goto_step("3")
 		return
 	ske.cost_war_cd(1)
@@ -47,7 +47,7 @@ func effect_20362_AI_start():
 
 func effect_20362_start():
 	if me.get_soldiers() >= SOLDIERS_LIMIT:
-		play_dialog(me.actorId, "兵力已达上限", 2, 2009)
+		play_dialog(actorId, "兵力已达上限", 2, 2009)
 		return
 	var targets = [null]
 	for targetId in get_camp_targets(me):
@@ -64,7 +64,7 @@ func effect_20362_start():
 			break
 	targets.erase(null)
 	if targets.empty():
-		play_dialog(me.actorId, "营帐中没有可发动的目标", 3, 2009)
+		play_dialog(actorId, "营帐中没有可发动的目标", 3, 2009)
 		return
 	var items = []
 	var values = []
@@ -82,15 +82,15 @@ func effect_20362_start():
 	return
 
 func effect_20362_2():
-	var targetId = get_env_int("目标项")
+	var targetId = DataManager.get_env_int("目标项")
 	var msg = "发动【{0}】\n夺取{1}的兵力\n可否？".format([
 		ske.skill_name, ActorHelper.actor(targetId).get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20362_3():
-	var targetId = get_env_int("目标项")
+	var targetId = DataManager.get_env_int("目标项")
 	var targetActor = ActorHelper.actor(targetId)
 	var soldiers = min(SOLDIERS_LIMIT - actor.get_soldiers(), targetActor.get_soldiers())
 
@@ -102,5 +102,5 @@ func effect_20362_3():
 	var msg = "兵符在此\n{0}交出所部，吾独统之\n（{1}夺取{2}兵力".format([
 		targetActor.get_name(), me.get_name(), soldiers,
 	])
-	play_dialog(me.actorId, msg, 0, 2009)
+	play_dialog(actorId, msg, 0, 2009)
 	return

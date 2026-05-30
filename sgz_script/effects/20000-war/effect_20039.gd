@@ -19,7 +19,7 @@ const DIALOGS = [
 func effect_20039_start():
 	if wf.is_extra_round():
 		var msg = "当前已是额外回合\n【{0}】可另择良机".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 2, 2999)
+		play_dialog(actorId, msg, 2, 2999)
 		return
 	
 	#先清空选择列表
@@ -85,7 +85,7 @@ func effect_20039_5():
 		for targetId in selected:
 			names.append(ActorHelper.actor(targetId).get_name())
 		msg = "与{0}\n一起进入额外回合吗？".format(["、".join(names)])
-	play_dialog(me.actorId, msg, 2, 2002, true)
+	play_dialog(actorId, msg, 2, 2002, true)
 	return
 
 func on_view_model_2002():

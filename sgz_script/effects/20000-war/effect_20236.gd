@@ -52,7 +52,7 @@ func effect_20236_2():
 	var msg = "清除{0}的负面状态\n暂时扣减其{1}体\n可否？".format([
 		targetWA.get_name(), COST_HP
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20236_3():

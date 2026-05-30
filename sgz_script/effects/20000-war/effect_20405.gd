@@ -20,7 +20,7 @@ func effect_20405_start():
 	if ske.affair_get_skill_val_int() <= 0:
 		msg = "进入醉乡，解锁新技能链\n需消耗{0}经验，可否？"
 	msg = msg.format([COST_EXP])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000():
@@ -46,7 +46,7 @@ func effect_20405_2():
 	msg = msg.format([
 		actor.get_name(), expCost, actor.get_exp(),
 	])
-	play_dialog(me.actorId, msg, 1, 2001)
+	play_dialog(actorId, msg, 1, 2001)
 	return
 
 func on_view_model_2001():

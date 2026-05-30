@@ -52,7 +52,7 @@ func effect_20002_3():
 	targets.append(selected)
 	set_env("智局目标", targets)
 	var msg = "消耗{0}点机动力\n可否？".format([COST_AP])
-	play_dialog(me.actorId, msg, 2, 2002, true)
+	play_dialog(actorId, msg, 2, 2002, true)
 	map.clear_can_choose_actors()
 	map.next_shrink_actors = [me.actorId, targets[0], targets[1]]
 	return
@@ -67,5 +67,5 @@ func effect_20002_4():
 		ActorHelper.actor(targets[1]).get_name(),
 	])
 	ske.war_report()
-	play_dialog(me.actorId, msg, 1, 2003)
+	play_dialog(actorId, msg, 1, 2003)
 	return

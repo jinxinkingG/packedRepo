@@ -1,123 +1,233 @@
-[b]关东诸侯讨董（虎牢关之战）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]关东诸侯讨董（虎牢关之战）[/font][/b]
 
 
-[b]时间：[/b] 初平元年（190）正月至初平二年（191）末
-[b]类型：[/b] 军事联盟讨伐
-[b]发生地：[/b] 河内郡、酸枣、阳人（今河南汝州西北）、荥阳汴水、洛阳一带
+[color=#000000]时间：[/color] 初平元年（190）正月至初平二年（191）末
+[color=#000000]类型：[/color] 军事联盟讨伐
+[color=#000000]发生地：[/color] 河内郡、酸枣、阳人（今河南汝州西北）、荥阳汴水、洛阳一带
 
 
-[b]事件经过[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]背景：为何爆发[/b]
-
-中平六年（189）[color=#6699FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]入京，废少帝立献帝，把持朝政。他的军政人事安排出现严重失策——内应官员周毖、伍琼蒙蔽他，将[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]外放为勃海太守（大郡，百万人口），又将韩馥、刘岱、[color=#6699FF][url={"research": "孔伷", "cat": "people"}]孔伷[/url][/color]、张邈等异己人士安排出任州郡。同年十二月，[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]在陈留起兵，标志讨董序幕正式拉开。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]事件经过[/font][/b]
 
 
-[b]联盟构成[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]背景：为何爆发[/font][/b]
+
+
+中平六年（189）[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]入京，废少帝立献帝，把持朝政。他的军政人事安排出现严重失策——内应官员周毖、伍琼蒙蔽他，将[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]外放为勃海太守（大郡，百万人口），又将[color=#0066FF][url={"research": "韩馥", "cat": "people"}]韩馥[/url][/color]、[color=#0066FF][url={"research": "刘岱", "cat": "people"}]刘岱[/url][/color]、[color=#0066FF][url={"research": "孔伷", "cat": "people"}]孔伷[/url][/color]、[color=#0066FF][url={"research": "张邈", "cat": "people"}]张邈[/url][/color]等异己人士安排出任州郡。同年十二月，[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]在陈留起兵，标志讨董序幕正式拉开。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]联盟构成[/font][/b]
+
 
 初平元年（190）正月，关东十路（或十一路）诸侯同时举兵：
 
 
-[b]人物[/b] | [b]职位[/b] | [b]驻扎地[/b]
-袁绍（盟主） | 勃海太守，自号车骑将军 | 河内怀县
-[color=#6699FF][url={"research": "王匡 ", "cat": " people"}]王匡 [/url][/color] | 河内太守 | 河内（黄河北岸）
-[color=#6699FF][url={"research": "袁术 ", "cat": " people"}]袁术 [/url][/color] | 后将军 | [color=#6699FF][url={"research": "南阳 ", "cat": " geography"}]南阳 [/url][/color]
-韩馥 | [color=#6699FF][url={"research": "冀州 ", "cat": " geography"}]冀州 [/url][/color]牧 | 冀州（提供粮草）
-张邈 | 陈留太守 | 酸枣
-刘岱 | 兖州刺史 | 酸枣
-[color=#6699FF][url={"research": "桥瑁 ", "cat": " people"}]桥瑁 [/url][/color] | 东郡太守 | 酸枣
-[color=#6699FF][url={"research": "袁遗 ", "cat": " people"}]袁遗 [/url][/color] | 山阳太守 | 酸枣
-鲍信 | 济北相 | 酸枣
-曹操 | 行奋武将军 | 酸枣→荥阳
-孔伷 | 豫州刺史 | 颍川一带
-[color=#6699FF][url={"research": "孙坚 ", "cat": " people"}]孙坚 [/url][/color] | 长沙太守（袁术前锋） | 南阳→阳人→洛阳
+[table=3]
+[cell][b]人物[/b][/cell]
+[cell][b]职位[/b][/cell]
+[cell][b]驻扎地[/b][/cell]
+[cell]袁绍（盟主）[/cell]
+[cell]勃海太守，自号车骑将军[/cell]
+[cell]河内怀县[/cell]
+[cell][color=#0066FF][url={"research": "王匡", "cat": "people"}]王匡[/url][/color][/cell]
+[cell]河内太守[/cell]
+[cell]河内（黄河北岸）[/cell]
+[cell][color=#0066FF][url={"research": "袁术", "cat": "people"}]袁术[/url][/color][/cell]
+[cell]后将军[/cell]
+[cell][color=#0066FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color][/cell]
+[cell]韩馥[/cell]
+[cell][color=#0066FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]牧[/cell]
+[cell]冀州（提供粮草）[/cell]
+[cell]张邈[/cell]
+[cell]陈留太守[/cell]
+[cell]酸枣[/cell]
+[cell]刘岱[/cell]
+[cell]兖州刺史[/cell]
+[cell]酸枣[/cell]
+[cell][color=#0066FF][url={"research": "桥瑁", "cat": "people"}]桥瑁[/url][/color][/cell]
+[cell]东郡太守[/cell]
+[cell]酸枣[/cell]
+[cell][color=#0066FF][url={"research": "袁遗", "cat": "people"}]袁遗[/url][/color][/cell]
+[cell]山阳太守[/cell]
+[cell]酸枣[/cell]
+[cell][color=#0066FF][url={"research": "鲍信", "cat": "people"}]鲍信[/url][/color][/cell]
+[cell]济北相[/cell]
+[cell]酸枣[/cell]
+[cell]曹操[/cell]
+[cell]行奋武将军[/cell]
+[cell]酸枣→荥阳[/cell]
+[cell]孔伷[/cell]
+[cell]豫州刺史[/cell]
+[cell]颍川一带[/cell]
+[cell][color=#0066FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color][/cell]
+[cell]长沙太守（袁术前锋）[/cell]
+[cell]南阳→阳人→洛阳[/cell]
+[/table]
 
 
-[b]兵力总量（据宋杰2023考证）：[/b]
-- 河内集团（袁绍、王匡）：约5-6万
-- 酸枣联军（张邈、刘岱、桥瑁等，含曹操5000）：约10余万
-- 南阳集团（袁术、孙坚）：约7-8万
-- [b]合计约20余万[/b]，超出董卓京师兵力（约9-11万）一倍以上
+[color=#000000]兵力总量（据宋杰2023考证）：[/color]
 
-但三集团互不统属、互相掣肘，战斗力相较[color=#6699FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]精兵差距悬殊。
+[indent]•  河内集团（袁绍、王匡）：约5-6万[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  酸枣联军（张邈、刘岱、桥瑁等，含曹操5000）：约10余万[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  南阳集团（袁术、孙坚）：约7-8万[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]合计约20余万[/color]，超出董卓京师兵力（约9-11万）一倍以上[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]参战势力完整态度汇总（据维基百科词条及史料）[/b]
+但三集团互不统属、互相掣肘，战斗力相较[color=#0066FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]精兵差距悬殊。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]参战势力完整态度汇总（据维基百科词条及史料）[/font][/b]
+
 
 除上述主力外，其他地方势力的态度：
 
 
-[b]地方势力[/b] | [b]态度[/b] | [b]出处[/b]
-朱儁（前前将军） | 时为董卓麾下，与反董联军通谋为内应，联军内讧后孤军号召反董 | 《后汉书·朱儁传》
-[color=#6699FF][url={"research": "陶谦 ", "cat": " people"}]陶谦 [/url][/color]（徐州刺史） | 与董卓保持关系，但资助朱儁兵马 | 《魏志·陶谦传》
-[color=#6699FF][url={"research": "刘焉 ", "cat": " people"}]刘焉 [/url][/color]（益州牧） | 借兵起兵名义保州自守 | 《蜀志·刘焉传》
-[color=#6699FF][url={"research": "皇甫嵩 ", "cat": " people"}]皇甫嵩 [/url][/color]（左将军） | 部下劝合兵反董，最终归伏董卓 | 《后汉书·皇甫嵩传》
-[color=#6699FF][url={"research": "公孙瓒 ", "cat": " people"}]公孙瓒 [/url][/color] | 战后以讨董为名争冀州，[b]未实际参与讨董[/b] | 《魏志·公孙瓒传》
-[color=#6699FF][url={"research": "公孙度 ", "cat": " people"}]公孙度 [/url][/color]（辽东太守） | 受同乡徐荣推荐，依附董卓 | 《魏志·公孙度传》
-刘虞（[color=#6699FF][url={"research": "幽州 ", "cat": " geography"}]幽州 [/url][/color]牧） | 并未表态 | 《魏志·公孙瓒传》
-[color=#6699FF][url={"research": "刘表 ", "cat": " people"}]刘表 [/url][/color]（荆州刺史） | 跟随起兵讨董，但无实际军事行动 | 《魏志·刘表传》
-[color=#6699FF][url={"research": "刘备 ", "cat": " people"}]刘备 [/url][/color] | 以寡兵附群雄麾下，无显著战功，《英雄记》载"备亦起军从讨董卓" | 《先主传》注引[color=#6699FF][url={"research": "王粲 ", "cat": " people"}]王粲 [/url][/color]《英雄记》
-张燕 | 据冀并边地建立势力，未支持任何一方 | 《魏志·张燕传》
+[table=3]
+[cell][b]地方势力[/b][/cell]
+[cell][b]态度[/b][/cell]
+[cell][b]出处[/b][/cell]
+[cell]朱儁（前前将军）[/cell]
+[cell]时为董卓麾下，与反董联军通谋为内应，联军内讧后孤军号召反董[/cell]
+[cell]《后汉书·朱儁传》[/cell]
+[cell][color=#0066FF][url={"research": "陶谦", "cat": "people"}]陶谦[/url][/color]（徐州刺史）[/cell]
+[cell]与董卓保持关系，但资助朱儁兵马[/cell]
+[cell]《魏志·陶谦传》[/cell]
+[cell][color=#0066FF][url={"research": "刘焉", "cat": "people"}]刘焉[/url][/color]（益州牧）[/cell]
+[cell]借兵起兵名义保州自守[/cell]
+[cell]《蜀志·刘焉传》[/cell]
+[cell][color=#0066FF][url={"research": "皇甫嵩", "cat": "people"}]皇甫嵩[/url][/color]（左将军）[/cell]
+[cell]部下劝合兵反董，最终归伏董卓[/cell]
+[cell]《后汉书·皇甫嵩传》[/cell]
+[cell][color=#0066FF][url={"research": "公孙瓒", "cat": "people"}]公孙瓒[/url][/color][/cell]
+[cell]战后以讨董为名争冀州，[color=#000000]未实际参与讨董[/color][/cell]
+[cell]《魏志·公孙瓒传》[/cell]
+[cell][color=#0066FF][url={"research": "公孙度", "cat": "people"}]公孙度[/url][/color]（辽东太守）[/cell]
+[cell]受同乡[color=#0066FF][url={"research": "徐荣", "cat": "people"}]徐荣[/url][/color]推荐，依附董卓[/cell]
+[cell]《魏志·公孙度传》[/cell]
+[cell][color=#0066FF][url={"research": "刘虞", "cat": "people"}]刘虞[/url][/color]（[color=#0066FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]牧）[/cell]
+[cell]并未表态[/cell]
+[cell]《魏志·公孙瓒传》[/cell]
+[cell][color=#0066FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]（荆州刺史）[/cell]
+[cell]跟随起兵讨董，但无实际军事行动[/cell]
+[cell]《魏志·刘表传》[/cell]
+[cell][color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color][/cell]
+[cell]以寡兵附群雄麾下，无显著战功，《英雄记》载"备亦起军从讨董卓"[/cell]
+[cell]《先主传》注引[color=#0066FF][url={"research": "王粲", "cat": "people"}]王粲[/url][/color]《英雄记》[/cell]
+[cell][color=#0066FF][url={"research": "张燕", "cat": "people"}]张燕[/url][/color][/cell]
+[cell]据冀并边地建立势力，未支持任何一方[/cell]
+[cell]《魏志·张燕传》[/cell]
+[/table]
 
 
-[b]董卓迁都长安（190年正月—三月）[/b]
-
-[b]精确时间线（据《后汉书·董卓传》及《资治通鉴》）：[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]日期[/b] | [b]事件[/b]
-初平元年正月十二日癸丑（190年3月6日） | 派人鸩杀废帝弘农王刘辩
-正月初五日乙亥（3月28日） | 以灾异免[color=#6699FF][url={"research": "黄琬 ", "cat": " people"}]黄琬 [/url][/color]、杨彪职
-正月初十日庚辰（4月2日） | 以通敌罪名杀周毖、伍琼（实因力阻迁都）；随后后悔，重新任用黄琬、杨彪
-正月十七日丁亥（4月9日） | 开始迁都，车驾先送献帝西迁
-三月初五日乙巳（4月27日） | 献帝到达[color=#6699FF][url={"research": "长安 ", "cat": " geography"}]长安 [/url][/color]，[color=#6699FF][url={"research": "王允 ", "cat": " people"}]王允 [/url][/color]摄政
-三月初九日己酉（5月1日） | 董卓纵火烧洛阳宫庙、官府、居家，二百里内建筑全毁，鸡犬不留
-三月十八日戊午（5月10日） | 因袁绍起兵，杀袁绍叔父袁隗及家人五十余口，含婴儿、妇女
+[b][font=res://resource/font/FandolSong-Bold/26.tres]董卓迁都长安（190年正月—三月）[/font][/b]
 
 
-[b]迁都细节：[/b]
-- 以步骑逼徙洛阳数百万人到长安，百姓被踩死、被马踏死、饥饿而死、遭抢劫者堆满道路
-- [color=#6699FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]奉命掘开先帝帝陵及公卿冢墓，没收珍宝
-- 董卓留洛阳坞附近，最终于192年五月被王允、吕布刺杀
+[color=#000000]精确时间线（据《后汉书·董卓传》及《资治通鉴》）：[/color]
 
 
-[b]曹操的独自西进与荥阳败仗[/b]
+[table=2]
+[cell][b]日期[/b][/cell]
+[cell][b]事件[/b][/cell]
+[cell]初平元年正月十二日癸丑（190年3月6日）[/cell]
+[cell]派人鸩杀废帝弘农王[color=#0066FF][url={"research": "刘辩", "cat": "people"}]刘辩[/url][/color][/cell]
+[cell]正月初五日乙亥（3月28日）[/cell]
+[cell]以灾异免[color=#0066FF][url={"research": "黄琬", "cat": "people"}]黄琬[/url][/color]、杨彪职[/cell]
+[cell]正月初十日庚辰（4月2日）[/cell]
+[cell]以通敌罪名杀周毖、伍琼（实因力阻迁都）；随后后悔，重新任用黄琬、杨彪[/cell]
+[cell]正月十七日丁亥（4月9日）[/cell]
+[cell]开始迁都，车驾先送献帝西迁[/cell]
+[cell]三月初五日乙巳（4月27日）[/cell]
+[cell]献帝到达[color=#0066FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]，[color=#0066FF][url={"research": "王允", "cat": "people"}]王允[/url][/color]摄政[/cell]
+[cell]三月初九日己酉（5月1日）[/cell]
+[cell]董卓纵火烧洛阳宫庙、官府、居家，二百里内建筑全毁，鸡犬不留[/cell]
+[cell]三月十八日戊午（5月10日）[/cell]
+[cell]因袁绍起兵，杀袁绍叔父袁隗及家人五十余口，含婴儿、妇女[/cell]
+[/table]
+
+
+[color=#000000]迁都细节：[/color]
+
+[indent]•  以步骑逼徙洛阳数百万人到长安，百姓被踩死、被马踏死、饥饿而死、遭抢劫者堆满道路[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]奉命掘开先帝帝陵及公卿冢墓，没收珍宝[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  董卓留洛阳坞附近，最终于192年五月被王允、吕布刺杀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹操的独自西进与荥阳败仗[/font][/b]
+
 
 诸侯聚兵酸枣，十余万兵马"日置酒高会，不图进取"。曹操独排众议，率本部独自西进。
 
-[b]《三国志·武帝纪》原文：[/b]
-[color=#AAAAAA]　到荥阳汴水，遇卓将徐荣，与战不利，士卒死伤甚多。太祖为流矢所中，所乘马被创，从弟洪以马与太祖，得夜遁去。荣见太祖所将兵少，力战尽日，谓酸枣未易攻也，亦引兵还。[/color]
+[color=#000000]《三国志·武帝纪》原文：[/color]
 
-裴注引《魏书》记[color=#6699FF][url={"research": "曹洪", "cat": "people"}]曹洪[/url][/color]让马细节：
-[color=#AAAAAA]　洪曰："天下可无洪，不可无君。"遂解马推与太祖，步从河，水深，洪循河得浅，扶太祖渡。[/color]
-
-[b]战后曹操的责让与战略建议：[/b]
-
-[color=#AAAAAA]　太祖到酸枣，诸军兵十余万，日置酒高会，不图进取。太祖责让之，因为谋曰：诸君听吾计，使渤海引河内之众临孟津，酸枣诸将守成皋，据敖仓，塞轘辕、大谷，全制其险；使袁将军率南阳之军军丹、析，入武关，以震三辅，皆高垒深壁，勿与战，益为疑兵，示天下形势，以顺诛逆，可立定也。今兵以义动，持疑而不进，失天下之望，竊为诸君耻之！邈等不能用。[/color]
-
-[b]心理影响：[/b]
-- 汴水之战是曹操军事生涯首场死里逃生的重大失败，强化了其"天命在我"的信念
-- 盟友无动于衷使曹操深刻认识到诸侯不可依赖，此后倾向单独决策、独立行动
-- "竊为诸君耻之"一语奠定了曹操在联盟中虽居弱势却始终以道义自居的姿态
+[indent][color=#666666]┃ 到荥阳汴水，遇卓将徐荣，与战不利，士卒死伤甚多。太祖为流矢所中，所乘马被创，从弟洪以马与太祖，得夜遁去。荣见太祖所将兵少，力战尽日，谓酸枣未易攻也，亦引兵还。[/color][/indent]
 
 
-[b]王匡泰山兵被伏全歼[/b]
+裴注引《魏书》记[color=#0066FF][url={"research": "曹洪", "cat": "people"}]曹洪[/url][/color]让马细节：
+
+[indent][color=#666666]┃ 洪曰："天下可无洪，不可无君。"遂解马推与太祖，步从河，水深，洪循河得浅，扶太祖渡。[/color][/indent]
+
+
+[color=#000000]战后曹操的责让与战略建议：[/color]
+
+
+[indent][color=#666666]┃ 太祖到酸枣，诸军兵十余万，日置酒高会，不图进取。太祖责让之，因为谋曰：诸君听吾计，使渤海引河内之众临孟津，酸枣诸将守成皋，据敖仓，塞轘辕、大谷，全制其险；使袁将军率南阳之军军丹、析，入武关，以震三辅，皆高垒深壁，勿与战，益为疑兵，示天下形势，以顺诛逆，可立定也。今兵以义动，持疑而不进，失天下之望，竊为诸君耻之！邈等不能用。[/color][/indent]
+
+
+[color=#000000]心理影响：[/color]
+
+[indent]•  汴水之战是曹操军事生涯首场死里逃生的重大失败，强化了其"天命在我"的信念[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  盟友无动于衷使曹操深刻认识到诸侯不可依赖，此后倾向单独决策、独立行动[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "竊为诸君耻之"一语奠定了曹操在联盟中虽居弱势却始终以道义自居的姿态[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]王匡泰山兵被伏全歼[/font][/b]
+
 
 王匡作为袁绍的盟友驻扎河内，以"泰山兵"（在泰山募集的弓弩精锐）屯守河阳津，意图渡河威胁董卓。
 
-[b]《后汉书·董卓列传》原文：[/b]
-[color=#AAAAAA]　河内太守王匡，[b]遣泰山兵屯河阳津[/b]，将以图卓。卓遣疑兵若将于平阴渡者，潜遣锐众从小平北渡，绕击其后，大破之津北，[b]死者略尽[/b]。[/color]
+[color=#000000]《后汉书·董卓列传》原文：[/color]
 
-[b]战术（声东击西）：[/b]
-1. 佯攻：疑兵在平阴津虚张声势，王匡注意力集中于西侧防御
-2. 实击：精锐秘密从小平津东侧渡河北上，绕到王匡军阵背后
-3. 结果：王匡军前后夹击，"死者略尽"——泰山精锐几乎全灭
+[indent][color=#666666]┃ 河内太守王匡，[color=#000000]遣泰山兵屯河阳津[/color]，将以图卓。卓遣疑兵若将于平阴渡者，潜遣锐众从小平北渡，绕击其后，大破之津北，[color=#000000]死者略尽[/color]。[/color][/indent]
 
 
-[b]胡母班事件与王匡之死[/b]
+[color=#000000]战术（声东击西）：[/color]
 
-[b]一、胡母班使者团[/b]
+[indent]1.  佯攻：疑兵在平阴津虚张声势，王匡注意力集中于西侧防御[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  实击：精锐秘密从小平津东侧渡河北上，绕到王匡军阵背后[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  结果：王匡军前后夹击，"死者略尽"——泰山精锐几乎全灭[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]胡母班事件与王匡之死[/font][/b]
+
+
+[color=#000000]一、胡母班使者团[/color]
 
 190年，董卓派出5人使者团游说关东诸侯罢兵：大鸿胪韩融（团长）、执金吾胡母班、将作大匠吴循、少府阴循、越骑校尉王瑰。
 
@@ -125,168 +235,277 @@
 
 袁绍不接受游说，命王匡收押使者。胡母班在狱中给王匡写下著名书信：
 
-[b]胡母班书信原文（谢承《后汉书》钞，识典古籍版）：[/b]
+[color=#000000]胡母班书信原文（谢承《后汉书》钞，识典古籍版）：[/color]
 
-[color=#AAAAAA]　自古以来，未有下土诸侯举兵向京师者。……仆与太傅马公、太仆赵岐、少府阴修，俱受诏命，关东诸郡虽实嫉卓，犹以衔奉王命，不敢玷辱，而足下独囚仆于狱，欲以衅鼓，此悖暴无道之甚者也。仆与董卓有何亲戚，义岂同恶？而足下张狼虎之口，吐长蛇之毒，恚卓迁怒，何其酷哉！死人之所难，然耻为狂夫所害，若亡者有灵，当诉足下于皇天。[b]夫婚姻者，祸福之机，今日著矣。曩为一体，今为血雠[/b]，亡人子二人，则君之甥，身没之后，慎勿令临仆尸骸也。[/color]
 
-[b]关键语句解析：[/b]
-- "夫婚姻者，祸福之机，今日著矣。曩为一体，今为血雠"——婚姻既是家族纽带也可成仇杀契机，说尽了东汉末年政治联姻的脆弱本质
-- "亡人子二人，则君之甥，身没之后，慎勿令临仆尸骸也"——禁止外甥来送行，既是彻底绝情，也是保全两个孩子
-- "若亡者有灵，当诉足下于皇天"——以信仰语言施压，是最后的心理武器
+[indent][color=#666666]┃ 自古以来，未有下土诸侯举兵向京师者。……仆与太傅马公、太仆赵岐、少府阴修，俱受诏命，关东诸郡虽实嫉卓，犹以衔奉王命，不敢玷辱，而足下独囚仆于狱，欲以衅鼓，此悖暴无道之甚者也。仆与董卓有何亲戚，义岂同恶？而足下张狼虎之口，吐长蛇之毒，恚卓迁怒，何其酷哉！死人之所难，然耻为狂夫所害，若亡者有灵，当诉足下于皇天。[color=#000000]夫婚姻者，祸福之机，今日著矣。曩为一体，今为血雠[/color]，亡人子二人，则君之甥，身没之后，慎勿令临仆尸骸也。[/color][/indent]
+
+
+[color=#000000]关键语句解析：[/color]
+
+[indent]•  "夫婚姻者，祸福之机，今日著矣。曩为一体，今为血雠"——婚姻既是家族纽带也可成仇杀契机，说尽了东汉末年政治联姻的脆弱本质[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "亡人子二人，则君之甥，身没之后，慎勿令临仆尸骸也"——禁止外甥来送行，既是彻底绝情，也是保全两个孩子[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "若亡者有灵，当诉足下于皇天"——以信仰语言施压，是最后的心理武器[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 王匡读信后"抱班二子而泣"，然后仍下令处决。胡母班、吴循、王瑰被杀，仅韩融因德名获免（袁术另杀阴循）。
 
-[b]二、王匡之死[/b]
+[color=#000000]二、王匡之死[/color]
 
 泰山兵被全歼后，王匡逃回泰山故乡重新募兵。
 
-[b]谢承《后汉书》原文（《三国志·武帝纪》裴松之注引）：[/b]
-[color=#AAAAAA]　匡少与[color=#6699FF][url={"research": "蔡邕", "cat": "people"}]蔡邕[/url][/color]善。其年为卓军所败，走还泰山，收集劲勇得数千人，欲与张邈合。[b]匡先杀执金吾胡毋班，班亲属不胜愤怒，与太祖并势，共杀匡。[/b][/color]
+[color=#000000]谢承《后汉书》原文（《三国志·武帝纪》裴松之注引）：[/color]
 
-[b]王匡时间线：[/b]
-
-
-[b]时间[/b] | [b]事件[/b]
-190年6月 | 奉袁绍旨，杀妹夫胡母班等使者
-190年11月 | 泰山兵在河阳津被声东击西全歼（蔡邕贺章确认时间：初平元年十一月）
-190年末—191年初 | 逃回泰山，募劲勇数千，欲与张邈联合
-191年7月前后 | 被胡母班亲属联合曹操击杀（下限由张[color=#6699FF][url={"research": "杨任 ", "cat": " people"}]杨任 [/url][/color]河内太守时间反推）
+[indent][color=#666666]┃ 匡少与[color=#0066FF][url={"research": "蔡邕", "cat": "people"}]蔡邕[/url][/color]善。其年为卓军所败，走还泰山，收集劲勇得数千人，欲与张邈合。[color=#000000]匡先杀执金吾胡毋班，班亲属不胜愤怒，与太祖并势，共杀匡。[/color][/color][/indent]
 
 
-[b]王匡死亡年份推算（2026-04-14考辨）：[/b]
+[color=#000000]王匡时间线：[/color]
+
+
+[table=2]
+[cell][b]时间[/b][/cell]
+[cell][b]事件[/b][/cell]
+[cell]190年6月[/cell]
+[cell]奉袁绍旨，杀妹夫胡母班等使者[/cell]
+[cell]190年11月[/cell]
+[cell]泰山兵在河阳津被声东击西全歼（蔡邕贺章确认时间：初平元年十一月）[/cell]
+[cell]190年末—191年初[/cell]
+[cell]逃回泰山，募劲勇数千，欲与张邈联合[/cell]
+[cell]191年7月前后[/cell]
+[cell]被胡母班亲属联合曹操击杀（下限由张[color=#0066FF][url={"research": "杨任", "cat": "people"}]杨任[/url][/color]河内太守时间反推）[/cell]
+[/table]
+
+
+[color=#000000]王匡死亡年份推算（2026-04-14考辨）：[/color]
 
 史料仅记"其年"，无具体月份。通过两个时间锚点可收窄范围：
 
-1. [b]蔡邕《表贺录换误上章谢罪》[/b]（《全三国文》收录）中记"今月十八日，臣以相国兵讨逆贼故河内太守王匡等……"，该文的"十八日丙辰"对应初平元年十一月——王匡泰山兵被全歼时间精确为[b]初平元年（190年）十一月[/b]，其后逃回泰山招募新兵。
 
-2. [b][color=#6699FF][url={"research": "张杨", "cat": "people"}]张杨[/url][/color]出任河内太守[/b]：《三国志·张杨传》记"卓以杨为建义将军、河内太守"，此任命在[b]初平二年（191年）七月至十一月之间[/b]（[color=#6699FF][url={"research": "于夫罗", "cat": "people"}]于夫罗[/url][/color]击败度辽将军后董卓加封）。张杨取代王匡任河内太守，意味着王匡在此之前已死。
-
-[b]结论：王匡死于初平二年（191年）七月前后[/b]（上限190年末/191年初募兵完毕，下限191年七月张杨就任）。方诗铭《三国人物散论》指出：曹操进入东郡恰在此时，借胡母班亲属之仇清除王匡（使其无法与张邈合流）是曹操掌握兖州东郡的政治操作之一。详见 `ref-wangkuang-death-year-kaocheng.md`。
-
-[b]曹操清除王匡的动机：[/b]
-1. 阻断张邈扩张——张邈与袁绍早有矛盾，王匡若与张邈合流，将形成竞争性势力
-2. 兖州布局——191年曹操进入东郡，王匡在泰山募兵是兖州潜在竞争力
-3. 机会性利用——借胡母班亲属复仇动机完成政治清除
-
-[b]《三国志》按语（裴注引）：[/b] "后文所列诸人屯兵处独缺王匡……其统属于操无疑，匡所以阙如，必是见并于操如谢承之说。"——王匡在《武帝纪》中被消除，正因他是被曹操清除的人，属于"政治黑账"。
+[indent]1.  [color=#000000]蔡邕《表贺录换误上章谢罪》[/color]（《全三国文》收录）中记"今月十八日，臣以相国兵讨逆贼故河内太守王匡等……"，该文的"十八日丙辰"对应初平元年十一月——王匡泰山兵被全歼时间精确为[color=#000000]初平元年（190年）十一月[/color]，其后逃回泰山招募新兵。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000][color=#0066FF][url={"research": "张杨", "cat": "people"}]张杨[/url][/color]出任河内太守[/color]：《三国志·张杨传》记"卓以杨为建义将军、河内太守"，此任命在[color=#000000]初平二年（191年）七月至十一月之间[/color]（[color=#0066FF][url={"research": "于夫罗", "cat": "people"}]于夫罗[/url][/color]击败度辽将军后董卓加封）。张杨取代王匡任河内太守，意味着王匡在此之前已死。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]战事经过：董卓西迁与孙坚独自推进[/b]
+[color=#000000]结论：王匡死于初平二年（191年）七月前后[/color]（上限190年末/191年初募兵完毕，下限191年七月张杨就任）。方诗铭《三国人物散论》指出：曹操进入东郡恰在此时，借胡母班亲属之仇清除王匡（使其无法与张邈合流）是曹操掌握兖州东郡的政治操作之一。详见 `ref-wangkuang-death-year-kaocheng.md`。
 
-[b]董卓的策略：[/b] 主动西迁，以空间换时间。联军屯兵不动，孙坚是唯一真正推进的将领。
+[color=#000000]曹操清除王匡的动机：[/color]
 
-[b]孙坚线（唯一实质性战线）：[/b]
+[indent]1.  阻断张邈扩张——张邈与袁绍早有矛盾，王匡若与张邈合流，将形成竞争性势力[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  兖州布局——191年曹操进入东郡，王匡在泰山募兵是兖州潜在竞争力[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  机会性利用——借胡母班亲属复仇动机完成政治清除[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-1. [b]梁东遭遇战失败[/b]：孙坚于梁东被董卓将徐荣击破，旋即收兵
-2. [b]阳人之战[/b]：董卓遣[color=#6699FF][url={"research": "胡轸", "cat": "people"}]胡轸[/url][/color]（步骑五千）、吕布（骑督）进攻。吕布与胡轸不和——胡轸扬言"斩一青绶"立威，吕布深恶之，夜间故意谎称"敌军已走"引发全军混乱，弃甲逃走。孙坚乘机出击，大破董军，[b]枭斩都督华雄[/b]（《三国志·孙坚传》原文，非演义中[color=#6699FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]所斩）
-3. [b]孙坚进至大谷关[/b]，距洛阳仅九十里；董卓亲率军在先帝陵墓间迎战，董卓败走屯渑池
-4. [b]孙坚入洛阳[/b]，扫除汉室宗庙，以太牢祭祀
 
-[b]孙坚回师原因（史料实证）：[/b]
+[color=#000000]《三国志》按语（裴注引）：[/color] "后文所列诸人屯兵处独缺王匡……其统属于操无疑，匡所以阙如，必是见并于操如谢承之说。"——王匡在《武帝纪》中被消除，正因他是被曹操清除的人，属于"政治黑账"。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]战事经过：董卓西迁与孙坚独自推进[/font][/b]
+
+
+[color=#000000]董卓的策略：[/color] 主动西迁，以空间换时间。联军屯兵不动，孙坚是唯一真正推进的将领。
+
+[color=#000000]孙坚线（唯一实质性战线）：[/color]
+
+
+[indent]1.  [color=#000000]梁东遭遇战失败[/color]：孙坚于梁东被董卓将徐荣击破，旋即收兵[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]阳人之战[/color]：董卓遣[color=#0066FF][url={"research": "胡轸", "cat": "people"}]胡轸[/url][/color]（步骑五千）、吕布（骑督）进攻。吕布与胡轸不和——胡轸扬言"斩一青绶"立威，吕布深恶之，夜间故意谎称"敌军已走"引发全军混乱，弃甲逃走。孙坚乘机出击，大破董军，[color=#000000]枭斩都督[color=#0066FF][url={"research": "华雄", "cat": "people"}]华雄[/url][/color][/color]（《三国志·孙坚传》原文，非演义中[color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]所斩）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]孙坚进至大谷关[/color]，距洛阳仅九十里；董卓亲率军在先帝陵墓间迎战，董卓败走屯渑池[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]孙坚入洛阳[/color]，扫除汉室宗庙，以太牢祭祀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]孙坚回师原因（史料实证）：[/color]
 
 《三国志·孙坚传》裴注引《江表传》：
-[color=#AAAAAA]　或谓术曰："坚若得洛，不可复制，此为除狼而得虎也。"故术疑之，不给军粮。坚夜驰百里，见术，画地计校，责问军粮断绝原因，术惭，即调发军粮。[/color]
+
+[indent][color=#666666]┃ 或谓术曰："坚若得洛，不可复制，此为除狼而得虎也。"故术疑之，不给军粮。坚夜驰百里，见术，画地计校，责问军粮断绝原因，术惭，即调发军粮。[/color][/indent]
+
 
 孙坚回鲁阳是因袁术被人离间停发军粮，经当面质问后袁术惭而发粮，孙坚随即返回阳人——并非因得玉玺而主动撤兵（演义版本）。
 
 
-[b]联军内讧与袁绍欲立刘虞[/b]
-
-[b]联盟瓦解的几个节点：[/b]
-
-1. [b]韩馥断粮[/b]：惧怕袁绍势大，逐步减少对河内、酸枣联军的粮食输送
-2. [b]刘岱杀桥瑁[/b]：两人素来不和，刘岱杀桥瑁，自领东郡太守——[b]联盟内部第一刀砍向自己人[/b]
-3. [b]袁绍拒和，杀使者[/b]：董卓遣韩融等议和，袁绍命王匡杀胡母班等人；袁术另杀阴循
-4. [b]袁绍欲立刘虞为帝[/b]：
-   - 袁绍与韩馥以献帝被董卓控制、"不知是否平安"为由，欲另立幽州牧刘虞为帝
-   - 曹操：拒绝参与，暗地里对袁绍十分厌恶
-   - 袁术：亦反对（有自己打算）
-   - 刘虞本人：怒斥使者"今天下崩乱，主上蒙尘……而反造逆谋，以相垢误邪！"，坚辞不受，更言要逃往塞外，斩杀使者表态
-   - 袁绍等唯有罢手
-5. [b]袁绍夺冀州[/b]：通过政治压力威逼韩馥退让，取得冀州，联盟实质瓦解
-6. [b]两袁决裂[/b]：袁绍遣[color=#6699FF][url={"research": "周㬂", "cat": "people"}]周㬂[/url][/color]为豫州刺史，欲夺袁术所任命孙坚之职；公孙越（袁术派助孙坚）战死，引发袁绍与公孙瓒冲突；两袁关系彻底破裂
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]关键人物[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]联军内讧与袁绍欲立刘虞[/font][/b]
 
 
-[b]徐荣（？—192年）[/b]
-
-[b]籍贯：[/b] 辽东玄菟郡或辽东襄平（今辽宁东部/辽阳一带），两说均指东北边疆，[b]非凉州人[/b]。
-
-[b]史料依据：[/b] 《三国志·公孙度传》："公孙度字升济，本辽东襄平人也。同郡徐荣为董卓中郎将，荐度为辽东太守。"
-
-[b]主要战绩：[/b]
-- 梁东之战：破孙坚，生擒颍川太守李旻（以残酷手段烹杀）
-- 汴水之战：破曹操，曹操中箭换马逃脱
-
-[b]关键转折：[/b] 初平三年（192年）五月董卓被杀后，徐荣[b]归顺王允领导的新中央[/b]，未随李傕、[color=#6699FF][url={"research": "郭汜", "cat": "people"}]郭汜[/url][/color]等人叛乱。同年在吕布对战李傕的战斗中[b]战死[/b]。
-
-[b]评价：[/b] 《三国志》无独立传记，表字失载；两次败当世豪杰，是讨董期间董卓方最有战果的将领。政治上完成了归顺朝廷的转化，属"非凉州系+主动效忠汉廷"的罕见案例。
+[color=#000000]联盟瓦解的几个节点：[/color]
 
 
-[b]王匡（？—191年前后）[/b]
+[indent]1.  [color=#000000]韩馥断粮[/color]：惧怕袁绍势大，逐步减少对河内、酸枣联军的粮食输送[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]刘岱杀桥瑁[/color]：两人素来不和，刘岱杀桥瑁，自领东郡太守——[color=#000000]联盟内部第一刀砍向自己人[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]袁绍拒和，杀使者[/color]：董卓遣韩融等议和，袁绍命王匡杀胡母班等人；袁术另杀阴循[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]袁绍欲立刘虞为帝[/color]：[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[indent]　•  袁绍与韩馥以献帝被董卓控制、"不知是否平安"为由，欲另立幽州牧刘虞为帝[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  曹操：拒绝参与，暗地里对袁绍十分厌恶[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  袁术：亦反对（有自己打算）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  刘虞本人：怒斥使者"今天下崩乱，主上蒙尘……而反造逆谋，以相垢误邪！"，坚辞不受，更言要逃往塞外，斩杀使者表态[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  袁绍等唯有罢手[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[indent]5.  [color=#000000]袁绍夺冀州[/color]：通过政治压力威逼韩馥退让，取得冀州，联盟实质瓦解[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]6.  [color=#000000]两袁决裂[/color]：袁绍遣[color=#0066FF][url={"research": "周㬂", "cat": "people"}]周㬂[/url][/color]为豫州刺史，欲夺袁术所任命孙坚之职；[color=#0066FF][url={"research": "公孙越", "cat": "people"}]公孙越[/url][/color]（袁术派助孙坚）战死，引发袁绍与公孙瓒冲突；两袁关系彻底破裂[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键人物[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]徐荣（？—192年）[/font][/b]
+
+
+[color=#000000]籍贯：[/color] 辽东玄菟郡或辽东襄平（今辽宁东部/辽阳一带），两说均指东北边疆，[color=#000000]非凉州人[/color]。
+
+[color=#000000]史料依据：[/color] 《三国志·公孙度传》："公孙度字升济，本辽东襄平人也。同郡徐荣为董卓中郎将，荐度为辽东太守。"
+
+[color=#000000]主要战绩：[/color]
+
+[indent]•  梁东之战：破孙坚，生擒颍川太守李旻（以残酷手段烹杀）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  汴水之战：破曹操，曹操中箭换马逃脱[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]关键转折：[/color] 初平三年（192年）五月董卓被杀后，徐荣[color=#000000]归顺王允领导的新中央[/color]，未随[color=#0066FF][url={"research": "李傕", "cat": "people"}]李傕[/url][/color]、[color=#0066FF][url={"research": "郭汜", "cat": "people"}]郭汜[/url][/color]等人叛乱。同年在吕布对战李傕的战斗中[color=#000000]战死[/color]。
+
+[color=#000000]评价：[/color] 《三国志》无独立传记，表字失载；两次败当世豪杰，是讨董期间董卓方最有战果的将领。政治上完成了归顺朝廷的转化，属"非凉州系+主动效忠汉廷"的罕见案例。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]王匡（？—191年前后）[/font][/b]
+
 
 河内太守，携"泰山兵"参与讨董。战败后东山再起，被胡母班亲属联合曹操击杀。详见上文。
 
 
-[b]胡母班（？—190年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]胡母班（？—190年）[/font][/b]
+
 
 泰山人，名列"八厨"名士，执金吾，王匡妹夫。190年以汉廷使者身份被捕，狱中书信著名，最终被杀。亲属后联合曹操报仇。
 
 
-[b]孙坚（155—191年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]孙坚（155—191年）[/font][/b]
+
 
 联盟中唯一真正推进至洛阳的将领。击败华雄、逐走吕布、驱逐董卓，却因袁术掣肘难以为继。死于随后的荆州战役（中石被杀，年37岁）。
 
 
-[b]曹操（155—220年）[/b]
-
-联盟中最具战略眼光的成员。独自西进，汴水受挫；战后提出的全局战略无人采用。此后独立发展，196年迎汉献帝至[color=#6699FF][url={"research": "许都", "cat": "geography"}]许都[/url][/color]。利用胡母班亲属复仇动机联手清除了王匡，属于史书中的"政治黑账"。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹操（155—220年）[/font][/b]
 
 
-[b]玉玺争议专论[/b]
+联盟中最具战略眼光的成员。独自西进，汴水受挫；战后提出的全局战略无人采用。此后独立发展，196年迎汉献帝至[color=#0066FF][url={"research": "许都", "cat": "geography"}]许都[/url][/color]。利用胡母班亲属复仇动机联手清除了王匡，属于史书中的"政治黑账"。
 
 
-[b]支持说：[/b] 《吴书》（[color=#6699FF][url={"research": "韦昭", "cat": "people"}]韦昭[/url][/color]）记孙坚于洛阳城南甄官井得传国玺；《山阳公载记》称袁术拘坚夫人而夺之
-
-[b]质疑依据（综合）：[/b]
-1. [b]三部正史均不载：[/b] 《三国志》《后汉书》《资治通鉴》无一采用
-2. [b]裴松之明确质疑：[/b] "孙坚于兴义之中最有忠烈之称，若得汉神器而潜匿不言，此为阴怀异志，岂所谓忠臣者乎"；并引"孙皓降晋送金玺六枚，无有玉"为证
-3. [b]时间线错误：[/b] "袁术拘坚夫人"在197年，孙坚已死五年
-4. [b]《吴书》政治动机：[/b] 韦昭为吴国官修史官，有美化孙氏"天命所归"的需求
-
-[b]结论：[/b] 属"疑案"级争议，三大正史拒绝采信，该说法极可能是后世政治叙事。
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]玉玺争议专论[/font][/b]
 
 
-[b]演义[/b] | [b]史实[/b]
-十八路诸侯讨董 | 史料载十至十二路，无"十八"之说
-关羽温酒斩华雄 | 华雄为孙坚于阳人之战枭斩（《三国志·孙坚传》）
-三英战吕布（[color=#6699FF][url={"research": "虎牢关 ", "cat": " geography"}]虎牢关 [/url][/color]） | 无史料记载；"虎牢关之战"为演义虚构，维基有专条
-公孙瓒率部参战 | 《三国志》未载公孙瓒参加讨董联盟，仅战后以讨董为名争冀州
-刘、关、张在公孙瓒帐下参战 | 刘备此时尚未投公孙瓒，裴注《英雄记》仅称"备亦起军从讨董卓"，无与吕布交战记录
-诸侯大军共战洛阳 | 实际只有孙坚一军真正推进至洛阳附近；其余诸侯坐观
-孙坚得玉玺后主动回师背约 | 孙坚回师因袁术断粮；玉玺说正史不载
-曹操在联盟外围旁观 | 曹操独自西进，荥阳汴水被徐荣击溃，并提出了唯一具体的战略建议
-徐荣是被孙坚击败的龙套 | 史实中徐荣先破孙坚、再破曹操，是讨董期间董卓方最有战果的将领
-王匡战败后从历史消失 | 王匡战败后募兵东山再起，欲与张邈联合，被胡母班亲属联合曹操击杀
+[color=#000000]支持说：[/color] 《吴书》（[color=#0066FF][url={"research": "韦昭", "cat": "people"}]韦昭[/url][/color]）记孙坚于洛阳城南甄官井得传国玺；《山阳公载记》称袁术拘坚夫人而夺之
+
+[color=#000000]质疑依据（综合）：[/color]
+
+[indent]1.  [color=#000000]三部正史均不载：[/color] 《三国志》《后汉书》《资治通鉴》无一采用[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]裴松之明确质疑：[/color] "孙坚于兴义之中最有忠烈之称，若得汉神器而潜匿不言，此为阴怀异志，岂所谓忠臣者乎"；并引"[color=#0066FF][url={"research": "孙皓", "cat": "people"}]孙皓[/url][/color]降晋送金玺六枚，无有玉"为证[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]时间线错误：[/color] "袁术拘坚夫人"在197年，孙坚已死五年[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]《吴书》政治动机：[/color] 韦昭为吴国官修史官，有美化孙氏"天命所归"的需求[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关于"三英战吕布"八种版本（演义内部差异，维基百科专条）：[/b]
-- 共有8种古本版本，核心差异：[color=#6699FF][url={"research": "张飞", "cat": "people"}]张飞[/url][/color]战吕布是否"枪法渐渐散乱"、是否已呈败相
-- 嘉靖本/李卓吾本/余象斗本：八路诸侯"见张飞渐渐枪法散乱，吕布越添精神"
-- 毛宗岗本（通行本）：改为"连斗五十余合，不分胜负"——删去张飞落败苗头，美化刘备阵营
-- 无论哪个版本，"三英战吕布"均为演义虚构，正史无载
+[color=#000000]结论：[/color] 属"疑案"级争议，三大正史拒绝采信，该说法极可能是后世政治叙事。
 
 
-[b]历史意义[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-1. [b]直接后果[/b]：董卓放弃洛阳，携汉廷西迁长安，东汉朝廷彻底失去对关东的控制
-2. [b]乱世序章[/b]：关东诸侯完成了从勤王借口到割据自立的转化。联盟解散后的兼并战争——袁绍取冀州、袁术据南阳、曹操经营兖州——直接构成后来三国鼎立的版图基础
-3. [b]制度意义[/b]：州牧制度在此事件中实质性确立，诸侯兼任军政，朝廷无力节制，是东汉崩解的关键节点
-4. [b]联盟内斗范式[/b]：王匡被曹操利用复仇动机清除，刘岱杀桥瑁，袁绍夺冀州——每个人都在用"正义"旗帜遮盖自身扩张的底色
-5. [b]袁绍欲立刘虞[/b]：联盟解体前的最后一次大分裂。此举暴露了袁绍已把汉献帝视为"工具而非主公"——预示此后一路扩张的政治逻辑
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=2]
+[cell][b]演义[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell]十八路诸侯讨董[/cell]
+[cell]史料载十至十二路，无"十八"之说[/cell]
+[cell]关羽温酒斩华雄[/cell]
+[cell]华雄为孙坚于阳人之战枭斩（《三国志·孙坚传》）[/cell]
+[cell]三英战吕布（[color=#0066FF][url={"research": "虎牢关", "cat": "geography"}]虎牢关[/url][/color]）[/cell]
+[cell]无史料记载；"虎牢关之战"为演义虚构，维基有专条[/cell]
+[cell]公孙瓒率部参战[/cell]
+[cell]《三国志》未载公孙瓒参加讨董联盟，仅战后以讨董为名争冀州[/cell]
+[cell]刘、关、张在公孙瓒帐下参战[/cell]
+[cell]刘备此时尚未投公孙瓒，裴注《英雄记》仅称"备亦起军从讨董卓"，无与吕布交战记录[/cell]
+[cell]诸侯大军共战洛阳[/cell]
+[cell]实际只有孙坚一军真正推进至洛阳附近；其余诸侯坐观[/cell]
+[cell]孙坚得玉玺后主动回师背约[/cell]
+[cell]孙坚回师因袁术断粮；玉玺说正史不载[/cell]
+[cell]曹操在联盟外围旁观[/cell]
+[cell]曹操独自西进，荥阳汴水被徐荣击溃，并提出了唯一具体的战略建议[/cell]
+[cell]徐荣是被孙坚击败的龙套[/cell]
+[cell]史实中徐荣先破孙坚、再破曹操，是讨董期间董卓方最有战果的将领[/cell]
+[cell]王匡战败后从历史消失[/cell]
+[cell]王匡战败后募兵东山再起，欲与张邈联合，被胡母班亲属联合曹操击杀[/cell]
+[/table]
+
+
+[color=#000000]关于"三英战吕布"八种版本（演义内部差异，维基百科专条）：[/color]
+
+[indent]•  共有8种古本版本，核心差异：[color=#0066FF][url={"research": "张飞", "cat": "people"}]张飞[/url][/color]战吕布是否"枪法渐渐散乱"、是否已呈败相[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  嘉靖本/李卓吾本/余象斗本：八路诸侯"见张飞渐渐枪法散乱，吕布越添精神"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛宗岗本（通行本）：改为"连斗五十余合，不分胜负"——删去张飞落败苗头，美化刘备阵营[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  无论哪个版本，"三英战吕布"均为演义虚构，正史无载[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历史意义[/font][/b]
+
+
+[indent]1.  [color=#000000]直接后果[/color]：董卓放弃洛阳，携汉廷西迁长安，东汉朝廷彻底失去对关东的控制[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]乱世序章[/color]：关东诸侯完成了从勤王借口到割据自立的转化。联盟解散后的兼并战争——袁绍取冀州、袁术据南阳、曹操经营兖州——直接构成后来三国鼎立的版图基础[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]制度意义[/color]：州牧制度在此事件中实质性确立，诸侯兼任军政，朝廷无力节制，是东汉崩解的关键节点[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]联盟内斗范式[/color]：王匡被曹操利用复仇动机清除，刘岱杀桥瑁，袁绍夺冀州——每个人都在用"正义"旗帜遮盖自身扩张的底色[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  [color=#000000]袁绍欲立刘虞[/color]：联盟解体前的最后一次大分裂。此举暴露了袁绍已把汉献帝视为"工具而非主公"——预示此后一路扩张的政治逻辑[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]

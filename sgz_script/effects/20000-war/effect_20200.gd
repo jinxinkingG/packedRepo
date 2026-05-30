@@ -48,7 +48,7 @@ func effect_20200_start():
 		items.append("{0}（{1}）".format([skillName, name]))
 		values.append("{0}#{1}".format([skillName, targetId]))
 	if items.empty():
-		play_dialog(me.actorId, "没有可以丢弃的技能", 3, 2002)
+		play_dialog(actorId, "没有可以丢弃的技能", 3, 2002)
 		return
 	SceneManager.show_unconfirm_dialog("丢弃哪个技能？", me.actorId)
 	bind_menu_items(items, values, 2)
@@ -72,7 +72,7 @@ func effect_20200_2():
 	var msg = "丢弃【{0}】{2}\n发动【{1}】，回复机动力\n可否？".format([
 		skill, ske.skill_name, source
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001():
@@ -87,7 +87,7 @@ func effect_20200_3():
 		targetId = int(item.split("#")[1])
 	#禁用选中的技能
 	if not ske.ban_war_skill(targetId, skill, 99999):
-		play_dialog(me.actorId, "【{0}】不可丢弃！".format([skill]), 2, 2003)
+		play_dialog(actorId, "【{0}】不可丢弃！".format([skill]), 2, 2003)
 		return
 	if targetId != me.actorId and skill != "伺动":
 		#禁用伺动

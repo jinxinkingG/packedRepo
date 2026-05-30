@@ -47,7 +47,7 @@ func effect_20355_start():
 		targets.append(wa.actorId)
 	if targets.empty():
 		var msg = "没有可以发动【{0}】的目标".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 3, 2009)
+		play_dialog(actorId, msg, 3, 2009)
 		return
 	if not wait_choose_actors(targets):
 		return
@@ -61,7 +61,7 @@ func effect_20355_2():
 	var msg = "【{0}】{1}\n需{2}点机动力\n可否？".format([
 		ske.skill_name, ActorHelper.actor(targetId).get_name(), COST_AP,
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20355_3():
@@ -73,7 +73,7 @@ func effect_20355_3():
 	var msg = "腐草萤光，怎及天心皓月\n何不倒戈卸甲，以礼来降？\n{0}退而熟思之".format([
 		DataManager.get_actor_honored_title(targetId, me.actorId),
 	])
-	play_dialog(me.actorId, msg, 1, 2002)
+	play_dialog(actorId, msg, 1, 2002)
 	return
 
 func effect_20355_4():
@@ -96,5 +96,5 @@ func effect_20355_5():
 	])
 	ske.change_actor_hp(me.actorId, 1 - actor.get_hp())
 	ske.war_report()
-	play_dialog(me.actorId, msg, 0, 2009)
+	play_dialog(actorId, msg, 0, 2009)
 	return

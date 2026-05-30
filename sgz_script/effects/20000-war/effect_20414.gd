@@ -72,7 +72,7 @@ func effect_20414_2():
 		ske.skill_name, DataManager.get_actor_honored_title(lordId, me.actorId),
 		me.get_name(), skill,
 	])
-	play_dialog(me.actorId, msg, 0, 2999)
+	play_dialog(actorId, msg, 0, 2999)
 	return
 
 func on_view_model_2999():

@@ -114,7 +114,7 @@ func effect_20003_AI_2():
 		set_env(key, target[2])
 	var msg = _try_recover_and_get_message()
 	ske.war_report()
-	play_dialog(me.actorId, msg, 0, 3001)
+	play_dialog(actorId, msg, 0, 3001)
 	return
 
 func on_view_model_3001():
@@ -130,7 +130,7 @@ func effect_20003_start():
 	var msg = "请指定{0}释放地点".format([ske.skill_name])
 	# 这一步目前是必要的，确保正确的技能范围定位
 	get_skill_centers(me)
-	play_dialog(me.actorId, msg, 2, 2000)
+	play_dialog(actorId, msg, 2, 2000)
 	return
 
 func on_view_model_2000():
@@ -165,7 +165,7 @@ func effect_20003_2():
 	map.show_color_block_by_position(path, Color(0.0, 0.0, 0.8, 0.3))
 	set_env("龙胆目标", {"x":target.x, "y":target.y})
 	var msg = "消耗{0}点机动力\n可否？".format([COST_AP])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001():

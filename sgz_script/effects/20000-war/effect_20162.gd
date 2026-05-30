@@ -1,7 +1,7 @@
 extends "effect_20000.gd"
 
 #水尉限定技 #解锁技能 #全体
-#【水尉】大战场,限定技。你方金＞1000时，你可以使用本技能：你方金-500，直到你方下个回合结束前，你方所有武将获得<河守>。
+#【水尉】大战场,限定技。你方金>=1000时，你可以使用本技能：你方金-500，直到你方下个回合结束前，你方所有武将获得<河守>。
 
 const EFFECT_ID = 20162
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -12,15 +12,15 @@ const MIN_GOLD = 1000
 
 func effect_20162_start():
 	var wv = me.war_vstate()
-	if wv == null or wv.money <= MIN_GOLD:
-		var msg = "金不足，须 > {0}".format([MIN_GOLD])
-		play_dialog(me.actorId, msg, 3, 2999)
+	if wv == null or wv.money < MIN_GOLD:
+		var msg = "金不足，须 >= {0}".format([MIN_GOLD])
+		play_dialog(actorId, msg, 3, 2999)
 		return
 
 	var msg = "花费{0}金发动【{1}】\n我方全体本回合内\n获得技能【{2}】，可否？".format([
 		COST_GOLD, ske.skill_name, TARGET_SKILL,
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000():

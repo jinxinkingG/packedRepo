@@ -1,224 +1,341 @@
-[b]建安文学[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]建安文学[/font][/b]
 
 
-[b]类型：[/b] 文化/思想
+[color=#000000]类型：[/color] 文化/思想
 
 
-[b]背景概述[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]背景概述[/font][/b]
 
 
-"建安"是汉献帝的年号（196—220年），但"建安文学"的实际时间跨度更宽——广义从184年黄巾起义算起，至曹魏明帝景初末年（约240年）止，涵盖五十余年；狭义仅指建安年号期间（张可礼观点）。核心时段是建安元年（196年）[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]迎献帝都许昌至黄初元年（220年）[color=#6699FF][url={"research": "曹丕代汉", "cat": "events"}]曹丕代汉[/url][/color]。
+"建安"是汉献帝的年号（196—220年），但"建安文学"的实际时间跨度更宽——广义从184年黄巾起义算起，至曹魏明帝景初末年（约240年）止，涵盖五十余年；狭义仅指建安年号期间（张可礼观点）。核心时段是建安元年（196年）[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]迎献帝都许昌至黄初元年（220年）[color=#0066FF][url={"research": "曹丕代汉", "cat": "events"}]曹丕代汉[/url][/color]。
 
-建安文学兴盛于[color=#6699FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]（今河北临漳）。建安九年（204年）曹操攻占邺城，在北方建立相对稳定的政治核心。他"外定武功，内兴文学"（《三国志·[color=#6699FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]传》），广泛招揽文士，形成以曹操为领袖、聚集大批文人的[b]邺下文人集团[/b]。七子纷纷从四方归附——[color=#6699FF][url={"research": "王粲", "cat": "people"}]王粲[/url][/color]来自荆州，[color=#6699FF][url={"research": "陈琳", "cat": "people"}]陈琳[/url][/color]来自[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]幕府，徐干自北海，刘桢自海隅（刘勰《文心雕龙·时序》），德琏、元瑜亦相继入幕。
-
-
-[b]兴盛的五重原因[/b]
-
-1. [b]乱世刺激[/b]：汉末戚宦争权、[color=#6699FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]之乱、军阀混战、连年大疫，社会动荡提供了大量创作题材，也深化了文人的情感体验
-2. [b]儒学衰微，思想解放[/b]：国家体制崩坏，正统儒学的约束力减弱，士人思想解放，文学不再只是阐发经义，而是反映现实、展现个性——这是"文学自觉"的开端
-3. [b]政治领袖倡导[/b]：曹操"雅爱诗章"，[color=#6699FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]"妙善辞赋"，[color=#6699FF][url={"research": "曹植", "cat": "people"}]曹植[/url][/color]"下笔琳琅"（刘勰语），三曹以政治权威推动文学创作蔚为风气
-4. [b]汉乐府遗产[/b]："感于哀乐，缘事而发"——建安诗人直接继承乐府的现实主义精神
-5. [b]文学价值的确立[/b]：曹丕《[color=#6699FF][url={"research": "典论·论文", "cat": "context"}]典论·论文[/url][/color]》明言"文章，经国之大业，不朽之盛事"，从理论上赋予文学创作以最高价值
+建安文学兴盛于[color=#0066FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]（今河北临漳）。建安九年（204年）曹操攻占邺城，在北方建立相对稳定的政治核心。他"外定武功，内兴文学"（《三国志·[color=#0066FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]传》），广泛招揽文士，形成以曹操为领袖、聚集大批文人的[color=#000000]邺下文人集团[/color]。七子纷纷从四方归附——[color=#0066FF][url={"research": "王粲", "cat": "people"}]王粲[/url][/color]来自荆州，[color=#0066FF][url={"research": "陈琳", "cat": "people"}]陈琳[/url][/color]来自[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]幕府，徐干自北海，刘桢自海隅（刘勰《文心雕龙·时序》），德琏、元瑜亦相继入幕。
 
 
-[b]在三国时期的表现[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]兴盛的五重原因[/font][/b]
 
 
-[b]核心格局：三曹 + 七子[/b]
+[indent]1.  [color=#000000]乱世刺激[/color]：汉末戚宦争权、[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]之乱、军阀混战、连年大疫，社会动荡提供了大量创作题材，也深化了文人的情感体验[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]儒学衰微，思想解放[/color]：国家体制崩坏，正统儒学的约束力减弱，士人思想解放，文学不再只是阐发经义，而是反映现实、展现个性——这是"文学自觉"的开端[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]政治领袖倡导[/color]：曹操"雅爱诗章"，[color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]"妙善辞赋"，[color=#0066FF][url={"research": "曹植", "cat": "people"}]曹植[/url][/color]"下笔琳琅"（刘勰语），三曹以政治权威推动文学创作蔚为风气[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]汉乐府遗产[/color]："感于哀乐，缘事而发"——建安诗人直接继承乐府的现实主义精神[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  [color=#000000]文学价值的确立[/color]：曹丕《[color=#0066FF][url={"research": "典论·论文", "cat": "context"}]典论·论文[/url][/color]》明言"文章，经国之大业，不朽之盛事"，从理论上赋予文学创作以最高价值[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]曹操（155—220）[/b]  
-建安文学的开创者与组织者。诗全为乐府歌辞，以旧题写时事，被明人钟惺称"汉末实录，真诗史也"。风格"清峻""通脱"，如幽燕老将，气韵沉雄。代表作：《[color=#6699FF][url={"research": "蒿里行", "cat": "context"}]蒿里行[/url][/color]》《[color=#6699FF][url={"research": "短歌行", "cat": "context"}]短歌行[/url][/color]》《观沧海》《龟虽寿》。散文：《让县自明本志令》。
 
-[b]曹丕（187—226）[/b]  
-诗以男女爱情、游子思妇为主要题材，形式多样（四/五/六/七言皆有）。[b]《[color=#6699FF][url={"research": "燕歌行", "cat": "context"}]燕歌行[/url][/color]》[/b]是现存最早的完整七言诗（此前东汉张衡《四愁诗》因含"兮"字不算纯粹七言）。散文方面，《典论·论文》是中国文学批评史上第一部文学专论，首次以"七子"并称，提出"文以气为主""文章经国之大业"等核心命题。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]在三国时期的表现[/font][/b]
 
-[b]曹植（192—232）[/b]  
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]核心格局：三曹 + 七子[/font][/b]
+
+
+[color=#000000]曹操（155—220）[/color]  
+建安文学的开创者与组织者。诗全为乐府歌辞，以旧题写时事，被明人钟惺称"汉末实录，真诗史也"。风格"清峻""通脱"，如幽燕老将，气韵沉雄。代表作：《[color=#0066FF][url={"research": "蒿里行", "cat": "context"}]蒿里行[/url][/color]》《[color=#0066FF][url={"research": "短歌行", "cat": "context"}]短歌行[/url][/color]》《观沧海》《龟虽寿》。散文：《让县自明本志令》。
+
+[color=#000000]曹丕（187—226）[/color]  
+诗以男女爱情、游子思妇为主要题材，形式多样（四/五/六/七言皆有）。[color=#000000]《[color=#0066FF][url={"research": "燕歌行", "cat": "context"}]燕歌行[/url][/color]》[/color]是现存最早的完整七言诗（此前东汉张衡《四愁诗》因含"兮"字不算纯粹七言）。散文方面，《典论·论文》是中国文学批评史上第一部文学专论，首次以"七子"并称，提出"文以气为主""文章经国之大业"等核心命题。
+
+[color=#000000]曹植（192—232）[/color]  
 以曹丕称帝（220年）为界，人生与创作分为鲜明两期：
-- [b]前期[/b]：志满意得，诗风豪壮。《白马篇》："捐躯赴国难，视死忽如归。"几乎被立为太子
-- [b]后期[/b]：受猜忌压迫，迁转频繁，"十一年中而三徙都"。诗转悲愤激切。《赠白马王彪》《[color=#6699FF][url={"research": "七哀诗", "cat": "context"}]七哀诗[/url][/color]》《吁嗟篇》《野田黄雀行》皆为此期名篇
-- 钟嵘《诗品》："骨气奇高，词采华茂"——一面是建安风骨，一面是魏晋文人诗精工的先声
-- 辞赋：[b]《[color=#6699FF][url={"research": "洛神赋", "cat": "context"}]洛神赋[/url][/color]》[/b]（接受宋玉《神女赋》影响，人神之恋悲剧，想象丰富，词采流丽）
 
-[color=#AAAAAA]　[b]注[/b]："三祖陈王"说（维基）将魏明帝[color=#6699FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]也列入，但通常文学史的"三曹"只指曹操、曹丕、曹植。[/color]
-
-[b]建安七子[/b]（首见曹丕《典论·论文》命名）：
-
-
-[b]人物[/b] | [b]字[/b] | [b]生卒（约）[/b] | [b]曹丕评语[/b] | [b]特长[/b]
-[color=#6699FF][url={"research": "孔融 ", "cat": " people"}]孔融 [/url][/color] | 文举 | 153—208 | 体气高妙，然理不胜辞 | 散文；政治上反对曹操，208年被杀
-陈琳 | 孔璋 | ?—217 | 章表书记，今之隽 | 章表书记；原为袁绍作檄文
-王粲 | 仲宣 | 177—217 | 长于辞赋 | 七子之冠冕（刘勰语）；《七哀诗》《登楼赋》
-徐干 | 伟长 | 171—217 | 时有齐气，粲之匹也 | 著《中论》，"成一家言"
-阮瑀 | 元瑜 | ?—212 | 章表书记，今之隽 | 章表书记；与陈琳并称
-应玚 | 德琏 | ?—217 | 和而不壮 | 诗文温雅
-刘桢 | 公干 | ?—217 | 壮而不密 | 诗风刚健，有豪气
+[indent]•  [color=#000000]前期[/color]：志满意得，诗风豪壮。《白马篇》："捐躯赴国难，视死忽如归。"几乎被立为太子[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]后期[/color]：受猜忌压迫，迁转频繁，"十一年中而三徙都"。诗转悲愤激切。《赠白马王彪》《[color=#0066FF][url={"research": "七哀诗", "cat": "context"}]七哀诗[/url][/color]》《吁嗟篇》《野田黄雀行》皆为此期名篇[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  钟嵘《诗品》："骨气奇高，词采华茂"——一面是建安风骨，一面是魏晋文人诗精工的先声[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  辞赋：[color=#000000]《[color=#0066FF][url={"research": "洛神赋", "cat": "context"}]洛神赋[/url][/color]》[/color]（接受宋玉《神女赋》影响，人神之恋悲剧，想象丰富，词采流丽）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]建安二十二年（217年）大疫[/b]：陈琳、王粲、徐干、应玚、刘桢五人同年病死，是建安文学落幕的标志性事件（与早于大疫的阮瑀212年早逝合计，七子中六人卒于同一十年间）。
-
-[b][color=#6699FF][url={"research": "蔡琰", "cat": "people"}]蔡琰[/url][/color]（蔡文姬）[/b]  
-"三曹七子"之外的重要声音，女性视角。《[color=#6699FF][url={"research": "悲愤诗", "cat": "context"}]悲愤诗[/url][/color]》《[color=#6699FF][url={"research": "胡笳十八拍", "cat": "context"}]胡笳十八拍[/url][/color]》（真伪有争议）。
+[indent][color=#666666]┃ [color=#000000]注[/color]："三祖陈王"说（维基）将魏明帝[color=#0066FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]也列入，但通常文学史的"三曹"只指曹操、曹丕、曹植。[/color][/indent]
 
 
-[b]核心风格：建安风骨[/b]
+[color=#000000]建安七子[/color]（首见曹丕《典论·论文》命名）：
+
+
+[table=5]
+[cell][b]人物[/b][/cell]
+[cell][b]字[/b][/cell]
+[cell][b]生卒（约）[/b][/cell]
+[cell][b]曹丕评语[/b][/cell]
+[cell][b]特长[/b][/cell]
+[cell][color=#0066FF][url={"research": "孔融", "cat": "people"}]孔融[/url][/color][/cell]
+[cell]文举[/cell]
+[cell]153—208[/cell]
+[cell]体气高妙，然理不胜辞[/cell]
+[cell]散文；政治上反对曹操，208年被杀[/cell]
+[cell]陈琳[/cell]
+[cell]孔璋[/cell]
+[cell]?—217[/cell]
+[cell]章表书记，今之隽[/cell]
+[cell]章表书记；原为袁绍作檄文[/cell]
+[cell]王粲[/cell]
+[cell]仲宣[/cell]
+[cell]177—217[/cell]
+[cell]长于辞赋[/cell]
+[cell]七子之冠冕（刘勰语）；《七哀诗》《登楼赋》[/cell]
+[cell]徐干[/cell]
+[cell]伟长[/cell]
+[cell]171—217[/cell]
+[cell]时有齐气，粲之匹也[/cell]
+[cell]著《中论》，"成一家言"[/cell]
+[cell]阮瑀[/cell]
+[cell]元瑜[/cell]
+[cell]?—212[/cell]
+[cell]章表书记，今之隽[/cell]
+[cell]章表书记；与陈琳并称[/cell]
+[cell]应玚[/cell]
+[cell]德琏[/cell]
+[cell]?—217[/cell]
+[cell]和而不壮[/cell]
+[cell]诗文温雅[/cell]
+[cell]刘桢[/cell]
+[cell]公干[/cell]
+[cell]?—217[/cell]
+[cell]壮而不密[/cell]
+[cell]诗风刚健，有豪气[/cell]
+[/table]
+
+
+[color=#000000]建安二十二年（217年）大疫[/color]：陈琳、王粲、徐干、应玚、刘桢五人同年病死，是建安文学落幕的标志性事件（与早于大疫的阮瑀212年早逝合计，七子中六人卒于同一十年间）。
+
+[color=#000000][color=#0066FF][url={"research": "蔡琰", "cat": "people"}]蔡琰[/url][/color]（蔡文姬）[/color]  
+"三曹七子"之外的重要声音，女性视角。《[color=#0066FF][url={"research": "悲愤诗", "cat": "context"}]悲愤诗[/url][/color]》《[color=#0066FF][url={"research": "胡笳十八拍", "cat": "context"}]胡笳十八拍[/url][/color]》（真伪有争议）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]核心风格：建安风骨[/font][/b]
+
 
 刘勰《文心雕龙·时序》的经典定性：
-[color=#AAAAAA]　"观其时文，雅好慷慨，良由世积乱离，风衰俗怨，并志深而笔长，故梗概而多气也。"[/color]
 
-[b]内在逻辑[/b]：乱世 → 志意深沉 → 篇幅充实有力 → 慷慨多气之风骨
+[indent][color=#666666]┃ "观其时文，雅好慷慨，良由世积乱离，风衰俗怨，并志深而笔长，故梗概而多气也。"[/color][/indent]
+
+
+[color=#000000]内在逻辑[/color]：乱世 → 志意深沉 → 篇幅充实有力 → 慷慨多气之风骨
 
 "建安风骨"的核心特征：
-- 内容：现实性强，直面战乱、民生、流离
-- 情感：慷慨悲凉，激而不颓
-- 风格：刚健明朗，骨力遒劲
-- 个性：作家个性鲜明，直抒胸臆
+
+[indent]•  内容：现实性强，直面战乱、民生、流离[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  情感：慷慨悲凉，激而不颓[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  风格：刚健明朗，骨力遒劲[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  个性：作家个性鲜明，直抒胸臆[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]五言诗的崛起[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]五言诗的崛起[/font][/b]
+
 
 建安是五言诗大盛的时代。三曹带头创作，文士宫廷宴会即席赋诗，现存作品以五言居多。从汉乐府四言/杂言过渡到五言，再到曹植手中文人化程度明显加深，为后世五言律诗的成熟奠定基础。
 
 
-[b]关键人物与事件[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键人物与事件[/font][/b]
 
 
-- [b]196年[/b]：曹操迎献帝都许，建安文学中心初步形成
-- [b]204年[/b]：曹操攻占邺城，邺下文人集团成形
-- [b]建安十三年（208年）[/b]：[color=#6699FF][url={"research": "赤壁之战", "cat": "events"}]赤壁之战[/url][/color]；孔融被杀
-- [b]建安二十二年（217年）[/b]：大疫，七子中五人死亡
-- [b]220年[/b]：曹操死，曹丕代汉称帝（魏文帝）；《典论·论文》约成于此前后
-- [b]232年[/b]：曹植死，建安文学时代彻底终结
+[indent]•  [color=#000000]196年[/color]：曹操迎献帝都许，建安文学中心初步形成[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]204年[/color]：曹操攻占邺城，邺下文人集团成形[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]建安十三年（208年）[/color]：[color=#0066FF][url={"research": "赤壁之战", "cat": "events"}]赤壁之战[/url][/color]；孔融被杀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]建安二十二年（217年）[/color]：大疫，七子中五人死亡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]220年[/color]：曹操死，曹丕代汉称帝（魏文帝）；《典论·论文》约成于此前后[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]232年[/color]：曹植死，建安文学时代彻底终结[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]七子与曹氏父子：具体互动史料[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]七子与曹氏父子：具体互动史料[/font][/b]
 
 
-[b]南皮之游与邺下宴集[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]南皮之游与邺下宴集[/font][/b]
 
-[b]第二次南皮之游（建安十六年，211年仲夏五月）[/b] 是文献记载最翔实的一次集体宴游。参与者：曹丕（时为五官中郎将）、[color=#6699FF][url={"research": "吴质", "cat": "people"}]吴质[/url][/color]、阮瑀、应玚、陈琳、徐干、王粲、刘桢，及曹植。活动内容：讲经论百家、弹棋博弈、田猎射雉、宴饮赋诗、月夜游园。
+
+[color=#000000]第二次南皮之游（建安十六年，211年仲夏五月）[/color] 是文献记载最翔实的一次集体宴游。参与者：曹丕（时为五官中郎将）、[color=#0066FF][url={"research": "吴质", "cat": "people"}]吴质[/url][/color]、阮瑀、应玚、陈琳、徐干、王粲、刘桢，及曹植。活动内容：讲经论百家、弹棋博弈、田猎射雉、宴饮赋诗、月夜游园。
 
 曹丕《与朝歌令吴质书》（建安二十年，215年）追述：
-[color=#AAAAAA]　"每念昔日南皮之游，诚不可忘。既妙思六经，逍遥百氏，弹碁间设，终以六博，高谈娱心，哀筝顺耳；驰骋北场，旅食南馆，浮甘瓜于清泉，沈朱李于寒水……白日既匿，继以朗月，同乘并载，以游后园……元瑜长逝，化为异物。每一念至，何时可言！"[/color]
 
-沈约《宋书·谢灵运传论》："缀平台之逸响，采南皮之高韵"——以"[b]南皮高韵[/b]"命名此次宴游在文学史上的地位。
+[indent][color=#666666]┃ "每念昔日南皮之游，诚不可忘。既妙思六经，逍遥百氏，弹碁间设，终以六博，高谈娱心，哀筝顺耳；驰骋北场，旅食南馆，浮甘瓜于清泉，沈朱李于寒水……白日既匿，继以朗月，同乘并载，以游后园……元瑜长逝，化为异物。每一念至，何时可言！"[/color][/indent]
 
-[b]西园宴集（建安十六年六月，211年）[/b]：七子在邺城西园随曹丕宴饮唱和，各人均留有《公宴诗》：
-- 曹植：《公宴诗》"清夜游西园，飞盖相追随"
-- 王粲：《公宴诗》"酒酣耳热，仰而赋诗"
-- 应玚、刘桢、阮瑀、陈琳均有宴集诗存世
+
+沈约《宋书·谢灵运传论》："缀平台之逸响，采南皮之高韵"——以"[color=#000000]南皮高韵[/color]"命名此次宴游在文学史上的地位。
+
+[color=#000000]西园宴集（建安十六年六月，211年）[/color]：七子在邺城西园随曹丕宴饮唱和，各人均留有《公宴诗》：
+
+[indent]•  曹植：《公宴诗》"清夜游西园，飞盖相追随"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  王粲：《公宴诗》"酒酣耳热，仰而赋诗"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  应玚、刘桢、阮瑀、陈琳均有宴集诗存世[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 谢灵运《拟魏太子邺中集诗八首》正是模仿这批宴集诗，足证后世影响之深。
 
 
-[b]陈琳与曹操：从死敌幕僚到被俘擢用[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]陈琳与曹操：从死敌幕僚到被俘擢用[/font][/b]
 
-陈琳本为袁绍幕府主笔，[color=#6699FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]前（200年）奉命写《为袁绍檄豫州文》，文中历数曹操罪状，连曹操祖父（宦官）都骂了进去。[color=#6699FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]之战后被俘，曹操问其为何过分，陈琳答曰："矢在弦上，不得不发。"曹操大笑，以其才华既往不咎，任命为司空军师祭酒掌管文书。
+
+陈琳本为袁绍幕府主笔，[color=#0066FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]前（200年）奉命写《为袁绍檄豫州文》，文中历数曹操罪状，连曹操祖父（宦官）都骂了进去。[color=#0066FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]之战后被俘，曹操问其为何过分，陈琳答曰："矢在弦上，不得不发。"曹操大笑，以其才华既往不咎，任命为司空军师祭酒掌管文书。
 
 史料依据：《三国志·魏书·王粲传》附陈琳传。曹丕《典论·论文》评："琳、瑀之章表书记，今之隽也。"
 
-[b]陈琳的案例揭示了曹操对文人的基本逻辑：能为我用，高于是非曲直。[/b]
+[color=#000000]陈琳的案例揭示了曹操对文人的基本逻辑：能为我用，高于是非曲直。[/color]
 
 
-[b]曹操与王粲：重用与独特的告别仪式[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹操与王粲：重用与独特的告别仪式[/font][/b]
 
-王粲（字仲宣）早年流寓荆州17年（投[color=#6699FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]，被嫌丑陋不重用），写《登楼赋》名篇。建安十三年（208年）赤壁之战前夕，[b]劝降[color=#6699FF][url={"research": "刘琮", "cat": "people"}]刘琮[/url][/color]有功[/b]，曹操征辟为丞相掾，赐爵关内侯，后升至侍中（殊荣）。建安二十一年（216年）随征吴，次年途中病卒，享年约40岁。
+
+王粲（字仲宣）早年流寓荆州17年（投[color=#0066FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]，被嫌丑陋不重用），写《登楼赋》名篇。建安十三年（208年）赤壁之战前夕，[color=#000000]劝降[color=#0066FF][url={"research": "刘琮", "cat": "people"}]刘琮[/url][/color]有功[/color]，曹操征辟为丞相掾，赐爵关内侯，后升至侍中（殊荣）。建安二十一年（216年）随征吴，次年途中病卒，享年约40岁。
 
 曹操亲为王粲发丧，命诸人皆学驴叫（因王粲生前喜欢驴叫声）——此为《世说新语》载王粲葬礼的著名轶事，也是曹操礼遇文人的典型画面。
 
 
-[b]曹丕与刘桢：平视甄夫人事件[/b]
-
-建安十六年（211年），刘桢（字公干）在曹丕宴席上[b]平视甄夫人[/b]（曹丕正妻），以不敬获罪，被刑为"输作"（服一年劳役）。此事由太子少傅[color=#6699FF][url={"research": "崔琰", "cat": "people"}]崔琰[/url][/color]上奏处理。刘桢服刑期满后获赦，继续任五官中郎将文学，217年死于大疫。这一事件揭示了文人集团宴会氛围背后的严格礼制约束。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹丕与刘桢：平视甄夫人事件[/font][/b]
 
 
-[b]曹操对七子的整体态度[/b]
-
-建安十六年（211年），曹操封曹丕为五官中郎将时，同时[b]命徐干、刘桢为五官中郎将文学，应玚为平原侯庶子[/b]，并允许王粲、陈琳、阮瑀等人与曹丕曹植平交为友——有意识地将文士配置给二子，培养其文武兼俱素质，也是政治考量与文学赞助的双重布局。
+建安十六年（211年），刘桢（字公干）在曹丕宴席上[color=#000000]平视甄夫人[/color]（曹丕正妻），以不敬获罪，被刑为"输作"（服一年劳役）。此事由太子少傅[color=#0066FF][url={"research": "崔琰", "cat": "people"}]崔琰[/url][/color]上奏处理。刘桢服刑期满后获赦，继续任五官中郎将文学，217年死于大疫。这一事件揭示了文人集团宴会氛围背后的严格礼制约束。
 
 
-[b]阮瑀死因考辨[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹操对七子的整体态度[/font][/b]
 
 
-阮瑀（字元瑜）[b]建安十七年（212年）病卒[/b]，年四十余。是建安七子中除孔融（208年被杀）之外最早去世的，与建安二十二年（217年）大疫无关，属自然病故。
+建安十六年（211年），曹操封曹丕为五官中郎将时，同时[color=#000000]命徐干、刘桢为五官中郎将文学，应玚为平原侯庶子[/color]，并允许王粲、陈琳、阮瑀等人与曹丕曹植平交为友——有意识地将文士配置给二子，培养其文武兼俱素质，也是政治考量与文学赞助的双重布局。
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]阮瑀死因考辨[/font][/b]
+
+
+阮瑀（字元瑜）[color=#000000]建安十七年（212年）病卒[/color]，年四十余。是建安七子中除孔融（208年被杀）之外最早去世的，与建安二十二年（217年）大疫无关，属自然病故。
 
 史料依据：《三国志》本传："瑀以十七年卒。"
 
-[b]死前最后政绩[/b]：建安十六年（211年），曹操令阮瑀作书[color=#6699FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]以离间孙刘；大军西征时随行，奉命作书[color=#6699FF][url={"research": "韩遂", "cat": "people"}]韩遂[/url][/color]，[b]于马上草成，曹操无所改定[/b]——是七子中章表书记才能最受称道的记录之一。
+[color=#000000]死前最后政绩[/color]：建安十六年（211年），曹操令阮瑀作书[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]以离间孙刘；大军西征时随行，奉命作书[color=#0066FF][url={"research": "韩遂", "cat": "people"}]韩遂[/url][/color]，[color=#000000]于马上草成，曹操无所改定[/color]——是七子中章表书记才能最受称道的记录之一。
 
-[b]身后哀悼[/b]：阮瑀去世后，曹丕、曹植、[color=#6699FF][url={"research": "丁仪", "cat": "people"}]丁仪[/url][/color]、王粲等同作《寡妇赋》哀其妻孤苦，曹丕又作《寡妇诗》，可见他在集团中的情感地位。
+[color=#000000]身后哀悼[/color]：阮瑀去世后，曹丕、曹植、[color=#0066FF][url={"research": "丁仪", "cat": "people"}]丁仪[/url][/color]、王粲等同作《寡妇赋》哀其妻孤苦，曹丕又作《寡妇诗》，可见他在集团中的情感地位。
 
-[b]子嗣延续[/b]：阮瑀之子[b][color=#6699FF][url={"research": "阮籍", "cat": "people"}]阮籍[/url][/color][/b]（竹林七贤之一），是其文学气脉在[color=#6699FF][url={"research": "正始文学", "cat": "context"}]正始文学[/url][/color]时代的接班人。
-
-
-[b]孔融之死：政治冲突与罪名细节[/b]
+[color=#000000]子嗣延续[/color]：阮瑀之子[color=#000000][color=#0066FF][url={"research": "阮籍", "cat": "people"}]阮籍[/url][/color][/color]（竹林七贤之一），是其文学气脉在[color=#0066FF][url={"research": "正始文学", "cat": "context"}]正始文学[/url][/color]时代的接班人。
 
 
-[b]建安十三年（208年）八月壬子日（约9月26日）[/b]，曹操以"大逆不道"罪名将孔融逮捕入狱，同日处以斩刑，株连妻子儿女，时年55岁。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]孔融之死：政治冲突与罪名细节[/font][/b]
 
-[b]官方罪名[/b]（由御史大夫郗虑与军谋祭酒路粹搜集）：
-1. "招合徒众，欲图不轨"（构陷性指控）
-2. "谤讪朝廷"
-3. "不遵朝仪"（行为不合礼制）
-4. "大逆不孝"：孔融曾言"父之于子，当有何亲？论其本意，实为情欲发耳。子之于母，亦复奚为？譬如寄物缶中，出则离矣"——否认父子天然亲情
 
-[b]深层政治原因[/b]：
-- 反对曹操集权篡汉：曾上书暗指曹操不可居邺擅权
-- 禁酒令事件：多次上书激烈反对曹操禁酒令
-- 坚守汉室立场，名重天下（孔子后裔、"让梨"典故），社会影响力极大
-- 个性高傲口无遮拦，是曹操推进霸业的不稳定因素
+[color=#000000]建安十三年（208年）八月壬子日（约9月26日）[/color]，曹操以"大逆不道"罪名将孔融逮捕入狱，同日处以斩刑，株连妻子儿女，时年55岁。
+
+[color=#000000]官方罪名[/color]（由御史大夫郗虑与军谋祭酒路粹搜集）：
+
+[indent]1.  "招合徒众，欲图不轨"（构陷性指控）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  "谤讪朝廷"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  "不遵朝仪"（行为不合礼制）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  "大逆不孝"：孔融曾言"父之于子，当有何亲？论其本意，实为情欲发耳。子之于母，亦复奚为？譬如寄物缶中，出则离矣"——否认父子天然亲情[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]深层政治原因[/color]：
+
+[indent]•  反对曹操集权篡汉：曾上书暗指曹操不可居邺擅权[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  禁酒令事件：多次上书激烈反对曹操禁酒令[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  坚守汉室立场，名重天下（孔子后裔、"让梨"典故），社会影响力极大[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  个性高傲口无遮拦，是曹操推进霸业的不稳定因素[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 曹操处死孔融后专门颁布《宣示孔融罪状令》，因"社会上议论纷纷"，足见孔融之死引发强烈舆论反响。
 
-[b]文学史意义[/b]：孔融之死是建安文学中政治压制文人的第一个极端案例，标志着曹操对知识阶层的控制边界。与陈琳的命运形成鲜明对比：陈琳曾为袁绍声讨曹操，被俘后以才华既往不咎——[b]能为我用[/b]高于是非曲直。
+[color=#000000]文学史意义[/color]：孔融之死是建安文学中政治压制文人的第一个极端案例，标志着曹操对知识阶层的控制边界。与陈琳的命运形成鲜明对比：陈琳曾为袁绍声讨曹操，被俘后以才华既往不咎——[color=#000000]能为我用[/color]高于是非曲直。
 
 
-[b]建安文学的版本流传[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]建安文学的版本流传[/font][/b]
 
 
-[b]三曹别集[/b]
-
-[b]曹植集[/b]（现存最完整）：
-- 曹植自编《前录》78篇（约）；魏明帝景初年间（237—239年）下诏搜集编成，今佚
-- 现存最早版本：南宋[b]嘉定六年（1213年）刻本《曹子建集》[/b]，10卷收206篇，藏上海图书馆（清常熟瞿氏铁琴铜剑楼旧藏），1919年商务印书馆印入《续古逸丛书》
-- 清代整理本：丁晏《曹集铨评》（同治年间金陵书局刻本）为常用本
-
-[b]曹丕集[/b]：古本已亡佚，散见于《艺文类聚》《初学记》等类书，今存辑本以张溥《汉魏六朝百三家集》本为常见。《燕歌行》《典论·论文》等名篇赖类书及《文选》得以保存。
-
-[b]曹操集[/b]：同样散佚，赖总集类书传世。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三曹别集[/font][/b]
 
 
-[b]七子别集[/b]
+[color=#000000]曹植集[/color]（现存最完整）：
+
+[indent]•  曹植自编《前录》78篇（约）；魏明帝景初年间（237—239年）下诏搜集编成，今佚[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  现存最早版本：南宋[color=#000000]嘉定六年（1213年）刻本《曹子建集》[/color]，10卷收206篇，藏上海图书馆（清常熟瞿氏铁琴铜剑楼旧藏），1919年商务印书馆印入《续古逸丛书》[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  清代整理本：丁晏《曹集铨评》（同治年间金陵书局刻本）为常用本[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]曹丕集[/color]：古本已亡佚，散见于《艺文类聚》《初学记》等类书，今存辑本以张溥《汉魏六朝百三家集》本为常见。《燕歌行》《典论·论文》等名篇赖类书及《文选》得以保存。
+
+[color=#000000]曹操集[/color]：同样散佚，赖总集类书传世。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]七子别集[/font][/b]
+
 
 七子各人别集在魏晋时期均有流传，唐五代后渐次散佚，今存者极少，基本依赖类书、总集间接传世。今人用本：逯钦立《先秦汉魏晋南北朝诗》、严可均《全上古三代秦汉三国六朝文》为主要辑录。
 
 
-[b]《文选》的关键中介作用[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]《文选》的关键中介作用[/font][/b]
+
 
 南朝梁昭明太子萧统主持编选《文选》（约531年），大量收录三曹及七子作品，是建安文学传世最重要的中间媒介——收曹植诗文甚多（含《洛神赋》《白马篇》）、曹丕《燕歌行》《典论·论文》、王粲《登楼赋》《七哀诗》等。《文选》的选录标准（"沉思翰藻"）决定了哪些建安作品被后世广知，哪些湮没无闻。
 
-[b]版本史揭示的规律[/b]：越早期的别集，越难完整保存。现存的建安文学文本是经过《文选》一道大门筛选过的样本，存在选择性偏差。
+[color=#000000]版本史揭示的规律[/color]：越早期的别集，越难完整保存。现存的建安文学文本是经过《文选》一道大门筛选过的样本，存在选择性偏差。
 
 
-[b]建安七子死亡时间线[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]建安七子死亡时间线[/font][/b]
 
 
-[b]人物[/b] | [b]卒年[/b] | [b]死因[/b]
-孔融 | 208年 | 被曹操以"大逆不道"处死
-阮瑀 | 212年 | 病卒，年四十余，与大疫无关
-陈琳 | 217年 | 建安二十二年大疫
-王粲 | 217年 | 建安二十二年大疫（另说随征吴途中病逝）
-徐干 | 217年 | 建安二十二年大疫
-应玚 | 217年 | 建安二十二年大疫
-刘桢 | 217年 | 建安二十二年大疫
+[table=3]
+[cell][b]人物[/b][/cell]
+[cell][b]卒年[/b][/cell]
+[cell][b]死因[/b][/cell]
+[cell]孔融[/cell]
+[cell]208年[/cell]
+[cell]被曹操以"大逆不道"处死[/cell]
+[cell]阮瑀[/cell]
+[cell]212年[/cell]
+[cell]病卒，年四十余，与大疫无关[/cell]
+[cell]陈琳[/cell]
+[cell]217年[/cell]
+[cell]建安二十二年大疫[/cell]
+[cell]王粲[/cell]
+[cell]217年[/cell]
+[cell]建安二十二年大疫（另说随征吴途中病逝）[/cell]
+[cell]徐干[/cell]
+[cell]217年[/cell]
+[cell]建安二十二年大疫[/cell]
+[cell]应玚[/cell]
+[cell]217年[/cell]
+[cell]建安二十二年大疫[/cell]
+[cell]刘桢[/cell]
+[cell]217年[/cell]
+[cell]建安二十二年大疫[/cell]
+[/table]
 
 
 曹丕《与元城令吴质书》："昔年疾疫，亲故多离其灾，徐、陈、应、刘，一时俱逝。"明确点名四人死于同一场大瘟疫。
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
 《三国演义》以军事政治为核心叙述，建安文学在小说中几乎隐而不见，但有几个著名片段：
-- [b]七步诗传说[/b]（《世说新语》）："本自同根生，相煎何太急"——曹丕逼曹植七步成诗，《演义》有所采录，但七步诗是否为曹植所作历来有争议
-- 曹操《短歌行》在赤壁前夜船头横槊赋诗，是《演义》中著名场景（第48回），带有强烈戏剧化处理
-- 演义淡化了建安文学的集团性质和文学自觉背景，七子基本作为政治背景人物出现
+
+[indent]•  [color=#000000]七步诗传说[/color]（《世说新语》）："本自同根生，相煎何太急"——曹丕逼曹植七步成诗，《演义》有所采录，但七步诗是否为曹植所作历来有争议[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹操《短歌行》在赤壁前夜船头横槊赋诗，是《演义》中著名场景（第48回），带有强烈戏剧化处理[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  演义淡化了建安文学的集团性质和文学自觉背景，七子基本作为政治背景人物出现[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]

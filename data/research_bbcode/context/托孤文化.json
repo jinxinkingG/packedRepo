@@ -1,342 +1,568 @@
-[b]托孤文化[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]托孤文化[/font][/b]
 
 
-[b]类型：[/b] 社会结构
+[color=#000000]类型：[/color] 社会结构
 
 
-[b]背景概述[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]背景概述[/font][/b]
 
 
 "托孤"指君主临终前将幼主（或继位者）委托给心腹重臣辅佐的政治行为。这一制度源于先秦，最早的完整案例是西周初年周公辅成王，至汉代经由霍光辅昭帝完成了制度化转型，汉末三国再度成为这一政治模式的密集演练场。
 
-三国时期共发生五次重大托孤事件：[color=#6699FF][url={"research": "孙策", "cat": "people"}]孙策[/url][/color]托孤（200年）、[color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]托孤（223年）、[color=#6699FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]托孤（226年）、[color=#6699FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]托孤（239年）、[color=#6699FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]托孤（252年），构成汉末魏晋政治史的核心节点。
+三国时期共发生五次重大托孤事件：[color=#0066FF][url={"research": "孙策", "cat": "people"}]孙策[/url][/color]托孤（200年）、[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]托孤（223年）、[color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]托孤（226年）、[color=#0066FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]托孤（239年）、[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]托孤（252年），构成汉末魏晋政治史的核心节点。
 
 托孤的根本困境在于：权力移交必然制造权力真空，而填补这一真空的人既是后主的保护者，也是其潜在的威胁者。托孤的成败，在很大程度上取决于君主对辅臣的选择与约束、托孤话语构建的权力格局，以及后主自身的政治能力。
 
-史料依据：《三国志》各相关传记（孙策传、[color=#6699FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]传、明帝纪、[color=#6699FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]传、[color=#6699FF][url={"research": "孙峻", "cat": "people"}]孙峻[/url][/color]传、三嗣主传等）及裴松之注引；《资治通鉴》卷74；《汉书·霍光金日磾传》《汉书·昭帝纪》；《史记·鲁世家》；《尚书大传》。
+史料依据：《三国志》各相关传记（孙策传、[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]传、明帝纪、[color=#0066FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]传、[color=#0066FF][url={"research": "孙峻", "cat": "people"}]孙峻[/url][/color]传、三嗣主传等）及裴松之注引；《资治通鉴》卷74；《汉书·霍光金日磾传》《汉书·昭帝纪》；《史记·鲁世家》；《尚书大传》。
 
 
-[b]先秦至两汉：托孤制度的确立与话语谱系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]一、周公辅成王（前1043年前后）——托孤原型[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]先秦至两汉：托孤制度的确立与话语谱系[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]一、周公辅成王（前1043年前后）——托孤原型[/font][/b]
+
 
 武王崩，成王年幼（约7—12岁，史料记载有歧异）。周公旦（武王之弟）决定亲自摄政。
 
-[b]《史记·鲁世家》：[/b]
-[color=#AAAAAA]　"周公恐天下闻武王崩而畔，周公乃践阼代成王摄行政当国。管叔及其群弟流言於国曰：'周公将不利于成王。'"[/color]
+[color=#000000]《史记·鲁世家》：[/color]
 
-[b]《尚书大传》：[/b]
-[color=#AAAAAA]　"周公摄政，一年救乱，二年克殷，三年践奄，四年建侯卫，五年营成周，六年制礼作乐，七年致政于成王。"[/color]
-
-[b]托孤成败：[/b] ✅ 成功。周公摄政7年后还政成王，成为"忠诚辅政"的完美原型，此后历代托孤话语的标准参照。
-
-[b]制度遗产：[/b] "行周公之事"成为汉代乃至三国时期授权辅臣的标准话语。周公既是"成功辅政"的象征，也是"权臣僭越"的警示——管叔、蔡叔的流言说明，任何摄政者都无法逃脱"是否图谋幼主"的怀疑逻辑。
+[indent][color=#666666]┃ "周公恐天下闻武王崩而畔，周公乃践阼代成王摄行政当国。管叔及其群弟流言於国曰：'周公将不利于成王。'"[/color][/indent]
 
 
-[b]二、汉武帝托孤霍光（前87年）——"周公之事"的汉代实践[/b]
+[color=#000000]《尚书大传》：[/color]
+
+[indent][color=#666666]┃ "周公摄政，一年救乱，二年克殷，三年践奄，四年建侯卫，五年营成周，六年制礼作乐，七年致政于成王。"[/color][/indent]
+
+
+[color=#000000]托孤成败：[/color] ✅ 成功。周公摄政7年后还政成王，成为"忠诚辅政"的完美原型，此后历代托孤话语的标准参照。
+
+[color=#000000]制度遗产：[/color] "行周公之事"成为汉代乃至三国时期授权辅臣的标准话语。周公既是"成功辅政"的象征，也是"权臣僭越"的警示——管叔、蔡叔的流言说明，任何摄政者都无法逃脱"是否图谋幼主"的怀疑逻辑。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]二、汉武帝托孤霍光（前87年）——"周公之事"的汉代实践[/font][/b]
+
 
 汉武帝临终，立少子刘弗陵为太子（8岁），明确援引周公典故托付霍光。
 
-[b]《汉书·霍光传》原文：[/b]
-[color=#AAAAAA]　"上曰：'君未谕前画意邪？立少子，君行周公之事。'光顿首让曰：'臣不如金日磾。'日磾亦曰：'臣外国人，不如光。'上以光为大司马大将军，日磾为车骑将军，及太仆上官桀为左将军，搜粟都尉桑弘羊为御史大夫，皆拜卧内床下，受遗诏辅少主。"[/color]
+[color=#000000]《汉书·霍光传》原文：[/color]
 
-[b]托孤结构：[/b]
-- 霍光（大司马大将军）为首辅
-- 金日磾、上官桀、桑弘羊并列为辅政大臣
-- 多辅臣制衡结构，但霍光迅速以昭帝信任独揽大权
-
-[b]托孤的两个结局：[/b]
-- 昭帝时期（前87—前74年）：✅ 成功。霍光主政，休养生息，史称"昭宣中兴"
-- 宣帝即位后：霍光废昌邑王、另立宣帝，功高震主，宣帝对霍光"若有芒刺在背"
-- 前68年霍光去世，前66年霍氏全族覆灭——"托孤成功"的代价是辅臣家族的彻底覆灭
-
-[b]历史意义：[/b]
-- 霍光是继周公之后第一个真正"行废立之事"的辅臣，后世合称"伊霍"
-- "伊霍之事"成为权臣废立皇帝的代名词，也成为三国时期各方政治家必然熟悉的历史警示
+[indent][color=#666666]┃ "上曰：'君未谕前画意邪？立少子，君行周公之事。'光顿首让曰：'臣不如金日磾。'日磾亦曰：'臣外国人，不如光。'上以光为大司马大将军，日磾为车骑将军，及太仆上官桀为左将军，搜粟都尉桑弘羊为御史大夫，皆拜卧内床下，受遗诏辅少主。"[/color][/indent]
 
 
-[b]托孤话语谱系：从周公到三国[/b]
+[color=#000000]托孤结构：[/color]
+
+[indent]•  霍光（大司马大将军）为首辅[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  金日磾、上官桀、桑弘羊并列为辅政大臣[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  多辅臣制衡结构，但霍光迅速以昭帝信任独揽大权[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]时代[/b] | [b]托孤者[/b] | [b]授权话语核心[/b] | [b]周公参照方式[/b]
-西周 | 周公（成王叔父） | 摄政7年，还政 | [b]原型[/b]
-西汉 | 霍光（辅昭帝） | "立少子，君行周公之事" | [b]明引[/b]
-东吴 | [color=#6699FF][url={"research": "张昭 ", "cat": " people"}]张昭 [/url][/color]（辅孙权） | "若仲谋不任，君便自取" | 结构同源
-蜀汉 | 诸葛亮（辅[color=#6699FF][url={"research": "刘禅 ", "cat": " people"}]刘禅 [/url][/color]） | "若嗣子可辅，辅之；如其不才，君可自取" | 结构同源
-曹魏 | [color=#6699FF][url={"research": "司马懿 ", "cat": " people"}]司马懿 [/url][/color]（辅曹芳） | 情义托付，"无所恨" | [b]无参照[/b]（致命）
+[color=#000000]托孤的两个结局：[/color]
+
+[indent]•  昭帝时期（前87—前74年）：✅ 成功。霍光主政，休养生息，史称"昭宣中兴"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  宣帝即位后：霍光废昌邑王、另立宣帝，功高震主，宣帝对霍光"若有芒刺在背"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  前68年霍光去世，前66年霍氏全族覆灭——"托孤成功"的代价是辅臣家族的彻底覆灭[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键洞察：[/b] 凡援引"可自取"话语的托孤，本质上都是对周公—霍光谱系的结构性复制：激发辅臣忠诚感，同时以"幼主不堪辅佐"设隐性警戒线。曹叡的失败，恰在于他的托孤话语完全脱离了这一谱系，以"无条件情义"取代"有机制的信任"。
+[color=#000000]历史意义：[/color]
+
+[indent]•  霍光是继周公之后第一个真正"行废立之事"的辅臣，后世合称"伊霍"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "伊霍之事"成为权臣废立皇帝的代名词，也成为三国时期各方政治家必然熟悉的历史警示[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]在三国时期的表现[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]一、孙策托孤（建安五年，公元200年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]托孤话语谱系：从周公到三国[/font][/b]
 
-孙策被许贡门客刺成重伤，临终以幼弟孙权（时年18岁）托付张昭。[color=#6699FF][url={"research": "周瑜", "cat": "people"}]周瑜[/url][/color]当时领兵在外，未参与托孤现场。
 
-[b]史料原文（两处）：[/b]
+[table=4]
+[cell][b]时代[/b][/cell]
+[cell][b]托孤者[/b][/cell]
+[cell][b]授权话语核心[/b][/cell]
+[cell][b]周公参照方式[/b][/cell]
+[cell]西周[/cell]
+[cell]周公（成王叔父）[/cell]
+[cell]摄政7年，还政[/cell]
+[cell][color=#000000]原型[/color][/cell]
+[cell]西汉[/cell]
+[cell]霍光（辅昭帝）[/cell]
+[cell]"立少子，君行周公之事"[/cell]
+[cell][color=#000000]明引[/color][/cell]
+[cell]东吴[/cell]
+[cell][color=#0066FF][url={"research": "张昭", "cat": "people"}]张昭[/url][/color]（辅孙权）[/cell]
+[cell]"若仲谋不任，君便自取"[/cell]
+[cell]结构同源[/cell]
+[cell]蜀汉[/cell]
+[cell]诸葛亮（辅[color=#0066FF][url={"research": "刘禅", "cat": "people"}]刘禅[/url][/color]）[/cell]
+[cell]"若嗣子可辅，辅之；如其不才，君可自取"[/cell]
+[cell]结构同源[/cell]
+[cell]曹魏[/cell]
+[cell][color=#0066FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]（辅[color=#0066FF][url={"research": "曹芳", "cat": "people"}]曹芳[/url][/color]）[/cell]
+[cell]情义托付，"无所恨"[/cell]
+[cell][color=#000000]无参照[/color]（致命）[/cell]
+[/table]
+
+
+[color=#000000]关键洞察：[/color] 凡援引"可自取"话语的托孤，本质上都是对周公—霍光谱系的结构性复制：激发辅臣忠诚感，同时以"幼主不堪辅佐"设隐性警戒线。曹叡的失败，恰在于他的托孤话语完全脱离了这一谱系，以"无条件情义"取代"有机制的信任"。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]在三国时期的表现[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]一、孙策托孤（建安五年，公元200年）[/font][/b]
+
+
+孙策被许贡门客刺成重伤，临终以幼弟孙权（时年18岁）托付张昭。[color=#0066FF][url={"research": "周瑜", "cat": "people"}]周瑜[/url][/color]当时领兵在外，未参与托孤现场。
+
+[color=#000000]史料原文（两处）：[/color]
 
 《三国志·吴书·孙策传》记孙策对张昭等人言：
-[color=#AAAAAA]　"中国方乱，夫以吴、越之众，三江之固，足以观成败。公等善相吾弟！"[/color]
+
+[indent][color=#666666]┃ "中国方乱，夫以吴、越之众，三江之固，足以观成败。公等善相吾弟！"[/color][/indent]
+
 
 对孙权亲口说：
-[color=#AAAAAA]　"举江东之众，决机于两陈之间，与天下争衡，卿不如我；举贤任能，各尽其心，以保江东，我不如卿。"[/color]
+
+[indent][color=#666666]┃ "举江东之众，决机于两陈之间，与天下争衡，卿不如我；举贤任能，各尽其心，以保江东，我不如卿。"[/color][/indent]
+
 
 裴松之注引《吴历》记孙策对张昭单独所说：
-[color=#AAAAAA]　"若仲谋不任事者，君便自取之。正复不克捷，缓步西归，亦无所虑。"[/color]
 
-[b]"可自取"的真实意图：[/b] 学界主流认为并非真的授权张昭取代孙权。张昭是文臣，无兵权，周瑜与孙氏家族均不会容许其自立。"自取之"更接近于"自行决定"，而"缓步西归"才是真正的底线方案——若保不住江东，带着大家投降[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]。这一遗言后来成为[color=#6699FF][url={"research": "赤壁之战", "cat": "events"}]赤壁之战[/url][/color]时张昭主降派的理论依据。
-
-[b]托孤结果：[/b] ✅ 成功。孙权执政长达52年（200—252年）。
+[indent][color=#666666]┃ "若仲谋不任事者，君便自取之。正复不克捷，缓步西归，亦无所虑。"[/color][/indent]
 
 
-[b]二、刘备白帝城托孤（章武三年，公元223年）[/b]
+[color=#000000]"可自取"的真实意图：[/color] 学界主流认为并非真的授权张昭取代孙权。张昭是文臣，无兵权，周瑜与孙氏家族均不会容许其自立。"自取之"更接近于"自行决定"，而"缓步西归"才是真正的底线方案——若保不住江东，带着大家投降[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]。这一遗言后来成为[color=#0066FF][url={"research": "赤壁之战", "cat": "events"}]赤壁之战[/url][/color]时张昭主降派的理论依据。
 
-[color=#6699FF][url={"research": "夷陵之战", "cat": "events"}]夷陵之战[/url][/color]大败，刘备病逝白帝城。托孤大臣：诸葛亮（正）、[color=#6699FF][url={"research": "李严", "cat": "people"}]李严[/url][/color]（副）。
+[color=#000000]托孤结果：[/color] ✅ 成功。孙权执政长达52年（200—252年）。
 
-[b]史料原文（《三国志·诸葛亮传》）：[/b]
-[color=#AAAAAA]　"君才十倍曹丕，必能安国，终定大事。若嗣子可辅，辅之；如其不才，君可自取。"[/color]
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]二、刘备白帝城托孤（章武三年，公元223年）[/font][/b]
+
+
+[color=#0066FF][url={"research": "夷陵之战", "cat": "events"}]夷陵之战[/url][/color]大败，刘备病逝白帝城。托孤大臣：诸葛亮（正）、[color=#0066FF][url={"research": "李严", "cat": "people"}]李严[/url][/color]（副）。
+
+[color=#000000]史料原文（《三国志·诸葛亮传》）：[/color]
+
+[indent][color=#666666]┃ "君才十倍曹丕，必能安国，终定大事。若嗣子可辅，辅之；如其不才，君可自取。"[/color][/indent]
+
 
 诸葛亮回应：
-[color=#AAAAAA]　"臣敢竭股肱之力，效忠贞之节，继之以死！"[/color]
 
-[b]结构安排：[/b]
-- 诸葛亮（荆州集团）主政，李严（东州集团）统军于外，形成制衡
-- [color=#6699FF][url={"research": "赵云", "cat": "people"}]赵云[/url][/color]典宿卫，掌禁兵
-- 三方格局，防止权力过度集中
+[indent][color=#666666]┃ "臣敢竭股肱之力，效忠贞之节，继之以死！"[/color][/indent]
 
-[b]李严被废（建兴九年，231年）——托孤副臣的结局[/b]
+
+[color=#000000]结构安排：[/color]
+
+[indent]•  诸葛亮（荆州集团）主政，李严（东州集团）统军于外，形成制衡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "赵云", "cat": "people"}]赵云[/url][/color]典宿卫，掌禁兵[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三方格局，防止权力过度集中[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]李严被废（建兴九年，231年）——托孤副臣的结局[/color]
 
 托孤安排原本是精密的制衡设计，但最终以悲剧收场。
 
 李严与诸葛亮的长期张力：
-- 李严多次要求"开府辟召"（与诸葛亮同等的宰相级权力），以不出兵要挟
-- 曾致函劝诸葛亮"受九锡称王"——学界认为此举是试探兼诬蔑
+
+[indent]•  李严多次要求"开府辟召"（与诸葛亮同等的宰相级权力），以不出兵要挟[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曾致函劝诸葛亮"受九锡称王"——学界认为此举是试探兼诬蔑[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 建兴九年事件始末（《三国志·蜀志·李严传》）：
-[color=#AAAAAA]　"九年春，亮军[color=#6699FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]，平催督运事。秋夏之际，值天霖雨，运粮不继，平遣参军狐忠、督军成藩喻指，呼亮来还；亮承以退军。平闻军退，乃更阳惊，说：'军粮饶足，何以便归！'欲以解己不办之责，显亮不进之愆也。又表后主，说：'军伪退，欲以诱敌与战。'亮具出其前后手笔书疏本末，平违错章灼。平辞穷情竭，首谢罪负。"[/color]
+
+[indent][color=#666666]┃ "九年春，亮军[color=#0066FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]，平催督运事。秋夏之际，值天霖雨，运粮不继，平遣参军狐忠、督军成藩喻指，呼亮来还；亮承以退军。平闻军退，乃更阳惊，说：'军粮饶足，何以便归！'欲以解己不办之责，显亮不进之愆也。又表后主，说：'军伪退，欲以诱敌与战。'亮具出其前后手笔书疏本末，平违错章灼。平辞穷情竭，首谢罪负。"[/color][/indent]
+
 
 诸葛亮《弹李平表》的深层评价：
-[color=#AAAAAA]　"正以大事未定，汉室倾危，伐平之短，莫若褒之。然谓平情在于荣利而已，不意平心颠倒乃尔。"[/color]
+
+[indent][color=#666666]┃ "正以大事未定，汉室倾危，伐平之短，莫若褒之。然谓平情在于荣利而已，不意平心颠倒乃尔。"[/color][/indent]
+
 
 最终处置："乃废平为民，徙梓潼郡"——剥夺一切官职爵位，贬为庶民。
 
-[b]结局的讽刺性：[/b] 李严在梓潼得知诸葛亮去世（234年），随即发病死去。史家注解：他知道"只有诸葛亮在，才有可能起用他"——也只有诸葛亮，理解他的政治价值并愿意容忍他。
+[color=#000000]结局的讽刺性：[/color] 李严在梓潼得知诸葛亮去世（234年），随即发病死去。史家注解：他知道"只有诸葛亮在，才有可能起用他"——也只有诸葛亮，理解他的政治价值并愿意容忍他。
 
-[b]托孤制度的深层悲剧：[/b] 刘备的双辅臣制衡设计最终失效——两人利益根本冲突，无法实现真正制衡；制衡消除后，蜀汉进入诸葛亮的一元执政，这既是北伐的必要条件，也使得继承人选择机制完全依赖个人判断，埋下了诸葛亮之后蜀汉快速衰落的隐患。
+[color=#000000]托孤制度的深层悲剧：[/color] 刘备的双辅臣制衡设计最终失效——两人利益根本冲突，无法实现真正制衡；制衡消除后，蜀汉进入诸葛亮的一元执政，这既是北伐的必要条件，也使得继承人选择机制完全依赖个人判断，埋下了诸葛亮之后蜀汉快速衰落的隐患。
 
-[b]托孤结果：[/b] ✅ 名义成功（刘禅在位41年，223—263年），但托孤结构本身已在231年彻底崩解。
-
-
-[b]三、曹丕托孤（黄初七年，公元226年）[/b]
-
-曹丕病重，召曹真、[color=#6699FF][url={"research": "陈群", "cat": "people"}]陈群[/url][/color]、曹休、司马懿四人并受遗诏辅少主曹叡（时年22岁）。
-- 曹真、曹休：宗室，有兵权
-- 陈群：元老重臣（九品中正制创立者）
-- 司马懿：智谋深远，威望渐隆
-
-[b]结果：[/b] ✅ 相对平稳。曹叡成年有能，未出现权臣专政，但为司马懿积累威望埋下祸根。
+[color=#000000]托孤结果：[/color] ✅ 名义成功（刘禅在位41年，223—263年），但托孤结构本身已在231年彻底崩解。
 
 
-[b]四、曹叡托孤（景初三年，公元239年）——方案更换始末[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三、曹丕托孤（黄初七年，公元226年）[/font][/b]
+
+
+曹丕病重，召[color=#0066FF][url={"research": "曹真", "cat": "people"}]曹真[/url][/color]、[color=#0066FF][url={"research": "陈群", "cat": "people"}]陈群[/url][/color]、[color=#0066FF][url={"research": "曹休", "cat": "people"}]曹休[/url][/color]、司马懿四人并受遗诏辅少主曹叡（时年22岁）。
+
+[indent]•  曹真、曹休：宗室，有兵权[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  陈群：元老重臣（九品中正制创立者）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  司马懿：智谋深远，威望渐隆[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]结果：[/color] ✅ 相对平稳。曹叡成年有能，未出现权臣专政，但为司马懿积累威望埋下祸根。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]四、曹叡托孤（景初三年，公元239年）——方案更换始末[/font][/b]
+
 
 曹叡生前一直压制司马懿，临终时原定以宗室为核心的五人班底排除司马懿，但在中书官员的干预下三天内彻底逆转。
 
 
 [b]第一版方案（238年十二月二十四日）：宗室班底，无司马懿[/b]
 
+
 《三国志·明帝纪》：
-[color=#AAAAAA]　"拜[color=#6699FF][url={"research": "曹宇", "cat": "people"}]曹宇[/url][/color]为大将军，与领军将军[color=#6699FF][url={"research": "夏侯献", "cat": "people"}]夏侯献[/url][/color]、武卫将军[color=#6699FF][url={"research": "曹爽", "cat": "people"}]曹爽[/url][/color]、屯骑校尉曹肇、骁骑将军[color=#6699FF][url={"research": "秦朗", "cat": "people"}]秦朗[/url][/color]等共同辅政。"[/color]
+
+[indent][color=#666666]┃ "拜[color=#0066FF][url={"research": "曹宇", "cat": "people"}]曹宇[/url][/color]为大将军，与领军将军[color=#0066FF][url={"research": "夏侯献", "cat": "people"}]夏侯献[/url][/color]、武卫将军[color=#0066FF][url={"research": "曹爽", "cat": "people"}]曹爽[/url][/color]、屯骑校尉曹肇、骁骑将军[color=#0066FF][url={"research": "秦朗", "cat": "people"}]秦朗[/url][/color]等共同辅政。"[/color][/indent]
+
 
 五人均为宗室或宗室旁系（曹宇为曹操之子、曹叡亲叔叔；曹爽为曹真之子；曹肇为曹休之子；秦朗为曹操继子）。
 
 
 [b]方案更换的导火索：三重因素叠加[/b]
 
-[b]①夏侯献、曹肇的失策[/b]
+
+[color=#000000]①夏侯献、曹肇的失策[/color]
 
 新辅政班底若成功掌权，必然首先清洗中书监刘放、中书令孙资（二人掌机密近二十年）。夏侯献和曹肇反而公然暗示：
 
-[color=#AAAAAA]　"放、资久典机任，献、肇心内不平。殿中有鸡栖树，二人相谓：'此亦久矣，其能复几？'指谓放、资。"[/color]
+
+[indent][color=#666666]┃ "放、资久典机任，献、肇心内不平。殿中有鸡栖树，二人相谓：'此亦久矣，其能复几？'指谓放、资。"[/color][/indent]
+
 
 打草惊蛇，将刘放孙资推向司马懿一侧。
 
-[b]②刘放孙资的实质掌控力[/b]
+[color=#000000]②刘放孙资的实质掌控力[/color]
 
-二人长期主管政务、军事、机密，对外与[color=#6699FF][url={"research": "满宠", "cat": "people"}]满宠[/url][/color]、[color=#6699FF][url={"research": "徐邈", "cat": "people"}]徐邈[/url][/color]等军事重臣有联系网络；司马懿平定辽东后，专门让刘放孙资分享"参谋之功"封侯，已构成政治同盟。
+二人长期主管政务、军事、机密，对外与[color=#0066FF][url={"research": "满宠", "cat": "people"}]满宠[/url][/color]、[color=#0066FF][url={"research": "徐邈", "cat": "people"}]徐邈[/url][/color]等军事重臣有联系网络；司马懿平定辽东后，专门让刘放孙资分享"参谋之功"封侯，已构成政治同盟。
 
-[b]③曹宇的谦辞与曹叡的重病[/b]
+[color=#000000]③曹宇的谦辞与曹叡的重病[/color]
 
 曹宇习惯性地推辞首辅重托。曹叡此时已病重至"困荐，不能"（虚弱到无法书写），完全依赖刘放孙资传达意志：
 
-[color=#AAAAAA]　"燕王为人处世就是这样的吗？"——曹叡问刘放孙资。[/color]
-[color=#AAAAAA]　[/color]
-[color=#AAAAAA]　"燕王只是自知不能担当这么大的责任罢了。"——刘放孙资回答。[/color]
+
+[indent][color=#666666]┃ "燕王为人处世就是这样的吗？"——曹叡问刘放孙资。[/color][/indent]
+[indent][color=#666666]┃ [/color][/indent]
+[indent][color=#666666]┃ "燕王只是自知不能担当这么大的责任罢了。"——刘放孙资回答。[/color][/indent]
+
 
 曹叡随即问曹爽是否可代替曹宇。刘放暗中踩曹爽的脚，提示其回答"以死奉社稷"，同时力荐召回司马懿。
 
 
 [b]宗室集团的最后反击与失败[/b]
 
+
 一度出现转机——宗室集团成功说动曹叡发诏阻止司马懿入京：
 
-[color=#AAAAAA]　"放、资既出，帝意复变，诏止宣王勿使来。"[/color]
+
+[indent][color=#666666]┃ "放、资既出，帝意复变，诏止宣王勿使来。"[/color][/indent]
+
 
 但随即曹叡再见刘放孙资，被说服：
-[color=#AAAAAA]　"我自召太尉，而曹肇等反使吾止之，几败吾事！"[/color]
+
+[indent][color=#666666]┃ "我自召太尉，而曹肇等反使吾止之，几败吾事！"[/color][/indent]
+
 
 最终刘放采取极端手段：
-[color=#AAAAAA]　"放曰：'宜为手诏。'帝曰：'我困荐，不能。'放即上床，执帝手强作之。遂赍出，大言曰：'有诏免燕王宇等官，不得停省中。'皆流涕而出。"[/color]
+
+[indent][color=#666666]┃ "放曰：'宜为手诏。'帝曰：'我困荐，不能。'放即上床，执帝手强作之。遂赍出，大言曰：'有诏免燕王宇等官，不得停省中。'皆流涕而出。"[/color][/indent]
+
 
 曹宇、夏侯献、曹肇、秦朗四人痛哭流涕，被逐出宫禁。
 
 
 [b]最终托孤方案（238年十二月二十七日）[/b]
 
+
 曹叡独召曹爽与刘放、孙资俱受诏，任命曹爽（大将军）与司马懿（太尉）为两位辅政大臣。
 
 曹叡临终遗言（《三国志·明帝纪》）：
-[color=#AAAAAA]　"吾疾甚，以后事属君，君其与爽辅少子。吾得见君，无所恨！"[/color]
+
+[indent][color=#666666]┃ "吾疾甚，以后事属君，君其与爽辅少子。吾得见君，无所恨！"[/color][/indent]
+
 
 《资治通鉴》补充：
-[color=#AAAAAA]　"死乃复可忍，朕忍死待君，君其与爽辅此子。"[/color]
+
+[indent][color=#666666]┃ "死乃复可忍，朕忍死待君，君其与爽辅此子。"[/color][/indent]
+
 
 又特意指着曹芳令其当场抱住司马懿的脖子，以情义约束代替制度约束——这是托孤话语史上最脆弱的一次设计。
 
 
 [b]失败的结构性根源[/b]
 
-1. [b]曹丕政策的恶果[/b]：刻意抑制宗室，导致曹魏无可用之宗室；曹真、曹休、曹休相继早死，新一代无实战历练
-2. [b]刘放孙资的制度性劫持[/b]：中书省长期大权在握，病床前已可"执帝手强作之"，说明皇权已实质性失控
-3. [b]话语机制的彻底失效[/b]：从"可自取"（孙策/刘备）退化为"无所恨"（曹叡），完全依赖道德约束而无任何制度威慑
 
-[b]托孤结果：[/b] ❌ 彻底失败。
-- 249年：司马懿高平陵政变，诛灭曹爽
-- 251年：曹芳被废
-- 260年：曹髦被杀
-- 265年：[color=#6699FF][url={"research": "曹奂", "cat": "people"}]曹奂[/url][/color]禅位，曹魏灭亡
+[indent]1.  [color=#000000]曹丕政策的恶果[/color]：刻意抑制宗室，导致曹魏无可用之宗室；曹真、曹休、曹休相继早死，新一代无实战历练[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]刘放孙资的制度性劫持[/color]：中书省长期大权在握，病床前已可"执帝手强作之"，说明皇权已实质性失控[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]话语机制的彻底失效[/color]：从"可自取"（孙策/刘备）退化为"无所恨"（曹叡），完全依赖道德约束而无任何制度威慑[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]五、孙权托孤（公元252年）——最混乱的一次：六年五人全灭[/b]
+[color=#000000]托孤结果：[/color] ❌ 彻底失败。
+
+[indent]•  249年：司马懿高平陵政变，诛灭曹爽[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  251年：曹芳被废[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  260年：[color=#0066FF][url={"research": "曹髦", "cat": "people"}]曹髦[/url][/color]被杀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  265年：[color=#0066FF][url={"research": "曹奂", "cat": "people"}]曹奂[/url][/color]禅位，曹魏灭亡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]五、孙权托孤（公元252年）——最混乱的一次：六年五人全灭[/font][/b]
 
 
 [b]托孤结构设计[/b]
 
+
 《三国志·诸葛恪传》：
-[color=#AAAAAA]　"孙权病危，召见诸葛恪、[color=#6699FF][url={"research": "孙弘", "cat": "people"}]孙弘[/url][/color]及太常[color=#6699FF][url={"research": "滕胤", "cat": "people"}]滕胤[/url][/color]、将军吕据、侍中孙峻，托付他们以后事。"[/color]
+
+[indent][color=#666666]┃ "孙权病危，召见诸葛恪、[color=#0066FF][url={"research": "孙弘", "cat": "people"}]孙弘[/url][/color]及太常[color=#0066FF][url={"research": "滕胤", "cat": "people"}]滕胤[/url][/color]、将军吕据、侍中孙峻，托付他们以后事。"[/color][/indent]
 
 
-[b]大臣[/b] | [b]职位[/b] | [b]代表力量[/b]
-诸葛恪 | 大将军兼太子太傅→太傅 | 淮泗集团，首辅
-孙弘 | 中书令兼太子少傅 | 控制诏书机密
-滕胤 | 太常 | 江东士族
-吕据 | 荡魏将军 | 掌外军兵权
-孙峻 | 侍中（武卫将军） | 宗室，掌禁军
+[table=3]
+[cell][b]大臣[/b][/cell]
+[cell][b]职位[/b][/cell]
+[cell][b]代表力量[/b][/cell]
+[cell]诸葛恪[/cell]
+[cell]大将军兼太子太傅→太傅[/cell]
+[cell]淮泗集团，首辅[/cell]
+[cell]孙弘[/cell]
+[cell]中书令兼太子少傅[/cell]
+[cell]控制诏书机密[/cell]
+[cell]滕胤[/cell]
+[cell]太常[/cell]
+[cell]江东士族[/cell]
+[cell]吕据[/cell]
+[cell]荡魏将军[/cell]
+[cell]掌外军兵权[/cell]
+[cell]孙峻[/cell]
+[cell]侍中（武卫将军）[/cell]
+[cell]宗室，掌禁军[/cell]
+[/table]
 
 
-[b]孙权对诸葛恪的矛盾态度[/b]（裴松之注引《吴书》）：
-[color=#AAAAAA]　"此人气凌其上，意蔑其下，非能益吾家者……今吾以事付之，吾死后，诸君当善图之。"[/color]
+[color=#000000]孙权对诸葛恪的矛盾态度[/color]（裴松之注引《吴书》）：
+
+[indent][color=#666666]┃ "此人气凌其上，意蔑其下，非能益吾家者……今吾以事付之，吾死后，诸君当善图之。"[/color][/indent]
+
 
 孙权一面托付，一面私下预留清算授权——这预示了托孤安排的内在矛盾。
 
 
 [b]第一阶段：孙权去世当天的政变（252年四月）[/b]
 
+
 孙弘封锁孙权死讯，企图假传诏书除掉诸葛恪，被孙峻告密，当日在座席上被诸葛恪杀死。
 
-[b]托孤班底第一人即刻倒下。[/b]
+[color=#000000]托孤班底第一人即刻倒下。[/color]
 
 
 [b]第二阶段：诸葛恪的崛起与覆灭（252—253年）[/b]
 
-东兴大捷（252年冬）：大败魏将[color=#6699FF][url={"research": "胡遵", "cat": "people"}]胡遵[/url][/color]七万大军，阵斩乐安太守桓嘉，声望达顶峰，封阳都侯，加荆州扬州牧。
 
-[color=#6699FF][url={"research": "合肥", "cat": "geography"}]合肥[/url][/color]新城惨败（253年）：不顾众臣反对，强征二十万大军北伐：
-[color=#AAAAAA]　"诸葛恪于是违众出军，大发州郡二十万众，百姓骚动，始失人心。"[/color]
+东兴大捷（252年冬）：大败魏将[color=#0066FF][url={"research": "胡遵", "cat": "people"}]胡遵[/url][/color]七万大军，阵斩乐安太守桓嘉，声望达顶峰，封阳都侯，加荆州扬州牧。
+
+[color=#0066FF][url={"research": "合肥", "cat": "geography"}]合肥[/url][/color]新城惨败（253年）：不顾众臣反对，强征二十万大军北伐：
+
+[indent][color=#666666]┃ "诸葛恪于是违众出军，大发州郡二十万众，百姓骚动，始失人心。"[/color][/indent]
+
 
 围攻新城数月不克，军中疫病流行：
-[color=#AAAAAA]　"士卒劳苦不堪，因天气酷热而饮用生水，患腹泄以至两腿发肿，病者大半，到处是死伤之人。"[/color]
+
+[indent][color=#666666]┃ "士卒劳苦不堪，因天气酷热而饮用生水，患腹泄以至两腿发肿，病者大半，到处是死伤之人。"[/color][/indent]
+
 
 全军上下怨声载道，民心尽失。
 
 
 [b]第三阶段：孙峻政变，诛灭诸葛恪（253年十月）[/b]
 
-孙峻借诸葛恪失民心之机，与皇帝[color=#6699FF][url={"research": "孙亮", "cat": "people"}]孙亮[/url][/color]合谋设宴，在殿中伏兵：
 
-[color=#AAAAAA]　"峻起如厕，解长衣，着短服，出曰：'有诏收诸葛恪！'"[/color]
+孙峻借诸葛恪失民心之机，与皇帝[color=#0066FF][url={"research": "孙亮", "cat": "people"}]孙亮[/url][/color]合谋设宴，在殿中伏兵：
+
+
+[indent][color=#666666]┃ "峻起如厕，解长衣，着短服，出曰：'有诏收诸葛恪！'"[/color][/indent]
+
 
 诸葛恪被乱刀砍死，三族被诛。孙峻以大将军独揽朝政。
 
-[b]托孤班底第二人覆灭。[/b]
+[color=#000000]托孤班底第二人覆灭。[/color]
 
 
 [b]第四阶段：孙峻暴毙，孙綝继权（256年）[/b]
 
-孙峻（史料未明确死因，疑为病死）于256年暴毙，权力无经授权地自然转入堂弟[b][color=#6699FF][url={"research": "孙綝", "cat": "people"}]孙綝[/url][/color][/b]手中。
+
+孙峻（史料未明确死因，疑为病死）于256年暴毙，权力无经授权地自然转入堂弟[color=#000000][color=#0066FF][url={"research": "孙綝", "cat": "people"}]孙綝[/url][/color][/color]手中。
 
 孙綝升任大将军，清洗托孤班底余部：
-- [b]诛杀滕胤[/b]（托孤大臣，代表江东士族）
-- [b]逼死吕据[/b]（托孤大臣，掌外军兵权）
 
-[b]托孤班底第三、四人覆灭。[/b]
+[indent]•  [color=#000000]诛杀滕胤[/color]（托孤大臣，代表江东士族）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]逼死吕据[/color]（托孤大臣，掌外军兵权）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]托孤班底第三、四人覆灭。[/color]
 
 
 [b]第五阶段：孙亮图谋清算、孙綝废帝（257—258年）[/b]
 
-孙亮（时年16岁）联合太常[color=#6699FF][url={"research": "全尚", "cat": "people"}]全尚[/url][/color]、将军[color=#6699FF][url={"research": "刘丞", "cat": "people"}]刘丞[/url][/color]图谋诛杀孙綝，事泄：
-[color=#AAAAAA]　"亮以綝专恣，与太常全尚，将军刘丞谋诛綝。九月戊午，綝以兵取尚，遣弟恩攻杀丞於苍龙门外，召大臣会宫门，黜亮为[color=#6699FF][url={"research": "会稽", "cat": "geography"}]会稽[/url][/color]王，时年十六。"[/color]
 
-孙綝废黜孙亮（降为会稽王），另立[color=#6699FF][url={"research": "孙休", "cat": "people"}]孙休[/url][/color]（孙权第六子）为帝。
+孙亮（时年16岁）联合太常[color=#0066FF][url={"research": "全尚", "cat": "people"}]全尚[/url][/color]、将军[color=#0066FF][url={"research": "刘丞", "cat": "people"}]刘丞[/url][/color]图谋诛杀孙綝，事泄：
+
+[indent][color=#666666]┃ "亮以綝专恣，与太常全尚，将军刘丞谋诛綝。九月戊午，綝以兵取尚，遣弟恩攻杀丞於苍龙门外，召大臣会宫门，黜亮为[color=#0066FF][url={"research": "会稽", "cat": "geography"}]会稽[/url][/color]王，时年十六。"[/color][/indent]
+
+
+孙綝废黜孙亮（降为会稽王），另立[color=#0066FF][url={"research": "孙休", "cat": "people"}]孙休[/url][/color]（孙权第六子）为帝。
 
 
 [b]第六阶段：孙休绝地反击，诛杀孙綝（258年十二月）[/b]
 
-[color=#AAAAAA]　"休闻綝逆谋，阴与[color=#6699FF][url={"research": "张布", "cat": "people"}]张布[/url][/color]图计。十二月戊辰腊，百僚朝贺，公卿升殿，诏武士缚綝，即日伏诛。"[/color]
 
-孙綝在朝会中被捕，当日伏诛。至此，孙权托孤五人班底[b]全部在六年内死亡[/b]（252—258年）。
+[indent][color=#666666]┃ "休闻綝逆谋，阴与[color=#0066FF][url={"research": "张布", "cat": "people"}]张布[/url][/color]图计。十二月戊辰腊，百僚朝贺，公卿升殿，诏武士缚綝，即日伏诛。"[/color][/indent]
+
+
+孙綝在朝会中被捕，当日伏诛。至此，孙权托孤五人班底[color=#000000]全部在六年内死亡[/color]（252—258年）。
 
 
 [b]孙权托孤失败的结构性原因[/b]
 
-1. [b]猜忌文化的遗产[/b]：二宫之争（[color=#6699FF][url={"research": "孙和", "cat": "people"}]孙和[/url][/color] vs 孙霸，239—250年）已耗尽一整代政治精英（[color=#6699FF][url={"research": "陆逊", "cat": "people"}]陆逊[/url][/color]忧愤而死，朱据被贬杀），留下的是一个互相猜忌的政治生态
-2. [b]过度制衡制造权力真空[/b]：五方互相牵制，但无核心权威，各方必然以暴力解决矛盾；而孙权已私下暗示"善图之"，等于预授清算权
-3. [b]宗室兵权的反噬[/b]：孙峻掌禁军本为制衡诸葛恪，结果禁军成了政变工具，且在孙峻死后自然流入孙綝之手
-4. [b]最致命的制度缺陷[/b]：无辅臣自然死亡后的权力继承规则，孙峻死后权力径直传入其堂弟手中，完全超出托孤设计的预期范围
+
+[indent]1.  [color=#000000]猜忌文化的遗产[/color]：二宫之争（[color=#0066FF][url={"research": "孙和", "cat": "people"}]孙和[/url][/color] vs 孙霸，239—250年）已耗尽一整代政治精英（[color=#0066FF][url={"research": "陆逊", "cat": "people"}]陆逊[/url][/color]忧愤而死，朱据被贬杀），留下的是一个互相猜忌的政治生态[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]过度制衡制造权力真空[/color]：五方互相牵制，但无核心权威，各方必然以暴力解决矛盾；而孙权已私下暗示"善图之"，等于预授清算权[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]宗室兵权的反噬[/color]：孙峻掌禁军本为制衡诸葛恪，结果禁军成了政变工具，且在孙峻死后自然流入孙綝之手[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]最致命的制度缺陷[/color]：无辅臣自然死亡后的权力继承规则，孙峻死后权力径直传入其堂弟手中，完全超出托孤设计的预期范围[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键人物与事件[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]事件[/b] | [b]君主[/b] | [b]顾命正臣[/b] | [b]幼主年龄[/b] | [b]话语机制[/b] | [b]结局[/b]
-孙策托孤（200年） | 孙策 | 张昭 | 孙权18岁 | 可自取+退路 | ✅ 成功
-刘备托孤（223年） | 刘备 | 诸葛亮、李严 | 刘禅17岁 | 可自取+双辅制衡 | ✅ 成功（但结构231年崩解）
-曹丕托孤（226年） | 曹丕 | 曹真、陈群等 | 曹叡22岁 | 多辅臣制衡 | ✅ 相对成功
-曹叡托孤（239年） | 曹叡 | 曹爽、司马懿 | 曹芳8岁 | 情义信任，无威慑 | ❌ 失败
-孙权托孤（252年） | 孙权 | 诸葛恪等五人 | 孙亮10岁 | 多辅臣失衡+预埋清算 | ❌ 彻底失败
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键人物与事件[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[table=6]
+[cell][b]事件[/b][/cell]
+[cell][b]君主[/b][/cell]
+[cell][b]顾命正臣[/b][/cell]
+[cell][b]幼主年龄[/b][/cell]
+[cell][b]话语机制[/b][/cell]
+[cell][b]结局[/b][/cell]
+[cell]孙策托孤（200年）[/cell]
+[cell]孙策[/cell]
+[cell]张昭[/cell]
+[cell]孙权18岁[/cell]
+[cell]可自取+退路[/cell]
+[cell]✅ 成功[/cell]
+[cell]刘备托孤（223年）[/cell]
+[cell]刘备[/cell]
+[cell]诸葛亮、李严[/cell]
+[cell]刘禅17岁[/cell]
+[cell]可自取+双辅制衡[/cell]
+[cell]✅ 成功（但结构231年崩解）[/cell]
+[cell]曹丕托孤（226年）[/cell]
+[cell]曹丕[/cell]
+[cell]曹真、陈群等[/cell]
+[cell]曹叡22岁[/cell]
+[cell]多辅臣制衡[/cell]
+[cell]✅ 相对成功[/cell]
+[cell]曹叡托孤（239年）[/cell]
+[cell]曹叡[/cell]
+[cell]曹爽、司马懿[/cell]
+[cell]曹芳8岁[/cell]
+[cell]情义信任，无威慑[/cell]
+[cell]❌ 失败[/cell]
+[cell]孙权托孤（252年）[/cell]
+[cell]孙权[/cell]
+[cell]诸葛恪等五人[/cell]
+[cell]孙亮10岁[/cell]
+[cell]多辅臣失衡+预埋清算[/cell]
+[cell]❌ 彻底失败[/cell]
+[/table]
 
 
-[b]孙策托孤[/b]
-- [b]演义[/b]："内事不决问张昭，外事不决问周瑜"，将周瑜并列为托孤大臣
-- [b]史实[/b]：托孤对象只有张昭；周瑜领兵在外，是事后归附，非托孤程序参与者
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]刘备托孤[/b]
-- [b]演义[/b]：强调君臣相知的感人场面，淡化李严的存在
-- [b]史实[/b]：李严与诸葛亮"并受遗诏辅少主"，是结构性安排；李严被废是派系斗争，并非单纯忠奸问题
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-[b]曹叡托孤[/b]
-- [b]演义及后世[/b]：将高平陵政变简化为司马懿阴谋
-- [b]史实[/b]：曹叡最初明确排除司马懿，原定宗室班底；是中书令刘放孙资联手司马懿，在曹叡病危三天之内逆转了方案。最终方案中，曹叡甚至无法自行书写诏书，由刘放握手代书，说明皇权在临终前已实质失控。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]孙策托孤[/font][/b]
 
 
-[b]孙权托孤[/b]
-- [b]后世印象[/b]：将诸葛恪视为纯粹的权臣乱政
-- [b]史实[/b]：诸葛恪辅政初期确有东兴大捷的军事成就，是合肥北伐的惨败彻底葬送了他的政治生命；孙峻政变是借民心失去的机会趁势而起；孙权本人的猜忌文化和制度设计失败是根本原因
+[indent]•  [color=#000000]演义[/color]："内事不决问张昭，外事不决问周瑜"，将周瑜并列为托孤大臣[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]史实[/color]：托孤对象只有张昭；周瑜领兵在外，是事后归附，非托孤程序参与者[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]刘备托孤[/font][/b]
+
+
+[indent]•  [color=#000000]演义[/color]：强调君臣相知的感人场面，淡化李严的存在[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]史实[/color]：李严与诸葛亮"并受遗诏辅少主"，是结构性安排；李严被废是派系斗争，并非单纯忠奸问题[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹叡托孤[/font][/b]
+
+
+[indent]•  [color=#000000]演义及后世[/color]：将高平陵政变简化为司马懿阴谋[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]史实[/color]：曹叡最初明确排除司马懿，原定宗室班底；是中书令刘放孙资联手司马懿，在曹叡病危三天之内逆转了方案。最终方案中，曹叡甚至无法自行书写诏书，由刘放握手代书，说明皇权在临终前已实质失控。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]孙权托孤[/font][/b]
+
+
+[indent]•  [color=#000000]后世印象[/color]：将诸葛恪视为纯粹的权臣乱政[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]史实[/color]：诸葛恪辅政初期确有东兴大捷的军事成就，是合肥北伐的惨败彻底葬送了他的政治生命；孙峻政变是借民心失去的机会趁势而起；孙权本人的猜忌文化和制度设计失败是根本原因[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]

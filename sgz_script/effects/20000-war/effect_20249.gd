@@ -39,7 +39,7 @@ func effect_20249_2():
 	var msg = "对{1}发动{0}\n暂时夺取其所有技能\n可否？".format([
 		ske.skill_name, ActorHelper.actor(targetId).get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20249_3():

@@ -32,25 +32,25 @@ func effect_20150_start():
 		var msg = "金不足，发动【{1}】需\n金 >= {0}".format([
 			GOLD_REQUIRED, ske.skill_name
 		])
-		play_dialog(me.actorId, msg, 3, 2099)
+		play_dialog(actorId, msg, 3, 2099)
 		return
 
 	var flags = SkillHelper.get_skill_flags_number(20000, EFFECT_ID, me.actorId, FLAG_NAME)
 	if flags <= 0:
 		var msg = "[{0}]不足，无法发动【{1}】".format([FLAG_NAME, ske.skill_name])
-		play_dialog(me.actorId, msg, 3, 2099)
+		play_dialog(actorId, msg, 3, 2099)
 		return
 
 	var maxSoldiers = DataManager.get_actor_max_soldiers(me.actorId)
 	if actor.get_soldiers() >= maxSoldiers:
 		var msg = "兵力充足，无须【{0}】".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 1, 2099)
+		play_dialog(actorId, msg, 1, 2099)
 		return
 
 	var msg = "消耗 100 金和一个[{0}]\n发动【{1}】补充兵力\n可否？".format([
 		FLAG_NAME, ske.skill_name,
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000():

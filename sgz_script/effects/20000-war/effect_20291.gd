@@ -31,7 +31,7 @@ func effect_20291_2():
 	var msg = "发动【{0}】，本回合内攻击{1}无须消耗机动力。可否？".format([
 		ske.skill_name, ActorHelper.actor(targetId).get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20291_3():
@@ -43,5 +43,5 @@ func effect_20291_3():
 	var msg = "不灭{0}，誓不收兵！".format([
 		ActorHelper.actor(targetId).get_name(),
 	])
-	play_dialog(me.actorId, msg, 0, 2002)
+	play_dialog(actorId, msg, 0, 2002)
 	return

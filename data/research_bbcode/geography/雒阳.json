@@ -1,518 +1,920 @@
-[b]雒阳 / 洛阳（汉末都城）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]雒阳 / 洛阳（汉末都城）[/font][/b]
 
 
-[b]位置：[/b] 今河南省洛阳市东约15公里，偃师、孟津交界处，伊洛盆地中北部
-[b]类型：[/b] 都城（东周—东汉—曹魏—西晋—北魏）
+[color=#000000]位置：[/color] 今河南省洛阳市东约15公里，偃师、孟津交界处，伊洛盆地中北部
+[color=#000000]类型：[/color] 都城（东周—东汉—曹魏—西晋—北魏）
 
-[b]最新更新（2026-04-26 第九次深度完善）：[/b] 整合北魏"太仓"完整规模数据（168口仓窖，14列×12排；深度4m，容量约100m³；来源：2026-04-13大河网/2025河南考古新发现论坛）；补入三级仓储体系（皇家府库—太仓—建春门外租场）；补充里坊发掘面积920㎡（人民日报2026-03-25）。
-
-
-[b]地理考证[/b]
+[color=#000000]最新更新（2026-04-26 第九次深度完善）：[/color] 整合北魏"太仓"完整规模数据（168口仓窖，14列×12排；深度4m，容量约100m³；来源：2026-04-13大河网/2025河南考古新发现论坛）；补入三级仓储体系（皇家府库—太仓—建春门外租场）；补充里坊发掘面积920㎡（人民日报2026-03-25）。
 
 
-[b]地望与沿革[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]地理考证[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]地望与沿革[/font][/b]
+
 
 汉魏洛阳城遗址位于今河南省洛阳市中心城区东约15公里，白马寺一带。始建于西周，先后为东周（成周）、东汉、曹魏、西晋、北魏的都城，至唐初废弃，建城史约1600年，建都史近600年。
 
-[b]命名变化：[/b] 东汉崇火德，改"洛"为"雒"（去水加隹）；[color=#6699FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]建魏，以土德恢复"洛"字。
+[color=#000000]命名变化：[/color] 东汉崇火德，改"洛"为"雒"（去水加隹）；[color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]建魏，以土德恢复"洛"字。
 
 
-[b]地形优势[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]地形优势[/font][/b]
+
 
 洛阳盆地（伊洛河河谷平原），古人称"河山拱戴，形胜甲于天下"：
-- [b]北[/b]：邙山连绵，阻挡北方骑兵南下；北临黄河
-- [b]南[/b]：伊阙（龙门），两山夹伊水，控南下江汉之路
-- [b]东[/b]：[color=#6699FF][url={"research": "虎牢关", "cat": "geography"}]虎牢关[/url][/color]（旋门关），北临黄河，南依嵩山，中原门户
-- [b]西[/b]：[color=#6699FF][url={"research": "函谷关", "cat": "geography"}]函谷关[/url][/color]，扼崤函古道，控关中与洛阳之间通道
+
+[indent]•  [color=#000000]北[/color]：邙山连绵，阻挡北方骑兵南下；北临黄河[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]南[/color]：伊阙（龙门），两山夹伊水，控南下江汉之路[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]东[/color]：[color=#0066FF][url={"research": "虎牢关", "cat": "geography"}]虎牢关[/url][/color]（旋门关），北临黄河，南依嵩山，中原门户[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]西[/color]：[color=#0066FF][url={"research": "函谷关", "cat": "geography"}]函谷关[/url][/color]，扼崤函古道，控关中与洛阳之间通道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]八关拱卫[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]八关拱卫[/font][/b]
+
 
 汉灵帝中平元年（184年），黄巾起义爆发，设八关都尉守卫京师：
-[b]函谷关、广成关、伊阙关、大谷关、轘辕关、旋门关（虎牢）、小平津、孟津[/b]。
+[color=#000000]函谷关、广成关、伊阙关、大谷关、轘辕关、旋门关（虎牢）、小平津、孟津[/color]。
 
 
-[b]战略地位[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]东汉雒阳城规模[/b]
-
-- [b]规模[/b]：南北九里，东西六里，号称"六九城"；全周长约14.5千米；12座城门（四面各3座）
-- [b]街道[/b]：24条大街
-- [b]宫城[/b]：南北双宫制
-  - [b]南宫[/b]（南北约1300米，东西约1000米）：朝贺议政、国家仪式；光武帝以南宫前殿为正殿
-  - [b]北宫[/b]（明帝永平八年建成，面积大于南宫）：建成后帝王临朝重心渐移至此；德阳殿、宜明殿等
-  - 两宫间以三条复道相连；太仓、武库在城内东北角
-- [b]三公府署[/b]：太尉府、司空府、司徒府在南宫东南
-- [b]商业区[/b]：金市（南宫西北）
-- [b]礼制区（城南）[/b]：明堂、辟雍、灵台（"三雍"）；灵台为天文观测台，面积约4万㎡
-- [b]太学（城南）[/b]：顺帝时扩修后学生最多达3万余人；熹平年间[color=#6699FF][url={"research": "蔡邕", "cat": "people"}]蔡邕[/url][/color]立熹平石经于太学讲堂前
+[b][font=res://resource/font/FandolSong-Bold/28.tres]战略地位[/font][/b]
 
 
-[b]东汉太学与熹平石经（详）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]东汉雒阳城规模[/font][/b]
 
 
-[b]太学总体位置[/b]
+[indent]•  [color=#000000]规模[/color]：南北九里，东西六里，号称"六九城"；全周长约14.5千米；12座城门（四面各3座）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]街道[/color]：24条大街[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]宫城[/color]：南北双宫制[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]南宫[/color]（南北约1300米，东西约1000米）：朝贺议政、国家仪式；光武帝以南宫前殿为正殿[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]北宫[/color]（明帝永平八年建成，面积大于南宫）：建成后帝王临朝重心渐移至此；德阳殿、宜明殿等[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  两宫间以三条复道相连；太仓、武库在城内东北角[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]三公府署[/color]：太尉府、司空府、司徒府在南宫东南[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]商业区[/color]：金市（南宫西北）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]礼制区（城南）[/color]：明堂、辟雍、灵台（"三雍"）；灵台为天文观测台，面积约4万㎡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]太学（城南）[/color]：顺帝时扩修后学生最多达3万余人；熹平年间[color=#0066FF][url={"research": "蔡邕", "cat": "people"}]蔡邕[/url][/color]立熹平石经于太学讲堂前[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-- [b]城市坐标：[/b] 洛阳城南郊，开阳门外御道东，"去宫八里"；古洛河北岸，距城南墙约1千米
-- [b]今址：[/b] 河南省洛阳市偃师区佃庄乡太学村（亦称大郊村）一带；石经出土地为附近朱家圪垱村
-- [b]保护级别：[/b] 1961年首批全国重点文物保护单位，为汉魏洛阳故城的组成部分
+
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]南郊礼制建筑群（自西向东）[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]东汉太学与熹平石经（详）[/font][/b]
 
-[b]灵台遗址 → 明堂遗址 → 辟雍遗址 → 太学遗址[/b]
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]太学总体位置[/font][/b]
+
+
+[indent]•  [color=#000000]城市坐标：[/color] 洛阳城南郊，开阳门外御道东，"去宫八里"；古洛河北岸，距城南墙约1千米[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]今址：[/color] 河南省洛阳市偃师区佃庄乡太学村（亦称大郊村）一带；石经出土地为附近朱家圪垱村[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]保护级别：[/color] 1961年首批全国重点文物保护单位，为汉魏洛阳故城的组成部分[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]南郊礼制建筑群（自西向东）[/font][/b]
+
+
+[color=#000000]灵台遗址 → 明堂遗址 → 辟雍遗址 → 太学遗址[/color]
 
 辟雍遗址1931年出土《三临辟雍碑》（通高3.22米），载晋代太学盛况："东越于海，西及流沙，并时集至，万有余人"。
 
 
-[b]太学规模沿革[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]太学规模沿革[/font][/b]
 
 
-[b]时间[/b] | [b]事件[/b]
-建武五年（29年） | 光武帝初起太学
-建武二十七年（51年） | 建太学讲堂，长十丈、宽三丈
-永建六年（130年） | 汉顺帝大修，"二百四十房，千八百五十室"，年用工徒11.2万人
-质帝时期 | 太学生人数达3万余人（历史峰值）
-熹平四年（175年） | 立熹平石经，轰动一时，"车乘日千余辆，填塞街陌"
-初平元年（190年） | [color=#6699FF][url={"research": "董卓 ", "cat": " people"}]董卓 [/url][/color]焚城，石经严重毁损
-黄初五年（224年） | 曹丕重兴太学
-正始年间 | 刻立正始三体石经28块，与熹平石经并立
+[table=2]
+[cell][b]时间[/b][/cell]
+[cell][b]事件[/b][/cell]
+[cell]建武五年（29年）[/cell]
+[cell]光武帝初起太学[/cell]
+[cell]建武二十七年（51年）[/cell]
+[cell]建太学讲堂，长十丈、宽三丈[/cell]
+[cell]永建六年（130年）[/cell]
+[cell]汉顺帝大修，"二百四十房，千八百五十室"，年用工徒11.2万人[/cell]
+[cell]质帝时期[/cell]
+[cell]太学生人数达3万余人（历史峰值）[/cell]
+[cell]熹平四年（175年）[/cell]
+[cell]立熹平石经，轰动一时，"车乘日千余辆，填塞街陌"[/cell]
+[cell]初平元年（190年）[/cell]
+[cell][color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]焚城，石经严重毁损[/cell]
+[cell]黄初五年（224年）[/cell]
+[cell]曹丕重兴太学[/cell]
+[cell]正始年间[/cell]
+[cell]刻立正始三体石经28块，与熹平石经并立[/cell]
+[/table]
 
 
-[b]考古发掘（1972—1981年，中国科学院考古研究所）[/b]
-
-- [b]东西两部分：[/b] 仅东部面积就达3万余平方米
-- [b]晚期（魏晋以降）院落形制（较清晰）：[/b]
-  - 东西宽约156米，南北长约220米，四周有墙，各设一门
-  - 院落内有一排排呈东西向或南北向的长条形房舍
-  - 每座房舍总长可达数十米，由十间甚至十数间房间组成
-  - 每间面阔3.6米左右，进深约4米
-  - 院落中部发掘一座大型廊庑式房屋，房基内有砖砌浴池
-- [b]东汉早期建筑：[/b] 揭露较少；晚期房屋大多叠压于早期建筑之上或直接利用早期基础
-- [b]东汉范围更大：[/b] 晚期太学东西两侧均有长条形房舍基址，说明东汉太学范围超出晚期更多
+[b][font=res://resource/font/FandolSong-Bold/26.tres]考古发掘（1972—1981年，中国科学院考古研究所）[/font][/b]
 
 
-[b]熹平石经详细布局[/b]
+[indent]•  [color=#000000]东西两部分：[/color] 仅东部面积就达3万余平方米[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]晚期（魏晋以降）院落形制（较清晰）：[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  东西宽约156米，南北长约220米，四周有墙，各设一门[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  院落内有一排排呈东西向或南北向的长条形房舍[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  每座房舍总长可达数十米，由十间甚至十数间房间组成[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  每间面阔3.6米左右，进深约4米[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  院落中部发掘一座大型廊庑式房屋，房基内有砖砌浴池[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]东汉早期建筑：[/color] 揭露较少；晚期房屋大多叠压于早期建筑之上或直接利用早期基础[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]东汉范围更大：[/color] 晚期太学东西两侧均有长条形房舍基址，说明东汉太学范围超出晚期更多[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]立碑过程（175—183年，历时9年）：[/b]
-- 发起者：议郎蔡邕、五官中郎将堂溪典、光禄大夫杨赐、谏议大夫马日磾、泼郎张驯、韩说、太史令单飙等，共十余人参与校定
-- 工序：①正定文字（14家博士所授经本从头厘正，择一家刻石，他家异同列于校记）→②书丹（蔡邕亲笔，计算字数、行款、碑数，复校文字）→③镌刻
 
-[b]碑石规格：[/b]
-- 共46座石碑
-- 每碑高一丈许（约2.3米），宽四尺（约0.92米）
-- 每碑一面约35行，每行约70—75字
-- 全部碑文约20万字
-- 碑石上有瓦屋覆盖保护，四面设栏障，南面开门
+[b][font=res://resource/font/FandolSong-Bold/26.tres]熹平石经详细布局[/font][/b]
 
-[b]立碑位置（关键）：[/b]
-- 史书记载："刻石立于太学门外"（《后汉书·灵帝纪》）；"立于太学门外"（《后汉书·蔡邕传》）
-- 马衡近代考证（《汉石经集存》）：四十六碑[b]分别树于讲堂东侧的北、西、南三面[/b]
-  - "以西行各碑为首，各经自为起讫，骈罗相接如堵墙"
-  - 各经经文从第一碑正面刻起，至末碑正面；再从末碑阴面至第一碑阴面（即正反两面均刻文字）
-- 综合理解："太学门外"为广义表述，实际位置是讲堂东侧的三面环列区域，形成一片独立碑林区
 
-[b]刊刻内容（7种经文）：[/b]
+[color=#000000]立碑过程（175—183年，历时9年）：[/color]
+
+[indent]•  发起者：议郎蔡邕、五官中郎将堂溪典、光禄大夫杨赐、谏议大夫马日磾、泼郎张驯、韩说、太史令单飙等，共十余人参与校定[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  工序：①正定文字（14家博士所授经本从头厘正，择一家刻石，他家异同列于校记）→②书丹（蔡邕亲笔，计算字数、行款、碑数，复校文字）→③镌刻[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]碑石规格：[/color]
+
+[indent]•  共46座石碑[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  每碑高一丈许（约2.3米），宽四尺（约0.92米）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  每碑一面约35行，每行约70—75字[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  全部碑文约20万字[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  碑石上有瓦屋覆盖保护，四面设栏障，南面开门[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]立碑位置（关键）：[/color]
+
+[indent]•  史书记载："刻石立于太学门外"（《后汉书·灵帝纪》）；"立于太学门外"（《后汉书·蔡邕传》）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  马衡近代考证（《汉石经集存》）：四十六碑[color=#000000]分别树于讲堂东侧的北、西、南三面[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  "以西行各碑为首，各经自为起讫，骈罗相接如堵墙"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  各经经文从第一碑正面刻起，至末碑正面；再从末碑阴面至第一碑阴面（即正反两面均刻文字）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  综合理解："太学门外"为广义表述，实际位置是讲堂东侧的三面环列区域，形成一片独立碑林区[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]刊刻内容（7种经文）：[/color]
 《鲁诗》《尚书》《周易》《仪礼》《春秋》《公羊传》《论语》
 
-[b]史料意义：[/b]
-- 中国历史上最早官定、刊刻于碑石的儒家经书
-- "自后五经一定，争者用息"——平息了博士考试中多年的版本之争
+[color=#000000]史料意义：[/color]
 
-[b]毁损与遗存：[/b]
-- 190年董卓焚城：石经严重残毁
-- 曹魏初有修补；此后历代损毁
-- 唐贞观初魏征收聚，"已十不存一"
-- 现存残石约520件（约8000余字），最大者百余字，最小者仅一二字
-- 主要收藏于中国国家博物馆、陕西历史博物馆、河南博物院、洛阳石刻艺术馆
-- 2025年起，汉魏洛阳故城遗址博物馆展出太学遗址出土熹平石经残石15块（含1980年出土者）
+[indent]•  中国历史上最早官定、刊刻于碑石的儒家经书[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "自后五经一定，争者用息"——平息了博士考试中多年的版本之争[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]重要事件[/b]
+[color=#000000]毁损与遗存：[/color]
+
+[indent]•  190年董卓焚城：石经严重残毁[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹魏初有修补；此后历代损毁[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  唐贞观初魏征收聚，"已十不存一"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  现存残石约520件（约8000余字），最大者百余字，最小者仅一二字[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  主要收藏于中国国家博物馆、陕西历史博物馆、河南博物院、洛阳石刻艺术馆[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  2025年起，汉魏洛阳故城遗址博物馆展出太学遗址出土熹平石经残石15块（含1980年出土者）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]汉末政治史[/b]
-
-- 灵帝中平六年（189年）：灵帝崩，[color=#6699FF][url={"research": "何进", "cat": "people"}]何进[/url][/color]召董卓入京；宦官杀何进，[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]诛宦；董卓入京，废少帝立献帝
-- 初平元年（190年）正月：关东诸侯起兵讨董
-- [b]初平元年二月[/b]：董卓胁献帝西迁[color=#6699FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]；驱数百万百姓随行，"积尸盈路"
-- [b]同月（焚城）[/b]：董卓亲率兵焚南北宫、宗庙府库、民居，派[color=#6699FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]掘诸帝陵寝；"二百里内无复孑遗"（《后汉书》）；《三国志·魏书·董卓传》："城内扫地殄尽"
-- [color=#6699FF][url={"research": "曹植", "cat": "people"}]曹植[/url][/color]亲历废都，《送应氏》："洛阳何寂寞，宫室尽烧焚……中野何萧条，千里无人烟。"
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]讨董之役的地理逻辑[/b]
-
-联军主战场在虎牢关（旋门关）一带对峙。[color=#6699FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color]部是联军中唯一主动进击的将领，攻入废都，在宫城废墟附近的甄官井中——据《吴书》（裴松之注引）——掘出传国玉玺（此事史料存疑，见下文辨析）。洛阳既焚，讨董联军失去政治目标，迅速解体。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]重要事件[/font][/b]
 
 
-[b]曹魏重建洛阳[/b]
-
-- 曹丕黄初元年（220年）代汉建魏，重建洛阳；改"雒"为"洛"
-- [b]在东汉北宫原有台地基础上重建宫城[/b]（2024年考古确认：东汉北宫范围与曹魏/北魏宫城范围大致相同）
-- 废弃东汉南北双宫制，采用[b]单一宫城制[/b]，于东汉北宫旧址上营建
-- 宫城正门[b]阊阖门[/b]→ 南北中轴线[b]铜驼街[/b]（铜驼大街）→ 大城正门[b]宣阳门[/b]，建立了中国历史上最早的都城中轴大街体系
-- [b]魏明帝[color=#6699FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color][/b]大规模兴建宫殿区，营建[b]太极殿[/b]（正殿，中国历史上第一座"太极殿"）、太极东堂、太极西堂；三殿东西并列；体现"建中立极"理念
-- 铜驼街两侧排列整齐的官署（太尉府、司徒府等），丁字街布局，是后世都城（隋唐长安、洛阳）宫前布局的雏形
+[b][font=res://resource/font/FandolSong-Bold/26.tres]汉末政治史[/font][/b]
 
 
-[b]曹魏宫城内部布局（详）[/b]
+[indent]•  灵帝中平六年（189年）：灵帝崩，[color=#0066FF][url={"research": "何进", "cat": "people"}]何进[/url][/color]召董卓入京；宦官杀何进，[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]诛宦；董卓入京，废少帝立献帝[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  初平元年（190年）正月：关东诸侯起兵讨董[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]初平元年二月[/color]：董卓胁献帝西迁[color=#0066FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]；驱数百万百姓随行，"积尸盈路"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]同月（焚城）[/color]：董卓亲率兵焚南北宫、宗庙府库、民居，派[color=#0066FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]掘诸帝陵寝；"二百里内无复孑遗"（《后汉书》）；《三国志·魏书·董卓传》："城内扫地殄尽"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "曹植", "cat": "people"}]曹植[/url][/color]亲历废都，《送应氏》："洛阳何寂寞，宫室尽烧焚……中野何萧条，千里无人烟。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]总体功能分区[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]讨董之役的地理逻辑[/font][/b]
+
+
+联军主战场在虎牢关（旋门关）一带对峙。[color=#0066FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color]部是联军中唯一主动进击的将领，攻入废都，在宫城废墟附近的甄官井中——据《吴书》（裴松之注引）——掘出传国玉玺（此事史料存疑，见下文辨析）。洛阳既焚，讨董联军失去政治目标，迅速解体。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹魏重建洛阳[/font][/b]
+
+
+[indent]•  曹丕黄初元年（220年）代汉建魏，重建洛阳；改"雒"为"洛"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]在东汉北宫原有台地基础上重建宫城[/color]（2024年考古确认：东汉北宫范围与曹魏/北魏宫城范围大致相同）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  废弃东汉南北双宫制，采用[color=#000000]单一宫城制[/color]，于东汉北宫旧址上营建[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  宫城正门[color=#000000]阊阖门[/color]→ 南北中轴线[color=#000000]铜驼街[/color]（铜驼大街）→ 大城正门[color=#000000]宣阳门[/color]，建立了中国历史上最早的都城中轴大街体系[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]魏明帝[color=#0066FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color][/color]大规模兴建宫殿区，营建[color=#000000]太极殿[/color]（正殿，中国历史上第一座"太极殿"）、太极东堂、太极西堂；三殿东西并列；体现"建中立极"理念[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  铜驼街两侧排列整齐的官署（太尉府、司徒府等），丁字街布局，是后世都城（隋唐长安、洛阳）宫前布局的雏形[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]曹魏宫城内部布局（详）[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]总体功能分区[/font][/b]
+
 
 曹魏单一宫城建立了"前朝后寝"的南北纵深布局，以内城东西横街（永巷）为主要分界线：
 
 
-[b]区域[/b] | [b]功能[/b] | [b]主要建筑[/b]
-[b]宫城南部（朝殿区）[/b] | 大朝正殿 + 内朝寝殿 + 外朝官署 + 仓储 | 三道宫门、太极殿宫院、显阳殿宫院、尚书省、朝堂、太仓
-[b]永巷[/b] | 宫城内唯一东西通道，南北功能分界线 | 道路宽约6米，西连千秋门，东出宫城
-[b]宫城北部（后宫 + 苑囿区）[/b] | 皇太后及嫔妃寝宫 + 掖庭 + 皇家苑囿 | 西游园、掖庭、华林园（天渊池、景阳山）
+[table=3]
+[cell][b]区域[/b][/cell]
+[cell][b]功能[/b][/cell]
+[cell][b]主要建筑[/b][/cell]
+[cell][color=#000000]宫城南部（朝殿区）[/color][/cell]
+[cell]大朝正殿 + 内朝寝殿 + 外朝官署 + 仓储[/cell]
+[cell]三道宫门、太极殿宫院、显阳殿宫院、尚书省、朝堂、太仓[/cell]
+[cell][color=#000000]永巷[/color][/cell]
+[cell]宫城内唯一东西通道，南北功能分界线[/cell]
+[cell]道路宽约6米，西连千秋门，东出宫城[/cell]
+[cell][color=#000000]宫城北部（后宫 + 苑囿区）[/color][/cell]
+[cell]皇太后及嫔妃寝宫 + 掖庭 + 皇家苑囿[/cell]
+[cell]西游园、掖庭、华林园（天渊池、景阳山）[/cell]
+[/table]
 
 
-[color=#AAAAAA]　[b]刘涛（社科院，2022）：[/b] "永巷是宫城内唯一一条贯穿东西的通道，更是宫城内功能布局的分界线：永巷以南，是以太极殿为中心的宫城朝殿区；永巷以北，则主要是以华林园为中心的池苑区。"[/color]
+[indent][color=#666666]┃ [color=#000000]刘涛（社科院，2022）：[/color] "永巷是宫城内唯一一条贯穿东西的通道，更是宫城内功能布局的分界线：永巷以南，是以太极殿为中心的宫城朝殿区；永巷以北，则主要是以华林园为中心的池苑区。"[/color][/indent]
 
 
-[b]三道宫城正门（南→北，均始建于曹魏）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三道宫城正门（南→北，均始建于曹魏）[/font][/b]
 
 
-[b]门名[/b] | [b]考古编号[/b] | [b]间距[/b] | [b]形制[/b] | [b]附属[/b] | [b]功能定位[/b]
-[b]阊阖门[/b] | 一号宫门 | — | 三门道殿堂式，面阔七间，台基44.5×24.4m | 双阙（子母阙，间距41.5m，单阙29m见方） | 宫城正门，礼仪正门
-[b]止车门[/b] | 二号宫门 | 阊阖门正北[b]95米[/b] | 三门道殿堂式，台基约45×24m；面阔七间进深四间（柱网8列×5排） | 不设双阙；门内东侧门下省，西侧中书省 | 中书/门下两省的行政枢纽节点
-[b]端门[/b] | 三号宫门 | 止车门北约80m | 三门道殿堂式，规模与阊阖门基本一致 | 不设双阙 | 太极殿宫院的正门
+[table=6]
+[cell][b]门名[/b][/cell]
+[cell][b]考古编号[/b][/cell]
+[cell][b]间距[/b][/cell]
+[cell][b]形制[/b][/cell]
+[cell][b]附属[/b][/cell]
+[cell][b]功能定位[/b][/cell]
+[cell][color=#000000]阊阖门[/color][/cell]
+[cell]一号宫门[/cell]
+[cell]—[/cell]
+[cell]三门道殿堂式，面阔七间，台基44.5×24.4m[/cell]
+[cell]双阙（子母阙，间距41.5m，单阙29m见方）[/cell]
+[cell]宫城正门，礼仪正门[/cell]
+[cell][color=#000000]止车门[/color][/cell]
+[cell]二号宫门[/cell]
+[cell]阊阖门正北[color=#000000]95米[/color][/cell]
+[cell]三门道殿堂式，台基约45×24m；面阔七间进深四间（柱网8列×5排）[/cell]
+[cell]不设双阙；门内东侧门下省，西侧中书省[/cell]
+[cell]中书/门下两省的行政枢纽节点[/cell]
+[cell][color=#000000]端门[/color][/cell]
+[cell]三号宫门[/cell]
+[cell]止车门北约80m[/cell]
+[cell]三门道殿堂式，规模与阊阖门基本一致[/cell]
+[cell]不设双阙[/cell]
+[cell]太极殿宫院的正门[/cell]
+[/table]
 
 
 三道宫门均始建于曹魏，北魏重修沿用，北朝晚期再改造。这一"三门对正殿"格局是《周礼》"五门三朝"制度的实体体现。
 
 
-[b]太极殿宫院（大朝区）[/b]
-
-- [b]位置：[/b] 端门（三号宫门）北侧
-- [b]院落：[/b] 东西约330m，南北约300m
-- [b]太极殿主殿：[/b] 东西102m × 南北59—61.5m，残高1.65—2m；北魏面阔十二间，北周改十三间
-- [b]东堂 / 西堂：[/b] 各东西约48m，南北约23m，面阔七间；三殿东西并列
-- [b]阁门与阁道：[/b] 主殿与东、西堂之间各有阁门（东上阁 / 西上阁），上层以东西向阁道相通，下层设宽4m的阁门
-- [b]廊庑：[/b] 东西南三面廊庑环绕，北面以宫墙与显阳殿区隔开
-- [b]功能分工：[/b] 主殿=大朝（大典礼仪）；东堂=常朝（日常政务、接见宴飨）；西堂=日常起居
+[b][font=res://resource/font/FandolSong-Bold/26.tres]太极殿宫院（大朝区）[/font][/b]
 
 
-[b]显阳殿宫院（内朝 / 皇帝寝殿区）[/b]
-
-[b]史源：[/b] 始建于曹魏，原名"昭阳殿"，西晋沿用，北魏改建改名"显阳殿"。
-
-- [b]位置：[/b] 太极殿宫院正北侧（功能关系："大朝"正北即"内朝"）
-- [b]宫院整体：[/b] 东西约330m（与太极殿等宽），南北约210m（含东西两侧各一组宫院）
-
-[b]显阳殿本体尺寸（两种口径，均正确）：[/b]
-
-
-[b]口径[/b] | [b]数值[/b] | [b]来源[/b] | [b]说明[/b]
-实测台基本体 | 东西约[b]70m[/b] × 南北约[b]35m[/b] | 刘涛，2022年发掘现场数据 | 夯土台基凸字形本体，不含踏道
-含踏道复原总范围 | 东西约[b]80m[/b] × 南北约[b]50m[/b] | 钱国祥，2023百科复原研究 | 含南侧踏道和附属台基延伸
-
-
-[color=#AAAAAA]　两者不矛盾：70×35m是台基本体实测，80×50m是含踏道/附属建筑的综合复原范围。[/color]
-
-- [b]台基形制：[/b] "凸"字形，台基南侧残高约1m，外侧残存包砖及沟槽
-- [b]南侧廊道：[/b] 显阳殿南侧约60米处有一道东西向廊道，内设[b]3道阁门[/b]，与南方太极殿宫院相隔及沟通
-- [b]宫院内部：[/b] 殿基居中偏北；南侧建筑门址连通太极殿宫院；东西两侧廊房；北侧大型廊房排房，形成封闭宫院
-- [b]周边寝殿群（三殿东西并列制度）：[/b]
-  - 含章殿（东侧）、徽音殿（西侧）— 《太平御览》："皇后正殿曰显阳，东曰含章，西曰徽音"
-  - 式乾殿：皇帝常住寝殿之一
-- [b]北界：[/b] 永巷（宫城南北分界线）
+[indent]•  [color=#000000]位置：[/color] 端门（三号宫门）北侧[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]院落：[/color] 东西约330m，南北约300m[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]太极殿主殿：[/color] 东西102m × 南北59—61.5m，残高1.65—2m；北魏面阔十二间，北周改十三间[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]东堂 / 西堂：[/color] 各东西约48m，南北约23m，面阔七间；三殿东西并列[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]阁门与阁道：[/color] 主殿与东、西堂之间各有阁门（东上阁 / 西上阁），上层以东西向阁道相通，下层设宽4m的阁门[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]廊庑：[/color] 东西南三面廊庑环绕，北面以宫墙与显阳殿区隔开[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]功能分工：[/color] 主殿=大朝（大典礼仪）；东堂=常朝（日常政务、接见宴飨）；西堂=日常起居[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]宫城东侧次轴线（司马门—朝堂轴线）[/b]
-
-宫城南部以南墙[b]司马门[/b]内道路为界，分为东西两组建筑轴线：
-
-[b]西轴线（主轴）：[/b] 阊阖门 → 止车门 → 端门 → 太极殿 → 显阳殿
-
-[b]东轴线（次轴）：[/b] 司马门 → 尚书省 → 朝堂
-
-- [b]司马门：[/b] 宫城南墙东段宫门，门内有朝堂和尚书省；性质为次要宫门
-- [b]尚书省：[/b] 位于东掖门内道路北侧，是北魏承袭曹魏—魏晋的重要外朝议事场所
-- [b]朝堂：[/b] 位于太极殿宫院东墙云龙门外侧；尚书省与朝堂是与主轴并列的"东侧次要建筑轴线"
-- [b]府库区范围：[/b] 朝殿区以东，东西宽约[b]280米[/b]、南北长约[b]750米[/b]
-  - 南半部：司空府、尚书省、朝堂等外朝官署
-  - 北半部：太仓（尚书省以北、朝堂以东）、府库（太仓北面）
+[b][font=res://resource/font/FandolSong-Bold/26.tres]显阳殿宫院（内朝 / 皇帝寝殿区）[/font][/b]
 
 
-[b]宫城北部：后宫与苑囿[/b]
-
-[b]西游园（西林园）— 后宫核心[/b]
-
-- 院落东西约430m，南北约370m（西墙即宫城西墙）
-- 主殿群：宣光殿（南主殿）、嘉福殿（北主殿），二殿间有灵芝池和钓台
-  - 钓台分别与南面宣光殿、北面嘉福殿、西面九龙殿、东面建始殿皆有飞阁相通
-- 东西两翼：九龙殿（西）、建始殿（东）；晖章殿（宣光殿东）、明光殿（西）
-- 西北角：宣慈观、陵云台（始建曹魏，高台内有冰井用于避暑，残高2.5m）
-
-[b]掖庭区[/b]
-
-- 西游园以东，约南北430m × 东西230m
-- 宫门：魏晋称"薄室门"，为掖庭令属下官署区
-
-[b]华林园（皇家苑囿）[/b]
-
-- 位于宫城北部至内城北墙之间
-- 含天渊池（汉晋原名）、景阳山
-- 始建于曹魏，北魏孝文帝增建清凉殿、茅茨堂、凉风观（陵云台楼观改建）
+[color=#000000]史源：[/color] 始建于曹魏，原名"昭阳殿"，西晋沿用，北魏改建改名"显阳殿"。
 
 
-[b]曹魏始建 → 北魏沿用：层叠关系[/b]
+[indent]•  [color=#000000]位置：[/color] 太极殿宫院正北侧（功能关系："大朝"正北即"内朝"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]宫院整体：[/color] 东西约330m（与太极殿等宽），南北约210m（含东西两侧各一组宫院）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]项目[/b] | [b]结论[/b]
-宫城选址基础 | [b]东汉北宫台地[/b]（2024年考古确认，从东汉上推）
-宫城平面格局 | 曹魏始建，北魏在曹魏基础上叠加重修
-三道宫门 | 均始建于曹魏（考古夯土证实）；北魏重修
-太极殿三殿 | 曹叡始建，北魏继承面阔格局
-显阳殿（昭阳殿） | 曹魏始建（原名昭阳殿），北魏改建改名
-"前朝后寝"制度 | 形成于魏晋，北魏遵循沿用（"制度的遵循与文化的认同"）
-司马门—朝堂东轴线 | 制度承自曹魏—魏晋，北魏继续沿用
+[color=#000000]显阳殿本体尺寸（两种口径，均正确）：[/color]
 
 
-[b]曹魏宫城阊阖门（详）[/b]
+[table=4]
+[cell][b]口径[/b][/cell]
+[cell][b]数值[/b][/cell]
+[cell][b]来源[/b][/cell]
+[cell][b]说明[/b][/cell]
+[cell]实测台基本体[/cell]
+[cell]东西约[color=#000000]70m[/color] × 南北约[color=#000000]35m[/color][/cell]
+[cell]刘涛，2022年发掘现场数据[/cell]
+[cell]夯土台基凸字形本体，不含踏道[/cell]
+[cell]含踏道复原总范围[/cell]
+[cell]东西约[color=#000000]80m[/color] × 南北约[color=#000000]50m[/color][/cell]
+[cell]钱国祥，2023百科复原研究[/cell]
+[cell]含南侧踏道和附属台基延伸[/cell]
+[/table]
 
 
-[b]历史沿革[/b]
-
-- [b]得名：[/b] 曹叡（明帝）时期改雉门为阊阖门（《水经注·谷水》："魏明帝上法太极于洛阳，……以雉门为阊阖"）
-- [b]始建：[/b] 曹魏初期；发掘证实北魏阊阖门及阙均在曹魏始建夯土基础上增修沿用
-- [b]叠压层次：[/b] 曹魏 → 西晋 → 北魏 → 北周（多层叠压，可分辨各时期地面与墙皮）
-- [b]发掘：[/b] 2001年11月—2002年6月，中国社科院考古研究所洛阳汉魏故城队
+[indent][color=#666666]┃ 两者不矛盾：70×35m是台基本体实测，80×50m是含踏道/附属建筑的综合复原范围。[/color][/indent]
 
 
-[b]门楼台基精确尺寸[/b]
+[indent]•  [color=#000000]台基形制：[/color] "凸"字形，台基南侧残高约1m，外侧残存包砖及沟槽[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]南侧廊道：[/color] 显阳殿南侧约60米处有一道东西向廊道，内设[color=#000000]3道阁门[/color]，与南方太极殿宫院相隔及沟通[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]宫院内部：[/color] 殿基居中偏北；南侧建筑门址连通太极殿宫院；东西两侧廊房；北侧大型廊房排房，形成封闭宫院[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]周边寝殿群（三殿东西并列制度）：[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  含章殿（东侧）、徽音殿（西侧）— 《太平御览》："皇后正殿曰显阳，东曰含章，西曰徽音"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  式乾殿：皇帝常住寝殿之一[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]北界：[/color] 永巷（宫城南北分界线）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]项目[/b] | [b]数值[/b] | [b]说明[/b]
-台基东西长 | [b]44.5 米[/b] | 地上可见台基
-台基南北宽 | [b]24.4 米[/b] | 地上可见台基
-地下夯土基础（东西） | 48—50 米 | 略大于地上台基
-地下夯土基础（南北） | 31—34 米 | 略大于地上台基
-夯土厚度 | 1.25—2.75 米 | 多时期夯筑叠压
-台基残高 | 约1.65—2 米 | 地面以上现存高度
+[b][font=res://resource/font/FandolSong-Bold/26.tres]宫城东侧次轴线（司马门—朝堂轴线）[/font][/b]
 
 
-[b]建筑规制[/b]
+宫城南部以南墙[color=#000000]司马门[/color]内道路为界，分为东西两组建筑轴线：
 
-- [b]面阔七间、进深四间[/b]：殿堂式宫门
-- [b]三个门道[/b]：各宽4.8米，进深8.6—8.8米
-- [b]柱网[/b]：40个柱础或础坑，南北5排（进深4间），东西8列
-- [b]宫门后坐式[/b]：城门楼台基不在宫城南墙缺口处，而是后坐（北退）于宫墙之上
-  - 推测原因：门前原有水道（阳渠），整体布局后移以避让
-- [b]文献印证[/b]：《水经注》"阊阖门三重楼，去地二十丈"——与考古所见面阔七间殿堂式三层楼形制完全相符
+[color=#000000]西轴线（主轴）：[/color] 阊阖门 → 止车门 → 端门 → 太极殿 → 显阳殿
+
+[color=#000000]东轴线（次轴）：[/color] 司马门 → 尚书省 → 朝堂
 
 
-[b]双阙（子母阙）精确尺寸[/b]
+[indent]•  [color=#000000]司马门：[/color] 宫城南墙东段宫门，门内有朝堂和尚书省；性质为次要宫门[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]尚书省：[/color] 位于东掖门内道路北侧，是北魏承袭曹魏—魏晋的重要外朝议事场所[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]朝堂：[/color] 位于太极殿宫院东墙云龙门外侧；尚书省与朝堂是与主轴并列的"东侧次要建筑轴线"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]府库区范围：[/color] 朝殿区以东，东西宽约[color=#000000]280米[/color]、南北长约[color=#000000]750米[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  南半部：司空府、尚书省、朝堂等外朝官署[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  北半部：太仓（尚书省以北、朝堂以东）、府库（太仓北面）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]项目[/b] | [b]数值[/b]
-东西双阙间距 | [b]41.5 米[/b]
-单个阙台尺寸 | [b]约29米见方[/b]
-平面形态 | [b]曲尺形子母阙[/b]：一母带二子
-母阙宽 | 22.7—23.1 米
-子阙宽 | 6.2—6.3 米
-连接方式 | 双阙向北各以夯土墙与城门楼台基衔接
+[b][font=res://resource/font/FandolSong-Bold/26.tres]宫城北部：后宫与苑囿[/font][/b]
 
 
-[b]制度传承谱系：[/b]
+[color=#000000]西游园（西林园）— 后宫核心[/color]
+
+
+[indent]•  院落东西约430m，南北约370m（西墙即宫城西墙）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  主殿群：宣光殿（南主殿）、嘉福殿（北主殿），二殿间有灵芝池和钓台[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  钓台分别与南面宣光殿、北面嘉福殿、西面九龙殿、东面建始殿皆有飞阁相通[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  东西两翼：九龙殿（西）、建始殿（东）；晖章殿（宣光殿东）、明光殿（西）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  西北角：宣慈观、陵云台（始建曹魏，高台内有冰井用于避暑，残高2.5m）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]掖庭区[/color]
+
+
+[indent]•  西游园以东，约南北430m × 东西230m[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  宫门：魏晋称"薄室门"，为掖庭令属下官署区[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]华林园（皇家苑囿）[/color]
+
+
+[indent]•  位于宫城北部至内城北墙之间[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  含天渊池（汉晋原名）、景阳山[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  始建于曹魏，北魏孝文帝增建清凉殿、茅茨堂、凉风观（陵云台楼观改建）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹魏始建 → 北魏沿用：层叠关系[/font][/b]
+
+
+[table=2]
+[cell][b]项目[/b][/cell]
+[cell][b]结论[/b][/cell]
+[cell]宫城选址基础[/cell]
+[cell][color=#000000]东汉北宫台地[/color]（2024年考古确认，从东汉上推）[/cell]
+[cell]宫城平面格局[/cell]
+[cell]曹魏始建，北魏在曹魏基础上叠加重修[/cell]
+[cell]三道宫门[/cell]
+[cell]均始建于曹魏（考古夯土证实）；北魏重修[/cell]
+[cell]太极殿三殿[/cell]
+[cell]曹叡始建，北魏继承面阔格局[/cell]
+[cell]显阳殿（昭阳殿）[/cell]
+[cell]曹魏始建（原名昭阳殿），北魏改建改名[/cell]
+[cell]"前朝后寝"制度[/cell]
+[cell]形成于魏晋，北魏遵循沿用（"制度的遵循与文化的认同"）[/cell]
+[cell]司马门—朝堂东轴线[/cell]
+[cell]制度承自曹魏—魏晋，北魏继续沿用[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]曹魏宫城阊阖门（详）[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]历史沿革[/font][/b]
+
+
+[indent]•  [color=#000000]得名：[/color] 曹叡（明帝）时期改雉门为阊阖门（《水经注·谷水》："魏明帝上法太极于洛阳，……以雉门为阊阖"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]始建：[/color] 曹魏初期；发掘证实北魏阊阖门及阙均在曹魏始建夯土基础上增修沿用[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]叠压层次：[/color] 曹魏 → 西晋 → 北魏 → 北周（多层叠压，可分辨各时期地面与墙皮）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]发掘：[/color] 2001年11月—2002年6月，中国社科院考古研究所洛阳汉魏故城队[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]门楼台基精确尺寸[/font][/b]
+
+
+[table=3]
+[cell][b]项目[/b][/cell]
+[cell][b]数值[/b][/cell]
+[cell][b]说明[/b][/cell]
+[cell]台基东西长[/cell]
+[cell][color=#000000]44.5 米[/color][/cell]
+[cell]地上可见台基[/cell]
+[cell]台基南北宽[/cell]
+[cell][color=#000000]24.4 米[/color][/cell]
+[cell]地上可见台基[/cell]
+[cell]地下夯土基础（东西）[/cell]
+[cell]48—50 米[/cell]
+[cell]略大于地上台基[/cell]
+[cell]地下夯土基础（南北）[/cell]
+[cell]31—34 米[/cell]
+[cell]略大于地上台基[/cell]
+[cell]夯土厚度[/cell]
+[cell]1.25—2.75 米[/cell]
+[cell]多时期夯筑叠压[/cell]
+[cell]台基残高[/cell]
+[cell]约1.65—2 米[/cell]
+[cell]地面以上现存高度[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建筑规制[/font][/b]
+
+
+[indent]•  [color=#000000]面阔七间、进深四间[/color]：殿堂式宫门[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]三个门道[/color]：各宽4.8米，进深8.6—8.8米[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]柱网[/color]：40个柱础或础坑，南北5排（进深4间），东西8列[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]宫门后坐式[/color]：城门楼台基不在宫城南墙缺口处，而是后坐（北退）于宫墙之上[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  推测原因：门前原有水道（阳渠），整体布局后移以避让[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]文献印证[/color]：《水经注》"阊阖门三重楼，去地二十丈"——与考古所见面阔七间殿堂式三层楼形制完全相符[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]双阙（子母阙）精确尺寸[/font][/b]
+
+
+[table=2]
+[cell][b]项目[/b][/cell]
+[cell][b]数值[/b][/cell]
+[cell]东西双阙间距[/cell]
+[cell][color=#000000]41.5 米[/color][/cell]
+[cell]单个阙台尺寸[/cell]
+[cell][color=#000000]约29米见方[/color][/cell]
+[cell]平面形态[/cell]
+[cell][color=#000000]曲尺形子母阙[/color]：一母带二子[/cell]
+[cell]母阙宽[/cell]
+[cell]22.7—23.1 米[/cell]
+[cell]子阙宽[/cell]
+[cell]6.2—6.3 米[/cell]
+[cell]连接方式[/cell]
+[cell]双阙向北各以夯土墙与城门楼台基衔接[/cell]
+[/table]
+
+
+[color=#000000]制度传承谱系：[/color]
 汉魏阊阖门子母阙（单向二子阙）→ 东魏北齐邺南城朱明门（夯土阁道宽12米）→ 隋唐东都洛阳应天门（双向三出阙）→ 明清午门（五凤楼）
 
 
-[b]宫城空间轴线[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]宫城空间轴线[/font][/b]
+
 
 从南到北完整轴线（经考古确认）：
-- [b]圜丘[/b]（洛河南伊水之阳，北魏迁移）
-- [b]宣阳门[/b]（内城正门）
-- [b]铜驼街[/b]（宫前中轴大街，两侧排列官署、太庙、太社、永宁寺、景乐寺等）
-- [b]阊阖门[/b]（宫城正门，距宣阳门约430米）
-- [b]止车门[/b]（阊阖门正北[b]95米[/b]，二号宫门）
-- [b]端门[/b]（止车门北约80米，三号宫门）
-- [b]太极殿[/b]（宫城正殿，距阊阖门约460—500米）
+
+[indent]•  [color=#000000]圜丘[/color]（洛河南伊水之阳，北魏迁移）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]宣阳门[/color]（内城正门）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]铜驼街[/color]（宫前中轴大街，两侧排列官署、太庙、太社、永宁寺、景乐寺等）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]阊阖门[/color]（宫城正门，距宣阳门约430米）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]止车门[/color]（阊阖门正北[color=#000000]95米[/color]，二号宫门）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]端门[/color]（止车门北约80米，三号宫门）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]太极殿[/color]（宫城正殿，距阊阖门约460—500米）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 三道宫门均始建于曹魏，沿用至北魏，是"建中立极"都城理念的建筑体现。
 
 
-[b]学术意义[/b]
-
-1. [b]单一宫城制度起源的实物证据[/b]：阊阖门考古证实单一宫城始于曹魏（非北魏）
-2. [b]中国第一条都城中轴线[/b]：阊阖门—铜驼街—宣阳门体系，是中国历史上第一条具有规划意图的都城南北轴线
-3. [b]门阙制度演变关键节点[/b]：子母阙 → 三出阙的形制过渡，可在此遗址中找到直接证据
+[b][font=res://resource/font/FandolSong-Bold/26.tres]学术意义[/font][/b]
 
 
-[b]北邙帝陵与洛南帝陵（考古研究进展）[/b]
+[indent]1.  [color=#000000]单一宫城制度起源的实物证据[/color]：阊阖门考古证实单一宫城始于曹魏（非北魏）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]中国第一条都城中轴线[/color]：阊阖门—铜驼街—宣阳门体系，是中国历史上第一条具有规划意图的都城南北轴线[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]门阙制度演变关键节点[/color]：子母阙 → 三出阙的形制过渡，可在此遗址中找到直接证据[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]总体概况（2017年全国十大考古新发现基础成果）[/b]
-
-- 2018年公布，"洛阳东汉帝陵考古调查与发掘"入选[b]2017年度全国十大考古新发现[/b]
-- 发掘单位：洛阳市文物考古研究院 + 郑州大学历史学院，历时约15年，勘探总面积[b]256万平方米[/b]
-- 方法：以勘探为主（国家文物局明确不主动挖掘帝陵本体）
-
-[b]帝陵分布：[/b]
-- 东汉12帝，其中[b]11座在洛阳境内[/b]（献帝禅陵在焦作修武）
-- [b]邙山陵区[/b]（今孟津区）：光武帝原陵、安帝恭陵、顺帝宪陵、冲帝怀陵、灵帝文陵等
-- [b]洛南陵区[/b]（今伊滨区/偃师区）：另外6座帝陵，包括桓帝宣陵（白草坡）
-
-[b]帝陵形制特征（正式确认）：[/b]
-- 封土：平面圆形，直径多在130米以上
-- 墓葬：长斜坡墓道"甲"字形明券墓，墓道南向，长50米以上、宽9米以上，墓室有回廊
-- 陵园：[b]内外陵园制度[/b]——内陵园以帝后合葬墓为中心（四向各一门）；外陵园含石殿、钟虡（晚期帝陵新增）、寝殿、园省（守陵妃子）、园寺吏舍（守陵官吏）
-- 方向变化：东汉坐北朝南（相较西汉坐西朝东，这一变化延续至今）
-- 帝后合葬制度自东汉始
-
-[b]总体意义：[/b] 填补了中国东汉陵寝制度研究的空白。
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]白草坡东汉陵园遗址——2024年重大发现（入围"2024年中国考古新发现"）[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]北邙帝陵与洛南帝陵（考古研究进展）[/font][/b]
 
-[b]地点：[/b] 洛阳市伊滨区庞村镇白草坡村，洛南东汉帝陵核心区，总面积约85万平方米
-[b]发掘单位：[/b] 洛阳市考古研究院（2017年至今持续发掘，负责人：王咸秋）
 
-[b]学术荣誉：[/b]
-- 入围[b]"2024年中国考古新发现"[/b]（中国社会科学院，2025年2月19日北京揭晓）
-- 入选[b]"2024年度河南省十大考古新发现"[/b]（2025年3月12日公布）
-- 2025年8月登上《中国日报》国际版"文明中国专栏"
+[b][font=res://resource/font/FandolSong-Bold/26.tres]总体概况（2017年全国十大考古新发现基础成果）[/font][/b]
 
-[b]陵园完整格局（历年考古累积）：[/b]
+
+[indent]•  2018年公布，"洛阳东汉帝陵考古调查与发掘"入选[color=#000000]2017年度全国十大考古新发现[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  发掘单位：洛阳市文物考古研究院 + 郑州大学历史学院，历时约15年，勘探总面积[color=#000000]256万平方米[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  方法：以勘探为主（国家文物局明确不主动挖掘帝陵本体）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]帝陵分布：[/color]
+
+[indent]•  东汉12帝，其中[color=#000000]11座在洛阳境内[/color]（献帝禅陵在焦作修武）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]邙山陵区[/color]（今孟津区）：光武帝原陵、安帝恭陵、顺帝宪陵、冲帝怀陵、灵帝文陵等[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]洛南陵区[/color]（今伊滨区/偃师区）：另外6座帝陵，包括桓帝宣陵（白草坡）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]帝陵形制特征（正式确认）：[/color]
+
+[indent]•  封土：平面圆形，直径多在130米以上[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  墓葬：长斜坡墓道"甲"字形明券墓，墓道南向，长50米以上、宽9米以上，墓室有回廊[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  陵园：[color=#000000]内外陵园制度[/color]——内陵园以帝后合葬墓为中心（四向各一门）；外陵园含石殿、钟虡（晚期帝陵新增）、寝殿、园省（守陵妃子）、园寺吏舍（守陵官吏）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  方向变化：东汉坐北朝南（相较西汉坐西朝东，这一变化延续至今）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  帝后合葬制度自东汉始[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]总体意义：[/color] 填补了中国东汉陵寝制度研究的空白。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]白草坡东汉陵园遗址——2024年重大发现（入围"2024年中国考古新发现"）[/font][/b]
+
+
+[color=#000000]地点：[/color] 洛阳市伊滨区庞村镇白草坡村，洛南东汉帝陵核心区，总面积约85万平方米
+[color=#000000]发掘单位：[/color] 洛阳市考古研究院（2017年至今持续发掘，负责人：王咸秋）
+
+[color=#000000]学术荣誉：[/color]
+
+[indent]•  入围[color=#000000]"2024年中国考古新发现"[/color]（中国社会科学院，2025年2月19日北京揭晓）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  入选[color=#000000]"2024年度河南省十大考古新发现"[/color]（2025年3月12日公布）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  2025年8月登上《中国日报》国际版"文明中国专栏"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]陵园完整格局（历年考古累积）：[/color]
 陵园内确认5组相对独立的陵寝建筑：
-1. [b]石殿[/b]（位于封土东侧，主要祭殿）
-2. [b]钟虡[/b]（位于石殿东南侧）——2024年核心新发现
-3. [b]寝殿[/b]
-4. [b]园省[/b]（守陵妃子居所）
-5. [b]园寺吏舍[/b]（守陵官吏居所）
 
-[b]2024年核心发现：秦汉时期首个钟虡遗址[/b]
-
-
-[b]项目[/b] | [b]数据[/b]
-总面积 | 约[b]1400平方米[/b]
-位置 | 石殿东南侧
-结构 | 两条南北向长条形夯土台基 + 东侧房址
-西侧台基 | 4处大型石柱础，石侧壁题记[b]11处[/b]
-东侧台基 | 4个柱洞，与西侧柱础基本对应
-题记内容 | 石工姓名、规格尺寸、年号（格式与东汉黄肠石题记相近）
-关键题记 | "[b]元嘉二年[/b]"（公元152年，东汉桓帝年号）
+[indent]1.  [color=#000000]石殿[/color]（位于封土东侧，主要祭殿）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]钟虡[/color]（位于石殿东南侧）——2024年核心新发现[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]寝殿[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]园省[/color]（守陵妃子居所）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  [color=#000000]园寺吏舍[/color]（守陵官吏居所）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]陵主归属的考古确认逻辑：[/b]
-- 黄肠石提前制作，"元嘉二年"反映建筑始建年代上限
-- 洛南6座东汉帝陵中，[b]桓帝宣陵[/b]年代最晚
-- 结合布局特征与文献记载，综合判定陵主为[b]汉桓帝刘志[/b]
-- 这是[b]历史上首次通过考古发掘工作确认东汉帝陵陵主归属[/b]（此前均依赖文献推定）
-
-[b]钟虡制度的历史意义：[/b]
-- 钟虡=悬挂乐钟的礼制建筑；文献记载东汉帝陵首创在陵园内设钟虡，以鸣钟祭祀
-- 此前秦汉时期宫殿和陵墓考古中均未发现此类建筑实物
-- 白草坡发现填补了中国礼乐文明考古的重要空白，为研究东汉礼乐制度与陵寝文化演变提供了直接依据
-
-[b]2025年进展：[/b]
-- 2026年1月洛阳年度考古汇报：邙山和洛南东汉陵区墓冢分布情况"已逐渐明晰"
-- 帝陵本体（地宫/封土）仍属非主动发掘范畴（政策层面不变）
+[color=#000000]2024年核心发现：秦汉时期首个钟虡遗址[/color]
 
 
-[b]史实 vs 演义[/b]
+[table=2]
+[cell][b]项目[/b][/cell]
+[cell][b]数据[/b][/cell]
+[cell]总面积[/cell]
+[cell]约[color=#000000]1400平方米[/color][/cell]
+[cell]位置[/cell]
+[cell]石殿东南侧[/cell]
+[cell]结构[/cell]
+[cell]两条南北向长条形夯土台基 + 东侧房址[/cell]
+[cell]西侧台基[/cell]
+[cell]4处大型石柱础，石侧壁题记[color=#000000]11处[/color][/cell]
+[cell]东侧台基[/cell]
+[cell]4个柱洞，与西侧柱础基本对应[/cell]
+[cell]题记内容[/cell]
+[cell]石工姓名、规格尺寸、年号（格式与东汉黄肠石题记相近）[/cell]
+[cell]关键题记[/cell]
+[cell]"[color=#000000]元嘉二年[/color]"（公元152年，东汉桓帝年号）[/cell]
+[/table]
 
 
-[b]问题[/b] | [b]史实[/b] | [b]演义差异[/b]
-华雄被斩 | 据《三国志·孙破虏讨逆传》，华雄被孙坚击杀 | 演义改为[color=#6699FF][url={"research": "关羽 ", "cat": " people"}]关羽 [/url][/color]温酒斩华雄
-虎牢关之战 | 旋门关（虎牢关），多路对峙，鲜有真正交战 | 演义渲染三英战吕布，夸大战场激烈程度
-迁都与焚城 | 先迁都（二月）后焚城，两个月内完成 | 演义基本忠实，但简化了百姓流亡惨况
-孙坚得传国玉玺 | 史源为裴松之注引《吴书》（韦曜等著），《三国志》陈寿正文不载，裴松之本人提出三点疑辨：①忠义矛盾②孙皓降时仅交六玺无第七枚③"受命"与"归命侯"自相矛盾；《山阳公载记》另有旁证；学界多视此说为吴国人为抬高孙坚形象的"国华"说，孤证难立 | 演义采用《吴书》说，进一步塑造"匿玺背约"形象
+[color=#000000]陵主归属的考古确认逻辑：[/color]
+
+[indent]•  黄肠石提前制作，"元嘉二年"反映建筑始建年代上限[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  洛南6座东汉帝陵中，[color=#000000]桓帝宣陵[/color]年代最晚[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  结合布局特征与文献记载，综合判定陵主为[color=#000000]汉桓帝刘志[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  这是[color=#000000]历史上首次通过考古发掘工作确认东汉帝陵陵主归属[/color]（此前均依赖文献推定）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]传国玉玺史料辨析补充[/b]
+[color=#000000]钟虡制度的历史意义：[/color]
+
+[indent]•  钟虡=悬挂乐钟的礼制建筑；文献记载东汉帝陵首创在陵园内设钟虡，以鸣钟祭祀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  此前秦汉时期宫殿和陵墓考古中均未发现此类建筑实物[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  白草坡发现填补了中国礼乐文明考古的重要空白，为研究东汉礼乐制度与陵寝文化演变提供了直接依据[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]2025年进展：[/color]
+
+[indent]•  2026年1月洛阳年度考古汇报：邙山和洛南东汉陵区墓冢分布情况"已逐渐明晰"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  帝陵本体（地宫/封土）仍属非主动发掘范畴（政策层面不变）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]问题[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]演义差异[/b][/cell]
+[cell][color=#0066FF][url={"research": "华雄", "cat": "people"}]华雄[/url][/color]被斩[/cell]
+[cell]据《三国志·孙破虏讨逆传》，华雄被孙坚击杀[/cell]
+[cell]演义改为[color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]温酒斩华雄[/cell]
+[cell]虎牢关之战[/cell]
+[cell]旋门关（虎牢关），多路对峙，鲜有真正交战[/cell]
+[cell]演义渲染三英战吕布，夸大战场激烈程度[/cell]
+[cell]迁都与焚城[/cell]
+[cell]先迁都（二月）后焚城，两个月内完成[/cell]
+[cell]演义基本忠实，但简化了百姓流亡惨况[/cell]
+[cell]孙坚得传国玉玺[/cell]
+[cell]史源为裴松之注引《吴书》（韦曜等著），《三国志》陈寿正文不载，裴松之本人提出三点疑辨：①忠义矛盾②[color=#0066FF][url={"research": "孙皓", "cat": "people"}]孙皓[/url][/color]降时仅交六玺无第七枚③"受命"与"归命侯"自相矛盾；《山阳公载记》另有旁证；学界多视此说为吴国人为抬高孙坚形象的"国华"说，孤证难立[/cell]
+[cell]演义采用《吴书》说，进一步塑造"匿玺背约"形象[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]传国玉玺史料辨析补充[/font][/b]
+
 
 玺文本身即存在三个版本：《吴书》作"受命于天，既寿永昌"；孙盛《晋阳秋》作"昊天之命，皇帝寿昌"；沈约《宋书》作"受天之命，皇帝寿昌"。版本歧异进一步说明此说可信度存疑。
 
 
-[b]重要考古动态（2026-04-26 最新）[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]2024年重大发现：宫城始建年代上推至东汉[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]重要考古动态（2026-04-26 最新）[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]2024年重大发现：宫城始建年代上推至东汉[/font][/b]
+
 
 2023年发掘，2024年3月郑州河南考古新发现论坛发布（发掘队长刘涛）：
 
-- [b]东汉北宫宫墙遗迹[/b]首次确认：东墙、南墙均利用台地地形，在台地边缘冲沟内侧修筑
-- [b]核心结论：[/b] 北魏（及曹魏）宫城范围在东汉时期已形成，宫城始建年代从曹魏上推至[b]东汉[/b]
-- 东汉至北魏宫城宫墙外侧均有道路，北魏道路最宽
-- [b]新莽时期遗物：[/b] 北魏宫墙东侧仓窖区发现200+块陶钱范，钱文"大泉五十"——首次在汉魏洛阳城发现明确的新莽遗物
+
+[indent]•  [color=#000000]东汉北宫宫墙遗迹[/color]首次确认：东墙、南墙均利用台地地形，在台地边缘冲沟内侧修筑[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]核心结论：[/color] 北魏（及曹魏）宫城范围在东汉时期已形成，宫城始建年代从曹魏上推至[color=#000000]东汉[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  东汉至北魏宫城宫墙外侧均有道路，北魏道路最宽[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]新莽时期遗物：[/color] 北魏宫墙东侧仓窖区发现200+块陶钱范，钱文"大泉五十"——首次在汉魏洛阳城发现明确的新莽遗物[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]2025年宫城新考古发现（2026年公布）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]2025年宫城新考古发现（2026年公布）[/font][/b]
 
 
 [b]东掖门形制明确（始建魏晋）[/b]
 
-- 性质：宫城东墙最南侧宫门，始建于[b]魏晋时期[/b]（确认排除东汉宫门可能）
-- 形制：门外夹建双阙的[b]三门道殿堂式门址[/b]，规模略小于阊阖门
-- 意义：为探讨东汉北宫形制布局、汉魏宫城形制演变提供新视角
+
+[indent]•  性质：宫城东墙最南侧宫门，始建于[color=#000000]魏晋时期[/color]（确认排除东汉宫门可能）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  形制：门外夹建双阙的[color=#000000]三门道殿堂式门址[/color]，规模略小于阊阖门[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  意义：为探讨东汉北宫形制布局、汉魏宫城形制演变提供新视角[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [b]北魏"太仓"发现（宫城东侧）——含2025河南考古论坛完整数据[/b]
 
-[b]发现经过：[/b] 东掖门北阙台外直径近10米圆形灰坑为线索，补充勘探发现大型仓窖区
 
-[b]仓窖形制（精确数据）：[/b]
-- 结构：地穴式，口部圆形
-- 直径：[b]9—11米[/b]
-- 深度：约[b]4米[/b]
-- 容量：约[b]100m³[/b]（每口）
-- 仓窖之间：发现夯土墙等建筑遗迹
+[color=#000000]发现经过：[/color] 东掖门北阙台外直径近10米圆形灰坑为线索，补充勘探发现大型仓窖区
 
-[b]规模（勘探确认总量）：[/b]
-- 主体区：东西[b]14列[/b]、南北[b]12排[/b]，共[b]168口[/b]
-- 西北部附属区：另有[b]2排12口[/b]（与主体分属不同区域）
-- [b]已发掘确认：13口[/b]
-- 叠压关系：仓窖之上有夯土墙建筑遗迹叠压，年代不晚于北魏
+[color=#000000]仓窖形制（精确数据）：[/color]
 
-[b]边界情况：[/b]
-- 东界和北界已初步确认
-- [b]南界与东掖门大致东西一线[/b]——为都城内城二级道路系统和空间布局研究提供新线索
-- 南侧和西侧因晚期破坏保存不佳
-
-[b]可能更大规模：[/b] 刘涛（2025河南考古论坛）："目前发现的这部分仓窖，应该并非'太仓'的全部，可能只是其中一个区域，在这一区域周边，应该还有更多的仓窖。"
-
-[b]文献依据：[/b]
-- 《洛阳伽蓝记》："太仓位于东阳门内路北"；附近还有导官衙署，东南面有治粟里
-- 《魏书·世宗纪》延昌元年："诏太仓出粟五十万石，以赈京师及州郡饥民"——太仓储粟当远超五十万石，规模庞大
-
-[b]北魏都城三级仓储体系：[/b]
+[indent]•  结构：地穴式，口部圆形[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  直径：[color=#000000]9—11米[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  深度：约[color=#000000]4米[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  容量：约[color=#000000]100m³[/color]（每口）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  仓窖之间：发现夯土墙等建筑遗迹[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]层级[/b] | [b]位置[/b] | [b]功能[/b]
-皇家府库 | 宫城内（东掖门内道路北侧仓窖区，新莽钱范出土地） | 专供皇室所需
-[b]太仓[/b] | 宫城外东侧（东掖门南界一线以东，168+12口仓窖） | 国家粮食储备，保障官俸、赏赐、军事供应、赈济灾民
-租场（"常满仓"） | 内城东墙建春门外（依托阳渠水运） | 依托魏晋"常满仓"改造，"天下贡赋所聚蓄"，国家总仓，与太仓形[color=#6699FF][url={"research": "成都 ", "cat": " geography"}]成都 [/url][/color]城双核心仓储体系
+[color=#000000]规模（勘探确认总量）：[/color]
+
+[indent]•  主体区：东西[color=#000000]14列[/color]、南北[color=#000000]12排[/color]，共[color=#000000]168口[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  西北部附属区：另有[color=#000000]2排12口[/color]（与主体分属不同区域）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]已发掘确认：13口[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  叠压关系：仓窖之上有夯土墙建筑遗迹叠压，年代不晚于北魏[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]边界情况：[/color]
+
+[indent]•  东界和北界已初步确认[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]南界与东掖门大致东西一线[/color]——为都城内城二级道路系统和空间布局研究提供新线索[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  南侧和西侧因晚期破坏保存不佳[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]可能更大规模：[/color] 刘涛（2025河南考古论坛）："目前发现的这部分仓窖，应该并非'太仓'的全部，可能只是其中一个区域，在这一区域周边，应该还有更多的仓窖。"
+
+[color=#000000]文献依据：[/color]
+
+[indent]•  《洛阳伽蓝记》："太仓位于东阳门内路北"；附近还有导官衙署，东南面有治粟里[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《魏书·世宗纪》延昌元年："诏太仓出粟五十万石，以赈京师及州郡饥民"——太仓储粟当远超五十万石，规模庞大[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]北魏都城三级仓储体系：[/color]
+
+
+[table=3]
+[cell][b]层级[/b][/cell]
+[cell][b]位置[/b][/cell]
+[cell][b]功能[/b][/cell]
+[cell]皇家府库[/cell]
+[cell]宫城内（东掖门内道路北侧仓窖区，新莽钱范出土地）[/cell]
+[cell]专供皇室所需[/cell]
+[cell][color=#000000]太仓[/color][/cell]
+[cell]宫城外东侧（东掖门南界一线以东，168+12口仓窖）[/cell]
+[cell]国家粮食储备，保障官俸、赏赐、军事供应、赈济灾民[/cell]
+[cell]租场（"常满仓"）[/cell]
+[cell]内城东墙建春门外（依托阳渠水运）[/cell]
+[cell]依托魏晋"常满仓"改造，"天下贡赋所聚蓄"，国家总仓，与太仓形[color=#0066FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]城双核心仓储体系[/cell]
+[/table]
 
 
 [b]北魏里坊坊门（白马寺北魏里坊）[/b]
 
-- 位置：西阳门外大道北侧，实际发掘面积[b]920平方米[/b]（2025年）
-- 在西阳门外大道与白马寺里坊南北向居中道路交会处西侧，发现缺口宽约[b]7.5米[/b]，推断为坊门
-- 里坊道路上发现密布车辙痕迹
-- [b]北魏洛阳城里坊坊门的首次发现[/b]，填补里坊制度研究空白
+
+[indent]•  位置：西阳门外大道北侧，实际发掘面积[color=#000000]920平方米[/color]（2025年）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  在西阳门外大道与白马寺里坊南北向居中道路交会处西侧，发现缺口宽约[color=#000000]7.5米[/color]，推断为坊门[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  里坊道路上发现密布车辙痕迹[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]北魏洛阳城里坊坊门的首次发现[/color]，填补里坊制度研究空白[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]汉魏洛阳故城遗址博物馆正式开馆（2025年7月16日）[/b]
-
-- [b]2022年立项[/b]，2023年9月14日全面开工，[b]2025年6月5日试开放，2025年7月16日正式开馆（免费）[/b]
-- 地址：洛阳市瀍河回族区白马寺镇翟泉村，东侧紧临遗址，向西与白马寺相望
-- 占地219亩，总建筑面积2.93万平方米，总投资约5亿元（含2亿元中央专项资金）
-- 展厅面积约8200平方米，展出文物[b]1300余件（套）[/b]
-- 建筑取汉魏高台建筑规制，88米拱桥形神道呼应历史轴线（太极殿—阊阖门—铜驼街）
-- 三大主题展厅："中"（都城制度）、"合"（民族融合）、"同"（世界影响）
-- 重要展品：太学遗址出土的[b]熹平石经残石15块[/b]（含1980年出土者）、曹魏石楬、北魏拜占庭金币（东罗马节闵帝元恭墓）、昭君出塞镜（铭文两次含"中国"字样）、北朝围屏石棺床
+[b][font=res://resource/font/FandolSong-Bold/26.tres]汉魏洛阳故城遗址博物馆正式开馆（2025年7月16日）[/font][/b]
 
 
-[b]太极殿遗址精确尺寸（考古已确认）[/b]
+[indent]•  [color=#000000]2022年立项[/color]，2023年9月14日全面开工，[color=#000000]2025年6月5日试开放，2025年7月16日正式开馆（免费）[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  地址：洛阳市瀍河回族区白马寺镇翟泉村，东侧紧临遗址，向西与白马寺相望[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  占地219亩，总建筑面积2.93万平方米，总投资约5亿元（含2亿元中央专项资金）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  展厅面积约8200平方米，展出文物[color=#000000]1300余件（套）[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  建筑取汉魏高台建筑规制，88米拱桥形神道呼应历史轴线（太极殿—阊阖门—铜驼街）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三大主题展厅："中"（都城制度）、"合"（民族融合）、"同"（世界影响）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  重要展品：太学遗址出土的[color=#000000]熹平石经残石15块[/color]（含1980年出土者）、曹魏石楬、北魏拜占庭金币（东罗马节闵帝元恭墓）、昭君出塞镜（铭文两次含"中国"字样）、北朝围屏石棺床[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-- [b]中心主殿（太极殿）：[/b] 东西宽最大[b]102.3米[/b]，南北进深[b]58—61米[/b]；台基地基厚[b]6—7米[/b]；残高1.65—2米
-- [b]太极东堂 / 太极西堂：[/b] 各东西约48米，南北约23米，面阔7间
-- 三座殿基总面积约[b]8000平方米[/b]，间距约13米，以多层建筑连接
-- 台基北壁有白灰墙皮+红色垂带（宽0.3米）；北面居中有凸台（宽51米，深3米）
-- 北魏宫城整体：南北约1398米，东西约660米，总面积约92.30万平方米（占内城约1/10）
-- 太极殿位于阊阖门（宫城正门）以北约460米
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]太极殿遗址精确尺寸（考古已确认）[/font][/b]
+
+
+[indent]•  [color=#000000]中心主殿（太极殿）：[/color] 东西宽最大[color=#000000]102.3米[/color]，南北进深[color=#000000]58—61米[/color]；台基地基厚[color=#000000]6—7米[/color]；残高1.65—2米[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]太极东堂 / 太极西堂：[/color] 各东西约48米，南北约23米，面阔7间[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三座殿基总面积约[color=#000000]8000平方米[/color]，间距约13米，以多层建筑连接[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  台基北壁有白灰墙皮+红色垂带（宽0.3米）；北面居中有凸台（宽51米，深3米）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  北魏宫城整体：南北约1398米，东西约660米，总面积约92.30万平方米（占内城约1/10）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  太极殿位于阊阖门（宫城正门）以北约460米[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]

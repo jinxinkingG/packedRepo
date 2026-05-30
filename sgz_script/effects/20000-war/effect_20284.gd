@@ -13,7 +13,7 @@ func effect_20284_start():
 	var msg = "消耗{0}机动力\n发动【{1}】，禁用敌方锁定技和诱发技，可否？".format([
 		COST_AP, ske.skill_name
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000():
@@ -62,7 +62,7 @@ func effect_20284_2() -> void:
 	])
 	# 信息太多了，不汇报，只记录
 	ske.war_report()
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	return
 
 func on_view_model_2001():

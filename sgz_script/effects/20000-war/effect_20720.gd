@@ -161,6 +161,7 @@ func effect_20720_execute() -> void:
 		SkillHelper.save_skill_effectinfo(newSke)
 		DataManager.player_choose_skill = skill.name
 		LoadControl.end_script()
+		SkillHelper.mark_actor_once_senario_skill_used(newSke)
 		LoadControl.load_script(effect.path)
 		FlowManager.add_flow("effect_{0}_start".format([effect.id]))
 		return

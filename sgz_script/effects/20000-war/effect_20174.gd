@@ -12,7 +12,7 @@ const STRATAGEM = "要击"
 func effect_20174_start() -> void:
 	if actor.get_soldiers() < COST_SOLDIERS:
 		var msg = "兵力不足，需 >= {0}".format([COST_SOLDIERS])
-		play_dialog(me.actorId, msg, 3, 2999)
+		play_dialog(actorId, msg, 3, 2999)
 		return
 
 	if not assert_action_point(me.actorId, COST_AP):

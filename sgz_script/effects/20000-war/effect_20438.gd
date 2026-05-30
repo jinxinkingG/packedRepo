@@ -37,7 +37,7 @@ func effect_20438_2():
 	])
 	# 信息太多了，不汇报，只记录
 	ske.war_report()
-	play_dialog(me.actorId, msg, 0, 2999)
+	play_dialog(actorId, msg, 0, 2999)
 	return
 
 func on_view_model_2999():

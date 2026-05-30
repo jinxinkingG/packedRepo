@@ -36,6 +36,8 @@ func _init() -> void:
 	FlowManager.bind_import_flow("play_free_dialog", self)
 	FlowManager.bind_import_flow("free_dialog_done", self)
 
+	FlowManager.bind_import_flow("game_start", self)
+
 	return
 
 func get_view_model()->int:
@@ -517,4 +519,18 @@ func free_dialog_done() -> void:
 	if DataManager.get_current_control_sort() >= 0:
 		FlowManager.add_flow("city_enter_menu")
 	DataManager.unset_env("内政.玩家.等待对白")
+	return
+
+# 游戏开始
+func game_start() -> void:
+	# 开局逻辑
+	if "全武将满级" == DataManager.get_game_setting("开局方式"):
+		if is_instance_valid(SceneManager.war_intro):
+			SceneManager.war_intro.show_basic_info("正在设置全武将满级", "请稍后……")
+			# 等待一帧让黑屏渲染出来
+			yield(SceneManager.get_tree(), "idle_frame")
+		yield(SceneManager.all_actors_max_level(), "completed")
+		if is_instance_valid(SceneManager.war_intro):
+			SceneManager.war_intro.hide_immediately()
+	FlowManager.add_flow("month_init")
 	return

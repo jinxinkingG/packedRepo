@@ -56,5 +56,5 @@ func effect_20309_3():
 		me.get_name(), ske.skill_name,
 		ActorHelper.actor(targetId).get_name(), ap,
 	])
-	play_dialog(me.actorId, msg, 1, 2002)
+	play_dialog(actorId, msg, 1, 2002)
 	return

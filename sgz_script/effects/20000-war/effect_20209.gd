@@ -37,7 +37,7 @@ func effect_20209_2():
 	var msg = "将 {1}个[{0}]\n转化为{2}的机动力\n可否？".format([
 		FLAG_NAME, flag, ActorHelper.actor(targetId).get_name()
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20209_3():
@@ -49,7 +49,7 @@ func effect_20209_3():
 	var msg = "把握战机，只在点滴之间\n（{0}机动力增加{1}".format([
 		ActorHelper.actor(targetId).get_name(), flags,
 	])
-	play_dialog(me.actorId, msg, 2, 2002)
+	play_dialog(actorId, msg, 2, 2002)
 	return
 
 # 锁定技部分

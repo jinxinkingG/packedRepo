@@ -1,106 +1,188 @@
-[b]阎柔（字不详）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]阎柔（字不详）[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详，籍贯广阳（今北京市附近），东汉末至曹魏将领，度辽将军、县侯，位特进
+[color=#000000]基本信息：[/color] 生卒年不详（约活跃于190年代—220年代），籍贯广阳（今北京市附近），东汉末至曹魏将领，度辽将军、县侯，位特进
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]少年：俘虏与信任的双重身份[/b]
-
-阎柔出身广阳，早年"少没乌丸、鲜卑中"（《三国志·乌丸鲜卑东夷传》）——即少年时期沦没于乌丸、鲜卑部落，成为俘虏。然而正是这段深入异族的经历，使他"为其种所归信"，成为胡汉两界的罕见中间人。
-
-这一身份构成了阎柔一生的核心资本：[b]他是汉人，却能指挥胡骑；他是边地人，却在中原政权的夹缝中游走自如。[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]袁绍时代：借鲜卑之力杀邢举[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]少年：俘虏与信任的双重身份[/font][/b]
+
+
+阎柔出身广阳，早年"少没乌丸、鲜卑中"（《三国志·乌丸鲜卑东夷传》；《后汉书·乌桓鲜卑列传》同，作"少没乌桓、鲜卑中"）——即少年时期沦没于乌丸、鲜卑部落，成为俘虏。然而正是这段深入异族的经历，使他"为其种所归信"，成为胡汉两界的罕见中间人。
+
+这一身份构成了阎柔一生的核心资本：[color=#000000]他是汉人，却能指挥胡骑；他是边地人，却在中原政权的夹缝中游走自如。[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]袁绍时代：借鲜卑之力杀邢举[/font][/b]
+
 
 凭借鲜卑部众，阎柔杀害乌丸校尉邢举，取而代之。邢举此前是东汉正式任命的官员，阎柔的行动是典型的"以胡代汉"——用胡人武力颠覆汉制，自居其位。
 
-[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]此时正需要稳定北方边境，遂"因宠慰以安北边"，默认阎柔的地位。
+[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]此时正需要稳定北方边境，遂"因宠慰以安北边"，默认阎柔的地位。
+
+[color=#000000]《后汉书·乌桓鲜卑列传》原文：[/color]
+
+[indent][color=#666666]┃ "广阳人阎柔，少没乌桓、鲜卑中，为其种人所归信，柔乃因鲜卑众，杀乌桓校尉邢举而代之。袁绍因宠慰柔，以安北边。"[/color][/indent]
 
 
-[b]刘虞被杀后：为旧主报仇，击败邹丹[/b]
-
-初平四年（193年），[color=#6699FF][url={"research": "公孙瓒", "cat": "people"}]公孙瓒[/url][/color]杀刘虞。刘虞旧部[color=#6699FF][url={"research": "鲜于辅", "cat": "people"}]鲜于辅[/url][/color]、齐周、骑都尉鲜于银等"以燕国阎柔素有恩信，共推柔为乌丸司马"（《三国志·公孙瓒传》）。
-
-阎柔在此担任的角色是[b]合法性的黏合剂[/b]：他不是刘虞旧部的核心，但他是唯一能把胡人武力与汉地士兵凝聚在一起的人。联军在潞北与公孙瓒所置渔阳太守[color=#6699FF][url={"research": "邹丹", "cat": "people"}]邹丹[/url][/color]一战，"斩丹等四千余级"，重创公孙瓒势力。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]刘虞被杀后：为旧主报仇，击败邹丹[/font][/b]
 
 
-[b]官渡：遣使归曹，不亲赴而遥附[/b]
+初平四年（193年），[color=#0066FF][url={"research": "公孙瓒", "cat": "people"}]公孙瓒[/url][/color]杀[color=#0066FF][url={"research": "刘虞", "cat": "people"}]刘虞[/url][/color]。刘虞旧部[color=#0066FF][url={"research": "鲜于辅", "cat": "people"}]鲜于辅[/url][/color]、齐周、骑都尉鲜于银等"以燕国阎柔素有恩信，共推柔为乌丸司马"（《三国志·公孙瓒传》）。
 
-建安五年（200年），[color=#6699FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]进行时，阎柔并未亲赴[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]大营，而是"遣使诣太祖，受事"——这是一个政治上极为精明的动作：保留行动自由，先行在名义上投效。此后"迁护乌丸校尉"，继续持汉使节，治广宁如旧。
+阎柔在此担任的角色是[color=#000000]合法性的黏合剂[/color]：他不是刘虞旧部的核心，但他是唯一能把胡人武力与汉地士兵凝聚在一起的人。联军在潞北与公孙瓒所置渔阳太守[color=#0066FF][url={"research": "邹丹", "cat": "people"}]邹丹[/url][/color]一战，"斩丹等四千余级"，重创公孙瓒势力。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]官渡：遣使归曹，不亲赴而遥附[/font][/b]
+
+
+建安五年（200年），[color=#0066FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]进行时，阎柔并未亲赴[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]大营，而是"遣使诣太祖，受事"——这是一个政治上极为精明的动作：保留行动自由，先行在名义上投效。此后"迁护乌丸校尉"，继续持汉使节，治广宁如旧。
 
 与鲜于辅不同：辅身诣太祖，直接进入曹操体系；阎柔则保持远端联系，维持自治。
 
-
-[b]破南皮后：献名马，随征三郡乌丸[/b]
-
-袁谭被杀（袁谭据南皮，后被曹操攻破），阎柔"将部曲及鲜卑，献名马以奉军"，正式贡献军力。随后从征三郡乌丸（建安十二年，207年），柳城大捷，斩蹋顿，"以功封关内侯"。
+[color=#000000]空白期（建安三—五年）：[/color] 约建安三至五年（198—200年）间，史书无阎柔活动明文。推测处于静观局势阶段：[color=#0066FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]被灭（198年）后北境暂时稳定，[color=#0066FF][url={"research": "袁尚", "cat": "people"}]袁尚[/url][/color]尚未败走[color=#0066FF][url={"research": "蹋顿", "cat": "people"}]蹋顿[/url][/color]，阎柔维持北境现状，未作重大行动。
 
 
-[b]曹操视如己出："我视卿如子"[/b]
-
-裴注引《魏略》，保留了一条极为珍贵的史料：
-[color=#AAAAAA]　"太祖甚爱阎柔，每谓之曰：'我视卿如子，亦欲卿视我如父也。'柔由此自托于五官将，如兄弟。"[/color]
-
-阎柔借助曹操的"父子之称"，与五官将[color=#6699FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]建立了"如兄弟"的亲密关系。这是他在曹魏政治生态中确立安全位置的关键一步——绑定的不是一个短期利益，而是继承人。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安十一年（206年）：协同轲比能平田银之乱[/font][/b]
 
 
-[b]万落徙居中国：终结三郡乌丸自治[/b]
+《三国志·[color=#0066FF][url={"research": "轲比能", "cat": "people"}]轲比能[/url][/color]传》：
 
-建安十一年或十二年（207年）征乌丸之后，"[color=#6699FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]、[color=#6699FF][url={"research": "并州", "cat": "geography"}]并州[/url][/color]柔所统乌丸万余落，悉徙其族居中国"。这是阎柔作为中介的最终完成——他将边地的异族武力整体纳入曹魏内地，"由是三郡乌丸为天下名骑"。
+[indent][color=#666666]┃ "太祖西征關中，田銀反河間，比能將三千餘騎隨柔擊破銀。"[/color][/indent]
 
 
-[b]鲜卑交质：边境最高威信象征[/b]
+[color=#000000]年份考辨：[/color] "太祖西征关中"对应建安十六年（211年）。《三国志》叙述顺序有跳跃，但田银、苏伯反叛在建安十六年正月，此时曹操正西征关中，阎柔协同轲比能三千骑平叛，是两者合作最具体的史料。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]破南皮后：献名马，随征三郡乌丸[/font][/b]
+
+
+[color=#0066FF][url={"research": "袁谭", "cat": "people"}]袁谭[/url][/color]被杀（南皮破，205年），阎柔"将部曲及鲜卑，献名马以奉军"，正式贡献军力。随后从征三郡乌丸（建安十二年，207年），柳城大捷，斩蹋顿，"以功封关内侯"。
+
+建安十二年，曹操自征乌桓大破蹋顿后，"[color=#0066FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]、[color=#0066FF][url={"research": "并州", "cat": "geography"}]并州[/url][/color]柔所统乌丸万余落，悉徙其族居中国"（《三国志》），"其余众万余落，悉徙居中国云"（《后汉书》）。这是阎柔作为中介的最终完成——将边地的异族武力整体纳入曹魏内地，"由是三郡乌丸为天下名骑"。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹操视如己出："我视卿如子"[/font][/b]
+
+
+裴注引《魏略》保留了一条极为珍贵的史料：
+
+[indent][color=#666666]┃ "太祖甚爱阎柔，每谓之曰：'我视卿如子，亦欲卿视我如父也。'柔由此自托于五官将，如兄弟。"[/color][/indent]
+
+
+阎柔借助曹操的"父子之称"，与五官将[color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]建立了"如兄弟"的亲密关系。这是他在曹魏政治生态中确立安全位置的关键一步——绑定的不是一个短期利益，而是继承人。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]鲜卑交质：边境最高威信象征[/font][/b]
+
 
 鲜卑诸部首领素利等"向阎柔交出儿子作人质"——这是鲜卑对阎柔个人威信的极度认可，远超一般将领的边境管控能力。
 
 
-[b]轲比能之乱：协同平叛[/b]
-
-[color=#6699FF][url={"research": "轲比能", "cat": "people"}]轲比能[/url][/color]叛乱时，阎柔与轲比能"俱三千余骑"合力击破叛军。此时阎柔仍是北境的核心协调者。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]轲比能早期合作[/font][/b]
 
 
-[b]曹丕即位：度辽将军，位特进[/b]
+《三国志·轲比能传》：
+
+[indent][color=#666666]┃ "建安中，因閻柔上貢獻。"[/color][/indent]
+
+
+轲比能通过阎柔的关系渠道向曹廷进贡，建立联系。此后合作平定田银之乱（建安十六年，211年），是两人最具体的军事协作记录。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹丕即位：度辽将军，位特进[/font][/b]
+
 
 曹丕称帝后，拜阎柔为度辽将军，进封县侯，位特进。这是汉魏时期对功臣的最高礼遇之一——"位特进"意味着朝仪地位仅次于三公。
 
 此后史书无阎柔明确记载，卒年不详。
 
 
-[b]性格与形象[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-阎柔是三国时期[b]最典型的边地中介人[/b]——其一生的政治资本不来自军功积累或清谈名望，而来自一种特殊的双重信任：
+[b][font=res://resource/font/FandolSong-Bold/28.tres]阎志：弟弟与北境遗产的延续[/font][/b]
 
-- [b]被胡人信任[/b]：少年经历赋予的稀缺性，无法被取代
-- [b]被汉人借用[/b]：能够调动胡骑、维持北境，是任何中原政权的战略必需品
+
+阎柔之弟[color=#000000]阎志[/color]，任上谷太守，同样"素为鲜卑所信"，延续了兄长的北境影响力。
+
+[color=#000000]《三国志·轲比能传》原文（太和二年，228年）：[/color]
+
+[indent][color=#666666]┃ "上谷太守閻志，柔之弟也，素爲鮮卑所信。志往解喻，即解圍去。"[/color][/indent]
+
+
+[color=#000000]背景：[/color] 太和二年（228年），轲比能因[color=#0066FF][url={"research": "田豫", "cat": "people"}]田豫[/url][/color]遣译夏舍被其女婿郁筑鞬所杀，遂自将三万骑围田豫于马城（今张家口宣化附近）七日。明帝令阎志（上谷太守，阎柔之弟）前往劝解，因阎家对鲜卑的长期信任关系，轲比能即刻解围离去。
+
+[color=#000000]注：[/color] 此条记载见于《三国志·乌丸鲜卑东夷传·轲比能传》，非单独的田豫传，但与田豫马城之战密切相关。英文维基所引亦指向此传。另有一处引《三国志·刘放传》裴注（族谱网注引）记阎志为"柔弟"，文字略有不同，实为同一人。
+
+[color=#000000]轲比能最终下场（青龙三年，235年）：[/color] 幽州刺史王雄遣勇士韩龙刺杀轲比能，比能之乱由此告终。阎志劝解解围（228年）是阎氏家族最后一次载于史册的重要北境行动。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
+
+
+阎柔是三国时期[color=#000000]最典型的边地中介人[/color]——其一生的政治资本不来自军功积累或清谈名望，而来自一种特殊的双重信任：
+
+
+[indent]•  [color=#000000]被胡人信任[/color]：少年经历赋予的稀缺性，无法被取代[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]被汉人借用[/color]：能够调动胡骑、维持北境，是任何中原政权的战略必需品[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 他的政治选择极具弹性：先随袁绍，再遥附曹操；先保留自治，再主动献马；先维持中间人地位，再绑定曹丕。每一步都不激进，但每一步都走在正确方向上。
 
-[b]"我视卿如子"是对他的最[color=#6699FF][url={"research": "高定", "cat": "people"}]高定[/url][/color]性[/b]：曹操会说这句话，是因为阎柔的价值不在于某次战役，而在于他是北境稳定的结构性存在。
+[color=#000000]"我视卿如子"是对他的最[color=#0066FF][url={"research": "高定", "cat": "people"}]高定[/url][/color]性[/color]：曹操会说这句话，是因为阎柔的价值不在于某次战役，而在于他是北境稳定的结构性存在。
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-- [b]袁绍[/b]：利用关系，宠慰安边，非深层盟友
-- [b]鲜于辅[/b]：并行关系，同为幽州复仇联军核心，但路线不同（辅亲赴曹操，柔遥附）
-- [b]曹操[/b]：父子情谊，"我视卿如子"裴注原话，情感真实性高
-- [b]曹丕[/b]："如兄弟"，安全感的制度性保障
-- [b]阎志（弟）[/b]：上谷太守，轲比能被围时阎志亲往劝说解围，兄弟一脉延续北境影响力
-- [b]素利等鲜卑首领[/b]：交子入质，北境人质体系的核心受益人
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[indent]•  [color=#000000]袁绍[/color]：利用关系，宠慰安边，非深层盟友[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]鲜于辅[/color]：并行关系，同为幽州复仇联军核心，但路线不同（辅亲赴曹操，柔遥附）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]曹操[/color]：父子情谊，"我视卿如子"裴注《魏略》原话，情感真实性高[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]曹丕[/color]："如兄弟"，安全感的制度性保障[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]轲比能[/color]：北境合作者，曾共同平定田银之乱（211年）；轲比能自认阎柔为其在曹廷"保我于天子"的关系人（裴注《魏略》引轲比能与鲜于辅书）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]阎志（弟）[/color]：上谷太守，素为鲜卑所信，228年一手化解轲比能三万骑围马城，兄弟一脉延续北境影响力[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]素利等鲜卑首领[/color]：交子入质，北境人质体系的核心受益人[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]阎柔在《三国演义》中几乎不出现。[/b] 演义重点在中原与荆益，北境边地故事极少展开。
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[color=#000000]阎柔在《三国演义》中几乎不出现。[/color] 演义重点在中原与荆益，北境边地故事极少展开。
 
 正史中，阎柔是幽州局势的关键人物：
-1. 刘虞报仇战役（斩邹丹四千）——正史明载，演义无
-2. [color=#6699FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]时期的幽州格局——演义完全略过
-3. [color=#6699FF][url={"research": "白狼山之战", "cat": "events"}]白狼山之战[/url][/color]（征乌丸）后的万落内迁——演义只写战役过程，内迁细节无
-4. "我视卿如子"裴注情义——演义无
+
+[indent]1.  刘虞报仇战役（斩邹丹四千）——正史明载，演义无[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#0066FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]时期的幽州格局——演义完全略过[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#0066FF][url={"research": "白狼山之战", "cat": "events"}]白狼山之战[/url][/color]（征乌丸）后的万落内迁——演义只写战役过程，内迁细节无[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  "我视卿如子"裴注情义——演义无[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]

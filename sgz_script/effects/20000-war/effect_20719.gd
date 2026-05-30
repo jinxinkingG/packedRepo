@@ -18,8 +18,12 @@ func on_trigger_20012() -> bool:
 	if se.cost <= 0:
 		return false
 
-	var wa = DataManager.get_war_actor(ske.actorId)
-	if wa == null:
+	# 确认是我方用计
+	var actionId = se.get_action_id(actorId)
+	if actionId < 0:
+		return false
+	var wa = wf.get_war_actor(actionId)
+	if wa != me and not me.is_teammate(wa):
 		return false
 
 	# 检查是否已经使用过（同方所有人的同名技能都不能重复使用）
@@ -38,7 +42,7 @@ func effect_20719_AI_start() -> void:
 
 func effect_20719_start() -> void:
 	var se = DataManager.get_current_stratagem_execution()
-	var wa = DataManager.get_war_actor(ske.actorId)
+	var wa = wf.get_war_actor(se.get_action_id(actorId))
 
 	var msg = "发动【{0}】\n为{1}恢复 {2}机动力\n可否？".format([
 		ske.skill_name, wa.get_name(), se.cost
@@ -61,7 +65,7 @@ func effect_20719_recover() -> void:
 
 	# 获取计策消耗的机动力
 	var se = DataManager.get_current_stratagem_execution()
-	var wa = DataManager.get_war_actor(ske.actorId)
+	var wa = wf.get_war_actor(se.get_action_id(actorId))
 
 	# 打断连策
 	se.skip_redo = 1
@@ -72,7 +76,7 @@ func effect_20719_recover() -> void:
 	ske.war_report()
 
 	var msg = "失策事小\n熟思慎行，不为失机"
-	if ske.actorId != actorId:
+	if wa.actorId != actorId:
 		msg = "{0}勿忧，" + msg
 	msg = msg.format([
 		DataManager.get_actor_honored_title(wa.actorId, actorId),

@@ -1,42 +1,65 @@
-[b]李封[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]李封[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不可考；籍贯无史料记载；官职：兖州治中（[color=#6699FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]麾下）
+[color=#000000]基本信息：[/color] 生卒年不可考；籍贯无史料记载（推测为山阳郡豪族，见下文）；官职：兖州治中（[color=#0066FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]麾下）
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]身份与官职[/b]
-
-李封是吕布占据兖州期间（193—195年）的重要属僚，担任[b]治中[/b]一职。治中与别驾（[color=#6699FF][url={"research": "薛兰", "cat": "people"}]薛兰[/url][/color]）并列为州牧刺史的核心左右手，属于地方军政要职。两人并非纯粹的武将，而是拥有一定政治地位的文吏型将领，可能为吕布拉拢收编的兖州本地豪族出身。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]关键事件：乘氏事件与巨野之战[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]身份与官职[/font][/b]
 
-兴平二年（195年），[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]与吕布在兖州激烈争夺。
 
-[b]乘氏事件（约195年初）：[/b]
-吕布命李封与薛兰前往乘氏，招诱曹操部将[b]李乾[/b]（[color=#6699FF][url={"research": "李典", "cat": "people"}]李典[/url][/color]之从父）叛降。李乾"不听"，坚持不从，遂被李封、薛兰所杀。这一暗杀行动虽清除了吕布的潜在障碍，却激化了与曹军的矛盾。李乾之子李整随即率父亲旧部，配合曹操诸将对李封、薛兰展开反击。
+李封是吕布占据兖州期间（193—195年）的重要属僚，担任[color=#000000]治中[/color]一职。治中与别驾（[color=#0066FF][url={"research": "薛兰", "cat": "people"}]薛兰[/url][/color]）并列为州牧刺史的核心左右手，属于地方军政要职。两人并非纯粹的武将，而是拥有一定政治地位的文吏型将领，为吕布拉拢收编的兖州本地豪族。
+
+[color=#000000]地域背景推断：[/color] 兴平元年（194年），吕布被乘氏豪族李进击破，"东屯山阳"。薛兰与李封在山阳郡对吕布"盛情接待"，吕布遂立足山阳，随即拜薛兰为别驾、李封为治中。这说明两人原本即是[color=#000000]山阳郡的在地豪族[/color]，吕布是借助其本地势力立足兖州（据文史推断，无正史直接明文）。另有说法认为李封可能是乘氏[color=#0066FF][url={"research": "李氏", "cat": "people"}]李氏[/url][/color]一员，这或许解释了吕布派李封去招降李乾的逻辑，但无史料直证。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]关键事件：乘氏事件与巨野之战[/font][/b]
+
+
+兴平元年末（194年）至兴平二年（195年），[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]与吕布在兖州激烈争夺。
+
+[color=#000000]吕布屯山阳（194年秋）：[/color]
+吕布率军南下济阴郡，试图在乘氏县得到粮草与支持，反被乘氏豪族李进所破，"东屯山阳"，得薛兰、李封接应，方才稳住局面。钜野（今山东巨野县）成为吕布控制兖州的前沿据点，薛兰、李封驻守于此。
+
+[color=#000000]乘氏事件（195年春）：[/color]
+吕布命李封与薛兰前往乘氏，招诱曹操部将[color=#000000]李乾[/color]（[color=#0066FF][url={"research": "李典", "cat": "people"}]李典[/url][/color]之从父）叛降。李乾"不听"，坚持不从，遂被李封、薛兰所杀。乘氏事件失败后，李封、薛兰退回钜野。
 
 据《三国志·魏书·李典传》：
-[color=#AAAAAA]　布别驾薛兰、治中李封招乾，欲俱叛；乾不听，遂杀乾。太祖使乾子整将乾兵，与诸将击兰、封。兰、封破。[/color]
 
-[b]钜野之战（195年夏）：[/b]
-李封与薛兰败于乘氏后，撤守钜野（今山东巨野县）。曹操率军进攻钜野，吕布亲自率援军来救薛兰，但援救失败，吕布败走。
+[indent][color=#666666]┃ 布别驾薛兰、治中李封招乾，欲俱叛；乾不听，遂杀乾。太祖使乾子整将乾兵，与诸将击兰、封。兰、封破。[/color][/indent]
+
+
+[color=#000000]钜野之战（195年夏）：[/color]
+曹操率主力进攻钜野，吕布亲自率援军救援，与曹军在[color=#000000]钜野东[/color]交战，不利后退走濮阳。薛兰、李封孤守钜野，兵败被杀。
 
 据《三国志·魏书·武帝纪》：
-[color=#AAAAAA]　夏，布将薛兰、李封屯钜野，太祖攻之，布救兰，兰败，布走，遂斩兰等。[/color]
+
+[indent][color=#666666]┃ 夏，布将薛兰、李封屯钜野，太祖攻之，布救兰，兰败，布走，遂斩兰等。[/color][/indent]
+
+
+裴松之注引《英雄记》补充战场细节：
+
+[indent][color=#666666]┃ 布遣薛兰、李封屯钜野，太祖攻之，布自往救，与太祖战于钜野东，布军不利，乃引还濮阳。[/color][/indent]
+
 
 "斩兰等"中的"等"字涵盖李封——李封于此役中被杀，时间约为兴平二年夏（195年）。
 
 
-[b]生卒年与籍贯[/b]
-
-生卒年完全不可考，史书无任何记载。籍贯亦无载。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]生卒年与籍贯[/font][/b]
 
 
-[b]性格与形象[/b]
+生卒年完全不可考，史书无任何记载。籍贯正史无载，文史推断为山阳郡豪族（无一手史料直接证明）。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 史书对李封几乎没有独立描写，仅以"治中"一职的行动者出现在李典传与武帝纪中。
@@ -46,55 +69,109 @@
 结局与薛兰绑定，属于被曹操消灭的吕布集团成员。
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-- [b]薛兰[/b]（别驾）：形影不离的搭档，共同执行招降李乾的任务，共同守钜野，共同战败。史书中两人几乎总是并列出现。
-- [b]吕布[/b]：主公，吕布占兖州后重用为州府要职。
-- [b]李乾[/b]（李典从父）：被李封、薛兰暗杀的对象，此举直接导致曹方的反攻。
-- [b]李整 / 李典[/b]：李乾之子（李整）、侄（李典），因从父被杀而与李封结下恩仇，随曹操击破兰、封。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[indent]•  [color=#000000]薛兰[/color]（别驾）：形影不离的搭档，共同执行招降李乾的任务，共同守钜野，共同战败。史书中两人几乎总是并列出现。薛兰为山阳郡豪族（《后汉书·党锢列传》有同名"八俊"人物，两人是否同一人属开放悬案），其父薛衍任东海相，子薛永后随[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]入蜀任蜀郡太守（据《新唐书》）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]吕布[/color]：主公，吕布占兖州后重用为州府要职。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]李乾[/color]（李典从父）：被李封、薛兰暗杀的对象，此举直接导致曹方的反攻。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]李整 / 李典[/color]：李乾之子（李整）、侄（李典），因从父被杀而与李封结下恩仇，随曹操击破兰、封。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]演义版本逐字考辨（2026-04-26 核查完成）[/b]
+[color=#888888]──────────────────────────────[/color]
 
-[b]第十一回：吕布召李封守兖州[/b]
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]演义版本逐字考辨（2026-04-26 核查完成）[/font][/b]
+
+
+[color=#000000]第十一回：吕布召李封守兖州[/color]
 
 三版本对照（关键行文）：
 
 
-[b]版本[/b] | [b]原文[/b]
-嘉靖本 | "吾欲用汝二人久矣。汝可[b]领[/b]兵一万，坚守兖州。吾[b]去[/b]破操。"
-叶逢春本 | "吾欲用汝二人久矣。汝可领兵一万，坚守兖州。吾破[b]曹操去也[/b]。"
-毛本 | "吾欲用汝二人久矣。汝可[b]引军[/b]一万，坚守兖州。吾[b]亲自率兵，前去[/b]破曹。"
+[table=2]
+[cell][b]版本[/b][/cell]
+[cell][b]原文[/b][/cell]
+[cell]嘉靖本[/cell]
+[cell]"吾欲用汝二人久矣。汝可[color=#000000]领[/color]兵一万，坚守兖州。吾[color=#000000]去[/color]破操。"[/cell]
+[cell]叶逢春本[/cell]
+[cell]"吾欲用汝二人久矣。汝可领兵一万，坚守兖州。吾破[color=#000000]曹操去也[/color]。"[/cell]
+[cell]毛本[/cell]
+[cell]"吾欲用汝二人久矣。汝可[color=#000000]引军[/color]一万，坚守兖州。吾[color=#000000]亲自率兵，前去[/color]破曹。"[/cell]
+[/table]
 
 
-- 嘉靖本与叶逢春本末句语序略有不同（"吾去破操"vs"吾破曹操去也"），毛本扩充为"亲自率兵，前去破曹"，强调主公亲征。
-- 三版本均称李封与薛兰为"副将"（正史：治中）。
-- [b]叶逢春本确有此段落出场[/b]，文字与嘉靖本极接近。
-
-[b]第十二回：[color=#6699FF][url={"research": "许褚", "cat": "people"}]许褚[/url][/color]斩李封[/b]
-
-
-[b]要素[/b] | [b]嘉靖本[/b] | [b]叶逢春本（重刻京本/识典）[/b] | [b]毛本[/b]
-武器 | [b]画[/b]戟 | [b]尽[/b]戟（疑OCR误识，待善本确认） | [b]画[/b]戟
-合数 | [b]两[/b]合 | [b]数[/b]合 | [b]两[/b]合
-请战词 | "愿请一战，以报主公不杀之恩" | "愿请一战，以报主公不杀之恩" | "某愿取此二人，以为贽见之礼"（毛改）
+[indent]•  嘉靖本与叶逢春本末句语序略有不同（"吾去破操"vs"吾破曹操去也"），毛本扩充为"亲自率兵，前去破曹"，强调主公亲征。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三版本均称李封与薛兰为"副将"（正史：治中）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]叶逢春本确有此段落出场[/color]，文字与嘉靖本极接近。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键说明：[/b]
-1. [b]叶逢春本"尽戟"疑为"画戟"OCR误识[/b]：识典古籍为数字化重刻京本（志传系），字形"画（畫）"与"尽（盡）"形近，原刻待实物善本核查（低优先级）；
-2. [b]合数差异[/b]："两合"（嘉靖/毛）vs"数合"（叶逢春）——均表现许褚速斩立功；
-3. 毛本将"愿请一战"改为"某愿取此二人，以为贽见之礼"，典故化，语感更具仪式感，是毛宗岗改本特色。
+[color=#000000]第十二回：[color=#0066FF][url={"research": "许褚", "cat": "people"}]许褚[/url][/color]斩李封[/color]
 
 
-[b]主要差异总结[/b]
+[table=4]
+[cell][b]要素[/b][/cell]
+[cell][b]嘉靖本[/b][/cell]
+[cell][b]叶逢春本（重刻京本/识典）[/b][/cell]
+[cell][b]毛本[/b][/cell]
+[cell]武器[/cell]
+[cell][color=#000000]画[/color]戟[/cell]
+[cell][color=#000000]尽[/color]戟（疑OCR误识，待善本确认）[/cell]
+[cell][color=#000000]画[/color]戟[/cell]
+[cell]合数[/cell]
+[cell][color=#000000]两[/color]合[/cell]
+[cell][color=#000000]数[/color]合[/cell]
+[cell][color=#000000]两[/color]合[/cell]
+[cell]请战词[/cell]
+[cell]"愿请一战，以报主公不杀之恩"[/cell]
+[cell]"愿请一战，以报主公不杀之恩"[/cell]
+[cell]"某愿取此二人，以为贽见之礼"（毛改）[/cell]
+[/table]
 
 
-[b]方面[/b] | [b]史书[/b] | [b]演义三版本共同点[/b]
-死亡方式 | 《武帝纪》"斩兰等"，钜野战败被斩 | 均为许褚单挑斩杀
-武器 | 无记载 | 均用画戟（叶本存疑）
-官职 | 兖州治中 | 均称"副将"
-乘氏暗杀事件 | 史书有载（招乾、杀乾） | 演义均未明写此事，仅写守兖州
+[color=#000000]关键说明：[/color]
+
+[indent]1.  [color=#000000]叶逢春本"尽戟"疑为"画戟"OCR误识[/color]：识典古籍为数字化重刻京本（志传系），字形"画（畫）"与"尽（盡）"形近，原刻待实物善本核查（低优先级）；[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]合数差异[/color]："两合"（嘉靖/毛）vs"数合"（叶逢春）——均表现许褚速斩立功；[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  毛本将"愿请一战"改为"某愿取此二人，以为贽见之礼"，典故化，语感更具仪式感，是毛宗岗改本特色。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]主要差异总结[/font][/b]
+
+
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]史书[/b][/cell]
+[cell][b]演义三版本共同点[/b][/cell]
+[cell]死亡方式[/cell]
+[cell]《武帝纪》"斩兰等"，钜野战败被斩[/cell]
+[cell]均为许褚单挑斩杀[/cell]
+[cell]武器[/cell]
+[cell]无记载[/cell]
+[cell]均用画戟（叶本存疑）[/cell]
+[cell]官职[/cell]
+[cell]兖州治中[/cell]
+[cell]均称"副将"[/cell]
+[cell]乘氏暗杀事件[/cell]
+[cell]史书有载（招乾、杀乾）[/cell]
+[cell]演义均未明写此事，仅写守兖州[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]

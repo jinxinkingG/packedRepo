@@ -1,142 +1,357 @@
-[b]雷薄[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]雷薄[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详（约2世纪末—3世纪初？），籍贯不可考，汉末[color=#6699FF][url={"research": "袁术", "cat": "people"}]袁术[/url][/color]部曲将领，后独立为山贼。
+[color=#000000]基本信息：[/color] 生卒年不详（约2世纪末—3世纪初），籍贯扬州[color=#0066FF][url={"research": "庐江", "cat": "geography"}]庐江[/url][/color]（今安徽霍山一带），身份：汉末[color=#0066FF][url={"research": "袁术", "cat": "people"}]袁术[/url][/color]部曲将领，后独立为山贼头领。
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]早期：袁术部曲（建安四年以前）[/b]
-
-雷薄的早期经历正史几乎无载。据《三国志·袁术传》，他以"部曲"（私人武装首领）身份隶属袁术，与陈兰一同屯兵于[color=#6699FF][url={"research": "庐江", "cat": "geography"}]庐江[/url][/color]郡灊山地区。正史中关于他在袁术集团的具体职务、参与的战役及功绩均无记载。
-
-[b]按：[/b] 灊山（今安徽霍山一带）地处大别山腹地，地形险峻，是当时豪族武装常据的山地要塞。雷薄与陈兰同在此地，据推测应是庐江一带的地方豪族武装首领。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]建安四年（199年）：拒绝袁术，命运关键转折[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]早期：袁术部曲（建安四年以前）[/font][/b]
+
+
+雷薄的早期经历正史几乎无载。据《三国志·袁术传》，他以"部曲"（私人武装首领）身份隶属袁术，与[color=#0066FF][url={"research": "陈兰", "cat": "people"}]陈兰[/url][/color]一同屯兵于庐江郡灊山地区。正史中关于他在袁术集团的具体职务、参与的战役及功绩均无记载。
+
+[color=#000000]按：[/color] 灊山（今安徽霍山一带）地处大别山腹地，地形险峻，是当时豪族武装常据的山地要塞。雷薄与陈兰同在此地，应是庐江一带的地方豪族武装首领。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]早期背景：卫觊对关中诸将的评估（建安初年语境）[/font][/b]
+
+
+建安初年（约200年前后），[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]让[color=#0066FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]征求卫觊对关中局势的意见。卫觊（《三国志·魏书·卫觊传》）判断：
+
+
+[indent][color=#666666]┃ 「西方诸将，皆竖夫屈起，无雄天下意，苟安乐目前而已，今国家厚加爵号，得其所志，非有大故不忧为变……」[/color][/indent]
+
+
+虽是针对关中诸将的评语，但同样适用于雷薄等江淮地方武装首领——没有争雄天下的大志，只图割据安乐。后来关中与江淮的局势均印证了这一判断：199年雷薄在袁术失势时毫不犹豫地拒绝了旧主，完全符合"苟安乐目前"的特征。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安四年（199年）：拒绝袁术，命运关键转折[/font][/b]
+
 
 《三国志·袁术传》（陈寿本文）：
-[color=#AAAAAA]　"术前为[color=#6699FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]所破，后为太祖所败，奔其部曲雷薄、陈兰于灊山，复为所拒，忧惧不知所出。"[/color]
 
-袁术先败于吕布，后被[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]大败，狼狈逃往灊山，投奔旧部雷薄与陈兰，却遭拒绝。
+[indent][color=#666666]┃ "术前为[color=#0066FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]所破，后为太祖所败，奔其部曲雷薄、陈兰于灊山，复为所拒，忧惧不知所出。"[/color][/indent]
+
+
+袁术先败于吕布，后被曹操大败，狼狈逃往灊山，投奔旧部雷薄与陈兰，却遭拒绝。
 
 《三国志》裴注引《吴书》补充：
-[color=#AAAAAA]　袁术被拒后，在灊山附近滞留三日，兵粮断绝。[/color]
+
+[indent][color=#666666]┃ 袁术被拒后，在灊山附近滞留三日，兵粮断绝。[/color][/indent]
+
 
 《后汉书·袁术传》对应文字记为"陈简、雷薄"——由此可知"陈兰"即"陈简"，两书同指一人，应是当了反贼后改名的缘故。
 
 拒绝袁术的原因，史书无明文。从情势判断：
-1. 袁术僭称帝号（197年建"仲"）已使其政治合法性尽失；
-2. 袁术此时被吕布与曹操两度大败，军队溃散，实力近乎为零；
-3. 接纳一个被朝廷认定为逆贼的主君，等于引火上身，可能招致诸侯围攻。
 
-雷薄与陈兰此举，使袁术陷入绝境，袁术随后欲北上将帝号让给[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]、投奔袁谭，途中病死。
+[indent]1.  袁术僭称帝号（197年建"仲"）已使其政治合法性尽失；[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  袁术此时被吕布与曹操两度大败，军队溃散，实力近乎为零；[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  接纳一个被朝廷认定为逆贼的主君，等于引火上身，可能招致诸侯围攻。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]建安四年之后：史料断绝[/b]
+雷薄与陈兰此举，使袁术陷入绝境，袁术随后欲北上将帝号让给[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]、投奔[color=#0066FF][url={"research": "袁谭", "cat": "people"}]袁谭[/url][/color]，途中病死。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安四年之后：史料断绝[/font][/b]
+
 
 《三国志》正文中，建安四年（199年）灊山事件后，"雷薄"之名再未出现。
 
 
-[b]雷薄与雷绪同一人说——学术辨析（2026-04-27深化考辨）[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]雷薄与雷绪同一人说——学术辨析[/font][/b]
 
 
 这是关于雷薄最重要的悬案。
 
 
-[b]问题起源[/b]
-
-建安五年（200年）以后，庐江地区出现了"雷绪"其人，与陈兰共同活动，此后投归[color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]。雷薄在199年之后无记载，雷绪在199年则完全不见于史料——两人活动时间正好接续，地点重叠，盟友相同，故有合一说。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]问题起源[/font][/b]
 
 
-[b]各方立场[/b]
-
-[b]合一说（西方学界主流）：[/b]
-- Rafe de Crespigny, *A Biographical Dictionary of Later Han to the Three Kingdoms* (2007), pp. 71, 404：明确采合一说，将雷薄与雷绪合并为同一词条处理。
-- 理由：活动地区重叠（庐江灊山）、始终与陈兰同行动、名字音近（薄/绪字形有别但关联可疑）。
-
-[b]否定合一说（中国学界权威立场）：[/b]
-- [b]卢弼《三国志集解》（袁术传注）[/b]：已注意到此说，明确指出[b]"无根据"[/b]（日文转述：「とくに根拠はないようだ」）。卢弼集解是20世纪最权威的汉文三国志学术集解本，这是迄今找到的针对此问题最直接的学术否定。
-- project-imagine.org 名人事典（日本独立研究者）：将雷绪单独列条，不采合一说，标注"[b]雷薄の一族か[/b]"（可能是雷薄族人），认为两人为不同人但可能有亲属关系。
-
-[b]其他说法：[/b]
-- [b]改名说[/b]：类比边允→边章、韩约→[color=#6699FF][url={"research": "韩遂", "cat": "people"}]韩遂[/url][/color]的乱世改名惯例（中文网络文章），但无一手史料支撑
-- [b]继承者说[/b]：雷绪为继承雷薄势力的另一首领，理论上可能，但无学术文献正式论证
-- [b]族人说[/b]：同姓雷、同在庐江、有关联但属不同人，属合理推测
+建安五年（200年）以后，庐江地区出现了"雷绪"其人，与陈兰共同活动，此后投归[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]。雷薄在199年之后无记载，雷绪在199年则完全不见于史料——两人活动时间正好接续，地点重叠，盟友相同，故有合一说。
 
 
-[b]活动轨迹对比[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]各方立场[/font][/b]
 
 
-[b][/b] | [b]雷薄[/b] | [b]雷绪[/b]
-史料出处 | 《三国志·袁术传》《后汉书·袁术传》 | 《三国志·[color=#6699FF][url={"research": "夏侯渊 ", "cat": " people"}]夏侯渊 [/url][/color]传》《[color=#6699FF][url={"research": "刘馥 ", "cat": " people"}]刘馥 [/url][/color]传》《先主传》
-时间 | 建安四年（199年），仅此一处 | 建安初—十四年（200—209年）多处
-地点 | 灊山（灊县，今安徽霍山） | 庐江郡（江淮之间，更广范围）
-同伴 | 陈兰 | 陈兰、梅乾（200年）；单独（夏侯渊传、先主传）
-最终命运 | 199年后史料断绝 | 209年投刘备，此后史料断绝
+[color=#000000]合一说（西方学界主流）：[/color]
+
+[indent]•  Rafe de Crespigny, [i]A Biographical Dictionary of Later Han to the Three Kingdoms[/i] (2007), pp. 71, 404：明确采合一说，将雷薄与雷绪合并为同一词条处理。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  理由：活动地区重叠（庐江灊山）、始终与陈兰同行动、名字音近（薄/绪字形有别但关联可疑）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]结论[/b]
+[color=#000000]否定合一说（中国学界权威立场）：[/color]
 
-- 合一说有情境合理性：199年雷薄消失+200年雷绪出现于同地同盟
-- 但卢弼集解已明确"无根据"，中国传统学术立场否定此说
-- 西方学界（de Crespigny）倾向合一，中国学界（集解）否定或存疑
-- [b]永不可定论[/b]：属真正的开放悬案，学界无统一结论
+[indent]•  [color=#000000]卢弼《三国志集解》（袁术传注）[/color]：明确指出[color=#000000]"无根据"[/color]——迄今找到的针对此问题最直接的学术否定。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  project-imagine.org 名人事典（日本独立研究者）：将雷绪单独列条，不采合一说，标注"[color=#000000]雷薄の一族か[/color]"（可能是雷薄族人）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]性格与形象[/b]
+[color=#000000]其他说法：[/color]
+
+[indent]•  [color=#000000]改名说[/color]：类比边允→边章、韩约→[color=#0066FF][url={"research": "韩遂", "cat": "people"}]韩遂[/url][/color]的乱世改名惯例，但无一手史料支撑[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]继承者说[/color]：雷绪为继承雷薄势力的另一首领，理论上可能，但无学术文献正式论证[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]族人说[/color]：同姓雷、同在庐江、有关联但属不同人，属合理推测[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]活动轨迹对比[/font][/b]
+
+
+[table=3]
+[cell][b][/b][/cell]
+[cell][b]雷薄[/b][/cell]
+[cell][b]雷绪[/b][/cell]
+[cell]史料出处[/cell]
+[cell]《三国志·袁术传》《后汉书·袁术传》[/cell]
+[cell]《三国志·[color=#0066FF][url={"research": "夏侯渊", "cat": "people"}]夏侯渊[/url][/color]传》《[color=#0066FF][url={"research": "刘馥", "cat": "people"}]刘馥[/url][/color]传》《先主传》[/cell]
+[cell]时间[/cell]
+[cell]建安四年（199年），仅此一处[/cell]
+[cell]建安初—十四年（200—209年）多处[/cell]
+[cell]地点[/cell]
+[cell]灊山（灊县，今安徽霍山）[/cell]
+[cell]庐江郡（江淮之间，更广范围）[/cell]
+[cell]同伴[/cell]
+[cell]陈兰[/cell]
+[cell]陈兰、梅乾（200年）；单独（夏侯渊传、先主传）[/cell]
+[cell]最终命运[/cell]
+[cell]199年后史料断绝[/cell]
+[cell]209年投刘备，此后史料断绝[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]结论[/font][/b]
+
+
+[indent]•  合一说有情境合理性：199年雷薄消失+200年雷绪出现于同地同盟[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  但卢弼集解已明确"无根据"，中国传统学术立场否定此说[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  西方学界（de Crespigny）倾向合一，中国学界（集解）否定或存疑[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]永不可定论[/color]：属真正的开放悬案，学界无统一结论[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 从正史有限的记载推断：
 
-- [b]务实自保[/b]：在袁术威权尽失之际，毫不犹豫地拒绝旧主，展现出对政治形势的冷静判断。
-- [b]地方豪强性格[/b]：以山地为据点，长期维持独立武装，是典型的汉末地方豪族乱世自保模式。
-- 正史中看不出更多个性细节。
+
+[indent]•  [color=#000000]务实自保[/color]：在袁术威权尽失之际，毫不犹豫地拒绝旧主，展现出对政治形势的冷静判断。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]地方豪强性格[/color]：以山地为据点，长期维持独立武装，是典型的汉末地方豪族乱世自保模式。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  正史中看不出更多个性细节。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]人物[/b] | [b]关系[/b]
-袁术 | 旧主，199年拒绝接纳，直接导致袁术败亡
-陈兰（陈简） | 长期盟友，共据灊山，始终同进退
-梅成 | 庐江地区同一时期的独立武装首领，建安初年一起降刘馥
-刘馥 | 招抚者，建安五年以扬州刺史身份使之暂时顺服
-夏侯渊 | 建安十四年（209年）击败雷绪，迫使其投刘备（若雷薄=雷绪）
-刘备 | 若雷薄=雷绪，则刘备是其最后的归附对象
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[table=2]
+[cell][b]人物[/b][/cell]
+[cell][b]关系[/b][/cell]
+[cell]袁术[/cell]
+[cell]旧主，199年拒绝接纳，直接导致袁术败亡[/cell]
+[cell]陈兰（陈简）[/cell]
+[cell]长期盟友，共据灊山，始终同进退[/cell]
+[cell]梅成[/cell]
+[cell]庐江地区同一时期的独立武装首领，建安初年一起降刘馥[/cell]
+[cell]刘馥[/cell]
+[cell]招抚者，建安五年以扬州刺史身份使之暂时顺服[/cell]
+[cell]夏侯渊[/cell]
+[cell]建安十四年（209年）击败雷绪，迫使其投刘备（若雷薄=雷绪）[/cell]
+[cell]刘备[/cell]
+[cell]若雷薄=雷绪，则刘备是其最后的归附对象[/cell]
+[/table]
 
 
-[b]演义主要情节[/b]
-
-[b]嘉靖本第33节（袁术七路下徐州）✅（2026-04-26全文核查）：[/b]
-- 袁术称帝后大起七军攻徐州，雷薄为第四路副将（居左），负责取琅琊
-- 注意：嘉靖本此节「第一路，大将居中」——无大将姓名
-- 吕布派[color=#6699FF][url={"research": "张辽", "cat": "people"}]张辽[/url][/color]、臧霸对阵雷薄（取琅琊方向）
-- [color=#6699FF][url={"research": "韩暹", "cat": "people"}]韩暹[/url][/color]、杨奉叛变，袁术军崩溃，雷薄随之失败，此节雷薄无独立战斗描写
-- 雷薄、陈兰叛袁情节：以旁白形式出现于嘉靖本约第44—45节附近——刘备探得消息「雷薄、陈兰皆投嵩山去了」
-
-[b]毛本第17回（袁公路大起七军 曹孟德会合三将）✅（2026-04-26全文核查）：[/b]
-- 结构基本同嘉靖本，但七路安排中「第一路大将[b][color=#6699FF][url={"research": "张勋", "cat": "people"}]张勋[/url][/color][/b]居中」（毛本直接点名）
-- 雷薄仍为第四路副将，攻取瑯琊（毛本用字"瑯琊"）
-- 张辽、臧霸一军出瑯琊敌雷薄（同嘉靖本）
-- 雷薄、陈兰叛袁/劫粮情节主要在毛本后续第18回左右
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]嘉靖本 vs 毛本主要差异（✅ 2026-04-26核查完成）[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-[b]方面[/b] | [b]嘉靖本第33节[/b] | [b]毛本第17回[/b]
-节/回标题 | 「袁术七路下徐州」（单标题） | 「袁公路大起七军 曹孟德会合三将」（双标题）
-七路首将 | 「第一路，大将[b]居中[/b]」（无姓名） | 「第一路大将[b]张勋居中[/b]」（直接点名）
-雷薄攻取地 | 「雷薄一军取[b]琅琊[/b]」 | 「雷薄一军取[b]瑯琊[/b]」（同义异字）
-袁术引军描述 | 「术自引李丰、[color=#6699FF][url={"research": "梁刚 ", "cat": " people"}]梁刚 [/url][/color]、[color=#6699FF][url={"research": "乐就 ", "cat": " people"}]乐就 [/url][/color]三万军马为催进使」 | 「术自引军三万、使李豐・梁剛・樂就爲催進使」（字序稍异，意同）
-雷薄、陈兰叛袁 | 约第44—45节旁白「投嵩山去了」 | 约第18回详述叛逃/劫粮，袁术吐血而死（演义叙事更戏剧化）
-逐字对比状态 | ✅ 已核查完成（2026-04-26） | ✅ 已核查完成（2026-04-26）
+[b][font=res://resource/font/FandolSong-Bold/26.tres]演义主要情节[/font][/b]
 
 
-[b]叶逢春本（志传系）：[/b]
-叶逢春本为志传系，结构与演义系差异较大，志传系通常压缩袁术称帝和七路征徐州的详细描写。本次未能通过现有网络资源确认叶逢春本是否有「雷薄」名字出现，需实物善本核查（[b]低优先级[/b]）。
+[color=#000000]嘉靖本第33节（袁术七路下徐州）[/color]（✅ 2026-04-26全文核查）：
+
+[indent]•  袁术称帝后大起七军攻徐州，雷薄为第四路副将（居左），负责取琅琊[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  注意：嘉靖本此节「第一路，大将居中」——无大将姓名[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  吕布派[color=#0066FF][url={"research": "张辽", "cat": "people"}]张辽[/url][/color]、臧霸对阵雷薄（取琅琊方向）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "韩暹", "cat": "people"}]韩暹[/url][/color]、[color=#0066FF][url={"research": "杨奉", "cat": "people"}]杨奉[/url][/color]叛变，袁术军崩溃，雷薄随之失败，此节无独立战斗描写[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  雷薄、陈兰叛袁情节：以旁白形式出现于嘉靖本约第44—45节附近——刘备探得消息「雷薄、陈兰皆投嵩山去了」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]毛本第17回（袁公路大起七军 曹孟德会合三将）[/color]（✅ 2026-04-26全文核查）：
+
+[indent]•  结构基本同嘉靖本，但七路安排中「第一路大将[color=#000000][color=#0066FF][url={"research": "张勋", "cat": "people"}]张勋[/url][/color][/color]居中」（毛本直接点名）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  雷薄仍为第四路副将，攻取瑯琊[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  张辽、臧霸一军出瑯琊敌雷薄（同嘉靖本）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  雷薄、陈兰叛袁/劫粮情节主要在毛本后续第18回左右[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]嘉靖本 vs 毛本主要差异（✅ 2026-04-26核查完成）[/font][/b]
+
+
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]嘉靖本第33节[/b][/cell]
+[cell][b]毛本第17回[/b][/cell]
+[cell]节/回标题[/cell]
+[cell]「袁术七路下徐州」（单标题）[/cell]
+[cell]「袁公路大起七军 曹孟德会合三将」（双标题）[/cell]
+[cell]七路首将[/cell]
+[cell]「第一路，大将[color=#000000]居中[/color]」（无姓名）[/cell]
+[cell]「第一路大将[color=#000000]张勋居中[/color]」（直接点名）[/cell]
+[cell]雷薄攻取地[/cell]
+[cell]「雷薄一军取[color=#000000]琅琊[/color]」[/cell]
+[cell]「雷薄一军取[color=#000000]瑯琊[/color]」（同义异字）[/cell]
+[cell]袁术引军描述[/cell]
+[cell]「术自引李丰、[color=#0066FF][url={"research": "梁刚", "cat": "people"}]梁刚[/url][/color]、[color=#0066FF][url={"research": "乐就", "cat": "people"}]乐就[/url][/color]三万军马为催进使」[/cell]
+[cell]「术自引军三万、使李豐・梁剛・樂就爲催進使」（字序稍异，意同）[/cell]
+[cell]雷薄、陈兰叛袁[/cell]
+[cell]约第44—45节旁白「投嵩山去了」[/cell]
+[cell]约第18回详述叛逃/劫粮，袁术吐血而死[/cell]
+[/table]
+
+
+[color=#000000]叶逢春本（志传系）：[/color]
+叶逢春本为志传系，结构与演义系差异较大，志传系通常压缩袁术称帝和七路征徐州的详细描写。叶逢春本是否有「雷薄」名字出现，需实物善本核查（低优先级）。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+史书中无专门针对雷薄个人的独立评价语录。以下为涉及其所属群体的评价，以及后世文化媒介对其形象的定位：
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]陈寿的隐含评价[/font][/b]
+
+
+陈寿《三国志·袁术传》以客观叙述记录了雷薄"复为所拒"一事，未有任何道德评语。这种沉默本身就是一种立场：史家对雷薄此举既不褒扬也不谴责，只记录了事件结果——袁术因此陷入绝境。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]后世文化定位[/font][/b]
+
+
+三国杀给予雷薄的武将称号[color=#000000]「背仲豺寇」[/color]是后世对其形象最精炼的概括——"仲"指袁术建立的"仲"朝，"背仲"即背叛袁术，"豺寇"则点明其占据山林为贼的身份。这一称号虽属游戏文化创作，但精准提炼了历史上雷薄的核心形象。
+
+光荣系列游戏（三国志8R）给其设定[color=#000000]义理值仅为1[/color]（全游戏最低级别），搭配[color=#000000]「虎狼之心」[/color]奇才（破坏盟约不降忠诚），将其"见利忘义"的历史形象系统化地转化为游戏机制。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+[indent]•  [color=#000000]势力：[/color] 群；[color=#000000]武将称号：[/color] 背仲豺寇[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]上线时间：[/color] 2022-12-24[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]技能：[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]私掠[/color]（4血）：游戏开始时绑定一名角色，当该角色造成伤害后可获取受伤方牌；当该角色受伤后令你选择进行反击或弃牌。体现"劫夺"主题。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]衰劫[/color]（限定技）：特定条件下减体力上限获牌，模拟劫掠袁术辎重的历史事件。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]台词：[/color] 「劫尔之富，济我之贫！」（标志性台词，来自草莽豺寇的直白自述）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]皮肤：[/color] 传说皮「乘势剪径」（2023-08-12，画师：游歌）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志系列（ROTK）[/font][/b]
+
+
+[indent]•  从初代《三国志》起便有登场，横跨 ROTK II～XIV 全系列均有画像[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]三国志8重制版五维：[/color] 统率68 / 武力74 / 知力41 / 政治12 / 魅力20[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]性格：[/color] 豪胆；[color=#000000]义理：[/color] 1（极低）；[color=#000000]物欲：[/color] 强欲[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]奇才：[/color] 山战（山地攻击+50）+ 虎狼之心（破盟不降忠诚）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]游戏设定生没：[/color] 157—208年（游戏推算，非正史依据）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]真三国无双（Dynasty Warriors）系列[/font][/b]
+
+
+[indent]•  DW8XL：在夏口建桥事件中出场，率部发现刘备军工程队并进攻[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  DW袁术DLC场景：与陈兰趁袁术称帝大乱时劫掠百姓，可在[color=#0066FF][url={"research": "寿春", "cat": "geography"}]寿春[/url][/color]战场被阻止[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  整体定位：袁术阵营配角/NPC，无主要武将地位[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国群英传2[/font][/b]
+
+
+[indent]•  武力65 / 智力45；技能：1级连弩、12级八门金锁、24级神剑；军师技：1级后选出阵[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  评价：中规中矩的袁术阵营配角武将[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]卧龙吟[/font][/b]
+
+
+[indent]•  顿悟后技能[color=#000000]「破斧」[/color]（兵越少威力越大），被玩家社区称为意想不到的"妖将"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  游戏设定：最终投靠曹操（与正史不符，游戏虚构改编）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]魁三国志大战（日本光荣街机）[/font][/b]
+
+
+[indent]•  计略：「反抗の落雷」（遭受妨碍时发动落雷效果）；成本1，走兵攻城兵定位[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  画风描述："外表俊美，行事品性较差"（袁術配下，イケメン優男に描かれているが、やってることはまあまあゲスい）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]

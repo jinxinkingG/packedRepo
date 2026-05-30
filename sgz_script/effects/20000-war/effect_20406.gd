@@ -13,10 +13,10 @@ func effect_20406_start():
 	var side = actor.get_side()
 	if side in ["阴", "阳"]:
 		var msg = "未进入醉乡，何须解醒？"
-		play_dialog(me.actorId, msg, 2, 2999)
+		play_dialog(actorId, msg, 2, 2999)
 		return
 	var msg = "脱离醉乡，恢复技能链\n可否？"
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000():
@@ -33,7 +33,7 @@ func effect_20406_2():
 	var msg = "黄粱一梦……\n（{0}已脱离醉乡".format([
 		actor.get_name(), side,
 	])
-	play_dialog(me.actorId, msg, 2, 2999)
+	play_dialog(actorId, msg, 2, 2999)
 	return
 
 func on_view_model_2999():

@@ -46,7 +46,7 @@ func effect_20346_start() -> void:
 	if enemyWV != null:
 		enemyLeaderId = enemyWV.main_actorId
 	if enemyLeaderId < 0:
-		play_dialog(me.actorId, "不可发动", 2, 2009)
+		play_dialog(actorId, "不可发动", 2, 2009)
 		return
 	var enemyLeader = ActorHelper.actor(enemyLeaderId)
 

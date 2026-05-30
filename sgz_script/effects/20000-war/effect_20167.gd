@@ -34,7 +34,7 @@ func effect_20167_2():
 		msg = "{0}没有可以禁用的技能".format([
 			ActorHelper.actor(targetId).get_name()
 		])
-		play_dialog(me.actorId, msg, 2, 2009)
+		play_dialog(actorId, msg, 2, 2009)
 		return
 	LoadControl.set_view_model(2001)
 	return
@@ -50,7 +50,7 @@ func effect_20167_3():
 
 	ske.cost_war_cd(99999)
 	if not ske.ban_war_skill(targetId, skill, CD_TURN):
-		play_dialog(me.actorId, "【{0}】不可禁用".format([skill]), 2, 2002)
+		play_dialog(actorId, "【{0}】不可禁用".format([skill]), 2, 2002)
 		return
 
 	var msg = "敌隙可乘，破阵无忧！"

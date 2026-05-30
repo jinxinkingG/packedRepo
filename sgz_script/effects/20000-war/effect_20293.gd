@@ -18,7 +18,7 @@ func effect_20293_start():
 	var msg = "发动【{0}】\n本回合内敌军全体\n将被[围困]，可否？".format([
 		ske.skill_name,
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20293_2():
@@ -38,5 +38,5 @@ func effect_20293_2():
 	])
 	# 仅记录日志
 	ske.war_report()
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	return

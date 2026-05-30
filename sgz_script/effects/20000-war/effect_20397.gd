@@ -25,6 +25,57 @@ func on_trigger_20018()->bool:
 		return false
 	return true
 
+# AI 发动
+func effect_20397_AI_start() -> void:
+	var se = DataManager.get_current_stratagem_execution()
+	var targets = se.get_available_targets()[0]
+	targets.erase(se.targetId)
+	# 简单选择智力最低的
+	var lowestWisdom = 999
+	var selected = -1
+	for targetId in targets:
+		var wisdom = ActorHelper.actor(targetId).get_wisdom()
+		if wisdom < lowestWisdom:
+			lowestWisdom = wisdom
+			selected = targetId
+	DataManager.set_env("战争.双顾.目标", selected)
+	se.perform_cost()
+	ske.cost_ap(COST_AP)
+	var msg = "消耗<y{0}>机动力，追加<y{1}>为计策对象".format([
+		COST_AP, ActorHelper.actor(selected).get_name(),
+	])
+	se.append_message(msg)
+	# AI 汇报流程与玩家不同，需要单独汇报
+	msg = "消耗{0}机动力，发动【{1}】\n追加{2}为计策对象".format([
+		COST_AP, ske.skill_name,
+		ActorHelper.actor(selected).get_name(),
+	])
+	play_dialog(actorId, msg, 2, 3000)
+	return
+
+func on_view_model_3000() -> void:
+	wait_for_skill_result_confirmation(FLOW_BASE + "_AI_confirmed")
+	return
+
+func effect_20397_AI_confirmed() -> void:
+	var se = DataManager.get_current_stratagem_execution()
+	var targetId = DataManager.get_env_int("战争.双顾.目标")
+	se.perform_to_targets([se.targetId, targetId])
+	SkillHelper.auto_trigger_skill(se.get_action_id(se.hiddenActionId), 20009)
+	var speakerWA = DataManager.get_war_actor(se.targetId)
+	# 对队友用计、被笼络、被杀，均为敌方发言
+	if speakerWA == null or speakerWA.disabled or not me.is_enemy(speakerWA):
+		speakerWA = me.get_war_enemy_leader()
+	elif speakerWA.get_controlNo() < 0:
+		# 这里是要与 AI_strategem_1 的汇报方逻辑保持一致
+		speakerWA = me
+	DataManager.set_env("对话PENDING", se.get_report_message(speakerWA, me))
+	map.draw_actors()
+	var st = SkillHelper.get_current_skill_trigger()
+	st.next_flow = "AI_strategem_1"
+	LoadControl.end_script()
+	return
+
 func effect_20397_start():
 	var se = DataManager.get_current_stratagem_execution()
 	var targets = se.get_available_targets()[0]
@@ -63,7 +114,7 @@ func effect_20397_2():
 	msg = se.get_message() + "\n（【{0}】追加目标{1}".format([
 		ske.skill_name, ActorHelper.actor(targetId).get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2001)
+	play_dialog(actorId, msg, 2, 2001)
 	map.show_can_choose_actors([se.targetId, targetId])
 	return
 
@@ -102,39 +153,6 @@ func effect_20397_4():
 	DataManager.set_env("对话PENDING", se.get_report_message())
 	var st = SkillHelper.get_current_skill_trigger()
 	st.next_flow = "stratagem_confirm_result"
-	FlowManager.add_flow("draw_actors")
-	LoadControl.end_script()
-	return
-
-func on_view_model_2999():
-	wait_for_skill_result_confirmation()
-	return
-
-# 暂不支持 AI
-# 数据没问题，但视效和汇报有问题
-# TODO
-func DISABLED_effect_20397_AI_start():
-	var se = DataManager.get_current_stratagem_execution()
-	var targets = se.get_available_targets()[0]
-	targets.erase(se.targetId)
-	targets.shuffle()
-	var targetId = targets[0]
-	set_env("战争.双顾.目标", targetId)
-	se.perform_cost()
-	ske.cost_ap(COST_AP)
-	var msg = "消耗<y{0}>机动力，追加<y{1}>为计策对象".format([
-		COST_AP, ActorHelper.actor(targetId).get_name(),
-	])
-	se.append_message(msg)
-	se.perform_to_targets([se.targetId, targetId])
-	SkillHelper.auto_trigger_skill(se.get_action_id(se.hiddenActionId), 20009)
-	var speakerWA = DataManager.get_war_actor(se.targetId)
-	# 对队友用计、被笼络、被杀，均为敌方发言
-	if speakerWA == null or speakerWA.disabled or not me.is_enemy(speakerWA):
-		speakerWA = me.get_war_enemy_leader()
-	DataManager.set_env("对话PENDING", se.get_report_message(speakerWA, me))
-	var st = SkillHelper.get_current_skill_trigger()
-	st.next_flow = "AI_strategem_1"
 	FlowManager.add_flow("draw_actors")
 	LoadControl.end_script()
 	return

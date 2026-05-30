@@ -1,270 +1,499 @@
-[b]豪族庄园经济[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]豪族庄园经济[/font][/b]
 
 
-[b]类型：[/b] 社会结构
+[color=#000000]类型：[/color] 社会结构
 
 
-[b]背景概述[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]背景概述[/font][/b]
 
 
 东汉中后期，"富者田连阡陌，贫者无立锥之地"的土地兼并格局在光武帝"度田"失败后就已无法逆转（《汉书·食货志》：汉成帝时"豪民侵陵，分田劫假"）。大量自耕农破产、流离，被迫以"佃客"身份依附豪强地主，租种土地，形成人身依附关系。这种以"庄园"为核心的经济模式，到东汉末年已高度成熟：
 
 典型庄园内部结构（据崔寔《四民月令》与考古资料）：
-- [b]生产层[/b]：农田（含稻田养鱼的生态循环）、果园、鱼塘、牧渔区、冶铁纺织手工作坊（酿酒/酿酱/酿醋/纺绩/织染全链条）、仓库（粮食/酿造）
-- [b]军事层[/b]：坞堡（坞壁）防御设施、武库、弩矢储备、瞭望台
-- [b]社会层[/b]：书塾（教育家族子弟与亲信佃客子女）、学堂，甚至有独立的内部法律体系
-- [b]人员层[/b]：农田"田客"、工匠、护院（部曲），层次分明
+
+[indent]•  [color=#000000]生产层[/color]：农田（含稻田养鱼的生态循环）、果园、鱼塘、牧渔区、冶铁纺织手工作坊（酿酒/酿酱/酿醋/纺绩/织染全链条）、仓库（粮食/酿造）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]军事层[/color]：坞堡（坞壁）防御设施、武库、弩矢储备、瞭望台[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]社会层[/color]：书塾（教育家族子弟与亲信佃客子女）、学堂，甚至有独立的内部法律体系[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]人员层[/color]：农田"田客"、工匠、护院（部曲），层次分明[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 庄园社会层级（由高到低）：
 
-[b]层级[/b] | [b]身份[/b] | [b]职能[/b]
-庄园主 | 豪强地主 | 最高统治者，掌土地和武装
-宗族、宾客 | 核心力量 | 内务管理、庄园经营，与主人关系紧密
-徒附、佃农 | 主要劳动者 | 耕种土地，缴纳地租（上交50%，"见税什五"），身份近似农奴
-奴婢 | 最低阶层 | 家务或杂役，《急就篇》"奴婢私隶枕床杠"，连居住空间都被压缩
+[table=3]
+[cell][b]层级[/b][/cell]
+[cell][b]身份[/b][/cell]
+[cell][b]职能[/b][/cell]
+[cell]庄园主[/cell]
+[cell]豪强地主[/cell]
+[cell]最高统治者，掌土地和武装[/cell]
+[cell]宗族、宾客[/cell]
+[cell]核心力量[/cell]
+[cell]内务管理、庄园经营，与主人关系紧密[/cell]
+[cell]徒附、佃农[/cell]
+[cell]主要劳动者[/cell]
+[cell]耕种土地，缴纳地租（上交50%，"见税什五"），身份近似农奴[/cell]
+[cell]奴婢[/cell]
+[cell]最低阶层[/cell]
+[cell]家务或杂役，《急就篇》"奴婢私隶枕床杠"，连居住空间都被压缩[/cell]
+[/table]
 
 
 考古实证：
-- [b]河南内黄三杨庄汉代庄园遗址[/b]：单个庄园占地约200亩，包含灌溉水渠、铁器作坊与谷仓群（许倬云《汉代农业》测算年产粮约5000石，可武装300人私兵）
-- [b]四川[color=#6699FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]东汉画像石[/b]：生动记录庄园内具体生产生活场景——稻田养鱼（生态循环）、养蚕纺织、山林狩猎、酿酒养马；天回山崖墓农夫俑与持盾俑身穿短衣、脚登草鞋、身佩环首大刀，印证农民与部曲的双重角色
+
+[indent]•  [color=#000000]河南内黄三杨庄汉代庄园遗址[/color]：单个庄园占地约200亩，包含灌溉水渠、铁器作坊与谷仓群（许倬云《汉代农业》测算年产粮约5000石，可武装300人私兵）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]四川[color=#0066FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]东汉画像石[/color]：生动记录庄园内具体生产生活场景——稻田养鱼（生态循环）、养蚕纺织、山林狩猎、酿酒养马；天回山崖墓农夫俑与持盾俑身穿短衣、脚登草鞋、身佩环首大刀，印证农民与部曲的双重角色[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 知名实例：
-- [b]樊宏家庄园[/b]（光武帝刘秀外祖父）："闭门成市"——300余顷土地、漆林、鱼塘，自行制作各种器物，基本无需外界交换
 
-《后汉书·[color=#6699FF][url={"research": "仲长统", "cat": "people"}]仲长统[/url][/color]传》："豪人之室，连栋数百，奴婢千群"——是这一经济形态的文学描述。
-
-
-[b]庄园年度运营：《四民月令》月令时间表[/b]
+[indent]•  [color=#000000]樊宏家庄园[/color]（光武帝刘秀外祖父）："闭门成市"——300余顷土地、漆林、鱼塘，自行制作各种器物，基本无需外界交换[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-崔寔（约103-170年），清河[color=#6699FF][url={"research": "崔氏", "cat": "people"}]崔氏[/url][/color]，学者兼庄园主，《四民月令》是其为家族写的"操作手册"，现存约2371字，是东汉庄园经济的第一手档案。
+《后汉书·[color=#0066FF][url={"research": "仲长统", "cat": "people"}]仲长统[/url][/color]传》："豪人之室，连栋数百，奴婢千群"——是这一经济形态的文学描述。
 
 
-[b]农业生产（逐月安排节选）[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]月份[/b] | [b]关键农事[/b]
-正月 | 可伐竹木、移树、种春麦豍豆；"正月农事未起，命成童以上入小学，学书篇"
-二月 | "阴冻毕泽，可菑美田"；种瓜、瓠、芥、葵
-三月 | "清明节，命蚕妾治蚕室"；种稻种豆种麻
-四月 | "立夏节后，蚕大食"；禾苗除草，"毋失其时"
-七月 | 种芜菁、大葱、小蒜；女工织造缣帛
-八月 | 播种大麦
-九月 | 治场圃、涂囷仓、修窦窖
-十月 | 储藏五谷
-十二月 | 合耦田器（整修农具）、养耕牛
+[b][font=res://resource/font/FandolSong-Bold/28.tres]庄园年度运营：《四民月令》月令时间表[/font][/b]
 
 
-[b]手工业与副业年历[/b]
+崔寔（约103-170年），清河[color=#0066FF][url={"research": "崔氏", "cat": "people"}]崔氏[/url][/color]，学者兼庄园主，《四民月令》是其为家族写的"操作手册"，现存约2371字，是东汉庄园经济的第一手档案。
 
 
-[b]月份[/b] | [b]产品[/b] | [b]备注[/b]
-正月 | 酿春酒 | 年度第一批酒
-四月 | 造神曲（酒曲） | 为下半年酿造准备
-五月 | 造酱 | 豆酱、肉酱
-七月 | 做醋 | 每一步均有严格时间窗口
-全年 | 种麻→收茧→纺绩→织染 | 纺织完整链条
+[b][font=res://resource/font/FandolSong-Bold/26.tres]农业生产（逐月安排节选）[/font][/b]
 
 
-[b]市场交易策略[/b]
+[table=2]
+[cell][b]月份[/b][/cell]
+[cell][b]关键农事[/b][/cell]
+[cell]正月[/cell]
+[cell]可伐竹木、移树、种春麦豍豆；"正月农事未起，命成童以上入小学，学书篇"[/cell]
+[cell]二月[/cell]
+[cell]"阴冻毕泽，可菑美田"；种瓜、瓠、芥、葵[/cell]
+[cell]三月[/cell]
+[cell]"清明节，命蚕妾治蚕室"；种稻种豆种麻[/cell]
+[cell]四月[/cell]
+[cell]"立夏节后，蚕大食"；禾苗除草，"毋失其时"[/cell]
+[cell]七月[/cell]
+[cell]种芜菁、大葱、小蒜；女工织造缣帛[/cell]
+[cell]八月[/cell]
+[cell]播种大麦[/cell]
+[cell]九月[/cell]
+[cell]治场圃、涂囷仓、修窦窖[/cell]
+[cell]十月[/cell]
+[cell]储藏五谷[/cell]
+[cell]十二月[/cell]
+[cell]合耦田器（整修农具）、养耕牛[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]手工业与副业年历[/font][/b]
+
+
+[table=3]
+[cell][b]月份[/b][/cell]
+[cell][b]产品[/b][/cell]
+[cell][b]备注[/b][/cell]
+[cell]正月[/cell]
+[cell]酿春酒[/cell]
+[cell]年度第一批酒[/cell]
+[cell]四月[/cell]
+[cell]造神曲（酒曲）[/cell]
+[cell]为下半年酿造准备[/cell]
+[cell]五月[/cell]
+[cell]造酱[/cell]
+[cell]豆酱、肉酱[/cell]
+[cell]七月[/cell]
+[cell]做醋[/cell]
+[cell]每一步均有严格时间窗口[/cell]
+[cell]全年[/cell]
+[cell]种麻→收茧→纺绩→织染[/cell]
+[cell]纺织完整链条[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]市场交易策略[/font][/b]
+
 
 《四民月令》明确记录何时"卖出陈谷"、何时"买入丝绵"，连药材、木材买卖时机都有指导。东汉庄园并非封闭孤岛，而是懂得利用价格波动的经济实体。
 
 
-[b]自耕农破产的量化数据[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]最直接的量化描述[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]自耕农破产的量化数据[/font][/b]
 
-崔寔《政论》（东汉桓帝时期）："[b]有田者什一，有佃作者什九[/b]"
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]最直接的量化描述[/font][/b]
+
+
+崔寔《政论》（东汉桓帝时期）："[color=#000000]有田者什一，有佃作者什九[/color]"
 
 → 拥有自己土地的自耕农仅占十分之一，九成农民已沦为佃作（租种他人土地）。崔寔是东汉末年实际观察者，此数字虽是文人估计，但已成为学界引用的最直接量化史料（王仲荦、王明前等均援引）。
 
 
-[b]垦田数量的减少[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]垦田数量的减少[/font][/b]
+
 
 据葛剑雄《中国人口发展史》（1999）对《后汉书·明帝纪》注引《东观汉记》等数据的整理：
-- 光武帝时期垦田数约[b]700万顷[/b]
-- 桓帝时降至约[b]530万顷[/b]
-- 减少的部分绝大多数被豪族侵占，不再计入国家课税田亩
+
+[indent]•  光武帝时期垦田数约[color=#000000]700万顷[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  桓帝时降至约[color=#000000]530万顷[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  减少的部分绝大多数被豪族侵占，不再计入国家课税田亩[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 自耕农破产的三重推力（王明前等综合研究）：
-1. [b]土地兼并[/b]："有田者什一，有佃作者什九"（崔寔《政论》）；豪族通过"典质"（春借秋偿，无力还债则卖田宅鬻子孙）兼并土地
-2. [b]自然灾害[/b]：顺帝永和年间连续六年水旱蝗灾，小农无力抵御
-3. [b]赋税转嫁[/b]：豪族通过"荫附"隐匿人口后，剩余自耕农赋税成倍增加
+
+[indent]1.  [color=#000000]土地兼并[/color]："有田者什一，有佃作者什九"（崔寔《政论》）；豪族通过"典质"（春借秋偿，无力还债则卖田宅鬻子孙）兼并土地[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]自然灾害[/color]：顺帝永和年间连续六年水旱蝗灾，小农无力抵御[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]赋税转嫁[/color]：豪族通过"荫附"隐匿人口后，剩余自耕农赋税成倍增加[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]人口总量的崩溃（印证规模）[/b]
-
-- 东汉桓帝永寿三年（157年）全国人口约5600万（《晋书·地理志》）
-- 三国谷底（约220年）：葛剑雄《中国人口发展史》估算实际人口约2200-2300万，较峰值减少60%以上（官方户籍数更低，因大量人口荫附于豪族庄园不计入国家编户）
+[b][font=res://resource/font/FandolSong-Bold/26.tres]人口总量的崩溃（印证规模）[/font][/b]
 
 
-[b]在三国时期的表现[/b]
+[indent]•  东汉桓帝永寿三年（157年）全国人口约5600万（《晋书·地理志》）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三国谷底（约220年）：葛剑雄《中国人口发展史》估算实际人口约2200-2300万，较峰值减少60%以上（官方户籍数更低，因大量人口荫附于豪族庄园不计入国家编户）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]庄园经济支撑军阀割据[/b]
-
-[color=#6699FF][url={"research": "黄巾之乱", "cat": "events"}]黄巾之乱[/url][/color]（184年）后庄园经济加速膨胀，形成"百室合户，千丁共籍"的特殊社会组织，成为军阀割据的物质基础：
-
-- 初平元年（190年）关东联军讨董：[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]"辎重千余辆，皆仰给冀北豪族"；河北甄氏庄园年供袁绍军粮二十万斛
-- 徐州[color=#6699FF][url={"research": "糜氏", "cat": "people"}]糜氏[/url][/color]家族赠[color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]"奴客二千"充实军队（《三国志·[color=#6699FF][url={"research": "糜竺", "cat": "people"}]糜竺[/url][/color]传》）
-- 颍川荀氏庄园商队遍布中原，成为曹军情报网络
-- 建安五年（200年）[color=#6699FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]：卫觊在关中"盐铁专卖换豪强粮草"，是[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]能坚持到最后的关键
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]部曲制：流民依附的社会形态与收成分配[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]在三国时期的表现[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]庄园经济支撑军阀割据[/font][/b]
+
+
+[color=#0066FF][url={"research": "黄巾之乱", "cat": "events"}]黄巾之乱[/url][/color]（184年）后庄园经济加速膨胀，形成"百室合户，千丁共籍"的特殊社会组织，成为军阀割据的物质基础：
+
+
+[indent]•  初平元年（190年）关东联军讨董：[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]"辎重千余辆，皆仰给冀北豪族"；河北甄氏庄园年供袁绍军粮二十万斛[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  徐州[color=#0066FF][url={"research": "糜氏", "cat": "people"}]糜氏[/url][/color]家族赠[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]"奴客二千"充实军队（《三国志·[color=#0066FF][url={"research": "糜竺", "cat": "people"}]糜竺[/url][/color]传》）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  颍川荀氏庄园商队遍布中原，成为曹军情报网络[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  建安五年（200年）[color=#0066FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]：卫觊在关中"盐铁专卖换豪强粮草"，是[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]能坚持到最后的关键[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]部曲制：流民依附的社会形态与收成分配[/font][/b]
+
 
 "部曲"是汉末庄园经济的核心人际关系产物。流民（失地农民）依附豪强后被编为部曲：
-- [b]平时[/b]：耕种土地，充当劳动力（四川汉墓部曲俑持锸、锛等农具，非兵器）；收成按比例与庄主分割
-- [b]战时[/b]：拿起武器保卫庄园或随主人出征
-- [b]法律地位[/b]：介于自由民与奴婢之间，对庄主有人身依附，无法自行脱离（擅自离去按"逃亡"论罪）
-- [b]三国固化[/b]：孙吴将此制度化为世袭领兵制与复客制（见下节）
 
-[b]收成分成比例——史料坐标系：[/b]
+[indent]•  [color=#000000]平时[/color]：耕种土地，充当劳动力（四川汉墓部曲俑持锸、锛等农具，非兵器）；收成按比例与庄主分割[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战时[/color]：拿起武器保卫庄园或随主人出征[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]法律地位[/color]：介于自由民与奴婢之间，对庄主有人身依附，无法自行脱离（擅自离去按"逃亡"论罪）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]三国固化[/color]：孙吴将此制度化为世袭领兵制与复客制（见下节）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]收成分成比例——史料坐标系：[/color]
 
 《三国志》对屯田收成表述常用"量分"，未给具体数字。但现有史料可提供多组参照坐标：
 
 
-[b]类型[/b] | [b]用牛情况[/b] | [b]地主/官府得[/b] | [b]客/佃农得[/b] | [b]史料来源[/b]
-东汉初庄园（马援天水苑川） | — | 50%（"中分"） | 50% | 《水经·河水注》；王仲荦《魏晋南北朝史》引
-东汉普通佃租 | 自有 | 50%（"见税什五"） | 50% | 《汉书·食货志》
-魏晋庄园佃客（泛论） | — | 超50%（"大半之赋"） | 不足50% | 《通典·食货典·丁中》："被强家收大半之赋"；荀悦："浮客输大半之赋"
-魏晋庄园佃客（给客制） | — | 量分（商定，未指定数字） | 量分 | 《隋书·食货志》东晋给客制度："其佃谷皆与大家量分"
-孙吴官田（嘉禾四年，235） | — | ≥50%（折米约1.35斛/亩） | ≤50% | 走马楼吴简《嘉禾吏民田家莂》（蒋福亚研究）
-曹魏屯田（初期） | 官牛 | 60% | 40% | 《晋书·傅玄传》
-曹魏屯田（初期） | 私牛 | 50% | 50% | 《晋书·傅玄传》
-魏末晋初屯田（提高后） | 官牛 | 80% | 20% | 《晋书·傅玄传》
-魏末晋初屯田（提高后） | 私牛/无牛 | 70% | 30% | 《晋书·傅玄传》
-西晋官田（桂阳郡，280年后） | — | 亩租稻谷4斗（惠民低率） | — | 郴州晋简（陆帅、晋文2021年研究）
+[table=5]
+[cell][b]类型[/b][/cell]
+[cell][b]用牛情况[/b][/cell]
+[cell][b]地主/官府得[/b][/cell]
+[cell][b]客/佃农得[/b][/cell]
+[cell][b]史料来源[/b][/cell]
+[cell]东汉初庄园（马援天水苑川）[/cell]
+[cell]—[/cell]
+[cell]50%（"中分"）[/cell]
+[cell]50%[/cell]
+[cell]《水经·河水注》；王仲荦《魏晋南北朝史》引[/cell]
+[cell]东汉普通佃租[/cell]
+[cell]自有[/cell]
+[cell]50%（"见税什五"）[/cell]
+[cell]50%[/cell]
+[cell]《汉书·食货志》[/cell]
+[cell]魏晋庄园佃客（泛论）[/cell]
+[cell]—[/cell]
+[cell]超50%（"大半之赋"）[/cell]
+[cell]不足50%[/cell]
+[cell]《通典·食货典·丁中》："被强家收大半之赋"；荀悦："浮客输大半之赋"[/cell]
+[cell]魏晋庄园佃客（给客制）[/cell]
+[cell]—[/cell]
+[cell]量分（商定，未指定数字）[/cell]
+[cell]量分[/cell]
+[cell]《隋书·食货志》东晋给客制度："其佃谷皆与大家量分"[/cell]
+[cell]孙吴官田（嘉禾四年，235）[/cell]
+[cell]—[/cell]
+[cell]≥50%（折米约1.35斛/亩）[/cell]
+[cell]≤50%[/cell]
+[cell]走马楼吴简《嘉禾吏民田家莂》（蒋福亚研究）[/cell]
+[cell]曹魏屯田（初期）[/cell]
+[cell]官牛[/cell]
+[cell]60%[/cell]
+[cell]40%[/cell]
+[cell]《晋书·傅玄传》[/cell]
+[cell]曹魏屯田（初期）[/cell]
+[cell]私牛[/cell]
+[cell]50%[/cell]
+[cell]50%[/cell]
+[cell]《晋书·傅玄传》[/cell]
+[cell]魏末晋初屯田（提高后）[/cell]
+[cell]官牛[/cell]
+[cell]80%[/cell]
+[cell]20%[/cell]
+[cell]《晋书·傅玄传》[/cell]
+[cell]魏末晋初屯田（提高后）[/cell]
+[cell]私牛/无牛[/cell]
+[cell]70%[/cell]
+[cell]30%[/cell]
+[cell]《晋书·傅玄传》[/cell]
+[cell]西晋官田（桂阳郡，280年后）[/cell]
+[cell]—[/cell]
+[cell]亩租稻谷4斗（惠民低率）[/cell]
+[cell]—[/cell]
+[cell]郴州晋简（陆帅、晋文2021年研究）[/cell]
+[/table]
 
 
-[b]孙吴官田的关键印证：[/b] 蒋福亚《走马楼吴简经济文书研究》计算，孙吴嘉禾四年二年常限田亩租折米约1.35斛，剥削率超过50%，与"或耕豪民之田，见税什伍"[b]"已无多大区别"[/b]。这说明孙吴官田采用了与私人庄园相同的地租逻辑——五五分是东汉以来普通租佃关系的通行标准，孙吴官田遵循了这一习惯法。
+[color=#000000]孙吴官田的关键印证：[/color] 蒋福亚《走马楼吴简经济文书研究》计算，孙吴嘉禾四年二年常限田亩租折米约1.35斛，剥削率超过50%，与"或耕豪民之田，见税什伍"[color=#000000]"已无多大区别"[/color]。这说明孙吴官田采用了与私人庄园相同的地租逻辑——五五分是东汉以来普通租佃关系的通行标准，孙吴官田遵循了这一习惯法。
 
 王仲荦《魏晋南北朝史》亦明确指出：屯田分成是在"汉代无地农民耕种地主土地，缴纳十分之五"的基础上进一步加重的。《汉书·食货志》"或耕豪民之田，见税什五"是地主与佃农五五分成的最直接史料依据。
 
-[b]坐标系汇证（2026-04-15 补入）：[/b]
-- 马援天水苑川"与田户中分"（《水经·河水注》）：东汉初年庄园独立案例，五五分，与《汉书·食货志》相互印证，确认"中分"为通行标准
-- 《通典·食货典·丁中》"被强家收大半之赋"、荀悦"浮客输大半之赋"：说明豪强庄园中地主倾向收取"大半"（超50%），与五五分并行，视依附深浅而定
-- 《隋书·食货志》东晋给客制"其佃谷皆与大家量分"："量分"=双方商定的约定比例，法律上承认但不指定数字，延续了魏晋庄园习惯
+[color=#000000]坐标系汇证（2026-04-15 补入）：[/color]
 
-[b]结论：[/b] 汉末三国庄园部曲与庄主的"量分"，以五五分（自带耕牛、较轻依附）或六四分乃至更高（庄主提供资源、较重依附）为常态参照。五五分有马援、《汉书》双重史料支撑；"大半"（超50%）为强家庄园的另一趋势。走马楼吴简进一步印证五五分是习惯法标准，孙吴官田亦循此标准经营。但《三国志》中无独立针对普通庄园部曲（区别于曹魏屯田客）精确数字的史料。此问题坐标系已较完整，精确比例仍为永久空白。
+[indent]•  马援天水苑川"与田户中分"（《水经·河水注》）：东汉初年庄园独立案例，五五分，与《汉书·食货志》相互印证，确认"中分"为通行标准[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《通典·食货典·丁中》"被强家收大半之赋"、荀悦"浮客输大半之赋"：说明豪强庄园中地主倾向收取"大半"（超50%），与五五分并行，视依附深浅而定[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《隋书·食货志》东晋给客制"其佃谷皆与大家量分"："量分"=双方商定的约定比例，法律上承认但不指定数字，延续了魏晋庄园习惯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-《三国志》注引《魏略》：[color=#6699FF][url={"research": "李典", "cat": "people"}]李典[/url][/color]家族在乘氏县庄园能"合宾客数千家"（《李典传》原文："宗族部曲三千余家……遂徙部曲、宗族万三千余口居邺"），战时可直接转化为军事编制。
+
+[color=#000000]结论：[/color] 汉末三国庄园部曲与庄主的"量分"，以五五分（自带耕牛、较轻依附）或六四分乃至更高（庄主提供资源、较重依附）为常态参照。五五分有马援、《汉书》双重史料支撑；"大半"（超50%）为强家庄园的另一趋势。走马楼吴简进一步印证五五分是习惯法标准，孙吴官田亦循此标准经营。但《三国志》中无独立针对普通庄园部曲（区别于曹魏屯田客）精确数字的史料。此问题坐标系已较完整，精确比例仍为永久空白。
+
+《三国志》注引《魏略》：[color=#0066FF][url={"research": "李典", "cat": "people"}]李典[/url][/color]家族在乘氏县庄园能"合宾客数千家"（《李典传》原文："宗族部曲三千余家……遂徙部曲、宗族万三千余口居邺"），战时可直接转化为军事编制。
 
 
-[b]坞壁：庄园的防御形态[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]坞壁：庄园的防御形态[/font][/b]
+
 
 坞壁（坞堡）是庄园在战乱时期的防御强化形态，而非独立起源：
-- 建于险要且可耕种之地（山顶平原、溪涧旁）
-- 以宗族乡党为单位，坞主督护；内有独立规则与基层权力组织
-- 与"城"的区别：城重商业交通，坞壁重自给自保
-- 三国时期坞壁主要存在于：蜀汉涪陵大族、东吴山越/宗部（中原曹魏势力范围已基本整合）
-- 《三国志·[color=#6699FF][url={"research": "田畴", "cat": "people"}]田畴[/url][/color]传》有内部法律的具体描述："乃为约束相杀伤、犯盗、诤讼之法，法重者至死，其次抵罪，二十余条"
+
+[indent]•  建于险要且可耕种之地（山顶平原、溪涧旁）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  以宗族乡党为单位，坞主督护；内有独立规则与基层权力组织[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  与"城"的区别：城重商业交通，坞壁重自给自保[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三国时期坞壁主要存在于：蜀汉涪陵大族、东吴山越/宗部（中原曹魏势力范围已基本整合）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《三国志·[color=#0066FF][url={"research": "田畴", "cat": "people"}]田畴[/url][/color]传》有内部法律的具体描述："乃为约束相杀伤、犯盗、诤讼之法，法重者至死，其次抵罪，二十余条"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]屯田制与庄园经济的张力[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]屯田制与庄园经济的张力[/font][/b]
+
 
 曹操建安元年（196年）推行屯田制，核心逻辑之一是从豪强手中抢夺人口：
-- 将"无主公田"收归国有，国家直接管理屯田客（《三国志·魏书·[color=#6699FF][url={"research": "满宠", "cat": "people"}]满宠[/url][/color]传》相关记载）
-- 屯田客脱离豪强的人身依附，转为国家编户，为曹操提供独立的粮食和兵源
-- [b]张力所在[/b]：曹魏"给客制"推行后，地方官员常把屯田客变成私人部曲，国家编户再次私人化，大大加强地方割据势力——这是屯田制被曹魏晚期逐步废弃的原因之一
+
+[indent]•  将"无主公田"收归国有，国家直接管理屯田客（《三国志·魏书·[color=#0066FF][url={"research": "满宠", "cat": "people"}]满宠[/url][/color]传》相关记载）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  屯田客脱离豪强的人身依附，转为国家编户，为曹操提供独立的粮食和兵源[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张力所在[/color]：曹魏"给客制"推行后，地方官员常把屯田客变成私人部曲，国家编户再次私人化，大大加强地方割据势力——这是屯田制被曹魏晚期逐步废弃的原因之一[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]东吴复客制与世袭领兵制：史料修正[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]东吴复客制与世袭领兵制：史料修正[/font][/b]
 
-[b]⚠️ 史料修正（据胡宝国1991年研究）：[/b]
+
+[color=#000000]⚠️ 史料修正（据胡宝国1991年研究）：[/color]
 
 以往认为"复客制反映孙氏对江东大族的优待"，此说不确。史料显示：
 
-[b]复客制的实施对象：仅限江北将领遗属（非江东大族）[/b]
+[color=#000000]复客制的实施对象：仅限江北将领遗属（非江东大族）[/color]
 
-受复客待遇的将领全为江北人：[color=#6699FF][url={"research": "陈武", "cat": "people"}]陈武[/url][/color]（[color=#6699FF][url={"research": "庐江", "cat": "geography"}]庐江[/url][/color]）、[color=#6699FF][url={"research": "吕蒙", "cat": "people"}]吕蒙[/url][/color]（汝南）、[color=#6699FF][url={"research": "蒋钦", "cat": "people"}]蒋钦[/url][/color]（九江）、[color=#6699FF][url={"research": "潘璋", "cat": "people"}]潘璋[/url][/color]（东郡）、程普（右北平）、[color=#6699FF][url={"research": "周瑜", "cat": "people"}]周瑜[/url][/color]（庐江）——无一是江东本地大族。
+受复客待遇的将领全为江北人：[color=#0066FF][url={"research": "陈武", "cat": "people"}]陈武[/url][/color]（[color=#0066FF][url={"research": "庐江", "cat": "geography"}]庐江[/url][/color]）、[color=#0066FF][url={"research": "吕蒙", "cat": "people"}]吕蒙[/url][/color]（汝南）、[color=#0066FF][url={"research": "蒋钦", "cat": "people"}]蒋钦[/url][/color]（九江）、[color=#0066FF][url={"research": "潘璋", "cat": "people"}]潘璋[/url][/color]（东郡）、[color=#0066FF][url={"research": "程普", "cat": "people"}]程普[/url][/color]（右北平）、[color=#0066FF][url={"research": "周瑜", "cat": "people"}]周瑜[/url][/color]（庐江）——无一是江东本地大族。
 
-[b]具体赐予数额（三国志吴书各本传）：[/b]
-
-
-[b]将领[/b] | [b]复客/赐田[/b] | [b]时间[/b] | [b]说明[/b]
-陈武（死后） | 复客二百家 | 建安二十年（215） | 《陈武传》注引《江表传》
-吕蒙（身后） | 守冢三百家+复田五十顷 | 建安二十四年（219） | 《吕蒙传》
-蒋钦（身后） | 芜湖民二百户+田二百顷 | 建安二十四年（219） | 《蒋钦传》
-潘璋（身后） | 复客五十家 | 嘉禾三年（234） | 《潘璋传》（特殊例外）
+[color=#000000]具体赐予数额（三国志吴书各本传）：[/color]
 
 
-[b]复客制的时间：建安年间（196—220），黄武元年（222）后基本废止[/b]
+[table=4]
+[cell][b]将领[/b][/cell]
+[cell][b]复客/赐田[/b][/cell]
+[cell][b]时间[/b][/cell]
+[cell][b]说明[/b][/cell]
+[cell]陈武（死后）[/cell]
+[cell]复客二百家[/cell]
+[cell]建安二十年（215）[/cell]
+[cell]《陈武传》注引《江表传》[/cell]
+[cell]吕蒙（身后）[/cell]
+[cell]守冢三百家+复田五十顷[/cell]
+[cell]建安二十四年（219）[/cell]
+[cell]《吕蒙传》[/cell]
+[cell]蒋钦（身后）[/cell]
+[cell]芜湖民二百户+田二百顷[/cell]
+[cell]建安二十四年（219）[/cell]
+[cell]《蒋钦传》[/cell]
+[cell]潘璋（身后）[/cell]
+[cell]复客五十家[/cell]
+[cell]嘉禾三年（234）[/cell]
+[cell]《潘璋传》（特殊例外）[/cell]
+[/table]
 
-- 建安年间：世袭领兵制受限（[color=#6699FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]曾收缴"小将"之兵）→ 复客制作为补偿出现
-- 黄武元年后：封爵制建立，"袭爵领兵"成为制度（[color=#6699FF][url={"research": "徐盛", "cat": "people"}]徐盛[/url][/color]子楷"袭爵领兵"，[color=#6699FF][url={"research": "韩当", "cat": "people"}]韩当[/url][/color]子综"袭侯领兵"）→ 补偿无需，复客制废止
-- 潘璋嘉禾三年的例外：其子"以无行徙[color=#6699FF][url={"research": "会稽", "cat": "geography"}]会稽[/url][/color]"，无法袭爵领兵 → 退而给妻子复客五十家
 
-[b]吕蒙在世受赐"屯田六百人"（建安十九年）属奉邑制而非复客制[/b]——有"官属三十人"，且在后来奉邑地域内，胡宝国认为性质不同。
+[color=#000000]复客制的时间：建安年间（196—220），黄武元年（222）后基本废止[/color]
 
-[b]复客制的原因：[/b] 江北将领来江东后丧失故土，家族在江东积累不足，战死时尚未立稳 → 孙氏以复客为扶助（唐许嵩《建康实录》将"复田五十顷"改称"助田五十顷"，"助"即扶助之意）
 
-[b]东吴世袭领兵制总结：[/b]
-- 授兵制：孙氏将领将军队传于子弟（士兵有时是国家授予的，非父辈私兵）
-- 奉邑制：赐予将领若干县邑，用税金供养军队
-- 复客制：国家赐给将领遗属私属客户（免除赋役），为补偿性措施
-- 黄武后三制整合为"袭爵领兵"的稳定制度
+[indent]•  建安年间：世袭领兵制受限（[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]曾收缴"小将"之兵）→ 复客制作为补偿出现[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  黄武元年后：封爵制建立，"袭爵领兵"成为制度（[color=#0066FF][url={"research": "徐盛", "cat": "people"}]徐盛[/url][/color]子楷"袭爵领兵"，[color=#0066FF][url={"research": "韩当", "cat": "people"}]韩当[/url][/color]子综"袭侯领兵"）→ 补偿无需，复客制废止[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  潘璋嘉禾三年的例外：其子"以无行徙[color=#0066FF][url={"research": "会稽", "cat": "geography"}]会稽[/url][/color]"，无法袭爵领兵 → 退而给妻子复客五十家[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]吕蒙在世受赐"屯田六百人"（建安十九年）属奉邑制而非复客制[/color]——有"官属三十人"，且在后来奉邑地域内，胡宝国认为性质不同。
+
+[color=#000000]复客制的原因：[/color] 江北将领来江东后丧失故土，家族在江东积累不足，战死时尚未立稳 → 孙氏以复客为扶助（唐许嵩《建康实录》将"复田五十顷"改称"助田五十顷"，"助"即扶助之意）
+
+[color=#000000]东吴世袭领兵制总结：[/color]
+
+[indent]•  授兵制：孙氏将领将军队传于子弟（士兵有时是国家授予的，非父辈私兵）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  奉邑制：赐予将领若干县邑，用税金供养军队[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  复客制：国家赐给将领遗属私属客户（免除赋役），为补偿性措施[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  黄武后三制整合为"袭爵领兵"的稳定制度[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 长沙走马楼吴简有实证：东吴将领俸禄常以"某某庄园岁入"支付，庄园经济与军事权力深度绑定。
 
 
-[b]蜀汉庄园经济：荆州-益州二元张力[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]蜀汉庄园经济：荆州-益州二元张力[/font][/b]
+
 
 蜀汉庄园经济存在独特的两重对立：
 
-[b]益州旧豪族（[color=#6699FF][url={"research": "刘璋", "cat": "people"}]刘璋[/url][/color]时代遗存）：[/b]
-- 广汉、犍为、巴西等地大族世代控制土地、盐铁、蜀锦
-- 拥有独立庄园体系与部曲人口
-- 政治态度保守，倾向与曹魏和解（[color=#6699FF][url={"research": "谯周", "cat": "people"}]谯周[/url][/color]代表此一势力）
+[color=#000000]益州旧豪族（[color=#0066FF][url={"research": "刘璋", "cat": "people"}]刘璋[/url][/color]时代遗存）：[/color]
 
-[b]荆州随刘集团（军屯为主）：[/b]
-- 依靠汉中屯田、官府授田，无独立庄园体系
-- 政治态度积极进取（[color=#6699FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]、[color=#6699FF][url={"research": "蒋琬", "cat": "people"}]蒋琬[/url][/color]、[color=#6699FF][url={"research": "费祎", "cat": "people"}]费祎[/url][/color]代表）
-
-[b]关键史料：[/b]
-- 《三国志·[color=#6699FF][url={"research": "赵云", "cat": "people"}]赵云[/url][/color]传》注引《赵云别传》：刘备平定益州后，赵云劝阻分田，刘备采纳——"蜀汉始终未触动益州地主官僚的固定房地田产"，庄园体系延续
-- 诸葛亮"丈田令"意图清查隐匿田亩，但益州豪强联合抵制，丈田结果有限；郫县刘洵等顽固者被依法处死，田产没收（据四川省情网文章，田产券契焚烧作废，田地分给佃农或无地农户），属个案镇压
-- [b]丈田令时间：[/b] 建兴初年（诸葛亮开府主政后，222—约226年），与《言锦教》（"今民贫国虚，决敌之资，惟仰锦耳"）同属建兴初年政策；精确年份史料永久空白
-- 蜀汉后期"虚籍甚众"（《三国志·[color=#6699FF][url={"research": "吕乂", "cat": "people"}]吕乂[/url][/color]传》）：益州士族大量隐匿户口于庄园，国家赋税基础严重萎缩
-
-[b]蜀汉盐铁政策（诸葛亮）：[/b]
-- 恢复盐铁官营：置盐府校尉，任命[color=#6699FF][url={"research": "王连", "cat": "people"}]王连[/url][/color]、吕乂为司盐校尉；[color=#6699FF][url={"research": "张裔", "cat": "people"}]张裔[/url][/color]为司金中郎将
-- 用火井煮盐：《华阳国志》"取井火煮之，一斛水得五盐"
-- 蜀锦外销：《言锦教》"惟仰锦耳"，以蜀锦与魏换马、与吴换粮
-
-[b]蜀汉灭亡的庄园经济背景：[/b]
-263年[color=#6699FF][url={"research": "邓艾", "cat": "people"}]邓艾[/url][/color]入蜀，益州本土士族主动倒向曹魏（谯周主降），是长期庄园利益独立性的政治表达。灭蜀后曹魏统计蜀汉人口仅"男女九十四万"，远低于实际，说明大量人口隐匿于庄园。
+[indent]•  广汉、犍为、巴西等地大族世代控制土地、盐铁、蜀锦[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  拥有独立庄园体系与部曲人口[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  政治态度保守，倾向与曹魏和解（[color=#0066FF][url={"research": "谯周", "cat": "people"}]谯周[/url][/color]代表此一势力）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]部曲法律地位的历史演变[/b]
+[color=#000000]荆州随刘集团（军屯为主）：[/color]
+
+[indent]•  依靠汉中屯田、官府授田，无独立庄园体系[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  政治态度积极进取（[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]、[color=#0066FF][url={"research": "蒋琬", "cat": "people"}]蒋琬[/url][/color]、[color=#0066FF][url={"research": "费祎", "cat": "people"}]费祎[/url][/color]代表）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]时期[/b] | [b]法律地位[/b] | [b]关键事件/史料[/b]
-[b]汉末（190-220）[/b] | 无明确法律规定；实为私人依附，介于奴婢与自由民之间 | 流民主动投附豪强，以劳役换庇护
-[b]曹魏（220-265）[/b] | 国家开始以"赐客制度"将其合法化；赐客给公卿以下，"小人惮役多乐为之" | 《晋书·外戚·王恂传》；孙吴吕蒙、蒋钦等死后其客户作为财产传给家属
-[b]西晋（265-316）[/b] | 品官荫客制正式法定化（太康元年，280年）；法定上限：一品五十户，九品一户；同时禁止"私相置名"（非法荫附） | 《晋书·食货志》占田法；"禁募客"令
-[b]东晋（317-420）[/b] | 给客制扩大数量（太兴四年，321年）；九品由一户升至五户，总体荫客数大增 | 《隋书·食货志》给客制度
-[b]北周（577年）[/b] | [b]第一次法律明确定义部曲为"贱口"[/b]：高于奴婢，低于良人 | 北周武帝建德六年诏（《周书·武帝纪》）："若旧主人犹须共居，听留为部曲及客女"
-[b]唐代（618-907）[/b] | 《唐律》明确部曲地位；承认部曲存在但禁止将普通人变为部曲；伤害主人罪加一等 | 《唐律疏议》；部曲成"历史遗留问题"，只减不增
+[color=#000000]关键史料：[/color]
+
+[indent]•  《三国志·[color=#0066FF][url={"research": "赵云", "cat": "people"}]赵云[/url][/color]传》注引《赵云别传》：刘备平定益州后，赵云劝阻分田，刘备采纳——"蜀汉始终未触动益州地主官僚的固定房地田产"，庄园体系延续[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  诸葛亮"丈田令"意图清查隐匿田亩，但益州豪强联合抵制，丈田结果有限；郫县刘洵等顽固者被依法处死，田产没收（据四川省情网文章，田产券契焚烧作废，田地分给佃农或无地农户），属个案镇压[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]丈田令时间：[/color] 建兴初年（诸葛亮开府主政后，222—约226年），与《言锦教》（"今民贫国虚，决敌之资，惟仰锦耳"）同属建兴初年政策；精确年份史料永久空白[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  蜀汉后期"虚籍甚众"（《三国志·[color=#0066FF][url={"research": "吕乂", "cat": "people"}]吕乂[/url][/color]传》）：益州士族大量隐匿户口于庄园，国家赋税基础严重萎缩[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]西晋占田制：庄园经济的"制度性延续"[/b]
+[color=#000000]蜀汉盐铁政策（诸葛亮）：[/color]
+
+[indent]•  恢复盐铁官营：置盐府校尉，任命[color=#0066FF][url={"research": "王连", "cat": "people"}]王连[/url][/color]、吕乂为司盐校尉；[color=#0066FF][url={"research": "张裔", "cat": "people"}]张裔[/url][/color]为司金中郎将[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  用火井煮盐：《华阳国志》"取井火煮之，一斛水得五盐"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  蜀锦外销：《言锦教》"惟仰锦耳"，以蜀锦与魏换马、与吴换粮[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-占田制（280年）是曹魏屯田制废除后土地私有化全面确立的标志，但其对庄园经济的影响是[b]默认而非限制[/b]：
+[color=#000000]蜀汉灭亡的庄园经济背景：[/color]
+263年[color=#0066FF][url={"research": "邓艾", "cat": "people"}]邓艾[/url][/color]入蜀，益州本土士族主动倒向曹魏（谯周主降），是长期庄园利益独立性的政治表达。灭蜀后曹魏统计蜀汉人口仅"男女九十四万"，远低于实际，说明大量人口隐匿于庄园。
 
 
-[b]关键机制[/b]
-
-1. [b]品官占田的叠加性[/b]：官品占田数是在原有土地上的"再赐予"，不触碰豪族既有兼并
-2. [b]无惩处条款[/b]：超出占田限额无任何惩处规定，等于虚设上限
-3. [b]荫客制度化[/b]：将原本非法的荫附行为通过品官荫客制合法化（见荫客表）
-4. [b]实际效果[/b]：《晋书·食货志》"园田水碓，遍满天下"——占田制实施后庄园反而扩张
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]历史进程（从屯田到占田）[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]部曲法律地位的历史演变[/font][/b]
+
+
+[table=3]
+[cell][b]时期[/b][/cell]
+[cell][b]法律地位[/b][/cell]
+[cell][b]关键事件/史料[/b][/cell]
+[cell][color=#000000]汉末（190-220）[/color][/cell]
+[cell]无明确法律规定；实为私人依附，介于奴婢与自由民之间[/cell]
+[cell]流民主动投附豪强，以劳役换庇护[/cell]
+[cell][color=#000000]曹魏（220-265）[/color][/cell]
+[cell]国家开始以"赐客制度"将其合法化；赐客给公卿以下，"小人惮役多乐为之"[/cell]
+[cell]《晋书·外戚·王恂传》；孙吴吕蒙、蒋钦等死后其客户作为财产传给家属[/cell]
+[cell][color=#000000]西晋（265-316）[/color][/cell]
+[cell]品官荫客制正式法定化（太康元年，280年）；法定上限：一品五十户，九品一户；同时禁止"私相置名"（非法荫附）[/cell]
+[cell]《晋书·食货志》占田法；"禁募客"令[/cell]
+[cell][color=#000000]东晋（317-420）[/color][/cell]
+[cell]给客制扩大数量（太兴四年，321年）；九品由一户升至五户，总体荫客数大增[/cell]
+[cell]《隋书·食货志》给客制度[/cell]
+[cell][color=#000000]北周（577年）[/color][/cell]
+[cell][color=#000000]第一次法律明确定义部曲为"贱口"[/color]：高于奴婢，低于良人[/cell]
+[cell]北周武帝建德六年诏（《周书·武帝纪》）："若旧主人犹须共居，听留为部曲及客女"[/cell]
+[cell][color=#000000]唐代（618-907）[/color][/cell]
+[cell]《唐律》明确部曲地位；承认部曲存在但禁止将普通人变为部曲；伤害主人罪加一等[/cell]
+[cell]《唐律疏议》；部曲成"历史遗留问题"，只减不增[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]西晋占田制：庄园经济的"制度性延续"[/font][/b]
+
+
+占田制（280年）是曹魏屯田制废除后土地私有化全面确立的标志，但其对庄园经济的影响是[color=#000000]默认而非限制[/color]：
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]关键机制[/font][/b]
+
+
+[indent]1.  [color=#000000]品官占田的叠加性[/color]：官品占田数是在原有土地上的"再赐予"，不触碰豪族既有兼并[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]无惩处条款[/color]：超出占田限额无任何惩处规定，等于虚设上限[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]荫客制度化[/color]：将原本非法的荫附行为通过品官荫客制合法化（见荫客表）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]实际效果[/color]：《晋书·食货志》"园田水碓，遍满天下"——占田制实施后庄园反而扩张[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]历史进程（从屯田到占田）[/font][/b]
+
 
 ```
 曹操屯田（196年）：国家夺回人口，与豪族争夺编户
@@ -281,27 +510,54 @@
 ```
 
 
-[b]关键人物与事件[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]人物/事件[/b] | [b]与庄园经济的关联[/b]
-[b]崔寔[/b] | 《四民月令》作者，清河崔氏庄园主兼学者，留下东汉庄园经济最详细的"操作手册"（酿酒、纺织、市场交易全部月令化）
-[b]樊宏[/b] | 刘秀外祖父，庄园"闭门成市"：300余顷土地、漆林、鱼塘，自给自足，是东汉大型庄园的典型案例
-[b]李典[/b] | 家族在乘氏县庄园"合宾客数千家"，率宗族部曲随曹操，后整编为曹军编制（《三国志·李典传》），是汉末庄园到军队编制转化的典型案例
-[b]糜竺[/b] | 徐州豪族，赠刘备"奴客二千、金银货币"，是庄园经济支撑军阀起步的典型案例
-[b]荀氏家族[/b] | 颍川荀氏庄园遍布中原，[color=#6699FF][url={"research": "荀彧 ", "cat": " people"}]荀彧 [/url][/color]举荐网络与商队情报网相互支撑，是曹操颍川人才库的物质基础
-[b][color=#6699FF][url={"research": "陆逊 ", "cat": " people"}]陆逊 [/url][/color][/b] | 吴郡陆氏庄园经济支撑，"吴四姓（顾、陆、朱、张）子弟布列朝廷"，东吴政权本质上是江东豪族的联盟
-[b]曹操屯田令（196年）[/b] | 明确打压庄园，争夺人口；但长期效果有限，给客制使制度反向强化了豪强
-[b]孙权复客制（建安年间）[/b] | 江北将领死后，遗属获赐复客（50—300家不等）；胡宝国考证：此制是世袭领兵受限时的补偿措施，针对江北将领遗属，非江东大族优待；黄武元年（222）后废止
-[b]赵云建议不分成都园田[/b] | 益州既定后，赵云反对将园地桑田赐予将领，刘备采纳——意外保留益州豪族庄园，埋下荆/益对立的经济根源
-[b]诸葛亮丈田令[/b] | 试图清查隐匿田亩，遭益州豪强抵制，部分镇压，但未从根本上解决兼并问题；实施于建兴初年（222—约226年），精确年份史料已穷尽
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键人物与事件[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[table=2]
+[cell][b]人物/事件[/b][/cell]
+[cell][b]与庄园经济的关联[/b][/cell]
+[cell][color=#000000]崔寔[/color][/cell]
+[cell]《四民月令》作者，清河崔氏庄园主兼学者，留下东汉庄园经济最详细的"操作手册"（酿酒、纺织、市场交易全部月令化）[/cell]
+[cell][color=#000000]樊宏[/color][/cell]
+[cell]刘秀外祖父，庄园"闭门成市"：300余顷土地、漆林、鱼塘，自给自足，是东汉大型庄园的典型案例[/cell]
+[cell][color=#000000]李典[/color][/cell]
+[cell]家族在乘氏县庄园"合宾客数千家"，率宗族部曲随曹操，后整编为曹军编制（《三国志·李典传》），是汉末庄园到军队编制转化的典型案例[/cell]
+[cell][color=#000000]糜竺[/color][/cell]
+[cell]徐州豪族，赠刘备"奴客二千、金银货币"，是庄园经济支撑军阀起步的典型案例[/cell]
+[cell][color=#000000]荀氏家族[/color][/cell]
+[cell]颍川荀氏庄园遍布中原，[color=#0066FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]举荐网络与商队情报网相互支撑，是曹操颍川人才库的物质基础[/cell]
+[cell][color=#000000][color=#0066FF][url={"research": "陆逊", "cat": "people"}]陆逊[/url][/color][/color][/cell]
+[cell]吴郡陆氏庄园经济支撑，"吴四姓（顾、陆、朱、张）子弟布列朝廷"，东吴政权本质上是江东豪族的联盟[/cell]
+[cell][color=#000000]曹操屯田令（196年）[/color][/cell]
+[cell]明确打压庄园，争夺人口；但长期效果有限，给客制使制度反向强化了豪强[/cell]
+[cell][color=#000000]孙权复客制（建安年间）[/color][/cell]
+[cell]江北将领死后，遗属获赐复客（50—300家不等）；胡宝国考证：此制是世袭领兵受限时的补偿措施，针对江北将领遗属，非江东大族优待；黄武元年（222）后废止[/cell]
+[cell][color=#000000]赵云建议不分成都园田[/color][/cell]
+[cell]益州既定后，赵云反对将园地桑田赐予将领，刘备采纳——意外保留益州豪族庄园，埋下荆/益对立的经济根源[/cell]
+[cell][color=#000000]诸葛亮丈田令[/color][/cell]
+[cell]试图清查隐匿田亩，遭益州豪强抵制，部分镇压，但未从根本上解决兼并问题；实施于建兴初年（222—约226年），精确年份史料已穷尽[/cell]
+[/table]
 
 
-- [b]演义强化个人英雄[/b]：《三国演义》对豪族庄园的物质基础几乎不着笔墨，刘备的起步（糜竺资助）、曹操的粮草（豪族供给）在演义中被略去或简化
-- [b]演义中的庄园痕迹[/b]：[color=#6699FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]的荆州治理、刘璋的益州割据，都有庄园经济的影子，但演义将其处理为"懦弱"的个人品质问题，而非结构性的政治经济格局
-- [b]诸葛亮形象的庄园背景[/b]：[color=#6699FF][url={"research": "庞德", "cat": "people"}]庞德[/url][/color]公庄园学馆是诸葛亮、[color=#6699FF][url={"research": "庞统", "cat": "people"}]庞统[/url][/color]、司马徽等人的成长环境，演义中只保留了"卧龙凤雏"的名士传奇，略去了其士族庄园网络的出身背景
-- [b]蜀汉灭亡的结构性原因[/b]：演义将蜀汉灭亡归于后主昏庸、宦官干政，而庄园利益分裂（益州豪族倒向曹魏）是更深层的结构性原因，演义完全未触及
-- [b]东吴权臣与复客制[/b]：演义对[color=#6699FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]、[color=#6699FF][url={"research": "孙綝", "cat": "people"}]孙綝[/url][/color]等权臣的描述聚焦在个人权谋，未触及其背后的庄园/世袭领兵经济基础
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[indent]•  [color=#000000]演义强化个人英雄[/color]：《三国演义》对豪族庄园的物质基础几乎不着笔墨，刘备的起步（糜竺资助）、曹操的粮草（豪族供给）在演义中被略去或简化[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]演义中的庄园痕迹[/color]：[color=#0066FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]的荆州治理、刘璋的益州割据，都有庄园经济的影子，但演义将其处理为"懦弱"的个人品质问题，而非结构性的政治经济格局[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]诸葛亮形象的庄园背景[/color]：[color=#0066FF][url={"research": "庞德", "cat": "people"}]庞德[/url][/color]公庄园学馆是诸葛亮、[color=#0066FF][url={"research": "庞统", "cat": "people"}]庞统[/url][/color]、司马徽等人的成长环境，演义中只保留了"卧龙凤雏"的名士传奇，略去了其士族庄园网络的出身背景[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]蜀汉灭亡的结构性原因[/color]：演义将蜀汉灭亡归于后主昏庸、宦官干政，而庄园利益分裂（益州豪族倒向曹魏）是更深层的结构性原因，演义完全未触及[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]东吴权臣与复客制[/color]：演义对[color=#0066FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]、[color=#0066FF][url={"research": "孙綝", "cat": "people"}]孙綝[/url][/color]等权臣的描述聚焦在个人权谋，未触及其背后的庄园/世袭领兵经济基础[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]

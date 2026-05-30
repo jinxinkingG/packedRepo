@@ -15,7 +15,7 @@ const SOLDIERS_RECOVER = 150
 func effect_20396_start():
 	var wv = me.war_vstate()
 	if wv.rice < RICE_MIN:
-		play_dialog(me.actorId, "米不足，需 >= {0}".format([RICE_MIN]), 3, 2999)
+		play_dialog(actorId, "米不足，需 >= {0}".format([RICE_MIN]), 3, 2999)
 		return
 	var targets = []
 	var candidates = get_teammate_targets(me)
@@ -46,7 +46,7 @@ func effect_20396_2():
 	var msg = "消耗{0}米\n令{1}略作休整\n可否？".format([
 		RICE_COST, targetWA.get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001():

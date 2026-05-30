@@ -12,7 +12,7 @@ const COST_CD = 1
 func effect_20439_start():
 	var targets = get_teammate_targets(me)
 	if targets.empty():
-		play_dialog(me.actorId, "没有合适的目标", 2, 2999)
+		play_dialog(actorId, "没有合适的目标", 2, 2999)
 		return
 	if not wait_choose_actors(targets, "选择队友发动【{0}】"):
 		return
@@ -30,7 +30,7 @@ func effect_20439_2():
 	var msg = "对{0}发动【{1}】\n令其机动力+{2}\n可否？".format([
 		targetActor.get_name(), ske.skill_name, GRANT_AP,
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001():
@@ -49,7 +49,7 @@ func effect_20439_3():
 	var msg = "吾非驱使足下\n诚心相助尔\n（{0}机动力+{1}".format([
 		targetActor.get_name(), GRANT_AP
 	])
-	play_dialog(me.actorId, msg, 2, 2999)
+	play_dialog(actorId, msg, 2, 2999)
 	return
 
 func on_view_model_2999():

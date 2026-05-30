@@ -1,111 +1,175 @@
-[b]娄圭（子伯）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]娄圭（子伯）[/font][/b]
 
 
-[b]基本信息：[/b]
-- 生卒年：约155年—211年后（均为推算，无一手史料明文）
-- 籍贯：[color=#6699FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]郡（今河南南阳一带）；《三国演义》改为京兆（今陕西西安）
-- 字：子伯
-- 身份：东汉末年曹魏谋士、大将（不掌兵）
+[color=#000000]基本信息：[/color]
+
+[indent]•  生卒年：约155年—211年后（均为推算，无一手史料明文）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  籍贯：[color=#0066FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]郡（今河南南阳一带）；《三国演义》改为京兆（今陕西西安）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  字：子伯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  身份：东汉末年曹魏谋士、大将（不掌兵）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]早年经历[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]早年经历[/font][/b]
+
 
 据《吴书》（裴注引）：娄圭少年时便有雄才大略，曾叹息道："男儿居世，会当得数万兵千匹骑著后耳！"同辈皆笑之。
 
 其后因藏匿亡命之徒，被关押将处死。越狱后情急生智，乔装成追捕者骗过官吏，成功脱身——此段细节极为生动，可见其机变。
 
 
-[b]初平年间：荆州依刘表[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]初平年间：荆州依刘表[/font][/b]
 
-初平年间（190—193年），娄圭在荆州北界（今河南南阳北部）招募部众，依附荆州牧[color=#6699FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]，并为其招集北来流亡士众。
 
-据《献帝春秋》：扶风人[color=#6699FF][url={"research": "王忠", "cat": "people"}]王忠[/url][/color]南下途中遇娄圭，不愿归属刘表，率众袭击娄圭，夺其兵马，以千余人归[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]。——此事说明娄圭此时尚在刘表一方招募势力，而王忠抢走了他的成果。
+初平年间（190—193年），娄圭在荆州北界（今河南南阳北部）招募部众，依附荆州牧[color=#0066FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]，并为其招集北来流亡士众。
+
+据《三国志·武帝纪》裴注引[color=#000000]《魏略》[/color]（原文见 ref-wangzhong-lougu-yuanwen.md）：
+
+扶风人[color=#0066FF][url={"research": "王忠", "cat": "people"}]王忠[/url][/color]在三辅大乱中[color=#000000]饥乏啖人[/color]（饥寒至极，以人肉为食），随辈南向武关。恰逢娄圭受荆州刘表之命，在北方边界迎接流亡士众（"值娄子伯为荆州遣迎北方客人"）。王忠不愿归附刘表，于是率众袭击娄圭，[color=#000000]夺其兵马，聚众千余人归[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color][/color]。曹操拜王忠为中郎将，从征讨。
+
+【考辨注：此事来源为《魏略》，非《献帝春秋》。维基百科娄圭词条注释3将此段误标为《献帝春秋》，属编辑错误；同段裴注中《献帝春秋》记载的是[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]向[color=#0066FF][url={"research": "刘岱", "cat": "people"}]刘岱[/url][/color]等人的挑衅语，与王忠袭圭无关。见 ref-wangzhong-lougu-yuanwen.md，2026-05-10考辨终结。】
+
+另有一个关于王忠的有趣细节：曹魏五官将（[color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]）知道王忠曾吃过人肉，曾命人从墓地取骷髅绑在王忠马鞍上以取笑（"令俳取冢间髑髅系著忠马鞍，以为欢笑"）——这折射出三辅大乱之惨烈，以及王忌讳往事在曹营中已是公开秘密。
 
 此后，娄圭本人也归附曹操。因"少与太祖有旧"，得到曹操礼遇。
 
 
-[b]在曹操麾下[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]在曹操麾下[/font][/b]
 
-曹操任命娄圭为"大将"，但[b]不使典兵[/b]（不掌管军队），"常在坐席言议"——这是一个典型的谋主型参赞角色，而非统兵将领。《吴书》称"军国大计常与焉"，可见其参与层级之高。
+
+曹操任命娄圭为"大将"，但[color=#000000]不使典兵[/color]（不掌管军队），"常在坐席言议"——这是一个典型的谋主型参赞角色，而非统兵将领。《吴书》称"军国大计常与焉"，可见其参与层级之高。
 
 曹操对其财富与地位的评语："娄子伯富乐于孤，但势不如孤耳！"说明娄圭在曹营中积累了相当财富（家累千金），地位虽高，但无兵权。
 
-[b]建安十三年（208年）：荆州劝进[/b]
+[color=#000000]建安十三年（208年）：荆州劝进[/color]
 
-[color=#6699FF][url={"research": "刘琮", "cat": "people"}]刘琮[/url][/color]以天子符节归降，众将皆疑诈。曹操征询娄圭，娄圭判断："天下扰攘，各贪王命以自重，今以节来，是必至诚。"曹操采纳，继续进军，兵不血刃取得刘表控制的荆州。此为娄圭史载可考功绩之一。
+[color=#0066FF][url={"research": "刘琮", "cat": "people"}]刘琮[/url][/color]以天子符节归降，众将皆疑诈。曹操征询娄圭，娄圭判断："天下扰攘，各贪王命以自重，今以节来，是必至诚。"曹操采纳，继续进军，兵不血刃取得刘表控制的荆州。此为娄圭史载可考功绩之一。
 
-[b]建安十六年（211年）：[color=#6699FF][url={"research": "潼关", "cat": "geography"}]潼关[/url][/color]筑冰城[/b]
+[color=#000000]建安十六年（211年）：[color=#0066FF][url={"research": "潼关", "cat": "geography"}]潼关[/url][/color]筑冰城[/color]
 
-潼关之战，曹军渡渭困难——地多沙，无法筑垒，[color=#6699FF][url={"research": "马超", "cat": "people"}]马超[/url][/color]骑兵频频冲突，营地不能稳立。
+潼关之战，曹军渡渭困难——地多沙，无法筑垒，[color=#0066FF][url={"research": "马超", "cat": "people"}]马超[/url][/color]骑兵频频冲突，营地不能稳立。
 
-据《曹瞒传》：娄圭献计："今天寒，可起沙为城，以水灌之，可一夜而成。"曹操采纳，多作缣囊运水，夜间渡兵筑城，比明城立，大军得以全部渡渭。
+据《曹瞒传》（裴注引）：娄圭献计："今天寒，可起沙为城，以水灌之，可一夜而成。"曹操采纳，多作缣囊运水，夜间渡兵筑城，比明城立，大军得以全部渡渭。
 
-曹操事后感叹：[b]"子伯之计，孤不及也。"[/b]此为史书中曹操对谋臣最高规格的赞誉之一。
+曹操事后感叹：[color=#000000]"子伯之计，孤不及也。"[/color]此为史书中曹操对谋臣最高规格的赞誉之一。
+
+【注：《曹瞒传》原文将主语说法略有不同（"娄子伯说公曰"），与《吴书》中另有记载，大体一致。】
 
 
-[b]结局：一语招祸，以"恃旧不虔"被诛[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]结局：一语招祸，以"恃旧不虔"被诛[/font][/b]
+
 
 潼关大胜之后不久，娄圭随行出游，与习授同车，见到曹操父子出行。
 
-[b]两种版本记载：[/b]
-- 《吴书》版：习授先感叹"父子如此，何其快耶！"，娄圭回答"居世间，当自为之，而但观他人乎！"习授告发曹操，娄圭遂见诛。
-- 《魏略》版：娄圭顾谓左右曰"此家父子，如今日为乐也。"被人告发，曹操以"腹诽"收治之。
+[color=#000000]两种版本记载：[/color]
+
+[indent]•  《吴书》版：习授先感叹"父子如此，何其快耶！"，娄圭回答"居世间，当自为之，而但观他人乎！"习授告发曹操，娄圭遂见诛。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《魏略》版：娄圭顾谓左右曰"此家父子，如今日为乐也。"被人告发，曹操以"腹诽"收治之。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 两版细节有异，但结局一致：被曹操以"恃旧不虔"杀死。
 
-《三国志·[color=#6699FF][url={"research": "崔琰", "cat": "people"}]崔琰[/url][/color]传》正文将[color=#6699FF][url={"research": "孔融", "cat": "people"}]孔融[/url][/color]、许攸、娄圭三人并列，均为"少与太祖有旧"而"以恃旧不虔见诛"——说明这是曹操晚年政治清洗宿旧的一个固定模式。
+《三国志·[color=#0066FF][url={"research": "崔琰", "cat": "people"}]崔琰[/url][/color]传》正文将[color=#0066FF][url={"research": "孔融", "cat": "people"}]孔融[/url][/color]、[color=#0066FF][url={"research": "许攸", "cat": "people"}]许攸[/url][/color]、娄圭三人并列，均为"少与太祖有旧"而"以恃旧不虔见诛"——说明这是曹操晚年政治清洗宿旧的一个固定模式。
 
 陈寿评语："皆以恃旧不虔见诛。"——陈寿将三人视为相同类型的政治悲剧。
 
 鱼豢评：以"一目之罗"喻之，认为大魏之建，功臣宿旧如娄圭者亦有贡献，其死令人惋惜。
 
 
-[b]性格与形象[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 基于史料的性格分析：
 
-1. [b]少年志大[/b]：年轻时即有"数万兵千匹骑"的豪语，在同侪中属异类。
-2. [b]机智善变[/b]：越狱后乔装追捕者脱身，临危应变能力极强。
-3. [b]谋略过人[/b]：冰城一计令曹操自叹不如，在筑垒防守的战术创新上确有独到之处。
-4. [b]不事权术[/b]：不使典兵，不积政治资本，家累千金却无实际兵权——有才而无防人之心。
-5. [b]口无遮拦[/b]：与发小同车竟出"当自为之"之语，不懂在权力游戏中自保。
+
+[indent]1.  [color=#000000]少年志大[/color]：年轻时即有"数万兵千匹骑"的豪语，在同侪中属异类。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]机智善变[/color]：越狱后乔装追捕者脱身，临危应变能力极强。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]谋略过人[/color]：冰城一计令曹操自叹不如，在筑垒防守的战术创新上确有独到之处。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]不事权术[/color]：不使典兵，不积政治资本，家累千金却无实际兵权——有才而无防人之心。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  [color=#000000]口无遮拦[/color]：与发小同车竟出"当自为之"之语，不懂在权力游戏中自保。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 合理推断（非史料直接支持）：娄圭的死，表面是"腹诽"或"口无遮拦"，本质上是曹操晚年对宿旧功臣的系统性清洗——孔融、许攸、娄圭皆有此模式。娄圭本人可能并无真实异志，而是以言语成了政治借口的牺牲品。
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-- [b]曹操[/b]："少与太祖有旧"，发小关系。曹操对其谋略极为欣赏，但最终将其诛杀，典型的"信任-猜忌"曹魏宿旧悲剧。
-- [b]习授（南郡人）[/b]：同车出行的同僚，告发者。习授属于汉末荆州[b][color=#6699FF][url={"research": "襄阳", "cat": "geography"}]襄阳[/url][/color]习氏[/b]巨族成员（《三国志集解》"习氏为襄阳巨族"），在曹魏效力，但在史书中极度边缘——仅见此一事，职务、官阶均无载。习氏家族分侍三国（[color=#6699FF][url={"research": "习祯", "cat": "people"}]习祯[/url][/color]、[color=#6699FF][url={"research": "习珍", "cat": "people"}]习珍[/url][/color]在蜀，习温在吴，习授在魏），是典型荆州门阀。习授告发娄圭的动机无史料记载（政治自保？惶恐上报？）。
-- [b]王忠[/b]：扶风人，初平年间曾袭击娄圭夺其部众归曹，二人后来均在曹营，关系史书未明。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[indent]•  [color=#000000]曹操[/color]："少与太祖有旧"，发小关系。曹操对其谋略极为欣赏，但最终将其诛杀，典型的"信任-猜忌"曹魏宿旧悲剧。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]习授（南郡人）[/color]：同车出行的同僚，告发者。习授属于汉末荆州[color=#000000][color=#0066FF][url={"research": "襄阳", "cat": "geography"}]襄阳[/url][/color]习氏[/color]巨族成员（《三国志集解》"习氏为襄阳巨族"），在曹魏效力，但在史书中极度边缘——仅见此一事，职务、官阶均无载。习氏家族分侍三国（[color=#0066FF][url={"research": "习祯", "cat": "people"}]习祯[/url][/color]、[color=#0066FF][url={"research": "习珍", "cat": "people"}]习珍[/url][/color]在蜀，习温在吴，习授在魏），是典型荆州门阀。习授告发娄圭的动机无史料记载（政治自保？惶恐上报？）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]王忠[/color]：扶风人，初平年间曾袭击娄圭夺其部众归曹（据《魏略》），二人后来均在曹营，关系史书未明。王忠在刘岱、王忠伐刘备战中"不克"，可见其军事实力有限。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]版本差异：嘉靖本 vs 毛本[/b]
-
-演义中，娄圭以"梦梅居士"道号登场，情节见于第59回"[color=#6699FF][url={"research": "许褚", "cat": "people"}]许褚[/url][/color]裸衣斗马超"。两个版本均保留核心情节，但有若干文字差异：
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]比较点[/b] | [b]嘉靖壬午本系统[/b] | [b]毛本[/b]
-外貌描写 | "[b]上长下短[/b]，鹤骨松姿" | "鹤骨松姿，[b]形貌苍古[/b]"（无"上长下短"）
-询问措辞 | "何不乘时而[b]谋之[/b]" | "今何不乘时[b]筑之[/b]"
-施工描写 | "却驱兵泼水" | "驱兵泼水[b]筑城[/b]"
-离去措辞 | "子伯竟不受而去" | "子伯竟不受而去"（同）
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-[b]分析：[/b]
-- 嘉靖本"上长下短"是具体的身材外形描写，毛本改为"形貌苍古"更注重仙道气质，符合毛本对隐士形象的强化倾向。
-- "梦梅居士"称号在嘉靖本和毛本中均存在，是演义系统的共同特征，非毛本添加。
-- 演义将娄圭的历史结局（被曹操诛杀）完全反转为"潇洒告辞、不受赏赐"的隐士形象，与演义塑造"有志不仕、超脱世外"类人物的整体风格一致（如水镜先生、[color=#6699FF][url={"research": "庞德", "cat": "people"}]庞德[/url][/color]公等）。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]版本差异：嘉靖本 vs 毛本[/font][/b]
 
 
-[b]叶逢春本（志传系统，1548年）[/b]
+演义中，娄圭以"梦梅居士"道号登场，情节见于第59回"[color=#0066FF][url={"research": "许褚", "cat": "people"}]许褚[/url][/color]裸衣斗马超"。两个版本均保留核心情节，但有若干文字差异：
 
-叶逢春本数字化全文不可得。[color=#6699FF][url={"research": "路招", "cat": "people"}]路招[/url][/color]出场的"关云长袭[color=#6699FF][url={"research": "车胄", "cat": "people"}]车胄[/url][/color]"在卷二，娄圭出场的"马超伐曹操"约在卷七至卷八。叶逢春本是否有娄圭出场，及称谓与情节差异，[b]待《通俗演义三国志史传》（周文业，2023）实物核查[/b]（低优先级）。
+
+[table=3]
+[cell][b]比较点[/b][/cell]
+[cell][b]嘉靖壬午本系统[/b][/cell]
+[cell][b]毛本[/b][/cell]
+[cell]外貌描写[/cell]
+[cell]"[color=#000000]上长下短[/color]，鹤骨松姿"[/cell]
+[cell]"鹤骨松姿，[color=#000000]形貌苍古[/color]"（无"上长下短"）[/cell]
+[cell]询问措辞[/cell]
+[cell]"何不乘时而[color=#000000]谋之[/color]"[/cell]
+[cell]"今何不乘时[color=#000000]筑之[/color]"[/cell]
+[cell]施工描写[/cell]
+[cell]"却驱兵泼水"[/cell]
+[cell]"驱兵泼水[color=#000000]筑城[/color]"[/cell]
+[cell]离去措辞[/cell]
+[cell]"子伯竟不受而去"[/cell]
+[cell]"子伯竟不受而去"（同）[/cell]
+[/table]
+
+
+[color=#000000]分析：[/color]
+
+[indent]•  嘉靖本"上长下短"是具体的身材外形描写，毛本改为"形貌苍古"更注重仙道气质，符合毛本对隐士形象的强化倾向。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "梦梅居士"称号在嘉靖本和毛本中均存在，是演义系统的共同特征，非毛本添加。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  演义将娄圭的历史结局（被曹操诛杀）完全反转为"潇洒告辞、不受赏赐"的隐士形象，与演义塑造"有志不仕、超脱世外"类人物的整体风格一致（如水镜先生、[color=#0066FF][url={"research": "庞德", "cat": "people"}]庞德[/url][/color]公等）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]叶逢春本（志传系统，1548年）[/font][/b]
+
+
+叶逢春本数字化全文不可得。[color=#0066FF][url={"research": "路招", "cat": "people"}]路招[/url][/color]出场的"关云长袭[color=#0066FF][url={"research": "车胄", "cat": "people"}]车胄[/url][/color]"在卷二，娄圭出场的"马超伐曹操"约在卷七至卷八。叶逢春本是否有娄圭出场，及称谓与情节差异，[color=#000000]待实物核查[/color]（低优先级）。
+
+
+[color=#888888]──────────────────────────────[/color]

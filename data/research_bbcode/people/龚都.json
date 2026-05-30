@@ -1,84 +1,167 @@
-[b]龚都（共都）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]龚都（共都）[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详，籍贯字号均无史料；汉末汝南武装割据势力首领
+[color=#000000]基本信息：[/color] 生卒年不详，籍贯字号均无史料；汉末汝南武装割据势力首领
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]名字辨析[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]名字辨析[/font][/b]
+
 
 龚都在《三国志》两处出现，写法不同：
-- [b]《蜀书·先主传》[/b]：作"龚都"
-- [b]《魏书·武帝纪》[/b]：作"共都"，裴松之注："共都：本书卷三十二《先主传》作'龚都'。"
+
+[indent]•  [color=#000000]《蜀书·先主传》[/color]：作"龚都"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《魏书·武帝纪》[/color]：作"共都"，裴松之注（互见性校勘注）：先主传此字与武帝纪相对应[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 两字同音（gōng），属于异字通用。现代史学通行以"龚都"为准（以先主传为权威依据）。
 
 
-[b]建安六年（201年）的活动[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安六年（201年）的活动[/font][/b]
+
 
 这是龚都在史书中唯一有记载的时段。
 
-[b]《三国志·蜀书·先主传》：[/b]
-[color=#AAAAAA]　绍遣先主将本兵复至汝南，与贼龚都等合，众数千人。曹公遣蔡阳击之，为先主所杀。[/color]
+[color=#000000]《三国志·蜀书·先主传》：[/color]
 
-[b]《三国志·魏书·武帝纪》：[/b]
-[color=#AAAAAA]　绍之未破也，使[color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]略汝南；汝南贼共都等应之。遣蔡扬击都，不利，为都所破。公南征备。备闻公自行，走奔[color=#6699FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]；都等皆散。[/color]
-
-[b]事件还原：[/b]
-1. [color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]遣刘备率本部兵至汝南，龚都等人响应，合兵数千人
-2. [color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]遣蔡阳（蔡扬）率军来攻
-3. 蔡阳兵败被杀——武帝纪归功于龚都，先主传归功于刘备；两者不矛盾，联军共同作战，视角不同（裴注未专门说明此出入）
-4. 曹操亲自南征，刘备弃汝南奔刘表
-5. 龚都等部众散去，史书不再提及，[b]下落不明[/b]
+[indent][color=#666666]┃ 绍遣先主将本兵复至汝南，与贼龚都等合，众数千人。曹公遣[color=#0066FF][url={"research": "蔡阳", "cat": "people"}]蔡阳[/url][/color]击之，为先主所杀。[/color][/indent]
 
 
-[b]身份考辨：是否为黄巾军余部？[/b]
+[color=#000000]《三国志·魏书·武帝纪》：[/color]
+
+[indent][color=#666666]┃ 绍之未破也，使[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]略汝南；汝南贼共都等应之。遣蔡扬击都，不利，为都所破。公南征备。备闻公自行，走奔[color=#0066FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]；都等皆散。[/color][/indent]
+
+
+[color=#000000]事件还原：[/color]
+
+[indent]1.  [color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]遣刘备率本部兵至汝南，龚都等人响应，合兵数千人[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]遣蔡阳（蔡扬）率军来攻[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  蔡阳兵败被杀——武帝纪归功于龚都，先主传归功于刘备；两者不矛盾，联军共同作战，视角不同（裴注未专门说明此出入）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  曹操亲自南征，刘备弃汝南奔刘表[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  龚都等部众散去，史书不再提及，[color=#000000]下落不明[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]身份考辨：是否为黄巾军余部？[/font][/b]
+
 
 正史措辞关键区别：
-- 《武帝纪》建安五年称"[b]汝南降贼[/b][color=#6699FF][url={"research": "刘辟", "cat": "people"}]刘辟[/url][/color]等叛应绍"——此处称刘辟为"降贼"
-- 《武帝纪》称龚都为"[b]汝南贼[/b]共都等"——不加"降"字
-- 建安元年《武帝纪》明确记载"汝南、颍川[b]黄巾[/b][color=#6699FF][url={"research": "何仪", "cat": "people"}]何仪[/url][/color]、刘辟、黄邵、何曼等"——刘辟有明确黄巾出身
 
-[b]"降贼"的含义：[/b] 暗示刘辟曾短暂归降曹操（建安元年曹操击破汝南黄巾后，"何仪及其众皆降"，刘辟可能也在降军之列），之后再叛——即"降后复叛之贼"。龚都不称"降贼"，可能从未降曹，始终是独立割据。
+[indent]•  《武帝纪》建安五年称"[color=#000000]汝南降贼[/color][color=#0066FF][url={"research": "刘辟", "cat": "people"}]刘辟[/url][/color]等叛应绍"——此处称刘辟为"降贼"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《武帝纪》称龚都为"[color=#000000]汝南贼[/color]共都等"——不加"降"字[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  建安元年《武帝纪》明确记载"汝南、颍川[color=#000000]黄巾[/color][color=#0066FF][url={"research": "何仪", "cat": "people"}]何仪[/url][/color]、刘辟、黄邵、何曼等"——刘辟有明确黄巾出身[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]正史对龚都黄巾出身未予明言。[/b] 与刘辟不同，龚都无任何史料将其与黄巾起义直接挂钩。两人同处汝南，可能同属一类武装势力，但具体渊源不可确证。演义将龚都与刘辟并列为汝南黄巾，属于文学虚构。
+
+[color=#000000]"降贼"的含义：[/color] 暗示刘辟曾短暂归降曹操（建安元年曹操击破汝南黄巾后，"何仪及其众皆降"，刘辟可能也在降军之列），之后再叛——即"降后复叛之贼"。龚都不称"降贼"，可能从未降曹，始终是独立割据。
+
+[color=#000000]正史对龚都黄巾出身未予明言。[/color] 与刘辟不同，龚都无任何史料将其与黄巾起义直接挂钩。两人同处汝南，可能同属一类武装势力，但具体渊源不可确证。演义将龚都与刘辟并列为汝南黄巾，属于文学虚构。
 
 
-[b]刘辟"死而复生"问题与对龚都的意义[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]刘辟"死而复生"问题与对龚都的意义[/font][/b]
 
-清代《三国志补义》已指出：建安元年《武帝纪》"斩辟、邵等"中"辟"字很可能是[b]衍文[/b]（传抄错误），赵翼《廿二史札记》亦注意到此矛盾（"一篇之中前后相戾"）。主流判断是建安元年刘辟实际未被斩，只有黄邵等人被杀，刘辟降曹后继续活动，到建安五年再次叛应袁绍。
+
+清代《三国志补义》已指出：建安元年《武帝纪》"斩辟、邵等"中"辟"字很可能是[color=#000000]衍文[/color]（传抄错误），赵翼《廿二史札记》亦注意到此矛盾（"一篇之中前后相戾"）。主流判断是建安元年刘辟实际未被斩，只有黄邵等人被杀，刘辟降曹后继续活动，到建安五年再次叛应袁绍。
 
 这一考辨对龚都的意义：刘辟确有明确黄巾出身，且是曹操早年重点打击的汝南武装；龚都与其同在汝南、共同反曹，背景类似，但正史始终未将龚都明确归入黄巾序列。
 
 
-[b]性格与形象[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]裴注核查结论（2026-05-03）[/font][/b]
+
+
+经全文核查识典四库全书本（SK0709）先主传与武帝纪裴注全文：
+
+[color=#000000]裴松之对龚都/共都段落均无独立注文。[/color]
+
+
+[indent]•  先主传"龚都"所在段落前后：裴注不涉及此句[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  武帝纪"共都"所在建安六年段落：无裴注[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+裴注未引用《英雄记》《吴书》《世语》《英雄记》等通常补充人物身份的史料对此段加注，也未辨析"龚都"与"共都"的字形差异（此属校勘性互见问题，通行点校本在此处有简短互见说明，但非独立历史注文）。
+
+[color=#000000]结论：关于龚都的所有史料仅限于正文本身，裴注无任何补充信息。此问题已穷尽。[/color]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 史料极少，无法从正史中归纳龚都的性格。仅可知：
-- 是有一定实力的地方武装首领（能独立击破曹操所遣将领蔡阳）
-- 倾向于反曹，在袁绍势力强盛时选择响应刘备
-- 始终未归降曹操（不同于刘辟的"降贼"身份）
-- "散去"的结局完全开放，无任何后续史料
+
+[indent]•  是有一定实力的地方武装首领（能独立击破曹操所遣将领蔡阳）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  倾向于反曹，在袁绍势力强盛时选择响应刘备[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  始终未归降曹操（不同于刘辟的"降贼"身份）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "散去"的结局完全开放，无任何后续史料[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]人物[/b] | [b]关系性质[/b]
-刘备 | 建安六年联合作战，短暂同盟
-袁绍 | 间接受其遣派刘备时响应，属于反曹阵营
-蔡阳（蔡扬） | 对手，击败并杀死蔡阳（据武帝纪）
-刘辟 | 同一地域的武装割据者，正史无直接交集记载
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[table=2]
+[cell][b]人物[/b][/cell]
+[cell][b]关系性质[/b][/cell]
+[cell]刘备[/cell]
+[cell]建安六年联合作战，短暂同盟[/cell]
+[cell]袁绍[/cell]
+[cell]间接受其遣派刘备时响应，属于反曹阵营[/cell]
+[cell]蔡阳（蔡扬）[/cell]
+[cell]对手，击败并杀死蔡阳（据武帝纪）[/cell]
+[cell]刘辟[/cell]
+[cell]同一地域的武装割据者，正史无直接交集记载[/cell]
+[/table]
 
 
-[b]方面[/b] | [b]史实[/b] | [b]演义[/b]
-身份 | 汝南武装割据，正史未言黄巾；措辞"汝南贼"而非"汝南黄巾" | 汝南黄巾将领，死后（）率残党活动
-与刘辟关系 | 无正史联系，可能同为汝南割据势力 | 并列为兄弟/同僚黄巾将领
-死亡经过 | 曹操亲征后部众散去，下落完全不明 | 被曹军包围，[color=#6699FF][url={"research": "张飞 ", "cat": " people"}]张飞 [/url][/color]救援不及，战死
-与刘备关系 | 短暂合兵，刘备奔刘表后散去 | 有更多协作情节，孙乾充当联络人
-蔡阳之死 | 武帝纪：为都所破；先主传：为先主所杀 | 演义写为[color=#6699FF][url={"research": "关羽 ", "cat": " people"}]关羽 [/url][/color]斩杀（古城会情节，与龚都无关）
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]演义[/b][/cell]
+[cell]身份[/cell]
+[cell]汝南武装割据，正史未言黄巾；措辞"汝南贼"而非"汝南黄巾"[/cell]
+[cell]汝南黄巾将领[/cell]
+[cell]与刘辟关系[/cell]
+[cell]无正史联系，可能同为汝南割据势力[/cell]
+[cell]并列为兄弟/同僚黄巾将领[/cell]
+[cell]死亡经过[/cell]
+[cell]曹操亲征后部众散去，下落完全不明[/cell]
+[cell]被曹军包围，[color=#0066FF][url={"research": "张飞", "cat": "people"}]张飞[/url][/color]救援不及，战死[/cell]
+[cell]与刘备关系[/cell]
+[cell]短暂合兵，刘备奔刘表后散去[/cell]
+[cell]有更多协作情节，[color=#0066FF][url={"research": "孙乾", "cat": "people"}]孙乾[/url][/color]充当联络人[/cell]
+[cell]蔡阳之死[/cell]
+[cell]武帝纪：为都所破；先主传：为先主所杀[/cell]
+[cell]演义写为[color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]斩杀（古城会情节，与龚都无关）[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]

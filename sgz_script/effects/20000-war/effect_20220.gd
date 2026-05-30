@@ -40,7 +40,7 @@ func effect_20220_start():
 	var msg = "发动【天香】\n与{0}各自回营\n可否？".format([
 		target.get_name()
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000():

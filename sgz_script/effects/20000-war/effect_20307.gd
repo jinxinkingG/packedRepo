@@ -60,7 +60,7 @@ func effect_20307_3():
 		DataManager.get_actor_honored_title(targetId, me.actorId),
 		skill
 	])
-	play_dialog(me.actorId, msg, 1, 2002)
+	play_dialog(actorId, msg, 1, 2002)
 	return
 
 func on_view_model_2002():

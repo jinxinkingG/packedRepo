@@ -617,12 +617,12 @@ func get_teammate_targets(me:War_Actor, distance:int=-1, allowWalls:bool=true, i
 	return ret
 
 # 将对手作为发起白刃战类技能的目标
-func get_combat_targets(from:War_Actor, allowWalls:bool=false, distance:int=-1, ignoreExtra:bool=false)->PoolIntArray:
-	var targetIds = get_enemy_targets(from, allowWalls, distance, ignoreExtra)
+func get_combat_targets(from:War_Actor, allowWalls:bool=false, distance:int=-1, ignoreExtra:bool=false, rangeDistance:bool=true)->PoolIntArray:
+	var targetIds = get_enemy_targets(from, allowWalls, distance, ignoreExtra, rangeDistance)
 	return check_combat_targets(targetIds)
 
 # 将对手作为技能准备发动的目标
-func get_enemy_targets(from:War_Actor, allowWalls:bool=false, distance:int=-1, ignoreExtra:bool=false)->PoolIntArray:
+func get_enemy_targets(from:War_Actor, allowWalls:bool=false, distance:int=-1, ignoreExtra:bool=false, rangeDistance:bool=true)->PoolIntArray:
 	if distance < 0:
 		distance = get_choose_distance()
 	# 特殊距离，不用考虑扩展额外选区
@@ -652,7 +652,10 @@ func get_enemy_targets(from:War_Actor, allowWalls:bool=false, distance:int=-1, i
 			if blockCN in StaticManager.CITY_BLOCKS_CN:
 				continue
 		for center in centers:
-			if Global.get_range_distance(wa.position, center) > distance:
+			var d = Global.get_range_distance(wa.position, center)
+			if not rangeDistance:
+				d = Global.get_distance(wa.position, center)
+			if d > distance:
 				continue
 			if not allowWalls and from.is_attacker() and not check_can_choose(from, center, wa.position):
 				continue

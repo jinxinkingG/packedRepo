@@ -43,7 +43,7 @@ func effect_20337_2():
 	var msg = "对{0}发动【{1}】\n重置其限定技冷却\n可否？".format([
 		targetActor.get_name(), ske.skill_name,
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20337_3():

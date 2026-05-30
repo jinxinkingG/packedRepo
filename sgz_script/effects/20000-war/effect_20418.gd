@@ -33,7 +33,7 @@ func effect_20418_start()->void:
 	var msg = "令{0}再次发动{1}\n可否？".format([
 		ActorHelper.actor(actionId).get_name(), se.name,
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000()->void:
@@ -46,7 +46,7 @@ func effect_20418_redo()->void:
 	var msg = "此计不成，敌或骄慢\n{0}复往，当可出奇致胜".format([
 		DataManager.get_actor_honored_title(actionId, me.actorId)
 	])
-	play_dialog(me.actorId, msg, 2, 2001)
+	play_dialog(actorId, msg, 2, 2001)
 	return
 
 func on_view_model_2001()->void:

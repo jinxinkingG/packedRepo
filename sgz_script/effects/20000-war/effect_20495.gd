@@ -8,6 +8,19 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
 const FLAG_NAME = "威"
 
+func check_AI_perform_20000() -> bool:
+	if ske.get_skill_flags(20000, -1, FLAG_NAME) > 0:
+		return false
+	if me.action_point <= 0:
+		return false
+	return true
+
+func effect_20495_AI_start() -> void:
+	var ap = me.action_point
+	DataManager.set_env("数值", ap)
+	goto_step("go")
+	return
+
 func effect_20495_start()->void:
 	if me.action_point <= 0:
 		var msg = "机动力不足\n无法发动【{0}】".format([ske.skill_name])

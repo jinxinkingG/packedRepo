@@ -20,7 +20,7 @@ func effect_20267_start():
 	var msg = "发动【盒酥】\n下次计策将由{0}\n协助提供机动力，可否？".format([
 		ActorHelper.actor(mainId).get_name(),
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20267_2():
@@ -28,7 +28,7 @@ func effect_20267_2():
 	var msg = "{0}之意，吾已知之\n自有妙策".format([
 		DataManager.get_actor_honored_title(mainId, me.actorId)
 	])
-	play_dialog(me.actorId, msg, 1, 2001)
+	play_dialog(actorId, msg, 1, 2001)
 	map.next_shrink_actors = [me.actorId, mainId]
 	return
 

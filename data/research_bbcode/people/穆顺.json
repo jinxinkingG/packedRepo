@@ -1,135 +1,308 @@
-[b]穆顺[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]穆顺[/font][/b]
 
 
-[b]基本信息：[/b] 《三国演义》虚构人物，正史无载。《三国演义》中出现两位同名人物，属不同角色。
+[color=#000000]基本信息：[/color] 正史无载，《三国演义》虚构人物。演义中出现两位同名人物，属不同角色。
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]一、正史[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
-《后汉书》《三国志》中[b]无穆顺其人[/b]。"穆顺"是罗贯中《三国演义》中的虚构名字，正史中不存在此角色。
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]一、正史[/font][/b]
+
+
+《后汉书》《三国志》中[color=#000000]无穆顺其人[/color]。"穆顺"是罗贯中《三国演义》中的虚构名字，正史中不存在此角色。
 
 两位同名角色：
 
-1. [b]武将穆顺[/b]（第五回）：上党太守[color=#6699FF][url={"research": "张杨", "cat": "people"}]张杨[/url][/color]之部将
-2. [b]宦官穆顺[/b]（第六十六回）：汉献帝身边忠于汉室的宦官
+
+[indent]1.  [color=#000000]武将穆顺[/color]（第五回）：上党太守[color=#0066FF][url={"research": "张杨", "cat": "people"}]张杨[/url][/color]之部将[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]宦官穆顺[/color]（第六十六回）：汉献帝身边忠于汉室的宦官[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 二者为同名异人，演义中并无联系。
 
 
-[b]二、武将穆顺（第五回·虎牢关之战）[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]二、武将穆顺（第五回·虎牢关之战）[/font][/b]
 
 
 [b]情节[/b]
 
-诸侯会盟讨[color=#6699FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]，八路诸侯共战[color=#6699FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]于[color=#6699FF][url={"research": "虎牢关", "cat": "geography"}]虎牢关[/url][/color]。吕布一再搦战，继河内名将[color=#6699FF][url={"research": "方悦", "cat": "people"}]方悦[/url][/color]被斩之后，张杨部将穆顺自告奋勇出阵迎战。穆顺出马挺枪迎战吕布，被吕布手起一戟刺于马下，全场震惊。
+
+诸侯会盟讨[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]，八路诸侯共战[color=#0066FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]于[color=#0066FF][url={"research": "虎牢关", "cat": "geography"}]虎牢关[/url][/color]。吕布一再搦战，继河内名将[color=#0066FF][url={"research": "方悦", "cat": "people"}]方悦[/url][/color]被斩之后，张杨部将穆顺自告奋勇出阵迎战。穆顺出马挺枪迎战吕布，被吕布手起一戟刺于马下，全场震惊。
 
 
 [b]版本差异（参见 ref-yanyi-banben.md）[/b]
 
+
 穆顺出场段落在各本有显著差异：
 
 
-[b]版本[/b] | [b]穆顺身份描述[/b] | [b]诸侯反应[/b]
-嘉靖本 | "张杨军马阵中[b]手下将[/b]" | "八路诸侯，心丧胆裂"
-叶逢春本 | "张[b]扬[/b]军中[b]首将[/b]" | "八路诸侯，心胆俱丧"
-毛宗岗本 | "上党太守张杨[b]部将[/b]" | "众大惊"
+[table=3]
+[cell][b]版本[/b][/cell]
+[cell][b]穆顺身份描述[/b][/cell]
+[cell][b]诸侯反应[/b][/cell]
+[cell]嘉靖本[/cell]
+[cell]"张杨军马阵中[color=#000000]手下将[/color]"[/cell]
+[cell]"八路诸侯，心丧胆裂"[/cell]
+[cell]叶逢春本[/cell]
+[cell]"张[color=#000000]扬[/color]军中[color=#000000]首将[/color]"[/cell]
+[cell]"八路诸侯，心胆俱丧"[/cell]
+[cell]毛宗岗本[/cell]
+[cell]"上党太守张杨[color=#000000]部将[/color]"[/cell]
+[cell]"众大惊"[/cell]
+[/table]
 
 
-- [b]嘉靖本[/b]"手下将"一词别扭，疑为"首将"音误后改动；叶逢春本"首将"与穆顺地位及情节更为一致
-- 毛本改"心丧胆裂"为"众大惊"，是考虑到此处仅为三英战吕布的"热身局"，保留层次感
-- 嘉靖本于穆顺死后接有大段"袁、曹商议"文字（含[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]名句"吕布英雄，天下无敌"），叶逢春本该段脱文，导致衔接不畅；毛本保留但有改动
-- 简本中穆顺"战两合"或"不二合"被刺，较繁本多出一个交锋回合
+[indent]•  [color=#000000]嘉靖本[/color]"手下将"一词别扭，疑为"首将"音误后改动；叶逢春本"首将"与穆顺地位及情节更为一致[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本改"心丧胆裂"为"众大惊"，是考虑到此处仅为三英战吕布的"热身局"，保留层次感[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  嘉靖本于穆顺死后接有大段"袁、曹商议"文字（含[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]名句"吕布英雄，天下无敌"），叶逢春本该段脱文，导致衔接不畅；毛本保留但有改动[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  简本中穆顺"战两合"或"不二合"被刺，较繁本多出一个交锋回合[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [b]叙事功能[/b]
 
+
 穆顺是演义"吕布无敌"叙事中的标志性陪衬人物。继方悦之后，穆顺的速败进一步渲染吕布的恐怖战力，为三英战吕布蓄势。其出场时间极短，仅一个照面即被刺死。
 
 
-[b]三、宦官穆顺（第六十六回·伏皇后为国捐生）[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三、宦官穆顺（第六十六回·伏皇后为国捐生）[/font][/b]
 
 
 [b]情节[/b]
+
 
 建安年间，曹操权倾朝野，意欲称魏王。汉献帝与伏皇后忧惧，商议诛操。伏皇后择宦官中忠义者，言："妾看宦官中之忠义可托者，莫如穆顺，当令寄此书。"
 
 帝后大哭告顺，穆顺泣曰："臣感陛下大恩，敢不以死报？臣请即行。"
 
-穆顺[b]将伏皇后密书藏于发中[/b]，潜出禁宫，径至伏完宅，将书递交。书中言欲结连[color=#6699FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]、[color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]为外应。
+穆顺[color=#000000]将伏皇后密书藏于发中[/color]，潜出禁宫，径至伏完宅，将书递交。书中言欲结连[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]、[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]为外应。
 
-返回途中，曹操心疑，令人[b]搜其头发[/b]，搜出密书。曹操将穆顺[b]押入密室审讯，顺不肯招[/b]，展现忠义气节。
+返回途中，曹操心疑，令人[color=#000000]搜其头发[/color]，搜出密书。曹操将穆顺[color=#000000]押入密室审讯，顺不肯招[/color]，展现忠义气节。
 
-此后曹操点兵三千围伏完私宅，伏皇后被[color=#6699FF][url={"research": "华歆", "cat": "people"}]华歆[/url][/color]擒获，乱棒打死，其二子亦被鸩杀。穆顺此前已被杀。
+此后曹操点兵三千围伏完私宅，伏皇后被[color=#0066FF][url={"research": "华歆", "cat": "people"}]华歆[/url][/color]擒获，乱棒打死，其二子亦被鸩杀。穆顺此前已被杀。
 
 
 [b]史实背景与正史考证[/b]
 
-本情节对应正史[b]建安十九年（214年）伏皇后谋曹事件[/b]。
 
-[b]《后汉书·皇后纪》正文[/b]（见 ref-houhanshu-fuhou-yuanwen.md）：
+本情节对应正史[color=#000000]建安十九年（214年）伏皇后谋曹事件[/color]。
 
-[color=#AAAAAA]　"后自是怀惧，乃与父完书，言曹操残逼之状，令密图之。完不敢发。至十九年，事乃露泄。"[/color]
+[color=#000000]《后汉书·皇后纪》正文[/color]（见 ref-houhanshu-fuhou-yuanwen.md）：
 
-正文仅写"乃与父完书"，[b]完全没有提及任何宦官传书者[/b]。密书如何从宫中传到伏完手中，正史不载。
 
-[b]密书泄露经过[/b] 见裴注引《献帝春秋》（附于《三国志·[color=#6699FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]传》注）：
+[indent][color=#666666]┃ "后自是怀惧，乃与父完书，言曹操残逼之状，令密图之。完不敢发。至十九年，事乃露泄。"[/color][/indent]
 
-[color=#AAAAAA]　"完得书以示彧，彧恶之久，隐而不言。完以示妻弟樊普，普封以呈太祖，太祖阴为之备。"[/color]
 
-即密书经[b]樊普[/b]（伏完妻弟）告发曹操。全程无宦官传书者记载。
+正文仅写"乃与父完书"，[color=#000000]完全没有提及任何宦官传书者[/color]。密书如何从宫中传到伏完手中，正史不载。
 
-[b]结论：宦官穆顺传书情节属演义虚构。[/b]
+[color=#000000]密书泄露经过[/color] 见裴注引《献帝春秋》（附于《三国志·[color=#0066FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]传》注）：
 
-- 正史无传书宦官名字
-- 密书被发现的经过（正史：樊普告发）与演义（搜发中密书）完全不同
-- 穆顺此人名字、角色均为罗贯中创作
-- 嘉靖本第六十六回宦官穆顺段落逐字原文待实物善本核查（低优先级）
+
+[indent][color=#666666]┃ "完得书以示彧，彧恶之久，隐而不言。完以示妻弟樊普，普封以呈太祖，太祖阴为之备。"[/color][/indent]
+
+
+即密书经[color=#000000]樊普[/color]（伏完妻弟）告发曹操。全程无宦官传书者记载。
+
+[color=#000000]结论：宦官穆顺传书情节属演义虚构。[/color]
+
+
+[indent]•  正史无传书宦官名字[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  密书被发现的经过（正史：樊普告发）与演义（搜发中密书）完全不同[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  穆顺此人名字、角色均为罗贯中创作[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  嘉靖本第六十六回宦官穆顺段落逐字原文待实物善本核查（低优先级）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [b]人物特点[/b]
 
+
 毛宗岗评此人"与张让、赵忠相去天壤"，指穆顺以忠义之心有别于东汉乱政宦官，是演义中少有的正面宦官形象。其面对曹操审讯时"不肯招"，以死殉主，展现了忠烈之气。
 
 
-[b]性格与形象[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]武将穆顺[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]武将穆顺[/font][/b]
+
 
 无性格描写，纯为功能性角色，是吕布武力的陪衬牌。
 
 
-[b]宦官穆顺[/b]
-
-- [b]忠义[/b]：主动接受传书使命，知生死之险而不退
-- [b]气节[/b]：被捕后不招，以死护主
-- 形象完整，是演义虚构人物中较有特色的宦官忠臣
+[b][font=res://resource/font/FandolSong-Bold/26.tres]宦官穆顺[/font][/b]
 
 
-[b]关键关系[/b]
+[indent]•  [color=#000000]忠义[/color]：主动接受传书使命，知生死之险而不退[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]气节[/color]：被捕后不招，以死护主[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  形象完整，是演义虚构人物中较有特色的宦官忠臣[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]武将穆顺[/b]
-- [b]张杨[/b]：其主公，上党太守
-- [b]吕布[/b]：将其一戟刺于马下
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]宦官穆顺[/b]
-- [b]汉献帝[/b]：主上，穆顺效命之君
-- [b]伏皇后[/b]：托付密书之主，称其"宦官中之忠义可托者"
-- [b]伏完[/b]：密书传递对象，伏皇后之父
-- [b]曹操[/b]：将其截获杀害
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]武将穆顺[/font][/b]
 
 
-[b]项目[/b] | [b]正史[/b] | [b]演义[/b]
-武将穆顺 | 无 | 第五回虚构，张杨部将
-宦官穆顺 | 无（传书者姓名无载） | 第六十六回虚构，汉室忠臣
-伏皇后谋曹事件 | 有（建安十九年，密书由樊普告发） | 演义演绎，将泄露机制改为曹操搜发现书
-传书宦官 | [b]完全无载[/b]，《后汉书》正文仅"与父完书" | 虚构穆顺，藏书于发中
-密书泄露原因 | 樊普（伏完妻弟）告发 | 曹操搜穆顺头发
+[indent]•  [color=#000000]张杨[/color]：其主公，上党太守[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]吕布[/color]：将其一戟刺于马下[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]宦官穆顺[/font][/b]
+
+
+[indent]•  [color=#000000]汉献帝[/color]：主上，穆顺效命之君[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]伏皇后[/color]：托付密书之主，称其"宦官中之忠义可托者"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]伏完[/color]：密书传递对象，伏皇后之父[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]曹操[/color]：将其截获杀害[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]项目[/b][/cell]
+[cell][b]正史[/b][/cell]
+[cell][b]演义[/b][/cell]
+[cell]武将穆顺[/cell]
+[cell]无[/cell]
+[cell]第五回虚构，张杨部将[/cell]
+[cell]宦官穆顺[/cell]
+[cell]无（传书者姓名无载）[/cell]
+[cell]第六十六回虚构，汉室忠臣[/cell]
+[cell]伏皇后谋曹事件[/cell]
+[cell]有（建安十九年，密书由樊普告发）[/cell]
+[cell]演义演绎，将泄露机制改为曹操搜发现书[/cell]
+[cell]传书宦官[/cell]
+[cell][color=#000000]完全无载[/color]，《后汉书》正文仅"与父完书"[/cell]
+[cell]虚构穆顺，藏书于发中[/cell]
+[cell]密书泄露原因[/cell]
+[cell]樊普（伏完妻弟）告发[/cell]
+[cell]曹操搜穆顺头发[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]毛宗岗批注[/font][/b]
+
+
+毛宗岗在第六十六回批注中，将宦官穆顺与东汉乱政宦官（张让、赵忠等）相比，称其"与张让、赵忠相去天壤"，高度肯定穆顺之忠义气节。
+
+评按：宦官群体在演义中大多形象负面（十常侍乱政），而穆顺是其中罕见的正面宦官——以忠义挺身，面对审讯宁死不招，与张让、赵忠等乱政之辈形成鲜明反差。毛宗岗通过此批注突出了穆顺的特殊性，也体现了演义拥汉抗曹的立场。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志14》[/font][/b]
+
+
+[indent]•  [color=#000000]五维：[/color] 统率52 / 武力77 / 知力11 / 政治21 / 魅力22[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]主义：[/color] 割据[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]政策：[/color] 鋒矢強化（Lv3）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]个性：[/color] 功名[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战法：[/color] 突撃，[color=#000000]陣形：[/color] 鋒矢[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]势力（190年）：[/color] 张杨，官职：破賊校尉[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+游戏以武将穆顺（第五回）为原型，武力77体现其虎牢关衬托型武将定位（吕布一击毙命，武力仍相对偏高，与演义"勇将"定位相符）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志8重制版》[/font][/b]
+
+
+[indent]•  [color=#000000]五维：[/color] 统率60 / 武力72 / 知力16 / 政治23 / 魅力23（合计194）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战法：[/color] 猪突[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]在野城市：[/color] 上党[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀（桌游）[/font][/b]
+
+
+[indent]•  [color=#000000]武将编号：[/color] QUN122，[color=#000000]称号：[/color] 疾风劲草[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]武将包：[/color] 戚宦之争，[color=#000000]血量：[/color] 4/4（身份局），[color=#000000]登录：[/color] 十周年[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]皮肤：[/color] 罹刑不屈·穆顺[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]技能：[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  【劲坚】：造成或受到伤害后获得"劲"标记，可与伤害来源拼点，赢则回复1血；每个"劲"令攻击范围+1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  【失诏】（锁定技）：回合外每回合第一次失去最后一张手牌时：有"劲"则移去一"劲"摸两张牌；无"劲"则本回合下一次受伤+1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三国杀以宦官穆顺（第六十六回）为原型，称号"疾风劲草"取自"疾风知劲草"，比喻烈风中不屈的坚韧品格[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
+
+
+[table=4]
+[cell][b]作品[/b][/cell]
+[cell][b]年份[/b][/cell]
+[cell][b]演员[/b][/cell]
+[cell][b]角色处理[/b][/cell]
+[cell]电影《铜雀台》[/cell]
+[cell]2012[/cell]
+[cell]玉木宏（日本）[/cell]
+[cell]与原著大幅改写：死士身份，青梅竹马（与刘亦菲饰灵雎），因接近曹操而自阉，最终替曹操赴死[/cell]
+[cell]电视剧《新洛神》[/cell]
+[cell]2013[/cell]
+[cell]程枫[/cell]
+[cell]宦官穆顺形象[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]

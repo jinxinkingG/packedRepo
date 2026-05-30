@@ -20,12 +20,12 @@ func effect_20317_start():
 	var wv = me.war_vstate()
 	if wv.money < COST_GOLD:
 		var msg = "金不足，需 >= {0}".format([COST_GOLD])
-		play_dialog(me.actorId, msg, 3, 2001)
+		play_dialog(actorId, msg, 3, 2001)
 		return
 	var msg = "花费{0}金\n获得[愈合]状态\n可否？".format([
 		COST_GOLD
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20317_2():

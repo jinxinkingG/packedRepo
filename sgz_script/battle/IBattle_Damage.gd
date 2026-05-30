@@ -131,7 +131,7 @@ func get_attack_C_val(attack_unit:Battle_Unit):
 	var hp:float = attack_unit.get_hp()
 	
 	DataManager.set_env("白兵.伤害基准体力", hp)
-	SkillHelper.auto_trigger_skill(attack_unit.leaderId, 30014, "")
+	SkillHelper.auto_trigger_skill(attack_unit.leaderId, 30014)
 	hp = DataManager.get_env_float("白兵.伤害基准体力")
 	if attack_unit.get_unit_type() == "将":
 		if attack_unit.actor().get_equip_feature_max("白刃C按满体") > 0:

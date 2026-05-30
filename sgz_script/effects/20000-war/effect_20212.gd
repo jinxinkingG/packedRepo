@@ -61,7 +61,7 @@ func effect_20212_3():
 	var msg = "对{0}发动【{1}】\n{0}体力将会 -3，可否？".format([
 		targetActor.get_name(), ske.skill_name
 	])
-	play_dialog(me.actorId, msg, 2, 2002, true)
+	play_dialog(actorId, msg, 2, 2002, true)
 	return
 
 func on_view_model_2002():

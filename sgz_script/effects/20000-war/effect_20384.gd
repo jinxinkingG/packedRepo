@@ -26,7 +26,7 @@ func effect_20384_start():
 	var msg = "消耗{0}机动力\n对{1}发动【{2}】\n可否".format([
 		COST_AP, loser.get_name(), ske.skill_name,
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	map.next_shrink_actors = [me.actorId, loser.actorId]
 	return
 
@@ -48,7 +48,7 @@ func effect_20384_2():
 		DataManager.get_actor_naughty_title(loser.actorId, me.actorId)
 	])
 	
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	map.next_shrink_actors = [me.actorId, loser.actorId]
 	return
 

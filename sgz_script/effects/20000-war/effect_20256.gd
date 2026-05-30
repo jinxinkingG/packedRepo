@@ -43,7 +43,7 @@ func effect_20256_2():
 		goto_step("3")
 		return
 	set_env("列表页码", 0)
-	play_dialog(me.actorId, msg, 2, 2001)
+	play_dialog(actorId, msg, 2, 2001)
 	return
 
 func on_view_model_2001():

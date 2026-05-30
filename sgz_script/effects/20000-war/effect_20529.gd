@@ -23,6 +23,7 @@ func on_view_model_2000() -> void:
 
 func effect_20529_2() -> void:
 	ske.cost_war_cd(3)
+	ske.cost_ap(COST_AP)
 	ske.set_war_skill_val(1)
 	ske.war_report()
 

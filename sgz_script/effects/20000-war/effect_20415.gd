@@ -25,7 +25,7 @@ func effect_20415_start()->void:
 		goto_step("recall")
 		return
 	if targets.empty():
-		play_dialog(me.actorId, "没有值得默背的目标", 3, 2999)
+		play_dialog(actorId, "没有值得默背的目标", 3, 2999)
 		return
 	if not wait_choose_actors(targets):
 		return
@@ -56,13 +56,13 @@ func effect_20415_copy()->void:
 		msg += "\n并设定为当前配装"
 	else:
 		msg += "\n当前配装：「{0}」".format([clEquip.equip(had[0], "道具").name()])
-	play_dialog(me.actorId, msg, 1, 2999)
+	play_dialog(actorId, msg, 1, 2999)
 	return
 
 func effect_20415_recall()->void:
 	var had = Global.intarrval(ske.get_skill_val(10000))
 	if had.empty():
-		play_dialog(me.actorId, "尚未默背任何典籍", 3, 2999)
+		play_dialog(actorId, "尚未默背任何典籍", 3, 2999)
 		return
 	var items = []
 	var values = []
@@ -94,7 +94,7 @@ func effect_20415_selected()->void:
 	ske.set_skill_val(had, 99999, -1, 10000)
 	var book = clEquip.equip(selected, "道具")
 	var msg = "已选择「{0}」\n视为配装".format([book.name()])
-	play_dialog(me.actorId, msg, 2, 2999)
+	play_dialog(actorId, msg, 2, 2999)
 	return
 
 func on_view_model_2999()->void:

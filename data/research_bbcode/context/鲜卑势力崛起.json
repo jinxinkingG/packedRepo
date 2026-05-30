@@ -1,201 +1,351 @@
-[b]鲜卑势力崛起[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]鲜卑势力崛起[/font][/b]
 
 
-[b]类型：[/b] 民族/军事
+[color=#000000]类型：[/color] 民族/军事
 
 
-[b]背景概述[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]背景概述[/font][/b]
 
 
 鲜卑是活跃于蒙古草原东部的游牧民族，原为东胡一支。东汉中期，鲜卑在檀石槐（?—约180年）领导下达到第一次全盛，"控弦十余万骑"，分鲜卑地为东、中、西三部，建立起横跨漠南的部落联盟。东汉朝廷无力正面应对，屡战屡败，遣使求和，檀石槐拒受封号，寇钞不止。
 
-[b]檀石槐死后的权力崩塌（约180年—建安初）：[/b]
+[color=#000000]檀石槐死后的权力崩塌（约180年—建安初）：[/color]
 
 《后汉书·乌桓鲜卑列传》原文：
-[color=#AAAAAA]　光和中，檀石槐死，时年四十五，子和连代立。和连才力不及父，亦数为寇抄，性贪淫，断法不平，众畔者半。后出攻北地，廉人善弩射者射中和连，即死。其子骞曼年小，兄子魁头立。后骞曼长大，与魁头争国，众遂离散。魁头死，弟[color=#6699FF][url={"research": "步度根", "cat": "people"}]步度根[/url][/color]立。自檀石槐后，诸大人遂世相传袭。[/color]
 
-[b]权力传承路线：[/b]
-- 和连（檀石槐子，贪淫断法不平，出攻北地被弩射死）
-- 骞曼（和连子，年小）← 魁头（和连兄子）立为首领
-- 骞曼长大与魁头争国 → [b]众遂离散[/b]，联盟彻底瓦解
-- 魁头死 → 弟步度根立，但"众稍衰弱"，兄扶罗韩又另拥众数万为大人，步度根集团本身也分裂
+[indent][color=#666666]┃ 光和中，檀石槐死，时年四十五，子和连代立。和连才力不及父，亦数为寇抄，性贪淫，断法不平，众畔者半。后出攻北地，廉人善弩射者射中和连，即死。其子骞曼年小，兄子魁头立。后骞曼长大，与魁头争国，众遂离散。魁头死，弟[color=#0066FF][url={"research": "步度根", "cat": "people"}]步度根[/url][/color]立。自檀石槐后，诸大人遂世相传袭。[/color][/indent]
 
-[b]离散后形成三大集团：[/b]
-1. [b]步度根集团[/b]（漠南云中、雁门一带）：檀石槐正统后裔，但内部分裂，实力持续衰弱
-2. [b][color=#6699FF][url={"research": "轲比能", "cat": "people"}]轲比能[/url][/color]集团[/b]（代郡、上谷一带）：出身小种鲜卑，与檀石槐无宗族关系，凭个人崛起
-3. [b]东部鲜卑集团[/b]（辽西、右北平、渔阳塞外）：素利、弥加、厥机各部，"道远初不为边患，然其种众多于比能"
 
-[b]乌桓崩溃与北方权力真空（207年）：[/b]
-建安十二年（207），[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]北征乌桓，[color=#6699FF][url={"research": "白狼山之战", "cat": "events"}]白狼山之战[/url][/color]大破蹋顿，斩之，"首虏二十余万人"。乌桓主力被彻底打散，残余"万余落悉徙居中国"。乌桓此后一蹶不振，逐渐被汉化或被鲜卑吸收。
+[color=#000000]权力传承路线：[/color]
+
+[indent]•  和连（檀石槐子，贪淫断法不平，出攻北地被弩射死）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  骞曼（和连子，年小）← 魁头（和连兄子）立为首领[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  骞曼长大与魁头争国 → [color=#000000]众遂离散[/color]，联盟彻底瓦解[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  魁头死 → 弟步度根立，但"众稍衰弱"，兄扶罗韩又另拥众数万为大人，步度根集团本身也分裂[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]离散后形成三大集团：[/color]
+
+[indent]1.  [color=#000000]步度根集团[/color]（漠南云中、雁门一带）：檀石槐正统后裔，但内部分裂，实力持续衰弱[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000][color=#0066FF][url={"research": "轲比能", "cat": "people"}]轲比能[/url][/color]集团[/color]（代郡、上谷一带）：出身小种鲜卑，与檀石槐无宗族关系，凭个人崛起[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]东部鲜卑集团[/color]（辽西、右北平、渔阳塞外）：素利、弥加、厥机各部，"道远初不为边患，然其种众多于比能"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]乌桓崩溃与北方权力真空（207年）：[/color]
+建安十二年（207），[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]北征乌桓，[color=#0066FF][url={"research": "白狼山之战", "cat": "events"}]白狼山之战[/url][/color]大破[color=#0066FF][url={"research": "蹋顿", "cat": "people"}]蹋顿[/url][/color]，斩之，"首虏二十余万人"。乌桓主力被彻底打散，残余"万余落悉徙居中国"。乌桓此后一蹶不振，逐渐被汉化或被鲜卑吸收。
 这一战创造了北方草原的权力真空——乌桓留下的空间，由鲜卑（尤其是轲比能和东部鲜卑）趁机填补。
 
 
-[b]在三国时期的表现[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]在三国时期的表现[/font][/b]
 
 
-[b]轲比能的崛起路径[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]轲比能的崛起路径[/font][/b]
+
 
 轲比能原属弱小的"小种鲜卑"，凭借个人魅力与治理能力异军突起：
-- "勇健，断法平端，不贪财物"——不同于传统草原首领的个人独占式统治
-- 部落靠近汉地，[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]据河北后，[b]大量汉人流亡塞外投靠[/b]，教鲜卑人"作兵器铠楯，颇学文字"
-- 仿效中原军事管理："出入弋猎，建立旌麾，以鼓节为进退"——这是鲜卑第一次有组织性地汉化军制
-- 每次掠得财物均平分配，"终无所私，故得众死力，余部大人皆敬惮之"
 
-这一模式与其他鲜卑部落有根本区别：[b]轲比能将游牧掠夺转向了有组织的国家化尝试[/b]。
+[indent]•  "勇健，断法平端，不贪财物"——不同于传统草原首领的个人独占式统治[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  部落靠近汉地，[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]据河北后，[color=#000000]大量汉人流亡塞外投靠[/color]，教鲜卑人"作兵器铠楯，颇学文字"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  仿效中原军事管理："出入弋猎，建立旌麾，以鼓节为进退"——这是鲜卑第一次有组织性地汉化军制[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  每次掠得财物均平分配，"终无所私，故得众死力，余部大人皆敬惮之"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]扶罗韩被杀与泄归泥事件[/b]
+这一模式与其他鲜卑部落有根本区别：[color=#000000]轲比能将游牧掠夺转向了有组织的国家化尝试[/color]。
 
-步度根立后，族兄扶罗韩独立拥众数万。建安末年，代郡乌丸能臣氐叛，原拟投扶罗韩，后认为"扶罗韩部威禁宽缓，恐不见济"，转而召轲比能。三方约定盟誓，轲比能于会上突然杀扶罗韩，吞并其部众，扶罗韩子[b][color=#6699FF][url={"research": "泄归泥", "cat": "people"}]泄归泥[/url][/color][/b]亦归属轲比能（轲比能厚待之）。
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]扶罗韩被杀与泄归泥事件[/font][/b]
+
+
+步度根立后，族兄扶罗韩独立拥众数万。建安末年，代郡乌丸能臣氐叛，原拟投扶罗韩，后认为"扶罗韩部威禁宽缓，恐不见济"，转而召轲比能。三方约定盟誓，轲比能于会上突然杀扶罗韩，吞并其部众，扶罗韩子[color=#000000][color=#0066FF][url={"research": "泄归泥", "cat": "people"}]泄归泥[/url][/color][/color]亦归属轲比能（轲比能厚待之）。
 
 此后步度根秘密策反泄归泥，以"汝父为比能所杀，不念报仇，反属怨家"劝说，泄归泥率部逃归步度根，轲比能追之不及。这一骨肉伦理牌，是步度根对轲比能扩张的有限反制。
 
 
-[b]与曹魏的关系演变[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]与曹魏的关系演变[/font][/b]
 
 
-[b]时期[/b] | [b]关系状态[/b] | [b]关键事件[/b]
-建安年间（196—220） | 名义臣属 + 实际自立 | 因[color=#6699FF][url={"research": "阎柔 ", "cat": " people"}]阎柔 [/url][/color]向曹操进贡；协助平田银叛乱；后代郡乌丸叛时助为寇 → [color=#6699FF][url={"research": "曹彰 ", "cat": " people"}]曹彰 [/url][/color]北征大破之，出塞
-延康元年（220） | 称臣 | 遣使献马，[color=#6699FF][url={"research": "曹丕 ", "cat": " people"}]曹丕 [/url][/color]封[b]附义王[/b]
-黄初二年（221） | 交好互市 | 出魏人还居代郡；驱牛马七万余口交市
-黄初五年（224） | [b]转向敌对[/b] | 击素利 → [color=#6699FF][url={"research": "田豫 ", "cat": " people"}]田豫 [/url][/color]掎后，破走琐奴 → 轲比能"怀贰"
-太和二年（228） | 公开冲突 | 三万骑围田豫于马城七日；阎志劝解始退
-太和二年后（228—233） | 表面缓和 | 王雄安抚，比能数款塞进贡，暗中扩张
-青龙元年（233） | 全面叛魏 | 诱纳步度根叛[color=#6699FF][url={"research": "并州 ", "cat": " geography"}]并州 [/url][/color]，自勒万骑接应；楼烦之战临阵杀苏尚、董弼
-青龙元年后（233—235） | [color=#6699FF][url={"research": "秦朗 ", "cat": " people"}]秦朗 [/url][/color]出击 | 骁骑将军秦朗将中军讨之，虏走漠北，步度根后被轲比能所杀
-青龙三年（235） | [b]被刺杀[/b] | 王雄遣勇士韩龙刺杀轲比能，更立其弟
+[table=3]
+[cell][b]时期[/b][/cell]
+[cell][b]关系状态[/b][/cell]
+[cell][b]关键事件[/b][/cell]
+[cell]建安年间（196—220）[/cell]
+[cell]名义臣属 + 实际自立[/cell]
+[cell]因[color=#0066FF][url={"research": "阎柔", "cat": "people"}]阎柔[/url][/color]向曹操进贡；协助平田银叛乱；后代郡乌丸叛时助为寇 → [color=#0066FF][url={"research": "曹彰", "cat": "people"}]曹彰[/url][/color]北征大破之，出塞[/cell]
+[cell]延康元年（220）[/cell]
+[cell]称臣[/cell]
+[cell]遣使献马，[color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]封[color=#000000]附义王[/color][/cell]
+[cell]黄初二年（221）[/cell]
+[cell]交好互市[/cell]
+[cell]出魏人还居代郡；驱牛马七万余口交市[/cell]
+[cell]黄初五年（224）[/cell]
+[cell][color=#000000]转向敌对[/color][/cell]
+[cell]击素利 → [color=#0066FF][url={"research": "田豫", "cat": "people"}]田豫[/url][/color]掎后，破走琐奴 → 轲比能"怀贰"[/cell]
+[cell]太和二年（228）[/cell]
+[cell]公开冲突[/cell]
+[cell]三万骑围田豫于马城七日；阎志劝解始退[/cell]
+[cell]太和二年后（228—233）[/cell]
+[cell]表面缓和[/cell]
+[cell]王雄安抚，比能数款塞进贡，暗中扩张[/cell]
+[cell]青龙元年（233）[/cell]
+[cell]全面叛魏[/cell]
+[cell]诱纳步度根叛[color=#0066FF][url={"research": "并州", "cat": "geography"}]并州[/url][/color]，自勒万骑接应；楼烦之战临阵杀苏尚、董弼[/cell]
+[cell]青龙元年后（233—235）[/cell]
+[cell][color=#0066FF][url={"research": "秦朗", "cat": "people"}]秦朗[/url][/color]出击[/cell]
+[cell]骁骑将军秦朗将中军讨之，虏走漠北，步度根后被轲比能所杀[/cell]
+[cell]青龙三年（235）[/cell]
+[cell][color=#000000]被刺杀[/color][/cell]
+[cell]王雄遣勇士韩龙刺杀轲比能，更立其弟[/cell]
+[/table]
 
 
-[b]楼烦之战与秦朗出击（233年）[/b]
-
-[b]事件经过（《三国志·魏书·明帝纪》原文）：[/b]
-[color=#AAAAAA]　保塞鲜卑大人步度根与叛鲜卑大人轲比能私通，并州刺史[color=#6699FF][url={"research": "毕轨", "cat": "people"}]毕轨[/url][/color]表，辄出军以外威比能，内镇步度根。帝省表曰："步度根以为比能所诱，有自疑心。今轨出军，适使二部惊合为一，何所威镇乎？"促敕轨，以出军者慎勿越塞过句注也。比诏书到，轨以进军屯阴馆，遣将军苏尚、董弼追鲜卑。比能遣子将千余骑迎步度根部落，与尚、弼相遇，战于楼烦，二将〔败〕没。步度根部落皆叛出塞，与比能合寇边。遣骁骑将军秦朗将中军讨之，虏乃走漠北。[/color]
-
-[b]关键细节：[/b]
-- [color=#6699FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]（魏明帝）已经预判毕轨出兵会弄巧成拙，紧急发文制止，但诏书到达前毕轨已经进军
-- 两将苏尚、董弼战死楼烦
-- 秦朗职衔[b]骁骑将军[/b]，率[b]中军[/b]（中央禁军），是曹魏少见的以中央军处理边疆问题的案例
-- 结果仅"虏乃走漠北"——史料极简，无战斗过程细节。步度根走漠北后，约233—235年间被轲比能所杀
-
-[b]史料局限：[/b] 《三国志》对秦朗击鲜卑的战斗过程无任何描述，仅有结果记录，是已知史料的边界。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]楼烦之战与秦朗出击（233年）[/font][/b]
 
 
-[b]轲比能与诸葛亮的南北联动[/b]
+[color=#000000]事件经过（《三国志·魏书·明帝纪》原文）：[/color]
 
-魏太和五年（231），[color=#6699FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]第四次北伐（出[color=#6699FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]），遣使远结轲比能。轲比能率部至故北地石城，"与相首尾"，骚扰曹魏北境以牵制曹军。这是三国外交史上最具战略意义的南北联动之一：
-
-- 魏明帝曹叡在位初年（226），护鲜卑校尉[color=#6699FF][url={"research": "牵招", "cat": "people"}]牵招[/url][/color]即提醒防范蜀鲜联盟，当时诸人以为杞人忧天
-- 231年事实证明其判断正确
-- 曹魏同时承受南线（蜀汉）与北线（鲜卑）压力，战略资源被双向牵制
-- 这也是曹魏决心彻底解决轲比能问题的直接动因
+[indent][color=#666666]┃ 保塞鲜卑大人步度根与叛鲜卑大人轲比能私通，并州刺史[color=#0066FF][url={"research": "毕轨", "cat": "people"}]毕轨[/url][/color]表，辄出军以外威比能，内镇步度根。帝省表曰："步度根以为比能所诱，有自疑心。今轨出军，适使二部惊合为一，何所威镇乎？"促敕轨，以出军者慎勿越塞过句注也。比诏书到，轨以进军屯阴馆，遣将军苏尚、董弼追鲜卑。比能遣子将千余骑迎步度根部落，与尚、弼相遇，战于楼烦，二将〔败〕没。步度根部落皆叛出塞，与比能合寇边。遣骁骑将军秦朗将中军讨之，虏乃走漠北。[/color][/indent]
 
 
-[b]曹魏的对鲜卑三种策略[/b]
+[color=#000000]关键细节：[/color]
 
-[b]1. 分而治之（田豫）：[/b]
-- 护乌桓校尉田豫持节并护鲜卑
-- 挑拨素利、轲比能、步度根三部互相攻伐
-- 分别安抚亲魏部落（素利、步度根），打击轲比能势力
-- 史料：三部曾立约禁售战马，田豫离间瓦解之
-
-[b]2. 经济手段：[/b]
-- 控制边境互市，对友好部落开放，对敌对部落禁运
-- 游牧民族依赖铁器、布匹，经济手段效果显著
-
-[b]3. 定点刺杀（王雄）：[/b]
-- [color=#6699FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]刺史王雄认识到军事征伐难以彻底解决问题
-- 遣勇士韩龙潜入实施刺杀（235年）
-- 效果立竿见影："种落离散，互相侵伐，强者远遁，弱者请服。由是边陲差安，漠南少事"
+[indent]•  [color=#0066FF][url={"research": "曹叡", "cat": "people"}]曹叡[/url][/color]（魏明帝）已经预判毕轨出兵会弄巧成拙，紧急发文制止，但诏书到达前毕轨已经进军[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  两将苏尚、董弼战死楼烦[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  秦朗职衔[color=#000000]骁骑将军[/color]，率[color=#000000]中军[/color]（中央禁军），是曹魏少见的以中央军处理边疆问题的案例[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  结果仅"虏乃走漠北"——史料极简，无战斗过程细节。步度根走漠北后，约233—235年间被轲比能所杀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]轲比能死后：慕容鲜卑的兴起[/b]
+[color=#000000]史料局限：[/color] 《三国志》对秦朗击鲜卑的战斗过程无任何描述，仅有结果记录，是已知史料的边界。
 
-[b]漠南的结构性变化（235年后）：[/b]
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]轲比能与诸葛亮的南北联动[/font][/b]
+
+
+魏太和五年（231），[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]第四次北伐（出[color=#0066FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]），遣使远结轲比能。轲比能率部至故北地石城，"与相首尾"，骚扰曹魏北境以牵制曹军。这是三国外交史上最具战略意义的南北联动之一：
+
+
+[indent]•  魏明帝曹叡在位初年（226），护鲜卑校尉[color=#0066FF][url={"research": "牵招", "cat": "people"}]牵招[/url][/color]即提醒防范蜀鲜联盟，当时诸人以为杞人忧天[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  231年事实证明其判断正确[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹魏同时承受南线（蜀汉）与北线（鲜卑）压力，战略资源被双向牵制[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  这也是曹魏决心彻底解决轲比能问题的直接动因[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹魏的对鲜卑三种策略[/font][/b]
+
+
+[color=#000000]1. 分而治之（田豫）：[/color]
+
+[indent]•  护乌桓校尉田豫持节并护鲜卑[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  挑拨素利、轲比能、步度根三部互相攻伐[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  分别安抚亲魏部落（素利、步度根），打击轲比能势力[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  史料：三部曾立约禁售战马，田豫离间瓦解之[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]2. 经济手段：[/color]
+
+[indent]•  控制边境互市，对友好部落开放，对敌对部落禁运[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  游牧民族依赖铁器、布匹，经济手段效果显著[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]3. 定点刺杀（王雄）：[/color]
+
+[indent]•  [color=#0066FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]刺史王雄认识到军事征伐难以彻底解决问题[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  遣勇士韩龙潜入实施刺杀（235年）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  效果立竿见影："种落离散，互相侵伐，强者远遁，弱者请服。由是边陲差安，漠南少事"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]轲比能死后：慕容鲜卑的兴起[/font][/b]
+
+
+[color=#000000]漠南的结构性变化（235年后）：[/color]
 轲比能被刺后，漠南鲜卑再度进入分裂。"种落离散"给了辽西方向的慕容部扩张的历史空间。
 
-[b]慕容部早期形成过程：[/b]
+[color=#000000]慕容部早期形成过程：[/color]
 
 慕容部的名称源自檀石槐时代中部鲜卑一支大帅"慕容"，后以部族名为氏（《三国志·乌丸鲜卑传》裴注引《魏书》）。
 
-[b]莫护跋与曹魏的关系（《晋书·慕容廆载记》原文）：[/b]
-[color=#AAAAAA]　曾祖莫护跋，魏初率其诸部入居辽西，从宣帝伐公孙氏有功，拜率义王，始建国于棘城之北。[/color]
+[color=#000000]莫护跋与曹魏的关系（《晋书·慕容廆载记》原文）：[/color]
 
-- [b]约220—222年（曹魏初年）[/b]：莫护跋率部从漠南（西拉木伦河上游一带）迁入辽西——正是207年曹操大规模迁走乌桓人后留下的空间
-- [b]238年（景初二年）[/b]：莫护跋随[color=#6699FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]征讨辽东[color=#6699FF][url={"research": "公孙渊", "cat": "people"}]公孙渊[/url][/color]，建功，被封[b]率义王[/b]，在[b]棘城之北[/b]（今辽宁北票金岭寺一带）建国
-- 此时慕容部依附中原，势力弱小，仍属游牧形态，尚未完全定居
-
-[b]慕容部世系（三国至西晋）：[/b]
+[indent][color=#666666]┃ 曾祖莫护跋，魏初率其诸部入居辽西，从宣帝伐公孙氏有功，拜率义王，始建国于棘城之北。[/color][/indent]
 
 
-[b]代[/b] | [b]人物[/b] | [b]时期[/b] | [b]事迹[/b]
-一 | 莫护跋 | 曹魏初—景初 | 入辽西，讨公孙渊封率义王，建国棘城北
-二 | 木延（子） | 曹魏末—西晋初 | 无显著史料
-三 | 涉归（孙） | 西晋初 | 迁居辽东北；284年死，传子慕容廆
-四 | 慕容廆 | 西晋 | 叔篡位后国人迎回；汉化深度加强；289年迁回徒河青山；286年东伐扶余；慕容部真正强盛期
+[indent]•  [color=#000000]约220—222年（曹魏初年）[/color]：莫护跋率部从漠南（西拉木伦河上游一带）迁入辽西——正是207年曹操大规模迁走乌桓人后留下的空间[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]238年（景初二年）[/color]：莫护跋随[color=#0066FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]征讨辽东[color=#0066FF][url={"research": "公孙渊", "cat": "people"}]公孙渊[/url][/color]，建功，被封[color=#000000]率义王[/color]，在[color=#000000]棘城之北[/color]（今辽宁北票金岭寺一带）建国[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  此时慕容部依附中原，势力弱小，仍属游牧形态，尚未完全定居[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]与轲比能时代的历史关联：[/b]
-- 莫护跋入辽西（220年代）与轲比能崛起时间重叠，两个集团在地理上相邻
-- 韩龙刺杀轲比能（235年）时，慕容部处于莫护跋→木延过渡期，尚未强大
-- 轲比能死后漠南真空期（235年—），给了慕容部向西向南扩展的历史机会
-- 《晋书》称"轲比能之后为慕容鲜卑"，意指漠南主导性鲜卑势力的历史交棒
-
-[b]史料局限：[/b] 轲比能时代（220—235年）慕容部的具体活动在《三国志》中几乎无记载。慕容部真正进入主要史料视野是西晋末年慕容廆时代（300年以后）。
+[color=#000000]慕容部世系（三国至西晋）：[/color]
 
 
-[b]关键人物与事件[/b]
+[table=4]
+[cell][b]代[/b][/cell]
+[cell][b]人物[/b][/cell]
+[cell][b]时期[/b][/cell]
+[cell][b]事迹[/b][/cell]
+[cell]一[/cell]
+[cell]莫护跋[/cell]
+[cell]曹魏初—景初[/cell]
+[cell]入辽西，讨公孙渊封率义王，建国棘城北[/cell]
+[cell]二[/cell]
+[cell]木延（子）[/cell]
+[cell]曹魏末—西晋初[/cell]
+[cell]无显著史料[/cell]
+[cell]三[/cell]
+[cell]涉归（孙）[/cell]
+[cell]西晋初[/cell]
+[cell]迁居辽东北；284年死，传子慕容廆[/cell]
+[cell]四[/cell]
+[cell]慕容廆[/cell]
+[cell]西晋[/cell]
+[cell]叔篡位后国人迎回；汉化深度加强；289年迁回徒河青山；286年东伐扶余；慕容部真正强盛期[/cell]
+[/table]
 
 
-[b]轲比能（?—235年）[/b]
-- 小种鲜卑出身，以个人威望和"均平分配"建立部落信任
-- 吸收汉人技术，发展军制
-- 最终控弦十余万骑，统一漠南大部
-- 与诸葛亮联手构成曹魏最大两线压力
-- 被曹魏刺客韩龙杀死
+[color=#000000]与轲比能时代的历史关联：[/color]
 
-[b]步度根（?—约233—235年）[/b]
-- 魁头之弟，檀石槐正统后裔，但部众持续衰弱
-- 兄扶罗韩被轲比能诱杀，与轲比能长期为仇
-- 曹魏文帝封为王，成为曹魏牵制轲比能的棋子
-- 233年被轲比能诱纳叛魏，楼烦之战（步度根/轲比能联军）击杀曹魏两将
-- 秦朗出击后走漠北，后被轲比能所杀
-
-[b]素利[/b]
-- 东部鲜卑大人，辽西一带，"道远初不为边患"
-- 与轲比能世仇，互相攻击
-- 田豫利用素利牵制轲比能
-- 太和二年（228）死，弟成律归代摄
-
-[b]莫护跋（慕容部始祖，?—？）[/b]
-- 曹魏初年率部迁入辽西，填补乌桓南迁后的空间
-- 238年随司马懿讨公孙渊有功，封率义王，建国棘城之北
-- 三国时期慕容鲜卑的奠基者，但当时势力弱小
-
-[b]田豫[/b]
-- 曹魏护乌桓校尉，北疆第一实际经营者
-- 分化鲜卑三部、马城之围、讨郁筑鞬——北疆主要军事事件的直接执行者
-
-[b]王雄[/b]
-- 幽州刺史，轲比能晚期面对的曹魏主要对手
-- 先用安抚换和平，后策动刺杀彻底解决问题
-
-[b]阎柔、阎志[/b]
-- 阎柔：护乌丸校尉，轲比能最初经阎柔向曹操进贡
-- 阎志：阎柔之弟，"素为鲜卑所信"，马城之围中劝退轲比能的关键人物
-
-[b]秦朗[/b]
-- 骁骑将军，233年率中军出击步度根/轲比能联军
-- 结果"虏乃走漠北"，史料对战斗过程无描述
+[indent]•  莫护跋入辽西（220年代）与轲比能崛起时间重叠，两个集团在地理上相邻[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  韩龙刺杀轲比能（235年）时，慕容部处于莫护跋→木延过渡期，尚未强大[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  轲比能死后漠南真空期（235年—），给了慕容部向西向南扩展的历史机会[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《晋书》称"轲比能之后为慕容鲜卑"，意指漠南主导性鲜卑势力的历史交棒[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]史实 vs 演义[/b]
+[color=#000000]史料局限：[/color] 轲比能时代（220—235年）慕容部的具体活动在《三国志》中几乎无记载。慕容部真正进入主要史料视野是西晋末年慕容廆时代（300年以后）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键人物与事件[/font][/b]
+
+
+[color=#000000]轲比能（?—235年）[/color]
+
+[indent]•  小种鲜卑出身，以个人威望和"均平分配"建立部落信任[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  吸收汉人技术，发展军制[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  最终控弦十余万骑，统一漠南大部[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  与诸葛亮联手构成曹魏最大两线压力[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  被曹魏刺客韩龙杀死[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]步度根（?—约233—235年）[/color]
+
+[indent]•  魁头之弟，檀石槐正统后裔，但部众持续衰弱[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  兄扶罗韩被轲比能诱杀，与轲比能长期为仇[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹魏文帝封为王，成为曹魏牵制轲比能的棋子[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  233年被轲比能诱纳叛魏，楼烦之战（步度根/轲比能联军）击杀曹魏两将[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  秦朗出击后走漠北，后被轲比能所杀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]素利[/color]
+
+[indent]•  东部鲜卑大人，辽西一带，"道远初不为边患"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  与轲比能世仇，互相攻击[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  田豫利用素利牵制轲比能[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  太和二年（228）死，弟成律归代摄[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]莫护跋（慕容部始祖，?—？）[/color]
+
+[indent]•  曹魏初年率部迁入辽西，填补乌桓南迁后的空间[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  238年随司马懿讨公孙渊有功，封率义王，建国棘城之北[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三国时期慕容鲜卑的奠基者，但当时势力弱小[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]田豫[/color]
+
+[indent]•  曹魏护乌桓校尉，北疆第一实际经营者[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  分化鲜卑三部、马城之围、讨郁筑鞬——北疆主要军事事件的直接执行者[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]王雄[/color]
+
+[indent]•  幽州刺史，轲比能晚期面对的曹魏主要对手[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  先用安抚换和平，后策动刺杀彻底解决问题[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]阎柔、阎志[/color]
+
+[indent]•  阎柔：护乌丸校尉，轲比能最初经阎柔向曹操进贡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  阎志：阎柔之弟，"素为鲜卑所信"，马城之围中劝退轲比能的关键人物[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]秦朗[/color]
+
+[indent]•  骁骑将军，233年率中军出击步度根/轲比能联军[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  结果"虏乃走漠北"，史料对战斗过程无描述[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
 《三国演义》几乎完全回避了北疆鲜卑的叙事：
-- 曹操北征乌桓（207年）在演义中有描写，但作为平定袁绍余部的战役而非鲜卑崛起的背景
-- 轲比能其人、蜀鲜联动（231年）在演义中均无涉及
-- 诸葛亮北伐的外交维度被演义简化为纯军事叙事
-- 韩龙刺杀轲比能这一历史事件完全从演义中消失
-- 慕容部的早期形成在整个《三国演义》叙事框架之外
 
-[b]核心差异：[/b] 演义将三国格局描写为曹刘孙的中原博弈，而实际上北方草原的民族力量是曹魏战略不得不同时应对的第四方。轲比能死的235年，距司马懿发动高平陵政变（249年）只有14年——消除北疆威胁是曹魏在政治剧变前期的重要战略稳定动作。
+[indent]•  曹操北征乌桓（207年）在演义中有描写，但作为平定袁绍余部的战役而非鲜卑崛起的背景[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  轲比能其人、蜀鲜联动（231年）在演义中均无涉及[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  诸葛亮北伐的外交维度被演义简化为纯军事叙事[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  韩龙刺杀轲比能这一历史事件完全从演义中消失[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  慕容部的早期形成在整个《三国演义》叙事框架之外[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]核心差异：[/color] 演义将三国格局描写为曹刘孙的中原博弈，而实际上北方草原的民族力量是曹魏战略不得不同时应对的第四方。轲比能死的235年，距司马懿发动高平陵政变（249年）只有14年——消除北疆威胁是曹魏在政治剧变前期的重要战略稳定动作。

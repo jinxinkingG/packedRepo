@@ -86,14 +86,14 @@ func effect_20653_AI_report() -> void:
 func effect_20653_start() -> void:
 	if actor.get_moral() < MIN_MORAL:
 		var msg = "洪水无情，有伤天和\n当慎之（[德]不足"
-		play_dialog(me.actorId, msg, 3, 2999)
+		play_dialog(actorId, msg, 3, 2999)
 		return
 	if not assert_action_point(actorId, COST_AP):
 		return
 	var targets = _get_available_perform_targets(me)
 	if targets.empty():
 		var msg = "没有合适的【{0}】发动点".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 3, 2999)
+		play_dialog(actorId, msg, 3, 2999)
 		return
 	var msg = "选择【{0}】发动点".format([ske.skill_name])
 

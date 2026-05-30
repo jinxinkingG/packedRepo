@@ -16,6 +16,6 @@ func on_trigger_20030()->bool:
 	if teammates.size() != 1:
 		return false
 	var excludedTargets = DataManager.get_env_dict("战争.攻击目标排除")
-	excludedTargets[teammates[0]] = ske.skill_name
+	excludedTargets[teammates[0].actorId] = ske.skill_name
 	DataManager.set_env("战争.攻击目标排除", excludedTargets)
 	return false

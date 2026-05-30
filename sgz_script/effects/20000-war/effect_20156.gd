@@ -48,7 +48,7 @@ func effect_20156_start():
 	var msg = "发动【{0}】免疫{1}\n消耗一个[{2}]标记，可否？\n（现有：{3}".format([
 		ske.skill_name, se.name, FLAG_NAME, flags
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000()->void:

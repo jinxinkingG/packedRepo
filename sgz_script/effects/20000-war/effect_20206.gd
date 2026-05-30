@@ -60,7 +60,7 @@ func effect_20206_start():
 	if ske.get_war_limited_times() >= LIMITED_TIMES:
 		play_dialog(-1, "【正奇】每回合限两次", 2, 2999)
 		return
-	play_dialog(me.actorId, "兵以正合，策以奇胜", 2, 2000)
+	play_dialog(actorId, "兵以正合，策以奇胜", 2, 2000)
 	return
 
 #展示计策列表

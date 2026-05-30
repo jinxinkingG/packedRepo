@@ -51,7 +51,7 @@ func effect_20470_3():
 	var msg = "消耗{0}机动力发动【{1}】\n预防{2}的{3}\n可否？".format([
 		COST_AP, ske.skill_name, targetWA.get_name(), schemeName,
 	])
-	play_dialog(me.actorId, msg, 2, 2002, true)
+	play_dialog(actorId, msg, 2, 2002, true)
 	return
 
 func on_view_model_2002():
@@ -74,7 +74,7 @@ func effect_20470_4():
 		targetWA.get_name(), schemeName,
 	])
 	ske.war_report()
-	play_dialog(me.actorId, msg, 2, 2999)
+	play_dialog(actorId, msg, 2, 2999)
 	return
 
 func on_view_model_2999():

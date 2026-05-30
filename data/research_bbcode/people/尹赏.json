@@ -1,78 +1,344 @@
-[b]尹赏[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]尹赏[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详，[color=#6699FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]天水郡冀县（今甘肃天水市甘谷县东南）人，三国时期曹魏、蜀汉官员。
+[color=#000000]基本信息：[/color] 生卒年不详（约194年—260年，游戏推算），[color=#0066FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]天水郡冀县（今甘肃天水市甘谷县东南）人，三国时期曹魏、蜀汉官员。
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]出身与早年[/b]
-
-尹赏出身天水郡，早年仕于曹魏，担任[b]天水郡主簿[/b]（太守府文书事务官）。其具体履历在《三国志》中无独立记载，仅作为[color=#6699FF][url={"research": "姜维", "cat": "people"}]姜维[/url][/color]事迹的背景人物出现。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]建兴六年（228年）入蜀[/b]
-
-[color=#6699FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]第一次北伐出[color=#6699FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]，引发陇右局势震动。彼时天水太守[b]马遵[/b]出行巡察，随行官员包括：
-- 功曹 [color=#6699FF][url={"research": "梁绪", "cat": "people"}]梁绪[/url][/color]
-- [b]主簿 尹赏[/b]
-- 主记 梁虔
-- 中郎 姜维
-
-马遵得知蜀军逼近、诸县响应，疑随行人员皆有异心，[b]连夜出奔保上邽[/b]，未告知诸人。
-
-尹赏等人发觉太守已走，追之不及。至上邽城门，门已关闭，不予放入。转还冀县，冀县同样拒之于门外。走投无路之下，[b]与姜维等人俱诣诸葛亮[/b]，就此投降蜀汉。
-
-[color=#AAAAAA]　《三国志·姜维传》：「太守闻蜀军垂至，而诸县响应；疑维等皆有异心，于是夜亡保上邽。维等觉太守去，追迟；至城门，城门已闭，不纳。维等相率还冀，冀亦不入维。维等乃俱诣诸葛亮。」[/color]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]出身与早年[/font][/b]
 
 
-[b]仕蜀汉：官至执金吾[/b]
+尹赏出身天水郡冀县，早年仕于曹魏，担任[color=#000000]天水郡主簿[/color]（郡府文书行政官，秩比三四百石）。其具体履历在《三国志》中无独立记载，仅作为[color=#0066FF][url={"research": "姜维", "cat": "people"}]姜维[/url][/color]事迹的背景人物出现。
 
-入蜀后，尹赏在蜀汉历任官职，最终官至[b]执金吾[/b]（九卿之一，掌京师武装巡逻与警卫），属于中枢高级职位。
+天水郡冀县同时也是姜维的籍贯，二人为同郡（甚至可能同县）同僚，同在[color=#0066FF][url={"research": "马遵", "cat": "people"}]马遵[/url][/color]幕下共事。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建兴六年（228年）降汉始末[/font][/b]
+
+
+[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]第一次北伐出[color=#0066FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]，引发陇右局势震动。彼时天水太守[color=#000000]马遵[/color]出行巡察，随行官员包括：
+
+[indent]•  [color=#000000]功曹[/color] [color=#0066FF][url={"research": "梁绪", "cat": "people"}]梁绪[/url][/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]主簿[/color] 尹赏[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]主记[/color] 梁虔[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]中郎[/color] 姜维[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+马遵得知蜀军逼近、诸县响应，疑随行人员皆有异心，[color=#000000]连夜出奔保上邽[/color]，未告知诸人。
+
+尹赏等人发觉太守已走，追之不及。至上邽城门，门已关闭，不予放入。转还冀县，冀县同样拒之于门外。走投无路之下，[color=#000000]与姜维等人俱诣诸葛亮[/color]，就此投降蜀汉。
+
+
+[indent][color=#666666]┃ 《三国志·蜀书十四·姜维传》：「建兴六年，丞相诸葛亮军向祁山，时天水太守适出案行。维及功曹梁绪、主簿尹赏、主记梁虔等从行。太守闻蜀军垂至而诸县响应，疑维等皆有异心，于是夜亡保上邽。维等觉太守去，追迟，至城门，城门已闭，不纳。维等相率还冀，冀亦不入维。维等乃俱诣诸葛亮。」[/color][/indent]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]仕蜀汉：官至执金吾[/font][/b]
+
+
+入蜀后，尹赏在蜀汉历任官职，最终官至[color=#000000]执金吾[/color]（位同九卿，掌京师治安与宫外巡卫），秩[color=#000000]中二千石[/color]，属于中枢高级职位。
+
+执金吾职责：宫外巡逻京师，防止水火盗贼，天子出行为先导，威仪颇盛（"群僚之中，斯最壮矣"）。
 
 同批入蜀者的最终官职：
 
-[b]姓名[/b] | [b]官职[/b] | [b]品秩参考[/b]
-梁绪 | 大鸿胪 | 九卿，掌宾客礼仪
-尹赏 | 执金吾 | 九卿，掌京师安全
-梁虔 | 大长秋 | 皇后宫廷总管
+
+[table=4]
+[cell][b]姓名[/b][/cell]
+[cell][b]原职（曹魏）[/b][/cell]
+[cell][b]蜀汉最高官职[/b][/cell]
+[cell][b]品秩[/b][/cell]
+[cell]梁绪[/cell]
+[cell]天水功曹[/cell]
+[cell]大鸿胪（掌宾客礼仪）[/cell]
+[cell]中二千石[/cell]
+[cell]尹赏[/cell]
+[cell]天水主簿[/cell]
+[cell]执金吾（掌京师安全）[/cell]
+[cell]中二千石[/cell]
+[cell]梁虔[/cell]
+[cell]天水主记[/cell]
+[cell]大长秋（皇后宫廷总管）[/cell]
+[cell]中二千石[/cell]
+[/table]
 
 
-三人均在蜀汉灭亡（263年）之前去世，未经历亡国。
-
-[color=#AAAAAA]　《三国志·姜维传》：「维昔所俱至蜀，梁绪官至大鸿胪，尹赏执金吾，梁虔大长秋，皆先蜀亡殁。」[/color]
-
-这句话是陈寿在叙述姜维结局后的一段附记，带有某种感慨色彩——与姜维同来之人，各有善终，反而是最后留下来殉志的姜维，结局最为惨烈。
+三人均升至中二千石高位，结局相近。陈寿在叙述姜维结局后附记一笔：
 
 
-[b]性格与形象[/b]
+[indent][color=#666666]┃ 「维昔所俱至蜀，梁绪官至大鸿胪，尹赏执金吾，梁虔大长秋，皆先蜀亡没。」[/color][/indent]
+
+
+三人均在蜀汉灭亡（263年）之前去世，未经历亡国。这句附记有一定感慨色彩——与姜维同来之人各有善终，殉志至死的反而是姜维。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]梁绪与梁虔的关系[/font][/b]
+
+
+[color=#000000]考辨结论：梁绪为梁虔之兄，是《三国演义》的设定，正史无任何亲缘关系记载，属开放悬案。[/color]
+
+
+[indent]•  [color=#000000]正史《三国志》全文无梁绪与梁虔亲缘关系的任何记载[/color]，包括裴松之注亦无补充[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]演义（嘉靖本）[/color] 第一八五章：梁绪对孔明称「此城乃某之[color=#000000]亲弟[/color]梁虔守之」，明确将梁虔设定为梁绪亲弟，梁绪据此招降梁虔。这是演义的戏剧化处理。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]CNE3等网络资料[/color]引「兄绪，蜀大鸿胪」，源自演义体系而非正史，无独立一手史料支撑[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  不排除地方志等文献另有记载，但目前无网络可查证据[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]创作参考[/color]：可注明「据《三国演义》设定，梁绪为梁虔之兄」；正史研究中只能说「二人同为天水僚属，亲缘关系不明」。
+（详见 `ref-liangxu-liangqian-relationship.md`）
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]华阳国志与其他文献[/font][/b]
+
+
+《华阳国志》无尹赏独立记载（已基本确认✅）。可能原因：
+
+[indent]•  三人籍贯均为凉州天水，非益州本地人士[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《华阳国志》记录重点在益州（巴蜀）地区人物[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三人在蜀汉史料中记载极简，未进入常璩著录范围[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 史料极简，无法从正史中提炼尹赏的性格特征。
 
 可以推断的是：
-- 入蜀是[b]被动情势[/b]所致，非主动弃魏投汉（被马遵遗弃、归路断绝）
-- 在蜀汉获得执金吾一职，说明得到重用，且有一定才干
-- 未经历蜀汉灭亡，其晚年遭遇不详
+
+[indent]•  入蜀是[color=#000000]被动情势[/color]所致，非主动弃魏投汉（被马遵遗弃、归路断绝）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  在蜀汉获得执金吾一职，说明得到信任与重用，具备较高才干[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  从郡中主簿（低品秩）升至中二千石，仕途顺遂[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  未经历蜀汉灭亡，其晚年遭遇不详[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-- [b]马遵（天水太守）[/b]：旧主，正是马遵连夜出逃的决定，切断了尹赏等人回魏的退路，间接"造就"了他们的降蜀
-- [b]姜维[/b]：同行入蜀的战友，后来官位最高的一人；陈寿将尹赏的仕途与姜维的命运并置叙述
-- [b]梁绪、梁虔[/b]：同批入蜀者，四人同行，各自仕蜀，皆先蜀亡殁，共同成为陈寿笔下的一段附记
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[indent]•  [color=#000000]马遵（天水太守）[/color]：旧主。正是马遵连夜出逃的决定，切断了尹赏等人回魏的退路，间接"造就"了他们的降蜀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]姜维[/color]：同行入蜀的战友，后来官位最高（大将军）；陈寿将尹赏的仕途与姜维的命运并置叙述，形成对比。游戏三国志14中，姜维将尹赏设为亲爱武将。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]梁绪[/color]：同行入蜀，同为中二千石级，"先蜀亡没"。演义中设定为梁虔之兄，正史无亲缘关系记载[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]梁虔[/color]：同行入蜀，同为中二千石级，"先蜀亡没"。演义中设定为梁绪之弟，正史无亲缘关系记载[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]项目[/b] | [b]正史[/b] | [b]《三国演义》[/b]
-职务 | 天水郡主簿 | 同（天水郡主簿）
-入蜀方式 | 被动情势，城门关闭无路可走 | 主动行动，"大开城门，放蜀兵入"
-在蜀汉的地位 | 官至执金吾（九卿） | 几乎无记载
-入蜀意志 | 史书不明确是否有主动意愿 | 演义塑造为主动弃魏归汉的形象
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[color=#000000]演义描写：[/color]
+天水郡主簿。姜维投降蜀汉后，将书信射入天水城内，[color=#0066FF][url={"research": "夏侯楙", "cat": "people"}]夏侯楙[/url][/color]、马遵疑梁绪与尹赏和姜维暗中勾连，欲杀二人。是夜，夏侯楙多次遣人召梁绪、尹赏说话，二人料知事急，遂披挂上马，各执兵器，引本部军[color=#000000]大开城门，放蜀兵入[/color]。随后梁绪招降亲弟梁虔，孔明封梁绪为天水太守、尹赏为冀城令、梁虔为上邽令。
+
+[color=#000000]与正史的主要差异：[/color]
+
+
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]正史[/b][/cell]
+[cell][b]演义[/b][/cell]
+[cell]入蜀方式[/cell]
+[cell]被动情势，城门关闭无路可走[/cell]
+[cell]主动行动，"大开城门，放蜀兵入"[/cell]
+[cell]梁绪梁虔关系[/cell]
+[cell]无记载[/cell]
+[cell]兄弟（梁绪之弟梁虔）[/cell]
+[cell]在蜀汉地位[/cell]
+[cell]官至执金吾（九卿级）[/cell]
+[cell]几乎无后续记载，封冀城令[/cell]
+[cell]入蜀意志[/cell]
+[cell]史书不明确是否有主动意愿[/cell]
+[cell]演义塑造为主动弃魏归汉的形象[/cell]
+[/table]
 
 
 演义对入蜀过程作了戏剧化处理，赋予了尹赏等人明确的主动选择，与正史的被动语境有所不同。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]陈寿（《三国志·蜀书十四·姜维传》）[/font][/b]
+
+
+附记于姜维结局之后：
+
+[indent][color=#666666]┃ 「维昔所俱至蜀，梁绪官至大鸿胪，尹赏执金吾，梁虔大长秋，皆先蜀亡没。」[/color][/indent]
+
+
+此句以并列三人仕途的形式，含蓄呈现出尹赏的人生轨迹：被动入蜀，仕途顺遂，终于亡国前离世——与殉志的姜维形成鲜明对比。陈寿无独立评语，但这句附记本身已是一种评价：三人的命运因那个走投无路的夜晚而转向，最终各有一份「中二千石」的结局。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]史书语境中的间接评价[/font][/b]
+
+
+[indent]•  [color=#000000]马遵的判断[/color]（负面起点）：马遵连夜出奔，以"皆有异心"为由弃诸属下。从正史语境看，马遵的疑心并无证据支撑，而尹赏等人的实际行为（被城门关闭、走投无路）反映了他们并非主动谋变。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]蜀汉任命所含评价[/color]（正面）：蜀汉政权任命尹赏为执金吾（九卿级），是对其才干与可信赖程度的实际肯定。九卿任命在蜀汉不轻易授予，此职位本身即是最直接的评价。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+其余史家未见专论尹赏。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志14》（2020年）[/font][/b]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]51[/cell]
+[cell]46[/cell]
+[cell]60[/cell]
+[cell]66[/cell]
+[cell]53[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]个性：[/color] 法律（任命为区域官员时，治安容易上升）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战法：[/color] 火矢、谩骂[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]阵形：[/color] 雁行[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]主义：[/color] 王道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]政策：[/color] 戸籍整備 Lv2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]亲爱武将：[/color] 姜维[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]游戏彩蛋：[/color] 个性「法律」可能是向汉代同名武将尹赏（前汉酷吏，《汉书·酷吏列传》有传，终官执金吾）致敬——同姓名、同任执金吾，属游戏内嵌彩蛋性设定。
+
+（详见 `ref-sangokushi14-yinshang.md`）
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志11》（2006年）[/font][/b]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]51[/cell]
+[cell]44[/cell]
+[cell]61[/cell]
+[cell]66[/cell]
+[cell]53[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]特技：[/color] 无[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]兵种适性：[/color] 槍C / 戟C / 弩B / 騎C / 兵器C / 水軍C[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]登场年：[/color] 213年，登场地：[color=#0066FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]生年：[/color] 194年（游戏推算），没年：260年（游戏推算），相性：66[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志8重制版》（2024年）[/font][/b]
+
+
+[table=6]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]合计[/b][/cell]
+[cell]53[/cell]
+[cell]51[/cell]
+[cell]60[/cell]
+[cell]58[/cell]
+[cell]57[/cell]
+[cell]279[/cell]
+[/table]
+
+
+[color=#000000]战法（●=掌握）：[/color]
+
+[indent]•  弓兵：斉射●、火矢●[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  軍略：落石●[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]特技（●=持有）：[/color]
+
+[indent]•  智謀：工作●[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  話術●[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  兵科：弓将●[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  軍事：援護●[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]奇才：[/color] 無
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+[color=#000000]无收录。[/color] 尹赏在三国杀（标准版/界限突破/谋士版等各版本）中均未收录。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+目前无已知影视作品中有尹赏的独立出场角色。其降蜀经过（天水关之战相关）在部分三国题材影视中以群像形式展现，但无独立演员姓名可考。
+
+
+[color=#888888]──────────────────────────────[/color]

@@ -1,87 +1,230 @@
-[b]步协（？）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]步协（？）[/font][/b]
 
 
-[b]基本信息：[/b] 生年不可考，卒年约264—272年间；籍贯临淮淮阴（今江苏淮安）；东吴将领，临湘侯，官至抚军将军；[color=#6699FF][url={"research": "步骘", "cat": "people"}]步骘[/url][/color]长子，[color=#6699FF][url={"research": "步阐", "cat": "people"}]步阐[/url][/color]之兄
+[color=#000000]基本信息：[/color] 生年不可考，卒年约264—272年间；籍贯临淮淮阴（今江苏淮安）；东吴将领，临湘侯，官至抚军将军；[color=#0066FF][url={"research": "步骘", "cat": "people"}]步骘[/url][/color]长子，[color=#0066FF][url={"research": "步阐", "cat": "people"}]步阐[/url][/color]之兄
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]继承父业（赤乌十年，247年）[/b]
-
-步骘赤乌十年（247年）去世，步协以嫡长子身份继承父亲[b]临湘侯[/b]爵位，统领步骘所部军队，加任[b]抚军将军[/b]。
-
-据《三国志·[color=#6699FF][url={"research": "朱然", "cat": "people"}]朱然[/url][/color]传》记载：「[color=#6699FF][url={"research": "诸葛瑾", "cat": "people"}]诸葛瑾[/url][/color]子融、步骘子协，虽各袭任，权特复使然总为大督。」——步协虽袭父任，但[color=#6699FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]并不完全信任其军事能力，仍以朱然总领大都督节制各军，步协实际上受朱然管辖。这是对二代将领一种常见的政治安排。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]夷陵防御战——王基袭夷陵事件（嘉平二年，250年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]继承父业（赤乌十年，247年）[/font][/b]
 
-嘉平二年（250年），魏征南将军[color=#6699FF][url={"research": "王昶", "cat": "people"}]王昶[/url][/color]奏请伐吴，曹魏三路出兵：
-- 新城太守[color=#6699FF][url={"research": "州泰", "cat": "people"}]州泰[/url][/color]袭巫、秭归、房陵
-- [b]荆州刺史[color=#6699FF][url={"research": "王基", "cat": "people"}]王基[/url][/color]进逼夷陵（步协所守）[/b]
-- 王昶本人进逼[color=#6699FF][url={"research": "江陵", "cat": "geography"}]江陵[/url][/color]
+
+步骘赤乌十年（247年）去世，步协以嫡长子身份继承父亲[color=#000000]临湘侯[/color]爵位，统领步骘所部军队，加任[color=#000000]抚军将军[/color]。
+
+据《三国志·[color=#0066FF][url={"research": "朱然", "cat": "people"}]朱然[/url][/color]传》记载：「[color=#0066FF][url={"research": "诸葛瑾", "cat": "people"}]诸葛瑾[/url][/color]子融、步骘子协，虽各袭任，权特复使然总为大督。」——步协虽袭父任，但[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]并不完全信任其军事能力，仍以朱然总领大都督节制各军，步协实际上受朱然管辖。这是对二代将领一种常见的政治安排。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]夷陵防御战——王基袭夷陵事件（嘉平二年，250年）[/font][/b]
+
+
+嘉平二年（250年），魏征南将军[color=#0066FF][url={"research": "王昶", "cat": "people"}]王昶[/url][/color]奏请伐吴，曹魏三路出兵：
+
+[indent]•  新城太守[color=#0066FF][url={"research": "州泰", "cat": "people"}]州泰[/url][/color]袭巫、秭归、房陵[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]荆州刺史[color=#0066FF][url={"research": "王基", "cat": "people"}]王基[/url][/color]进逼夷陵（步协所守）[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  王昶本人进逼[color=#0066FF][url={"research": "江陵", "cat": "geography"}]江陵[/url][/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 《三国志·王基传》明确记载了此事的经过：
 
-[color=#AAAAAA]　基别袭步恊于夷陵，[b]恊闭门自守[/b]。基示以攻形，而实分兵取雄父邸阁，[b]收米三十余万斛，虏安北将军谭正，纳降数千口[/b]。于是移其降民，置夷陵县。赐爵关内侯。[/color]
+
+[indent][color=#666666]┃ 基别袭步恊于夷陵，[color=#000000]恊闭门自守[/color]。基示以攻形，而实分兵取雄父邸阁，[color=#000000]收米三十余万斛，虏安北将军谭正，纳降数千口[/color]。于是移其降民，置夷陵县。赐爵关内侯。[/color][/indent]
+
 
 （注：识典古籍版作"步恊"，"恊"为"协"的异体字，无版本争议。）
 
-[b]步协的应对[/b]：选择闭门坚守，不出战迎击——这是面对优势魏军的正确守城决策。然而，王基随即将攻城之势作为佯攻，暗中分兵袭取[b]雄父邸阁[/b]（夷陵附近的粮仓仓储设施），成功截获粮米三十余万斛，并俘虏了在该方向驻守的东吴安北将军[b]谭正[/b]，收降数千人口。
+[color=#000000]步协的应对[/color]：选择闭门坚守，不出战迎击——这是面对优势魏军的正确守城决策。然而，王基随即将攻城之势作为佯攻，暗中分兵袭取[color=#000000]雄父邸阁[/color]（夷陵附近的粮仓仓储设施），成功截获粮米三十余万斛，并俘虏了在该方向驻守的东吴安北将军[color=#000000]谭正[/color]，收降数千人口。
 
-[b]防御的漏洞[/b]：步协守住了夷陵城本身，但[b]侧翼粮仓被声东击西之计袭夺[/b]——谭正被俘说明步协对雄父邸阁方向兵力部署不足。王基此战是魏晋军事史中典型的"示以攻形、实取其资"策略案例。粮草重地的失守，使步协的防御在战略上处于被动。
+[color=#000000]防御的漏洞[/color]：步协守住了夷陵城本身，但[color=#000000]侧翼粮仓被声东击西之计袭夺[/color]——谭正被俘说明步协对雄父邸阁方向兵力部署不足。王基此战是魏晋军事史中典型的"示以攻形、实取其资"策略案例。粮草重地的失守，使步协的防御在战略上处于被动。
 
 
-[b]围攻罗宪（永安七年，264年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]围攻罗宪（永安七年，264年）[/font][/b]
+
 
 这是步协生平最后也最重要的军事行动。
 
-蜀汉景耀六年（263年），魏灭蜀。东吴得知消息后，欲趁蜀汉故土群龙无首之际兼并蜀地。《三国志·[color=#6699FF][url={"research": "霍峻", "cat": "people"}]霍峻[/url][/color]传》注引载：「吴闻锺、邓败，百城无主，有兼蜀之志，而巴东固守，兵不得过，使步协率众而西。」
+蜀汉景耀六年（263年），魏灭蜀。东吴得知消息后，欲趁蜀汉故土群龙无首之际兼并蜀地。《三国志·[color=#0066FF][url={"research": "霍峻", "cat": "people"}]霍峻[/url][/color]传》注引载：「吴闻锺、邓败，百城无主，有兼蜀之志，而巴东固守，兵不得过，使步协率众而西。」
 
-[color=#6699FF][url={"research": "吴景", "cat": "people"}]吴景[/url][/color]帝永安七年（264年）二至三月，[b]步协与镇军将军[color=#6699FF][url={"research": "陆抗", "cat": "people"}]陆抗[/url][/color]、征西将军[color=#6699FF][url={"research": "留平", "cat": "people"}]留平[/url][/color]、建平太守[color=#6699FF][url={"research": "盛曼", "cat": "people"}]盛曼[/url][/color][/b]率众围攻蜀汉旧将、魏将[color=#6699FF][url={"research": "罗宪", "cat": "people"}]罗宪[/url][/color]所守的巴东（今重庆奉节一带）。
+[color=#0066FF][url={"research": "吴景", "cat": "people"}]吴景[/url][/color]帝永安七年（264年）二至三月，[color=#000000]步协与镇军将军[color=#0066FF][url={"research": "陆抗", "cat": "people"}]陆抗[/url][/color]、征西将军[color=#0066FF][url={"research": "留平", "cat": "people"}]留平[/url][/color]、建平太守[color=#0066FF][url={"research": "盛曼", "cat": "people"}]盛曼[/url][/color][/color]率众围攻蜀汉旧将、魏将[color=#0066FF][url={"research": "罗宪", "cat": "people"}]罗宪[/url][/color]所守的巴东（今重庆奉节一带）。
 
-罗宪率约两千兵力拒守，步协等吴军[b]围城长达六个月[/b]，始终未能攻克。此时魏将[b]胡烈[/b]率步骑两万驰援，进攻东吴重镇[b]西陵[/b]（今湖北宜昌），步协等吴军不得不解围退兵。
+《三国志·三嗣主传》正文原文：
+
+[indent][color=#666666]┃ 「七年春正月，大赦。二月，镇军将军陆抗、[color=#000000]抚军将军步协[/color]、征西将军留平、建平太守盛曼，率众围蜀巴东守将罗宪。」[/color][/indent]
+
+
+罗宪率约两千兵力拒守，步协等吴军[color=#000000]围城长达六个月[/color]，始终未能攻克。此时魏将[color=#000000][color=#0066FF][url={"research": "胡烈", "cat": "people"}]胡烈[/url][/color][/color]率步骑两万驰援，进攻东吴重镇[color=#000000]西陵[/color]（今湖北宜昌），步协等吴军不得不解围退兵。
 
 此次进攻失败是步协军事生涯的终点记录，步协此后不久便去世，史书未载具体卒年。
 
 
-[b]卒年及子嗣[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]卒年及子嗣[/font][/b]
+
 
 步协卒年无正史记载，约在264年围攻罗宪之后、步阐叛降（272年）之前。
 
 子：
-- [b]步玑[/b]（袭爵临湘侯）——步阐叛晋时，被晋朝封为监江陵诸军事、左将军、散骑常侍，领庐陵太守，改封[b]江陵侯[/b]；陆抗破西陵后，步玑被杀
-- [b]步璿[/b]——被遣入晋都为质；步玑被杀后，步璿独存以奉祀
 
-弟：[b]步阐[/b]（继任西陵督），最终叛吴降晋，272年被陆抗擒灭，步氏几乎灭族。
+[indent]•  [color=#000000]步玑[/color]（袭爵临湘侯）——步阐叛晋时，被晋朝封为监江陵诸军事、左将军、散骑常侍，领庐陵太守，改封[color=#000000]江陵侯[/color]；陆抗破西陵后，步玑被杀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]步璿[/color]——被遣入晋都为质；步玑被杀后，步璿独存以奉祀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]性格与形象[/b]
+弟：[color=#000000]步阐[/color]（继任西陵督），最终叛吴降晋，272年被陆抗擒灭，步氏几乎灭族。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 步协在史料中形象模糊，史书对其几乎无个人性格描写。仅从行迹可推断：
 
-- [b]守成之人[/b]：继承父业后，镇守西陵一带，基本维持步骘时代的防守格局，无大功也无大败
-- [b]被压制的二代[/b]：孙权特意让朱然凌驾于步协、[color=#6699FF][url={"research": "诸葛融", "cat": "people"}]诸葛融[/url][/color]之上，反映出东吴对功臣子弟"袭职而不授权"的政策倾向
-- [b]军事能力有限[/b]：250年夷陵雄父粮仓被袭，264年围攻罗宪六个月无功，均说明步协并非出色的主动进攻型将领
+
+[indent]•  [color=#000000]守成之人[/color]：继承父业后，镇守西陵一带，基本维持步骘时代的防守格局，无大功也无大败[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]被压制的二代[/color]：孙权特意让朱然凌驾于步协、[color=#0066FF][url={"research": "诸葛融", "cat": "people"}]诸葛融[/url][/color]之上，反映出东吴对功臣子弟"袭职而不授权"的政策倾向[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]军事能力有限[/color]：250年夷陵雄父粮仓被袭，264年围攻罗宪六个月无功，均说明步协并非出色的主动进攻型将领[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]人物[/b] | [b]关系[/b] | [b]说明[/b]
-步骘 | 父 | 东吴丞相、临湘侯，步协继承其一切
-步阐 | 弟 | 继步协任西陵督，后叛吴降晋，导致家族灭亡
-步玑 | 长子 | 袭爵，死于步阐叛降事件
-步璿 | 次子 | 被遣为质，唯一幸存者
-朱然 | 上级（后期） | 孙权指派的大都督，步协受其节制
-陆抗 | 并肩作战者 | 永安七年围攻罗宪的镇军将军
-罗宪 | 对手 | 巴东守将，步协无法攻克的壁垒
-王基 | 对手 | 嘉平二年袭夷陵，以"示以攻形"计取雄父粮仓
-谭正 | 部属（推测） | 东吴安北将军，驻守雄父方向，被王基俘虏
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[table=3]
+[cell][b]人物[/b][/cell]
+[cell][b]关系[/b][/cell]
+[cell][b]说明[/b][/cell]
+[cell]步骘[/cell]
+[cell]父[/cell]
+[cell]东吴丞相、临湘侯，步协继承其一切[/cell]
+[cell]步阐[/cell]
+[cell]弟[/cell]
+[cell]继步协任西陵督，后叛吴降晋，导致家族灭亡[/cell]
+[cell]步玑[/cell]
+[cell]长子[/cell]
+[cell]袭爵，死于步阐叛降事件[/cell]
+[cell]步璿[/cell]
+[cell]次子[/cell]
+[cell]被遣为质，唯一幸存者[/cell]
+[cell]朱然[/cell]
+[cell]上级（后期）[/cell]
+[cell]孙权指派的大都督，步协受其节制[/cell]
+[cell]陆抗[/cell]
+[cell]并肩作战者[/cell]
+[cell]永安七年围攻罗宪的镇军将军[/cell]
+[cell]罗宪[/cell]
+[cell]对手[/cell]
+[cell]巴东守将，步协无法攻克的壁垒[/cell]
+[cell]王基[/cell]
+[cell]对手[/cell]
+[cell]嘉平二年袭夷陵，以"示以攻形"计取雄父粮仓[/cell]
+[cell]谭正[/cell]
+[cell]部属（推测）[/cell]
+[cell]东吴安北将军，驻守雄父方向，被王基俘虏[/cell]
+[/table]
 
 
-步协在《三国演义》中基本无出场，毛本与嘉靖本均不见其名。步协活跃于蜀汉灭亡之后，演义的叙事在此时已接近尾声，对东吴内部诸事着墨甚少。
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+步协在《三国演义》嘉靖本和毛本中[color=#000000]均无出场，且名字不被提及[/color]。已考辨终结✅（2026-05-02）
+
+[color=#000000]考辨依据：[/color]
+
+[indent]•  毛本第120回全文中，步阐相关段落仅为[color=#0066FF][url={"research": "羊祜", "cat": "people"}]羊祜[/url][/color]一句：「斩了步阐及其将士数十人」，无步协[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  CNE3三国人物大全收录步骘（43回）、步阐（120回），无步协词条[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  演义在「锺会[color=#0066FF][url={"research": "邓艾", "cat": "people"}]邓艾[/url][/color]灭蜀」后直接跳至[color=#0066FF][url={"research": "孙皓", "cat": "people"}]孙皓[/url][/color]即位，[color=#000000]完全省略了264年永安七年陆抗/步协围攻罗宪事件[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  罗宪其人在演义中亦缺席（三国演义电子辞典亦有明确说明）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]陈寿《三国志》（无独立评语）[/font][/b]
+
+
+步协在《三国志》中无独立传记，分散记载于《步骘传》《朱然传》《三嗣主传》《霍峻传》注等诸传之中，陈寿对其[color=#000000]无专项评语[/color]。
+
+《步骘传》末段仅以一句带过：[color=#000000]「协统骘所领，加抚军将军。协卒，子玑嗣。」[/color]——记录继承父业、去世、子嗣，无任何赞语或贬语。
+
+《朱然传》的附带记录虽非直接评价，却包含深意：
+
+
+[indent][color=#666666]┃ 「诸葛瑾子融、步骘子协，虽各袭任，权特复使然总为大督。」[/color][/indent]
+
+
+此句意味孙权对步协（及诸葛融）的军事能力存有保留——让功臣之子袭职是政治惯例，但仍以老将朱然凌驾其上，属于"荣而不信任"的安排。这是东吴对第二代将领群体的普遍态度，步协并非例外。
+
+步协无谥号史载，无后世史家专论。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志系列（KOEI）[/font][/b]
+
+
+[color=#000000]三国志14（2020年）：[/color]
+
+[indent]•  统率 71 / 武力 49 / 知力 69 / 政治 65 / 魅力 67[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  主义：割据；政策：工法改革 Lv.3；个性：[color=#000000]改修[/color]（位于城市时耐久恢复量+30%）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：连弩、铁壁、矢岚；阵形：雁行、投石[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  知力69、政治65在吴国二代将领中属中等偏上；武力49为明显弱项；个性「改修」与其"守城守住、粮仓被夺"的形象契合[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志8重制版（2024年）：[/color]
+
+[indent]•  统率 70 / 武力 52 / 知力 59 / 政治 61 / 魅力 62（合计304）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  性格：[color=#000000]豪胆[/color]；义理：7[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：斉射2 / 火矢1 / 遠射2（弓兵）；火箭2（舰船）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：弓将2、水练2、操器1、工作1、话术1、发明1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  性格「豪胆」与其闭门固守的史实行动有一定契合；弓将定位为远程支援型将领[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+三国杀（国战版/标准版）[color=#000000]无步协独立武将[/color]。步骘（父）收录于吴国武将系列，步协未收录。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
+
+
+步协在《三国演义》嘉靖本、毛本中均无出场，1994年央视版《三国演义》及2010年《三国》均无步协独立角色。
+
+
+[color=#888888]──────────────────────────────[/color]

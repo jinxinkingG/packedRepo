@@ -1,72 +1,255 @@
-[b]土安[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]土安[/font][/b]
 
 
-[b]基本信息：[/b] 虚构人物 | 生卒年不详（约卒225年）| 乌戈国"领兵俘长" | 所属：乌戈国（南蛮）
+[color=#000000]基本信息：[/color] 虚构人物 | 生卒年不详（约卒225年）| 乌戈国"领兵俘长" | 所属：乌戈国（南蛮）
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-土安是《三国演义》第九十回中的虚构人物，[b]正史无载[/b]，字号籍贯生卒年均不可考。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]演义中的出场[/b]
+土安是《三国演义》第九十回中的虚构人物，[color=#000000]正史无载[/color]，字号籍贯生卒年均不可考。
 
-孟获被蜀军六擒六纵后，在带来洞主的建议下，逃往东南七百里的乌戈国，求助于国主[color=#6699FF][url={"research": "兀突骨", "cat": "people"}]兀突骨[/url][/color]。兀突骨宣称起兵为孟获报仇，遂召集两位"领兵俘长"：
 
-[color=#AAAAAA]　"于是兀突骨唤两个为首，领兵俘长，一名土安、一名[color=#6699FF][url={"research": "奚泥", "cat": "people"}]奚泥[/url][/color]，起三万兵，皆穿藤甲，离乌戈国，望东北而来。"[/color]
-[color=#AAAAAA]　[/color]
-[color=#AAAAAA]　——《三国志通俗演义》第九十回（识典古籍版）[/color]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]演义中的出场[/font][/b]
+
+
+[color=#0066FF][url={"research": "孟获", "cat": "people"}]孟获[/url][/color]被蜀军六擒六纵后，在带来洞主的建议下，逃往东南七百里的乌戈国，求助于国主[color=#0066FF][url={"research": "兀突骨", "cat": "people"}]兀突骨[/url][/color]。兀突骨宣称起兵为孟获报仇，遂召集两位"领兵俘长"：
+
+
+[indent][color=#666666]┃ "于是兀突骨唤两个为首，领兵俘长，一名土安、一名[color=#0066FF][url={"research": "奚泥", "cat": "people"}]奚泥[/url][/color]，起三万兵，皆穿藤甲，离乌戈国，望东北而来。"[/color][/indent]
+[indent][color=#666666]┃ [/color][/indent]
+[indent][color=#666666]┃ ——嘉靖本《三国志通俗演义》第九十回（NA11011/识典古籍版）[/color][/indent]
+
 
 "领兵俘长"即部落兵头、首领，土安与奚泥并列，共同统率三万藤甲军。
 
+毛宗岗本表述略有差异：
 
-[b]藤甲军首战告捷[/b]
+[indent][color=#666666]┃ "于是兀突骨唤两个领兵俘长：一名土安，一名奚泥"[/color][/indent]
 
-藤甲军穿浸油藤甲，刀箭不入，渡水不沉。土安与奚泥率军与[color=#6699FF][url={"research": "魏延", "cat": "people"}]魏延[/url][/color]所部交战，魏延奉[color=#6699FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]之计连败十五阵、弃七个营寨，给藤甲军造成"蜀兵已是胆破、诸葛亮已是计穷"的假象。
 
-[color=#AAAAAA]　"即差二俘长引藤甲军渡了河来，与蜀兵交战。不数合，魏延败走。"[/color]
+毛本删去嘉靖"为首"一词，其余内容完全一致。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]藤甲军首战告捷[/font][/b]
+
+
+藤甲军穿浸油藤甲，刀箭不入，渡水不沉。土安与奚泥率军与[color=#0066FF][url={"research": "魏延", "cat": "people"}]魏延[/url][/color]所部交战，魏延奉[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]之计连败十五阵、弃七个营寨，给藤甲军造成"蜀兵已是胆破、诸葛亮已是计穷"的假象。
+
+
+[indent][color=#666666]┃ "即差二俘长引藤甲军渡了河来，与蜀兵交战。不数合，魏延败走。"[/color][/indent]
+
 
 "二俘长"即指土安与奚泥，原文在此未再分别点名。
 
 
-[b]覆没于盘蛇谷[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]覆没于盘蛇谷[/font][/b]
 
-诸葛亮侦查地形，发现盘蛇谷地形特殊——两壁皆光石、下面沙土，无草木——适合火攻。命马岱于谷中预埋地雷（黑柜车）、备乾柴，命[color=#6699FF][url={"research": "赵云", "cat": "people"}]赵云[/url][/color]准备火攻物资，再令魏延诱敌深入。
+
+诸葛亮侦查地形，发现盘蛇谷地形特殊——两壁皆光石、下面沙土，无草木——适合火攻。命[color=#0066FF][url={"research": "马岱", "cat": "people"}]马岱[/url][/color]于谷中预埋地雷（黑柜车）、备乾柴，命[color=#0066FF][url={"research": "赵云", "cat": "people"}]赵云[/url][/color]准备火攻物资，再令魏延诱敌深入。
 
 兀突骨见山上无草木，以为无埋伏，放心追入盘蛇谷。随后：
 
-[color=#AAAAAA]　"那火光往来飞舞，将兀突骨并三万藤甲军烧得互相拥抱，死于盘蛇谷中。"[/color]
+
+[indent][color=#666666]┃ "那火光往来飞舞，将兀突骨并三万藤甲军烧得互相拥抱，死于盘蛇谷中。"[/color][/indent]
+
 
 土安作为两位"领兵俘长"之一，随兀突骨进入盘蛇谷，与整支藤甲军同归于尽。原文未单独描写土安的死亡，其结局包含在"三万藤甲军"覆没的集体叙述中。
 
 
-[b]性格与形象[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 土安在演义中几乎无独立性格描写，属于功能性配角：
 
-- 是兀突骨的执行者，领军出战
-- 与奚泥并列，二者地位相当，无高下之分
-- 属于南蛮系"异族猛将"的类型人物，象征南蛮最后的武力资源
+
+[indent]•  是兀突骨的执行者，领军出战[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  与奚泥并列，二者地位相当，无高下之分[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  属于南蛮系"异族猛将"的类型人物，象征南蛮最后的武力资源[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]人物[/b] | [b]关系[/b]
-兀突骨 | 上级，乌戈国主，直接指挥者
-奚泥 | 同级，另一"领兵俘长"，并列出现
-孟获 | 土安协助对象，南蛮王
-魏延 | 对手，被连败15阵（皆为诱敌之计）
-诸葛亮 | 最终消灭土安所部的蜀汉丞相
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[table=2]
+[cell][b]人物[/b][/cell]
+[cell][b]关系[/b][/cell]
+[cell]兀突骨[/cell]
+[cell]上级，乌戈国主，直接指挥者[/cell]
+[cell]奚泥[/cell]
+[cell]同级，另一"领兵俘长"，并列出现[/cell]
+[cell]孟获[/cell]
+[cell]土安协助对象，南蛮王[/cell]
+[cell]魏延[/cell]
+[cell]对手，被连败15阵（皆为诱敌之计）[/cell]
+[cell]诸葛亮[/cell]
+[cell]最终消灭土安所部的蜀汉丞相[/cell]
+[/table]
 
 
-[b]维度[/b] | [b]说明[/b]
-正史来源 | 无。土安为纯虚构人物，《三国志》及裴注均无此人记载
-乌戈国 | 乌戈国在正史中亦无记载，系演义虚构的南蛮国度
-藤甲军 | 历史上无藤甲军记载，诸葛亮南征的具体细节（七擒孟获等）史料极简，《三国志·诸葛亮传》仅载"亮南征，其秋悉平"
-225年 | 建兴三年，诸葛亮南征年份，土安约卒于此年
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=2]
+[cell][b]维度[/b][/cell]
+[cell][b]说明[/b][/cell]
+[cell]正史来源[/cell]
+[cell]无。土安为纯虚构人物，《三国志》及裴注均无此人记载[/cell]
+[cell]乌戈国[/cell]
+[cell]乌戈国在正史中亦无记载，系演义虚构的南蛮国度[/cell]
+[cell]藤甲军[/cell]
+[cell]历史上无藤甲军记载，诸葛亮南征的具体细节（七擒孟获等）史料极简，《三国志·诸葛亮传》仅载"亮南征，其秋悉平"[/cell]
+[cell]225年[/cell]
+[cell]建兴三年，诸葛亮南征年份，土安约卒于此年[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]演义版本对比（嘉靖本 vs 毛宗岗本）[/font][/b]
+
+
+[table=4]
+[cell][b]项目[/b][/cell]
+[cell][b]嘉靖本[/b][/cell]
+[cell][b]毛宗岗本[/b][/cell]
+[cell][b]差异[/b][/cell]
+[cell]首次出场称谓[/cell]
+[cell]"唤两个[color=#000000]为首[/color]，领兵俘长"[/cell]
+[cell]"唤两个领兵俘长"[/cell]
+[cell]嘉靖有"为首"修饰词，毛本删去[/cell]
+[cell]后续称谓[/cell]
+[cell]"[color=#000000]二俘长[/color]"[/cell]
+[cell]"[color=#000000]二俘长[/color]"[/cell]
+[cell]完全一致[/cell]
+[cell]土安、奚泥用字[/cell]
+[cell]土安、奚泥[/cell]
+[cell]土安、奚泥[/cell]
+[cell]完全一致[/cell]
+[cell]乌戈国藤甲军描述[/cell]
+[cell]详细（浸油十余遍等）[/cell]
+[cell]详细（同）[/cell]
+[cell]实质一致[/cell]
+[/table]
+
+
+[color=#000000]考辨结论：[/color] "领兵俘长"在嘉靖本与毛本中[color=#000000]完全一致[/color]，无"酋长""兵头""首领"等异文，版本间字差仅"为首"二字有无之别。数字化版本核查已达上限，实物善本（嘉靖壬午初刻）逐字核查为低优先级。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]志传系情况[/font][/b]
+
+
+[color=#000000]CADAL02111749（志传繁本·卷十八）：[/color] 确认有土安、奚泥出场段落。志传系对兀突骨军队的描述略简于嘉靖本：用"手下有等军，谓之藤甲军"，而非嘉靖本的详细藤制工艺描述。具体称谓（是否"领兵俘长"或志传系自有称谓）待实物善本核查。
+
+[color=#000000]叶逢春本（HY3055，1548年）：[/color] 现存卷含七擒孟获对应卷（约第十四至十六卷），[color=#000000]大概率有此段落[/color]。用字与志传系其他版本基本一致，具体文字待西班牙藏实物核查（低优先级）。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志系列[/font][/b]
+
+
+[color=#000000]三国志14（2020年）[/color]
+
+
+[table=8]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]主义[/b][/cell]
+[cell][b]政策[/b][/cell]
+[cell][b]Lv[/b][/cell]
+[cell]52[/cell]
+[cell]63[/cell]
+[cell]2[/cell]
+[cell]2[/cell]
+[cell]17[/cell]
+[cell]我道[/cell]
+[cell]侵略荒廃[/cell]
+[cell]2[/cell]
+[/table]
+
+
+个性：南蛮、藤甲、猪突、粗忽 / 特性：鉄壁 / 陣形：長蛇
+
+登场剧本仅限南征相关225年剧本，隶属孟获势力，官职"建武校尉"。
+
+
+[indent][color=#666666]┃ 玩家评：「奚泥と同じく兀突骨のバフ要因だが、ステータスの低さと長蛇陣形しか使えないのがネック」[/color][/indent]
+
+
+[color=#000000]三国志8 重制版（2024年）[/color]
+
+
+[table=6]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]性格[/b][/cell]
+[cell]64[/cell]
+[cell]67[/cell]
+[cell]7[/cell]
+[cell]7[/cell]
+[cell]18[/cell]
+[cell]猪突[/cell]
+[/table]
+
+
+奇才：森戦（在"森林"地形时，兵科战法攻击+50）
+
+特技：歩将1 / 膂力2 / 果敢1
+
+战法（步兵）：剛撃1、猛突2
+
+登场剧本：225年史实剧本（孟获势力）；仮想剧本（孟获势力 / 兀突骨势力）
+
+[color=#000000]综合定位：[/color] 土安在光荣系列中定位为低能力值南蛮战将，知力、政治近乎最低，是典型的"勇而无谋"型武将。三国志8R版本对统率和武力有所提升，增加了"森戦"奇才，凸显其在丛林战的战术价值。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+[color=#000000]未收录。[/color] 土安在三国杀中无独立武将卡牌。
+三国杀兀突骨官网简介中提及"兵长土安、奚泥"，但土安本身未作为可玩武将收录。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]真三国无双（Dynasty Warriors）系列[/font][/b]
+
+
+[color=#000000]未收录。[/color] 真三国无双系列以历史武将为主要可玩角色，南蛮系次要虚构武将通常不单独收录，土安无独立武将形象。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
+
+
+1994年央视版《三国演义》有南征段落，应有土安出场，但专属演员名无法通过网络确认（低优先级）。
+
+
+[color=#888888]──────────────────────────────[/color]

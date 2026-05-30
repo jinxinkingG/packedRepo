@@ -1,67 +1,175 @@
-[b]张闿[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]张闿[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不可考；籍贯不可考；身份：黄巾军余党，后归降[color=#6699FF][url={"research": "陶谦", "cat": "people"}]陶谦[/url][/color]，任都尉（一说郎将）
+[color=#000000]基本信息：[/color] 生卒年不可考；籍贯不可考；身份：黄巾军余党，后归降[color=#0066FF][url={"research": "陶谦", "cat": "people"}]陶谦[/url][/color]，任都尉（嘉靖本/毛本）/ 郎将（叶逢春本）/ 良将（志传系）
 
 
-[b]生平考证[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
 张闿是东汉末年一个极小的历史人物，全部史料仅见于曹嵩之死这一事件，且叙述简短。
 
 
-[b]出身与经历[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]出身与经历[/font][/b]
+
 
 据演义（嘉靖本）张闿自言："我等本是黄巾余党，如今依傍陶谦处，无采取钱物。"——说明他是黄巾军旧部，经镇压后归降陶谦，在陶谦麾下任都尉。这是演义设定，正史无关于其出身的直接记载，但职位"都尉"有史料依据（见下）。
 
 
-[b]杀曹嵩事件（兴平元年，194年）[/b]
-
-[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]之父曹嵩自琅琊率家小（包括弟/子曹德及一家四十余人）携辎重百余辆迁往兖州。途经徐州地界时，陶谦设宴款待，并派遣都尉张闿率骑两百（演义作五百）护送出境。
-
-行至泰山郡华县、费国之间（今山东临沂境内），张闿杀曹嵩全家，劫取财物，随即出逃淮南（[color=#6699FF][url={"research": "袁术", "cat": "people"}]袁术[/url][/color]处）。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]杀曹嵩事件（兴平元年，194年）[/font][/b]
 
 
-[b]史料分歧[/b]
+[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]之父曹嵩自琅琊率家小（包括弟/子曹德及一家四十余人）携辎重百余辆迁往兖州。途经徐州地界时，陶谦设宴款待，并派遣都尉张闿率骑两百（演义作五百）护送出境。
+
+行至泰山郡华县、费国之间（今山东临沂境内），张闿杀曹嵩全家，劫取财物，随即出逃淮南（[color=#0066FF][url={"research": "袁术", "cat": "people"}]袁术[/url][/color]处）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]史料分歧[/font][/b]
+
 
 关于张闿杀曹嵩是"自行为之"还是"陶谦授意"，各史料说法不一（详见 `ref-zhengshi.md`）：
 
-- [b]《吴书》（韦曜）[/b]："陶谦遣都尉张闿将骑二百卫送，[b]闿[/b]于泰山华、费间杀嵩，取财物，因奔淮南。"——动机是张闿贪财，陶谦未必知情。
-- [b]《世语》（裴注引）[/b]："陶谦[b]密遣[/b]数千骑掩捕。"——明确是陶谦授意。
-- [b]《后汉书·陶谦传》[/b]："时谦[b]别将[/b]守阴平，士卒利嵩财宝，遂袭杀之。"——别将贪财，与《吴书》相近。
-- [b]《后汉书·[color=#6699FF][url={"research": "应劭", "cat": "people"}]应劭[/url][/color]传》[/b]："陶谦[b]素怨[/b]嵩子操数击之，乃使轻骑追嵩、德，并杀之于郡界。"——陶谦主动，以报私怨。
+
+[indent]•  [color=#000000]《吴书》（韦曜）[/color]："陶谦遣都尉张闿将骑二百卫送，[color=#000000]闿[/color]于泰山华、费间杀嵩，取财物，因奔淮南。"——动机是张闿贪财，陶谦未必知情。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《世语》（裴注引）[/color]："陶谦[color=#000000]密遣[/color]数千骑掩捕。"——明确是陶谦授意。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《后汉书·陶谦传》[/color]："时谦[color=#000000]别将[/color]守阴平，士卒利嵩财宝，遂袭杀之。"——别将贪财，与《吴书》相近。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《后汉书·[color=#0066FF][url={"research": "应劭", "cat": "people"}]应劭[/url][/color]传》[/color]："陶谦[color=#000000]素怨[/color]嵩子操数击之，乃使轻骑追嵩、德，并杀之于郡界。"——陶谦主动，以报私怨。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 现代学界倾向认为《吴书》说法较为可信（成书早，接近史事），但无法排除陶谦失察之责。
 
 
-[b]逃往淮南[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]逃往淮南[/font][/b]
+
 
 事后张闿逃奔淮南，投靠袁术，此后史书再无记录。结局完全不可考。
 
 
-[b]性格与形象[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 史书中张闿无性格描写，仅能从《吴书》"取财物，因奔淮南"推断其贪财、见机而动的投机性格。
 
-演义（嘉靖本）较为生动地刻画了他：作为黄巾降将，在陶谦麾下不得志，觑得财货之机，煽动手下一同劫杀。嘉靖本保留了"只推贼到来"（嫁祸他人的掩护计划）和"曹嵩在方丈中……曹德提剑出看，被搠死于法堂"等细节，对犯案过程描述较为完整；毛本删除了部分细节，口吻也有调整，人物形象反而更扁平。
+演义（嘉靖本）较为生动地刻画了他：作为黄巾降将，在陶谦麾下不得志，觑得财货之机，煽动手下一同劫杀。嘉靖本保留了"只推贼到来"（嫁祸他人的掩护计划）和"曹嵩在方丈中……曹德提剑出看，被搠死于法堂"等细节，对犯案过程描述较为完整；毛本删除了"只推贼到来"伏笔，使张闿动机变得更直白，人物形象反而更扁平。
 
 
-[b]关键关系[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-- [b]陶谦[/b]：上司，张闿以陶谦部将身份行事，事后曹操将责任归咎于陶谦（"太祖归咎于陶谦，故伐之"），引发曹操大规模屠戮徐州。
-- [b]曹嵩[/b]：受害者，携辎重百余辆，正是引发劫案的直接原因。
-- [b]袁术[/b]：逃奔对象，张闿奔淮南即投袁术（当时袁术据[color=#6699FF][url={"research": "寿春", "cat": "geography"}]寿春[/url][/color]），但正史无进一步记录。
+[indent]•  [color=#000000]陶谦[/color]：上司，张闿以陶谦部将身份行事，事后曹操将责任归咎于陶谦（"太祖归咎于陶谦，故伐之"），引发曹操大规模屠戮徐州。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]曹嵩[/color]：受害者，携辎重百余辆，正是引发劫案的直接原因。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]袁术[/color]：逃奔对象，张闿奔淮南即投袁术（当时袁术据[color=#0066FF][url={"research": "寿春", "cat": "geography"}]寿春[/url][/color]），但正史无进一步记录。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-[b]对比项[/b] | [b]史实[/b] | [b]演义（嘉靖本/毛本）[/b]
-护送兵力 | 骑二百（《吴书》） | 部兵五百
-职位 | 都尉（《吴书》） | 都尉（嘉靖/毛）；郎将（叶逢春）
-动机 | 贪财（《吴书》《后汉书·陶谦传》）；或陶谦授意（《世语》《后汉书·应劭传》） | 贪财（两版均取此说，符合《吴书》）
-曹德关系 | "太祖弟德"（即曹操之弟） | 嘉靖本误作"（曹嵩）与弟曹德"（变成叔父辈）
-出身 | 不可考 | 黄巾余党
-结局 | 奔淮南，此后不可考 | 与五百人逃奔淮南
+[table=3]
+[cell][b]对比项[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]演义（嘉靖本/毛本）[/b][/cell]
+[cell]护送兵力[/cell]
+[cell]骑二百（《吴书》）[/cell]
+[cell]部兵五百[/cell]
+[cell]职位[/cell]
+[cell]都尉（《吴书》）[/cell]
+[cell]都尉（嘉靖/毛）；郎将（叶逢春本）；良将（志传系）[/cell]
+[cell]动机[/cell]
+[cell]贪财（《吴书》《后汉书·陶谦传》）；或陶谦授意（《世语》《后汉书·应劭传》）[/cell]
+[cell]贪财（两版均取此说，符合《吴书》）[/cell]
+[cell]曹德关系[/cell]
+[cell]"太祖弟德"（即曹操之弟）[/cell]
+[cell]嘉靖本误作"与弟曹德"（变成叔父辈）；叶逢春本正确作"操弟曹德"；毛本"与弟曹德"（歧义）[/cell]
+[cell]出身[/cell]
+[cell]不可考[/cell]
+[cell]黄巾余党（嘉靖本/毛本；志传系无此自白）[/cell]
+[cell]结局[/cell]
+[cell]奔淮南，此后不可考[/cell]
+[cell]与五百人逃奔淮南[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]各版本差异要点[/font][/b]
+
+
+[color=#000000]嘉靖本 vs 毛本主要改动：[/color]
+
+
+[indent]1.  张闿言辞：嘉靖本"无采取钱物……只推贼到来" → 毛本"未有好处……大家砍将入去"（删去嫁祸借口，动机直白化）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  应劭描述：嘉靖本"应劭下有逃命的军士" → 毛本"应劭死命逃脱"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  陶谦对曹操辩护（毛本阵前台词）：[color=#000000]"谦本欲结好明公，故托张闿护送。不想贼心不改，致有此事。实不干陶谦之故，望明公察之。"[/color] 这段话将张闿定性为"贼心不改"，为陶谦自洗白提供了叙事依据。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000][color=#0066FF][url={"research": "陈宫", "cat": "people"}]陈宫[/url][/color]台词（毛本，代陶谦辩护）：[/color]
+
+[indent][color=#666666]┃ "陶谦乃仁人君子，非好利忘义之辈。尊父遇害，乃[color=#000000]张闿之恶[/color]，非谦罪也。"[/color][/indent]
+
+
+毛宗岗批语也明确："陶谦害曹嵩一家是无心"——毛本完整塑造了张闿独立作恶、陶谦无辜受牵的道德框架。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]《三国志平话》：无张闿其人[/font][/b]
+
+
+[color=#000000]经核查识典古籍《至治新刊全相平话三国志》全三卷（NA10997），平话中完全没有张闿人物或曹嵩护送杀人情节[/color]。平话叙事跳过了"曹嵩被杀→曹操伐徐州"这条故事线，曹操与徐州的矛盾通过其他情节（[color=#0066FF][url={"research": "车胄", "cat": "people"}]车胄[/url][/color]事件）处理。
+
+[color=#000000]结论：张闿是演义系统独有的人物，在《三国志平话》中无原型。[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]志传系（三国志传卷二）张闿段落[/font][/b]
+
+
+志传系有此段落，主要差异（与嘉靖本对比）：
+
+
+[table=4]
+[cell][b]差异项[/b][/cell]
+[cell][b]嘉靖本[/b][/cell]
+[cell][b]志传系（识典）[/b][/cell]
+[cell][b]叶逢春本[/b][/cell]
+[cell]张闿职位[/cell]
+[cell][color=#000000]都尉[/color][/cell]
+[cell][color=#000000]良将[/color][/cell]
+[cell][color=#000000]郎将[/color][/cell]
+[cell]黄巾自白台词[/cell]
+[cell]有（"我等本是黄巾余党"）[/cell]
+[cell]简省，无此台词[/cell]
+[cell]有简版（无"无采取"细节）[/cell]
+[cell]杀父之仇句[/cell]
+[cell]"极天际地"[/cell]
+[cell][color=#000000]"及天际地"[/color][/cell]
+[cell]（待核）[/cell]
+[cell]陶谦骂张闿[/cell]
+[cell]无专门段落[/cell]
+[cell][color=#000000]有[/color]："进大骂：张闿：逆贼，贪财害物，生灵受殃"[/cell]
+[cell]（待核）[/cell]
+[cell]陶谦对曹操辩护[/cell]
+[cell]待核[/cell]
+[cell]有（"谦本意结好明公，故差张闿护送……实不干谦之士"）[/cell]
+[cell]待核[/cell]
+[cell]静轩诗[/cell]
+[cell]有[/cell]
+[cell]有（同）[/cell]
+[cell]有[/cell]
+[/table]
+
+
+[color=#000000]志传系vs毛本陶谦辩护对比：[/color]
+
+[indent]•  志传系：通过"旆礼"（[color=#0066FF][url={"research": "糜竺", "cat": "people"}]糜竺[/url][/color]）转达——"谦本意结好明公，故差张闿护送，不期贼心不改，致有此士，实不干谦之士，实望明公怜察而恕。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：陶谦本人阵前直接对曹操说——"谦本欲结好明公，故托张闿护送。不想贼心不改，致有此事。实不干陶谦之故，望明公察之。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+两版内容几乎相同（"本意结好""贼心不改""不干谦之故"），措辞略有差异，毛本更精炼。志传系由糜竺转达，毛本改为陶谦亲口辩白，叙事更直接。

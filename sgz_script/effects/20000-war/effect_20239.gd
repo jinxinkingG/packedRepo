@@ -37,7 +37,7 @@ func effect_20239_start():
 	var targetIds = get_avaible_target_ids()
 	if targetIds.empty():
 		var msg = "没有可以发动{0}的目标".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 3, 2999)
+		play_dialog(actorId, msg, 3, 2999)
 		return
 	var msg = "选择目标发动{0}".format([ske.skill_name])
 	if not wait_choose_actors(targetIds, msg):
@@ -59,7 +59,7 @@ func effect_20239_2():
 			positions.append(targetWA.position + dir * 2)
 	if positions.empty():
 		var msg = "没有可以发动{0}的位置".format([ske.skill_name])
-		play_dialog(me.actorId, msg, 3, 2999)
+		play_dialog(actorId, msg, 3, 2999)
 		return
 	map.next_shrink_actors = [targetId]
 	map.show_color_block_by_position(positions)
@@ -79,7 +79,7 @@ func effect_20239_3():
 	var msg = "消耗 {0} 机动力\n令{1}掘道潜越城墙\n可否？".format([
 		COST_AP, ActorHelper.actor(targetId).get_name()
 	])
-	play_dialog(me.actorId, msg, 2, 2002, true)
+	play_dialog(actorId, msg, 2, 2002, true)
 	return
 
 func on_view_model_2002():
@@ -98,7 +98,7 @@ func effect_20239_4():
 	map.show_color_block_by_position([])
 	#FlowManager.add_flow("draw_actors")
 	var msg = "土攻之妙\n非深沟高垒可当"
-	play_dialog(me.actorId, msg, 1, 2003)
+	play_dialog(actorId, msg, 1, 2003)
 	return
 
 func on_view_model_2003():

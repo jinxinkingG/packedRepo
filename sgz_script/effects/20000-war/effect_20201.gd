@@ -29,22 +29,24 @@ func on_view_model_2000():
 	wait_for_yesno(FLOW_BASE + "_2", false)
 	return
 
-func on_view_model_3000():
-	wait_for_pending_message(FLOW_BASE + "_AI_2", "")
-	return
-
 func effect_20201_AI_start():
 	var se = DataManager.get_current_stratagem_execution()
 	se.goback_disabled = 1
 	ske.cost_war_limited_times(TIMES_LIMIT)
 	se.set_replaced_defender(me.actorId, ske.skill_name)
 	se.set_must_fail(me.actorId, ske.skill_name)
-	var msg = "敌策并非无懈可击！"
-	report_skill_result_message(ske, 3000, msg, 0)
+	var msg = "敌策并非无懈可击！\n（{0}发动【{1}】".format([
+		actor.get_name(), ske.skill_name,
+	])
+	play_dialog(actorId, msg, 0, 3000)
+	return
+
+func on_view_model_3000():
+	wait_for_skill_result_confirmation(FLOW_BASE + "_AI_2")
 	return
 
 func effect_20201_AI_2():
-	report_skill_result_message(ske, 3000)
+	skill_end_clear()
 	return
 
 func effect_20201_start():
@@ -56,7 +58,7 @@ func effect_20201_start():
 	var msg = "是否发动【看破】\n替代{0}被用计？\n剩余次数: {1}".format([
 		ActorHelper.actor(se.targetId).get_name(), TIMES_LIMIT - times
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20201_2():
@@ -66,5 +68,5 @@ func effect_20201_2():
 	se.set_replaced_defender(me.actorId, ske.skill_name)
 	se.set_must_fail(me.actorId, ske.skill_name)
 	ske.war_report()
-	LoadControl.end_script()
+	skill_end_clear()
 	return

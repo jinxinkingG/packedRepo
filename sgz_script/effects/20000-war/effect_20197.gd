@@ -33,7 +33,7 @@ func effect_20197_2():
 	var msg = "消耗{0}机动力发动【命替】\n与{1}交换位置\n自身定止，可否？".format([
 		COST_AP, targetActor.get_name()
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001():

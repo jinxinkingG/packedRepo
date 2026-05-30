@@ -1,37 +1,81 @@
-[b]张先[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]张先[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不可考，字号无载，籍贯无载，演义虚构人物，张绣麾下武将
+[color=#000000]基本信息：[/color] 生卒年不可考，字号无载，籍贯无载，《三国演义》虚构人物，[color=#0066FF][url={"research": "张绣", "cat": "people"}]张绣[/url][/color]麾下武将
 
 
-[b]生平考证[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
 张先为《三国演义》虚构人物，正史无载（《三国志》、《后汉书》及裴注均无此人）。
 
-演义中，张先出场于第十七回（毛本）。时[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]第二次征讨张绣，张绣"急发书报[color=#6699FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]，使为后应；一面与[color=#6699FF][url={"research": "雷叙", "cat": "people"}]雷叙[/url][/color]、张先二将领兵出城迎敌"。张绣出阵骂操，操大怒命[color=#6699FF][url={"research": "许褚", "cat": "people"}]许褚[/url][/color]迎战，张绣遂令张先出马接战。"只三合，许褚斩张先于马下，绣军大败"。此后张先不再出现，属一次性配角。
+演义中，张先出场于第十七回（毛本）/ 嘉靖本卷五对应节次。时[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]第二次征讨张绣，张绣"一面与[color=#0066FF][url={"research": "雷叙", "cat": "people"}]雷叙[/url][/color]、张先二将领兵出城迎敌"。张绣出阵骂操，操大怒命[color=#0066FF][url={"research": "许褚", "cat": "people"}]许褚[/url][/color]迎战，"绣令张先接战。只三合，许褚斩张先于马下，绣军大败"。此后张先不再出现，属一次性配角。
 
-事件背景：曹操第二次征宛（约建安二年，197年）。彼时张济已死，张绣统其兵，联合刘表，[color=#6699FF][url={"research": "贾诩", "cat": "people"}]贾诩[/url][/color]为谋士，屯宛城。此次曹操出兵，张绣以张先、雷叙迎战，战败后退守[color=#6699FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]城。
+[color=#000000]事件背景：[/color] 建安三年（198年）夏四月，曹操出兵征讨张绣，张绣以张先、雷叙迎战，被许褚三合斩杀，退守[color=#0066FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]城。
 
 
-[b]性格与形象[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 正史无此人，演义中也无任何性格刻画，仅作为"被斩于三合内"的箔垫将领出场，功能上用以展示许褚的武勇。
 
 
-[b]关键关系[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-- [b]张绣[/b]：主君，张先在其麾下任将
-- [b]雷叙[/b]：同级，并列出征
-- [b]许褚[/b]：死于其手，三合被斩
+[indent]•  [color=#000000]张绣[/color]：主君，张先在其麾下任将[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]雷叙[/color]：同级，并列出征[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]许褚[/color]：死于其手，三合被斩[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-- 正史无张先此人
-- 《三国志·张绣传》及裴注均无任何名为张先的部将记载
-- 张绣与曹操的多次交战（建安二年宛城之战等）正史有载，但迎战出城的具体将领均无名字
-- 张先属于演义为丰富战争场面、铺垫许褚神勇而设置的典型"路人将领"
+[indent]•  正史无张先此人[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《三国志·张绣传》及裴注均无任何名为张先的部将记载[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  张绣与曹操的多次交战（建安三年宛城之战等）正史有载，但迎战出城的具体将领均无名字[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  张先属于演义为丰富战争场面、铺垫许褚神勇而设置的典型"路人将领"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]演义版本对比（嘉靖本 vs 毛本 vs 周曰校本 vs 志传系）[/font][/b]
+
+
+详见 `ref-yanyi-version-diff.md`。核心发现：
+
+[color=#000000]嘉靖本与毛本几乎无实质差异[/color]，仅繁简字形略有差异：
+
+[indent]•  嘉靖本："雷[color=#000000]敍[/color]"（繁体），毛本："雷[color=#000000]叙[/color]"（简体），为同一字[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  嘉靖本："許褚[color=#000000]斬[/color]張先於馬下"，毛本："许褚[color=#000000]斩[/color]张先于马下"，繁简同字[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]周曰校本（万历十九年，1591年）有独立异文：[/color]
+
+[indent]•  多"[color=#000000]令[color=#0066FF][url={"research": "贾诩", "cat": "people"}]贾诩[/url][/color]守城[/color]"一句（嘉靖本/毛本均无）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "假仁[color=#000000]诈[/color]义"（嘉靖本/毛本作"假仁义"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "许褚[color=#000000]杀[/color]张先"（嘉靖本/毛本作"斩"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "绣令张先[color=#000000]出迎[/color]"（嘉靖本/毛本作"接战"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]志传系（叶逢春本/三国英雄志传等）：[/color]
+
+[indent]•  确有张先出场，用字"张先"与各演义系统一致[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  斩杀用字为"斩"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  文本极度简化，有独特的"令贾诩守南陆"（与周曰校本"令贾诩守城"性质相近）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  叶逢春本（西班牙藏实物）原刻逐字待核（低优先级）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]

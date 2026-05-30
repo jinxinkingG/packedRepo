@@ -22,7 +22,7 @@ func effect_20343_start():
 	var msg = "失去【{0}】【{1}】\n令全军暂时获得【{2}】\n可否？".format([
 		LOST_SKILL_1, LOST_SKILL_2, TARGET_SKILL
 	])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func effect_20343_2():
@@ -42,5 +42,5 @@ func effect_20343_2():
 	])
 	# 信息太多了，不汇报，只记录
 	ske.war_report()
-	play_dialog(me.actorId, msg, 0, 2001)
+	play_dialog(actorId, msg, 0, 2001)
 	return

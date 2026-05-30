@@ -1,55 +1,198 @@
-[b]陈横[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]陈横[/font][/b]
 
 
-[b]基本信息：[/b] 虚构人物，生于东汉末年，卒于约195年（演义内时间）；籍贯不详（无史料）；演义身份：扬州刺史[color=#6699FF][url={"research": "刘繇", "cat": "people"}]刘繇[/url][/color]部将
+[color=#000000]基本信息：[/color] 虚构人物，生卒年不详（演义内约卒于195年），籍贯无史料；演义身份：扬州刺史[color=#0066FF][url={"research": "刘繇", "cat": "people"}]刘繇[/url][/color]部将，守秣陵守将之一
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-陈横是《三国演义》中的虚构人物，[b]正史中没有对应的历史人物[/b]。
-
-其名称来源于《三国志》卷四十六《刘繇传》的一处校勘失误：
-
-- [b]正史原文（校勘后）：[/b] 繇遣[color=#6699FF][url={"research": "樊能", "cat": "people"}]樊能[/url][/color]、于麋[b]东[/b]屯[b]横[/b]江津
-- [b]误读版（衍文版）：[/b] 繇遣樊能、于麋[b]陈横[/b]屯江津
-
-即"东"字被误拆，"横江津"（地名，今安徽和县横江渡口一带）被误读为人名。罗贯中很可能读到了含有此衍文的钞本，从而创作出"陈横"这一人物。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]性格与形象[/b]
+陈横是《三国演义》中的虚构人物，[color=#000000]正史中没有对应的历史人物[/color]。
 
 
-陈横在《三国演义》中出场极为简短，毛本第十五回（《太史慈酣斗小霸王 孙伯符大战严白虎》）共出现两处：
-
-1. [b]首次出场：[/b] 作为守秣陵（[color=#6699FF][url={"research": "建业", "cat": "geography"}]建业[/url][/color]）的将领之一，与[color=#6699FF][url={"research": "薛礼", "cat": "people"}]薛礼[/url][/color]、[color=#6699FF][url={"research": "张英", "cat": "people"}]张英[/url][/color]并列。[color=#6699FF][url={"research": "孙策", "cat": "people"}]孙策[/url][/color]攻城时，孙策中箭诈死，陈横随薛礼、张英追击出城。
-   > "薛礼闻知孙策已死，连夜起城内之军，与骁将张英、陈横杀出城来追之。"
-
-2. [b]死亡场景：[/b] 追击中孙策伏兵四起，陈横被[color=#6699FF][url={"research": "蒋钦", "cat": "people"}]蒋钦[/url][/color]一箭射死。
-   > "张英拨马回走，被[color=#6699FF][url={"research": "陈武", "cat": "people"}]陈武[/url][/color]一枪刺死。[b]陈横被蒋钦一箭射死。[/b] 薛礼死于乱军中。"
-
-陈横在演义中无独立描写、无对话，也未参与任何单独事件，仅作为守城军将领的背景人物出现，与张英、薛礼并列。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]名称来源——正史校勘误读[/font][/b]
 
 
-[b]关键关系[/b]
+其名称来源于《三国志》卷四十六《[color=#0066FF][url={"research": "孙策", "cat": "people"}]孙策[/url][/color]传》/《刘繇传》的一处文字：
 
 
-[b]人物[/b] | [b]关系性质[/b]
-刘繇 | 主君（扬州刺史）
-薛礼 | 同为守秣陵守将
-张英 | 同为守秣陵守将，死亡于同一场景
-蒋钦 | 杀死陈横者（一箭射死）
+[indent]•  [color=#000000]正史正确读法（《三国志·孙策传》）：[/color] > 繇遣[color=#0066FF][url={"research": "樊能", "cat": "people"}]樊能[/url][/color]、于麋[color=#000000]东[/color]屯[color=#000000]横[/color]江津，[color=#0066FF][url={"research": "张英", "cat": "people"}]张英[/url][/color]屯当利口，以距术。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]史实 vs 演义[/b]
+  即"东屯横江津"——刘繇派樊能、于麋[color=#000000]向东[/color]在[color=#000000]横江津[/color]（地名，今安徽和县横江渡口一带）驻屯。
 
 
-[b]项目[/b] | [b]史实[/b] | [b]演义[/b]
-陈横其人 | 完全不存在 | 出现于第十五回
-史料来源误读 | "于麋东屯横江津"（地名） | 误读为"于麋、陈横屯江津"（人名）
-守秣陵情节 | 薛礼、张英有史载 | 三人共守，陈横为虚构
+[indent]•  [color=#000000]演义系统的读法（校勘前衍文版）：[/color] > 繇遣樊能、[color=#000000]于麋、陈横[/color]屯江津[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-正史中守秣陵的主要人物：
-- [b]薛礼[/b]（正史有载，彭城相，后被[color=#6699FF][url={"research": "笮融", "cat": "people"}]笮融[/url][/color]所杀）
-- [b]张英[/b]（正史有载，刘繇将领）
+  "东"字被误析，"横江津"（地名）被误断为人名"陈横"，"于麋"与"陈横"被并列为两员将领。
+
+罗贯中所据本（或其底本）很可能已含此衍文，由此创作出"陈横"这一人物。"陈"字之来源，推测或因"于麋"→"于（陈）横"的传抄过程中产生变化，或另有来源，正史校勘问题本身已见清代以来学者讨论。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]在演义中的出场[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]嘉靖本（节：孫策大戰嚴白虎）/ 毛宗岗本（第十五回）[/font][/b]
+
+
+陈横出场共两处，极为简短，无台词无独立戏份：
+
+[color=#000000]第一处——殺出城（随[color=#0066FF][url={"research": "薛礼", "cat": "people"}]薛礼[/url][/color]、张英）：[/color]
+
+
+[indent][color=#666666]┃ 薛禮聽知孫策死，連夜便起，城内之軍，[color=#000000]張英、陳橫[/color]殺出城來，追至策營，皆後伏兵起，軍馬擁出。（嘉靖本）[/color][/indent]
+
+
+[indent][color=#666666]┃ 薛礼听知孙策已死，连夜起城内之军，与骁将[color=#000000]张英、陈横[/color]杀出城来追之。忽然伏兵四起，孙策横枪立马，高声大叫：孙郎在此！（毛本）[/color][/indent]
+
+
+孙策诈死诱敌，薛礼中计，率张英、陈横出城追击，落入伏圈。
+
+[color=#000000]第二处——被[color=#0066FF][url={"research": "蒋钦", "cat": "people"}]蒋钦[/url][/color]射死：[/color]
+
+
+[indent][color=#666666]┃ 張英要走，被陳武一鎗刺死；[color=#000000]陳横被蔣欽一箭射死[/color]，薛禮死於亂軍之中。（嘉靖本）[/color][/indent]
+
+
+[indent][color=#666666]┃ 张英拨马回走，被[color=#0066FF][url={"research": "陈武", "cat": "people"}]陈武[/url][/color]一枪刺死；[color=#000000]陈横被蒋钦一箭射死[/color]；薛礼死于乱军之中。（毛本）[/color][/indent]
+
+
+三将同场死亡：张英被陈武所杀，陈横被蒋钦一箭射死，薛礼死于乱军。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
+
+
+[table=2]
+[cell][b]人物[/b][/cell]
+[cell][b]关系性质[/b][/cell]
+[cell]刘繇[/cell]
+[cell]主君（扬州刺史）[/cell]
+[cell]薛礼[/cell]
+[cell]同为守秣陵守将[/cell]
+[cell]张英[/cell]
+[cell]同为守秣陵守将，死于同一场景[/cell]
+[cell]蒋钦[/cell]
+[cell]杀死陈横者（一箭射死）[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]项目[/b][/cell]
+[cell][b]史实（正史）[/b][/cell]
+[cell][b]演义（嘉靖本/毛本/志传系）[/b][/cell]
+[cell]陈横其人[/cell]
+[cell]完全不存在[/cell]
+[cell]出现于孙策取秣陵段[/cell]
+[cell]史料来源[/cell]
+[cell]"于麋东屯横江津"（地名）[/cell]
+[cell]误读为"于麋、陈横屯江津"（人名）[/cell]
+[cell]守秣陵情节[/cell]
+[cell]薛礼、张英有史载[/cell]
+[cell]三人共守，陈横为虚构[/cell]
+[cell]死亡[/cell]
+[cell]无[/cell]
+[cell]被蒋钦一箭射死[/cell]
+[/table]
+
+
+正史中守秣陵的记录（《三国志·孙策传》）：
+
+[indent]•  [color=#000000]薛礼[/color]（有载，彭城相，史载后被[color=#0066FF][url={"research": "笮融", "cat": "people"}]笮融[/url][/color]所杀）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张英[/color]（有载，刘繇将领）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]版本学考辨（嘉靖本 vs 志传系 vs 毛宗岗本）[/font][/b]
+
+
+经逐字对比（2026-05-02，见 `ref-yanyi-jiajing-zhichuanxi-mao-version-diff.md`）：
+
+
+[table=4]
+[cell][b]位置[/b][/cell]
+[cell][b]嘉靖本 NA11011[/b][/cell]
+[cell][b]志传系（CADAL02015345）[/b][/cell]
+[cell][b]毛宗岗本 NA11031[/b][/cell]
+[cell]出城叙述[/cell]
+[cell]城内之軍，张英、陈横…殺出[/cell]
+[cell]与[color=#000000]骁将[/color]张英、陈横杀出城来[/cell]
+[cell]与[color=#000000]骁将[/color]张英、陈横杀出城来[/cell]
+[cell]"骁将"修饰[/cell]
+[cell][color=#000000]无[/color][/cell]
+[cell][color=#000000]有[/color][/cell]
+[cell][color=#000000]有[/color][/cell]
+[cell]张英死亡细节[/cell]
+[cell]张英[color=#000000]要走[/color]，被陈武一鎗刺死[/cell]
+[cell]張英[color=#000000]拨马回走[/color]，被陈武一𬬰刺死[/cell]
+[cell]张英[color=#000000]拨马回走[/color]，被陈武一枪刺死[/cell]
+[cell]陈横死亡[/cell]
+[cell]陈横被蔣欽一箭射死[/cell]
+[cell]陈横被蒋钦一箭射死[/cell]
+[cell]陈横被蒋钦一箭射死[/cell]
+[cell]伏兵叙述[/cell]
+[cell]皆後伏兵起，軍馬擁出[/cell]
+[cell]忽然伏兵四起[/cell]
+[cell]忽然伏兵四起[/cell]
+[/table]
+
+
+[color=#000000]核心结论：[/color]
+
+
+[indent]1.  [color=#000000]"陈横"人名及死亡方式（被蒋钦一箭射死）在三大版本系统中完全一致[/color]，无任何异文，人名稳定[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]嘉靖本与志传系/毛本的唯一实质差异[/color]：[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[indent]　•  嘉靖本无"骁将"修饰词；志传系与毛本均补入"骁将"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  嘉靖本张英死亡段较简（"要走"）；志传系与毛本添加"拨马回走"动作细节[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  嘉靖本伏兵描述不同（"皆後伏兵起，軍馬擁出"）；志传系/毛本更简洁（"忽然伏兵四起"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[indent]3.  [color=#000000]志传系与毛宗岗本在陈横段落上高度一致[/color]，无实质差异[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]叶逢春本（HY3055志传系）[/color]：推断与数字化志传系一致，实物西班牙藏低优先级核查可进一步确认[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]嘉靖本对应章节位置[/font][/b]
+
+
+[indent]•  嘉靖本无回目，以节（则）为单位[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  陈横出场节：[color=#000000]孫策大戰嚴白虎[/color]（嘉靖本卷四）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  识典 NA11011 URL：`/book/NA11011/chapter/1k3o71cr7t7vq`[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  对应毛宗岗本[color=#000000]第十五回[/color]（[color=#0066FF][url={"research": "太史慈", "cat": "people"}]太史慈[/url][/color]酣斗小霸王 孙伯符大战严白虎）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]

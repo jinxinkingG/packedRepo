@@ -23,7 +23,7 @@ func effect_20410_go():
 	var cost = min(troops, COST_TROOPS)
 	if troops <= 0:
 		var msg = "{0}已无后备兵可用".format([city.get_full_name()])
-		play_dialog(me.actorId, msg, 3, 2999)
+		play_dialog(actorId, msg, 3, 2999)
 		return
 	var candidates = get_teammate_targets(me)
 	candidates.append(me.actorId)
@@ -68,7 +68,7 @@ func effect_20410_3():
 	var msg = "{0}现有后备兵{1}\n调度至多{2}人增援\n可否？".format([
 		city.get_full_name(), troops, cost,
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func on_view_model_2001():

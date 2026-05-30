@@ -1,93 +1,190 @@
-[b]郭马（字号无载）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]郭马（字号无载）[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详，籍贯不详，东吴末年军人，合浦太守脩允部曲督，天纪三年（279年）起兵叛乱，自号都督交广二州军事、安南将军。
+[color=#000000]基本信息：[/color] 生卒年不详，籍贯不详，东吴末年军人，合浦太守脩允部曲督，天纪三年（279年）起兵叛乱，自号都督交广二州军事、安南将军。
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]出身：军户部曲[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
-郭马的身份见《三国志·吴书·孙皓传》：
 
-[color=#AAAAAA]　马本合浦太守脩允部曲督。[/color]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]出身：军户部曲[/font][/b]
+
+
+郭马的身份见《三国志·吴书·[color=#0066FF][url={"research": "孙皓", "cat": "people"}]孙皓[/url][/color]传》：
+
+
+[indent][color=#666666]┃ 马本合浦太守[color=#0066FF][url={"research": "修允", "cat": "people"}]修允[/url][/color]部曲督。[/color][/indent]
+
 
 "部曲督"即亲兵部队的指挥官，是依附于某一太守的私人军事力量。郭马及其麾下均是"累世旧军"——代代相传的军户，与脩允所部血肉相连，生死与共。
 
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]旧主脩允：家族背景[/font][/b]
+
+
+脩允（又作"修允"）为郭马的直接旧主，其身份背景对理解郭马叛乱动机至关重要：
+
+
+[indent]•  [color=#000000]籍贯[/color]：临川郡（治今江西抚州市临川区）人[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]父亲[/color]：脩則（[color=#0066FF][url={"research": "修则", "cat": "people"}]修则[/url][/color]），吴国前都督，于宝鼎三年（268年）在击交趾之役中被晋将[color=#000000]毛炅[/color]击败战死[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]随[color=#0066FF][url={"research": "陶璜", "cat": "people"}]陶璜[/url][/color]南征[/color]：建衡三年（271年），脩允随陶璜南征交趾，参与收复交趾、九真、日南三郡之役。陶璜攻克交趾后擒获毛炅，脩允在其中参与，并斥责毛炅为「晋贼」（即报了父仇）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]历任合浦太守、桂林太守[/color]：平乱后，脩允累任至合浦太守，后奉调转任桂林太守[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+脩允是一位有军功、有仇恨、有威望的将领——他的部曲对他有超越普通君臣关系的效忠。他的突然病死，切断了这支军队存续的唯一合法纽带。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]叛乱触发：两重压力[/font][/b]
+
+
 脩允转任桂林太守，因病滞留广州；期间先遣郭马率五百兵前往桂林安抚诸夷。脩允病死后，依照惯例其部曲应当分散分配给各将领，郭马等人不愿接受分离。
-
-
-[b]叛乱触发：两重压力[/b]
 
 直接导火索有二：
 
-1. [b]兵籍分散[/b]（制度性威胁）：脩允既死，部曲分配令将解散这支累世相依的军队；
-2. [b]科实户口[/b]（行政性压迫）：孙皓在广州推行"科实户口"（清查落实户籍人口），引发士兵百姓恐慌——可能预示着新一轮征发。
+
+[indent]1.  [color=#000000]兵籍分散[/color]（制度性威胁）：脩允既死，部曲分配令将解散这支累世相依的军队[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]科实户口[/color]（行政性压迫）：孙皓在广州推行"科实广州户口"（清查落实户籍人口），引发士兵百姓恐慌——可能预示着新一轮征发[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 两者叠加，郭马等人"恐动兵民"，于天纪三年（279年）夏合聚人众，攻杀广州督虞授，正式起兵。
 
 
-[b]起兵：自立官号[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]起兵：自立官号[/font][/b]
+
 
 郭马与部曲将何典、王族、吴述、殷兴等立即分封官号：
-- [b]郭马[/b]：自号都督交广二州军事、安南将军
-- [b]殷兴[/b]：自署广州刺史
-- [b]吴述[/b]：自署南海太守
+
+[indent]•  [color=#000000]郭马[/color]：自号都督交广二州军事、安南将军[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]殷兴[/color]：自署广州刺史[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]吴述[/color]：自署南海太守[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 随即展开军事行动：
-- 何典率部攻苍梧
-- 王族率部出始兴
-- 郭马本部杀南海太守刘略，驱逐广州刺史徐旗
+
+[indent]•  何典率部攻苍梧[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  王族率部出始兴[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  郭马本部杀南海太守刘略，驱逐广州刺史徐旗[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 势力迅速控制广州大部。
 
+[color=#000000]附带伤亡：[/color] 王蕃之弟王著、王延拒绝为郭马所用，被郭马所害（据《三国志·王蕃传》：「二弟著、延皆作佳器，郭马起事，不为马用，见害」）。
 
-[b]吴朝镇压[/b]
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]吴朝镇压[/font][/b]
+
 
 孙皓调兵两路：
 
-[b]东道（第一波）：[/b] 滕脩（三国志作"滕循"，晋书作"滕脩"）鎭南将军领广州牧，率约一万人从东道进讨。然而王族在始兴布防，滕脩一时未能前进。
+[color=#000000]东道（第一波）：[/color] 滕脩（字显先，[color=#0066FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]西鄂人，时为执金吾）被任命为「使持节・都督广州军事・镇南将军・广州牧」，率约一万人从东道进讨。然而王族在始兴布防，滕脩「与族遇于始兴，未得前」，一时被阻无法推进。
 
-[b]西道（第二波）：[/b] 孙皓又遣徐陵督[color=#6699FF][url={"research": "陶濬", "cat": "people"}]陶濬[/url][/color]率七千兵从西道进兵，命交州牧[color=#6699FF][url={"research": "陶璜", "cat": "people"}]陶璜[/url][/color]集结合浦、郁林诸郡兵，准备东西两路合击郭马。
-
-
-[b]结局：随吴亡而终[/b]
-
-然而平乱进程刚刚启动，历史便发生了急转：天纪三年（279年）冬十一月，西晋分六路大举伐吴。陶濬的七千援军此时尚在武昌行进途中，闻晋军南下便就地停止，随后撤回。天纪四年（280年）三月，孙皓面缚舆榇降晋，东吴灭亡。
-
-郭马之乱随东吴覆灭而终结。史书未载郭马最终结局——是归降西晋、战死，还是其他，无从可考。
+[color=#000000]西道（第二波）：[/color] 孙皓又遣徐陵督[color=#0066FF][url={"research": "陶濬", "cat": "people"}]陶濬[/url][/color]率七千人从西道进兵；命交州牧陶璜集结合浦、郁林诸郡兵，准备东西两路合击郭马。
 
 
-[b]性格与形象[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]结局：随吴亡而终结，命运不明[/font][/b]
+
+
+然而平乱进程刚刚启动，历史便发生了急转：
+
+
+[indent]•  天纪三年（279年）冬十一月，西晋分六路大举伐吴[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  陶濬的七千援军此时尚在武昌行进途中，「闻北军大出，停驻不前」，随后撤回[color=#0066FF][url={"research": "建业", "cat": "geography"}]建业[/url][/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  滕脩「未克而王师伐吴，率众赴难，至巴丘，而皓已降，乃缟素流涕而还」——滕脩北上救吴，但到巴丘时孙皓已降，穿白衣含泪返回[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  天纪四年（280年）三月，孙皓面缚舆榇降晋，东吴灭亡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  滕脩、陶璜先后降晋，被晋武帝复命原职镇守广州、交州[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]郭马之乱随东吴覆灭而终结。郭马本人最终命运，正史无明文记载。[/color]
+
+
+[indent][color=#666666]┃ 注：百科（baike.com）称「攻克，诛郭马」，但此说无一手史料依据：《三国志·孙皓传》正文仅记讨伐部署，滕脩传明确写「未克而王师伐吴」，维基「郭马之乱」条目亦明确「郭马的结局在史书中未予交代」。「诛郭马」说不可采信。[/color][/indent]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 郭马在史料中几乎没有个人描述，但其行为透露出几个特点：
 
-- [b]军户底色[/b]：他的行动逻辑来自军户集体生存利益，而非个人野心或政治理念。"累世旧军，不乐离别"是核心动机——军队就是家族，分散即死亡。
-- [b]实用主义[/b]：立刻自封官号、分配任务、攻城略地，行动迅速、有条不紊，是有经验的军事指挥。
-- [b]规模局限[/b]：叛乱范围局限于岭南一带，无北上图谋，本质是军户自保的叛乱，而非图谋天下的割据。
+
+[indent]•  [color=#000000]军户底色[/color]：他的行动逻辑来自军户集体生存利益，而非个人野心或政治理念。「累世旧军，不乐离别」是核心动机——军队就是家族，分散令等于剥夺身份认同[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]实用主义[/color]：立刻自封官号、分配任务、攻城略地，行动迅速、有条不紊，是有经验的军事指挥[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]规模局限[/color]：叛乱范围局限于岭南一带，无北上图谋，本质是军户自保的叛乱，而非图谋天下的割据[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]人物[/b] | [b]关系[/b]
-脩允 | 旧主。其死与脩允部曲分散令直接引发郭马叛乱；恩主与祸源合二为一
-虞授 | 广州督，叛乱第一个牺牲品，被郭马攻杀
-何典、王族、吴述、殷兴 | 同伴部将，共同起事，各自分封
-刘略 | 南海太守，被郭马所杀
-徐旗 | 广州刺史，被郭马驱逐
-陶濬 | 吴军主要镇压者，七千兵未及到达便被晋军南下打断
-陶璜 | 交州牧，另一路镇压力量；陶璜后来成为晋朝守交州的关键人物
-滕脩 | 鎭南将军，东道讨马，被王族阻于始兴
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[table=2]
+[cell][b]人物[/b][/cell]
+[cell][b]关系[/b][/cell]
+[cell]脩允[/cell]
+[cell]旧主。脩允父修则被晋将毛炅杀害，脩允随陶璜南征报仇。脩允病死后其部曲分散令直接触发郭马叛乱；恩主与祸源合二为一[/cell]
+[cell]脩則（修则）[/cell]
+[cell]旧主之父，吴国前都督，被晋将毛炅击杀[/cell]
+[cell]虞授[/cell]
+[cell]广州督，叛乱第一个牺牲品，被郭马攻杀[/cell]
+[cell]何典、王族、吴述、殷兴[/cell]
+[cell]同伴部将，共同起事，各自分封[/cell]
+[cell]王著、王延[/cell]
+[cell]王蕃之弟，拒绝为郭马所用，被郭马所害[/cell]
+[cell]刘略[/cell]
+[cell]南海太守，被郭马所杀[/cell]
+[cell]徐旗[/cell]
+[cell]广州刺史，被郭马驱逐[/cell]
+[cell]陶濬[/cell]
+[cell]吴军西路主要镇压者，七千兵未及到达便被晋军南下打断[/cell]
+[cell]陶璜[/cell]
+[cell]交州牧，另一路镇压力量；陶璜后来成为晋朝守交州的关键人物[/cell]
+[cell]滕脩[/cell]
+[cell]东路镇南将军，讨马未克即遇吴亡；降晋后继续任广州牧[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
 郭马不见于《三国演义》，仅存于正史。
 
 正史中：
-- 叛乱发生于东吴灭亡前一年，是末期内部崩溃的组成部分
-- 规模不小（调兵近两万镇压），但历史上往往被晋灭吴的大叙事所遮蔽
+
+[indent]•  叛乱发生于东吴灭亡前一年，是末期内部崩溃的组成部分[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  规模不小（调兵近两万镇压），但历史上往往被晋灭吴的大叙事所遮蔽[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  陆机《辨亡论》将郭马之乱列为吴国灭亡的重要内因之一[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]

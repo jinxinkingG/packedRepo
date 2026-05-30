@@ -1,109 +1,359 @@
-[b]张鲁（公祺）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]张鲁（公祺）[/font][/b]
 
 
-[b]基本信息：[/b] 生年不详—216年（一说更晚），沛国丰县（今江苏丰县）人；东汉末汉中割据军阀，五斗米道第三代天师（系师）
+[color=#000000]基本信息：[/color] 生年不详—216年（一说245年或259年），沛国丰县（今江苏丰县）人；东汉末汉中割据军阀，五斗米道第三代天师（系师）
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]家族背景：三张传道世系[/b]
-
-张鲁祖父[b]张陵[/b]（张道陵），客居蜀中，学道于鹄鸣山，以道书惑民，从受道者须出五斗米，故世号"米贼"。张陵死，子[b]张衡[/b]行其道；张衡死，鲁复行之。
-
-⚠ [b]张修争议[/b]：《三国志》将五斗米道归于张陵创立，陵→衡→鲁一脉相承。但裴注引《典略》明载"汉中有张修……修为五斗米道"，而张鲁后来杀掉的"别部司马张修"与此张修极可能是同一人。若如此，五斗米道的真正建立者或为张修，张鲁是夺人基业后追溯祖父张陵为创始人。裴松之认为典略中的张修即张衡之误，但"张鲁信行修业"（非"父业"）的措辞使这一判断存疑。详见 `ref-zhangxiu-debate.md`。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]入汉中：借母攀附，袭杀张修[/b]
-
-张鲁之母"有少容，兼挟鬼道，往来焉家"——以姿色与宗教手段结交益州牧[b][color=#6699FF][url={"research": "刘焉", "cat": "people"}]刘焉[/url][/color][/b]，张鲁由此被刘焉纳为督义司马。[b]初平二年（191年）[/b]，刘焉以张鲁为督义司马，与别部司马[b]张修[/b]将兵攻汉中太守[b]苏固[/b]。苏固被杀后，[b]张鲁遂袭修杀之，夺其众[/b]，独据汉中。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]家族背景：三张传道世系[/font][/b]
 
 
-[b]割据汉中：鬼道教民，不置长吏[/b]
+张鲁祖父[color=#000000]张陵[/color]（张道陵），客居蜀中，学道于鹄鸣山，以道书惑民，从受道者须出五斗米，故世号"米贼"。陈寿《三国志》叙述：张陵死，子[color=#000000]张衡[/color]行其道；张衡死，鲁复行之——陵→衡→鲁脉相承。
 
-刘焉死，子[b][color=#6699FF][url={"research": "刘璋", "cat": "people"}]刘璋[/url][/color][/b]代立。璋以张鲁不顺，[b]尽杀张鲁母家室[/b]。张鲁遂彻底与益州决裂，据汉中自立。
+⚠ [color=#000000]张修争议（学界核心问题）[/color]：此陈寿叙述与其他史料存在明显矛盾。
+
+[color=#000000]《典略》（鱼豢）[/color]（裴注引）：光和年间（178-183年）"汉中有张修"，并详述张修如何建立三官手书、义舍制度、五斗米收费体系——这与《三国志》所述五斗米道的特征完全重合。《后汉书·灵帝纪》更明载中平元年（184年）"巴郡妖巫张修反，寇郡县"，称其为"五斗米师"。
+
+[color=#000000]裴松之[/color]认为典略中的"张修"应是"张衡"的传写错误（"臣松之谓张修应是张衡"），但此判断被现代学界多数否定：
+
+反驳裴说的三个论据：
+
+[indent]1.  [color=#000000]措辞[/color]：典略明言张鲁"信行[color=#000000]修[/color]业"而非"信行父业"——若张修即其父张衡，措辞必然不同[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]时间线[/color]：光和年间汉中张修→中平元年巴郡张修叛乱→191年张修为[color=#0066FF][url={"research": "刘焉", "cat": "people"}]刘焉[/url][/color]"别部司马"随张鲁攻汉中→张鲁"袭修杀之"，这条时间线内部自洽，若强加"张修=张衡"则导致后汉书与典略均错[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]关系纽带[/color]：若张衡是汉中五斗米道势力强大的领袖，张鲁进入刘焉体制何须依靠母亲"少容"与"鬼道"攀关系[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]学界主流倾向[/color]（据维普收录论文《"增饰"与传承——张修、张鲁与五斗米道的宗教化》）：
+
+[indent]•  张陵是时人记忆中的五斗米道[color=#000000]创教始祖[/color]（已有独立的"天师道"传统）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  张修是汉末五斗米道[color=#000000]实际的组织建立者[/color]，建立了三官手书、义舍等核心制度[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  刘焉借助张修的宗教势力击取汉中，授张修别部司马[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  张鲁以监军身份入汉中后[color=#000000]袭杀张修夺众[/color]，随后追溯祖父张陵为创始人，完成宗教正当性建构[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  属[color=#000000]开放悬案[/color]，无法最终定案，但裴松之的"张修=张衡"方案反而制造更多矛盾[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[table=4]
+[cell][b]人物[/b][/cell]
+[cell][b]身份[/b][/cell]
+[cell][b]活动范围[/b][/cell]
+[cell][b]结局[/b][/cell]
+[cell]张陵[/cell]
+[cell]道书创作者，"出五斗米"最初源头；正一盟威道创立者[/cell]
+[cell]蜀地鹄鸣山[/cell]
+[cell]自然死亡[/cell]
+[cell]张衡[/cell]
+[cell]张陵之子，继承道统[/cell]
+[cell]不详[/cell]
+[cell]自然死亡，妻卢氏存活[/cell]
+[cell]张修[/cell]
+[cell]汉中/巴郡五斗米道实际组织建立者，独立于张陵家族外[/cell]
+[cell]汉中→巴郡→汉中[/cell]
+[cell]被张鲁袭杀[/cell]
+[cell]张鲁[/cell]
+[cell]夺张修部众，追溯张陵为始祖，增饰五斗米道制度[/cell]
+[cell]汉中三十年[/cell]
+[cell]降曹[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]入汉中：借母攀附，袭杀张修[/font][/b]
+
+
+张鲁之母[color=#000000]卢氏[/color]（道教典籍《历世真仙体道通鉴后集》所载姓名，正史无姓名记录），"始以鬼道，又有少容，常往来焉家"——以姿色与宗教手段结交益州牧[color=#000000]刘焉[/color]，张鲁由此被刘焉纳为督义司马。
+
+[color=#000000]初平二年（191年）[/color]，刘焉以张鲁为督义司马，与别部司马[color=#000000]张修[/color]将兵攻汉中太守[color=#000000]苏固[/color]。苏固被杀后，[color=#000000]张鲁遂袭修杀之，夺其众[/color]，独据汉中。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]割据汉中：鬼道教民，不置长吏[/font][/b]
+
+
+刘焉死，子[color=#000000][color=#0066FF][url={"research": "刘璋", "cat": "people"}]刘璋[/url][/color][/color]代立。璋以张鲁不顺，[color=#000000]尽杀张鲁母家室[/color]（包括卢氏及其家属，《刘璋传》"杀鲁母及弟"——"弟"所指人物有疑，可能为子张徵，正史有矛盾）。张鲁遂彻底与益州决裂，据汉中自立。
 
 张鲁"以鬼道教民，自号师君"。治理体制：
-- [b]鬼卒[/b]：初入者，相当于普通教民，战时为兵
-- [b]祭酒[/b]：受道已信者，各领部众，既是宗教骨干也是行政官员
-- [b]治头大祭酒[/b]：部众多者，相当于地区长官
-- [b]不置长吏，皆以祭酒为治[/b]：政教合一体制
 
-核心制度：
-1. [b]义舍[/b]：各祭酒在道路沿线设义舍（类今驿站），置义米义肉，"行路者量腹取足"，多取者以鬼道病之
-2. [b]三官手书[/b]：病者书姓名说服罪之意，一份埋地、一份沉水、一份上山，是五斗米道的治病仪式
-3. [b]宽刑原宥[/b]：犯法者"三原，然后乃行刑"；小过则"修治道路百步"代替刑罚
-4. [b]禁酒禁杀[/b]：春夏禁杀牲，禁止酿酒
-
-"民夷便乐之。雄据巴、汉垂三十年。"东汉末年乱世中，汉中成为相对安定的避难之所。
+[indent]•  [color=#000000]鬼卒[/color]：初入者，战时为兵[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]祭酒[/color]：受道已信者，各领部众，既是宗教骨干也是行政官员[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]治头大祭酒[/color]：部众多者，相当于地区长官[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]不置长吏，皆以祭酒为治[/color]：政教合一体制[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]谢绝汉宁王：阎圃之谏[/b]
+核心制度（据《典略》，部分来自张修旧制，被张鲁"增饰"）：
 
-汉末，朝廷无力征讨，遂拜张鲁为[b]镇民中郎将，领汉宁太守[/b]。有百姓从地中得玉印，群下欲尊张鲁为汉宁王。功曹[b][color=#6699FF][url={"research": "阎圃", "cat": "people"}]阎圃[/url][/color][/b]谏言：
-
-[color=#AAAAAA]　"汉川之民，户出十万，财富土沃，四面险固；上匡天子，则为桓、文，次及窦融，不失富贵。今承制署置，势足斩断，不烦于王。愿且不称，勿为祸先。"[/color]
-
-张鲁从之，拒绝称王——这是张鲁一生中最重要的政治判断，也是他最终得善终的关键原因。
-
-
-[b]收留马超：都讲祭酒与欲妻之女[/b]
-
-[b]建安十七年（212年）[/b]前后，[color=#6699FF][url={"research": "马超", "cat": "people"}]马超[/url][/color]兵败[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]，逃奔汉中，张鲁以马超为[b]都讲祭酒[/b]（宗教军事高位），欲将女儿嫁给他。有人谏曰："有人若此不爱其亲，焉能爱人？"张鲁乃止，拒绝联姻。马超在汉中不得志，后出兵广汉，降[color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]。
-
-[color=#6699FF][url={"research": "韩遂", "cat": "people"}]韩遂[/url][/color]、马超之乱期间，[b]关西民从[color=#6699FF][url={"research": "子午谷", "cat": "geography"}]子午谷[/url][/color]奔之者数万家[/b]，汉中人口大增。
+[indent]1.  [color=#000000]义舍[/color]：各祭酒在道路沿线设义舍，置义米义肉，"行路者量腹取足"，多取者以鬼道病之[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]三官手书[/color]：病者书姓名说服罪之意，一份埋地、一份沉水、一份上山[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]宽刑原宥[/color]：犯法者"三原，然后乃行刑"；小过则"修治道路百步"代替刑罚[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]禁酒禁杀[/color]：春夏禁杀牲，禁止酿酒[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]曹操征汉中：封藏仓库而去[/b]
-
-[b]建安二十年（215年）[/b]，曹操自散关出武都，至[b]阳平关[/b]。张鲁本欲举汉中投降，其弟[b][color=#6699FF][url={"research": "张卫", "cat": "people"}]张卫[/url][/color][/b]率众数万人坚守阳平关不肯降，曹操攻破之。
-
-张鲁闻阳平陷落，本欲磕头归降；阎圃再谏：不如先依附[b]杜濩[/b]、[b]朴胡[/b]相拒，然后投降，功劳更大。于是张鲁奔南山入巴中。
-
-临行前，左右欲焚宝货仓库。张鲁曰：
-
-[color=#AAAAAA]　"本欲归命国家，而意未达。今之走，避锐锋，非有恶意。宝货仓库，国家之有。"[/color]
-
-遂[b]封藏仓库而去[/b]。曹操入南郑，"甚嘉之"，遣人慰喻。张鲁率全家出降，[b]曹操以镇南将军、阆中侯（邑万户）礼待之[/b]，待以客礼，五子及阎圃等皆封列侯，一女嫁曹操子[b][color=#6699FF][url={"research": "曹宇", "cat": "people"}]曹宇[/url][/color][/b]（曹彭祖）。
-
-"宁为魏公奴，不为上客。"（史传此语）
-
-张鲁于[b]216年[/b]薨，谥[b]原侯[/b]。
+"民夷便乐之。雄据巴、汉垂三十年。"汉中成为相对安定的避难之所。
 
 
-[b]性格与形象[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]谢绝汉宁王：阎圃之谏[/font][/b]
 
 
-[b]务实的宗教政治家，非英雄，非枭雄[/b]。
-
-- [b]宗教手段与政治目的高度融合[/b]：不置长吏、以祭酒为治，是用宗教组织架空行政官僚的创举。这套政教合一体制在乱世中相当有效。
-- [b]不自大[/b]：有机会称汉宁王，但听从阎圃之谏，这一"不争"是张鲁和其他割据者最大的区别。王夫之专门称赞此点。
-- [b]封藏仓库[/b]：区别于毁仓库的心理，体现张鲁对最终投降的预期——他从一开始就没想着跟曹操死磕。
-- [b]不爱亲人的矛盾[/b]：其弟张卫擅自坚守导致局面恶化，张鲁对此无可奈何，显示他对局势的控制力有限。
-- [b]宗教创新[/b]：义舍制度、三原宥刑、行路免费取食，有真实的民本色彩，"有社会主义作风"（毛泽东评）绝非戏言。
+有百姓从地中得玉印，群下欲尊张鲁为汉宁王。功曹[color=#000000][color=#0066FF][url={"research": "阎圃", "cat": "people"}]阎圃[/url][/color][/color]谏曰：
 
 
-[b]关键关系[/b]
+[indent][color=#666666]┃ "汉川之民，户出十万，财富土沃，四面险固；上匡天子，则为桓、文，次及窦融，不失富贵。今承制署置，势足斩断，不烦于王。愿且不称，勿为祸先。"[/color][/indent]
 
 
-- [b]刘焉[/b]：借母攀附的贵人，初平二年给了张鲁进入汉中的机会
-- [b]张修[/b]：实质上的宗教前辈，被张鲁袭杀夺众，历史上最大的冤大头之一
-- [b]刘璋[/b]：杀母之仇，割据的起点；但张鲁始终没有主动进攻益州（不是因为无力，而是不愿）
-- [b]阎圃[/b]：最重要的谋臣；两次关键时刻（谢绝称王、阳平降曹后建议入巴中）的建言者，最终与张鲁一同降曹封侯
-- [b]马超[/b]：过客；张鲁收留了他，给了都讲祭酒的位置，但没有深度捆绑，马超最终出走降刘备
-- [b]杜濩、朴胡[/b]：巴中賨人首领，张鲁政权的地方支柱，与张鲁一同降曹
-- [b]张卫[/b]：弟弟，坚守阳平关的执行者，在张鲁想降时反向起作用
+张鲁从之，拒绝称王。
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]收留马超[/font][/b]
 
 
-[b]史实[/b] | [b]演义处理[/b]
-张鲁一开始就想投降曹操，弟张卫才是坚守者 | 演义夸大张鲁抵抗意志
-马超是刘备取益州前寄寓汉中，与张鲁关系普通 | 演义中马超迅速转场，汉中段落被简化
-封藏仓库而去，非坚壁清野 | 演义未着重呈现这一细节
-阎圃是全程关键谋臣，谢王称、建言降曹后入巴中 | 演义中几乎无存在感
-张鲁母是关键政治通道（以少容攀附刘焉） | 演义未提母亲政治作用
-张修之死是张鲁起家的基础，真实历史疑点丰富 | 演义绕过这段历史
-五斗米道以义舍免费供食为特色，汉中是乱世净土 | 演义将张鲁定型为割据军阀，宗教色彩被淡化
-[color=#6699FF][url={"research": "杨松 ", "cat": " people"}]杨松 [/url][/color]是虚构人物 | 演义中杨松作为贪婪谋士出卖张鲁，史无此人
+[color=#000000]建安十七年（212年）[/color]前后，[color=#0066FF][url={"research": "马超", "cat": "people"}]马超[/url][/color]兵败[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]，逃奔汉中，张鲁以马超为[color=#000000]都讲祭酒[/color]，欲将女儿嫁给他。有人谏曰："有人若此不爱其亲，焉能爱人？"张鲁乃止，拒绝联姻。马超后出兵广汉，降[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹操征汉中：封藏仓库而降[/font][/b]
+
+
+[color=#000000]建安二十年（215年）[/color]，曹操征汉中。[color=#0066FF][url={"research": "张卫", "cat": "people"}]张卫[/url][/color]率众数万守阳平关，被曹操攻破。
+
+张鲁奔南山入巴中（阎圃再谏：先依附杜濩、朴胡相拒，再投降，功劳更大）。临行前，下属欲焚宝货仓库，张鲁曰：
+
+
+[indent][color=#666666]┃ "本欲归命国家，而意未达。今之走，避锐锋，非有恶意。宝货仓库，国家之有。"[/color][/indent]
+
+
+遂[color=#000000]封藏仓库而去[/color]。曹操"甚嘉之"，张鲁率全家出降，被拜[color=#000000]镇南将军，封阆中侯（邑万户）[/color]，五子及阎圃等皆封列侯，一女嫁曹操子[color=#000000][color=#0066FF][url={"research": "曹宇", "cat": "people"}]曹宇[/url][/color][/color]。
+
+张鲁于[color=#000000]216年[/color]薨，谥[color=#000000]原侯[/color]。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]张鲁母卢氏专项考辨[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]姓名来源[/font][/b]
+
+
+[indent]•  [color=#000000]正史无姓名[/color]：《三国志》《后汉书》《华阳国志》均只称"张鲁母"或"卢氏"均无正史明文[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]"卢氏"来源[/color]：元代道教典籍[color=#000000]《历世真仙体道通鉴后集》[/color]（赵道一）："卢氏，嗣汉第二代天师张衡之妻也，张衡得道，卢氏同于阳平山白日飞昇。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  结论：[color=#000000]"卢氏"为道教典籍所载，非一手历史史料，可信度有限[/color]，但道教系统内部传承较一致[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]史料记载的真实面貌[/font][/b]
+
+
+[indent]•  《三国志·蜀书·刘焉传》：[color=#000000]"始以鬼道，又有少容"[/color]（"少容"=姿容年轻貌美）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《后汉书·刘焉传》：[color=#000000]"母有恣色，兼挟鬼道"[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《华阳国志》：[color=#000000]"有少容，往来焉家"[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+三书一致：鬼道（宗教手段）+ 少容/恣色（外貌）是她往来刘焉家的两重资本。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]与刘焉关系的性质[/font][/b]
+
+正史只言"往来焉家"，现代有推测刘焉与张鲁母存在私情，但[color=#000000]正史无明文[/color]，为后世推断，不可采信。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]被杀时间[/font][/b]
+
+约在刘璋杀母后（约192—200年间）刘璋与张鲁彻底决裂，正史无精确年份。《三国志·张鲁传》说"尽杀母家室"，《刘璋传》说"杀鲁母及弟"——"弟"所指可能是张鲁之子张徵（维基注），两传记载有出入，[color=#000000]永不可精确厘清[/color]。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
+
+
+[color=#000000]务实的宗教政治家，非英雄，非枭雄。[/color]
+
+
+[indent]•  [color=#000000]宗教手段与政治目的高度融合[/color]：不置长吏、以祭酒为治，是用宗教组织架空行政官僚的创举[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]不自大[/color]：有机会称汉宁王，但听从阎圃之谏，这是张鲁与其他割据者最大的区别。王夫之专门称赞此点[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]封藏仓库[/color]：区别于毁仓库的心理，体现张鲁对最终投降的预期——从一开始就没想着跟曹操死磕[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]宗教创新[/color]：义舍制度、三原宥刑，有真实的民本色彩，"有社会主义的作风"（毛泽东评）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
+
+
+[indent]•  [color=#000000]刘焉[/color]：借母攀附的贵人，初平二年给了张鲁进入汉中的机会[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张修[/color]：实质上的宗教前辈，被张鲁袭杀夺众，历史上最大的冤大头之一（属开放悬案）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]刘璋[/color]：杀母之仇，割据的起点；但张鲁始终没有主动进攻益州[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]阎圃[/color]：最重要的谋臣；两次关键时刻（谢绝称王、阳平降曹后建议入巴中）的建言者[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]马超[/color]：过客；张鲁收留，给都讲祭酒位置，拒绝深度捆绑，马超最终出走降刘备[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]杜濩、朴胡[/color]：巴中賨人首领，张鲁政权的地方支柱，与张鲁一同降曹[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张卫[/color]：弟弟，坚守阳平关的执行者，在张鲁想降时反向起作用[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=2]
+[cell][b]史实[/b][/cell]
+[cell][b]演义处理[/b][/cell]
+[cell]张鲁一开始就想投降曹操，弟张卫才是坚守者[/cell]
+[cell]演义夸大张鲁抵抗意志[/cell]
+[cell]马超是刘备取益州前寄寓汉中，与张鲁关系普通[/cell]
+[cell]演义中马超迅速转场，汉中段落被简化[/cell]
+[cell]封藏仓库而去，非坚壁清野[/cell]
+[cell]演义未着重呈现这一细节[/cell]
+[cell]阎圃是全程关键谋臣，谢王称、建言降曹后入巴中[/cell]
+[cell]演义中几乎无存在感[/cell]
+[cell]张鲁母是关键政治通道（以少容攀附刘焉）[/cell]
+[cell]演义未提母亲政治作用[/cell]
+[cell]张修之死是张鲁起家的基础，真实历史疑点丰富[/cell]
+[cell]演义绕过这段历史[/cell]
+[cell]五斗米道以义舍免费供食为特色，汉中是乱世净土[/cell]
+[cell]演义将张鲁定型为割据军阀，宗教色彩被淡化[/cell]
+[cell][color=#0066FF][url={"research": "杨松", "cat": "people"}]杨松[/url][/color]是虚构人物[/cell]
+[cell]演义中杨松作为贪婪谋士出卖张鲁，史无此人[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]同时代[/font][/b]
+
+
+[indent]•  [color=#000000]刘备[/color]：「鲁自守之贼，不足虑也。」（《三国志·先主传》）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000][color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color][/color]：「米贼张鲁居王巴、汉。」（转引）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]鱼豢《典略》[/color]：「（治病之法）实无益于治病，但为淫妄，盖为诳耀愚民。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]西晋[/font][/b]
+
+
+[indent]•  [color=#000000]陈寿[/color]：「燕、绣、鲁舍群盗，列功臣，去危亡，保宗祀，则于彼为愈焉。」（《三国志·卷八》）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]东晋[/font][/b]
+
+
+[indent]•  [color=#000000]裴松之[/color]：「张鲁虽有善心，要为败而后降，今乃宠以万户，五子皆封侯，过矣。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]宋[/font][/b]
+
+
+[indent]•  [color=#000000]郝经《郝氏续后汉书》[/color]：「燕、绣以剧盗，鲁以妖贼，力屈而降，不鏖遗民，有足嘉者。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]明清[/font][/b]
+
+
+[indent]•  [color=#000000]王夫之《读通鉴论》[/color]：「张鲁妖矣，而卒以免于死亡，非其德之堪也；听阎圃之谏，拒群下之请，不称汉宁王，卫身之智，足以保身，宜矣。……陈婴、周市之所弗为，张鲁能弗为，张鲁之所不为，而吕光、杜伏威、刘豫、明玉珍汲汲焉相尊以益其骄，骈首就戮而悔之无及，以死亡易一日之虚尊，且自矜也，人之愚未有如是之甚者也。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]近现代[/font][/b]
+
+
+[indent]•  [color=#000000]毛泽东[/color]（1958年武昌评注）：「汉中有个张鲁，他搞过吃饭不要钱，凡是过路人，在饭铺吃饭吃肉都不要钱。他搞了三十年，人们都高兴那个制度，这有种社会主义的作风，我们的社会主义由来已久了。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]谢和耐（Gernet）& 芮沃寿（Wright）[/color]：「张鲁的目的不是要取代帝国的权力制度，而是要改良它。他设法当了这个庞大的政治和宗教会社的头目，直到公元215年他与曹操合流才使运动草草收场，他被曹操加官进爵，并且与曹氏联了姻。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+[table=3]
+[cell][b]年份[/b][/cell]
+[cell][b]剧名[/b][/cell]
+[cell][b]饰演者[/b][/cell]
+[cell]1994[/cell]
+[cell]《三国演义》（央视84集版）[/cell]
+[cell]马玉良[/cell]
+[cell]2010[/cell]
+[cell]《新三国》（高希希版）[/cell]
+[cell]李大光[/cell]
+[cell]2016[/cell]
+[cell]《赵子龙》[/cell]
+[cell]王维光[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]漫画[/font][/b]
+
+
+[indent]•  《苍天航路》（王欣太）：有出场[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《火凤燎原》（陈某）：设定为「南华八怪」之一，五斗米道为其分支，仅名字被提及[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏[/font][/b]
+
+
+[color=#000000]《三国志11》（2006）[/color]：统率51 / 武力26 / 智力73 / 政治78 / 魅力89；特技：[color=#000000]米道[/color]（综合317，魅力突出）
+
+[color=#000000]《三国志14》（2019）[/color]：统率51 / 武力28 / 智力73 / 政治78 / 魅力89；个性：节约、医术、农政、米道、寡欲
+
+[color=#000000]《三国杀》[/color]：群势力，称号「政宽教惠」；技能【义舍】（结束阶段无米则摸2牌）+【布施】（转移米/判定牌）+【米道】（主动改判定），定位防御+爆发，输出偏弱
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]道教信仰地位[/font][/b]
+
+龙虎山天师府至今供奉张鲁神像，历代天师以张鲁为系师传承，追封「扶义公」；子张盛南归龙虎山后成为正一道（天师道）直接源头。可网络核查项已穷尽✅2026-05-28
+
+
+[color=#888888]──────────────────────────────[/color]

@@ -1,47 +1,118 @@
-[b]高升（无字号记载）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]高升（无字号史载）[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详（卒184年），籍贯不详，身份：黄巾军将领、地公将军[color=#6699FF][url={"research": "张宝", "cat": "people"}]张宝[/url][/color]副将
+[color=#000000]基本信息：[/color] 生卒年不详（演义中卒184年），籍贯不详，身份：《三国演义》中的黄巾军虚构将领，[color=#0066FF][url={"research": "张宝", "cat": "people"}]张宝[/url][/color]副将
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-高升是[b]《三国演义》中的虚构人物，正史中无任何记载[/b]。
-
-据《三国志》及《资治通鉴》，光和七年（184年）黄巾起义，朝廷以[color=#6699FF][url={"research": "皇甫嵩", "cat": "people"}]皇甫嵩[/url][/color]、朱儁为将讨伐。皇甫嵩负责颍川、[color=#6699FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]一线，朱儁负责讨伐地公将军张宝。正史中，张宝麾下副将无"高升"其名，《三国志》列传仅提及张宝本人与黄巾诸将（如[color=#6699FF][url={"research": "赵弘", "cat": "people"}]赵弘[/url][/color]、韩忠、[color=#6699FF][url={"research": "孙仲", "cat": "people"}]孙仲[/url][/color]等），不见高升。
-
-演义情节如下：
-
-- 朱儁在颍川击败黄巾，张宝与高升率残部约八九万人退守山后扎营。
-- 朱儁独力追击，双方对峙。
-- [color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]义军来援朱儁，朱儁命其出战。
-- 高升出阵挑衅，刘备命[color=#6699FF][url={"research": "张飞", "cat": "people"}]张飞[/url][/color]应战，高升数合后不敌，被张飞当场刺杀。
-
-出场位置：第二回（嘉靖本第三则），全书仅此一出场，随即战死。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-[b]性格与形象[/b]
+高升是[color=#000000]《三国演义》中的虚构人物，正史中无任何记载[/color]。
+
+据《三国志·武帝纪》及《资治通鉴》，光和七年（184年）黄巾起义，朝廷以[color=#0066FF][url={"research": "皇甫嵩", "cat": "people"}]皇甫嵩[/url][/color]、朱儁为将讨伐。朱儁负责讨伐地公将军张宝。正史中，张宝麾下副将无"高升"其名，《三国志》各传不见此人。
 
 
-高升在演义中形象极为简略：出阵叫嚣（"immediately began taunting"），武力不足，数合即败。功能上是张飞武勇的衬托——作为黄巾先锋，高升的迅速倒下彰显了张飞在刘备军中的核心战力。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]演义出场[/font][/b]
+
+
+高升出场于第二回（嘉靖本第一卷第三则，毛本第二回）：
+
+朱儁进攻张宝，令[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]为先锋。张宝令副将高升出马搦战，刘备使[color=#0066FF][url={"research": "张飞", "cat": "people"}]张飞[/url][/color]应战，张飞挺矛迎战，不数合刺高升落马，随后刘备挥军直冲，但遭张宝妖法反击，败归。
+
+高升[color=#000000]全书仅此一出场，随即战死[/color]，属最速战死的演义虚构将领之一。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]三版本逐字差异考辨[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]核心差异（已全面考辨 ✅ 2026-05-04）[/font][/b]
+
+
+[table=4]
+[cell][b]位置[/b][/cell]
+[cell][b]嘉靖本[/b][/cell]
+[cell][b]叶逢春本[/b][/cell]
+[cell][b]毛宗岗本[/b][/cell]
+[cell]叙述起头[/cell]
+[cell]「三人立马阵前，张宝令副将高升出马」[/cell]
+[cell]类同嘉靖[/cell]
+[cell]「张宝遣副将高升出马搦战，玄德使张飞击之」[/cell]
+[cell]高升兵器[/cell]
+[cell][color=#000000]「挥大刀搦战」[/color][/cell]
+[cell][color=#000000]「挥大斧搦战」[/color][/cell]
+[cell][color=#000000]无兵器描述（删去）[/color][/cell]
+[cell]战斗字[/cell]
+[cell]「与升交战，[color=#000000]战[/color]不数合」[/cell]
+[cell]「不到[color=#000000]三合[/color]」[/cell]
+[cell]「与升交战，[color=#000000]不[/color]数合」[/cell]
+[cell]结果描述[/cell]
+[cell]「飞刺高升[color=#000000]坠马[/color]」[/cell]
+[cell]「飞刺高升坠马」（同）[/cell]
+[cell]「刺升[color=#000000]落马[/color]」[/cell]
+[cell]伏兵数量[/cell]
+[cell]各引军[color=#000000]二千[/color][/cell]
+[cell]各引军[color=#000000]二千[/color][/cell]
+[cell]各引军[color=#000000]一千[/color][/cell]
+[/table]
+
+
+[color=#000000]高升兵器[/color]是最显著差异：嘉靖本「大刀」、叶逢春本「大斧」、毛本无兵器描述。毛本删除兵器描述，同时简化了战斗叙事，增补了「玄德使张飞击之」强调指挥角色。伏兵数量毛本独作「一千」，嘉靖/叶逢春本均作「二千」。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
+
+
+高升在演义中形象极为简略：出阵搦战，武力不足，数合即败。功能上是张飞武勇的衬托——作为黄巾先锋，高升的迅速倒下彰显了张飞在刘备军中的核心战力。
 
 无任何性格刻画，属于典型的"工具型配角"。
 
 
-[b]关键关系[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-- [b]张宝[/b]：高升的直属上司，地公将军。张宝事迹见《三国志·武帝纪》裴注引《典略》等。
-- [b]张飞[/b]：高升的杀手。演义中张飞初露峥嵘，高升是其第二回斩杀的黄巾将领。
-- [b]朱儁、刘备[/b]：对立的汉军指挥官，高升出阵即是为应对刘备援军。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+[indent]•  [color=#000000]张宝[/color]：高升的直属上司，地公将军。张宝事迹见《三国志·武帝纪》裴注引《典略》等。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张飞[/color]：高升的杀手。演义中张飞初露峥嵘，高升是其第二回斩杀的黄巾将领（第一回为[color=#0066FF][url={"research": "邓茂", "cat": "people"}]邓茂[/url][/color]）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]朱儁、刘备[/color]：对立的汉军指挥官，高升出阵即是为应对刘备援军。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]方面[/b] | [b]史实[/b] | [b]演义[/b]
-人物存在性 | 完全无载，虚构人物 | 张宝副将，先锋
-张宝麾下将领 | 正史无副将名 | 高升被创造为副将
-此役经过 | 张宝众被黄巾内部人物刺杀，或被朱儁击溃 | 高升出阵叫嚣，被张飞数合斩杀
-汉字写法 | N/A | 毛本作"高升"，部分英文资料/嘉靖本周边版本作"高昇"（昇=升，异体字）
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]演义[/b][/cell]
+[cell]人物存在性[/cell]
+[cell]完全无载，虚构人物[/cell]
+[cell]张宝副将，先锋[/cell]
+[cell]张宝麾下将领[/cell]
+[cell]正史无副将名[/cell]
+[cell]高升被创造为副将[/cell]
+[cell]此役经过[/cell]
+[cell]张宝被内部人物严政刺杀，或被朱儁击溃[/cell]
+[cell]高升出阵叫嚣，被张飞数合斩杀[/cell]
+[cell]兵器[/cell]
+[cell]N/A[/cell]
+[cell]嘉靖本"大刀"，叶逢春本"大斧"，毛本无描述[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]

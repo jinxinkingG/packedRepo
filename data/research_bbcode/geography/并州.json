@@ -1,314 +1,510 @@
-[b]并州[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]并州[/font][/b]
 
 
-[b]位置：[/b] 今山西省大部、陕西省北部及内蒙古阴山以南地区
-[b]类型：[/b] 东汉十三刺史部之一（边疆大州）
-[b]州治：[/b] 晋阳（今山西太原市晋源区）
-[b]辖境：[/b] 汾河谷地 → 太行山以西 → 黄河以东 → 阴山以南
+[color=#000000]位置：[/color] 今山西省大部、陕西省北部及内蒙古阴山以南地区
+[color=#000000]类型：[/color] 东汉十三刺史部之一（边疆大州）
+[color=#000000]州治：[/color] 晋阳（今山西太原市晋源区）
+[color=#000000]辖境：[/color] 汾河谷地 → 太行山以西 → 黄河以东 → 阴山以南
 
 
-[b]地理考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]行政区划（东汉顺帝永和五年，公元140年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]地理考证[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]行政区划（东汉顺帝永和五年，公元140年）[/font][/b]
+
 
 据《后汉书·郡国志五》，并州刺史部辖九郡九十八县：
 
 
-[b]郡名[/b] | [b]城数[/b] | [b]户数[/b] | [b]口数[/b] | [b]郡治[/b] | [b]今址参考[/b]
-太原郡（秦置） | 16城 | 30,902 | 201,124 | 晋阳（刺史治） | 太原市晋源区
-雁门郡（秦置） | 14城 | 31,862 | 249,000 | 阴馆 | 山西朔州一带
-上党郡（秦置） | 13城 | 26,222 | 127,403 | 长子 | 山西长治一带
-西河郡（武帝置） | 13城 | 5,698 | 20,838 | 离石 | 山西吕梁
-上郡（秦置） | 10城 | 5,169 | 28,599 | 肤施 | 陕西榆林
-五原郡（武帝更名） | 10城 | 4,667 | 22,957 | 九原 | 内蒙古包头
-云中郡（秦置） | 11城 | 5,351 | 26,430 | 云中 | 内蒙古托克托
-定襄郡（高帝置） | 5城 | 3,153 | 13,571 | 善无 | 山西右玉附近
-朔方郡（武帝置） | 6城 | 1,987 | 7,843 | 临戎 | 内蒙古河套西部
+[table=6]
+[cell][b]郡名[/b][/cell]
+[cell][b]城数[/b][/cell]
+[cell][b]户数[/b][/cell]
+[cell][b]口数[/b][/cell]
+[cell][b]郡治[/b][/cell]
+[cell][b]今址参考[/b][/cell]
+[cell]太原郡（秦置）[/cell]
+[cell]16城[/cell]
+[cell]30,902[/cell]
+[cell]201,124[/cell]
+[cell]晋阳（刺史治）[/cell]
+[cell]太原市晋源区[/cell]
+[cell]雁门郡（秦置）[/cell]
+[cell]14城[/cell]
+[cell]31,862[/cell]
+[cell]249,000[/cell]
+[cell]阴馆[/cell]
+[cell]山西朔州一带[/cell]
+[cell]上党郡（秦置）[/cell]
+[cell]13城[/cell]
+[cell]26,222[/cell]
+[cell]127,403[/cell]
+[cell]长子[/cell]
+[cell]山西长治一带[/cell]
+[cell]西河郡（武帝置）[/cell]
+[cell]13城[/cell]
+[cell]5,698[/cell]
+[cell]20,838[/cell]
+[cell]离石[/cell]
+[cell]山西吕梁[/cell]
+[cell]上郡（秦置）[/cell]
+[cell]10城[/cell]
+[cell]5,169[/cell]
+[cell]28,599[/cell]
+[cell]肤施[/cell]
+[cell]陕西榆林[/cell]
+[cell]五原郡（武帝更名）[/cell]
+[cell]10城[/cell]
+[cell]4,667[/cell]
+[cell]22,957[/cell]
+[cell]九原[/cell]
+[cell]内蒙古包头[/cell]
+[cell]云中郡（秦置）[/cell]
+[cell]11城[/cell]
+[cell]5,351[/cell]
+[cell]26,430[/cell]
+[cell]云中[/cell]
+[cell]内蒙古托克托[/cell]
+[cell]定襄郡（高帝置）[/cell]
+[cell]5城[/cell]
+[cell]3,153[/cell]
+[cell]13,571[/cell]
+[cell]善无[/cell]
+[cell]山西右玉附近[/cell]
+[cell]朔方郡（武帝置）[/cell]
+[cell]6城[/cell]
+[cell]1,987[/cell]
+[cell]7,843[/cell]
+[cell]临戎[/cell]
+[cell]内蒙古河套西部[/cell]
+[/table]
 
 
-[b]汇总：[/b] 总户约 115,011，总口约 697,765（约70万）。
-
-[color=#AAAAAA]　注：永和五年（140年）数据。至东汉末年，边郡实际汉族人口因胡乱进一步缩减，西河、云中、定襄、五原、朔方诸郡近乎空壳。[/color]
-[color=#AAAAAA]　对比：西汉元始二年太原郡口 680,488，东汉永和仅 201,124，缩减至约30%。[/color]
+[color=#000000]汇总：[/color] 总户约 115,011，总口约 697,765（约70万）。
 
 
-[b]建安二十年（215年）内迁改制——新兴郡[/b]
+[indent][color=#666666]┃ 注：永和五年（140年）数据。至东汉末年，边郡实际汉族人口因胡乱进一步缩减，西河、云中、定襄、五原、朔方诸郡近乎空壳。[/color][/indent]
+[indent][color=#666666]┃ 对比：西汉元始二年太原郡口 680,488，东汉永和仅 201,124，缩减至约30%。[/color][/indent]
 
-[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]令："省云中、定襄、五原、朔方郡，郡置一县领其民，合以为新兴郡。"
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安二十年（215年）内迁改制——新兴郡[/font][/b]
+
+
+[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]令："省云中、定襄、五原、朔方郡，郡置一县领其民，合以为新兴郡。"
 
 具体内迁：
-- 五原10县 → 九原县（迁至今忻州市忻府区）
-- 定襄5县 → 定襄县（迁至今忻州市定襄县）
-- 云中11县 → 云中县（迁至今原平楼板寨）
-- 朔方6县 → 广牧县（移至今寿阳县西北）
 
-新兴郡治九原城（即今忻州城）——由[color=#6699FF][url={"research": "梁习", "cat": "people"}]梁习[/url][/color]选址新建，是忻州城的历史起点。
-
-
-[b]建安二十一年（216年）南匈奴五部分置[/b]
-
-[color=#6699FF][url={"research": "呼厨泉", "cat": "people"}]呼厨泉[/url][/color]单于赴邺觐见，曹操留之于[color=#6699FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]，以右贤王[b]去卑[/b]监国。南匈奴分为五部，散置并州各县：
+[indent]•  五原10县 → 九原县（迁至今忻州市忻府区）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  定襄5县 → 定襄县（迁至今忻州市定襄县）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  云中11县 → 云中县（迁至今原平楼板寨）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  朔方6县 → 广牧县（移至今寿阳县西北）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]部别[/b] | [b]人口[/b] | [b]驻地[/b] | [b]今址参考[/b]
-左部（帅：刘豹） | 万余落 | 大原故泫氏县 | 今山西高平县
-右部都尉 | 六千余落 | 祁县 | 今山西祁县
-南部都尉 | 三千余落 | 蒲子县 | 今山西隰县
-北部都尉 | 四千余落 | 新兴县 | 今山西忻县
-中部都尉 | 四千余落 | 大陵县 | 今山西平陆县
+新兴郡治九原城（即今忻州城）——由[color=#0066FF][url={"research": "梁习", "cat": "people"}]梁习[/url][/color]选址新建，是忻州城的历史起点。
 
 
-[color=#AAAAAA]　史料来源：《晋书·匈奴传》（吕思勉《三国史话》引录注），"以豹为左部帅，其余部帅，皆以[color=#6699FF][url={"research": "刘氏", "cat": "people"}]刘氏[/url][/color]为之。选汉人为司马以监督之。"[/color]
-[color=#AAAAAA]　[b]部落总体量[/b]：五部约合 3万余户、近20万人口（左部最强，约1万户以上）[/color]
-
-[b]左部帅刘豹的族源：[/b]
-- 刘豹 = 于扶罗之子（南匈奴屠各种贵人），呼厨泉任之为[color=#6699FF][url={"research": "左贤王", "cat": "people"}]左贤王[/url][/color]
-- 刘豹即[b]刘渊之父[/b]——这是建安二十一年埋下的历史种子，其子孙后来建立汉赵（304年）
-- 学界争议：刘渊极可能是"屠各人"而非匈奴正统（屠各为内迁匈奴帝国多部落族群之一）
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安二十一年（216年）南匈奴五部分置[/font][/b]
 
 
-[b]曹魏并州（黄初元年220年复置）[/b]
+[color=#0066FF][url={"research": "呼厨泉", "cat": "people"}]呼厨泉[/url][/color]单于赴邺觐见，曹操留之于[color=#0066FF][url={"research": "邺城", "cat": "geography"}]邺城[/url][/color]，以右贤王[color=#000000]去卑[/color]监国。南匈奴分为五部，散置并州各县：
+
+
+[table=4]
+[cell][b]部别[/b][/cell]
+[cell][b]人口[/b][/cell]
+[cell][b]驻地[/b][/cell]
+[cell][b]今址参考[/b][/cell]
+[cell]左部（帅：刘豹）[/cell]
+[cell]万余落[/cell]
+[cell]大原故泫氏县[/cell]
+[cell]今山西高平县[/cell]
+[cell]右部都尉[/cell]
+[cell]六千余落[/cell]
+[cell]祁县[/cell]
+[cell]今山西祁县[/cell]
+[cell]南部都尉[/cell]
+[cell]三千余落[/cell]
+[cell]蒲子县[/cell]
+[cell]今山西隰县[/cell]
+[cell]北部都尉[/cell]
+[cell]四千余落[/cell]
+[cell]新兴县[/cell]
+[cell]今山西忻县[/cell]
+[cell]中部都尉[/cell]
+[cell]四千余落[/cell]
+[cell]大陵县[/cell]
+[cell]今山西平陆县[/cell]
+[/table]
+
+
+[indent][color=#666666]┃ 史料来源：《晋书·匈奴传》（吕思勉《三国史话》引录注），"以豹为左部帅，其余部帅，皆以[color=#0066FF][url={"research": "刘氏", "cat": "people"}]刘氏[/url][/color]为之。选汉人为司马以监督之。"[/color][/indent]
+[indent][color=#666666]┃ [color=#000000]部落总体量[/color]：五部约合 3万余户、近20万人口（左部最强，约1万户以上）[/color][/indent]
+
+
+[color=#000000]左部帅刘豹的族源：[/color]
+
+[indent]•  刘豹 = 于扶罗之子（南匈奴屠各种贵人），呼厨泉任之为[color=#0066FF][url={"research": "左贤王", "cat": "people"}]左贤王[/url][/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  刘豹即[color=#000000]刘渊之父[/color]——这是建安二十一年埋下的历史种子，其子孙后来建立汉赵（304年）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  学界争议：刘渊极可能是"屠各人"而非匈奴正统（屠各为内迁匈奴帝国多部落族群之一）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹魏并州（黄初元年220年复置）[/font][/b]
+
 
 领七郡：太原、上党、建兴（新兴）、西河、雁门、乐平、新兴，仍治晋阳。
 《晋书》："魏黄初元年复置并州，自陉岭以北并弃之，至晋因而不改。"
 
 
-[b]战略地位[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]并凉骑兵集团[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]战略地位[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]并凉骑兵集团[/font][/b]
+
 
 "并凉劲兵"是汉末武力资源的重要来源。并州边郡出身者"载戟挟矛，弦弓负矢"，实战经验丰富：
-- [b][color=#6699FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color][/b]（五原九原人）
-- [b][color=#6699FF][url={"research": "张辽", "cat": "people"}]张辽[/url][/color][/b]（雁门马邑人）
-- [b][color=#6699FF][url={"research": "张杨", "cat": "people"}]张杨[/url][/color][/b]（云中人）
+
+[indent]•  [color=#000000][color=#0066FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color][/color]（五原九原人）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000][color=#0066FF][url={"research": "张辽", "cat": "people"}]张辽[/url][/color][/color]（雁门马邑人）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000][color=#0066FF][url={"research": "张杨", "cat": "people"}]张杨[/url][/color][/color]（云中人）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 三人均出身并州边郡，是建安时代最重要的骑将。
 
 
-[b]太行山屏障体系（关隘精确考辨）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]太行山屏障体系（关隘精确考辨）[/font][/b]
 
-并州与[color=#6699FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]之间，太行山构成天然屏障，控扼关隘：
 
-[b]壶口关（汉代太行名关）：[/b]
-- 今址：[b]黎城县东阳关[/b]（非长治市东南的壶关山）
-- 控扼道路：滏口陉（邺城—晋阳大道）
-- 史料：《汉书·地理志》上党郡"有上党关、壶口关、石研关、天井关"——四关均在郡界，壶口关在上党郡东界（与魏郡之间的太行山）
-- [color=#6699FF][url={"research": "杜预", "cat": "people"}]杜预[/url][/color]《左传注》（西晋）："潞县东有壶口关"；《元和郡县图志》黎城县："古壶关，在县东二十五里。"
-- 北朝国道：高欢家族往来邺城↔晋阳走"晋阳→壶口关→滏口→邺城"一线
-- [b]刘琨入并州[/b]（307年）："即日达壶口关"（《晋书·刘琨传》）——再次印证此为邺城→晋阳主干道
+并州与[color=#0066FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]之间，太行山构成天然屏障，控扼关隘：
 
-[b]壶关山口（高干守此）：[/b]
-- 今址：今长治市东南约6.5公里（崖径险狭，形如壶口，与"壶口关"地名相近但非同一处）
-- 控扼道路：羊肠坂道（邺城→林州→壶关县东南→长治）
-- 高干"举兵守壶关口"= 守此处山口，乃上党城东南的腹地门户
+[color=#000000]壶口关（汉代太行名关）：[/color]
 
-[b]羊肠坂（曹操《苦寒行》所经）：[/b]
-- 今址：壶关县东南约50公里，回车村→土谷堆→盘底村，约33公里峡谷；郊沟河（沾水）发源于此
-- 《汉书·地理志》壶关县条："有羊肠坂"（注：壶口关另在黎城，两处均属上党郡，分控不同通道）
-- 曹公垒遗址：《元和郡县图志》"曹公垒，在县东南一百二里。曹公攻高干所筑。"
+[indent]•  今址：[color=#000000]黎城县东阳关[/color]（非长治市东南的壶关山）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  控扼道路：滏口陉（邺城—晋阳大道）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  史料：《汉书·地理志》上党郡"有上党关、壶口关、石研关、天井关"——四关均在郡界，壶口关在上党郡东界（与魏郡之间的太行山）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "杜预", "cat": "people"}]杜预[/url][/color]《左传注》（西晋）："潞县东有壶口关"；《元和郡县图志》黎城县："古壶关，在县东二十五里。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  北朝国道：高欢家族往来邺城↔晋阳走"晋阳→壶口关→滏口→邺城"一线[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]刘琨入并州[/color]（307年）："即日达壶口关"（《晋书·刘琨传》）——再次印证此为邺城→晋阳主干道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]百年误读的纠正：[/b]
+
+[color=#000000]壶关山口（[color=#0066FF][url={"research": "高干", "cat": "people"}]高干[/url][/color]守此）：[/color]
+
+[indent]•  今址：今长治市东南约6.5公里（崖径险狭，形如壶口，与"壶口关"地名相近但非同一处）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  控扼道路：羊肠坂道（邺城→林州→壶关县东南→长治）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  高干"举兵守壶关口"= 守此处山口，乃上党城东南的腹地门户[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]羊肠坂（曹操《苦寒行》所经）：[/color]
+
+[indent]•  今址：壶关县东南约50公里，回车村→土谷堆→盘底村，约33公里峡谷；郊沟河（沾水）发源于此[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《汉书·地理志》壶关县条："有羊肠坂"（注：壶口关另在黎城，两处均属上党郡，分控不同通道）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹公垒遗址：《元和郡县图志》"曹公垒，在县东南一百二里。曹公攻高干所筑。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]百年误读的纠正：[/color]
 清初顾祖禹《读史方舆纪要》、《中国历史地图集》（早期版本）将汉代"壶口关"误标于今长治市东南壶关山，导致后世研究中"壶口关=壶关山"的混淆。2025年刊发的学术考证已彻底厘清（来源：`ref-hukou-pass-kaozheng.md`）。
 
-[b]井陉：[/b] 太原盆地东出冀州的主要通道
+[color=#000000]井陉：[/color] 太原盆地东出冀州的主要通道
 
-[b]羊肠坂通道要点总结：[/b]
+[color=#000000]羊肠坂通道要点总结：[/color]
 邺城 → 林州盆地 → 浙水谷地 → 壶关县境 → 羊肠坂（50km峡谷）→ 长治（上党城）——路程最短但极为艰险，曹操建安十一年亲征走此道，《苦寒行》即作于途中。
 
 
-[b]晋阳的战略核心地位[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]晋阳的战略核心地位[/font][/b]
+
 
 晋阳城居汾河谷地中部，四面环山，易守难攻：
-- 北控代郡、雁门（防御游牧）
-- 南接河东（通关中）
-- 东通太行诸关（入河北）
-- 西临吕梁山（阻隔陕北）
+
+[indent]•  北控代郡、雁门（防御游牧）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  南接河东（通关中）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  东通太行诸关（入河北）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  西临吕梁山（阻隔陕北）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]汉末三国重要事件时线[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]中平五年（188年）：张懿之死[/b]
-
-并州刺史张懿被匈奴屠各部落（休屠胡人）击杀，丁原奉命接任并州刺史。此后局势迅速失控。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]汉末三国重要事件时线[/font][/b]
 
 
-[b]189年：丁原入京与并州军集团的形成[/b]
-
-丁原率并州劲兵应[color=#6699FF][url={"research": "何进", "cat": "people"}]何进[/url][/color]之召入京，不驻晋阳而屯河内。并州军核心：
-- [b]吕布[/b]（五原九原人，骑都尉）
-- [b]张杨[/b]（云中人，武猛从事）
-- [b]张辽[/b]（雁门马邑人，从事）
-
-[color=#6699FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]诱使吕布杀丁原，并州军被吞并；张杨退守上党独立割据；张辽随吕布辗转多方。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]中平五年（188年）：张懿之死[/font][/b]
 
 
-[b]建安九年（204年）—十年（205年）：高干保据并州[/b]
+并州刺史张懿被匈奴屠各部落（休屠胡人）击杀，[color=#0066FF][url={"research": "丁原", "cat": "people"}]丁原[/url][/color]奉命接任并州刺史。此后局势迅速失控。
 
-[color=#6699FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]以外甥高干任并州牧（后改刺史）。袁绍败后，高干降曹，保留刺史职务。
 
-[b]建安十年（205年）[/b]：高干趁曹操北征乌桓，起兵反叛，"执上党太守，举兵守壶关口"。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]189年：丁原入京与并州军集团的形成[/font][/b]
+
+
+丁原率并州劲兵应[color=#0066FF][url={"research": "何进", "cat": "people"}]何进[/url][/color]之召入京，不驻晋阳而屯河内。并州军核心：
+
+[indent]•  [color=#000000]吕布[/color]（五原九原人，骑都尉）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张杨[/color]（云中人，武猛从事）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张辽[/color]（雁门马邑人，从事）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]诱使吕布杀丁原，并州军被吞并；张杨退守上党独立割据；张辽随吕布辗转多方。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安九年（204年）—十年（205年）：高干保据并州[/font][/b]
+
+
+[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]以外甥高干任并州牧（后改刺史）。袁绍败后，高干降曹，保留刺史职务。
+
+[color=#000000]建安十年（205年）[/color]：高干趁曹操北征乌桓，起兵反叛，"执上党太守，举兵守壶关口"。
 
 （《三国志·武帝纪》及裴注《高干传》）：
 
-[color=#AAAAAA]　干闻公讨乌丸，乃以州叛，执上党太守，举兵守壶关口。[/color]
-[color=#AAAAAA]　遣[color=#6699FF][url={"research": "乐进", "cat": "people"}]乐进[/url][/color]、[color=#6699FF][url={"research": "李典", "cat": "people"}]李典[/url][/color]击之，干还守壶关城。[/color]
+
+[indent][color=#666666]┃ 干闻公讨乌丸，乃以州叛，执上党太守，举兵守壶关口。[/color][/indent]
+[indent][color=#666666]┃ 遣[color=#0066FF][url={"research": "乐进", "cat": "people"}]乐进[/url][/color]、[color=#0066FF][url={"research": "李典", "cat": "people"}]李典[/url][/color]击之，干还守壶关城。[/color][/indent]
 
 
-[b]建安十一年（206年）：曹操亲征并州，壶关之战[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安十一年（206年）：曹操亲征并州，壶关之战[/font][/b]
 
-[b]正月[/b]，曹操亲征，留世子[color=#6699FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]守邺，别驾[color=#6699FF][url={"research": "崔琰", "cat": "people"}]崔琰[/url][/color]辅佐。
 
-[b]乐进、李典"北道"行军路线：[/b] 从邺城经[b]滏口陉[/b]（过壶口关/今黎城东阳关→黎城→潞城方向北上），从北面"回出其后"——此为上党台地东出太行的主干道，称"北道"。
+[color=#000000]正月[/color]，曹操亲征，留世子[color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]守邺，别驾[color=#0066FF][url={"research": "崔琰", "cat": "people"}]崔琰[/url][/color]辅佐。
 
-[b]曹操亲征路线（羊肠坂道）：[/b] 邺城 → 向西入林州盆地 → 浙水谷地北上 → 壶关县境 → 羊肠坂（今壶关县东南50km峡谷）→ 长治城下。距离最短但"艰哉何巍巍"，故《苦寒行》。
+[color=#000000]乐进、李典"北道"行军路线：[/color] 从邺城经[color=#000000]滏口陉[/color]（过壶口关/今黎城东阳关→黎城→潞城方向北上），从北面"回出其后"——此为上党台地东出太行的主干道，称"北道"。
 
-高干留将[b]夏昭、邓升[/b]守壶关城，自入匈奴求救，单于不受。
+[color=#000000]曹操亲征路线（羊肠坂道）：[/color] 邺城 → 向西入林州盆地 → 浙水谷地北上 → 壶关县境 → 羊肠坂（今壶关县东南50km峡谷）→ 长治城下。距离最短但"艰哉何巍巍"，故《苦寒行》。
 
-[b]围城三月[/b]，壶关降（约3—4月）。高干独与数骑亡走，欲南奔荆州，被[b]上洛都尉王琰[/b]截杀于途。并州悉平。
+高干留将[color=#000000]夏昭、邓升[/color]守壶关城，自入匈奴求救，单于不受。
+
+[color=#000000]围城三月[/color]，壶关降（约3—4月）。高干独与数骑亡走，欲南奔荆州，被[color=#000000]上洛都尉王琰[/color]截杀于途。并州悉平。
 
 曹操《苦寒行》即作于此次亲征翻越太行羊肠坂途中：
-[color=#AAAAAA]　"北上太行山，艰哉何巍巍！羊肠坂诘屈，车轮为之摧……"[/color]
+
+[indent][color=#666666]┃ "北上太行山，艰哉何巍巍！羊肠坂诘屈，车轮为之摧……"[/color][/indent]
+
 
 《元和郡县志》记录了曹操围城工程：
-[color=#AAAAAA]　"曹公之围壶关，起土山于城西北角，穿地道于城西，内筑界城以遮之。"[/color]
+
+[indent][color=#666666]┃ "曹公之围壶关，起土山于城西北角，穿地道于城西，内筑界城以遮之。"[/color][/indent]
+
 
 壶关地形补注：壶关山口（今长治市东南6.5km）两峰夹峙，巨岩相扼，仅容单车通行，是上党城进出羊肠坂道的门户。战场考古目前仅有文献记载，无系统田野发掘报告。
 
 
-[b]建安十一年（206年）后：梁习治并[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安十一年（206年）后：梁习治并[/font][/b]
 
-以别部司马[b]梁习[/b]（字子虞，陈郡柘人）领并州刺史。
+
+以别部司马[color=#000000]梁习[/color]（字子虞，陈郡柘人）领并州刺史。
 
 据《三国志·梁习传》（识典古籍版精确核对）：
 
-[b]到任状况[/b]：
-[color=#AAAAAA]　时承高干荒乱之余，胡狄在界，张雄跋扈，吏民亡叛，入其部落；兵家拥众，作为寇害，更相扇动，往往棋跱。[/color]
+[color=#000000]到任状况[/color]：
 
-[b]治政手段（分阶段）[/b]：
+[indent][color=#666666]┃ 时承高干荒乱之余，胡狄在界，张雄跋扈，吏民亡叛，入其部落；兵家拥众，作为寇害，更相扇动，往往棋跱。[/color][/indent]
 
-1. 先礼后兵剪除豪右：
-   > 习到官，诱喻招纳，皆礼召其豪右，稍稍荐举，使诣幕府；豪右已尽，乃次发诸丁强以为义从；又因大军出征，分请以为勇力。
 
-2. 强制迁移人口：
-   > 吏兵已去之后，稍移其家，前后送邺，凡数万口；其不从命者，兴兵致讨，斩首千数，降附者万计。
+[color=#000000]治政手段（分阶段）[/color]：
 
-3. 整合南匈奴：
-   > 单于恭顺，名王稽颡，部曲服事供职，同于编户。
 
-4. 置屯田：
-   > 习表置屯田都尉二人，领客六百夫，于道次耕种菽粟，以给人牛之费。
+[indent]1.  先礼后兵剪除豪右： > 习到官，诱喻招纳，皆礼召其豪右，稍稍荐举，使诣幕府；豪右已尽，乃次发诸丁强以为义从；又因大军出征，分请以为勇力。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  强制迁移人口： > 吏兵已去之后，稍移其家，前后送邺，凡数万口；其不从命者，兴兵致讨，斩首千数，降附者万计。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  整合南匈奴： > 单于恭顺，名王稽颡，部曲服事供职，同于编户。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  置屯田： > 习表置屯田都尉二人，领客六百夫，于道次耕种菽粟，以给人牛之费。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  最终结果： > 边境肃清，百姓布野，勤劝农桑，令行禁止。……政治常为天下最。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-5. 最终结果：
-   > 边境肃清，百姓布野，勤劝农桑，令行禁止。……政治常为天下最。
 
-[b]任期梳理[/b]：
-- 建安十一年（206年）：以别部司马领并州刺史
-- 建安十八年（213年）：州并属冀州，改拜议郎、西部都督从事（实际仍主故部曲）
-- 黄初元年（220年）：复置并州，复为刺史，进封申门亭侯
-- 太和二年（228年）：征拜大司农
-- 太和四年（230年）：薨
+[color=#000000]任期梳理[/color]：
+
+[indent]•  建安十一年（206年）：以别部司马领并州刺史[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  建安十八年（213年）：州并属冀州，改拜议郎、西部都督从事（实际仍主故部曲）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  黄初元年（220年）：复置并州，复为刺史，进封申门亭侯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  太和二年（228年）：征拜大司农[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  太和四年（230年）：薨[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 在州约22—24年。"习在州二十余年，而居处贫穷，无方面珍物，明帝异之，礼赐甚厚。"
 
 
-[b]建安年间：梁习斩育延——鲜卑大人在并州[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安年间：梁习斩育延——鲜卑大人在并州[/font][/b]
+
 
 《三国志·梁习传》注引《魏略》，记录了梁习在任期间处置鲜卑大人育延一事：
 
-[color=#AAAAAA]　鲜卑大人育延，常为州所畏，而一旦将其部落五千余骑诣习，求互市。习念不听则恐其怨；若听到州下，又恐为所略，于是乃许之。往与会空城中交市。遂敕郡县，自将治中以下军往就之。市易未毕，市吏收缚一胡。延骑皆惊，上马弯弓，围习数重，吏民惶怖，不知所施。习乃徐呼市吏，问缚胡意，而胡实侵犯人。习乃使吏呼延，延到，习责延曰："汝胡自犯法，吏不侵汝，汝何为使诸骑惊骇邪？"遂斩之。余骑破胆，不敢动。是后无寇虏。[/color]
 
-[b]分析：[/b]
-- "常为州所畏"——育延之前已多次令并州官员妥协
-- 梁习策略：设空城互市，亲将军队监控，不正面拒绝鲜卑要求
-- 从容斩杀育延（此前鲜卑大人在州官眼中近乎不可动），余骑"破胆"
-- 是梁习威信树立的标志性事件，此后"无寇虏"
+[indent][color=#666666]┃ 鲜卑大人育延，常为州所畏，而一旦将其部落五千余骑诣习，求互市。习念不听则恐其怨；若听到州下，又恐为所略，于是乃许之。往与会空城中交市。遂敕郡县，自将治中以下军往就之。市易未毕，市吏收缚一胡。延骑皆惊，上马弯弓，围习数重，吏民惶怖，不知所施。习乃徐呼市吏，问缚胡意，而胡实侵犯人。习乃使吏呼延，延到，习责延曰："汝胡自犯法，吏不侵汝，汝何为使诸骑惊骇邪？"遂斩之。余骑破胆，不敢动。是后无寇虏。[/color][/indent]
 
 
-[b]建安二十一年（216年）：南匈奴五部分置[/b]
+[color=#000000]分析：[/color]
+
+[indent]•  "常为州所畏"——育延之前已多次令并州官员妥协[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  梁习策略：设空城互市，亲将军队监控，不正面拒绝鲜卑要求[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  从容斩杀育延（此前鲜卑大人在州官眼中近乎不可动），余骑"破胆"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  是梁习威信树立的标志性事件，此后"无寇虏"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]建安二十一年（216年）：南匈奴五部分置[/font][/b]
+
 
 详见"地理考证"章节。此事件是并州有史以来最重要的社会结构转型节点之一——曹操以短期稳定换取长期隐患，将近20万匈奴人散布汾河沿线，埋下"五胡乱华"的种子。
 
 
-[b]黄初元年（220年）后：鲜卑步度根入保并州[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]黄初元年（220年）后：鲜卑步度根入保并州[/font][/b]
 
-曹魏文帝时期，[color=#6699FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]代郡鲜卑[color=#6699FF][url={"research": "步度根", "cat": "people"}]步度根[/url][/color]与[color=#6699FF][url={"research": "轲比能", "cat": "people"}]轲比能[/url][/color]争雄，势渐弱。步度根"将其众万余落保太原、雁门郡"，依附曹魏在并州境内安置，"一心为魏守边，不为边害"。
+
+曹魏文帝时期，[color=#0066FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color]代郡鲜卑[color=#0066FF][url={"research": "步度根", "cat": "people"}]步度根[/url][/color]与[color=#0066FF][url={"research": "轲比能", "cat": "people"}]轲比能[/url][/color]争雄，势渐弱。步度根"将其众万余落保太原、雁门郡"，依附曹魏在并州境内安置，"一心为魏守边，不为边害"。
 
 这是继南匈奴五部之后，又一批大规模游牧部落在并州境内的安置。太原、雁门二郡的"胡汉杂处"程度进一步加深。
 
-[b]步度根结局（青龙元年233年）：[/b]
-魏明帝年间，轲比能诱步度根和亲，后寇钞并州；魏遣骁骑将军[color=#6699FF][url={"research": "秦朗", "cat": "people"}]秦朗[/url][/color]讨之，步度根部众（[color=#6699FF][url={"research": "泄归泥", "cat": "people"}]泄归泥[/url][/color]部）降，步度根本人被轲比能所杀。
+[color=#000000]步度根结局（青龙元年233年）：[/color]
+魏明帝年间，轲比能诱步度根和亲，后寇钞并州；魏遣骁骑将军[color=#0066FF][url={"research": "秦朗", "cat": "people"}]秦朗[/url][/color]讨之，步度根部众（[color=#0066FF][url={"research": "泄归泥", "cat": "people"}]泄归泥[/url][/color]部）降，步度根本人被轲比能所杀。
 
 
-[b]黄初六年（225年）：梁习大破轲比能[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]黄初六年（225年）：梁习大破轲比能[/font][/b]
+
 
 《资治通鉴》黄初六年条：
-[color=#AAAAAA]　并州刺史梁习讨轲比能，大破之。[/color]
+
+[indent][color=#666666]┃ 并州刺史梁习讨轲比能，大破之。[/color][/indent]
+
 
 轲比能为鲜卑三部中势力最强者，"控弦十余万骑"。梁习此战之后，"轲比能遂不复为寇"（梁习传语）——并州北境鲜卑威胁得到根本压制，持续至青龙三年（235年）王雄使韩龙刺杀轲比能为止。
 
 
-[b]嘉平三年（251年）：邓艾论并州匈奴危机[/b]
-
-[color=#6699FF][url={"research": "邓艾", "cat": "people"}]邓艾[/url][/color]上言（《三国志·邓艾传》原文）：
-[color=#AAAAAA]　"嘉平中，并州右贤王刘豹并为一部。艾上言：'自单于在外，莫能牵制长卑，诱而致之，使来入侍，由是羌夷失统，合散无主，以单于在内，万里顺轨。今单于之尊日疏，外土之威寝重，则胡虏不可不深备也。闻刘豹部有叛胡，可因叛割马二国，以分其势。去卑功显前朝，而子不继业，宜加其子显号，使居雁门。离国弱寇，追录旧勋，此御边长计也。'"[/color]
-
-- 邓艾此议获部分采纳：[color=#6699FF][url={"research": "司马师", "cat": "people"}]司马师[/url][/color]分南匈奴为"叛胡"、去卑之子、刘豹三部
-- 左部独强局面短暂被打压，但未根本改变
-- 邓艾的分析显示：单于（呼厨泉）留邺，各部帅已无法牵制，外部匈奴威胁反而增大
+[b][font=res://resource/font/FandolSong-Bold/26.tres]嘉平三年（251年）：邓艾论并州匈奴危机[/font][/b]
 
 
-[b]北征乌桓路线：白檀与平冈今址考证[/b]
+[color=#0066FF][url={"research": "邓艾", "cat": "people"}]邓艾[/url][/color]上言（《三国志·邓艾传》原文）：
+
+[indent][color=#666666]┃ "嘉平中，并州右贤王刘豹并为一部。艾上言：'自单于在外，莫能牵制长卑，诱而致之，使来入侍，由是羌夷失统，合散无主，以单于在内，万里顺轨。今单于之尊日疏，外土之威寝重，则胡虏不可不深备也。闻刘豹部有叛胡，可因叛割马二国，以分其势。去卑功显前朝，而子不继业，宜加其子显号，使居雁门。离国弱寇，追录旧勋，此御边长计也。'"[/color][/indent]
 
 
-[b]史料背景[/b]
+[indent]•  邓艾此议获部分采纳：[color=#0066FF][url={"research": "司马师", "cat": "people"}]司马师[/url][/color]分南匈奴为"叛胡"、去卑之子、刘豹三部[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  左部独强局面短暂被打压，但未根本改变[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  邓艾的分析显示：单于（呼厨泉）留邺，各部帅已无法牵制，外部匈奴威胁反而增大[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-建安十二年（207年），曹操从无终（今天津蓟州）出卢龙塞北征乌桓，经[b]白檀[/b]、[b]平冈[/b]，至白狼山大破乌桓联军，追至柳城。《三国志·武帝纪》记此路线：
 
-[color=#AAAAAA]　"乃堑山堙谷五百余里，经白檀，历平冈，涉鲜卑庭，东指柳城。未至二百里，虏乃知之。"[/color]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]北征乌桓路线：白檀与平冈今址考证[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]史料背景[/font][/b]
+
+
+建安十二年（207年），曹操从无终（今天津蓟州）出卢龙塞北征乌桓，经[color=#000000]白檀[/color]、[color=#000000]平冈[/color]，至白狼山大破乌桓联军，追至柳城。《三国志·武帝纪》记此路线：
+
+
+[indent][color=#666666]┃ "乃堑山堙谷五百余里，经白檀，历平冈，涉鲜卑庭，东指柳城。未至二百里，虏乃知之。"[/color][/indent]
+
 
 （注：此役发生于建安十二年，即207年。与建安十年205—206年的高干叛乱时间不同。）
 
-卢龙道即[color=#6699FF][url={"research": "田畴", "cat": "people"}]田畴[/url][/color]所谓"路近而便"之道，辛德勇《古代交通与地理文献研究》描述为：出卢龙塞沿滦河左岸北行，再沿滦河支流瀑河北上，直到老哈河上游西岸，折而东去，沿大凌河趋向东北。
+卢龙道即[color=#0066FF][url={"research": "田畴", "cat": "people"}]田畴[/url][/color]所谓"路近而便"之道，辛德勇《古代交通与地理文献研究》描述为：出卢龙塞沿滦河左岸北行，再沿滦河支流瀑河北上，直到老哈河上游西岸，折而东去，沿大凌河趋向东北。
 
 
-[b]白檀今址[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]白檀今址[/font][/b]
 
-[b]主流说：河北宽城县药王庙汉城遗址[/b]
 
-- 陈烈《西汉白檀县故址考》（1990年《北方文物》第4期）：白檀县在今河北省宽城县城东8里药王庙村汉城遗址，属西汉右北平郡。
-- 关键证据：《史记·韩长孺列传》载汉武帝诏李广"弭节白檀，以临右北平盛秋"，孟康注明"[b]白檀，县名也，属右北平[/b]"。白檀明确属右北平郡，而宽城地区在汉代属右北平，滦平属渔阳郡。
-- 地形：宽城药王庙村北至平泉（凡城）段，公路沿瀑河岸边，冷岭山险水急，迂回湍急——此即"白檀之险"。
+[color=#000000]主流说：河北宽城县药王庙汉城遗址[/color]
 
-[b]否定滦平说的核心理由：[/b]
+
+[indent]•  陈烈《西汉白檀县故址考》（1990年《北方文物》第4期）：白檀县在今河北省宽城县城东8里药王庙村汉城遗址，属西汉右北平郡。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  关键证据：《史记·韩长孺列传》载汉武帝诏李广"弭节白檀，以临右北平盛秋"，孟康注明"[color=#000000]白檀，县名也，属右北平[/color]"。白檀明确属右北平郡，而宽城地区在汉代属右北平，滦平属渔阳郡。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  地形：宽城药王庙村北至平泉（凡城）段，公路沿瀑河岸边，冷岭山险水急，迂回湍急——此即"白檀之险"。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]否定滦平说的核心理由：[/color]
 出卢龙塞后若要到达滦平，须向西北绕行数百里再折东，与"路近而便"记载严重相悖。《热河志》（清初）直言此为"南辕北辙，此固势之必无"。辛德勇、陈业新虽各自主张不同的白檀位置，但均认同曹操不可能绕道滦平。
 
-[b]凌源安杖子说已被否定[/b]：1975年《中国历史地图集》内部版曾将平冈标注在凌源，是谭其骧基于"柳城在朝阳，平冈当在朝阳西南"的推论，彼时安杖子尚未发掘。1977年宁城黑城子发现[b]王莽钱范作坊遗址[/b]（《汉书·王莽传》载郡治方能铸钱），1982年谭其骧在公开发行版《中国历史地图集》中已更正平冈标注至宁城黑城子。1996年辽宁省文物考古研究院发掘报告认定安杖子为[b]石城县[/b]。2022年凌源市政府网站亦将安杖子定性为"右北平郡石城县"，学界定论已与官方完全一致。
+[color=#000000]凌源安杖子说已被否定[/color]：1975年《中国历史地图集》内部版曾将平冈标注在凌源，是谭其骧基于"柳城在朝阳，平冈当在朝阳西南"的推论，彼时安杖子尚未发掘。1977年宁城黑城子发现[color=#000000]王莽钱范作坊遗址[/color]（《汉书·王莽传》载郡治方能铸钱），1982年谭其骧在公开发行版《中国历史地图集》中已更正平冈标注至宁城黑城子。1996年辽宁省文物考古研究院发掘报告认定安杖子为[color=#000000]石城县[/color]。2022年凌源市政府网站亦将安杖子定性为"右北平郡石城县"，学界定论已与官方完全一致。
 
 
-[b]平冈今址[/b]
-
-[b]主流说：内蒙古宁城县甸子镇黑城村古城遗址[/b]
-
-- 位置：今内蒙古赤峰市宁城县城西南60公里甸子镇黑城村，老哈河（西辽河源头之一）上游开阔地带。
-- 遗址规格：
-  - 外罗城（秦汉平冈城）：东西长1800米，南北宽800米，南北各一门，城墙残垣高约1.5米
-  - 战国燕国始建，秦汉两代沿用，东汉以后渐渐废弃
-- 出土文物：汉代封泥（"渔阳太守章""白狼之丞""卫多"）、铜印（"部曲将印""假司马印"等）、新莽始建国元年铭款钱范、汉代瓦当等
-- 学界支持：李治亭、严耕望等多数历史地理学者，以及承德宽城说学者均认同平冈在黑城村
-
-[b]已淘汰说：凌源安杖子古城[/b]（1995年《凌源县志》首提，已被考古否定）
-- 安杖子城址面积不足10万平方米，是宁城黑城子（144万平方米+）的约1/15。
-- 1996年《考古学报》发掘报告认定安杖子为[b]石城县[/b]故城址（非平冈）。
-- [b]2022年，凌源市政府官方公布安杖子为"右北平郡石城县"[/b]——凌源官方已自行放弃平冈主张。
-- 两地政府达成共识：黑城子=平冈，安杖子=石城县，争议已终结。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]平冈今址[/font][/b]
 
 
-[b]北征路线综合复原[/b]
+[color=#000000]主流说：内蒙古宁城县甸子镇黑城村古城遗址[/color]
 
-[b]进军路线（卢龙道，建安十二年207年七月）：[/b]
+
+[indent]•  位置：今内蒙古赤峰市宁城县城西南60公里甸子镇黑城村，老哈河（西辽河源头之一）上游开阔地带。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  遗址规格：[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  外罗城（秦汉平冈城）：东西长1800米，南北宽800米，南北各一门，城墙残垣高约1.5米[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  战国燕国始建，秦汉两代沿用，东汉以后渐渐废弃[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  出土文物：汉代封泥（"渔阳太守章""白狼之丞""卫多"）、铜印（"部曲将印""假司马印"等）、新莽始建国元年铭款钱范、汉代瓦当等[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  学界支持：李治亭、严耕望等多数历史地理学者，以及承德宽城说学者均认同平冈在黑城村[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]已淘汰说：凌源安杖子古城[/color]（1995年《凌源县志》首提，已被考古否定）
+
+[indent]•  安杖子城址面积不足10万平方米，是宁城黑城子（144万平方米+）的约1/15。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  1996年《考古学报》发掘报告认定安杖子为[color=#000000]石城县[/color]故城址（非平冈）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]2022年，凌源市政府官方公布安杖子为"右北平郡石城县"[/color]——凌源官方已自行放弃平冈主张。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  两地政府达成共识：黑城子=平冈，安杖子=石城县，争议已终结。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]北征路线综合复原[/font][/b]
+
+
+[color=#000000]进军路线（卢龙道，建安十二年207年七月）：[/color]
 ```
 无终（今天津蓟州） → 卢龙塞（今河北喜峰口/潘家口附近）
   → 白檀/白檀之险（今河北宽城县一带，瀑河谷地）
@@ -318,224 +514,385 @@
   → 白狼山（今辽宁喀左县大阳山一带）[与平冈约200里]
   → 柳城（今辽宁朝阳市袁台子一带）[追击约200里]
 ```
-全程：出卢龙塞至柳城约[b]七百里[/b]。
+全程：出卢龙塞至柳城约[color=#000000]七百里[/color]。
 
-[b]回师路线（东道/碣石道）：[/b]
+[color=#000000]回师路线（东道/碣石道）：[/color]
 马骧民（中华读书报2020）考证：回军走傍海道，经建昌→榆关（山海关）→碣石山→无终→邺城。
 "军还入塞"之"塞"，马骧民认为指榆关（山海关），而非卢龙塞。
 曹操《观沧海》作于此次回师途中登碣石山时。
 
 
-[b]南匈奴五部：后三国时代的命运[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]曹魏中期（220—251年）[/b]
-
-- 五部在并州各郡安置，以汉人司马监督，各部帅以刘氏担任
-- 左部帅刘豹势力独大，左部约万余落，远超其他四部
-- 北部都尉驻新兴县（忻县），与梁习新建的新兴郡治九原城相近
-- 魏明帝太和五年（231年）：复置护匈奴中郎将，加强监管
-- "魏末，复改帅为都尉"（《刘元海载记》），太康中（280年代）正式改称
+[b][font=res://resource/font/FandolSong-Bold/28.tres]南匈奴五部：后三国时代的命运[/font][/b]
 
 
-[b]曹魏嘉平三年（251年）：右贤王刘豹"并为一部"事件[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹魏中期（220—251年）[/font][/b]
+
+
+[indent]•  五部在并州各郡安置，以汉人司马监督，各部帅以刘氏担任[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  左部帅刘豹势力独大，左部约万余落，远超其他四部[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  北部都尉驻新兴县（忻县），与梁习新建的新兴郡治九原城相近[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  魏明帝太和五年（231年）：复置护匈奴中郎将，加强监管[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "魏末，复改帅为都尉"（《刘元海载记》），太康中（280年代）正式改称[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹魏嘉平三年（251年）：右贤王刘豹"并为一部"事件[/font][/b]
+
 
 （见"重要事件"章节，邓艾上言详文）
 
 
-[b]西晋（265—304年）[/b]
-
-- 西晋继续曹魏分化政策，进一步"网格化管理"
-- 江统《徙戎论》（约300年前后）警告："今五部之众，户至数万，人口之盛，过于西戎。"建议将少数民族迁出关外，未被采纳
-- 刘渊（刘豹之子）被送洛阳为质子（咸熙年间，264—265年）
-- 刘渊在洛阳"二十余年"，读汉典，结交太原王氏、上党[color=#6699FF][url={"research": "李氏", "cat": "people"}]李氏[/url][/color]等并州士族
-- 晋武帝朝，[color=#6699FF][url={"research": "王浑", "cat": "people"}]王浑[/url][/color]、李熹等多次推荐刘渊为将领或征西将军，均以"非我族类，其心必异"为由遭阻
-- 晋武帝泰始年间，刘渊获任并州北部都尉，返回故地约十年（展示军政才能，结纳五部）
+[b][font=res://resource/font/FandolSong-Bold/26.tres]西晋（265—304年）[/font][/b]
 
 
-[b]八王之乱（300年）后——五部的最后爆发[/b]
+[indent]•  西晋继续曹魏分化政策，进一步"网格化管理"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  江统《徙戎论》（约300年前后）警告："今五部之众，户至数万，人口之盛，过于西戎。"建议将少数民族迁出关外，未被采纳[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  刘渊（刘豹之子）被送洛阳为质子（咸熙年间，264—265年）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  刘渊在洛阳"二十余年"，读汉典，结交太原王氏、上党[color=#0066FF][url={"research": "李氏", "cat": "people"}]李氏[/url][/color]等并州士族[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  晋武帝朝，[color=#0066FF][url={"research": "王浑", "cat": "people"}]王浑[/url][/color]、李熹等多次推荐刘渊为将领或征西将军，均以"非我族类，其心必异"为由遭阻[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  晋武帝泰始年间，刘渊获任并州北部都尉，返回故地约十年（展示军政才能，结纳五部）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-1. [b][color=#6699FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]王司马颖[/b]任刘渊为北单于、参丞相军事（约304年初），刘渊借机返回五部
-2. 左贤王[b]刘宣[/b]等匈奴贵族暗中推举刘渊为大单于，"复呼韩邪之业"
-3. [b]永兴元年（304年）十月[/b]：刘渊于[b]左国城[/b]（今山西离石东北）称汉王
-   - 刘渊的政治智慧：不立匈奴旗帜，而举"汉"为号，追尊刘邦、刘秀、[color=#6699FF][url={"research": "刘禅", "cat": "people"}]刘禅[/url][/color]——以汉家法统收人心
-   - 效果：史载"远人归附者数万"
-4. [b]永嘉二年（308年）[/b]：刘渊正式称帝，年号永凤，都平阳（今山西临汾）
-5. [b]永嘉五年（311年）[/b]：刘聪（刘渊之子）攻陷洛阳，俘晋怀帝——史称"永嘉之乱"
-6. [b]建兴四年（316年）[/b]：刘曜攻陷[color=#6699FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]，晋愍帝降，[b]西晋灭亡[/b]
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]八王之乱（300年）后——五部的最后爆发[/font][/b]
 
 
-[b]汉赵（前赵）的覆灭[/b]
+[indent]1.  [color=#000000][color=#0066FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]王司马颖[/color]任刘渊为北单于、参丞相军事（约304年初），刘渊借机返回五部[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  左贤王[color=#000000]刘宣[/color]等匈奴贵族暗中推举刘渊为大单于，"复呼韩邪之业"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]永兴元年（304年）十月[/color]：刘渊于[color=#000000]左国城[/color]（今山西离石东北）称汉王[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-- 刘渊死后（310年）：子刘聪篡位，汉国内乱
-- 刘聪死后（318年）：外戚靳准掌权，屠杀刘氏男女于东市，焚毁刘氏宗庙，掘刘渊、刘聪陵墓
-- 刘曜（刘渊养子）在关中重建汉赵，改国号为"赵"（319年），史称前赵
-- [b]329年[/b]：前赵被石勒的后赵所灭，刘曜被俘处斩
+
+[indent]　•  刘渊的政治智慧：不立匈奴旗帜，而举"汉"为号，追尊刘邦、刘秀、[color=#0066FF][url={"research": "刘禅", "cat": "people"}]刘禅[/url][/color]——以汉家法统收人心[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  效果：史载"远人归附者数万"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[indent]4.  [color=#000000]永嘉二年（308年）[/color]：刘渊正式称帝，年号永凤，都平阳（今山西临汾）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]5.  [color=#000000]永嘉五年（311年）[/color]：刘聪（刘渊之子）攻陷洛阳，俘晋怀帝——史称"永嘉之乱"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]6.  [color=#000000]建兴四年（316年）[/color]：刘曜攻陷[color=#0066FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]，晋愍帝降，[color=#000000]西晋灭亡[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]汉赵（前赵）的覆灭[/font][/b]
+
+
+[indent]•  刘渊死后（310年）：子刘聪篡位，汉国内乱[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  刘聪死后（318年）：外戚靳准掌权，屠杀刘氏男女于东市，焚毁刘氏宗庙，掘刘渊、刘聪陵墓[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  刘曜（刘渊养子）在关中重建汉赵，改国号为"赵"（319年），史称前赵[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]329年[/color]：前赵被石勒的后赵所灭，刘曜被俘处斩[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 至此，南匈奴五部的历史主体彻底完结，融入北方十六国混战格局。
 
 
-[b]西晋末期：刘琨守并（307—316年）[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]西晋末期：刘琨守并（307—316年）[/font][/b]
 
 
 这是并州史上三国之后最重要的章节，也是"建安二十一年种子发芽"的直接对应。
 
 
-[b]永嘉元年（307年）：刘琨就任并州刺史[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]永嘉元年（307年）：刘琨就任并州刺史[/font][/b]
 
-[b]刘琨[/b]（字越石，中山魏昌人，汉中山靖王刘胜之后）永嘉元年（307年）由东海王越表荐，出任并州刺史、加振威将军、领匈奴中郎将。
 
-[b]入并州路线（史料原文）：[/b]
+[color=#000000]刘琨[/color]（字越石，中山魏昌人，汉中山靖王刘胜之后）永嘉元年（307年）由东海王越表荐，出任并州刺史、加振威将军、领匈奴中郎将。
 
-《晋书·刘琨传》："九月末得发，道崄山峻，胡寇塞路，辄以少击众，冒险而进，顿伏艰危，辛苦备尝，[b]即日达壶口关[/b]。"
+[color=#000000]入并州路线（史料原文）：[/color]
 
-- 刘琨进入并州的关口是[b]壶口关[/b]（今黎城东阳关），再北上入晋阳——与曹操建安十一年征高干同一条入并州主干道
-- 到任时晋阳状况："[b]府寺焚毁，僵尸蔽地[/b]，其有存者，饥羸无复人色，荆棘成林，豺狼满道"
-- 残余户口："余户不满二万"，其中许多随东嬴公腾南迁邺城
+《晋书·刘琨传》："九月末得发，道崄山峻，胡寇塞路，辄以少击众，冒险而进，顿伏艰危，辛苦备尝，[color=#000000]即日达壶口关[/color]。"
 
-[b]重建晋阳：[/b]
+
+[indent]•  刘琨进入并州的关口是[color=#000000]壶口关[/color]（今黎城东阳关），再北上入晋阳——与曹操建安十一年征高干同一条入并州主干道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  到任时晋阳状况："[color=#000000]府寺焚毁，僵尸蔽地[/color]，其有存者，饥羸无复人色，荆棘成林，豺狼满道"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  残余户口："余户不满二万"，其中许多随东嬴公腾南迁邺城[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]重建晋阳：[/color]
 刘琨"翦除荆棘，收葬枯骸，造府朝，建市狱"，"恒以城门为战场，百姓负楯以耕，属鞬而耨"。
 数年间，"流人稍复，鸡犬之音复相接矣"。
 
-[b]对刘渊的离间策略：[/b]
+[color=#000000]对刘渊的离间策略：[/color]
 刘渊时在离石（约三百里外），刘琨"密遣离间其部杂虏，降者万余落，元海甚惧，遂城蒲子而居之"——直接延缓了刘渊建国步伐。
 
 
-[b]孤城吹笳（经典历史瞬间）[/b]
-
-[color=#AAAAAA]　"在晋阳，尝为胡骑所围数重，城中窘迫无计，琨乃乘月登楼清啸，贼闻之，皆凄然长叹。中夜奏胡笳，贼又流涕歔欷，有怀土之切。向晓复吹之，贼并弃围而走。"（《晋书·刘琨传》）[/color]
-
-——"孤城吹笳"的典故即出于此。刘琨选择演奏[b]胡笳[/b]（匈奴乐器），以敌军的乡愁音乐瓦解围城心理，是三国末期最著名的非武力化危机处置之一。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]孤城吹笳（经典历史瞬间）[/font][/b]
 
 
-[b]父母遇害与晋阳失守（316年前后）[/b]
+[indent][color=#666666]┃ "在晋阳，尝为胡骑所围数重，城中窘迫无计，琨乃乘月登楼清啸，贼闻之，皆凄然长叹。中夜奏胡笳，贼又流涕歔欷，有怀土之切。向晓复吹之，贼并弃围而走。"（《晋书·刘琨传》）[/color][/indent]
 
-刘聪遣子粲及令狐泥乘虚袭晋阳，太原太守高乔以郡降刘聪，[b]刘琨父母并遇害[/b]。
+
+——"孤城吹笳"的典故即出于此。刘琨选择演奏[color=#000000]胡笳[/color]（匈奴乐器），以敌军的乡愁音乐瓦解围城心理，是三国末期最著名的非武力化危机处置之一。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]父母遇害与晋阳失守（316年前后）[/font][/b]
+
+
+刘聪遣子粲及令狐泥乘虚袭晋阳，太原太守高乔以郡降刘聪，[color=#000000]刘琨父母并遇害[/color]。
 刘琨引猗卢并力攻粲，大败之，收复晋阳；但随后炎旱，穷蹙不能再守，率众赴幽州段匹磾处。
 
 
-[b]318年：刘琨被杀[/b]
-
-[b]地点：[/b] 幽州段匹磾处（今河北北部）
-[b]死因：[/b] 王敦密使段匹磾杀之，"称有诏收琨……遂缢之"，时年48岁
-[b]朝廷反应：[/b] "以匹磾尚强，当为国讨石勒，不举琨哀"
-[b]最后诗句：[/b] "何意百炼刚，化为绕指柔。"
-[b]追赠：[/b] 死后三年，元帝诏追赠太尉，谥曰愍
+[b][font=res://resource/font/FandolSong-Bold/26.tres]318年：刘琨被杀[/font][/b]
 
 
-[b]梁习—刘琨的历史接续[/b]
+[color=#000000]地点：[/color] 幽州段匹磾处（今河北北部）
+[color=#000000]死因：[/color] 王敦密使段匹磾杀之，"称有诏收琨……遂缢之"，时年48岁
+[color=#000000]朝廷反应：[/color] "以匹磾尚强，当为国讨石勒，不举琨哀"
+[color=#000000]最后诗句：[/color] "何意百炼刚，化为绕指柔。"
+[color=#000000]追赠：[/color] 死后三年，元帝诏追赠太尉，谥曰愍
 
 
-[b]人物[/b] | [b]任期[/b] | [b]到任时并州状况[/b] | [b]成就/结局[/b]
-梁习 | 206—228年（约22年） | "胡狄在界，张雄跋扈，吏民亡叛" | 政绩天下最，在州贫穷无珍物
-（西晋数任刺史） | 228—307年约80年 | — | —
-刘琨 | 307—316年（约9年） | "府寺焚毁，僵尸蔽地，余户不满二万" | 孤守晋阳，被杀于盟友之手
+[b][font=res://resource/font/FandolSong-Bold/26.tres]梁习—刘琨的历史接续[/font][/b]
+
+
+[table=4]
+[cell][b]人物[/b][/cell]
+[cell][b]任期[/b][/cell]
+[cell][b]到任时并州状况[/b][/cell]
+[cell][b]成就/结局[/b][/cell]
+[cell]梁习[/cell]
+[cell]206—228年（约22年）[/cell]
+[cell]"胡狄在界，张雄跋扈，吏民亡叛"[/cell]
+[cell]政绩天下最，在州贫穷无珍物[/cell]
+[cell]（西晋数任刺史）[/cell]
+[cell]228—307年约80年[/cell]
+[cell]—[/cell]
+[cell]—[/cell]
+[cell]刘琨[/cell]
+[cell]307—316年（约9年）[/cell]
+[cell]"府寺焚毁，僵尸蔽地，余户不满二万"[/cell]
+[cell]孤守晋阳，被杀于盟友之手[/cell]
+[/table]
 
 
 两次秩序崩溃后的重建，相距约百年，形成历史镜像。梁习的建设为三国时期并州的稳定奠基；刘琨面对的则是那批建安二十一年留下的"种子"已经发芽、并州已无可挽回的局面。
 
 
-[b]史实 vs 演义[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]方面[/b] | [b]史实[/b] | [b]演义[/b]
-丁原职衔 | 并州刺史（后任执金吾） | 演义中常误作荆州刺史
-吕布籍贯 | 五原九原人（并州边郡） | 演义同，但少强调并州军团背景
-高干 | 袁绍外甥，坚守壶关，逃走被杀，206年 | 演义几乎不提
-曹操围壶关 | 三月乃拔，费时费力；亲走羊肠坂 | 演义未展现
-壶关口与壶口关 | 两处不同：高干守的是今长治市东南壶关山口（腹地门户）；汉代"壶口关"是今黎城东阳关（太行名关） | 演义无此区分
-梁习治并 | 奠定曹魏西北稳定基础，政绩"天下最" | 演义完全未提
-梁习斩育延 | 从容斩杀鲜卑大人，余骑"破胆不敢动" | 演义不涉及
-梁习大破轲比能 | 黄初六年225年，轲比能"遂不复为寇" | 演义不涉及
-南匈奴五部 | 建安21年分置，近20万人散于汾河沿线 | 演义不涉及
-步度根保并州 | 万余落入保太原、雁门，后被轲比能杀 | 演义不涉及
-刘渊起源 | 南匈奴五部左贤王刘豹之子，建安21年分置埋种 | 在三国故事范围外
-邓艾论匈奴 | 嘉平三年（251年）上言分化刘豹，预见危机 | 演义无
-北征路线 | 经白檀（宽城）、平冈（宁城黑城），七百里至柳城 | 演义不展示路线细节
-刘琨守并州 | 孤守晋阳9年，孤城吹笳，父母遇害，最终被盟友所杀 | 三国演义范围外，但承接三国结构性后果
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-[b]晋阳城考古：魏晋层位现有实证[/b]
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]演义[/b][/cell]
+[cell]丁原职衔[/cell]
+[cell]并州刺史（后任执金吾）[/cell]
+[cell]演义中常误作荆州刺史[/cell]
+[cell]吕布籍贯[/cell]
+[cell]五原九原人（并州边郡）[/cell]
+[cell]演义同，但少强调并州军团背景[/cell]
+[cell]高干[/cell]
+[cell]袁绍外甥，坚守壶关，逃走被杀，206年[/cell]
+[cell]演义几乎不提[/cell]
+[cell]曹操围壶关[/cell]
+[cell]三月乃拔，费时费力；亲走羊肠坂[/cell]
+[cell]演义未展现[/cell]
+[cell]壶关口与壶口关[/cell]
+[cell]两处不同：高干守的是今长治市东南壶关山口（腹地门户）；汉代"壶口关"是今黎城东阳关（太行名关）[/cell]
+[cell]演义无此区分[/cell]
+[cell]梁习治并[/cell]
+[cell]奠定曹魏西北稳定基础，政绩"天下最"[/cell]
+[cell]演义完全未提[/cell]
+[cell]梁习斩育延[/cell]
+[cell]从容斩杀鲜卑大人，余骑"破胆不敢动"[/cell]
+[cell]演义不涉及[/cell]
+[cell]梁习大破轲比能[/cell]
+[cell]黄初六年225年，轲比能"遂不复为寇"[/cell]
+[cell]演义不涉及[/cell]
+[cell]南匈奴五部[/cell]
+[cell]建安21年分置，近20万人散于汾河沿线[/cell]
+[cell]演义不涉及[/cell]
+[cell]步度根保并州[/cell]
+[cell]万余落入保太原、雁门，后被轲比能杀[/cell]
+[cell]演义不涉及[/cell]
+[cell]刘渊起源[/cell]
+[cell]南匈奴五部左贤王刘豹之子，建安21年分置埋种[/cell]
+[cell]在三国故事范围外[/cell]
+[cell]邓艾论匈奴[/cell]
+[cell]嘉平三年（251年）上言分化刘豹，预见危机[/cell]
+[cell]演义无[/cell]
+[cell]北征路线[/cell]
+[cell]经白檀（宽城）、平冈（宁城黑城），七百里至柳城[/cell]
+[cell]演义不展示路线细节[/cell]
+[cell]刘琨守并州[/cell]
+[cell]孤守晋阳9年，孤城吹笳，父母遇害，最终被盟友所杀[/cell]
+[cell]三国演义范围外，但承接三国结构性后果[/cell]
+[/table]
 
 
-[b]三号建筑基址·第七层（魏晋十六国地层）出土"军曲侯印"[/b]
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]晋阳城考古：魏晋层位现有实证[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三号建筑基址·第七层（魏晋十六国地层）出土"军曲侯印"[/font][/b]
+
 
 2015—2017年，山西省考古研究所、太原市文物考古研究所在晋阳古城西北区域（晋源苗圃内）发掘三号建筑基址，共2500平方米：
 
-- 发现年代层位：东周、两汉、[b]魏晋十六国[/b]、北朝、唐及五代多处遗迹
-- 出土文物：1300余件（东周—五代各类）
-- "军曲侯印"出土于[b]第七层（魏晋十六国地层）[/b]
-  - 铜质，通高2厘米，边长2.8厘米，四字阴文篆刻"军曲侯印"，桥形钮
-  - 伴出泥筩（青铜筒形存封泥器）
-  - "军曲侯"= 比六百石武官（《后汉书·百官志》："部下有曲，曲有军侯一人，比六百石。"），为遗址中实用官印
 
-[b]意义：[/b]
-- 直接证明晋阳城遗址存在三国/魏晋考古层位（三号基址第七层属220—420年范围）
-- 遗址出土（非墓葬）说明三国时期晋阳城内有军事管理机构在此的实际活动
-- 三号基址主体为北朝营建，但下方的两汉、魏晋层位已有确证
+[indent]•  发现年代层位：东周、两汉、[color=#000000]魏晋十六国[/color]、北朝、唐及五代多处遗迹[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  出土文物：1300余件（东周—五代各类）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "军曲侯印"出土于[color=#000000]第七层（魏晋十六国地层）[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  铜质，通高2厘米，边长2.8厘米，四字阴文篆刻"军曲侯印"，桥形钮[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  伴出泥筩（青铜筒形存封泥器）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  "军曲侯"= 比六百石武官（《后汉书·百官志》："部下有曲，曲有军侯一人，比六百石。"），为遗址中实用官印[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]现状判断（截至2026年）：[/b]
+
+[color=#000000]意义：[/color]
+
+[indent]•  直接证明晋阳城遗址存在三国/魏晋考古层位（三号基址第七层属220—420年范围）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  遗址出土（非墓葬）说明三国时期晋阳城内有军事管理机构在此的实际活动[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  三号基址主体为北朝营建，但下方的两汉、魏晋层位已有确证[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]现状判断（截至2026年）：[/color]
 三号基址魏晋层位已有印证，但非系统专项发掘；整体遗址考古重心仍为北朝—唐五代层位。2025年度新发现（五号建筑基址）仍属晚唐五代，三国层位系统化发掘仍属结构性待完成事项。
 
 （来源：`ref-jinyang-weijin-layer.md`）
 
 
-[b]2025年新进展：晚唐五代五号建筑基址[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]2025年新进展：晚唐五代五号建筑基址[/font][/b]
+
 
 2025年，联合考古队（山西省考古研究院 + 太原市文物考古研究院 + 山西大学）发掘五号建筑基址：
-- 位置：晋阳古城西城中部核心区
-- 年代：[b]晚唐五代[/b]大型建筑基址
-- 意义：进一步完善北都布局，但对三国层位无直接贡献
+
+[indent]•  位置：晋阳古城西城中部核心区[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  年代：[color=#000000]晚唐五代[/color]大型建筑基址[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  意义：进一步完善北都布局，但对三国层位无直接贡献[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 2025年度晋阳古城工作整体仍以晚唐五代为主，三国层位系统化发掘仍属结构性空白。
 
 
-[b]2026年新发现：太原西晋大墓（重要新材料，含墓主姓名）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]2026年新发现：太原西晋大墓（重要新材料，含墓主姓名）[/font][/b]
+
 
 2026年3月25日，山西省考古研究院公布太原市6座西晋墓发掘资料（发掘时间2020—2023年）：
 
-[b]阳曲县城晋驿墓地（最重要）：[/b]
-- M1、M2为多室砖墓，南北总长超过20米，东西宽8—9米——[b]山西已知面积最大的西晋墓[/b]
-- 结构遵循洛阳西晋高等级墓制（斜坡墓道+甬道+主室+侧室），未经盗扰，随葬品原位
+[color=#000000]阳曲县城晋驿墓地（最重要）：[/color]
 
-[b]M1三件核心文物（2026-04-17太原日报详细报道）：[/b]
-- [b]金珰：[/b] 铜牌鎏金，蝉纹+金粟粒；出土于西侧室棺内头顶——《后汉书·舆服志》"侍中、中常侍加黄金珰，附蝉为文"，直接标识[b]高级武官或皇帝近臣[/b]等级
-- [b]"闵博印信"木印章：[/b] 主室大棺头骨旁，边长2cm，正面"闵博印信"，背面"闵博"——[b]直接确认墓主姓名为闵博[/b]
-  - 注：检索现存正史典籍，[b]"闵博"无任何史料记载[/b]，为史书失载人物
-- [b]"位至三公"铜镜：[/b] 共3面，洛阳地区魏晋墓流行的吉语铭文（非实指官阶）
+[indent]•  M1、M2为多室砖墓，南北总长超过20米，东西宽8—9米——[color=#000000]山西已知面积最大的西晋墓[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  结构遵循洛阳西晋高等级墓制（斜坡墓道+甬道+主室+侧室），未经盗扰，随葬品原位[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]墓主综合推断：[/b]
-- 姓名确认：[b]闵博[/b]（印章直接证据）
-- 等级：金珰→侍中/高级武官级别，系西晋中高级官员
-- 史书失载，具体职务待正式考古报告发表后方可进一步考证
-- 阳曲县是刘琨数十年守卫晋阳的重要基地，也是他率众奔冀前"召集亡散"的"徙居"之地——[b]专家推测闵博可能是刘琨军政集团的中高级成员[/b]（推测，非确证，待报告）
 
-[b]万柏林区沙沟M1：[/b]
-- 黑白彩绘几何纹壁画——太原地区同期首次发现
-- 风格与甘肃武威魏晋墓相似（西北民族迁徙路径的物质证据）
+[color=#000000]M1三件核心文物（2026-04-17太原日报详细报道）：[/color]
 
-[b]学术意义：[/b]
-- 太原已确认西晋墓共11座，为研究魏晋丧葬制度提供新材料
-- 墓葬形制与"洛阳晋制"既有相似，又存明显差异——可能反映晋末太原的半独立政治状态
-- 城晋驿墓地[b]已确认墓主为闵博[/b]（史书失载），若与刘琨集团关联经正式报告确认，将是并州西晋末期军事史的直接物证
+[indent]•  [color=#000000]金珰：[/color] 铜牌鎏金，蝉纹+金粟粒；出土于西侧室棺内头顶——《后汉书·舆服志》"侍中、中常侍加黄金珰，附蝉为文"，直接标识[color=#000000]高级武官或皇帝近臣[/color]等级[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]"闵博印信"木印章：[/color] 主室大棺头骨旁，边长2cm，正面"闵博印信"，背面"闵博"——[color=#000000]直接确认墓主姓名为闵博[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  注：检索现存正史典籍，[color=#000000]"闵博"无任何史料记载[/color]，为史书失载人物[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]"位至三公"铜镜：[/color] 共3面，洛阳地区魏晋墓流行的吉语铭文（非实指官阶）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]墓主综合推断：[/color]
+
+[indent]•  姓名确认：[color=#000000]闵博[/color]（印章直接证据）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  等级：金珰→侍中/高级武官级别，系西晋中高级官员[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  史书失载，具体职务待正式考古报告发表后方可进一步考证[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  阳曲县是刘琨数十年守卫晋阳的重要基地，也是他率众奔冀前"召集亡散"的"徙居"之地——[color=#000000]专家推测闵博可能是刘琨军政集团的中高级成员[/color]（推测，非确证，待报告）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]万柏林区沙沟M1：[/color]
+
+[indent]•  黑白彩绘几何纹壁画——太原地区同期首次发现[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  风格与甘肃武威魏晋墓相似（西北民族迁徙路径的物质证据）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]学术意义：[/color]
+
+[indent]•  太原已确认西晋墓共11座，为研究魏晋丧葬制度提供新材料[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  墓葬形制与"洛阳晋制"既有相似，又存明显差异——可能反映晋末太原的半独立政治状态[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  城晋驿墓地[color=#000000]已确认墓主为闵博[/color]（史书失载），若与刘琨集团关联经正式报告确认，将是并州西晋末期军事史的直接物证[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 （来源：`ref-xijin-tombs-2026.md`）
 
 
-[b]晋阳城周边汉代考古新进展（2025年）[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]北固碾汉代墓地[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]晋阳城周边汉代考古新进展（2025年）[/font][/b]
 
-[b]位置：[/b] 太原市尖草坪区北固碾村西，汾河西岸约1.5公里（晋阳城以北约20公里）
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]北固碾汉代墓地[/font][/b]
+
+
+[color=#000000]位置：[/color] 太原市尖草坪区北固碾村西，汾河西岸约1.5公里（晋阳城以北约20公里）
 
 2025年，太原市文物考古研究院在北固碾村西发掘汉代墓地51座：
-- 土洞墓18座、砖室墓33座；48座墓道朝北
-- 时代：[b]西汉晚期至东汉晚期[/b]（家族墓地，经规划，各墓无打破关系）
-- 出土约400件（组）随葬品：陶灶、井、壶、仓、炉、案、耳杯、五铢钱、铜镜等
-- 周边历年多有汉墓发现，[b]推测汉代此区域为人口聚集之地[/b]
-- 入选：2025年度山西重要考古发现
 
-[b]与三国史的关联：[/b] 北固碾墓地的东汉晚期层位，填补了晋阳城北部汉族人口分布的考古背景。这片汉代聚落区进入三国时期，正处于梁习治并、南匈奴五部分置（建安21年，216年）所在的汾河谷地北段。东汉晚期的汉族聚落密度，是理解"胡汉杂居"转变规模的考古基准线。
+[indent]•  土洞墓18座、砖室墓33座；48座墓道朝北[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  时代：[color=#000000]西汉晚期至东汉晚期[/color]（家族墓地，经规划，各墓无打破关系）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  出土约400件（组）随葬品：陶灶、井、壶、仓、炉、案、耳杯、五铢钱、铜镜等[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  周边历年多有汉墓发现，[color=#000000]推测汉代此区域为人口聚集之地[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  入选：2025年度山西重要考古发现[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]与三国史的关联：[/color] 北固碾墓地的东汉晚期层位，填补了晋阳城北部汉族人口分布的考古背景。这片汉代聚落区进入三国时期，正处于梁习治并、南匈奴五部分置（建安21年，216年）所在的汾河谷地北段。东汉晚期的汉族聚落密度，是理解"胡汉杂居"转变规模的考古基准线。
 
 （来源：`ref-jinyang-archaeology.md`）
+
+
+[color=#888888]──────────────────────────────[/color]

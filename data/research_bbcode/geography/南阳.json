@@ -1,240 +1,379 @@
-[b]南阳（宛城）[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]南阳（宛城）[/font][/b]
 
 
-[b]位置：[/b] 今河南省南阳市宛城区（核心城区）
-[b]类型：[/b] 郡治城池（南阳郡治宛县）
-[b]刺史部：[/b] 荆州刺史部
+[color=#000000]位置：[/color] 今河南省南阳市宛城区（核心城区）
+[color=#000000]类型：[/color] 郡治城池（南阳郡治宛县）
+[color=#000000]刺史部：[/color] 荆州刺史部
 
 
-[b]地理考证[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]地理考证[/font][/b]
 
 
-[b]郡域范围[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]郡域范围[/font][/b]
+
 
 《后汉书·郡国志》："南阳郡，秦置，属荆州刺史部，三十七城，户五十二万八千五百五十一，口二百四十三万九千六百一十八。"
 
 东汉南阳郡为天下大郡：
-- 西起析县武关（今陕西商南），东至桐柏山（今河南信阳）
-- 北抵伏牛山南麓（叶县方城隘口），南达汉水北岸（山都、阴县一线）
-- 总面积约6.8万平方公里；人口占荆州七郡约38%
 
-[b]37县完整名单（依《后汉书·郡国志》排列）：[/b]
-
-宛、冠军、叶、[color=#6699FF][url={"research": "新野", "cat": "geography"}]新野[/url][/color]、章陵、西鄂、雉、鲁阳、犨、堵阳、博望、舞阴、比阳、复阳、平氏、棘阳、湖阳、随、育阳、涅阳、阴、酂、邓、山都、郦、穰、朝阳、蔡阳、安众、筑阳、武当、顺阳、[color=#6699FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]、襄乡、南乡、丹水、析
-
-[color=#AAAAAA]　注：37县横跨今河南南阳市全域、湖北随州/枣阳/老河口/谷城/丹江口/竹山一带，以及陕西商洛地区（析县武关一带）。[/color]
-
-[b]重要县级今址：[/b]
-- 宛（郡治）→ 今南阳市宛城区
-- 叶（方城隘口）→ 今河南叶县，有方城山，南北交通要道
-- 博望 → 今河南方城县西南，博望坡之战在此
-- 穰 → 今河南邓州市，张济战死、[color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]199年大败张绣处
-- 邓（邓县）→ 今河南邓州市，[color=#6699FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]隆中在其境内
-- 新野 → 今河南新野县，[color=#6699FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]屯兵地
-- 析（有武关）→ 今河南西峡县，西控武关道
-- 随 → 今湖北随州市，古随国，南阳郡最东南县
-
-[b]成都县地望（2026-04-20综合考证终结）：[/b] 东汉新置县（西汉无此县），《后汉书·郡国志》原文仅列县名，[b]无任何地望注释[/b]，今址考证尚无定论。TGAZ（CHGIS，复旦/哈佛）[b]未收录[/b]独立词条，《水经注》亦无成都县的地望描述——系史料层面的原始缺失，非数据库不完整。
-- [b]排列位置暗示：[/b] 《后汉书》37县排列：……顺阳 → [b]成都[/b] → 襄乡 → 南乡（今淅川西南）→ 丹水 → 析；顺阳在今河南淅川县境，据此推断成都县大致在今[b]内乡县南部至淅川县北部[/b]一带
-- [b]李贤注/刘昭注核查（2026-04-20）：[/b] 已直接爬取后汉书郡国志南阳郡完整原文。[b]成都县在原文中裸列，无任何注文[/b]——唐代注家对该县地望无从考证或不作注。这是史料层面的终极确认，非后世失考。
-- [b]《太平寰宇记》卷142（邓州）核查（2026-04-20）：[/b] 已爬取全文，逐节检索穰县、南阳县、内乡县、淅川县、顺阳县各条。[b]全文无"成都故城""成都县"任何记载[/b]。宋人（约978—984年）亦已无法考证其位置。
-- [b]建安十三年析置南乡郡[/b]时，成都县未见于析出8县名单（析、南乡、顺阳、丹水、武当、酂、阴、筑阳），三国时期仍属魏南阳郡
-- [b]西晋南阳郡14县[/b]中亦不见成都县，推测建安末至西晋某次并县时废入他县，具体时间不详
-- [b]综合结论：[/b] 成都县故城位置属[b]史料与文献双重永久缺口[/b]——唐注、宋志均无记载，现代地理信息系统亦未收录，短期内无望通过文献途径解决。
-参见 `ref-chengdu-xian-diwang.md`、`ref-chengdu-xian-diwang-2026.md`、`ref-chengdu-xian-lijian-zhu.md`。
+[indent]•  西起析县武关（今陕西商南），东至桐柏山（今河南信阳）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  北抵伏牛山南麓（叶县方城隘口），南达汉水北岸（山都、阴县一线）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  总面积约6.8万平方公里；人口占荆州七郡约38%[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]宛城今址与考古格局[/b]
+[color=#000000]37县完整名单（依《后汉书·郡国志》排列）：[/color]
+
+宛、冠军、叶、[color=#0066FF][url={"research": "新野", "cat": "geography"}]新野[/url][/color]、章陵、西鄂、雉、鲁阳、犨、堵阳、博望、舞阴、比阳、复阳、平氏、棘阳、湖阳、随、育阳、涅阳、阴、酂、邓、山都、郦、穰、朝阳、[color=#0066FF][url={"research": "蔡阳", "cat": "people"}]蔡阳[/url][/color]、安众、筑阳、武当、顺阳、[color=#0066FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]、襄乡、南乡、丹水、析
+
+
+[indent][color=#666666]┃ 注：37县横跨今河南南阳市全域、湖北随州/枣阳/老河口/谷城/丹江口/竹山一带，以及陕西商洛地区（析县武关一带）。[/color][/indent]
+
+
+[color=#000000]重要县级今址：[/color]
+
+[indent]•  宛（郡治）→ 今南阳市宛城区[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  叶（方城隘口）→ 今河南叶县，有方城山，南北交通要道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  博望 → 今河南方城县西南，博望坡之战在此[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  穰 → 今河南邓州市，[color=#0066FF][url={"research": "张济", "cat": "people"}]张济[/url][/color]战死、[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]199年大败[color=#0066FF][url={"research": "张绣", "cat": "people"}]张绣[/url][/color]处[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  邓（邓县）→ 今河南邓州市，[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]隆中在其境内[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  新野 → 今河南新野县，[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]屯兵地[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  析（有武关）→ 今河南西峡县，西控武关道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  随 → 今湖北随州市，古随国，南阳郡最东南县[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]成都县地望（2026-04-20综合考证终结）：[/color] 东汉新置县（西汉无此县），《后汉书·郡国志》原文仅列县名，[color=#000000]无任何地望注释[/color]，今址考证尚无定论。TGAZ（CHGIS，复旦/哈佛）[color=#000000]未收录[/color]独立词条，《水经注》亦无成都县的地望描述——系史料层面的原始缺失，非数据库不完整。
+
+[indent]•  [color=#000000]排列位置暗示：[/color] 《后汉书》37县排列：……顺阳 → [color=#000000]成都[/color] → 襄乡 → 南乡（今淅川西南）→ 丹水 → 析；顺阳在今河南淅川县境，据此推断成都县大致在今[color=#000000]内乡县南部至淅川县北部[/color]一带[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]李贤注/刘昭注核查（2026-04-20）：[/color] 已直接爬取后汉书郡国志南阳郡完整原文。[color=#000000]成都县在原文中裸列，无任何注文[/color]——唐代注家对该县地望无从考证或不作注。这是史料层面的终极确认，非后世失考。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《太平寰宇记》卷142（邓州）核查（2026-04-20）：[/color] 已爬取全文，逐节检索穰县、南阳县、内乡县、淅川县、顺阳县各条。[color=#000000]全文无"成都故城""成都县"任何记载[/color]。宋人（约978—984年）亦已无法考证其位置。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]建安十三年析置南乡郡[/color]时，成都县未见于析出8县名单（析、南乡、顺阳、丹水、武当、酂、阴、筑阳），三国时期仍属魏南阳郡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]西晋南阳郡14县[/color]中亦不见成都县，推测建安末至西晋某次并县时废入他县，具体时间不详[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]综合结论：[/color] 成都县故城位置属[color=#000000]史料与文献双重永久缺口[/color]——唐注、宋志均无记载，现代地理信息系统亦未收录，短期内无望通过文献途径解决。 参见 `ref-chengdu-xian-diwang.md`、`ref-chengdu-xian-diwang-2026.md`、`ref-chengdu-xian-lijian-zhu.md`。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]宛城今址与考古格局[/font][/b]
+
 
 宛城即今河南省南阳市区。
 
-[b]城制（文献与调查综合）：[/b]
+[color=#000000]城制（文献与调查综合）：[/color]
 
 宛城为双重城墙：
-- [b]外城（郭城）：[/b] 郡城，《荆州记》载"郡城周三十六里"，换算约18000m（约合今8.6km复原图所用数值）
-  - 功能区：生产区、生活区、工商贸易区
-- [b]内城（小城）：[/b] 位于大城西南隅，官吏宫殿区
 
-[b]城墙残存实测数据（考古调查）：[/b]
+[indent]•  [color=#000000]外城（郭城）：[/color] 郡城，《荆州记》载"郡城周三十六里"，换算约18000m（约合今8.6km复原图所用数值）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  功能区：生产区、生活区、工商贸易区[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]内城（小城）：[/color] 位于大城西南隅，官吏宫殿区[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]城墙残存实测数据（考古调查）：[/color]
 
 东北角遗址现存最完整，位于今宛城区东北隅、防爆电气研究所附近：
-- [b]北壁：[/b] 残存长度 [b]800m[/b]，残高 [b]4-6m[/b]
-- [b]东壁：[/b] 残存长度 [b]600m[/b]，残高 [b]5-7m[/b]
-- [b]护城河道：[/b] 约 [b]1800m[/b]，宽 [b]50-80m[/b]，深 [b]6m[/b]
-- 城墙构造：版筑（夯土），断面清晰可辨，夯层中含大量汉代陶片
+
+[indent]•  [color=#000000]北壁：[/color] 残存长度 [color=#000000]800m[/color]，残高 [color=#000000]4-6m[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]东壁：[/color] 残存长度 [color=#000000]600m[/color]，残高 [color=#000000]5-7m[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]护城河道：[/color] 约 [color=#000000]1800m[/color]，宽 [color=#000000]50-80m[/color]，深 [color=#000000]6m[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  城墙构造：版筑（夯土），断面清晰可辨，夯层中含大量汉代陶片[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 南部城垣（闸口至琉璃桥北侧，今护城河注入白河处）：
-- 地上遗迹不明显，地下断层可见城垣夯土遗迹，含汉代陶片与砖瓦
+
+[indent]•  地上遗迹不明显，地下断层可见城垣夯土遗迹，含汉代陶片与砖瓦[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 西北角与西部城墙基础局部遗迹近年亦有发现。
 
-[b]高台建筑遗址实测数据：[/b]
-- [b]明远顶（老城东北隅）：[/b] 台基南北46m、东西44m、残高9m；夯土台基，地表露出大量汉代砖瓦与陶片；推断为宫殿基坛（战国中晚期已存在，汉代成形，元代前损毁）
-- [b]望仙台（人民公园内）：[/b] 台基东西80m、南北70m、残高9m；夯土台基，地表露出大量汉代砖瓦与陶片；推断为大型建筑基坛
+[color=#000000]高台建筑遗址实测数据：[/color]
 
-[b]8.6km复原图来源（2025-12-11确认）：[/b]
+[indent]•  [color=#000000]明远顶（老城东北隅）：[/color] 台基南北46m、东西44m、残高9m；夯土台基，地表露出大量汉代砖瓦与陶片；推断为宫殿基坛（战国中晚期已存在，汉代成形，元代前损毁）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]望仙台（人民公园内）：[/color] 台基东西80m、南北70m、残高9m；夯土台基，地表露出大量汉代砖瓦与陶片；推断为大型建筑基坛[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]8.6km复原图来源（2025-12-11确认）：[/color]
 南阳师范学院美术设计学院城乡景观设计研究院（李鸿伟、胡振江等）依据清光绪《南阳府志》《南都赋》记载推算城墙轮廓（含蔡庄北夯土遗址、汉冶村冶铁遗址等实物辅证），绘图：李鸿伟、李安堃、王峰。非专项考古测量数据。
 
-[b]近年考古工作（2019—2025年）：[/b]
-- 2019年食品商贸城项目发掘：宛城以东、白河以西，出土首件东汉铅质买地券（建宁四年，171年），该区域累计发掘数千座汉代墓葬
-- 2022年陈棚墓地（孔明路东侧）：发掘汉代墓葬31座（土坑墓15、砖室墓16）
-- 2022年护城河综合治理（解放路南区）：发现明清时期瓮城、护城河护堤和南关桥遗址（明洪武三年城）
-- [b]2025年宛城墓群系统发掘（CCTV《探索·发现》专题）：[/b]
-  - 时间：2025年2月起，至少持续至2026年
-  - 性质：[b]墓葬考古[/b]（非城墙本体专项），配合宛城区建设项目
-  - 主要发现：汉代墓葬（含武士墓M78，出土铁钩镶+铁剑）、明代朱姓墓（随葬洪武通宝铜钱）
-  - M78武士墓铁钩镶：长45cm，汉代罕见攻防一体格斗兵器，与铁剑同出，墓主为基层军吏或武士；截至2026年，相关文物已完成实验室修复，收藏于南阳当地博物馆，铁钩镶工艺溯源研究已完成
-  - 技术手段：高压水枪+激光扫描三维建模+机械臂辅助提取
+[color=#000000]近年考古工作（2019—2025年）：[/color]
 
-[b]城墙本体专项考古现状（2026年4月更新）：[/b]
-- 2025年度河南省十大考古新发现（2026-04-10公布）中[b]无南阳宛城城墙项目[/b]
-- 2025-2026年宛城区考古重心为配合建设的抢救性墓葬发掘，城墙本体专项发掘[b]仍处结构性空白状态[/b]
-- 8.6km轮廓为史志推算复原，非专项考古测量数据
-- [b]四普老城专项调查动态（2026-04-22更新）：[/b]
-  - 2025年12月31日，河南省正式启动四普老城专项调查（依据：文物普查发〔2025〕49号）
-  - 执行主体：河南省文物建筑保护研究院；省文物考古研究院配合
-  - [b]节点：[/b] 2026年4月底完成省级验收
-  - 汉宛城城墙遗址已列入历史文化名城法定保护，[b]必然纳入本次老城专项调查[/b]
-  - [b]预期：[/b] 四普成果公布后（2026年5月左右），可能出现汉宛城城墙遗址新的普查记录和调查数据
-  - [b]建议：[/b] 2026年5月后查询南阳市文广旅局官网或河南省文物局四普公告
+[indent]•  2019年食品商贸城项目发掘：宛城以东、白河以西，出土首件东汉铅质买地券（建宁四年，171年），该区域累计发掘数千座汉代墓葬[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  2022年陈棚墓地（孔明路东侧）：发掘汉代墓葬31座（土坑墓15、砖室墓16）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  2022年护城河综合治理（解放路南区）：发现明清时期瓮城、护城河护堤和南关桥遗址（明洪武三年城）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]2024年度南阳古城址考古工作（南阳文物保护研究院2024年度汇报）：[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  主要工作：对先前调查资料进行整理，并对[color=#000000]28处重点调查城址[/color]开展测绘、扫描以及钻探工作[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  性质：系统摸底调查阶段，非宛城城墙本体专项发掘[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  另在淅川西北部发现多处疑似崖墓地点（中原地区崖墓首次发现）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]2025年宛城墓群系统发掘（CCTV《探索·发现》专题）：[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  时间：2025年2月起，至少持续至2026年[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  性质：[color=#000000]墓葬考古[/color]（非城墙本体专项），配合宛城区建设项目[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  主要发现：汉代墓葬（含武士墓M78，出土铁钩镶+铁剑）、明代朱姓墓（随葬洪武通宝铜钱）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  M78武士墓铁钩镶：长45cm，汉代罕见攻防一体格斗兵器，与铁剑同出，墓主为基层军吏或武士；截至2026年，相关文物已完成实验室修复，收藏于南阳当地博物馆，铁钩镶工艺溯源研究已完成[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  技术手段：高压水枪+激光扫描三维建模+机械臂辅助提取[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-[b]《南阳历史文化名城保护规划（2021—2035）》与汉宛城：[/b]
-- 规划于2024年7月23日由河南省政府批准，同年11月15日公布实施
-- 在中心城区建立"汉宛城文化片区"（四大片区之一），[b]汉宛城城墙遗址[/b]列为重点保护文物
-- 保护内容：汉宛城城墙遗址、瓦房庄冶铁遗址、中原技校画像石刻；提升汉城河沿岸景观环境，揭示汉宛城格局
-- 意义：城墙遗址正式获得历史文化名城法定保护地位，但保护规划≠专项考古发掘报告
+
+[color=#000000]城墙本体专项考古现状（2026年5月更新）：[/color]
+
+[indent]•  2025年度河南省十大考古新发现（2026-04-10公布）中[color=#000000]无南阳宛城城墙项目[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  2025-2026年宛城区考古重心为配合建设的抢救性墓葬发掘，城墙本体专项发掘[color=#000000]仍处结构性空白状态[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  8.6km轮廓为史志推算复原，非专项考古测量数据[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]四普老城专项调查动态（2026-05-01核查更新）：[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  2025年12月31日，河南省正式启动四普老城专项调查（依据：文物普查发〔2025〕49号）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  执行主体：河南省文物建筑保护研究院；省文物考古研究院配合[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]节点明确：[/color] 2026年2月10日完成实地调查→3月10日完成录入及市级审核→3月底完成省级审核→[color=#000000]4月底完成省级验收[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  汉宛城城墙遗址已列入历史文化名城法定保护，[color=#000000]必然纳入本次老城专项调查[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]南阳各县验收进展：[/color] 新野县（2026-01-14至15，全省首个）、社旗县（2026-01-26至27）、唐河县（2026-01-28至29）已通过省级验收；南阳市区（宛城区/卧龙区）本体验收状态截至2026-05-01上午[color=#000000]无公告[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]评估：[/color] 4月底验收节点按期执行概率较高，但成果公布通常滞后数周至数月；[color=#000000]建议2026年7月后查询[/color]南阳市文广旅局官网或河南省文物局公告[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]"南阳"与"宛"的史料指代规律[/b]
+[color=#000000]《南阳历史文化名城保护规划（2021—2035）》与汉宛城：[/color]
+
+[indent]•  规划于2024年7月23日由河南省政府批准，同年11月15日公布实施[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  在中心城区建立"汉宛城文化片区"（四大片区之一），[color=#000000]汉宛城城墙遗址[/color]列为重点保护文物[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  保护内容：汉宛城城墙遗址、瓦房庄冶铁遗址、中原技校画像石刻；提升汉城河沿岸景观环境，揭示汉宛城格局[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  意义：城墙遗址正式获得历史文化名城法定保护地位，但保护规划≠专项考古发掘报告[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]"南阳"与"宛"的史料指代规律[/font][/b]
+
 
 据学者系统梳理（75处以上史料例证），汉晋史籍规律如下：
-- [b]动词/介词后的"南阳"[/b] → 均指宛县（郡治）
-- [b]官职/属县/与其他郡并列时的"南阳"[/b] → 指南阳郡
+
+[indent]•  [color=#000000]动词/介词后的"南阳"[/color] → 均指宛县（郡治）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]官职/属县/与其他郡并列时的"南阳"[/color] → 指南阳郡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 典型证据：
-- "[color=#6699FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color]比至南阳，众数万人" → 到达宛城
-- "张绣在南阳"（《三国志·[color=#6699FF][url={"research": "贾诩", "cat": "people"}]贾诩[/url][/color]传》）→ 据宛城
-- "[color=#6699FF][url={"research": "袁术", "cat": "people"}]袁术[/url][/color]屯于南阳" → 占据郡治宛城
-- "张济自关中走南阳" → 出武关至宛城
+
+[indent]•  "[color=#0066FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color]比至南阳，众数万人" → 到达宛城[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "张绣在南阳"（《三国志·[color=#0066FF][url={"research": "贾诩", "cat": "people"}]贾诩[/url][/color]传》）→ 据宛城[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "[color=#0066FF][url={"research": "袁术", "cat": "people"}]袁术[/url][/color]屯于南阳" → 占据郡治宛城[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "张济自关中走南阳" → 出武关至宛城[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]战略地位[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]战略地位[/font][/b]
 
 
-[b]四通八达的枢纽[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]四通八达的枢纽[/font][/b]
+
 
 宛城控扼多条要道：
-- [b]西向：[/b] 武关道（出武关 → 蓝田 → 关中）；析县武关为咽喉
-- [b]北向：[/b] 方城隘口（伏牛山—桐柏山间唯一通道，经叶县 → [color=#6699FF][url={"research": "许都", "cat": "geography"}]许都[/url][/color]/洛阳）
-- [b]东向：[/b] 经叶县、淯阳可达中原腹地
-- [b]南向：[/b] 顺淯水（白河）→ 新野 → [color=#6699FF][url={"research": "樊城", "cat": "geography"}]樊城[/url][/color] → 汉水航运
+
+[indent]•  [color=#000000]西向：[/color] 武关道（出武关 → 蓝田 → 关中）；析县武关为咽喉[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]北向：[/color] 方城隘口（伏牛山—桐柏山间唯一通道，经叶县 → [color=#0066FF][url={"research": "许都", "cat": "geography"}]许都[/url][/color]/洛阳）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]东向：[/color] 经叶县、淯阳可达中原腹地[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]南向：[/color] 顺淯水（白河）→ 新野 → [color=#0066FF][url={"research": "樊城", "cat": "geography"}]樊城[/url][/color] → 汉水航运[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 《读史方舆纪要》："北控方城隘口……南扼汉水中游航运节点，东连许昌-洛阳官道，西通武关-商洛驿路。"
 
 
-[b]人口与经济基础[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]人口与经济基础[/font][/b]
+
 
 南阳郡户口超过240万，为汉末最富庶的郡之一；东汉光武帝刘秀起兵于南阳，史称"帝乡"，宗室云集。汉代南阳是重要冶铁中心（汉冶村/瓦房庄遗址可证：东西600m、南北200m，1959年发掘出熔炉17基，技术已达球墨铸铁水准）。
 
 
-[b]汉末三国主要历史事件[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]汉末三国主要历史事件[/font][/b]
 
 
-[b]黄巾起事（184年）[/b]
-
-[color=#6699FF][url={"research": "张曼成", "cat": "people"}]张曼成[/url][/color]率南阳黄巾军起义，号称"神上使"，为三大主力之一；攻占宛城，历战9个月，最终被秦颉（南阳太守）镇压。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]黄巾起事（184年）[/font][/b]
 
 
-[b]孙坚经略南阳（190年）[/b]
+[color=#0066FF][url={"research": "张曼成", "cat": "people"}]张曼成[/url][/color]率南阳黄巾军起义，号称"神上使"，为三大主力之一；攻占宛城，历战9个月，最终被秦颉（南阳太守）镇压。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]孙坚经略南阳（190年）[/font][/b]
+
 
 初平元年，孙坚率军北上响应讨董联军，途经南阳杀南阳太守张咨，就地征粮。《三国志·孙破虏传》："比至南阳，众数万人。"袁术趁机据守宛城，"得据其郡"。
 
 
-[b]袁术据宛（190—191年）[/b]
-
-袁术以宛城为据点，纵横南阳，拥众数十万；[color=#6699FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]设立章陵郡（约194年），分化袁术势力；袁术后移据淮南。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]袁术据宛（190—191年）[/font][/b]
 
 
-[b]张济、张绣据宛（196—199年）[/b]
-
-建安元年（196年），张济率[color=#6699FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]军东出武关，据宛城；张济攻穰战死，侄张绣继领其众。刘表以其为北方屏障，张绣借助荆州支持屡与曹操周旋。
+袁术以宛城为据点，纵横南阳，拥众数十万；[color=#0066FF][url={"research": "刘表", "cat": "people"}]刘表[/url][/color]设立章陵郡（约194年），分化袁术势力；袁术后移据淮南。
 
 
-[b]宛城之战（197年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]张济、张绣据宛（196—199年）[/font][/b]
+
+
+建安元年（196年），张济率[color=#0066FF][url={"research": "凉州", "cat": "geography"}]凉州[/url][/color]军东出武关，据宛城；张济攻穰战死，侄张绣继领其众。刘表以其为北方屏障，张绣借助荆州支持屡与曹操周旋。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]宛城之战（197年）[/font][/b]
+
 
 建安二年（197年）春，曹操南征，张绣投降后反叛：
-- 起因：曹操纳张济遗孀（[color=#6699FF][url={"research": "邹氏", "cat": "people"}]邹氏[/url][/color]），张绣愤恨；贾诩献计
-- 结果：曹操大败，长子[b][color=#6699FF][url={"research": "曹昂", "cat": "people"}]曹昂[/url][/color][/b]战死、侄子[b][color=#6699FF][url={"research": "曹安民", "cat": "people"}]曹安民[/url][/color][/b]战死、大将[b][color=#6699FF][url={"research": "典韦", "cat": "people"}]典韦[/url][/color][/b]殿后力战而死；曹操中流矢轻骑逃脱
+
+[indent]•  起因：曹操纳张济遗孀（[color=#0066FF][url={"research": "邹氏", "cat": "people"}]邹氏[/url][/color]），张绣愤恨；贾诩献计[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  结果：曹操大败，长子[color=#000000][color=#0066FF][url={"research": "曹昂", "cat": "people"}]曹昂[/url][/color][/color]战死、侄子[color=#000000][color=#0066FF][url={"research": "曹安民", "cat": "people"}]曹安民[/url][/color][/color]战死、大将[color=#000000][color=#0066FF][url={"research": "典韦", "cat": "people"}]典韦[/url][/color][/color]殿后力战而死；曹操中流矢轻骑逃脱[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 《三国志·张绣传》："太祖纳济妻，绣恨之……绣袭击操军，杀操长子昂。操中流矢，败走，校尉典韦与绣力战，左右死伤略尽，韦被数十创。"
 
 
-[b]曹操反复征张绣（197—199年）[/b]
-
-- 197年冬：再征，围穰，遭张绣、刘表夹击
-- 198年：至安众（今镇平县东南），大败联军
-- 建安四年（199年）：贾诩劝张绣降曹，张绣以南阳降，被封侯
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹操反复征张绣（197—199年）[/font][/b]
 
 
-[b]刘备屯驻新野（201—208年）[/b]
+[indent]•  197年冬：再征，围穰，遭张绣、刘表夹击[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  198年：至安众（今镇平县东南），大败联军[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  建安四年（199年）：贾诩劝张绣降曹，张绣以南阳降，被封侯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-建安六年（201年），刘备投靠刘表，屯新野（南阳郡南缘）。博望坡之战（今方城县西南）：刘备击败[color=#6699FF][url={"research": "夏侯惇", "cat": "people"}]夏侯惇[/url][/color]、[color=#6699FF][url={"research": "于禁", "cat": "people"}]于禁[/url][/color]。刘备活动重心在南阳郡南缘，不在郡治宛城。
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]刘备屯驻新野（201—208年）[/font][/b]
 
 
-[b]曹魏控制南阳（208年后）[/b]
+建安六年（201年），刘备投靠刘表，屯新野（南阳郡南缘）。博望坡之战（今方城县西南）：刘备击败[color=#0066FF][url={"research": "夏侯惇", "cat": "people"}]夏侯惇[/url][/color]、[color=#0066FF][url={"research": "于禁", "cat": "people"}]于禁[/url][/color]。刘备活动重心在南阳郡南缘，不在郡治宛城。
 
-建安十三年（208年），曹操占荆州，南阳郡全境入魏。同年分南阳郡西部8县[b]另置南乡郡[/b]（治南乡，今淅川西南）：
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]曹魏控制南阳（208年后）[/font][/b]
+
+
+建安十三年（208年），曹操占荆州，南阳郡全境入魏。同年分南阳郡西部8县[color=#000000]另置南乡郡[/color]（治南乡，今淅川西南）：
 
 《晋书·地理志》：「后汉献帝建安十三年，魏武尽得荆州之地，分南阳西界立南乡郡」
 
-[b]划出8县：[/b] 南乡、析、顺阳、丹水、武当、酂、阴、筑阳（含析县武关，西部山地丘陵地区整体划出）
+[color=#000000]划出8县：[/color] 南乡、析、顺阳、丹水、武当、酂、阴、筑阳（含析县武关，西部山地丘陵地区整体划出）
 
-此后南阳郡本体仍保留约26县，治宛城。魏荆州刺史治宛城；魏太和初（227年左右），[color=#6699FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]督荆豫诸州，镇宛。
+此后南阳郡本体仍保留约26县，治宛城。魏荆州刺史治宛城；魏太和初（227年左右），[color=#0066FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]督荆豫诸州，镇宛。
 
 
-[b]侯音据宛叛乱（218—219年）[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]侯音据宛叛乱（218—219年）[/font][/b]
 
-[b]《三国志·武帝纪》原文：[/b]
-[color=#AAAAAA]　（建安二十三年）冬十月，宛守将侯音等反，执南阳太守，劫略吏民，保宛。初，[color=#6699FF][url={"research": "曹仁", "cat": "people"}]曹仁[/url][/color]讨[color=#6699FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]，屯樊城，是月使仁围宛。二十四年春正月，仁屠宛，斩音。[/color]
 
-[b]裴注引《曹瞒传》：[/b]
-[color=#AAAAAA]　是时南阳间苦繇役，音于是执太守东里衮，与吏民共反，与关羽连和。南阳功曹宗子卿说音曰："足下顺民心，举大事，远近莫不望风；然执郡将，逆而无益，何不遣之！"音从之。子卿因夜逾城，从太守收余民围音。会曹仁军至，共攻之。[/color]
+[color=#000000]《三国志·武帝纪》原文：[/color]
 
-[b]《三国志·曹仁传》：[/b]
-[color=#AAAAAA]　侯音以宛叛，略傍县众数千人，仁率诸军攻破音，斩其首，还屯樊，即拜征南将军。[/color]
+[indent][color=#666666]┃ （建安二十三年）冬十月，宛守将侯音等反，执南阳太守，劫略吏民，保宛。初，[color=#0066FF][url={"research": "曹仁", "cat": "people"}]曹仁[/url][/color]讨[color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]，屯樊城，是月使仁围宛。二十四年春正月，仁屠宛，斩音。[/color][/indent]
 
-[b]《资治通鉴》补充细节（卷68，建安二十三年）：[/b]
-[color=#AAAAAA]　南阳吏民苦繇役，冬，十月，宛守将侯音反，南阳太守东里衮与功曹应余迸窜得出。音遣骑追之，飞矢交流，[b]余以身蔽衮，被七创而死[/b]，音骑执衮以归。[/color]
 
-关键补充：《通鉴》保存了《三国志》正文未录的功曹[b]应余[/b]护主牺牲的细节——以身掩护太守东里衮逃脱，被乱箭射中七处而死。这是研究建安二十三年南阳政治动荡的重要史料（参见 `ref-tongjian-houyin.md`）。
+[color=#000000]裴注引《曹瞒传》：[/color]
 
-[color=#AAAAAA]　东里氏来源：胡三省注"郑子产居东里，支子以为氏"，说明东里为复姓。[/color]
+[indent][color=#666666]┃ 是时南阳间苦繇役，音于是执太守东里衮，与吏民共反，与关羽连和。南阳功曹宗子卿说音曰："足下顺民心，举大事，远近莫不望风；然执郡将，逆而无益，何不遣之！"音从之。子卿因夜逾城，从太守收余民围音。会曹仁军至，共攻之。[/color][/indent]
+
+
+[color=#000000]《三国志·曹仁传》：[/color]
+
+[indent][color=#666666]┃ 侯音以宛叛，略傍县众数千人，仁率诸军攻破音，斩其首，还屯樊，即拜征南将军。[/color][/indent]
+
+
+[color=#000000]《资治通鉴》补充细节（卷68，建安二十三年）：[/color]
+
+[indent][color=#666666]┃ 南阳吏民苦繇役，冬，十月，宛守将侯音反，南阳太守东里衮与功曹应余迸窜得出。音遣骑追之，飞矢交流，[color=#000000]余以身蔽衮，被七创而死[/color]，音骑执衮以归。[/color][/indent]
+
+
+关键补充：《通鉴》保存了《三国志》正文未录的功曹[color=#000000]应余[/color]护主牺牲的细节——以身掩护太守东里衮逃脱，被乱箭射中七处而死。这是研究建安二十三年南阳政治动荡的重要史料（参见 `ref-tongjian-houyin.md`）。
+
+
+[indent][color=#666666]┃ 东里氏来源：胡三省注"郑子产居东里，支子以为氏"，说明东里为复姓。[/color][/indent]
+
 
 要点汇总：
-- [b]起因：[/b] 南阳吏民苦繇役；时间：建安二十三年（218年）冬十月
-- [b]侯音意图：[/b] 与关羽连和，配合关羽北伐
-- [b]南阳太守东里衮：[/b] 被执后经功曹宗子卿斡旋获释；功曹应余为护其逃脱而殉难
-- [b]平叛：[/b] 曹仁围攻约三个月，219年正月屠宛，斩侯音
-- [b]意义：[/b] 侯音之乱是关羽北伐前夕南阳内部政治不稳的体现，"屠宛"之后宛城元气大伤
+
+[indent]•  [color=#000000]起因：[/color] 南阳吏民苦繇役；时间：建安二十三年（218年）冬十月[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]侯音意图：[/color] 与关羽连和，配合关羽北伐[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]南阳太守东里衮：[/color] 被执后经功曹宗子卿斡旋获释；功曹应余为护其逃脱而殉难[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]平叛：[/color] 曹仁围攻约三个月，219年正月屠宛，斩侯音[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]意义：[/color] 侯音之乱是关羽北伐前夕南阳内部政治不稳的体现，"屠宛"之后宛城元气大伤[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]地名争议[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]地名争议[/font][/b]
 
 
-[b]"躬耕于南阳"之争[/b]
-
-诸葛亮《[color=#6699FF][url={"research": "出师表", "cat": "context"}]出师表[/url][/color]》："臣本布衣，躬耕于南阳。"
-
-- [b]行政归属：[/b] 隆中在东汉南阳郡邓县境内（汉水以北），行政上属南阳郡
-- [b]《汉晋春秋》：[/b] "亮家于南阳之邓县……号曰隆中"，证明诸葛亮自称"南阳"指邓县/隆中
-- [b]建安十三年后：[/b] 邓县划入新设的[color=#6699FF][url={"research": "襄阳", "cat": "geography"}]襄阳[/url][/color]郡（分南郡编以北及南阳郡山都而置），诸葛亮北伐时（227年）行政上已属襄阳郡——这正是"躬耕于南阳"按旧称自述的历史语境
-- 隆中遗址2023年考古发现宽2.4米夯土古道基址（碳十四测年公元180—220年），指向襄阳西门，证实地理上与襄阳的关联
+[b][font=res://resource/font/FandolSong-Bold/26.tres]"躬耕于南阳"之争[/font][/b]
 
 
-[b]史实 vs 演义[/b]
+诸葛亮《[color=#0066FF][url={"research": "出师表", "cat": "context"}]出师表[/url][/color]》："臣本布衣，躬耕于南阳。"
 
 
-- [b]典韦之死：[/b] 史实中典韦在宛城之战中"被数十创，力战而死"，演义将此渲染为"舍身护主"。史载曹操实为中流矢逃脱，并非被典韦掩护至绝对安全才脱身
-- [b]张绣归降：[/b] 演义中张绣数次反叛，史实中张绣仅一次反叛（197年），199年正式降曹后未再叛，封侯并随征乌桓，207年在途中去世（死因有争议）
-- [b]诸葛亮"南阳"：[/b] 演义及后世多将诸葛亮隆中等同于今南阳市，实际隆中在东汉南阳郡邓县，地理上毗邻襄阳
-- [b]侯音叛乱细节：[/b] 演义中无此事件，史实中功曹应余以身蔽太守、七创而死的细节，展现了战时底层官员的忠烈——这与演义中的英雄叙事迥异
+[indent]•  [color=#000000]行政归属：[/color] 隆中在东汉南阳郡邓县境内（汉水以北），行政上属南阳郡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《汉晋春秋》：[/color] "亮家于南阳之邓县……号曰隆中"，证明诸葛亮自称"南阳"指邓县/隆中[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]建安十三年后：[/color] 邓县划入新设的[color=#0066FF][url={"research": "襄阳", "cat": "geography"}]襄阳[/url][/color]郡（分南郡编以北及南阳郡山都而置），诸葛亮北伐时（227年）行政上已属襄阳郡——这正是"躬耕于南阳"按旧称自述的历史语境[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  隆中遗址2023年考古发现宽2.4米夯土古道基址（碳十四测年公元180—220年），指向襄阳西门，证实地理上与襄阳的关联[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[indent]•  [color=#000000]典韦之死：[/color] 史实中典韦在宛城之战中"被数十创，力战而死"，演义将此渲染为"舍身护主"。史载曹操实为中流矢逃脱，并非被典韦掩护至绝对安全才脱身[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张绣归降：[/color] 演义中张绣数次反叛，史实中张绣仅一次反叛（197年），199年正式降曹后未再叛，封侯并随征乌桓，207年在途中去世（死因有争议）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]诸葛亮"南阳"：[/color] 演义及后世多将诸葛亮隆中等同于今南阳市，实际隆中在东汉南阳郡邓县，地理上毗邻襄阳[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]侯音叛乱细节：[/color] 演义中无此事件，史实中功曹应余以身蔽太守、七创而死的细节，展现了战时底层官员的忠烈——这与演义中的英雄叙事迥异[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]

@@ -46,7 +46,7 @@ func effect_20262_AI_start():
 		me.get_name(), ActorHelper.actor(targetId).get_name(),
 		ske.skill_name,
 	])
-	play_dialog(me.actorId, msg, 2, 3000)
+	play_dialog(actorId, msg, 2, 3000)
 	return
 
 func effect_20262_AI_2():
@@ -74,7 +74,7 @@ func effect_20262_2():
 	var msg = "消耗 {0}机动力\n对{1}发动【{2}】\n可否？".format([
 		COST_AP, targetActor.get_name(), ske.skill_name,
 	])
-	play_dialog(me.actorId, msg, 2, 2001, true)
+	play_dialog(actorId, msg, 2, 2001, true)
 	return
 
 func effect_20262_3():

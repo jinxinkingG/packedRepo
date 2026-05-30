@@ -10,13 +10,13 @@ const COST_AP = 6
 
 func effect_20408_start():
 	if me.get_buff("定止")["回合数"] <= 0:
-		play_dialog(me.actorId, "未被定止，无须发动", 1, 2999)
+		play_dialog(actorId, "未被定止，无须发动", 1, 2999)
 		return
 	if not assert_action_point(me.actorId, COST_AP):
 		return
 
 	var msg = "解除定止状态\n消耗{0}机动力，可否？".format([COST_AP])
-	play_dialog(me.actorId, msg, 2, 2000, true)
+	play_dialog(actorId, msg, 2, 2000, true)
 	return
 
 func on_view_model_2000():
@@ -29,7 +29,7 @@ func effect_20408_2():
 	ske.war_report()
 
 	var msg = "形虽朦胧，意实不羁\n谁能拘吾于一隅？\n（{0}摆脱[定止]".format([me.get_name()])
-	play_dialog(me.actorId, msg, 1, 2999)
+	play_dialog(actorId, msg, 1, 2999)
 	return
 
 func on_view_model_2999():

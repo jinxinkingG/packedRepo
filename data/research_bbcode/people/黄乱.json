@@ -1,51 +1,95 @@
-[b]黄乱[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]黄乱[/font][/b]
 
 
-[b]基本信息：[/b] 生卒年不详；籍贯建安郡（今福建建瓯一带）或鄱阳、新都三郡山越聚居区；身份：山越渠帅（贼帅）
+[color=#000000]基本信息：[/color] 生卒年不详；籍贯可能为建安郡（今福建建瓯一带，据林昌丈推断）；身份：山越渠帅（贼帅）
 
 
-[b]生平考证[/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-黄乱是东吴晚期山越首领，正史仅见于《三国志·吴书·[color=#6699FF][url={"research": "钟离牧", "cat": "people"}]钟离牧[/url][/color]传》（卷六十，贺全吕周钟离传第十五）及《三国志·吴书·[color=#6699FF][url={"research": "孙亮", "cat": "people"}]孙亮[/url][/color]传》。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
-[b]叛乱背景（257年）：[/b]
 
-孙亮太平二年（257年）八月，吴国内部动荡加剧——同年五月，[color=#6699FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]已被[color=#6699FF][url={"research": "孙峻", "cat": "people"}]孙峻[/url][/color]所杀（253年），孙亮年幼，权臣[color=#6699FF][url={"research": "孙綝", "cat": "people"}]孙綝[/url][/color]掌权，内乱频发。与此同时，建安、鄱阳、新都三郡山越百姓发动大规模武装叛乱，[color=#6699FF][url={"research": "会稽", "cat": "geography"}]会稽[/url][/color]南部也同时出现动乱，有都尉被杀。
+黄乱是东吴晚期山越首领，正史仅见于《三国志·吴书·[color=#0066FF][url={"research": "钟离牧", "cat": "people"}]钟离牧[/url][/color]传》（卷六十，贺全吕周钟离传第十五）及《三国志·吴书·[color=#0066FF][url={"research": "孙亮", "cat": "people"}]孙亮[/url][/color]传》。
 
-[b]黄乱的角色：[/b]
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]叛乱背景与年代考辨（已定案✅2026-05-12）[/font][/b]
+
+
+[color=#000000]叛乱发生于太平二年（257年）八月。[/color]
+
+《三国志·孙亮传》明文：
+
+[indent][color=#666666]┃ （太平二年）八月，[color=#0066FF][url={"research": "会稽", "cat": "geography"}]会稽[/url][/color]南部反，杀都尉。鄱阳、新都民为乱，廷尉丁密、步兵校尉[color=#0066FF][url={"research": "郑胄", "cat": "people"}]郑胄[/url][/color]、将军钟离牧率军讨之。[/color][/indent]
+
+
+《三国志·钟离牧传》时序亦印证：钟离牧补太子辅义都尉（赤乌五年，242年）→南海太守（约四年）→丞相长史→司直→[color=#000000]中书令（太平二年257年）[/color]→讨黄乱→越骑校尉→永安六年（263年）平武陵五溪。时序完全吻合，叛乱在257年。
+
+[color=#000000]「242年说」辨伪：[/color]
+部分资料（湖北三国文化资源库、林昌丈2019年论文、EverybodyWiki等）将「赤乌五年（242年）」标注在叛乱上，系误将钟离牧[color=#000000]入仕年份[/color]作为[color=#000000]叛乱年份[/color]，属于引用错误，不可据。257年（《孙亮传》明文）为唯一可靠年代依据（详见 `ref-niandai-kaobian.md`）。
+
+257年是东吴内部最动荡的时期之一：253年[color=#0066FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]被[color=#0066FF][url={"research": "孙峻", "cat": "people"}]孙峻[/url][/color]所杀、[color=#0066FF][url={"research": "孙綝", "cat": "people"}]孙綝[/url][/color]弄权、孙亮年幼，且同年五月曹魏[color=#0066FF][url={"research": "诸葛诞", "cat": "people"}]诸葛诞[/url][/color]起兵[color=#0066FF][url={"research": "寿春", "cat": "geography"}]寿春[/url][/color]引发东吴集兵淮南——此政治真空与军事分散，可能是黄乱等山越首领选择257年起事的重要背景。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]黄乱的角色[/font][/b]
+
 
 据《三国志·钟离牧传》：
-[color=#AAAAAA]　会建安、鄱阳、新都三郡山民作乱，出牧为监军使者，讨平之。贼帅黄乱、常俱等，出其部伍，以充兵役。[/color]
 
-黄乱与常俱并列为「贼帅」，即叛军领袖。二人共同领导了跨越三郡的山越武装力量。
+[indent][color=#666666]┃ 会建安、鄱阳、新都三郡山民作乱，出牧为监军使者，讨平之。贼帅黄乱、常俱等，出其部伍，以充兵役。[/color][/indent]
 
-[b]叛乱结局：[/b]
+
+黄乱与常俱并列为「贼帅」，即叛军领袖。二人共同领导了跨越三郡的山越武装力量。叛乱规模足以让朝廷派出廷尉（丁密）、步兵校尉（郑胄）和将军级钟离牧联合镇压，可见势力不小。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]叛乱结局[/font][/b]
+
 
 叛乱被钟离牧率军讨平。黄乱等贼帅归降，并交出所属部伍充任兵役——这是东吴对山越处理的惯常方式，即以讨伐代替歼灭，将其武装力量整编入军。钟离牧因此功受封秦亭侯，拜越骑校尉。
 
-参与镇压的还有廷尉丁密、步兵校尉[color=#6699FF][url={"research": "郑胄", "cat": "people"}]郑胄[/url][/color]（据《孙亮传》）。
 
-[b]史料时间争议：[/b]
-
-日文资料（EverybodyWiki等）有称黄乱叛乱发生于242年（赤乌五年）者，但《三国志·孙亮传》明确记太平二年（257年）八月，《钟离牧传》时序亦符合（钟离牧任中书令后方出任监军使者），257年说为正史主流依据，242年说不可据。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]族属与籍贯（林昌丈2019年学术推断）[/font][/b]
 
 
-[b]性格与形象[/b]
+林昌丈（《文史哲》2019年第2期）在研究汉六朝闽地人群编户化进程时，对黄乱的族属提出了专业推断：
 
 
-正史对黄乱无任何性格描写。仅知其为跨三郡的山越武装首领，具备一定的组织动员能力。叛乱规模足以让朝廷派出廷尉（丁密）、步兵校尉（郑胄）和将军级别的钟离牧联合镇压，可见叛军势力非小。
+[indent][color=#666666]┃ 这其中，黄乱很有可能是建安郡的山民。若此推测不致大误的话，则三国时期闽地至少还有随、黄这样的姓氏。[/color][/indent]
 
 
-[b]关键关系[/b]
+其分析逻辑：建安郡（今福建建瓯一带）是叛乱三郡之一，而「黄」姓符合三国时期建安/闽地土著在编户化过程中形成的汉式姓名规律（闽地已见洪、吴等姓的贼帅群体，黄姓与之相符）。这是目前唯一对黄乱族属/籍贯提出学术见解的文献，具有参考价值，但属推断，永不可从正史明文确证。
 
 
-- [b]常俱[/b]：并列贼帅，与黄乱共同领导此次叛乱，史料上同等重要，二人关系不详（族人？联盟？）
-- [b]钟离牧[/b]：镇压者，以监军使者身份统领讨伐，讨平后获封秦亭侯
-- [b]丁密、郑胄[/b]：参与镇压的吴国官员（廷尉、步兵校尉）
+[color=#888888]──────────────────────────────[/color]
 
 
-[b]史实 vs 演义[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
+
+
+正史对黄乱无任何性格描写。仅知其为跨三郡的山越武装首领，具备一定的组织动员能力。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
+
+
+[indent]•  [color=#000000]常俱[/color]：并列贼帅，与黄乱共同领导此次叛乱，二人关系不详（族人？联盟？）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]钟离牧[/color]：镇压者，以监军使者身份统领讨伐，讨平后获封秦亭侯[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]丁密、郑胄[/color]：参与镇压的吴国官员（廷尉、步兵校尉）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
 《三国演义》无此人物出场。黄乱是纯粹的史书人物，活跃于三国末期东吴内政史，与小说主线脉络无交集。
+
+
+[color=#888888]──────────────────────────────[/color]

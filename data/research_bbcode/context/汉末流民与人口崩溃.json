@@ -1,259 +1,450 @@
-[b]汉末流民与人口崩溃[/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]汉末流民与人口崩溃[/font][/b]
 
 
-[b]类型：[/b] 社会结构
+[color=#000000]类型：[/color] 社会结构
 
 
-[b]背景概述[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]背景概述[/font][/b]
 
 
-东汉桓帝永寿三年（157年），全国登记户口达到顶峰：[b]1068万户，5648万口[/b]（《晋书·地理志》）。此后百年间，经[color=#6699FF][url={"research": "黄巾之乱", "cat": "events"}]黄巾之乱[/url][/color]（184年）、[color=#6699FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]之乱（190年）、群雄割据混战、建安大疫（196-220年）等连续冲击，中国人口发生历史上罕见的崩溃式下降。
+东汉桓帝永寿三年（157年），全国登记户口达到顶峰：[color=#000000]1068万户，5648万口[/color]（《晋书·地理志》）。此后百年间，经[color=#0066FF][url={"research": "黄巾之乱", "cat": "events"}]黄巾之乱[/url][/color]（184年）、[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]之乱（190年）、群雄割据混战、建安大疫（196-220年）等连续冲击，中国人口发生历史上罕见的崩溃式下降。
 
-至西晋统一（280年），官方登记人口约1616万（《晋书》太康元年数字）。而葛剑雄（《中国人口史》，复旦大学出版社，2002年）推算三国实际人口谷值约[b]2200万[/b]，西晋巅峰约[b]3500万[/b]。这意味着从东汉峰值5600万到三国谷值，实际人口损失约[b]40%-60%[/b]——仍是中国历史上人口损失最惨烈的时期之一，也是世界古代史级别的人口灾难。
-
-
-[b]在三国时期的表现[/b]
+至西晋统一（280年），官方登记人口约1616万（《晋书》太康元年数字）。而葛剑雄（《中国人口史》，复旦大学出版社，2002年）推算三国实际人口谷值约[color=#000000]2200万[/color]，西晋巅峰约[color=#000000]3500万[/color]。这意味着从东汉峰值5600万到三国谷值，实际人口损失约[color=#000000]40%-60%[/color]——仍是中国历史上人口损失最惨烈的时期之一，也是世界古代史级别的人口灾难。
 
 
-[b]一、战乱直接杀戮[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]在三国时期的表现[/font][/b]
 
-[b]黄巾之乱（184年起）[/b]  
-[color=#6699FF][url={"research": "张角", "cat": "people"}]张角[/url][/color]率数十万人起义，波及全国。《后汉书·刘虞传》记青徐士庶「避黄巾之难归虞者百余万口」，单一地区流离者即达此规模。
 
-[b]董卓之乱与关中破败（190-192年）[/b]  
-李傕、[color=#6699FF][url={"research": "郭汜", "cat": "people"}]郭汜[/url][/color]破[color=#6699FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]后，「时三辅民尚数十万户，（李）傕等放兵劫略，攻剽城邑，人民饥困，二年间相啖食略尽」——数十万户的繁华关中，两年内几乎化为无人之地。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]一、战乱直接杀戮[/font][/b]
 
-[b][color=#6699FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]屠徐州（193-194年）[/b]  
+
+[color=#000000]黄巾之乱（184年起）[/color]  
+[color=#0066FF][url={"research": "张角", "cat": "people"}]张角[/url][/color]率数十万人起义，波及全国。《后汉书·[color=#0066FF][url={"research": "刘虞", "cat": "people"}]刘虞[/url][/color]传》记青徐士庶「避黄巾之难归虞者百余万口」，单一地区流离者即达此规模。
+
+[color=#000000]董卓之乱与关中破败（190-192年）[/color]  
+[color=#0066FF][url={"research": "李傕", "cat": "people"}]李傕[/url][/color]、[color=#0066FF][url={"research": "郭汜", "cat": "people"}]郭汜[/url][/color]破[color=#0066FF][url={"research": "长安", "cat": "geography"}]长安[/url][/color]后，「时三辅民尚数十万户，（李）傕等放兵劫略，攻剽城邑，人民饥困，二年间相啖食略尽」——数十万户的繁华关中，两年内几乎化为无人之地。
+
+[color=#000000][color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]屠徐州（193-194年）[/color]  
 《曹瞒传》：「坑杀男女数万口于泗水，水为不流。」「江淮间空尽，人民相食。」徐州在西晋时的户数仅余东汉峰值的16.9%。
 
-[b]关东联军混战[/b]  
-《三国志·[color=#6699FF][url={"research": "司马朗", "cat": "people"}]司马朗[/url][/color]传》：「关东诸州郡起兵，众数十万，皆集荥阳及河内。诸不能相一，纵兵抄略，民死者且半。」
+[color=#000000]关东联军混战[/color]  
+《三国志·[color=#0066FF][url={"research": "司马朗", "cat": "people"}]司马朗[/url][/color]传》：「关东诸州郡起兵，众数十万，皆集荥阳及河内。诸不能相一，纵兵抄略，民死者且半。」
 
 
-[b]二、流民大迁徙[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]二、流民大迁徙[/font][/b]
+
 
 大规模人口流动是这一时期的显著特征，方向呈现从北到南、从中原向边缘的规律：
 
 
-[b]流向[/b] | [b]史料记载[/b] | [b]时间背景[/b]
-中原→荆州 | 《三国志·[color=#6699FF][url={"research": "荀彧 ", "cat": " people"}]荀彧 [/url][/color]传》：「人民流入荆州者十余万家」 | 建安初期，曹操统一北方前
-青徐→[color=#6699FF][url={"research": "幽州 ", "cat": " geography"}]幽州 [/url][/color] | 《后汉书·刘虞传》：百余万口归附刘虞 | 黄巾之乱后
-北方→辽东 | 管宁、邴原等士人渡海避乱 | 建安年间
-北方→益州 | 《三国志·刘二牧传》注引《英雄记》：「[color=#6699FF][url={"research": "南阳 ", "cat": " geography"}]南阳 [/url][/color]、三辅民流入益州数万家」 | 兴平年间
-中原→江东 | 赤壁前后大批士民南渡 | 建安十三年前后
+[table=3]
+[cell][b]流向[/b][/cell]
+[cell][b]史料记载[/b][/cell]
+[cell][b]时间背景[/b][/cell]
+[cell]中原→荆州[/cell]
+[cell]《三国志·[color=#0066FF][url={"research": "荀彧", "cat": "people"}]荀彧[/url][/color]传》：「人民流入荆州者十余万家」[/cell]
+[cell]建安初期，曹操统一北方前[/cell]
+[cell]青徐→[color=#0066FF][url={"research": "幽州", "cat": "geography"}]幽州[/url][/color][/cell]
+[cell]《后汉书·刘虞传》：百余万口归附刘虞[/cell]
+[cell]黄巾之乱后[/cell]
+[cell]北方→辽东[/cell]
+[cell]管宁、邴原等士人渡海避乱[/cell]
+[cell]建安年间[/cell]
+[cell]北方→益州[/cell]
+[cell]《三国志·刘二牧传》注引《英雄记》：「[color=#0066FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]、三辅民流入益州数万家」[/cell]
+[cell]兴平年间[/cell]
+[cell]中原→江东[/cell]
+[cell]赤壁前后大批士民南渡[/cell]
+[cell]建安十三年前后[/cell]
+[/table]
 
 
-[b]统治者对流民的争夺[/b]  
-人口是最重要的战略资源。各政权均有强制移民充实控制区的做法。曹操建安二十年（215年）令[color=#6699FF][url={"research": "张既", "cat": "people"}]张既[/url][/color]「徙氐五万余落出居扶风、天水界」，将异族强制内迁充实北方。
+[color=#000000]统治者对流民的争夺[/color]  
+人口是最重要的战略资源。各政权均有强制移民充实控制区的做法。曹操建安二十年（215年）令[color=#0066FF][url={"research": "张既", "cat": "people"}]张既[/url][/color]「徙氐五万余落出居扶风、天水界」，将异族强制内迁充实北方。
 
 
-[b]三、疫病冲击[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三、疫病冲击[/font][/b]
 
 
 [b]建安十三年（208年）赤壁疫病：斑疹伤寒[/b]
 
+
 《三国志·魏书·武帝纪》：「公至赤壁，与备战，不利。于是大疫，吏士多死者，乃引军还。」
 
-[b]现代医学考证（岳岭，2012）[/b]：赤壁曹军所患为[b]斑疹伤寒[/b]。排除血吸虫（属"瘴"非"疫"，魏晋已区分两概念）；排除鼠疫（若鼠疫则10天内大爆发，与史载"战前已有病"的渐进模式不符，死亡率也不吻合）。斑疹伤寒经跳蚤在密集人群中传播，秋冬季节为甚，与曹军大规模集结、长途行军高度吻合。死亡率5%-17%，加上饥饿与战斗损失，总死亡率可达50%。
+[color=#000000]现代医学考证（岳岭，2012）[/color]：赤壁曹军所患为[color=#000000]斑疹伤寒[/color]。排除血吸虫（属"瘴"非"疫"，魏晋已区分两概念）；排除鼠疫（若鼠疫则10天内大爆发，与史载"战前已有病"的渐进模式不符，死亡率也不吻合）。斑疹伤寒经跳蚤在密集人群中传播，秋冬季节为甚，与曹军大规模集结、长途行军高度吻合。死亡率5%-17%，加上饥饿与战斗损失，总死亡率可达50%。
 
 
 [b]建安二十二年（217年）中原大疫：鼠疫[/b]
 
+
 《后汉书·献帝纪》：「是岁大疫。」
 
-[color=#6699FF][url={"research": "曹植", "cat": "people"}]曹植[/url][/color]《说疫气》：「建安二十二年，疠气流行，[b]家家有僵尸之痛，室室有号泣之哀。或阖门而殪，或覆族而丧。[/b]……夫罹此者，悉被褐茹藿之子，荆室蓬户之人耳！若夫殿处鼎食之家，重貂累蓐之门，若是者鲜焉。」
+[color=#0066FF][url={"research": "曹植", "cat": "people"}]曹植[/url][/color]《说疫气》：「建安二十二年，疠气流行，[color=#000000]家家有僵尸之痛，室室有号泣之哀。或阖门而殪，或覆族而丧。[/color]……夫罹此者，悉被褐茹藿之子，荆室蓬户之人耳！若夫殿处鼎食之家，重貂累蓐之门，若是者鲜焉。」
 
 张仲景《伤寒卒病论》序：「余宗族素多，向余二百，建安纪年以来，犹未十稔，其死亡者，三分有二，伤寒十居其七。」
 
-[b]现代医学考证（岳岭，2012）[/b]：建安二十二年大疫为[b]鼠疫[/b]。排除流感和新疆出血热（两者不在夏季爆发，该年疫情从春延续至冬）。华佗描述伤寒症状（《备急千金要方》引）中"赤斑五死一生、黑斑十死一生"的皮下出血特征与腺鼠疫高度一致。曹植记录的"穷人多死、富人少殃"与鼠疫宿主（田鼠）的传播路径吻合：穷人接触田鼠机会远多于富人。
+[color=#000000]现代医学考证（岳岭，2012）[/color]：建安二十二年大疫为[color=#000000]鼠疫[/color]。排除流感和新疆出血热（两者不在夏季爆发，该年疫情从春延续至冬）。[color=#0066FF][url={"research": "华佗", "cat": "people"}]华佗[/url][/color]描述伤寒症状（《备急千金要方》引）中"赤斑五死一生、黑斑十死一生"的皮下出血特征与腺鼠疫高度一致。曹植记录的"穷人多死、富人少殃"与鼠疫宿主（田鼠）的传播路径吻合：穷人接触田鼠机会远多于富人。
 
-[b]疫病波及社会各层[/b]：
-- 建安七子中5人（徐干、[color=#6699FF][url={"research": "陈琳", "cat": "people"}]陈琳[/url][/color]、应玚、刘桢、[color=#6699FF][url={"research": "王粲", "cat": "people"}]王粲[/url][/color]）全部死于这一年前后
-- [color=#6699FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]之兄司马朗随军征吴，亲赴军中慰问疫病士卒，感染而死（时年47岁）
-- [color=#6699FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]《与[color=#6699FF][url={"research": "吴质", "cat": "people"}]吴质[/url][/color]书》：「昔年疾疫，亲故多离其灾，徐、陈、应、刘，一时俱逝。」
+[color=#000000]疫病波及社会各层[/color]：
+
+[indent]•  建安七子中5人（徐干、[color=#0066FF][url={"research": "陈琳", "cat": "people"}]陈琳[/url][/color]、应玚、刘桢、[color=#0066FF][url={"research": "王粲", "cat": "people"}]王粲[/url][/color]）全部死于这一年前后[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]之兄司马朗随军征吴，亲赴军中慰问疫病士卒，感染而死（时年47岁）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]《与[color=#0066FF][url={"research": "吴质", "cat": "people"}]吴质[/url][/color]书》：「昔年疾疫，亲故多离其灾，徐、陈、应、刘，一时俱逝。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]四、饥荒与人相食[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]四、饥荒与人相食[/font][/b]
+
 
 战乱破坏农业生产，与自然灾害叠加，导致大规模饥荒：
-- [color=#6699FF][url={"research": "仲长统", "cat": "people"}]仲长统[/url][/color]《昌言·理乱篇》：「名都空而不居，百里绝而无民者，不可胜数。」
-- 王粲《[color=#6699FF][url={"research": "七哀诗", "cat": "context"}]七哀诗[/url][/color]》：「出门无所见，白骨蔽平原。」
-- 史书多处记载「人相食」，属极端饥荒下的社会崩溃现象
+
+[indent]•  [color=#0066FF][url={"research": "仲长统", "cat": "people"}]仲长统[/url][/color]《昌言·理乱篇》：「名都空而不居，百里绝而无民者，不可胜数。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  王粲《[color=#0066FF][url={"research": "七哀诗", "cat": "context"}]七哀诗[/url][/color]》：「出门无所见，白骨蔽平原。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  史书多处记载「人相食」，属极端饥荒下的社会崩溃现象[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]区域人口量化（葛剑雄《中国人口史》数据）[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]区域人口量化（葛剑雄《中国人口史》数据）[/font][/b]
 
 
 各州郡户数所余比例（东汉157年→西晋，跨约120年）：
 
 
-[b]州[/b] | [b]东汉户数[/b] | [b]西晋户数[/b] | [b]所余比例[/b] | [b]背景说明[/b]
-豫州 | 1,142,783 | 116,796 | [b]10.2%[/b] | 战乱核心区，损失最惨重
-兗州 | 727,302 | 83,300 | [b]11.4%[/b] | 曹操起家之地
-青州 | 635,885 | 53,000 | [b]8.3%[/b] | 黄巾之乱重灾区
-徐州 | 477,054 | 81,021 | [b]16.9%[/b] | 曹操屠城+大疫
-[color=#6699FF][url={"research": "冀州 ", "cat": " geography"}]冀州 [/url][/color] | 908,005 | 326,000 | [b]35.9%[/b] | 曹魏核心，屯田最盛，相对保全
-益州 | 1,525,258 | 225,600 | [b]14.7%[/b] | 含晋分置梁州，战乱相对较少但也仅余七分之一
+[table=5]
+[cell][b]州[/b][/cell]
+[cell][b]东汉户数[/b][/cell]
+[cell][b]西晋户数[/b][/cell]
+[cell][b]所余比例[/b][/cell]
+[cell][b]背景说明[/b][/cell]
+[cell]豫州[/cell]
+[cell]1,142,783[/cell]
+[cell]116,796[/cell]
+[cell][color=#000000]10.2%[/color][/cell]
+[cell]战乱核心区，损失最惨重[/cell]
+[cell]兗州[/cell]
+[cell]727,302[/cell]
+[cell]83,300[/cell]
+[cell][color=#000000]11.4%[/color][/cell]
+[cell]曹操起家之地[/cell]
+[cell]青州[/cell]
+[cell]635,885[/cell]
+[cell]53,000[/cell]
+[cell][color=#000000]8.3%[/color][/cell]
+[cell]黄巾之乱重灾区[/cell]
+[cell]徐州[/cell]
+[cell]477,054[/cell]
+[cell]81,021[/cell]
+[cell][color=#000000]16.9%[/color][/cell]
+[cell]曹操屠城+大疫[/cell]
+[cell][color=#0066FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color][/cell]
+[cell]908,005[/cell]
+[cell]326,000[/cell]
+[cell][color=#000000]35.9%[/color][/cell]
+[cell]曹魏核心，屯田最盛，相对保全[/cell]
+[cell]益州[/cell]
+[cell]1,525,258[/cell]
+[cell]225,600[/cell]
+[cell][color=#000000]14.7%[/color][/cell]
+[cell]含晋分置梁州，战乱相对较少但也仅余七分之一[/cell]
+[/table]
 
 
-[b]解读要点：[/b]
-- 西晋数字仍严重低估实际人口（萌户、屯田户、兵户均未计）
-- 冀州最高是因曹操扩大冀州范围+广开屯田+招纳流亡
-- 豫州、青州不足12%，是汉末中原战乱最直接的人口记录
-- 即便如此，西晋280年时官方户口已达1616万，葛剑雄估算西晋极盛时（约300年）实际3500万——这是从三国谷值2200万的近一个世纪逐步恢复的结果
+[color=#000000]解读要点：[/color]
+
+[indent]•  西晋数字仍严重低估实际人口（萌户、屯田户、兵户均未计）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  冀州最高是因曹操扩大冀州范围+广开屯田+招纳流亡[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  豫州、青州不足12%，是汉末中原战乱最直接的人口记录[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  即便如此，西晋280年时官方户口已达1616万，葛剑雄估算西晋极盛时（约300年）实际3500万——这是从三国谷值2200万的近一个世纪逐步恢复的结果[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]三国末期各政权官方户口[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国末期各政权官方户口[/font][/b]
 
 
-[b]政权[/b] | [b]灭亡时间[/b] | [b]官方户数[/b] | [b]官方口数[/b]
-蜀汉 | 263年 | 28万 | 94万
-曹魏 | 约260年推算 | 66万 | 443万
-孙吴 | 280年 | 52万 | 230万
-[b]三国合计[/b] |  | [b]约146万[/b] | [b]约767万[/b]
+[table=4]
+[cell][b]政权[/b][/cell]
+[cell][b]灭亡时间[/b][/cell]
+[cell][b]官方户数[/b][/cell]
+[cell][b]官方口数[/b][/cell]
+[cell]蜀汉[/cell]
+[cell]263年[/cell]
+[cell]28万[/cell]
+[cell]94万[/cell]
+[cell]曹魏[/cell]
+[cell]约260年推算[/cell]
+[cell]66万[/cell]
+[cell]443万[/cell]
+[cell]孙吴[/cell]
+[cell]280年[/cell]
+[cell]52万[/cell]
+[cell]230万[/cell]
+[cell][color=#000000]三国合计[/color][/cell]
+[cell][/cell]
+[cell][color=#000000]约146万[/color][/cell]
+[cell][color=#000000]约767万[/color][/cell]
+[/table]
 
 
-葛剑雄估算实际人口（含萌户、屯田户、兵户、少数民族）：[b]约2200-3200万[/b]。
+葛剑雄估算实际人口（含萌户、屯田户、兵户、少数民族）：[color=#000000]约2200-3200万[/color]。
 
 
-[b]东吴的流民政策与山越安置[/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]东吴的流民政策与山越安置[/font][/b]
 
 
-[b]一、东吴人口来源结构[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]一、东吴人口来源结构[/font][/b]
+
 
 东吴人口由多个层次构成，官方户籍（280年52万户230万口）严重低估实际人口：
-1. [b]编户齐民[/b]：国家正式户籍人口
-2. [b]复客/荫户[/b]：藏匿于豪族私门，逃避国家赋役
-3. [b]屯田民[/b]：赏赐给将领的佃客，不入国家户籍
-4. [b]山越等未入籍少数民族[/b]
+
+[indent]1.  [color=#000000]编户齐民[/color]：国家正式户籍人口[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  [color=#000000]复客/荫户[/color]：藏匿于豪族私门，逃避国家赋役[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  [color=#000000]屯田民[/color]：赏赐给将领的佃客，不入国家户籍[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]山越等未入籍少数民族[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]二、领兵制与复客制：北方流民的制度化吸收[/b]
-
-赤壁前后（建安十三年，208年），大批北方士民南渡江东。[color=#6699FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]为笼络来归的流民武将，推行：
-- [b]世袭领兵制[/b]：授予立功将领可世袭的军队和人口
-- [b]复客制[/b]：将依附于土地的佃客赐给将领，这些人免缴国家赋税，成为将领私产
-- [b]奉邑制[/b]：赐给将领若干县邑税收供养军队
-
-代表案例：[color=#6699FF][url={"research": "鲁肃", "cat": "people"}]鲁肃[/url][/color]"率三百馀人"过江，[color=#6699FF][url={"research": "吕范", "cat": "people"}]吕范[/url][/color]"将私客百人归策"——流民精英携带私兵部曲归附，孙权以制度性赏赐予以固化。
-
-[color=#AAAAAA]　这套制度的人口后果：大量流民转化为豪族/将领的私人人口，不入国家户籍，造成孙吴官方人口数字系统性偏低。[/color]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]二、领兵制与复客制：北方流民的制度化吸收[/font][/b]
 
 
-[b]三、山越政策："强者为兵，羸者补户"[/b]
+赤壁前后（建安十三年，208年），大批北方士民南渡江东。[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]为笼络来归的流民武将，推行：
 
-[b]根本驱动力：[/b]
+[indent]•  [color=#000000]世袭领兵制[/color]：授予立功将领可世袭的军队和人口[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]复客制[/color]：将依附于土地的佃客赐给将领，这些人免缴国家赋税，成为将领私产[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]奉邑制[/color]：赐给将领若干县邑税收供养军队[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+代表案例：[color=#0066FF][url={"research": "鲁肃", "cat": "people"}]鲁肃[/url][/color]"率三百馀人"过江，[color=#0066FF][url={"research": "吕范", "cat": "people"}]吕范[/url][/color]"将私客百人归策"——流民精英携带私兵部曲归附，孙权以制度性赏赐予以固化。
+
+
+[indent][color=#666666]┃ 这套制度的人口后果：大量流民转化为豪族/将领的私人人口，不入国家户籍，造成孙吴官方人口数字系统性偏低。[/color][/indent]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三、山越政策："强者为兵，羸者补户"[/font][/b]
+
+
+[color=#000000]根本驱动力：[/color]
 孙吴急需人口充实军队和编户。山越聚居江南山区，"依阻山险，不纳王租"，是孙吴最重要的内部人口来源。
 
-[b]主要手段（建安五年起）：[/b]
-武力讨伐（贺齐、[color=#6699FF][url={"research": "陆逊", "cat": "people"}]陆逊[/url][/color]、[color=#6699FF][url={"research": "周鲂", "cat": "people"}]周鲂[/url][/color]等），被征服者一律执行"强者为兵，羸者补户"原则——精壮编为士兵，老弱迁入平地充编户。
+[color=#000000]主要手段（建安五年起）：[/color]
+武力讨伐（[color=#0066FF][url={"research": "贺齐", "cat": "people"}]贺齐[/url][/color]、[color=#0066FF][url={"research": "陆逊", "cat": "people"}]陆逊[/url][/color]、[color=#0066FF][url={"research": "周鲂", "cat": "people"}]周鲂[/url][/color]等），被征服者一律执行"强者为兵，羸者补户"原则——精壮编为士兵，老弱迁入平地充编户。
 
-[b][color=#6699FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]的围困策（嘉禾三年，234年起）：[/b]
-孙权任命诸葛恪为"抚越将军，领[color=#6699FF][url={"research": "丹阳", "cat": "geography"}]丹阳[/url][/color]太守"，围困丹阳山越三年：
-1. 令吴郡、[color=#6699FF][url={"research": "会稽", "cat": "geography"}]会稽[/url][/color]、新都、鄱阳四郡固守各自疆界
-2. 派兵控制丹阳所有险要，切断山越内外联系
-3. 不主动进攻，待山越庄稼成熟时纵兵芟刈（毁粮）
-4. 以饥饿迫降
+[color=#000000][color=#0066FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]的围困策（嘉禾三年，234年起）：[/color]
+孙权任命诸葛恪为"抚越将军，领[color=#0066FF][url={"research": "丹阳", "cat": "geography"}]丹阳[/url][/color]太守"，围困丹阳山越三年：
 
-[b]结果（《三国志·吴书·诸葛恪传》）：[/b] 得精壮[b]四万编为士兵[/b]，其余[b]约六万迁至平地充编户[/b]。这是孙吴史上规模最大的一次山越安置行动。
-
-[b]山越成分的复杂性（唐长孺、吕思勉等学者）：[/b]
-山越并非纯粹的少数民族，其中含相当数量[b]逃税避役的汉族流民[/b]——即东吴"讨山越"在一定程度上也是在回收本应纳税的汉族逃民。
-
-
-[b]四、东吴人口政策的历史效果[/b]
-
-- 孙吴推行上述综合政策后，吴国强盛时期（约252年）人口约300万（含复客、荫户约达500万以上）
-- 孙吴在三国末期设有4州43郡313县，郡县数远超东汉同区域，说明人口增加、土地开辟
-- 但复客制的副作用是：大量人口藏于豪族私门，国家税源严重流失，成为孙吴政权财政长期困难的根源之一
+[indent]1.  令吴郡、[color=#0066FF][url={"research": "会稽", "cat": "geography"}]会稽[/url][/color]、新都、鄱阳四郡固守各自疆界[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  派兵控制丹阳所有险要，切断山越内外联系[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  不主动进攻，待山越庄稼成熟时纵兵芟刈（毁粮）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  以饥饿迫降[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b]蜀汉的人口恢复与诸葛亮治蜀[/b]
+[color=#000000]结果（《三国志·吴书·诸葛恪传》）：[/color] 得精壮[color=#000000]四万编为士兵[/color]，其余[color=#000000]约六万迁至平地充编户[/color]。这是孙吴史上规模最大的一次山越安置行动。
+
+[color=#000000]山越成分的复杂性（唐长孺、吕思勉等学者）：[/color]
+山越并非纯粹的少数民族，其中含相当数量[color=#000000]逃税避役的汉族流民[/color]——即东吴"讨山越"在一定程度上也是在回收本应纳税的汉族逃民。
 
 
-[b]一、人口数据：小国的稳步增长[/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]四、东吴人口政策的历史效果[/font][/b]
 
 
-[b]时间[/b] | [b]官方户数[/b] | [b]官方口数[/b] | [b]史料出处[/b]
-221年（[color=#6699FF][url={"research": "刘备 ", "cat": " people"}]刘备 [/url][/color]称帝） | 20万 | 90万 | 《晋书·卷十四》
-236年前后 | 约20万（刚过） | 约90万 | 《通典·食货典》
-263年（灭亡时） | 28万 | 94万（含吏民） | 《三国志·卷三十三》
+[indent]•  孙吴推行上述综合政策后，吴国强盛时期（约252年）人口约300万（含复客、荫户约达500万以上）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  孙吴在三国末期设有4州43郡313县，郡县数远超东汉同区域，说明人口增加、土地开辟[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  但复客制的副作用是：大量人口藏于豪族私门，国家税源严重流失，成为孙吴政权财政长期困难的根源之一[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[color=#AAAAAA]　《三国志》原文："领户二十八万，男女口九十四万，带甲将士十万二千，吏四万人。"[/color]
-
-[b]关键比例：[/b] 10万士兵 vs 94万总口——约每9-10人养一兵，是三国中军民比最高的政权。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]蜀汉的人口恢复与诸葛亮治蜀[/font][/b]
 
 
-[b]二、诸葛亮治蜀的核心措施[/b]
-
-[b]方针：[/b] "务农殖谷，闭关息民"；"唯劝农业，无夺其时；唯薄赋敛，无尽民财"
-
-[b]（1）水利：都江堰的制度性维护[/b]
-- 设置"堰官"专职负责都江堰
-- 配备1200名士兵常年维护（非临时修缮，而是制度化管理）
-- 《华阳国志》：[color=#6699FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]平原"亩收三十斛"，较东汉末约提高一倍
-- 修建九里堤、羊马河等配套水利工程
-
-[b]（2）丈田令：打击豪强隐田[/b]
-- 颁布丈田令，核实实际耕地，打击益州豪强兼并
-- 遭到益州本地大族抵制——[color=#6699FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]执法严酷的背景之一
-
-[b]（3）屯田：军民双轨[/b]
-- 军屯：士兵轮流种地，减少对民间的粮食压榨
-- 汉中民屯：曹操撤离时将汉中居民北迁，诸葛亮在此移民垦荒重建
-- 士兵到期轮换制度：防止长期征兵导致农村劳动力流失
-
-[b]（4）蜀锦：以工商补农[/b]
-- 大力发展蜀锦产业，设"锦官城"专门管理
-- 蜀锦成为蜀汉对外贸易的"硬通货"，以手工业收入补充农业不足的财政
-
-[b]（5）南中平定与少数民族人口[/b]
-- 建兴三年（225年）平定南中，以七擒七纵安抚孟获
-- 南中成为蜀汉后期重要的兵源（"无当飞军"为南中少数民族组成的精锐）和物资（铁、金银、耕牛、战马）来源
-- 本质上是蜀汉版的"山越政策"——将边境少数民族人口转化为军事和经济资源
+[b][font=res://resource/font/FandolSong-Bold/26.tres]一、人口数据：小国的稳步增长[/font][/b]
 
 
-[b]三、人口恢复的结构性困境[/b]
-
-- 益州人口基数小，战争消耗持续（[color=#6699FF][url={"research": "夷陵之战", "cat": "events"}]夷陵之战[/url][/color]、五次北伐、后期[color=#6699FF][url={"research": "姜维", "cat": "people"}]姜维[/url][/color]11次北伐）
-- 每次北伐均需巨量粮食（[color=#6699FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]道运输效率极低），农业生产成果大量转化为军费
-- 蜀汉后期（姜维掌兵）：[color=#6699FF][url={"research": "蒋琬", "cat": "people"}]蒋琬[/url][/color]、[color=#6699FF][url={"research": "费祎", "cat": "people"}]费祎[/url][/color]执政期间（234-253年）相对保守，人口稳步增长；姜维频繁北伐后，国力再度消耗
-
-
-[b]四、诸葛亮治蜀与东吴山越政策的对比[/b]
-
-
-[b]政权[/b] | [b]人口补充策略[/b] | [b]对少数民族的手段[/b] | [b]历史效果[/b]
-东吴 | 山越"强者为兵，羸者补户" + 复客制吸收流民 | 武力平定，分类安置 | 人口增长显著但严重低报；复客制造成国家税源流失
-蜀汉 | 南中平定，少数民族编为"飞军" + 屯田 | 七擒七纵，以安抚为主 | 人口稳步增长（40%），但绝对数量仍极小
-曹魏 | 屯田（民屯+军屯）+ 强制内迁异族 | 强制迁徙（氐、羌等） | 人口最多，官方户籍最接近实际（443万口）
-
-
-[b]关键人物与事件[/b]
-
-
-- [b]张角（黄巾之乱）[/b]：引发第一波大规模流民潮的导火索
-- [b]董卓、李傕、郭汜[/b]：直接造成关中人口崩溃的军阀
-- [b]刘虞[/b]：以仁政著称，吸纳青徐百余万流民，成为北方稳定因素之一
-- [b]张仲景[/b]：以宗族大量死于疫病为契机，撰《伤寒杂病论》，成为中医传染病学奠基之作
-- [b]华佗[/b]：《备急千金要方》引其论伤寒症状，描述与鼠疫特征（皮下出血斑）高度吻合
-- [b]曹操[/b]：通过屯田制（建安元年，196年）将流民组织化，将人口崩溃转化为生产力
-- [b][color=#6699FF][url={"research": "刘焉", "cat": "people"}]刘焉[/url][/color][/b]：招引北方流民组成「东州兵」，控制益州，成为[color=#6699FF][url={"research": "刘璋", "cat": "people"}]刘璋[/url][/color]政权的军事基础
-- [b]诸葛恪[/b]：实施围困战术平定丹阳山越，三年得兵4万、编户6万，孙吴最大规模山越安置行动
-- [b]诸葛亮[/b]：治蜀的"务农殖谷"政策，通过都江堰维护、丈田令、屯田、蜀锦贸易等多管齐下，维持蜀汉国力
+[table=4]
+[cell][b]时间[/b][/cell]
+[cell][b]官方户数[/b][/cell]
+[cell][b]官方口数[/b][/cell]
+[cell][b]史料出处[/b][/cell]
+[cell]221年（[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]称帝）[/cell]
+[cell]20万[/cell]
+[cell]90万[/cell]
+[cell]《晋书·卷十四》[/cell]
+[cell]236年前后[/cell]
+[cell]约20万（刚过）[/cell]
+[cell]约90万[/cell]
+[cell]《通典·食货典》[/cell]
+[cell]263年（灭亡时）[/cell]
+[cell]28万[/cell]
+[cell]94万（含吏民）[/cell]
+[cell]《三国志·卷三十三》[/cell]
+[/table]
 
 
-[b]史实 vs 演义[/b]
+[indent][color=#666666]┃ 《三国志》原文："领户二十八万，男女口九十四万，带甲将士十万二千，吏四万人。"[/color][/indent]
 
 
-[b]议题[/b] | [b]史实[/b] | [b]演义/民间[/b]
-曹操屠徐州 | 史有明载（坑杀数万，水为不流）；西晋徐州户数仅余东汉的16.9% | 演义以政治叙事为主，未充分呈现平民惨状
-人口损失比例 | 实际约40%-60%（葛剑雄估算）；官方数字只剩13%但严重低估 | 常被戏剧化为"九成消失"、"千里无人烟"
-赤壁疫病 | 斑疹伤寒（岳岭2012考证）；曹军死亡叠加战争+饥饿+疫病三因 | 常被简化为单一原因（血吸虫或鼠疫）
-建安二十二年疫病 | 鼠疫（岳岭2012考证）；穷人先死、贵人少殃与传播机制吻合 | 演义几乎不写疫病，"英雄叙事"遮蔽了平民死亡
-流民主动性 | 流民有主动选择目的地的能力（逃往刘虞、刘焉处） | 通常被描写为被动受害者
-伤寒的概念 | 汉代"伤寒"是所有外感热病的统称（含鼠疫、斑疹伤寒、流感等） | 常被误读为现代意义的"伤寒杆菌感染"
-东吴人口 | 官方52万户严重低报，大量人口藏于豪族复客制之下 | 演义不涉及人口结构，以英雄叙事遮蔽
-诸葛亮北伐 | 每次北伐消耗大量农业积累，与治蜀养民政策形成张力 | 演义强调军事神算，忽视粮道与民力的制约
-山越"羸者补户" | 被征服者迁至平地编户，不一定全是少数民族（含汉族逃税者） | 通常被呈现为单一的民族问题
+[color=#000000]关键比例：[/color] 10万士兵 vs 94万总口——约每9-10人养一兵，是三国中军民比最高的政权。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]二、诸葛亮治蜀的核心措施[/font][/b]
+
+
+[color=#000000]方针：[/color] "务农殖谷，闭关息民"；"唯劝农业，无夺其时；唯薄赋敛，无尽民财"
+
+[color=#000000]（1）水利：都江堰的制度性维护[/color]
+
+[indent]•  设置"堰官"专职负责都江堰[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  配备1200名士兵常年维护（非临时修缮，而是制度化管理）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  《华阳国志》：[color=#0066FF][url={"research": "成都", "cat": "geography"}]成都[/url][/color]平原"亩收三十斛"，较东汉末约提高一倍[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  修建九里堤、羊马河等配套水利工程[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]（2）丈田令：打击豪强隐田[/color]
+
+[indent]•  颁布丈田令，核实实际耕地，打击益州豪强兼并[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  遭到益州本地大族抵制——[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]执法严酷的背景之一[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]（3）屯田：军民双轨[/color]
+
+[indent]•  军屯：士兵轮流种地，减少对民间的粮食压榨[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  汉中民屯：曹操撤离时将汉中居民北迁，诸葛亮在此移民垦荒重建[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  士兵到期轮换制度：防止长期征兵导致农村劳动力流失[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]（4）蜀锦：以工商补农[/color]
+
+[indent]•  大力发展蜀锦产业，设"锦官城"专门管理[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  蜀锦成为蜀汉对外贸易的"硬通货"，以手工业收入补充农业不足的财政[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]（5）南中平定与少数民族人口[/color]
+
+[indent]•  建兴三年（225年）平定南中，以七擒七纵安抚[color=#0066FF][url={"research": "孟获", "cat": "people"}]孟获[/url][/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  南中成为蜀汉后期重要的兵源（"无当飞军"为南中少数民族组成的精锐）和物资（铁、金银、耕牛、战马）来源[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  本质上是蜀汉版的"山越政策"——将边境少数民族人口转化为军事和经济资源[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三、人口恢复的结构性困境[/font][/b]
+
+
+[indent]•  益州人口基数小，战争消耗持续（[color=#0066FF][url={"research": "夷陵之战", "cat": "events"}]夷陵之战[/url][/color]、五次北伐、后期[color=#0066FF][url={"research": "姜维", "cat": "people"}]姜维[/url][/color]11次北伐）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  每次北伐均需巨量粮食（[color=#0066FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]道运输效率极低），农业生产成果大量转化为军费[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  蜀汉后期（姜维掌兵）：[color=#0066FF][url={"research": "蒋琬", "cat": "people"}]蒋琬[/url][/color]、[color=#0066FF][url={"research": "费祎", "cat": "people"}]费祎[/url][/color]执政期间（234-253年）相对保守，人口稳步增长；姜维频繁北伐后，国力再度消耗[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]四、诸葛亮治蜀与东吴山越政策的对比[/font][/b]
+
+
+[table=4]
+[cell][b]政权[/b][/cell]
+[cell][b]人口补充策略[/b][/cell]
+[cell][b]对少数民族的手段[/b][/cell]
+[cell][b]历史效果[/b][/cell]
+[cell]东吴[/cell]
+[cell]山越"强者为兵，羸者补户" + 复客制吸收流民[/cell]
+[cell]武力平定，分类安置[/cell]
+[cell]人口增长显著但严重低报；复客制造成国家税源流失[/cell]
+[cell]蜀汉[/cell]
+[cell]南中平定，少数民族编为"飞军" + 屯田[/cell]
+[cell]七擒七纵，以安抚为主[/cell]
+[cell]人口稳步增长（40%），但绝对数量仍极小[/cell]
+[cell]曹魏[/cell]
+[cell]屯田（民屯+军屯）+ 强制内迁异族[/cell]
+[cell]强制迁徙（氐、羌等）[/cell]
+[cell]人口最多，官方户籍最接近实际（443万口）[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]关键人物与事件[/font][/b]
+
+
+[indent]•  [color=#000000]张角（黄巾之乱）[/color]：引发第一波大规模流民潮的导火索[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]董卓、李傕、郭汜[/color]：直接造成关中人口崩溃的军阀[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]刘虞[/color]：以仁政著称，吸纳青徐百余万流民，成为北方稳定因素之一[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]张仲景[/color]：以宗族大量死于疫病为契机，撰《伤寒杂病论》，成为中医传染病学奠基之作[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]华佗[/color]：《备急千金要方》引其论伤寒症状，描述与鼠疫特征（皮下出血斑）高度吻合[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]曹操[/color]：通过屯田制（建安元年，196年）将流民组织化，将人口崩溃转化为生产力[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000][color=#0066FF][url={"research": "刘焉", "cat": "people"}]刘焉[/url][/color][/color]：招引北方流民组成「东州兵」，控制益州，成为[color=#0066FF][url={"research": "刘璋", "cat": "people"}]刘璋[/url][/color]政权的军事基础[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]诸葛恪[/color]：实施围困战术平定丹阳山越，三年得兵4万、编户6万，孙吴最大规模山越安置行动[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]诸葛亮[/color]：治蜀的"务农殖谷"政策，通过都江堰维护、丈田令、屯田、蜀锦贸易等多管齐下，维持蜀汉国力[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+
+
+[table=3]
+[cell][b]议题[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]演义/民间[/b][/cell]
+[cell]曹操屠徐州[/cell]
+[cell]史有明载（坑杀数万，水为不流）；西晋徐州户数仅余东汉的16.9%[/cell]
+[cell]演义以政治叙事为主，未充分呈现平民惨状[/cell]
+[cell]人口损失比例[/cell]
+[cell]实际约40%-60%（葛剑雄估算）；官方数字只剩13%但严重低估[/cell]
+[cell]常被戏剧化为"九成消失"、"千里无人烟"[/cell]
+[cell]赤壁疫病[/cell]
+[cell]斑疹伤寒（岳岭2012考证）；曹军死亡叠加战争+饥饿+疫病三因[/cell]
+[cell]常被简化为单一原因（血吸虫或鼠疫）[/cell]
+[cell]建安二十二年疫病[/cell]
+[cell]鼠疫（岳岭2012考证）；穷人先死、贵人少殃与传播机制吻合[/cell]
+[cell]演义几乎不写疫病，"英雄叙事"遮蔽了平民死亡[/cell]
+[cell]流民主动性[/cell]
+[cell]流民有主动选择目的地的能力（逃往刘虞、刘焉处）[/cell]
+[cell]通常被描写为被动受害者[/cell]
+[cell]伤寒的概念[/cell]
+[cell]汉代"伤寒"是所有外感热病的统称（含鼠疫、斑疹伤寒、流感等）[/cell]
+[cell]常被误读为现代意义的"伤寒杆菌感染"[/cell]
+[cell]东吴人口[/cell]
+[cell]官方52万户严重低报，大量人口藏于豪族复客制之下[/cell]
+[cell]演义不涉及人口结构，以英雄叙事遮蔽[/cell]
+[cell]诸葛亮北伐[/cell]
+[cell]每次北伐消耗大量农业积累，与治蜀养民政策形成张力[/cell]
+[cell]演义强调军事神算，忽视粮道与民力的制约[/cell]
+[cell]山越"羸者补户"[/cell]
+[cell]被征服者迁至平地编户，不一定全是少数民族（含汉族逃税者）[/cell]
+[cell]通常被呈现为单一的民族问题[/cell]
+[/table]
