@@ -81,7 +81,7 @@ func effect_10093_4():
 	srb.targetType = SkillRangeBuff.BuffTargetType.VSTATE
 	srb.targetId = vs.id
 	srb.condition = ""
-	srb.continuous = 1
+	srb.continuous = 12
 	DataManager.skill_range_buff.append(srb)
 
 	var fromYear = DataManager.year

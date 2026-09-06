@@ -250,6 +250,54 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+程远志在三国杀中有两种形态收录：
+
+[color=#000000]① 自走棋模式（文和演兵）：[/color]
+
+
+[table=2]
+[cell][b]项目[/b][/cell]
+[cell][b]内容[/b][/cell]
+[cell]势力[/cell]
+[cell]黄巾[/cell]
+[cell]星级[/cell]
+[cell]2[/cell]
+[cell]普通（体/攻）[/cell]
+[cell]3/2[/cell]
+[cell]普通效果[/cell]
+[cell][color=#000000]当先[/color]：使本局黄巾兵+2/+1。[color=#000000]遗计[/color]：上阵1个黄巾兵。[/cell]
+[cell]金色（体/攻）[/cell]
+[cell]6/4[/cell]
+[cell]金色效果[/cell]
+[cell][color=#000000]当先[/color]：使本局黄巾兵+4/+2。[color=#000000]遗计[/color]：上阵1个金色黄巾兵。[/cell]
+[cell]趣闻[/cell]
+[cell]「好你个关羽，差点给我盔甲干开线！」[/cell]
+[/table]
+
+
+版本调整历史：S6赛季（约2025年5月）等级由3→2，属性4/3→3/2；「遗计给黄巾兵加体力+挑衅」改为「当先+遗计分离」机制。（来源：WIKI 2026-01-23；官方社区S6公告）
+
+[color=#000000]② 官盗身份局（线下，QUN249）：[/color]
+
+
+[indent]•  [color=#000000]编号：[/color] QUN249[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]称号：[/color] 逆流而动[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]画师：[/color] HOOO[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]分包：[/color] 官盗-汉末风云[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]机制特征：[/color] 「逢二进一的决斗大王，着重强调被武圣克制」——对应演义中被关羽（武圣）一刀斩杀的设定，玩法上围绕决斗/武圣克制关系设计。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+（见 `ref-sanguosha-data.md`，2026-06-03补充）
+
+
 [b][font=res://resource/font/FandolSong-Bold/26.tres]漫画[/font][/b]
 
 

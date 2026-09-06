@@ -41,6 +41,7 @@ func effect_30124_confirmed() -> void:
 	var x = get_x()
 	ske.cost_ap(x)
 	ske.set_war_skill_val(x, 1)
+	ske.set_battle_skill_val(x)
 	ske.battle_cd(99999)
 
 	for bu in DataManager.battle_units:

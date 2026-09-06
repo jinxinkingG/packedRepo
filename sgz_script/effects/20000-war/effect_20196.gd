@@ -12,7 +12,7 @@ const LOST_SKILL = "马术"
 func effect_20196_start():
 	if me.action_point <= 0:
 		var msg = "当前无可用机动力\n发动【{0}】毫无意义".format([ske.skill_name])
-		play_dialog(actorId, msg, 2, 2001)
+		play_dialog(actorId, msg, 2, 2999)
 		return
 
 	var msg = "发动【{0}】失去【{1}】\n全军机动力增加{2}\n可否？".format([

@@ -38,6 +38,12 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
+[b][font=res://resource/font/FandolSong-Bold/26.tres]史料原文（裴注引《吴录》）[/font][/b]
+
+
+[indent][color=#666666]┃ （孙）策自讨（严白）虎，虎高垒坚守，使其弟舆请和。许之。舆请独与策会面约。既会，策引白刃斫席，舆体动，策笑曰："闻卿能坐跃，剿捷不常，聊戏卿耳！"舆曰："我见刃乃然。"策知其无能也，乃以手戟投之，立死。舆有勇力，虎众以其死也，甚惧。进攻破之。虎奔余杭，投许昭于虏中。[color=#0066FF][url={"research": "程普", "cat": "people"}]程普[/url][/color]请击昭，策曰："许昭有义于旧君，有诚于故友，此丈夫之志也。"乃舍之。[/color][/indent]
+
+
 [color=#888888]──────────────────────────────[/color]
 
 
@@ -173,6 +179,89 @@
 
 
 有学者指出《吴录》此段存在多处逻辑疑点（详见 `ref-sanguozhi-wulu.md`），并提出一种替代性解读：严舆单独求和会面，实则意图刺杀孙策；孙策的"斫席"是察觉异动后的试探；严舆动了一下意味着准备动手，被孙策抢先以手戟击杀。这样"以勇力著称的严舆被孙策杀死，军心惶惶"才有逻辑。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价与艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]历代评价[/font][/b]
+
+
+严舆在史料中出现极为简短，后世无专门评价。相关评价均附于对严白虎或孙策的论述之下：
+
+
+[indent]•  [color=#000000]裴松之（注《三国志》）：[/color] "于时强宗骁帅，祖郎、严虎之徒，禽灭已尽，所馀山越，盖何足虑？"——裴注将严白虎（严虎）与祖郎并列为"强宗骁帅"，被孙策全部消灭。此评价间接包含严舆，视其兄弟为山越割据势力。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]孙策（据《三国志·孙策传》）：[/color] "白虎等群盗，非有大志，此成禽耳。"——轻蔑评价，视严氏兄弟为普通盗贼，非有志之士。严舆的被杀正是孙策此一判断的具体实施。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+无专门评价严舆个人的传世文字。正史中其形象定格为：有勇力、身手矫捷，但临场怯懦、死于孙策一击，成为孙策平江东传说的陪衬人物。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏艺术形象[/font][/b]
+
+
+[color=#000000]三国志14（光荣正史模拟）：[/color]
+
+[indent]•  五维：统率62 / 武力78 / 知力48 / 政治19 / 魅力23[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  主义：我道；政策：長蛇強化 Lv3[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  个性：親越、猪突、粗忽；PK追加：軽率[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：奮戦、駆逐；阵形：鋒矢、長蛇[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  官职：建武校尉（[color=#0066FF][url={"research": "厳白虎", "cat": "people"}]厳白虎[/url][/color]势力）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志11：[/color]
+
+[indent]•  五维：统率61 / 武力78 / 知力44 / 政治20 / 魅力29[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：親越（所属都市に山越族の根城が発生しない）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  兵科适性：槍A / 戟A / 弩B / 騎C / 兵器C / 水軍B[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  性格：猪突；口調：蛮族[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志8 Remake（8R）：[/color]
+
+[indent]•  五维：统率63 / 武力76 / 知力42 / 政治26 / 魅力27 / 性格：豪胆 / 义理：3[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：乱撃2、猛突2（步兵）；乱戦1（舰船）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：話術1；歩将2；水練1；膂力2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  重视：名声；兴趣：武具、宝物、酒[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国群英传2：[/color]
+
+[indent]•  武力：76；智力：45[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  武将技（5技）：旋龙 → 八门金锁 → 八面火转 → 乱飞矢 → 连弩狂[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]真三国无双（Dynasty Warriors）系列：[/color]
+
+[indent]•  首次登场：Dynasty Warriors 3（三国无双2），此后在系列中作为非玩家英雄单位出现[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  势力：严白虎军；武器：剑；定位：Hero单位[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  重要战场：吴郡之战（Wujun）；负责守护北面入口，若遭袭即援[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国杀：[/color] 无独立收录。严白虎在三国杀有收录，但严舆未独立成牌。
 
 
 [color=#888888]──────────────────────────────[/color]

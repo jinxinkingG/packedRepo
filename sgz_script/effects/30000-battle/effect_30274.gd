@@ -1,6 +1,6 @@
 extends "effect_30000.gd"
 
-#水龙主动技
+#水龙主动技 #神策
 #【水龙】小战场，主动技。非攻城、非林地形，非山地形可以使用，消耗8点体力，以你前方6格距离的格子为中心，3×3范围内出现水浪。水浪对范围内的每个对方士兵造成X点水龙伤害，并击退范围内士兵1格，X＝你的政×0.4，白刃战限1次。
 
 const EFFECT_ID = 30274
@@ -8,13 +8,21 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
 const HP_COST = 8
 
+func get_hp_cost() -> int:
+	var ret = HP_COST
+	if actor.get_equip_feature_max("神策体力消耗减半") > 0:
+		ret = int(ret / 2)
+	return ret
+
+
 func effect_30274_start()->void:
+	var hpCost = get_hp_cost()
 	var unit = me.battle_actor_unit()
 	if unit == null:
 		tactic_end()
 		return
-	if unit.get_hp() <= HP_COST:
-		var msg = "体力不足，需 > {0}".format([HP_COST])
+	if unit.get_hp() <= hpCost:
+		var msg = "体力不足，需 > {0}".format([hpCost])
 		me.attach_free_dialog(msg, 3, 30000)
 		tactic_end()
 		return
@@ -37,12 +45,13 @@ func on_view_model_2000() -> void:
 	return
 
 func effect_30274_2() -> void:
+	var hpCost = get_hp_cost()
 	var unit = me.battle_actor_unit()
 	var scene = SceneManager.current_scene()
 	scene.mark_selectable_positions([])
 
-	ske.battle_change_unit_hp(unit, -HP_COST)
-	unit.add_status_effect("-{0}#FF0000".format([HP_COST]))
+	ske.battle_change_unit_hp(unit, -hpCost)
+	unit.add_status_effect("-{0}#FF0000".format([hpCost]))
 	
 	var center = unit.unit_position - unit.get_side() * 6
 	var positions = [center]

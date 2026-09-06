@@ -172,8 +172,7 @@ func effect_10135_move() -> void:
 	# 简单处理，都移动到首都，并且不考虑连线
 	var capital = clCity.get_capital_city(targetCity.get_vstate_id())
 	for memberId in targetCity.get_actor_ids():
-		clCity.move_to(memberId, capital.ID)
-	targetCity.set_vstate_id(-1)
+		clCity.transfer_to(memberId, capital.ID)
 
 	var msg = "幸不辱命！\n{0}军已让出{1}\n可速点将接收".format([
 		capital.get_lord_name(), targetCity.get_full_name(),
@@ -260,7 +259,7 @@ func effect_10135_failed() -> void:
 	srb.targetType = SkillRangeBuff.BuffTargetType.VSTATE
 	srb.targetId = targetCity.get_vstate_id()
 	srb.condition = ""
-	srb.continuous = 1
+	srb.continuous = 12
 	DataManager.skill_range_buff.append(srb)
 	var msg = "{0}如此无礼！\n骄兵必败，当择机图之\n（{1}军一年内附加 [自矜]".format([
 		DataManager.get_actor_naughty_title(targetCity.get_leader_id(), actorId),

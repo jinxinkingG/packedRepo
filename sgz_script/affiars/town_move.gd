@@ -123,12 +123,9 @@ func move_6():
 
 	DataManager.set_env("内政.命令", "移动")
 	for actorId in sendActors:
-		clCity.move_to(actorId, targetCity.ID)
+		clCity.transfer_to(actorId, targetCity.ID)
 		# 不支持流程
 		SkillHelper.auto_trigger_skill(actorId, 10012, "")
-	targetCity.change_vstate(fromCity.get_vstate_id())
-	if fromCity.get_actor_ids().empty():
-		fromCity.change_vstate(-1)
 	DataManager.twinkle_citys = [fromCity.ID, targetCity.ID]
 	var msg = "遵命，马上就去"
 	DataManager.set_env("对话", msg)

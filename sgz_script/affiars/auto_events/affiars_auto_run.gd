@@ -93,6 +93,9 @@ func month_init():
 	# 星耀剧本的特殊逻辑
 	check_stars_month_init()
 
+	# 特殊装备月度效果
+	check_monthly_equip_features()
+
 	# 谍网更新暂时放这里
 	var dw = DieWangInfo.new()
 	dw.load_env()
@@ -533,4 +536,38 @@ func game_start() -> void:
 		if is_instance_valid(SceneManager.war_intro):
 			SceneManager.war_intro.hide_immediately()
 	FlowManager.add_flow("month_init")
+	return
+
+func check_monthly_equip_features() -> void:
+	# 暂时硬编码判断实现，加速
+	for vs in clVState.all_vstates(true):
+		var lord = vs.get_lord()
+		if not lord.is_status_officed():
+			continue
+		if lord.actorId != StaticManager.ACTOR_ID_CAOPI:
+			continue
+		var capital = clCity.get_capital_city(vs.id)
+		if capital == null:
+			continue
+		var caozhi = ActorHelper.actor(StaticManager.ACTOR_ID_CAOZHI)
+		var where = DataManager.get_office_city_by_actor(caozhi.actorId)
+		if where == null:
+			break
+		if where.get_lord_id() != lord.actorId:
+			break
+		var steed = caozhi.get_steed()
+		if steed.id != StaticManager.STEED_ZIXIN:
+			break
+		var original = lord.get_steed()
+		lord.set_equip(steed)
+		caozhi.set_equip(original)
+		var msg = "先皇所赐，大宛紫骍\n形法应图，善持头尾，行应鼓节\n教令习拜，谨以奉献。辅翼圣皇"
+		where.attach_free_dialog(msg, caozhi.actorId, 2, [where.ID], 1)
+		msg = "先皇遗赐，王弟美意，不宜辞也\n王既知辅翼之义\n朕亦不忘手足之情"
+		capital.attach_free_dialog(msg, lord.actorId, 1, [where.ID, capital.ID], 1)
+		msg = "{0}年{1}月\n{2}献马{3}于{4}".format([
+			DataManager.year, DataManager.month,
+			caozhi.get_name(), steed.name(), lord.get_name(),
+		])
+		capital.attach_free_dialog(msg, -1, 2, [where.ID, capital.ID], 1)
 	return

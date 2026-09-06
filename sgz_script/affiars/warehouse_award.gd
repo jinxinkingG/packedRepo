@@ -172,7 +172,7 @@ func award_people_4():
 	var added = satrap.get_moral() * (money + rice) / 2000 * Global.get_random(10, 16) / 10
 	var timesBuff = SkillRangeBuff.max_for_city("赏赐民众倍率", city.ID)
 	if timesBuff != null:
-		added = int(added * timesBuff.effectTagVal)
+		added = added * timesBuff.effectTagVal
 	added = city.add_loyalty(added)
 	city.add_gold(-money)
 	city.add_rice(-rice)
@@ -185,7 +185,7 @@ func award_people_4():
 	if timesBuff != null:
 		msg += "\n（{0}【{1}】{2}倍效果".format([
 			ActorHelper.actor(timesBuff.actorId).get_name(),
-			timesBuff.skillName, int(timesBuff.effectTagVal),
+			timesBuff.skillName, timesBuff.effectTagVal,
 		])
 	DataManager.set_env("对话", msg)
 	SceneManager.show_unconfirm_dialog("")

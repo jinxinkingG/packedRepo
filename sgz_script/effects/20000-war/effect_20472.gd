@@ -100,7 +100,3 @@ func effect_20472_go_gold()->void:
 	])
 	play_dialog(actorId, msg, 2, 2999)
 	return
-
-func on_view_model_2999()->void:
-	wait_for_skill_result_confirmation()
-	return

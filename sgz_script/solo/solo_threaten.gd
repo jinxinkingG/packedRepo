@@ -22,28 +22,24 @@ func _input_key(delta: float):
 
 #恫吓文字
 func solo_threaten():
-	LoadControl.set_view_model(100);
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side);
-	var text = "乳臭未干的小儿\n想打败爷爷我还差100年！";
-	SceneManager.show_solo_dialog(text,actorId,0);
+	var sf = DataManager.get_current_solo_fight()
+	var msg = "乳臭未干的小儿\n想打败爷爷我还差100年！"
+	SceneManager.show_solo_dialog(msg, sf.currentId, 0)
+	LoadControl.set_view_model(100)
+	return
 
 #对方回应
 func solo_threaten_1():
-	LoadControl.set_view_model(101);
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side);
-	var war_actor = DataManager.get_war_actor(actorId);
-	var war_enrmy = war_actor.get_battle_enemy_war_actor();
-	var text = "我要杀了你这兔崽子！";
-	SceneManager.show_solo_dialog(text,war_enrmy.actorId,0);
+	var sf = DataManager.get_current_solo_fight()
+	var msg = "我要杀了你这兔崽子！"
+	SceneManager.show_solo_dialog(msg, sf.target().actorId, 0)
+	LoadControl.set_view_model(101)
+	return
 
 func solo_threaten_2():
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side)
-	var wa = DataManager.get_war_actor(actorId)
-	var enemy = wa.get_battle_enemy_war_actor()
-	if enemy.get_buff("恫吓")["回合数"] == 0:
-		enemy.set_buff("恫吓", 5, actorId)
+	var sf = DataManager.get_current_solo_fight()
+	var target = sf.target()
+	if target.get_buff("恫吓")["回合数"] == 0:
+		target.set_buff("恫吓", 5, sf.currentId)
 	FlowManager.add_flow("solo_turn_end")
 	return

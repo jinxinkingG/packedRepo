@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]皇甫闿[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不详，字号、籍贯均无史料记载；曹魏参军，景元四年（263年）随[color=#0066FF][url={"research": "钟会", "cat": "people"}]钟会[/url][/color]伐蜀
+[color=#000000]基本信息：[/color] 生卒年不详（游戏设定222-272年，正史无明文）；字号、籍贯均无史料记载；曹魏参军，景元四年（263年）随[color=#0066FF][url={"research": "钟会", "cat": "people"}]钟会[/url][/color]伐蜀
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -17,6 +17,8 @@
 
 [color=#000000]与[color=#0066FF][url={"research": "皇甫嵩", "cat": "people"}]皇甫嵩[/url][/color]的族系关系：永不可从史料证明。[/color]  
 皇甫姓在东汉魏晋时期为安定郡望族，皇甫嵩主要后代为：子坚寿/叔献（寿）→曾孙谧，从侄郦。现存文献中无任何材料将皇甫闿与皇甫嵩一脉相连。详见 ref-huangfusong-lineage-kaobian.md。
+
+光荣三国志8R将皇甫闿与皇甫嵩「相性值」均设为88，但无父子/亲族设定，反映了史料缺失的现实。
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]职务与出现时间[/font][/b]
@@ -54,7 +56,7 @@
 
 
 [color=#000000]钟会奏书的进一步部署：[/color]  
-据百科引用（来源同钟会奏书）：「闿等令分兵据势，广张罗网，南杜走吴之道，西塞成都之路，北绝越逸之径，四面云集，首尾并进，蹊路断绝，走伏无地。」这说明皇甫闿执行了将蜀军完全包围的战术部署。
+「闿等令分兵据势，广张罗网，南杜走吴之道，西塞成都之路，北绝越逸之径，四面云集，首尾并进，蹊路断绝，走伏无地。」这说明皇甫闿执行了将蜀军完全包围的战术部署。
 
 此次追击最终迫使姜维等在广汉郪县向胡烈送交节传，向钟会投降。
 
@@ -72,6 +74,8 @@
 
 
 史料空白，无从考证。皇甫闿在正史中以参军身份执行战术部署，无任何个人性格描写。
+
+光荣三国志8R为其设定性格「沈着」（沉稳冷静），奇才「冷静」（不受罵声影响），与其作为幕僚型参军的职能定位相符。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -147,6 +151,105 @@
 
 
 演义将钟会帐下将领列为「八十余员」，名单来源于正史钟会奏书（部分人名）。皇甫闿作为参军出现在名单中，属演义对正史内容的直接沿用，无虚构情节附加。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+正史中无独立列传，无任何史家对皇甫闿有专项评价语。
+
+
+[indent]•  [color=#000000]《三国志》[/color]（陈寿）：皇甫闿仅于钟会传中以追击蜀军参军身份被记录，无个人评语。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]胡三省注（通鉴）[/color]：沿用正史材料，无褒贬。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]结论：[/color] 历代评价栏至此已穷尽可网络核查内容，无独立专项评论可补充。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏三国志系列（光荣）[/font][/b]
+
+
+[table=7]
+[cell][b]游戏[/b][/cell]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]备注[/b][/cell]
+[cell]三国志14（2020）[/cell]
+[cell]65[/cell]
+[cell]55[/cell]
+[cell]64[/cell]
+[cell]54[/cell]
+[cell]58[/cell]
+[cell]王道/錐行強化Lv2/阵形錐行[/cell]
+[cell]三国志8R（2024）[/cell]
+[cell]65[/cell]
+[cell]51[/cell]
+[cell]64[/cell]
+[cell]51[/cell]
+[cell]56[/cell]
+[cell]沈着/奇才冷静[/cell]
+[cell]三国志11（2006）[/cell]
+[cell]待核[/cell]
+[cell]—[/cell]
+[cell]—[/cell]
+[cell]—[/cell]
+[cell]—[/cell]
+[cell]低优先级，网络不可得[/cell]
+[/table]
+
+
+[color=#000000]三国志14特性：[/color]
+
+[indent]•  主义：王道；政策：錐行強化 Lv2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  阵形：錐行；战法：无[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  游戏设定生年222年/卒年272年（推算值，非正史依据）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志8R特性：[/color]
+
+[indent]•  性格：沈着；奇才：冷静（不受「罵声」战法效果影响）；义理：7[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：急襲1 / 斉射1 / 烈火1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：工作1 / 話術1 / 騎将1 / 弓将1 / 操器1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  与皇甫嵩相性值同为88，但无亲族设定[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+[color=#000000]未收录[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]真三国无双[/font][/b]
+
+
+[color=#000000]未收录为独立角色[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视作品[/font][/b]
+
+
+各版本《三国演义》影视改编均无皇甫闿出场（正史中无演义独立情节，无影视形象）。
 
 
 [color=#888888]──────────────────────────────[/color]

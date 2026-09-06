@@ -1,26 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]孙和（字子孝）[/font][/b]
 
 
-[color=#000000]基本信息：[/color]
-
-[indent]•  [color=#000000]生年：[/color] 黄武三年（224年）——据正史"赤乌五年立为太子时年十九"与"年三十岁"两处互证推算[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]卒年：[/color] 建兴二年（253年），年三十岁，被[color=#0066FF][url={"research": "孙峻", "cat": "people"}]孙峻[/url][/color]遣使赐死[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]字：[/color] 子孝[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]籍贯：[/color] 吴郡（孙氏祖籍富春）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]身份：[/color] 东吴皇太子→[color=#0066FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]王→追尊文皇帝[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]父：[/color] [color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]（东吴大皇帝）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]母：[/color] 王夫人（[color=#0066FF][url={"research": "孙皓", "cat": "people"}]孙皓[/url][/color]即位后追尊大懿皇后；父名王卢九，据裴注引《吴书》）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]妃：[/color] [color=#0066FF][url={"research": "张氏", "cat": "people"}]张氏[/url][/color]（孙皓生母，与孙和同死）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]子：[/color] 孙皓（长）、孙德（次）、孙谦（三）、孙俊（四，张妃所生）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[color=#000000]基本信息：[/color] 生年224年（推算），卒年253年，享年三十岁；扶风郡孙氏（祖籍富春）；东吴皇太子→[color=#0066FF][url={"research": "南阳", "cat": "geography"}]南阳[/url][/color]王→追尊文皇帝
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -32,13 +13,18 @@
 [b][font=res://resource/font/FandolSong-Bold/26.tres]早年（224—242年）[/font][/b]
 
 
-据《三国志·吴主五子传》：孙和"少以母王有宠见爱，年十四，为置宫卫，使中书令[color=#0066FF][url={"research": "阚泽", "cat": "people"}]阚泽[/url][/color]教以书艺。好学下士，甚见称述。"
+据《三国志·吴书·孙和何姬传》：孙和"少以母王有宠见爱，年十四，为置宫卫，使中书令[color=#0066FF][url={"research": "阚泽", "cat": "people"}]阚泽[/url][/color]教以书艺。好学下士，甚见称述。"
 
-孙权因宠爱王夫人而爱及孙和，年十四即获得宫卫配置，由阚泽亲授书艺，规格较高。
+[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]因宠爱王夫人而爱及孙和，年十四即获宫卫配置，由阚泽亲授书艺，规格较高。
 
-赤乌四年（241年），宣太子[color=#0066FF][url={"research": "孙登", "cat": "people"}]孙登[/url][/color]病逝，享年三十三岁。孙登临终遗疏推荐孙和："皇子和仁孝聪哲，德行清茂，宜早建置，以系民望。"
+[color=#000000]生年推算依据：[/color] "赤乌五年立为太子，时年十九"（242年逆推224年），另一条据《三国志》末句"年三十岁"与253年卒年互证，两者一致。
 
-赤乌五年（242年），孙和被立为太子，时年十九。
+赤乌四年（241年），宣太子[color=#0066FF][url={"research": "孙登", "cat": "people"}]孙登[/url][/color]病逝，年三十三。孙登临终遗疏：
+
+[indent][color=#666666]┃ "皇子和仁孝聪哲，德行清茂，宜早建置，以系民望。"[/color][/indent]
+
+
+赤乌五年（242年），孙和被立为太子：
 
 [indent]•  太傅：阚泽[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -51,25 +37,21 @@
 [b][font=res://resource/font/FandolSong-Bold/26.tres]太子期间的政治表现（242—250年）[/font][/b]
 
 
-《三国志》保存了若干孙和的政治态度：
+《三国志》保存若干孙和政治态度：
 
 
-[indent]1.  [color=#000000]反对条书问事[/color]：认为奸妄之人将因此借事生事，上表请绝。[/indent]
+[indent]1.  [color=#000000]反对条书问事[/color]：认为奸妄之人将借此生事，上表请绝。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]2.  [color=#000000]调解属下争端[/color]：都督刘宝与庶子丁晏互告，孙和劝两人"因隙构簿，图相危害，岂有福哉"，两人和解。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]3.  [color=#000000]反对博弈[/color]：多次强调士人应讲修术学、校习射御，而非交游博弈，乃命侍坐者八人各著论以矫之，中庶子韦曜退而论奏。[/indent]
+[indent]3.  [color=#000000]反对博弈[/color]：多次强调士人应讲修术学、校习射御，非交游博弈，命侍坐者八人各著论矫之，中庶子韦曜退而论奏。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-
-
-这些记载显示孙和具有儒家仁政导向，重视风气整顿。
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]南鲁党争与废黜（242—250年）[/font][/b]
 
 
 [color=#000000]导火索：[/color]
-
 王夫人与全公主（[color=#0066FF][url={"research": "孙鲁班", "cat": "people"}]孙鲁班[/url][/color]，孙权长女，[color=#0066FF][url={"research": "步练师", "cat": "people"}]步练师[/url][/color]所生）有隙。孙权寝疾，孙和祠祭于庙，太子妃叔父[color=#0066FF][url={"research": "张休", "cat": "people"}]张休[/url][/color]居近庙，邀孙和过所居。
 
 全公主使人觇视，诬告：
@@ -80,11 +62,9 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-结果：孙权发怒，王夫人忧死，孙和宠遇大损，惧于废黜。
+结果：孙权发怒，王夫人忧死，孙和宠遇大损。
 
 [color=#000000]党争激化：[/color]
-
-鲁王孙霸（孙权四子，字子威）觊觎太子位。朝廷分为两派：
 
 [indent]•  [color=#000000]太子党[/color]：[color=#0066FF][url={"research": "陆逊", "cat": "people"}]陆逊[/url][/color]、[color=#0066FF][url={"research": "吾粲", "cat": "people"}]吾粲[/url][/color]、[color=#0066FF][url={"research": "顾谭", "cat": "people"}]顾谭[/url][/color]等，数陈适庶之义[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -92,23 +72,22 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-太子党惨遭清洗：吾粲下狱诛，顾谭徙交州。
+太子党惨遭清洗：吾粲下狱诛，顾谭徙交州。驃骑将军朱据、尚书仆射屈晃率诸将吏泥头自缚连日诣阙请和，孙权登白爵观，甚恶之。陈正、陈象上书引晋献公杀申生为鉴，孙权大怒，族诛二人，朱据、屈晃各杖一百。
 
-驃骑将军朱据、尚书仆射屈晃率诸将吏泥头自缚，连日诣阙请和。孙权登白爵观，甚恶之。陈正、陈象上书引晋献公杀申生为鉴，孙权大怒，族诛陈正、陈象，朱据、屈晃各杖一百。"竟徙和于故鄣，群司坐谏诛放者十数。众咸冤之。"
+"竟徙和于故鄣，群司坐谏诛放者十数。众咸冤之。"
 
 [color=#000000]废黜：[/color]
-
 赤乌十三年（250年），孙和被废黜，孙霸被赐死，改立[color=#0066FF][url={"research": "孙亮", "cat": "people"}]孙亮[/url][/color]为太子。
 
 
-[b][font=res://resource/font/FandolSong-Bold/26.tres]南阳王期间（252—253年）[/font][/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]南阳王期间与赐死（252—253年）[/font][/b]
 
 
-太元二年（252年）正月，封孙和为南阳王，遣之长沙。
+太元二年（252年）正月，封孙和为南阳王，遣之长沙。四月，孙权薨，[color=#0066FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]秉政。诸葛恪为张妃之舅，曾私示"期当使胜他人"，此言颇泄。民间又有"欲迎和"的传言。
 
-四月，孙权薨，[color=#0066FF][url={"research": "诸葛恪", "cat": "people"}]诸葛恪[/url][/color]秉政。诸葛恪为张妃之舅，曾私下示意"期当使胜他人"，此言颇泄。民间又有"欲迎和"的传言。
+建兴元年（252年）末，诸葛恪被[color=#0066FF][url={"research": "孙峻", "cat": "people"}]孙峻[/url][/color]所诛。孙峻以此为由，夺孙和玺绶，徙新都，又遣使者赐死。
 
-建兴元年（252年）末，诸葛恪被孙峻所诛。孙峻以此为由，奺孙和玺绶，徙新都，又遣使者赐死。孙和与张妃辞别，张妃曰："吉凶当相随，终不独生活也。"亦自杀。时年三十岁。
+孙和与张妃辞别，张妃曰："吉凶当相随，终不独生活也。"亦自杀。
 
 "举邦伤焉。"
 
@@ -116,7 +95,7 @@
 [b][font=res://resource/font/FandolSong-Bold/26.tres]身后事[/font][/b]
 
 
-[indent]•  [color=#0066FF][url={"research": "孙休", "cat": "people"}]孙休[/url][/color]立，封孙和长子孙皓为乌程侯[/indent]
+[indent]•  [color=#0066FF][url={"research": "孙休", "cat": "people"}]孙休[/url][/color]立，封孙和长子[color=#0066FF][url={"research": "孙皓", "cat": "people"}]孙皓[/url][/color]为乌程侯[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  孙皓即位（264年），追谥父孙和为文皇帝（初谥"昭献皇帝"，俄改"文皇帝"）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -137,6 +116,8 @@
 
 [indent]•  [color=#000000]好学谦逊[/color]（"好学下士"）——史料直接支持[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]文武兼擅[/color]（骑射精准，《吴书》明记）——裴注引文支持[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]厌恶构陷党争[/color]——调解丁晏与刘宝事迹可证[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]重视教化风气[/color]——反博弈论著可证[/indent]
@@ -145,7 +126,7 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-合理推断：孙和更接近文士太子的气质，与孙登相似，但孙登有完整的太子历练期（二十余年）且地位稳固，孙和则身处更险恶的政治环境却缺乏孙登的政治手腕。
+合理推断：孙和更接近文士太子气质，与孙登相似，但孙登有完整太子历练期（二十余年）且地位稳固，孙和身处更险恶的政治环境，却缺乏孙登的政治手腕。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -170,7 +151,7 @@
 [cell]全公主（孙鲁班）[/cell]
 [cell]异母姐[/cell]
 [cell]主要政敌，诬陷者[/cell]
-[cell]张氏（太子妃）[/cell]
+[cell][color=#0066FF][url={"research": "张氏", "cat": "people"}]张氏[/url][/color]（太子妃）[/cell]
 [cell]妃[/cell]
 [cell]同生共死，情深义重[/cell]
 [cell]诸葛恪[/cell]
@@ -182,7 +163,43 @@
 [cell]陆逊、吾粲、顾谭[/cell]
 [cell]太子党支持者[/cell]
 [cell]因此受难[/cell]
+[cell]阚泽[/cell]
+[cell]太傅[/cell]
+[cell]教导者，有亲爱关系[/cell]
 [/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]陈寿（《三国志》末赞）[/font][/b]
+
+
+[indent][color=#666666]┃ 「虑（[color=#0066FF][url={"research": "孙虑", "cat": "people"}]孙虑[/url][/color]）、和有好善之姿，规自砥砺，或短命早终，或不得其死，哀哉！」[/color][/indent]
+
+
+"有好善之姿"——肯定孙和有向善的资质；"不得其死"——对非命横死的悲悼，是陈寿罕见的感叹语气。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]《吴书》（鱼豢著，裴注引）[/font][/b]
+
+
+[indent][color=#666666]┃ 「（孙和）好学文艺，骑射动作，师傅所授，皆精其思，详其议，尊尚傅相，爱敬宾客。」[/color][/indent]
+
+
+最详尽的孙和人物刻画：文武兼擅，善于思考，待人谦逊。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]孙登（太子兄，241年遗疏）[/font][/b]
+
+
+[indent][color=#666666]┃ 「皇子和仁孝聪哲，德行清茂，宜早建置，以系民望。」[/color][/indent]
+
+
+孙登临终之言，对孙和"仁孝聪哲"的评价是当时朝野共识的体现。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -191,10 +208,9 @@
 [b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-[color=#000000]正史：[/color]
-孙和系赐死（遣使者赐死），张妃随夫自杀。史书"举邦伤焉"。孙和本传末句："或不得其死，哀哉。"
+[color=#000000]正史：[/color] 孙和系赐死（遣使者赐死），张妃随夫自杀，"举邦伤焉"。本传末句："或不得其死，哀哉。"
 
-[color=#000000]演义（两版本均极简，约30字叙述）：[/color]
+[color=#000000]演义两版本均极简（约30字）：[/color]
 
 嘉靖本（卷二十二）：
 
@@ -206,7 +222,7 @@
 [indent][color=#666666]┃ "遂立次子孙和为太子，乃琅琊王夫人所生。和因与全公主不睦，被公主所谮，权废之，和[color=#000000]忧恨而死[/color]。此时陆逊、[color=#0066FF][url={"research": "诸葛瑾", "cat": "people"}]诸葛瑾[/url][/color]皆亡，一应大小事务，皆归于诸葛恪。"[/color][/indent]
 
 
-[color=#000000]嘉靖本 vs 毛本差异（见 ref-yanyi-version-diff.md）：[/color]
+[color=#000000]版本差异（见 ref-yanyi-version-diff.md）：[/color]
 
 [indent]•  "忧气而死" → "忧恨而死"（字差）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -215,6 +231,69 @@
 [indent]•  两版均省略孙峻赐死、张妃殉死的悲剧细节[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  两版孙和均无专属情节，为背景人物[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏（光荣三国志系列）[/font][/b]
+
+
+[table=7]
+[cell][b]版本[/b][/cell]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]备注[/b][/cell]
+[cell]三国志14[/cell]
+[cell]31[/cell]
+[cell]36[/cell]
+[cell]67[/cell]
+[cell]71[/cell]
+[cell]73[/cell]
+[cell]无特殊个性[/cell]
+[cell]三国志11[/cell]
+[cell]31[/cell]
+[cell]39[/cell]
+[cell]68[/cell]
+[cell]71[/cell]
+[cell]76[/cell]
+[cell]无特技，弩A水A[/cell]
+[cell]三国志8R[/cell]
+[cell]51[/cell]
+[cell]52[/cell]
+[cell]68[/cell]
+[cell]73[/cell]
+[cell]81[/cell]
+[cell]豪胆；疾走弓+勤勉；骑将1弓将1水练2[/cell]
+[/table]
+
+
+三版游戏对孙和的定位相近：中高魅力（代表号召力/人望），知力/政治中上（代表学识），统率/武力偏弱（未经战事）。8R版整体数值较高，反映了系统通胀。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+无孙和专属武将牌，未收录。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+演义中孙和出场极少（约30字）。
+
+[indent]•  1994年央视《三国演义》：无专属出场/扮演者不可网络核查[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  2010年《新三国》：无专属出场[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  正史题材影视：无专属出场[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 

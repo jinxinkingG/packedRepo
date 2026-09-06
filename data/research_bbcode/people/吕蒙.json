@@ -82,7 +82,7 @@
 
 [indent]1.  至寻阳，精兵伏舳舻中，「[color=#000000]使白衣摇橹，作商贾人服，昼夜兼行[/color]」，夜袭烽火台，尽缚守兵[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]2.  遣[color=#0066FF][url={"research": "虞翻", "cat": "people"}]虞翻[/url][/color]书信劝降公安守将士仁（士仁「流涕而降」）；以士仁示南郡太守糜芳，糜芳亦降（《吴录》：糜芳因南郡失火被关羽责备，孙权早已诱之）[/indent]
+[indent]2.  遣[color=#0066FF][url={"research": "虞翻", "cat": "people"}]虞翻[/url][/color]书信劝降公安守将士仁（士仁「流涕而降」）；以士仁示南郡太守糜芳，糜芳亦降——史料存在三版本（见下节「糜芳投降的史料辨析」）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]3.  入据南郡，「尽得羽及将士家属，皆抚慰」，严令不得干犯百姓[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -189,7 +189,7 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]陆逊[/color]：以「未有远名」荐为代己前部，又在遗言中荐为继任——吕蒙既是陆逊的提携者，也是陆逊崛起的设计者[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]糜芳/士仁[/color]：荆州内应，吕蒙心理战的直接成果[/indent]
+[indent]•  [color=#000000]糜芳/士仁[/color]：荆州内应，吕蒙心理战的直接成果；糜芳降的版本在《吴书》与《吴录》之间有重要差异（详见下节）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
@@ -301,6 +301,48 @@
 
 各版本将吕蒙定位为智力与统率俱强的谋略型武将，属于东吴第一梯队将领；白衣渡江为其代表特技事件。
 
+[color=#000000]三国志14（PK威力加强版）：[/color]
+
+[indent]•  初始能力（207年前）：统率82 / 武力81 / 知力49 / 政治48 / 魅力74[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  进化后（「修文练武」事件，需孙权在场）：统率[color=#000000]92[/color] / 武力[color=#000000]81[/color] / 知力[color=#000000]89[/color] / 政治[color=#000000]78[/color] / 魅力[color=#000000]84[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  主义：覇道；政策：工法改革 Lv5[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  个性：水戦・一心・胆力・築城（潜在：規律）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  固有战法：修文练武（攻击型，依武力，附带友军攻军提升）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  阵形：魚鱗・鶴翼・長蛇・衝車[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志11：[/color]
+
+[indent]•  初始（207年前）：统率81 / 知力49 / 政治48；武力81不变[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  素质（进化后）：统率[color=#000000]91[/color] / 武力[color=#000000]81[/color] / 知力[color=#000000]89[/color] / 政治[color=#000000]78[/color] / 魅力[color=#000000]82[/color]，合计421（全游戏第6位）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：[color=#000000]心攻[/color]（攻击时吸收部分敌军士兵编入己方）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  兵种适性：槍S・戟A・弩B・騎B・兵器S・水軍S（三S极高）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志8R（リメイク版）：[/color]
+
+[indent]•  能力：统率[color=#000000]90[/color] / 武力[color=#000000]80[/color] / 知力[color=#000000]89[/color] / 政治[color=#000000]82[/color] / 魅力[color=#000000]81[/color]，合计422[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  奇才：[color=#000000]刮目[/color]（知力80以上时，交流时亲密额外提升——「士别三日，刮目相看」的游戏化）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：步兵・舰船・弓兵全路线兼备（歩将○○○・弓将○○○・水練○○○）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  人间关系：相生＝陸遜・甘寧[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+三个版本一致体现：统率≈90、知力≈89的文武兼备大都督形象；晚成型设计（初期知力仅49，触发学问事件后大幅跃升）完整复现史书「士别三日」叙事。
+
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
 
@@ -319,6 +361,92 @@
 
 [indent]•  [color=#000000]常铖[/color] 饰演吕蒙[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]糜芳投降：史料辨析（2026-06-18 补充）[/font][/b]
+
+
+吕蒙夺荆州成功的关键一环是糜芳开城投降，但史料中关于「为何降」「如何降」存在三版本，性质有实质差异。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三个版本的原文[/font][/b]
+
+
+[color=#000000]版本A：《三国志·关羽传》（陈寿正文）：[/color]
+
+[indent][color=#666666]┃ 于是权[color=#000000]阴诱[/color]芳、仁，芳、仁使人迎权。[/color][/indent]
+
+
+最简略，只说「阴诱」，无具体过程。
+
+[color=#000000]版本B：裴注引《吴书》（[color=#0066FF][url={"research": "韦昭", "cat": "people"}]韦昭[/url][/color]官修）：[/color]
+
+[indent][color=#666666]┃ 遂将仁至南郡。南郡太守糜芳[color=#000000]城守[/color]，蒙以仁示之，（芳）遂降。[/color][/indent]
+
+
+糜芳「城守」表明主动意愿守城；降的直接原因是看见士仁已降（被说服/信心崩溃）。
+
+[color=#000000]版本C：裴注引《吴录》（张勃私撰）：[/color]
+
+[indent][color=#666666]┃ 初，南郡城中失火，颇焚烧军器。羽以责芳，芳内畏惧，权闻而诱之，[color=#000000]芳潜相和[/color]。及蒙攻之，乃以牛酒出降。[/color][/indent]
+
+
+有明确「失火」前置事件；「潜相和」表明提前秘密约定孙权，属有预谋的主动降；「以牛酒出降」降礼隆重。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三书性质辨析[/font][/b]
+
+
+[table=4]
+[cell][b]书名[/b][/cell]
+[cell][b]作者[/b][/cell]
+[cell][b]成书[/b][/cell]
+[cell][b]性质[/b][/cell]
+[cell]《吴书》[/cell]
+[cell]韦昭[/cell]
+[cell]孙吴官修[/cell]
+[cell]官方史书，陈寿底本[/cell]
+[cell]《吴录》[/cell]
+[cell]张勃[/cell]
+[cell]西晋私撰[/cell]
+[cell][color=#0066FF][url={"research": "张华", "cat": "people"}]张华[/url][/color]之子，距史事更远[/cell]
+[cell]《吴历》[/cell]
+[cell][color=#0066FF][url={"research": "胡冲", "cat": "people"}]胡冲[/url][/color][/cell]
+[cell]孙吴末/西晋[/cell]
+[cell]另一部私撰，与《吴录》不同书[/cell]
+[/table]
+
+
+⚠️ 注：维基百科糜芳词条将失火内容标注为「《吴历》」，但裴注原文明确引为「[color=#000000]《吴录》[/color]」，二书不同，当以裴注为准。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]两版本的核心矛盾[/font][/b]
+
+
+[indent]•  [color=#000000]《吴书》[/color]：糜芳守城，见士仁才降（被动/偶发）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《吴录》[/color]：糜芳早已「潜相和」（主动/预谋），以牛酒主动出迎[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+理论上可部分兼容：失火在先，糜芳因此生惧，孙权诱之；但当吕蒙实际来时糜芳仍「观望」（《吴书》版「城守」），见士仁降才最终抉择。但「潜相和」的主动性与「城守」后被动降之间仍有矛盾。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]虞翻传的独立印证[/font][/b]
+
+
+《三国志·虞翻传》：吕蒙据郡城后作乐，虞翻警告「今区区一心者糜将军也，城中之人岂可尽信」——虞翻此时视糜芳为可信一心，与「城守」后见士仁才降的版本更为吻合；若早已「潜相和」密谋，城内伏计的存在（吕蒙入城后翻发现有埋伏）就显得前后矛盾。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]综合评估[/font][/b]
+
+
+[color=#000000]最可信的综合解读[/color]：以关羽责罚（失火事件）为引爆点，糜芳因内惧而逐渐向孙权倾斜（「阴诱」成立），孙权确有主动诱引（《吴录》「权闻而诱之」有史据）；吕蒙兵临城下时，糜芳仍有片刻动摇（《吴书》「城守」），士仁示之后最终开城。「以牛酒出降」不必然表示欢欣鼓舞的预谋，也可能是投降礼数的表达。
+
+[color=#000000]《吴录》的「潜相和」可信度[/color]：中等偏上——有独立细节（失火），但书写立场突出孙权谋略，「潜相和」可能是对「阴诱」成功的夸大表述；陈寿正文只写「阴诱」而未采「潜相和」说，显示陈寿有所保留。
 
 
 [color=#888888]──────────────────────────────[/color]

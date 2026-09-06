@@ -22,10 +22,9 @@ func on_trigger_10024() -> bool:
 	if not targetActor.is_status_dead():
 		return false
 	# 令其加入
-	clCity.move_out(targetActor.actorId)
 	targetActor.set_loyalty(targetActor.surrend_loyalty(vstateId))
-	targetActor.set_status_officed(vstateId)
-	city.add_actor(targetActor.actorId)
+	targetActor.set_hp(10)
+	clCity.transfer_to(targetActor.actorId, city.ID)
 	var msg = "存亡有分，非{0}之罪\n孤胸怀天下，岂有不容之理？\n（{1}加入{2}军".format([
 		DataManager.get_actor_honored_title(targetActor.actorId, actorId),
 		targetActor.get_name(), actor.get_name(),

@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]高升（无字号史载）[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不详（演义中卒184年），籍贯不详，身份：《三国演义》中的黄巾军虚构将领，[color=#0066FF][url={"research": "张宝", "cat": "people"}]张宝[/url][/color]副将
+[color=#000000]基本信息：[/color] 生卒年不详（演义中生145/卒184年），籍贯不详，身份：《三国演义》中的黄巾军虚构将领，[color=#0066FF][url={"research": "张宝", "cat": "people"}]张宝[/url][/color]副将
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -113,6 +113,86 @@
 [cell]N/A[/cell]
 [cell]嘉靖本"大刀"，叶逢春本"大斧"，毛本无描述[/cell]
 [/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+高升为虚构人物，古代及近代史家无专项评价。
+
+演义本身通过简洁叙事塑造高升的"先锋炮灰"形象：张飞"不数合"斩杀高升，既显示张飞武勇，又衬托黄巾军整体战力不及汉军精锐。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志系列[/font][/b]
+
+
+[color=#000000]三国志14[/color]（2020）：统率67 / 武力73 / 知力40 / 政治21 / 魅力23
+
+[indent]•  主义：我道 / 政策：長蛇強化Lv3[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  個性：賊徒 / 戦法：猪突 + 火矢 + 鯨波 / 陣形：長蛇[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  初期官職：方頭祭酒（張角勢力）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志11[/color]（2006）：统率67 / 武力73 / 知力41 / 政治21 / 魅力27
+
+[indent]•  特技：无 / 兵科适性：槍A / 骑B[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  性格：猪突[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志8 Remake（8R）[/color]（2024）：统率68 / 武力74 / 知力30 / 政治23 / 魅力27
+
+[indent]•  性格：猪突 / 重視名声：悪名 / 物欲：強欲[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：乱撃2 / 突撃1 / 烈火1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技（兵科）：歩将2 / 骑将1；特技（军事）：破城1 / 膂力1 / 果敢1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+三个版本数据一致反映高升作为黄巾系武将的武力偏高（73-74）、统率中等（67-68）、文政低（知力30-41、政治21-23）的特点，性格均为「猪突」（蛮冲型），符合其演义中鲁莽迎战的形象。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+[color=#000000]三国杀·一将成名（自走棋）：[/color]
+
+[indent]•  属性：3/7（等级5级），黄巾势力[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  技能：友方阵亡时，本局黄巾兵永久+1/+1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  历经多次平衡性调整（详见ref-games-data.md）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]官方标准三国杀：[/color] 高升未收录为独立武将。
+
+[color=#000000]民间设计（秉心铸魂3.5）：[/color]
+
+[indent]•  编号：YI-009 / 称号：鬼影妖锋 / 4体力 / 黄巾势力[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  技能〖鼓噪〗：当一张【杀】被声明使用后，可打出一张黑色牌令之改为雷【杀】并摸两张牌；若此【杀】未造成伤害，则进行一次【天罚】判定[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+1994年央视版《三国演义》有高升出场（第二回），为极短出场的配角，扮演者不可网络核查。
 
 
 [color=#888888]──────────────────────────────[/color]

@@ -151,7 +151,7 @@ func school_2():
 			continue
 		var relation = SPECIFIED[srb.skillName]
 		if DataManager.get_actor_honored_title(srb.actorId, actorId) == relation:
-			expRate = int(srb.effectTagVal)
+			expRate = srb.effectTagVal
 	SceneManager.actor_addpoint.set_actor(actorId, expRate)
 	SceneManager.actor_addpoint.show()
 	LoadControl.set_view_model(422)

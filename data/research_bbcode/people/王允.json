@@ -275,14 +275,28 @@
 
 王允是三国题材影视中出现频率很高的人物，已知出演作品包括：
 
-[indent]•  八一电影制片厂京剧彩色戏曲片《吕布与貂蝉》（1983年，曹剑文饰）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  中央电视台《三国演义》（1994年）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  中央电视台《三国》（2010年）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  及多部香港、台湾、中国内地影视作品（1956—2021年间约17部以上）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+[table=4]
+[cell][b]年份[/b][/cell]
+[cell][b]作品[/b][/cell]
+[cell][b]扮演者[/b][/cell]
+[cell][b]备注[/b][/cell]
+[cell]1983[/cell]
+[cell]八一电影制片厂京剧彩色戏曲片《吕布与貂蝉》[/cell]
+[cell]曹剑文[/cell]
+[cell]战友京剧团演出[/cell]
+[cell]1994[/cell]
+[cell]央视《三国演义》[/cell]
+[cell][color=#000000]谭宗尧[/color]（1944—1998.11.30）[/cell]
+[cell]北京人民艺术剧院国家一级演员、院副院长；获第七届中国戏剧梅花奖；1998年因病逝世，享年54岁[/cell]
+[cell]2010[/cell]
+[cell]央视《新三国》[/cell]
+[cell][color=#000000]郑天庸[/color][/cell]
+[cell]—[/cell]
+[/table]
+
+
+另有1956、1976、1987、1988、1996、1999、2001、2002、2003、2009、2014、2016、2017、2018、2021年等多部作品出场（约17部以上），扮演者暂无网络可查资料。
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]漫画[/font][/b]
@@ -290,6 +304,105 @@
 
 [indent]•  [color=#000000]《火凤燎原》[/color]：设定为司马防的朝中旧友，残兵潜入洛阳的内应；被吕布胁迫写信引残兵出手杀董卓，长安失守后被绞杀。与演义忠臣形象差异较大，呈现为被动卷入者。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏数据[/font][/b]
+
+
+[color=#000000]三国創4（光荣，2020）[/color]
+
+
+[table=8]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]主义[/b][/cell]
+[cell][b]政策[/b][/cell]
+[cell][b]Lv[/b][/cell]
+[cell]26[/cell]
+[cell]6[/cell]
+[cell]67[/cell]
+[cell]80[/cell]
+[cell]77[/cell]
+[cell]名利[/cell]
+[cell]地域振興[/cell]
+[cell]4[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]个性：[/color] 封殺、名声、小心、消沉；[color=#000000]战法：[/color] 足止、混乱；[color=#000000]阵形：[/color] 鹤翅[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国剧11（光荣，2006）[/color]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]26[/cell]
+[cell]6[/cell]
+[cell]67[/cell]
+[cell]80[/cell]
+[cell]76[/cell]
+[/table]
+
+
+[indent]•  独有技能“证计”（内讧100%成功），但需智力优势，与本身67智力存在矛盾[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国創8 Remake（光荣，2024）[/color]
+
+
+[table=7]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]性格[/b][/cell]
+[cell][b]义理[/b][/cell]
+[cell]45[/cell]
+[cell]25[/cell]
+[cell]72[/cell]
+[cell]80[/cell]
+[cell]78[/cell]
+[cell]温和[/cell]
+[cell]12[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]奇才：[/color] 能吏（内政行动力消耗减少）、傲慢（与名声/阶级低者会话不易升温）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战法：[/color] 旂射Lv1、连环Lv1、要歼Lv2、同讨Lv1、罁声Lv1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]特技：[/color] 耕作Lv1、発明Lv1、交渉Lv1、虚报Lv1、话术Lv2、热辩Lv1、弓将Lv1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  持七星宝刀（武力+7）；192年场景悶名增至100（受董卓暗杀事件加成影响）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国杀（标准版）[/color]
+
+武将称号：[color=#000000]忠魂不沯[/color]（势力：群；体力：3血）
+
+
+[table=2]
+[cell][b]技能[/b][/cell]
+[cell][b]说明[/b][/cell]
+[cell][color=#000000]连计[/color][/cell]
+[cell]出牌阶段限一次，弃置一张手牌，令一名其他角色使用牌堆中的武器牌，该角色选择：①对另一名角色使用此牌，将武器牌交给其中一个目标；②令你视为对其使用此牌，将武器牌交给你[/cell]
+[cell][color=#000000]谋谢[/color]（觉醒技）[/cell]
+[cell]其他角色使用因「连计」交给的牌累计造成至少3点伤害后，失去「连计」，获得「矜功」[/cell]
+[cell]☆[color=#000000]矜功[/color][/cell]
+[cell]出牌阶段限一次，将一张《杀》或装备牌当普通锦囊牌使用（三选一）；结束阶段若本回合未造成伤害，失去1点体力[/cell]
+[/table]
 
 
 [color=#888888]──────────────────────────────[/color]

@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]赵达（无字号）[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不可考；籍贯河南（史书作"河南人"，一说"河南尹"即今河南洛阳）；东汉末—三国·吴方士，以九宫一算术数著称
+[color=#000000]基本信息：[/color] 生卒年不可考；籍贯河南郡（今河南洛阳）；东汉末—三国·吴方士，以九宫一算术数著称
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -159,9 +159,102 @@
 [b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-《三国演义》嘉靖本、毛本均[color=#000000]无赵达出场[/color]。演义以军事政治情节为主线，东吴方士群体（赵达、吴范、刘惇等）皆未进入主要叙事，赵达在演义语境中实际上是一个"不存在的人物"。
+《三国演义》[color=#000000]所有可核查版本均无赵达出场[/color]，考辨终结✅2026-06-03：
 
-与演义中常见的"神机军师"形象（[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]、[color=#0066FF][url={"research": "周瑜", "cat": "people"}]周瑜[/url][/color]等）相比，正史赵达是一个隐居式的术数专家，神通与其说是"战略预谋"，不如说是"隐藏在数字背后的洞察力"——但这在演义中没有对应的叙事空间。
+
+[table=3]
+[cell][b]版本[/b][/cell]
+[cell][b]来源[/b][/cell]
+[cell][b]结果[/b][/cell]
+[cell]嘉靖本（壬午初刻）[/cell]
+[cell]识典 NA11011 全文检索[/cell]
+[cell]0结果[/cell]
+[cell]志传系（叶逢春本系）[/cell]
+[cell]识典 HY3055 全文检索[/cell]
+[cell]0结果[/cell]
+[cell]志传系（另一版本）[/cell]
+[cell]识典 HY3114 全文检索[/cell]
+[cell]0结果[/cell]
+[cell]毛本[/cell]
+[cell]已知[/cell]
+[cell]无出场[/cell]
+[/table]
+
+
+叶逢春本实物（藏西班牙马德里）属低优先级实物核查，但基于志传系数字版HY3055/HY3114均为0结果，有出场可能性极低，视为终结。
+
+演义以军事政治情节为主线，东吴方士群体（吴范、赵达、刘惇等）皆未进入主要叙事。与演义中常见的"神机军师"形象（[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]、[color=#0066FF][url={"research": "周瑜", "cat": "people"}]周瑜[/url][/color]等）相比，正史赵达是一个隐居式的术数专家，在演义中没有对应的叙事空间。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]陈寿（《三国志》卷六十三传末评）[/font][/b]
+
+
+[indent][color=#666666]┃ 「于其术精矣，其用思妙矣，然君子等役心神，宜于大者远者，是以有识之士，舍彼而取此也。」[/color][/indent]
+
+
+承认赵达术数精妙、用思深远，但以士大夫视角认为君子应将才智用于"大者远者"（治国济世），而非方术之道。陈寿的评价是中性而礼貌的批评，并非全盘否定。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏[/font][/b]
+
+
+[table=7]
+[cell][b]作品[/b][/cell]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]备注[/b][/cell]
+[cell]三国志14（2020）[/cell]
+[cell]19[/cell]
+[cell]12[/cell]
+[cell]66[/cell]
+[cell]51[/cell]
+[cell]59[/cell]
+[cell]占术标签；知力主属性[/cell]
+[cell]三国志11（2006）[/cell]
+[cell]13[/cell]
+[cell]24[/cell]
+[cell]64[/cell]
+[cell]49[/cell]
+[cell]69[/cell]
+[cell]特技「风水」；各兵科C[/cell]
+[cell]三国志8R（2024）[/cell]
+[cell]16[/cell]
+[cell]13[/cell]
+[cell]71[/cell]
+[cell]40[/cell]
+[cell]39[/cell]
+[cell]遁甲：风变●/天变●●；话术●；英雄集结剧本中为"未发现武将"[/cell]
+[/table]
+
+
+三作数据总体一致：知力约64-71（方士特质），统率/武力极低，政治偏低，体现了方术专家而非政务官的定位。三国志14游戏内描述收入了"妹妹为孙权侧室赵夫人"的文学传说设定。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+[color=#000000]未收录。[/color] 任何版本均无。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+[color=#000000]无专属形象。[/color] 历代三国演义影视改编均未收录赵达（原因同演义无出场）。
 
 
 [color=#888888]──────────────────────────────[/color]

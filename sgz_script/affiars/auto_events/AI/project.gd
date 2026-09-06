@@ -109,9 +109,7 @@ func AI_Project():
 					satrap.get_level()
 				)
 			if Global.get_rate_result(rate):
-				clCity.move_out(ceilActorId)
-				clCity.move_to(ceilActorId, city.ID)
-				ceilActor.set_status_officed()
+				clCity.transfer_to(ceilActorId, city.ID)
 				ceilActor.set_loyalty(loyalty)
 		DataManager.grouped_trace("俘虏招募")
 
@@ -161,28 +159,20 @@ func AI_Project():
 					# 满10人不需要继续添加人员
 					continue;
 				for actorId in nearCity.get_actor_ids():
-					var actor = ActorHelper.actor(actorId)
-					var actor_score = (actor.get_power()+actor.get_wisdom()+actor.get_leadership())/3 * max(1,actor.get_soldiers())/10;
-					total_score+=actor_score;
+					total_score += evaluate_actor_power_score(actorId)
 				var max_enemy_score = 0;
 				for enemyCityId in enemyCityIds:
 					var enemyCity = clCity.city(enemyCityId)
 					var total_enemy_score = 0;
 					for actorId in enemyCity.get_actor_ids():
-						var actor = ActorHelper.actor(actorId)
-						var actor_score = (actor.get_power()+actor.get_wisdom()+actor.get_leadership())/3 * max(1,actor.get_soldiers())/10;
-						total_enemy_score+=actor_score;
-					if(total_enemy_score>max_enemy_score):
-						max_enemy_score = total_enemy_score;
+						total_enemy_score += evaluate_actor_power_score(actorId)
+					if total_enemy_score > max_enemy_score:
+						max_enemy_score = total_enemy_score
 				# 持续补充武将，直到分数足够，或可用武将为空，或满10人
 				while max_enemy_score > total_score and nearCity.get_actors_count() < 10 and not waitActorIds.empty():
 					var actorId = waitActorIds.pop_front()
-					clCity.move_to(actorId, nearCity.ID)
-					if city.get_actors_count() == 0:
-						city.change_vstate(-1)
-					var actor = ActorHelper.actor(actorId)
-					var actor_score = (actor.get_power()+actor.get_wisdom()+actor.get_leadership())/3 * max(1,actor.get_soldiers())/10;
-					total_score+=actor_score;
+					clCity.transfer_to(actorId, nearCity.ID)
+					total_score += evaluate_actor_power_score(actorId)
 		DataManager.grouped_trace("武将调度")
 	# 取消下面这行的注释，可以看到分组统计耗时
 	DataManager.grouped_trace_output()
@@ -208,3 +198,9 @@ func _get_all_link_city(fromCityId:int, vstateId:int)->PoolIntArray:
 			found.append(nearCityId)
 			toCheck.append(nearCityId)
 	return found
+
+func evaluate_actor_power_score(actorId:int) -> int:
+	var actor = ActorHelper.actor(actorId)
+	var actorScore = actor.get_power() + actor.get_wisdom() + actor.get_leadership()
+	actorScore = actorScore / 3 * actor.get_soldiers() / 10
+	return actorScore

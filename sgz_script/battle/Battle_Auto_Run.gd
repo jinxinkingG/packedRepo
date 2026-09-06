@@ -547,7 +547,6 @@ func go_to_solo():
 		bu.complete_action_task()
 	
 	DataManager.battle_run = false
-	DataManager.solo_run = true
 	FlowManager.add_flow("go_to_scene|res://scene/scene_solo/scene_solo.tscn")
 	FlowManager.add_flow("solo_run_start")
 	return

@@ -44,8 +44,7 @@ func event_settle()->void:
 	var city = DataManager.get_office_city_by_actor(CAOCAO)
 	var vs = clVState.vstate(city.get_vstate_id())
 	var xs = ActorHelper.actor(XUSHU)
-	clCity.move_out(xs.actorId)
-	clCity.move_to(xs.actorId, city.ID)
+	clCity.transfer_to(xs.actorId, city.ID)
 	xs.set_loyalty(40)
 	DataManager.twinkle_citys = [XINYE, city.ID]
 	var msg = "{0}转投{1}军\n出仕于{2}".format([

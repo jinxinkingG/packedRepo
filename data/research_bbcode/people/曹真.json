@@ -272,46 +272,40 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国志系列（光荣）[/font][/b]
+
+
+[color=#000000]三国志14[/color]：统率88 / 武力74 / 知力68 / 政治72 / 魅力89 / 主义覇道 / 政策鶴翼強化Lv4 / 个性：堅守・求心・督励・柱石・召募・突撃・激励・鉄壁（8个）/ 陣形：魚鱗・方円・鶴翼・錐行 / 固有台词「虎豹騎の戦いは攻めだけではない」
+
+[color=#000000]三国志11[/color]：统率87 / 武力74 / 智力68 / 政治72 / 魅力88 / 特技精妙 / 骑兵S・枪兵A
+
+[color=#000000]三国志8R（Remake）[/color]：统率86 / 武力74 / 知力69 / 政治64 / 魅力83（合计376）/ 无奇才 / 战法：剛撃●●・乱撃●●・連撃●●・急襲●・騎射●●・斉射●・遠射●・鼓舞●● / 特技：熱弁●●・歩将●●・騎将●●●・弓将●・行軍●・膂力●●・果敢●
+
+
 [b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
 
 
-曹真是《三国杀》核心武将，称号[color=#000000]「荷国天督」[/color]，技能：[color=#000000]司敌[/color]。
+曹真是《三国杀》核心武将，称号[color=#000000]「荷国天督」[/color]（"荷国"出自陈寿评"佐命二祖"，"天督"指统领诸军），[color=#000000]4勾玉（魏）[/color]，技能：[color=#000000]司敌[/color]，定位控制型武将。
 
-[color=#000000]皮肤系列（截至2026年）：[/color]
 
-[indent]•  经典形象·曹真（2014年首发，武将包"一将成名2014"，画师 Thingking）[/indent]
+[indent]•  [color=#000000]武将包：[/color] 一将成名-2014（OL版2021-03-25上线）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  界限突破·曹真（界·曹真）[/indent]
+[indent]•  [color=#000000]技能司敌（经典版）：[/color] 其他角色出牌阶段开始时，弃置装备区同色非基本牌，令其本阶段不能使用/打出同色牌；若其未使用【杀】，视为曹真对其使用【杀】[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  执节平敌·曹真[/indent]
+[indent]•  [color=#000000]界限突破·界·曹真（2021-03-25）：[/color] 使用非延时锦囊结算后，可预测目标角色下一张非延时锦囊的指定目标，预测正确有奖励[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  佳人子丹·曹真（名取孙权「曹子丹佳人」；守卫剑阁活动获得）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  霜雷之威·曹真（名取曹真碑「施陆议于严霜，奋朱然于雷霆」）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  行役雍凉·曹真[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  勋业盖世·曹真[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  骁勇金衔·曹真[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]皮肤系列：[/color] 荷国天督（基础）/ 界限突破·曹真 / 执节平敌·曹真 / 佳人子丹·曹真（名取孙权「曹子丹佳人！」）/ 霜雷之威·曹真（名取碑文「施陆议于严霜，奋朱然于雷霆」）/ 行役雍凉·曹真 / 勋业盖世·曹真 / 骁勇金衔·曹真
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]真三国无双系列[/font][/b]
 
 
-[indent]•  曹真[color=#000000]首次出场[/color]于真・三国无双7（Dynasty Warriors 7，2012年，KOEI TECMO），主要以[color=#000000]关卡敌将[/color]身份出现[/indent]
+[indent]•  曹真[color=#000000]首次出场[/color]于真・三国无双7（Dynasty Warriors 7，2012年），以[color=#000000]关卡敌将[/color]身份出现，无独立可操控武将（DW1-6均无）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  早期DW1-6均无可操作曹真武将[/indent]
+[indent]•  DW7帝国版（Empires）有自创武将功能，玩家可捏制曹真外貌[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  DW7帝国版（Empires）有自创武将捏脸功能，玩家可复原曹真外貌[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-
-
-[b][font=res://resource/font/FandolSong-Bold/26.tres]三国志系列（光荣）[/font][/b]
-
-
-《三国志》（Sangokushi）系列各代均收录曹真，为曹魏高统帅力武将，通常统帅和武力值偏高，反映其名将形象。
 
 
 [color=#888888]──────────────────────────────[/color]

@@ -260,7 +260,7 @@ func dead_AI_2():
 	var newVstateId = DataManager.lord_change(vs.id, newLordId)
 	var newLord = ActorHelper.actor(newLordId)
 	newLord.set_loyalty(100)
-	clCity.move_to(newLordId, cityId)
+	clCity.transfer_to(newLordId, cityId)
 	SceneManager.cityId = cityId
 	msg = "{0}继承君主之位".format([newLord.get_name()])
 
@@ -346,8 +346,7 @@ func dead_player_5():
 	
 	var newVstateId = DataManager.lord_change(vstateId, newLord.actorId)
 	newLord.set_loyalty(100)
-	clCity.move_to(newLord.actorId, city.ID)
-	vs.set_lord(newLord.actorId)
+	clCity.transfer_to(newLord.actorId, city.ID)
 	if DataManager.game_mode == 0 && player.actorId == oldLordId:
 		player.actorId = newLord.actorId
 	SceneManager.show_confirm_dialog("{0}继承君主之位".format([newLord.get_name()]))

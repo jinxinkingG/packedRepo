@@ -8,6 +8,8 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
 const MIN_CITIES = 3
 const GOLD_COST = 1000
+const TYPES = ["上上", "上中", "上下"]
+const SOLDIER_LIMITS = [2500, 2200, 2000]
 
 func effect_10107_start():
 	var cityId = get_working_city_id()
@@ -56,8 +58,7 @@ func effect_10107_2():
 	actorIds.erase(lordId)
 	for actorId in selected:
 		actorIds.erase(actorId)
-	var types = ["上上", "上中", "上下"]
-	var msg = "请选择「{0}」品级武将".format([types[selected.size()]])
+	var msg = "请选择「{0}」品级武将".format([TYPES[selected.size()]])
 	SceneManager.show_actorlist_army(actorIds, false, msg, false)
 	LoadControl.set_view_model(2001)
 	return
@@ -102,35 +103,28 @@ func effect_10107_4():
 		goto_step("end")
 		return
 
-	var actors = []
-	for actorId in selected:
-		actors.append(ActorHelper.actor(actorId))
-
 	ske.affair_cd(12)
 	city.add_gold(-GOLD_COST)
 	var msg = "【{0}】期间：".format([ske.skill_name])
-	for i in 3:
-		# 用 actor 数据和光环配合，以加速判断
-		# 否则所有武将每次都要判断光环，不合理的代价
-		# actor 数据触发光环判断，并存储细节
-		# 最终生效与否，以光环为准
-		actors[i]._set_attr("定品", i + 1)
+	for i in selected.size():
+		var selectedId = selected[i]
+		var a = ActorHelper.actor(selectedId)
 		var srb = SkillRangeBuff.new()
 		srb.actorId = actorId
 		srb.skillName = ske.skill_name
 		srb.effectType = "光环"
-		srb.sceneId = 10000
 		srb.effectId = ske.effect_Id
 		srb.triggerId = -1
-		srb.effectTag = "定品"
-		srb.effectTagVal = 12
+		srb.effectTag = "士兵上限至少"
+		srb.effectTagVal = SOLDIER_LIMITS[i]
 		srb.targetType = SkillRangeBuff.BuffTargetType.ACTOR
-		srb.targetId = selected[i]
+		srb.targetId = selectedId
 		srb.condition = ""
-		srb.continuous = 1
+		srb.continuous = 12
+		srb.sceneId = 10000
 		DataManager.skill_range_buff.append(srb)
 		msg += "\n{0}士兵上限为{1}".format([
-			actors[i].get_name(), DataManager.get_actor_max_soldiers(actors[i].actorId)
+			a.get_name(), DataManager.get_actor_max_soldiers(selectedId)
 		])
 	play_dialog(-1, msg, 1, 2999)
 	return

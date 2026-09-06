@@ -119,6 +119,13 @@ func AI_before_ready():
 	var wa = DataManager.get_war_actor(actorId)
 	DataManager.set_env(VAR_CUR_ACTOR, actorId)
 	
+	var bf = DataManager.get_current_battle_fight()
+	if bf.pending_start():
+		# 有战斗正在处理
+		LoadControl.load_script("war/player_attack.gd")
+		FlowManager.add_flow("run_battle")
+		return
+	
 	if wa == null or wa.disabled or not wa.has_position():
 		endActors.append(actorId)
 
@@ -206,10 +213,10 @@ func AI_ready():
 	#]))
 	return
 
-func AI_turn_dialog():
+func AI_turn_dialog(nextFlow:String="AI_before_ready"):
 	var data = DataManager.get_env_dict("战争.AI.等待对白")
 	if data.empty():
-		FlowManager.add_flow("AI_before_ready")
+		FlowManager.add_flow(nextFlow)
 		return
 	var d = War_Character.DialogInfo.new()
 	d.input(data)
@@ -230,6 +237,7 @@ func AI_turn_dialog():
 	map.camer_to_actorId(d.actorId, "")
 	SceneManager.show_confirm_dialog(d.text, d.actorId, d.mood, d.actorId < 0)
 	map.next_shrink_actors = [d.actorId]
+	DataManager.set_env("战争.AI.等待对话流程", nextFlow)
 	set_view_model(3)
 	return
 
@@ -252,7 +260,11 @@ func _process(delta:float)->void:
 	var vm = get_view_model()
 	match vm:
 		3: # 等待闲时对话
-			Global.wait_for_confirmation("AI_before_ready", view_model_name)
+			var nextFlow = DataManager.get_env_str("战争.AI.等待对话流程")
+			if nextFlow == "":
+				nextFlow = "AI_before_ready"
+			DataManager.unset_env("战争.AI.等待对话流程")
+			Global.wait_for_confirmation(nextFlow, view_model_name)
 	return
 
 #检查空闲对白

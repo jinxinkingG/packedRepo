@@ -39,9 +39,7 @@ func on_view_model_2000() -> void:
 	return
 
 func effect_10120_suicide() -> void:
-	actor.set_hp(-1)
 	actor.set_status_dead()
-	clCity.move_out(actorId)
 	var msg = "{0}伏剑自尽\n… …".format([
 		actor.get_name(),
 	])

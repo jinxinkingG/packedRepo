@@ -52,7 +52,6 @@ func on_trigger_10016() -> bool:
 		cmd.append_result_messages(msg.split("\n"), 3, target.actorId, cmd.target_city().ID)
 		msg = "背主之人，何足与论\n斩讫报来！"
 		cmd.append_result_messages(msg.split("\n"), 0, actorId, cmd.target_city().ID)
-		clCity.move_out(target.actorId)
 		target.set_status_dead()
 		cmd.result = 0
 		msg = "惭愧，{0}本已意动\n奈何为{1}【{2}】\n已被斩杀！".format([
@@ -117,7 +116,6 @@ func effect_10124_decided() -> void:
 			return
 		"收监":
 			msg = "左右拿下！收监论罪"
-			clCity.move_out(target.actorId)
 			clCity.move_to_ceil(target.actorId, cmd.target_city().ID)
 			# 这里仍要手动设置状态，原因是需要修改原势力
 			# 否则会自动从监狱里出来
@@ -132,7 +130,6 @@ func on_view_model_2002() -> void:
 func effect_10124_kill() -> void:
 	var cmd = DataManager.get_current_policy_command()
 	var target = cmd.target_actor()
-	clCity.move_out(target.actorId)
 	target.set_status_dead()
 	var msg = "{0}死亡".format([target.get_name()])
 	SceneManager.show_vstate_dialog(msg)

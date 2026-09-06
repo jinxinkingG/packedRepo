@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]刘岱（魏）[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不可考（生卒年均无正史明文）；字子高；籍贯不详（疑为北方人）；曹魏将领；官至扬武将军
+[color=#000000]基本信息：[/color] 生卒年不可考；字[color=#000000]公山[/color]（与兖州刺史[color=#0066FF][url={"research": "刘岱", "cat": "people"}]刘岱[/url][/color]同名同字）；籍贯沛国（治今安徽濉溪西北）；[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]司空长史，后封列侯
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -13,55 +13,85 @@
 [b][font=res://resource/font/FandolSong-Bold/26.tres]身份与背景[/font][/b]
 
 
-[color=#0066FF][url={"research": "刘岱", "cat": "people"}]刘岱[/url][/color]字子高，为[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]麾下将领。与东汉兖州刺史刘岱（字公山）同名同姓，二人毫无关系，生活年代亦不相同——字公山者死于192年，字子高者活跃于曹操中后期（约200年代—220年代）。
+刘岱（字公山），沛国人，为曹操担任司空时的[color=#000000]司空长史[/color]。
 
-正史中关于刘岱（字子高）的记载较为零散，主要见于《三国志》的附带叙述中。
-
-
-[b][font=res://resource/font/FandolSong-Bold/26.tres]官渡之战前后[/font][/b]
+一手史料出处：《三国志·武帝纪》裴注引《魏武故事》：
 
 
-[color=#000000]建安五年（200年）[/color]，曹操与[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]相持于[color=#0066FF][url={"research": "官渡", "cat": "geography"}]官渡[/url][/color]。刘岱（字子高）此时已在曹操麾下任职。《三国志·武帝纪》记录[color=#0066FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]前期，曹操派遣刘岱与[color=#0066FF][url={"research": "王忠", "cat": "people"}]王忠[/url][/color]出兵攻[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]，结果被刘备击败：
+[indent][color=#666666]┃ 「岱字公山，沛国人。以司空长史从征伐有功，封列侯。」[/color][/indent]
 
 
-[indent][color=#666666]┃ 「（建安五年）……遣刘岱、王忠击之，不克。」[/color][/indent]
+[color=#000000]重要辨识：[/color] 此刘岱与东汉兖州刺史刘岱（亦字公山，东莱牟平人，192年死）[color=#000000]同名同字[/color]，但籍贯不同、时代不同，为两个不同的历史人物。《三国演义》将两人混为一谈。
 
 
-此为刘岱（字子高）在正史中最早的明确记录。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]官渡前——攻打徐州刘备（建安四年，199年）[/font][/b]
 
 
-[b][font=res://resource/font/FandolSong-Bold/26.tres]败于关羽（建安二十四年，219年）[/font][/b]
+[color=#000000]建安四年（199年）末（约十二月）[/color]，[color=#0066FF][url={"research": "刘备", "cat": "people"}]刘备[/url][/color]在徐州举兵反曹。曹操命刘岱与中郎将[color=#0066FF][url={"research": "王忠", "cat": "people"}]王忠[/url][/color]率军攻打刘备。两军交战，刘岱、王忠未能克胜。
+
+《三国志·武帝纪》：
 
 
-[color=#000000]建安二十四年（219年）[/color]，[color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]发动襄樊之战，水淹七军，擒[color=#0066FF][url={"research": "于禁", "cat": "people"}]于禁[/url][/color]。曹操遣[color=#0066FF][url={"research": "徐晃", "cat": "people"}]徐晃[/url][/color]率军驰援，刘岱在此役中也有参与。
-
-《三国志·关羽传》及《三国志·徐晃传》相关记录中，此时期曹军诸将的具体参战细节可补充。
-
-另据部分史料记载，在此前或此时，刘岱曾与关羽交战并遭失败，但具体战况与时间节点的史料描述较为简略，待进一步核查原文。
+[indent][color=#666666]┃ 「（建安四年）……遣刘岱、王忠击之，不克。」[/color][/indent]
 
 
-[b][font=res://resource/font/FandolSong-Bold/26.tres]后续记录[/font][/b]
+《献帝春秋》（裴注引）记载刘备的傲然之语：
 
 
-[color=#0066FF][url={"research": "曹丕", "cat": "people"}]曹丕[/url][/color]称帝（黄初元年，220年）后，刘岱官至[color=#000000]扬武将军[/color]。此后在史书中逐渐淡出，卒年不详。
+[indent][color=#666666]┃ 「备谓岱等曰："使汝百人来，其无如我何；曹公自来，未可知耳！"」[/color][/indent]
+
+
+此役刘岱、王忠虽未能制服刘备，但其职任「司空长史」表明他是曹操的核心幕僚，地位并不低。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]官渡之战后——封列侯[/font][/b]
+
+
+《魏武故事》记「以司空长史从征伐有功，封列侯」，说明刘岱随曹操征战有功，被封为列侯。具体封号、封邑无史料记载。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]此后记录[/font][/b]
+
+
+建安年间随曹操征战之后，刘岱的活动在正史中再无明文。卒年不详。
 
 
 [color=#888888]──────────────────────────────[/color]
 
 
-[b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]两刘岱辨析（重要）[/font][/b]
 
 
-[indent]•  [color=#000000]曹操[/color]：主君，长期效力于曹营[/indent]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]刘岱（兖州刺史）——与本条目无关[/font][/b]
+
+
+[indent]•  字公山，东莱牟平（今山东烟台牟平）人[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]王忠[/color]：同僚，二人曾共同受命攻击刘备，均告失败[/indent]
+[indent]•  东汉宗室，[color=#0066FF][url={"research": "刘繇", "cat": "people"}]刘繇[/url][/color]之兄[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]刘备[/color]：曾受命讨伐，却被刘备击败[/indent]
+[indent]•  [color=#000000]初平三年（192年）[/color]死于青州黄巾军之手[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]关羽[/color]：在襄樊之战相关时期有交战记录，处于关羽的对立面[/indent]
+[indent]•  参与讨董联军（190年），杀[color=#0066FF][url={"research": "桥瑁", "cat": "people"}]桥瑁[/url][/color]（东郡太守）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]徐晃[/color]：同期参与对关羽作战的曹魏将领[/indent]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]刘岱（司空长史）——本条目[/font][/b]
+
+
+[indent]•  字公山，沛国人[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  曹操幕僚，司空长史[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]建安四年（199年）[/color]随曹操征战，攻刘备不克[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  死于兖州刺史刘岱七年之后，为不同人[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]两人同名同字之谜[/font][/b]
+
+
+两刘岱[color=#000000]同名同字[/color]（均字「公山」），籍贯一为山东，一为安徽，家族背景完全不同。正史中，《魏武故事》明确区分了司空长史刘岱的「沛国」籍贯与东莱刘岱之别。这一历史巧合极为罕见。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -70,37 +100,80 @@
 [b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-[b][font=res://resource/font/FandolSong-Bold/26.tres]正史[/font][/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]演义的混淆与版本差异[/font][/b]
 
 
-刘岱（字子高）在正史中是一位存在感不强、但有实际战役记录的曹魏将领：
+[color=#000000]嘉靖元年本（罗贯中原本）[/color] 实际上意识到了两刘岱的存在，但内部叙述出现矛盾：
 
-[indent]•  官渡前奉命攻刘备，失败[/indent]
+
+[indent]1.  卷二末尾：明确记载「青州黄巾又起……将兖州牧刘岱杀讫」——正确交代了兖州刺史刘岱之死[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  曹魏建立后官至扬武将军[/indent]
+[indent]2.  卷五：「差前军刘岱、后军王忠……去徐州擒刘备」——此为司空长史刘岱[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  与关羽相关的交战记录存在，但细节简略[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-
-
-正史评价中，刘岱并非显赫之将，两次见诸史册皆与失败相关（攻刘备不克、在关羽北伐时期的曹军部分失利）。
-
-
-[b][font=res://resource/font/FandolSong-Bold/26.tres]演义（罗贯中《三国演义》）[/font][/b]
-
-
-演义中，刘岱（字子高）出现数次：
-
-
-[indent]1.  [color=#000000]官渡前期[/color]：奉命与王忠攻徐州，被刘备击败，这与正史吻合[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]2.  [color=#000000]后期战役[/color]：在关羽相关情节中有出场，演义对其形象有一定的文学加工[/indent]
+[indent]3.  「关张擒刘岱」一节又写：「玄德曰：刘岱昔为兖州刺史，[color=#0066FF][url={"research": "虎牢关", "cat": "geography"}]虎牢关[/url][/color]伐[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]时，也是一镇诸侯……」——[color=#000000]前后矛盾[/color]，误将两人混同[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-演义中两个刘岱（字公山的讨董将领、字子高的曹魏将领）均有出场，读者容易混淆。毛宗岗本在章节编排上对此处理较为自然，但未专门说明二者为不同人物。
+[color=#000000]毛纶/毛宗岗本修改[/color]：  
+毛本发现嘉靖本的自相矛盾，但未查证正史，误以为只有一个刘岱，于是：
 
-[color=#000000]注意：[/color] 部分读者因演义中两个「刘岱」同名，误以为是同一人物贯穿始终，实为历史巧合。
+[indent]•  [color=#000000]删去[/color]兖州刺史刘岱被黄巾军所杀的记载[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]增补[/color]第二十二回「刘岱降曹后被用为偏将」的交代[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  结果彻底将两人合并为一[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]毛本第二十二回增补原文（大意）[/color]：「原来刘岱旧为兖州刺史，及操取兖州，岱降于操，操用为偏将，故今差他与王忠一同领兵。」
+
+这一补写在文学上弥合了叙事漏洞，但历史上完全是虚构的——兖州刺史刘岱192年已死，不可能在199年领兵。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]关张擒刘岱的演义描写[/font][/b]
+
+
+演义（毛本）中，[color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]与[color=#0066FF][url={"research": "张飞", "cat": "people"}]张飞[/url][/color]分别擒获刘岱与王忠，以此作为曹操亲征徐州、刘备投奔[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]、关羽约三事等情节的铺垫。演义中刘岱的败绩体现了他作为过渡性衬托人物的功能。
+
+[color=#000000]正史真相：[/color] 建安四年刘岱、王忠攻刘备「不克」，正史无生擒记载。关张擒刘岱为演义虚构。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价与艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]历代评价[/font][/b]
+
+
+正史中无专门评价，相关评语均见于原始记录：
+
+
+[indent]•  [color=#000000]刘备[/color]（据《献帝春秋》，裴注引）：「使汝百人来，其无如我何；曹公自来，未可知耳！」——对刘岱/王忠的蔑视，暗含「二人平庸，非曹公亲至不可」之意[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]陈寿[/color]：《三国志·武帝纪》仅记「遣刘岱、王忠击之，不克」，无独立评语[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏形象[/font][/b]
+
+
+三国志系列[color=#000000]只设置一个「刘岱」[/color]条目，混合两人事迹，以兖州刺史为主体：
+
+[color=#000000]三国志14[/color]：统率53 / 武力65 / 智力34 / 政治54 / 魅力42  
+特性：功名 / 浪费 / 懦弱
+
+[color=#000000]三国志11[/color]：统率53 / 武力65 / 知力32 / 政治54 / 魅力42  
+特技：无；兵种适性：槍兵B / 戟兵B / 骑兵B
+
+[color=#000000]三国志8R[/color]：统率54 / 武力61 / 知力34 / 政治64 / 魅力57  
+性格：臆病；特技：歩将1 / 騎将1 / 膂力1  
+演义剧情包含攻打刘备情节，兼用两刘岱事迹
+
+[color=#000000]三国杀[/color]：无收录
+
+[color=#000000]影视[/color]：无独立扮演者（毛本演义版本混入兖州刺史刘岱形象）
 
 
 [color=#888888]──────────────────────────────[/color]

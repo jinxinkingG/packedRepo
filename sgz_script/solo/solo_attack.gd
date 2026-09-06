@@ -11,27 +11,28 @@ func _input_key(delta: float):
 
 #攻击
 func solo_attack():
-	var scene_solo = SceneManager.current_scene()
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no]
-	var actorId = DataManager.solo_actor_by_side(side)
-	var v_name = "战争.{0}命中".format([actorId])
-	var node = scene_solo.get_actor_node(actorId)
-	
-	var wa = DataManager.get_war_actor(actorId)
-	var enemy = wa.get_battle_enemy_war_actor()
+	var sf = DataManager.get_current_solo_fight()
+	var scene = SceneManager.current_scene()
+
+	var wa = sf.current()
+	var target = sf.target()
+
+	var rateFixKey = "战争.{0}命中".format([wa.actorId])
+	var node = scene.get_actor_node(wa.actorId)
 
 	var rate = wa.get_solo_accuracy_rate()
-	var rateShow = wa.get_solo_accuracy_rate();#显示的命中率
+	#显示的命中率
+	var rateShow = rate
 	
 	if wa.get_controlNo() >= 0:
-		rate = DataManager.get_fix_v_rate(rate, v_name)
-	elif enemy.get_controlNo() >= 0:
-		if enemy.actor().get_hp() < 40 and wa.actor().get_power() < enemy.actor().get_power():
-			rate /= 2;
-	
+		rate = DataManager.get_fix_v_rate(rate, rateFixKey)
+	elif target.get_controlNo() >= 0:
+		if target.actor().get_hp() < 40 and wa.actor().get_power() < target.actor().get_power():
+			rate /= 2
+
 	#玩家对AI攻击，保底命中率70%
-	if wa.get_controlNo() >= 0 and wa.actor().get_power() > enemy.actor().get_power():
-		if enemy.get_controlNo() < 0:
+	if wa.get_controlNo() >= 0 and wa.actor().get_power() > target.actor().get_power():
+		if target.get_controlNo() < 0:
 			rate = max(70, rate)
 	if DataManager.common_variable.has('单挑攻击附加命中率'):
 
@@ -49,7 +50,7 @@ func solo_attack():
 		result = 0
 	DataManager.set_env("单挑.是否命中", result)
 	if wa.get_controlNo() >= 0:
-		DataManager.set_fix_rate_v(v_name, result > 0)
+		DataManager.set_fix_rate_v(rateFixKey, result > 0)
 
 	var damage = wa.get_solo_base_damege()
 	DataManager.set_env("单挑.伤害数值", damage)

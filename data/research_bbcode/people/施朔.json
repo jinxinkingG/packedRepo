@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]施朔[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不可考；籍贯不可考；东吴武卫营士兵（武卫士）；活动于[color=#0066FF][url={"research": "吴景", "cat": "people"}]吴景[/url][/color]帝[color=#0066FF][url={"research": "孙休", "cat": "people"}]孙休[/url][/color]永安元年（258年）前后
+[color=#000000]基本信息：[/color] 生卒年不可考（游戏推算约226-268年，正史无明文）；籍贯沛郡（据后代施岑记载推断）；东吴武卫营士兵（武卫士）；活动于[color=#0066FF][url={"research": "吴景", "cat": "people"}]吴景[/url][/color]帝[color=#0066FF][url={"research": "孙休", "cat": "people"}]孙休[/url][/color]永安元年（258年）前后
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -47,7 +47,15 @@
 
 [color=#000000]结论：正史（《三国志》孙綝传及三嗣主传）中，均无「孙綝专权期间贬施朔」的明文记录。[/color]
 
-孙綝传提到「典军施正劝綝征立琅邪王休」，这是另一人（施正，非施朔）。「尚书桓彝不肯署名，綝怒杀之」——被杀的是桓彝。正文中无「贬尚书魏邈、施朔」的段落。施朔在告密时职务仍为「武卫士」，若曾被降职，此职务仍属正常岗位（武卫营乃天子贴身卫队，属孙綝控制范围）。[color=#000000]「孙綝曾贬施朔」说来源不明，应存疑处理，不可作一手史料采信。[/color]
+孙綝传提到「典军施正劝綝征立琅邪王休」，这是另一人（施正，非施朔）。「尚书桓彝不肯署名，綝怒杀之」——被杀的是桓彝。正文中无「贬尚书魏邈、施朔」的段落。施朔在告密时职务仍为「武卫士」，若曾被降职，此职务仍属正常岗位（武卫营乃天子贴身卫队，属孙綝控制范围）。
+
+[color=#000000]「孙綝曾贬施朔」说来源不明，应存疑处理，不可作一手史料采信。[/color] 经检索，网络上流传此说均属二手转引或游戏设定，无可追溯到正史的独立文献来源。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]籍贯推断[/font][/b]
+
+
+正史未载施朔籍贯。据其后代施岑相关记载（《历代神仙通纪》等道教文献），「祖朔仕吴，因徙居九江赤乌县」，推断施朔原籍为[color=#000000]沛郡[/color]（今安徽濉溪县），仕吴后举家迁往九江郡赤乌县（今江西南昌附近）。此为道教文献旁证，非一手正史来源。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -64,8 +72,11 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  在这种高压处境下，他仍敢向皇帝密告长官谋反，需要相当的政治判断力和个人勇气。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  从选择站在孙休一方来看，他对形势的判断是清醒的。[/indent]
+[indent]•  从选择站在孙休一方来看，他对形势的判断是清醒的——孙綝专权已到末期，告发是高风险高回报的政治赌注。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+光荣三国志系列将其「性格」定为「豪胆」，符合其告密行为背后的心理特征。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -76,7 +87,7 @@
 
 [indent]•  [color=#000000]孙休（吴景帝）[/color]：效忠对象，密告孙綝谋反的对象[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]魏邈[/color]：同行告发者，两人几乎同时向孙休进言，关系密切；魏邈为将军，施朔为武卫士，魏邈级别更高[/indent]
+[indent]•  [color=#000000]魏邈[/color]：同行告发者（两人几乎同时向孙休进言），魏邈为将军，施朔为武卫士，魏邈级别更高；游戏三国志8R中两人有「無視」关系，可能暗示二者非密友[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]丁奉[/color]：实际主导诛綝行动的老将[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -86,10 +97,25 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b][font=res://resource/font/FandolSong-Bold/26.tres]施朔之子：施岑[/font][/b]
+[color=#888888]──────────────────────────────[/color]
 
 
-据维基百科《施岑》词条，施朔之子施岑（字太玉）后来成为道教方士，在东晋年间活跃，被封「勇悟真人」。事迹见《旌阳许真君传》《太上灵宝净明宗教录》，是许逊（旌阳）门下弟子。施朔家族后来移居他地，施岑于东晋时活动。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]施朔后代：施岑[/font][/b]
+
+
+据《历代神仙通纪》等道教文献，施朔之子（一说孙）施岑（字太玉，又作「大玉」）后来成为[color=#000000]东晋道士许逊（许真君）的核心弟子[/color]，西山十二真人之一。
+
+
+[indent]•  施朔将家族从沛郡迁入九江赤乌县，为施岑入道提供了地理条件（九江赤乌附近正是许逊西山修道之地）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  施岑与甘战常执剑侍立许逊左右，参与诛蛇斩蛟[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  晋孝武帝宁康二年（374年）十月逝世[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  宋徽宗政和二年（1112年）封「勇悟真人」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  冯梦龙《警世通言·旌阳宫铁树镇妖》有施岑出场[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -128,6 +154,70 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]3.  施朔擒获孙綝兄弟：演义两版本均有，而正史无此明文[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+施朔史料极简，正史中无独立传记，亦无后人专项评价。
+
+相关评价仅见于诛孙綝事件的整体评价中：
+
+[indent]•  [color=#000000]陈寿[/color]（《三国志》）：对孙綝的总体评价为「峻綝凶竖盈溢固无足论」——在此语境下，施朔等告发者属正义一方，但陈寿未单独提及施朔[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  诛綝事件本身被视为孙休正位的关键举措，史学家普遍持正面评价[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏（光荣·コーエーテクモ系列）[/font][/b]
+
+
+[color=#000000]三国志14：[/color]
+
+[indent]•  五维：统率38 / 武力65 / 知力45 / 政治21 / 魅力50[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  主义：王道 / 政策：雁行強化 Lv2 / 个性：節約 / 战法：斉射[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  仅在「永安元年」场景登场，孙休势力，职位牙門将軍（忠诚100）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志8R：[/color]
+
+[indent]•  五维：统率42 / 武力68 / 知力48 / 政治30 / 魅力43[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  性格：豪胆 / 奇才：奇兵[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：剛撃1 / 乱戦1 / 要撃2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：歩将1 / 水練1 / 援護1 / 果敢1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  可选历史场景区间：249年～263年[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志11：[/color] 未收录
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+未收录。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+演义中施朔有出场（嘉靖/毛本第113回），但属次要配角。影视版本扮演者不可网络核查（低优先级）。
 
 
 [color=#888888]──────────────────────────────[/color]

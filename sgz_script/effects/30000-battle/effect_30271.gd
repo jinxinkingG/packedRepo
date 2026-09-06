@@ -1,23 +1,30 @@
 extends "effect_30000.gd"
 
-#落雷主动技
+#落雷主动技 #神策
 #【落雷】小战场,主动技。非城地形可使用，消耗8点体力，随机对一名敌兵造成X点落雷伤害，该落雷伤害有75%概率进行传导，每次传导，伤害-25%，最多传导3次（共4个单位被落雷攻击）。其中X＝你的知，白刃战限1次。
 
 const HP_COST = 8
 
+func get_hp_cost() -> int:
+	var ret = HP_COST
+	if actor.get_equip_feature_max("神策体力消耗减半") > 0:
+		ret = int(ret / 2)
+	return ret
+
 func effect_30271_start()->void:
+	var hpCost = get_hp_cost()
 	var unit = me.battle_actor_unit()
 	if unit == null:
 		tactic_end()
 		return
-	if unit.get_hp() <= HP_COST:
-		var msg = "体力不足，需 > {0}".format([HP_COST])
+	if unit.get_hp() <= hpCost:
+		var msg = "体力不足，需 > {0}".format([hpCost])
 		me.attach_free_dialog(msg, 3, 30000)
 		tactic_end()
 		return
 
-	ske.battle_change_unit_hp(unit, -HP_COST)
-	unit.add_status_effect("-{0}#FF0000".format([HP_COST]))
+	ske.battle_change_unit_hp(unit, -hpCost)
+	unit.add_status_effect("-{0}#FF0000".format([hpCost]))
 	ske.battle_cd(99999)
 	var bf = DataManager.get_current_battle_fight()
 	var candidates = []

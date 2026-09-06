@@ -6,7 +6,7 @@ extends "effect_30000.gd"
 const ACTIVE_EFFECT_ID = 30124
 
 func on_trigger_30024() -> bool:
-	var x = ske.get_war_skill_val_int(ACTIVE_EFFECT_ID)
+	var x = ske.get_battle_skill_val_int(ACTIVE_EFFECT_ID)
 	if x <= 0:
 		return false
 	var enhancement = {

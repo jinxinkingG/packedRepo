@@ -163,7 +163,7 @@ func choose_actor_then(targetId:int, nextFlow:String):
 func get_choose_distance()->int:
 	if me == null:
 		return 6
-	return 6 + int(SkillRangeBuff.max_val_for_actor("技能距离加成", actorId, 0))
+	return 6 + SkillRangeBuff.max_val_for_actor("技能距离加成", actorId, 0)
 
 # 判断技能是否可以选择
 func check_can_choose(wa:War_Actor, from:Vector2, target:Vector2)->bool:

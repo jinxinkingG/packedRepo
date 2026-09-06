@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]邓艾（士载）[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 约195—264年（生年推算，见"生年考辨"节），本名邓范字士则，后改名邓艾字士载；义阳棘阳人（今河南[color=#0066FF][url={"research": "新野", "cat": "geography"}]新野[/url][/color]）；曹魏后期名将，灭蜀功臣；官至太尉，建元中被诬杀，西晋泰始年间获部分平反。
+[color=#000000]基本信息：[/color] 约195—264年（生年推算，见"生年考辨"节），本名邓范字士则，后改名邓艾字士载；义阳棘阳人（今河南[color=#0066FF][url={"research": "新野", "cat": "geography"}]新野[/url][/color]东北）；曹魏后期名将，灭蜀功臣；官至太尉，建元中被诬杀，西晋泰始年间获部分平反。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -120,6 +120,9 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
+详见 `ref-shengniankaobian.md`。
+
+
 [color=#888888]──────────────────────────────[/color]
 
 
@@ -183,6 +186,8 @@
 
 邓艾原名[color=#000000]邓范[/color]，后因同乡同名改为[color=#000000]邓艾[/color]。口吃重复"艾"字恰好与其改名后的名字谐趣，使得这段逸事格外流传——如果他没有改名，这个成语故事就不会发生。
 
+详见 `ref-qiqiaiaikaobian.md`。
+
 
 [color=#888888]──────────────────────────────[/color]
 
@@ -227,6 +232,9 @@
 [cell]子[/cell]
 [cell]邓忠[/cell]
 [cell]随父灭蜀立功，随父一并被杀[/cell]
+[cell]孙[/cell]
+[cell]邓朗、邓千秋[/cell]
+[cell]流放西域后获赦；邓朗泰始九年任郎中[/cell]
 [/table]
 
 
@@ -264,32 +272,164 @@
 邓艾伐蜀前，梦见自己坐于山上，眺望流水，找来殄虏护军爰邵问卜。爰邵算出"即使能取胜蜀汉，恐怕将军也难以返国"。邓艾后来果然如此。
 
 
+[b][font=res://resource/font/FandolSong-Bold/26.tres]邓艾大志（《广名将传》注）[/font][/b]
+
+
+晋·[color=#0066FF][url={"research": "裴秀", "cat": "people"}]裴秀[/url][/color]（或其他晋人）所撰书中有"邓艾大志"一语，被后世著录时援引，足见后人对其军事抱负的认可。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]邓城猪蹄[/font][/b]
+
+
+中国河南有"邓城猪蹄"，据称为邓艾驻屯时军中厨子所创，名传至今。（地方饮食传说，不可作一手史料。）
+
+
 [color=#888888]──────────────────────────────[/color]
 
 
-[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价（摘要）[/font][/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价（汇集）[/font][/b]
 
 
-[table=2]
+[table=3]
 [cell][b]评者[/b][/cell]
+[cell][b]来源[/b][/cell]
 [cell][b]内容要点[/b][/cell]
 [cell]司马昭诏（本传）[/cell]
+[cell]《三国志》本传[/cell]
 [cell]筹画有方，忠勇奋发，国威震于巴蜀[/cell]
 [cell][color=#0066FF][url={"research": "陈泰", "cat": "people"}]陈泰[/url][/color]（本传）[/cell]
+[cell]《三国志》本传[/cell]
 [cell]兵不逾时，战不终日，云彻席卷，荡定巴蜀，虽破强克劲禽子阳灭七国不足比勋[/cell]
-[cell]陈寿（本传评语）[/cell]
-[cell]矫然强壮，立功立事，然暗于防患，咎败旋至，目论之人[/cell]
-[cell]卫瓘申冤疏（本传）[/cell]
-[cell]心怀至忠而荷反逆之名，七十老公反欲何求，忠而受诛信而见疑[/cell]
-[cell][color=#0066FF][url={"research": "唐彬", "cat": "people"}]唐彬[/url][/color]（《晋书》，负面）[/cell]
+[cell]司马炎[/cell]
+[cell]《三国志》本传[/cell]
+[cell]矜功失节，实应大辟；子孙民隶朕常愍之[/cell]
+[cell]陈寿[/cell]
+[cell]《三国志》评语[/cell]
+[cell]矫然强壮，立功立事；暗于防患，咎败旋至；目论之人[/cell]
+[cell]卫瓘/段灼申冤疏[/cell]
+[cell]《三国志》本传[/cell]
+[cell]心怀至忠而荷反逆之名；七十老公，反欲何求[/cell]
+[cell][color=#0066FF][url={"research": "唐彬", "cat": "people"}]唐彬[/url][/color][/cell]
+[cell]《晋书》负面[/cell]
 [cell]忌克诡狭，矜能负才，处身无礼，大失人心，陇右甚患苦之[/cell]
-[cell]苏辙（北宋）[/cell]
-[cell]非艾无以取胜于速，而其胜也有出于幸，非大将自任之至数[/cell]
-[cell]卢弼（清，《三国志集解》）[/cell]
-[cell]耄年裹毡履险，报国精忠，允宜彰表；竟为钟卫所忌，惜此美才[/cell]
-[cell]李世民（唐太宗，《古名将》）[/cell]
+[cell]钟会[/cell]
+[cell]灭蜀后语[/cell]
+[cell]以万人入江由之危险，攻功业如此之难[/cell]
+[cell]王经[/cell]
+[cell]《三国志》[/cell]
+[cell]起自寒门，著绩于朝（与[color=#0066FF][url={"research": "王基", "cat": "people"}]王基[/url][/color]、周秦、贾越并列）[/cell]
+[cell]《魏书·尉元传》[/cell]
+[cell]北朝史书[/cell]
+[cell]"进无邓艾一举之功，退无保境之略"（以艾功为基准参照）[/cell]
+[cell]《魏书》[/cell]
+[cell]北朝史书[/cell]
+[cell]邓艾怀忠，矫命宁国，赤心皎然，横受屠戮，良可悲哀[/cell]
+[cell]唐太宗李世民[/cell]
+[cell]《古名将》[/cell]
 [cell]赫赫皇魏，时生宝臣，忠卫社稷，荡平巴蜀[/cell]
+[cell]杜甫[/cell]
+[cell]诗句[/cell]
+[cell]"鱼贯全如邓艾兵"（阴平险兵意象）[/cell]
+[cell]《旧唐书·刑法志》[/cell]
+[cell]唐代[/cell]
+[cell]以邓艾冤案为历史上著名冤狱典型[/cell]
+[cell]《旧五代史》[/cell]
+[cell]五代[/cell]
+[cell]"还为邓艾"即落得邓艾下场，以艾为冤死名将典型[/cell]
+[cell]《宋史·河渠志》[/cell]
+[cell]北宋[/cell]
+[cell]邓艾兴淮南水田，屯田战略影响深远[/cell]
+[cell]苏辙[/cell]
+[cell]北宋[/cell]
+[cell]非艾无以取胜于速，而其胜也有出于幸，非大将自任之至数[/cell]
+[cell]《明史·项忠传》[/cell]
+[cell]明代[/cell]
+[cell]邓艾槛车被征，功不见录，身更不保（为历代名臣冤屈典型）[/cell]
+[cell]《广名将传》[/cell]
+[cell]明代[/cell]
+[cell]长评：算人妙矣，苦不自知——综合评价最完整的明代版本[/cell]
+[cell]卢弼[/cell]
+[cell]清·《三国志集解》[/cell]
+[cell]耄年裹毡履险，报国精忠；竟为钟卫所忌，惜此美才[/cell]
 [/table]
+
+
+完整评价原文见 `ref-lidai-pingjia-yishu.md`。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国志游戏系列（光荣）[/font][/b]
+
+
+[table=7]
+[cell][b]游戏[/b][/cell]
+[cell][b]统[/b][/cell]
+[cell][b]武[/b][/cell]
+[cell][b]智[/b][/cell]
+[cell][b]政[/b][/cell]
+[cell][b]魅[/b][/cell]
+[cell][b]特色[/b][/cell]
+[cell]三国志14[/cell]
+[cell]94[/cell]
+[cell]87[/cell]
+[cell]89[/cell]
+[cell]81[/cell]
+[cell]70[/cell]
+[cell]个性：地利/疾走/长驱/屯田/农政；固有战法「阴平之道」[/cell]
+[cell]三国志11[/cell]
+[cell]~91[/cell]
+[cell]~88[/cell]
+[cell]~90[/cell]
+[cell]~80[/cell]
+[cell]~65[/cell]
+[cell]参考各平台数据[/cell]
+[cell]三国志8R[/cell]
+[cell]~94[/cell]
+[cell]~87[/cell]
+[cell]~89[/cell]
+[cell]~81[/cell]
+[cell]~70[/cell]
+[cell]基本与14接近[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+[color=#000000]标准版·邓艾（3血，魏将）：[/color]
+
+
+[indent]•  【屯田】：当你于回合外失去牌后，你可以进行判定，若判定结果不为♥，你将此判定牌置于你的武将牌上，称为「田」。你计算与其他角色的距离-X（X为「田」的数量）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  【凿险】：觉醒技，准备阶段，若「田」的数量不小于3，你减少1点体力上限，然后获得技能「急袭」。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  【急袭】（觉醒后获得）：出牌阶段，你可以将「田」当【顺手牵羊】使用。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]设计主题：[/color] 以「田」牌代表屯田积粮，「凿险」致敬偷渡阴平，「急袭」呼应一举破蜀的奇兵战法。整体机制为防御积累型，先积「田」护距再觉醒爆发。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]真三国无双系列[/font][/b]
+
+
+邓艾从真三国无双6开始成为独立可操作角色，武器为盾斧，形象为沉稳型中年武将，多代出场。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
+
+
+[indent]•  [color=#000000]1994年央视版《三国演义》[/color]：邓艾有重要出场（灭蜀戏份），扮演者据传为马晓伟（待字幕实物确认，低优先级），与钟会（唐国强）均为后期重要角色。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]2010年高希希版《三国》[/color]：仅涵盖至六出祁山阶段，邓艾无出场。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]2017年《大军师司马懿之虎啸龙吟》[/color]（张永新导演）：邓艾有出场，扮演者不可网络核查（低优先级）。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [color=#888888]──────────────────────────────[/color]

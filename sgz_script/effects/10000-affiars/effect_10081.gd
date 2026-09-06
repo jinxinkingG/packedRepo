@@ -22,10 +22,10 @@ func on_trigger_10011()->bool:
 	if wf == null:
 		return false
 	var prevTargetCityId = ske.affair_get_skill_val_int(ACTIVE_EFFECT_ID)
-	if prevTargetCityId <= 0:
+	if prevTargetCityId < 0:
 		return false
-	# 陈势记录的是城市 id + 1
-	if wf.target_city().ID != prevTargetCityId - 1:
+	# 陈势记录的是城市 id
+	if wf.target_city().ID != prevTargetCityId:
 		return false
 	ske.affair_set_skill_val(0, 0, ACTIVE_EFFECT_ID)
 	return true

@@ -7,7 +7,7 @@ const DEFAULT_STOP_RATE = 50
 func get_actor_tactic(actorId:int, includeSkills:bool=true) -> PoolStringArray:
 	var ret = []
 	var wa = DataManager.get_war_actor(actorId)
-	if wa.can_use_tactic() and not wa.continuous_tactic_on():
+	if wa.can_use_tactic() and not wa.continuous_tactic_on(true):
 		for name in StaticManager.TACTICS.keys():
 			var cost = get_tactic_cost(wa, name)
 			if cost > wa.battle_tactic_point:

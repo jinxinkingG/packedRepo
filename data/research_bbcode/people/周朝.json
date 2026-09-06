@@ -1,33 +1,45 @@
-[b][font=res://resource/font/FandolSong-Bold/30.tres]周朝（？—？）[/font][/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]周朝[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年无考；字号无史料；籍贯无史料；东汉末年地方叛乱首领，活跃于中平四年（187年）前后
+[color=#000000]基本信息：[/color] 生年约152年（游戏设定，正史无载）；卒年187年；籍贯不详（活动于零陵郡一带）；东汉末年荆州南部叛乱首领
+
+
+[indent][color=#666666]┃ ⚠️ [color=#000000]史料极简。周朝仅在《三国志·孙破虏讨逆传》中有一行文字，其余生平完全不可考。《三国演义》各版本均无独立出场情节。[/color][/color][/indent]
+
+
+[color=#888888]──────────────────────────────[/color]
 
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
 
 
-周朝活跃于东汉中平四年（187年）前后。
+周朝活跃于东汉中平四至五年（187—188年）前后。
 
-彼时，[color=#0066FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color]刚被任命为长沙太守，赴任后迅速平定了"自称将军"的区星之乱（长沙郡本郡）。据《三国志·吴书·孙破虏讨逆传》：
+彼时，[color=#0066FF][url={"research": "孙坚", "cat": "people"}]孙坚[/url][/color]受任长沙太守，赴任后迅速平定了"自称将军"的区星之乱（长沙郡本郡）。据《三国志·吴书·孙破虏讨逆传》：
 
 
 [indent][color=#666666]┃ 时长沙贼区星自称将军，众万馀人，攻围城邑，乃以坚为长沙太守。到郡亲率将士，施设方略，旬月之间，克破星等。周朝、[color=#0066FF][url={"research": "郭石", "cat": "people"}]郭石[/url][/color]亦帅徒众起於零、桂，与星相应。遂越境寻讨，三郡肃然。汉朝录前后功，封坚乌程侯。[/color][/indent]
 
 
-[color=#000000]地理背景：[/color] "零"指零陵郡，"桂"指桂阳郡，均在荆州南部。周朝与郭石在这两郡率众起兵，呼应区星。孙坚平定长沙郡后，"越境"追讨至零陵、桂阳，将三郡叛乱一并平定。
+[color=#000000]地理背景：[/color] "零"指零陵郡，"桂"指桂阳郡，均在荆州南部。周朝（活动于零陵郡一带）与郭石（活动于桂阳郡一带）率众起兵，呼应区星。孙坚平定长沙郡后，"越境"追讨至零陵、桂阳，将三郡叛乱一并平定。
 
 [color=#000000]关于规模：[/color] 区星"众万馀人"有明载，周朝、郭石规模无正史记载，仅知有一定武装力量，不及区星势力大。
 
 [color=#000000]关于结局：[/color] 正史仅言"三郡肃然"，未明言周朝被杀、被俘或投降，结局不可考。部分百科资料称"被孙坚所杀"，但无一手史料依据，不可采用。
 
-[color=#000000]关于时间：[/color] 中平四年（187年）是通行推算，依据孙坚任长沙太守时间（《三国志》不载具体年份，通行以《后汉书》系年），可信度较高但属推算值。
+[color=#000000]关于时间：[/color] 中平四至五年（187—188年）是通行推算，依据孙坚任长沙太守时间（《三国志》不载具体年份，通行以《后汉书》系年），可信度较高但属推算值。
+
+
+[color=#888888]──────────────────────────────[/color]
 
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
 史料极简，无从推断性格。"帅徒众"说明周朝有一定号召力与组织力，能召集武装响应区星，但规模、影响均远不及区星，是汉末南荆州地方动荡的组成部分之一。
+
+
+[color=#888888]──────────────────────────────[/color]
 
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
@@ -39,6 +51,9 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]孙坚[/color]：平定者。孙坚越境追讨，此役是孙坚建立早期军事声望的重要一战，封乌程侯之功与此相关[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
 
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
@@ -55,4 +70,62 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-区星、周朝、郭石一类叛乱更接近汉末地方豪强趁乱起兵，而非典型黄巾军。演义版本差异[color=#000000]无可考内容[/color]，此项已核查完毕。
+区星、周朝、郭石一类叛乱更接近汉末地方豪强趁乱起兵，而非典型黄巾军。演义版本差异[color=#000000]无可考内容[/color]。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象（游戏）[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国志14（光荣，2020）[/font][/b]
+
+
+[color=#000000]五维：[/color] 统率53 / 武力68 / 知力29 / 政治26 / 魅力47
+
+[color=#000000]主义：[/color] 我道 ｜ [color=#000000]政策：[/color] 侵略荒廃 Lv2
+
+[color=#000000]个性：[/color] 賊徒（PK版追加：強奪）
+
+[color=#000000]战法：[/color] 功名・鉄壁 ｜ [color=#000000]陣形：[/color] 方円
+
+[color=#000000]出场：[/color] [color=#0066FF][url={"research": "黄巾之乱", "cat": "events"}]黄巾之乱[/url][/color]剧本（184年）中，年37岁，隶属区星势力，担任奮武校尉；大部分剧本已死亡（187年）。
+
+
+[indent][color=#666666]┃ 武力68略高，统率/知力/政治偏低，符合地方叛贼画像。区星势力中作防守主力（方円陣形+鉄壁战法+賊徒个性）。[/color][/indent]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国志8R（光荣，2024）[/font][/b]
+
+
+[color=#000000]五维：[/color] 统率54 / 武力62 / 知力26 / 政治28 / 魅力39
+
+[color=#000000]性格：[/color] 豪胆 ｜ [color=#000000]义理：[/color] 3 ｜ [color=#000000]物欲：[/color] 強欲
+
+[color=#000000]战法（步兵）：[/color] 乱撃1・猛突1
+
+[color=#000000]特技：[/color] 歩将1 / 膂力2
+
+[color=#000000]出场：[/color] 187年史实剧本，区星势力，七品官，年36岁。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国志11（光荣，2006）[/font][/b]
+
+
+[color=#000000]官方未收录✅2026-06-06。[/color] 三国志11（含威力加强版）共收录史实武将719人+古代武将32人，周朝不在官方名单中。此项永不可查（非"网络不可得"，而是游戏本无此武将）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+无收录。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+无专属出场。
+
+
+[color=#888888]──────────────────────────────[/color]

@@ -87,7 +87,7 @@
 
 [indent]•  [color=#0066FF][url={"research": "钟会之乱", "cat": "events"}]钟会之乱[/url][/color]后，举家东迁洛阳，封安乐县公，食邑万户；随行旧臣仅谯周及殿中督张通[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]居所：[/color] 洛阳城东阳门外二里北侧，称[color=#000000]晖文里[/color]（原为晋朝马道里，北魏时期成为太傅住宅）——此说来自《洛阳伽蓝记》等（具体卷次低优先级）[/indent]
+[indent]•  [color=#000000]居所：[/color] 洛阳城东阳门外二里御道北，称[color=#000000]晖文里[/color]（原为晋朝马道里，北魏时期成为太傅李延寔住宅）——出自《洛阳伽蓝记》[color=#000000]卷二「城东」[/color]，秦太上君寺条目下赵逸引语：「晖文里是晋马道里。延寔宅是蜀主刘禅宅，延寔宅东有修和宅，是吴王[color=#0066FF][url={"research": "孙皓", "cat": "people"}]孙皓[/url][/color]宅，李韶宅是晋司空[color=#0066FF][url={"research": "张华", "cat": "people"}]张华[/url][/color]宅。」✅2026-05-30[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#0066FF][url={"research": "司马昭", "cat": "people"}]司马昭[/url][/color]设宴演蜀乐，蜀臣皆泣，刘禅喜笑自若。司马昭叹曰："人之无情，乃可至于是乎！虽使诸葛亮在，不能辅之久全"[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -198,7 +198,7 @@
 [cell]《蜀书六·关羽传》附[/cell]
 [cell][color=#000000]费恭[/color][/cell]
 [cell]费祎次子[/cell]
-[cell]"承弟恭，尚公主"（维基作"费承"，以正史为准）[/cell]
+[cell]「子承嗣，为黄门侍郎。承弟恭，尚公主」（正史明文；费承为长子袭爵，[color=#000000]费恭[/color]为次子尚公主；《费祎别传》「恭为尚书郎，显名当世，早卒」；维基误作「费承」已更正✅2026-05-30）[/cell]
 [cell]《蜀书九·费祎传》末[/cell]
 [cell][color=#000000]向恭[/color][/cell]
 [cell]向充之弟，[color=#0066FF][url={"research": "向朗", "cat": "people"}]向朗[/url][/color]侄孙[/cell]
@@ -398,18 +398,85 @@
 [b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
 
 
-[indent]•  1994年央视《三国演义》：刘禅形象贯穿多集，整体呈懦弱无能[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  2010年高希希版《三国》：另一版本，对后期刘禅有一定篇幅描写[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[table=4]
+[cell][b]年份[/b][/cell]
+[cell][b]作品[/b][/cell]
+[cell][b]扮演者[/b][/cell]
+[cell][b]备注[/b][/cell]
+[cell]1994[/cell]
+[cell]央视《三国演义》（84集，王扶林导演）[/cell]
+[cell]陈婧（童年）/ 李华彤（青年）/ 李铁（成年）/ 鲁继先（老年）[/cell]
+[cell]李铁（1961-2014），武汉话剧院演员，26岁出演；整体呈懦弱无能形象[/cell]
+[cell]2010[/cell]
+[cell]《三国》（高希希版）[/cell]
+[cell]王鹤鸣[/cell]
+[cell]—[/cell]
+[cell]2017[/cell]
+[cell]《大军师[color=#0066FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]之虎啸龙吟》[/cell]
+[cell]姜寒[/cell]
+[cell]—[/cell]
+[cell]2022[/cell]
+[cell]《风起陇西》[/cell]
+[cell]郭昱德[/cell]
+[cell]—[/cell]
+[/table]
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]游戏形象[/font][/b]
 
 
-[indent]•  光荣《三国志》系列（ROTK）：刘禅为蜀汉后期主君，统率/武力/智力均偏低，需依赖姜维等武将[/indent]
+[color=#000000]光荣《三国志》系列：[/color]
+
+
+[table=7]
+[cell][b]作品[/b][/cell]
+[cell][b]统[/b][/cell]
+[cell][b]武[/b][/cell]
+[cell][b]智[/b][/cell]
+[cell][b]政[/b][/cell]
+[cell][b]魅[/b][/cell]
+[cell][b]特技/个性[/b][/cell]
+[cell]三国志14[/cell]
+[cell]3[/cell]
+[cell]5[/cell]
+[cell]9[/cell]
+[cell]4[/cell]
+[cell]68[/cell]
+[cell]个性：强运/消沉/优柔；政策：割拠/太学Lv2[/cell]
+[cell]三国志11[/cell]
+[cell]3[/cell]
+[cell]5[/cell]
+[cell]9[/cell]
+[cell]4[/cell]
+[cell]56[/cell]
+[cell]特技：强运（全游戏唯一专属刘禅）[/cell]
+[cell]三国志8R[/cell]
+[cell]3[/cell]
+[cell]5[/cell]
+[cell]9[/cell]
+[cell]4[/cell]
+[cell]70[/cell]
+[cell]特技：全能（全游戏唯一，培养可使全属性上限达100）[/cell]
+[/table]
+
+
+→ 三代同框：统武智政四维固定为3/5/9/4；魅力随版本略有调整；8R「全能」特技是光荣给刘禅保留的隐藏彩蛋。
+
+[color=#000000]三国杀（标准版·神话再临·山）[/color]
+
+[indent]•  编号：SHU013 / 称号：无为的真命主 / 体力：3勾玉[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  《真·三国无双》系列（DW）：非主要玩家角色[/indent]
+[indent]•  [color=#000000]享乐[/color]（锁定技）：当你成为【杀】的目标后，除非该角色弃置一张基本牌，否则此【杀】对你无效。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]放权[/color]：可跳过出牌阶段，若如此做，本回合结束时弃一张牌令一名角色获得额外回合。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]若愚[/color]（主公技·觉醒技）：准备阶段，若你是体力值最小者之一，摸X张牌（X为已损失体力），然后获得技能「激将」。 → 享乐+放权完美呼应「乐不思蜀」与「放权诸葛」的历史形象；界限突破版技能有升级。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]真·三国无双（DW）系列[/color]
+
+[indent]•  DW8配音：松野太纪；历代多以剧情NPC形式出现，非主要玩家角色。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 

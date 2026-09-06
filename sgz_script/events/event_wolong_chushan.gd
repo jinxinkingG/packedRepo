@@ -81,9 +81,7 @@ func _init():
 func event_settle()->void:
 	var wolong = ActorHelper.actor(WOLONG)
 	var xinye = clCity.city(WHERE)
-	clCity.move_out(wolong.actorId)
-	clCity.move_to(wolong.actorId, xinye.ID)
-	wolong.set_status_officed()
+	clCity.transfer_to(wolong.actorId, xinye.ID)
 	wolong.set_soldiers(1000)
 	wolong.set_loyalty(99)
 	DataManager.twinkle_citys = [xinye.ID]

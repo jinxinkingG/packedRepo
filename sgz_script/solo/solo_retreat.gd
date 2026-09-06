@@ -1,9 +1,16 @@
 extends Resource
-const view_model_name = "单挑-玩家-步骤";
+
+const VIEW_MODEL_NAME = "单挑-玩家-步骤"
+
+func get_view_model() -> int:
+	return DataManager.get_env_int(VIEW_MODEL_NAME)
+
+func set_view_model(vm:int) -> void:
+	DataManager.set_env(VIEW_MODEL_NAME, vm)
+	return
 
 #撤退
 func _init() -> void:
-	LoadControl.view_model_name = view_model_name
 	FlowManager.bind_import_flow("solo_retreat", self)
 	FlowManager.bind_import_flow("solo_retreat_1", self)
 	FlowManager.bind_import_flow("solo_retreat_2", self)
@@ -15,116 +22,97 @@ func _init() -> void:
 	return
 
 func _input_key(delta: float):
-	match LoadControl.get_view_model():
+	match get_view_model():
 		110:#撤退
-			Global.wait_for_confirmation("solo_retreat_1")
+			Global.wait_for_confirmation("solo_retreat_1", VIEW_MODEL_NAME)
 		112:#对方对白
-			Global.wait_for_confirmation("solo_retreat_6")
+			Global.wait_for_confirmation("solo_retreat_6", VIEW_MODEL_NAME)
 		114:#追击掉血
-			Global.wait_for_confirmation("solo_retreat_5_chase")
+			Global.wait_for_confirmation("solo_retreat_5_chase", VIEW_MODEL_NAME)
 		116:#不追击：确认已经逃掉了
-			Global.wait_for_confirmation("solo_retreat_6_trigger")
+			Global.wait_for_confirmation("solo_retreat_6_trigger", VIEW_MODEL_NAME)
 	return
 
 #撤退
-func solo_retreat():
-	LoadControl.set_view_model(110)
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no]
-	var actorId = DataManager.solo_actor_by_side(side)
-	SceneManager.dialog_msg_complete(true)
-	SceneManager.show_confirm_dialog("下次再分胜负", actorId)
+func solo_retreat() -> void:
+	var sf = DataManager.get_current_solo_fight()
+	SceneManager.show_confirm_dialog("下次再分胜负", sf.currentId)
+	set_view_model(110)
 	return
 
 #撤退：播放动画
-func solo_retreat_1():
-	LoadControl.set_view_model(111)
-	var scene_solo = SceneManager.current_scene();
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side);
-	var node = scene_solo.get_actor_node(actorId);
+func solo_retreat_1() -> void:
+	var sf = DataManager.get_current_solo_fight()
+	var scene = SceneManager.current_scene()
+	var node = scene.get_actor_node(sf.currentId)
 	var bf = DataManager.get_current_battle_fight()
 	SceneManager.show_unconfirm_dialog(" ")
 
-	var enemyId = bf.get_attacker_id()
-	if actorId == enemyId:
-		enemyId = bf.get_defender_id()
-	bf.set_unit_state(actorId, {"将": "后退"})
-	if bf.get_units_state(enemyId, "将") == "后退":
-		bf.set_unit_state(enemyId, {"将": "待机"})
+	bf.set_unit_state(sf.currentId, {"将": "后退"})
+	if bf.get_units_state(sf.target().actorId, "将") == "后退":
+		bf.set_unit_state(sf.target().actorId, {"将": "待机"})
 
 	node.action_retreat("solo_retreat_2")
 	return
 
 #撤退追击：对白
-func solo_retreat_2():
-	LoadControl.set_view_model(112);
-	var scene_solo = SceneManager.current_scene();
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side);
-	var node = scene_solo.get_actor_node(actorId);
-	var enemy_node = node.get_enemy_actor_node();
-	SceneManager.show_confirm_dialog("无耻之徒！休走！",enemy_node.actorId,0);
+func solo_retreat_2() -> void:
+	var sf = DataManager.get_current_solo_fight()
+	SceneManager.show_confirm_dialog("无耻之徒！休走！", sf.target().actorId, 0)
+	set_view_model(112)
+	return
 	
 #撤退追击：动画
-func solo_retreat_3_chase():
-	LoadControl.set_view_model(113);
-	var scene_solo = SceneManager.current_scene();
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side);
-	var node = scene_solo.get_actor_node(actorId);
-	var enemy_node = node.get_enemy_actor_node();
-	SceneManager.show_unconfirm_dialog(" ");
-	enemy_node.action_chase("solo_retreat_4_chase");
-	
-#撤退追击：扣血
-func solo_retreat_4_chase():
-	LoadControl.set_view_model(114);
-	var scene_solo = SceneManager.current_scene();
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side);
-	var actor = ActorHelper.actor(actorId)
-	var node = scene_solo.get_actor_node(actorId);
-	var enemy_node = node.get_enemy_actor_node();
-	var self_damage = Global.get_random(0,9)+5;
-	DataManager.set_env("单挑.伤害数值", self_damage)
-	var msg = "{0}于被追击之时\n受到{1}点伤害".format([actor.get_name(), self_damage])
-	SceneManager.show_confirm_dialog(msg);
+func solo_retreat_3_chase() -> void:
+	var sf = DataManager.get_current_solo_fight()
+	var scene = SceneManager.current_scene()
+	var node = scene.get_actor_node(sf.target().actorId)
+	SceneManager.show_unconfirm_dialog(" ")
+	node.action_chase("solo_retreat_4_chase")
+	return
 
-func solo_retreat_5_chase():
-	LoadControl.set_view_model(115)
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no]
-	var actorId = DataManager.solo_actor_by_side(side)
-	var actor = ActorHelper.actor(actorId)
-	var wa = DataManager.get_war_actor(actorId)
-	var enemy = wa.get_battle_enemy_war_actor()
-	var self_damage = DataManager.get_env_int("单挑.伤害数值")
-	actor.set_hp(actor.get_hp() - self_damage)
+#撤退追击：扣血
+func solo_retreat_4_chase() -> void:
+	var sf = DataManager.get_current_solo_fight()
+	var damage = Global.get_random(0, 9) + 5
+	DataManager.set_env("单挑.伤害数值", damage)
+	var msg = "{0}于被追击之时\n受到{1}点伤害".format([
+		sf.current().get_name(), damage
+	])
+	SceneManager.show_confirm_dialog(msg)
+	set_view_model(114)
+	return
+
+func solo_retreat_5_chase() -> void:
+	var sf = DataManager.get_current_solo_fight()
+	var wa = sf.current()
+	var actor = wa.actor()
+	var target = sf.target()
+	var damage = DataManager.get_env_int("单挑.伤害数值")
+	actor.set_hp(actor.get_hp() - damage)
 	if actor.get_hp() <= 0:
-		var msg = wa.actor_capture_to(enemy.wvId, "单挑", enemy.actorId)
+		var msg = wa.actor_capture_to(target.wvId, "单挑", target.actorId)
 		LoadControl.set_view_model(-1)
 		FlowManager.add_flow("solo_say_dead_2")
-		return;
-	SkillHelper.auto_trigger_skill(actorId, 40006, "")
-	LoadControl.set_view_model(-1)
+		return
+	SkillHelper.auto_trigger_skill(sf.currentId, 40006)
+	set_view_model(-1)
 	FlowManager.add_flow("solo_run_end")
 	return
 
 #撤退不追击：对白
-func solo_retreat_6():
+func solo_retreat_6() -> void:
 	if Global.get_rate_result(50):
 		FlowManager.add_flow("solo_retreat_3_chase")
 		return
-	LoadControl.set_view_model(116);
-	var scene_solo = SceneManager.current_scene();
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side);
-	var node = scene_solo.get_actor_node(actorId);
-	var enemy_node = node.get_enemy_actor_node();
-	SceneManager.show_confirm_dialog("跑得倒是挺快!",enemy_node.actorId,0);
 
-func solo_retreat_6_trigger():
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no]
-	var actorId = DataManager.solo_actor_by_side(side)
-	SkillHelper.auto_trigger_skill(actorId, 40006, "")
+	var sf = DataManager.get_current_solo_fight()
+	SceneManager.show_confirm_dialog("跑得倒是挺快!", sf.target().actorId, 0)
+	set_view_model(116)
+	return
+
+func solo_retreat_6_trigger() -> void:
+	var sf = DataManager.get_current_solo_fight()
+	SkillHelper.auto_trigger_skill(sf.currentId, 40006)
 	FlowManager.add_flow("solo_run_end")
 	return

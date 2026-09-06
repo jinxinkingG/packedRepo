@@ -9,7 +9,11 @@ func on_trigger_30003() -> bool:
 			"兵种数量": {"弓":10},
 			"分配顺序": ["弓"],
 			"信息": "全弓列阵",
-			"大战场CD": [30175, 1, "飞羽"],
 		}
 	)
+	return false
+
+func on_trigger_30099()->bool:
+	ske.remove_war_skill(actorId, ske.skill_name)
+	ske.war_report()
 	return false

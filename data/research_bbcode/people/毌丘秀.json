@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]毌丘秀[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不详；籍贯司州河东郡闻喜县（今山西闻喜）；曹魏人物，正元二年叛乱后投奔东吴
+[color=#000000]基本信息：[/color] 生卒年不详（游戏设定约206—265年，正史无明文）；字号无史料（永不可考）；籍贯司州河东郡闻喜县（今山西闻喜）；曹魏人物，正元二年叛乱后投奔东吴
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -53,6 +53,8 @@
 
 晋太康年间（280—289年）吴灭后，毌丘宗等人归国（毌丘宗后至零陵太守），毌丘秀是否同期归晋，史书无载。
 
+[color=#000000]游戏三国志8R设定：[/color] 257年以降场景中毌丘秀以七品官「盪寇将軍」身份仕于东吴，265年死亡。这是游戏对其入吴后生涯的推演设定，非正史记载。
+
 
 [color=#888888]──────────────────────────────[/color]
 
@@ -61,6 +63,22 @@
 
 
 毌丘秀史料极为稀少，无从直接评价其性格。从其在兄败亡时仍随侍左右（而非提前逃离）的行为看，他似乎对兄长毌丘俭有一定的忠义之情，或纯粹是形势所迫未能脱身。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]正史直接记载[/font][/b]
+
+
+[color=#000000]《三国志·毌丘俭传》[/color] 仅载「小弟秀」，与兄俭共匿水边、后走入吴，无独立评语。
+
+[color=#000000]陈寿[/color]（《三国志·毌丘俭传》末）：「俭才识渊博，好学问，立功立事，永为世范。」——此评专指毌丘俭，不及毌丘秀。
+
+毌丘秀本人在正史中无任何独立评价。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -98,6 +116,110 @@
 
 
 《三国演义》中毌丘俭反叛情节见第一百零九回，但毌丘秀几乎没有出场，演义主要着墨于文鸯单骑退雄兵的精彩描写，毌丘秀仅作为背景存在。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志》系列[/font][/b]
+
+
+[color=#000000]三国志14（2020年）：[/color]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]58[/cell]
+[cell]62[/cell]
+[cell]33[/cell]
+[cell]38[/cell]
+[cell]51[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]主义：[/color] 割拠　[color=#000000]政策：[/color] 城壁拡張 Lv2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]个性：[/color] 召募（征兵效率提升）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战法：[/color] 連弩 / 駆逐　[color=#000000]陣形：[/color] 魚鱗[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]亮点：[/color] 召募个性在后期场景极为稀缺，毌丘俭势力若无此人则难以扩充兵源；蜀灭后场景在东吴仍可使用，但寿命剩余不多（265年不自然死）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志8重制版（8R，2024年）：[/color]
+
+
+[table=7]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]性格[/b][/cell]
+[cell][b]义理[/b][/cell]
+[cell]59[/cell]
+[cell]60[/cell]
+[cell]34[/cell]
+[cell]42[/cell]
+[cell]47[/cell]
+[cell]臆病[/cell]
+[cell]6[/cell]
+[/table]
+
+
+[indent]•  奇才：狼狽（本拠被破壊または状態異常時、兵士減少）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：骑射1　特技：骑将1 / 行军1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]亮点：[/color] 257年后成为东吴唯一行军持有者（[color=#0066FF][url={"research": "周胤", "cat": "people"}]周胤[/url][/color]241年死后16年空白），担任副将极为珍贵[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志11（2006年）：[/color]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]58[/cell]
+[cell]62[/cell]
+[cell]33[/cell]
+[cell]38[/cell]
+[cell]51[/cell]
+[/table]
+
+
+[indent]•  特技：无　兵科：枪C / 戟C / 弩B / 骑B / 兵器C / 水军C[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+未收录。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]真三国无双[/font][/b]
+
+
+无独立收录。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+无专属出场。
 
 
 [color=#888888]──────────────────────────────[/color]

@@ -321,6 +321,8 @@
 
 [color=#000000]司马懿（魏宣王）：[/color]①「天下奇才也！」（察看营垒后，《三国志》裴注）；②「志大而不见机，多谋而少决，好兵而无权。」（私评，见裴注）
 
+[color=#000000]孙权（吴大帝）：[/color]劝[color=#0066FF][url={"research": "吕蒙", "cat": "people"}]吕蒙[/url][/color]「[color=#0066FF][url={"research": "鲁肃", "cat": "people"}]鲁肃[/url][/color]、诸葛亮未可轻也」（《三国志·吕蒙传》）。
+
 [color=#000000]陈寿（《三国志》作者）：[/color]「可谓识治之良才，管、萧之亚匹矣。然连年动众，未能成功，盖应变将略，非其所长欤！」（《三国志·诸葛亮传》末评）
 
 [color=#000000][color=#0066FF][url={"research": "司马炎", "cat": "people"}]司马炎[/url][/color]（晋武帝）：[/color]「使我得此人以自辅，岂有今日之劳乎？」
@@ -331,19 +333,41 @@
 [b][font=res://resource/font/FandolSong-Bold/26.tres]唐宋以后[/font][/b]
 
 
+[color=#000000]唐太宗李世民：[/color]汉朝丞相以诸葛亮第一（武庙从祀诏书），唐肃宗时诸葛亮入武成王庙十哲之列。
+
 [color=#000000]杜甫《蜀相》[/color]（全诗已是中国史上赞咏诸葛亮最著名的作品）：「三顾频烦天下计，两朝开济老臣心。出师未捷身先死，长使英雄泪满襟。」；《八阵图》：「功盖三分国，名成八阵图。」；《咏怀古迹五首·其五》：「诸葛大名垂宇宙……」—— 杜甫一生吟咏诸葛亮逾二十首。
 
 [color=#000000]李白《读诸葛武侯传书怀》[/color]：「鱼水三顾合，风云四海生。武侯立岷蜀，壮志吞咸京。」
 
+[color=#000000]朱熹（南宋理学家）：[/color]「论三代而下，以义为之，只有一个诸葛孔明。」
+
 [color=#000000]苏轼《诸葛武侯像赞》[/color]：「密如神鬼，疾如风雷。进不可当，退不可追……人也？神也？仙也？吾不知之，真卧龙也！」
 
-[color=#000000]朱熹（南宋理学家）：[/color]「论三代而下，以义为之，只有一个诸葛孔明。」
+[color=#000000]范仲淹（北宋政治家）：[/color]诸葛亮「两汉以来，无双人也」。
+
+[color=#000000]王安石（北宋宰相）《诸葛武侯》：[/color]赞扬其以少击多、志在恢复汉室的精神。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]明清评价[/font][/b]
+
+
+[color=#000000]毛宗岗（清代，《三国演义》毛本评点者）《读三国志法》：[/color]称诸葛亮为「古今来贤相中第一奇人」，评其「其处而抱膝弹琴，居然隐士风流；出而羽扇纶巾，不改雅人深致」。
+
+[color=#000000]王夫之（明末清初思想家，1619—1692年）《读通鉴论》：[/color]认为隆中对策有战略缺陷（荆益两线兵力分散），批评北伐「无必胜之势，而徒以竭蜀之精锐、疲蜀之民力」；同时肯定其忠诚「必欲存汉者也」。视角辩证，非全盘否定。
+
+[color=#000000]乾隆皇帝（清高宗）：[/color]「端推诸葛是全人。」
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]近现代[/font][/b]
 
 
+[color=#000000]孙中山（革命先行者）：[/color]「诸葛亮很有才能，所以在西蜀能够成立很好的政府，并且能够六出祁山去北伐，和吴魏鼎足而三。」
+
+[color=#000000]范文澜（历史学家）：[/color]「凡是封建统治阶级可能做到的较好措施，他几乎都做。」
+
 [color=#000000]国学大师钱穆：[/color]「有一诸葛，已可使三国照耀后世，一如两汉。」
+
+[color=#000000]毛泽东：[/color]赞诸葛亮治蜀「三纪之内，百姓得安」，推崇其鞠躬尽瘁、不谋私利的精神。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -374,12 +398,31 @@
 [b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
 
 
-[indent]•  编号：JX.SHU011（蜀国）[/indent]
+[color=#000000]编号：[/color] SHU 004（蜀国，体力3点）
+
+[color=#000000]标准版技能：[/color]
+
+[indent]•  【观星】：准备阶段，可观看牌堆顶X张牌（X为存活角色数，至多5），将其任意顺序置于牌堆顶或底。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  技能：[color=#000000]【观星】[/color]——准备阶段观看数张牌并重新排列（标志性技能）；多版本皮肤[/indent]
+[indent]•  【空城】：锁定技，若没有手牌，不能成为【杀】或【决斗】的目标。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  体力上限：3；称号：「迟暮的丞相」[/indent]
+
+
+[color=#000000]界限突破版技能：[/color]
+
+[indent]•  【观星（界）】：准备阶段，可观看牌堆顶五张牌（存活<4时改为三张），以任意顺序放回。若所有牌均放至牌堆底，结束阶段可再次发动"观星"。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  【空城（界）】：同标准版，锁定技。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]谋版技能（谋·诸葛亮）：[/color]
+
+[indent]•  【观星（谋）】：准备阶段，移去所有"星"并将X张牌置于武将牌上（X=7−此前发动次数×3），称为"星"；可将"星"置于牌堆顶；结束阶段，若武将牌上有"星"，可移去或补充。含牌名记录+无效化防御机制。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]战功称号：[/color] 标准版「空城绝唱」「迟暮的丞相」；界版「夜观天象」「忠武侯」
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志14（2020年）五维[/font][/b]
@@ -387,17 +430,52 @@
 
 [indent]•  统率92 · 武力38 · 智力100（满值）· 政治99 · 魅力92[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  个性「卧龙」（金色）：异常状态战法必中且延长，免疫异常状态，解除陷阱效果[/indent]
+[indent]•  个性「卧龙」（金色）：使用策略时异常状态必中且延长；我方进入陷阱效果范围时解除；免疫异常状态。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 五维设计高度吻合陈寿评价：智力100对应「识治之良才」，武力38对应「将略非长」，政治99对应「管萧之亚匹」。
 
 
-[b][font=res://resource/font/FandolSong-Bold/26.tres]真三国无双[/font][/b]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志11（2006年）五维[/font][/b]
 
 
-自第1作（1997年）起即为系列标志性武将，武器为羽扇，历代均有登场。
+[indent]•  统率92 · 武力38 · 智力100 · 政治95 · 魅力92[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技「[color=#000000]神算[/color]」：对智力低于自身的敌军使用任何计略必定成功且暴击；免疫对方计略（「虚实」+「看破」合一）——全游戏最强特技之一[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  兵器：弓B；综合评分 BBSCSA（弓步谋最强）；成长统率最高达95+[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志8重制版（8R，2024年）五维[/font][/b]
+
+
+[indent]•  统率96 · 武力36 · 智力100 · 政治98 · 魅力95[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  奇才「[color=#000000]伏龙[/color]」：担任总大将或参军参战时使用策略，令全部友方部队战法再次可用（≈战法使用无限）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  附加陣法：兵科系戦法被害軽减[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法（核心）：軍略烈火3/激流3/落石3；遁甲風変2/落雷1；補助鼓舞3/罵声3/天啓2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：耕作3·商才3·築城3·発明3·交渉3·虚報3·工作3·話術3·熱弁3·鬼謀2·歩将3·弓将3·水練2·操器3·神算2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  性格：沈着（义理12）；名品×4，含统率+2/武力+2/退却不可[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]真三国无双系列[/font][/b]
+
+
+自第1作（1997年）起即为系列标志性武将，历代均有登场。
+
+[indent]•  武器：羽扇[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  声优（日）：DW4起桑岛法子（女性声优，独特塑造），DW8（起源）持续出演[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  称号：「卧龙」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [color=#888888]──────────────────────────────[/color]

@@ -5,12 +5,8 @@ extends "effect_20000.gd"
 
 const TRANS_AP = 4
 
-func check_trigger_correct()->bool:
-	var ske = SkillHelper.read_skill_effectinfo()
+func on_trigger_20020()->bool:
 	var bf = DataManager.get_current_battle_fight()
-	var me = ske.get_war_actor()
-	if me == null or me.disabled:
-		return false
 	if ske.skill_actorId == ske.actorId:
 		# 自己鸡自己，算了
 		return false
@@ -21,31 +17,28 @@ func check_trigger_correct()->bool:
 	if winner == null:
 		return false
 
-	if loser.actorId == ske.actorId and loser.action_point > 0:
+	if loser.actorId == ske.actorId \
+		and not loser.disabled \
+		and loser.action_point > 0:
 		# 我方武将失败，且有机动力
 		ske.change_actor_ap(me.actorId, TRANS_AP)
 		var reduced = ske.change_actor_ap(loser.actorId, -TRANS_AP)
-		var d = War_Character.DialogInfo.new()
-		d.text = "{0}如此无能！\n待我亲讨之\n（{1}夺取{2}{3}机动力".format([
+		var msg = "{0}如此无能！\n待我亲讨之\n（{1}夺取{2}{3}机动力".format([
 			DataManager.get_actor_naughty_title(loser.actorId, me.actorId),
 			me.get_name(), loser.get_name(), TRANS_AP
 		])
-		d.actorId = me.actorId
-		d.mood = 0
-		me.add_dialog_info(d)
+		me.attach_free_dialog(msg, 0)
 
-	if winner.actorId == ske.actorId and me.action_point > 0:
+	if winner.actorId == ske.actorId \
+		and me.action_point > 0:
 		# 我方武将胜利，且“我”有机动力
 		ske.change_actor_ap(winner.actorId, TRANS_AP)
 		var reduced = ske.change_actor_ap(me.actorId, -TRANS_AP)
-		var d = War_Character.DialogInfo.new()
-		d.text = "{0}果然英勇\n速速追击！\n（{1}给予{2}{3}机动力".format([
+		var msg = "{0}果然英勇\n速速追击！\n（{1}给予{2}{3}机动力".format([
 			DataManager.get_actor_honored_title(winner.actorId, me.actorId),
 			me.get_name(), winner.get_name(), TRANS_AP
 		])
-		d.actorId = me.actorId
-		d.mood = 0
-		me.add_dialog_info(d)
+		me.attach_free_dialog(msg, 0)
 
 	ske.war_report()
 	return false

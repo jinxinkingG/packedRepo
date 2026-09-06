@@ -115,6 +115,21 @@
 [color=#888888]──────────────────────────────[/color]
 
 
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[color=#000000]正史史料中评价极少，仅曹性一句间接评语：[/color]
+
+[color=#000000]曹性（《三国志·吕布传》裴注《英雄记》）：[/color]「吕将军大将有神，不可击也，不意萌[color=#000000]狂惑不止[/color]。」
+
+这是现存唯一对郝萌的人物性格评语，出自其部将曹性之口，属于临阵供词。"狂惑"——狂妄迷惑——点出了郝萌被外力操控、失去判断力的根本问题。此语非史家正式评语，而是当事人对叛乱者的定性，可信度相对较高（曹性对郝萌的了解程度深于外人）。
+
+陈寿《三国志》本传（吕布传）对郝萌叛乱只作客观记述，无独立评论语。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
 [b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
@@ -159,6 +174,86 @@
 
 
 详见 `ref-yanyi-version-diff.md`。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志》系列[/font][/b]
+
+
+[table=7]
+[cell][b]系列[/b][/cell]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]智力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]备注[/b][/cell]
+[cell]三国志14（+威力加强版）[/cell]
+[cell]60[/cell]
+[cell]66[/cell]
+[cell]41[/cell]
+[cell]34[/cell]
+[cell]38[/cell]
+[cell]我道 / 兵站改革Lv2 / 个性：功名·惰弱[/cell]
+[cell]三国志12[/cell]
+[cell]62[/cell]
+[cell]67[/cell]
+[cell]42[/cell]
+[cell]34[/cell]
+[cell]—[/cell]
+[cell]骑兵 / 攻击强化 / 技能：监视·补修 / 评级D+[/cell]
+[cell]三国志11[/cell]
+[cell]62[/cell]
+[cell]67[/cell]
+[cell]42[/cell]
+[cell]34[/cell]
+[cell]48[/cell]
+[cell]无特技 / 骑A / 性格：猪突 / 义理1/5[/cell]
+[cell]三国志8R[/cell]
+[cell]66[/cell]
+[cell]68[/cell]
+[cell]30[/cell]
+[cell]28[/cell]
+[cell]29[/cell]
+[cell]豪胆 / 连撃1·急襲2·要撃1 / 骑将2·果敢1[/cell]
+[/table]
+
+
+[color=#000000]游戏形象特征：[/color] 武力中等偏上（66—68），统率偏低（60—66），智力极低（30—42），政治最低（28—34），是典型的"猛将型"但能力全面不足的将领。义理/忠义值极低（三国志11仅1/5）反映了其叛乱的历史事实。各版本均定位为中低阶骑将。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+[indent]•  [color=#000000]武将归属：[/color] QUN系（群势力）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]血量：[/color] 4血[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]皮肤：[/color] 经典形象 · 夜袭虓虎 · 罡风戾火（三款皮肤技能相同）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]技能：「雄莽」[/color] > 你可以将任意张花色不同的手牌当【杀】使用。此【杀】的可选择的目标数等于这张【杀】所用的花色数。若此【杀】没有造成伤害，则你减1点体力上限。若此【杀】造成了伤害，此阶段你可使用【杀】次数+1。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+  设计解读：「雄莽」对应郝萌「狂惑」的历史评价——爆发力强（可多目标攻击）但若失败则自损（体力上限-1），体现"勇而无谋、孤注一掷"的特质；成功则连续输出，失败则自伤，高风险高回报的战斗风格。
+
+
+[indent]•  [color=#000000]台词：[/color]「力逮千军，唯武为雄！莽行沙场，乱世称雄！」（经典形象）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+[indent]•  [color=#000000]1994年央视版《三国演义》：[/color] 演义第十九回有郝萌出场（护送许汜出城被张飞擒获），具体扮演者不可网络核查。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]2010年版《三国》：[/color] 出场可能性低（演义情节被大幅改编），扮演者不可网络核查。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [color=#888888]──────────────────────────────[/color]

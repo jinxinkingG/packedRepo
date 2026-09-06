@@ -182,10 +182,8 @@ func AI_War_1()->void:
 	for i in targetActors.size():
 		var actorId = targetActors[i]
 		if i > 10:#不考虑超10人的分数
-			break;
-		var actor = ActorHelper.actor(actorId)
-		var actor_score = actor.get_leadership() * min(99, actor.get_soldiers()/20)
-		enemy_actor_score+=actor_score;
+			break
+		enemy_actor_score += evaluate_actor_power_score(actorId)
 	# 本月已经从哪些城出发打过目标
 	var repeatedFromCityIds = []
 	for record in DataManager.war_history:
@@ -237,102 +235,61 @@ func AI_War_1()->void:
 			need_defence_num = actors_num;
 			
 	#派出武将
-	var temp_actors = [];
+	var temp_actors = []
 	var total_score = 0;
-	
-	while(true):
-		var max_score = 0;
-		var send_actorId:int = -1;
-		var least_num = fromCity.get_actors_count()-temp_actors.size();
-		var diff_fix = [-3,-3,1,0]
-		if(least_num <= need_defence_num || temp_actors.size()>=10):
-			break;
-		for actorId in fromCity.get_actor_ids():
-			if(temp_actors.has(actorId)):
-				continue;
-			if fromCity.get_actors_count() <= 1:
-				continue;
-			var actor = ActorHelper.actor(actorId)
-			if actor.is_injured():
-				continue;
-			var max_sodiers = DataManager.get_actor_max_soldiers(actorId);
-			actor.set_soldiers(min(max_sodiers, actor.get_soldiers()+Global.get_random(5,9)*100))
-			if actor.get_soldiers() < 1000:
-				#小于1000兵，不出战，先征兵
-				continue;
-			if(actorId==vs.get_lord_id()):
-				continue;#君主不出征
-			var actor_score = (actor.get_power()+actor.get_wisdom()+actor.get_leadership())/3 * max(1,actor.get_soldiers())/10;
-			if(max_score<actor_score):
-				max_score = actor_score;
-				send_actorId = actorId;
-		if(send_actorId>=0 && !temp_actors.has(send_actorId)):
-			temp_actors.append(send_actorId);
-			total_score+=max_score;
-		else:
-			#如果人数不够，从邻城移动武将
+
+	# 不断调将，直到满足出征需要
+	while true:
+		var least_num = fromCity.get_actors_count() - temp_actors.size()
+		if least_num <= need_defence_num \
+			or temp_actors.size() >= 10:
+			# 留守的人不够了，或者出征人数已经够了
+			break
+		var ret = select_powerful_actor_from_city(fromCity, temp_actors)
+		if ret[0] < 0:
+			# 没找到合适的人，从邻城移动武将
 			for nearCityId in _get_all_link_city(fromCity.ID, fromCity.get_vstate_id()):
 				var nearCity = clCity.city(nearCityId)
 				if nearCity.get_vstate_id() != vstateId:
-					continue;
+					continue
 				var actorsCount = nearCity.get_actors_count()
 				if actorsCount <= 1 or actorsCount <= need_defence_num:
-					continue;
-				for actorId in nearCity.get_actor_ids():
-					if(temp_actors.has(actorId)):
-						continue;
-					var actor = ActorHelper.actor(actorId)
-					if actor.is_injured():
-						continue;
-					var max_sodiers = DataManager.get_actor_max_soldiers(actorId);
-					actor.set_soldiers(min(max_sodiers, actor.get_soldiers()+Global.get_random(5,9)*100))
-					if actor.get_soldiers() < 1000:
-						#小于1000兵，不出战
-						continue;
-					if(actorId==vs.get_lord_id()):
-						continue;#君主不出征
-					var actor_score = (actor.get_power()+actor.get_wisdom()+actor.get_leadership())/3 * max(1,actor.get_soldiers())/10;
-					if(max_score<actor_score):
-						max_score = actor_score;
-						send_actorId = actorId;
-				if(send_actorId>=0 && !temp_actors.has(send_actorId)):
-					send_actorId = int(send_actorId);
-					clCity.move_to(send_actorId, fromCity.ID)
-					temp_actors.append(send_actorId);
-					total_score+=max_score;
-					if nearCity.get_actors_count() == 0:
-						nearCity.change_vstate(-1)
-				if temp_actors.size()+1 >= targetCity.get_actors_count():
-					break;
-		if(send_actorId<0):
-			FlowManager.add_flow("AI_next");
-			return;
+					continue
+				ret = select_powerful_actor_from_city(nearCity, temp_actors)
+				if ret[0] >= 0:
+					clCity.transfer_to(ret[0], fromCity.ID)
+					break
+		if ret[0] < 0:
+			FlowManager.add_flow("AI_next")
+			return
+		temp_actors.append(ret[0])
+		total_score += ret[1]
 
-	if(enemy_actor_score>total_score && temp_actors.size()<10):
-		if(Global.get_rate_result(90)):
-			FlowManager.add_flow("AI_next");
-			return;
+	# 概率怂了
+	if enemy_actor_score > total_score && temp_actors.size() <10:
+		if Global.get_rate_result(90):
+			FlowManager.add_flow("AI_next")
+			return
 
 	max_actors_score = total_score;
 	send_actors = temp_actors.duplicate();
 
 	var add_score_array = [-10000,0,5000,10000,10000];
-	if(from_cityId<0):
-		FlowManager.add_flow("AI_next");
-		return;
-	
-	if(send_actors.size()==0):
-		FlowManager.add_flow("AI_next");
-		return;
-	
+	if from_cityId < 0:
+		FlowManager.add_flow("AI_next")
+		return
+	if send_actors.empty():
+		FlowManager.add_flow("AI_next")
+		return
+
 	var war_rate = 90;
-	if(max_actors_score+add_score_array[DataManager.diffculities] <enemy_actor_score):
-		war_rate = [5,5,20,40,40][DataManager.diffculities];
+	if max_actors_score + add_score_array[DataManager.diffculities] < enemy_actor_score:
+		war_rate = [5, 5, 20, 40, 40][DataManager.diffculities]
 	
-	if(!Global.get_rate_result(war_rate) && send_actors.size()<10):
-		FlowManager.add_flow("AI_next");
-		return;
-	
+	if not Global.get_rate_result(war_rate) and send_actors.size() < 10:
+		FlowManager.add_flow("AI_next")
+		return
+
 	#判断携带的金米是否足够
 	var war_need_rice = send_actors.size() * 4*10
 	var war_need_money = send_actors.size() * 10
@@ -384,7 +341,7 @@ func AI_War_1()->void:
 		targetCity.change_vstate(vstateId)
 		# 占领空城，只派一个人去
 		var send_actorId = send_actors.pop_back()
-		clCity.move_to(send_actorId, targetCity.ID)
+		clCity.transfer_to(send_actorId, targetCity.ID)
 		targetCity.add_gold(war_need_money)
 		targetCity.add_rice(war_need_rice)
 		FlowManager.add_flow("AI_next")
@@ -524,7 +481,7 @@ func AI_War_4_AI():
 		#攻方全体退回原城
 		for actorId in attackingActors:
 			var actor = ActorHelper.actor(int(actorId))
-			clCity.move_to(actor.actorId, fromCity.ID);
+			clCity.transfer_to(actor.actorId, fromCity.ID)
 			DataManager.actor_add_Exp(actorId, attackerEXP, false)
 			actor.set_hp(actor.get_hp() - max(0, Global.get_random(-15, 15)))
 
@@ -548,7 +505,7 @@ func AI_War_4_AI():
 		_rand_actors_out(defendingActors, wf.targetVstateId, defenderEXP)
 
 		for actorId in attackingActors:
-			clCity.move_to(actorId, warCity.ID)
+			clCity.transfer_to(actorId, warCity.ID)
 			DataManager.actor_add_Exp(actorId, attackerEXP, false)
 		warCity.add_gold(atk_money)
 		warCity.add_rice(atk_rice)
@@ -1007,7 +964,7 @@ func _rand_actors_out(actors:PoolIntArray, vstateId:int, defenderEXP:float):
 			#找到可撤退的城
 			var retreatCity = clCity.city(targetCityId)
 			retreatCity.change_vstate(vstateId)
-			clCity.move_to(actorId, retreatCity.ID)
+			clCity.transfer_to(actorId, retreatCity.ID)
 			retreatCity.add_gold(warCity.get_gold())
 			retreatCity.add_rice(warCity.get_rice())
 			warCity.set_property("金", 0)
@@ -1325,3 +1282,37 @@ func avoid_too_many_wars(fromCityId:int, targetCityId:int)->bool:
 	if allAttacked >= times[2]:
 		return true
 	return false
+
+# 从指定城市中选择最适合出征的一个武将
+# @return [actorId, score]
+func select_powerful_actor_from_city(fromCity:clCity.CityInfo, selected:PoolIntArray) -> PoolIntArray:
+	if fromCity.get_actors_count() <= 1:
+		return PoolIntArray([-1, 0])
+	var selecteId = -1
+	var maxScore = 0
+	for actorId in fromCity.get_actor_ids():
+		if selected.has(actorId):
+			continue
+		var actor = ActorHelper.actor(actorId)
+		if actor.is_injured():
+			continue
+		var maxSodiers = DataManager.get_actor_max_soldiers(actorId)
+		# 随机加兵
+		actor.set_soldiers(min(maxSodiers, actor.get_soldiers() + Global.get_random(5,9)*100))
+		if actor.get_soldiers() < 1000:
+			# 小于1000兵，不出战
+			continue
+		if actorId == fromCity.get_lord_id():
+			# 君主不出征
+			continue
+		var actorScore = evaluate_actor_power_score(actorId)
+		if maxScore < actorScore:
+			maxScore = actorScore
+			selecteId = actorId
+	return PoolIntArray([selecteId, maxScore])
+
+func evaluate_actor_power_score(actorId:int) -> int:
+	var actor = ActorHelper.actor(actorId)
+	var actorScore = actor.get_power() + actor.get_wisdom() + actor.get_leadership()
+	actorScore = actorScore / 3 * actor.get_soldiers() / 10
+	return actorScore

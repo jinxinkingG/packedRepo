@@ -31,10 +31,7 @@ func on_trigger_20006() -> bool:
 	return false
 
 func on_trigger_20013()->bool:
-	if ske.get_war_skill_val_int() > 0:
-		return false
-	ske.set_war_skill_val(1, 99999)
-	ske.change_actor_max_hp(actorId, -10)
+	ske.set_actor_extra_max_hp(actorId, -10)
 	actor.set_hp(min(actor.get_max_hp(), actor.get_hp()))
 	ske.war_report()
 	return false

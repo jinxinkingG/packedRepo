@@ -1,15 +1,15 @@
 extends "effect_20000.gd"
 
 #系师效果实现
-#【系师】大战场,主将诱发技。若你方米＞500，你方武将每次受到计策伤害的场合，你可以发动道术：米-50，该武将机动力+2，恢复本次计策伤害25%的士兵。
+#【系师】大战场,主将诱发技。若你方米＞500，你方武将每次受到计策伤害的场合，你可以发动道术：米-20，该武将机动力+2，并恢复本次计策伤害40%的士兵。
 
 const EFFECT_ID = 20253
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
 const REQUIRED_RICE = 500
-const COST_RICE = 50
+const COST_RICE = 20
 const AP_RECOVER = 2
-
+const RECOVER_RATE = 40
 
 func on_trigger_20012()->bool:
 	if ske.actorId == actorId:
@@ -51,7 +51,8 @@ func effect_20253_2():
 	var se = DataManager.get_current_stratagem_execution()
 	var damage = se.get_soldier_damage_for(ske.actorId)
 	ske.cost_wv_rice(COST_RICE)
-	ske.change_actor_soldiers(ske.actorId, int(damage / 4))
+	var recover = int(damage * RECOVER_RATE / 100.0)
+	ske.change_actor_soldiers(ske.actorId, recover)
 	ske.change_actor_ap(ske.actorId, AP_RECOVER)
 	ske.war_report()
 	var msg = "景行焯灵, 出禅治化"

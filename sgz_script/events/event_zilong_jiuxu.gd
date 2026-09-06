@@ -57,8 +57,7 @@ func event_settle_bad_end()->void:
 	var xs = ActorHelper.actor(XUSHU)
 	# 曹操所在城市
 	var city = DataManager.get_office_city_by_actor(CAOCAO)
-	clCity.move_out(xs.actorId)
-	clCity.move_to(xs.actorId, city.ID)
+	clCity.transfer_to(xs.actorId, city.ID)
 	xs.set_loyalty(40)
 	var vs = clVState.vstate(city.get_vstate_id())
 	DataManager.twinkle_citys = [WHERE, city.ID]

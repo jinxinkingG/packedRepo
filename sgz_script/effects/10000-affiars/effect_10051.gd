@@ -20,7 +20,6 @@ const DIALOGS = [
 	[0, "罢了 …… ……\n天地易兮日月翻，\n弃万乘兮退守藩。", 2],
 	[0, "为臣逼兮命不久，\n大势去兮空泪潸！", 3],
 	[-1, "公元 <YEAR> 年 <MONTH> 月\n<NAME>毒杀<KING>\n（<NAME>德降为<MORAL>", 0],
-	["flow", "play_affiars_animation|Town_Save||false|刘协加入我军"],
 ]
 var dialogProcess = -1
 
@@ -95,7 +94,6 @@ func effect_10051_AI_start():
 	# 禁用此技能
 	ske.affair_cd(99999)
 	# 永久禁用
-	clCity.move_out(actorId)
 	actor.set_status_disabled()
 	taishi.set_moral(1)
 	set_env("AI.毒杀少帝", city.get_vstate_id())
@@ -104,8 +102,7 @@ func effect_10051_AI_start():
 	var liuxieAppearance = false
 	if not liuxie.is_status_officed():
 		liuxie.set_status_officed()
-		clCity.move_out(liuxie.actorId)
-		clCity.move_to(liuxie.actorId, cityId)
+		clCity.transfer_to(liuxie.actorId, cityId)
 		liuxieAppearance = true
 
 	SoundManager.play_bgm("res://resource/sounds/bgm/GameDead_End.ogg", true, true, true)
@@ -162,7 +159,6 @@ func effect_10051_start():
 	# 禁用此技能
 	ske.affair_cd(99999)
 	# 永久禁用
-	clCity.move_out(actorId)
 	actor.set_status_disabled()
 	currentKingActor.set_moral(1)
 	ske.affair_set_skill_val(currentKingActor.actorId)
@@ -179,9 +175,11 @@ func effect_10051_2():
 		FlowManager.add_flow("player_ready")
 		return
 	liuxie.set_status_officed()
-	clCity.move_out(liuxie.actorId)
-	clCity.move_to(liuxie.actorId, DataManager.player_choose_city)
-	FlowManager.add_flow("player_ready")
+	clCity.transfer_to(liuxie.actorId, DataManager.player_choose_city)
+	SceneManager.play_affiars_animation(
+		"Town_Save", "", false,
+		"刘协加入我军")
+	LoadControl.set_view_model(2999)
 	return
 
 # 被动效果，检查是否转换技能

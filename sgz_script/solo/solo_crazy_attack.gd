@@ -16,18 +16,17 @@ func _input_key(delta: float):
 
 #舍命一击
 func solo_crazy_attack():
-	var scene_solo = SceneManager.current_scene()
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no]
-	var actorId = DataManager.solo_actor_by_side(side)
-	var node = scene_solo.get_actor_node(actorId)
-	
-	var wa = DataManager.get_war_actor(actorId)
-	var enemy = wa.get_battle_enemy_war_actor()
+	var scene = SceneManager.current_scene()
+	var sf = DataManager.get_current_solo_fight()
+	var wa = sf.current()
+	var target = sf.target()
 
+	var node = scene.get_actor_node(wa.actorId)
+	
 	var rate = 30
 	var rateShow = rate
 	if wa.get_controlNo() < 0:
-		if enemy.actor().get_hp() < 40:
+		if target.actor().get_hp() < 40:
 			rate /= 2
 
 	var result = 0

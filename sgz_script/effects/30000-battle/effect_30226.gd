@@ -24,7 +24,7 @@ func on_trigger_30005()->bool:
 	ske.battle_unit_jump_forward(5, bu)
 	ske.battle_report()
 
-	var msg = "以{0}之勇，何愁不能破敌？\n摧军向前！\n（{1}列阵前置，武力 +{2}".format([
+	var msg = "以{0}之勇，破敌何难？\n摧军向前！\n（{1}列阵前置，武力 +{2}".format([
 		DataManager.get_actor_honored_title(wa.actorId, actorId),
 		wa.get_name(), BUFF_POWER,
 	])

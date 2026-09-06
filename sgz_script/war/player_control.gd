@@ -362,6 +362,7 @@ func on_view_model_10(delta: float):
 	var nextFlow = DataManager.get_env_str("战争.玩家.等待对话流程")
 	if nextFlow == "":
 		nextFlow = "player_ready"
+	DataManager.unset_env("战争.玩家.等待对话流程")
 	FlowManager.add_flow(nextFlow)
 	return
 

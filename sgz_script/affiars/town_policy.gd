@@ -247,17 +247,19 @@ func _input_key(delta: float):
 			if city.get_vstate_id() in [-1, vstateId]:
 				SceneManager.show_unconfirm_dialog("无法离间该城")
 				return
-			DataManager.common_variable["目标城"] = cityId
+			DataManager.set_env("目标城", cityId)
 			FlowManager.add_flow("wedge_2")
 		152: #离间目标选择：武将列表
 			if not wait_for_choose_actor("wedge_start"):
 				return
-			var targetId = SceneManager.actorlist.get_select_actor();
+			var targetId = SceneManager.actorlist.get_select_actor()
+			if targetId < 0:
+				return
 			var target = ActorHelper.actor(targetId)
 			if target.get_loyalty() == 100:
 				SceneManager.actorlist.speak("不可离间君主")
 				return;
-			DataManager.common_variable["目标武将"] = targetId
+			DataManager.set_env("目标武将", targetId)
 			FlowManager.add_flow("wedge_3")
 		153: #武将列表
 			if not wait_for_choose_actor("enter_town_policy_menu"):
@@ -279,22 +281,24 @@ func _input_key(delta: float):
 			if city.get_vstate_id() in [-1, vstateId]:
 				SceneManager.show_unconfirm_dialog("无法挑唆该城")
 				return
-			DataManager.common_variable["目标城"] = cityId
+			DataManager.set_env("目标城", cityId)
 			FlowManager.add_flow("incite_2")
 		282: #挑唆目标选择：武将列表
 			if not wait_for_choose_actor("incite_start"):
 				return
-			var targetId = SceneManager.actorlist.get_select_actor();
+			var targetId = SceneManager.actorlist.get_select_actor()
+			if targetId < 0:
+				return
 			var target = ActorHelper.actor(targetId)
 			if target.get_loyalty() == 100:
 				SceneManager.actorlist.speak("不可挑唆君主")
-				return;
-			var targetCityId = int(DataManager.common_variable["目标城"]);
+				return
+			var targetCityId = DataManager.get_env_int("目标城")
 			var targetCity = clCity.city(targetCityId)
 			if target.actorId != targetCity.get_actor_ids()[0]:
 				SceneManager.actorlist.speak("只能挑唆太守")
 				return;
-			DataManager.common_variable["目标武将"] = target.actorId
+			DataManager.set_env("目标武将", target.actorId)
 			FlowManager.add_flow("incite_3")
 		283: #武将列表
 			if not wait_for_choose_actor("enter_town_policy_menu"):
@@ -316,17 +320,19 @@ func _input_key(delta: float):
 			if city.get_vstate_id() in [-1, vstateId]:
 				SceneManager.show_unconfirm_dialog("无法离间该城")
 				return
-			DataManager.common_variable["目标城"] = cityId
+			DataManager.set_env("目标城", cityId)
 			FlowManager.add_flow("canvass_2")
 		162: #招揽目标选择：武将列表
 			if not wait_for_choose_actor("canvass_start"):
 				return
-			var targetId = SceneManager.actorlist.get_select_actor();
+			var targetId = SceneManager.actorlist.get_select_actor()
+			if targetId < 0:
+				return
 			var target = ActorHelper.actor(targetId)
 			if target.get_loyalty() == 100:
 				SceneManager.actorlist.speak("不可招揽君主")
 				return;
-			DataManager.common_variable["目标武将"] = target.actorId
+			DataManager.set_env("目标武将", target.actorId)
 			FlowManager.add_flow("canvass_3")
 		163: #武将列表
 			if not wait_for_choose_actor("enter_town_policy_menu"):
@@ -526,7 +532,7 @@ func alliance_2():
 #同盟
 func alliance_join_3():
 	var city = clCity.city(DataManager.player_choose_city)
-	var targetVstateId = int(DataManager.common_variable["目标势力"])
+	var targetVstateId = DataManager.get_env_int("目标势力")
 	var msg = "何人前往说服{0}？".format([
 		clVState.vstate(targetVstateId).get_lord_name()
 	])

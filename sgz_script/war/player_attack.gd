@@ -233,9 +233,14 @@ func run_battle():
 	for wa in [bf.get_from(), bf.get_target(), bf.get_attacker(), bf.get_defender()]:
 		if not wa.wait_dialogs.empty():
 			var d = wa.wait_dialogs.pop_front()
-			DataManager.set_env("战争.玩家.等待对白", d.output())
-			DataManager.set_env("战争.玩家.等待对白来源", wa.actorId)
-			FlowManager.add_flow("player_turn_dialog|run_battle")
+			var key = "玩家"
+			var speakFlow = "player_turn_dialog|run_battle"
+			if wa.get_controlNo() < 0:
+				key = "AI"
+				speakFlow = "AI_turn_dialog|run_battle"
+			DataManager.set_env("战争." + key + ".等待对白", d.output())
+			DataManager.set_env("战争." + key + ".等待对白来源", wa.actorId)
+			FlowManager.add_flow(speakFlow)
 			return
 	var wf = DataManager.get_current_war_fight()
 	wf.battle_start()
@@ -245,15 +250,15 @@ func run_battle():
 	attacker.add_day_attacked_actor(defender.actorId)
 	defender.add_day_defended_actor(attacker.actorId)
 
-	DataManager.battle_run = true;
-	SkillHelper.remove_all_skill_trigger();
+	DataManager.battle_run = true
+	SkillHelper.remove_all_skill_trigger()
 	
-	SceneManager.hide_all_tool();
-	LoadControl.end_script();
-	DataManager.battle_units = [];
-	DataManager.battle_actors = [];
-	FlowManager.add_flow("go_to_scene|res://scene/scene_battle/scene_battle.tscn");
-	FlowManager.add_flow("battle_run_start");
+	SceneManager.hide_all_tool()
+	LoadControl.end_script()
+	DataManager.battle_units = []
+	DataManager.battle_actors = []
+	FlowManager.add_flow("go_to_scene|res://scene/scene_battle/scene_battle.tscn")
+	FlowManager.add_flow("battle_run_start")
 	return
 
 func attack_cancelled():

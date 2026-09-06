@@ -40,7 +40,7 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  在戏曲情节中，花鬘具有贵族公主的身份与草莽武将的气质，是"战场相遇、敌对相爱"的传统戏剧结构的典型人物[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  近年广泛出现于三国题材游戏（如《三国杀》）中，形象多为南蛮风格的女战将[/indent]
+[indent]•  近年广泛出现于三国题材游戏（如《三国杀》《光荣三国志》系列）中，形象多为南蛮风格的女战将[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
@@ -100,6 +100,73 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  花鬘在关银屏民间传说中以"花中秀"之名出现，是关索之妾身份[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]游戏形象（现代三国游戏）[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志14（2020年）[/font][/b]
+
+
+[color=#000000]五维：[/color] 统率63 / 武力70 / 知力32 / 政治26 / 魅力59  
+[color=#000000]主义：[/color] 割拠  
+[color=#000000]政策：[/color] 长蛇强化 Lv3  
+[color=#000000]个性：[/color] 南蛮 / 奮戦 / 罵声  
+[color=#000000]陣形：[/color] 鋒矢 / 長蛇  
+
+游戏设定生年209年，223年登场，239年自然死（寿命31岁）。与关索没年相同，可能是有意设计。  
+仅在少数剧本（南中叛乱相关剧本）中作为蜀汉/孟获势力武将登场，多数剧本未出场。  
+亲爱关系含孟获、祝融、关索一家，内面义理值5较高，游戏中是可靠伙伴。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀OL版（2021年9月17日上线）[/font][/b]
+
+
+[color=#000000]势力：[/color] 蜀 / [color=#000000]体力：[/color] 3 / [color=#000000]称号：[/color] 芳踪载馨
+
+
+[table=2]
+[cell][b]技能[/b][/cell]
+[cell][b]描述[/b][/cell]
+[cell][color=#000000]蛮裔[/color]（锁定技）[/cell]
+[cell]【南蛮入侵】对你无效[/cell]
+[cell][color=#000000]蛮嗣[/color][/cell]
+[cell]①出牌阶段限一次，将所有手牌当【南蛮入侵】使用；②每有角色受到南蛮入侵伤害，摸一张牌[/cell]
+[cell][color=#000000]薮影[/color][/cell]
+[cell]每回合限一次，当你/他人使用牌指定唯一目标（非本回合第一张牌），可弃一张牌收回/令其无效[/cell]
+[cell][color=#000000]战缘[/color]（觉醒技）[/cell]
+[cell]蛮嗣累计摸≥7张牌时觉醒：+1体力上限+回复1体力，选一名男性角色与之同获"系力"，失去蛮嗣[/cell]
+[cell][color=#000000]系力[/color]（觉醒后）[/cell]
+[cell]每回合限一次，伴侣造成伤害时可弃一牌使其+1，双方各摸两张牌[/cell]
+[/table]
+
+
+设计逻辑：以南蛮主题（南蛮入侵免疫+再利用）为核心，觉醒系统呼应戏曲中花鬘与关索的婚缘（"结缘"触发"系力"）。  
+皮肤：共5款（3传说+1史诗+1原画），最高传说皮由苏摩绘制（2023年）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀移动版（2022年2月26日上线，后暂绝版）[/font][/b]
+
+
+[color=#000000]势力：[/color] 蜀 / [color=#000000]体力：[/color] 4 / [color=#000000]称号：[/color] 薮泽清影
+
+
+[table=2]
+[cell][b]技能[/b][/cell]
+[cell][b]描述[/b][/cell]
+[cell][color=#000000]象阵[/color]（锁定技）[/cell]
+[cell]①南蛮入侵对你无效；②南蛮入侵结算后若造成过伤害，你与伤害来源各摸一张牌[/cell]
+[cell][color=#000000]芳踪[/color]（锁定技）[/cell]
+[cell]①你不能对攻击范围内角色使用伤害牌；②攻击范围内角色不能对你使用伤害牌；③结束阶段摸牌至X张（X=存活人数）[/cell]
+[cell][color=#000000]嬉战[/color]（锁定技）[/cell]
+[cell]其他角色回合开始时：弃一牌令本回合芳踪失效（按花色触发不同效果），或失去1血[/cell]
+[/table]
+
+
+移动版风格转向防御/场控，设计更接近其母祝融夫人的路线（兵种全场护盾式），与OL版南蛮AOE的爆发路线形成分化。
 
 
 [color=#888888]──────────────────────────────[/color]

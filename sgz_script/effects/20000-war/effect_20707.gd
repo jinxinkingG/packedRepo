@@ -1,9 +1,7 @@
 extends "effect_20000.gd"
 
 # 扬旌主动技
-#【扬旌】大战场，主动技。以一名队友为目标发动效果①，同一回合可再发动效果②，每回合该流程限1次。\n效果①：将目标的机动力转移给你。\n效果②：将你的所有机动力转移给目标。
-# 效果①：将目标的机动力转移给你。
-# 效果②：将你的所有机动力转移给目标。
+#【扬旌】大战场，主动技。以一名队友为目标发动效果①，之后可再发动效果②，然后本次战争冷却。效果①：将目标的机动力转移给你。效果②：将你的所有机动力转移给目标。
 
 const EFFECT_ID = 20707
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -50,14 +48,14 @@ func effect_20707_confirmed() -> void:
 		var ap = me.action_point
 		ap = ske.change_actor_ap(actorId, -ap)
 		ske.change_actor_ap(targetId, abs(ap))
-		ske.cost_war_cd(1)
+		ske.cost_war_cd(999)
 		msg += "，扬旗进军！"
 		mood = 0
 	else:
 		var ap = targetWA.action_point
 		ap = ske.change_actor_ap(targetId, -ap)
 		ske.change_actor_ap(actorId, abs(ap))
-		ske.set_war_skill_val(1, 1)
+		ske.set_war_skill_val(1)
 		msg += "，且待旗号"
 	report_skill_result_message(ske, 2002, msg, mood)
 	return

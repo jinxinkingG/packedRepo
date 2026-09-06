@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]苏飞[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不详；籍贯不可考（[color=#0066FF][url={"research": "江夏", "cat": "geography"}]江夏[/url][/color]郡说无一手史料依据）；身份：[color=#0066FF][url={"research": "黄祖", "cat": "people"}]黄祖[/url][/color]军中都督，后被[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]赦免
+[color=#000000]基本信息：[/color] 生卒年不详（约172—221年，游戏推算值，无一手史料）；籍贯不可考（[color=#0066FF][url={"research": "江夏", "cat": "geography"}]江夏[/url][/color]郡说无一手史料依据）；身份：[color=#0066FF][url={"research": "黄祖", "cat": "people"}]黄祖[/url][/color]军中都督，后被[color=#0066FF][url={"research": "孙权", "cat": "people"}]孙权[/url][/color]赦免
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -107,7 +107,7 @@
 
 [indent]•  [color=#000000]甘宁[/color]：相知好友兼救命恩人关系。苏飞→甘宁：举荐、谋划出走；甘宁→苏飞：以命担保、救其性命。互相成就，是三国中少有的"恩义相报"典范之一。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]黄祖[/color]：上司，[color=#0066FF][url={"research": "张闿", "cat": "people"}]张闿[/url][/color]以[color=#0066FF][url={"research": "陶谦", "cat": "people"}]陶谦[/url][/color]部将身份行事，苏飞在其麾下任都督，军事二把手，但建言未被重用。[/indent]
+[indent]•  [color=#000000]黄祖[/color]：上司，苏飞在其麾下任都督，军事二把手，但建言未被重用。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]孙权[/color]：俘苏飞者，后被甘宁感动释放。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -190,7 +190,87 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[color=#000000]结论：两人说更有据，同一人说极难成立。属开放悬案，永不可从现有史料最终定论。学界无专项论文，以民间讨论为主。[/color]
+[color=#000000]结论：两人说更有据，同一人说极难成立。属开放悬案，永不可从现有史料最终定论。学界无专项论文，以民间讨论为主。[/color] 详见 `ref-sufei-sufei-identity.md`。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+史书对苏飞无独立评论，以下为隐含于史事中的评价脉络：
+
+
+[indent]•  [color=#000000]隐含史评[/color]：黄祖因"江贼出身"拒绝重用甘宁，而苏飞"知其才而荐之"——识才者的正面侧写，全依靠历史事件映射[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]孙权"备棺"[/color]：孙权为苏飞备好棺材，说明其视苏飞为重要战俘，并无对其品格的评价[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]甘宁以命担保[/color]：甘宁为苏飞的人格做了最有力的背书——一个能让"义士"用性命保证的人，正史给出了无声的评价[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]后世无独立评语[/color]，苏飞完全在甘宁的故事框架内存在。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志11》（2007年）[/font][/b]
+
+
+[color=#000000]五维：[/color] 统率69 / 武力63 / 知力66 / 政治62 / 魅力63（总合323）
+[color=#000000]特技：[/color] 无
+[color=#000000]兵科适性：[/color] 戟A / 弩B / 水軍A（其余B/C）
+[color=#000000]亲爱关系：[/color] 甘宁（亲爱）
+[color=#000000]性格：[/color] 冷静
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志14》（2020年）[/font][/b]
+
+
+[color=#000000]五维：[/color] 統率69 / 武力63 / 知力66 / 政治64 / 魅力65
+[color=#000000]主義：[/color] 割拠
+[color=#000000]政策：[/color] 水軍育成 Lv2
+[color=#000000]個性：[/color] 水戦
+[color=#000000]戦法：[/color] 斉射 / 鉄壁 / 強襲
+[color=#000000]亲爱関係：[/color] 甘宁（相互亲爱）
+
+玩家评语：「全能力60台というキングオブ平凡」「陣形・親愛・政策・個性全て有用という隠れ有能武将。」
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志8 Remake》（2024年）[/font][/b]
+
+
+[color=#000000]五维：[/color] 統率72 / 武力64 / 知力65 / 政治61 / 魅力65
+[color=#000000]性格：[/color] 沈着
+[color=#000000]奇才：[/color] 堅守（守备防御+30）/ 水神（艦船移動上昇+艦船战法攻击+50）
+[color=#000000]特技：[/color] 築城1 / 熱弁1 / 歩将1 / 弓将2 / 水練2 / 援護1 / 膂力1 / 果敢1
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀（官方收录，吴国武将）[/font][/b]
+
+
+[color=#000000]武将「苏飞」（标准版/移动版）：[/color]
+
+[indent]•  技能1 [color=#000000]诤荐[/color]（锁定技）：结束阶段，令一名角色获得"诤荐"标记；该角色在你的下个回合开始时，摸X张牌并移去标记（X为其此期间使用或打出牌的数量，至多为其体力上限且至多为5）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  技能2 [color=#000000]告援[/color]：当你成为一名角色使用【杀】的目标时，你可以令一名其他角色代替你成为目标[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战功称号：[/color] 诤友投明[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+设计主题：技能均围绕"举荐甘宁"（诤荐）与"临危求情"（告援）两大史事展开，是对历史事件的直接转化。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
+
+
+苏飞在主流影视作品（1994年央视版、2010年高希希版）中无专属出场记录，作为史料极简的配角，影视化程度极低。
 
 
 [color=#888888]──────────────────────────────[/color]

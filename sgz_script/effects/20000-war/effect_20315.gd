@@ -51,7 +51,7 @@ func effect_20315_go() -> void:
 		DataManager.set_env(EFFECT_CHOOSE_NAME, selected)
 		status = "({0}/{1})".format([selected.size(), TEAM_COUNT])
 		msg = "最多选择{0}人".format([TEAM_COUNT]) + status
-	if not wait_choose_actors(targets, msg):
+	if not wait_choose_actors(targets, msg, true):
 		return
 	_update_select_color(targets)
 	LoadControl.set_view_model(2000)

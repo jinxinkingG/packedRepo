@@ -60,11 +60,13 @@ func get_can_attack_actors(fromId:int, igonreAP:bool=false, evenForbidden:bool=f
 		var distance = Global.get_distance(wa.position, fromWA.position)
 		if distance > max_distance:
 			continue
-		var blockCN = map.get_blockCN_by_position(wa.position)
-		if blockCN in except_blocks:
-			continue
-		# 对于远距离攻击的情况，中间不能有城门和城墙
+		# 对于远距离攻击的情况
 		if distance > 1:
+			# 只有远距离攻击才考虑地形排除
+			var blockCN = map.get_blockCN_by_position(wa.position)
+			if blockCN in except_blocks:
+				continue
+			# 中间不能有城门和城墙
 			var route = map.aStar.get_attack_path(fromWA.position, wa.position)
 			# 没路
 			if route.empty():

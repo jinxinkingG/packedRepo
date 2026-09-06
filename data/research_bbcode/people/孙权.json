@@ -433,11 +433,26 @@
 [color=#000000]真三国无双系列（光荣特库摩）：[/color]
 首次登场于《真三国无双1》（1997）。持双戟，定位"坐断东南的霸主"。历代建模因与[color=#0066FF][url={"research": "吕布", "cat": "people"}]吕布[/url][/color]相似而有"吕布私生子"的玩家梗。
 
-[color=#000000]三国杀（标准版）：[/color]
-势力：吴；体力5；武将称号"年轻的贤君"。核心技能[color=#000000]制衡[/color]（弃置任意张牌，摸等量牌），体现孙权纵横捭阖的用人特质。另有界孙权、暮孙权、神孙权（神话限定）等多形态版本，属三国杀初代经典武将，过牌能力强，长居第一梯队，新手入坑首选。
+[color=#000000]三国杀：[/color]
+
+[indent]•  [color=#000000]标准版[/color]：势力吴；4勾玉；称号"东吴大帝"；[color=#000000]制衡[/color]（出牌阶段限一次，弃置任意张牌，摸等量牌）+[color=#000000]救援[/color]（主公技，其他吴势力角色对自己使用桃时，若其体力值大于你，可改为令你回复1点体力，然后其摸一张牌）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]界版[/color]：制衡强化（弃置所有手牌时额外摸一张牌，"7牌过牌"），军八/排位T0强度，被称"史诗质检员"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]神版[/color]：驭衡（锁定技，弃置不同花色牌，随机获得等量吴将技能）+帝力（觉醒技）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  历史最经典基础武将之一，过牌调牌能力强，新手入坑首选[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
 
 [color=#000000]光荣《三国志》系列：[/color]
-孙权作为东吴主君贯穿全系列，政治/魅力值突出。《三国志13》五维：89-80-73-91-89（统率-武力-智力-政治-魅力）。
+
+[indent]•  [color=#000000]三国志14[/color]：五维统76/武67/智80/政89/魅95；主义割拠；政策先従隗始Lv3；个性任才（金固有）/操舵/振興/教化/优柔（负）/酒乱（负）；固有战法[color=#000000]大虎雄略[/color]（计略系，解除状态异常+我方全能力上升，可对据点）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]三国志11[/color]：五维统76/武67/智80/政89/魅95；特技[color=#000000]指导[/color]；枪B/戟A/水A；登场年196年[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]三国志8R[/color]：五维统75/武68/智80/政89/魅95；奇才[color=#000000]用才[/color]（发起/参与战法均+10%，可无损叠加）；步兵剛撃1/乱撃2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]后世纪念[/font][/b]

@@ -57,6 +57,23 @@
 [color=#888888]──────────────────────────────[/color]
 
 
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]陈寿（《三国志·许麋孙简伊秦传》评曰）[/font][/b]
+
+
+[indent][color=#666666]┃ "麋竺、孙乾、简雍、伊籍，皆雍容风议，见礼于世。"[/color][/indent]
+
+
+"雍容风议"定性其文士外交型气质，"见礼于世"肯定其在当世以礼被重。陈寿将其与麋竺、简雍、伊籍并列，以群像方式定格元从文臣。
+
+[color=#000000]辨正：[/color] 网络流传"有宾礼之实，尽协和之能""安邦造士，率义而行"等说法，均不见于正史，系现代博主对陈寿评语的意译扩展，不可作一手史料引用。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
 [b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
@@ -111,6 +128,9 @@
 [cell]出使东吴[/cell]
 [cell]约210—213年随伊籍等同使（《伊籍传》）[/cell]
 [cell]演义第54回/第111节主导联姻出使，角色更突出[/cell]
+[cell]第57回劝阻[color=#0066FF][url={"research": "张飞", "cat": "people"}]张飞[/url][/color][/cell]
+[cell]正史无此情节[/cell]
+[cell]随张飞巡视耒阳，劝阻其轻忽[color=#0066FF][url={"research": "庞统", "cat": "people"}]庞统[/url][/color]，体现调处气质[/cell]
 [cell]卒年与结局[/cell]
 [cell]214年益州定后，秉忠将军，"顷之卒"（病卒）[/cell]
 [cell]演义中后期逐渐淡出[/cell]
@@ -120,10 +140,107 @@
 [color=#888888]──────────────────────────────[/color]
 
 
-[b][font=res://resource/font/FandolSong-Bold/28.tres]版本学：嘉靖本 vs 毛本（第54回/第111节）[/font][/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]版本学：嘉靖本各回孙乾出场汇总[/font][/b]
 
 
-见 `ref-yanyi-version-diff.md`。核心差异：
+[b][font=res://resource/font/FandolSong-Bold/26.tres]已核回目（第27、34、54、55、57回）[/font][/b]
+
+
+详见各 ref-yanyi-version-diff-*.md 文件。
+
+[color=#000000]整体规律：[/color] 嘉靖本与毛本孙乾场景均无情节级差异。差异属遣词造句层面。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]第55回（嘉靖本第113节）：成亲后遣孙乾报喜[/font][/b]
+
+
+[color=#000000]嘉靖本原文：[/color]
+
+[indent][color=#666666]┃ 先教孙乾回荆州报喜。[/color][/indent]
+
+
+[indent]•  一句话出场，送报喜信使角色。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  两版本无差异。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]第57回（嘉靖本第115-116节）：随张飞巡视耒阳，劝阻轻忽庞统 ✅2026-06-04[/font][/b]
+
+
+[color=#000000]嘉靖本原文（含两处出场）：[/color]
+
+（一）刘备令其同行：
+
+[indent][color=#666666]┃ 恐於事有不明處，可與孫乾同去。張飛領了言語，與孫乾前至耒陽縣。[/color][/indent]
+
+
+（二）劝阻张飞：
+
+[indent][color=#666666]┃ 張飛大怒，欲擒之。孫乾曰："龐士元乃高明之人，未可輕忽。且到縣問之，如果於理不當，治罪未晚。"[/color][/indent]
+
+
+（三）张飞称谢：
+
+[indent][color=#666666]┃ 飛顧謂孫乾曰："非公則失一大賢也。"[/color][/indent]
+
+
+[color=#000000]说明：[/color] 这是孙乾全本演义中[color=#000000]最有实质判断力[/color]的场景。孙乾以"龐士元乃高明之人"阻止张飞，角色超越单纯传声筒，展现了其"雍容风议"在实际场景中的运用。
+
+[color=#000000]第58-61回：[/color] 均无出场（全文检索"孫乾"零结果）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]第27回（嘉靖本第57节）：过五关后孙乾北来报信[/font][/b]
+
+
+[table=3]
+[cell][b]比较点[/b][/cell]
+[cell][b]嘉靖本[/b][/cell]
+[cell][b]毛本[/b][/cell]
+[cell]"专权/争权"[/cell]
+[cell][color=#0066FF][url={"research": "审配", "cat": "people"}]审配[/url][/color]、郭图各自专权[/cell]
+[cell]各自争权（专→争）[/cell]
+[cell]袁绍陷害关羽[/cell]
+[cell]有"知云长决回，必然陷害"[/cell]
+[cell]删去此句[/cell]
+[cell]刘备离去天数[/cell]
+[cell]去了三日了[/cell]
+[cell]仅"去了"（无天数）[/cell]
+[cell]孙乾劝辞[/cell]
+[cell]含"公宜速行"引语[/cell]
+[cell]改为叙述体，增"夫人可与云长到此相会"[/cell]
+[/table]
+
+
+[color=#000000]整体结论（第27回）[/color]：情节功能完全相同，差异属措辞层面，无情节级差异。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]第34回（嘉靖本第71节）：孙乾谏刘备勿赴宴[/font][/b]
+
+
+[table=3]
+[cell][b]比较点[/b][/cell]
+[cell][b]嘉靖本[/b][/cell]
+[cell][b]毛本[/b][/cell]
+[cell]开头动作[/cell]
+[cell]玄德收拾赴会，孙乾曰[/cell]
+[cell]孙乾曰（无前置描述）[/cell]
+[cell]闻/见[/cell]
+[cell]昨闻主公匆匆而回[/cell]
+[cell]昨见主公匆匆而回[/cell]
+[cell]情感表述[/cell]
+[cell]心中不悦[/cell]
+[cell]意甚不乐[/cell]
+[cell]劝谏措辞[/cell]
+[cell]恐有诈谋，故谏勿往[/cell]
+[cell]不可轻往（毛本增"忽"字）[/cell]
+[/table]
+
+
+[color=#000000]整体结论（第34回）[/color]：差异为遣词造句微调，无情节级差异。孙乾以"谏"定位自己行为是嘉靖本特色；毛本更口语化。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]第54回（嘉靖本第111节）：出使东吴联姻[/font][/b]
 
 
 [table=3]
@@ -148,7 +265,7 @@
 [/table]
 
 
-[color=#000000]整体结论[/color]：两版本孙乾戏份在第54回基本一致，均为出使东吴传话→甘露寺目视玄德（暗示撤退信号）→宴后建议求乔国老促婚三个核心动作。差异属遣词造句层面，无情节级差异。
+[color=#000000]整体结论（第54回）[/color]：两版本孙乾戏份在第54回基本一致。差异属遣词造句层面，无情节级差异。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -161,6 +278,115 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]官职版本差异：[/color] 《三国志》作"秉忠将军"，《三国志宗僚》误为"[color=#000000]秉中将军[/color]"。同上来源[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏：三国志14（光荣·特库摩，2020年）[/font][/b]
+
+
+[table=7]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]主义[/b][/cell]
+[cell][b]固有战法[/b][/cell]
+[cell]34[/cell]
+[cell]33[/cell]
+[cell]78[/cell]
+[cell]84[/cell]
+[cell]87[/cell]
+[cell]礼教[/cell]
+[cell]縦横術Lv4[/cell]
+[/table]
+
+
+[color=#000000]个性：[/color] 能吏、人脈、論客
+政治84、魅力87偏高，反映其外交辞令能力；统率武力极低，定位纯文官。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏：三国志11（光荣，2006年）[/font][/b]
+
+
+[table=6]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]智力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]特技[/b][/cell]
+[cell]34[/cell]
+[cell]33[/cell]
+[cell]78[/cell]
+[cell]84[/cell]
+[cell]87[/cell]
+[cell]論客[/cell]
+[/table]
+
+
+特技"論客"：在同盟、停战协议、交换俘虏谈判时可能进入舌战。亲爱武将：麋竺、简雍。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏：三国志8 Remake（光荣·特库摩，2024年）[/font][/b]
+
+
+[table=6]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]性格[/b][/cell]
+[cell]37[/cell]
+[cell]37[/cell]
+[cell]76[/cell]
+[cell]81[/cell]
+[cell]85[/cell]
+[cell]沈着[/cell]
+[/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏：三国杀（游卡桌游）[/font][/b]
+
+
+[indent]•  [color=#000000]谦雅[/color]：当你成为锦囊牌的目标后，你可以将任意张手牌交给一名其他角色。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]说盟[/color]：出牌阶段结束时，你可以与一名角色拼点；赢→视为使用【无中生有】；没赢→视为对方使用【过河拆桥】。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]真三国无双系列（光荣）[/font][/b]
+
+
+孙乾未作为独立无双武将收录，以 NPC 身份在蜀汉早期关卡中出场（如《真·三国无双8》徐州守城段）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+[table=3]
+[cell][b]年份[/b][/cell]
+[cell][b]作品[/b][/cell]
+[cell][b]扮演者[/b][/cell]
+[cell]1994[/cell]
+[cell]《三国演义》（央视版）[/cell]
+[cell]郭家庆（主）/ 夏均寅（部分集）[/cell]
+[cell]2004[/cell]
+[cell]《武圣关公》[/cell]
+[cell]董锋[/cell]
+[cell]2010[/cell]
+[cell]《三国》（高希希导演）[/cell]
+[cell]杨瑞[/cell]
+[cell]2016[/cell]
+[cell]《武神赵子龙》[/cell]
+[cell]胡冰[/cell]
+[/table]
 
 
 [color=#888888]──────────────────────────────[/color]

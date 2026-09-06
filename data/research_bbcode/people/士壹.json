@@ -1,7 +1,10 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]士壹（士壱）[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不详，籍贯交州苍梧郡广信（今广西梧州），东汉末三国初吴臣，[color=#0066FF][url={"research": "士燮", "cat": "people"}]士燮[/url][/color]之弟
+[color=#000000]基本信息：[/color] 生卒年不详，籍贯交州苍梧郡广信（今广西梧州），东汉末三国初吴臣，[color=#0066FF][url={"research": "士燮", "cat": "people"}]士燮[/url][/color]之弟；封偏将军、都乡侯；约卒于黄武五年（226年）后数年（229年前后）
+
+
+[color=#888888]──────────────────────────────[/color]
 
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
@@ -23,6 +26,8 @@
 裴注《吴书》补充：士壹在京对黄琬尽心服务，颇有声誉。[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]对此不满，下令"司徒掾士壹，不得除用"，禁止其升迁。直至董卓入关，士壹才得以亡归乡里。
 
 [color=#000000]时间线推算：[/color] 丁宫任司徒为汉灵帝中平五年（188年），董卓入关为初平三年（192年），则士壹在京约189—192年。
+
+[color=#000000]与兄士燮路径不同：[/color] 士壹在中央洛阳仕宦时，士燮已南回任交趾太守。这是兄弟二人前期分道而行的关键节点，士壹的洛阳经历，是家族其他成员所没有的。
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]建安前期：领合浦太守[/font][/b]
@@ -82,7 +87,10 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-具体犯法原因史书无载，卒年不详，约在226—230年代某年。
+具体犯法原因史书无载，卒年不详，约在226—230年代某年。游戏推算生年153年、卒年229年（三国志14/8R设定值），年寿约77岁。
+
+
+[color=#888888]──────────────────────────────[/color]
 
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
@@ -90,27 +98,191 @@
 
 史料所见士壹，勤勉恭谨——侍送刺史丁宫时"侍送勤恪"，在京对黄琬"尽心""甚有声称"，是一个善于维护上级关系的人。其在士氏家族中处于配合角色，未见独立军事或政治决策记录。
 
+[color=#000000]独特性：[/color] 在整个士氏家族中，士壹是唯一进入洛阳中央仕宦的人（士燮、士〈黄有〉、士武均南在交州），经历过丁宫、黄琬两位司徒的政治圈层，见识过汉末京城的权力运作，这给了他与兄弟不同的政治视野。这种经历在游戏数据中体现为偏高的"外交"属性。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]陈寿（三国志正史）[/font][/b]
+
+
+《三国志·吴书·士燮传》对士壹[color=#000000]无独立评语[/color]。士壹作为附传人物，陈寿未单独撰评。
+
+其事迹以[color=#000000]功能性记录[/color]为主：侍送刺史、中央仕官、领合浦太守、封偏将军都乡侯、进贡马匹、被免庶人、坐法被诛——史传语气平实，无褒贬倾向。
+
+史传中可隐约读出的评价信息：
+
+[indent]•  丁宫"感动"其勤恪，黄琬"甚礼遇"，董卓"不得除用"——在洛阳有良好声誉，却被权贵压制[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  孙权封赏偏将军并厚书回赐——孙权认可其归附姿态[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "坐法诛"——以法律处死，不名誉地收场[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志11》（威力加强版，2006年）[/font][/b]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]73[/cell]
+[cell]42[/cell]
+[cell]76[/cell]
+[cell]77[/cell]
+[cell]63[/cell]
+[/table]
+
+
+[color=#000000]特技：[/color] 待核（atwiki サ行页面名字字段编码问题，无法直接确认）
+
+[color=#000000]说明：[/color] 五维总331，统率73在士燮势力内偏高（三国志14/8R为48/49），知76/政77延续内政导向。数据来源：腾讯新闻三国志11攻略文（2022-01-04），列出士燮势力全成员五维，士壹统73-武42-知76-政77-魅63已确认。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志14》（PK版，2020年）[/font][/b]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]48[/cell]
+[cell]36[/cell]
+[cell]67[/cell]
+[cell]75[/cell]
+[cell]69[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]主义：[/color] 礼教[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]政策：[/color] 施設開発 Lv3（大幅降低建设军事设施成本）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]个性：[/color] 教化・能吏[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战法：[/color] 斉射・投石・駆逐[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]玩家评价：[/color]
+
+[indent]•  "外形像武将，但数值是文官"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "交易任务最佳人选，内政官也出色"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "政治75相当高，个性齐全；施設開発Lv3是士燮势力攀科技的关键"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  知力67未达军师门槛（68+），是玩家认为的微小遗憾[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志8重制版》（8R，2024年）[/font][/b]
+
+
+[table=6]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]合计[/b][/cell]
+[cell]49[/cell]
+[cell]41[/cell]
+[cell]59[/cell]
+[cell]71[/cell]
+[cell]65[/cell]
+[cell]285[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]性格：[/color] 温和[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]义理：[/color] 7[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]重视：[/color] 文名 / 兴趣：书物・宝物・酒[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]特技：[/color] 耕作1 / 弓将1 / 水练1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战法（弓兵）：[/color] 斉射1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+好意关系：士燮（兄）・吕岱（平叛合作）
+
+[color=#000000]运用特点：[/color] 文官路线，内政/政治导向；登场时间184—228年跨度极大；士燮亡后作为在野武将存活至229年，生命力最强的士氏家族成员之一。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀 / 真三国无双[/font][/b]
+
+
+[color=#000000]均未收录[/color]（士壹知名度偏低）
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+[color=#000000]无专属出场记录[/color]（士氏家族在三国题材影视中几乎不出场）
+
+
+[color=#888888]──────────────────────────────[/color]
+
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
-[indent]•  [color=#000000]士燮[/color]（兄）：领导性人物，士壹在其安排下领合浦太守，整个仕途依附于士燮的整体战略[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]丁宫[/color]：引士壹入京的贵人[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]黄琬[/color]：继任司徒，对士壹礼遇[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]董卓[/color]：禁止士壹升迁的阻力[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]孙权[/color]：最终封偏将军都乡侯[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]吕岱[/color]：平定士徽叛乱，士壹因此被免庶人[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]士匡[/color]（子）：与吕岱有旧，士徽之乱中发挥关键调停作用[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[table=3]
+[cell][b]关系[/b][/cell]
+[cell][b]人物[/b][/cell]
+[cell][b]性质[/b][/cell]
+[cell]兄[/cell]
+[cell]士燮[/cell]
+[cell]领导性人物，士壹仕途依附于士燮的整体战略[/cell]
+[cell]贵人[/cell]
+[cell]丁宫[/cell]
+[cell]引士壹入京的司徒[/cell]
+[cell]礼遇者[/cell]
+[cell]黄琬[/cell]
+[cell]继任司徒，甚礼遇壹[/cell]
+[cell]压制者[/cell]
+[cell]董卓[/cell]
+[cell]禁止士壹升迁[/cell]
+[cell]上主[/cell]
+[cell]孙权[/cell]
+[cell]封偏将军都乡侯，厚赐还答[/cell]
+[cell]友好[/cell]
+[cell]吕岱[/cell]
+[cell]士壹之子士匡与吕岱有旧，平叛合作[/cell]
+[cell]子[/cell]
+[cell]士匡[/cell]
+[cell]士徽之乱中配合吕岱调停，关键角色[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
 
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-《三国演义》中士燮家族几乎不出场，士壹在演义中无实质情节。正史中的士壹有完整的仕途轨迹，但性格较单薄，史料记载以功能性事件为主。
+《三国演义》中士燮家族几乎不出场，士壹在演义中无实质情节（嘉靖本/毛本均无出场）。正史中的士壹有完整的仕途轨迹，但性格较单薄，史料记载以功能性事件为主。
+
+
+[color=#888888]──────────────────────────────[/color]

@@ -89,7 +89,7 @@ func _process(delta: float) -> void:
 					if parentCity.get_vstate_id() != DataManager.vstates_sort[DataManager.vstate_no]:
 						continue;
 					#自动加入
-					clCity.move_to(child.actorId, parentCity.ID);
+					clCity.transfer_to(child.actorId, parentCity.ID)
 					child.set_soldiers(0)
 					child.set_status_officed()
 					

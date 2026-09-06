@@ -10,7 +10,33 @@ const BUFF_NAME = "神威"
 const BASIC_DURATION = 2
 
 func check_AI_perform() -> bool:
-	return bf.turns >= 3
+	if me == null or enemy == null:
+		return false
+	var buMe = me.battle_actor_unit()
+	if buMe == null:
+		return false
+	var side = buMe.get_side()
+	var xMin = 99
+	var xMax = -1
+	for bu in bf.battle_units(actorId):
+		var x = bu.unit_position.x
+		if x < xMin:
+			xMin = x
+		if x > xMax:
+			xMax = x
+	xMax += side.x * 1
+	xMin -= side.x * 1
+	for bu in bf.battle_units(enemy.actorId):
+		var x = bu.unit_position.x
+		if side == Vector2.LEFT and x <= xMax:
+			return true
+		if side == Vector2.RIGHT and x >= xMin:
+			return true
+	return false
+
+func effect_30314_AI_start() -> void:
+	goto_step("confirmed")
+	return
 
 func effect_30314_start() -> void:
 	var msg = "发动【{0}】\n暂时压制敌方士兵行动\n可否？".format([ske.skill_name])
@@ -41,10 +67,6 @@ func effect_30314_confirmed() -> void:
 	])
 	me.attach_free_dialog(msg, 0, 30000)
 	goto_step("end")
-	return
-
-func effect_30314_AI_start() -> void:
-	goto_step("confirmed")
 	return
 
 func effect_30314_end() -> void:

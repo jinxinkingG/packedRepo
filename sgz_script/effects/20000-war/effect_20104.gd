@@ -141,6 +141,7 @@ func _perform_skill(isAI:bool, nextViewModel:int=-1)->void:
 	ske.war_report()
 
 	var targets = se.get_affected_actors(targetWA.position)
+	se.cost = COST_AP
 	se.perform_to_targets(targets)
 	se.report()
 

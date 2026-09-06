@@ -64,19 +64,17 @@ func on_view_model_2001()->void:
 	return
 
 func effect_10127_confirmed() -> void:
+	var city = clCity.city(DataManager.player_choose_city)
+	var vstateId = city.get_vstate_id()
 	var targetVstateId = DataManager.get_env_int("目标")
 	var targetVstate = clVState.vstate(targetVstateId)
 	var capital = clCity.get_capital_city(targetVstateId)
-
-	clCity.move_out(actorId)
-	capital.add_actor(actorId)
-	SkillHelper.add_actor_scene_skill(10000, actorId, TARGET_SKILL, 99999, actorId, ske.skill_name)
 
 	var msg = "主公有命，莫敢不从\n日后相见，当各为其主\n（解锁【{0}】".format([
 		TARGET_SKILL
 	])
 	play_dialog(actorId, msg, 3, 2002)
-	DataManager.twinkle_citys = [DataManager.player_choose_city, capital.ID]
+	DataManager.twinkle_citys = [city.ID, capital.ID]
 	return
 
 func on_view_model_2002()->void:
@@ -85,19 +83,22 @@ func on_view_model_2002()->void:
 
 func effect_10127_result() -> void:
 	var city = clCity.city(DataManager.player_choose_city)
+	var vstateId = city.get_vstate_id()
 	var targetVstateId = DataManager.get_env_int("目标")
 	var targetVstate = clVState.vstate(targetVstateId)
 	var capital = clCity.get_capital_city(targetVstateId)
 
 	ske.affair_cd(99999)
-	clVState.set_alliance(targetVstateId, city.get_vstate_id(), 12)
+	clVState.set_alliance(targetVstateId, vstateId, 12)
+	clCity.transfer_to(actorId, capital.ID)
+	SkillHelper.add_actor_scene_skill(10000, actorId, TARGET_SKILL, 99999, actorId, ske.skill_name)
 
 	var msg = "{0}转投{1}于{2}\n{1}与{3}结盟 12 个月".format([
 		actor.get_name(), targetVstate.get_lord_name(),
 		capital.get_full_name(), city.get_lord_name(),
 	])
 	play_dialog(-1, msg, 2, 2999)
-	DataManager.twinkle_citys = clCity.all_city_ids([city.get_vstate_id(), targetVstateId])
+	DataManager.twinkle_citys = clCity.all_city_ids([vstateId, targetVstateId])
 	return
 
 func get_target_city_ids(city:clCity.CityInfo)->Dictionary:

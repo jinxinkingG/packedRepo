@@ -1,7 +1,7 @@
-[b][font=res://resource/font/FandolSong-Bold/30.tres]张绣（字子约？）[/font][/b]
+[b][font=res://resource/font/FandolSong-Bold/30.tres]张绣（字？）[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生年不详（无史料，159年为推算）；卒年207年（建安十二年）；籍贯武威郡祖厉县（今甘肃会宁县西北，学术主流；靖远说为地方文史传统，见下）；身份：东汉末年宛城割据军阀，骠骑将军[color=#0066FF][url={"research": "张济", "cat": "people"}]张济[/url][/color]之侄（"族子"）
+[color=#000000]基本信息：[/color] 生年约159年（无史料，为推算）；卒年207年（建安十二年）；籍贯武威郡祖厉县（今甘肃会宁县西北，学术主流；靖远说为地方文史传统，见下）；身份：东汉末年宛城割据军阀，骠骑将军[color=#0066FF][url={"research": "张济", "cat": "people"}]张济[/url][/color]之侄（"族子"）
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -29,7 +29,7 @@
 
 建安二年（197年）正月，[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]南征，大军压至淯水。张绣在谋士[color=#0066FF][url={"research": "贾诩", "cat": "people"}]贾诩[/url][/color]建议下举众投降。
 
-然而曹操纳张济遗孀（[color=#0066FF][url={"research": "邹氏", "cat": "people"}]邹氏[/url][/color]）为妾，张绣以此为耻辱。另据裴注〔一〕《傅子》：曹操爱其部下勇将[color=#0066FF][url={"research": "胡车儿", "cat": "people"}]胡车儿[/url][/color]，赏赐金钱，张绣疑曹操收买心腹，遂决定先发制人。张绣用贾诩之谋，以移营为名，夜袭曹军。
+然而曹操纳张济遗孀（[color=#0066FF][url={"research": "邹氏", "cat": "people"}]邹氏[/url][/color]）为妾，张绣以此为耻辱。另据裴注引《傅子》：曹操爱其部下勇将[color=#0066FF][url={"research": "胡车儿", "cat": "people"}]胡车儿[/url][/color]，赏赐金钱，张绣疑曹操收买心腹，遂决定先发制人。张绣用贾诩之谋，以移营为名，夜袭曹军。
 
 
 [indent][color=#666666]┃ 《武帝纪》：公（曹操）到宛。张绣降，既而悔之，复反。公与战，军败，为流矢所中。长子昂、弟子安民遇害。[/color][/indent]
@@ -43,11 +43,11 @@
 [b][font=res://resource/font/FandolSong-Bold/26.tres]第二次降曹（199年）[/font][/b]
 
 
-[color=#0066FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]前夕，[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]遣使结好张绣，贾诩当场拒绝，转劝张绣降曹，以三计说服（见贾诩传）：
+[color=#0066FF][url={"research": "官渡之战", "cat": "events"}]官渡之战[/url][/color]前夕，[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]遣使结好张绣，贾诩当场拒绝，转劝张绣降曹，以三计说服（见《三国志·贾诩传》）：
 
 [indent]1.  曹公奉天子令诸侯，名正言顺[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]2.  袁绍强则不重视盟友，曹弱则必倚重张绣  [/indent]
+[indent]2.  袁绍强则不重视盟友，曹弱则必倚重张绣[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]3.  曹公志向宏远，必不计血仇[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -85,7 +85,7 @@
 
 正文仅「薨」一字，无具体死因说明（病死/自然死亡）。
 
-裴注〔二〕引《魏略》另有一说：
+裴注引《魏略》另有一说：
 
 [indent][color=#666666]┃ 「五官将数因请会，发怒曰：'君杀吾兄，何忍持面视人邪！'绣心不自安，乃自杀。」[/color][/indent]
 
@@ -102,9 +102,6 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]结论：正史病死说（薨）为准，《魏略》逼迫自杀说不成立[/color][/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-
-
-（注：此前 README 和 TODO 误标来源为「《傅子》」，实为《魏略》。裴注〔一〕《傅子》讲的是宛城之变起因，与死因无关。）
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]张泉后事[/font][/b]
@@ -129,7 +126,28 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-陈寿评：「燕、绣、鲁舍群盗，列功臣，去危亡，保宗祀，则于彼为愈焉。」——将张绣与[color=#0066FF][url={"research": "张燕", "cat": "people"}]张燕[/url][/color]、[color=#0066FF][url={"research": "张鲁", "cat": "people"}]张鲁[/url][/color]并列，定性为"能从草寇到功臣、保住宗祀"的典型。
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]陈寿（《三国志·魏书·二公孙陶四张传第八》末尾综评）[/font][/b]
+
+
+[indent][color=#666666]┃ "燕、绣、鲁舍群盗，列功臣，去危亡，保宗祀，则于彼为愈焉。"[/color][/indent]
+
+
+陈寿将张绣与[color=#0066FF][url={"research": "张燕", "cat": "people"}]张燕[/url][/color]、[color=#0066FF][url={"research": "张鲁", "cat": "people"}]张鲁[/url][/color]并列，定性为"从草寇到功臣、保住宗祀"的典型。评价重点在"保宗祀"的务实存活，而非大义或武功。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]贾诩（《三国志·贾诩传》，宛城战后追击评述）[/font][/b]
+
+
+[indent][color=#666666]┃ "将军虽善用兵，非曹公敌也。军虽新退，曹公必自断后；追兵虽精，将既不敌，彼士亦锐，故知必败。曹公攻将军无失策，力未尽而退，必国内有故；已破将军，必轻军速进，纵留诸将断后，诸将虽勇，亦非将军敌，故虽用败兵而战必胜也。"[/color][/indent]
+
+
+间接承认张绣"善用兵"，但认为终究不及曹操。这是正史中唯一对张绣军事能力的正面评价语，由谋士口中说出，具有一定可信度。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -153,6 +171,8 @@
 [cell]宛城之变中死亡，是曹丕怨恨的核心[/cell]
 [cell]典韦[/cell]
 [cell]间接导致其死亡（宛城之变中战死）[/cell]
+[cell]胡车儿[/cell]
+[cell]部下勇将，曹操曾贿赂其动摇忠心，成为张绣先下手的导火索之一[/cell]
 [/table]
 
 
@@ -181,6 +201,91 @@
 [cell]最终命运[/cell]
 [cell]重受重用，封邑最高[/cell]
 [cell]演义中于南屏山祭风时死（版本有异）[/cell]
+[cell]师承[/cell]
+[cell]正史无载[/cell]
+[cell]民间评书中为童渊弟子，与赵云、[color=#0066FF][url={"research": "张任", "cat": "people"}]张任[/url][/color]同门[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象（游戏与影视）[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志14（2020年）[/font][/b]
+
+
+[indent]•  [color=#000000]五维：[/color] 统率80 / 武力73 / 知力62 / 政治45 / 魅力60[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]主义：[/color] 割拠 | [color=#000000]政策：[/color] 錐行強化 Lv4[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]个性：[/color] 长驱 / 调练 / 改修[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]固有战法：[/color] 変幻要撃（攻击系，攻击+友军机动UP）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志11（2006年）[/font][/b]
+
+
+[indent]•  [color=#000000]五维：[/color] 统率80 / 武力73 / 智力60 / 政治45 / 魅力59[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]特技：[/color] 骑将（骑兵战法成功时必定暴击，条件为目标武力低于自身）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]兵种适性：[/color] 枪C / 戟C / 弩B / [color=#000000]骑S[/color] / 兵器B / 水C[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]游戏冷知识：[/color] "北地枪王"的枪兵适性为最低的C，骑兵反倒是S——名实不符的经典案例[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志8重制版（2024年）[/font][/b]
+
+
+[indent]•  [color=#000000]五维：[/color] 统率80 / 武力74 / 知力60 / 政治51 / 魅力63[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]性格：[/color] 豪胆 | [color=#000000]义理：[/color] 7（偏低，反映反叛历史）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]奇才：[/color] 堅守（守备防御+30）/ 操騎統制（骑兵防御+50）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战法：[/color] 突撃2 / 急襲3 / 斉射1 / 火矢1 / 要撃2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]骑将：[/color] Lv3（仅次于顶级骑将）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]关系设定：[/color] 敬爱贾诩；嫌悪曹操（198年起）；无视曹丕[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀（桌游卡牌游戏）[/font][/b]
+
+
+[indent]•  [color=#000000]势力：[/color] 群雄 | [color=#000000]体力：[/color] 4点[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]标准版：[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  【雄乱】（限定技）：废除自身判定区+装备区，对一名角色本回合无距离次数限制，目标不能使用/打出手牌[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  【从谏】：成为多目标锦囊牌目标时，可交给另一名目标一张牌（装备牌摸2张/其余摸1张）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]国战版：[/color] 【附敌】+【从谏】[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]设计精髓：[/color] "雄乱"对应奇袭曹操的一击爆发；"从谏"对应听从贾诩的史实[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
+
+
+[table=3]
+[cell][b]年份[/b][/cell]
+[cell][b]作品[/b][/cell]
+[cell][b]饰演者[/b][/cell]
+[cell]1994[/cell]
+[cell]《三国演义》（央视）[/cell]
+[cell]韩善续 ✅[/cell]
+[cell]1999/2010/2014/2018/2021[/cell]
+[cell]各影视剧[/cell]
+[cell]扮演者不可网络核查[/cell]
 [/table]
 
 

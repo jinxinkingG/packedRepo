@@ -6,7 +6,7 @@ extends "effect_10000.gd"
 const EFFECT_ID = 10063
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
-func effect_10063_start():
+func effect_10063_start() -> void:
 	var cityId = DataManager.player_choose_city
 	var city = clCity.city(cityId)
 	var targets = []
@@ -30,11 +30,11 @@ func on_view_model_2000()->void:
 	var targetId = SceneManager.actorlist.get_select_actor()
 	if targetId < 0:
 		return
-	DataManager.set_env("技能.荐书武将", targetId)
-	goto_step("2")
+	ske.affair_set_skill_val([targetId, -1], 1)
+	goto_step("selected")
 	return
 
-func effect_10063_2():
+func effect_10063_selected() -> void:
 	SceneManager.hide_all_tool()
 	SceneManager.clear_bottom()
 	DataManager.twinkle_citys.clear()
@@ -45,6 +45,10 @@ func effect_10063_2():
 	return
 
 func on_view_model_2001_delta(delta:float)->void:
+	var settings = ske.affair_get_skill_val_int_array()
+	if settings.size() != 2:
+		goto_step("start")
+		return
 	var cityId = wait_for_choose_city(delta, "player_ready")
 	if cityId < 0:
 		return
@@ -56,13 +60,18 @@ func on_view_model_2001_delta(delta:float)->void:
 	if fromCity.get_vstate_id() == city.get_vstate_id():
 		SceneManager.show_unconfirm_dialog("请选择其他势力城市")
 		return
-	DataManager.set_env("技能.荐书势力", city.get_vstate_id())
-	goto_step("3")
+	settings[1] = city.get_vstate_id()
+	ske.affair_set_skill_val(settings, 1)
+	goto_step("targeted")
 	return
 
-func effect_10063_3():
-	var targetId = DataManager.get_env_int("技能.荐书武将")
-	var vstateId = DataManager.get_env_int("技能.荐书势力")
+func effect_10063_targeted() -> void:
+	var settings = ske.affair_get_skill_val_int_array()
+	if settings.size() != 2:
+		goto_step("start")
+		return
+	var targetId = settings[0]
+	var vstateId = settings[1]
 	var capital = clCity.get_capital_city(vstateId)
 	if capital == null:
 		var msg = "无法送达荐书"
@@ -71,21 +80,25 @@ func effect_10063_3():
 	SceneManager.hide_all_tool()
 	SceneManager.current_scene().cursor.hide()
 	DataManager.twinkle_citys = [capital.ID]
-	var msg = "修书一封，推荐{0}至{1}麾下，可否？".format([
+	var msg = "修书一封\n推荐{0}至{1}麾下\n可否？".format([
 		ActorHelper.actor(targetId).get_name(),
-		ActorHelper.actor(capital.get_actor_ids()[0]).get_name(),
+		capital.get_leader().get_name(),
 	])
-	SceneManager.show_yn_dialog(msg)
+	SceneManager.show_yn_dialog(msg, actorId)
 	LoadControl.set_view_model(2002)
 	return
 
 func on_view_model_2002()->void:
-	wait_for_yesno(FLOW_BASE + "_4", "player_ready")
+	wait_for_yesno(FLOW_BASE + "_go", "player_ready")
 	return
 
-func effect_10063_4():
-	var targetId = DataManager.get_env_int("技能.荐书武将")
-	var vstateId = DataManager.get_env_int("技能.荐书势力")
+func effect_10063_go() -> void:
+	var settings = ske.affair_get_skill_val_int_array()
+	if settings.size() != 2:
+		goto_step("start")
+		return
+	var targetId = settings[0]
+	var vstateId = settings[1]
 	var capital = clCity.get_capital_city(vstateId)
 	var msg = "{0}在此，志向难申\n{1}对将军心慕久矣\n凭某荐书往投，意下如何？".format([
 		DataManager.get_actor_honored_title(targetId, actorId),
@@ -97,14 +110,18 @@ func effect_10063_4():
 	return
 
 func on_view_model_2003()->void:
-	wait_for_skill_result_confirmation(FLOW_BASE + "_5")
+	wait_for_skill_result_confirmation(FLOW_BASE + "_done")
 	return
 
-func effect_10063_5():
-	var targetId = DataManager.get_env_int("技能.荐书武将")
-	var vstateId = DataManager.get_env_int("技能.荐书势力")
+func effect_10063_done() -> void:
+	var settings = ske.affair_get_skill_val_int_array()
+	if settings.size() != 2:
+		goto_step("start")
+		return
+	var targetId = settings[0]
+	var vstateId = settings[1]
 	var capital = clCity.get_capital_city(vstateId)
-	var msg = "{0}真乃忠厚长者\n多承美意，吾当从之，此情容后相报".format([
+	var msg = "{0}真乃忠厚长者\n多承美意，吾当从之\n此情容后相报".format([
 		DataManager.get_actor_honored_title(actorId, targetId),
 	])
 	SceneManager.show_confirm_dialog(msg, targetId)
@@ -112,22 +129,26 @@ func effect_10063_5():
 	return
 
 func on_view_model_2004()->void:
-	wait_for_skill_result_confirmation(FLOW_BASE + "_6")
+	wait_for_skill_result_confirmation(FLOW_BASE + "_report")
 	return
 
-func effect_10063_6():
-	var targetId = DataManager.get_env_int("技能.荐书武将")
-	var vstateId = DataManager.get_env_int("技能.荐书势力")
+func effect_10063_report() -> void:
+	var settings = ske.affair_get_skill_val_int_array()
+	if settings.size() != 2:
+		goto_step("start")
+		return
+	var targetId = settings[0]
+	var vstateId = settings[1]
 	var capital = clCity.get_capital_city(vstateId)
+	var targetActor = ActorHelper.actor(targetId)
 
 	ske.affair_cd(1)
-	clCity.move_to(targetId, capital.ID)
-	ActorHelper.actor(targetId).set_loyalty(70)
+	clCity.transfer_to(targetId, capital.ID)
+	targetActor.set_loyalty(70)
 	var msg = "{0}转投{1}势力\n出仕于{2}".format([
-		ActorHelper.actor(targetId).get_name(),
-		ActorHelper.actor(capital.get_actor_ids()[0]).get_name(),
+		targetActor.get_name(),
+		capital.get_leader().get_name(),
 		capital.get_name(),
 	])
-	DataManager.clear_common_variable(["技能.荐书"])
 	play_dialog(-1, msg, 2, 2999)
 	return

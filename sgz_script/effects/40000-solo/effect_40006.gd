@@ -45,24 +45,13 @@ func effect_40006_confirmed() -> void:
 
 	SceneManager.black.show()
 
-	# 强制退出单挑
-	# 以下这部分是复制的 solo_run_end 逻辑
-	# TODO 未来需要抽象出来共用
-	# copy paste 不行
 	FlowManager.clear_pre_history.clear()
-	FlowManager.clear_bind_method()
-	DataManager.solo_actors = []
-	DataManager.solo_sort = []
-	DataManager.solo_sort_no = 0
-	#清空单挑BUFF
-	for actorId in DataManager.battle_actors:
-		var wa = DataManager.get_war_actor(actorId)
-		wa.clear_buff_by_where("单挑")
-	DataManager.unset_env("白兵.攻击目标")
-	DataManager.unset_env("白兵.攻击来源")
 
-	DataManager.solo_run = false
-	
+	# 强制退出单挑
+	FlowManager.clear_bind_method()
+	var sf = DataManager.get_current_solo_fight()
+	sf.finish()
+
 	# 强制退出战斗
 	# 以下是模拟战斗结果并复制 battle_over 逻辑
 	# TODO 未来需要抽象出来共用

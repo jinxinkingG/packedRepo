@@ -9,7 +9,7 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 # 默认限制一次，如果同时有谋主，则升级为3
 func get_times_limit()->int:
 	# 改用光环，比判断技能快
-	if 0 < int(SkillRangeBuff.max_val_for_actor("谋主", actorId)):
+	if 0 < SkillRangeBuff.max_val_for_actor("谋主", actorId):
 		return 3
 	return 1
 

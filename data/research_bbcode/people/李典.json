@@ -191,21 +191,143 @@
 [color=#888888]──────────────────────────────[/color]
 
 
-[b][font=res://resource/font/FandolSong-Bold/28.tres]后世评价汇集[/font][/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价与艺术形象[/font][/b]
 
 
-[indent]•  [color=#000000]陈寿[/color]：「李典贵尚儒雅，义忘私隙，美矣。」[/indent]
+[b][font=res://resource/font/FandolSong-Bold/26.tres]历代评价[/font][/b]
+
+
+[table=3]
+[cell][b]评价者[/b][/cell]
+[cell][b]评语[/b][/cell]
+[cell][b]来源[/b][/cell]
+[cell][color=#000000]陈寿[/color]（本传评语）[/cell]
+[cell]「李典贵尚儒雅，义忘私隙，美矣。」[/cell]
+[cell]《三国志·魏书·李典传》[/cell]
+[cell][color=#000000]陈寿[/color]（本传正文）[/cell]
+[cell]「典好学问，贵儒雅，不与诸将争功。敬贤士大夫，恂恂若不及，军中称其长者。」[/cell]
+[cell]《三国志》本传[/cell]
+[cell][color=#000000]曹丕[/color]（黄初六年诏，225年）[/cell]
+[cell]「合肥之役，辽、典以步卒八百，破贼十万，自古用兵，未之有也。使贼至今夺气，可谓国之爪牙矣。」[/cell]
+[cell]《三国志》本传引诏书[/cell]
+[cell][color=#000000]虞溥[/color]（西晋，裴注引《魏书》）[/cell]
+[cell]「典少好学，不乐兵事。」[/cell]
+[cell]裴注引王沈《魏书》[/cell]
+[cell][color=#000000][color=#0066FF][url={"research": "杜预", "cat": "people"}]杜预[/url][/color][/color]（西晋，《春秋左传集解》序）[/cell]
+[cell]「至于合肥之守，县弱无援，专任勇者则好战生患，专任怯者惧心难保。且彼众我寡，必怀贪堕；以致命之兵，击贪堕之卒，其势必胜，胜而后守，守而必固。是以魏武推选方员参以同异，为之密教，节宣其用；事至而应，若合符契，妙夫矣！」[/cell]
+[cell]裴注引杜预[/cell]
+[cell][color=#000000]陈克[/color]（宋）[/cell]
+[cell]「错捐金带子舆台，李典张辽安在哉。济溺我应知大略，摧锋人自得高才。」（诗）[/cell]
+[cell]宋人诗集[/cell]
+[cell][color=#000000]萧常[/color]（南宋，《续后汉书》）[/cell]
+[cell]「魏击谭、尚，兵至黎阳。命典与晃，船运军粮……辽欲击贼，悉典仇方。典为国家，私愤久忘。尽力破贼，忠勇名扬。」（拟[color=#0066FF][url={"research": "王粲", "cat": "people"}]王粲[/url][/color]诗体赞文）[/cell]
+[cell]《续后汉书》[/cell]
+[cell][color=#000000]朱彧[/color]（北宋，《萍洲可谈》）[/cell]
+[cell]「操以辽、典勇锐，使之战，乐进持重，使之守，[color=#0066FF][url={"research": "薛悌", "cat": "people"}]薛悌[/url][/color]文吏也，使勿得与战。」[/cell]
+[cell]《萍洲可谈》[/cell]
+[cell][color=#000000]胡三省[/color]（元，《资治通鉴注》）[/cell]
+[cell]引《孙子》三条，逐一对应李典高蕃战（主动出击）、博望坡（佯北勿追）、合肥（上下同欲），均合兵法。[/cell]
+[cell]《资治通鉴注》[/cell]
+[/table]
+
+
+[color=#000000]评价综述：[/color] 历代评价多聚焦于三点：① 学问与气质（好学问/贵儒雅/恂恂若不及/长者之风）；② 合肥战绩（曹丕以「国之爪牙」列并张辽）；③ 兵法契合（杜预、胡三省均以兵法标准称许其判断力）。与张辽相比，李典在后世知名度略逊，但「义忘私隙」的精神一直被史家称颂。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏三版五维[/font][/b]
+
+
+[table=7]
+[cell][b]游戏版本[/b][/cell]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]特技/主义[/b][/cell]
+[cell]三国志14（2020）[/cell]
+[cell]77[/cell]
+[cell]77[/cell]
+[cell]79[/cell]
+[cell]74[/cell]
+[cell]62[/cell]
+[cell]主义割拠，定位攻城[/cell]
+[cell]三国志11（2006）[/cell]
+[cell]74[/cell]
+[cell]73[/cell]
+[cell]75[/cell]
+[cell]74[/cell]
+[cell]65[/cell]
+[cell]特技射程（兵器S/枪A/戟A/弩A/骑B）[/cell]
+[cell]三国志8R（2024）[/cell]
+[cell]78[/cell]
+[cell]78[/cell]
+[cell]79[/cell]
+[cell]74[/cell]
+[cell]67[/cell]
+[cell]性格沈着，义理9[/cell]
+[/table]
+
+
+[color=#000000]三国志8R 技能详情：[/color]
+
+[indent]•  战法：剛撃●●、攪乱●●、猛突●（步兵）；連撃●（骑兵）；斉射●●、火矢●●、遠射●（弓兵）；烈火●（军略）；罵声●（补助）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]曹丕[/color]：「合肥之役，辽、典以步卒八百，破贼十万，自古用兵，未之有也。使贼至今夺气，可谓国之爪牙矣。」[/indent]
+[indent]•  特技：発明●●；話術●●；歩将●●、騎将●、弓将●●●；操器●●●；援護●、膂力●、果敢●●[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]虞溥（西晋）[/color]：「典少好学，不乐兵事。」（裴注引《魏书》）[/indent]
+[indent]•  奇才：无[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]朱彧（宋）[/color]：「操以辽、典勇锐，使之战，乐进持重，使之守，[color=#0066FF][url={"research": "薛悌", "cat": "people"}]薛悌[/url][/color]文吏也，使勿得与战。」[/indent]
+
+
+[color=#000000]三国志11 特点：[/color] 游戏中最早可获得的兵器S武将（190年剧本即可招募），射程特技使其投石车攻城能力极强，属二线武将中的性价比之王。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀（游卡桌游，WEI 017）[/font][/b]
+
+
+[indent]•  [color=#000000]技能（标准版，4血）：[/color][/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]胡三省（元）[/color]：引《孙子》三条，分析李典高蕃战、博望坡、合肥三役均合兵法要义。[/indent]
+[indent]　•  [color=#000000]恂恂[/color]：摸牌阶段开始时，你可以观看牌堆顶的四张牌，将其中两张置于牌堆顶，其余置于牌堆底。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]萧常（宋）[/color]：「魏击谭、尚，兵至黎阳。命典与晃，船运军粮……辽欲击贼，悉典仇方。典为国家，私愤久忘。尽力破贼，忠勇名扬。」（[color=#0066FF][url={"research": "王粲", "cat": "people"}]王粲[/url][/color]诗风格的赞文）[/indent]
+[indent]　•  [color=#000000]忘隙[/color]：当你对其他角色造成1点伤害后，或受到1点伤害后，你可以与该角色各摸一张牌。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]技能命名来源：[/color] 「恂恂若不及」（陈寿评语）；「义忘私隙」（合肥捐弃私憾）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]定位：[/color] 摸牌/卖血爆发型[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]另有形态：[/color] 骥李典（三血，技能「骥」「断津」——2024年前后推出新皮肤形态）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
+
+
+[table=3]
+[cell][b]年份[/b][/cell]
+[cell][b]剧目[/b][/cell]
+[cell][b]演员[/b][/cell]
+[cell]1994年[/cell]
+[cell]央视《三国演义》[/cell]
+[cell]三位演员分别饰演（名不可网络核查）[/cell]
+[cell]1996年[/cell]
+[cell]《三国演义》（另版）[/cell]
+[cell]许文鹏[/cell]
+[cell]2010年[/cell]
+[cell]高希希版《三国》[/cell]
+[cell]名不可网络核查[/cell]
+[cell]2013年[/cell]
+[cell]《三国演义》[/cell]
+[cell]名不可网络核查[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]墓葬：[/color] 紫蓬山（安徽合肥境内，维基记载）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]真三国无双：[/color] 系列有李典出场（具体从哪代起收录及配音信息不可网络核查）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+（历代评价/艺术形象/游戏三版五维/三国杀已补✅2026-06-04，见ref-lidai-pingjia-yishu.md）
 
 
 [color=#888888]──────────────────────────────[/color]

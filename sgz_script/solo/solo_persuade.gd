@@ -1,167 +1,48 @@
 extends Resource
-const view_model_name = "单挑-玩家-步骤";
 
-#01-休想,02-回到白兵,03-回到大战场,04-加入我方
-const PERSUADE_RESULTS:Array = [
-	#本方知+德>=180
-	[
-		#目标忠>=80
-		[
-			#目标体>=80
-			[01,01,01,01,01,01,01,01],
-			#50<=目标体<80
-			[01,01,01,01,01,01,01,01],
-			#目标体<50
-			[01,01,01,01,02,02,02,02],
-		],
-		#50<=目标忠<80
-		[
-			#目标体>=80
-			[01,01,01,01,01,01,01,02],
-			#50<=目标体<80
-			[01,01,01,01,01,01,01,01],
-			#目标体<50
-			[01,01,01,01,02,02,03,03],
-		],
-		#目标忠<50
-		[
-			#目标体>=80
-			[01,01,01,01,01,01,04,04],
-			#50<=目标体<80
-			[01,01,03,03,04,04,04,04],
-			#目标体<50
-			[02,02,02,02,04,04,04,04],
-		]
-	],
-	#130<=本方知+德<180
-	[
-		#目标忠>=80
-		[
-			#目标体>=80
-			[01,01,01,01,01,01,01,01],
-			#50<=目标体<80
-			[01,01,01,01,01,01,02,02],
-			#目标体<50
-			[01,01,01,01,01,01,02,02],
-		],
-		#50<=目标忠<80
-		[
-			#目标体>=80
-			[01,01,01,01,01,01,01,01],
-			#50<=目标体<80
-			[01,01,01,01,02,02,03,03],
-			#目标体<50
-			[01,01,01,01,02,02,02,02],
-		],
-		#目标忠<50
-		[
-			#目标体>=80
-			[01,01,01,01,03,03,04,04],
-			#50<=目标体<80
-			[01,01,03,03,03,03,04,04],
-			#目标体<50
-			[01,01,03,03,04,04,04,04],
-		]
-	],
-	#本方知+德<130
-	[
-		#目标忠>=80
-		[
-			#目标体>=80
-			[01,01,01,01,01,01,01,01],
-			#50<=目标体<80
-			[01,01,01,01,01,01,01,01],
-			#目标体<50
-			[01,01,01,01,02,02,02,02],
-		],
-		#50<=目标忠<80
-		[
-			#目标体>=80
-			[01,01,01,01,01,01,01,01],
-			#50<=目标体<80
-			[01,01,02,02,02,02,03,03],
-			#目标体<50
-			[01,01,02,02,03,03,03,03]
-		],
-		#目标忠<50
-		[
-			#目标体>=80
-			[01,01,01,01,04,04,04,04],
-			#50<=目标体<80
-			[01,01,02,02,04,04,04,04],
-			#目标体<50
-			[01,01,04,04,04,04,04,04]
-		]
-	]
-]
+const VIEW_MODEL_NAME = "单挑-玩家-步骤"
 
+func get_view_model() -> int:
+	return DataManager.get_env_int(VIEW_MODEL_NAME)
+
+func set_view_model(vm:int) -> void:
+	DataManager.set_env(VIEW_MODEL_NAME, vm)
+	return
 
 #说服
 func _init() -> void:
-	LoadControl.view_model_name = view_model_name;
-	FlowManager.bind_import_flow("solo_persuade",self,"solo_persuade");
-	FlowManager.bind_import_flow("solo_persuade_1",self,"solo_persuade_1");
-	FlowManager.bind_import_flow("solo_persuade_2",self,"solo_persuade_2");
-	FlowManager.bind_import_flow("solo_persuade_3_join_us",self,"solo_persuade_3_join_us");
+	FlowManager.bind_import_flow("solo_persuade", self)
+	FlowManager.bind_import_flow("solo_persuade_1", self)
+	FlowManager.bind_import_flow("solo_persuade_2", self)
+	FlowManager.bind_import_flow("solo_persuade_3_join_us", self)
 
-func _input_key(delta: float):
-	var bf = DataManager.get_current_battle_fight()
-	var scene_solo:Control = SceneManager.current_scene();
-	var bottom = SceneManager.lsc_menu;
-	match LoadControl.get_view_model():
-		101:
-			Global.wait_for_confirmation("solo_persuade_2")
-		102:
-			if not Global.wait_for_confirmation(""):
-				return
-			var side:String = DataManager.solo_sort[DataManager.solo_sort_no]
-			var actorId = DataManager.solo_actor_by_side(side)
-			var wa = DataManager.get_war_actor(actorId)
-			var enemy = wa.get_battle_enemy_war_actor()
-			var result = DataManager.get_env_int("结果")
-			match result:
-				1:#休想
-					FlowManager.add_flow("solo_turn_end");
-				2:#回到白兵
-					bf.set_unit_state(enemy.actorId, {"将": "后退"})
-					FlowManager.add_flow("solo_run_end")
-				3:#回到大战场
-					bf.set_loser(enemy.actorId, BattleFight.ResultEnum.ActorRetreat)
-					FlowManager.add_flow("solo_run_end")
-				4:#加入我方
-					if enemy.actor_surrend_to(wa.wvId):
-						#下跪投降，算到主动投诚里，大战场保留方块
-						var enemyBu = enemy.battle_actor_unit()
-						enemyBu.is_surrend = true
-						FlowManager.add_flow("solo_persuade_3_join_us")
-					else:
-						FlowManager.add_flow("solo_turn_end")
-		103:#确认对方投降了
-			Global.wait_for_confirmation("solo_run_end")
+	FlowManager.bind_signal_method("solo_persuade_result", self)
 	return
 
-func solo_persuade():
-	LoadControl.set_view_model(100);
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no]
-	var actorId = DataManager.solo_actor_by_side(side)
-	var wa = DataManager.get_war_actor(actorId)
-	var enemy = wa.get_battle_enemy_war_actor()
-	var result = solo_persuade_result(wa, enemy)
-	DataManager.set_env("结果", result)
+func _input_key(delta: float):
+	match get_view_model():
+		101:
+			Global.wait_for_confirmation("solo_persuade_2", VIEW_MODEL_NAME)
+		102:
+			Global.wait_for_confirmation("solo_persuade_result", VIEW_MODEL_NAME)
+		103:#确认对方投降了
+			Global.wait_for_confirmation("solo_run_end", VIEW_MODEL_NAME)
+	return
+
+func solo_persuade() -> void:
+	var sf = DataManager.get_current_solo_fight()
+	var result = sf.persuade_result()
+	sf.set_env("说服结果", result)
 	FlowManager.add_flow("solo_persuade_1")
 	return
 
-func solo_persuade_1():
-	LoadControl.set_view_model(101);
-	var scene_solo = SceneManager.current_scene();
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side)
-	var wa = DataManager.get_war_actor(actorId)
-	var target = wa.get_battle_enemy_war_actor()
+func solo_persuade_1() -> void:
+	var sf = DataManager.get_current_solo_fight()
+	var wa = sf.current()
+	var target = sf.target()
 	var msg = ""
 	var mood = 2
-	var result = DataManager.get_env_int("结果")
-	match result:
+	match sf.get_env_int("说服结果"):
 		1:#休想
 			msg = "汝等终将败于我军\n何不趁早投降？"
 		2:#回到白兵
@@ -176,23 +57,23 @@ func solo_persuade_1():
 				msg = "将军身躯已不可再战\n请勿做无谓的抵抗"
 		4:#加入我方
 			msg = "将军乃当世英雄\n不想与将军为敌\n何不与吾等共图大事"
-	SceneManager.show_solo_dialog(msg, actorId, mood)
+	SceneManager.show_solo_dialog(msg, wa.actorId, mood)
+	set_view_model(101)
 	return
 
-func solo_persuade_2():
-	LoadControl.set_view_model(102);
-	var scene_solo = SceneManager.current_scene();
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side);
-	var wa = DataManager.get_war_actor(actorId);
-	var target = wa.get_battle_enemy_war_actor()
+func solo_persuade_2() -> void:
+	var sf = DataManager.get_current_solo_fight()
+
+	var wa = sf.current()
+	var target = sf.target()
+
 	var msg = ""
 	var mood = 2
-	var result = DataManager.get_env_int("结果")
-	match result:
+
+	match sf.get_env_int("说服结果"):
 		1:#休想
 			msg = "一派胡言！\n杀了你这兔崽子！"
-			mood = 0;
+			mood = 0
 		2:#回到白兵
 			if target.actor().get_loyalty() < target.actor().get_hp():
 				msg = "……也有道理"
@@ -208,48 +89,44 @@ func solo_persuade_2():
 		4:#加入我方
 			msg = "此亦天命\n吾愿效犬马之劳"
 	SceneManager.show_solo_dialog(msg, target.actorId, mood)
+	set_view_model(102)
+	return
+
+func solo_persuade_result() -> void:
+	var bf = DataManager.get_current_battle_fight()
+	var sf = DataManager.get_current_solo_fight()
+	var wa = sf.current()
+	var target = sf.target()
+
+	match sf.get_env_int("说服结果"):
+		1:#休想
+			FlowManager.add_flow("solo_turn_end")
+		2:#回到白兵
+			bf.set_unit_state(target.actorId, {"将": "后退"})
+			FlowManager.add_flow("solo_run_end")
+		3:#回到大战场
+			bf.set_loser(target.actorId, BattleFight.ResultEnum.ActorRetreat)
+			FlowManager.add_flow("solo_run_end")
+		4:#加入我方
+			if target.actor_surrend_to(wa.wvId):
+				#下跪投降，算到主动投诚里，大战场保留方块
+				var targetBu = target.battle_actor_unit()
+				targetBu.is_surrend = true
+				FlowManager.add_flow("solo_persuade_3_join_us")
+			else:
+				FlowManager.add_flow("solo_turn_end")
 	return
 
 func solo_persuade_3_join_us():
-	LoadControl.set_view_model(103);
-	var scene_solo = SceneManager.current_scene();
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no];
-	var actorId = DataManager.solo_actor_by_side(side);
-	var war_actor = DataManager.get_war_actor(actorId);
-	var enemyActor = ActorHelper.actor(war_actor.get_battle_enemy_war_actor().actorId)
-	if(war_actor.is_AI_use()):
-		#AI就显示加入敌军
-		SceneManager.show_confirm_dialog("{0}加入敌军".format([enemyActor.get_name()]));
-	else:
-		SceneManager.show_confirm_dialog("{0}加入我军".format([enemyActor.get_name()]));
-	return
+	var sf = DataManager.get_current_solo_fight()
+	var wa = sf.current()
+	var target = sf.target()
 
-# 计算说服结果
-# 原版算法
-func solo_persuade_result(from:War_Actor, target:War_Actor)->int:
-	if from == null or target == null:
-		return 1
-	var d12 = from.actor().get_wisdom() + from.actor().get_moral()
-	var a = 0
-	if d12 < 180:
-		a += 1
-	if d12 < 130:
-		a += 1
-	var b = 0
-	var loy = target.actor().get_loyalty()
-	if loy < 80:
-		b += 1
-	if loy < 50:
-		b += 1
-	var c = 0
-	var hp = target.actor().get_hp()
-	if hp < 65:
-		c += 1
-	if hp < 40:
-		c += 1
-	var results = Array(PERSUADE_RESULTS[a][b][c]).duplicate()
-	results.shuffle()
-	var result = results[0]
-	if target.actor().get_loyalty() == 100 and result in [3,4]:
-		result = 1
-	return result
+	var msg = "{0}加入我军"
+	if wa.is_AI_use():
+		#AI就显示加入敌军
+		msg = "{0}加入敌军"
+	msg = msg.format([target.get_name()])
+	SceneManager.show_confirm_dialog(msg)
+	set_view_model(103)
+	return

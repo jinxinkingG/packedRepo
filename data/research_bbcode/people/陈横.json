@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]陈横[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 虚构人物，生卒年不详（演义内约卒于195年），籍贯无史料；演义身份：扬州刺史[color=#0066FF][url={"research": "刘繇", "cat": "people"}]刘繇[/url][/color]部将，守秣陵守将之一
+[color=#000000]基本信息：[/color] 虚构人物，生卒年不详（演义内约生于161年、卒于195年），籍贯无史料；演义身份：扬州刺史[color=#0066FF][url={"research": "刘繇", "cat": "people"}]刘繇[/url][/color]部将，守秣陵守将之一
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -72,6 +72,26 @@
 [color=#888888]──────────────────────────────[/color]
 
 
+[b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
+
+
+史料极简，演义内无台词，无法评估性格。仅能确认：
+
+
+[indent]•  跟随薛礼守秣陵，对刘繇忠诚[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  被孙策诈死之计所骗，随薛礼出城追击[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  死于蒋钦一箭，结局简短[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+游戏三国志14给予其"短慮"（短视/急躁）个性，与演义中被诈死之计轻易引出城的形象高度对应。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
 [b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
 
 
@@ -96,9 +116,9 @@
 
 
 [table=3]
-[cell][b]项目[/b][/cell]
-[cell][b]史实（正史）[/b][/cell]
-[cell][b]演义（嘉靖本/毛本/志传系）[/b][/cell]
+[cell][b]方面[/b][/cell]
+[cell][b]史实[/b][/cell]
+[cell][b]演义[/b][/cell]
 [cell]陈横其人[/cell]
 [cell]完全不存在[/cell]
 [cell]出现于孙策取秣陵段[/cell]
@@ -192,6 +212,113 @@
 [indent]•  识典 NA11011 URL：`/book/NA11011/chapter/1k3o71cr7t7vq`[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  对应毛宗岗本[color=#000000]第十五回[/color]（[color=#0066FF][url={"research": "太史慈", "cat": "people"}]太史慈[/url][/color]酣斗小霸王 孙伯符大战严白虎）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+陈横为《三国演义》虚构人物，正史中不存在，无历代学者专项评论。
+
+演义内行事：守秣陵、中诈死之计出城追击、被蒋钦射杀，结局简短，无独立评语。蔡东藩等历代演义续作均无专项评语。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏（光荣三国志系列）[/font][/b]
+
+
+[color=#000000]各代五维数值：[/color]
+
+
+[table=7]
+[cell][b]作品[/b][/cell]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]备注[/b][/cell]
+[cell]三国志Ⅸ[/cell]
+[cell]69[/cell]
+[cell]66[/cell]
+[cell]28[/cell]
+[cell]31[/cell]
+[cell]—[/cell]
+[cell]特技：分战/蒙冲/冲车[/cell]
+[cell]三国志Ⅹ[/cell]
+[cell]63[/cell]
+[cell]64[/cell]
+[cell]25[/cell]
+[cell]28[/cell]
+[cell]42[/cell]
+[cell]特技：回复（仅1项）[/cell]
+[cell]三国志11[/cell]
+[cell]64[/cell]
+[cell]63[/cell]
+[cell]26[/cell]
+[cell]35[/cell]
+[cell]43[/cell]
+[cell]无特技；戟兵A[/cell]
+[cell]三国志12[/cell]
+[cell]64[/cell]
+[cell]63[/cell]
+[cell]26[/cell]
+[cell]35[/cell]
+[cell]—[/cell]
+[cell]—[/cell]
+[/table]
+
+
+[color=#000000]三国志14（wikiwiki.jp）：[/color]
+
+[indent]•  五维：统63、武64、知26、政35、魅42[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  主义：割拠　政策：鋒矢強化 Lv2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  個性：調練、短慮　戦法：突撃、業火[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  游戏职务：牙門将軍（劉繇）/ 奮武校尉（劉繇）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志8 Remake（al-gest.com）：[/color]
+
+[indent]•  五维：统61、武60、知28、政38、魅40（合计227）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  戦法：乱撃●、攪乱●（步兵）；烈火●（軍略）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：歩将●、水練●[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  奇才：无[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+官方版本未收录（标准版、国战版、移动版均无）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]真三国无双[/font][/b]
+
+
+系列均未独立收录为可操控角色（次要虚构人物）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+[indent]•  [color=#000000]1994年央视版《三国演义》：[/color] 次要虚构人物（出场两次、无台词），专属扮演者不可网络考证。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]2010年高希希版《三国》：[/color] 出场待确认，可能性极低。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 

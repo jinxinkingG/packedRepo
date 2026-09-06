@@ -16,7 +16,7 @@ func check_defeated()->bool:
 	var reduce = int(maxHP / 2)
 	reduce = min(reduce, maxHP - 10)
 	if reduce > 0:
-		ske.change_actor_max_hp(actorId, -reduce)
+		ske.set_actor_extra_max_hp(actorId, -reduce, 10, true)
 
 	# 处理技能效果
 	ske.cost_war_cd(5)

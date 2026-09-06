@@ -223,11 +223,10 @@ func ceil_persuade_result() -> void:
 	var msg = "很遗憾!\n未能说服{0}"
 	var mood = 3
 	if Global.get_rate_result(rate):
-		clCity.move_to(targetActor.actorId, city.ID)
+		clCity.transfer_to(targetActor.actorId, city.ID)
 		var expectedLoyalty = targetActor.surrend_loyalty(city.get_vstate_id())
 		if targetActor.get_prev_vstate_id() == city.get_vstate_id():
 			expectedLoyalty = min(90, targetActor.get_loyalty())
-		targetActor.set_status_officed()
 		targetActor.set_loyalty(expectedLoyalty)
 		# 这里立刻调用 10001 会产生问题，比如荐才中断流程，未来再考虑
 		# SkillHelper.auto_trigger_skill(search_actorId, 10001, "")
@@ -327,8 +326,7 @@ func _ceil_release(vstateId:int, cityId:int, targetActorIds:PoolIntArray):
 			if not prevVstate.is_perished():
 				var capital = clCity.get_capital_city(prevVstate.id)
 				if capital != null:
-					actor.set_status_officed()
-					clCity.move_to(targetId, capital.ID)
+					clCity.transfer_to(targetId, capital.ID)
 					prevVstate.relation_index_change(vstateId, 10)
 					if not prevVstateId in released:
 						released[prevVstateId] = []

@@ -16,6 +16,7 @@ func _init() -> void:
 	FlowManager.bind_signal_method("develop_done_trigger_end", self)
 	FlowManager.bind_signal_method("develop_done", self)
 	FlowManager.bind_signal_method("develop_result_message", self)
+	return
 
 #按键操控
 func _input_key(delta: float):

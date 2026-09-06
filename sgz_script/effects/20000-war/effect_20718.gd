@@ -23,6 +23,9 @@ func on_trigger_20012() -> bool:
 	var fromId = se.get_action_id(actorId)
 	if fromId < 0:
 		return false
+	var from = DataManager.get_war_actor(fromId)
+	if not me.is_enemy(from):
+		return false
 
 	# 检查机动力是否足够
 	if me.action_point < AP_COST:
@@ -30,7 +33,7 @@ func on_trigger_20012() -> bool:
 
 	# 检查目标是否为己方主将
 	var leader = me.get_leader()
-	if leader == null or leader.actorId != ske.actorId:
+	if leader == null or leader.actorId != se.targetId:
 		return false
 
 	return true

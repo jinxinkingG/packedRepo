@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]周㬂（字仁明）[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不详（活跃于180—191年），籍贯[color=#0066FF][url={"research": "会稽", "cat": "geography"}]会稽[/url][/color]，身份：汉末[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]部将、豫州刺史
+[color=#000000]基本信息：[/color] 生卒年不详（活跃于190—191年），籍贯[color=#0066FF][url={"research": "会稽", "cat": "geography"}]会稽[/url][/color]，身份：汉末[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]早期军师、[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]所任豫州刺史
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -25,7 +25,7 @@
 [indent][color=#666666]┃ 初曹公兴义兵，遣人要㬂，㬂即收合兵众，得二千人，从公征伐，以为军师。[/color][/indent]
 
 
-190年（初平元年），[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]起兵讨[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]，周㬂受邀，自行募兵两千，以军师身份跟随。他是曹操最早一批幕僚之一。同时，其兄周昕（丹阳太守）先后为曹操提供万余丹阳兵（据《会稽典录》）。曹操荥阳战败，再赴扬州募兵，周昕又给予四千余人。但募兵途中发生龙亢兵变，五百人可用，曹操北上投袁绍。周㬂大约在此时与曹操分别，转向袁绍效命。
+190年（初平元年），曹操起兵讨[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]，周㬂受邀，自行募兵两千，以军师身份跟随。他是曹操最早一批幕僚之一。同时，其兄周昕（丹阳太守）先后为曹操提供万余丹阳兵（据《会稽典录》）。曹操荥阳战败，再赴扬州募兵，周昕又给予四千余人。但募兵途中发生龙亢兵变，五百人可用，曹操北上投袁绍。周㬂大约在此时与曹操分别，转向袁绍效命。
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]豫州刺史（191年）[/font][/b]
@@ -91,6 +91,87 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]许贡[/color]：吴郡太守，将周㬂截杀于归途；立场倾向袁术/孙氏[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+周㬂记载极简，古代史家无直接专项评语。相关评价仅见于史料的隐含态度：
+
+
+[indent]•  [color=#000000]《三国志·孙坚传》引《会稽典录》[/color]：「后与坚争豫州，屡战失利」——事实性叙述，无褒贬[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《会稽典录》[/color]：「军败，还乡里，为许贡所害」——以结局作叙述，有悲剧色彩[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+古代史家未对周㬂有独立评语。他在三国史料体系中属于极微小人物，附见于孙坚/曹操传注，无专项论赞。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏：光荣三国志系列[/font][/b]
+
+
+[color=#000000]三国志14[/color]（2020年，追加武将DLC）
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]智力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]68[/cell]
+[cell]51[/cell]
+[cell]77[/cell]
+[cell]55[/cell]
+[cell]64[/cell]
+[/table]
+
+
+[color=#000000]个性：[/color] 招募、人脉  
+设计依据：知力最高体现"军师"身份；招募特性呼应「收合兵众得二千人」史料；武力最低体现屡败于孙坚的战绩。
+
+[color=#000000]三国志8 Remake[/color]（2024年）
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]63[/cell]
+[cell]47[/cell]
+[cell]76[/cell]
+[cell]65[/cell]
+[cell]68[/cell]
+[/table]
+
+
+[color=#000000]战法：[/color] 火矢●、遠射●、烈火●、鼓舞●●
+
+[color=#000000]三国志11[/color]：未收录（为三国志14 DLC追加武将，三国志11时期尚未加入）
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+[color=#000000]未收录。[/color] 经搜索确认，周㬂（周喁）无三国杀武将牌。史料极简、知名度低，暂未被三国杀收录。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
+
+
+[color=#000000]无专属影视出演。[/color] 周㬂在任何版本的三国题材影视中均无专属角色出场。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -163,24 +244,9 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-《越史略·历代守任》亦将"[color=#000000]周隅[/color]（灵帝时人）"与"朱俊"分列，均指同一人物/系列事件。
-
-[color=#000000]与周㬂的关联及矛盾：[/color]
-
-两者均为会稽人（周喁/周隅字形与周㬂/㬂近）；但"周喁被杀"（约184年）与周㬂191年仍活跃并被袁绍任命存在[color=#000000]约7年矛盾[/color]。
-
 [color=#000000]考辨结论（开放悬案）：✅ 已深挖至上限（2026-04-29）[/color]
 
-[indent]•  《后汉书·朱俊列传》对此事仅称"牧守软弱不能禁"，未具名，无法从《后汉书》独立确认"周喁"。[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  越南史书晚出（《大越史记全书》为15世纪黎朝作品），史料来源不明，可能误合了"被梁龙之乱压制的前任刺史"与"周㬂"二者。[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]可能性一[/color]：周喁与周㬂同为一人，"执而杀之"是越南史书的夸大，实为被免职/驱逐，并未真死，故周㬂191年仍能活动。[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]可能性二[/color]：两者为不同人物，字形相近导致后代史家混淆。[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  目前无一手史料可最终定论，属[color=#000000]开放悬案[/color]。[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+两者均为会稽人，但"周喁被杀"（约184年）与周㬂191年仍活跃并被袁绍任命存在约7年矛盾。越南史书晚出（《大越史记全书》为15世纪黎朝作品），史料来源不明，可能误合了两个人物。属[color=#000000]开放悬案[/color]，永不可从现有史料最终定论。
 
 
 [color=#888888]──────────────────────────────[/color]

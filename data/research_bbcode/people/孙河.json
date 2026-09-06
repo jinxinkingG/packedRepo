@@ -67,7 +67,7 @@
 [b][font=res://resource/font/FandolSong-Bold/26.tres]关于生年[/font][/b]
 
 
-正史无生年记载，百科类来源标注卒年为建安九年（204年），生年不可考。
+正史无生年记载，百科类来源标注卒年为建安九年（204年），生年不可考。三国志8R据列伝推算生年约170年，游戏设定参考值。
 
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
@@ -99,6 +99,31 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
+[b][font=res://resource/font/FandolSong-Bold/26.tres]子嗣[/font][/b]
+
+
+据《三国志·[color=#0066FF][url={"research": "孙桓", "cat": "people"}]孙桓[/url][/color]传》引《吴书》，孙河有四子：
+
+
+[table=3]
+[cell][b]子[/b][/cell]
+[cell][b]官职[/b][/cell]
+[cell][b]备注[/b][/cell]
+[cell]孙助（长子）[/cell]
+[cell]曲阿长[/cell]
+[cell]早卒[/cell]
+[cell]孙谊（次子）[/cell]
+[cell]海盐长[/cell]
+[cell]早卒[/cell]
+[cell]孙桓（三子）[/cell]
+[cell]建武将军，丹徒侯[/cell]
+[cell]参与讨[color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color][color=#0066FF][url={"research": "夷陵之战", "cat": "events"}]夷陵之战[/url][/color]，孙权称为「宗室颜渊」[/cell]
+[cell]孙俊（四子，字叔英）[/cell]
+[cell]定武中郎将[/cell]
+[cell]赤乌十三年（250年）卒[/cell]
+[/table]
+
+
 [b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
@@ -107,7 +132,7 @@
 
 演义（嘉靖本第079节/毛本第38回）孙翊被杀段落中，[color=#000000]两版本均无"孙河"字样[/color]。正史中孙河驰赴宛陵、被妫览戴员所杀的情节在演义中被[color=#000000]完全省略[/color]，孙翊事件只保留了徐氏为夫复仇的情节主线。
 
-孙河在演义中作为独立的人物行动者[color=#000000]根本不出场[/color]，只在[color=#0066FF][url={"research": "孙桓", "cat": "people"}]孙桓[/url][/color]出场时作为其父亲背景被提及。
+孙河在演义中作为独立的人物行动者[color=#000000]根本不出场[/color]，只在孙桓出场时作为其父亲背景被提及。
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]嘉靖本 vs 毛本差异（孙河相关文字）[/font][/b]
@@ -115,21 +140,59 @@
 
 [color=#000000]嘉靖本（孙桓出场节）：[/color]
 
-[indent][color=#666666]┃ 桓父孙河，字伯海，本姓俞氏，孙策爱之，待如亲弟，赐姓孙氏。因此亦系吴王宗族。河生四子，桓乃长子……[/color][/indent]
+[indent][color=#666666]┃ 「孙桓字叔武，孙河之子，字伯海，待如亲弟」（注：嘉靖本多"字伯海""待如亲弟"）[/color][/indent]
 
 
-[color=#000000]毛本（第82回）：[/color]
+[color=#000000]毛本（孙桓出场回）：[/color]
 
-[indent][color=#666666]┃ 其父名河，本姓俞氏，孙策爱之，赐姓孙；因此亦系吴王宗族。河生四子，桓居其长……[/color][/indent]
+[indent][color=#666666]┃ 删去"字伯海""待如亲弟"字样，仅以孙桓之父身份一笔带过[/color][/indent]
 
 
-主要差异：
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
 
-[indent]•  嘉靖本有孙河字号「字伯海」，毛本删去[/indent]
+
+正史中陈寿无专传也无单独评语，孙河附于《孙韶传》中作为孙韶的叔父背景介绍。历代无专项评论文章。
+
+《三国志·吴书·吾粲传》对孙河识人有侧面记录：
+
+[indent][color=#666666]┃ 「孙河为县长，粲为小吏，[color=#000000]河深奇之[/color]。河后为将军，得自选长吏，表粲为曲阿丞，迁为长史，治有名迹。虽起孤微，与同郡陆逊、卜静等比肩齐声矣。」[/color][/indent]
+
+
+《吕范传》对孙河忠诚的侧面记录：
+
+[indent][color=#666666]┃ 「时唯范与孙河常从策，跋涉辛苦，危难不避，策亦亲戚待之，每与升堂，饮宴于太妃前。」[/color][/indent]
+
+
+孙河以行动留下的历史痕迹：
+
+[indent]•  [color=#000000]识人提拔[/color]：吾粲后来成为吴国重臣，与陆逊并称，根源在孙河[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  嘉靖本有「待如亲弟」四字，毛本省略（仅保留"赐姓孙"）[/indent]
+[indent]•  [color=#000000]忠义之死[/color]：驱车赴难、径斥叛将，展现孙坚旧臣的忠义传统[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  嘉靖本「桓乃长子」，毛本「桓居其长」（语义同）[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  嘉靖本有「智勇过人」，毛本删去[/indent]
-[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏[/font][/b]
+
+
+[color=#000000]三国志14（光荣，2020）：[/color] 统帅71/武力74/智力45/政治53/魅力60，个性：一心（受攻时士气难以下降）。武将定位偏向武将型，中规中矩的东吴基础将领。
+
+[color=#000000]三国志11（光荣，2006）：[/color] 统率67/武力69/智力63/政治57/魅力68，特技补佐，兵科水A（较突出）。与14相比智力评估较高，兵科水军适性优秀。
+
+[color=#000000]三国志8R（光荣特库摩，2024）：[/color] 统率70/武力71/智力45/政治51/魅力60，性格豪胆，奇才：剛槍（步兵系出阵时兵科战法攻击+50）。特技：步将2/水练2/援护1/膂力1/果敢1。与14五维基本一致，定位为豪胆步战型将领。
+
+[color=#000000]三国杀：[/color] 未官方收录。
+
+[color=#000000]真三国无双系列：[/color] 未作为独立角色收录。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+[color=#000000]1994年央视版《三国演义》：[/color] 无出场（孙翊遇害段落中省略孙河情节，与演义省略情节一致）。
+
+[color=#000000]2010年《三国》：[/color] 无出场。
+
+孙河虽然是孙桓和孙韶两位知名将领的家族源头，但本人在影视及游戏以外的文化形象极为有限，主要以孙桓、孙韶的"父亲/叔父"背景身份出现。

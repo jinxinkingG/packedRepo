@@ -109,6 +109,7 @@ func on_view_model_2002() -> void:
 	return
 
 func effect_10139_move() -> void:
+	var cityId = get_working_city_id()
 	var setting = ske.affair_get_skill_val_int_array()
 	var targetCityId = setting[0]
 	var targetCity = clCity.city(targetCityId)
@@ -119,10 +120,10 @@ func effect_10139_move() -> void:
 	var leaderId = targetCity.get_leader_id()
 
 	ske.affair_cd(1)
-	clCity.move_to(actorId, targetCityId)
+	clCity.transfer_to(actorId, targetCityId)
 	var msg = DataManager.get_actor_honored_title(actorId, leaderId)
 	if withId >= 0:
-		clCity.move_to(withId, targetCityId)
+		clCity.transfer_to(withId, targetCityId)
 		msg += "、" + DataManager.get_actor_honored_title(withId, leaderId)
 	msg += "，来之何迟"
 	msg += "\n（{0}{1}{2}移动到{3}".format([

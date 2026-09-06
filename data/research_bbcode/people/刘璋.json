@@ -475,3 +475,79 @@
 
 
 [color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]游戏形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣三国志系列[/font][/b]
+
+
+[table=7]
+[cell][b]游戏[/b][/cell]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]特点[/b][/cell]
+[cell]三国志14[/cell]
+[cell]18[/cell]
+[cell]5[/cell]
+[cell]9[/cell]
+[cell]38[/cell]
+[cell]70[/cell]
+[cell]礼教/运搬开発Lv3/优柔·惰弱/雁行·鹤翼[/cell]
+[cell]三国志11[/cell]
+[cell]16[/cell]
+[cell]5[/cell]
+[cell]9[/cell]
+[cell]38[/cell]
+[cell]65[/cell]
+[cell]无特技/全C[/cell]
+[cell]三国志8R[/cell]
+[cell]22[/cell]
+[cell]11[/cell]
+[cell]16[/cell]
+[cell]42[/cell]
+[cell]73[/cell]
+[cell]臆病/无战法无特技无奇才[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]三国志14[/color]：五维极低，魅力70尚可；主义礼教配合运搬开発政策，擅地域色塗り；野望仅1，体现温懦性格[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]三国志11[/color]：全五维末尾水准，无特技，全兵科C，无任何战斗价值；但作为君主开局配下人才丰富[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]三国志8R[/color]：臆病性格，无战法无特技无奇才；魅力73是三代中最高，有一定外交价值[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+三代数据高度一致，均呈现「低战力、高魅力」的温良暗主形象，与陈寿"才非人雄"评价精准对应。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀（移动版）[/font][/b]
+
+
+[indent]•  [color=#000000]势力：[/color] 群（QUN），3血[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]称号：[/color] 半圭黯暗[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]上线时间：[/color] 2021-12-18[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]技能：[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]【据土】[/color]（锁定技）准备阶段，获得武将牌上所有「生」标记，摸X+1张牌并置X张牌为「生」（X为邀虎选定势力现存角色数）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]【邀虎】[/color] 每轮限一次，选择场上一个势力，配合据土积累「生」标记的触发机制[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]定位：[/color] 控制/防御/辅助[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]机制寓意：[/color] 「据土」呼应坐拥益州、「邀虎」对应引刘备入川「引狼入室」的历史典故[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+详见 `ref-games-data.md`。
+
+
+[color=#888888]──────────────────────────────[/color]

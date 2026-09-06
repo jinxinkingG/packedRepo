@@ -436,10 +436,10 @@ func _try_scheme(wa:War_Actor)->bool:
 		# 机动力不足以发动
 		return false
 
-	if _strategem(wa, targetId, schemeCheckRes["计策名"]):
+	if _strategem(wa, targetId, schemeInfo.name):
 		self.trace("   #{0}{1} 对 #{4}{5} 发动计策【{6}】, 机动力 {2} 策略：{3}".format([
 			wa.actorId, ActorHelper.actor(wa.actorId).get_name(), wa.action_point, wa.AI,
-			targetId, ActorHelper.actor(targetId).get_name()
+			targetId, ActorHelper.actor(targetId).get_name(), schemeInfo.name
 		]))
 		return true
 

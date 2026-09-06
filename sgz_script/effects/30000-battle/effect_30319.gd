@@ -39,7 +39,7 @@ func effect_30319_start() -> void:
 	return
 
 func on_view_model_2000()->void:
-	wait_for_yesno(FLOW_BASE + "_confirmed")
+	wait_for_yesno(FLOW_BASE + "_confirmed", "tactic_end")
 	return
 
 func effect_30319_confirmed()->void:

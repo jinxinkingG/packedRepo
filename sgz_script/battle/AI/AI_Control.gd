@@ -296,8 +296,9 @@ func think_about_active_skill(actorId:int)->bool:
 
 	for skill in SkillHelper.get_actor_active_skills(actorId):
 		for effect in SkillHelper.get_skill_effects(actorId, skill, ["主动"]):
+			var ske = effect.create_ske_for(actorId)
+			SkillHelper.save_skill_effectinfo(ske)
 			var gd = Global.load_script(effect.path)
-			gd.actorId = actorId
 			if not gd.check_AI_perform():
 				continue
 			# 小战场的仙术无效，在发动前阻止
@@ -312,8 +313,6 @@ func think_about_active_skill(actorId:int)->bool:
 					enemy.attach_free_dialog(msg, 0, 30000)
 					SkillHelper.set_skill_cd(30000, effect.id, actorId, 99999, skill.name)
 					return false
-			var ske = effect.create_ske_for(actorId)
-			SkillHelper.save_skill_effectinfo(ske)
 			LoadControl.load_script(effect.path)
 			FlowManager.add_flow("effect_{0}_AI_start".format([effect.id]))
 			return true

@@ -390,3 +390,87 @@
 
 
 [color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象与游戏数据[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志》系列[/font][/b]
+
+
+[color=#000000]三国志14（2020年）：[/color]
+
+[indent]•  五维：统率82 / 武力72 / 知力77 / 政治63 / 魅力78[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  主义：[color=#000000]我道[/color]（野望最大/义理最低型）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  政策：[color=#000000]火計研究 Lv4[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  个性：地利/疾走/不屈/扇動/強欲/急襲/牽制/混乱[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  固有战法：[color=#000000]叛転必殺[/color]（PK追加）——味方機動アップ+攻軍アップ，制圧系，知力依存[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  陣形：魚鱗/鋒矢/長蛇/錐行[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特色：疾走+錐行陣形令其移动速度为游戏最快阶级；強欲+野望最大导致独立风险极高；义兄弟马腾存命时无法被登用[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  来源：wikiwiki.jp/sangokushi14/韓遂[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志11（2006年）：[/color]
+
+[indent]•  五维数据：网络数据库（wikiwiki.jp三国志11 403/atwiki Cloudflare拦截）无法获取，待核（低优先级）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志8R（2024年）：[/color]
+
+[indent]•  五维：统率87 / 武力77 / 知力78 / 政治61 / 魅力79[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  性格：[color=#000000]沈着[/color]，义理5[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  奇才：[color=#000000]北方馬術[/color]（遊牧騎兵出陣时攻防+40）/ [color=#000000]虎狼之心[/color]（君主时破盟不降忠诚）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  戦法：步兵乱撃2/撹乱2；骑兵連撃2/突撃1/急襲3/騎射2；軍略烈火2/要撃3；補助奮起3[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：築城1/交渉2/工作3/話術2/熱弁1/歩将2/騎将3/破城3/行軍1/膂力2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特色：高综合能力+骑兵战法完备+烈火2+希少奋起3+智谋特技多数，被称"西北の雄"；虎狼之心为稀有主公奇才[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  来源：wikiwiki.jp/sangokushi8r/韓遂[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+[indent]•  [color=#000000]武将编号：[/color] QUN 027（群势力）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]体力上限：[/color] 4血[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]武将称号：[/color] 蹯距西疆 / 雄踞北疆[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]归属包：[/color] 江山如故、1v1、黃巾之亂、璀璨星河·天柱、SP[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]核心技能（身份局/江山如故版）：[/color]
+
+[indent]•  [color=#000000]逆亂[/color]：準備阶段选一项：①弃置一张牌对[color=#000000]未曾伤害过你[/color]的角色造成1点伤害；②令[color=#000000]曾伤害过你[/color]的角色摸两张牌[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]互讎[/color]（锁定技）：上一名对你用过伤害牌的角色受你伤害时，伤害+1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]皆盟[/color]（主公技·锁定技）：所有群势力角色与其他角色距离-X（X=群势力角色数）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]SP/移动版：[/color] 驍襲（黑色牌当普通杀使用或打出）+ 修改版逆亂
+
+[color=#000000]技能分析：[/color] 逆亂契合韩遂「时而同盟施恩、时而追杀报复」的凉州军阀形象；互讎体现其报复性格；皆盟凸显凉州群将联结的领袖地位。
+
+[indent]•  来源：sanguosha.fandom.com/zh/wiki/韩遂[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]

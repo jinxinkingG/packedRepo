@@ -24,15 +24,16 @@ func _process(delta: float) -> void:
 
 #AI回合开始
 func solo_AI_start():
-	var side:String = DataManager.solo_sort[DataManager.solo_sort_no]
-	var actorId = DataManager.solo_actor_by_side(side)
+	var sf = DataManager.get_current_solo_fight()
+
+	var wa = sf.current()
+	var target = sf.target()
+
 	#AI判读步骤
 	var action_order = 0
-	var wa = DataManager.get_war_actor(actorId)
-	var enemy = wa.get_battle_enemy_war_actor();
 	var a = 0
 	var actorHP = wa.actor().get_hp()
-	var enemyHP = enemy.actor().get_hp()
+	var enemyHP = target.actor().get_hp()
 	if enemyHP > 31:
 		a += 3
 	if enemyHP > 61:
@@ -46,11 +47,11 @@ func solo_AI_start():
 		if action_order == 3 and wa.actor().get_loyalty() == 100:
 			continue
 		break
-	var controlNo = enemy.get_controlNo()
+	var controlNo = target.get_controlNo()
 	if controlNo < 0:
 		controlNo = 0
 	FlowManager.set_current_control_playerNo(controlNo)
-	DataManager.set_env("单挑.行为", action_order)
+	DataManager.unset_env("单挑.是否暴击")
 	match action_order:
 		0:#牵制攻击
 			FlowManager.add_flow("load_script|solo/solo_light_attack.gd")

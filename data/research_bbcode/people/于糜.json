@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]于糜（生卒年不详）[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 东汉末年人物，[color=#0066FF][url={"research": "刘繇", "cat": "people"}]刘繇[/url][/color]部将，字不详，籍贯不详，史书无传，仅见于[color=#0066FF][url={"research": "孙策", "cat": "people"}]孙策[/url][/color]征江东的相关记载。
+[color=#000000]基本信息：[/color] 东汉末年人物，[color=#0066FF][url={"research": "刘繇", "cat": "people"}]刘繇[/url][/color]部将，字不详，籍贯不详，史书无传，仅见于[color=#0066FF][url={"research": "孙策", "cat": "people"}]孙策[/url][/color]征江东的相关记载。生卒年均不可考，游戏三国志14设定生年约160年、卒于195年（享年约35岁），仅供参考。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -120,10 +120,10 @@
 [cell]樊能、张英（省略于糜）[/cell]
 [cell]无[/cell]
 [cell]《妃嫔传·徐琨传附文》[/cell]
-[cell]樊能、于麋[/cell]
+[cell]樊能、于糜[/cell]
 [cell]无[/cell]
 [cell]裴注引《江表传》[/cell]
-[cell]樊能、于麋[/cell]
+[cell]樊能、于糜[/cell]
 [cell]无[/cell]
 [/table]
 
@@ -167,7 +167,7 @@
 [cell]于糜奉刘繇之命守横江[/cell]
 [cell]樊能[/cell]
 [cell]同僚，并肩作战[/cell]
-[cell]共守横江，后共同反攻牛渚[/cell]
+[cell]共守横江，后共同反攻牛渚；三国志14设定二人互为"亲爱"[/cell]
 [cell]张英[/cell]
 [cell]同僚，分工守当利口[/cell]
 [cell]史料无直接互动，平行防御任务[/cell]
@@ -209,6 +209,79 @@
 [cell]讹误，历史上不存在[/cell]
 [cell]演义虚构的独立人物[/cell]
 [/table]
+
+
+[color=#000000]演义原文（第15回）：[/color]
+
+[indent][color=#666666]┃ 刘繇背后一人挺枪出马，乃部将于糜也；与策战不三合，被策生擒过去，拨马回阵。繇将樊能，见捉了于糜，挺枪来赶。那枪刚搠到策后心，策阵上军士大叫："背后有人暗算！"策回头，忽见樊能马到，乃大喝一声，声如巨雷。樊能惊骇，倒翻身撞下马来，破头而死。策到门旗下将于糜丢下，已被挟死。[/color][/indent]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价与艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]历代评价[/font][/b]
+
+
+史书中无人对于糜有专门评价。于糜是典型的史料极简人物，正史仅2-3处提及，均为史实叙述，无任何文人、史家对其有专项评语。
+
+于糜之所以在历史研究中有一定关注度，主要源于"陈横"校勘问题，即学者赵一清指出其名曾被讹误为"陈横"写入通行本《三国志》。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏形象[/font][/b]
+
+
+[color=#000000]三国志14（光荣，2020年）[/color]
+
+[indent]•  五维：统率71 / 武力67 / 知力33 / 政治38 / 魅力41[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  主义：我道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  政策：方円強化 Lv3[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  个性：改修 / 功名 / 直情 / 火矢 / 撹乱[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  游戏中设定于糜与樊能互为"亲爱"关系，体现二人协同守横江的史实[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志11（光荣，2006年）[/color]
+
+[indent]•  五维：统率67 / 武力78 / 知力31 / 政治32 / 魅力39[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：无[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  兵科：枪B / 戟B / 骑A（反映演义中单挑孙策的武将形象）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志8R（光荣，2024年）[/color]
+
+[indent]•  五维：统率67 / 武力68 / 知力31 / 政治36 / 魅力40[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  性格：豪胆[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  戦法：乱撃1 / 撹乱1 / 火箭1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：歩将1 / 水練1 / 破城1 / 果敢1 / 筑城1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志系列规律分析：[/color] 三作中于糜的武力值均偏高（67-78-68），与演义中有单挑孙策记录相符；统率中等偏上（67-71），知力偏低（31-33），符合其"武将型守将"的定位。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+官方未收录于糜。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视作品[/font][/b]
+
+
+无专属影视形象。于糜在演义中出场极短（仅第15回被孙策生擒的简短情节），历代影视改编中于糜一般作为无名配将出现，未见有独立台词或专名演员记录。
 
 
 [color=#888888]──────────────────────────────[/color]

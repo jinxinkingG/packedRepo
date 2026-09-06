@@ -59,7 +59,7 @@ func effect_20657_confirmed() -> void:
 	var targetId = DataManager.get_env_int("目标")
 	ske.add_war_skill(targetId, "决死", 99999)
 	var maxHP = actor.get_max_hp()
-	ske.change_actor_max_hp(actorId, -int(maxHP / 2))
+	ske.set_actor_extra_max_hp(actorId, -int(maxHP / 2), 10, true)
 	ske.set_war_buff(actorId, "围困", 10)
 	ske.set_war_buff(targetId, "围困", 10)
 	for skillName in SkillHelper.get_actor_skill_names(actorId):

@@ -5,36 +5,29 @@ extends "effect_20000.gd"
 
 const COST_AP = 5
 
-func check_trigger_correct() -> bool:
-	var ske = SkillHelper.read_skill_effectinfo()
-	var me = ske.get_war_actor()
-	if me == null or me.disabled:
+func on_trigger_20014() -> bool:
+	# 计算攻击消耗机动力
+	var dic = DataManager.get_env_dict("战争.攻击消耗")
+	if dic.empty():
 		return false
-	match ske.trigger_Id:
-		20014: # 计算攻击消耗机动力
-			var dic = get_env_dict("战争.攻击消耗")
-			if dic.empty():
-				return false
-			var fromId = int(dic["攻击来源"])
-			var targetId = int(dic["攻击目标"])
-			if fromId != me.actorId:
-				return false
-			var targetWA = DataManager.get_war_actor(targetId)
-			if targetWA == null or targetWA.disabled:
-				return false
-			var disv = targetWA.position - me.position
-			if abs(disv.x) + abs(disv.y) == 2:
-				dic["固定"] = COST_AP
-				set_env("战争.攻击消耗", dic)
-		20030:
-			if not check_env(["战争.攻击距离", "战争.目标地形排除"]):
-				return false
-			var map = SceneManager.current_scene().war_map
-			var blockCN = map.get_blockCN_by_position(me.position)
-			if not blockCN in StaticManager.CITY_BLOCKS_CN:
-				return false
-			if me.action_point < COST_AP:
-				return false
-			set_env("战争.目标地形排除", StaticManager.CITY_BLOCKS_CN.duplicate())
-			set_env("战争.攻击距离", 2)
+	var fromId = Global.intval(dic["攻击来源"])
+	var targetId = Global.intval(dic["攻击目标"])
+	if fromId != actorId:
+		return false
+	var targetWA = DataManager.get_war_actor(targetId)
+	if targetWA == null or targetWA.disabled:
+		return false
+	if Global.get_distance(targetWA.position, me.position) == 2:
+		dic["固定"] = COST_AP
+		set_env("战争.攻击消耗", dic)
+	return false
+
+func on_trigger_20030() -> bool:
+	var blockCN = map.get_blockCN_by_position(me.position)
+	if not blockCN in StaticManager.CITY_BLOCKS_CN:
+		return false
+	if me.action_point < COST_AP:
+		return false
+	DataManager.set_env("战争.目标地形排除", StaticManager.CITY_BLOCKS_CN.duplicate())
+	DataManager.set_env("战争.攻击距离", 2)
 	return false

@@ -4,7 +4,7 @@ extends "effect_10000.gd"
 #【合归】内政，君主锁定技。你登为君主期间，每有一个势力灭亡，你的势力命令书额外+1，至多以此法增加3枚。
 
 func on_trigger_10001() -> bool:
-	var added = ske.affair_get_skill_val_int()
+	var added = ske.affair_get_skill_val_int(-1, -1, 0)
 	DataManager.orderbook += added
 	return false
 
@@ -13,7 +13,7 @@ func on_trigger_10023() -> bool:
 	var vs = clVState.vstate(vstateId)
 	var cityId = get_working_city_id()
 	var city = clCity.city(cityId)
-	var added = ske.affair_get_skill_val_int()
+	var added = ske.affair_get_skill_val_int(-1, -1, 0)
 	if added >= 3:
 		return false
 

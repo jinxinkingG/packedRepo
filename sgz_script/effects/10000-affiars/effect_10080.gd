@@ -118,7 +118,7 @@ func effect_10080_4():
 	var rate = min(15, fromCount - targetCount)
 	if rate <= 0 or not Global.get_rate_result(rate):
 		# 城市 id + 1 以与 0 区分
-		ske.affair_set_skill_val(targetCityId + 1, 1)
+		ske.affair_set_skill_val(targetCityId, 1)
 		goto_step("5")
 		return
 

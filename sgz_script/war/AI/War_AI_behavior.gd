@@ -164,7 +164,7 @@ func _strategem(wa:War_Actor, targetId:int, stratagem:String)->bool:
 #AI攻击
 func _attack(wa:War_Actor, targetId:int)->bool:
 	var bf = DataManager.get_current_battle_fight()
-	if bf.fromId == wa.actorId and bf.status == 0:
+	if bf.fromId == wa.actorId and bf.pending_start():
 		# 等待之前的攻击执行完成
 		return false
 	if wa.get_buff_label_turn(["禁止攻击"])>0:

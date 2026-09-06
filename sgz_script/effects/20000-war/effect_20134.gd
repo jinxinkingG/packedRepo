@@ -62,9 +62,12 @@ func on_trigger_20029() -> bool:
 	return false
 
 func on_trigger_20016() -> bool:
-	if not get_teammate_targets(me, 1, true).empty():
-		return false
+	for teammate in me.get_teammates(false, true):
+		if Global.get_distance(me.position, teammate.position) == 1:
+			return false
 	ske.add_war_skill(actorId, "智破", 1, true)
+	ske.war_report()
+	me.attach_free_dialog("退而静观，敌策自明\n（临时获得【智破】")
 	return false
 
 # 判断触发技能的武将是否符合幕后的条件

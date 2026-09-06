@@ -61,7 +61,7 @@ func effect_10082_start():
 
 func effect_10082_2():
 	DataManager.twinkle_citys.clear()
-	var targetCityId = get_env_int("目标")
+	var targetCityId = DataManager.get_env_int("目标")
 	var msg = "立即移动到{0}\n可否？".format([
 		clCity.city(targetCityId).get_full_name()
 	])
@@ -71,11 +71,9 @@ func effect_10082_2():
 	return
 
 func effect_10082_3():
-	var targetCityId = get_env_int("目标")
-	var targetCity = clCity.city(targetCityId)
+	var targetCityId = DataManager.get_env_int("目标")
 	ske.affair_cost_limited_times(2)
-	clCity.move_out(actorId)
-	clCity.move_to(actorId, targetCityId)
+	clCity.transfer_to(actorId, targetCityId)
 	var msg = "遵命！马上就去"
 	SceneManager.play_affiars_animation("Town_Move", "", false, msg, actorId)
 	DataManager.twinkle_citys = [targetCityId, DataManager.player_choose_city]

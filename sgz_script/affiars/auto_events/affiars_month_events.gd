@@ -66,7 +66,7 @@ func monthly_step_1() -> void:
 		if vs.id in triggered:
 			continue
 		for buff in SkillRangeBuff.find_for_vstate("每月赋税", vs.id):
-			monthLeft = max(monthLeft, int(buff.effectTagVal))
+			monthLeft = max(monthLeft, buff.continuous)
 			if monthLeft <= 0:
 				continue
 			triggered.append(vs.id)
@@ -589,20 +589,18 @@ func city_data_deal()->void:
 		# 每月加忠光环的配置值比较特殊，十位个位为上限，百位以上为修正值
 		var buffLoyaltyUps = []
 		for srb in SkillRangeBuff.find_for_city("每月加忠", city.ID):
-			var val = int(srb.effectTagVal)
-			if val == 0:
+			if srb.effectTagVal <= 0:
 				continue
-			var limit = val % 100
+			var limit = srb.effectTagVal % 100
 			limit = (100 + limit) % 100
-			val = int(val / 100)
+			var val = int(srb.effectTagVal / 100)
 			buffLoyaltyUps.append([val, limit])
 		for srb in SkillRangeBuff.find_for_vstate("每月加忠", city.get_vstate_id()):
-			var val = int(srb.effectTagVal)
-			if val == 0:
+			if srb.effectTagVal <= 0:
 				continue
-			var limit = val % 100
+			var limit = srb.effectTagVal % 100
 			limit = (100 + limit) % 100
-			val = int(val / 100)
+			var val = int(srb.effectTagVal / 100)
 			buffLoyaltyUps.append([val, limit])
 		for actorId in city.get_actor_ids():
 			var actor = ActorHelper.actor(actorId)
@@ -638,12 +636,10 @@ func city_data_deal()->void:
 				c_actor.set_soldiers(0)
 			else:
 				#原势力=当前势力的，过月时自动从监狱释放出来
-				clCity.move_out(c_actorId);
-				clCity.move_to(c_actorId,city.ID);
-				c_actor.set_status_officed()
 				if c_actor.get_loyalty() > 90:
 					#防止原君主忠--
 					c_actor.set_loyalty(90)
+				clCity.transfer_to(c_actorId, city.ID)
 		#DataManager.game_trace("--循环监狱结束--");
 
 	DataManager.set_env("大限检查", [])

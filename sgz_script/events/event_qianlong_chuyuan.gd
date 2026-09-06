@@ -47,14 +47,11 @@ func event_settle()->void:
 	# 曹操所在城市
 	var city = DataManager.get_office_city_by_actor(CAOCAO)
 	var xushu = ActorHelper.actor(XUSHU)
-	clCity.move_out(xushu.actorId)
-	clCity.move_to(xushu.actorId, city.ID)
+	clCity.transfer_to(xushu.actorId, city.ID)
 	xushu.set_loyalty(40)
 	var wolong = ActorHelper.actor(WOLONG)
 	var xinye = clCity.city(XINYE)
-	clCity.move_out(wolong.actorId)
-	clCity.move_to(wolong.actorId, xinye.ID)
-	wolong.set_status_officed()
+	clCity.transfer_to(wolong.actorId, xinye.ID)
 	wolong.set_soldiers(1000)
 	wolong.set_loyalty(99)
 	DataManager.twinkle_citys = [xinye.ID, city.ID]

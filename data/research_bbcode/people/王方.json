@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]王方[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不详，籍贯不详，东汉末年武将，[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]旧部（"卓故部曲"）
+[color=#000000]基本信息：[/color] 生卒年不详，籍贯不详；东汉末年武将，[color=#0066FF][url={"research": "董卓", "cat": "people"}]董卓[/url][/color]私属武装（"卓故部曲"）；活动于初平三年（192年），此后不见于史载。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -29,7 +29,7 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  在长安城外与卓故部曲樊稠、李蒙、[color=#000000]王方[/color]等汇合[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  合围长安城，十日后城陷[/indent]
+[indent]•  合围长安城，十日后城陷（据《三国志·董卓传》，演义有"八日""十日"两说）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  吕布战败逃走，王允被杀[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -100,10 +100,10 @@
 [cell]城中内应，偷开城门（演义附加细节）[/cell]
 [cell]封赏[/cell]
 [cell]无任何记录[/cell]
-[cell]城破后封为校尉[/cell]
+[cell]城破后封为校尉（毛本第九回）[/cell]
 [cell]死亡原因[/cell]
 [cell]完全无载[/cell]
-[cell]被[color=#0066FF][url={"research": "马超", "cat": "people"}]马超[/url][/color]一枪刺死（第十回）[/cell]
+[cell]被[color=#0066FF][url={"research": "马超", "cat": "people"}]马超[/url][/color]一枪刺死（毛本第十回）[/cell]
 [cell]马超斩王方[/cell]
 [cell]《马超传》无此记载，纯属虚构[/cell]
 [cell]演义核心战斗情节[/cell]
@@ -113,7 +113,117 @@
 [/table]
 
 
+[color=#000000]演义版本差异（嘉靖本 vs 毛本）：[/color]
+
+[indent]•  嘉靖本第十九章节（约卷之四）：王方与李蒙在城内作为内应偷开城门（称为"校尉"），马超首战斩王方情节与毛本基本一致，但细节措辞有出入[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本第十回（马超斩王方段）：称"战不到数合，早被马超一枪刺于马下"——突出轻敌、速败[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
 演义中王方被塑造为轻敌自大、死于少年英雄马超之手的反面陪衬，是典型的"以虚构出场、以虚构结局"的次要人物。其在《三国演义》中的死亡场景（战不到数合即被刺于马下）是为了展示马超的初出茅庐之勇，[color=#000000]正史完全不支持此情节[/color]。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+史料极简，无独立史家评语。主要评价来自演义叙事：
+
+[indent]•  演义以"欺他年幼"的轻敌心态将其定性，是工具性的衬托人物[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  无学术文章专项讨论[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏：《三国志14》（光荣，2020）[/font][/b]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]63[/cell]
+[cell]68[/cell]
+[cell]28[/cell]
+[cell]22[/cell]
+[cell]35[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]主义：[/color] 我道[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]政策：[/color] 运搬开发 Lv2[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战法：[/color] 铁壁・鲸波[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]阵形：[/color] 锋矢[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]个性：[/color] 功名・直情[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏：《三国志11》（光荣，2006）[/font][/b]
+
+
+史实武将，董卓势力，演义登场年194年（马腾勤王场景）。五维数据与三国志14基本一致，无特技。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏：《三国志8R》（光荣 REMAKE，2023）[/font][/b]
+
+
+[table=6]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]性格[/b][/cell]
+[cell]64[/cell]
+[cell]69[/cell]
+[cell]29[/cell]
+[cell]23[/cell]
+[cell]31[/cell]
+[cell]猪突[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]特技：[/color] 骑将1・膂力1・果敢1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战法：[/color] 连击1・急袭1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+官方无王方独立武将。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+[table=3]
+[cell][b]版本[/b][/cell]
+[cell][b]年份[/b][/cell]
+[cell][b]扮演者[/b][/cell]
+[cell]央视版《三国演义》[/cell]
+[cell]1994[/cell]
+[cell]不可网络核查（低优先级）[/cell]
+[/table]
+
+
+1994年央视版第10集有王方出场，演员信息无法从公开网络资源确认。
 
 
 [color=#888888]──────────────────────────────[/color]

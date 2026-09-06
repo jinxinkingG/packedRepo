@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]妫览[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不详（约2世纪末—204年），籍贯不详，东汉末吴人；孝廉出身，后任[color=#0066FF][url={"research": "孙翊", "cat": "people"}]孙翊[/url][/color]麾下大都督督兵。
+[color=#000000]基本信息：[/color] 生卒年不详（约165-204年，均为推算），籍贯不详，东汉末吴人；孝廉出身，后任[color=#0066FF][url={"research": "孙翊", "cat": "people"}]孙翊[/url][/color]麾下大都督督兵。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -80,7 +80,7 @@
 [color=#888888]──────────────────────────────[/color]
 
 
-[b][font=res://resource/font/FandolSong-Bold/28.tres]职称考辨：「大都督」vs「丹杨都尉」[/font][/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]职称考辨：「大都督督兵」vs「丹杨都尉督兵」[/font][/b]
 
 
 《三国志·孙韶传》记妫览职衔，存在两种文字写法：
@@ -114,6 +114,23 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]色欲自毁：[/color] 贪图徐氏美貌，给对方制造时间窗口从容布局，最终死于自己的贪欲[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+妫览在正史中属于配角性人物，历代无专项评价。
+
+[color=#000000]陈寿《三国志·孙韶传》[/color]正文以孙韶为主角，妫览仅在孙翊传记的附文中出现，无陈寿专项评语。
+
+[color=#000000]裴松之注引《吴历》[/color]：客观记录其弑主、杀孙河、图谋刘馥、被徐氏设计诛杀的全过程，未加褒贬，以史料呈现代替评价。
+
+[color=#000000]胡三省（宋）《资治通鉴注》[/color]：在"历阳与丹阳隔江"注文中简短涉及此事地理背景，无对妫览本人的评价。
+
+历代史家对妫览并无单独论述——此人在三国史中属极次要配角，不具备独立的历史评价传统。其形象价值主要体现在衬托徐氏守节复仇这一叙事主轴上。
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -176,6 +193,87 @@
 
 
 演义对此段基本忠实史实，主要丰富了徐氏的心理描写与年龄细节，将妫览塑造为贪婪短视的叛逆者形象。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志14》（2020）[/font][/b]
+
+
+[table=6]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]主义[/b][/cell]
+[cell]50[/cell]
+[cell]64[/cell]
+[cell]38[/cell]
+[cell]32[/cell]
+[cell]13[/cell]
+[cell]我道[/cell]
+[/table]
+
+
+[color=#000000]政策：[/color] 侵略荒廃 Lv2  
+[color=#000000]个性：[/color] 粗忽、强欲、猪突  
+[color=#000000]战法：[/color] 撹乱  
+[color=#000000]阵形：[/color] 雁行  
+[color=#000000]内面：[/color] 义理1（最低档）、野望3、好战5  
+[color=#000000]人物关係：[/color] 亲爱对象徐氏，但徐氏嫌悪妫览（游戏中亲爱不对等，无法触发加成）
+
+义理值1为游戏最低档，配合低魅力（13）和高好战（5），是典型背叛型武将设计。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志8重制版》（2024）[/font][/b]
+
+
+[table=6]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]性格[/b][/cell]
+[cell]49[/cell]
+[cell]62[/cell]
+[cell]49[/cell]
+[cell]14[/cell]
+[cell]6[/cell]
+[cell]臆病[/cell]
+[/table]
+
+
+[color=#000000]性格：[/color] 臆病（懦弱/胆怯）。"臆病"性格与史书中"弑主"行为形成反差——实际上妫览的胆大是"算计失当的鲁莽"，并非真正的勇武，游戏以"臆病"折射其内在的懦弱。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志11》[/font][/b]
+
+
+收录妫览，具体五维数据待核（低优先级）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]霸王大陆[/font][/b]
+
+
+以体力96（全游戏前10名）著称，其余属性极低。游戏玩家圈内的特殊冷知识——培养后综合属性265点，排名全游戏约52位。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+妫览[color=#000000]未单独收录[/color]为武将牌。其事迹作为[color=#000000]徐氏[/color]的武将背景故事存在：徐氏的设计复仇情节在三国杀中得到戏剧性呈现，妫览以"叙事背景反派"角色出现。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+1994年央视版《三国演义》及2010年高希希版《三国》均有孙翊相关情节，妫览为极次要配角，无专属演员信息可网络核查。
 
 
 [color=#888888]──────────────────────────────[/color]

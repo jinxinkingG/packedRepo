@@ -153,6 +153,26 @@
 [color=#888888]──────────────────────────────[/color]
 
 
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+胡轸在史书中[color=#000000]无独立传记，无史家对其人物的专项评论[/color]。正史中仅见情节性记载（《英雄记》《九州春秋》《后汉书·董卓传》《三辅决录注》等）。
+
+史书中有描述意义的语句：
+
+
+[indent]•  [color=#000000]《英雄记》[/color]（裴注引）：「轸字文才，[color=#000000]性急[/color]，预宣言曰：'今此行也，要当斩一青绶，乃整齐耳。'诸将闻而恶之。」——唯一一处性格描述，以"性急"二字定义胡轸，并记其因恃强凌众而激起众怒。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+历史上对胡轸的定性，主要通过叙事而非评论体现：他是一个[color=#000000]战前放狠话、战时被队友坑、战后靠投机存活、得势后以权报私怨[/color]的典型机会主义者。
+
+现代网络评论（非学术）中，胡轸常被列为"演义草包武将"之一，认为其在演义中的形象被极大压低——正史中他的官职（大督护/司隶校尉）实际高于华雄（帐下都督），却被演义置为华雄"副将"。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
 [b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
@@ -177,19 +197,19 @@
 
 [table=2]
 [cell][b]人物[/b][/cell]
-[cell][b]关系[/b][/cell]
+[cell][b]关系说明[/b][/cell]
 [cell]吕布[/cell]
-[cell]宿怨[/cell]
+[cell]宿怨。阳人之战中，吕布故意破坏胡轸的部署，导致大败[/cell]
 [cell]华雄[/cell]
-[cell]下属[/cell]
+[cell]下属。华雄是胡轸军中的帐下都督，阳人之战中被孙坚斩杀[/cell]
 [cell]王允[/cell]
-[cell]政治博弈[/cell]
+[cell]政治博弈。王允派胡轸出击李傕，反被胡轸反水，导致新丰之败[/cell]
 [cell]游殷[/cell]
-[cell]仇怨[/cell]
+[cell]仇怨。胡轸构陷其死，随后被索命（《三辅决录注》）[/cell]
 [cell]王宏[/cell]
-[cell]仇怨[/cell]
+[cell]仇怨。催促李傕杀王宏，随后被索命（《后汉书·王允传》）[/cell]
 [cell]杨整修（杨定）[/cell]
-[cell]同辈[/cell]
+[cell]同辈。同称"凉州大人"[/cell]
 [/table]
 
 
@@ -199,16 +219,174 @@
 [b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-《三国演义》中，胡轸与华雄同守汜水关，率五千人出战孙坚，被孙坚部将[color=#0066FF][url={"research": "程普", "cat": "people"}]程普[/url][/color]刺中咽喉，死于马下（第五回）。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]演义出场（第五回）[/font][/b]
 
-史实差异：
 
-[indent]1.  [color=#000000]死亡经过[/color]：史实中胡轸在阳人之战后存活，后期官至司隶校尉，构陷多人后惊惧而死；演义中早早被程普阵前斩杀[/indent]
+《三国演义》第五回，反董联军进逼汜水关，胡轸以"华雄副将"身份出场：
+
+
+[indent][color=#666666]┃ [color=#000000]「华雄副将胡轸引兵五千出关迎战。[color=#0066FF][url={"research": "程普", "cat": "people"}]程普[/url][/color]飞马挺矛，直取胡轸。斗不数合，程普刺中胡轸咽喉，死于马下。」[/color][/color][/indent]
+
+
+出场即被斩，是汜水关战役第一个被杀的董卓将领，随后华雄方才连克数将，为[color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]"温酒斩华雄"的高潮铺垫。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]史实与演义主要差异[/font][/b]
+
+
+[table=3]
+[cell][b]方面[/b][/cell]
+[cell][b]演义[/b][/cell]
+[cell][b]正史[/b][/cell]
+[cell]地位[/cell]
+[cell]华雄"副将"[/cell]
+[cell]实际上是华雄的上司（大督护），地位远高于华雄[/cell]
+[cell]死亡时间[/cell]
+[cell]191年反董联军进攻汜水关时，被程普刺死[/cell]
+[cell]阳人之战(191年)后存活，192年李傕事变后病死（约193年）[/cell]
+[cell]死亡方式[/cell]
+[cell]程普战阵斩杀，刺中咽喉[/cell]
+[cell]以病死（史料记两段鬼魂索命故事）[/cell]
+[cell]与孙坚关系[/cell]
+[cell]汜水关守将，孙坚进攻汜水关时出战[/cell]
+[cell]阳人之战（非汜水关）败于孙坚，但非被孙坚部直接斩杀[/cell]
+[cell]结局[/cell]
+[cell]早早阵亡，为华雄铺垫[/cell]
+[cell]活至李傕时代，官至司隶校尉，以权害人后惊惧而死[/cell]
+[/table]
+
+
+演义的改动逻辑清晰：将史实中地位更高的胡轸降格为"副将"，让他作为"开胃菜"先死，以衬托随后的华雄（再衬托关羽）。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象（游戏）[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国志14（光荣，2020）[/font][/b]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]65[/cell]
+[cell]76[/cell]
+[cell]12[/cell]
+[cell]14[/cell]
+[cell]15[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]主义：[/color] 我道  [/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]2.  [color=#000000]战场关系[/color]：史实中华雄是胡轸部下的帐下都督，被孙坚击破后斩杀；演义将二人平行置于汜水关[/indent]
+[indent]•  [color=#000000]政策：[/color] 錐行強化 Lv3  [/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]3.  [color=#000000][color=#0066FF][url={"research": "关羽", "cat": "people"}]关羽[/url][/color]斩华雄[/color]：史实中华雄为孙坚（或其麾下将士）所杀，关羽当时身份低微，未参与此战[/indent]
+[indent]•  [color=#000000]个性：[/color] 粉砕 / 功名 / 癇癪 / 強欲  [/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]战法：[/color] 突撃 / 撹乱  [/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]陣形：[/color] 鋒矢 / 錐行  [/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+个性「癇癪」（急躁）与史书"性急"高度吻合。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国志11（光荣，2004）[/font][/b]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]65[/cell]
+[cell]74[/cell]
+[cell]12[/cell]
+[cell]15[/cell]
+[cell]21[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]特技：[/color] 无[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]兵科：[/color] 槍B / 戟C / 弩C / [color=#000000]騎A[/color] / 兵器C / 水军C  [/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  骑兵适性A，符合凉州马军将领背景；游戏采用演义190年死亡设定[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国志8R（Remake，光荣，2024）[/font][/b]
+
+
+[table=6]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]合计[/b][/cell]
+[cell]65[/cell]
+[cell]74[/cell]
+[cell]20[/cell]
+[cell]21[/cell]
+[cell]18[/cell]
+[cell]198[/cell]
+[/table]
+
+
+[indent]•  [color=#000000]戦法：[/color] 突撃●● / 急襲●●  [/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]特技（兵科）：[/color] 騎将●●  [/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]特技（军事）：[/color] 膂力●● / 果敢●  [/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三版数值对比[/font][/b]
+
+
+[table=6]
+[cell][b]版本[/b][/cell]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]三国志14[/cell]
+[cell]65[/cell]
+[cell][color=#000000]76[/color][/cell]
+[cell]12[/cell]
+[cell]14[/cell]
+[cell]15[/cell]
+[cell]三国志11[/cell]
+[cell]65[/cell]
+[cell]74[/cell]
+[cell]12[/cell]
+[cell]15[/cell]
+[cell]21[/cell]
+[cell]三国志8R[/cell]
+[cell]65[/cell]
+[cell]74[/cell]
+[cell]20[/cell]
+[cell]21[/cell]
+[cell]18[/cell]
+[/table]
+
+
+三版统率均为65，武力三国志14略高（76），知力政治极低，符合"凉州武将无谋"定位。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+[color=#000000]无收录[/color]（胡轸不在三国杀标准/国战/界限突破等系列中有独立武将卡）。
 
 
 [color=#888888]──────────────────────────────[/color]

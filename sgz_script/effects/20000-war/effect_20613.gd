@@ -37,7 +37,7 @@ func on_trigger_20013() -> bool:
 	if sleepingDragon == null or sleepingDragon.disabled or not sleepingDragon.has_position():
 		return false
 	ske.cost_war_cd(99999)
-	var times = ske.affair_get_skill_val_int()
+	var times = ske.affair_get_skill_val_int(-1, -1, 0)
 	ske.affair_set_skill_val(times + 1)
 
 	if times >= DIALOGS.size():

@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]张顗[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不可考；籍贯不可考；字号不可考；东汉末年[color=#0066FF][url={"research": "袁尚", "cat": "people"}]袁尚[/url][/color]部将，后降[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]
+[color=#000000]基本信息：[/color] 生卒年不可考；字号不可考（张子謙说属开放悬案）；籍贯不可考（[color=#0066FF][url={"research": "冀州", "cat": "geography"}]冀州[/url][/color]人为推断）；东汉末年[color=#0066FF][url={"research": "袁尚", "cat": "people"}]袁尚[/url][/color]部将，后降[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]
 
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]生平考证[/font][/b]
@@ -10,7 +10,7 @@
 [b][font=res://resource/font/FandolSong-Bold/26.tres]临阵降曹（建安九年，204年）[/font][/b]
 
 
-据《三国志·魏书六·[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]传》（袁尚传），建安九年（204年），曹操围攻鄴城。袁尚率兵来救，曹操击破袁尚军。袁尚退守滥口，曹操加紧围逼，袁尚将领[color=#000000][color=#0066FF][url={"research": "马延", "cat": "people"}]马延[/url][/color]、张顗等临阵降[/color]，袁尚军大溃，袁尚逃奔中山。
+据《三国志·武帝纪》，建安九年（204年），曹操围攻鄴城。袁尚率兵来救，曹操击破袁尚军。袁尚退守滥口，曹操加紧围逼，袁尚将领[color=#000000][color=#0066FF][url={"research": "马延", "cat": "people"}]马延[/url][/color]、张顗等临陈降[/color]，袁尚军大溃，袁尚奔走中山。
 
 原文："其将马延、张顗等临陈降，众大溃，尚走中山。"
 
@@ -23,14 +23,38 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
+[b][font=res://resource/font/FandolSong-Bold/26.tres]张子謙同一人物说（开放悬案）[/font][/b]
+
+
+《三国志·[color=#0066FF][url={"research": "袁绍", "cat": "people"}]袁绍[/url][/color]传》裴注引《先贤状》载：冀州人张子謙在[color=#0066FF][url={"research": "审配", "cat": "people"}]审配[/url][/color]被俘时曾当面嘲讽：
+
+
+[indent][color=#666666]┃ [color=#000000]张子謙[/color]："正南（审配字），卿我今各如何？"[/color][/indent]
+[indent][color=#666666]┃ [/color][/indent]
+[indent][color=#666666]┃ [color=#000000]审配[/color]："汝为降人，审配为忠臣。死之与生，固当异也。"[/color][/indent]
+
+
+[color=#000000]同一人物说的依据：[/color]
+
+[indent]1.  时间重合：张子謙"先降"（先于审配被俘），与张顗204年临阵倒戈吻合[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]2.  地域匹配：《先贤状》明确张子謙为"冀州人"，与袁尚集团地域一致[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]3.  史传空白：两人降曹后均无继续记载[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]考辨结论：[/color] 同一人物说合理但不可定案，[color=#000000]永久开放悬案[/color]。字号"子謙"若成立，则张顗降曹后一直存活至鄴城攻克前后（204年），并以轻蔑语气嘲讽了殉节的审配。正史对张顗其后下落完全空白。
+
+
 [b][font=res://resource/font/FandolSong-Bold/26.tres]史料极限[/font][/b]
 
 
-正史对张顗的全部记载仅一句，且与马延并列，无独立记载。以下信息[color=#000000]均不可考[/color]：
+正史对张顗的全部直接记载仅一句（《三国志·武帝纪》）。以下信息[color=#000000]均不可考[/color]：
 
-[indent]•  字号[/indent]
+[indent]•  字号（张子謙说为推论，非明文）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  籍贯[/indent]
+[indent]•  籍贯（"冀州人"为推断）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  生卒年[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -43,7 +67,9 @@
 [b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
-史料不提供任何性格信息。临阵倒戈的行为表明其在袁尚失势时选择了现实主义，但无法区分其个人判断还是与马延协同行动。
+史料不提供任何性格信息。临阵倒戈行为展现了其政治现实主义。若张子謙说成立，则其降曹后不仅生存，还主动嘲弄了忠义赴死的审配——这使他成为一个颇为鲜明的对照性人物：活下来，但在历史道德评价中彻底输给了对手。
+
+《三国志8 REMAKE》将其义理值设为3（满值10中极低），个性设为"臆病"（贪生怕死），物欲设为"强欲"，游戏处理与史实及张子謙对话的气质高度吻合。
 
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]关键关系[/font][/b]
@@ -54,6 +80,8 @@
 [indent]•  [color=#000000]袁尚[/color]：旧主，204年背叛[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]曹操[/color]：降曹对象，受降后正史无进一步记载两者关系[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]审配[/color]（若张子謙说成立）：对立面，忠义殉主者与降将之间的戏剧性正面交锋[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
@@ -66,85 +94,91 @@
 [cell][b]演义[/b][/cell]
 [cell]降曹时间[/cell]
 [cell]建安九年（204年），鄴城围攻战[/cell]
-[cell]同[/cell]
+[cell]同（演义设定为[color=#0066FF][url={"research": "吕旷", "cat": "people"}]吕旷[/url][/color]、[color=#0066FF][url={"research": "吕翔", "cat": "people"}]吕翔[/url][/color]招降）[/cell]
 [cell]降曹方式[/cell]
 [cell]临阵倒戈[/cell]
-[cell]演义中被[color=#0066FF][url={"research": "吕旷", "cat": "people"}]吕旷[/url][/color]、[color=#0066FF][url={"research": "吕翔", "cat": "people"}]吕翔[/url][/color]"招降"，细节不同[/cell]
+[cell]演义中为主动被招降[/cell]
 [cell]降曹后[/cell]
 [cell][color=#000000]正史无载，结局不可考[/color][/cell]
 [cell]继续效力曹军，参与[color=#0066FF][url={"research": "赤壁之战", "cat": "events"}]赤壁之战[/url][/color][/cell]
 [cell]死亡[/cell]
 [cell]不可考[/cell]
-[cell]赤壁战败溃逃途中，被东吴[color=#0066FF][url={"research": "甘宁", "cat": "people"}]甘宁[/url][/color]一刀斩杀[/cell]
+[cell]赤壁战败溃逃途中被[color=#0066FF][url={"research": "甘宁", "cat": "people"}]甘宁[/url][/color]斩杀[/cell]
 [/table]
 
 
 [color=#000000]演义虚构部分：[/color]
 
-[indent]1.  将张顗的故事延续到赤壁之战（208年）[/indent]
+[indent]1.  将张顗故事延续到赤壁之战（208年）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]2.  设计张顗作为曹军护卫保护溃逃[/indent]
+[indent]2.  长坂坡追赶[color=#0066FF][url={"research": "赵云", "cat": "people"}]赵云[/url][/color]（被逃脱）[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]3.  为其安排了具体的死亡场景（被甘宁斩杀）[/indent]
+[indent]3.  赤壁后被甘宁斩杀[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[color=#888888]──────────────────────────────[/color]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]演义版本文字差异（嘉靖本 vs 毛本 vs 周曰校本 vs 志传系）[/font][/b]
 
 
-[b][font=res://resource/font/FandolSong-Bold/28.tres]演义版本文字差异（嘉靖本 vs 毛本）[/font][/b]
+详见 `ref-yanyi.md` 和 `ref-yanyi-version-diff.md`。核心发现：
+
+[color=#000000]嘉靖本与毛本几乎无实质差异：[/color]
+
+[indent]•  嘉靖本："許褚[color=#000000]斬[/color]張先於馬下"（繁体），毛本同义[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  识典 NA11011 平台张顗用字为"張𫖮"（异体字），枪为"𬬰"（矛字异体）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-[b][font=res://resource/font/FandolSong-Bold/26.tres]章回对应关系[/font][/b]
+[color=#000000]周曰校本（万历十九年，1591年）独有异文：[/color]
+
+[indent]•  多"[color=#000000]令[color=#0066FF][url={"research": "贾诩", "cat": "people"}]贾诩[/url][/color]守城[/color]"一句（嘉靖/毛本均无）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "[color=#0066FF][url={"research": "许褚", "cat": "people"}]许褚[/url][/color][color=#000000]杀[/color][color=#0066FF][url={"research": "张先", "cat": "people"}]张先[/url][/color]"（嘉靖/毛本作"斩"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  "绣令张先[color=#000000]出迎[/color]"（嘉靖/毛本作"接战"）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-嘉靖本（240回本）与毛本（120回本）的章回对应：
+[color=#000000]识典 NA11011 与国学导航版用字差异（"𫖮"vs"顗"、"𬬰"vs"枪"）：[/color] 属嘉靖本内部版次差异待实物善本核查（低优先级）。
 
 
-[table=2]
-[cell][b]嘉靖本（240回）[/b][/cell]
-[cell][b]毛本（120回）[/b][/cell]
-[cell]第九十七回：七星坛诸葛祭风[/cell]
-[cell]第四十九回（前半）：七星坛诸葛祭风[/cell]
-[cell]第九十八回：周公瑾赤壁鏖兵[/cell]
-[cell]第四十九回（后半）：三江口[color=#0066FF][url={"research": "周瑜", "cat": "people"}]周瑜[/url][/color]纵火[/cell]
-[cell][color=#000000]第九十九回：曹操败走华容道[/color][/cell]
-[cell][color=#000000]第五十回（前半）：[color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]智算华容[/color]（张顗被斩于此）[/cell]
-[cell]第一百回：关云长义释曹操[/cell]
-[cell]第五十回（后半）：关云长义释曹操[/cell]
-[/table]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
 
 
-[color=#000000]张顗被甘宁斩杀的位置：[/color] 嘉靖本[color=#000000]第九十九回"曹操败走华容道"[/color]；毛本[color=#000000]第五十回[/color]。
+历史上无专项评语。张顗以负面形象间接出现：
 
-[color=#000000]识典 NA11011 备注：[/color] 识典 NA11011 平台将嘉靖本第九十八至一百回的内容在同一页面展示，章节标题为"赤壁鏖兵周公瑾"，这是平台合并展示的结果，不代表原书只有一回。原书仍为三回独立结构。
-
-
-[b][font=res://resource/font/FandolSong-Bold/26.tres]文字差异（张顗段落）[/font][/b]
-
-
-[table=4]
-[cell][b]要素[/b][/cell]
-[cell][b]嘉靖本（NA11011实物版）[/b][/cell]
-[cell][b]嘉靖本（国学导航/数字化版）[/b][/cell]
-[cell][b]毛本[/b][/cell]
-[cell]张顗用字[/cell]
-[cell]张𫖮（异体字）[/cell]
-[cell]张顗[/cell]
-[cell]张顗[/cell]
-[cell]武器[/cell]
-[cell]挺𬬰（矛字异体）[/cell]
-[cell]挺枪[/cell]
-[cell]挺枪[/cell]
-[cell]马延死法[/cell]
-[cell]一刀斩延于马下[/cell]
-[cell]一刀斩延于马下[/cell]
-[cell]增"马延正欲交锋"句，斩法略细[/cell]
-[cell]张顗死法[/cell]
-[cell]措手不及，随即一刀斩𫖮于马下[/cell]
-[cell]措手不及，随即一刀，斩顗于马下[/cell]
-[cell]措手不及，被宁手起一刀，翻身落马[/cell]
-[/table]
+[indent]•  [color=#000000]陈寿[/color]《三国志·武帝纪》：仅以"临陈降"客观记录，无褒贬[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]《先贤状》[/color]（裴注引）：通过审配的回应"[color=#000000]汝为降人，审配为忠臣。死之与生，固当异也[/color]"，将张子謙（可能即张顗）塑造为与忠义形成对照的反面形象[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]后世[/color]无独立评价，均以"降将"典型附带提及[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
-NA11011 与国学导航版用字差异（"𫖮"vs"顗"、"𬬰"vs"枪"）是嘉靖本内部版次差异还是数字化录入差异，待实物善本最终核查（低优先级）。
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志14》[/font][/b]
+
+统率43/武力62/知力30/政治21/魅力38，割拠，地域巡回Lv2，个性功名，战法火矢，阵形鋒矢
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志11》[/font][/b]
+
+[color=#000000]未收录[/color]（官方数据库及第三方完整武将列表均无张顗条目）
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]光荣《三国志8 REMAKE》[/font][/b]
+
+统率50/武力61/知力30/政治26/魅力32，性格温和，义理3（极低），重视名声无关心，物欲强欲，奇才臆病（戦意50以下时攻防各降50），战法急襲1·骑射1，特技骑将1·水練1
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+[color=#000000]未收录[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+[color=#000000]无专属出场[/color]（1994年央视版及2010年版均无专属角色）

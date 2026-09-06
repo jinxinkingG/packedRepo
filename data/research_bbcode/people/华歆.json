@@ -323,7 +323,50 @@
 [color=#888888]──────────────────────────────[/color]
 
 
-[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
+[b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义（含版本差异）[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]嘉靖本 vs 毛本关键差异（第66回·华歆拿捕伏皇后，已核✅2026-06-02）[/font][/b]
+
+
+[table=4]
+[cell][b]序号[/b][/cell]
+[cell][b]嘉靖本[/b][/cell]
+[cell][b]毛本[/b][/cell]
+[cell][b]性质[/b][/cell]
+[cell]1[/cell]
+[cell]宫人「指云藏匿房中」[/cell]
+[cell]宫人「推不知」[/cell]
+[cell]毛本改善宫人忠义形象[/cell]
+[cell]2[/cell]
+[cell]华歆「[color=#000000]掣刀割開[/color]」破壁[/cell]
+[cell]「喝甲士破壁搜寻」[/cell]
+[cell]毛本减弱华歆直接暴力感[/cell]
+[cell]3[/cell]
+[cell]「誠心[color=#000000]治天下[/color]」[/cell]
+[cell]「誠心[color=#000000]待汝等[/color]」[/cell]
+[cell]措辞差异[/cell]
+[cell]4[/cell]
+[cell]小字夹注「此是曹操平生最不是处」[/cell]
+[cell]无夹注[/cell]
+[cell]嘉靖本独有编者点评[/cell]
+[cell]5[/cell]
+[cell][color=#000000]无[/color]管宁割席段[/cell]
+[cell][color=#000000]增加[/color]管宁割席约300字+赞管宁诗[/cell]
+[cell]毛本大幅增补，道德批评策略不同[/cell]
+[cell]6[/cell]
+[cell]七律赞诗（批帝+批操+直批华歆郗虑）[/cell]
+[cell]绝句（「不及民间妇与夫」悲情为主）[/cell]
+[cell]赞诗完全不同[/cell]
+[/table]
+
+
+[color=#000000]版本学总结：[/color] 毛宗岗在此回的改写体现了其加强道德评判的一贯策略——用管宁对比将华歆塑造为「贪富贵弃志节」的反面典型，而嘉靖本批评更直接（夹注+赞诗点名批评「儿曹辈同恶相滋逆上天」）。嘉靖本华歆「掣刀割开」（亲自持刀破壁）的细节在毛本中被弱化为命令部下，影响后世对华歆暴力形象的感知。
+
+[color=#000000]篡汉段（嘉靖本卷二十三/毛本第79-80回）逐字差异待进一步核查（低优先级）。[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]史实 vs 演义整体对照[/font][/b]
 
 
 [table=3]
@@ -366,7 +409,7 @@
 [cell][b]备注[/b][/cell]
 [cell]1994[/cell]
 [cell]《三国演义》（电视剧）[/cell]
-[cell]—[/cell]
+[cell]演员名不可网络核查[/cell]
 [cell]1996[/cell]
 [cell]《汉武大帝》相关[/cell]
 [cell]—[/cell]
@@ -381,11 +424,92 @@
 [cell]—[/cell]
 [cell]2010[/cell]
 [cell]《三国》（电视剧）[/cell]
-[cell]—[/cell]
+[cell]演员名不可网络核查[/cell]
 [cell]2013[/cell]
 [cell]相关电视剧[/cell]
 [cell]—[/cell]
 [/table]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏[/font][/b]
+
+
+[b]三国志系列（光荣）[/b]
+
+
+[table=7]
+[cell][b]作品[/b][/cell]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]知力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell][b]备注[/b][/cell]
+[cell]三国志11[/cell]
+[cell]≈25[/cell]
+[cell]≈33[/cell]
+[cell]≈82[/cell]
+[cell]≈83[/cell]
+[cell]≈51[/cell]
+[cell]无特技（白板，推断值）[/cell]
+[cell]三国志13[/cell]
+[cell]33[/cell]
+[cell]33[/cell]
+[cell]82[/cell]
+[cell]83[/cell]
+[cell]—[/cell]
+[cell]传授：説破；理想威名：高論卓説[/cell]
+[cell]三国志14[/cell]
+[cell]25[/cell]
+[cell]33[/cell]
+[cell]82[/cell]
+[cell]83[/cell]
+[cell]14[/cell]
+[cell]主义：名利；政策：歳出改善Lv4[/cell]
+[cell]三国志8R[/cell]
+[cell]28[/cell]
+[cell]34[/cell]
+[cell]81[/cell]
+[cell]87[/cell]
+[cell]51[/cell]
+[cell]性格：沈着；义理：1（极低）[/cell]
+[/table]
+
+
+[color=#000000]三国志11（推断）：[/color] 统率≈25 / 武力≈33 / 知力≈82 / 政治≈83 / 魅力≈51；无特技（白板）  
+注：三国志11官方数据页面未能核查到，以上为交叉推断值：11与14五维几乎一致（参考王朗11与14仅差1点），魅力接近8R（14对文官魅力大幅削减）；特技白板依据为11原版特技持有者名单中无华歆。  
+
+[color=#000000]三国志14个性：[/color] 言毒 / 名声 / 人脈 / 功名  
+[color=#000000]三国志14战法：[/color] 挑発 / 罵声（陣形：方円）  
+[color=#000000]三国志8R奇才：[/color] 教化（评定月技术+50）/ 反感（击破敌部队时降低其武将亲密）  
+[color=#000000]三国志8R特技：[/color] 交渉2 / 虚报1 / 话术2 / 热弁3 / 警备1（无兵科/军事类特技）  
+[color=#000000]三国志8R战法：[/color] 要撃1 / 罵声3（最高级）
+
+
+[b]三国杀[/b]
+
+
+[color=#000000]编号：[/color] WEI 084（称号"清素拂浊"；国战："渊清玉洁"）  
+[color=#000000]体力：[/color] 3点（国战1.5点）
+
+
+[table=3]
+[cell][b]版本[/b][/cell]
+[cell][b]技能[/b][/cell]
+[cell][b]说明[/b][/cell]
+[cell]身份·飞鸿印雪[/cell]
+[cell][color=#000000]渊清[/color]（锁定）＋[color=#000000]疏陈[/color]（锁定）[/cell]
+[cell]出牌结束将本回合各类别牌置入"仁"区；濒死时若仁区≥4张，获得仁牌并令其回复1点体力[/cell]
+[cell]OL在线[/cell]
+[cell][color=#000000]草诏[/color]＋[color=#000000]息兵[/color][/cell]
+[cell]声明变牌或失血；受伤后弃牌互摸并免疫指向[/cell]
+[cell]国战[/cell]
+[cell][color=#000000]望归[/color]＋[color=#000000]息兵[/color][/cell]
+[cell]伤害触发异势力/同势力效果；限制黑色出牌后手牌补充[/cell]
+[/table]
+
+
+归属：始计篇 / 才子佳人 / 文德武备 / 纵横捭阖
 
 
 [color=#888888]──────────────────────────────[/color]

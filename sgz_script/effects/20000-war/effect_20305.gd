@@ -9,11 +9,9 @@ func appended_skill_list()->PoolStringArray:
 	var ret = []
 	if DataManager.get_current_scene_id() < 20000:
 		return ret
-	var me = DataManager.get_war_actor(self.actorId)
+	var me = DataManager.get_war_actor(actorId)
 	if me == null or me.disabled:
 		return ret
-	if get_skill_triggered_times(self.actorId, FEIYU_EFFECT_ID, 20000) == 0:
-		ret.append("飞羽")
 	match me.five_phases:
 		War_Character.FivePhases_Enum.Wood:
 			ret.append("游弓")
@@ -24,3 +22,7 @@ func appended_skill_list()->PoolStringArray:
 		War_Character.FivePhases_Enum.Water:
 			ret.append("暴弓")
 	return ret
+
+func on_trigger_20013() -> bool:
+	ske.add_war_skill(actorId, "飞羽", 1, true)
+	return false

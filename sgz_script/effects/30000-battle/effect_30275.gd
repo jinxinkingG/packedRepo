@@ -1,6 +1,6 @@
 extends "effect_30000.gd"
 
-#激石主动技
+#激石主动技 #神策
 #【激石】小战场，主动技。非攻城、非水地形可以使用，消耗8点体力，从对方半场两侧随机位置各滚出3颗巨石，对巨石碰到的士兵单位造成X点激石伤害，对巨石碰到的武将单位造成X/5点激石伤害。X＝你的武×0.8，白刃战限1次。
 
 const EFFECT_ID = 30275
@@ -8,13 +8,20 @@ const FLOW_BASE = "effect_" + str(EFFECT_ID)
 
 const HP_COST = 8
 
+func get_hp_cost() -> int:
+	var ret = HP_COST
+	if actor.get_equip_feature_max("神策体力消耗减半") > 0:
+		ret = int(ret / 2)
+	return ret
+
 func effect_30275_start()->void:
+	var hpCost = get_hp_cost()
 	var unit = me.battle_actor_unit()
 	if unit == null:
 		tactic_end()
 		return
-	if unit.get_hp() <= HP_COST:
-		var msg = "体力不足，需 > {0}".format([HP_COST])
+	if unit.get_hp() <= hpCost:
+		var msg = "体力不足，需 > {0}".format([hpCost])
 		me.attach_free_dialog(msg, 3, 30000)
 		tactic_end()
 		return
@@ -35,8 +42,8 @@ func effect_30275_start()->void:
 	scene.battle_tactic.hide()
 	scene.mark_selectable_positions(positions)
 
-	ske.battle_change_unit_hp(unit, -HP_COST)
-	unit.add_status_effect("-{0}#FF0000".format([HP_COST]))
+	ske.battle_change_unit_hp(unit, -hpCost)
+	unit.add_status_effect("-{0}#FF0000".format([hpCost]))
 	ske.battle_cd(99999)
 	ske.battle_report()
 

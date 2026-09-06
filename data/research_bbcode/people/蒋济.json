@@ -271,7 +271,52 @@
 [/table]
 
 
-嘉靖本vs毛本相关章回逐字差异待核（低优先级）。
+[b][font=res://resource/font/FandolSong-Bold/26.tres]嘉靖本第216节《司马懿父子秉政》vs 毛本第107回《魏主政归司马氏》版本差异（2026-06-03核查）[/font][/b]
+
+
+嘉靖本与毛本在蒋济出场段落有以下关键差异：
+
+[color=#000000]1. 写表前：嘉靖本懿有豪语，毛本删去[/color]
+
+[indent]•  嘉靖：「懿曰：今日扫除国贼，生灵幸甚矣！急令太尉蒋济……」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：「太后惧怕，只得从之。懿急令太尉蒋济……」（删去懿言）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]2. 「智囊」段：字差与回应差异[/color]
+
+[indent]•  嘉靖：「'智囊'[color=#000000]往矣[/color]！……蒋济曰：驽马恋栈豆，必不能用也。[color=#000000]懿曰：然。[/color]」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：「'智囊'[color=#000000]泄矣[/color]！……蒋济曰：驽马戀棧豆，必不能用也。」（删去懿曰然）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]3. 作书段：人称与用语差异[/color]
+
+[indent]•  嘉靖：「[color=#000000]知汝与曹爽契厚[/color]，可领此任」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：「[color=#000000]汝与爽厚[/color]，可领此任」（省「知」字、「契」字、「曹」字）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]4. 请赦鲁芝[color=#0066FF][url={"research": "辛敞", "cat": "people"}]辛敞[/url][/color]段（⭐最重要差异）[/color]
+
+[indent]•  嘉靖：「太尉蒋济曰：尚有鲁芝、辛敞……[color=#000000]皆可斩之[/color]。懿曰：彼各为其主，乃[color=#000000]忠义之臣[/color]也。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  毛本：「太尉蒋济曰：尚有魯芝、辛敞……[color=#000000]皆不可纵[/color]。懿曰：彼各为其主，乃[color=#000000]义人[/color]也。」[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  [color=#000000]关键：[/color] 嘉靖版蒋济主张「皆可斩之」，明确建议杀掉三人；毛本改为「皆不可纵」（含义含糊，但后文照赦）。毛本此改写明显降低了蒋济「主张诛杀忠义之人」的负面形象。「忠义之臣」改为「义人」，司马懿评价的道德高度亦有所降格。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]5. 嘉靖本独有赞诗[/color]
+
+[indent]•  嘉靖本曹爽被诛后有「弩马但能思栈豆，不图千里去程途。可怜曹爽愚兄弟，同把山河付晋都。」四句诗；毛本此处无对应诗句。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+详见 `ref-yanyi-jiajing-mao-diff.md`。
 
 
 [b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]

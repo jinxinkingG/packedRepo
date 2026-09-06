@@ -347,9 +347,9 @@ func hope_revive_1():
 		var lifeLimit = actor.get_life_limit()
 		var cost = max(0, DataManager.year - lifeLimit) * 100 + 1000
 		cost = min(9000, cost)
-		var bargain = SkillRangeBuff.min_val_for_city("复活折扣", DataManager.player_choose_city, -1)
+		var bargain = SkillRangeBuff.min_val_for_city("复活折扣", DataManager.player_choose_city)
 		if bargain > 0:
-			cost = int(cost * bargain)
+			cost = int(cost * bargain / 100.0)
 		items.append("{0} /{1}金".format([actor.get_name(), cost]))
 		values.append("{0}_{1}_{2}".format([actor.actorId, lifeLimit, cost]))
 	for i in range(items.size(), 12):
@@ -486,8 +486,7 @@ func hope_summon_4():
 	city.add_gold(-cost)
 	
 	#武将加入城中
-	clCity.move_to(actorId, city.ID)
-	actor.set_status_officed()
+	clCity.transfer_to(actorId, city.ID)
 	actor.set_exile_city(city.ID)
 	actor.set_life_limit(max(355, actor.get_life_limit()))
 

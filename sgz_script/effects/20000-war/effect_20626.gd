@@ -11,7 +11,10 @@ func on_trigger_20019() -> bool:
 	for wa in wf.get_war_actors(false, true):
 		if not me.is_enemy(wa):
 			continue
-		ske.change_actor_max_hp(wa.actorId, -MAX_HP_DEBUFF, MAX_HP_MIN)
+		ske.set_actor_extra_max_hp(wa.actorId, -MAX_HP_DEBUFF, MAX_HP_MIN)
+		var limit = wa.actor().get_max_hp()
+		if wa.actor().get_hp() > limit:
+			wa.actor().set_hp(limit)
 	ske.war_report()
 
 	var enemyLeader = me.get_enemy_leader()

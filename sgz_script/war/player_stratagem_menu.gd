@@ -118,6 +118,7 @@ func stratagem_menu(evenDisabled:bool=false):
 		var costInfo = schemeInfo.get_cost_info(actorId)
 		var cost = costInfo[0]
 		var current = costInfo[1]
+		var hp = costInfo[2]
 		var ext = ""
 		if scheme.size() > 2:
 			ext = str(scheme[2])
@@ -128,7 +129,7 @@ func stratagem_menu(evenDisabled:bool=false):
 			fmt = "{0}(禁用)#666666"
 		elif cost == 99999: # 特殊的不允许，比如漫卷标记不足
 			fmt = "{0}(-)#666666"
-		elif current < cost:
+		elif current < cost and hp <= 0:
 			fmt += "#666666"
 		items.append(fmt.format([name, cost, ext]))
 		values.append(name)

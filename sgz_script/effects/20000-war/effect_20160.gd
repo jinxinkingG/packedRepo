@@ -8,7 +8,7 @@ func on_trigger_20013():
 	var newHP = min(99, int(actor.get_hp()) + 5)
 	# 调整体上限
 	if newHP > maxHP:
-		ske.change_actor_max_hp(actorId, newHP - maxHP)
-	if ske.change_actor_hp(actorId, 5) > 0:
-		ske.war_report()
+		ske.set_actor_extra_max_hp(actorId, newHP - maxHP)
+	ske.change_actor_hp(actorId, 5)
+	ske.war_report()
 	return false

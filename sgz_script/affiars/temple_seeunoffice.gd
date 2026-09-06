@@ -243,9 +243,7 @@ func find_actor_3():
 		actor.check_levelup()
 		msg = "已将{0}升至8级"
 	else:
-		actor.set_status_officed()
-		clCity.move_out(actor.actorId)
-		clCity.move_to(actor.actorId, city.ID)
+		clCity.transfer_to(actor.actorId, city.ID)
 	msg = msg.format([actor.get_name()])
 	SceneManager.show_confirm_dialog(msg)
 	LoadControl.set_view_model(244)

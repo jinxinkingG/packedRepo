@@ -16,16 +16,6 @@ func init_vars():
 	bf = DataManager.get_current_battle_fight()
 	return
 
-#获取单挑行为
-func get_solo_action():
-	return int(DataManager.common_variable["单挑.行为"]);
-
-#获取当前单挑经过的回合数
-func _get_solo_turn():
-	if(!DataManager.common_variable.has("单挑.回合数")):
-		DataManager.common_variable["单挑.回合数"]=0;
-	return int(DataManager.common_variable["单挑.回合数"]);
-
 # 信息发动后的结果确认
 func wait_for_skill_result_confirmation(nextFlow:String="player_ready"):
 	if Global.is_action_pressed_AX():

@@ -120,40 +120,55 @@
 [b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-[table=4]
+[table=5]
 [cell][b]方面[/b][/cell]
 [cell][b]正史[/b][/cell]
 [cell][b]嘉靖本（rtk版）[/b][/cell]
+[cell][b]周曰校本（NA11011）[/b][/cell]
 [cell][b]毛本[/b][/cell]
 [cell]追斩眭固[/cell]
 [cell]与曹仁合力斩眭固[/cell]
-[cell]同（「史渻/史渙」字形差异）[/cell]
-[cell]同（「史涣」）[/cell]
-[cell]官渡劫粮[/cell]
-[cell]与曹仁、徐晃参与，史料未明各人角色[/cell]
-[cell]「史渙幷所部兵先出」，杀散人夫放火焚粮[/cell]
-[cell]基本同，「史涣并所部兵」[/cell]
+[cell]「史渻/史渙」字形差异[/cell]
+[cell]史涣[/cell]
+[cell]史涣[/cell]
+[cell]官渡劫粮所带[/cell]
+[cell]与曹仁、徐晃参与[/cell]
+[cell]「并[color=#000000]所部兵[/color]先出」[/cell]
+[cell]「并[color=#000000]火具[/color]先出」（独特修订）[/cell]
+[cell]「并[color=#000000]所部兵[/color]先出」[/cell]
 [cell]死亡[/cell]
 [cell]建安十四年（209年）薨，无战死记录[/cell]
 [cell]第31回：被[color=#000000][color=#0066FF][url={"research": "袁尚", "cat": "people"}]袁尚[/url][/color][/color]翻身背射中左目，坠马而死（完全虚构）[/cell]
-[cell]同（射死者为袁尚，各版本一致）[/cell]
+[cell]同[/cell]
+[cell]同[/cell]
 [cell]职位[/cell]
 [cell]中领军，掌禁兵，封列侯[/cell]
 [cell]「徐晃部将」（虚构定位低于正史）[/cell]
 [cell]同[/cell]
+[cell]同[/cell]
 [/table]
 
 
-[color=#000000]演义版本对比关键发现（2026-05-01核查）：[/color]
+[color=#000000]演义版本对比关键发现（已考辨终结）：[/color]
 
 
-[indent]1.  [color=#000000]史涣字形[/color]：嘉靖本内有两种写法——第30回「史渙」，第19/31回「史渻」；两字均为「涣」异体，刻工不一致所致；毛本统一作「史涣」。[/indent]
+[indent]1.  [color=#000000]史涣字形[/color]：嘉靖本内有两种写法——第30回「史渙」，第19/31回「史渻」；两字均为「涣」异体，刻工不一致所致；毛本统一作「史涣」；周曰校本统一作「史涣」。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]2.  [color=#000000]第30回独特异文[/color]：识典NA11011版写「操差徐晃将带史涣并[color=#000000]火具[/color]先出」，「火具」代替其他版本的「所部兵」，属NA11011特有异文。[/indent]
+[indent]2.  [color=#000000]第30回「火具」异文（已考辨终结，2026-05-29）[/color]：NA11011（即[color=#000000]周曰校本[/color]，明万历十九年1591年金陵书林周曰校刊本）第30回写「操差徐晃将带史涣并[color=#000000]火具[/color]先出」，嘉靖本与毛本均作「并[color=#000000]所部兵[/color]先出」。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]3.  [color=#000000]史涣之死（第31回）[/color]：各版本一致——射死史涣者为[color=#000000]袁尚[/color]（非其他将领）。袁尚出战逞能，与史涣交马不三合，佯败逃走，史涣追击时被袁尚翻身背射，正中左目，坠马而死。[/indent]
+
+
+[indent]　•  NA11011书名「新刊校正古本大字音释三国志通俗演义」即周曰校本，据学界研究该本对嘉靖本进行了「再三雠校」「缺略有增补」的主动修订。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]4.  [color=#000000]情节层面无差异[/color]：史涣相关三个回目（第19、30、31回），嘉靖本与毛本情节完全一致，仅文字层面有字形差异。[/indent]
+[indent]　•  劫粮放火任务背景下，「火具」（火攻器具）有高度逻辑合理性——比泛指的「所部兵」更切合任务性质。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]　•  [color=#000000]结论：[/color]「火具」是周曰校本编辑的主动文字润色修订，将泛指改为具体，非传抄错误，属万历本系统特有修改。嘉靖本与毛本「所部兵」为通行写法，两者均属同一情节，无实质差异。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[indent]3.  [color=#000000]史涣之死（第31回）[/color]：各版本一致——射死史涣的是[color=#000000]袁尚[/color]（翻身背射），伤处左目，坠马而死。维基百科等处记载的「具体对手不明」说法有误，正确答案已由多版本原文确认。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]4.  [color=#000000]情节层面无差异[/color]：史涣相关三个回目（第19、30、31回），嘉靖本与毛本情节完全一致，仅文字层面有字形差异及「火具/所部兵」一处版本修订。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 

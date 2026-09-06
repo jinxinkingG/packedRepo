@@ -536,14 +536,14 @@ func player_show_cityline():
 #--------------0级：选择城市------------------
 #B键展示城池武将
 func city_actorinfolist():
-	set_view_model(2);
 	DataManager.set_env("装备信息.类型号", 0)
 	
-	DataManager.twinkle_citys = [DataManager.player_choose_city];
-	var scene_affiars:Control = SceneManager.current_scene();
 	var city = clCity.city(DataManager.player_choose_city)
-	SceneManager.show_actor_info_list(city.get_actor_ids())
-	scene_affiars.cursor.hide();
+	if not SceneManager.show_actor_info_list(city.get_actor_ids()):
+		return
+	DataManager.twinkle_citys = [DataManager.player_choose_city]
+	SceneManager.current_scene().cursor.hide()
+	set_view_model(2)
 	return
 
 #A键进入城市菜单

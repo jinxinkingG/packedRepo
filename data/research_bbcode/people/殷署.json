@@ -1,7 +1,7 @@
 [b][font=res://resource/font/FandolSong-Bold/30.tres]殷署[/font][/b]
 
 
-[color=#000000]基本信息：[/color] 生卒年不详（约2世纪末—3世纪初），籍贯不详，[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]麾下武将，职平难将军
+[color=#000000]基本信息：[/color] 生卒年不详（约活跃于210—219年，游戏设定约177—223年）；籍贯不详；[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]麾下武将，职平难将军
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -95,6 +95,28 @@
 [color=#888888]──────────────────────────────[/color]
 
 
+[b][font=res://resource/font/FandolSong-Bold/28.tres]时间线梳理[/font][/b]
+
+
+[table=2]
+[cell][b]时间[/b][/cell]
+[cell][b]事件[/b][/cell]
+[cell]建安十五年（210年）[/cell]
+[cell]以平难将军督领韩遂马超旧部五千余人，受赵俨统辖[/cell]
+[cell]约210—215年间[/cell]
+[cell]随赵俨追击羌虏（新平大破之）、镇压陈仓叛乱（吕并事件）[/cell]
+[cell]建安二十年（215年）[/cell]
+[cell]督送凉州降兵一千二百人赴汉中，途中发生兵变，一度生死未卜[/cell]
+[cell]建安二十年（215年）兵变后[/cell]
+[cell]幸存，但史书无载其如何脱身[/cell]
+[cell]建安二十四年（219年）[/cell]
+[cell]作为十二营援军之首名将领，奉命赴樊城援徐晃[/cell]
+[/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
 [b][font=res://resource/font/FandolSong-Bold/28.tres]性格与形象[/font][/b]
 
 
@@ -119,9 +141,22 @@
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]徐晃[/color]：建安二十四年樊城之战，殷署十二营受徐晃指挥，为下属关系。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]朱盖[/color]：并列见于《徐晃传》，同为援军将领之一，二人并称但无其他交集史料。[/indent]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价[/font][/b]
+
+
+正史对殷署无独立评语。其在他人传记中仅作为执行者出现，未获史家专项品评。
+
+以下为间接相关评价：
+
+
+[indent]•  [color=#000000]赵俨[/color]（实际评价体现于行动）：赵俨追到斜谷口亲自叮嘱殷署，"深戒署"——这一举动本身反映赵俨对殷署执行力的某种顾虑，但同时也说明赵俨认为值得亲自关照。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]原韩遂、马超旧部[/color]：殷署的主要统领对象，凉州兵骑战力强悍但归附不稳，是殷署职务的核心挑战。[/indent]
+[indent]•  [color=#000000]陈寿[/color]（《三国志·赵俨传》）：传文仅叙事，将殷署作为赵俨处置兵变能力的对照体使用，无直接评价。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
@@ -131,9 +166,102 @@
 [b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-殷署在《三国演义》中几乎没有独立戏份，属于彻底的配角。部分版本的演义提到樊城之战有援军，但殷署名字未被强调。
+[indent]•  《三国演义》（嘉靖本/毛本）：无殷署出场，演义版本系统中无此人物。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  正史来源：《三国志·赵俨传》、《三国志·徐晃传》，两处均为在他人传记中附带提及。[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
-日本游戏《真·三国无双》中，殷署在樊城之战中被[color=#0066FF][url={"research": "赵累", "cat": "people"}]赵累[/url][/color]所杀，纯属虚构，无史据。
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏[/font][/b]
+
+
+[color=#000000]三国志14（光荣，2020年）[/color]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]智力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]70[/cell]
+[cell]68[/cell]
+[cell]37[/cell]
+[cell]41[/cell]
+[cell]42[/cell]
+[/table]
+
+
+[indent]•  主义：割拠 / 政策：鋒矢強化 Lv3[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  个性：慰撫（在所属城市时不会出现贼）、猪突[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：突撃、大喝 / 阵形：鋒矢、長蛇[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志8 Remake（光荣，2024年）[/color]
+
+
+[table=5]
+[cell][b]统率[/b][/cell]
+[cell][b]武力[/b][/cell]
+[cell][b]智力[/b][/cell]
+[cell][b]政治[/b][/cell]
+[cell][b]魅力[/b][/cell]
+[cell]70[/cell]
+[cell]69[/cell]
+[cell]42[/cell]
+[cell]37[/cell]
+[cell]43[/cell]
+[/table]
+
+
+[indent]•  性格：豪胆 / 义理：7[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  战法：突撃1、急襲1（骑兵系）[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  特技：騎将1、援護1、果敢1[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]三国志11（光荣）[/color]
+
+精确五维待核（低优先级，网络不可得）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]漫画[/font][/b]
+
+
+[color=#000000]《蒼天航路》（原作：王欣太，NHK动画改编）[/color]
+
+
+[indent]•  于樊城攻防战中登场，为曹方援救部队将领[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  按照徐晃的计策，[color=#000000]殷署假扮[color=#0066FF][url={"research": "夏侯惇", "cat": "people"}]夏侯惇[/url][/color][/color]出击，朱盖假扮张遼，目的是在关羽军西门包围部队中制造混乱[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  两人在战场中被[color=#000000][color=#0066FF][url={"research": "赵累", "cat": "people"}]赵累[/url][/color]斩杀[/color][/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  此为漫画创作演绎，正史中无假扮情节[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]三国杀[/font][/b]
+
+
+无收录（截至2026年6月）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视[/font][/b]
+
+
+无专属影视出场记录（截至2026年6月）。
 
 
 [color=#888888]──────────────────────────────[/color]

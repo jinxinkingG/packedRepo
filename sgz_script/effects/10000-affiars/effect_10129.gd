@@ -53,7 +53,7 @@ func effect_10129_confirmed() -> void:
 	added *= 2
 	var timesBuff = SkillRangeBuff.max_for_city("赏赐民众倍率", city.ID)
 	if timesBuff != null:
-		added = int(added * timesBuff.effectTagVal)
+		added = added * timesBuff.effectTagVal
 	added = city.add_loyalty(added)
 	city.add_gold(-money)
 	city.add_rice(-rice)
@@ -73,7 +73,7 @@ func effect_10129_confirmed() -> void:
 	if timesBuff != null:
 		msg += "\n（{0}【{1}】{2}倍效果".format([
 			ActorHelper.actor(timesBuff.actorId).get_name(),
-			timesBuff.skillName, int(timesBuff.effectTagVal),
+			timesBuff.skillName, timesBuff.effectTagVal,
 		])
 	SceneManager.play_affiars_animation(
 		"Warehouse_AwardPop", "", false,

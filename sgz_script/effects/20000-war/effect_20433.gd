@@ -27,11 +27,11 @@ func on_trigger_20012()->bool:
 	var target = DataManager.get_war_actor(ske.actorId)
 	if target == null or target.disabled:
 		return false
-	# 设置发动标记，以免重复触发
-	ske.set_war_skill_val(1, 1)
 	return true
 
 func effect_20433_start()->void:
+	# 设置发动标记，以免重复触发
+	ske.set_war_skill_val(1, 1)
 	var target = DataManager.get_war_actor(ske.actorId)
 	var msg = "体力减{0}\n对{2}发动【{1}】\n可否？".format([
 		HP_COST, ske.skill_name, target.get_name(),

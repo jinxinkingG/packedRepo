@@ -1,7 +1,7 @@
 extends "effect_10000.gd"
 
 #巡野主动技
-#【巡野】内政，主动技。消耗1枚命令书发动。你进入本城的战争地图，持续10天。选择撤退可提前离开战场。每月限1次。
+#【巡野】内政，主动技。你进入本城的战争地图，持续10天。选择撤退可提前离开战场。每月限1次。
 
 const EFFECT_ID = 10148
 const FLOW_BASE = "effect_" + str(EFFECT_ID)
@@ -10,12 +10,9 @@ const DAY_LIMIT = 10
 
 # 开始：确认是否消耗命令书
 func effect_10148_start() -> void:
-	if DataManager.orderbook <= 0:
-		play_dialog(actorId, "没有命令书，无法发动", 2, 2999)
-		return
 	var cityId = get_working_city_id()
 	var city = clCity.city(cityId)
-	var msg = "消耗1枚命令书\n巡察{0}战场地形，可否？".format([city.get_full_name()])
+	var msg = "进入{0}战场\n巡察地形，可否？".format([city.get_full_name()])
 	SceneManager.show_yn_dialog(msg, actorId)
 	LoadControl.set_view_model(2000)
 	return
@@ -24,14 +21,8 @@ func on_view_model_2000() -> void:
 	wait_for_yesno(FLOW_BASE + "_confirmed")
 	return
 
-# 确认：播放命令书消耗动画
-func effect_10148_confirmed() -> void:
-	SceneManager.dialog_use_orderbook_animation(FLOW_BASE + "_go")
-	LoadControl.set_view_model(2001)
-	return
-
 # 进入战争地图
-func effect_10148_go() -> void:
+func effect_10148_confirmed() -> void:
 	var cityId = get_working_city_id()
 	var vstateId = clCity.city(cityId).get_vstate_id()
 

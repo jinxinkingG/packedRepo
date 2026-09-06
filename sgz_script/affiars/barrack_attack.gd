@@ -259,11 +259,8 @@ func attack_animation():
 	var goods = DataManager.get_env_int_array("携带数量")
 	#攻方城内去除出征的武将
 	for actorId in wf.sendActors:
-		clCity.move_to(actorId, targetCity.ID)
+		clCity.transfer_to(actorId, targetCity.ID)
 	
-	#城内剩余武将更新
-	if fromCity.get_actors_count() == 0:
-		fromCity.change_vstate(-1)
 	#物资运输
 	fromCity.add_gold(-goods[0])
 	fromCity.add_rice(-goods[1])

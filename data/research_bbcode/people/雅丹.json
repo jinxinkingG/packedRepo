@@ -4,7 +4,7 @@
 [color=#000000]基本信息：[/color] 生卒年不详（虚构人物）；籍贯西羌；身份：西羌丞相
 
 
-[indent][color=#666666]┃ ⚠️ [color=#000000]正史无载[/color]：雅丹为《三国演义》虚构人物，不见于《三国志》《后汉书》等正史。以下内容全部基于演义文本。[/color][/indent]
+[indent][color=#666666]┃ ⚠️ [color=#000000]正史无载[/color]：雅丹为《三国演义》虚构人物，不见于《三国志》《后汉书》等正史。以下内容全部基于演义文本及批评文献。[/color][/indent]
 
 
 [color=#888888]──────────────────────────────[/color]
@@ -18,13 +18,15 @@
 
 [color=#000000]雅丹不见于任何正史记载。[/color] 三国时期的西羌史料主要见于《三国志·武帝纪》《魏书·东夷传》等，虽有[color=#0066FF][url={"research": "曹操", "cat": "people"}]曹操[/url][/color]时代多次羌族入贡或用兵的记载，但均无"[color=#0066FF][url={"research": "彻里吉", "cat": "people"}]彻里吉[/url][/color]""雅丹""[color=#0066FF][url={"research": "越吉", "cat": "people"}]越吉[/url][/color]"等人名。这批人物（包括彻里吉国王、越吉元帅）皆为罗贯中根据边疆异族的叙事需要所创作的虚构形象。
 
-毛宗岗在批注中亦将"雅丹"与"董茶那""[color=#0066FF][url={"research": "阿会喃", "cat": "people"}]阿会喃[/url][/color]"等并列，明确其为作者依蛮夷风格虚拟的"番号"人名。
+毛宗岗在批注中明确将"雅丹"与"董茶那""[color=#0066FF][url={"research": "阿会喃", "cat": "people"}]阿会喃[/url][/color]"等并列，指出其为作者依蛮夷风格虚拟的"番号"人名。
+
+[color=#000000]《三国志平话》中无此人物。[/color] 平话猇亭段极度简化（仅数行带过「[color=#0066FF][url={"research": "陆逊", "cat": "people"}]陆逊[/url][/color]拦杀」），无西羌借兵情节，雅丹是演义系统独创。
 
 
 [b][font=res://resource/font/FandolSong-Bold/26.tres]演义中的生平（第九十四回）[/font][/b]
 
 
-[color=#000000]出场背景：[/color] [color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]第一次北伐后，进行第二次北伐（约建兴六年，228年）。魏大都督[color=#0066FF][url={"research": "曹真", "cat": "people"}]曹真[/url][/color]、副都督[color=#0066FF][url={"research": "郭淮", "cat": "people"}]郭淮[/url][/color]为对付蜀军，遣使赴西羌求援，并许以和亲。
+[color=#000000]出场背景：[/color] [color=#0066FF][url={"research": "诸葛亮", "cat": "people"}]诸葛亮[/url][/color]第二次北伐（约建兴六年，228年）。魏大都督[color=#0066FF][url={"research": "曹真", "cat": "people"}]曹真[/url][/color]、副都督[color=#0066FF][url={"research": "郭淮", "cat": "people"}]郭淮[/url][/color]为对付蜀军，遣使赴西羌求援，并许以和亲。
 
 [color=#000000]角色定位：[/color] 西羌国王彻里吉的文臣丞相，"手下有一文一武：文乃雅丹丞相，武乃越吉元师"。雅丹负责外交与军事参谋，越吉负责统兵作战。
 
@@ -33,9 +35,9 @@
 
 [indent]1.  [color=#000000]劝主出兵[/color]：魏使先见雅丹，雅丹引见彻里吉，并力主接受魏国求援——"我与魏国素相往来，今曹都督求救，且许和亲，理合依允。"彻里吉从之，命雅丹与越吉起羌兵十五万，使用铁车兵扣西平关。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]2.  [color=#000000]轻敌判断失误[/color]：诸葛亮设空营计（携琴于空寨中诱敌），雅丹洞察到这是疑兵之计，但随即低估了蜀军伏兵的实际威力，告诉越吉"这等兵虽有埋伏，不足为惧"，催军深入追击。结果羌兵落入预挖坑堑，铁车自相践踏，大败。[/indent]
+[indent]2.  [color=#000000]轻敌判断失误[/color]：诸葛亮设空营计（携琴于空寨中诱敌），雅丹洞察到"此诸葛亮诡计，虚设疑兵耳，可以攻之"，但随即低估了蜀军伏兵的实际威力——"这等兵虽有埋伏，不足为惧"——催军深入追击。结果羌兵落入预挖坑堑，铁车自相践踏，大败。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]3.  [color=#000000]被擒与释放[/color]：雅丹被[color=#0066FF][url={"research": "马岱", "cat": "people"}]马岱[/url][/color]活捉，押至诸葛亮大寨。诸葛亮效仿七擒[color=#0066FF][url={"research": "孟获", "cat": "people"}]孟获[/url][/color]之法，解其绳缚，赐酒抚慰，并释放言明："吾国与尔乃邻邦，永结盟好，勿听反贼之言。"将所获羌兵及车马器械尽数归还，放雅丹回国。雅丹深感其德，与越吉（已被关兴斩杀）不同结局，得以全身而退。[/indent]
+[indent]3.  [color=#000000]被擒与释放[/color]：雅丹被[color=#0066FF][url={"research": "马岱", "cat": "people"}]马岱[/url][/color]活捉。诸葛亮效仿七擒[color=#0066FF][url={"research": "孟获", "cat": "people"}]孟获[/url][/color]之法，解其绳缚，赐酒抚慰，并释放言明："吾国与尔乃邻邦，永结盟好，勿听反贼之言。"将所获羌兵及车马器械尽数归还，放雅丹回国。雅丹深感其德，率众拜谢而去。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 
 
@@ -53,7 +55,7 @@
 
 [indent]•  [color=#000000]外交老练[/color]：作为彻里吉的首席文臣，雅丹熟悉魏羌往来关系，能快速判断外交利益，劝主接援务实而非盲目。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
-[indent]•  [color=#000000]有一定军事素养[/color]：能识破诸葛亮的"虚设疑兵"计谋，识破能力不弱——其失误在于知道"有埋伏"却错估了规模与险峻程度，属于轻敌之误而非无知之误。[/indent]
+[indent]•  [color=#000000]有一定军事素养[/color]：能识破诸葛亮的"虚设疑兵"计谋——其失误在于知道"有埋伏"却错估了规模与险峻程度，属于轻敌之误而非无知之误。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
 [indent]•  [color=#000000]胸有城府，能屈能伸[/color]：被擒后接受诸葛亮的善待，"深感其德"，无死战之意，符合其文臣而非武将的气质。[/indent]
 [font=res://resource/font/FandolSong-Bold/12.tres] [/font]
@@ -96,23 +98,105 @@
 [b][font=res://resource/font/FandolSong-Bold/28.tres]史实 vs 演义[/font][/b]
 
 
-[table=3]
-[cell][b]项目[/b][/cell]
-[cell][b]演义[/b][/cell]
-[cell][b]正史[/b][/cell]
-[cell]人物存在性[/cell]
-[cell]西羌丞相，有具体情节[/cell]
-[cell][color=#000000]完全虚构，正史无载[/color][/cell]
-[cell]西羌参战[/cell]
-[cell]曹真借羌兵十五万攻西平关[/cell]
-[cell]《三国志》第二次北伐（228年冬）中并无羌兵大规模介入的正史记载；郭淮曾利用羌胡但规模有限[/cell]
-[cell]诸葛亮破羌计[/cell]
-[cell]乘大雪设空营、挖坑堑大破铁车兵[/cell]
-[cell]正史无此战役；228年冬诸葛亮重点是[color=#0066FF][url={"research": "祁山", "cat": "geography"}]祁山[/url][/color]与陈仓方向[/cell]
-[cell]铁车兵[/cell]
-[cell]用骆驼/骡马驾铁叶战车[/cell]
-[cell]史无"铁车兵"记载，为演义创造的特色兵种[/cell]
+[table=2]
+[cell][b]层面[/b][/cell]
+[cell][b]内容[/b][/cell]
+[cell]正史存在[/cell]
+[cell]❌ 不存在，完全虚构[/cell]
+[cell][color=#0066FF][url={"research": "黄忠", "cat": "people"}]黄忠[/url][/color]参与此战[/cell]
+[cell]无关：此战（第二次北伐）黄忠已于220年病逝，雅丹场景中黄忠不在场[/cell]
+[cell][color=#0066FF][url={"research": "潘璋", "cat": "people"}]潘璋[/url][/color]参与此战[/cell]
+[cell]不涉及：雅丹段落中主要人物为关兴/[color=#0066FF][url={"research": "张苞", "cat": "people"}]张苞[/url][/color]/马岱[/cell]
+[cell]平话有原型[/cell]
+[cell]❌《三国志平话》无此人，平话猇亭段极简，无相关描写[/cell]
+[cell]曹真郭淮求羌援[/cell]
+[cell]演义虚构增益：正史中曹真对抗第一次北伐，演义对战役进程有大量重组[/cell]
 [/table]
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]版本学考证（已定案）[/font][/b]
+
+
+[color=#000000]情节差异：[/color] 嘉靖本与毛本在雅丹相关情节上[color=#000000]完全一致[/color]，无情节增减或改写。
+
+[color=#000000]逐字差异（已核定）：[/color]
+
+
+[table=4]
+[cell][b]位置[/b][/cell]
+[cell][b]嘉靖本[/b][/cell]
+[cell][b]毛本[/b][/cell]
+[cell][b]性质[/b][/cell]
+[cell]回目[/cell]
+[cell]孔明大破鐡车兵[/cell]
+[cell]诸葛亮乘雪破羌兵 [color=#0066FF][url={"research": "司马懿", "cat": "people"}]司马懿[/url][/color]克日擒[color=#0066FF][url={"research": "孟达", "cat": "people"}]孟达[/url][/color][/cell]
+[cell]嘉靖单事回目；毛本合两事[/cell]
+[cell]疑兵语[/cell]
+[cell]"此諸葛亮詭計，虛設疑兵，可以攻之。"[/cell]
+[cell]"此诸葛亮诡计，虚设疑兵[color=#000000]耳[/color]。可以攻之。"[/cell]
+[cell]毛本增"耳"字，语气更轻蔑[/cell]
+[cell]劝主出兵语[/cell]
+[cell]嘉靖本结构相似（完整引文待实物核查）[/cell]
+[cell]"我与魏国素相往来，今曹都督求救，且许和亲，理合依允。"[/cell]
+[cell]低优先级[/cell]
+[cell]批注层[/cell]
+[cell]无毛批[/cell]
+[cell]多处毛批（总评对举孟获/纵孟获之法等）[/cell]
+[cell]毛本独有编辑批注层[/cell]
+[/table]
+
+
+[color=#000000]核心结论：[/color] 情节层面两版本完全一致。差异仅在于措辞微调（"耳"字）及毛本批注系统。叶逢春本（西班牙藏实物）待核（低优先级）。
+
+
+[color=#888888]──────────────────────────────[/color]
+
+
+[b][font=res://resource/font/FandolSong-Bold/28.tres]历代评价与艺术形象[/font][/b]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]批评文献[/font][/b]
+
+
+[color=#000000]毛宗岗（清）：[/color]
+
+[indent]•  总评（第94回）："有六纵而不服之蛮王，乃有一纵而即服之雅丹丞相。"——以雅丹与孟获对举，凸显诸葛亮攻心之普适[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  夹批（名字）："亦如董茶那、阿会喃等名色。"——点明虚构性[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+[indent]•  夹批（释放）："又用纵孟获之法。""羌人不复反矣。"[/indent]
+[font=res://resource/font/FandolSong-Bold/12.tres] [/font]
+
+
+[color=#000000]李卓吾（贽眉批）：[/color]
+
+[indent][color=#666666]┃ "这老子惯用此着，然此着极高，世人自不晓耳。"（称赞诸葛亮释放策略）[/color][/indent]
+
+
+[color=#000000]渔山评：[/color]
+
+[indent][color=#666666]┃ "羌人至此，可谓丧胆矣。"[/color][/indent]
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]游戏艺术形象[/font][/b]
+
+
+[color=#000000]光荣三国志系列：[/color] 未独立收录（雅丹为纯文臣型虚构人物，系列通常不收录此类次要角色）。五维数值网络不可查（低优先级）。
+
+[color=#000000]真三国无双系列：[/color] 未收录。
+
+[color=#000000]三国杀（卡牌游戏）：[/color] 未收录（无战斗特色，无专属技能设计空间）。
+
+
+[b][font=res://resource/font/FandolSong-Bold/26.tres]影视形象[/font][/b]
+
+
+[color=#000000]1994年央视版三国演义：[/color] 对应第37-38集区间，雅丹出场情况及扮演者不可网络核查（低优先级）。
+
+[color=#000000]2010年高希希版三国：[/color] 该版本羌族支线大幅简化，雅丹出场情况及扮演者不可网络核查（低优先级）。
 
 
 [color=#888888]──────────────────────────────[/color]

@@ -48,7 +48,7 @@ func effect_20710_confirmed() -> void:
 	var targetWA = DataManager.get_war_actor(targetId)
 	var diff = me.action_point - targetWA.action_point
 	ske.cost_war_cd(2)
-	ske.change_actor_max_hp(actorId, -abs(diff), 10)
+	ske.set_actor_extra_max_hp(actorId, -abs(diff), 10, true)
 	ske.change_actor_ap(actorId, -diff)
 	ske.change_actor_ap(targetId, diff)
 	var msg = "时乎，时乎\n会有变时！"
